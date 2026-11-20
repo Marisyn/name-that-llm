@@ -1,0 +1,211 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 752247,
+    "title": "First post: glyph tells mostly split families, not models",
+    "author": "Jamey (Remmy) Thomas",
+    "author_url": "/morgankael",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-10-24T03:48:37.560228100Z",
+    "last_comment_post_date": "2026-10-24T03:48:37.560Z",
+    "comment_count": 0,
+    "votes": 1,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/752247",
+    "first_message_id": 3543819,
+    "first_seen_at": "2026-11-04T06:56:16+00:00",
+    "last_seen_at": "2026-11-16T16:36:03+00:00",
+    "detail_last_synced_at": "2026-11-16T16:24:10+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "21ad077fd358ba86dcf5e6f79d2bd3a4cca6d933d02dca285777bdbbcfdb803a",
+    "listing_metrics_hash": "08a3f0e9d031723a4649730d445a527264427162f124c0c72a6c18d2e0b8e839",
+    "detail_content_hash": "da3108c19e141e3d12683080ddba06e16e2d2831c9ab9e4bc604438e07b0c0dc",
+    "detail_last_checked_at": "2026-11-16T16:24:10+00:00",
+    "detail_next_check_at": "2026-11-23T16:24:10+00:00",
+    "detail_unchanged_count": 2,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 0,
+      "firstForumMessageId": null,
+      "id": 752247,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-10-24T03:48:37.560Z",
+      "postDate": "2026-10-24T03:48:37.560228100Z",
+      "raw": {
+        "id": 752247,
+        "last_comment_post_date": "2026-10-24T03:48:37.560Z",
+        "post_date": "2026-10-24T03:48:37.560228100Z",
+        "title": "First post: glyph tells mostly split families, not models",
+        "topic_url": "/competitions/name-that-llm/discussion/752247",
+        "votes": 1
+      },
+      "title": "First post: glyph tells mostly split families, not models",
+      "topicUrl": "/competitions/name-that-llm/discussion/752247",
+      "votes": 1
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "Jamey (Remmy) Thomas",
+        "authorUserName": "morgankael",
+        "comments": [],
+        "expectedCommentCount": 0,
+        "firstMessage": {
+          "author": {
+            "displayName": "Jamey (Remmy) Thomas",
+            "tier": "CONTRIBUTOR",
+            "url": "/morgankael"
+          },
+          "content": "<p>Hi all, Remmy here, first post. One thing I noticed lining up all 18 answers to the same prompt: every answer is a single prose paragraph, so formatting tells like headers or bullet lists are basically gone. What does carry signal is punctuation and glyphs. Curly versus straight apostrophes and em-dash usage are pretty consistent, but they mostly separate model families, not individual models. Has anyone found tells that split models within the same family? I've also had little luck with clustering by identity across prompts. Curious whether anyone has made that work.</p>",
+          "id": 3543819,
+          "isThankYou": false,
+          "postDate": "2026-10-24T03:48:37.560Z",
+          "raw": {
+            "author": {
+              "display_name": "Jamey (Remmy) Thomas",
+              "id": 36777022,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36777022-kg.png?t=2026-10-21-11-35-47",
+              "tier": "CONTRIBUTOR",
+              "url": "/morgankael"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 1539,
+            "content": "<p>Hi all, Remmy here, first post. One thing I noticed lining up all 18 answers to the same prompt: every answer is a single prose paragraph, so formatting tells like headers or bullet lists are basically gone. What does carry signal is punctuation and glyphs. Curly versus straight apostrophes and em-dash usage are pretty consistent, but they mostly separate model families, not individual models. Has anyone found tells that split models within the same family? I've also had little luck with clustering by identity across prompts. Curious whether anyone has made that work.</p>",
+            "feedback_tracking_data": {},
+            "id": 3543819,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-10-24T03:48:37.560Z",
+            "raw_markdown": "Hi all, Remmy here, first post. One thing I noticed lining up all 18 answers to the same prompt: every answer is a single prose paragraph, so formatting tells like headers or bullet lists are basically gone. What does carry signal is punctuation and glyphs. Curly versus straight apostrophes and em-dash usage are pretty consistent, but they mostly separate model families, not individual models. Has anyone found tells that split models within the same family? I've also had little luck with clustering by identity across prompts. Curious whether anyone has made that work.",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "Jamey (Remmy) Thomas",
+                "id": 36777022,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/morgankael",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36777022-kg.png?t=2026-10-21-11-35-47",
+                "tier": "CONTRIBUTOR",
+                "url": "/morgankael",
+                "user_id": 36777022,
+                "user_name": "morgankael"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 1,
+              "total_votes": 1
+            }
+          },
+          "rawMarkdown": "Hi all, Remmy here, first post. One thing I noticed lining up all 18 answers to the same prompt: every answer is a single prose paragraph, so formatting tells like headers or bullet lists are basically gone. What does carry signal is punctuation and glyphs. Curly versus straight apostrophes and em-dash usage are pretty consistent, but they mostly separate model families, not individual models. Has anyone found tells that split models within the same family? I've also had little luck with clustering by identity across prompts. Curious whether anyone has made that work.",
+          "replies": [],
+          "votes": {
+            "totalVotes": 1
+          }
+        },
+        "firstMessageId": 3543819,
+        "id": 752247,
+        "name": "First post: glyph tells mostly split families, not models",
+        "postDate": "2026-10-24T03:48:37.560228100Z",
+        "url": "/competitions/name-that-llm/discussion/752247"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>Hi all, Remmy here, first post. One thing I noticed lining up all 18 answers to the same prompt: every answer is a single prose paragraph, so formatting tells like headers or bullet lists are basically gone. What does carry signal is punctuation and glyphs. Curly versus straight apostrophes and em-dash usage are pretty consistent, but they mostly separate model families, not individual models. Has anyone found tells that split models within the same family? I've also had little luck with clustering by identity across prompts. Curious whether anyone has made that work.</p>",
+              "id": 3543819,
+              "post_date": "2026-10-24T03:48:37.560Z",
+              "raw_markdown": "Hi all, Remmy here, first post. One thing I noticed lining up all 18 answers to the same prompt: every answer is a single prose paragraph, so formatting tells like headers or bullet lists are basically gone. What does carry signal is punctuation and glyphs. Curly versus straight apostrophes and em-dash usage are pretty consistent, but they mostly separate model families, not individual models. Has anyone found tells that split models within the same family? I've also had little luck with clustering by identity across prompts. Curious whether anyone has made that work.",
+              "votes": 1
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 36777022,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "36777022-kg.png?t=2026-10-21-11-35-47",
+            "author_user_display_name": "Jamey (Remmy) Thomas",
+            "author_user_name": "morgankael",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "first_message": {
+              "author": {
+                "display_name": "Jamey (Remmy) Thomas",
+                "id": 36777022,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36777022-kg.png?t=2026-10-21-11-35-47",
+                "tier": "CONTRIBUTOR",
+                "url": "/morgankael"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 1539,
+              "content": "<p>Hi all, Remmy here, first post. One thing I noticed lining up all 18 answers to the same prompt: every answer is a single prose paragraph, so formatting tells like headers or bullet lists are basically gone. What does carry signal is punctuation and glyphs. Curly versus straight apostrophes and em-dash usage are pretty consistent, but they mostly separate model families, not individual models. Has anyone found tells that split models within the same family? I've also had little luck with clustering by identity across prompts. Curious whether anyone has made that work.</p>",
+              "feedback_tracking_data": {},
+              "id": 3543819,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-24T03:48:37.560Z",
+              "raw_markdown": "Hi all, Remmy here, first post. One thing I noticed lining up all 18 answers to the same prompt: every answer is a single prose paragraph, so formatting tells like headers or bullet lists are basically gone. What does carry signal is punctuation and glyphs. Curly versus straight apostrophes and em-dash usage are pretty consistent, but they mostly separate model families, not individual models. Has anyone found tells that split models within the same family? I've also had little luck with clustering by identity across prompts. Curious whether anyone has made that work.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Jamey (Remmy) Thomas",
+                  "id": 36777022,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/morgankael",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36777022-kg.png?t=2026-10-21-11-35-47",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/morgankael",
+                  "user_id": 36777022,
+                  "user_name": "morgankael"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": 1
+              }
+            },
+            "first_message_id": 3543819,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 752247,
+            "name": "First post: glyph tells mostly split families, not models",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-10-24T03:48:37.560228100Z",
+            "total_votes": 1,
+            "url": "/competitions/name-that-llm/discussion/752247"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:24:10+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:24:10+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-10-24T03:48:37.560228100Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [],
+  "writeup": null
+}

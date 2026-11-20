@@ -1,0 +1,211 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 749552,
+    "title": "This competition reminds me of Jigsaw-Agile Community Classification",
+    "author": "Anpeng Yuan",
+    "author_url": "/chesteryuan",
+    "author_tier": "EXPERT",
+    "post_date": "2026-10-15T11:10:23.187186700Z",
+    "last_comment_post_date": "2026-10-15T11:10:23.186666700Z",
+    "comment_count": 0,
+    "votes": -6,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/749552",
+    "first_message_id": 3539100,
+    "first_seen_at": "2026-11-04T06:56:18+00:00",
+    "last_seen_at": "2026-11-16T16:36:34+00:00",
+    "detail_last_synced_at": "2026-11-16T16:36:34+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "08082a82f42a3381024befba5a6108efbfaceac69d19e8632f9890d19a22f333",
+    "listing_metrics_hash": "47df09b496b95fbc07f582825121181ef35ee354e9d92c7758da4ea30acd2aa8",
+    "detail_content_hash": "e45b6725a2512815407a04cb3dd7ff12c64534bd5f6789b551c31ff61e152d29",
+    "detail_last_checked_at": "2026-11-16T16:36:34+00:00",
+    "detail_next_check_at": "2026-11-23T16:36:34+00:00",
+    "detail_unchanged_count": 2,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 0,
+      "firstForumMessageId": null,
+      "id": 749552,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-10-15T11:10:23.186666700Z",
+      "postDate": "2026-10-15T11:10:23.187186700Z",
+      "raw": {
+        "id": 749552,
+        "last_comment_post_date": "2026-10-15T11:10:23.186666700Z",
+        "post_date": "2026-10-15T11:10:23.187186700Z",
+        "title": "This competition reminds me of Jigsaw-Agile Community Classification",
+        "topic_url": "/competitions/name-that-llm/discussion/749552",
+        "votes": -6
+      },
+      "title": "This competition reminds me of Jigsaw-Agile Community Classification",
+      "topicUrl": "/competitions/name-that-llm/discussion/749552",
+      "votes": -6
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "EXPERT",
+        "authorUserDisplayName": "Anpeng Yuan",
+        "authorUserName": "chesteryuan",
+        "comments": [],
+        "expectedCommentCount": 0,
+        "firstMessage": {
+          "author": {
+            "displayName": "Anpeng Yuan",
+            "tier": "EXPERT",
+            "url": "/chesteryuan"
+          },
+          "content": "<p>NaN.NaN.NaN.NaN.</p>",
+          "id": 3539100,
+          "isThankYou": false,
+          "postDate": "2026-10-15T11:10:23.187Z",
+          "raw": {
+            "author": {
+              "display_name": "Anpeng Yuan",
+              "id": 24895574,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24895574-kg.jpg?t=2025-11-08-01-03-28",
+              "tier": "EXPERT",
+              "url": "/chesteryuan"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 2711,
+            "content": "<p>NaN.NaN.NaN.NaN.</p>",
+            "feedback_tracking_data": {},
+            "id": 3539100,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-10-15T11:10:23.187Z",
+            "raw_markdown": "NaN.NaN.NaN.NaN.",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "Anpeng Yuan",
+                "id": 24895574,
+                "performance_tier": "EXPERT",
+                "profile_url": "/chesteryuan",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24895574-kg.jpg?t=2025-11-08-01-03-28",
+                "tier": "EXPERT",
+                "url": "/chesteryuan",
+                "user_id": 24895574,
+                "user_name": "chesteryuan"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 1,
+              "total_votes": -6
+            }
+          },
+          "rawMarkdown": "NaN.NaN.NaN.NaN.",
+          "replies": [],
+          "votes": {
+            "totalVotes": -6
+          }
+        },
+        "firstMessageId": 3539100,
+        "id": 749552,
+        "name": "This competition reminds me of Jigsaw-Agile Community Classification",
+        "postDate": "2026-10-15T11:10:23.187186700Z",
+        "url": "/competitions/name-that-llm/discussion/749552"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>NaN.NaN.NaN.NaN.</p>",
+              "id": 3539100,
+              "post_date": "2026-10-15T11:10:23.187Z",
+              "raw_markdown": "NaN.NaN.NaN.NaN.",
+              "votes": -6
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 24895574,
+            "author_performance_tier": "EXPERT",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "24895574-kg.jpg?t=2025-11-08-01-03-28",
+            "author_user_display_name": "Anpeng Yuan",
+            "author_user_name": "chesteryuan",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "first_message": {
+              "author": {
+                "display_name": "Anpeng Yuan",
+                "id": 24895574,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24895574-kg.jpg?t=2025-11-08-01-03-28",
+                "tier": "EXPERT",
+                "url": "/chesteryuan"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 2711,
+              "content": "<p>NaN.NaN.NaN.NaN.</p>",
+              "feedback_tracking_data": {},
+              "id": 3539100,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-15T11:10:23.187Z",
+              "raw_markdown": "NaN.NaN.NaN.NaN.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Anpeng Yuan",
+                  "id": 24895574,
+                  "performance_tier": "EXPERT",
+                  "profile_url": "/chesteryuan",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24895574-kg.jpg?t=2025-11-08-01-03-28",
+                  "tier": "EXPERT",
+                  "url": "/chesteryuan",
+                  "user_id": 24895574,
+                  "user_name": "chesteryuan"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": -6
+              }
+            },
+            "first_message_id": 3539100,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 749552,
+            "name": "This competition reminds me of Jigsaw-Agile Community Classification",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-10-15T11:10:23.187186700Z",
+            "total_votes": -6,
+            "url": "/competitions/name-that-llm/discussion/749552"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:36:34+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:36:34+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-10-15T11:10:23.187186700Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [],
+  "writeup": null
+}

@@ -1,0 +1,390 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 753053,
+    "title": "Why grouped CV over-picks test-time centring, and a way to validate it against the test batch",
+    "author": "GoPain",
+    "author_url": "/locdunhat",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-10-27T01:15:30.411296800Z",
+    "last_comment_post_date": "2026-10-27T16:40:19.676666700Z",
+    "comment_count": 1,
+    "votes": 2,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/753053",
+    "first_message_id": 3545275,
+    "first_seen_at": "2026-11-04T06:56:15+00:00",
+    "last_seen_at": "2026-11-16T16:36:03+00:00",
+    "detail_last_synced_at": "2026-11-16T16:23:44+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "e2b1cf68ea34893f620d851404ed02c220b30e6f05c6937ece30fec2f0202af8",
+    "listing_metrics_hash": "6db2b817333d85ee95f494a1b2ba941fb79d87d4e3e0c8718afed5f3c0bfd1fa",
+    "detail_content_hash": "53fa37620f75d7c78ecc458b84e2d137937a9f3bda3a343720afa9df97b11986",
+    "detail_last_checked_at": "2026-11-16T16:23:44+00:00",
+    "detail_next_check_at": "2026-11-23T16:23:44+00:00",
+    "detail_unchanged_count": 2,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 1,
+      "firstForumMessageId": null,
+      "id": 753053,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-10-27T16:40:19.676666700Z",
+      "postDate": "2026-10-27T01:15:30.411296800Z",
+      "raw": {
+        "comment_count": 1,
+        "id": 753053,
+        "last_comment_post_date": "2026-10-27T16:40:19.676666700Z",
+        "post_date": "2026-10-27T01:15:30.411296800Z",
+        "title": "Why grouped CV over-picks test-time centring, and a way to validate it against the test batch",
+        "topic_url": "/competitions/name-that-llm/discussion/753053",
+        "votes": 2
+      },
+      "title": "Why grouped CV over-picks test-time centring, and a way to validate it against the test batch",
+      "topicUrl": "/competitions/name-that-llm/discussion/753053",
+      "votes": 2
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "GoPain",
+        "authorUserName": "locdunhat",
+        "comments": [
+          {
+            "author": {
+              "displayName": "HALX2158",
+              "tier": "CONTRIBUTOR",
+              "url": "/mizuno0522"
+            },
+            "content": "<p>One more LB data point for twins. In a part-two-based blend (0.638) with two LoRA members, each with a centred twin:</p>\n<ul>\n<li>Removing both twins cost -0.017. That is the same size as your +0.017 gain.</li>\n<li>Removing either twin alone cost only about -0.003 to -0.004.</li>\n</ul>\n<p>So the twins largely substitute for each other. Once one centred view is in the blend, a second one adds little on the LB, even if CV says otherwise.</p>",
+            "id": 3545622,
+            "isThankYou": false,
+            "postDate": "2026-10-27T16:40:19.677Z",
+            "raw": {
+              "author": {
+                "display_name": "HALX2158",
+                "id": 16294566,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                "tier": "CONTRIBUTOR",
+                "url": "/mizuno0522"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 1098,
+              "content": "<p>One more LB data point for twins. In a part-two-based blend (0.638) with two LoRA members, each with a centred twin:</p>\n<ul>\n<li>Removing both twins cost -0.017. That is the same size as your +0.017 gain.</li>\n<li>Removing either twin alone cost only about -0.003 to -0.004.</li>\n</ul>\n<p>So the twins largely substitute for each other. Once one centred view is in the blend, a second one adds little on the LB, even if CV says otherwise.</p>",
+              "feedback_tracking_data": {},
+              "id": 3545622,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-27T16:40:19.677Z",
+              "raw_markdown": "One more LB data point for twins. In a part-two-based blend (0.638) with two LoRA members, each with a centred twin:\n- Removing both twins cost -0.017. That is the same size as your +0.017 gain.\n- Removing either twin alone cost only about -0.003 to -0.004.\n\nSo the twins largely substitute for each other. Once one centred view is in the blend, a second one adds little on the LB, even if CV says otherwise.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "HALX2158",
+                  "id": 16294566,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/mizuno0522",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/mizuno0522",
+                  "user_id": 16294566,
+                  "user_name": "mizuno0522"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "One more LB data point for twins. In a part-two-based blend (0.638) with two LoRA members, each with a centred twin:\n- Removing both twins cost -0.017. That is the same size as your +0.017 gain.\n- Removing either twin alone cost only about -0.003 to -0.004.\n\nSo the twins largely substitute for each other. Once one centred view is in the blend, a second one adds little on the LB, even if CV says otherwise.",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "expectedCommentCount": 1,
+        "firstMessage": {
+          "author": {
+            "displayName": "GoPain",
+            "tier": "CONTRIBUTOR",
+            "url": "/locdunhat"
+          },
+          "content": "<p>Follow-up to my centring post (752708). There, the centring weight my prompt-grouped CV liked best (all members at\n0.5, OOF 0.646) was the worst of four on the public LB (0.590 against 0.603 for weight 0.25), and the LB order\nfollowed my CV recomputed with prompts cut to two or three answers. I think I understand why now, and it applies to\nevery test-time rule that clusters the test: centring, twin heads, Gaussian group heads.</p>\n<p>Two things decide how well a cluster-centred rule works: how many passages a real prompt has in the batch, and how\ncrowded the batch is. A validation fold here holds about 30 prompts. The hidden test, if it has the same structure,\nholds a few hundred. With content clustering at a fixed cut, a crowded batch merges more clusters across prompts, so\nthe clusters are less pure than anything you see inside a fold, even with the same number of answers per prompt. A\nfold-level CV therefore sees cleaner clusters than the test has and picks heavier centring than the test wants.</p>\n<p>I checked this on a known-truth simulation (style features with a shared group shift, groups found by clustering a\nseparate content view, 33 settings of score centring and a centred twin head, regret against the best setting for\neach test batch, 20 worlds). Worst regret over six test batches (groups of 18, 6, 3 or 2 items, a mix of 1 to 18,\nmostly singletons):</p>\n<table>\n<thead>\n<tr>\n<th>how the setting is chosen</th>\n<th>worst regret</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>full groups (what grouped CV does)</td>\n<td>0.037</td>\n</tr>\n<tr>\n<td>groups cut to 2 and 3</td>\n<td>0.061</td>\n</tr>\n<tr>\n<td>mean over cuts 18 / 6 / 3 / 2</td>\n<td>0.030</td>\n</tr>\n<tr>\n<td>cuts matched to the test's cluster-size histogram</td>\n<td>0.037</td>\n</tr>\n<tr>\n<td>validation items clustered together with the unlabelled test</td>\n<td><strong>0.014</strong></td>\n</tr>\n</tbody>\n</table>\n<p>Matching the test's cluster sizes does not work by itself, because in a crowded batch of small prompts the merged\nclusters look large. What worked in every case was to put the validation passages into the unlabelled test batch,\ncluster everything together, and score only the validation passages. They then meet the same crowding and the same\nmerges as the test. The prompt cut m can be chosen by matching the cluster-size histogram of the validation\npassages to the test passages'.</p>\n<p>In this competition that is possible inside the inference notebook: the test texts are there, and saved OOF\nlog-probabilities (or OOF features, for a twin head) of the train passages can be attached as a dataset. One can mix\nthe train passages into the test, cluster, and pick the centring weight on the train passages before predicting.\nI have not run that yet.</p>\n<p>Today's LB check, with a centred twin head (a second head trained on features minus their prompt mean, applied\nto features centred inside test content clusters) on my LoRA member, blended with the same three members as before:</p>\n<table>\n<thead>\n<tr>\n<th>blend</th>\n<th>OOF full / cut 3 / cut 2</th>\n<th>public LB</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>yesterday's best (score centring w 0.25, no twin)</td>\n<td>0.644 / 0.624 / 0.640</td>\n<td>0.603</td>\n</tr>\n<tr>\n<td>twin w 1.0 + other members</td>\n<td>0.668 / 0.626 / 0.646</td>\n<td><strong>0.620</strong></td>\n</tr>\n<tr>\n<td>twin w 1.0, other members also score-centred</td>\n<td>0.670 / 0.625 / 0.646</td>\n<td>0.619</td>\n</tr>\n<tr>\n<td>twin w 0.5, other members also score-centred</td>\n<td>0.653 / 0.626 / 0.646</td>\n<td>0.618</td>\n</tr>\n<tr>\n<td>twin w 0.5, one member dropped</td>\n<td>0.655 / 0.624 / 0.648</td>\n<td>0.614</td>\n</tr>\n<tr>\n<td>twin member alone</td>\n<td>0.658 / 0.605 / 0.562</td>\n<td>0.593</td>\n</tr>\n</tbody>\n</table>\n<p>The LB order again follows the cut-3 column, but the LB gain over yesterday (+0.017) is far larger than the gain\non the cut-2/3 columns (+0.002 / +0.007) and closer to the full-prompt one (+0.024). So the small cuts rank well but\nunder-rate the twin, which fits the simulation: neither full groups nor small cuts alone is the right proxy. Until I\nhave the embedded check running, I rank settings by the mean over cuts.</p>\n<p>Code, tables and the dataset: <a href=\"https://www.kaggle.com/code/locdunhat/validating-test-time-centring-for-the-test-batch\" target=\"_blank\">https://www.kaggle.com/code/locdunhat/validating-test-time-centring-for-the-test-batch</a></p>\n<p>Caveat: the simulation has a purely additive group shift and content independent of the author, so the regret sizes\nare not this competition's. The direction (fold CV over-picks centring) agrees with my LB result above.</p>",
+          "id": 3545275,
+          "isThankYou": false,
+          "postDate": "2026-10-27T01:15:30.410Z",
+          "raw": {
+            "author": {
+              "display_name": "GoPain",
+              "id": 3897663,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3897663-kg.jpg?t=2026-10-14-14-18-45",
+              "tier": "CONTRIBUTOR",
+              "url": "/locdunhat"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 1038,
+            "content": "<p>Follow-up to my centring post (752708). There, the centring weight my prompt-grouped CV liked best (all members at\n0.5, OOF 0.646) was the worst of four on the public LB (0.590 against 0.603 for weight 0.25), and the LB order\nfollowed my CV recomputed with prompts cut to two or three answers. I think I understand why now, and it applies to\nevery test-time rule that clusters the test: centring, twin heads, Gaussian group heads.</p>\n<p>Two things decide how well a cluster-centred rule works: how many passages a real prompt has in the batch, and how\ncrowded the batch is. A validation fold here holds about 30 prompts. The hidden test, if it has the same structure,\nholds a few hundred. With content clustering at a fixed cut, a crowded batch merges more clusters across prompts, so\nthe clusters are less pure than anything you see inside a fold, even with the same number of answers per prompt. A\nfold-level CV therefore sees cleaner clusters than the test has and picks heavier centring than the test wants.</p>\n<p>I checked this on a known-truth simulation (style features with a shared group shift, groups found by clustering a\nseparate content view, 33 settings of score centring and a centred twin head, regret against the best setting for\neach test batch, 20 worlds). Worst regret over six test batches (groups of 18, 6, 3 or 2 items, a mix of 1 to 18,\nmostly singletons):</p>\n<table>\n<thead>\n<tr>\n<th>how the setting is chosen</th>\n<th>worst regret</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>full groups (what grouped CV does)</td>\n<td>0.037</td>\n</tr>\n<tr>\n<td>groups cut to 2 and 3</td>\n<td>0.061</td>\n</tr>\n<tr>\n<td>mean over cuts 18 / 6 / 3 / 2</td>\n<td>0.030</td>\n</tr>\n<tr>\n<td>cuts matched to the test's cluster-size histogram</td>\n<td>0.037</td>\n</tr>\n<tr>\n<td>validation items clustered together with the unlabelled test</td>\n<td><strong>0.014</strong></td>\n</tr>\n</tbody>\n</table>\n<p>Matching the test's cluster sizes does not work by itself, because in a crowded batch of small prompts the merged\nclusters look large. What worked in every case was to put the validation passages into the unlabelled test batch,\ncluster everything together, and score only the validation passages. They then meet the same crowding and the same\nmerges as the test. The prompt cut m can be chosen by matching the cluster-size histogram of the validation\npassages to the test passages'.</p>\n<p>In this competition that is possible inside the inference notebook: the test texts are there, and saved OOF\nlog-probabilities (or OOF features, for a twin head) of the train passages can be attached as a dataset. One can mix\nthe train passages into the test, cluster, and pick the centring weight on the train passages before predicting.\nI have not run that yet.</p>\n<p>Today's LB check, with a centred twin head (a second head trained on features minus their prompt mean, applied\nto features centred inside test content clusters) on my LoRA member, blended with the same three members as before:</p>\n<table>\n<thead>\n<tr>\n<th>blend</th>\n<th>OOF full / cut 3 / cut 2</th>\n<th>public LB</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>yesterday's best (score centring w 0.25, no twin)</td>\n<td>0.644 / 0.624 / 0.640</td>\n<td>0.603</td>\n</tr>\n<tr>\n<td>twin w 1.0 + other members</td>\n<td>0.668 / 0.626 / 0.646</td>\n<td><strong>0.620</strong></td>\n</tr>\n<tr>\n<td>twin w 1.0, other members also score-centred</td>\n<td>0.670 / 0.625 / 0.646</td>\n<td>0.619</td>\n</tr>\n<tr>\n<td>twin w 0.5, other members also score-centred</td>\n<td>0.653 / 0.626 / 0.646</td>\n<td>0.618</td>\n</tr>\n<tr>\n<td>twin w 0.5, one member dropped</td>\n<td>0.655 / 0.624 / 0.648</td>\n<td>0.614</td>\n</tr>\n<tr>\n<td>twin member alone</td>\n<td>0.658 / 0.605 / 0.562</td>\n<td>0.593</td>\n</tr>\n</tbody>\n</table>\n<p>The LB order again follows the cut-3 column, but the LB gain over yesterday (+0.017) is far larger than the gain\non the cut-2/3 columns (+0.002 / +0.007) and closer to the full-prompt one (+0.024). So the small cuts rank well but\nunder-rate the twin, which fits the simulation: neither full groups nor small cuts alone is the right proxy. Until I\nhave the embedded check running, I rank settings by the mean over cuts.</p>\n<p>Code, tables and the dataset: <a href=\"https://www.kaggle.com/code/locdunhat/validating-test-time-centring-for-the-test-batch\" target=\"_blank\">https://www.kaggle.com/code/locdunhat/validating-test-time-centring-for-the-test-batch</a></p>\n<p>Caveat: the simulation has a purely additive group shift and content independent of the author, so the regret sizes\nare not this competition's. The direction (fold CV over-picks centring) agrees with my LB result above.</p>",
+            "feedback_tracking_data": {},
+            "id": 3545275,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-10-27T01:15:30.410Z",
+            "raw_markdown": "Follow-up to my centring post (752708). There, the centring weight my prompt-grouped CV liked best (all members at\n0.5, OOF 0.646) was the worst of four on the public LB (0.590 against 0.603 for weight 0.25), and the LB order\nfollowed my CV recomputed with prompts cut to two or three answers. I think I understand why now, and it applies to\nevery test-time rule that clusters the test: centring, twin heads, Gaussian group heads.\n\nTwo things decide how well a cluster-centred rule works: how many passages a real prompt has in the batch, and how\ncrowded the batch is. A validation fold here holds about 30 prompts. The hidden test, if it has the same structure,\nholds a few hundred. With content clustering at a fixed cut, a crowded batch merges more clusters across prompts, so\nthe clusters are less pure than anything you see inside a fold, even with the same number of answers per prompt. A\nfold-level CV therefore sees cleaner clusters than the test has and picks heavier centring than the test wants.\n\nI checked this on a known-truth simulation (style features with a shared group shift, groups found by clustering a\nseparate content view, 33 settings of score centring and a centred twin head, regret against the best setting for\neach test batch, 20 worlds). Worst regret over six test batches (groups of 18, 6, 3 or 2 items, a mix of 1 to 18,\nmostly singletons):\n\n| how the setting is chosen | worst regret |\n| --- | --- |\n| full groups (what grouped CV does) | 0.037 |\n| groups cut to 2 and 3 | 0.061 |\n| mean over cuts 18 / 6 / 3 / 2 | 0.030 |\n| cuts matched to the test's cluster-size histogram | 0.037 |\n| validation items clustered together with the unlabelled test | **0.014** |\n\nMatching the test's cluster sizes does not work by itself, because in a crowded batch of small prompts the merged\nclusters look large. What worked in every case was to put the validation passages into the unlabelled test batch,\ncluster everything together, and score only the validation passages. They then meet the same crowding and the same\nmerges as the test. The prompt cut m can be chosen by matching the cluster-size histogram of the validation\npassages to the test passages'.\n\nIn this competition that is possible inside the inference notebook: the test texts are there, and saved OOF\nlog-probabilities (or OOF features, for a twin head) of the train passages can be attached as a dataset. One can mix\nthe train passages into the test, cluster, and pick the centring weight on the train passages before predicting.\nI have not run that yet.\n\nToday's LB check, with a centred twin head (a second head trained on features minus their prompt mean, applied\nto features centred inside test content clusters) on my LoRA member, blended with the same three members as before:\n\n| blend | OOF full / cut 3 / cut 2 | public LB |\n| --- | --- | --- |\n| yesterday's best (score centring w 0.25, no twin) | 0.644 / 0.624 / 0.640 | 0.603 |\n| twin w 1.0 + other members | 0.668 / 0.626 / 0.646 | **0.620** |\n| twin w 1.0, other members also score-centred | 0.670 / 0.625 / 0.646 | 0.619 |\n| twin w 0.5, other members also score-centred | 0.653 / 0.626 / 0.646 | 0.618 |\n| twin w 0.5, one member dropped | 0.655 / 0.624 / 0.648 | 0.614 |\n| twin member alone | 0.658 / 0.605 / 0.562 | 0.593 |\n\nThe LB order again follows the cut-3 column, but the LB gain over yesterday (+0.017) is far larger than the gain\non the cut-2/3 columns (+0.002 / +0.007) and closer to the full-prompt one (+0.024). So the small cuts rank well but\nunder-rate the twin, which fits the simulation: neither full groups nor small cuts alone is the right proxy. Until I\nhave the embedded check running, I rank settings by the mean over cuts.\n\nCode, tables and the dataset: https://www.kaggle.com/code/locdunhat/validating-test-time-centring-for-the-test-batch\n\nCaveat: the simulation has a purely additive group shift and content independent of the author, so the regret sizes\nare not this competition's. The direction (fold CV over-picks centring) agrees with my LB result above.",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "GoPain",
+                "id": 3897663,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/locdunhat",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3897663-kg.jpg?t=2026-10-14-14-18-45",
+                "tier": "CONTRIBUTOR",
+                "url": "/locdunhat",
+                "user_id": 3897663,
+                "user_name": "locdunhat"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 2,
+              "total_votes": 2
+            }
+          },
+          "rawMarkdown": "Follow-up to my centring post (752708). There, the centring weight my prompt-grouped CV liked best (all members at\n0.5, OOF 0.646) was the worst of four on the public LB (0.590 against 0.603 for weight 0.25), and the LB order\nfollowed my CV recomputed with prompts cut to two or three answers. I think I understand why now, and it applies to\nevery test-time rule that clusters the test: centring, twin heads, Gaussian group heads.\n\nTwo things decide how well a cluster-centred rule works: how many passages a real prompt has in the batch, and how\ncrowded the batch is. A validation fold here holds about 30 prompts. The hidden test, if it has the same structure,\nholds a few hundred. With content clustering at a fixed cut, a crowded batch merges more clusters across prompts, so\nthe clusters are less pure than anything you see inside a fold, even with the same number of answers per prompt. A\nfold-level CV therefore sees cleaner clusters than the test has and picks heavier centring than the test wants.\n\nI checked this on a known-truth simulation (style features with a shared group shift, groups found by clustering a\nseparate content view, 33 settings of score centring and a centred twin head, regret against the best setting for\neach test batch, 20 worlds). Worst regret over six test batches (groups of 18, 6, 3 or 2 items, a mix of 1 to 18,\nmostly singletons):\n\n| how the setting is chosen | worst regret |\n| --- | --- |\n| full groups (what grouped CV does) | 0.037 |\n| groups cut to 2 and 3 | 0.061 |\n| mean over cuts 18 / 6 / 3 / 2 | 0.030 |\n| cuts matched to the test's cluster-size histogram | 0.037 |\n| validation items clustered together with the unlabelled test | **0.014** |\n\nMatching the test's cluster sizes does not work by itself, because in a crowded batch of small prompts the merged\nclusters look large. What worked in every case was to put the validation passages into the unlabelled test batch,\ncluster everything together, and score only the validation passages. They then meet the same crowding and the same\nmerges as the test. The prompt cut m can be chosen by matching the cluster-size histogram of the validation\npassages to the test passages'.\n\nIn this competition that is possible inside the inference notebook: the test texts are there, and saved OOF\nlog-probabilities (or OOF features, for a twin head) of the train passages can be attached as a dataset. One can mix\nthe train passages into the test, cluster, and pick the centring weight on the train passages before predicting.\nI have not run that yet.\n\nToday's LB check, with a centred twin head (a second head trained on features minus their prompt mean, applied\nto features centred inside test content clusters) on my LoRA member, blended with the same three members as before:\n\n| blend | OOF full / cut 3 / cut 2 | public LB |\n| --- | --- | --- |\n| yesterday's best (score centring w 0.25, no twin) | 0.644 / 0.624 / 0.640 | 0.603 |\n| twin w 1.0 + other members | 0.668 / 0.626 / 0.646 | **0.620** |\n| twin w 1.0, other members also score-centred | 0.670 / 0.625 / 0.646 | 0.619 |\n| twin w 0.5, other members also score-centred | 0.653 / 0.626 / 0.646 | 0.618 |\n| twin w 0.5, one member dropped | 0.655 / 0.624 / 0.648 | 0.614 |\n| twin member alone | 0.658 / 0.605 / 0.562 | 0.593 |\n\nThe LB order again follows the cut-3 column, but the LB gain over yesterday (+0.017) is far larger than the gain\non the cut-2/3 columns (+0.002 / +0.007) and closer to the full-prompt one (+0.024). So the small cuts rank well but\nunder-rate the twin, which fits the simulation: neither full groups nor small cuts alone is the right proxy. Until I\nhave the embedded check running, I rank settings by the mean over cuts.\n\nCode, tables and the dataset: https://www.kaggle.com/code/locdunhat/validating-test-time-centring-for-the-test-batch\n\nCaveat: the simulation has a purely additive group shift and content independent of the author, so the regret sizes\nare not this competition's. The direction (fold CV over-picks centring) agrees with my LB result above.",
+          "replies": [],
+          "votes": {
+            "totalVotes": 2
+          }
+        },
+        "firstMessageId": 3545275,
+        "id": 753053,
+        "name": "Why grouped CV over-picks test-time centring, and a way to validate it against the test batch",
+        "postDate": "2026-10-27T01:15:30.411296800Z",
+        "url": "/competitions/name-that-llm/discussion/753053"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>Follow-up to my centring post (752708). There, the centring weight my prompt-grouped CV liked best (all members at\n0.5, OOF 0.646) was the worst of four on the public LB (0.590 against 0.603 for weight 0.25), and the LB order\nfollowed my CV recomputed with prompts cut to two or three answers. I think I understand why now, and it applies to\nevery test-time rule that clusters the test: centring, twin heads, Gaussian group heads.</p>\n<p>Two things decide how well a cluster-centred rule works: how many passages a real prompt has in the batch, and how\ncrowded the batch is. A validation fold here holds about 30 prompts. The hidden test, if it has the same structure,\nholds a few hundred. With content clustering at a fixed cut, a crowded batch merges more clusters across prompts, so\nthe clusters are less pure than anything you see inside a fold, even with the same number of answers per prompt. A\nfold-level CV therefore sees cleaner clusters than the test has and picks heavier centring than the test wants.</p>\n<p>I checked this on a known-truth simulation (style features with a shared group shift, groups found by clustering a\nseparate content view, 33 settings of score centring and a centred twin head, regret against the best setting for\neach test batch, 20 worlds). Worst regret over six test batches (groups of 18, 6, 3 or 2 items, a mix of 1 to 18,\nmostly singletons):</p>\n<table>\n<thead>\n<tr>\n<th>how the setting is chosen</th>\n<th>worst regret</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>full groups (what grouped CV does)</td>\n<td>0.037</td>\n</tr>\n<tr>\n<td>groups cut to 2 and 3</td>\n<td>0.061</td>\n</tr>\n<tr>\n<td>mean over cuts 18 / 6 / 3 / 2</td>\n<td>0.030</td>\n</tr>\n<tr>\n<td>cuts matched to the test's cluster-size histogram</td>\n<td>0.037</td>\n</tr>\n<tr>\n<td>validation items clustered together with the unlabelled test</td>\n<td><strong>0.014</strong></td>\n</tr>\n</tbody>\n</table>\n<p>Matching the test's cluster sizes does not work by itself, because in a crowded batch of small prompts the merged\nclusters look large. What worked in every case was to put the validation passages into the unlabelled test batch,\ncluster everything together, and score only the validation passages. They then meet the same crowding and the same\nmerges as the test. The prompt cut m can be chosen by matching the cluster-size histogram of the validation\npassages to the test passages'.</p>\n<p>In this competition that is possible inside the inference notebook: the test texts are there, and saved OOF\nlog-probabilities (or OOF features, for a twin head) of the train passages can be attached as a dataset. One can mix\nthe train passages into the test, cluster, and pick the centring weight on the train passages before predicting.\nI have not run that yet.</p>\n<p>Today's LB check, with a centred twin head (a second head trained on features minus their prompt mean, applied\nto features centred inside test content clusters) on my LoRA member, blended with the same three members as before:</p>\n<table>\n<thead>\n<tr>\n<th>blend</th>\n<th>OOF full / cut 3 / cut 2</th>\n<th>public LB</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>yesterday's best (score centring w 0.25, no twin)</td>\n<td>0.644 / 0.624 / 0.640</td>\n<td>0.603</td>\n</tr>\n<tr>\n<td>twin w 1.0 + other members</td>\n<td>0.668 / 0.626 / 0.646</td>\n<td><strong>0.620</strong></td>\n</tr>\n<tr>\n<td>twin w 1.0, other members also score-centred</td>\n<td>0.670 / 0.625 / 0.646</td>\n<td>0.619</td>\n</tr>\n<tr>\n<td>twin w 0.5, other members also score-centred</td>\n<td>0.653 / 0.626 / 0.646</td>\n<td>0.618</td>\n</tr>\n<tr>\n<td>twin w 0.5, one member dropped</td>\n<td>0.655 / 0.624 / 0.648</td>\n<td>0.614</td>\n</tr>\n<tr>\n<td>twin member alone</td>\n<td>0.658 / 0.605 / 0.562</td>\n<td>0.593</td>\n</tr>\n</tbody>\n</table>\n<p>The LB order again follows the cut-3 column, but the LB gain over yesterday (+0.017) is far larger than the gain\non the cut-2/3 columns (+0.002 / +0.007) and closer to the full-prompt one (+0.024). So the small cuts rank well but\nunder-rate the twin, which fits the simulation: neither full groups nor small cuts alone is the right proxy. Until I\nhave the embedded check running, I rank settings by the mean over cuts.</p>\n<p>Code, tables and the dataset: <a href=\"https://www.kaggle.com/code/locdunhat/validating-test-time-centring-for-the-test-batch\" target=\"_blank\">https://www.kaggle.com/code/locdunhat/validating-test-time-centring-for-the-test-batch</a></p>\n<p>Caveat: the simulation has a purely additive group shift and content independent of the author, so the regret sizes\nare not this competition's. The direction (fold CV over-picks centring) agrees with my LB result above.</p>",
+              "id": 3545275,
+              "post_date": "2026-10-27T01:15:30.410Z",
+              "raw_markdown": "Follow-up to my centring post (752708). There, the centring weight my prompt-grouped CV liked best (all members at\n0.5, OOF 0.646) was the worst of four on the public LB (0.590 against 0.603 for weight 0.25), and the LB order\nfollowed my CV recomputed with prompts cut to two or three answers. I think I understand why now, and it applies to\nevery test-time rule that clusters the test: centring, twin heads, Gaussian group heads.\n\nTwo things decide how well a cluster-centred rule works: how many passages a real prompt has in the batch, and how\ncrowded the batch is. A validation fold here holds about 30 prompts. The hidden test, if it has the same structure,\nholds a few hundred. With content clustering at a fixed cut, a crowded batch merges more clusters across prompts, so\nthe clusters are less pure than anything you see inside a fold, even with the same number of answers per prompt. A\nfold-level CV therefore sees cleaner clusters than the test has and picks heavier centring than the test wants.\n\nI checked this on a known-truth simulation (style features with a shared group shift, groups found by clustering a\nseparate content view, 33 settings of score centring and a centred twin head, regret against the best setting for\neach test batch, 20 worlds). Worst regret over six test batches (groups of 18, 6, 3 or 2 items, a mix of 1 to 18,\nmostly singletons):\n\n| how the setting is chosen | worst regret |\n| --- | --- |\n| full groups (what grouped CV does) | 0.037 |\n| groups cut to 2 and 3 | 0.061 |\n| mean over cuts 18 / 6 / 3 / 2 | 0.030 |\n| cuts matched to the test's cluster-size histogram | 0.037 |\n| validation items clustered together with the unlabelled test | **0.014** |\n\nMatching the test's cluster sizes does not work by itself, because in a crowded batch of small prompts the merged\nclusters look large. What worked in every case was to put the validation passages into the unlabelled test batch,\ncluster everything together, and score only the validation passages. They then meet the same crowding and the same\nmerges as the test. The prompt cut m can be chosen by matching the cluster-size histogram of the validation\npassages to the test passages'.\n\nIn this competition that is possible inside the inference notebook: the test texts are there, and saved OOF\nlog-probabilities (or OOF features, for a twin head) of the train passages can be attached as a dataset. One can mix\nthe train passages into the test, cluster, and pick the centring weight on the train passages before predicting.\nI have not run that yet.\n\nToday's LB check, with a centred twin head (a second head trained on features minus their prompt mean, applied\nto features centred inside test content clusters) on my LoRA member, blended with the same three members as before:\n\n| blend | OOF full / cut 3 / cut 2 | public LB |\n| --- | --- | --- |\n| yesterday's best (score centring w 0.25, no twin) | 0.644 / 0.624 / 0.640 | 0.603 |\n| twin w 1.0 + other members | 0.668 / 0.626 / 0.646 | **0.620** |\n| twin w 1.0, other members also score-centred | 0.670 / 0.625 / 0.646 | 0.619 |\n| twin w 0.5, other members also score-centred | 0.653 / 0.626 / 0.646 | 0.618 |\n| twin w 0.5, one member dropped | 0.655 / 0.624 / 0.648 | 0.614 |\n| twin member alone | 0.658 / 0.605 / 0.562 | 0.593 |\n\nThe LB order again follows the cut-3 column, but the LB gain over yesterday (+0.017) is far larger than the gain\non the cut-2/3 columns (+0.002 / +0.007) and closer to the full-prompt one (+0.024). So the small cuts rank well but\nunder-rate the twin, which fits the simulation: neither full groups nor small cuts alone is the right proxy. Until I\nhave the embedded check running, I rank settings by the mean over cuts.\n\nCode, tables and the dataset: https://www.kaggle.com/code/locdunhat/validating-test-time-centring-for-the-test-batch\n\nCaveat: the simulation has a purely additive group shift and content independent of the author, so the regret sizes\nare not this competition's. The direction (fold CV over-picks centring) agrees with my LB result above.",
+              "votes": 2
+            },
+            {
+              "content": "<p>One more LB data point for twins. In a part-two-based blend (0.638) with two LoRA members, each with a centred twin:</p>\n<ul>\n<li>Removing both twins cost -0.017. That is the same size as your +0.017 gain.</li>\n<li>Removing either twin alone cost only about -0.003 to -0.004.</li>\n</ul>\n<p>So the twins largely substitute for each other. Once one centred view is in the blend, a second one adds little on the LB, even if CV says otherwise.</p>",
+              "id": 3545622,
+              "post_date": "2026-10-27T16:40:19.677Z",
+              "raw_markdown": "One more LB data point for twins. In a part-two-based blend (0.638) with two LoRA members, each with a centred twin:\n- Removing both twins cost -0.017. That is the same size as your +0.017 gain.\n- Removing either twin alone cost only about -0.003 to -0.004.\n\nSo the twins largely substitute for each other. Once one centred view is in the blend, a second one adds little on the LB, even if CV says otherwise."
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 3897663,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "3897663-kg.jpg?t=2026-10-14-14-18-45",
+            "author_user_display_name": "GoPain",
+            "author_user_name": "locdunhat",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "comments": [
+              {
+                "author": {
+                  "display_name": "HALX2158",
+                  "id": 16294566,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/mizuno0522"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 1098,
+                "content": "<p>One more LB data point for twins. In a part-two-based blend (0.638) with two LoRA members, each with a centred twin:</p>\n<ul>\n<li>Removing both twins cost -0.017. That is the same size as your +0.017 gain.</li>\n<li>Removing either twin alone cost only about -0.003 to -0.004.</li>\n</ul>\n<p>So the twins largely substitute for each other. Once one centred view is in the blend, a second one adds little on the LB, even if CV says otherwise.</p>",
+                "feedback_tracking_data": {},
+                "id": 3545622,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-27T16:40:19.677Z",
+                "raw_markdown": "One more LB data point for twins. In a part-two-based blend (0.638) with two LoRA members, each with a centred twin:\n- Removing both twins cost -0.017. That is the same size as your +0.017 gain.\n- Removing either twin alone cost only about -0.003 to -0.004.\n\nSo the twins largely substitute for each other. Once one centred view is in the blend, a second one adds little on the LB, even if CV says otherwise.",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "HALX2158",
+                    "id": 16294566,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/mizuno0522",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/mizuno0522",
+                    "user_id": 16294566,
+                    "user_name": "mizuno0522"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              }
+            ],
+            "first_message": {
+              "author": {
+                "display_name": "GoPain",
+                "id": 3897663,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3897663-kg.jpg?t=2026-10-14-14-18-45",
+                "tier": "CONTRIBUTOR",
+                "url": "/locdunhat"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 1038,
+              "content": "<p>Follow-up to my centring post (752708). There, the centring weight my prompt-grouped CV liked best (all members at\n0.5, OOF 0.646) was the worst of four on the public LB (0.590 against 0.603 for weight 0.25), and the LB order\nfollowed my CV recomputed with prompts cut to two or three answers. I think I understand why now, and it applies to\nevery test-time rule that clusters the test: centring, twin heads, Gaussian group heads.</p>\n<p>Two things decide how well a cluster-centred rule works: how many passages a real prompt has in the batch, and how\ncrowded the batch is. A validation fold here holds about 30 prompts. The hidden test, if it has the same structure,\nholds a few hundred. With content clustering at a fixed cut, a crowded batch merges more clusters across prompts, so\nthe clusters are less pure than anything you see inside a fold, even with the same number of answers per prompt. A\nfold-level CV therefore sees cleaner clusters than the test has and picks heavier centring than the test wants.</p>\n<p>I checked this on a known-truth simulation (style features with a shared group shift, groups found by clustering a\nseparate content view, 33 settings of score centring and a centred twin head, regret against the best setting for\neach test batch, 20 worlds). Worst regret over six test batches (groups of 18, 6, 3 or 2 items, a mix of 1 to 18,\nmostly singletons):</p>\n<table>\n<thead>\n<tr>\n<th>how the setting is chosen</th>\n<th>worst regret</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>full groups (what grouped CV does)</td>\n<td>0.037</td>\n</tr>\n<tr>\n<td>groups cut to 2 and 3</td>\n<td>0.061</td>\n</tr>\n<tr>\n<td>mean over cuts 18 / 6 / 3 / 2</td>\n<td>0.030</td>\n</tr>\n<tr>\n<td>cuts matched to the test's cluster-size histogram</td>\n<td>0.037</td>\n</tr>\n<tr>\n<td>validation items clustered together with the unlabelled test</td>\n<td><strong>0.014</strong></td>\n</tr>\n</tbody>\n</table>\n<p>Matching the test's cluster sizes does not work by itself, because in a crowded batch of small prompts the merged\nclusters look large. What worked in every case was to put the validation passages into the unlabelled test batch,\ncluster everything together, and score only the validation passages. They then meet the same crowding and the same\nmerges as the test. The prompt cut m can be chosen by matching the cluster-size histogram of the validation\npassages to the test passages'.</p>\n<p>In this competition that is possible inside the inference notebook: the test texts are there, and saved OOF\nlog-probabilities (or OOF features, for a twin head) of the train passages can be attached as a dataset. One can mix\nthe train passages into the test, cluster, and pick the centring weight on the train passages before predicting.\nI have not run that yet.</p>\n<p>Today's LB check, with a centred twin head (a second head trained on features minus their prompt mean, applied\nto features centred inside test content clusters) on my LoRA member, blended with the same three members as before:</p>\n<table>\n<thead>\n<tr>\n<th>blend</th>\n<th>OOF full / cut 3 / cut 2</th>\n<th>public LB</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>yesterday's best (score centring w 0.25, no twin)</td>\n<td>0.644 / 0.624 / 0.640</td>\n<td>0.603</td>\n</tr>\n<tr>\n<td>twin w 1.0 + other members</td>\n<td>0.668 / 0.626 / 0.646</td>\n<td><strong>0.620</strong></td>\n</tr>\n<tr>\n<td>twin w 1.0, other members also score-centred</td>\n<td>0.670 / 0.625 / 0.646</td>\n<td>0.619</td>\n</tr>\n<tr>\n<td>twin w 0.5, other members also score-centred</td>\n<td>0.653 / 0.626 / 0.646</td>\n<td>0.618</td>\n</tr>\n<tr>\n<td>twin w 0.5, one member dropped</td>\n<td>0.655 / 0.624 / 0.648</td>\n<td>0.614</td>\n</tr>\n<tr>\n<td>twin member alone</td>\n<td>0.658 / 0.605 / 0.562</td>\n<td>0.593</td>\n</tr>\n</tbody>\n</table>\n<p>The LB order again follows the cut-3 column, but the LB gain over yesterday (+0.017) is far larger than the gain\non the cut-2/3 columns (+0.002 / +0.007) and closer to the full-prompt one (+0.024). So the small cuts rank well but\nunder-rate the twin, which fits the simulation: neither full groups nor small cuts alone is the right proxy. Until I\nhave the embedded check running, I rank settings by the mean over cuts.</p>\n<p>Code, tables and the dataset: <a href=\"https://www.kaggle.com/code/locdunhat/validating-test-time-centring-for-the-test-batch\" target=\"_blank\">https://www.kaggle.com/code/locdunhat/validating-test-time-centring-for-the-test-batch</a></p>\n<p>Caveat: the simulation has a purely additive group shift and content independent of the author, so the regret sizes\nare not this competition's. The direction (fold CV over-picks centring) agrees with my LB result above.</p>",
+              "feedback_tracking_data": {},
+              "id": 3545275,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-27T01:15:30.410Z",
+              "raw_markdown": "Follow-up to my centring post (752708). There, the centring weight my prompt-grouped CV liked best (all members at\n0.5, OOF 0.646) was the worst of four on the public LB (0.590 against 0.603 for weight 0.25), and the LB order\nfollowed my CV recomputed with prompts cut to two or three answers. I think I understand why now, and it applies to\nevery test-time rule that clusters the test: centring, twin heads, Gaussian group heads.\n\nTwo things decide how well a cluster-centred rule works: how many passages a real prompt has in the batch, and how\ncrowded the batch is. A validation fold here holds about 30 prompts. The hidden test, if it has the same structure,\nholds a few hundred. With content clustering at a fixed cut, a crowded batch merges more clusters across prompts, so\nthe clusters are less pure than anything you see inside a fold, even with the same number of answers per prompt. A\nfold-level CV therefore sees cleaner clusters than the test has and picks heavier centring than the test wants.\n\nI checked this on a known-truth simulation (style features with a shared group shift, groups found by clustering a\nseparate content view, 33 settings of score centring and a centred twin head, regret against the best setting for\neach test batch, 20 worlds). Worst regret over six test batches (groups of 18, 6, 3 or 2 items, a mix of 1 to 18,\nmostly singletons):\n\n| how the setting is chosen | worst regret |\n| --- | --- |\n| full groups (what grouped CV does) | 0.037 |\n| groups cut to 2 and 3 | 0.061 |\n| mean over cuts 18 / 6 / 3 / 2 | 0.030 |\n| cuts matched to the test's cluster-size histogram | 0.037 |\n| validation items clustered together with the unlabelled test | **0.014** |\n\nMatching the test's cluster sizes does not work by itself, because in a crowded batch of small prompts the merged\nclusters look large. What worked in every case was to put the validation passages into the unlabelled test batch,\ncluster everything together, and score only the validation passages. They then meet the same crowding and the same\nmerges as the test. The prompt cut m can be chosen by matching the cluster-size histogram of the validation\npassages to the test passages'.\n\nIn this competition that is possible inside the inference notebook: the test texts are there, and saved OOF\nlog-probabilities (or OOF features, for a twin head) of the train passages can be attached as a dataset. One can mix\nthe train passages into the test, cluster, and pick the centring weight on the train passages before predicting.\nI have not run that yet.\n\nToday's LB check, with a centred twin head (a second head trained on features minus their prompt mean, applied\nto features centred inside test content clusters) on my LoRA member, blended with the same three members as before:\n\n| blend | OOF full / cut 3 / cut 2 | public LB |\n| --- | --- | --- |\n| yesterday's best (score centring w 0.25, no twin) | 0.644 / 0.624 / 0.640 | 0.603 |\n| twin w 1.0 + other members | 0.668 / 0.626 / 0.646 | **0.620** |\n| twin w 1.0, other members also score-centred | 0.670 / 0.625 / 0.646 | 0.619 |\n| twin w 0.5, other members also score-centred | 0.653 / 0.626 / 0.646 | 0.618 |\n| twin w 0.5, one member dropped | 0.655 / 0.624 / 0.648 | 0.614 |\n| twin member alone | 0.658 / 0.605 / 0.562 | 0.593 |\n\nThe LB order again follows the cut-3 column, but the LB gain over yesterday (+0.017) is far larger than the gain\non the cut-2/3 columns (+0.002 / +0.007) and closer to the full-prompt one (+0.024). So the small cuts rank well but\nunder-rate the twin, which fits the simulation: neither full groups nor small cuts alone is the right proxy. Until I\nhave the embedded check running, I rank settings by the mean over cuts.\n\nCode, tables and the dataset: https://www.kaggle.com/code/locdunhat/validating-test-time-centring-for-the-test-batch\n\nCaveat: the simulation has a purely additive group shift and content independent of the author, so the regret sizes\nare not this competition's. The direction (fold CV over-picks centring) agrees with my LB result above.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "GoPain",
+                  "id": 3897663,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/locdunhat",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3897663-kg.jpg?t=2026-10-14-14-18-45",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/locdunhat",
+                  "user_id": 3897663,
+                  "user_name": "locdunhat"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 2,
+                "total_votes": 2
+              }
+            },
+            "first_message_id": 3545275,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 753053,
+            "name": "Why grouped CV over-picks test-time centring, and a way to validate it against the test batch",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-10-27T01:15:30.411296800Z",
+            "total_messages": 1,
+            "total_votes": 2,
+            "url": "/competitions/name-that-llm/discussion/753053"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:23:44+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:23:44+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-10-27T16:40:19.676666700Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [
+    {
+      "slug": "name-that-llm",
+      "topic_id": 753053,
+      "message_id": 3545622,
+      "parent_message_id": null,
+      "author": "HALX2158",
+      "author_url": "/mizuno0522",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-10-27T16:40:19.677Z",
+      "raw_markdown": "One more LB data point for twins. In a part-two-based blend (0.638) with two LoRA members, each with a centred twin:\n- Removing both twins cost -0.017. That is the same size as your +0.017 gain.\n- Removing either twin alone cost only about -0.003 to -0.004.\n\nSo the twins largely substitute for each other. Once one centred view is in the blend, a second one adds little on the LB, even if CV says otherwise.",
+      "content_html": "<p>One more LB data point for twins. In a part-two-based blend (0.638) with two LoRA members, each with a centred twin:</p>\n<ul>\n<li>Removing both twins cost -0.017. That is the same size as your +0.017 gain.</li>\n<li>Removing either twin alone cost only about -0.003 to -0.004.</li>\n</ul>\n<p>So the twins largely substitute for each other. Once one centred view is in the blend, a second one adds little on the LB, even if CV says otherwise.</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:57:37+00:00",
+      "last_seen_at": "2026-11-16T16:23:44+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:23:44+00:00",
+      "remote_last_listed_at": "2026-11-16T16:23:44+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "HALX2158",
+          "tier": "CONTRIBUTOR",
+          "url": "/mizuno0522"
+        },
+        "content": "<p>One more LB data point for twins. In a part-two-based blend (0.638) with two LoRA members, each with a centred twin:</p>\n<ul>\n<li>Removing both twins cost -0.017. That is the same size as your +0.017 gain.</li>\n<li>Removing either twin alone cost only about -0.003 to -0.004.</li>\n</ul>\n<p>So the twins largely substitute for each other. Once one centred view is in the blend, a second one adds little on the LB, even if CV says otherwise.</p>",
+        "id": 3545622,
+        "isThankYou": false,
+        "postDate": "2026-10-27T16:40:19.677Z",
+        "raw": {
+          "author": {
+            "display_name": "HALX2158",
+            "id": 16294566,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+            "tier": "CONTRIBUTOR",
+            "url": "/mizuno0522"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 1098,
+          "content": "<p>One more LB data point for twins. In a part-two-based blend (0.638) with two LoRA members, each with a centred twin:</p>\n<ul>\n<li>Removing both twins cost -0.017. That is the same size as your +0.017 gain.</li>\n<li>Removing either twin alone cost only about -0.003 to -0.004.</li>\n</ul>\n<p>So the twins largely substitute for each other. Once one centred view is in the blend, a second one adds little on the LB, even if CV says otherwise.</p>",
+          "feedback_tracking_data": {},
+          "id": 3545622,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-27T16:40:19.677Z",
+          "raw_markdown": "One more LB data point for twins. In a part-two-based blend (0.638) with two LoRA members, each with a centred twin:\n- Removing both twins cost -0.017. That is the same size as your +0.017 gain.\n- Removing either twin alone cost only about -0.003 to -0.004.\n\nSo the twins largely substitute for each other. Once one centred view is in the blend, a second one adds little on the LB, even if CV says otherwise.",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "HALX2158",
+              "id": 16294566,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/mizuno0522",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+              "tier": "CONTRIBUTOR",
+              "url": "/mizuno0522",
+              "user_id": 16294566,
+              "user_name": "mizuno0522"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "One more LB data point for twins. In a part-two-based blend (0.638) with two LoRA members, each with a centred twin:\n- Removing both twins cost -0.017. That is the same size as your +0.017 gain.\n- Removing either twin alone cost only about -0.003 to -0.004.\n\nSo the twins largely substitute for each other. Once one centred view is in the blend, a second one adds little on the LB, even if CV says otherwise.",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    }
+  ],
+  "writeup": null
+}

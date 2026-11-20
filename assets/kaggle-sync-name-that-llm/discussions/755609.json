@@ -1,0 +1,211 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 755609,
+    "title": "Name That LLM: grouped validation, stylistic baselines and unsuccessful neural experiments",
+    "author": "cylovelife",
+    "author_url": "/leon0330",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-11-04T03:34:58.178905300Z",
+    "last_comment_post_date": "2026-11-04T03:34:58.180Z",
+    "comment_count": 0,
+    "votes": 1,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/755609",
+    "first_message_id": 3549706,
+    "first_seen_at": "2026-11-04T06:56:14+00:00",
+    "last_seen_at": "2026-11-16T16:36:02+00:00",
+    "detail_last_synced_at": "2026-11-16T16:23:17+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "3ef8181809fa476683f77cc7298a67c407ab00490aa34825ae692349c8c46dab",
+    "listing_metrics_hash": "08a3f0e9d031723a4649730d445a527264427162f124c0c72a6c18d2e0b8e839",
+    "detail_content_hash": "8bb1a977e843472abb332a85f4cb996e8669fde11ad2c6dcc33eaf1a7f392998",
+    "detail_last_checked_at": "2026-11-16T16:23:17+00:00",
+    "detail_next_check_at": "2026-11-23T16:23:17+00:00",
+    "detail_unchanged_count": 2,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 0,
+      "firstForumMessageId": null,
+      "id": 755609,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-11-04T03:34:58.180Z",
+      "postDate": "2026-11-04T03:34:58.178905300Z",
+      "raw": {
+        "id": 755609,
+        "last_comment_post_date": "2026-11-04T03:34:58.180Z",
+        "post_date": "2026-11-04T03:34:58.178905300Z",
+        "title": "Name That LLM: grouped validation, stylistic baselines and unsuccessful neural experiments",
+        "topic_url": "/competitions/name-that-llm/discussion/755609",
+        "votes": 1
+      },
+      "title": "Name That LLM: grouped validation, stylistic baselines and unsuccessful neural experiments",
+      "topicUrl": "/competitions/name-that-llm/discussion/755609",
+      "votes": 1
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "cylovelife",
+        "authorUserName": "leon0330",
+        "comments": [],
+        "expectedCommentCount": 0,
+        "firstMessage": {
+          "author": {
+            "displayName": "cylovelife",
+            "tier": "CONTRIBUTOR",
+            "url": "/leon0330"
+          },
+          "content": "<p>We are sharing our experiment code and technical retrospective:\n<a href=\"https://github.com/cylovelife/kaggle-winner\" target=\"_blank\">https://github.com/cylovelife/kaggle-winner</a></p>\n<p>The report covers prompt-grouped validation, text-only stylistic features, external-data admission, sparse baselines, neural experiments and runtime limits. Our recorded best Public score is 0.378; this is not a top solution. The local holdout remains sealed. The repository excludes competition data, model weights, predictions and credentials. Negative results and limitations are documented alongside improvements.</p>",
+          "id": 3549706,
+          "isThankYou": false,
+          "postDate": "2026-11-04T03:34:58.180Z",
+          "raw": {
+            "author": {
+              "display_name": "cylovelife",
+              "id": 37587660,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/37587660-kg.jpg?t=2026-10-28-06-37-07",
+              "tier": "CONTRIBUTOR",
+              "url": "/leon0330"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 4675,
+            "content": "<p>We are sharing our experiment code and technical retrospective:\n<a href=\"https://github.com/cylovelife/kaggle-winner\" target=\"_blank\">https://github.com/cylovelife/kaggle-winner</a></p>\n<p>The report covers prompt-grouped validation, text-only stylistic features, external-data admission, sparse baselines, neural experiments and runtime limits. Our recorded best Public score is 0.378; this is not a top solution. The local holdout remains sealed. The repository excludes competition data, model weights, predictions and credentials. Negative results and limitations are documented alongside improvements.</p>",
+            "feedback_tracking_data": {},
+            "id": 3549706,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-11-04T03:34:58.180Z",
+            "raw_markdown": "We are sharing our experiment code and technical retrospective:\nhttps://github.com/cylovelife/kaggle-winner\n\nThe report covers prompt-grouped validation, text-only stylistic features, external-data admission, sparse baselines, neural experiments and runtime limits. Our recorded best Public score is 0.378; this is not a top solution. The local holdout remains sealed. The repository excludes competition data, model weights, predictions and credentials. Negative results and limitations are documented alongside improvements.",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "cylovelife",
+                "id": 37587660,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/leon0330",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/37587660-kg.jpg?t=2026-10-28-06-37-07",
+                "tier": "CONTRIBUTOR",
+                "url": "/leon0330",
+                "user_id": 37587660,
+                "user_name": "leon0330"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 2,
+              "total_votes": 1
+            }
+          },
+          "rawMarkdown": "We are sharing our experiment code and technical retrospective:\nhttps://github.com/cylovelife/kaggle-winner\n\nThe report covers prompt-grouped validation, text-only stylistic features, external-data admission, sparse baselines, neural experiments and runtime limits. Our recorded best Public score is 0.378; this is not a top solution. The local holdout remains sealed. The repository excludes competition data, model weights, predictions and credentials. Negative results and limitations are documented alongside improvements.",
+          "replies": [],
+          "votes": {
+            "totalVotes": 1
+          }
+        },
+        "firstMessageId": 3549706,
+        "id": 755609,
+        "name": "Name That LLM: grouped validation, stylistic baselines and unsuccessful neural experiments",
+        "postDate": "2026-11-04T03:34:58.178905300Z",
+        "url": "/competitions/name-that-llm/discussion/755609"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>We are sharing our experiment code and technical retrospective:\n<a href=\"https://github.com/cylovelife/kaggle-winner\" target=\"_blank\">https://github.com/cylovelife/kaggle-winner</a></p>\n<p>The report covers prompt-grouped validation, text-only stylistic features, external-data admission, sparse baselines, neural experiments and runtime limits. Our recorded best Public score is 0.378; this is not a top solution. The local holdout remains sealed. The repository excludes competition data, model weights, predictions and credentials. Negative results and limitations are documented alongside improvements.</p>",
+              "id": 3549706,
+              "post_date": "2026-11-04T03:34:58.180Z",
+              "raw_markdown": "We are sharing our experiment code and technical retrospective:\nhttps://github.com/cylovelife/kaggle-winner\n\nThe report covers prompt-grouped validation, text-only stylistic features, external-data admission, sparse baselines, neural experiments and runtime limits. Our recorded best Public score is 0.378; this is not a top solution. The local holdout remains sealed. The repository excludes competition data, model weights, predictions and credentials. Negative results and limitations are documented alongside improvements.",
+              "votes": 1
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 37587660,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "37587660-kg.jpg?t=2026-10-28-06-37-07",
+            "author_user_display_name": "cylovelife",
+            "author_user_name": "leon0330",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "first_message": {
+              "author": {
+                "display_name": "cylovelife",
+                "id": 37587660,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/37587660-kg.jpg?t=2026-10-28-06-37-07",
+                "tier": "CONTRIBUTOR",
+                "url": "/leon0330"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 4675,
+              "content": "<p>We are sharing our experiment code and technical retrospective:\n<a href=\"https://github.com/cylovelife/kaggle-winner\" target=\"_blank\">https://github.com/cylovelife/kaggle-winner</a></p>\n<p>The report covers prompt-grouped validation, text-only stylistic features, external-data admission, sparse baselines, neural experiments and runtime limits. Our recorded best Public score is 0.378; this is not a top solution. The local holdout remains sealed. The repository excludes competition data, model weights, predictions and credentials. Negative results and limitations are documented alongside improvements.</p>",
+              "feedback_tracking_data": {},
+              "id": 3549706,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-04T03:34:58.180Z",
+              "raw_markdown": "We are sharing our experiment code and technical retrospective:\nhttps://github.com/cylovelife/kaggle-winner\n\nThe report covers prompt-grouped validation, text-only stylistic features, external-data admission, sparse baselines, neural experiments and runtime limits. Our recorded best Public score is 0.378; this is not a top solution. The local holdout remains sealed. The repository excludes competition data, model weights, predictions and credentials. Negative results and limitations are documented alongside improvements.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "cylovelife",
+                  "id": 37587660,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/leon0330",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/37587660-kg.jpg?t=2026-10-28-06-37-07",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/leon0330",
+                  "user_id": 37587660,
+                  "user_name": "leon0330"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 2,
+                "total_votes": 1
+              }
+            },
+            "first_message_id": 3549706,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 755609,
+            "name": "Name That LLM: grouped validation, stylistic baselines and unsuccessful neural experiments",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-11-04T03:34:58.178905300Z",
+            "total_votes": 1,
+            "url": "/competitions/name-that-llm/discussion/755609"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:23:17+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:23:17+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-11-04T03:34:58.180Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [],
+  "writeup": null
+}

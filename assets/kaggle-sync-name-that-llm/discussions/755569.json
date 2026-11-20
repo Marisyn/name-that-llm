@@ -1,0 +1,887 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 755569,
+    "title": "only 3 rows in the test data ",
+    "author": "Marie Victoire IPOUK",
+    "author_url": "/marydata",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-11-03T23:51:44.859684300Z",
+    "last_comment_post_date": "2026-11-18T23:46:46.123333300Z",
+    "comment_count": 3,
+    "votes": -1,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/755569",
+    "first_message_id": 3549652,
+    "first_seen_at": "2026-11-04T06:56:14+00:00",
+    "last_seen_at": "2026-11-19T12:45:20+00:00",
+    "detail_last_synced_at": "2026-11-19T00:33:03+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-19T12:45:20+00:00",
+    "remote_last_listed_at": "2026-11-19T12:45:20+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "7d61e33fb7602523e1724b21e0027f920e245de1af6dd9a031f0b999251d8d3b",
+    "listing_metrics_hash": "0eb635446470adac6a7f3a348995e0dbc84605127e97b571f74d3f2262540d5d",
+    "detail_content_hash": "c883b3870baef883e6d529001cab7f534efba1e07962bf38c7c5cf51a6866f97",
+    "detail_last_checked_at": "2026-11-19T00:33:03+00:00",
+    "detail_next_check_at": "2026-11-20T00:33:03+00:00",
+    "detail_unchanged_count": 0,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 3,
+      "firstForumMessageId": null,
+      "id": 755569,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-11-18T23:46:46.123333300Z",
+      "postDate": "2026-11-03T23:51:44.859684300Z",
+      "raw": {
+        "comment_count": 3,
+        "id": 755569,
+        "last_comment_post_date": "2026-11-18T23:46:46.123333300Z",
+        "post_date": "2026-11-03T23:51:44.859684300Z",
+        "title": "only 3 rows in the test data ",
+        "topic_url": "/competitions/name-that-llm/discussion/755569",
+        "votes": -1
+      },
+      "title": "only 3 rows in the test data ",
+      "topicUrl": "/competitions/name-that-llm/discussion/755569",
+      "votes": -1
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "Marie Victoire IPOUK",
+        "authorUserName": "marydata",
+        "comments": [
+          {
+            "author": {
+              "displayName": "somerandomguy",
+              "tier": "CONTRIBUTOR",
+              "url": "/stithpragya"
+            },
+            "content": "<p>Thats just the sample test.csv for your reference to check you script, you will get proper test.csv with ~4000 rows when you submit your solution.</p>",
+            "id": 3550034,
+            "isThankYou": false,
+            "postDate": "2026-11-04T17:40:06.650Z",
+            "raw": {
+              "author": {
+                "display_name": "somerandomguy",
+                "id": 22597865,
+                "progression_opt_out": true,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                "tier": "CONTRIBUTOR",
+                "url": "/stithpragya"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 12,
+              "content": "<p>Thats just the sample test.csv for your reference to check you script, you will get proper test.csv with ~4000 rows when you submit your solution.</p>",
+              "feedback_tracking_data": {},
+              "id": 3550034,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-04T17:40:06.650Z",
+              "raw_markdown": "Thats just the sample test.csv for your reference to check you script, you will get proper test.csv with ~4000 rows when you submit your solution.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "somerandomguy",
+                  "id": 22597865,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/stithpragya",
+                  "progression_opt_out": true,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/stithpragya",
+                  "user_id": 22597865,
+                  "user_name": "stithpragya"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "Thats just the sample test.csv for your reference to check you script, you will get proper test.csv with ~4000 rows when you submit your solution.",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          },
+          {
+            "author": {
+              "displayName": "Morsia Hinimdou",
+              "tier": "CONTRIBUTOR",
+              "url": "/morsiahinimdou"
+            },
+            "content": "<p>je pense que tu n'as pas bien lu la description de la compétition il y'aura en fait un donner cachée avec un nombre plus élevé que celui meme qui est utilisé pour l'entrainement pour évaluer le model </p>",
+            "id": 3549688,
+            "isThankYou": false,
+            "postDate": "2026-11-04T02:00:37.437Z",
+            "raw": {
+              "author": {
+                "display_name": "Morsia Hinimdou",
+                "id": 23375882,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/23375882-kg.jpeg?t=2026-08-23-16-29-29",
+                "tier": "CONTRIBUTOR",
+                "url": "/morsiahinimdou"
+              },
+              "author_type": "COMMENT",
+              "content": "<p>je pense que tu n'as pas bien lu la description de la compétition il y'aura en fait un donner cachée avec un nombre plus élevé que celui meme qui est utilisé pour l'entrainement pour évaluer le model </p>",
+              "feedback_tracking_data": {},
+              "id": 3549688,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-04T02:00:37.437Z",
+              "raw_markdown": "je pense que tu n'as pas bien lu la description de la compétition il y'aura en fait un donner cachée avec un nombre plus élevé que celui meme qui est utilisé pour l'entrainement pour évaluer le model ",
+              "replies": [
+                {
+                  "author": {
+                    "display_name": "Marie Victoire IPOUK",
+                    "id": 14122706,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/marydata"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 5142,
+                  "content": "<p>Yes, I know! But at our level, even for a simple 3-line test.csv file, that could correspond to a probability of 3/18, depending on the model.</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3556692,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-18T23:46:46.123Z",
+                  "raw_markdown": "Yes, I know! But at our level, even for a simple 3-line test.csv file, that could correspond to a probability of 3/18, depending on the model.",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Marie Victoire IPOUK",
+                      "id": 14122706,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/marydata",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/marydata",
+                      "user_id": 14122706,
+                      "user_name": "marydata"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Morsia Hinimdou",
+                  "id": 23375882,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/morsiahinimdou",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/23375882-kg.jpeg?t=2026-08-23-16-29-29",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/morsiahinimdou",
+                  "user_id": 23375882,
+                  "user_name": "morsiahinimdou"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "je pense que tu n'as pas bien lu la description de la compétition il y'aura en fait un donner cachée avec un nombre plus élevé que celui meme qui est utilisé pour l'entrainement pour évaluer le model ",
+            "replies": [
+              {
+                "author": {
+                  "displayName": "Marie Victoire IPOUK",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/marydata"
+                },
+                "content": "<p>Yes, I know! But at our level, even for a simple 3-line test.csv file, that could correspond to a probability of 3/18, depending on the model.</p>",
+                "id": 3556692,
+                "isThankYou": false,
+                "postDate": "2026-11-18T23:46:46.123Z",
+                "raw": {
+                  "author": {
+                    "display_name": "Marie Victoire IPOUK",
+                    "id": 14122706,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/marydata"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 5142,
+                  "content": "<p>Yes, I know! But at our level, even for a simple 3-line test.csv file, that could correspond to a probability of 3/18, depending on the model.</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3556692,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-18T23:46:46.123Z",
+                  "raw_markdown": "Yes, I know! But at our level, even for a simple 3-line test.csv file, that could correspond to a probability of 3/18, depending on the model.",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Marie Victoire IPOUK",
+                      "id": 14122706,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/marydata",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/marydata",
+                      "user_id": 14122706,
+                      "user_name": "marydata"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                },
+                "rawMarkdown": "Yes, I know! But at our level, even for a simple 3-line test.csv file, that could correspond to a probability of 3/18, depending on the model.",
+                "replies": [],
+                "votes": {
+                  "totalVotes": 0
+                }
+              }
+            ],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "expectedCommentCount": 3,
+        "firstMessage": {
+          "author": {
+            "displayName": "Marie Victoire IPOUK",
+            "tier": "CONTRIBUTOR",
+            "url": "/marydata"
+          },
+          "content": "<p>Only 3 rows for the test and we have 18 LLM. It's look like very easy , say like that </p>",
+          "id": 3549652,
+          "isThankYou": false,
+          "postDate": "2026-11-03T23:51:44.860Z",
+          "raw": {
+            "author": {
+              "display_name": "Marie Victoire IPOUK",
+              "id": 14122706,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "CONTRIBUTOR",
+              "url": "/marydata"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 5142,
+            "content": "<p>Only 3 rows for the test and we have 18 LLM. It's look like very easy , say like that </p>",
+            "feedback_tracking_data": {},
+            "id": 3549652,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-11-03T23:51:44.860Z",
+            "raw_markdown": "Only 3 rows for the test and we have 18 LLM. It's look like very easy , say like that ",
+            "reactions": [
+              {
+                "emoji": "FUNNY",
+                "featured_user_names": [
+                  "morsiahinimdou"
+                ],
+                "user_count": 1
+              }
+            ],
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "Marie Victoire IPOUK",
+                "id": 14122706,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/marydata",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/marydata",
+                "user_id": 14122706,
+                "user_name": "marydata"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 2
+            }
+          },
+          "rawMarkdown": "Only 3 rows for the test and we have 18 LLM. It's look like very easy , say like that ",
+          "replies": [],
+          "votes": {
+            "totalVotes": 0
+          }
+        },
+        "firstMessageId": 3549652,
+        "id": 755569,
+        "name": "only 3 rows in the test data ",
+        "postDate": "2026-11-03T23:51:44.859684300Z",
+        "url": "/competitions/name-that-llm/discussion/755569"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>Only 3 rows for the test and we have 18 LLM. It's look like very easy , say like that </p>",
+              "id": 3549652,
+              "post_date": "2026-11-03T23:51:44.860Z",
+              "raw_markdown": "Only 3 rows for the test and we have 18 LLM. It's look like very easy , say like that "
+            },
+            {
+              "content": "<p>je pense que tu n'as pas bien lu la description de la compétition il y'aura en fait un donner cachée avec un nombre plus élevé que celui meme qui est utilisé pour l'entrainement pour évaluer le model </p>",
+              "id": 3549688,
+              "post_date": "2026-11-04T02:00:37.437Z",
+              "raw_markdown": "je pense que tu n'as pas bien lu la description de la compétition il y'aura en fait un donner cachée avec un nombre plus élevé que celui meme qui est utilisé pour l'entrainement pour évaluer le model ",
+              "replies": [
+                {
+                  "content": "<p>Yes, I know! But at our level, even for a simple 3-line test.csv file, that could correspond to a probability of 3/18, depending on the model.</p>",
+                  "id": 3556692,
+                  "post_date": "2026-11-18T23:46:46.123Z",
+                  "raw_markdown": "Yes, I know! But at our level, even for a simple 3-line test.csv file, that could correspond to a probability of 3/18, depending on the model."
+                }
+              ]
+            },
+            {
+              "content": "<p>Thats just the sample test.csv for your reference to check you script, you will get proper test.csv with ~4000 rows when you submit your solution.</p>",
+              "id": 3550034,
+              "post_date": "2026-11-04T17:40:06.650Z",
+              "raw_markdown": "Thats just the sample test.csv for your reference to check you script, you will get proper test.csv with ~4000 rows when you submit your solution."
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 14122706,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "default-thumb.png",
+            "author_user_display_name": "Marie Victoire IPOUK",
+            "author_user_name": "marydata",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "comments": [
+              {
+                "author": {
+                  "display_name": "somerandomguy",
+                  "id": 22597865,
+                  "progression_opt_out": true,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/stithpragya"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 12,
+                "content": "<p>Thats just the sample test.csv for your reference to check you script, you will get proper test.csv with ~4000 rows when you submit your solution.</p>",
+                "feedback_tracking_data": {},
+                "id": 3550034,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-11-04T17:40:06.650Z",
+                "raw_markdown": "Thats just the sample test.csv for your reference to check you script, you will get proper test.csv with ~4000 rows when you submit your solution.",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "somerandomguy",
+                    "id": 22597865,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/stithpragya",
+                    "progression_opt_out": true,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/stithpragya",
+                    "user_id": 22597865,
+                    "user_name": "stithpragya"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              },
+              {
+                "author": {
+                  "display_name": "Morsia Hinimdou",
+                  "id": 23375882,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/23375882-kg.jpeg?t=2026-08-23-16-29-29",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/morsiahinimdou"
+                },
+                "author_type": "COMMENT",
+                "content": "<p>je pense que tu n'as pas bien lu la description de la compétition il y'aura en fait un donner cachée avec un nombre plus élevé que celui meme qui est utilisé pour l'entrainement pour évaluer le model </p>",
+                "feedback_tracking_data": {},
+                "id": 3549688,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-11-04T02:00:37.437Z",
+                "raw_markdown": "je pense que tu n'as pas bien lu la description de la compétition il y'aura en fait un donner cachée avec un nombre plus élevé que celui meme qui est utilisé pour l'entrainement pour évaluer le model ",
+                "replies": [
+                  {
+                    "author": {
+                      "display_name": "Marie Victoire IPOUK",
+                      "id": 14122706,
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/marydata"
+                    },
+                    "author_type": "TOPIC",
+                    "competition_ranking": 5142,
+                    "content": "<p>Yes, I know! But at our level, even for a simple 3-line test.csv file, that could correspond to a probability of 3/18, depending on the model.</p>",
+                    "feedback_tracking_data": {},
+                    "id": 3556692,
+                    "is_thank_you": false,
+                    "kernel_version": 0,
+                    "parent": {},
+                    "post_date": "2026-11-18T23:46:46.123Z",
+                    "raw_markdown": "Yes, I know! But at our level, even for a simple 3-line test.csv file, that could correspond to a probability of 3/18, depending on the model.",
+                    "team_up_info": {
+                      "intro": "",
+                      "team_leader": {
+                        "display_name": "Marie Victoire IPOUK",
+                        "id": 14122706,
+                        "performance_tier": "CONTRIBUTOR",
+                        "profile_url": "/marydata",
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                        "tier": "CONTRIBUTOR",
+                        "url": "/marydata",
+                        "user_id": 14122706,
+                        "user_name": "marydata"
+                      }
+                    },
+                    "votes": {
+                      "can_upvote": true
+                    }
+                  }
+                ],
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "Morsia Hinimdou",
+                    "id": 23375882,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/morsiahinimdou",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/23375882-kg.jpeg?t=2026-08-23-16-29-29",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/morsiahinimdou",
+                    "user_id": 23375882,
+                    "user_name": "morsiahinimdou"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              }
+            ],
+            "first_message": {
+              "author": {
+                "display_name": "Marie Victoire IPOUK",
+                "id": 14122706,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/marydata"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 5142,
+              "content": "<p>Only 3 rows for the test and we have 18 LLM. It's look like very easy , say like that </p>",
+              "feedback_tracking_data": {},
+              "id": 3549652,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-03T23:51:44.860Z",
+              "raw_markdown": "Only 3 rows for the test and we have 18 LLM. It's look like very easy , say like that ",
+              "reactions": [
+                {
+                  "emoji": "FUNNY",
+                  "featured_user_names": [
+                    "morsiahinimdou"
+                  ],
+                  "user_count": 1
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Marie Victoire IPOUK",
+                  "id": 14122706,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/marydata",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/marydata",
+                  "user_id": 14122706,
+                  "user_name": "marydata"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 2
+              }
+            },
+            "first_message_id": 3549652,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 755569,
+            "name": "only 3 rows in the test data ",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-11-03T23:51:44.859684300Z",
+            "total_messages": 3,
+            "url": "/competitions/name-that-llm/discussion/755569"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-19T00:33:03+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-19T00:33:03+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-11-18T23:46:46.123333300Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [
+    {
+      "slug": "name-that-llm",
+      "topic_id": 755569,
+      "message_id": 3549688,
+      "parent_message_id": null,
+      "author": "Morsia Hinimdou",
+      "author_url": "/morsiahinimdou",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-04T02:00:37.437Z",
+      "raw_markdown": "je pense que tu n'as pas bien lu la description de la compétition il y'aura en fait un donner cachée avec un nombre plus élevé que celui meme qui est utilisé pour l'entrainement pour évaluer le model ",
+      "content_html": "<p>je pense que tu n'as pas bien lu la description de la compétition il y'aura en fait un donner cachée avec un nombre plus élevé que celui meme qui est utilisé pour l'entrainement pour évaluer le model </p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:58:22+00:00",
+      "last_seen_at": "2026-11-19T00:33:03+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-19T00:33:03+00:00",
+      "remote_last_listed_at": "2026-11-19T00:33:03+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Morsia Hinimdou",
+          "tier": "CONTRIBUTOR",
+          "url": "/morsiahinimdou"
+        },
+        "content": "<p>je pense que tu n'as pas bien lu la description de la compétition il y'aura en fait un donner cachée avec un nombre plus élevé que celui meme qui est utilisé pour l'entrainement pour évaluer le model </p>",
+        "id": 3549688,
+        "isThankYou": false,
+        "postDate": "2026-11-04T02:00:37.437Z",
+        "raw": {
+          "author": {
+            "display_name": "Morsia Hinimdou",
+            "id": 23375882,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/23375882-kg.jpeg?t=2026-08-23-16-29-29",
+            "tier": "CONTRIBUTOR",
+            "url": "/morsiahinimdou"
+          },
+          "author_type": "COMMENT",
+          "content": "<p>je pense que tu n'as pas bien lu la description de la compétition il y'aura en fait un donner cachée avec un nombre plus élevé que celui meme qui est utilisé pour l'entrainement pour évaluer le model </p>",
+          "feedback_tracking_data": {},
+          "id": 3549688,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-04T02:00:37.437Z",
+          "raw_markdown": "je pense que tu n'as pas bien lu la description de la compétition il y'aura en fait un donner cachée avec un nombre plus élevé que celui meme qui est utilisé pour l'entrainement pour évaluer le model ",
+          "replies": [
+            {
+              "author": {
+                "display_name": "Marie Victoire IPOUK",
+                "id": 14122706,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/marydata"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 5142,
+              "content": "<p>Yes, I know! But at our level, even for a simple 3-line test.csv file, that could correspond to a probability of 3/18, depending on the model.</p>",
+              "feedback_tracking_data": {},
+              "id": 3556692,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-18T23:46:46.123Z",
+              "raw_markdown": "Yes, I know! But at our level, even for a simple 3-line test.csv file, that could correspond to a probability of 3/18, depending on the model.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Marie Victoire IPOUK",
+                  "id": 14122706,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/marydata",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/marydata",
+                  "user_id": 14122706,
+                  "user_name": "marydata"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            }
+          ],
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Morsia Hinimdou",
+              "id": 23375882,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/morsiahinimdou",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/23375882-kg.jpeg?t=2026-08-23-16-29-29",
+              "tier": "CONTRIBUTOR",
+              "url": "/morsiahinimdou",
+              "user_id": 23375882,
+              "user_name": "morsiahinimdou"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "je pense que tu n'as pas bien lu la description de la compétition il y'aura en fait un donner cachée avec un nombre plus élevé que celui meme qui est utilisé pour l'entrainement pour évaluer le model ",
+        "replies": [
+          {
+            "author": {
+              "displayName": "Marie Victoire IPOUK",
+              "tier": "CONTRIBUTOR",
+              "url": "/marydata"
+            },
+            "content": "<p>Yes, I know! But at our level, even for a simple 3-line test.csv file, that could correspond to a probability of 3/18, depending on the model.</p>",
+            "id": 3556692,
+            "isThankYou": false,
+            "postDate": "2026-11-18T23:46:46.123Z",
+            "raw": {
+              "author": {
+                "display_name": "Marie Victoire IPOUK",
+                "id": 14122706,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/marydata"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 5142,
+              "content": "<p>Yes, I know! But at our level, even for a simple 3-line test.csv file, that could correspond to a probability of 3/18, depending on the model.</p>",
+              "feedback_tracking_data": {},
+              "id": 3556692,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-18T23:46:46.123Z",
+              "raw_markdown": "Yes, I know! But at our level, even for a simple 3-line test.csv file, that could correspond to a probability of 3/18, depending on the model.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Marie Victoire IPOUK",
+                  "id": 14122706,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/marydata",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/marydata",
+                  "user_id": 14122706,
+                  "user_name": "marydata"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "Yes, I know! But at our level, even for a simple 3-line test.csv file, that could correspond to a probability of 3/18, depending on the model.",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 755569,
+      "message_id": 3550034,
+      "parent_message_id": null,
+      "author": "somerandomguy",
+      "author_url": "/stithpragya",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-04T17:40:06.650Z",
+      "raw_markdown": "Thats just the sample test.csv for your reference to check you script, you will get proper test.csv with ~4000 rows when you submit your solution.",
+      "content_html": "<p>Thats just the sample test.csv for your reference to check you script, you will get proper test.csv with ~4000 rows when you submit your solution.</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-09T03:54:56+00:00",
+      "last_seen_at": "2026-11-19T00:33:03+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-19T00:33:03+00:00",
+      "remote_last_listed_at": "2026-11-19T00:33:03+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "somerandomguy",
+          "tier": "CONTRIBUTOR",
+          "url": "/stithpragya"
+        },
+        "content": "<p>Thats just the sample test.csv for your reference to check you script, you will get proper test.csv with ~4000 rows when you submit your solution.</p>",
+        "id": 3550034,
+        "isThankYou": false,
+        "postDate": "2026-11-04T17:40:06.650Z",
+        "raw": {
+          "author": {
+            "display_name": "somerandomguy",
+            "id": 22597865,
+            "progression_opt_out": true,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+            "tier": "CONTRIBUTOR",
+            "url": "/stithpragya"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 12,
+          "content": "<p>Thats just the sample test.csv for your reference to check you script, you will get proper test.csv with ~4000 rows when you submit your solution.</p>",
+          "feedback_tracking_data": {},
+          "id": 3550034,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-04T17:40:06.650Z",
+          "raw_markdown": "Thats just the sample test.csv for your reference to check you script, you will get proper test.csv with ~4000 rows when you submit your solution.",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "somerandomguy",
+              "id": 22597865,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/stithpragya",
+              "progression_opt_out": true,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+              "tier": "CONTRIBUTOR",
+              "url": "/stithpragya",
+              "user_id": 22597865,
+              "user_name": "stithpragya"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "Thats just the sample test.csv for your reference to check you script, you will get proper test.csv with ~4000 rows when you submit your solution.",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 755569,
+      "message_id": 3556692,
+      "parent_message_id": 3549688,
+      "author": "Marie Victoire IPOUK",
+      "author_url": "/marydata",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-18T23:46:46.123Z",
+      "raw_markdown": "Yes, I know! But at our level, even for a simple 3-line test.csv file, that could correspond to a probability of 3/18, depending on the model.",
+      "content_html": "<p>Yes, I know! But at our level, even for a simple 3-line test.csv file, that could correspond to a probability of 3/18, depending on the model.</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 1,
+      "first_seen_at": "2026-11-19T00:33:03+00:00",
+      "last_seen_at": "2026-11-19T00:33:03+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-19T00:33:03+00:00",
+      "remote_last_listed_at": "2026-11-19T00:33:03+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Marie Victoire IPOUK",
+          "tier": "CONTRIBUTOR",
+          "url": "/marydata"
+        },
+        "content": "<p>Yes, I know! But at our level, even for a simple 3-line test.csv file, that could correspond to a probability of 3/18, depending on the model.</p>",
+        "id": 3556692,
+        "isThankYou": false,
+        "postDate": "2026-11-18T23:46:46.123Z",
+        "raw": {
+          "author": {
+            "display_name": "Marie Victoire IPOUK",
+            "id": 14122706,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+            "tier": "CONTRIBUTOR",
+            "url": "/marydata"
+          },
+          "author_type": "TOPIC",
+          "competition_ranking": 5142,
+          "content": "<p>Yes, I know! But at our level, even for a simple 3-line test.csv file, that could correspond to a probability of 3/18, depending on the model.</p>",
+          "feedback_tracking_data": {},
+          "id": 3556692,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-18T23:46:46.123Z",
+          "raw_markdown": "Yes, I know! But at our level, even for a simple 3-line test.csv file, that could correspond to a probability of 3/18, depending on the model.",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Marie Victoire IPOUK",
+              "id": 14122706,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/marydata",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "CONTRIBUTOR",
+              "url": "/marydata",
+              "user_id": 14122706,
+              "user_name": "marydata"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "Yes, I know! But at our level, even for a simple 3-line test.csv file, that could correspond to a probability of 3/18, depending on the model.",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    }
+  ],
+  "writeup": null
+}

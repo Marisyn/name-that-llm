@@ -1,0 +1,206 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 750675,
+    "title": "Are we discarding model fingerprints? A direction involving Transformer representations, dimensionality reduction, and nonlinear classificatio",
+    "author": "波力海苔",
+    "author_url": "/blht2026",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-10-19T13:41:16.795339500Z",
+    "last_comment_post_date": "2026-10-19T13:41:16.796666700Z",
+    "comment_count": 0,
+    "votes": 0,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/750675",
+    "first_message_id": 3541089,
+    "first_seen_at": "2026-11-04T06:56:17+00:00",
+    "last_seen_at": "2026-11-16T16:36:05+00:00",
+    "detail_last_synced_at": "2026-11-16T16:24:22+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "99b0ed80f18a4483f53049e84050ed20d51c3f300fd47792201d6178947488e7",
+    "listing_metrics_hash": "1d7b01d39d998f5caf0eb285f7806c0632a1cb146aadc79a9504e2481370b229",
+    "detail_content_hash": "dd7856dc18411d00968ebd4e5b49c7d836c8d4c358ff2208307934de234b2fc5",
+    "detail_last_checked_at": "2026-11-16T16:24:22+00:00",
+    "detail_next_check_at": "2026-11-19T16:24:22+00:00",
+    "detail_unchanged_count": 1,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 0,
+      "firstForumMessageId": null,
+      "id": 750675,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-10-19T13:41:16.796666700Z",
+      "postDate": "2026-10-19T13:41:16.795339500Z",
+      "raw": {
+        "id": 750675,
+        "last_comment_post_date": "2026-10-19T13:41:16.796666700Z",
+        "post_date": "2026-10-19T13:41:16.795339500Z",
+        "title": "Are we discarding model fingerprints? A direction involving Transformer representations, dimensionality reduction, and nonlinear classificatio",
+        "topic_url": "/competitions/name-that-llm/discussion/750675"
+      },
+      "title": "Are we discarding model fingerprints? A direction involving Transformer representations, dimensionality reduction, and nonlinear classificatio",
+      "topicUrl": "/competitions/name-that-llm/discussion/750675",
+      "votes": 0
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "波力海苔",
+        "authorUserName": "blht2026",
+        "comments": [],
+        "expectedCommentCount": 0,
+        "firstMessage": {
+          "author": {
+            "displayName": "波力海苔",
+            "tier": "CONTRIBUTOR",
+            "url": "/blht2026"
+          },
+          "content": "<p>The recent two-stage LoRA solutions are very inspiring. After studying these approaches, we started looking at a question:\nCould Transformer representations contain model-identity information that the current pooling strategies and linear classification heads do not fully exploit?\nWe are investigating the following pipeline:\nResponse text → multi-layer Transformer representations → stylometric features and data engineering → nonlinear 18-class classification → ensemble with LoRA branches.\nThe idea is not simply to replace a linear head with LightGBM. It is to distinguish three signals that may be entangled in the embeddings: response topic, generating-model identity, and collection source or generation settings.\nA few questions seem particularly interesting.</p>\n<ol>\n<li>High-variance directions may not be the most useful directions\nMulti-layer embeddings often require dimensionality reduction. But if topic differences dominate the variance while model fingerprints occupy weaker directions, standard PCA could preserve topic information while discarding useful classification signals.\nWe are considering comparisons between regularized linear heads, classification after PCA, supervised projections, and representations constructed from differences between responses to the same prompt. The interesting question is: can same-prompt responses help identify directions that emphasize model identity rather than content?</li>\n<li>Within-prompt centering may also remove useful identity information\nCentering is often interpreted as removing topic information. However, the group mean also depends on which models are represented and how frequently they appear.\nIf a topic cluster contains only a few responses, or is dominated by one model family, subtracting its mean may also alter the stylistic signal. Training with same-prompt triplets and performing inference with estimated clusters of varying sizes introduces another potential mismatch.\nWe would like to compare absolute representations, relative representations, and combinations controlled by cluster reliability.</li>\n<li>Tree models may be more useful for learning when to trust each source of evidence\nTraining trees directly on tens of thousands of embedding dimensions may not be the most effective approach. An alternative is to combine:</li>\n</ol>\n<ul>\n<li>class scores from different depths or backbones;</li>\n<li>branch disagreement, predictive entropy, and top-two margins;</li>\n<li>punctuation, function-word, and sentence-length features;</li>\n<li>topic-cluster size and consistency;\ninto a compact table, allowing CatBoost, LightGBM, or a small MLP to learn conditional relationships.\nThe question is: can these nonlinear relationships consistently correct errors made by linear heads, rather than merely recalibrating information the heads already capture?</li>\n</ul>\n<ol>\n<li>Data engineering may determine the ceiling of this approach\nPublic data provides more responses, but differences in providers, thinking settings, and model snapshots may introduce source-specific signals that classifiers can easily exploit.\nWe therefore want to examine source weighting, generation-setting matching, and prompt deduplication, using prompt-grouped validation and source-held-out stress tests to distinguish model-identity gains from collection artifacts.\nWe are organizing these ideas into controlled comparisons: identical folds and post-processing, evaluating linear classification, nonlinear classification, and their net corrections over a strong LoRA baseline. All supervised dimensionality reduction and upstream fine-tuning must remain within the corresponding training folds.\nHas anyone observed that the directions best separating topics within a Transformer representation differ from those best separating generating models? Related experiments—including negative results with dimensionality reduction, centering, or nonlinear classifiers—would be very interesting to discuss.</li>\n</ol>",
+          "id": 3541089,
+          "isThankYou": false,
+          "postDate": "2026-10-19T13:41:16.797Z",
+          "raw": {
+            "author": {
+              "display_name": "波力海苔",
+              "id": 33211350,
+              "progression_opt_out": true,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "CONTRIBUTOR",
+              "url": "/blht2026"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 3181,
+            "content": "<p>The recent two-stage LoRA solutions are very inspiring. After studying these approaches, we started looking at a question:\nCould Transformer representations contain model-identity information that the current pooling strategies and linear classification heads do not fully exploit?\nWe are investigating the following pipeline:\nResponse text → multi-layer Transformer representations → stylometric features and data engineering → nonlinear 18-class classification → ensemble with LoRA branches.\nThe idea is not simply to replace a linear head with LightGBM. It is to distinguish three signals that may be entangled in the embeddings: response topic, generating-model identity, and collection source or generation settings.\nA few questions seem particularly interesting.</p>\n<ol>\n<li>High-variance directions may not be the most useful directions\nMulti-layer embeddings often require dimensionality reduction. But if topic differences dominate the variance while model fingerprints occupy weaker directions, standard PCA could preserve topic information while discarding useful classification signals.\nWe are considering comparisons between regularized linear heads, classification after PCA, supervised projections, and representations constructed from differences between responses to the same prompt. The interesting question is: can same-prompt responses help identify directions that emphasize model identity rather than content?</li>\n<li>Within-prompt centering may also remove useful identity information\nCentering is often interpreted as removing topic information. However, the group mean also depends on which models are represented and how frequently they appear.\nIf a topic cluster contains only a few responses, or is dominated by one model family, subtracting its mean may also alter the stylistic signal. Training with same-prompt triplets and performing inference with estimated clusters of varying sizes introduces another potential mismatch.\nWe would like to compare absolute representations, relative representations, and combinations controlled by cluster reliability.</li>\n<li>Tree models may be more useful for learning when to trust each source of evidence\nTraining trees directly on tens of thousands of embedding dimensions may not be the most effective approach. An alternative is to combine:</li>\n</ol>\n<ul>\n<li>class scores from different depths or backbones;</li>\n<li>branch disagreement, predictive entropy, and top-two margins;</li>\n<li>punctuation, function-word, and sentence-length features;</li>\n<li>topic-cluster size and consistency;\ninto a compact table, allowing CatBoost, LightGBM, or a small MLP to learn conditional relationships.\nThe question is: can these nonlinear relationships consistently correct errors made by linear heads, rather than merely recalibrating information the heads already capture?</li>\n</ul>\n<ol>\n<li>Data engineering may determine the ceiling of this approach\nPublic data provides more responses, but differences in providers, thinking settings, and model snapshots may introduce source-specific signals that classifiers can easily exploit.\nWe therefore want to examine source weighting, generation-setting matching, and prompt deduplication, using prompt-grouped validation and source-held-out stress tests to distinguish model-identity gains from collection artifacts.\nWe are organizing these ideas into controlled comparisons: identical folds and post-processing, evaluating linear classification, nonlinear classification, and their net corrections over a strong LoRA baseline. All supervised dimensionality reduction and upstream fine-tuning must remain within the corresponding training folds.\nHas anyone observed that the directions best separating topics within a Transformer representation differ from those best separating generating models? Related experiments—including negative results with dimensionality reduction, centering, or nonlinear classifiers—would be very interesting to discuss.</li>\n</ol>",
+            "feedback_tracking_data": {},
+            "id": 3541089,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-10-19T13:41:16.797Z",
+            "raw_markdown": "The recent two-stage LoRA solutions are very inspiring. After studying these approaches, we started looking at a question:\nCould Transformer representations contain model-identity information that the current pooling strategies and linear classification heads do not fully exploit?\nWe are investigating the following pipeline:\nResponse text → multi-layer Transformer representations → stylometric features and data engineering → nonlinear 18-class classification → ensemble with LoRA branches.\nThe idea is not simply to replace a linear head with LightGBM. It is to distinguish three signals that may be entangled in the embeddings: response topic, generating-model identity, and collection source or generation settings.\nA few questions seem particularly interesting.\n1. High-variance directions may not be the most useful directions\nMulti-layer embeddings often require dimensionality reduction. But if topic differences dominate the variance while model fingerprints occupy weaker directions, standard PCA could preserve topic information while discarding useful classification signals.\nWe are considering comparisons between regularized linear heads, classification after PCA, supervised projections, and representations constructed from differences between responses to the same prompt. The interesting question is: can same-prompt responses help identify directions that emphasize model identity rather than content?\n2. Within-prompt centering may also remove useful identity information\nCentering is often interpreted as removing topic information. However, the group mean also depends on which models are represented and how frequently they appear.\nIf a topic cluster contains only a few responses, or is dominated by one model family, subtracting its mean may also alter the stylistic signal. Training with same-prompt triplets and performing inference with estimated clusters of varying sizes introduces another potential mismatch.\nWe would like to compare absolute representations, relative representations, and combinations controlled by cluster reliability.\n3. Tree models may be more useful for learning when to trust each source of evidence\nTraining trees directly on tens of thousands of embedding dimensions may not be the most effective approach. An alternative is to combine:\n- class scores from different depths or backbones;\n- branch disagreement, predictive entropy, and top-two margins;\n- punctuation, function-word, and sentence-length features;\n- topic-cluster size and consistency;\ninto a compact table, allowing CatBoost, LightGBM, or a small MLP to learn conditional relationships.\nThe question is: can these nonlinear relationships consistently correct errors made by linear heads, rather than merely recalibrating information the heads already capture?\n4. Data engineering may determine the ceiling of this approach\nPublic data provides more responses, but differences in providers, thinking settings, and model snapshots may introduce source-specific signals that classifiers can easily exploit.\nWe therefore want to examine source weighting, generation-setting matching, and prompt deduplication, using prompt-grouped validation and source-held-out stress tests to distinguish model-identity gains from collection artifacts.\nWe are organizing these ideas into controlled comparisons: identical folds and post-processing, evaluating linear classification, nonlinear classification, and their net corrections over a strong LoRA baseline. All supervised dimensionality reduction and upstream fine-tuning must remain within the corresponding training folds.\nHas anyone observed that the directions best separating topics within a Transformer representation differ from those best separating generating models? Related experiments—including negative results with dimensionality reduction, centering, or nonlinear classifiers—would be very interesting to discuss.",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "波力海苔",
+                "id": 33211350,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/blht2026",
+                "progression_opt_out": true,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/blht2026",
+                "user_id": 33211350,
+                "user_name": "blht2026"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 1
+            }
+          },
+          "rawMarkdown": "The recent two-stage LoRA solutions are very inspiring. After studying these approaches, we started looking at a question:\nCould Transformer representations contain model-identity information that the current pooling strategies and linear classification heads do not fully exploit?\nWe are investigating the following pipeline:\nResponse text → multi-layer Transformer representations → stylometric features and data engineering → nonlinear 18-class classification → ensemble with LoRA branches.\nThe idea is not simply to replace a linear head with LightGBM. It is to distinguish three signals that may be entangled in the embeddings: response topic, generating-model identity, and collection source or generation settings.\nA few questions seem particularly interesting.\n1. High-variance directions may not be the most useful directions\nMulti-layer embeddings often require dimensionality reduction. But if topic differences dominate the variance while model fingerprints occupy weaker directions, standard PCA could preserve topic information while discarding useful classification signals.\nWe are considering comparisons between regularized linear heads, classification after PCA, supervised projections, and representations constructed from differences between responses to the same prompt. The interesting question is: can same-prompt responses help identify directions that emphasize model identity rather than content?\n2. Within-prompt centering may also remove useful identity information\nCentering is often interpreted as removing topic information. However, the group mean also depends on which models are represented and how frequently they appear.\nIf a topic cluster contains only a few responses, or is dominated by one model family, subtracting its mean may also alter the stylistic signal. Training with same-prompt triplets and performing inference with estimated clusters of varying sizes introduces another potential mismatch.\nWe would like to compare absolute representations, relative representations, and combinations controlled by cluster reliability.\n3. Tree models may be more useful for learning when to trust each source of evidence\nTraining trees directly on tens of thousands of embedding dimensions may not be the most effective approach. An alternative is to combine:\n- class scores from different depths or backbones;\n- branch disagreement, predictive entropy, and top-two margins;\n- punctuation, function-word, and sentence-length features;\n- topic-cluster size and consistency;\ninto a compact table, allowing CatBoost, LightGBM, or a small MLP to learn conditional relationships.\nThe question is: can these nonlinear relationships consistently correct errors made by linear heads, rather than merely recalibrating information the heads already capture?\n4. Data engineering may determine the ceiling of this approach\nPublic data provides more responses, but differences in providers, thinking settings, and model snapshots may introduce source-specific signals that classifiers can easily exploit.\nWe therefore want to examine source weighting, generation-setting matching, and prompt deduplication, using prompt-grouped validation and source-held-out stress tests to distinguish model-identity gains from collection artifacts.\nWe are organizing these ideas into controlled comparisons: identical folds and post-processing, evaluating linear classification, nonlinear classification, and their net corrections over a strong LoRA baseline. All supervised dimensionality reduction and upstream fine-tuning must remain within the corresponding training folds.\nHas anyone observed that the directions best separating topics within a Transformer representation differ from those best separating generating models? Related experiments—including negative results with dimensionality reduction, centering, or nonlinear classifiers—would be very interesting to discuss.",
+          "replies": [],
+          "votes": {
+            "totalVotes": 0
+          }
+        },
+        "firstMessageId": 3541089,
+        "id": 750675,
+        "name": "Are we discarding model fingerprints? A direction involving Transformer representations, dimensionality reduction, and nonlinear classificatio",
+        "postDate": "2026-10-19T13:41:16.795339500Z",
+        "url": "/competitions/name-that-llm/discussion/750675"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>The recent two-stage LoRA solutions are very inspiring. After studying these approaches, we started looking at a question:\nCould Transformer representations contain model-identity information that the current pooling strategies and linear classification heads do not fully exploit?\nWe are investigating the following pipeline:\nResponse text → multi-layer Transformer representations → stylometric features and data engineering → nonlinear 18-class classification → ensemble with LoRA branches.\nThe idea is not simply to replace a linear head with LightGBM. It is to distinguish three signals that may be entangled in the embeddings: response topic, generating-model identity, and collection source or generation settings.\nA few questions seem particularly interesting.</p>\n<ol>\n<li>High-variance directions may not be the most useful directions\nMulti-layer embeddings often require dimensionality reduction. But if topic differences dominate the variance while model fingerprints occupy weaker directions, standard PCA could preserve topic information while discarding useful classification signals.\nWe are considering comparisons between regularized linear heads, classification after PCA, supervised projections, and representations constructed from differences between responses to the same prompt. The interesting question is: can same-prompt responses help identify directions that emphasize model identity rather than content?</li>\n<li>Within-prompt centering may also remove useful identity information\nCentering is often interpreted as removing topic information. However, the group mean also depends on which models are represented and how frequently they appear.\nIf a topic cluster contains only a few responses, or is dominated by one model family, subtracting its mean may also alter the stylistic signal. Training with same-prompt triplets and performing inference with estimated clusters of varying sizes introduces another potential mismatch.\nWe would like to compare absolute representations, relative representations, and combinations controlled by cluster reliability.</li>\n<li>Tree models may be more useful for learning when to trust each source of evidence\nTraining trees directly on tens of thousands of embedding dimensions may not be the most effective approach. An alternative is to combine:</li>\n</ol>\n<ul>\n<li>class scores from different depths or backbones;</li>\n<li>branch disagreement, predictive entropy, and top-two margins;</li>\n<li>punctuation, function-word, and sentence-length features;</li>\n<li>topic-cluster size and consistency;\ninto a compact table, allowing CatBoost, LightGBM, or a small MLP to learn conditional relationships.\nThe question is: can these nonlinear relationships consistently correct errors made by linear heads, rather than merely recalibrating information the heads already capture?</li>\n</ul>\n<ol>\n<li>Data engineering may determine the ceiling of this approach\nPublic data provides more responses, but differences in providers, thinking settings, and model snapshots may introduce source-specific signals that classifiers can easily exploit.\nWe therefore want to examine source weighting, generation-setting matching, and prompt deduplication, using prompt-grouped validation and source-held-out stress tests to distinguish model-identity gains from collection artifacts.\nWe are organizing these ideas into controlled comparisons: identical folds and post-processing, evaluating linear classification, nonlinear classification, and their net corrections over a strong LoRA baseline. All supervised dimensionality reduction and upstream fine-tuning must remain within the corresponding training folds.\nHas anyone observed that the directions best separating topics within a Transformer representation differ from those best separating generating models? Related experiments—including negative results with dimensionality reduction, centering, or nonlinear classifiers—would be very interesting to discuss.</li>\n</ol>",
+              "id": 3541089,
+              "post_date": "2026-10-19T13:41:16.797Z",
+              "raw_markdown": "The recent two-stage LoRA solutions are very inspiring. After studying these approaches, we started looking at a question:\nCould Transformer representations contain model-identity information that the current pooling strategies and linear classification heads do not fully exploit?\nWe are investigating the following pipeline:\nResponse text → multi-layer Transformer representations → stylometric features and data engineering → nonlinear 18-class classification → ensemble with LoRA branches.\nThe idea is not simply to replace a linear head with LightGBM. It is to distinguish three signals that may be entangled in the embeddings: response topic, generating-model identity, and collection source or generation settings.\nA few questions seem particularly interesting.\n1. High-variance directions may not be the most useful directions\nMulti-layer embeddings often require dimensionality reduction. But if topic differences dominate the variance while model fingerprints occupy weaker directions, standard PCA could preserve topic information while discarding useful classification signals.\nWe are considering comparisons between regularized linear heads, classification after PCA, supervised projections, and representations constructed from differences between responses to the same prompt. The interesting question is: can same-prompt responses help identify directions that emphasize model identity rather than content?\n2. Within-prompt centering may also remove useful identity information\nCentering is often interpreted as removing topic information. However, the group mean also depends on which models are represented and how frequently they appear.\nIf a topic cluster contains only a few responses, or is dominated by one model family, subtracting its mean may also alter the stylistic signal. Training with same-prompt triplets and performing inference with estimated clusters of varying sizes introduces another potential mismatch.\nWe would like to compare absolute representations, relative representations, and combinations controlled by cluster reliability.\n3. Tree models may be more useful for learning when to trust each source of evidence\nTraining trees directly on tens of thousands of embedding dimensions may not be the most effective approach. An alternative is to combine:\n- class scores from different depths or backbones;\n- branch disagreement, predictive entropy, and top-two margins;\n- punctuation, function-word, and sentence-length features;\n- topic-cluster size and consistency;\ninto a compact table, allowing CatBoost, LightGBM, or a small MLP to learn conditional relationships.\nThe question is: can these nonlinear relationships consistently correct errors made by linear heads, rather than merely recalibrating information the heads already capture?\n4. Data engineering may determine the ceiling of this approach\nPublic data provides more responses, but differences in providers, thinking settings, and model snapshots may introduce source-specific signals that classifiers can easily exploit.\nWe therefore want to examine source weighting, generation-setting matching, and prompt deduplication, using prompt-grouped validation and source-held-out stress tests to distinguish model-identity gains from collection artifacts.\nWe are organizing these ideas into controlled comparisons: identical folds and post-processing, evaluating linear classification, nonlinear classification, and their net corrections over a strong LoRA baseline. All supervised dimensionality reduction and upstream fine-tuning must remain within the corresponding training folds.\nHas anyone observed that the directions best separating topics within a Transformer representation differ from those best separating generating models? Related experiments—including negative results with dimensionality reduction, centering, or nonlinear classifiers—would be very interesting to discuss."
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 33211350,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": true,
+            "author_thumbnail_name": "default-thumb.png",
+            "author_user_display_name": "波力海苔",
+            "author_user_name": "blht2026",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "first_message": {
+              "author": {
+                "display_name": "波力海苔",
+                "id": 33211350,
+                "progression_opt_out": true,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/blht2026"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 3181,
+              "content": "<p>The recent two-stage LoRA solutions are very inspiring. After studying these approaches, we started looking at a question:\nCould Transformer representations contain model-identity information that the current pooling strategies and linear classification heads do not fully exploit?\nWe are investigating the following pipeline:\nResponse text → multi-layer Transformer representations → stylometric features and data engineering → nonlinear 18-class classification → ensemble with LoRA branches.\nThe idea is not simply to replace a linear head with LightGBM. It is to distinguish three signals that may be entangled in the embeddings: response topic, generating-model identity, and collection source or generation settings.\nA few questions seem particularly interesting.</p>\n<ol>\n<li>High-variance directions may not be the most useful directions\nMulti-layer embeddings often require dimensionality reduction. But if topic differences dominate the variance while model fingerprints occupy weaker directions, standard PCA could preserve topic information while discarding useful classification signals.\nWe are considering comparisons between regularized linear heads, classification after PCA, supervised projections, and representations constructed from differences between responses to the same prompt. The interesting question is: can same-prompt responses help identify directions that emphasize model identity rather than content?</li>\n<li>Within-prompt centering may also remove useful identity information\nCentering is often interpreted as removing topic information. However, the group mean also depends on which models are represented and how frequently they appear.\nIf a topic cluster contains only a few responses, or is dominated by one model family, subtracting its mean may also alter the stylistic signal. Training with same-prompt triplets and performing inference with estimated clusters of varying sizes introduces another potential mismatch.\nWe would like to compare absolute representations, relative representations, and combinations controlled by cluster reliability.</li>\n<li>Tree models may be more useful for learning when to trust each source of evidence\nTraining trees directly on tens of thousands of embedding dimensions may not be the most effective approach. An alternative is to combine:</li>\n</ol>\n<ul>\n<li>class scores from different depths or backbones;</li>\n<li>branch disagreement, predictive entropy, and top-two margins;</li>\n<li>punctuation, function-word, and sentence-length features;</li>\n<li>topic-cluster size and consistency;\ninto a compact table, allowing CatBoost, LightGBM, or a small MLP to learn conditional relationships.\nThe question is: can these nonlinear relationships consistently correct errors made by linear heads, rather than merely recalibrating information the heads already capture?</li>\n</ul>\n<ol>\n<li>Data engineering may determine the ceiling of this approach\nPublic data provides more responses, but differences in providers, thinking settings, and model snapshots may introduce source-specific signals that classifiers can easily exploit.\nWe therefore want to examine source weighting, generation-setting matching, and prompt deduplication, using prompt-grouped validation and source-held-out stress tests to distinguish model-identity gains from collection artifacts.\nWe are organizing these ideas into controlled comparisons: identical folds and post-processing, evaluating linear classification, nonlinear classification, and their net corrections over a strong LoRA baseline. All supervised dimensionality reduction and upstream fine-tuning must remain within the corresponding training folds.\nHas anyone observed that the directions best separating topics within a Transformer representation differ from those best separating generating models? Related experiments—including negative results with dimensionality reduction, centering, or nonlinear classifiers—would be very interesting to discuss.</li>\n</ol>",
+              "feedback_tracking_data": {},
+              "id": 3541089,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-19T13:41:16.797Z",
+              "raw_markdown": "The recent two-stage LoRA solutions are very inspiring. After studying these approaches, we started looking at a question:\nCould Transformer representations contain model-identity information that the current pooling strategies and linear classification heads do not fully exploit?\nWe are investigating the following pipeline:\nResponse text → multi-layer Transformer representations → stylometric features and data engineering → nonlinear 18-class classification → ensemble with LoRA branches.\nThe idea is not simply to replace a linear head with LightGBM. It is to distinguish three signals that may be entangled in the embeddings: response topic, generating-model identity, and collection source or generation settings.\nA few questions seem particularly interesting.\n1. High-variance directions may not be the most useful directions\nMulti-layer embeddings often require dimensionality reduction. But if topic differences dominate the variance while model fingerprints occupy weaker directions, standard PCA could preserve topic information while discarding useful classification signals.\nWe are considering comparisons between regularized linear heads, classification after PCA, supervised projections, and representations constructed from differences between responses to the same prompt. The interesting question is: can same-prompt responses help identify directions that emphasize model identity rather than content?\n2. Within-prompt centering may also remove useful identity information\nCentering is often interpreted as removing topic information. However, the group mean also depends on which models are represented and how frequently they appear.\nIf a topic cluster contains only a few responses, or is dominated by one model family, subtracting its mean may also alter the stylistic signal. Training with same-prompt triplets and performing inference with estimated clusters of varying sizes introduces another potential mismatch.\nWe would like to compare absolute representations, relative representations, and combinations controlled by cluster reliability.\n3. Tree models may be more useful for learning when to trust each source of evidence\nTraining trees directly on tens of thousands of embedding dimensions may not be the most effective approach. An alternative is to combine:\n- class scores from different depths or backbones;\n- branch disagreement, predictive entropy, and top-two margins;\n- punctuation, function-word, and sentence-length features;\n- topic-cluster size and consistency;\ninto a compact table, allowing CatBoost, LightGBM, or a small MLP to learn conditional relationships.\nThe question is: can these nonlinear relationships consistently correct errors made by linear heads, rather than merely recalibrating information the heads already capture?\n4. Data engineering may determine the ceiling of this approach\nPublic data provides more responses, but differences in providers, thinking settings, and model snapshots may introduce source-specific signals that classifiers can easily exploit.\nWe therefore want to examine source weighting, generation-setting matching, and prompt deduplication, using prompt-grouped validation and source-held-out stress tests to distinguish model-identity gains from collection artifacts.\nWe are organizing these ideas into controlled comparisons: identical folds and post-processing, evaluating linear classification, nonlinear classification, and their net corrections over a strong LoRA baseline. All supervised dimensionality reduction and upstream fine-tuning must remain within the corresponding training folds.\nHas anyone observed that the directions best separating topics within a Transformer representation differ from those best separating generating models? Related experiments—including negative results with dimensionality reduction, centering, or nonlinear classifiers—would be very interesting to discuss.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "波力海苔",
+                  "id": 33211350,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/blht2026",
+                  "progression_opt_out": true,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/blht2026",
+                  "user_id": 33211350,
+                  "user_name": "blht2026"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1
+              }
+            },
+            "first_message_id": 3541089,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 750675,
+            "name": "Are we discarding model fingerprints? A direction involving Transformer representations, dimensionality reduction, and nonlinear classificatio",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-10-19T13:41:16.795339500Z",
+            "url": "/competitions/name-that-llm/discussion/750675"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:24:22+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:24:22+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-10-19T13:41:16.796666700Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [],
+  "writeup": null
+}

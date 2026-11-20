@@ -1,0 +1,698 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 751941,
+    "title": "Does the public pool leak train prompts into grouped CV? Quick check says no",
+    "author": "SwapIY",
+    "author_url": "/swapiy",
+    "author_tier": "EXPERT",
+    "post_date": "2026-10-23T05:44:24.404152700Z",
+    "last_comment_post_date": "2026-10-24T05:20:51.493333300Z",
+    "comment_count": 2,
+    "votes": 0,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/751941",
+    "first_message_id": 3543282,
+    "first_seen_at": "2026-11-04T06:56:16+00:00",
+    "last_seen_at": "2026-11-16T16:36:03+00:00",
+    "detail_last_synced_at": "2026-11-16T16:24:08+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "68de9155693017061170864e958c9a249a2f3603d33d77599be4e7a1fea05510",
+    "listing_metrics_hash": "1d7b01d39d998f5caf0eb285f7806c0632a1cb146aadc79a9504e2481370b229",
+    "detail_content_hash": "4c31a3c0f08bf7805962a754add3f6adfad69a7a903a23e501080c72d74bf699",
+    "detail_last_checked_at": "2026-11-16T16:24:08+00:00",
+    "detail_next_check_at": "2026-11-23T16:24:08+00:00",
+    "detail_unchanged_count": 2,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 2,
+      "firstForumMessageId": null,
+      "id": 751941,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-10-24T05:20:51.493333300Z",
+      "postDate": "2026-10-23T05:44:24.404152700Z",
+      "raw": {
+        "comment_count": 2,
+        "id": 751941,
+        "last_comment_post_date": "2026-10-24T05:20:51.493333300Z",
+        "post_date": "2026-10-23T05:44:24.404152700Z",
+        "title": "Does the public pool leak train prompts into grouped CV? Quick check says no",
+        "topic_url": "/competitions/name-that-llm/discussion/751941"
+      },
+      "title": "Does the public pool leak train prompts into grouped CV? Quick check says no",
+      "topicUrl": "/competitions/name-that-llm/discussion/751941",
+      "votes": 0
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "EXPERT",
+        "authorUserDisplayName": "SwapIY",
+        "authorUserName": "swapiy",
+        "comments": [
+          {
+            "author": {
+              "displayName": "GoPain",
+              "tier": "CONTRIBUTOR",
+              "url": "/locdunhat"
+            },
+            "content": "<p>I ran a passage-level version of this check, on the larger pool v4 (75,783 passages from Nishant Dahal's ntl-handwriting-blend), and it agrees with you.</p>\n<p>Instead of prompt centroids I took each pool passage's max TF-IDF cosine to any single train passage (English stop words removed, sublinear tf), which also catches a regeneration of one train answer:</p>\n<ul>\n<li>cosine ≥ 0.3: 934 passages (1.2%), 701 of them from one source</li>\n<li>≥ 0.4: 303</li>\n<li>≥ 0.5: 96</li>\n</ul>\n<p>Dropping, inside each fold, the pool passages at ≥ 0.3 to that fold's validation passages moved my 4-view n-gram SVC by −0.002 and +0.006 on the two folds I ran (0.4796 → 0.4778, 0.4741 → 0.4796). That is noise.</p>\n<p>To see how much leakage it would take to matter, I simulated it with a known truth (authors, prompts, and an \"answer\" component shared by every regeneration of the same answer). The CV lift grows with the share of train passages that have a near-copy in the pool, about +0.1 per unit of share: +0.017 at 20% and +0.041 at 40%. The fresh-test score does not move at all. A cosine filter between the two tails removes 99% of the copies and the whole lift, at no cost on the test. Notebook: <a href=\"https://www.kaggle.com/code/locdunhat/near-duplicates-in-an-external-pool-and-grouped-cv\" target=\"_blank\">https://www.kaggle.com/code/locdunhat/near-duplicates-in-an-external-pool-and-grouped-cv</a></p>\n<p>Counted the way the simulation counts leakage (the share of train passages with a same-model pool passage above the threshold), pool v4 gives 12.4% at ≥ 0.3, 3.9% at ≥ 0.4 and 1.3% at ≥ 0.5 of the 2,699 train passages. Even if every one of those at 0.3 were a true regeneration, the simulation's rate predicts about +0.012 of CV lift, and at a cosine of 0.3 many are probably just the same topic. That fits the −0.002/+0.006 I measured. So the pool's CV gain is real, as you said, and near-copies don't explain why pool-trained CV reads about 0.03–0.04 above the LB (my numbers are in <a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/750390#3543235)\" target=\"_blank\">https://www.kaggle.com/competitions/name-that-llm/discussion/750390#3543235)</a>. My blend with a LoRA trained on pool v4 with those 934 passages removed still reads 0.6138 CV against 0.589 LB.</p>",
+            "id": 3543778,
+            "isThankYou": false,
+            "postDate": "2026-10-24T01:21:56.477Z",
+            "raw": {
+              "author": {
+                "display_name": "GoPain",
+                "id": 3897663,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3897663-kg.jpg?t=2026-10-14-14-18-45",
+                "tier": "CONTRIBUTOR",
+                "url": "/locdunhat"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 1038,
+              "content": "<p>I ran a passage-level version of this check, on the larger pool v4 (75,783 passages from Nishant Dahal's ntl-handwriting-blend), and it agrees with you.</p>\n<p>Instead of prompt centroids I took each pool passage's max TF-IDF cosine to any single train passage (English stop words removed, sublinear tf), which also catches a regeneration of one train answer:</p>\n<ul>\n<li>cosine ≥ 0.3: 934 passages (1.2%), 701 of them from one source</li>\n<li>≥ 0.4: 303</li>\n<li>≥ 0.5: 96</li>\n</ul>\n<p>Dropping, inside each fold, the pool passages at ≥ 0.3 to that fold's validation passages moved my 4-view n-gram SVC by −0.002 and +0.006 on the two folds I ran (0.4796 → 0.4778, 0.4741 → 0.4796). That is noise.</p>\n<p>To see how much leakage it would take to matter, I simulated it with a known truth (authors, prompts, and an \"answer\" component shared by every regeneration of the same answer). The CV lift grows with the share of train passages that have a near-copy in the pool, about +0.1 per unit of share: +0.017 at 20% and +0.041 at 40%. The fresh-test score does not move at all. A cosine filter between the two tails removes 99% of the copies and the whole lift, at no cost on the test. Notebook: <a href=\"https://www.kaggle.com/code/locdunhat/near-duplicates-in-an-external-pool-and-grouped-cv\" target=\"_blank\">https://www.kaggle.com/code/locdunhat/near-duplicates-in-an-external-pool-and-grouped-cv</a></p>\n<p>Counted the way the simulation counts leakage (the share of train passages with a same-model pool passage above the threshold), pool v4 gives 12.4% at ≥ 0.3, 3.9% at ≥ 0.4 and 1.3% at ≥ 0.5 of the 2,699 train passages. Even if every one of those at 0.3 were a true regeneration, the simulation's rate predicts about +0.012 of CV lift, and at a cosine of 0.3 many are probably just the same topic. That fits the −0.002/+0.006 I measured. So the pool's CV gain is real, as you said, and near-copies don't explain why pool-trained CV reads about 0.03–0.04 above the LB (my numbers are in <a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/750390#3543235)\" target=\"_blank\">https://www.kaggle.com/competitions/name-that-llm/discussion/750390#3543235)</a>. My blend with a LoRA trained on pool v4 with those 934 passages removed still reads 0.6138 CV against 0.589 LB.</p>",
+              "feedback_tracking_data": {},
+              "id": 3543778,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-24T01:21:56.477Z",
+              "raw_markdown": "I ran a passage-level version of this check, on the larger pool v4 (75,783 passages from Nishant Dahal's ntl-handwriting-blend), and it agrees with you.\n\nInstead of prompt centroids I took each pool passage's max TF-IDF cosine to any single train passage (English stop words removed, sublinear tf), which also catches a regeneration of one train answer:\n\n- cosine ≥ 0.3: 934 passages (1.2%), 701 of them from one source\n- ≥ 0.4: 303\n- ≥ 0.5: 96\n\nDropping, inside each fold, the pool passages at ≥ 0.3 to that fold's validation passages moved my 4-view n-gram SVC by −0.002 and +0.006 on the two folds I ran (0.4796 → 0.4778, 0.4741 → 0.4796). That is noise.\n\nTo see how much leakage it would take to matter, I simulated it with a known truth (authors, prompts, and an \"answer\" component shared by every regeneration of the same answer). The CV lift grows with the share of train passages that have a near-copy in the pool, about +0.1 per unit of share: +0.017 at 20% and +0.041 at 40%. The fresh-test score does not move at all. A cosine filter between the two tails removes 99% of the copies and the whole lift, at no cost on the test. Notebook: https://www.kaggle.com/code/locdunhat/near-duplicates-in-an-external-pool-and-grouped-cv\n\nCounted the way the simulation counts leakage (the share of train passages with a same-model pool passage above the threshold), pool v4 gives 12.4% at ≥ 0.3, 3.9% at ≥ 0.4 and 1.3% at ≥ 0.5 of the 2,699 train passages. Even if every one of those at 0.3 were a true regeneration, the simulation's rate predicts about +0.012 of CV lift, and at a cosine of 0.3 many are probably just the same topic. That fits the −0.002/+0.006 I measured. So the pool's CV gain is real, as you said, and near-copies don't explain why pool-trained CV reads about 0.03–0.04 above the LB (my numbers are in https://www.kaggle.com/competitions/name-that-llm/discussion/750390#3543235). My blend with a LoRA trained on pool v4 with those 934 passages removed still reads 0.6138 CV against 0.589 LB.",
+              "replies": [
+                {
+                  "author": {
+                    "display_name": "SwapIY",
+                    "id": 27355874,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                    "tier": "EXPERT",
+                    "url": "/swapiy"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 937,
+                  "content": "<p>Thanks for running the passage level version, that is a cleaner test than my centroid one since it also catches a regeneration of a single answer.</p>\n<p>On v4 my centroid filter at 0.4 flags 711 of 75,783 passages (0.94%), so it is stricter than yours at the same threshold, probably because a prompt centroid sits closer to generic topic words than any single answer. I drop those everywhere now since it costs almost nothing.</p>\n<p>With the cleaned v4 my four view ngram SVC lands at 0.466 overall (0.43 to 0.48 per fold), in line with your 0.474 to 0.480, so whatever leak is left looks like noise for the ngram model too.</p>\n<p>The simulation is a nice addition. Out of curiosity, the 701 passages from one source, do you know if that set regenerated train prompts on purpose from the reconstructed prompt list, or is it just topic overlap?</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3543844,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-24T05:20:51.493Z",
+                  "raw_markdown": "Thanks for running the passage level version, that is a cleaner test than my centroid one since it also catches a regeneration of a single answer.\n\nOn v4 my centroid filter at 0.4 flags 711 of 75,783 passages (0.94%), so it is stricter than yours at the same threshold, probably because a prompt centroid sits closer to generic topic words than any single answer. I drop those everywhere now since it costs almost nothing.\n\nWith the cleaned v4 my four view ngram SVC lands at 0.466 overall (0.43 to 0.48 per fold), in line with your 0.474 to 0.480, so whatever leak is left looks like noise for the ngram model too.\n\nThe simulation is a nice addition. Out of curiosity, the 701 passages from one source, do you know if that set regenerated train prompts on purpose from the reconstructed prompt list, or is it just topic overlap?",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "SwapIY",
+                      "id": 27355874,
+                      "performance_tier": "EXPERT",
+                      "profile_url": "/swapiy",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                      "tier": "EXPERT",
+                      "url": "/swapiy",
+                      "user_id": 27355874,
+                      "user_name": "swapiy"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "GoPain",
+                  "id": 3897663,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/locdunhat",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3897663-kg.jpg?t=2026-10-14-14-18-45",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/locdunhat",
+                  "user_id": 3897663,
+                  "user_name": "locdunhat"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "I ran a passage-level version of this check, on the larger pool v4 (75,783 passages from Nishant Dahal's ntl-handwriting-blend), and it agrees with you.\n\nInstead of prompt centroids I took each pool passage's max TF-IDF cosine to any single train passage (English stop words removed, sublinear tf), which also catches a regeneration of one train answer:\n\n- cosine ≥ 0.3: 934 passages (1.2%), 701 of them from one source\n- ≥ 0.4: 303\n- ≥ 0.5: 96\n\nDropping, inside each fold, the pool passages at ≥ 0.3 to that fold's validation passages moved my 4-view n-gram SVC by −0.002 and +0.006 on the two folds I ran (0.4796 → 0.4778, 0.4741 → 0.4796). That is noise.\n\nTo see how much leakage it would take to matter, I simulated it with a known truth (authors, prompts, and an \"answer\" component shared by every regeneration of the same answer). The CV lift grows with the share of train passages that have a near-copy in the pool, about +0.1 per unit of share: +0.017 at 20% and +0.041 at 40%. The fresh-test score does not move at all. A cosine filter between the two tails removes 99% of the copies and the whole lift, at no cost on the test. Notebook: https://www.kaggle.com/code/locdunhat/near-duplicates-in-an-external-pool-and-grouped-cv\n\nCounted the way the simulation counts leakage (the share of train passages with a same-model pool passage above the threshold), pool v4 gives 12.4% at ≥ 0.3, 3.9% at ≥ 0.4 and 1.3% at ≥ 0.5 of the 2,699 train passages. Even if every one of those at 0.3 were a true regeneration, the simulation's rate predicts about +0.012 of CV lift, and at a cosine of 0.3 many are probably just the same topic. That fits the −0.002/+0.006 I measured. So the pool's CV gain is real, as you said, and near-copies don't explain why pool-trained CV reads about 0.03–0.04 above the LB (my numbers are in https://www.kaggle.com/competitions/name-that-llm/discussion/750390#3543235). My blend with a LoRA trained on pool v4 with those 934 passages removed still reads 0.6138 CV against 0.589 LB.",
+            "replies": [
+              {
+                "author": {
+                  "displayName": "SwapIY",
+                  "tier": "EXPERT",
+                  "url": "/swapiy"
+                },
+                "content": "<p>Thanks for running the passage level version, that is a cleaner test than my centroid one since it also catches a regeneration of a single answer.</p>\n<p>On v4 my centroid filter at 0.4 flags 711 of 75,783 passages (0.94%), so it is stricter than yours at the same threshold, probably because a prompt centroid sits closer to generic topic words than any single answer. I drop those everywhere now since it costs almost nothing.</p>\n<p>With the cleaned v4 my four view ngram SVC lands at 0.466 overall (0.43 to 0.48 per fold), in line with your 0.474 to 0.480, so whatever leak is left looks like noise for the ngram model too.</p>\n<p>The simulation is a nice addition. Out of curiosity, the 701 passages from one source, do you know if that set regenerated train prompts on purpose from the reconstructed prompt list, or is it just topic overlap?</p>",
+                "id": 3543844,
+                "isThankYou": false,
+                "postDate": "2026-10-24T05:20:51.493Z",
+                "raw": {
+                  "author": {
+                    "display_name": "SwapIY",
+                    "id": 27355874,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                    "tier": "EXPERT",
+                    "url": "/swapiy"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 937,
+                  "content": "<p>Thanks for running the passage level version, that is a cleaner test than my centroid one since it also catches a regeneration of a single answer.</p>\n<p>On v4 my centroid filter at 0.4 flags 711 of 75,783 passages (0.94%), so it is stricter than yours at the same threshold, probably because a prompt centroid sits closer to generic topic words than any single answer. I drop those everywhere now since it costs almost nothing.</p>\n<p>With the cleaned v4 my four view ngram SVC lands at 0.466 overall (0.43 to 0.48 per fold), in line with your 0.474 to 0.480, so whatever leak is left looks like noise for the ngram model too.</p>\n<p>The simulation is a nice addition. Out of curiosity, the 701 passages from one source, do you know if that set regenerated train prompts on purpose from the reconstructed prompt list, or is it just topic overlap?</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3543844,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-24T05:20:51.493Z",
+                  "raw_markdown": "Thanks for running the passage level version, that is a cleaner test than my centroid one since it also catches a regeneration of a single answer.\n\nOn v4 my centroid filter at 0.4 flags 711 of 75,783 passages (0.94%), so it is stricter than yours at the same threshold, probably because a prompt centroid sits closer to generic topic words than any single answer. I drop those everywhere now since it costs almost nothing.\n\nWith the cleaned v4 my four view ngram SVC lands at 0.466 overall (0.43 to 0.48 per fold), in line with your 0.474 to 0.480, so whatever leak is left looks like noise for the ngram model too.\n\nThe simulation is a nice addition. Out of curiosity, the 701 passages from one source, do you know if that set regenerated train prompts on purpose from the reconstructed prompt list, or is it just topic overlap?",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "SwapIY",
+                      "id": 27355874,
+                      "performance_tier": "EXPERT",
+                      "profile_url": "/swapiy",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                      "tier": "EXPERT",
+                      "url": "/swapiy",
+                      "user_id": 27355874,
+                      "user_name": "swapiy"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                },
+                "rawMarkdown": "Thanks for running the passage level version, that is a cleaner test than my centroid one since it also catches a regeneration of a single answer.\n\nOn v4 my centroid filter at 0.4 flags 711 of 75,783 passages (0.94%), so it is stricter than yours at the same threshold, probably because a prompt centroid sits closer to generic topic words than any single answer. I drop those everywhere now since it costs almost nothing.\n\nWith the cleaned v4 my four view ngram SVC lands at 0.466 overall (0.43 to 0.48 per fold), in line with your 0.474 to 0.480, so whatever leak is left looks like noise for the ngram model too.\n\nThe simulation is a nice addition. Out of curiosity, the 701 passages from one source, do you know if that set regenerated train prompts on purpose from the reconstructed prompt list, or is it just topic overlap?",
+                "replies": [],
+                "votes": {
+                  "totalVotes": 0
+                }
+              }
+            ],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "expectedCommentCount": 2,
+        "firstMessage": {
+          "author": {
+            "displayName": "SwapIY",
+            "tier": "EXPERT",
+            "url": "/swapiy"
+          },
+          "content": "<p>I wanted to know if adding the public in style pool to training makes grouped CV look better than it really is. If pool passages answer the same prompts as train, a model could learn topic words for a held out prompt and part of the CV gain would be fake.</p>\n<p>What I did: fit TFIDF (English stop words removed, sublinear tf) on train plus pool, took the mean vector of each of the 150 train prompts, and for every pool passage computed its max cosine similarity to any of those prompt centroids. As a reference I scored every train passage against its own prompt centroid.</p>\n<p>Train passage vs its own prompt: median 0.525, 10th percentile 0.411</p>\n<p>Pool passages above 0.3: 0.70%</p>\n<p>Pool passages above 0.4: 0.26%, about 100 of 38,642</p>\n<p>Pool passages above 0.5: 0.09%</p>\n<p>So 90% of real same prompt pairs sit above 0.41, while only about 100 pool passages even reach 0.4. The pool is almost entirely a different set of prompts, so the CV gain from adding it should be real.</p>\n<p>For reference, with prompt grouped 5 fold CV my four view ngram SVC goes from 0.3723 on train only to 0.4375 with the pool, close to what others have posted.</p>\n<p>If you want to be strict you could drop the ~100 closest pool passages in each fold, but I doubt it moves anything.</p>",
+          "id": 3543282,
+          "isThankYou": false,
+          "postDate": "2026-10-23T05:44:24.403Z",
+          "raw": {
+            "author": {
+              "display_name": "SwapIY",
+              "id": 27355874,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "EXPERT",
+              "url": "/swapiy"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 937,
+            "content": "<p>I wanted to know if adding the public in style pool to training makes grouped CV look better than it really is. If pool passages answer the same prompts as train, a model could learn topic words for a held out prompt and part of the CV gain would be fake.</p>\n<p>What I did: fit TFIDF (English stop words removed, sublinear tf) on train plus pool, took the mean vector of each of the 150 train prompts, and for every pool passage computed its max cosine similarity to any of those prompt centroids. As a reference I scored every train passage against its own prompt centroid.</p>\n<p>Train passage vs its own prompt: median 0.525, 10th percentile 0.411</p>\n<p>Pool passages above 0.3: 0.70%</p>\n<p>Pool passages above 0.4: 0.26%, about 100 of 38,642</p>\n<p>Pool passages above 0.5: 0.09%</p>\n<p>So 90% of real same prompt pairs sit above 0.41, while only about 100 pool passages even reach 0.4. The pool is almost entirely a different set of prompts, so the CV gain from adding it should be real.</p>\n<p>For reference, with prompt grouped 5 fold CV my four view ngram SVC goes from 0.3723 on train only to 0.4375 with the pool, close to what others have posted.</p>\n<p>If you want to be strict you could drop the ~100 closest pool passages in each fold, but I doubt it moves anything.</p>",
+            "feedback_tracking_data": {},
+            "id": 3543282,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-10-23T05:44:24.403Z",
+            "raw_markdown": "I wanted to know if adding the public in style pool to training makes grouped CV look better than it really is. If pool passages answer the same prompts as train, a model could learn topic words for a held out prompt and part of the CV gain would be fake.\n\nWhat I did: fit TFIDF (English stop words removed, sublinear tf) on train plus pool, took the mean vector of each of the 150 train prompts, and for every pool passage computed its max cosine similarity to any of those prompt centroids. As a reference I scored every train passage against its own prompt centroid.\n\nTrain passage vs its own prompt: median 0.525, 10th percentile 0.411\n\nPool passages above 0.3: 0.70%\n\nPool passages above 0.4: 0.26%, about 100 of 38,642\n\nPool passages above 0.5: 0.09%\n\nSo 90% of real same prompt pairs sit above 0.41, while only about 100 pool passages even reach 0.4. The pool is almost entirely a different set of prompts, so the CV gain from adding it should be real.\n\nFor reference, with prompt grouped 5 fold CV my four view ngram SVC goes from 0.3723 on train only to 0.4375 with the pool, close to what others have posted.\n\nIf you want to be strict you could drop the ~100 closest pool passages in each fold, but I doubt it moves anything.",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "SwapIY",
+                "id": 27355874,
+                "performance_tier": "EXPERT",
+                "profile_url": "/swapiy",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "EXPERT",
+                "url": "/swapiy",
+                "user_id": 27355874,
+                "user_name": "swapiy"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 1
+            }
+          },
+          "rawMarkdown": "I wanted to know if adding the public in style pool to training makes grouped CV look better than it really is. If pool passages answer the same prompts as train, a model could learn topic words for a held out prompt and part of the CV gain would be fake.\n\nWhat I did: fit TFIDF (English stop words removed, sublinear tf) on train plus pool, took the mean vector of each of the 150 train prompts, and for every pool passage computed its max cosine similarity to any of those prompt centroids. As a reference I scored every train passage against its own prompt centroid.\n\nTrain passage vs its own prompt: median 0.525, 10th percentile 0.411\n\nPool passages above 0.3: 0.70%\n\nPool passages above 0.4: 0.26%, about 100 of 38,642\n\nPool passages above 0.5: 0.09%\n\nSo 90% of real same prompt pairs sit above 0.41, while only about 100 pool passages even reach 0.4. The pool is almost entirely a different set of prompts, so the CV gain from adding it should be real.\n\nFor reference, with prompt grouped 5 fold CV my four view ngram SVC goes from 0.3723 on train only to 0.4375 with the pool, close to what others have posted.\n\nIf you want to be strict you could drop the ~100 closest pool passages in each fold, but I doubt it moves anything.",
+          "replies": [],
+          "votes": {
+            "totalVotes": 0
+          }
+        },
+        "firstMessageId": 3543282,
+        "id": 751941,
+        "name": "Does the public pool leak train prompts into grouped CV? Quick check says no",
+        "postDate": "2026-10-23T05:44:24.404152700Z",
+        "url": "/competitions/name-that-llm/discussion/751941"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>I wanted to know if adding the public in style pool to training makes grouped CV look better than it really is. If pool passages answer the same prompts as train, a model could learn topic words for a held out prompt and part of the CV gain would be fake.</p>\n<p>What I did: fit TFIDF (English stop words removed, sublinear tf) on train plus pool, took the mean vector of each of the 150 train prompts, and for every pool passage computed its max cosine similarity to any of those prompt centroids. As a reference I scored every train passage against its own prompt centroid.</p>\n<p>Train passage vs its own prompt: median 0.525, 10th percentile 0.411</p>\n<p>Pool passages above 0.3: 0.70%</p>\n<p>Pool passages above 0.4: 0.26%, about 100 of 38,642</p>\n<p>Pool passages above 0.5: 0.09%</p>\n<p>So 90% of real same prompt pairs sit above 0.41, while only about 100 pool passages even reach 0.4. The pool is almost entirely a different set of prompts, so the CV gain from adding it should be real.</p>\n<p>For reference, with prompt grouped 5 fold CV my four view ngram SVC goes from 0.3723 on train only to 0.4375 with the pool, close to what others have posted.</p>\n<p>If you want to be strict you could drop the ~100 closest pool passages in each fold, but I doubt it moves anything.</p>",
+              "id": 3543282,
+              "post_date": "2026-10-23T05:44:24.403Z",
+              "raw_markdown": "I wanted to know if adding the public in style pool to training makes grouped CV look better than it really is. If pool passages answer the same prompts as train, a model could learn topic words for a held out prompt and part of the CV gain would be fake.\n\nWhat I did: fit TFIDF (English stop words removed, sublinear tf) on train plus pool, took the mean vector of each of the 150 train prompts, and for every pool passage computed its max cosine similarity to any of those prompt centroids. As a reference I scored every train passage against its own prompt centroid.\n\nTrain passage vs its own prompt: median 0.525, 10th percentile 0.411\n\nPool passages above 0.3: 0.70%\n\nPool passages above 0.4: 0.26%, about 100 of 38,642\n\nPool passages above 0.5: 0.09%\n\nSo 90% of real same prompt pairs sit above 0.41, while only about 100 pool passages even reach 0.4. The pool is almost entirely a different set of prompts, so the CV gain from adding it should be real.\n\nFor reference, with prompt grouped 5 fold CV my four view ngram SVC goes from 0.3723 on train only to 0.4375 with the pool, close to what others have posted.\n\nIf you want to be strict you could drop the ~100 closest pool passages in each fold, but I doubt it moves anything."
+            },
+            {
+              "content": "<p>I ran a passage-level version of this check, on the larger pool v4 (75,783 passages from Nishant Dahal's ntl-handwriting-blend), and it agrees with you.</p>\n<p>Instead of prompt centroids I took each pool passage's max TF-IDF cosine to any single train passage (English stop words removed, sublinear tf), which also catches a regeneration of one train answer:</p>\n<ul>\n<li>cosine ≥ 0.3: 934 passages (1.2%), 701 of them from one source</li>\n<li>≥ 0.4: 303</li>\n<li>≥ 0.5: 96</li>\n</ul>\n<p>Dropping, inside each fold, the pool passages at ≥ 0.3 to that fold's validation passages moved my 4-view n-gram SVC by −0.002 and +0.006 on the two folds I ran (0.4796 → 0.4778, 0.4741 → 0.4796). That is noise.</p>\n<p>To see how much leakage it would take to matter, I simulated it with a known truth (authors, prompts, and an \"answer\" component shared by every regeneration of the same answer). The CV lift grows with the share of train passages that have a near-copy in the pool, about +0.1 per unit of share: +0.017 at 20% and +0.041 at 40%. The fresh-test score does not move at all. A cosine filter between the two tails removes 99% of the copies and the whole lift, at no cost on the test. Notebook: <a href=\"https://www.kaggle.com/code/locdunhat/near-duplicates-in-an-external-pool-and-grouped-cv\" target=\"_blank\">https://www.kaggle.com/code/locdunhat/near-duplicates-in-an-external-pool-and-grouped-cv</a></p>\n<p>Counted the way the simulation counts leakage (the share of train passages with a same-model pool passage above the threshold), pool v4 gives 12.4% at ≥ 0.3, 3.9% at ≥ 0.4 and 1.3% at ≥ 0.5 of the 2,699 train passages. Even if every one of those at 0.3 were a true regeneration, the simulation's rate predicts about +0.012 of CV lift, and at a cosine of 0.3 many are probably just the same topic. That fits the −0.002/+0.006 I measured. So the pool's CV gain is real, as you said, and near-copies don't explain why pool-trained CV reads about 0.03–0.04 above the LB (my numbers are in <a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/750390#3543235)\" target=\"_blank\">https://www.kaggle.com/competitions/name-that-llm/discussion/750390#3543235)</a>. My blend with a LoRA trained on pool v4 with those 934 passages removed still reads 0.6138 CV against 0.589 LB.</p>",
+              "id": 3543778,
+              "post_date": "2026-10-24T01:21:56.477Z",
+              "raw_markdown": "I ran a passage-level version of this check, on the larger pool v4 (75,783 passages from Nishant Dahal's ntl-handwriting-blend), and it agrees with you.\n\nInstead of prompt centroids I took each pool passage's max TF-IDF cosine to any single train passage (English stop words removed, sublinear tf), which also catches a regeneration of one train answer:\n\n- cosine ≥ 0.3: 934 passages (1.2%), 701 of them from one source\n- ≥ 0.4: 303\n- ≥ 0.5: 96\n\nDropping, inside each fold, the pool passages at ≥ 0.3 to that fold's validation passages moved my 4-view n-gram SVC by −0.002 and +0.006 on the two folds I ran (0.4796 → 0.4778, 0.4741 → 0.4796). That is noise.\n\nTo see how much leakage it would take to matter, I simulated it with a known truth (authors, prompts, and an \"answer\" component shared by every regeneration of the same answer). The CV lift grows with the share of train passages that have a near-copy in the pool, about +0.1 per unit of share: +0.017 at 20% and +0.041 at 40%. The fresh-test score does not move at all. A cosine filter between the two tails removes 99% of the copies and the whole lift, at no cost on the test. Notebook: https://www.kaggle.com/code/locdunhat/near-duplicates-in-an-external-pool-and-grouped-cv\n\nCounted the way the simulation counts leakage (the share of train passages with a same-model pool passage above the threshold), pool v4 gives 12.4% at ≥ 0.3, 3.9% at ≥ 0.4 and 1.3% at ≥ 0.5 of the 2,699 train passages. Even if every one of those at 0.3 were a true regeneration, the simulation's rate predicts about +0.012 of CV lift, and at a cosine of 0.3 many are probably just the same topic. That fits the −0.002/+0.006 I measured. So the pool's CV gain is real, as you said, and near-copies don't explain why pool-trained CV reads about 0.03–0.04 above the LB (my numbers are in https://www.kaggle.com/competitions/name-that-llm/discussion/750390#3543235). My blend with a LoRA trained on pool v4 with those 934 passages removed still reads 0.6138 CV against 0.589 LB.",
+              "replies": [
+                {
+                  "content": "<p>Thanks for running the passage level version, that is a cleaner test than my centroid one since it also catches a regeneration of a single answer.</p>\n<p>On v4 my centroid filter at 0.4 flags 711 of 75,783 passages (0.94%), so it is stricter than yours at the same threshold, probably because a prompt centroid sits closer to generic topic words than any single answer. I drop those everywhere now since it costs almost nothing.</p>\n<p>With the cleaned v4 my four view ngram SVC lands at 0.466 overall (0.43 to 0.48 per fold), in line with your 0.474 to 0.480, so whatever leak is left looks like noise for the ngram model too.</p>\n<p>The simulation is a nice addition. Out of curiosity, the 701 passages from one source, do you know if that set regenerated train prompts on purpose from the reconstructed prompt list, or is it just topic overlap?</p>",
+                  "id": 3543844,
+                  "post_date": "2026-10-24T05:20:51.493Z",
+                  "raw_markdown": "Thanks for running the passage level version, that is a cleaner test than my centroid one since it also catches a regeneration of a single answer.\n\nOn v4 my centroid filter at 0.4 flags 711 of 75,783 passages (0.94%), so it is stricter than yours at the same threshold, probably because a prompt centroid sits closer to generic topic words than any single answer. I drop those everywhere now since it costs almost nothing.\n\nWith the cleaned v4 my four view ngram SVC lands at 0.466 overall (0.43 to 0.48 per fold), in line with your 0.474 to 0.480, so whatever leak is left looks like noise for the ngram model too.\n\nThe simulation is a nice addition. Out of curiosity, the 701 passages from one source, do you know if that set regenerated train prompts on purpose from the reconstructed prompt list, or is it just topic overlap?"
+                }
+              ]
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 27355874,
+            "author_performance_tier": "EXPERT",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "default-thumb.png",
+            "author_user_display_name": "SwapIY",
+            "author_user_name": "swapiy",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "comments": [
+              {
+                "author": {
+                  "display_name": "GoPain",
+                  "id": 3897663,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3897663-kg.jpg?t=2026-10-14-14-18-45",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/locdunhat"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 1038,
+                "content": "<p>I ran a passage-level version of this check, on the larger pool v4 (75,783 passages from Nishant Dahal's ntl-handwriting-blend), and it agrees with you.</p>\n<p>Instead of prompt centroids I took each pool passage's max TF-IDF cosine to any single train passage (English stop words removed, sublinear tf), which also catches a regeneration of one train answer:</p>\n<ul>\n<li>cosine ≥ 0.3: 934 passages (1.2%), 701 of them from one source</li>\n<li>≥ 0.4: 303</li>\n<li>≥ 0.5: 96</li>\n</ul>\n<p>Dropping, inside each fold, the pool passages at ≥ 0.3 to that fold's validation passages moved my 4-view n-gram SVC by −0.002 and +0.006 on the two folds I ran (0.4796 → 0.4778, 0.4741 → 0.4796). That is noise.</p>\n<p>To see how much leakage it would take to matter, I simulated it with a known truth (authors, prompts, and an \"answer\" component shared by every regeneration of the same answer). The CV lift grows with the share of train passages that have a near-copy in the pool, about +0.1 per unit of share: +0.017 at 20% and +0.041 at 40%. The fresh-test score does not move at all. A cosine filter between the two tails removes 99% of the copies and the whole lift, at no cost on the test. Notebook: <a href=\"https://www.kaggle.com/code/locdunhat/near-duplicates-in-an-external-pool-and-grouped-cv\" target=\"_blank\">https://www.kaggle.com/code/locdunhat/near-duplicates-in-an-external-pool-and-grouped-cv</a></p>\n<p>Counted the way the simulation counts leakage (the share of train passages with a same-model pool passage above the threshold), pool v4 gives 12.4% at ≥ 0.3, 3.9% at ≥ 0.4 and 1.3% at ≥ 0.5 of the 2,699 train passages. Even if every one of those at 0.3 were a true regeneration, the simulation's rate predicts about +0.012 of CV lift, and at a cosine of 0.3 many are probably just the same topic. That fits the −0.002/+0.006 I measured. So the pool's CV gain is real, as you said, and near-copies don't explain why pool-trained CV reads about 0.03–0.04 above the LB (my numbers are in <a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/750390#3543235)\" target=\"_blank\">https://www.kaggle.com/competitions/name-that-llm/discussion/750390#3543235)</a>. My blend with a LoRA trained on pool v4 with those 934 passages removed still reads 0.6138 CV against 0.589 LB.</p>",
+                "feedback_tracking_data": {},
+                "id": 3543778,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-24T01:21:56.477Z",
+                "raw_markdown": "I ran a passage-level version of this check, on the larger pool v4 (75,783 passages from Nishant Dahal's ntl-handwriting-blend), and it agrees with you.\n\nInstead of prompt centroids I took each pool passage's max TF-IDF cosine to any single train passage (English stop words removed, sublinear tf), which also catches a regeneration of one train answer:\n\n- cosine ≥ 0.3: 934 passages (1.2%), 701 of them from one source\n- ≥ 0.4: 303\n- ≥ 0.5: 96\n\nDropping, inside each fold, the pool passages at ≥ 0.3 to that fold's validation passages moved my 4-view n-gram SVC by −0.002 and +0.006 on the two folds I ran (0.4796 → 0.4778, 0.4741 → 0.4796). That is noise.\n\nTo see how much leakage it would take to matter, I simulated it with a known truth (authors, prompts, and an \"answer\" component shared by every regeneration of the same answer). The CV lift grows with the share of train passages that have a near-copy in the pool, about +0.1 per unit of share: +0.017 at 20% and +0.041 at 40%. The fresh-test score does not move at all. A cosine filter between the two tails removes 99% of the copies and the whole lift, at no cost on the test. Notebook: https://www.kaggle.com/code/locdunhat/near-duplicates-in-an-external-pool-and-grouped-cv\n\nCounted the way the simulation counts leakage (the share of train passages with a same-model pool passage above the threshold), pool v4 gives 12.4% at ≥ 0.3, 3.9% at ≥ 0.4 and 1.3% at ≥ 0.5 of the 2,699 train passages. Even if every one of those at 0.3 were a true regeneration, the simulation's rate predicts about +0.012 of CV lift, and at a cosine of 0.3 many are probably just the same topic. That fits the −0.002/+0.006 I measured. So the pool's CV gain is real, as you said, and near-copies don't explain why pool-trained CV reads about 0.03–0.04 above the LB (my numbers are in https://www.kaggle.com/competitions/name-that-llm/discussion/750390#3543235). My blend with a LoRA trained on pool v4 with those 934 passages removed still reads 0.6138 CV against 0.589 LB.",
+                "replies": [
+                  {
+                    "author": {
+                      "display_name": "SwapIY",
+                      "id": 27355874,
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                      "tier": "EXPERT",
+                      "url": "/swapiy"
+                    },
+                    "author_type": "TOPIC",
+                    "competition_ranking": 937,
+                    "content": "<p>Thanks for running the passage level version, that is a cleaner test than my centroid one since it also catches a regeneration of a single answer.</p>\n<p>On v4 my centroid filter at 0.4 flags 711 of 75,783 passages (0.94%), so it is stricter than yours at the same threshold, probably because a prompt centroid sits closer to generic topic words than any single answer. I drop those everywhere now since it costs almost nothing.</p>\n<p>With the cleaned v4 my four view ngram SVC lands at 0.466 overall (0.43 to 0.48 per fold), in line with your 0.474 to 0.480, so whatever leak is left looks like noise for the ngram model too.</p>\n<p>The simulation is a nice addition. Out of curiosity, the 701 passages from one source, do you know if that set regenerated train prompts on purpose from the reconstructed prompt list, or is it just topic overlap?</p>",
+                    "feedback_tracking_data": {},
+                    "id": 3543844,
+                    "is_thank_you": false,
+                    "kernel_version": 0,
+                    "parent": {},
+                    "post_date": "2026-10-24T05:20:51.493Z",
+                    "raw_markdown": "Thanks for running the passage level version, that is a cleaner test than my centroid one since it also catches a regeneration of a single answer.\n\nOn v4 my centroid filter at 0.4 flags 711 of 75,783 passages (0.94%), so it is stricter than yours at the same threshold, probably because a prompt centroid sits closer to generic topic words than any single answer. I drop those everywhere now since it costs almost nothing.\n\nWith the cleaned v4 my four view ngram SVC lands at 0.466 overall (0.43 to 0.48 per fold), in line with your 0.474 to 0.480, so whatever leak is left looks like noise for the ngram model too.\n\nThe simulation is a nice addition. Out of curiosity, the 701 passages from one source, do you know if that set regenerated train prompts on purpose from the reconstructed prompt list, or is it just topic overlap?",
+                    "team_up_info": {
+                      "intro": "",
+                      "team_leader": {
+                        "display_name": "SwapIY",
+                        "id": 27355874,
+                        "performance_tier": "EXPERT",
+                        "profile_url": "/swapiy",
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                        "tier": "EXPERT",
+                        "url": "/swapiy",
+                        "user_id": 27355874,
+                        "user_name": "swapiy"
+                      }
+                    },
+                    "votes": {
+                      "can_upvote": true
+                    }
+                  }
+                ],
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "GoPain",
+                    "id": 3897663,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/locdunhat",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3897663-kg.jpg?t=2026-10-14-14-18-45",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/locdunhat",
+                    "user_id": 3897663,
+                    "user_name": "locdunhat"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              }
+            ],
+            "first_message": {
+              "author": {
+                "display_name": "SwapIY",
+                "id": 27355874,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "EXPERT",
+                "url": "/swapiy"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 937,
+              "content": "<p>I wanted to know if adding the public in style pool to training makes grouped CV look better than it really is. If pool passages answer the same prompts as train, a model could learn topic words for a held out prompt and part of the CV gain would be fake.</p>\n<p>What I did: fit TFIDF (English stop words removed, sublinear tf) on train plus pool, took the mean vector of each of the 150 train prompts, and for every pool passage computed its max cosine similarity to any of those prompt centroids. As a reference I scored every train passage against its own prompt centroid.</p>\n<p>Train passage vs its own prompt: median 0.525, 10th percentile 0.411</p>\n<p>Pool passages above 0.3: 0.70%</p>\n<p>Pool passages above 0.4: 0.26%, about 100 of 38,642</p>\n<p>Pool passages above 0.5: 0.09%</p>\n<p>So 90% of real same prompt pairs sit above 0.41, while only about 100 pool passages even reach 0.4. The pool is almost entirely a different set of prompts, so the CV gain from adding it should be real.</p>\n<p>For reference, with prompt grouped 5 fold CV my four view ngram SVC goes from 0.3723 on train only to 0.4375 with the pool, close to what others have posted.</p>\n<p>If you want to be strict you could drop the ~100 closest pool passages in each fold, but I doubt it moves anything.</p>",
+              "feedback_tracking_data": {},
+              "id": 3543282,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-23T05:44:24.403Z",
+              "raw_markdown": "I wanted to know if adding the public in style pool to training makes grouped CV look better than it really is. If pool passages answer the same prompts as train, a model could learn topic words for a held out prompt and part of the CV gain would be fake.\n\nWhat I did: fit TFIDF (English stop words removed, sublinear tf) on train plus pool, took the mean vector of each of the 150 train prompts, and for every pool passage computed its max cosine similarity to any of those prompt centroids. As a reference I scored every train passage against its own prompt centroid.\n\nTrain passage vs its own prompt: median 0.525, 10th percentile 0.411\n\nPool passages above 0.3: 0.70%\n\nPool passages above 0.4: 0.26%, about 100 of 38,642\n\nPool passages above 0.5: 0.09%\n\nSo 90% of real same prompt pairs sit above 0.41, while only about 100 pool passages even reach 0.4. The pool is almost entirely a different set of prompts, so the CV gain from adding it should be real.\n\nFor reference, with prompt grouped 5 fold CV my four view ngram SVC goes from 0.3723 on train only to 0.4375 with the pool, close to what others have posted.\n\nIf you want to be strict you could drop the ~100 closest pool passages in each fold, but I doubt it moves anything.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "SwapIY",
+                  "id": 27355874,
+                  "performance_tier": "EXPERT",
+                  "profile_url": "/swapiy",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "EXPERT",
+                  "url": "/swapiy",
+                  "user_id": 27355874,
+                  "user_name": "swapiy"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1
+              }
+            },
+            "first_message_id": 3543282,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 751941,
+            "name": "Does the public pool leak train prompts into grouped CV? Quick check says no",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-10-23T05:44:24.404152700Z",
+            "total_messages": 2,
+            "url": "/competitions/name-that-llm/discussion/751941"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:24:08+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:24:08+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-10-24T05:20:51.493333300Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [
+    {
+      "slug": "name-that-llm",
+      "topic_id": 751941,
+      "message_id": 3543778,
+      "parent_message_id": null,
+      "author": "GoPain",
+      "author_url": "/locdunhat",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-10-24T01:21:56.477Z",
+      "raw_markdown": "I ran a passage-level version of this check, on the larger pool v4 (75,783 passages from Nishant Dahal's ntl-handwriting-blend), and it agrees with you.\n\nInstead of prompt centroids I took each pool passage's max TF-IDF cosine to any single train passage (English stop words removed, sublinear tf), which also catches a regeneration of one train answer:\n\n- cosine ≥ 0.3: 934 passages (1.2%), 701 of them from one source\n- ≥ 0.4: 303\n- ≥ 0.5: 96\n\nDropping, inside each fold, the pool passages at ≥ 0.3 to that fold's validation passages moved my 4-view n-gram SVC by −0.002 and +0.006 on the two folds I ran (0.4796 → 0.4778, 0.4741 → 0.4796). That is noise.\n\nTo see how much leakage it would take to matter, I simulated it with a known truth (authors, prompts, and an \"answer\" component shared by every regeneration of the same answer). The CV lift grows with the share of train passages that have a near-copy in the pool, about +0.1 per unit of share: +0.017 at 20% and +0.041 at 40%. The fresh-test score does not move at all. A cosine filter between the two tails removes 99% of the copies and the whole lift, at no cost on the test. Notebook: https://www.kaggle.com/code/locdunhat/near-duplicates-in-an-external-pool-and-grouped-cv\n\nCounted the way the simulation counts leakage (the share of train passages with a same-model pool passage above the threshold), pool v4 gives 12.4% at ≥ 0.3, 3.9% at ≥ 0.4 and 1.3% at ≥ 0.5 of the 2,699 train passages. Even if every one of those at 0.3 were a true regeneration, the simulation's rate predicts about +0.012 of CV lift, and at a cosine of 0.3 many are probably just the same topic. That fits the −0.002/+0.006 I measured. So the pool's CV gain is real, as you said, and near-copies don't explain why pool-trained CV reads about 0.03–0.04 above the LB (my numbers are in https://www.kaggle.com/competitions/name-that-llm/discussion/750390#3543235). My blend with a LoRA trained on pool v4 with those 934 passages removed still reads 0.6138 CV against 0.589 LB.",
+      "content_html": "<p>I ran a passage-level version of this check, on the larger pool v4 (75,783 passages from Nishant Dahal's ntl-handwriting-blend), and it agrees with you.</p>\n<p>Instead of prompt centroids I took each pool passage's max TF-IDF cosine to any single train passage (English stop words removed, sublinear tf), which also catches a regeneration of one train answer:</p>\n<ul>\n<li>cosine ≥ 0.3: 934 passages (1.2%), 701 of them from one source</li>\n<li>≥ 0.4: 303</li>\n<li>≥ 0.5: 96</li>\n</ul>\n<p>Dropping, inside each fold, the pool passages at ≥ 0.3 to that fold's validation passages moved my 4-view n-gram SVC by −0.002 and +0.006 on the two folds I ran (0.4796 → 0.4778, 0.4741 → 0.4796). That is noise.</p>\n<p>To see how much leakage it would take to matter, I simulated it with a known truth (authors, prompts, and an \"answer\" component shared by every regeneration of the same answer). The CV lift grows with the share of train passages that have a near-copy in the pool, about +0.1 per unit of share: +0.017 at 20% and +0.041 at 40%. The fresh-test score does not move at all. A cosine filter between the two tails removes 99% of the copies and the whole lift, at no cost on the test. Notebook: <a href=\"https://www.kaggle.com/code/locdunhat/near-duplicates-in-an-external-pool-and-grouped-cv\" target=\"_blank\">https://www.kaggle.com/code/locdunhat/near-duplicates-in-an-external-pool-and-grouped-cv</a></p>\n<p>Counted the way the simulation counts leakage (the share of train passages with a same-model pool passage above the threshold), pool v4 gives 12.4% at ≥ 0.3, 3.9% at ≥ 0.4 and 1.3% at ≥ 0.5 of the 2,699 train passages. Even if every one of those at 0.3 were a true regeneration, the simulation's rate predicts about +0.012 of CV lift, and at a cosine of 0.3 many are probably just the same topic. That fits the −0.002/+0.006 I measured. So the pool's CV gain is real, as you said, and near-copies don't explain why pool-trained CV reads about 0.03–0.04 above the LB (my numbers are in <a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/750390#3543235)\" target=\"_blank\">https://www.kaggle.com/competitions/name-that-llm/discussion/750390#3543235)</a>. My blend with a LoRA trained on pool v4 with those 934 passages removed still reads 0.6138 CV against 0.589 LB.</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:57:11+00:00",
+      "last_seen_at": "2026-11-16T16:24:08+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:24:08+00:00",
+      "remote_last_listed_at": "2026-11-16T16:24:08+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "GoPain",
+          "tier": "CONTRIBUTOR",
+          "url": "/locdunhat"
+        },
+        "content": "<p>I ran a passage-level version of this check, on the larger pool v4 (75,783 passages from Nishant Dahal's ntl-handwriting-blend), and it agrees with you.</p>\n<p>Instead of prompt centroids I took each pool passage's max TF-IDF cosine to any single train passage (English stop words removed, sublinear tf), which also catches a regeneration of one train answer:</p>\n<ul>\n<li>cosine ≥ 0.3: 934 passages (1.2%), 701 of them from one source</li>\n<li>≥ 0.4: 303</li>\n<li>≥ 0.5: 96</li>\n</ul>\n<p>Dropping, inside each fold, the pool passages at ≥ 0.3 to that fold's validation passages moved my 4-view n-gram SVC by −0.002 and +0.006 on the two folds I ran (0.4796 → 0.4778, 0.4741 → 0.4796). That is noise.</p>\n<p>To see how much leakage it would take to matter, I simulated it with a known truth (authors, prompts, and an \"answer\" component shared by every regeneration of the same answer). The CV lift grows with the share of train passages that have a near-copy in the pool, about +0.1 per unit of share: +0.017 at 20% and +0.041 at 40%. The fresh-test score does not move at all. A cosine filter between the two tails removes 99% of the copies and the whole lift, at no cost on the test. Notebook: <a href=\"https://www.kaggle.com/code/locdunhat/near-duplicates-in-an-external-pool-and-grouped-cv\" target=\"_blank\">https://www.kaggle.com/code/locdunhat/near-duplicates-in-an-external-pool-and-grouped-cv</a></p>\n<p>Counted the way the simulation counts leakage (the share of train passages with a same-model pool passage above the threshold), pool v4 gives 12.4% at ≥ 0.3, 3.9% at ≥ 0.4 and 1.3% at ≥ 0.5 of the 2,699 train passages. Even if every one of those at 0.3 were a true regeneration, the simulation's rate predicts about +0.012 of CV lift, and at a cosine of 0.3 many are probably just the same topic. That fits the −0.002/+0.006 I measured. So the pool's CV gain is real, as you said, and near-copies don't explain why pool-trained CV reads about 0.03–0.04 above the LB (my numbers are in <a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/750390#3543235)\" target=\"_blank\">https://www.kaggle.com/competitions/name-that-llm/discussion/750390#3543235)</a>. My blend with a LoRA trained on pool v4 with those 934 passages removed still reads 0.6138 CV against 0.589 LB.</p>",
+        "id": 3543778,
+        "isThankYou": false,
+        "postDate": "2026-10-24T01:21:56.477Z",
+        "raw": {
+          "author": {
+            "display_name": "GoPain",
+            "id": 3897663,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3897663-kg.jpg?t=2026-10-14-14-18-45",
+            "tier": "CONTRIBUTOR",
+            "url": "/locdunhat"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 1038,
+          "content": "<p>I ran a passage-level version of this check, on the larger pool v4 (75,783 passages from Nishant Dahal's ntl-handwriting-blend), and it agrees with you.</p>\n<p>Instead of prompt centroids I took each pool passage's max TF-IDF cosine to any single train passage (English stop words removed, sublinear tf), which also catches a regeneration of one train answer:</p>\n<ul>\n<li>cosine ≥ 0.3: 934 passages (1.2%), 701 of them from one source</li>\n<li>≥ 0.4: 303</li>\n<li>≥ 0.5: 96</li>\n</ul>\n<p>Dropping, inside each fold, the pool passages at ≥ 0.3 to that fold's validation passages moved my 4-view n-gram SVC by −0.002 and +0.006 on the two folds I ran (0.4796 → 0.4778, 0.4741 → 0.4796). That is noise.</p>\n<p>To see how much leakage it would take to matter, I simulated it with a known truth (authors, prompts, and an \"answer\" component shared by every regeneration of the same answer). The CV lift grows with the share of train passages that have a near-copy in the pool, about +0.1 per unit of share: +0.017 at 20% and +0.041 at 40%. The fresh-test score does not move at all. A cosine filter between the two tails removes 99% of the copies and the whole lift, at no cost on the test. Notebook: <a href=\"https://www.kaggle.com/code/locdunhat/near-duplicates-in-an-external-pool-and-grouped-cv\" target=\"_blank\">https://www.kaggle.com/code/locdunhat/near-duplicates-in-an-external-pool-and-grouped-cv</a></p>\n<p>Counted the way the simulation counts leakage (the share of train passages with a same-model pool passage above the threshold), pool v4 gives 12.4% at ≥ 0.3, 3.9% at ≥ 0.4 and 1.3% at ≥ 0.5 of the 2,699 train passages. Even if every one of those at 0.3 were a true regeneration, the simulation's rate predicts about +0.012 of CV lift, and at a cosine of 0.3 many are probably just the same topic. That fits the −0.002/+0.006 I measured. So the pool's CV gain is real, as you said, and near-copies don't explain why pool-trained CV reads about 0.03–0.04 above the LB (my numbers are in <a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/750390#3543235)\" target=\"_blank\">https://www.kaggle.com/competitions/name-that-llm/discussion/750390#3543235)</a>. My blend with a LoRA trained on pool v4 with those 934 passages removed still reads 0.6138 CV against 0.589 LB.</p>",
+          "feedback_tracking_data": {},
+          "id": 3543778,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-24T01:21:56.477Z",
+          "raw_markdown": "I ran a passage-level version of this check, on the larger pool v4 (75,783 passages from Nishant Dahal's ntl-handwriting-blend), and it agrees with you.\n\nInstead of prompt centroids I took each pool passage's max TF-IDF cosine to any single train passage (English stop words removed, sublinear tf), which also catches a regeneration of one train answer:\n\n- cosine ≥ 0.3: 934 passages (1.2%), 701 of them from one source\n- ≥ 0.4: 303\n- ≥ 0.5: 96\n\nDropping, inside each fold, the pool passages at ≥ 0.3 to that fold's validation passages moved my 4-view n-gram SVC by −0.002 and +0.006 on the two folds I ran (0.4796 → 0.4778, 0.4741 → 0.4796). That is noise.\n\nTo see how much leakage it would take to matter, I simulated it with a known truth (authors, prompts, and an \"answer\" component shared by every regeneration of the same answer). The CV lift grows with the share of train passages that have a near-copy in the pool, about +0.1 per unit of share: +0.017 at 20% and +0.041 at 40%. The fresh-test score does not move at all. A cosine filter between the two tails removes 99% of the copies and the whole lift, at no cost on the test. Notebook: https://www.kaggle.com/code/locdunhat/near-duplicates-in-an-external-pool-and-grouped-cv\n\nCounted the way the simulation counts leakage (the share of train passages with a same-model pool passage above the threshold), pool v4 gives 12.4% at ≥ 0.3, 3.9% at ≥ 0.4 and 1.3% at ≥ 0.5 of the 2,699 train passages. Even if every one of those at 0.3 were a true regeneration, the simulation's rate predicts about +0.012 of CV lift, and at a cosine of 0.3 many are probably just the same topic. That fits the −0.002/+0.006 I measured. So the pool's CV gain is real, as you said, and near-copies don't explain why pool-trained CV reads about 0.03–0.04 above the LB (my numbers are in https://www.kaggle.com/competitions/name-that-llm/discussion/750390#3543235). My blend with a LoRA trained on pool v4 with those 934 passages removed still reads 0.6138 CV against 0.589 LB.",
+          "replies": [
+            {
+              "author": {
+                "display_name": "SwapIY",
+                "id": 27355874,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "EXPERT",
+                "url": "/swapiy"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 937,
+              "content": "<p>Thanks for running the passage level version, that is a cleaner test than my centroid one since it also catches a regeneration of a single answer.</p>\n<p>On v4 my centroid filter at 0.4 flags 711 of 75,783 passages (0.94%), so it is stricter than yours at the same threshold, probably because a prompt centroid sits closer to generic topic words than any single answer. I drop those everywhere now since it costs almost nothing.</p>\n<p>With the cleaned v4 my four view ngram SVC lands at 0.466 overall (0.43 to 0.48 per fold), in line with your 0.474 to 0.480, so whatever leak is left looks like noise for the ngram model too.</p>\n<p>The simulation is a nice addition. Out of curiosity, the 701 passages from one source, do you know if that set regenerated train prompts on purpose from the reconstructed prompt list, or is it just topic overlap?</p>",
+              "feedback_tracking_data": {},
+              "id": 3543844,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-24T05:20:51.493Z",
+              "raw_markdown": "Thanks for running the passage level version, that is a cleaner test than my centroid one since it also catches a regeneration of a single answer.\n\nOn v4 my centroid filter at 0.4 flags 711 of 75,783 passages (0.94%), so it is stricter than yours at the same threshold, probably because a prompt centroid sits closer to generic topic words than any single answer. I drop those everywhere now since it costs almost nothing.\n\nWith the cleaned v4 my four view ngram SVC lands at 0.466 overall (0.43 to 0.48 per fold), in line with your 0.474 to 0.480, so whatever leak is left looks like noise for the ngram model too.\n\nThe simulation is a nice addition. Out of curiosity, the 701 passages from one source, do you know if that set regenerated train prompts on purpose from the reconstructed prompt list, or is it just topic overlap?",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "SwapIY",
+                  "id": 27355874,
+                  "performance_tier": "EXPERT",
+                  "profile_url": "/swapiy",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "EXPERT",
+                  "url": "/swapiy",
+                  "user_id": 27355874,
+                  "user_name": "swapiy"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            }
+          ],
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "GoPain",
+              "id": 3897663,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/locdunhat",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3897663-kg.jpg?t=2026-10-14-14-18-45",
+              "tier": "CONTRIBUTOR",
+              "url": "/locdunhat",
+              "user_id": 3897663,
+              "user_name": "locdunhat"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "I ran a passage-level version of this check, on the larger pool v4 (75,783 passages from Nishant Dahal's ntl-handwriting-blend), and it agrees with you.\n\nInstead of prompt centroids I took each pool passage's max TF-IDF cosine to any single train passage (English stop words removed, sublinear tf), which also catches a regeneration of one train answer:\n\n- cosine ≥ 0.3: 934 passages (1.2%), 701 of them from one source\n- ≥ 0.4: 303\n- ≥ 0.5: 96\n\nDropping, inside each fold, the pool passages at ≥ 0.3 to that fold's validation passages moved my 4-view n-gram SVC by −0.002 and +0.006 on the two folds I ran (0.4796 → 0.4778, 0.4741 → 0.4796). That is noise.\n\nTo see how much leakage it would take to matter, I simulated it with a known truth (authors, prompts, and an \"answer\" component shared by every regeneration of the same answer). The CV lift grows with the share of train passages that have a near-copy in the pool, about +0.1 per unit of share: +0.017 at 20% and +0.041 at 40%. The fresh-test score does not move at all. A cosine filter between the two tails removes 99% of the copies and the whole lift, at no cost on the test. Notebook: https://www.kaggle.com/code/locdunhat/near-duplicates-in-an-external-pool-and-grouped-cv\n\nCounted the way the simulation counts leakage (the share of train passages with a same-model pool passage above the threshold), pool v4 gives 12.4% at ≥ 0.3, 3.9% at ≥ 0.4 and 1.3% at ≥ 0.5 of the 2,699 train passages. Even if every one of those at 0.3 were a true regeneration, the simulation's rate predicts about +0.012 of CV lift, and at a cosine of 0.3 many are probably just the same topic. That fits the −0.002/+0.006 I measured. So the pool's CV gain is real, as you said, and near-copies don't explain why pool-trained CV reads about 0.03–0.04 above the LB (my numbers are in https://www.kaggle.com/competitions/name-that-llm/discussion/750390#3543235). My blend with a LoRA trained on pool v4 with those 934 passages removed still reads 0.6138 CV against 0.589 LB.",
+        "replies": [
+          {
+            "author": {
+              "displayName": "SwapIY",
+              "tier": "EXPERT",
+              "url": "/swapiy"
+            },
+            "content": "<p>Thanks for running the passage level version, that is a cleaner test than my centroid one since it also catches a regeneration of a single answer.</p>\n<p>On v4 my centroid filter at 0.4 flags 711 of 75,783 passages (0.94%), so it is stricter than yours at the same threshold, probably because a prompt centroid sits closer to generic topic words than any single answer. I drop those everywhere now since it costs almost nothing.</p>\n<p>With the cleaned v4 my four view ngram SVC lands at 0.466 overall (0.43 to 0.48 per fold), in line with your 0.474 to 0.480, so whatever leak is left looks like noise for the ngram model too.</p>\n<p>The simulation is a nice addition. Out of curiosity, the 701 passages from one source, do you know if that set regenerated train prompts on purpose from the reconstructed prompt list, or is it just topic overlap?</p>",
+            "id": 3543844,
+            "isThankYou": false,
+            "postDate": "2026-10-24T05:20:51.493Z",
+            "raw": {
+              "author": {
+                "display_name": "SwapIY",
+                "id": 27355874,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "EXPERT",
+                "url": "/swapiy"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 937,
+              "content": "<p>Thanks for running the passage level version, that is a cleaner test than my centroid one since it also catches a regeneration of a single answer.</p>\n<p>On v4 my centroid filter at 0.4 flags 711 of 75,783 passages (0.94%), so it is stricter than yours at the same threshold, probably because a prompt centroid sits closer to generic topic words than any single answer. I drop those everywhere now since it costs almost nothing.</p>\n<p>With the cleaned v4 my four view ngram SVC lands at 0.466 overall (0.43 to 0.48 per fold), in line with your 0.474 to 0.480, so whatever leak is left looks like noise for the ngram model too.</p>\n<p>The simulation is a nice addition. Out of curiosity, the 701 passages from one source, do you know if that set regenerated train prompts on purpose from the reconstructed prompt list, or is it just topic overlap?</p>",
+              "feedback_tracking_data": {},
+              "id": 3543844,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-24T05:20:51.493Z",
+              "raw_markdown": "Thanks for running the passage level version, that is a cleaner test than my centroid one since it also catches a regeneration of a single answer.\n\nOn v4 my centroid filter at 0.4 flags 711 of 75,783 passages (0.94%), so it is stricter than yours at the same threshold, probably because a prompt centroid sits closer to generic topic words than any single answer. I drop those everywhere now since it costs almost nothing.\n\nWith the cleaned v4 my four view ngram SVC lands at 0.466 overall (0.43 to 0.48 per fold), in line with your 0.474 to 0.480, so whatever leak is left looks like noise for the ngram model too.\n\nThe simulation is a nice addition. Out of curiosity, the 701 passages from one source, do you know if that set regenerated train prompts on purpose from the reconstructed prompt list, or is it just topic overlap?",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "SwapIY",
+                  "id": 27355874,
+                  "performance_tier": "EXPERT",
+                  "profile_url": "/swapiy",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "EXPERT",
+                  "url": "/swapiy",
+                  "user_id": 27355874,
+                  "user_name": "swapiy"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "Thanks for running the passage level version, that is a cleaner test than my centroid one since it also catches a regeneration of a single answer.\n\nOn v4 my centroid filter at 0.4 flags 711 of 75,783 passages (0.94%), so it is stricter than yours at the same threshold, probably because a prompt centroid sits closer to generic topic words than any single answer. I drop those everywhere now since it costs almost nothing.\n\nWith the cleaned v4 my four view ngram SVC lands at 0.466 overall (0.43 to 0.48 per fold), in line with your 0.474 to 0.480, so whatever leak is left looks like noise for the ngram model too.\n\nThe simulation is a nice addition. Out of curiosity, the 701 passages from one source, do you know if that set regenerated train prompts on purpose from the reconstructed prompt list, or is it just topic overlap?",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 751941,
+      "message_id": 3543844,
+      "parent_message_id": 3543778,
+      "author": "SwapIY",
+      "author_url": "/swapiy",
+      "author_tier": "EXPERT",
+      "post_date": "2026-10-24T05:20:51.493Z",
+      "raw_markdown": "Thanks for running the passage level version, that is a cleaner test than my centroid one since it also catches a regeneration of a single answer.\n\nOn v4 my centroid filter at 0.4 flags 711 of 75,783 passages (0.94%), so it is stricter than yours at the same threshold, probably because a prompt centroid sits closer to generic topic words than any single answer. I drop those everywhere now since it costs almost nothing.\n\nWith the cleaned v4 my four view ngram SVC lands at 0.466 overall (0.43 to 0.48 per fold), in line with your 0.474 to 0.480, so whatever leak is left looks like noise for the ngram model too.\n\nThe simulation is a nice addition. Out of curiosity, the 701 passages from one source, do you know if that set regenerated train prompts on purpose from the reconstructed prompt list, or is it just topic overlap?",
+      "content_html": "<p>Thanks for running the passage level version, that is a cleaner test than my centroid one since it also catches a regeneration of a single answer.</p>\n<p>On v4 my centroid filter at 0.4 flags 711 of 75,783 passages (0.94%), so it is stricter than yours at the same threshold, probably because a prompt centroid sits closer to generic topic words than any single answer. I drop those everywhere now since it costs almost nothing.</p>\n<p>With the cleaned v4 my four view ngram SVC lands at 0.466 overall (0.43 to 0.48 per fold), in line with your 0.474 to 0.480, so whatever leak is left looks like noise for the ngram model too.</p>\n<p>The simulation is a nice addition. Out of curiosity, the 701 passages from one source, do you know if that set regenerated train prompts on purpose from the reconstructed prompt list, or is it just topic overlap?</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 1,
+      "first_seen_at": "2026-11-04T06:57:11+00:00",
+      "last_seen_at": "2026-11-16T16:24:08+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:24:08+00:00",
+      "remote_last_listed_at": "2026-11-16T16:24:08+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "SwapIY",
+          "tier": "EXPERT",
+          "url": "/swapiy"
+        },
+        "content": "<p>Thanks for running the passage level version, that is a cleaner test than my centroid one since it also catches a regeneration of a single answer.</p>\n<p>On v4 my centroid filter at 0.4 flags 711 of 75,783 passages (0.94%), so it is stricter than yours at the same threshold, probably because a prompt centroid sits closer to generic topic words than any single answer. I drop those everywhere now since it costs almost nothing.</p>\n<p>With the cleaned v4 my four view ngram SVC lands at 0.466 overall (0.43 to 0.48 per fold), in line with your 0.474 to 0.480, so whatever leak is left looks like noise for the ngram model too.</p>\n<p>The simulation is a nice addition. Out of curiosity, the 701 passages from one source, do you know if that set regenerated train prompts on purpose from the reconstructed prompt list, or is it just topic overlap?</p>",
+        "id": 3543844,
+        "isThankYou": false,
+        "postDate": "2026-10-24T05:20:51.493Z",
+        "raw": {
+          "author": {
+            "display_name": "SwapIY",
+            "id": 27355874,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+            "tier": "EXPERT",
+            "url": "/swapiy"
+          },
+          "author_type": "TOPIC",
+          "competition_ranking": 937,
+          "content": "<p>Thanks for running the passage level version, that is a cleaner test than my centroid one since it also catches a regeneration of a single answer.</p>\n<p>On v4 my centroid filter at 0.4 flags 711 of 75,783 passages (0.94%), so it is stricter than yours at the same threshold, probably because a prompt centroid sits closer to generic topic words than any single answer. I drop those everywhere now since it costs almost nothing.</p>\n<p>With the cleaned v4 my four view ngram SVC lands at 0.466 overall (0.43 to 0.48 per fold), in line with your 0.474 to 0.480, so whatever leak is left looks like noise for the ngram model too.</p>\n<p>The simulation is a nice addition. Out of curiosity, the 701 passages from one source, do you know if that set regenerated train prompts on purpose from the reconstructed prompt list, or is it just topic overlap?</p>",
+          "feedback_tracking_data": {},
+          "id": 3543844,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-24T05:20:51.493Z",
+          "raw_markdown": "Thanks for running the passage level version, that is a cleaner test than my centroid one since it also catches a regeneration of a single answer.\n\nOn v4 my centroid filter at 0.4 flags 711 of 75,783 passages (0.94%), so it is stricter than yours at the same threshold, probably because a prompt centroid sits closer to generic topic words than any single answer. I drop those everywhere now since it costs almost nothing.\n\nWith the cleaned v4 my four view ngram SVC lands at 0.466 overall (0.43 to 0.48 per fold), in line with your 0.474 to 0.480, so whatever leak is left looks like noise for the ngram model too.\n\nThe simulation is a nice addition. Out of curiosity, the 701 passages from one source, do you know if that set regenerated train prompts on purpose from the reconstructed prompt list, or is it just topic overlap?",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "SwapIY",
+              "id": 27355874,
+              "performance_tier": "EXPERT",
+              "profile_url": "/swapiy",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "EXPERT",
+              "url": "/swapiy",
+              "user_id": 27355874,
+              "user_name": "swapiy"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "Thanks for running the passage level version, that is a cleaner test than my centroid one since it also catches a regeneration of a single answer.\n\nOn v4 my centroid filter at 0.4 flags 711 of 75,783 passages (0.94%), so it is stricter than yours at the same threshold, probably because a prompt centroid sits closer to generic topic words than any single answer. I drop those everywhere now since it costs almost nothing.\n\nWith the cleaned v4 my four view ngram SVC lands at 0.466 overall (0.43 to 0.48 per fold), in line with your 0.474 to 0.480, so whatever leak is left looks like noise for the ngram model too.\n\nThe simulation is a nice addition. Out of curiosity, the 701 passages from one source, do you know if that set regenerated train prompts on purpose from the reconstructed prompt list, or is it just topic overlap?",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    }
+  ],
+  "writeup": null
+}

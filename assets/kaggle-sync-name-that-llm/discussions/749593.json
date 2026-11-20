@@ -1,0 +1,253 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 749593,
+    "title": "Random-split CV underestimates you here: 0.22 vs 0.37 – split by prompt_id",
+    "author": "Aleksey Osipenko",
+    "author_url": "/alekseyosipenko",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-10-15T14:44:35.230887400Z",
+    "last_comment_post_date": "2026-10-15T14:44:35.230Z",
+    "comment_count": 0,
+    "votes": 4,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/749593",
+    "first_message_id": 3539187,
+    "first_seen_at": "2026-11-04T06:56:18+00:00",
+    "last_seen_at": "2026-11-16T16:36:32+00:00",
+    "detail_last_synced_at": "2026-11-16T16:36:32+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "2215197f7f5961fea7bc6e87506ab9049c6dc119b5b45f28740ad8c91dbafee5",
+    "listing_metrics_hash": "818a5cc0f2253a82207ce555576d24d0d4b4461b2ac293b834a011f9d570c30a",
+    "detail_content_hash": "1c2483e6bb241e77867856941dbd10cfe006e08cd76ba300a57dedbe4b1fbcee",
+    "detail_last_checked_at": "2026-11-16T16:36:32+00:00",
+    "detail_next_check_at": "2026-11-23T16:36:32+00:00",
+    "detail_unchanged_count": 2,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 0,
+      "firstForumMessageId": null,
+      "id": 749593,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-10-15T14:44:35.230Z",
+      "postDate": "2026-10-15T14:44:35.230887400Z",
+      "raw": {
+        "id": 749593,
+        "last_comment_post_date": "2026-10-15T14:44:35.230Z",
+        "post_date": "2026-10-15T14:44:35.230887400Z",
+        "title": "Random-split CV underestimates you here: 0.22 vs 0.37 – split by prompt_id",
+        "topic_url": "/competitions/name-that-llm/discussion/749593",
+        "votes": 4
+      },
+      "title": "Random-split CV underestimates you here: 0.22 vs 0.37 – split by prompt_id",
+      "topicUrl": "/competitions/name-that-llm/discussion/749593",
+      "votes": 4
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "Aleksey Osipenko",
+        "authorUserName": "alekseyosipenko",
+        "comments": [],
+        "expectedCommentCount": 0,
+        "firstMessage": {
+          "author": {
+            "displayName": "Aleksey Osipenko",
+            "tier": "CONTRIBUTOR",
+            "url": "/alekseyosipenko"
+          },
+          "content": "<p>Quick finding that may save you some time.</p>\n<p>Every prompt in train is answered exactly once by each of the 18 models (2,699 passages / 150 prompts). That makes a random K-fold misleading – but in the opposite direction from usual.</p>\n<p>With a random split, the passage you validate on has its 17 \"siblings\" (same prompt, other models) in train. Topic words were seen only with other labels, so they push the prediction away from the true model.</p>\n<p>Same TF-IDF + stylometry model, balanced accuracy:</p>\n<ul>\n<li>StratifiedKFold (random): 0.217</li>\n<li>StratifiedGroupKFold by prompt_id: 0.369</li>\n<li>Public LB of the same model: 0.355</li>\n</ul>\n<p>The group split tracks the LB within 0.014, the random split misses it by 0.14. If you tune on a random split, you may be throwing away ideas that actually work.</p>\n<p>Two more things from the out-of-fold analysis:</p>\n<ul>\n<li>The lab is much easier than the exact model: lab-level balanced accuracy 0.587 vs 0.369. About half of all errors stay inside the same lab – the three Gemini Flash models confuse each other most.</li>\n<li>Both GLM models are most often mistaken for claude-opus-5.</li>\n</ul>\n<p>Full notebook with the comparison, style heatmap and confusion analysis:\n<a href=\"https://www.kaggle.com/code/alekseyosipenko/name-that-llm-honest-cv-by-prompt-stylometry\" target=\"_blank\">https://www.kaggle.com/code/alekseyosipenko/name-that-llm-honest-cv-by-prompt-stylometry</a></p>\n<p>Curious whether others see the same gap with embedding-based models.</p>",
+          "id": 3539187,
+          "isThankYou": false,
+          "postDate": "2026-10-15T14:44:35.230Z",
+          "raw": {
+            "author": {
+              "display_name": "Aleksey Osipenko",
+              "id": 30842335,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30842335-kg.jpg?t=2026-10-17-12-05-04",
+              "tier": "CONTRIBUTOR",
+              "url": "/alekseyosipenko"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 1604,
+            "content": "<p>Quick finding that may save you some time.</p>\n<p>Every prompt in train is answered exactly once by each of the 18 models (2,699 passages / 150 prompts). That makes a random K-fold misleading – but in the opposite direction from usual.</p>\n<p>With a random split, the passage you validate on has its 17 \"siblings\" (same prompt, other models) in train. Topic words were seen only with other labels, so they push the prediction away from the true model.</p>\n<p>Same TF-IDF + stylometry model, balanced accuracy:</p>\n<ul>\n<li>StratifiedKFold (random): 0.217</li>\n<li>StratifiedGroupKFold by prompt_id: 0.369</li>\n<li>Public LB of the same model: 0.355</li>\n</ul>\n<p>The group split tracks the LB within 0.014, the random split misses it by 0.14. If you tune on a random split, you may be throwing away ideas that actually work.</p>\n<p>Two more things from the out-of-fold analysis:</p>\n<ul>\n<li>The lab is much easier than the exact model: lab-level balanced accuracy 0.587 vs 0.369. About half of all errors stay inside the same lab – the three Gemini Flash models confuse each other most.</li>\n<li>Both GLM models are most often mistaken for claude-opus-5.</li>\n</ul>\n<p>Full notebook with the comparison, style heatmap and confusion analysis:\n<a href=\"https://www.kaggle.com/code/alekseyosipenko/name-that-llm-honest-cv-by-prompt-stylometry\" target=\"_blank\">https://www.kaggle.com/code/alekseyosipenko/name-that-llm-honest-cv-by-prompt-stylometry</a></p>\n<p>Curious whether others see the same gap with embedding-based models.</p>",
+            "feedback_tracking_data": {},
+            "id": 3539187,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-10-15T14:44:35.230Z",
+            "raw_markdown": "Quick finding that may save you some time.\n\nEvery prompt in train is answered exactly once by each of the 18 models (2,699 passages / 150 prompts). That makes a random K-fold misleading – but in the opposite direction from usual.\n\nWith a random split, the passage you validate on has its 17 \"siblings\" (same prompt, other models) in train. Topic words were seen only with other labels, so they push the prediction away from the true model.\n\nSame TF-IDF + stylometry model, balanced accuracy:\n\n- StratifiedKFold (random): 0.217\n- StratifiedGroupKFold by prompt_id: 0.369\n- Public LB of the same model: 0.355\n\nThe group split tracks the LB within 0.014, the random split misses it by 0.14. If you tune on a random split, you may be throwing away ideas that actually work.\n\nTwo more things from the out-of-fold analysis:\n\n- The lab is much easier than the exact model: lab-level balanced accuracy 0.587 vs 0.369. About half of all errors stay inside the same lab – the three Gemini Flash models confuse each other most.\n- Both GLM models are most often mistaken for claude-opus-5.\n\nFull notebook with the comparison, style heatmap and confusion analysis:\nhttps://www.kaggle.com/code/alekseyosipenko/name-that-llm-honest-cv-by-prompt-stylometry\n\nCurious whether others see the same gap with embedding-based models.",
+            "reactions": [
+              {
+                "emoji": "THANK_YOU",
+                "featured_user_names": [
+                  "maniceet",
+                  "beingraja",
+                  "bykjeon",
+                  "i220884syeddilawar",
+                  "petrovmarko"
+                ],
+                "user_count": 5
+              }
+            ],
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "Aleksey Osipenko",
+                "id": 30842335,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/alekseyosipenko",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30842335-kg.jpg?t=2026-10-17-12-05-04",
+                "tier": "CONTRIBUTOR",
+                "url": "/alekseyosipenko",
+                "user_id": 30842335,
+                "user_name": "alekseyosipenko"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 4,
+              "total_votes": 4
+            }
+          },
+          "rawMarkdown": "Quick finding that may save you some time.\n\nEvery prompt in train is answered exactly once by each of the 18 models (2,699 passages / 150 prompts). That makes a random K-fold misleading – but in the opposite direction from usual.\n\nWith a random split, the passage you validate on has its 17 \"siblings\" (same prompt, other models) in train. Topic words were seen only with other labels, so they push the prediction away from the true model.\n\nSame TF-IDF + stylometry model, balanced accuracy:\n\n- StratifiedKFold (random): 0.217\n- StratifiedGroupKFold by prompt_id: 0.369\n- Public LB of the same model: 0.355\n\nThe group split tracks the LB within 0.014, the random split misses it by 0.14. If you tune on a random split, you may be throwing away ideas that actually work.\n\nTwo more things from the out-of-fold analysis:\n\n- The lab is much easier than the exact model: lab-level balanced accuracy 0.587 vs 0.369. About half of all errors stay inside the same lab – the three Gemini Flash models confuse each other most.\n- Both GLM models are most often mistaken for claude-opus-5.\n\nFull notebook with the comparison, style heatmap and confusion analysis:\nhttps://www.kaggle.com/code/alekseyosipenko/name-that-llm-honest-cv-by-prompt-stylometry\n\nCurious whether others see the same gap with embedding-based models.",
+          "replies": [],
+          "votes": {
+            "totalVotes": 4
+          }
+        },
+        "firstMessageId": 3539187,
+        "id": 749593,
+        "name": "Random-split CV underestimates you here: 0.22 vs 0.37 – split by prompt_id",
+        "postDate": "2026-10-15T14:44:35.230887400Z",
+        "url": "/competitions/name-that-llm/discussion/749593"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>Quick finding that may save you some time.</p>\n<p>Every prompt in train is answered exactly once by each of the 18 models (2,699 passages / 150 prompts). That makes a random K-fold misleading – but in the opposite direction from usual.</p>\n<p>With a random split, the passage you validate on has its 17 \"siblings\" (same prompt, other models) in train. Topic words were seen only with other labels, so they push the prediction away from the true model.</p>\n<p>Same TF-IDF + stylometry model, balanced accuracy:</p>\n<ul>\n<li>StratifiedKFold (random): 0.217</li>\n<li>StratifiedGroupKFold by prompt_id: 0.369</li>\n<li>Public LB of the same model: 0.355</li>\n</ul>\n<p>The group split tracks the LB within 0.014, the random split misses it by 0.14. If you tune on a random split, you may be throwing away ideas that actually work.</p>\n<p>Two more things from the out-of-fold analysis:</p>\n<ul>\n<li>The lab is much easier than the exact model: lab-level balanced accuracy 0.587 vs 0.369. About half of all errors stay inside the same lab – the three Gemini Flash models confuse each other most.</li>\n<li>Both GLM models are most often mistaken for claude-opus-5.</li>\n</ul>\n<p>Full notebook with the comparison, style heatmap and confusion analysis:\n<a href=\"https://www.kaggle.com/code/alekseyosipenko/name-that-llm-honest-cv-by-prompt-stylometry\" target=\"_blank\">https://www.kaggle.com/code/alekseyosipenko/name-that-llm-honest-cv-by-prompt-stylometry</a></p>\n<p>Curious whether others see the same gap with embedding-based models.</p>",
+              "id": 3539187,
+              "post_date": "2026-10-15T14:44:35.230Z",
+              "raw_markdown": "Quick finding that may save you some time.\n\nEvery prompt in train is answered exactly once by each of the 18 models (2,699 passages / 150 prompts). That makes a random K-fold misleading – but in the opposite direction from usual.\n\nWith a random split, the passage you validate on has its 17 \"siblings\" (same prompt, other models) in train. Topic words were seen only with other labels, so they push the prediction away from the true model.\n\nSame TF-IDF + stylometry model, balanced accuracy:\n\n- StratifiedKFold (random): 0.217\n- StratifiedGroupKFold by prompt_id: 0.369\n- Public LB of the same model: 0.355\n\nThe group split tracks the LB within 0.014, the random split misses it by 0.14. If you tune on a random split, you may be throwing away ideas that actually work.\n\nTwo more things from the out-of-fold analysis:\n\n- The lab is much easier than the exact model: lab-level balanced accuracy 0.587 vs 0.369. About half of all errors stay inside the same lab – the three Gemini Flash models confuse each other most.\n- Both GLM models are most often mistaken for claude-opus-5.\n\nFull notebook with the comparison, style heatmap and confusion analysis:\nhttps://www.kaggle.com/code/alekseyosipenko/name-that-llm-honest-cv-by-prompt-stylometry\n\nCurious whether others see the same gap with embedding-based models.",
+              "votes": 4
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 30842335,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "30842335-kg.jpg?t=2026-10-17-12-05-04",
+            "author_user_display_name": "Aleksey Osipenko",
+            "author_user_name": "alekseyosipenko",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "first_message": {
+              "author": {
+                "display_name": "Aleksey Osipenko",
+                "id": 30842335,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30842335-kg.jpg?t=2026-10-17-12-05-04",
+                "tier": "CONTRIBUTOR",
+                "url": "/alekseyosipenko"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 1604,
+              "content": "<p>Quick finding that may save you some time.</p>\n<p>Every prompt in train is answered exactly once by each of the 18 models (2,699 passages / 150 prompts). That makes a random K-fold misleading – but in the opposite direction from usual.</p>\n<p>With a random split, the passage you validate on has its 17 \"siblings\" (same prompt, other models) in train. Topic words were seen only with other labels, so they push the prediction away from the true model.</p>\n<p>Same TF-IDF + stylometry model, balanced accuracy:</p>\n<ul>\n<li>StratifiedKFold (random): 0.217</li>\n<li>StratifiedGroupKFold by prompt_id: 0.369</li>\n<li>Public LB of the same model: 0.355</li>\n</ul>\n<p>The group split tracks the LB within 0.014, the random split misses it by 0.14. If you tune on a random split, you may be throwing away ideas that actually work.</p>\n<p>Two more things from the out-of-fold analysis:</p>\n<ul>\n<li>The lab is much easier than the exact model: lab-level balanced accuracy 0.587 vs 0.369. About half of all errors stay inside the same lab – the three Gemini Flash models confuse each other most.</li>\n<li>Both GLM models are most often mistaken for claude-opus-5.</li>\n</ul>\n<p>Full notebook with the comparison, style heatmap and confusion analysis:\n<a href=\"https://www.kaggle.com/code/alekseyosipenko/name-that-llm-honest-cv-by-prompt-stylometry\" target=\"_blank\">https://www.kaggle.com/code/alekseyosipenko/name-that-llm-honest-cv-by-prompt-stylometry</a></p>\n<p>Curious whether others see the same gap with embedding-based models.</p>",
+              "feedback_tracking_data": {},
+              "id": 3539187,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-15T14:44:35.230Z",
+              "raw_markdown": "Quick finding that may save you some time.\n\nEvery prompt in train is answered exactly once by each of the 18 models (2,699 passages / 150 prompts). That makes a random K-fold misleading – but in the opposite direction from usual.\n\nWith a random split, the passage you validate on has its 17 \"siblings\" (same prompt, other models) in train. Topic words were seen only with other labels, so they push the prediction away from the true model.\n\nSame TF-IDF + stylometry model, balanced accuracy:\n\n- StratifiedKFold (random): 0.217\n- StratifiedGroupKFold by prompt_id: 0.369\n- Public LB of the same model: 0.355\n\nThe group split tracks the LB within 0.014, the random split misses it by 0.14. If you tune on a random split, you may be throwing away ideas that actually work.\n\nTwo more things from the out-of-fold analysis:\n\n- The lab is much easier than the exact model: lab-level balanced accuracy 0.587 vs 0.369. About half of all errors stay inside the same lab – the three Gemini Flash models confuse each other most.\n- Both GLM models are most often mistaken for claude-opus-5.\n\nFull notebook with the comparison, style heatmap and confusion analysis:\nhttps://www.kaggle.com/code/alekseyosipenko/name-that-llm-honest-cv-by-prompt-stylometry\n\nCurious whether others see the same gap with embedding-based models.",
+              "reactions": [
+                {
+                  "emoji": "THANK_YOU",
+                  "featured_user_names": [
+                    "maniceet",
+                    "beingraja",
+                    "bykjeon",
+                    "i220884syeddilawar",
+                    "petrovmarko"
+                  ],
+                  "user_count": 5
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Aleksey Osipenko",
+                  "id": 30842335,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/alekseyosipenko",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30842335-kg.jpg?t=2026-10-17-12-05-04",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/alekseyosipenko",
+                  "user_id": 30842335,
+                  "user_name": "alekseyosipenko"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 4,
+                "total_votes": 4
+              }
+            },
+            "first_message_id": 3539187,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 749593,
+            "name": "Random-split CV underestimates you here: 0.22 vs 0.37 – split by prompt_id",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-10-15T14:44:35.230887400Z",
+            "tags": [
+              {
+                "display_name": "NLP",
+                "id": 13204,
+                "listing_url": "/search?q=nlp+tag%3A%22nlp%22",
+                "name": "nlp",
+                "tag_url": "/tags/nlp"
+              },
+              {
+                "display_name": "Text Classification",
+                "id": 16691,
+                "listing_url": "/search?q=text+classification+tag%3A%22text+classification%22",
+                "name": "text classification",
+                "tag_url": "/tags/text-classification"
+              }
+            ],
+            "total_votes": 4,
+            "url": "/competitions/name-that-llm/discussion/749593"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:36:32+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:36:32+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-10-15T14:44:35.230887400Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [],
+  "writeup": null
+}

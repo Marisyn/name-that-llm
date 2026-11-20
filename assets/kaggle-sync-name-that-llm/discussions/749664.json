@@ -1,0 +1,206 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 749664,
+    "title": " A few rules questions; external data licenses, Benchmarks credits, test setup",
+    "author": "Gray Robertson",
+    "author_url": "/cgrvrob",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-10-15T18:03:13.941428800Z",
+    "last_comment_post_date": "2026-10-15T18:03:13.940Z",
+    "comment_count": 0,
+    "votes": 0,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/749664",
+    "first_message_id": 3539291,
+    "first_seen_at": "2026-11-04T06:56:18+00:00",
+    "last_seen_at": "2026-11-16T16:36:31+00:00",
+    "detail_last_synced_at": "2026-11-16T16:36:31+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "5a5c90c18782cc5cd45c628ed1251367d93a3a97377cd4d17ea66a21f5dda49a",
+    "listing_metrics_hash": "1d7b01d39d998f5caf0eb285f7806c0632a1cb146aadc79a9504e2481370b229",
+    "detail_content_hash": "250c10af161de23c86158e33da9ec2b71c5ded3b90491e1cc794794d4f2d3e50",
+    "detail_last_checked_at": "2026-11-16T16:36:31+00:00",
+    "detail_next_check_at": "2026-11-23T16:36:31+00:00",
+    "detail_unchanged_count": 2,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 0,
+      "firstForumMessageId": null,
+      "id": 749664,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-10-15T18:03:13.940Z",
+      "postDate": "2026-10-15T18:03:13.941428800Z",
+      "raw": {
+        "id": 749664,
+        "last_comment_post_date": "2026-10-15T18:03:13.940Z",
+        "post_date": "2026-10-15T18:03:13.941428800Z",
+        "title": " A few rules questions; external data licenses, Benchmarks credits, test setup",
+        "topic_url": "/competitions/name-that-llm/discussion/749664"
+      },
+      "title": " A few rules questions; external data licenses, Benchmarks credits, test setup",
+      "topicUrl": "/competitions/name-that-llm/discussion/749664",
+      "votes": 0
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "Gray Robertson",
+        "authorUserName": "cgrvrob",
+        "comments": [],
+        "expectedCommentCount": 0,
+        "firstMessage": {
+          "author": {
+            "displayName": "Gray Robertson",
+            "tier": "CONTRIBUTOR",
+            "url": "/cgrvrob"
+          },
+          "content": "<p>Hi hosts, thanks for putting this one together, really fun problem.\nI know the paid API question is already being discussed, so I'll skip that. A few other things I couldn't find answers to:</p>\n<ol>\n<li>Licenses on public external data. Some of the public datasets people are sharing pull from sources with mixed licenses (some look non-commercial). Since winners have to open-source their solution, is it fine to train on public data with a non-commercial / research-only license, or does it need to be compatible with the winning solution's license?</li>\n<li>Kaggle Benchmarks credits. Someone mentioned the monthly API credits you get through Kaggle Benchmarks. Are we allowed to use those to generate training data here? And if so, would we need to publish that data?</li>\n<li>How the test set was generated. Was the hidden test made the same way as train? Same generation settings / system prompt, same length limits, and every test prompt answered once by all 18 models? Also curious whether the public/private split is by prompt or by passage.\nThanks in advance!</li>\n</ol>",
+          "id": 3539291,
+          "isThankYou": false,
+          "postDate": "2026-10-15T18:03:13.940Z",
+          "raw": {
+            "author": {
+              "display_name": "Gray Robertson",
+              "id": 36990215,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "CONTRIBUTOR",
+              "url": "/cgrvrob"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 3456,
+            "content": "<p>Hi hosts, thanks for putting this one together, really fun problem.\nI know the paid API question is already being discussed, so I'll skip that. A few other things I couldn't find answers to:</p>\n<ol>\n<li>Licenses on public external data. Some of the public datasets people are sharing pull from sources with mixed licenses (some look non-commercial). Since winners have to open-source their solution, is it fine to train on public data with a non-commercial / research-only license, or does it need to be compatible with the winning solution's license?</li>\n<li>Kaggle Benchmarks credits. Someone mentioned the monthly API credits you get through Kaggle Benchmarks. Are we allowed to use those to generate training data here? And if so, would we need to publish that data?</li>\n<li>How the test set was generated. Was the hidden test made the same way as train? Same generation settings / system prompt, same length limits, and every test prompt answered once by all 18 models? Also curious whether the public/private split is by prompt or by passage.\nThanks in advance!</li>\n</ol>",
+            "feedback_tracking_data": {},
+            "id": 3539291,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-10-15T18:03:13.940Z",
+            "raw_markdown": "Hi hosts, thanks for putting this one together, really fun problem.\nI know the paid API question is already being discussed, so I'll skip that. A few other things I couldn't find answers to:\n1. Licenses on public external data. Some of the public datasets people are sharing pull from sources with mixed licenses (some look non-commercial). Since winners have to open-source their solution, is it fine to train on public data with a non-commercial / research-only license, or does it need to be compatible with the winning solution's license?\n2. Kaggle Benchmarks credits. Someone mentioned the monthly API credits you get through Kaggle Benchmarks. Are we allowed to use those to generate training data here? And if so, would we need to publish that data?\n3. How the test set was generated. Was the hidden test made the same way as train? Same generation settings / system prompt, same length limits, and every test prompt answered once by all 18 models? Also curious whether the public/private split is by prompt or by passage.\nThanks in advance!",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "Gray Robertson",
+                "id": 36990215,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/cgrvrob",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/cgrvrob",
+                "user_id": 36990215,
+                "user_name": "cgrvrob"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 1
+            }
+          },
+          "rawMarkdown": "Hi hosts, thanks for putting this one together, really fun problem.\nI know the paid API question is already being discussed, so I'll skip that. A few other things I couldn't find answers to:\n1. Licenses on public external data. Some of the public datasets people are sharing pull from sources with mixed licenses (some look non-commercial). Since winners have to open-source their solution, is it fine to train on public data with a non-commercial / research-only license, or does it need to be compatible with the winning solution's license?\n2. Kaggle Benchmarks credits. Someone mentioned the monthly API credits you get through Kaggle Benchmarks. Are we allowed to use those to generate training data here? And if so, would we need to publish that data?\n3. How the test set was generated. Was the hidden test made the same way as train? Same generation settings / system prompt, same length limits, and every test prompt answered once by all 18 models? Also curious whether the public/private split is by prompt or by passage.\nThanks in advance!",
+          "replies": [],
+          "votes": {
+            "totalVotes": 0
+          }
+        },
+        "firstMessageId": 3539291,
+        "id": 749664,
+        "name": " A few rules questions; external data licenses, Benchmarks credits, test setup",
+        "postDate": "2026-10-15T18:03:13.941428800Z",
+        "url": "/competitions/name-that-llm/discussion/749664"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>Hi hosts, thanks for putting this one together, really fun problem.\nI know the paid API question is already being discussed, so I'll skip that. A few other things I couldn't find answers to:</p>\n<ol>\n<li>Licenses on public external data. Some of the public datasets people are sharing pull from sources with mixed licenses (some look non-commercial). Since winners have to open-source their solution, is it fine to train on public data with a non-commercial / research-only license, or does it need to be compatible with the winning solution's license?</li>\n<li>Kaggle Benchmarks credits. Someone mentioned the monthly API credits you get through Kaggle Benchmarks. Are we allowed to use those to generate training data here? And if so, would we need to publish that data?</li>\n<li>How the test set was generated. Was the hidden test made the same way as train? Same generation settings / system prompt, same length limits, and every test prompt answered once by all 18 models? Also curious whether the public/private split is by prompt or by passage.\nThanks in advance!</li>\n</ol>",
+              "id": 3539291,
+              "post_date": "2026-10-15T18:03:13.940Z",
+              "raw_markdown": "Hi hosts, thanks for putting this one together, really fun problem.\nI know the paid API question is already being discussed, so I'll skip that. A few other things I couldn't find answers to:\n1. Licenses on public external data. Some of the public datasets people are sharing pull from sources with mixed licenses (some look non-commercial). Since winners have to open-source their solution, is it fine to train on public data with a non-commercial / research-only license, or does it need to be compatible with the winning solution's license?\n2. Kaggle Benchmarks credits. Someone mentioned the monthly API credits you get through Kaggle Benchmarks. Are we allowed to use those to generate training data here? And if so, would we need to publish that data?\n3. How the test set was generated. Was the hidden test made the same way as train? Same generation settings / system prompt, same length limits, and every test prompt answered once by all 18 models? Also curious whether the public/private split is by prompt or by passage.\nThanks in advance!"
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 36990215,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "default-thumb.png",
+            "author_user_display_name": "Gray Robertson",
+            "author_user_name": "cgrvrob",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "first_message": {
+              "author": {
+                "display_name": "Gray Robertson",
+                "id": 36990215,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/cgrvrob"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 3456,
+              "content": "<p>Hi hosts, thanks for putting this one together, really fun problem.\nI know the paid API question is already being discussed, so I'll skip that. A few other things I couldn't find answers to:</p>\n<ol>\n<li>Licenses on public external data. Some of the public datasets people are sharing pull from sources with mixed licenses (some look non-commercial). Since winners have to open-source their solution, is it fine to train on public data with a non-commercial / research-only license, or does it need to be compatible with the winning solution's license?</li>\n<li>Kaggle Benchmarks credits. Someone mentioned the monthly API credits you get through Kaggle Benchmarks. Are we allowed to use those to generate training data here? And if so, would we need to publish that data?</li>\n<li>How the test set was generated. Was the hidden test made the same way as train? Same generation settings / system prompt, same length limits, and every test prompt answered once by all 18 models? Also curious whether the public/private split is by prompt or by passage.\nThanks in advance!</li>\n</ol>",
+              "feedback_tracking_data": {},
+              "id": 3539291,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-15T18:03:13.940Z",
+              "raw_markdown": "Hi hosts, thanks for putting this one together, really fun problem.\nI know the paid API question is already being discussed, so I'll skip that. A few other things I couldn't find answers to:\n1. Licenses on public external data. Some of the public datasets people are sharing pull from sources with mixed licenses (some look non-commercial). Since winners have to open-source their solution, is it fine to train on public data with a non-commercial / research-only license, or does it need to be compatible with the winning solution's license?\n2. Kaggle Benchmarks credits. Someone mentioned the monthly API credits you get through Kaggle Benchmarks. Are we allowed to use those to generate training data here? And if so, would we need to publish that data?\n3. How the test set was generated. Was the hidden test made the same way as train? Same generation settings / system prompt, same length limits, and every test prompt answered once by all 18 models? Also curious whether the public/private split is by prompt or by passage.\nThanks in advance!",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Gray Robertson",
+                  "id": 36990215,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/cgrvrob",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/cgrvrob",
+                  "user_id": 36990215,
+                  "user_name": "cgrvrob"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1
+              }
+            },
+            "first_message_id": 3539291,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 749664,
+            "name": " A few rules questions; external data licenses, Benchmarks credits, test setup",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-10-15T18:03:13.941428800Z",
+            "url": "/competitions/name-that-llm/discussion/749664"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:36:31+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:36:31+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-10-15T18:03:13.941428800Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [],
+  "writeup": null
+}

@@ -1,0 +1,213 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 752199,
+    "title": "How well does your CV track the public LB once external data and test-time grouping are involved?",
+    "author": "Meni David Gottesman",
+    "author_url": "/menidavidgottesman",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-10-23T22:44:33.744234500Z",
+    "last_comment_post_date": "2026-10-23T22:44:33.743333300Z",
+    "comment_count": 0,
+    "votes": 1,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/752199",
+    "first_message_id": 3543718,
+    "first_seen_at": "2026-11-04T06:56:16+00:00",
+    "last_seen_at": "2026-11-16T16:36:04+00:00",
+    "detail_last_synced_at": "2026-11-16T16:30:32+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "cf946a4a4cd2802899b3226d3ff41447f17ca099dc28381995bce3fb96ce0134",
+    "listing_metrics_hash": "08a3f0e9d031723a4649730d445a527264427162f124c0c72a6c18d2e0b8e839",
+    "detail_content_hash": "bc3a216d25cf1137a923ae3615c8c3a893df29d11b4a5cafc6130af1d7ed205a",
+    "detail_last_checked_at": "2026-11-16T16:30:32+00:00",
+    "detail_next_check_at": "2026-11-23T16:30:32+00:00",
+    "detail_unchanged_count": 2,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 0,
+      "firstForumMessageId": null,
+      "id": 752199,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-10-23T22:44:33.743333300Z",
+      "postDate": "2026-10-23T22:44:33.744234500Z",
+      "raw": {
+        "id": 752199,
+        "last_comment_post_date": "2026-10-23T22:44:33.743333300Z",
+        "post_date": "2026-10-23T22:44:33.744234500Z",
+        "title": "How well does your CV track the public LB once external data and test-time grouping are involved?",
+        "topic_url": "/competitions/name-that-llm/discussion/752199",
+        "votes": 1
+      },
+      "title": "How well does your CV track the public LB once external data and test-time grouping are involved?",
+      "topicUrl": "/competitions/name-that-llm/discussion/752199",
+      "votes": 1
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "Meni David Gottesman",
+        "authorUserName": "menidavidgottesman",
+        "comments": [],
+        "expectedCommentCount": 0,
+        "firstMessage": {
+          "author": {
+            "displayName": "Meni David Gottesman",
+            "tier": "CONTRIBUTOR",
+            "url": "/menidavidgottesman"
+          },
+          "content": "<p>For people whose CV and public LB still move together even with members trained on large external/generated pools and steps that use same-prompt groups at test time: how do you build your validation? Held-out data sources, simulated sparse same-prompt groups with distractors, scoring only on host passages, a second fold seed, something else? And roughly what CV-to-LB gap do you see?</p>",
+          "id": 3543718,
+          "isThankYou": false,
+          "postDate": "2026-10-23T22:44:33.743Z",
+          "raw": {
+            "author": {
+              "display_name": "Meni David Gottesman",
+              "id": 37057971,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "CONTRIBUTOR",
+              "url": "/menidavidgottesman"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 1,
+            "content": "<p>For people whose CV and public LB still move together even with members trained on large external/generated pools and steps that use same-prompt groups at test time: how do you build your validation? Held-out data sources, simulated sparse same-prompt groups with distractors, scoring only on host passages, a second fold seed, something else? And roughly what CV-to-LB gap do you see?</p>",
+            "feedback_tracking_data": {},
+            "id": 3543718,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-10-23T22:44:33.743Z",
+            "raw_markdown": "For people whose CV and public LB still move together even with members trained on large external/generated pools and steps that use same-prompt groups at test time: how do you build your validation? Held-out data sources, simulated sparse same-prompt groups with distractors, scoring only on host passages, a second fold seed, something else? And roughly what CV-to-LB gap do you see?",
+            "team_up_info": {
+              "enabled": true,
+              "intro": "",
+              "team_leader": {
+                "display_name": "Meni David Gottesman",
+                "id": 37057971,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/menidavidgottesman",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/menidavidgottesman",
+                "user_id": 37057971,
+                "user_name": "menidavidgottesman"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 1,
+              "total_votes": 1
+            }
+          },
+          "rawMarkdown": "For people whose CV and public LB still move together even with members trained on large external/generated pools and steps that use same-prompt groups at test time: how do you build your validation? Held-out data sources, simulated sparse same-prompt groups with distractors, scoring only on host passages, a second fold seed, something else? And roughly what CV-to-LB gap do you see?",
+          "replies": [],
+          "votes": {
+            "totalVotes": 1
+          }
+        },
+        "firstMessageId": 3543718,
+        "id": 752199,
+        "name": "How well does your CV track the public LB once external data and test-time grouping are involved?",
+        "postDate": "2026-10-23T22:44:33.744234500Z",
+        "url": "/competitions/name-that-llm/discussion/752199"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>For people whose CV and public LB still move together even with members trained on large external/generated pools and steps that use same-prompt groups at test time: how do you build your validation? Held-out data sources, simulated sparse same-prompt groups with distractors, scoring only on host passages, a second fold seed, something else? And roughly what CV-to-LB gap do you see?</p>",
+              "id": 3543718,
+              "post_date": "2026-10-23T22:44:33.743Z",
+              "raw_markdown": "For people whose CV and public LB still move together even with members trained on large external/generated pools and steps that use same-prompt groups at test time: how do you build your validation? Held-out data sources, simulated sparse same-prompt groups with distractors, scoring only on host passages, a second fold seed, something else? And roughly what CV-to-LB gap do you see?",
+              "votes": 1
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 37057971,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "default-thumb.png",
+            "author_user_display_name": "Meni David Gottesman",
+            "author_user_name": "menidavidgottesman",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "first_message": {
+              "author": {
+                "display_name": "Meni David Gottesman",
+                "id": 37057971,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/menidavidgottesman"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 1,
+              "content": "<p>For people whose CV and public LB still move together even with members trained on large external/generated pools and steps that use same-prompt groups at test time: how do you build your validation? Held-out data sources, simulated sparse same-prompt groups with distractors, scoring only on host passages, a second fold seed, something else? And roughly what CV-to-LB gap do you see?</p>",
+              "feedback_tracking_data": {},
+              "id": 3543718,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-23T22:44:33.743Z",
+              "raw_markdown": "For people whose CV and public LB still move together even with members trained on large external/generated pools and steps that use same-prompt groups at test time: how do you build your validation? Held-out data sources, simulated sparse same-prompt groups with distractors, scoring only on host passages, a second fold seed, something else? And roughly what CV-to-LB gap do you see?",
+              "team_up_info": {
+                "enabled": true,
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Meni David Gottesman",
+                  "id": 37057971,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/menidavidgottesman",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/menidavidgottesman",
+                  "user_id": 37057971,
+                  "user_name": "menidavidgottesman"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": 1
+              }
+            },
+            "first_message_id": 3543718,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 752199,
+            "name": "How well does your CV track the public LB once external data and test-time grouping are involved?",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-10-23T22:44:33.744234500Z",
+            "total_votes": 1,
+            "url": "/competitions/name-that-llm/discussion/752199"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:30:32+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:30:32+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-10-23T22:44:33.744234500Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [],
+  "writeup": null
+}

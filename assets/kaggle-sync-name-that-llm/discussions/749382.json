@@ -1,0 +1,1030 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 749382,
+    "title": "How to get started + Competition's Official Discord",
+    "author": "Ashley Oldacre",
+    "author_url": "/ashleyoldacre",
+    "author_tier": "STAFF",
+    "post_date": "2026-10-14T19:46:35.777367400Z",
+    "last_comment_post_date": "2026-10-20T14:17:18.133333300Z",
+    "comment_count": 4,
+    "votes": 19,
+    "is_sticky": true,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/749382",
+    "first_message_id": 3538792,
+    "first_seen_at": "2026-11-04T06:56:14+00:00",
+    "last_seen_at": "2026-11-18T09:01:50+00:00",
+    "detail_last_synced_at": "2026-11-16T16:22:46+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-18T09:01:50+00:00",
+    "remote_last_listed_at": "2026-11-18T09:01:50+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "f75df79d51911ddba7b4632b9187b7ba414cbdf2403bc2a7b6242c0317b162c7",
+    "listing_metrics_hash": "94b2e3796131c6dfa3f4d631bc8f6bcf3ca547c9e1c7b2fa6d73f440524ebab4",
+    "detail_content_hash": "6e2ac68398ce87b4948ccaa60a8e350c157ba8d34c4859dab408bdf2df09fd42",
+    "detail_last_checked_at": "2026-11-16T16:22:46+00:00",
+    "detail_next_check_at": "2026-11-23T16:22:46+00:00",
+    "detail_unchanged_count": 2,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 4,
+      "firstForumMessageId": null,
+      "id": 749382,
+      "isSticky": true,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-10-20T14:17:18.133333300Z",
+      "postDate": "2026-10-14T19:46:35.777367400Z",
+      "raw": {
+        "comment_count": 4,
+        "id": 749382,
+        "is_sticky": true,
+        "last_comment_post_date": "2026-10-20T14:17:18.133333300Z",
+        "post_date": "2026-10-14T19:46:35.777367400Z",
+        "title": "How to get started + Competition's Official Discord",
+        "topic_url": "/competitions/name-that-llm/discussion/749382",
+        "votes": 19
+      },
+      "title": "How to get started + Competition's Official Discord",
+      "topicUrl": "/competitions/name-that-llm/discussion/749382",
+      "votes": 19
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "STAFF",
+        "authorUserDisplayName": "Ashley Oldacre",
+        "authorUserName": "ashleyoldacre",
+        "comments": [
+          {
+            "author": {
+              "displayName": "Stephane Njoki",
+              "tier": "CONTRIBUTOR",
+              "url": "/stephanenjoki"
+            },
+            "content": "<p>Hello there <a href=\"/ashleyoldacre\" target=\"_blank\">@ashleyoldacre</a> is there a discord channel for this specific competition, I can't seem to find the channel server? </p>",
+            "id": 3539386,
+            "isThankYou": false,
+            "postDate": "2026-10-15T21:04:58.750Z",
+            "raw": {
+              "author": {
+                "display_name": "Stephane Njoki",
+                "id": 5701534,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5701534-kg.jpg?t=2026-08-06-13-02-30",
+                "tier": "CONTRIBUTOR",
+                "url": "/stephanenjoki"
+              },
+              "author_type": "COMMENT",
+              "content": "<p>Hello there <a href=\"/ashleyoldacre\" target=\"_blank\">@ashleyoldacre</a> is there a discord channel for this specific competition, I can't seem to find the channel server? </p>",
+              "feedback_tracking_data": {},
+              "id": 3539386,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-15T21:04:58.750Z",
+              "raw_markdown": "Hello there @ashleyoldacre is there a discord channel for this specific competition, I can't seem to find the channel server? ",
+              "reactions": [
+                {
+                  "emoji": "KAGGLE",
+                  "featured_user_names": [
+                    "utkarshsen",
+                    "nroggendorff",
+                    "nikhil02007",
+                    "kvrleofelix",
+                    "shivinsilico"
+                  ],
+                  "user_count": 5
+                }
+              ],
+              "replies": [
+                {
+                  "author": {
+                    "display_name": "Stephane Njoki",
+                    "id": 5701534,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5701534-kg.jpg?t=2026-08-06-13-02-30",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/stephanenjoki"
+                  },
+                  "author_type": "COMMENT",
+                  "content": "<p>Following up on this question <a href=\"/ashleyoldacre\" target=\"_blank\">@ashleyoldacre</a> on the Discord channel for this competition.</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3541615,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-20T14:17:18.133Z",
+                  "raw_markdown": "Following up on this question @ashleyoldacre on the Discord channel for this competition.",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Stephane Njoki",
+                      "id": 5701534,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/stephanenjoki",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5701534-kg.jpg?t=2026-08-06-13-02-30",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/stephanenjoki",
+                      "user_id": 5701534,
+                      "user_name": "stephanenjoki"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Stephane Njoki",
+                  "id": 5701534,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/stephanenjoki",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5701534-kg.jpg?t=2026-08-06-13-02-30",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/stephanenjoki",
+                  "user_id": 5701534,
+                  "user_name": "stephanenjoki"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "Hello there @ashleyoldacre is there a discord channel for this specific competition, I can't seem to find the channel server? ",
+            "replies": [
+              {
+                "author": {
+                  "displayName": "Stephane Njoki",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/stephanenjoki"
+                },
+                "content": "<p>Following up on this question <a href=\"/ashleyoldacre\" target=\"_blank\">@ashleyoldacre</a> on the Discord channel for this competition.</p>",
+                "id": 3541615,
+                "isThankYou": false,
+                "postDate": "2026-10-20T14:17:18.133Z",
+                "raw": {
+                  "author": {
+                    "display_name": "Stephane Njoki",
+                    "id": 5701534,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5701534-kg.jpg?t=2026-08-06-13-02-30",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/stephanenjoki"
+                  },
+                  "author_type": "COMMENT",
+                  "content": "<p>Following up on this question <a href=\"/ashleyoldacre\" target=\"_blank\">@ashleyoldacre</a> on the Discord channel for this competition.</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3541615,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-20T14:17:18.133Z",
+                  "raw_markdown": "Following up on this question @ashleyoldacre on the Discord channel for this competition.",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Stephane Njoki",
+                      "id": 5701534,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/stephanenjoki",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5701534-kg.jpg?t=2026-08-06-13-02-30",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/stephanenjoki",
+                      "user_id": 5701534,
+                      "user_name": "stephanenjoki"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                },
+                "rawMarkdown": "Following up on this question @ashleyoldacre on the Discord channel for this competition.",
+                "replies": [],
+                "votes": {
+                  "totalVotes": 0
+                }
+              }
+            ],
+            "votes": {
+              "totalVotes": 0
+            }
+          },
+          {
+            "author": {
+              "displayName": null,
+              "tier": null,
+              "url": "/"
+            },
+            "content": null,
+            "id": 3539864,
+            "isThankYou": false,
+            "postDate": "2026-10-16T17:03:12.333Z",
+            "raw": {
+              "author": {
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "url": "/"
+              },
+              "author_type": "COMMENT",
+              "can_delete": true,
+              "feedback_tracking_data": {},
+              "id": 3539864,
+              "is_deleted": true,
+              "is_thank_you": false,
+              "is_user_author": true,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-16T17:03:12.333Z",
+              "raw_markdown": "",
+              "votes": {
+                "total_votes": -3
+              }
+            },
+            "rawMarkdown": null,
+            "replies": [],
+            "votes": {
+              "totalVotes": -3
+            }
+          },
+          {
+            "author": {
+              "displayName": "Goutam sharma",
+              "tier": "CONTRIBUTOR",
+              "url": "/goutamsharma12"
+            },
+            "content": "<p>Thanks For Sharing</p>",
+            "id": 3538997,
+            "isThankYou": true,
+            "postDate": "2026-10-15T05:35:11.567Z",
+            "raw": {
+              "author": {
+                "display_name": "Goutam sharma",
+                "id": 25038140,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25038140-kg.png?t=2026-10-27-17-16-50",
+                "tier": "CONTRIBUTOR",
+                "url": "/goutamsharma12"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 5069,
+              "content": "<p>Thanks For Sharing</p>",
+              "feedback_tracking_data": {},
+              "id": 3538997,
+              "is_thank_you": true,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-15T05:35:11.567Z",
+              "raw_markdown": "Thanks For Sharing",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Goutam sharma",
+                  "id": 25038140,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/goutamsharma12",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25038140-kg.png?t=2026-10-27-17-16-50",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/goutamsharma12",
+                  "user_id": 25038140,
+                  "user_name": "goutamsharma12"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_votes": -2
+              }
+            },
+            "rawMarkdown": "Thanks For Sharing",
+            "replies": [],
+            "votes": {
+              "totalVotes": -2
+            }
+          }
+        ],
+        "expectedCommentCount": 4,
+        "firstMessage": {
+          "author": {
+            "displayName": "Ashley Oldacre",
+            "tier": "STAFF",
+            "url": "/ashleyoldacre"
+          },
+          "content": "<h3>Information for newbies</h3>\n<p>Welcome! </p>\n<p><strong>New to machine learning and data science?</strong> No question is too basic or too simple. Feel free to start your own thread, or use this thread as a place to post any first-timer clarifying questions for the Kaggle community to help you with!</p>\n<p><strong>New to Kaggle?</strong> Take a look at a few videos to learn a bit more about <a href=\"https://www.youtube.com/watch?v=aIus8si_Et0\" target=\"_blank\">site etiquette</a>, <a href=\"https://www.youtube.com/watch?v=sEJHyuWKd-s\" target=\"_blank\">Kaggle lingo</a>, and <a href=\"https://www.youtube.com/watch?&amp;v=GJBOMWpLpTQ\" target=\"_blank\">how to enter a competition using Kaggle Notebooks</a>. Publish and share your <a href=\"https://www.kaggle.com/docs/models#publishing-a-model\" target=\"_blank\">models on Kaggle Models</a>!</p>\n<p><strong>Participants under 18 years old:</strong> If you are under 18 years old and want to participate in this competition, you need to submit a couple of forms:</p>\n<ul>\n<li>Form #1: <a href=\"https://www.kaggle.com/guardian-consent-minor-use\" target=\"_blank\">Parent/Guardian consent for minor's use of kaggle.com</a>. You only have to fill this out once, and it is valid for any competitions on Kaggle. If you already filled this out in the past, you can move on to the next form. </li>\n<li>Form #2: <a href=\"https://www.kaggle.com/consent-minors-process\" target=\"_blank\">Parent/Guardian consent for minor's participation in Kaggle competition</a>. You have to fill out form #2 for this and any future competitions you want to join. \nKids under 13 years of age are not allowed to participate on Kaggle. If you have any questions, please leave a comment and we'll follow up with you!</li>\n</ul>\n<p><strong>Looking for a team?</strong> Express your interest in joining a team through our <a href=\"https://www.kaggle.com/discussions/product-feedback/341195\" target=\"_blank\">Team Up</a> feature.</p>\n<p><strong>Remember</strong>: Kaggle is for everyone. Whether you're teaming up or sharing tips in the competition forum, we expect everyone to follow our Kaggle community guidelines.</p>\n<h3>Competition's Official Discord</h3>\n<p>In addition to this competition forum, you can continue the discussion in our official Kaggle Discord Server here:</p>\n<h1><a href=\"http://discord.gg/kaggle\" target=\"_blank\">discord.gg/kaggle</a></h1>\n<p>The Discord is a great place to ask getting started questions, chat about the nuances of this competition, and connect with potential team mates. Learn more about Discord at our <a href=\"https://www.kaggle.com/discussions/general/429933\" target=\"_blank\">announcement here</a>. Here are a few things to keep in mind though:</p>\n<p><strong>1. Discord Competition Channels are 'Public' - Don't Share Private Information</strong></p>\n<p>Discord channels for specific competitions are considered 'public' spaces where you are allowed to talk about competition details. Please remember that private sharing of competition code or data outside of your team is, as always, not permitted. Code sharing must always be done publicly through the Kaggle forums/notebooks.</p>\n<p><strong>2. Discord Competition Channels are Not Monitored by Staff - Keep Important Information on the Kaggle Forums</strong></p>\n<p>Kaggle Staff and Hosts running competitions will not monitor Discord or be available to answer questions in Discord. This is intended to be a more casual space to discuss competitions and help each other. Please keep important questions, insights, writeups, and other valuable conversation on the Kaggle forums. </p>\n<p>Happy modeling! </p>",
+          "id": 3538792,
+          "isThankYou": false,
+          "postDate": "2026-10-14T19:46:35.777Z",
+          "raw": {
+            "author": {
+              "display_name": "Ashley Oldacre",
+              "id": 8939556,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8939556-kg.png?t=2025-08-22-16-55-54",
+              "tier": "STAFF",
+              "url": "/ashleyoldacre"
+            },
+            "author_type": "ADMIN",
+            "content": "<h3>Information for newbies</h3>\n<p>Welcome! </p>\n<p><strong>New to machine learning and data science?</strong> No question is too basic or too simple. Feel free to start your own thread, or use this thread as a place to post any first-timer clarifying questions for the Kaggle community to help you with!</p>\n<p><strong>New to Kaggle?</strong> Take a look at a few videos to learn a bit more about <a href=\"https://www.youtube.com/watch?v=aIus8si_Et0\" target=\"_blank\">site etiquette</a>, <a href=\"https://www.youtube.com/watch?v=sEJHyuWKd-s\" target=\"_blank\">Kaggle lingo</a>, and <a href=\"https://www.youtube.com/watch?&amp;v=GJBOMWpLpTQ\" target=\"_blank\">how to enter a competition using Kaggle Notebooks</a>. Publish and share your <a href=\"https://www.kaggle.com/docs/models#publishing-a-model\" target=\"_blank\">models on Kaggle Models</a>!</p>\n<p><strong>Participants under 18 years old:</strong> If you are under 18 years old and want to participate in this competition, you need to submit a couple of forms:</p>\n<ul>\n<li>Form #1: <a href=\"https://www.kaggle.com/guardian-consent-minor-use\" target=\"_blank\">Parent/Guardian consent for minor's use of kaggle.com</a>. You only have to fill this out once, and it is valid for any competitions on Kaggle. If you already filled this out in the past, you can move on to the next form. </li>\n<li>Form #2: <a href=\"https://www.kaggle.com/consent-minors-process\" target=\"_blank\">Parent/Guardian consent for minor's participation in Kaggle competition</a>. You have to fill out form #2 for this and any future competitions you want to join. \nKids under 13 years of age are not allowed to participate on Kaggle. If you have any questions, please leave a comment and we'll follow up with you!</li>\n</ul>\n<p><strong>Looking for a team?</strong> Express your interest in joining a team through our <a href=\"https://www.kaggle.com/discussions/product-feedback/341195\" target=\"_blank\">Team Up</a> feature.</p>\n<p><strong>Remember</strong>: Kaggle is for everyone. Whether you're teaming up or sharing tips in the competition forum, we expect everyone to follow our Kaggle community guidelines.</p>\n<h3>Competition's Official Discord</h3>\n<p>In addition to this competition forum, you can continue the discussion in our official Kaggle Discord Server here:</p>\n<h1><a href=\"http://discord.gg/kaggle\" target=\"_blank\">discord.gg/kaggle</a></h1>\n<p>The Discord is a great place to ask getting started questions, chat about the nuances of this competition, and connect with potential team mates. Learn more about Discord at our <a href=\"https://www.kaggle.com/discussions/general/429933\" target=\"_blank\">announcement here</a>. Here are a few things to keep in mind though:</p>\n<p><strong>1. Discord Competition Channels are 'Public' - Don't Share Private Information</strong></p>\n<p>Discord channels for specific competitions are considered 'public' spaces where you are allowed to talk about competition details. Please remember that private sharing of competition code or data outside of your team is, as always, not permitted. Code sharing must always be done publicly through the Kaggle forums/notebooks.</p>\n<p><strong>2. Discord Competition Channels are Not Monitored by Staff - Keep Important Information on the Kaggle Forums</strong></p>\n<p>Kaggle Staff and Hosts running competitions will not monitor Discord or be available to answer questions in Discord. This is intended to be a more casual space to discuss competitions and help each other. Please keep important questions, insights, writeups, and other valuable conversation on the Kaggle forums. </p>\n<p>Happy modeling! </p>",
+            "feedback_tracking_data": {},
+            "id": 3538792,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-10-14T19:46:35.777Z",
+            "raw_markdown": "### Information for newbies\n\nWelcome! \n\n**New to machine learning and data science?** No question is too basic or too simple. Feel free to start your own thread, or use this thread as a place to post any first-timer clarifying questions for the Kaggle community to help you with!\n\n**New to Kaggle?** Take a look at a few videos to learn a bit more about [site etiquette](https://www.youtube.com/watch?v=aIus8si_Et0), [Kaggle lingo](https://www.youtube.com/watch?v=sEJHyuWKd-s), and [how to enter a competition using Kaggle Notebooks](https://www.youtube.com/watch?&v=GJBOMWpLpTQ). Publish and share your [models on Kaggle Models](https://www.kaggle.com/docs/models#publishing-a-model)!\n\n**Participants under 18 years old:** If you are under 18 years old and want to participate in this competition, you need to submit a couple of forms:\n- Form #1: [Parent/Guardian consent for minor's use of kaggle.com](https://www.kaggle.com/guardian-consent-minor-use). You only have to fill this out once, and it is valid for any competitions on Kaggle. If you already filled this out in the past, you can move on to the next form. \n- Form #2: [Parent/Guardian consent for minor's participation in Kaggle competition](https://www.kaggle.com/consent-minors-process). You have to fill out form #2 for this and any future competitions you want to join. \nKids under 13 years of age are not allowed to participate on Kaggle. If you have any questions, please leave a comment and we'll follow up with you!\n\n**Looking for a team?** Express your interest in joining a team through our [Team Up](https://www.kaggle.com/discussions/product-feedback/341195) feature.\n\n**Remember**: Kaggle is for everyone. Whether you're teaming up or sharing tips in the competition forum, we expect everyone to follow our Kaggle community guidelines.\n\n### Competition's Official Discord\nIn addition to this competition forum, you can continue the discussion in our official Kaggle Discord Server here:\n# [discord.gg/kaggle](http://discord.gg/kaggle)\n \nThe Discord is a great place to ask getting started questions, chat about the nuances of this competition, and connect with potential team mates. Learn more about Discord at our [announcement here](https://www.kaggle.com/discussions/general/429933). Here are a few things to keep in mind though:\n\n**1. Discord Competition Channels are 'Public' - Don't Share Private Information**\n\nDiscord channels for specific competitions are considered 'public' spaces where you are allowed to talk about competition details. Please remember that private sharing of competition code or data outside of your team is, as always, not permitted. Code sharing must always be done publicly through the Kaggle forums/notebooks.\n\n**2. Discord Competition Channels are Not Monitored by Staff - Keep Important Information on the Kaggle Forums**\n\nKaggle Staff and Hosts running competitions will not monitor Discord or be available to answer questions in Discord. This is intended to be a more casual space to discuss competitions and help each other. Please keep important questions, insights, writeups, and other valuable conversation on the Kaggle forums. \n\nHappy modeling! ",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "Ashley Oldacre",
+                "id": 8939556,
+                "performance_tier": "STAFF",
+                "profile_url": "/ashleyoldacre",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8939556-kg.png?t=2025-08-22-16-55-54",
+                "tier": "STAFF",
+                "url": "/ashleyoldacre",
+                "user_id": 8939556,
+                "user_name": "ashleyoldacre"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 21,
+              "total_votes": 20
+            }
+          },
+          "rawMarkdown": "### Information for newbies\n\nWelcome! \n\n**New to machine learning and data science?** No question is too basic or too simple. Feel free to start your own thread, or use this thread as a place to post any first-timer clarifying questions for the Kaggle community to help you with!\n\n**New to Kaggle?** Take a look at a few videos to learn a bit more about [site etiquette](https://www.youtube.com/watch?v=aIus8si_Et0), [Kaggle lingo](https://www.youtube.com/watch?v=sEJHyuWKd-s), and [how to enter a competition using Kaggle Notebooks](https://www.youtube.com/watch?&v=GJBOMWpLpTQ). Publish and share your [models on Kaggle Models](https://www.kaggle.com/docs/models#publishing-a-model)!\n\n**Participants under 18 years old:** If you are under 18 years old and want to participate in this competition, you need to submit a couple of forms:\n- Form #1: [Parent/Guardian consent for minor's use of kaggle.com](https://www.kaggle.com/guardian-consent-minor-use). You only have to fill this out once, and it is valid for any competitions on Kaggle. If you already filled this out in the past, you can move on to the next form. \n- Form #2: [Parent/Guardian consent for minor's participation in Kaggle competition](https://www.kaggle.com/consent-minors-process). You have to fill out form #2 for this and any future competitions you want to join. \nKids under 13 years of age are not allowed to participate on Kaggle. If you have any questions, please leave a comment and we'll follow up with you!\n\n**Looking for a team?** Express your interest in joining a team through our [Team Up](https://www.kaggle.com/discussions/product-feedback/341195) feature.\n\n**Remember**: Kaggle is for everyone. Whether you're teaming up or sharing tips in the competition forum, we expect everyone to follow our Kaggle community guidelines.\n\n### Competition's Official Discord\nIn addition to this competition forum, you can continue the discussion in our official Kaggle Discord Server here:\n# [discord.gg/kaggle](http://discord.gg/kaggle)\n \nThe Discord is a great place to ask getting started questions, chat about the nuances of this competition, and connect with potential team mates. Learn more about Discord at our [announcement here](https://www.kaggle.com/discussions/general/429933). Here are a few things to keep in mind though:\n\n**1. Discord Competition Channels are 'Public' - Don't Share Private Information**\n\nDiscord channels for specific competitions are considered 'public' spaces where you are allowed to talk about competition details. Please remember that private sharing of competition code or data outside of your team is, as always, not permitted. Code sharing must always be done publicly through the Kaggle forums/notebooks.\n\n**2. Discord Competition Channels are Not Monitored by Staff - Keep Important Information on the Kaggle Forums**\n\nKaggle Staff and Hosts running competitions will not monitor Discord or be available to answer questions in Discord. This is intended to be a more casual space to discuss competitions and help each other. Please keep important questions, insights, writeups, and other valuable conversation on the Kaggle forums. \n\nHappy modeling! ",
+          "replies": [],
+          "votes": {
+            "totalVotes": 20
+          }
+        },
+        "firstMessageId": 3538792,
+        "id": 749382,
+        "name": "How to get started + Competition's Official Discord",
+        "postDate": "2026-10-14T19:46:35.777367400Z",
+        "url": "/competitions/name-that-llm/discussion/749382"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<h3>Information for newbies</h3>\n<p>Welcome! </p>\n<p><strong>New to machine learning and data science?</strong> No question is too basic or too simple. Feel free to start your own thread, or use this thread as a place to post any first-timer clarifying questions for the Kaggle community to help you with!</p>\n<p><strong>New to Kaggle?</strong> Take a look at a few videos to learn a bit more about <a href=\"https://www.youtube.com/watch?v=aIus8si_Et0\" target=\"_blank\">site etiquette</a>, <a href=\"https://www.youtube.com/watch?v=sEJHyuWKd-s\" target=\"_blank\">Kaggle lingo</a>, and <a href=\"https://www.youtube.com/watch?&amp;v=GJBOMWpLpTQ\" target=\"_blank\">how to enter a competition using Kaggle Notebooks</a>. Publish and share your <a href=\"https://www.kaggle.com/docs/models#publishing-a-model\" target=\"_blank\">models on Kaggle Models</a>!</p>\n<p><strong>Participants under 18 years old:</strong> If you are under 18 years old and want to participate in this competition, you need to submit a couple of forms:</p>\n<ul>\n<li>Form #1: <a href=\"https://www.kaggle.com/guardian-consent-minor-use\" target=\"_blank\">Parent/Guardian consent for minor's use of kaggle.com</a>. You only have to fill this out once, and it is valid for any competitions on Kaggle. If you already filled this out in the past, you can move on to the next form. </li>\n<li>Form #2: <a href=\"https://www.kaggle.com/consent-minors-process\" target=\"_blank\">Parent/Guardian consent for minor's participation in Kaggle competition</a>. You have to fill out form #2 for this and any future competitions you want to join. \nKids under 13 years of age are not allowed to participate on Kaggle. If you have any questions, please leave a comment and we'll follow up with you!</li>\n</ul>\n<p><strong>Looking for a team?</strong> Express your interest in joining a team through our <a href=\"https://www.kaggle.com/discussions/product-feedback/341195\" target=\"_blank\">Team Up</a> feature.</p>\n<p><strong>Remember</strong>: Kaggle is for everyone. Whether you're teaming up or sharing tips in the competition forum, we expect everyone to follow our Kaggle community guidelines.</p>\n<h3>Competition's Official Discord</h3>\n<p>In addition to this competition forum, you can continue the discussion in our official Kaggle Discord Server here:</p>\n<h1><a href=\"http://discord.gg/kaggle\" target=\"_blank\">discord.gg/kaggle</a></h1>\n<p>The Discord is a great place to ask getting started questions, chat about the nuances of this competition, and connect with potential team mates. Learn more about Discord at our <a href=\"https://www.kaggle.com/discussions/general/429933\" target=\"_blank\">announcement here</a>. Here are a few things to keep in mind though:</p>\n<p><strong>1. Discord Competition Channels are 'Public' - Don't Share Private Information</strong></p>\n<p>Discord channels for specific competitions are considered 'public' spaces where you are allowed to talk about competition details. Please remember that private sharing of competition code or data outside of your team is, as always, not permitted. Code sharing must always be done publicly through the Kaggle forums/notebooks.</p>\n<p><strong>2. Discord Competition Channels are Not Monitored by Staff - Keep Important Information on the Kaggle Forums</strong></p>\n<p>Kaggle Staff and Hosts running competitions will not monitor Discord or be available to answer questions in Discord. This is intended to be a more casual space to discuss competitions and help each other. Please keep important questions, insights, writeups, and other valuable conversation on the Kaggle forums. </p>\n<p>Happy modeling! </p>",
+              "id": 3538792,
+              "post_date": "2026-10-14T19:46:35.777Z",
+              "raw_markdown": "### Information for newbies\n\nWelcome! \n\n**New to machine learning and data science?** No question is too basic or too simple. Feel free to start your own thread, or use this thread as a place to post any first-timer clarifying questions for the Kaggle community to help you with!\n\n**New to Kaggle?** Take a look at a few videos to learn a bit more about [site etiquette](https://www.youtube.com/watch?v=aIus8si_Et0), [Kaggle lingo](https://www.youtube.com/watch?v=sEJHyuWKd-s), and [how to enter a competition using Kaggle Notebooks](https://www.youtube.com/watch?&v=GJBOMWpLpTQ). Publish and share your [models on Kaggle Models](https://www.kaggle.com/docs/models#publishing-a-model)!\n\n**Participants under 18 years old:** If you are under 18 years old and want to participate in this competition, you need to submit a couple of forms:\n- Form #1: [Parent/Guardian consent for minor's use of kaggle.com](https://www.kaggle.com/guardian-consent-minor-use). You only have to fill this out once, and it is valid for any competitions on Kaggle. If you already filled this out in the past, you can move on to the next form. \n- Form #2: [Parent/Guardian consent for minor's participation in Kaggle competition](https://www.kaggle.com/consent-minors-process). You have to fill out form #2 for this and any future competitions you want to join. \nKids under 13 years of age are not allowed to participate on Kaggle. If you have any questions, please leave a comment and we'll follow up with you!\n\n**Looking for a team?** Express your interest in joining a team through our [Team Up](https://www.kaggle.com/discussions/product-feedback/341195) feature.\n\n**Remember**: Kaggle is for everyone. Whether you're teaming up or sharing tips in the competition forum, we expect everyone to follow our Kaggle community guidelines.\n\n### Competition's Official Discord\nIn addition to this competition forum, you can continue the discussion in our official Kaggle Discord Server here:\n# [discord.gg/kaggle](http://discord.gg/kaggle)\n \nThe Discord is a great place to ask getting started questions, chat about the nuances of this competition, and connect with potential team mates. Learn more about Discord at our [announcement here](https://www.kaggle.com/discussions/general/429933). Here are a few things to keep in mind though:\n\n**1. Discord Competition Channels are 'Public' - Don't Share Private Information**\n\nDiscord channels for specific competitions are considered 'public' spaces where you are allowed to talk about competition details. Please remember that private sharing of competition code or data outside of your team is, as always, not permitted. Code sharing must always be done publicly through the Kaggle forums/notebooks.\n\n**2. Discord Competition Channels are Not Monitored by Staff - Keep Important Information on the Kaggle Forums**\n\nKaggle Staff and Hosts running competitions will not monitor Discord or be available to answer questions in Discord. This is intended to be a more casual space to discuss competitions and help each other. Please keep important questions, insights, writeups, and other valuable conversation on the Kaggle forums. \n\nHappy modeling! ",
+              "votes": 20
+            },
+            {
+              "content": "<p>Hello there <a href=\"/ashleyoldacre\" target=\"_blank\">@ashleyoldacre</a> is there a discord channel for this specific competition, I can't seem to find the channel server? </p>",
+              "id": 3539386,
+              "post_date": "2026-10-15T21:04:58.750Z",
+              "raw_markdown": "Hello there @ashleyoldacre is there a discord channel for this specific competition, I can't seem to find the channel server? ",
+              "replies": [
+                {
+                  "content": "<p>Following up on this question <a href=\"/ashleyoldacre\" target=\"_blank\">@ashleyoldacre</a> on the Discord channel for this competition.</p>",
+                  "id": 3541615,
+                  "post_date": "2026-10-20T14:17:18.133Z",
+                  "raw_markdown": "Following up on this question @ashleyoldacre on the Discord channel for this competition."
+                }
+              ]
+            },
+            {
+              "id": 3539864,
+              "is_deleted": true,
+              "post_date": "2026-10-16T17:03:12.333Z",
+              "raw_markdown": "",
+              "votes": -3
+            },
+            {
+              "content": "<p>Thanks For Sharing</p>",
+              "id": 3538997,
+              "post_date": "2026-10-15T05:35:11.567Z",
+              "raw_markdown": "Thanks For Sharing",
+              "votes": -2
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 8939556,
+            "author_performance_tier": "STAFF",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "8939556-kg.png?t=2025-08-22-16-55-54",
+            "author_user_display_name": "Ashley Oldacre",
+            "author_user_name": "ashleyoldacre",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "comments": [
+              {
+                "author": {
+                  "display_name": "Stephane Njoki",
+                  "id": 5701534,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5701534-kg.jpg?t=2026-08-06-13-02-30",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/stephanenjoki"
+                },
+                "author_type": "COMMENT",
+                "content": "<p>Hello there <a href=\"/ashleyoldacre\" target=\"_blank\">@ashleyoldacre</a> is there a discord channel for this specific competition, I can't seem to find the channel server? </p>",
+                "feedback_tracking_data": {},
+                "id": 3539386,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-15T21:04:58.750Z",
+                "raw_markdown": "Hello there @ashleyoldacre is there a discord channel for this specific competition, I can't seem to find the channel server? ",
+                "reactions": [
+                  {
+                    "emoji": "KAGGLE",
+                    "featured_user_names": [
+                      "utkarshsen",
+                      "nroggendorff",
+                      "nikhil02007",
+                      "kvrleofelix",
+                      "shivinsilico"
+                    ],
+                    "user_count": 5
+                  }
+                ],
+                "replies": [
+                  {
+                    "author": {
+                      "display_name": "Stephane Njoki",
+                      "id": 5701534,
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5701534-kg.jpg?t=2026-08-06-13-02-30",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/stephanenjoki"
+                    },
+                    "author_type": "COMMENT",
+                    "content": "<p>Following up on this question <a href=\"/ashleyoldacre\" target=\"_blank\">@ashleyoldacre</a> on the Discord channel for this competition.</p>",
+                    "feedback_tracking_data": {},
+                    "id": 3541615,
+                    "is_thank_you": false,
+                    "kernel_version": 0,
+                    "parent": {},
+                    "post_date": "2026-10-20T14:17:18.133Z",
+                    "raw_markdown": "Following up on this question @ashleyoldacre on the Discord channel for this competition.",
+                    "team_up_info": {
+                      "intro": "",
+                      "team_leader": {
+                        "display_name": "Stephane Njoki",
+                        "id": 5701534,
+                        "performance_tier": "CONTRIBUTOR",
+                        "profile_url": "/stephanenjoki",
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5701534-kg.jpg?t=2026-08-06-13-02-30",
+                        "tier": "CONTRIBUTOR",
+                        "url": "/stephanenjoki",
+                        "user_id": 5701534,
+                        "user_name": "stephanenjoki"
+                      }
+                    },
+                    "votes": {
+                      "can_upvote": true
+                    }
+                  }
+                ],
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "Stephane Njoki",
+                    "id": 5701534,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/stephanenjoki",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5701534-kg.jpg?t=2026-08-06-13-02-30",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/stephanenjoki",
+                    "user_id": 5701534,
+                    "user_name": "stephanenjoki"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              },
+              {
+                "author": {
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "url": "/"
+                },
+                "author_type": "COMMENT",
+                "can_delete": true,
+                "feedback_tracking_data": {},
+                "id": 3539864,
+                "is_deleted": true,
+                "is_thank_you": false,
+                "is_user_author": true,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-16T17:03:12.333Z",
+                "raw_markdown": "",
+                "votes": {
+                  "total_votes": -3
+                }
+              },
+              {
+                "author": {
+                  "display_name": "Goutam sharma",
+                  "id": 25038140,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25038140-kg.png?t=2026-10-27-17-16-50",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/goutamsharma12"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 5069,
+                "content": "<p>Thanks For Sharing</p>",
+                "feedback_tracking_data": {},
+                "id": 3538997,
+                "is_thank_you": true,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-15T05:35:11.567Z",
+                "raw_markdown": "Thanks For Sharing",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "Goutam sharma",
+                    "id": 25038140,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/goutamsharma12",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25038140-kg.png?t=2026-10-27-17-16-50",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/goutamsharma12",
+                    "user_id": 25038140,
+                    "user_name": "goutamsharma12"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true,
+                  "total_votes": -2
+                }
+              }
+            ],
+            "first_message": {
+              "author": {
+                "display_name": "Ashley Oldacre",
+                "id": 8939556,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8939556-kg.png?t=2025-08-22-16-55-54",
+                "tier": "STAFF",
+                "url": "/ashleyoldacre"
+              },
+              "author_type": "ADMIN",
+              "content": "<h3>Information for newbies</h3>\n<p>Welcome! </p>\n<p><strong>New to machine learning and data science?</strong> No question is too basic or too simple. Feel free to start your own thread, or use this thread as a place to post any first-timer clarifying questions for the Kaggle community to help you with!</p>\n<p><strong>New to Kaggle?</strong> Take a look at a few videos to learn a bit more about <a href=\"https://www.youtube.com/watch?v=aIus8si_Et0\" target=\"_blank\">site etiquette</a>, <a href=\"https://www.youtube.com/watch?v=sEJHyuWKd-s\" target=\"_blank\">Kaggle lingo</a>, and <a href=\"https://www.youtube.com/watch?&amp;v=GJBOMWpLpTQ\" target=\"_blank\">how to enter a competition using Kaggle Notebooks</a>. Publish and share your <a href=\"https://www.kaggle.com/docs/models#publishing-a-model\" target=\"_blank\">models on Kaggle Models</a>!</p>\n<p><strong>Participants under 18 years old:</strong> If you are under 18 years old and want to participate in this competition, you need to submit a couple of forms:</p>\n<ul>\n<li>Form #1: <a href=\"https://www.kaggle.com/guardian-consent-minor-use\" target=\"_blank\">Parent/Guardian consent for minor's use of kaggle.com</a>. You only have to fill this out once, and it is valid for any competitions on Kaggle. If you already filled this out in the past, you can move on to the next form. </li>\n<li>Form #2: <a href=\"https://www.kaggle.com/consent-minors-process\" target=\"_blank\">Parent/Guardian consent for minor's participation in Kaggle competition</a>. You have to fill out form #2 for this and any future competitions you want to join. \nKids under 13 years of age are not allowed to participate on Kaggle. If you have any questions, please leave a comment and we'll follow up with you!</li>\n</ul>\n<p><strong>Looking for a team?</strong> Express your interest in joining a team through our <a href=\"https://www.kaggle.com/discussions/product-feedback/341195\" target=\"_blank\">Team Up</a> feature.</p>\n<p><strong>Remember</strong>: Kaggle is for everyone. Whether you're teaming up or sharing tips in the competition forum, we expect everyone to follow our Kaggle community guidelines.</p>\n<h3>Competition's Official Discord</h3>\n<p>In addition to this competition forum, you can continue the discussion in our official Kaggle Discord Server here:</p>\n<h1><a href=\"http://discord.gg/kaggle\" target=\"_blank\">discord.gg/kaggle</a></h1>\n<p>The Discord is a great place to ask getting started questions, chat about the nuances of this competition, and connect with potential team mates. Learn more about Discord at our <a href=\"https://www.kaggle.com/discussions/general/429933\" target=\"_blank\">announcement here</a>. Here are a few things to keep in mind though:</p>\n<p><strong>1. Discord Competition Channels are 'Public' - Don't Share Private Information</strong></p>\n<p>Discord channels for specific competitions are considered 'public' spaces where you are allowed to talk about competition details. Please remember that private sharing of competition code or data outside of your team is, as always, not permitted. Code sharing must always be done publicly through the Kaggle forums/notebooks.</p>\n<p><strong>2. Discord Competition Channels are Not Monitored by Staff - Keep Important Information on the Kaggle Forums</strong></p>\n<p>Kaggle Staff and Hosts running competitions will not monitor Discord or be available to answer questions in Discord. This is intended to be a more casual space to discuss competitions and help each other. Please keep important questions, insights, writeups, and other valuable conversation on the Kaggle forums. </p>\n<p>Happy modeling! </p>",
+              "feedback_tracking_data": {},
+              "id": 3538792,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-14T19:46:35.777Z",
+              "raw_markdown": "### Information for newbies\n\nWelcome! \n\n**New to machine learning and data science?** No question is too basic or too simple. Feel free to start your own thread, or use this thread as a place to post any first-timer clarifying questions for the Kaggle community to help you with!\n\n**New to Kaggle?** Take a look at a few videos to learn a bit more about [site etiquette](https://www.youtube.com/watch?v=aIus8si_Et0), [Kaggle lingo](https://www.youtube.com/watch?v=sEJHyuWKd-s), and [how to enter a competition using Kaggle Notebooks](https://www.youtube.com/watch?&v=GJBOMWpLpTQ). Publish and share your [models on Kaggle Models](https://www.kaggle.com/docs/models#publishing-a-model)!\n\n**Participants under 18 years old:** If you are under 18 years old and want to participate in this competition, you need to submit a couple of forms:\n- Form #1: [Parent/Guardian consent for minor's use of kaggle.com](https://www.kaggle.com/guardian-consent-minor-use). You only have to fill this out once, and it is valid for any competitions on Kaggle. If you already filled this out in the past, you can move on to the next form. \n- Form #2: [Parent/Guardian consent for minor's participation in Kaggle competition](https://www.kaggle.com/consent-minors-process). You have to fill out form #2 for this and any future competitions you want to join. \nKids under 13 years of age are not allowed to participate on Kaggle. If you have any questions, please leave a comment and we'll follow up with you!\n\n**Looking for a team?** Express your interest in joining a team through our [Team Up](https://www.kaggle.com/discussions/product-feedback/341195) feature.\n\n**Remember**: Kaggle is for everyone. Whether you're teaming up or sharing tips in the competition forum, we expect everyone to follow our Kaggle community guidelines.\n\n### Competition's Official Discord\nIn addition to this competition forum, you can continue the discussion in our official Kaggle Discord Server here:\n# [discord.gg/kaggle](http://discord.gg/kaggle)\n \nThe Discord is a great place to ask getting started questions, chat about the nuances of this competition, and connect with potential team mates. Learn more about Discord at our [announcement here](https://www.kaggle.com/discussions/general/429933). Here are a few things to keep in mind though:\n\n**1. Discord Competition Channels are 'Public' - Don't Share Private Information**\n\nDiscord channels for specific competitions are considered 'public' spaces where you are allowed to talk about competition details. Please remember that private sharing of competition code or data outside of your team is, as always, not permitted. Code sharing must always be done publicly through the Kaggle forums/notebooks.\n\n**2. Discord Competition Channels are Not Monitored by Staff - Keep Important Information on the Kaggle Forums**\n\nKaggle Staff and Hosts running competitions will not monitor Discord or be available to answer questions in Discord. This is intended to be a more casual space to discuss competitions and help each other. Please keep important questions, insights, writeups, and other valuable conversation on the Kaggle forums. \n\nHappy modeling! ",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Ashley Oldacre",
+                  "id": 8939556,
+                  "performance_tier": "STAFF",
+                  "profile_url": "/ashleyoldacre",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8939556-kg.png?t=2025-08-22-16-55-54",
+                  "tier": "STAFF",
+                  "url": "/ashleyoldacre",
+                  "user_id": 8939556,
+                  "user_name": "ashleyoldacre"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 21,
+                "total_votes": 20
+              }
+            },
+            "first_message_id": 3538792,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 749382,
+            "is_stickied": true,
+            "name": "How to get started + Competition's Official Discord",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-10-14T19:46:35.777367400Z",
+            "total_messages": 4,
+            "total_votes": 20,
+            "url": "/competitions/name-that-llm/discussion/749382"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:22:46+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:22:46+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-10-20T14:17:18.133333300Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [
+    {
+      "slug": "name-that-llm",
+      "topic_id": 749382,
+      "message_id": 3538997,
+      "parent_message_id": null,
+      "author": "Goutam sharma",
+      "author_url": "/goutamsharma12",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-10-15T05:35:11.567Z",
+      "raw_markdown": "Thanks For Sharing",
+      "content_html": "<p>Thanks For Sharing</p>",
+      "votes": -2,
+      "is_thank_you": 1,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:57:57+00:00",
+      "last_seen_at": "2026-11-16T16:22:46+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:22:46+00:00",
+      "remote_last_listed_at": "2026-11-16T16:22:46+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Goutam sharma",
+          "tier": "CONTRIBUTOR",
+          "url": "/goutamsharma12"
+        },
+        "content": "<p>Thanks For Sharing</p>",
+        "id": 3538997,
+        "isThankYou": true,
+        "postDate": "2026-10-15T05:35:11.567Z",
+        "raw": {
+          "author": {
+            "display_name": "Goutam sharma",
+            "id": 25038140,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25038140-kg.png?t=2026-10-27-17-16-50",
+            "tier": "CONTRIBUTOR",
+            "url": "/goutamsharma12"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 5069,
+          "content": "<p>Thanks For Sharing</p>",
+          "feedback_tracking_data": {},
+          "id": 3538997,
+          "is_thank_you": true,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-15T05:35:11.567Z",
+          "raw_markdown": "Thanks For Sharing",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Goutam sharma",
+              "id": 25038140,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/goutamsharma12",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25038140-kg.png?t=2026-10-27-17-16-50",
+              "tier": "CONTRIBUTOR",
+              "url": "/goutamsharma12",
+              "user_id": 25038140,
+              "user_name": "goutamsharma12"
+            }
+          },
+          "votes": {
+            "can_upvote": true,
+            "total_votes": -2
+          }
+        },
+        "rawMarkdown": "Thanks For Sharing",
+        "replies": [],
+        "votes": {
+          "totalVotes": -2
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 749382,
+      "message_id": 3539386,
+      "parent_message_id": null,
+      "author": "Stephane Njoki",
+      "author_url": "/stephanenjoki",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-10-15T21:04:58.750Z",
+      "raw_markdown": "Hello there @ashleyoldacre is there a discord channel for this specific competition, I can't seem to find the channel server? ",
+      "content_html": "<p>Hello there <a href=\"/ashleyoldacre\" target=\"_blank\">@ashleyoldacre</a> is there a discord channel for this specific competition, I can't seem to find the channel server? </p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:57:57+00:00",
+      "last_seen_at": "2026-11-16T16:22:46+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:22:46+00:00",
+      "remote_last_listed_at": "2026-11-16T16:22:46+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Stephane Njoki",
+          "tier": "CONTRIBUTOR",
+          "url": "/stephanenjoki"
+        },
+        "content": "<p>Hello there <a href=\"/ashleyoldacre\" target=\"_blank\">@ashleyoldacre</a> is there a discord channel for this specific competition, I can't seem to find the channel server? </p>",
+        "id": 3539386,
+        "isThankYou": false,
+        "postDate": "2026-10-15T21:04:58.750Z",
+        "raw": {
+          "author": {
+            "display_name": "Stephane Njoki",
+            "id": 5701534,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5701534-kg.jpg?t=2026-08-06-13-02-30",
+            "tier": "CONTRIBUTOR",
+            "url": "/stephanenjoki"
+          },
+          "author_type": "COMMENT",
+          "content": "<p>Hello there <a href=\"/ashleyoldacre\" target=\"_blank\">@ashleyoldacre</a> is there a discord channel for this specific competition, I can't seem to find the channel server? </p>",
+          "feedback_tracking_data": {},
+          "id": 3539386,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-15T21:04:58.750Z",
+          "raw_markdown": "Hello there @ashleyoldacre is there a discord channel for this specific competition, I can't seem to find the channel server? ",
+          "reactions": [
+            {
+              "emoji": "KAGGLE",
+              "featured_user_names": [
+                "utkarshsen",
+                "nroggendorff",
+                "nikhil02007",
+                "kvrleofelix",
+                "shivinsilico"
+              ],
+              "user_count": 5
+            }
+          ],
+          "replies": [
+            {
+              "author": {
+                "display_name": "Stephane Njoki",
+                "id": 5701534,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5701534-kg.jpg?t=2026-08-06-13-02-30",
+                "tier": "CONTRIBUTOR",
+                "url": "/stephanenjoki"
+              },
+              "author_type": "COMMENT",
+              "content": "<p>Following up on this question <a href=\"/ashleyoldacre\" target=\"_blank\">@ashleyoldacre</a> on the Discord channel for this competition.</p>",
+              "feedback_tracking_data": {},
+              "id": 3541615,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-20T14:17:18.133Z",
+              "raw_markdown": "Following up on this question @ashleyoldacre on the Discord channel for this competition.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Stephane Njoki",
+                  "id": 5701534,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/stephanenjoki",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5701534-kg.jpg?t=2026-08-06-13-02-30",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/stephanenjoki",
+                  "user_id": 5701534,
+                  "user_name": "stephanenjoki"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            }
+          ],
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Stephane Njoki",
+              "id": 5701534,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/stephanenjoki",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5701534-kg.jpg?t=2026-08-06-13-02-30",
+              "tier": "CONTRIBUTOR",
+              "url": "/stephanenjoki",
+              "user_id": 5701534,
+              "user_name": "stephanenjoki"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "Hello there @ashleyoldacre is there a discord channel for this specific competition, I can't seem to find the channel server? ",
+        "replies": [
+          {
+            "author": {
+              "displayName": "Stephane Njoki",
+              "tier": "CONTRIBUTOR",
+              "url": "/stephanenjoki"
+            },
+            "content": "<p>Following up on this question <a href=\"/ashleyoldacre\" target=\"_blank\">@ashleyoldacre</a> on the Discord channel for this competition.</p>",
+            "id": 3541615,
+            "isThankYou": false,
+            "postDate": "2026-10-20T14:17:18.133Z",
+            "raw": {
+              "author": {
+                "display_name": "Stephane Njoki",
+                "id": 5701534,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5701534-kg.jpg?t=2026-08-06-13-02-30",
+                "tier": "CONTRIBUTOR",
+                "url": "/stephanenjoki"
+              },
+              "author_type": "COMMENT",
+              "content": "<p>Following up on this question <a href=\"/ashleyoldacre\" target=\"_blank\">@ashleyoldacre</a> on the Discord channel for this competition.</p>",
+              "feedback_tracking_data": {},
+              "id": 3541615,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-20T14:17:18.133Z",
+              "raw_markdown": "Following up on this question @ashleyoldacre on the Discord channel for this competition.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Stephane Njoki",
+                  "id": 5701534,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/stephanenjoki",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5701534-kg.jpg?t=2026-08-06-13-02-30",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/stephanenjoki",
+                  "user_id": 5701534,
+                  "user_name": "stephanenjoki"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "Following up on this question @ashleyoldacre on the Discord channel for this competition.",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 749382,
+      "message_id": 3539864,
+      "parent_message_id": null,
+      "author": null,
+      "author_url": "/",
+      "author_tier": null,
+      "post_date": "2026-10-16T17:03:12.333Z",
+      "raw_markdown": null,
+      "content_html": null,
+      "votes": -3,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:57:57+00:00",
+      "last_seen_at": "2026-11-16T16:22:46+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:22:46+00:00",
+      "remote_last_listed_at": "2026-11-16T16:22:46+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": null,
+          "tier": null,
+          "url": "/"
+        },
+        "content": null,
+        "id": 3539864,
+        "isThankYou": false,
+        "postDate": "2026-10-16T17:03:12.333Z",
+        "raw": {
+          "author": {
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+            "url": "/"
+          },
+          "author_type": "COMMENT",
+          "can_delete": true,
+          "feedback_tracking_data": {},
+          "id": 3539864,
+          "is_deleted": true,
+          "is_thank_you": false,
+          "is_user_author": true,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-16T17:03:12.333Z",
+          "raw_markdown": "",
+          "votes": {
+            "total_votes": -3
+          }
+        },
+        "rawMarkdown": null,
+        "replies": [],
+        "votes": {
+          "totalVotes": -3
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 749382,
+      "message_id": 3541615,
+      "parent_message_id": 3539386,
+      "author": "Stephane Njoki",
+      "author_url": "/stephanenjoki",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-10-20T14:17:18.133Z",
+      "raw_markdown": "Following up on this question @ashleyoldacre on the Discord channel for this competition.",
+      "content_html": "<p>Following up on this question <a href=\"/ashleyoldacre\" target=\"_blank\">@ashleyoldacre</a> on the Discord channel for this competition.</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 1,
+      "first_seen_at": "2026-11-04T06:57:57+00:00",
+      "last_seen_at": "2026-11-16T16:22:46+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:22:46+00:00",
+      "remote_last_listed_at": "2026-11-16T16:22:46+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Stephane Njoki",
+          "tier": "CONTRIBUTOR",
+          "url": "/stephanenjoki"
+        },
+        "content": "<p>Following up on this question <a href=\"/ashleyoldacre\" target=\"_blank\">@ashleyoldacre</a> on the Discord channel for this competition.</p>",
+        "id": 3541615,
+        "isThankYou": false,
+        "postDate": "2026-10-20T14:17:18.133Z",
+        "raw": {
+          "author": {
+            "display_name": "Stephane Njoki",
+            "id": 5701534,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5701534-kg.jpg?t=2026-08-06-13-02-30",
+            "tier": "CONTRIBUTOR",
+            "url": "/stephanenjoki"
+          },
+          "author_type": "COMMENT",
+          "content": "<p>Following up on this question <a href=\"/ashleyoldacre\" target=\"_blank\">@ashleyoldacre</a> on the Discord channel for this competition.</p>",
+          "feedback_tracking_data": {},
+          "id": 3541615,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-20T14:17:18.133Z",
+          "raw_markdown": "Following up on this question @ashleyoldacre on the Discord channel for this competition.",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Stephane Njoki",
+              "id": 5701534,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/stephanenjoki",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5701534-kg.jpg?t=2026-08-06-13-02-30",
+              "tier": "CONTRIBUTOR",
+              "url": "/stephanenjoki",
+              "user_id": 5701534,
+              "user_name": "stephanenjoki"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "Following up on this question @ashleyoldacre on the Discord channel for this competition.",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    }
+  ],
+  "writeup": null
+}

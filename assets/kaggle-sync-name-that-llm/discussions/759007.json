@@ -1,0 +1,408 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 759007,
+    "title": "[Team Recruitment] Claude / GPT / Gemini API data partner — we bring 96GB VRAM compute & experiments",
+    "author": "Jack Cerion",
+    "author_url": "/jackcerion",
+    "author_tier": "EXPERT",
+    "post_date": "2026-11-13T11:03:23.886814300Z",
+    "last_comment_post_date": "2026-11-17T05:12:51.233333300Z",
+    "comment_count": 1,
+    "votes": 4,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/759007",
+    "first_message_id": 3554648,
+    "first_seen_at": "2026-11-16T16:21:25+00:00",
+    "last_seen_at": "2026-11-18T12:04:28+00:00",
+    "detail_last_synced_at": "2026-11-18T12:04:28+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-18T12:04:19+00:00",
+    "remote_last_listed_at": "2026-11-18T12:04:19+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "b4ed9debdc5c9024f233b2e918dedf4eea5ad3af7c711852b3326887f80a61d0",
+    "listing_metrics_hash": "818a5cc0f2253a82207ce555576d24d0d4b4461b2ac293b834a011f9d570c30a",
+    "detail_content_hash": "009977b3ba87ba68f4615337924f15e881ed8687c429ec16b01c05e2d52dbb71",
+    "detail_last_checked_at": "2026-11-18T12:04:28+00:00",
+    "detail_next_check_at": "2026-11-21T12:04:28+00:00",
+    "detail_unchanged_count": 1,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 1,
+      "firstForumMessageId": null,
+      "id": 759007,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-11-17T05:12:51.233333300Z",
+      "postDate": "2026-11-13T11:03:23.886814300Z",
+      "raw": {
+        "comment_count": 1,
+        "id": 759007,
+        "last_comment_post_date": "2026-11-17T05:12:51.233333300Z",
+        "post_date": "2026-11-13T11:03:23.886814300Z",
+        "title": "[Team Recruitment] Claude / GPT / Gemini API data partner — we bring 96GB VRAM compute & experiments",
+        "topic_url": "/competitions/name-that-llm/discussion/759007",
+        "votes": 4
+      },
+      "title": "[Team Recruitment] Claude / GPT / Gemini API data partner — we bring 96GB VRAM compute & experiments",
+      "topicUrl": "/competitions/name-that-llm/discussion/759007",
+      "votes": 4
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "EXPERT",
+        "authorUserDisplayName": "Jack Cerion",
+        "authorUserName": "jackcerion",
+        "comments": [
+          {
+            "author": {
+              "displayName": "Sotarriva Alvarez Isai Roberto",
+              "tier": "CONTRIBUTOR",
+              "url": "/irsotarriva"
+            },
+            "content": "<p>Kaggle does not let me send you DMs (disabled by user).</p>\n<p>I am in Japan (GMT+9) and could help with GPT and Claude, plus maybe some generation for GLM or other models via open router. </p>\n<p>I have a pretraining dataset created from public datasets I scraped, filter by license, and cleaned.\nI have been working on model trimming (removing layers, experts, etc), the trimmed variants score basically the same as the full variants but with much less GPU use at inference.</p>",
+            "id": 3555950,
+            "isThankYou": false,
+            "postDate": "2026-11-17T05:12:51.233Z",
+            "raw": {
+              "author": {
+                "display_name": "Sotarriva Alvarez Isai Roberto",
+                "id": 2953982,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2953982-kg.png?t=2025-01-08-15-13-02",
+                "tier": "CONTRIBUTOR",
+                "url": "/irsotarriva"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 1228,
+              "content": "<p>Kaggle does not let me send you DMs (disabled by user).</p>\n<p>I am in Japan (GMT+9) and could help with GPT and Claude, plus maybe some generation for GLM or other models via open router. </p>\n<p>I have a pretraining dataset created from public datasets I scraped, filter by license, and cleaned.\nI have been working on model trimming (removing layers, experts, etc), the trimmed variants score basically the same as the full variants but with much less GPU use at inference.</p>",
+              "feedback_tracking_data": {},
+              "id": 3555950,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-17T05:12:51.233Z",
+              "raw_markdown": "Kaggle does not let me send you DMs (disabled by user).\n\nI am in Japan (GMT+9) and could help with GPT and Claude, plus maybe some generation for GLM or other models via open router. \n\nI have a pretraining dataset created from public datasets I scraped, filter by license, and cleaned.\nI have been working on model trimming (removing layers, experts, etc), the trimmed variants score basically the same as the full variants but with much less GPU use at inference.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Sotarriva Alvarez Isai Roberto",
+                  "id": 2953982,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/irsotarriva",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2953982-kg.png?t=2025-01-08-15-13-02",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/irsotarriva",
+                  "user_id": 2953982,
+                  "user_name": "irsotarriva"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "Kaggle does not let me send you DMs (disabled by user).\n\nI am in Japan (GMT+9) and could help with GPT and Claude, plus maybe some generation for GLM or other models via open router. \n\nI have a pretraining dataset created from public datasets I scraped, filter by license, and cleaned.\nI have been working on model trimming (removing layers, experts, etc), the trimmed variants score basically the same as the full variants but with much less GPU use at inference.",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "expectedCommentCount": 1,
+        "firstMessage": {
+          "author": {
+            "displayName": "Jack Cerion",
+            "tier": "EXPERT",
+            "url": "/jackcerion"
+          },
+          "content": "<p>Hi all,</p>\n<p>We’re a small team in Name That LLM looking for one more teammate, ideally based in Europe, the US, or Australia, who can generate training passages from the overseas model families — Claude first, plus GPT and Gemini if you have access.</p>\n<p><strong>What we offer:</strong></p>\n<p>Ample compute: 96GB VRAM available for training, validation, and experiments.</p>\n<p>A collaborative team — we discuss ideas, share improvements, and iterate together.</p>\n<p>We  cover the other model families, so your data fills the main gap.</p>\n<p><strong>What we need:</strong></p>\n<p>API access to Claude (Anthropic API, Bedrock, Vertex AI, or the Kaggle Model Proxy all work).</p>\n<p>A moderate, reasonable-cost generation batch using prompts we provide.</p>\n<p>Sharing the generated passages in the team workspace. No public release needed — self-generated data within reasonable cost is allowed under the rules.</p>\n<p>If interested, reply here or DM me with your location/time zone, which APIs you can access, and any relevant Kaggle/NLP background.</p>\n<p>Team merger deadline is January 6, 2027, so we’d like to move fairly soon. Happy to answer questions first.</p>\n<p>Thanks and good luck to everyone.</p>",
+          "id": 3554648,
+          "isThankYou": false,
+          "postDate": "2026-11-13T11:03:23.887Z",
+          "raw": {
+            "author": {
+              "display_name": "Jack Cerion",
+              "id": 17865940,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17865940-kg.png?t=2026-06-18-09-14-39",
+              "tier": "EXPERT",
+              "url": "/jackcerion"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 319,
+            "content": "<p>Hi all,</p>\n<p>We’re a small team in Name That LLM looking for one more teammate, ideally based in Europe, the US, or Australia, who can generate training passages from the overseas model families — Claude first, plus GPT and Gemini if you have access.</p>\n<p><strong>What we offer:</strong></p>\n<p>Ample compute: 96GB VRAM available for training, validation, and experiments.</p>\n<p>A collaborative team — we discuss ideas, share improvements, and iterate together.</p>\n<p>We  cover the other model families, so your data fills the main gap.</p>\n<p><strong>What we need:</strong></p>\n<p>API access to Claude (Anthropic API, Bedrock, Vertex AI, or the Kaggle Model Proxy all work).</p>\n<p>A moderate, reasonable-cost generation batch using prompts we provide.</p>\n<p>Sharing the generated passages in the team workspace. No public release needed — self-generated data within reasonable cost is allowed under the rules.</p>\n<p>If interested, reply here or DM me with your location/time zone, which APIs you can access, and any relevant Kaggle/NLP background.</p>\n<p>Team merger deadline is January 6, 2027, so we’d like to move fairly soon. Happy to answer questions first.</p>\n<p>Thanks and good luck to everyone.</p>",
+            "feedback_tracking_data": {},
+            "id": 3554648,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-11-13T11:03:23.887Z",
+            "raw_markdown": "Hi all,\n\nWe’re a small team in Name That LLM looking for one more teammate, ideally based in Europe, the US, or Australia, who can generate training passages from the overseas model families — Claude first, plus GPT and Gemini if you have access.\n\n**What we offer:**\n\nAmple compute: 96GB VRAM available for training, validation, and experiments.\n\nA collaborative team — we discuss ideas, share improvements, and iterate together.\n\nWe  cover the other model families, so your data fills the main gap.\n\n**What we need:**\n\nAPI access to Claude (Anthropic API, Bedrock, Vertex AI, or the Kaggle Model Proxy all work).\n\nA moderate, reasonable-cost generation batch using prompts we provide.\n\nSharing the generated passages in the team workspace. No public release needed — self-generated data within reasonable cost is allowed under the rules.\n\nIf interested, reply here or DM me with your location/time zone, which APIs you can access, and any relevant Kaggle/NLP background.\n\nTeam merger deadline is January 6, 2027, so we’d like to move fairly soon. Happy to answer questions first.\n\nThanks and good luck to everyone.",
+            "reactions": [
+              {
+                "emoji": "LOVE",
+                "featured_user_names": [
+                  "abbaskaif12"
+                ],
+                "user_count": 1
+              }
+            ],
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "Jack Cerion",
+                "id": 17865940,
+                "performance_tier": "EXPERT",
+                "profile_url": "/jackcerion",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17865940-kg.png?t=2026-06-18-09-14-39",
+                "tier": "EXPERT",
+                "url": "/jackcerion",
+                "user_id": 17865940,
+                "user_name": "jackcerion"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 5,
+              "total_votes": 4
+            }
+          },
+          "rawMarkdown": "Hi all,\n\nWe’re a small team in Name That LLM looking for one more teammate, ideally based in Europe, the US, or Australia, who can generate training passages from the overseas model families — Claude first, plus GPT and Gemini if you have access.\n\n**What we offer:**\n\nAmple compute: 96GB VRAM available for training, validation, and experiments.\n\nA collaborative team — we discuss ideas, share improvements, and iterate together.\n\nWe  cover the other model families, so your data fills the main gap.\n\n**What we need:**\n\nAPI access to Claude (Anthropic API, Bedrock, Vertex AI, or the Kaggle Model Proxy all work).\n\nA moderate, reasonable-cost generation batch using prompts we provide.\n\nSharing the generated passages in the team workspace. No public release needed — self-generated data within reasonable cost is allowed under the rules.\n\nIf interested, reply here or DM me with your location/time zone, which APIs you can access, and any relevant Kaggle/NLP background.\n\nTeam merger deadline is January 6, 2027, so we’d like to move fairly soon. Happy to answer questions first.\n\nThanks and good luck to everyone.",
+          "replies": [],
+          "votes": {
+            "totalVotes": 4
+          }
+        },
+        "firstMessageId": 3554648,
+        "id": 759007,
+        "name": "[Team Recruitment] Claude / GPT / Gemini API data partner — we bring 96GB VRAM compute & experiments",
+        "postDate": "2026-11-13T11:03:23.886814300Z",
+        "url": "/competitions/name-that-llm/discussion/759007"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>Hi all,</p>\n<p>We’re a small team in Name That LLM looking for one more teammate, ideally based in Europe, the US, or Australia, who can generate training passages from the overseas model families — Claude first, plus GPT and Gemini if you have access.</p>\n<p><strong>What we offer:</strong></p>\n<p>Ample compute: 96GB VRAM available for training, validation, and experiments.</p>\n<p>A collaborative team — we discuss ideas, share improvements, and iterate together.</p>\n<p>We  cover the other model families, so your data fills the main gap.</p>\n<p><strong>What we need:</strong></p>\n<p>API access to Claude (Anthropic API, Bedrock, Vertex AI, or the Kaggle Model Proxy all work).</p>\n<p>A moderate, reasonable-cost generation batch using prompts we provide.</p>\n<p>Sharing the generated passages in the team workspace. No public release needed — self-generated data within reasonable cost is allowed under the rules.</p>\n<p>If interested, reply here or DM me with your location/time zone, which APIs you can access, and any relevant Kaggle/NLP background.</p>\n<p>Team merger deadline is January 6, 2027, so we’d like to move fairly soon. Happy to answer questions first.</p>\n<p>Thanks and good luck to everyone.</p>",
+              "id": 3554648,
+              "post_date": "2026-11-13T11:03:23.887Z",
+              "raw_markdown": "Hi all,\n\nWe’re a small team in Name That LLM looking for one more teammate, ideally based in Europe, the US, or Australia, who can generate training passages from the overseas model families — Claude first, plus GPT and Gemini if you have access.\n\n**What we offer:**\n\nAmple compute: 96GB VRAM available for training, validation, and experiments.\n\nA collaborative team — we discuss ideas, share improvements, and iterate together.\n\nWe  cover the other model families, so your data fills the main gap.\n\n**What we need:**\n\nAPI access to Claude (Anthropic API, Bedrock, Vertex AI, or the Kaggle Model Proxy all work).\n\nA moderate, reasonable-cost generation batch using prompts we provide.\n\nSharing the generated passages in the team workspace. No public release needed — self-generated data within reasonable cost is allowed under the rules.\n\nIf interested, reply here or DM me with your location/time zone, which APIs you can access, and any relevant Kaggle/NLP background.\n\nTeam merger deadline is January 6, 2027, so we’d like to move fairly soon. Happy to answer questions first.\n\nThanks and good luck to everyone.",
+              "votes": 4
+            },
+            {
+              "content": "<p>Kaggle does not let me send you DMs (disabled by user).</p>\n<p>I am in Japan (GMT+9) and could help with GPT and Claude, plus maybe some generation for GLM or other models via open router. </p>\n<p>I have a pretraining dataset created from public datasets I scraped, filter by license, and cleaned.\nI have been working on model trimming (removing layers, experts, etc), the trimmed variants score basically the same as the full variants but with much less GPU use at inference.</p>",
+              "id": 3555950,
+              "post_date": "2026-11-17T05:12:51.233Z",
+              "raw_markdown": "Kaggle does not let me send you DMs (disabled by user).\n\nI am in Japan (GMT+9) and could help with GPT and Claude, plus maybe some generation for GLM or other models via open router. \n\nI have a pretraining dataset created from public datasets I scraped, filter by license, and cleaned.\nI have been working on model trimming (removing layers, experts, etc), the trimmed variants score basically the same as the full variants but with much less GPU use at inference."
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 17865940,
+            "author_performance_tier": "EXPERT",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "17865940-kg.png?t=2026-06-18-09-14-39",
+            "author_user_display_name": "Jack Cerion",
+            "author_user_name": "jackcerion",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "comments": [
+              {
+                "author": {
+                  "display_name": "Sotarriva Alvarez Isai Roberto",
+                  "id": 2953982,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2953982-kg.png?t=2025-01-08-15-13-02",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/irsotarriva"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 1228,
+                "content": "<p>Kaggle does not let me send you DMs (disabled by user).</p>\n<p>I am in Japan (GMT+9) and could help with GPT and Claude, plus maybe some generation for GLM or other models via open router. </p>\n<p>I have a pretraining dataset created from public datasets I scraped, filter by license, and cleaned.\nI have been working on model trimming (removing layers, experts, etc), the trimmed variants score basically the same as the full variants but with much less GPU use at inference.</p>",
+                "feedback_tracking_data": {},
+                "id": 3555950,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-11-17T05:12:51.233Z",
+                "raw_markdown": "Kaggle does not let me send you DMs (disabled by user).\n\nI am in Japan (GMT+9) and could help with GPT and Claude, plus maybe some generation for GLM or other models via open router. \n\nI have a pretraining dataset created from public datasets I scraped, filter by license, and cleaned.\nI have been working on model trimming (removing layers, experts, etc), the trimmed variants score basically the same as the full variants but with much less GPU use at inference.",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "Sotarriva Alvarez Isai Roberto",
+                    "id": 2953982,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/irsotarriva",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2953982-kg.png?t=2025-01-08-15-13-02",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/irsotarriva",
+                    "user_id": 2953982,
+                    "user_name": "irsotarriva"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              }
+            ],
+            "first_message": {
+              "author": {
+                "display_name": "Jack Cerion",
+                "id": 17865940,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17865940-kg.png?t=2026-06-18-09-14-39",
+                "tier": "EXPERT",
+                "url": "/jackcerion"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 319,
+              "content": "<p>Hi all,</p>\n<p>We’re a small team in Name That LLM looking for one more teammate, ideally based in Europe, the US, or Australia, who can generate training passages from the overseas model families — Claude first, plus GPT and Gemini if you have access.</p>\n<p><strong>What we offer:</strong></p>\n<p>Ample compute: 96GB VRAM available for training, validation, and experiments.</p>\n<p>A collaborative team — we discuss ideas, share improvements, and iterate together.</p>\n<p>We  cover the other model families, so your data fills the main gap.</p>\n<p><strong>What we need:</strong></p>\n<p>API access to Claude (Anthropic API, Bedrock, Vertex AI, or the Kaggle Model Proxy all work).</p>\n<p>A moderate, reasonable-cost generation batch using prompts we provide.</p>\n<p>Sharing the generated passages in the team workspace. No public release needed — self-generated data within reasonable cost is allowed under the rules.</p>\n<p>If interested, reply here or DM me with your location/time zone, which APIs you can access, and any relevant Kaggle/NLP background.</p>\n<p>Team merger deadline is January 6, 2027, so we’d like to move fairly soon. Happy to answer questions first.</p>\n<p>Thanks and good luck to everyone.</p>",
+              "feedback_tracking_data": {},
+              "id": 3554648,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-13T11:03:23.887Z",
+              "raw_markdown": "Hi all,\n\nWe’re a small team in Name That LLM looking for one more teammate, ideally based in Europe, the US, or Australia, who can generate training passages from the overseas model families — Claude first, plus GPT and Gemini if you have access.\n\n**What we offer:**\n\nAmple compute: 96GB VRAM available for training, validation, and experiments.\n\nA collaborative team — we discuss ideas, share improvements, and iterate together.\n\nWe  cover the other model families, so your data fills the main gap.\n\n**What we need:**\n\nAPI access to Claude (Anthropic API, Bedrock, Vertex AI, or the Kaggle Model Proxy all work).\n\nA moderate, reasonable-cost generation batch using prompts we provide.\n\nSharing the generated passages in the team workspace. No public release needed — self-generated data within reasonable cost is allowed under the rules.\n\nIf interested, reply here or DM me with your location/time zone, which APIs you can access, and any relevant Kaggle/NLP background.\n\nTeam merger deadline is January 6, 2027, so we’d like to move fairly soon. Happy to answer questions first.\n\nThanks and good luck to everyone.",
+              "reactions": [
+                {
+                  "emoji": "LOVE",
+                  "featured_user_names": [
+                    "abbaskaif12"
+                  ],
+                  "user_count": 1
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Jack Cerion",
+                  "id": 17865940,
+                  "performance_tier": "EXPERT",
+                  "profile_url": "/jackcerion",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17865940-kg.png?t=2026-06-18-09-14-39",
+                  "tier": "EXPERT",
+                  "url": "/jackcerion",
+                  "user_id": 17865940,
+                  "user_name": "jackcerion"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 5,
+                "total_votes": 4
+              }
+            },
+            "first_message_id": 3554648,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 759007,
+            "name": "[Team Recruitment] Claude / GPT / Gemini API data partner — we bring 96GB VRAM compute & experiments",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-11-13T11:03:23.886814300Z",
+            "total_messages": 1,
+            "total_votes": 4,
+            "url": "/competitions/name-that-llm/discussion/759007"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-18T12:04:28+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-18T12:04:28+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-11-17T05:12:51.233333300Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [
+    {
+      "slug": "name-that-llm",
+      "topic_id": 759007,
+      "message_id": 3555950,
+      "parent_message_id": null,
+      "author": "Sotarriva Alvarez Isai Roberto",
+      "author_url": "/irsotarriva",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-17T05:12:51.233Z",
+      "raw_markdown": "Kaggle does not let me send you DMs (disabled by user).\n\nI am in Japan (GMT+9) and could help with GPT and Claude, plus maybe some generation for GLM or other models via open router. \n\nI have a pretraining dataset created from public datasets I scraped, filter by license, and cleaned.\nI have been working on model trimming (removing layers, experts, etc), the trimmed variants score basically the same as the full variants but with much less GPU use at inference.",
+      "content_html": "<p>Kaggle does not let me send you DMs (disabled by user).</p>\n<p>I am in Japan (GMT+9) and could help with GPT and Claude, plus maybe some generation for GLM or other models via open router. </p>\n<p>I have a pretraining dataset created from public datasets I scraped, filter by license, and cleaned.\nI have been working on model trimming (removing layers, experts, etc), the trimmed variants score basically the same as the full variants but with much less GPU use at inference.</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-17T09:11:18+00:00",
+      "last_seen_at": "2026-11-18T12:04:28+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T12:04:28+00:00",
+      "remote_last_listed_at": "2026-11-18T12:04:28+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Sotarriva Alvarez Isai Roberto",
+          "tier": "CONTRIBUTOR",
+          "url": "/irsotarriva"
+        },
+        "content": "<p>Kaggle does not let me send you DMs (disabled by user).</p>\n<p>I am in Japan (GMT+9) and could help with GPT and Claude, plus maybe some generation for GLM or other models via open router. </p>\n<p>I have a pretraining dataset created from public datasets I scraped, filter by license, and cleaned.\nI have been working on model trimming (removing layers, experts, etc), the trimmed variants score basically the same as the full variants but with much less GPU use at inference.</p>",
+        "id": 3555950,
+        "isThankYou": false,
+        "postDate": "2026-11-17T05:12:51.233Z",
+        "raw": {
+          "author": {
+            "display_name": "Sotarriva Alvarez Isai Roberto",
+            "id": 2953982,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2953982-kg.png?t=2025-01-08-15-13-02",
+            "tier": "CONTRIBUTOR",
+            "url": "/irsotarriva"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 1228,
+          "content": "<p>Kaggle does not let me send you DMs (disabled by user).</p>\n<p>I am in Japan (GMT+9) and could help with GPT and Claude, plus maybe some generation for GLM or other models via open router. </p>\n<p>I have a pretraining dataset created from public datasets I scraped, filter by license, and cleaned.\nI have been working on model trimming (removing layers, experts, etc), the trimmed variants score basically the same as the full variants but with much less GPU use at inference.</p>",
+          "feedback_tracking_data": {},
+          "id": 3555950,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-17T05:12:51.233Z",
+          "raw_markdown": "Kaggle does not let me send you DMs (disabled by user).\n\nI am in Japan (GMT+9) and could help with GPT and Claude, plus maybe some generation for GLM or other models via open router. \n\nI have a pretraining dataset created from public datasets I scraped, filter by license, and cleaned.\nI have been working on model trimming (removing layers, experts, etc), the trimmed variants score basically the same as the full variants but with much less GPU use at inference.",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Sotarriva Alvarez Isai Roberto",
+              "id": 2953982,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/irsotarriva",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2953982-kg.png?t=2025-01-08-15-13-02",
+              "tier": "CONTRIBUTOR",
+              "url": "/irsotarriva",
+              "user_id": 2953982,
+              "user_name": "irsotarriva"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "Kaggle does not let me send you DMs (disabled by user).\n\nI am in Japan (GMT+9) and could help with GPT and Claude, plus maybe some generation for GLM or other models via open router. \n\nI have a pretraining dataset created from public datasets I scraped, filter by license, and cleaned.\nI have been working on model trimming (removing layers, experts, etc), the trimmed variants score basically the same as the full variants but with much less GPU use at inference.",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    }
+  ],
+  "writeup": null
+}

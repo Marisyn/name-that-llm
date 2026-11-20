@@ -1,0 +1,359 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 754131,
+    "title": "[Deleted Topic]",
+    "author": "Joseph Adamski",
+    "author_url": "/",
+    "author_tier": "EXPERT",
+    "post_date": "2026-10-30T13:18:47.387817100Z",
+    "last_comment_post_date": "2026-10-31T03:19:45.230Z",
+    "comment_count": 1,
+    "votes": 2,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/754131",
+    "first_message_id": 3547190,
+    "first_seen_at": "2026-11-04T06:56:15+00:00",
+    "last_seen_at": "2026-11-18T12:04:47+00:00",
+    "detail_last_synced_at": "2026-11-18T12:04:47+00:00",
+    "remote_list_status": "unlisted",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-04T06:58:23+00:00",
+    "remote_unlisted_since": "2026-11-16T16:36:37+00:00",
+    "listing_content_hash": "099ad99eec7bf919b27dd590194e391ac97d77c3d97da90db42a570db79a3218",
+    "listing_metrics_hash": "6db2b817333d85ee95f494a1b2ba941fb79d87d4e3e0c8718afed5f3c0bfd1fa",
+    "detail_content_hash": "26dbeb421db616ef0d9999c775291312d24635dc903f93cd6a4240e2c045ed74",
+    "detail_last_checked_at": "2026-11-18T12:04:47+00:00",
+    "detail_next_check_at": "2026-11-21T12:04:47+00:00",
+    "detail_unchanged_count": 1,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 1,
+      "firstForumMessageId": null,
+      "id": 754131,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-10-31T03:19:45.230Z",
+      "postDate": "2026-10-30T13:18:47.387817100Z",
+      "raw": {
+        "comment_count": 1,
+        "id": 754131,
+        "last_comment_post_date": "2026-10-31T03:19:45.230Z",
+        "post_date": "2026-10-30T13:18:47.387817100Z",
+        "title": "My popular ATLAS adapter vs Uniform Smoothing",
+        "topic_url": "/competitions/name-that-llm/discussion/754131",
+        "votes": 2
+      },
+      "title": "My popular ATLAS adapter vs Uniform Smoothing",
+      "topicUrl": "/competitions/name-that-llm/discussion/754131",
+      "votes": 2
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": null,
+        "authorUserDisplayName": null,
+        "authorUserName": null,
+        "comments": [
+          {
+            "author": {
+              "displayName": "HALX2158",
+              "tier": "CONTRIBUTOR",
+              "url": "/mizuno0522"
+            },
+            "content": "<p>A related data point: on a 0.638 fork, setting the 10% ATLAS mix to zero cost -0.009 on the public LB. Next to your +0.001 and +0.002, that suggests most of its value could be the smoothing, not the attribution. It’s a different blend and I haven’t run the equal-guess replacement myself, so this is only suggestive.</p>",
+            "id": 3547493,
+            "isThankYou": false,
+            "postDate": "2026-10-31T03:19:45.230Z",
+            "raw": {
+              "author": {
+                "display_name": "HALX2158",
+                "id": 16294566,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                "tier": "CONTRIBUTOR",
+                "url": "/mizuno0522"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 1383,
+              "content": "<p>A related data point: on a 0.638 fork, setting the 10% ATLAS mix to zero cost -0.009 on the public LB. Next to your +0.001 and +0.002, that suggests most of its value could be the smoothing, not the attribution. It’s a different blend and I haven’t run the equal-guess replacement myself, so this is only suggestive.</p>",
+              "feedback_tracking_data": {},
+              "id": 3547493,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-31T03:19:45.230Z",
+              "raw_markdown": "A related data point: on a 0.638 fork, setting the 10% ATLAS mix to zero cost -0.009 on the public LB. Next to your +0.001 and +0.002, that suggests most of its value could be the smoothing, not the attribution. It’s a different blend and I haven’t run the equal-guess replacement myself, so this is only suggestive.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "HALX2158",
+                  "id": 16294566,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/mizuno0522",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/mizuno0522",
+                  "user_id": 16294566,
+                  "user_name": "mizuno0522"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": 1
+              }
+            },
+            "rawMarkdown": "A related data point: on a 0.638 fork, setting the 10% ATLAS mix to zero cost -0.009 on the public LB. Next to your +0.001 and +0.002, that suggests most of its value could be the smoothing, not the attribution. It’s a different blend and I haven’t run the equal-guess replacement myself, so this is only suggestive.",
+            "replies": [],
+            "votes": {
+              "totalVotes": 1
+            }
+          }
+        ],
+        "expectedCommentCount": 1,
+        "firstMessage": {
+          "author": {
+            "displayName": null,
+            "tier": null,
+            "url": "/"
+          },
+          "content": null,
+          "id": 3547190,
+          "isThankYou": false,
+          "postDate": "2026-10-30T13:18:47.387Z",
+          "raw": {
+            "author": {
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "url": "/"
+            },
+            "author_type": "COMMENT",
+            "can_delete": true,
+            "feedback_tracking_data": {},
+            "id": 3547190,
+            "is_deleted": true,
+            "is_thank_you": false,
+            "is_user_author": true,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-10-30T13:18:47.387Z",
+            "raw_markdown": "",
+            "votes": {
+              "total_upvotes": 3,
+              "total_votes": 2
+            }
+          },
+          "rawMarkdown": null,
+          "replies": [],
+          "votes": {
+            "totalVotes": 2
+          }
+        },
+        "firstMessageId": 3547190,
+        "id": 754131,
+        "name": "[Deleted Topic]",
+        "postDate": "2026-10-30T13:18:47.387817100Z",
+        "url": "/competitions/name-that-llm/discussion/754131"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "id": 3547190,
+              "is_deleted": true,
+              "post_date": "2026-10-30T13:18:47.387Z",
+              "raw_markdown": "",
+              "votes": 2
+            },
+            {
+              "content": "<p>A related data point: on a 0.638 fork, setting the 10% ATLAS mix to zero cost -0.009 on the public LB. Next to your +0.001 and +0.002, that suggests most of its value could be the smoothing, not the attribution. It’s a different blend and I haven’t run the equal-guess replacement myself, so this is only suggestive.</p>",
+              "id": 3547493,
+              "post_date": "2026-10-31T03:19:45.230Z",
+              "raw_markdown": "A related data point: on a 0.638 fork, setting the 10% ATLAS mix to zero cost -0.009 on the public LB. Next to your +0.001 and +0.002, that suggests most of its value could be the smoothing, not the attribution. It’s a different blend and I haven’t run the equal-guess replacement myself, so this is only suggestive.",
+              "votes": 1
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 0,
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "default-thumb.png",
+            "author_user_display_name": "",
+            "author_user_name": "",
+            "can_delete": true,
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "comments": [
+              {
+                "author": {
+                  "display_name": "HALX2158",
+                  "id": 16294566,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/mizuno0522"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 1383,
+                "content": "<p>A related data point: on a 0.638 fork, setting the 10% ATLAS mix to zero cost -0.009 on the public LB. Next to your +0.001 and +0.002, that suggests most of its value could be the smoothing, not the attribution. It’s a different blend and I haven’t run the equal-guess replacement myself, so this is only suggestive.</p>",
+                "feedback_tracking_data": {},
+                "id": 3547493,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-31T03:19:45.230Z",
+                "raw_markdown": "A related data point: on a 0.638 fork, setting the 10% ATLAS mix to zero cost -0.009 on the public LB. Next to your +0.001 and +0.002, that suggests most of its value could be the smoothing, not the attribution. It’s a different blend and I haven’t run the equal-guess replacement myself, so this is only suggestive.",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "HALX2158",
+                    "id": 16294566,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/mizuno0522",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/mizuno0522",
+                    "user_id": 16294566,
+                    "user_name": "mizuno0522"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true,
+                  "total_upvotes": 1,
+                  "total_votes": 1
+                }
+              }
+            ],
+            "first_message": {
+              "author": {
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "url": "/"
+              },
+              "author_type": "COMMENT",
+              "can_delete": true,
+              "feedback_tracking_data": {},
+              "id": 3547190,
+              "is_deleted": true,
+              "is_thank_you": false,
+              "is_user_author": true,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-30T13:18:47.387Z",
+              "raw_markdown": "",
+              "votes": {
+                "total_upvotes": 3,
+                "total_votes": 2
+              }
+            },
+            "first_message_id": 3547190,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 754131,
+            "is_deleted": true,
+            "name": "[Deleted Topic]",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-10-30T13:18:47.387817100Z",
+            "total_messages": 1,
+            "url": "/competitions/name-that-llm/discussion/754131"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-18T12:04:47+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-18T12:04:47+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-10-31T03:19:45.230Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [
+    {
+      "slug": "name-that-llm",
+      "topic_id": 754131,
+      "message_id": 3547493,
+      "parent_message_id": null,
+      "author": "HALX2158",
+      "author_url": "/mizuno0522",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-10-31T03:19:45.230Z",
+      "raw_markdown": "A related data point: on a 0.638 fork, setting the 10% ATLAS mix to zero cost -0.009 on the public LB. Next to your +0.001 and +0.002, that suggests most of its value could be the smoothing, not the attribution. It’s a different blend and I haven’t run the equal-guess replacement myself, so this is only suggestive.",
+      "content_html": "<p>A related data point: on a 0.638 fork, setting the 10% ATLAS mix to zero cost -0.009 on the public LB. Next to your +0.001 and +0.002, that suggests most of its value could be the smoothing, not the attribution. It’s a different blend and I haven’t run the equal-guess replacement myself, so this is only suggestive.</p>",
+      "votes": 1,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:57:52+00:00",
+      "last_seen_at": "2026-11-18T12:04:47+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T12:04:47+00:00",
+      "remote_last_listed_at": "2026-11-18T12:04:47+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "HALX2158",
+          "tier": "CONTRIBUTOR",
+          "url": "/mizuno0522"
+        },
+        "content": "<p>A related data point: on a 0.638 fork, setting the 10% ATLAS mix to zero cost -0.009 on the public LB. Next to your +0.001 and +0.002, that suggests most of its value could be the smoothing, not the attribution. It’s a different blend and I haven’t run the equal-guess replacement myself, so this is only suggestive.</p>",
+        "id": 3547493,
+        "isThankYou": false,
+        "postDate": "2026-10-31T03:19:45.230Z",
+        "raw": {
+          "author": {
+            "display_name": "HALX2158",
+            "id": 16294566,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+            "tier": "CONTRIBUTOR",
+            "url": "/mizuno0522"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 1383,
+          "content": "<p>A related data point: on a 0.638 fork, setting the 10% ATLAS mix to zero cost -0.009 on the public LB. Next to your +0.001 and +0.002, that suggests most of its value could be the smoothing, not the attribution. It’s a different blend and I haven’t run the equal-guess replacement myself, so this is only suggestive.</p>",
+          "feedback_tracking_data": {},
+          "id": 3547493,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-31T03:19:45.230Z",
+          "raw_markdown": "A related data point: on a 0.638 fork, setting the 10% ATLAS mix to zero cost -0.009 on the public LB. Next to your +0.001 and +0.002, that suggests most of its value could be the smoothing, not the attribution. It’s a different blend and I haven’t run the equal-guess replacement myself, so this is only suggestive.",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "HALX2158",
+              "id": 16294566,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/mizuno0522",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+              "tier": "CONTRIBUTOR",
+              "url": "/mizuno0522",
+              "user_id": 16294566,
+              "user_name": "mizuno0522"
+            }
+          },
+          "votes": {
+            "can_upvote": true,
+            "total_upvotes": 1,
+            "total_votes": 1
+          }
+        },
+        "rawMarkdown": "A related data point: on a 0.638 fork, setting the 10% ATLAS mix to zero cost -0.009 on the public LB. Next to your +0.001 and +0.002, that suggests most of its value could be the smoothing, not the attribution. It’s a different blend and I haven’t run the equal-guess replacement myself, so this is only suggestive.",
+        "replies": [],
+        "votes": {
+          "totalVotes": 1
+        }
+      }
+    }
+  ],
+  "writeup": null
+}

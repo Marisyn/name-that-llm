@@ -1,0 +1,1790 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 756294,
+    "title": "Looking to merge: unique Mistral/OLMo LoRAs with full OOF + fresh Gemini data (public 0.663)",
+    "author": "Emmanuel Ocheme",
+    "author_url": "/emmanuelocheme",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-11-05T22:00:51.316768500Z",
+    "last_comment_post_date": "2026-11-16T09:12:04.560Z",
+    "comment_count": 6,
+    "votes": -8,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/756294",
+    "first_message_id": 3550759,
+    "first_seen_at": "2026-11-09T03:54:40+00:00",
+    "last_seen_at": "2026-11-18T09:02:06+00:00",
+    "detail_last_synced_at": "2026-11-18T09:02:06+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-18T09:01:50+00:00",
+    "remote_last_listed_at": "2026-11-18T09:01:50+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "1f6c42acb89b97c02e14d7b9cc36b179a2502f6c1d163fe9f514400f10dc653a",
+    "listing_metrics_hash": "8b1be0405ca16c8fa8fafbc7c3b5d98a705fd8cc06ec7a4775a1995d1e942d74",
+    "detail_content_hash": "9a568e7eed739f8cc31895c84544024d3012575d7cc59341a874325fae2d9b84",
+    "detail_last_checked_at": "2026-11-18T09:02:06+00:00",
+    "detail_next_check_at": "2026-11-21T09:02:06+00:00",
+    "detail_unchanged_count": 1,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 6,
+      "firstForumMessageId": null,
+      "id": 756294,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-11-16T09:12:04.560Z",
+      "postDate": "2026-11-05T22:00:51.316768500Z",
+      "raw": {
+        "comment_count": 6,
+        "id": 756294,
+        "last_comment_post_date": "2026-11-16T09:12:04.560Z",
+        "post_date": "2026-11-05T22:00:51.316768500Z",
+        "title": "Looking to merge: unique Mistral/OLMo LoRAs with full OOF + fresh Gemini data (public 0.663)",
+        "topic_url": "/competitions/name-that-llm/discussion/756294",
+        "votes": -8
+      },
+      "title": "Looking to merge: unique Mistral/OLMo LoRAs with full OOF + fresh Gemini data (public 0.663)",
+      "topicUrl": "/competitions/name-that-llm/discussion/756294",
+      "votes": -8
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "Emmanuel Ocheme",
+        "authorUserName": "emmanuelocheme",
+        "comments": [
+          {
+            "author": {
+              "displayName": "Abood PS",
+              "tier": "CONTRIBUTOR",
+              "url": "/aboodps"
+            },
+            "content": "<p>Hi Emmanuel,</p>\n<p>I ran the check you suggested: on my grouped OOF our twin-LoRA blend (no external members) gets 0.633 alone, and adding your mistral7b on top gets 0.645 (+0.012 at w=1.0; +0.014 at w=1.5); olmo2_7b alone gives +0.002; greedy over {blend, mistral7b, olmo2_7b} lands on 0.6475. So your members do add real signal on our side — not the flashiest jump, but consistent.</p>\n<p>I'd like to explore a merge if you're still open. Our stack on its own scores 0.682 on the public board (fork of the current public 0.682) with a k=2-realistic validation harness, and we don't carry Mistral or OLMo — the gap is genuinely missing for us.</p>\n<p>I can publish our OOF as a public dataset this week so you can run the same mutual check you offered to Antonin. Let me know if that helps moved things forward.</p>\n<p>Is the team still looking for one more?</p>",
+            "id": 3555048,
+            "isThankYou": false,
+            "postDate": "2026-11-14T14:41:15.827Z",
+            "raw": {
+              "author": {
+                "display_name": "Abood PS",
+                "id": 36918046,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36918046-kg.jpg?t=2026-11-04-14-50-50",
+                "tier": "CONTRIBUTOR",
+                "url": "/aboodps"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 407,
+              "content": "<p>Hi Emmanuel,</p>\n<p>I ran the check you suggested: on my grouped OOF our twin-LoRA blend (no external members) gets 0.633 alone, and adding your mistral7b on top gets 0.645 (+0.012 at w=1.0; +0.014 at w=1.5); olmo2_7b alone gives +0.002; greedy over {blend, mistral7b, olmo2_7b} lands on 0.6475. So your members do add real signal on our side — not the flashiest jump, but consistent.</p>\n<p>I'd like to explore a merge if you're still open. Our stack on its own scores 0.682 on the public board (fork of the current public 0.682) with a k=2-realistic validation harness, and we don't carry Mistral or OLMo — the gap is genuinely missing for us.</p>\n<p>I can publish our OOF as a public dataset this week so you can run the same mutual check you offered to Antonin. Let me know if that helps moved things forward.</p>\n<p>Is the team still looking for one more?</p>",
+              "feedback_tracking_data": {},
+              "id": 3555048,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-14T14:41:15.827Z",
+              "raw_markdown": "Hi Emmanuel,\n\nI ran the check you suggested: on my grouped OOF our twin-LoRA blend (no external members) gets 0.633 alone, and adding your mistral7b on top gets 0.645 (+0.012 at w=1.0; +0.014 at w=1.5); olmo2_7b alone gives +0.002; greedy over {blend, mistral7b, olmo2_7b} lands on 0.6475. So your members do add real signal on our side — not the flashiest jump, but consistent.\n\nI'd like to explore a merge if you're still open. Our stack on its own scores 0.682 on the public board (fork of the current public 0.682) with a k=2-realistic validation harness, and we don't carry Mistral or OLMo — the gap is genuinely missing for us.\n\nI can publish our OOF as a public dataset this week so you can run the same mutual check you offered to Antonin. Let me know if that helps moved things forward.\n\nIs the team still looking for one more?\n",
+              "replies": [
+                {
+                  "author": {
+                    "display_name": "Emmanuel Ocheme",
+                    "id": 28236510,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/emmanuelocheme"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 1307,
+                  "content": "<p>Hi Abood,</p>\n<p>Thanks for running that check. +0.012 from the Mistral member is a much bigger gain than I expected, so I'm definitely interested in exploring a merge.</p>\n<p>Please go ahead and publish your OOF (same format is fine: id, fold, 18 probabilities). I'll add your twin-LoRA blend to our side and post the number here, so we both see the gain from each direction before deciding.</p>\n<p>Two updates so you have the full picture:\n• We're now at 0.684 public with a fork of the public all-public blend. Our own Mistral, OLMo and pool-v3 Qwen3-8B members aren't in that submission yet.\n• A correction to my original post: the free Gemini route turned out to be limited to about 20 rows a day, so I've parked it. There's no meaningful fresh Gemini data to bring. The Mistral and OLMo LoRAs are the real contribution.</p>\n<p>What base models and training data are your twin LoRAs on? That will help me see how much our pipelines overlap.</p>\n<p>Emmanuel</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3555596,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-16T09:12:04.560Z",
+                  "raw_markdown": "Hi Abood,\n\nThanks for running that check. +0.012 from the Mistral member is a much bigger gain than I expected, so I'm definitely interested in exploring a merge.\n\nPlease go ahead and publish your OOF (same format is fine: id, fold, 18 probabilities). I'll add your twin-LoRA blend to our side and post the number here, so we both see the gain from each direction before deciding.\n\nTwo updates so you have the full picture:\n• We're now at 0.684 public with a fork of the public all-public blend. Our own Mistral, OLMo and pool-v3 Qwen3-8B members aren't in that submission yet.\n• A correction to my original post: the free Gemini route turned out to be limited to about 20 rows a day, so I've parked it. There's no meaningful fresh Gemini data to bring. The Mistral and OLMo LoRAs are the real contribution.\n\nWhat base models and training data are your twin LoRAs on? That will help me see how much our pipelines overlap.\n\nEmmanuel",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Emmanuel Ocheme",
+                      "id": 28236510,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/emmanuelocheme",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/emmanuelocheme",
+                      "user_id": 28236510,
+                      "user_name": "emmanuelocheme"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Abood PS",
+                  "id": 36918046,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/aboodps",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36918046-kg.jpg?t=2026-11-04-14-50-50",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/aboodps",
+                  "user_id": 36918046,
+                  "user_name": "aboodps"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "Hi Emmanuel,\n\nI ran the check you suggested: on my grouped OOF our twin-LoRA blend (no external members) gets 0.633 alone, and adding your mistral7b on top gets 0.645 (+0.012 at w=1.0; +0.014 at w=1.5); olmo2_7b alone gives +0.002; greedy over {blend, mistral7b, olmo2_7b} lands on 0.6475. So your members do add real signal on our side — not the flashiest jump, but consistent.\n\nI'd like to explore a merge if you're still open. Our stack on its own scores 0.682 on the public board (fork of the current public 0.682) with a k=2-realistic validation harness, and we don't carry Mistral or OLMo — the gap is genuinely missing for us.\n\nI can publish our OOF as a public dataset this week so you can run the same mutual check you offered to Antonin. Let me know if that helps moved things forward.\n\nIs the team still looking for one more?\n",
+            "replies": [
+              {
+                "author": {
+                  "displayName": "Emmanuel Ocheme",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/emmanuelocheme"
+                },
+                "content": "<p>Hi Abood,</p>\n<p>Thanks for running that check. +0.012 from the Mistral member is a much bigger gain than I expected, so I'm definitely interested in exploring a merge.</p>\n<p>Please go ahead and publish your OOF (same format is fine: id, fold, 18 probabilities). I'll add your twin-LoRA blend to our side and post the number here, so we both see the gain from each direction before deciding.</p>\n<p>Two updates so you have the full picture:\n• We're now at 0.684 public with a fork of the public all-public blend. Our own Mistral, OLMo and pool-v3 Qwen3-8B members aren't in that submission yet.\n• A correction to my original post: the free Gemini route turned out to be limited to about 20 rows a day, so I've parked it. There's no meaningful fresh Gemini data to bring. The Mistral and OLMo LoRAs are the real contribution.</p>\n<p>What base models and training data are your twin LoRAs on? That will help me see how much our pipelines overlap.</p>\n<p>Emmanuel</p>",
+                "id": 3555596,
+                "isThankYou": false,
+                "postDate": "2026-11-16T09:12:04.560Z",
+                "raw": {
+                  "author": {
+                    "display_name": "Emmanuel Ocheme",
+                    "id": 28236510,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/emmanuelocheme"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 1307,
+                  "content": "<p>Hi Abood,</p>\n<p>Thanks for running that check. +0.012 from the Mistral member is a much bigger gain than I expected, so I'm definitely interested in exploring a merge.</p>\n<p>Please go ahead and publish your OOF (same format is fine: id, fold, 18 probabilities). I'll add your twin-LoRA blend to our side and post the number here, so we both see the gain from each direction before deciding.</p>\n<p>Two updates so you have the full picture:\n• We're now at 0.684 public with a fork of the public all-public blend. Our own Mistral, OLMo and pool-v3 Qwen3-8B members aren't in that submission yet.\n• A correction to my original post: the free Gemini route turned out to be limited to about 20 rows a day, so I've parked it. There's no meaningful fresh Gemini data to bring. The Mistral and OLMo LoRAs are the real contribution.</p>\n<p>What base models and training data are your twin LoRAs on? That will help me see how much our pipelines overlap.</p>\n<p>Emmanuel</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3555596,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-16T09:12:04.560Z",
+                  "raw_markdown": "Hi Abood,\n\nThanks for running that check. +0.012 from the Mistral member is a much bigger gain than I expected, so I'm definitely interested in exploring a merge.\n\nPlease go ahead and publish your OOF (same format is fine: id, fold, 18 probabilities). I'll add your twin-LoRA blend to our side and post the number here, so we both see the gain from each direction before deciding.\n\nTwo updates so you have the full picture:\n• We're now at 0.684 public with a fork of the public all-public blend. Our own Mistral, OLMo and pool-v3 Qwen3-8B members aren't in that submission yet.\n• A correction to my original post: the free Gemini route turned out to be limited to about 20 rows a day, so I've parked it. There's no meaningful fresh Gemini data to bring. The Mistral and OLMo LoRAs are the real contribution.\n\nWhat base models and training data are your twin LoRAs on? That will help me see how much our pipelines overlap.\n\nEmmanuel",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Emmanuel Ocheme",
+                      "id": 28236510,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/emmanuelocheme",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/emmanuelocheme",
+                      "user_id": 28236510,
+                      "user_name": "emmanuelocheme"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                },
+                "rawMarkdown": "Hi Abood,\n\nThanks for running that check. +0.012 from the Mistral member is a much bigger gain than I expected, so I'm definitely interested in exploring a merge.\n\nPlease go ahead and publish your OOF (same format is fine: id, fold, 18 probabilities). I'll add your twin-LoRA blend to our side and post the number here, so we both see the gain from each direction before deciding.\n\nTwo updates so you have the full picture:\n• We're now at 0.684 public with a fork of the public all-public blend. Our own Mistral, OLMo and pool-v3 Qwen3-8B members aren't in that submission yet.\n• A correction to my original post: the free Gemini route turned out to be limited to about 20 rows a day, so I've parked it. There's no meaningful fresh Gemini data to bring. The Mistral and OLMo LoRAs are the real contribution.\n\nWhat base models and training data are your twin LoRAs on? That will help me see how much our pipelines overlap.\n\nEmmanuel",
+                "replies": [],
+                "votes": {
+                  "totalVotes": 0
+                }
+              }
+            ],
+            "votes": {
+              "totalVotes": 0
+            }
+          },
+          {
+            "author": {
+              "displayName": "Anto Pil",
+              "tier": "CONTRIBUTOR",
+              "url": "/antopil"
+            },
+            "content": "<p>Hi Emmanuel,</p>\n<p>I'm Antonin (team Anto Pil, public 0.666). Our stack is Qwen3-14B, Qwen3-8B and Llama-8B LoRAs plus an SVM, so no Mistral or OLMo. Your two members could be complementary.</p>\n<p>Before talking about a merge, I'd suggest a quick check on both sides:</p>\n<ul>\n<li>Could you share the OOF predictions of your two members? A CSV with the train id and the 18 probabilities is enough.</li>\n<li>How are your folds split? Grouped by prompt_id?</li>\n</ul>\n<p>I'll add them to our blend on our prompt-grouped validation and tell you the gain, if any. If it helps, I can send you our OOF in return so you can run the same check on your side.</p>\n<p>Antonin</p>",
+            "id": 3551072,
+            "isThankYou": false,
+            "postDate": "2026-11-06T14:50:01.370Z",
+            "raw": {
+              "author": {
+                "display_name": "Anto Pil",
+                "id": 37646321,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/antopil"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 571,
+              "content": "<p>Hi Emmanuel,</p>\n<p>I'm Antonin (team Anto Pil, public 0.666). Our stack is Qwen3-14B, Qwen3-8B and Llama-8B LoRAs plus an SVM, so no Mistral or OLMo. Your two members could be complementary.</p>\n<p>Before talking about a merge, I'd suggest a quick check on both sides:</p>\n<ul>\n<li>Could you share the OOF predictions of your two members? A CSV with the train id and the 18 probabilities is enough.</li>\n<li>How are your folds split? Grouped by prompt_id?</li>\n</ul>\n<p>I'll add them to our blend on our prompt-grouped validation and tell you the gain, if any. If it helps, I can send you our OOF in return so you can run the same check on your side.</p>\n<p>Antonin</p>",
+              "feedback_tracking_data": {},
+              "id": 3551072,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-06T14:50:01.370Z",
+              "raw_markdown": "Hi Emmanuel,\n\nI'm Antonin (team Anto Pil, public 0.666). Our stack is Qwen3-14B, Qwen3-8B and Llama-8B LoRAs plus an SVM, so no Mistral or OLMo. Your two members could be complementary.\n\nBefore talking about a merge, I'd suggest a quick check on both sides:\n- Could you share the OOF predictions of your two members? A CSV with the train id and the 18 probabilities is enough.\n- How are your folds split? Grouped by prompt_id?\n\nI'll add them to our blend on our prompt-grouped validation and tell you the gain, if any. If it helps, I can send you our OOF in return so you can run the same check on your side.\n\nAntonin",
+              "replies": [
+                {
+                  "author": {
+                    "display_name": "Emmanuel Ocheme",
+                    "id": 28236510,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/emmanuelocheme"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 1307,
+                  "content": "<p>Thanks Antonin, sounds good!</p>\n<p>Here are both members' OOF on all 2,699 train rows: <a href=\"https://www.kaggle.com/datasets/emmanuelocheme/ntl-oof-mistral-olmo-lora\" target=\"_blank\">https://www.kaggle.com/datasets/emmanuelocheme/ntl-oof-mistral-olmo-lora</a></p>\n<ul>\n<li>Folds: sklearn GroupKFold(n_splits=5) on prompt_id over train.csv in file order. Each row has its fold in the \"fold\" column, so you can re-map to your own split if yours differs.</li>\n<li>Columns: id, prompt_id, fold, then the 18 class probabilities.</li>\n<li>Balanced acc (argmax): Mistral-7B 0.586, OLMo-2-7B 0.576, 50/50 average 0.602.</li>\n</ul>\n<p>I put them up as a public dataset to stay within the no-private-sharing rule. If you can do the same with yours, I'll run the same check on my side and post the numbers here.</p>\n<p>Emmanuel</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3551186,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-06T18:25:08.783Z",
+                  "raw_markdown": "Thanks Antonin, sounds good!\n\nHere are both members' OOF on all 2,699 train rows: https://www.kaggle.com/datasets/emmanuelocheme/ntl-oof-mistral-olmo-lora\n\n- Folds: sklearn GroupKFold(n_splits=5) on prompt_id over train.csv in file order. Each row has its fold in the \"fold\" column, so you can re-map to your own split if yours differs.\n- Columns: id, prompt_id, fold, then the 18 class probabilities.\n- Balanced acc (argmax): Mistral-7B 0.586, OLMo-2-7B 0.576, 50/50 average 0.602.\n\nI put them up as a public dataset to stay within the no-private-sharing rule. If you can do the same with yours, I'll run the same check on my side and post the numbers here.\n\nEmmanuel",
+                  "replies": [
+                    {
+                      "author": {
+                        "display_name": "Anto Pil",
+                        "id": 37646321,
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                        "tier": "CONTRIBUTOR",
+                        "url": "/antopil"
+                      },
+                      "author_type": "COMMENT",
+                      "competition_ranking": 571,
+                      "content": "<p>Thanks Emmanuel ! Our OOF are public : <a href=\"https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil\" target=\"_blank\">https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil</a> (Qwen3-14B, Qwen3-8B, Llama-8B LoRAs and an SVM; the three LoRAs share one split, the SVM uses GroupKFold on prompt_id, see the fold column).</p>\n<p>On our side, Mistral + OLMo on top of our blend gives about +0.004 on a held-out half of the prompts. It's a real gain, but small, and our pipelines turn out to be quite close (two-stage LoRAs on the public pool). So we've decided not to merge for now and to keep working on our own approach.</p>\n<p>Thanks again for being open, and good luck for the rest of the competition!</p>\n<p>Antonin</p>",
+                      "feedback_tracking_data": {},
+                      "id": 3551199,
+                      "is_thank_you": false,
+                      "kernel_version": 0,
+                      "parent": {},
+                      "post_date": "2026-11-06T18:48:43.077Z",
+                      "raw_markdown": "Thanks Emmanuel ! Our OOF are public : [https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil](https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil) (Qwen3-14B, Qwen3-8B, Llama-8B LoRAs and an SVM; the three LoRAs share one split, the SVM uses GroupKFold on prompt_id, see the fold column).\n\nOn our side, Mistral + OLMo on top of our blend gives about +0.004 on a held-out half of the prompts. It's a real gain, but small, and our pipelines turn out to be quite close (two-stage LoRAs on the public pool). So we've decided not to merge for now and to keep working on our own approach.\n\nThanks again for being open, and good luck for the rest of the competition!\n\nAntonin",
+                      "team_up_info": {
+                        "intro": "",
+                        "team_leader": {
+                          "display_name": "Anto Pil",
+                          "id": 37646321,
+                          "performance_tier": "CONTRIBUTOR",
+                          "profile_url": "/antopil",
+                          "progression_opt_out": false,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                          "tier": "CONTRIBUTOR",
+                          "url": "/antopil",
+                          "user_id": 37646321,
+                          "user_name": "antopil"
+                        }
+                      },
+                      "votes": {
+                        "can_upvote": true
+                      }
+                    }
+                  ],
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Emmanuel Ocheme",
+                      "id": 28236510,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/emmanuelocheme",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/emmanuelocheme",
+                      "user_id": 28236510,
+                      "user_name": "emmanuelocheme"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Anto Pil",
+                  "id": 37646321,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/antopil",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/antopil",
+                  "user_id": 37646321,
+                  "user_name": "antopil"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "Hi Emmanuel,\n\nI'm Antonin (team Anto Pil, public 0.666). Our stack is Qwen3-14B, Qwen3-8B and Llama-8B LoRAs plus an SVM, so no Mistral or OLMo. Your two members could be complementary.\n\nBefore talking about a merge, I'd suggest a quick check on both sides:\n- Could you share the OOF predictions of your two members? A CSV with the train id and the 18 probabilities is enough.\n- How are your folds split? Grouped by prompt_id?\n\nI'll add them to our blend on our prompt-grouped validation and tell you the gain, if any. If it helps, I can send you our OOF in return so you can run the same check on your side.\n\nAntonin",
+            "replies": [
+              {
+                "author": {
+                  "displayName": "Emmanuel Ocheme",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/emmanuelocheme"
+                },
+                "content": "<p>Thanks Antonin, sounds good!</p>\n<p>Here are both members' OOF on all 2,699 train rows: <a href=\"https://www.kaggle.com/datasets/emmanuelocheme/ntl-oof-mistral-olmo-lora\" target=\"_blank\">https://www.kaggle.com/datasets/emmanuelocheme/ntl-oof-mistral-olmo-lora</a></p>\n<ul>\n<li>Folds: sklearn GroupKFold(n_splits=5) on prompt_id over train.csv in file order. Each row has its fold in the \"fold\" column, so you can re-map to your own split if yours differs.</li>\n<li>Columns: id, prompt_id, fold, then the 18 class probabilities.</li>\n<li>Balanced acc (argmax): Mistral-7B 0.586, OLMo-2-7B 0.576, 50/50 average 0.602.</li>\n</ul>\n<p>I put them up as a public dataset to stay within the no-private-sharing rule. If you can do the same with yours, I'll run the same check on my side and post the numbers here.</p>\n<p>Emmanuel</p>",
+                "id": 3551186,
+                "isThankYou": false,
+                "postDate": "2026-11-06T18:25:08.783Z",
+                "raw": {
+                  "author": {
+                    "display_name": "Emmanuel Ocheme",
+                    "id": 28236510,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/emmanuelocheme"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 1307,
+                  "content": "<p>Thanks Antonin, sounds good!</p>\n<p>Here are both members' OOF on all 2,699 train rows: <a href=\"https://www.kaggle.com/datasets/emmanuelocheme/ntl-oof-mistral-olmo-lora\" target=\"_blank\">https://www.kaggle.com/datasets/emmanuelocheme/ntl-oof-mistral-olmo-lora</a></p>\n<ul>\n<li>Folds: sklearn GroupKFold(n_splits=5) on prompt_id over train.csv in file order. Each row has its fold in the \"fold\" column, so you can re-map to your own split if yours differs.</li>\n<li>Columns: id, prompt_id, fold, then the 18 class probabilities.</li>\n<li>Balanced acc (argmax): Mistral-7B 0.586, OLMo-2-7B 0.576, 50/50 average 0.602.</li>\n</ul>\n<p>I put them up as a public dataset to stay within the no-private-sharing rule. If you can do the same with yours, I'll run the same check on my side and post the numbers here.</p>\n<p>Emmanuel</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3551186,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-06T18:25:08.783Z",
+                  "raw_markdown": "Thanks Antonin, sounds good!\n\nHere are both members' OOF on all 2,699 train rows: https://www.kaggle.com/datasets/emmanuelocheme/ntl-oof-mistral-olmo-lora\n\n- Folds: sklearn GroupKFold(n_splits=5) on prompt_id over train.csv in file order. Each row has its fold in the \"fold\" column, so you can re-map to your own split if yours differs.\n- Columns: id, prompt_id, fold, then the 18 class probabilities.\n- Balanced acc (argmax): Mistral-7B 0.586, OLMo-2-7B 0.576, 50/50 average 0.602.\n\nI put them up as a public dataset to stay within the no-private-sharing rule. If you can do the same with yours, I'll run the same check on my side and post the numbers here.\n\nEmmanuel",
+                  "replies": [
+                    {
+                      "author": {
+                        "display_name": "Anto Pil",
+                        "id": 37646321,
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                        "tier": "CONTRIBUTOR",
+                        "url": "/antopil"
+                      },
+                      "author_type": "COMMENT",
+                      "competition_ranking": 571,
+                      "content": "<p>Thanks Emmanuel ! Our OOF are public : <a href=\"https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil\" target=\"_blank\">https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil</a> (Qwen3-14B, Qwen3-8B, Llama-8B LoRAs and an SVM; the three LoRAs share one split, the SVM uses GroupKFold on prompt_id, see the fold column).</p>\n<p>On our side, Mistral + OLMo on top of our blend gives about +0.004 on a held-out half of the prompts. It's a real gain, but small, and our pipelines turn out to be quite close (two-stage LoRAs on the public pool). So we've decided not to merge for now and to keep working on our own approach.</p>\n<p>Thanks again for being open, and good luck for the rest of the competition!</p>\n<p>Antonin</p>",
+                      "feedback_tracking_data": {},
+                      "id": 3551199,
+                      "is_thank_you": false,
+                      "kernel_version": 0,
+                      "parent": {},
+                      "post_date": "2026-11-06T18:48:43.077Z",
+                      "raw_markdown": "Thanks Emmanuel ! Our OOF are public : [https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil](https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil) (Qwen3-14B, Qwen3-8B, Llama-8B LoRAs and an SVM; the three LoRAs share one split, the SVM uses GroupKFold on prompt_id, see the fold column).\n\nOn our side, Mistral + OLMo on top of our blend gives about +0.004 on a held-out half of the prompts. It's a real gain, but small, and our pipelines turn out to be quite close (two-stage LoRAs on the public pool). So we've decided not to merge for now and to keep working on our own approach.\n\nThanks again for being open, and good luck for the rest of the competition!\n\nAntonin",
+                      "team_up_info": {
+                        "intro": "",
+                        "team_leader": {
+                          "display_name": "Anto Pil",
+                          "id": 37646321,
+                          "performance_tier": "CONTRIBUTOR",
+                          "profile_url": "/antopil",
+                          "progression_opt_out": false,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                          "tier": "CONTRIBUTOR",
+                          "url": "/antopil",
+                          "user_id": 37646321,
+                          "user_name": "antopil"
+                        }
+                      },
+                      "votes": {
+                        "can_upvote": true
+                      }
+                    }
+                  ],
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Emmanuel Ocheme",
+                      "id": 28236510,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/emmanuelocheme",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/emmanuelocheme",
+                      "user_id": 28236510,
+                      "user_name": "emmanuelocheme"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                },
+                "rawMarkdown": "Thanks Antonin, sounds good!\n\nHere are both members' OOF on all 2,699 train rows: https://www.kaggle.com/datasets/emmanuelocheme/ntl-oof-mistral-olmo-lora\n\n- Folds: sklearn GroupKFold(n_splits=5) on prompt_id over train.csv in file order. Each row has its fold in the \"fold\" column, so you can re-map to your own split if yours differs.\n- Columns: id, prompt_id, fold, then the 18 class probabilities.\n- Balanced acc (argmax): Mistral-7B 0.586, OLMo-2-7B 0.576, 50/50 average 0.602.\n\nI put them up as a public dataset to stay within the no-private-sharing rule. If you can do the same with yours, I'll run the same check on my side and post the numbers here.\n\nEmmanuel",
+                "replies": [
+                  {
+                    "author": {
+                      "displayName": "Anto Pil",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/antopil"
+                    },
+                    "content": "<p>Thanks Emmanuel ! Our OOF are public : <a href=\"https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil\" target=\"_blank\">https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil</a> (Qwen3-14B, Qwen3-8B, Llama-8B LoRAs and an SVM; the three LoRAs share one split, the SVM uses GroupKFold on prompt_id, see the fold column).</p>\n<p>On our side, Mistral + OLMo on top of our blend gives about +0.004 on a held-out half of the prompts. It's a real gain, but small, and our pipelines turn out to be quite close (two-stage LoRAs on the public pool). So we've decided not to merge for now and to keep working on our own approach.</p>\n<p>Thanks again for being open, and good luck for the rest of the competition!</p>\n<p>Antonin</p>",
+                    "id": 3551199,
+                    "isThankYou": false,
+                    "postDate": "2026-11-06T18:48:43.077Z",
+                    "raw": {
+                      "author": {
+                        "display_name": "Anto Pil",
+                        "id": 37646321,
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                        "tier": "CONTRIBUTOR",
+                        "url": "/antopil"
+                      },
+                      "author_type": "COMMENT",
+                      "competition_ranking": 571,
+                      "content": "<p>Thanks Emmanuel ! Our OOF are public : <a href=\"https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil\" target=\"_blank\">https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil</a> (Qwen3-14B, Qwen3-8B, Llama-8B LoRAs and an SVM; the three LoRAs share one split, the SVM uses GroupKFold on prompt_id, see the fold column).</p>\n<p>On our side, Mistral + OLMo on top of our blend gives about +0.004 on a held-out half of the prompts. It's a real gain, but small, and our pipelines turn out to be quite close (two-stage LoRAs on the public pool). So we've decided not to merge for now and to keep working on our own approach.</p>\n<p>Thanks again for being open, and good luck for the rest of the competition!</p>\n<p>Antonin</p>",
+                      "feedback_tracking_data": {},
+                      "id": 3551199,
+                      "is_thank_you": false,
+                      "kernel_version": 0,
+                      "parent": {},
+                      "post_date": "2026-11-06T18:48:43.077Z",
+                      "raw_markdown": "Thanks Emmanuel ! Our OOF are public : [https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil](https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil) (Qwen3-14B, Qwen3-8B, Llama-8B LoRAs and an SVM; the three LoRAs share one split, the SVM uses GroupKFold on prompt_id, see the fold column).\n\nOn our side, Mistral + OLMo on top of our blend gives about +0.004 on a held-out half of the prompts. It's a real gain, but small, and our pipelines turn out to be quite close (two-stage LoRAs on the public pool). So we've decided not to merge for now and to keep working on our own approach.\n\nThanks again for being open, and good luck for the rest of the competition!\n\nAntonin",
+                      "team_up_info": {
+                        "intro": "",
+                        "team_leader": {
+                          "display_name": "Anto Pil",
+                          "id": 37646321,
+                          "performance_tier": "CONTRIBUTOR",
+                          "profile_url": "/antopil",
+                          "progression_opt_out": false,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                          "tier": "CONTRIBUTOR",
+                          "url": "/antopil",
+                          "user_id": 37646321,
+                          "user_name": "antopil"
+                        }
+                      },
+                      "votes": {
+                        "can_upvote": true
+                      }
+                    },
+                    "rawMarkdown": "Thanks Emmanuel ! Our OOF are public : [https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil](https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil) (Qwen3-14B, Qwen3-8B, Llama-8B LoRAs and an SVM; the three LoRAs share one split, the SVM uses GroupKFold on prompt_id, see the fold column).\n\nOn our side, Mistral + OLMo on top of our blend gives about +0.004 on a held-out half of the prompts. It's a real gain, but small, and our pipelines turn out to be quite close (two-stage LoRAs on the public pool). So we've decided not to merge for now and to keep working on our own approach.\n\nThanks again for being open, and good luck for the rest of the competition!\n\nAntonin",
+                    "replies": [],
+                    "votes": {
+                      "totalVotes": 0
+                    }
+                  }
+                ],
+                "votes": {
+                  "totalVotes": 0
+                }
+              }
+            ],
+            "votes": {
+              "totalVotes": 0
+            }
+          },
+          {
+            "author": {
+              "displayName": null,
+              "tier": null,
+              "url": "/"
+            },
+            "content": null,
+            "id": 3553553,
+            "isThankYou": false,
+            "postDate": "2026-11-11T20:16:41.583Z",
+            "raw": {
+              "author": {
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "url": "/"
+              },
+              "author_type": "COMMENT",
+              "can_delete": true,
+              "feedback_tracking_data": {},
+              "id": 3553553,
+              "is_deleted": true,
+              "is_thank_you": false,
+              "is_user_author": true,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-11T20:16:41.583Z",
+              "raw_markdown": "",
+              "votes": {}
+            },
+            "rawMarkdown": null,
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "expectedCommentCount": 6,
+        "firstMessage": {
+          "author": {
+            "displayName": "Emmanuel Ocheme",
+            "tier": "CONTRIBUTOR",
+            "url": "/emmanuelocheme"
+          },
+          "content": "<p>Hi! I'm Emmanuel (public 0.663). I'd like to propose a team merge for Name That LLM.</p>\n<p>What I'd bring:</p>\n<ul>\n<li>Two LoRA members no public notebook uses: Mistral-7B and OLMo-2-7B two-stage, trained on an expanded pool, with full 5-fold OOF predictions on all 2,699 train rows (0.60 balanced accuracy, leak-free). You can weight them against your stack straight away.</li>\n<li>A per-pair error map of the weak classes (claude-fable-5 vs glm-5.3, glm-5.3 vs flash, gpt-5.6-sol vs luna, gemini 3.7 vs 3.8 flash) and what did and didn't work on them.</li>\n<li>Fresh Gemini flash passages I'm generating now for the Gemini confusions.</li>\n<li>Spare GPU hours every week for training runs you don't have time for.</li>\n</ul>\n<p>I'm happy to take on whatever experiments you need. Open to a quick chat? Reply here or send a merge request to team \"Emmanuel Ocheme\".</p>\n<p>Emmanuel</p>",
+          "id": 3550759,
+          "isThankYou": false,
+          "postDate": "2026-11-05T22:00:51.317Z",
+          "raw": {
+            "author": {
+              "display_name": "Emmanuel Ocheme",
+              "id": 28236510,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "CONTRIBUTOR",
+              "url": "/emmanuelocheme"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 1307,
+            "content": "<p>Hi! I'm Emmanuel (public 0.663). I'd like to propose a team merge for Name That LLM.</p>\n<p>What I'd bring:</p>\n<ul>\n<li>Two LoRA members no public notebook uses: Mistral-7B and OLMo-2-7B two-stage, trained on an expanded pool, with full 5-fold OOF predictions on all 2,699 train rows (0.60 balanced accuracy, leak-free). You can weight them against your stack straight away.</li>\n<li>A per-pair error map of the weak classes (claude-fable-5 vs glm-5.3, glm-5.3 vs flash, gpt-5.6-sol vs luna, gemini 3.7 vs 3.8 flash) and what did and didn't work on them.</li>\n<li>Fresh Gemini flash passages I'm generating now for the Gemini confusions.</li>\n<li>Spare GPU hours every week for training runs you don't have time for.</li>\n</ul>\n<p>I'm happy to take on whatever experiments you need. Open to a quick chat? Reply here or send a merge request to team \"Emmanuel Ocheme\".</p>\n<p>Emmanuel</p>",
+            "feedback_tracking_data": {},
+            "id": 3550759,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-11-05T22:00:51.317Z",
+            "raw_markdown": "Hi! I'm Emmanuel (public 0.663). I'd like to propose a team merge for Name That LLM.\n\nWhat I'd bring:\n- Two LoRA members no public notebook uses: Mistral-7B and OLMo-2-7B two-stage, trained on an expanded pool, with full 5-fold OOF predictions on all 2,699 train rows (0.60 balanced accuracy, leak-free). You can weight them against your stack straight away.\n- A per-pair error map of the weak classes (claude-fable-5 vs glm-5.3, glm-5.3 vs flash, gpt-5.6-sol vs luna, gemini 3.7 vs 3.8 flash) and what did and didn't work on them.\n- Fresh Gemini flash passages I'm generating now for the Gemini confusions.\n- Spare GPU hours every week for training runs you don't have time for.\n\nI'm happy to take on whatever experiments you need. Open to a quick chat? Reply here or send a merge request to team \"Emmanuel Ocheme\".\n\nEmmanuel",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "Emmanuel Ocheme",
+                "id": 28236510,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/emmanuelocheme",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/emmanuelocheme",
+                "user_id": 28236510,
+                "user_name": "emmanuelocheme"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 1,
+              "total_votes": -8
+            }
+          },
+          "rawMarkdown": "Hi! I'm Emmanuel (public 0.663). I'd like to propose a team merge for Name That LLM.\n\nWhat I'd bring:\n- Two LoRA members no public notebook uses: Mistral-7B and OLMo-2-7B two-stage, trained on an expanded pool, with full 5-fold OOF predictions on all 2,699 train rows (0.60 balanced accuracy, leak-free). You can weight them against your stack straight away.\n- A per-pair error map of the weak classes (claude-fable-5 vs glm-5.3, glm-5.3 vs flash, gpt-5.6-sol vs luna, gemini 3.7 vs 3.8 flash) and what did and didn't work on them.\n- Fresh Gemini flash passages I'm generating now for the Gemini confusions.\n- Spare GPU hours every week for training runs you don't have time for.\n\nI'm happy to take on whatever experiments you need. Open to a quick chat? Reply here or send a merge request to team \"Emmanuel Ocheme\".\n\nEmmanuel",
+          "replies": [],
+          "votes": {
+            "totalVotes": -8
+          }
+        },
+        "firstMessageId": 3550759,
+        "id": 756294,
+        "name": "Looking to merge: unique Mistral/OLMo LoRAs with full OOF + fresh Gemini data (public 0.663)",
+        "postDate": "2026-11-05T22:00:51.316768500Z",
+        "url": "/competitions/name-that-llm/discussion/756294"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>Hi! I'm Emmanuel (public 0.663). I'd like to propose a team merge for Name That LLM.</p>\n<p>What I'd bring:</p>\n<ul>\n<li>Two LoRA members no public notebook uses: Mistral-7B and OLMo-2-7B two-stage, trained on an expanded pool, with full 5-fold OOF predictions on all 2,699 train rows (0.60 balanced accuracy, leak-free). You can weight them against your stack straight away.</li>\n<li>A per-pair error map of the weak classes (claude-fable-5 vs glm-5.3, glm-5.3 vs flash, gpt-5.6-sol vs luna, gemini 3.7 vs 3.8 flash) and what did and didn't work on them.</li>\n<li>Fresh Gemini flash passages I'm generating now for the Gemini confusions.</li>\n<li>Spare GPU hours every week for training runs you don't have time for.</li>\n</ul>\n<p>I'm happy to take on whatever experiments you need. Open to a quick chat? Reply here or send a merge request to team \"Emmanuel Ocheme\".</p>\n<p>Emmanuel</p>",
+              "id": 3550759,
+              "post_date": "2026-11-05T22:00:51.317Z",
+              "raw_markdown": "Hi! I'm Emmanuel (public 0.663). I'd like to propose a team merge for Name That LLM.\n\nWhat I'd bring:\n- Two LoRA members no public notebook uses: Mistral-7B and OLMo-2-7B two-stage, trained on an expanded pool, with full 5-fold OOF predictions on all 2,699 train rows (0.60 balanced accuracy, leak-free). You can weight them against your stack straight away.\n- A per-pair error map of the weak classes (claude-fable-5 vs glm-5.3, glm-5.3 vs flash, gpt-5.6-sol vs luna, gemini 3.7 vs 3.8 flash) and what did and didn't work on them.\n- Fresh Gemini flash passages I'm generating now for the Gemini confusions.\n- Spare GPU hours every week for training runs you don't have time for.\n\nI'm happy to take on whatever experiments you need. Open to a quick chat? Reply here or send a merge request to team \"Emmanuel Ocheme\".\n\nEmmanuel",
+              "votes": -8
+            },
+            {
+              "content": "<p>Hi Emmanuel,</p>\n<p>I'm Antonin (team Anto Pil, public 0.666). Our stack is Qwen3-14B, Qwen3-8B and Llama-8B LoRAs plus an SVM, so no Mistral or OLMo. Your two members could be complementary.</p>\n<p>Before talking about a merge, I'd suggest a quick check on both sides:</p>\n<ul>\n<li>Could you share the OOF predictions of your two members? A CSV with the train id and the 18 probabilities is enough.</li>\n<li>How are your folds split? Grouped by prompt_id?</li>\n</ul>\n<p>I'll add them to our blend on our prompt-grouped validation and tell you the gain, if any. If it helps, I can send you our OOF in return so you can run the same check on your side.</p>\n<p>Antonin</p>",
+              "id": 3551072,
+              "post_date": "2026-11-06T14:50:01.370Z",
+              "raw_markdown": "Hi Emmanuel,\n\nI'm Antonin (team Anto Pil, public 0.666). Our stack is Qwen3-14B, Qwen3-8B and Llama-8B LoRAs plus an SVM, so no Mistral or OLMo. Your two members could be complementary.\n\nBefore talking about a merge, I'd suggest a quick check on both sides:\n- Could you share the OOF predictions of your two members? A CSV with the train id and the 18 probabilities is enough.\n- How are your folds split? Grouped by prompt_id?\n\nI'll add them to our blend on our prompt-grouped validation and tell you the gain, if any. If it helps, I can send you our OOF in return so you can run the same check on your side.\n\nAntonin",
+              "replies": [
+                {
+                  "content": "<p>Thanks Antonin, sounds good!</p>\n<p>Here are both members' OOF on all 2,699 train rows: <a href=\"https://www.kaggle.com/datasets/emmanuelocheme/ntl-oof-mistral-olmo-lora\" target=\"_blank\">https://www.kaggle.com/datasets/emmanuelocheme/ntl-oof-mistral-olmo-lora</a></p>\n<ul>\n<li>Folds: sklearn GroupKFold(n_splits=5) on prompt_id over train.csv in file order. Each row has its fold in the \"fold\" column, so you can re-map to your own split if yours differs.</li>\n<li>Columns: id, prompt_id, fold, then the 18 class probabilities.</li>\n<li>Balanced acc (argmax): Mistral-7B 0.586, OLMo-2-7B 0.576, 50/50 average 0.602.</li>\n</ul>\n<p>I put them up as a public dataset to stay within the no-private-sharing rule. If you can do the same with yours, I'll run the same check on my side and post the numbers here.</p>\n<p>Emmanuel</p>",
+                  "id": 3551186,
+                  "post_date": "2026-11-06T18:25:08.783Z",
+                  "raw_markdown": "Thanks Antonin, sounds good!\n\nHere are both members' OOF on all 2,699 train rows: https://www.kaggle.com/datasets/emmanuelocheme/ntl-oof-mistral-olmo-lora\n\n- Folds: sklearn GroupKFold(n_splits=5) on prompt_id over train.csv in file order. Each row has its fold in the \"fold\" column, so you can re-map to your own split if yours differs.\n- Columns: id, prompt_id, fold, then the 18 class probabilities.\n- Balanced acc (argmax): Mistral-7B 0.586, OLMo-2-7B 0.576, 50/50 average 0.602.\n\nI put them up as a public dataset to stay within the no-private-sharing rule. If you can do the same with yours, I'll run the same check on my side and post the numbers here.\n\nEmmanuel",
+                  "replies": [
+                    {
+                      "content": "<p>Thanks Emmanuel ! Our OOF are public : <a href=\"https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil\" target=\"_blank\">https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil</a> (Qwen3-14B, Qwen3-8B, Llama-8B LoRAs and an SVM; the three LoRAs share one split, the SVM uses GroupKFold on prompt_id, see the fold column).</p>\n<p>On our side, Mistral + OLMo on top of our blend gives about +0.004 on a held-out half of the prompts. It's a real gain, but small, and our pipelines turn out to be quite close (two-stage LoRAs on the public pool). So we've decided not to merge for now and to keep working on our own approach.</p>\n<p>Thanks again for being open, and good luck for the rest of the competition!</p>\n<p>Antonin</p>",
+                      "id": 3551199,
+                      "post_date": "2026-11-06T18:48:43.077Z",
+                      "raw_markdown": "Thanks Emmanuel ! Our OOF are public : [https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil](https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil) (Qwen3-14B, Qwen3-8B, Llama-8B LoRAs and an SVM; the three LoRAs share one split, the SVM uses GroupKFold on prompt_id, see the fold column).\n\nOn our side, Mistral + OLMo on top of our blend gives about +0.004 on a held-out half of the prompts. It's a real gain, but small, and our pipelines turn out to be quite close (two-stage LoRAs on the public pool). So we've decided not to merge for now and to keep working on our own approach.\n\nThanks again for being open, and good luck for the rest of the competition!\n\nAntonin"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": 3553553,
+              "is_deleted": true,
+              "post_date": "2026-11-11T20:16:41.583Z",
+              "raw_markdown": ""
+            },
+            {
+              "content": "<p>Hi Emmanuel,</p>\n<p>I ran the check you suggested: on my grouped OOF our twin-LoRA blend (no external members) gets 0.633 alone, and adding your mistral7b on top gets 0.645 (+0.012 at w=1.0; +0.014 at w=1.5); olmo2_7b alone gives +0.002; greedy over {blend, mistral7b, olmo2_7b} lands on 0.6475. So your members do add real signal on our side — not the flashiest jump, but consistent.</p>\n<p>I'd like to explore a merge if you're still open. Our stack on its own scores 0.682 on the public board (fork of the current public 0.682) with a k=2-realistic validation harness, and we don't carry Mistral or OLMo — the gap is genuinely missing for us.</p>\n<p>I can publish our OOF as a public dataset this week so you can run the same mutual check you offered to Antonin. Let me know if that helps moved things forward.</p>\n<p>Is the team still looking for one more?</p>",
+              "id": 3555048,
+              "post_date": "2026-11-14T14:41:15.827Z",
+              "raw_markdown": "Hi Emmanuel,\n\nI ran the check you suggested: on my grouped OOF our twin-LoRA blend (no external members) gets 0.633 alone, and adding your mistral7b on top gets 0.645 (+0.012 at w=1.0; +0.014 at w=1.5); olmo2_7b alone gives +0.002; greedy over {blend, mistral7b, olmo2_7b} lands on 0.6475. So your members do add real signal on our side — not the flashiest jump, but consistent.\n\nI'd like to explore a merge if you're still open. Our stack on its own scores 0.682 on the public board (fork of the current public 0.682) with a k=2-realistic validation harness, and we don't carry Mistral or OLMo — the gap is genuinely missing for us.\n\nI can publish our OOF as a public dataset this week so you can run the same mutual check you offered to Antonin. Let me know if that helps moved things forward.\n\nIs the team still looking for one more?\n",
+              "replies": [
+                {
+                  "content": "<p>Hi Abood,</p>\n<p>Thanks for running that check. +0.012 from the Mistral member is a much bigger gain than I expected, so I'm definitely interested in exploring a merge.</p>\n<p>Please go ahead and publish your OOF (same format is fine: id, fold, 18 probabilities). I'll add your twin-LoRA blend to our side and post the number here, so we both see the gain from each direction before deciding.</p>\n<p>Two updates so you have the full picture:\n• We're now at 0.684 public with a fork of the public all-public blend. Our own Mistral, OLMo and pool-v3 Qwen3-8B members aren't in that submission yet.\n• A correction to my original post: the free Gemini route turned out to be limited to about 20 rows a day, so I've parked it. There's no meaningful fresh Gemini data to bring. The Mistral and OLMo LoRAs are the real contribution.</p>\n<p>What base models and training data are your twin LoRAs on? That will help me see how much our pipelines overlap.</p>\n<p>Emmanuel</p>",
+                  "id": 3555596,
+                  "post_date": "2026-11-16T09:12:04.560Z",
+                  "raw_markdown": "Hi Abood,\n\nThanks for running that check. +0.012 from the Mistral member is a much bigger gain than I expected, so I'm definitely interested in exploring a merge.\n\nPlease go ahead and publish your OOF (same format is fine: id, fold, 18 probabilities). I'll add your twin-LoRA blend to our side and post the number here, so we both see the gain from each direction before deciding.\n\nTwo updates so you have the full picture:\n• We're now at 0.684 public with a fork of the public all-public blend. Our own Mistral, OLMo and pool-v3 Qwen3-8B members aren't in that submission yet.\n• A correction to my original post: the free Gemini route turned out to be limited to about 20 rows a day, so I've parked it. There's no meaningful fresh Gemini data to bring. The Mistral and OLMo LoRAs are the real contribution.\n\nWhat base models and training data are your twin LoRAs on? That will help me see how much our pipelines overlap.\n\nEmmanuel"
+                }
+              ]
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 28236510,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "default-thumb.png",
+            "author_user_display_name": "Emmanuel Ocheme",
+            "author_user_name": "emmanuelocheme",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "comments": [
+              {
+                "author": {
+                  "display_name": "Abood PS",
+                  "id": 36918046,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36918046-kg.jpg?t=2026-11-04-14-50-50",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/aboodps"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 407,
+                "content": "<p>Hi Emmanuel,</p>\n<p>I ran the check you suggested: on my grouped OOF our twin-LoRA blend (no external members) gets 0.633 alone, and adding your mistral7b on top gets 0.645 (+0.012 at w=1.0; +0.014 at w=1.5); olmo2_7b alone gives +0.002; greedy over {blend, mistral7b, olmo2_7b} lands on 0.6475. So your members do add real signal on our side — not the flashiest jump, but consistent.</p>\n<p>I'd like to explore a merge if you're still open. Our stack on its own scores 0.682 on the public board (fork of the current public 0.682) with a k=2-realistic validation harness, and we don't carry Mistral or OLMo — the gap is genuinely missing for us.</p>\n<p>I can publish our OOF as a public dataset this week so you can run the same mutual check you offered to Antonin. Let me know if that helps moved things forward.</p>\n<p>Is the team still looking for one more?</p>",
+                "feedback_tracking_data": {},
+                "id": 3555048,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-11-14T14:41:15.827Z",
+                "raw_markdown": "Hi Emmanuel,\n\nI ran the check you suggested: on my grouped OOF our twin-LoRA blend (no external members) gets 0.633 alone, and adding your mistral7b on top gets 0.645 (+0.012 at w=1.0; +0.014 at w=1.5); olmo2_7b alone gives +0.002; greedy over {blend, mistral7b, olmo2_7b} lands on 0.6475. So your members do add real signal on our side — not the flashiest jump, but consistent.\n\nI'd like to explore a merge if you're still open. Our stack on its own scores 0.682 on the public board (fork of the current public 0.682) with a k=2-realistic validation harness, and we don't carry Mistral or OLMo — the gap is genuinely missing for us.\n\nI can publish our OOF as a public dataset this week so you can run the same mutual check you offered to Antonin. Let me know if that helps moved things forward.\n\nIs the team still looking for one more?\n",
+                "replies": [
+                  {
+                    "author": {
+                      "display_name": "Emmanuel Ocheme",
+                      "id": 28236510,
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/emmanuelocheme"
+                    },
+                    "author_type": "TOPIC",
+                    "competition_ranking": 1307,
+                    "content": "<p>Hi Abood,</p>\n<p>Thanks for running that check. +0.012 from the Mistral member is a much bigger gain than I expected, so I'm definitely interested in exploring a merge.</p>\n<p>Please go ahead and publish your OOF (same format is fine: id, fold, 18 probabilities). I'll add your twin-LoRA blend to our side and post the number here, so we both see the gain from each direction before deciding.</p>\n<p>Two updates so you have the full picture:\n• We're now at 0.684 public with a fork of the public all-public blend. Our own Mistral, OLMo and pool-v3 Qwen3-8B members aren't in that submission yet.\n• A correction to my original post: the free Gemini route turned out to be limited to about 20 rows a day, so I've parked it. There's no meaningful fresh Gemini data to bring. The Mistral and OLMo LoRAs are the real contribution.</p>\n<p>What base models and training data are your twin LoRAs on? That will help me see how much our pipelines overlap.</p>\n<p>Emmanuel</p>",
+                    "feedback_tracking_data": {},
+                    "id": 3555596,
+                    "is_thank_you": false,
+                    "kernel_version": 0,
+                    "parent": {},
+                    "post_date": "2026-11-16T09:12:04.560Z",
+                    "raw_markdown": "Hi Abood,\n\nThanks for running that check. +0.012 from the Mistral member is a much bigger gain than I expected, so I'm definitely interested in exploring a merge.\n\nPlease go ahead and publish your OOF (same format is fine: id, fold, 18 probabilities). I'll add your twin-LoRA blend to our side and post the number here, so we both see the gain from each direction before deciding.\n\nTwo updates so you have the full picture:\n• We're now at 0.684 public with a fork of the public all-public blend. Our own Mistral, OLMo and pool-v3 Qwen3-8B members aren't in that submission yet.\n• A correction to my original post: the free Gemini route turned out to be limited to about 20 rows a day, so I've parked it. There's no meaningful fresh Gemini data to bring. The Mistral and OLMo LoRAs are the real contribution.\n\nWhat base models and training data are your twin LoRAs on? That will help me see how much our pipelines overlap.\n\nEmmanuel",
+                    "team_up_info": {
+                      "intro": "",
+                      "team_leader": {
+                        "display_name": "Emmanuel Ocheme",
+                        "id": 28236510,
+                        "performance_tier": "CONTRIBUTOR",
+                        "profile_url": "/emmanuelocheme",
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                        "tier": "CONTRIBUTOR",
+                        "url": "/emmanuelocheme",
+                        "user_id": 28236510,
+                        "user_name": "emmanuelocheme"
+                      }
+                    },
+                    "votes": {
+                      "can_upvote": true
+                    }
+                  }
+                ],
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "Abood PS",
+                    "id": 36918046,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/aboodps",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36918046-kg.jpg?t=2026-11-04-14-50-50",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/aboodps",
+                    "user_id": 36918046,
+                    "user_name": "aboodps"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              },
+              {
+                "author": {
+                  "display_name": "Anto Pil",
+                  "id": 37646321,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/antopil"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 571,
+                "content": "<p>Hi Emmanuel,</p>\n<p>I'm Antonin (team Anto Pil, public 0.666). Our stack is Qwen3-14B, Qwen3-8B and Llama-8B LoRAs plus an SVM, so no Mistral or OLMo. Your two members could be complementary.</p>\n<p>Before talking about a merge, I'd suggest a quick check on both sides:</p>\n<ul>\n<li>Could you share the OOF predictions of your two members? A CSV with the train id and the 18 probabilities is enough.</li>\n<li>How are your folds split? Grouped by prompt_id?</li>\n</ul>\n<p>I'll add them to our blend on our prompt-grouped validation and tell you the gain, if any. If it helps, I can send you our OOF in return so you can run the same check on your side.</p>\n<p>Antonin</p>",
+                "feedback_tracking_data": {},
+                "id": 3551072,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-11-06T14:50:01.370Z",
+                "raw_markdown": "Hi Emmanuel,\n\nI'm Antonin (team Anto Pil, public 0.666). Our stack is Qwen3-14B, Qwen3-8B and Llama-8B LoRAs plus an SVM, so no Mistral or OLMo. Your two members could be complementary.\n\nBefore talking about a merge, I'd suggest a quick check on both sides:\n- Could you share the OOF predictions of your two members? A CSV with the train id and the 18 probabilities is enough.\n- How are your folds split? Grouped by prompt_id?\n\nI'll add them to our blend on our prompt-grouped validation and tell you the gain, if any. If it helps, I can send you our OOF in return so you can run the same check on your side.\n\nAntonin",
+                "replies": [
+                  {
+                    "author": {
+                      "display_name": "Emmanuel Ocheme",
+                      "id": 28236510,
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/emmanuelocheme"
+                    },
+                    "author_type": "TOPIC",
+                    "competition_ranking": 1307,
+                    "content": "<p>Thanks Antonin, sounds good!</p>\n<p>Here are both members' OOF on all 2,699 train rows: <a href=\"https://www.kaggle.com/datasets/emmanuelocheme/ntl-oof-mistral-olmo-lora\" target=\"_blank\">https://www.kaggle.com/datasets/emmanuelocheme/ntl-oof-mistral-olmo-lora</a></p>\n<ul>\n<li>Folds: sklearn GroupKFold(n_splits=5) on prompt_id over train.csv in file order. Each row has its fold in the \"fold\" column, so you can re-map to your own split if yours differs.</li>\n<li>Columns: id, prompt_id, fold, then the 18 class probabilities.</li>\n<li>Balanced acc (argmax): Mistral-7B 0.586, OLMo-2-7B 0.576, 50/50 average 0.602.</li>\n</ul>\n<p>I put them up as a public dataset to stay within the no-private-sharing rule. If you can do the same with yours, I'll run the same check on my side and post the numbers here.</p>\n<p>Emmanuel</p>",
+                    "feedback_tracking_data": {},
+                    "id": 3551186,
+                    "is_thank_you": false,
+                    "kernel_version": 0,
+                    "parent": {},
+                    "post_date": "2026-11-06T18:25:08.783Z",
+                    "raw_markdown": "Thanks Antonin, sounds good!\n\nHere are both members' OOF on all 2,699 train rows: https://www.kaggle.com/datasets/emmanuelocheme/ntl-oof-mistral-olmo-lora\n\n- Folds: sklearn GroupKFold(n_splits=5) on prompt_id over train.csv in file order. Each row has its fold in the \"fold\" column, so you can re-map to your own split if yours differs.\n- Columns: id, prompt_id, fold, then the 18 class probabilities.\n- Balanced acc (argmax): Mistral-7B 0.586, OLMo-2-7B 0.576, 50/50 average 0.602.\n\nI put them up as a public dataset to stay within the no-private-sharing rule. If you can do the same with yours, I'll run the same check on my side and post the numbers here.\n\nEmmanuel",
+                    "replies": [
+                      {
+                        "author": {
+                          "display_name": "Anto Pil",
+                          "id": 37646321,
+                          "progression_opt_out": false,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                          "tier": "CONTRIBUTOR",
+                          "url": "/antopil"
+                        },
+                        "author_type": "COMMENT",
+                        "competition_ranking": 571,
+                        "content": "<p>Thanks Emmanuel ! Our OOF are public : <a href=\"https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil\" target=\"_blank\">https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil</a> (Qwen3-14B, Qwen3-8B, Llama-8B LoRAs and an SVM; the three LoRAs share one split, the SVM uses GroupKFold on prompt_id, see the fold column).</p>\n<p>On our side, Mistral + OLMo on top of our blend gives about +0.004 on a held-out half of the prompts. It's a real gain, but small, and our pipelines turn out to be quite close (two-stage LoRAs on the public pool). So we've decided not to merge for now and to keep working on our own approach.</p>\n<p>Thanks again for being open, and good luck for the rest of the competition!</p>\n<p>Antonin</p>",
+                        "feedback_tracking_data": {},
+                        "id": 3551199,
+                        "is_thank_you": false,
+                        "kernel_version": 0,
+                        "parent": {},
+                        "post_date": "2026-11-06T18:48:43.077Z",
+                        "raw_markdown": "Thanks Emmanuel ! Our OOF are public : [https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil](https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil) (Qwen3-14B, Qwen3-8B, Llama-8B LoRAs and an SVM; the three LoRAs share one split, the SVM uses GroupKFold on prompt_id, see the fold column).\n\nOn our side, Mistral + OLMo on top of our blend gives about +0.004 on a held-out half of the prompts. It's a real gain, but small, and our pipelines turn out to be quite close (two-stage LoRAs on the public pool). So we've decided not to merge for now and to keep working on our own approach.\n\nThanks again for being open, and good luck for the rest of the competition!\n\nAntonin",
+                        "team_up_info": {
+                          "intro": "",
+                          "team_leader": {
+                            "display_name": "Anto Pil",
+                            "id": 37646321,
+                            "performance_tier": "CONTRIBUTOR",
+                            "profile_url": "/antopil",
+                            "progression_opt_out": false,
+                            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                            "tier": "CONTRIBUTOR",
+                            "url": "/antopil",
+                            "user_id": 37646321,
+                            "user_name": "antopil"
+                          }
+                        },
+                        "votes": {
+                          "can_upvote": true
+                        }
+                      }
+                    ],
+                    "team_up_info": {
+                      "intro": "",
+                      "team_leader": {
+                        "display_name": "Emmanuel Ocheme",
+                        "id": 28236510,
+                        "performance_tier": "CONTRIBUTOR",
+                        "profile_url": "/emmanuelocheme",
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                        "tier": "CONTRIBUTOR",
+                        "url": "/emmanuelocheme",
+                        "user_id": 28236510,
+                        "user_name": "emmanuelocheme"
+                      }
+                    },
+                    "votes": {
+                      "can_upvote": true
+                    }
+                  }
+                ],
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "Anto Pil",
+                    "id": 37646321,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/antopil",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/antopil",
+                    "user_id": 37646321,
+                    "user_name": "antopil"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              },
+              {
+                "author": {
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "url": "/"
+                },
+                "author_type": "COMMENT",
+                "can_delete": true,
+                "feedback_tracking_data": {},
+                "id": 3553553,
+                "is_deleted": true,
+                "is_thank_you": false,
+                "is_user_author": true,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-11-11T20:16:41.583Z",
+                "raw_markdown": "",
+                "votes": {}
+              }
+            ],
+            "first_message": {
+              "author": {
+                "display_name": "Emmanuel Ocheme",
+                "id": 28236510,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/emmanuelocheme"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 1307,
+              "content": "<p>Hi! I'm Emmanuel (public 0.663). I'd like to propose a team merge for Name That LLM.</p>\n<p>What I'd bring:</p>\n<ul>\n<li>Two LoRA members no public notebook uses: Mistral-7B and OLMo-2-7B two-stage, trained on an expanded pool, with full 5-fold OOF predictions on all 2,699 train rows (0.60 balanced accuracy, leak-free). You can weight them against your stack straight away.</li>\n<li>A per-pair error map of the weak classes (claude-fable-5 vs glm-5.3, glm-5.3 vs flash, gpt-5.6-sol vs luna, gemini 3.7 vs 3.8 flash) and what did and didn't work on them.</li>\n<li>Fresh Gemini flash passages I'm generating now for the Gemini confusions.</li>\n<li>Spare GPU hours every week for training runs you don't have time for.</li>\n</ul>\n<p>I'm happy to take on whatever experiments you need. Open to a quick chat? Reply here or send a merge request to team \"Emmanuel Ocheme\".</p>\n<p>Emmanuel</p>",
+              "feedback_tracking_data": {},
+              "id": 3550759,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-05T22:00:51.317Z",
+              "raw_markdown": "Hi! I'm Emmanuel (public 0.663). I'd like to propose a team merge for Name That LLM.\n\nWhat I'd bring:\n- Two LoRA members no public notebook uses: Mistral-7B and OLMo-2-7B two-stage, trained on an expanded pool, with full 5-fold OOF predictions on all 2,699 train rows (0.60 balanced accuracy, leak-free). You can weight them against your stack straight away.\n- A per-pair error map of the weak classes (claude-fable-5 vs glm-5.3, glm-5.3 vs flash, gpt-5.6-sol vs luna, gemini 3.7 vs 3.8 flash) and what did and didn't work on them.\n- Fresh Gemini flash passages I'm generating now for the Gemini confusions.\n- Spare GPU hours every week for training runs you don't have time for.\n\nI'm happy to take on whatever experiments you need. Open to a quick chat? Reply here or send a merge request to team \"Emmanuel Ocheme\".\n\nEmmanuel",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Emmanuel Ocheme",
+                  "id": 28236510,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/emmanuelocheme",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/emmanuelocheme",
+                  "user_id": 28236510,
+                  "user_name": "emmanuelocheme"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": -8
+              }
+            },
+            "first_message_id": 3550759,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 756294,
+            "name": "Looking to merge: unique Mistral/OLMo LoRAs with full OOF + fresh Gemini data (public 0.663)",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-11-05T22:00:51.316768500Z",
+            "total_messages": 6,
+            "total_votes": -8,
+            "url": "/competitions/name-that-llm/discussion/756294"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-18T09:02:06+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-18T09:02:06+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-11-16T09:12:04.560Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [
+    {
+      "slug": "name-that-llm",
+      "topic_id": 756294,
+      "message_id": 3551072,
+      "parent_message_id": null,
+      "author": "Anto Pil",
+      "author_url": "/antopil",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-06T14:50:01.370Z",
+      "raw_markdown": "Hi Emmanuel,\n\nI'm Antonin (team Anto Pil, public 0.666). Our stack is Qwen3-14B, Qwen3-8B and Llama-8B LoRAs plus an SVM, so no Mistral or OLMo. Your two members could be complementary.\n\nBefore talking about a merge, I'd suggest a quick check on both sides:\n- Could you share the OOF predictions of your two members? A CSV with the train id and the 18 probabilities is enough.\n- How are your folds split? Grouped by prompt_id?\n\nI'll add them to our blend on our prompt-grouped validation and tell you the gain, if any. If it helps, I can send you our OOF in return so you can run the same check on your side.\n\nAntonin",
+      "content_html": "<p>Hi Emmanuel,</p>\n<p>I'm Antonin (team Anto Pil, public 0.666). Our stack is Qwen3-14B, Qwen3-8B and Llama-8B LoRAs plus an SVM, so no Mistral or OLMo. Your two members could be complementary.</p>\n<p>Before talking about a merge, I'd suggest a quick check on both sides:</p>\n<ul>\n<li>Could you share the OOF predictions of your two members? A CSV with the train id and the 18 probabilities is enough.</li>\n<li>How are your folds split? Grouped by prompt_id?</li>\n</ul>\n<p>I'll add them to our blend on our prompt-grouped validation and tell you the gain, if any. If it helps, I can send you our OOF in return so you can run the same check on your side.</p>\n<p>Antonin</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-09T03:55:13+00:00",
+      "last_seen_at": "2026-11-18T09:02:06+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T09:02:06+00:00",
+      "remote_last_listed_at": "2026-11-18T09:02:06+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Anto Pil",
+          "tier": "CONTRIBUTOR",
+          "url": "/antopil"
+        },
+        "content": "<p>Hi Emmanuel,</p>\n<p>I'm Antonin (team Anto Pil, public 0.666). Our stack is Qwen3-14B, Qwen3-8B and Llama-8B LoRAs plus an SVM, so no Mistral or OLMo. Your two members could be complementary.</p>\n<p>Before talking about a merge, I'd suggest a quick check on both sides:</p>\n<ul>\n<li>Could you share the OOF predictions of your two members? A CSV with the train id and the 18 probabilities is enough.</li>\n<li>How are your folds split? Grouped by prompt_id?</li>\n</ul>\n<p>I'll add them to our blend on our prompt-grouped validation and tell you the gain, if any. If it helps, I can send you our OOF in return so you can run the same check on your side.</p>\n<p>Antonin</p>",
+        "id": 3551072,
+        "isThankYou": false,
+        "postDate": "2026-11-06T14:50:01.370Z",
+        "raw": {
+          "author": {
+            "display_name": "Anto Pil",
+            "id": 37646321,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+            "tier": "CONTRIBUTOR",
+            "url": "/antopil"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 571,
+          "content": "<p>Hi Emmanuel,</p>\n<p>I'm Antonin (team Anto Pil, public 0.666). Our stack is Qwen3-14B, Qwen3-8B and Llama-8B LoRAs plus an SVM, so no Mistral or OLMo. Your two members could be complementary.</p>\n<p>Before talking about a merge, I'd suggest a quick check on both sides:</p>\n<ul>\n<li>Could you share the OOF predictions of your two members? A CSV with the train id and the 18 probabilities is enough.</li>\n<li>How are your folds split? Grouped by prompt_id?</li>\n</ul>\n<p>I'll add them to our blend on our prompt-grouped validation and tell you the gain, if any. If it helps, I can send you our OOF in return so you can run the same check on your side.</p>\n<p>Antonin</p>",
+          "feedback_tracking_data": {},
+          "id": 3551072,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-06T14:50:01.370Z",
+          "raw_markdown": "Hi Emmanuel,\n\nI'm Antonin (team Anto Pil, public 0.666). Our stack is Qwen3-14B, Qwen3-8B and Llama-8B LoRAs plus an SVM, so no Mistral or OLMo. Your two members could be complementary.\n\nBefore talking about a merge, I'd suggest a quick check on both sides:\n- Could you share the OOF predictions of your two members? A CSV with the train id and the 18 probabilities is enough.\n- How are your folds split? Grouped by prompt_id?\n\nI'll add them to our blend on our prompt-grouped validation and tell you the gain, if any. If it helps, I can send you our OOF in return so you can run the same check on your side.\n\nAntonin",
+          "replies": [
+            {
+              "author": {
+                "display_name": "Emmanuel Ocheme",
+                "id": 28236510,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/emmanuelocheme"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 1307,
+              "content": "<p>Thanks Antonin, sounds good!</p>\n<p>Here are both members' OOF on all 2,699 train rows: <a href=\"https://www.kaggle.com/datasets/emmanuelocheme/ntl-oof-mistral-olmo-lora\" target=\"_blank\">https://www.kaggle.com/datasets/emmanuelocheme/ntl-oof-mistral-olmo-lora</a></p>\n<ul>\n<li>Folds: sklearn GroupKFold(n_splits=5) on prompt_id over train.csv in file order. Each row has its fold in the \"fold\" column, so you can re-map to your own split if yours differs.</li>\n<li>Columns: id, prompt_id, fold, then the 18 class probabilities.</li>\n<li>Balanced acc (argmax): Mistral-7B 0.586, OLMo-2-7B 0.576, 50/50 average 0.602.</li>\n</ul>\n<p>I put them up as a public dataset to stay within the no-private-sharing rule. If you can do the same with yours, I'll run the same check on my side and post the numbers here.</p>\n<p>Emmanuel</p>",
+              "feedback_tracking_data": {},
+              "id": 3551186,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-06T18:25:08.783Z",
+              "raw_markdown": "Thanks Antonin, sounds good!\n\nHere are both members' OOF on all 2,699 train rows: https://www.kaggle.com/datasets/emmanuelocheme/ntl-oof-mistral-olmo-lora\n\n- Folds: sklearn GroupKFold(n_splits=5) on prompt_id over train.csv in file order. Each row has its fold in the \"fold\" column, so you can re-map to your own split if yours differs.\n- Columns: id, prompt_id, fold, then the 18 class probabilities.\n- Balanced acc (argmax): Mistral-7B 0.586, OLMo-2-7B 0.576, 50/50 average 0.602.\n\nI put them up as a public dataset to stay within the no-private-sharing rule. If you can do the same with yours, I'll run the same check on my side and post the numbers here.\n\nEmmanuel",
+              "replies": [
+                {
+                  "author": {
+                    "display_name": "Anto Pil",
+                    "id": 37646321,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/antopil"
+                  },
+                  "author_type": "COMMENT",
+                  "competition_ranking": 571,
+                  "content": "<p>Thanks Emmanuel ! Our OOF are public : <a href=\"https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil\" target=\"_blank\">https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil</a> (Qwen3-14B, Qwen3-8B, Llama-8B LoRAs and an SVM; the three LoRAs share one split, the SVM uses GroupKFold on prompt_id, see the fold column).</p>\n<p>On our side, Mistral + OLMo on top of our blend gives about +0.004 on a held-out half of the prompts. It's a real gain, but small, and our pipelines turn out to be quite close (two-stage LoRAs on the public pool). So we've decided not to merge for now and to keep working on our own approach.</p>\n<p>Thanks again for being open, and good luck for the rest of the competition!</p>\n<p>Antonin</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3551199,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-06T18:48:43.077Z",
+                  "raw_markdown": "Thanks Emmanuel ! Our OOF are public : [https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil](https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil) (Qwen3-14B, Qwen3-8B, Llama-8B LoRAs and an SVM; the three LoRAs share one split, the SVM uses GroupKFold on prompt_id, see the fold column).\n\nOn our side, Mistral + OLMo on top of our blend gives about +0.004 on a held-out half of the prompts. It's a real gain, but small, and our pipelines turn out to be quite close (two-stage LoRAs on the public pool). So we've decided not to merge for now and to keep working on our own approach.\n\nThanks again for being open, and good luck for the rest of the competition!\n\nAntonin",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Anto Pil",
+                      "id": 37646321,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/antopil",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/antopil",
+                      "user_id": 37646321,
+                      "user_name": "antopil"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Emmanuel Ocheme",
+                  "id": 28236510,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/emmanuelocheme",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/emmanuelocheme",
+                  "user_id": 28236510,
+                  "user_name": "emmanuelocheme"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            }
+          ],
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Anto Pil",
+              "id": 37646321,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/antopil",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "CONTRIBUTOR",
+              "url": "/antopil",
+              "user_id": 37646321,
+              "user_name": "antopil"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "Hi Emmanuel,\n\nI'm Antonin (team Anto Pil, public 0.666). Our stack is Qwen3-14B, Qwen3-8B and Llama-8B LoRAs plus an SVM, so no Mistral or OLMo. Your two members could be complementary.\n\nBefore talking about a merge, I'd suggest a quick check on both sides:\n- Could you share the OOF predictions of your two members? A CSV with the train id and the 18 probabilities is enough.\n- How are your folds split? Grouped by prompt_id?\n\nI'll add them to our blend on our prompt-grouped validation and tell you the gain, if any. If it helps, I can send you our OOF in return so you can run the same check on your side.\n\nAntonin",
+        "replies": [
+          {
+            "author": {
+              "displayName": "Emmanuel Ocheme",
+              "tier": "CONTRIBUTOR",
+              "url": "/emmanuelocheme"
+            },
+            "content": "<p>Thanks Antonin, sounds good!</p>\n<p>Here are both members' OOF on all 2,699 train rows: <a href=\"https://www.kaggle.com/datasets/emmanuelocheme/ntl-oof-mistral-olmo-lora\" target=\"_blank\">https://www.kaggle.com/datasets/emmanuelocheme/ntl-oof-mistral-olmo-lora</a></p>\n<ul>\n<li>Folds: sklearn GroupKFold(n_splits=5) on prompt_id over train.csv in file order. Each row has its fold in the \"fold\" column, so you can re-map to your own split if yours differs.</li>\n<li>Columns: id, prompt_id, fold, then the 18 class probabilities.</li>\n<li>Balanced acc (argmax): Mistral-7B 0.586, OLMo-2-7B 0.576, 50/50 average 0.602.</li>\n</ul>\n<p>I put them up as a public dataset to stay within the no-private-sharing rule. If you can do the same with yours, I'll run the same check on my side and post the numbers here.</p>\n<p>Emmanuel</p>",
+            "id": 3551186,
+            "isThankYou": false,
+            "postDate": "2026-11-06T18:25:08.783Z",
+            "raw": {
+              "author": {
+                "display_name": "Emmanuel Ocheme",
+                "id": 28236510,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/emmanuelocheme"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 1307,
+              "content": "<p>Thanks Antonin, sounds good!</p>\n<p>Here are both members' OOF on all 2,699 train rows: <a href=\"https://www.kaggle.com/datasets/emmanuelocheme/ntl-oof-mistral-olmo-lora\" target=\"_blank\">https://www.kaggle.com/datasets/emmanuelocheme/ntl-oof-mistral-olmo-lora</a></p>\n<ul>\n<li>Folds: sklearn GroupKFold(n_splits=5) on prompt_id over train.csv in file order. Each row has its fold in the \"fold\" column, so you can re-map to your own split if yours differs.</li>\n<li>Columns: id, prompt_id, fold, then the 18 class probabilities.</li>\n<li>Balanced acc (argmax): Mistral-7B 0.586, OLMo-2-7B 0.576, 50/50 average 0.602.</li>\n</ul>\n<p>I put them up as a public dataset to stay within the no-private-sharing rule. If you can do the same with yours, I'll run the same check on my side and post the numbers here.</p>\n<p>Emmanuel</p>",
+              "feedback_tracking_data": {},
+              "id": 3551186,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-06T18:25:08.783Z",
+              "raw_markdown": "Thanks Antonin, sounds good!\n\nHere are both members' OOF on all 2,699 train rows: https://www.kaggle.com/datasets/emmanuelocheme/ntl-oof-mistral-olmo-lora\n\n- Folds: sklearn GroupKFold(n_splits=5) on prompt_id over train.csv in file order. Each row has its fold in the \"fold\" column, so you can re-map to your own split if yours differs.\n- Columns: id, prompt_id, fold, then the 18 class probabilities.\n- Balanced acc (argmax): Mistral-7B 0.586, OLMo-2-7B 0.576, 50/50 average 0.602.\n\nI put them up as a public dataset to stay within the no-private-sharing rule. If you can do the same with yours, I'll run the same check on my side and post the numbers here.\n\nEmmanuel",
+              "replies": [
+                {
+                  "author": {
+                    "display_name": "Anto Pil",
+                    "id": 37646321,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/antopil"
+                  },
+                  "author_type": "COMMENT",
+                  "competition_ranking": 571,
+                  "content": "<p>Thanks Emmanuel ! Our OOF are public : <a href=\"https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil\" target=\"_blank\">https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil</a> (Qwen3-14B, Qwen3-8B, Llama-8B LoRAs and an SVM; the three LoRAs share one split, the SVM uses GroupKFold on prompt_id, see the fold column).</p>\n<p>On our side, Mistral + OLMo on top of our blend gives about +0.004 on a held-out half of the prompts. It's a real gain, but small, and our pipelines turn out to be quite close (two-stage LoRAs on the public pool). So we've decided not to merge for now and to keep working on our own approach.</p>\n<p>Thanks again for being open, and good luck for the rest of the competition!</p>\n<p>Antonin</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3551199,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-06T18:48:43.077Z",
+                  "raw_markdown": "Thanks Emmanuel ! Our OOF are public : [https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil](https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil) (Qwen3-14B, Qwen3-8B, Llama-8B LoRAs and an SVM; the three LoRAs share one split, the SVM uses GroupKFold on prompt_id, see the fold column).\n\nOn our side, Mistral + OLMo on top of our blend gives about +0.004 on a held-out half of the prompts. It's a real gain, but small, and our pipelines turn out to be quite close (two-stage LoRAs on the public pool). So we've decided not to merge for now and to keep working on our own approach.\n\nThanks again for being open, and good luck for the rest of the competition!\n\nAntonin",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Anto Pil",
+                      "id": 37646321,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/antopil",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/antopil",
+                      "user_id": 37646321,
+                      "user_name": "antopil"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Emmanuel Ocheme",
+                  "id": 28236510,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/emmanuelocheme",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/emmanuelocheme",
+                  "user_id": 28236510,
+                  "user_name": "emmanuelocheme"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "Thanks Antonin, sounds good!\n\nHere are both members' OOF on all 2,699 train rows: https://www.kaggle.com/datasets/emmanuelocheme/ntl-oof-mistral-olmo-lora\n\n- Folds: sklearn GroupKFold(n_splits=5) on prompt_id over train.csv in file order. Each row has its fold in the \"fold\" column, so you can re-map to your own split if yours differs.\n- Columns: id, prompt_id, fold, then the 18 class probabilities.\n- Balanced acc (argmax): Mistral-7B 0.586, OLMo-2-7B 0.576, 50/50 average 0.602.\n\nI put them up as a public dataset to stay within the no-private-sharing rule. If you can do the same with yours, I'll run the same check on my side and post the numbers here.\n\nEmmanuel",
+            "replies": [
+              {
+                "author": {
+                  "displayName": "Anto Pil",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/antopil"
+                },
+                "content": "<p>Thanks Emmanuel ! Our OOF are public : <a href=\"https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil\" target=\"_blank\">https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil</a> (Qwen3-14B, Qwen3-8B, Llama-8B LoRAs and an SVM; the three LoRAs share one split, the SVM uses GroupKFold on prompt_id, see the fold column).</p>\n<p>On our side, Mistral + OLMo on top of our blend gives about +0.004 on a held-out half of the prompts. It's a real gain, but small, and our pipelines turn out to be quite close (two-stage LoRAs on the public pool). So we've decided not to merge for now and to keep working on our own approach.</p>\n<p>Thanks again for being open, and good luck for the rest of the competition!</p>\n<p>Antonin</p>",
+                "id": 3551199,
+                "isThankYou": false,
+                "postDate": "2026-11-06T18:48:43.077Z",
+                "raw": {
+                  "author": {
+                    "display_name": "Anto Pil",
+                    "id": 37646321,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/antopil"
+                  },
+                  "author_type": "COMMENT",
+                  "competition_ranking": 571,
+                  "content": "<p>Thanks Emmanuel ! Our OOF are public : <a href=\"https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil\" target=\"_blank\">https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil</a> (Qwen3-14B, Qwen3-8B, Llama-8B LoRAs and an SVM; the three LoRAs share one split, the SVM uses GroupKFold on prompt_id, see the fold column).</p>\n<p>On our side, Mistral + OLMo on top of our blend gives about +0.004 on a held-out half of the prompts. It's a real gain, but small, and our pipelines turn out to be quite close (two-stage LoRAs on the public pool). So we've decided not to merge for now and to keep working on our own approach.</p>\n<p>Thanks again for being open, and good luck for the rest of the competition!</p>\n<p>Antonin</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3551199,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-06T18:48:43.077Z",
+                  "raw_markdown": "Thanks Emmanuel ! Our OOF are public : [https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil](https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil) (Qwen3-14B, Qwen3-8B, Llama-8B LoRAs and an SVM; the three LoRAs share one split, the SVM uses GroupKFold on prompt_id, see the fold column).\n\nOn our side, Mistral + OLMo on top of our blend gives about +0.004 on a held-out half of the prompts. It's a real gain, but small, and our pipelines turn out to be quite close (two-stage LoRAs on the public pool). So we've decided not to merge for now and to keep working on our own approach.\n\nThanks again for being open, and good luck for the rest of the competition!\n\nAntonin",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Anto Pil",
+                      "id": 37646321,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/antopil",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/antopil",
+                      "user_id": 37646321,
+                      "user_name": "antopil"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                },
+                "rawMarkdown": "Thanks Emmanuel ! Our OOF are public : [https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil](https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil) (Qwen3-14B, Qwen3-8B, Llama-8B LoRAs and an SVM; the three LoRAs share one split, the SVM uses GroupKFold on prompt_id, see the fold column).\n\nOn our side, Mistral + OLMo on top of our blend gives about +0.004 on a held-out half of the prompts. It's a real gain, but small, and our pipelines turn out to be quite close (two-stage LoRAs on the public pool). So we've decided not to merge for now and to keep working on our own approach.\n\nThanks again for being open, and good luck for the rest of the competition!\n\nAntonin",
+                "replies": [],
+                "votes": {
+                  "totalVotes": 0
+                }
+              }
+            ],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 756294,
+      "message_id": 3551186,
+      "parent_message_id": 3551072,
+      "author": "Emmanuel Ocheme",
+      "author_url": "/emmanuelocheme",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-06T18:25:08.783Z",
+      "raw_markdown": "Thanks Antonin, sounds good!\n\nHere are both members' OOF on all 2,699 train rows: https://www.kaggle.com/datasets/emmanuelocheme/ntl-oof-mistral-olmo-lora\n\n- Folds: sklearn GroupKFold(n_splits=5) on prompt_id over train.csv in file order. Each row has its fold in the \"fold\" column, so you can re-map to your own split if yours differs.\n- Columns: id, prompt_id, fold, then the 18 class probabilities.\n- Balanced acc (argmax): Mistral-7B 0.586, OLMo-2-7B 0.576, 50/50 average 0.602.\n\nI put them up as a public dataset to stay within the no-private-sharing rule. If you can do the same with yours, I'll run the same check on my side and post the numbers here.\n\nEmmanuel",
+      "content_html": "<p>Thanks Antonin, sounds good!</p>\n<p>Here are both members' OOF on all 2,699 train rows: <a href=\"https://www.kaggle.com/datasets/emmanuelocheme/ntl-oof-mistral-olmo-lora\" target=\"_blank\">https://www.kaggle.com/datasets/emmanuelocheme/ntl-oof-mistral-olmo-lora</a></p>\n<ul>\n<li>Folds: sklearn GroupKFold(n_splits=5) on prompt_id over train.csv in file order. Each row has its fold in the \"fold\" column, so you can re-map to your own split if yours differs.</li>\n<li>Columns: id, prompt_id, fold, then the 18 class probabilities.</li>\n<li>Balanced acc (argmax): Mistral-7B 0.586, OLMo-2-7B 0.576, 50/50 average 0.602.</li>\n</ul>\n<p>I put them up as a public dataset to stay within the no-private-sharing rule. If you can do the same with yours, I'll run the same check on my side and post the numbers here.</p>\n<p>Emmanuel</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 1,
+      "first_seen_at": "2026-11-09T03:55:13+00:00",
+      "last_seen_at": "2026-11-18T09:02:06+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T09:02:06+00:00",
+      "remote_last_listed_at": "2026-11-18T09:02:06+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Emmanuel Ocheme",
+          "tier": "CONTRIBUTOR",
+          "url": "/emmanuelocheme"
+        },
+        "content": "<p>Thanks Antonin, sounds good!</p>\n<p>Here are both members' OOF on all 2,699 train rows: <a href=\"https://www.kaggle.com/datasets/emmanuelocheme/ntl-oof-mistral-olmo-lora\" target=\"_blank\">https://www.kaggle.com/datasets/emmanuelocheme/ntl-oof-mistral-olmo-lora</a></p>\n<ul>\n<li>Folds: sklearn GroupKFold(n_splits=5) on prompt_id over train.csv in file order. Each row has its fold in the \"fold\" column, so you can re-map to your own split if yours differs.</li>\n<li>Columns: id, prompt_id, fold, then the 18 class probabilities.</li>\n<li>Balanced acc (argmax): Mistral-7B 0.586, OLMo-2-7B 0.576, 50/50 average 0.602.</li>\n</ul>\n<p>I put them up as a public dataset to stay within the no-private-sharing rule. If you can do the same with yours, I'll run the same check on my side and post the numbers here.</p>\n<p>Emmanuel</p>",
+        "id": 3551186,
+        "isThankYou": false,
+        "postDate": "2026-11-06T18:25:08.783Z",
+        "raw": {
+          "author": {
+            "display_name": "Emmanuel Ocheme",
+            "id": 28236510,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+            "tier": "CONTRIBUTOR",
+            "url": "/emmanuelocheme"
+          },
+          "author_type": "TOPIC",
+          "competition_ranking": 1307,
+          "content": "<p>Thanks Antonin, sounds good!</p>\n<p>Here are both members' OOF on all 2,699 train rows: <a href=\"https://www.kaggle.com/datasets/emmanuelocheme/ntl-oof-mistral-olmo-lora\" target=\"_blank\">https://www.kaggle.com/datasets/emmanuelocheme/ntl-oof-mistral-olmo-lora</a></p>\n<ul>\n<li>Folds: sklearn GroupKFold(n_splits=5) on prompt_id over train.csv in file order. Each row has its fold in the \"fold\" column, so you can re-map to your own split if yours differs.</li>\n<li>Columns: id, prompt_id, fold, then the 18 class probabilities.</li>\n<li>Balanced acc (argmax): Mistral-7B 0.586, OLMo-2-7B 0.576, 50/50 average 0.602.</li>\n</ul>\n<p>I put them up as a public dataset to stay within the no-private-sharing rule. If you can do the same with yours, I'll run the same check on my side and post the numbers here.</p>\n<p>Emmanuel</p>",
+          "feedback_tracking_data": {},
+          "id": 3551186,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-06T18:25:08.783Z",
+          "raw_markdown": "Thanks Antonin, sounds good!\n\nHere are both members' OOF on all 2,699 train rows: https://www.kaggle.com/datasets/emmanuelocheme/ntl-oof-mistral-olmo-lora\n\n- Folds: sklearn GroupKFold(n_splits=5) on prompt_id over train.csv in file order. Each row has its fold in the \"fold\" column, so you can re-map to your own split if yours differs.\n- Columns: id, prompt_id, fold, then the 18 class probabilities.\n- Balanced acc (argmax): Mistral-7B 0.586, OLMo-2-7B 0.576, 50/50 average 0.602.\n\nI put them up as a public dataset to stay within the no-private-sharing rule. If you can do the same with yours, I'll run the same check on my side and post the numbers here.\n\nEmmanuel",
+          "replies": [
+            {
+              "author": {
+                "display_name": "Anto Pil",
+                "id": 37646321,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/antopil"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 571,
+              "content": "<p>Thanks Emmanuel ! Our OOF are public : <a href=\"https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil\" target=\"_blank\">https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil</a> (Qwen3-14B, Qwen3-8B, Llama-8B LoRAs and an SVM; the three LoRAs share one split, the SVM uses GroupKFold on prompt_id, see the fold column).</p>\n<p>On our side, Mistral + OLMo on top of our blend gives about +0.004 on a held-out half of the prompts. It's a real gain, but small, and our pipelines turn out to be quite close (two-stage LoRAs on the public pool). So we've decided not to merge for now and to keep working on our own approach.</p>\n<p>Thanks again for being open, and good luck for the rest of the competition!</p>\n<p>Antonin</p>",
+              "feedback_tracking_data": {},
+              "id": 3551199,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-06T18:48:43.077Z",
+              "raw_markdown": "Thanks Emmanuel ! Our OOF are public : [https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil](https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil) (Qwen3-14B, Qwen3-8B, Llama-8B LoRAs and an SVM; the three LoRAs share one split, the SVM uses GroupKFold on prompt_id, see the fold column).\n\nOn our side, Mistral + OLMo on top of our blend gives about +0.004 on a held-out half of the prompts. It's a real gain, but small, and our pipelines turn out to be quite close (two-stage LoRAs on the public pool). So we've decided not to merge for now and to keep working on our own approach.\n\nThanks again for being open, and good luck for the rest of the competition!\n\nAntonin",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Anto Pil",
+                  "id": 37646321,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/antopil",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/antopil",
+                  "user_id": 37646321,
+                  "user_name": "antopil"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            }
+          ],
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Emmanuel Ocheme",
+              "id": 28236510,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/emmanuelocheme",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "CONTRIBUTOR",
+              "url": "/emmanuelocheme",
+              "user_id": 28236510,
+              "user_name": "emmanuelocheme"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "Thanks Antonin, sounds good!\n\nHere are both members' OOF on all 2,699 train rows: https://www.kaggle.com/datasets/emmanuelocheme/ntl-oof-mistral-olmo-lora\n\n- Folds: sklearn GroupKFold(n_splits=5) on prompt_id over train.csv in file order. Each row has its fold in the \"fold\" column, so you can re-map to your own split if yours differs.\n- Columns: id, prompt_id, fold, then the 18 class probabilities.\n- Balanced acc (argmax): Mistral-7B 0.586, OLMo-2-7B 0.576, 50/50 average 0.602.\n\nI put them up as a public dataset to stay within the no-private-sharing rule. If you can do the same with yours, I'll run the same check on my side and post the numbers here.\n\nEmmanuel",
+        "replies": [
+          {
+            "author": {
+              "displayName": "Anto Pil",
+              "tier": "CONTRIBUTOR",
+              "url": "/antopil"
+            },
+            "content": "<p>Thanks Emmanuel ! Our OOF are public : <a href=\"https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil\" target=\"_blank\">https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil</a> (Qwen3-14B, Qwen3-8B, Llama-8B LoRAs and an SVM; the three LoRAs share one split, the SVM uses GroupKFold on prompt_id, see the fold column).</p>\n<p>On our side, Mistral + OLMo on top of our blend gives about +0.004 on a held-out half of the prompts. It's a real gain, but small, and our pipelines turn out to be quite close (two-stage LoRAs on the public pool). So we've decided not to merge for now and to keep working on our own approach.</p>\n<p>Thanks again for being open, and good luck for the rest of the competition!</p>\n<p>Antonin</p>",
+            "id": 3551199,
+            "isThankYou": false,
+            "postDate": "2026-11-06T18:48:43.077Z",
+            "raw": {
+              "author": {
+                "display_name": "Anto Pil",
+                "id": 37646321,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/antopil"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 571,
+              "content": "<p>Thanks Emmanuel ! Our OOF are public : <a href=\"https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil\" target=\"_blank\">https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil</a> (Qwen3-14B, Qwen3-8B, Llama-8B LoRAs and an SVM; the three LoRAs share one split, the SVM uses GroupKFold on prompt_id, see the fold column).</p>\n<p>On our side, Mistral + OLMo on top of our blend gives about +0.004 on a held-out half of the prompts. It's a real gain, but small, and our pipelines turn out to be quite close (two-stage LoRAs on the public pool). So we've decided not to merge for now and to keep working on our own approach.</p>\n<p>Thanks again for being open, and good luck for the rest of the competition!</p>\n<p>Antonin</p>",
+              "feedback_tracking_data": {},
+              "id": 3551199,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-06T18:48:43.077Z",
+              "raw_markdown": "Thanks Emmanuel ! Our OOF are public : [https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil](https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil) (Qwen3-14B, Qwen3-8B, Llama-8B LoRAs and an SVM; the three LoRAs share one split, the SVM uses GroupKFold on prompt_id, see the fold column).\n\nOn our side, Mistral + OLMo on top of our blend gives about +0.004 on a held-out half of the prompts. It's a real gain, but small, and our pipelines turn out to be quite close (two-stage LoRAs on the public pool). So we've decided not to merge for now and to keep working on our own approach.\n\nThanks again for being open, and good luck for the rest of the competition!\n\nAntonin",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Anto Pil",
+                  "id": 37646321,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/antopil",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/antopil",
+                  "user_id": 37646321,
+                  "user_name": "antopil"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "Thanks Emmanuel ! Our OOF are public : [https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil](https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil) (Qwen3-14B, Qwen3-8B, Llama-8B LoRAs and an SVM; the three LoRAs share one split, the SVM uses GroupKFold on prompt_id, see the fold column).\n\nOn our side, Mistral + OLMo on top of our blend gives about +0.004 on a held-out half of the prompts. It's a real gain, but small, and our pipelines turn out to be quite close (two-stage LoRAs on the public pool). So we've decided not to merge for now and to keep working on our own approach.\n\nThanks again for being open, and good luck for the rest of the competition!\n\nAntonin",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 756294,
+      "message_id": 3551199,
+      "parent_message_id": 3551186,
+      "author": "Anto Pil",
+      "author_url": "/antopil",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-06T18:48:43.077Z",
+      "raw_markdown": "Thanks Emmanuel ! Our OOF are public : [https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil](https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil) (Qwen3-14B, Qwen3-8B, Llama-8B LoRAs and an SVM; the three LoRAs share one split, the SVM uses GroupKFold on prompt_id, see the fold column).\n\nOn our side, Mistral + OLMo on top of our blend gives about +0.004 on a held-out half of the prompts. It's a real gain, but small, and our pipelines turn out to be quite close (two-stage LoRAs on the public pool). So we've decided not to merge for now and to keep working on our own approach.\n\nThanks again for being open, and good luck for the rest of the competition!\n\nAntonin",
+      "content_html": "<p>Thanks Emmanuel ! Our OOF are public : <a href=\"https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil\" target=\"_blank\">https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil</a> (Qwen3-14B, Qwen3-8B, Llama-8B LoRAs and an SVM; the three LoRAs share one split, the SVM uses GroupKFold on prompt_id, see the fold column).</p>\n<p>On our side, Mistral + OLMo on top of our blend gives about +0.004 on a held-out half of the prompts. It's a real gain, but small, and our pipelines turn out to be quite close (two-stage LoRAs on the public pool). So we've decided not to merge for now and to keep working on our own approach.</p>\n<p>Thanks again for being open, and good luck for the rest of the competition!</p>\n<p>Antonin</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 2,
+      "first_seen_at": "2026-11-09T03:55:13+00:00",
+      "last_seen_at": "2026-11-18T09:02:06+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T09:02:06+00:00",
+      "remote_last_listed_at": "2026-11-18T09:02:06+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Anto Pil",
+          "tier": "CONTRIBUTOR",
+          "url": "/antopil"
+        },
+        "content": "<p>Thanks Emmanuel ! Our OOF are public : <a href=\"https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil\" target=\"_blank\">https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil</a> (Qwen3-14B, Qwen3-8B, Llama-8B LoRAs and an SVM; the three LoRAs share one split, the SVM uses GroupKFold on prompt_id, see the fold column).</p>\n<p>On our side, Mistral + OLMo on top of our blend gives about +0.004 on a held-out half of the prompts. It's a real gain, but small, and our pipelines turn out to be quite close (two-stage LoRAs on the public pool). So we've decided not to merge for now and to keep working on our own approach.</p>\n<p>Thanks again for being open, and good luck for the rest of the competition!</p>\n<p>Antonin</p>",
+        "id": 3551199,
+        "isThankYou": false,
+        "postDate": "2026-11-06T18:48:43.077Z",
+        "raw": {
+          "author": {
+            "display_name": "Anto Pil",
+            "id": 37646321,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+            "tier": "CONTRIBUTOR",
+            "url": "/antopil"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 571,
+          "content": "<p>Thanks Emmanuel ! Our OOF are public : <a href=\"https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil\" target=\"_blank\">https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil</a> (Qwen3-14B, Qwen3-8B, Llama-8B LoRAs and an SVM; the three LoRAs share one split, the SVM uses GroupKFold on prompt_id, see the fold column).</p>\n<p>On our side, Mistral + OLMo on top of our blend gives about +0.004 on a held-out half of the prompts. It's a real gain, but small, and our pipelines turn out to be quite close (two-stage LoRAs on the public pool). So we've decided not to merge for now and to keep working on our own approach.</p>\n<p>Thanks again for being open, and good luck for the rest of the competition!</p>\n<p>Antonin</p>",
+          "feedback_tracking_data": {},
+          "id": 3551199,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-06T18:48:43.077Z",
+          "raw_markdown": "Thanks Emmanuel ! Our OOF are public : [https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil](https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil) (Qwen3-14B, Qwen3-8B, Llama-8B LoRAs and an SVM; the three LoRAs share one split, the SVM uses GroupKFold on prompt_id, see the fold column).\n\nOn our side, Mistral + OLMo on top of our blend gives about +0.004 on a held-out half of the prompts. It's a real gain, but small, and our pipelines turn out to be quite close (two-stage LoRAs on the public pool). So we've decided not to merge for now and to keep working on our own approach.\n\nThanks again for being open, and good luck for the rest of the competition!\n\nAntonin",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Anto Pil",
+              "id": 37646321,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/antopil",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "CONTRIBUTOR",
+              "url": "/antopil",
+              "user_id": 37646321,
+              "user_name": "antopil"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "Thanks Emmanuel ! Our OOF are public : [https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil](https://www.kaggle.com/datasets/antopil/ntl-oof-anto-pil) (Qwen3-14B, Qwen3-8B, Llama-8B LoRAs and an SVM; the three LoRAs share one split, the SVM uses GroupKFold on prompt_id, see the fold column).\n\nOn our side, Mistral + OLMo on top of our blend gives about +0.004 on a held-out half of the prompts. It's a real gain, but small, and our pipelines turn out to be quite close (two-stage LoRAs on the public pool). So we've decided not to merge for now and to keep working on our own approach.\n\nThanks again for being open, and good luck for the rest of the competition!\n\nAntonin",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 756294,
+      "message_id": 3553553,
+      "parent_message_id": null,
+      "author": null,
+      "author_url": "/",
+      "author_tier": null,
+      "post_date": "2026-11-11T20:16:41.583Z",
+      "raw_markdown": null,
+      "content_html": null,
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-16T16:22:21+00:00",
+      "last_seen_at": "2026-11-18T09:02:06+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T09:02:06+00:00",
+      "remote_last_listed_at": "2026-11-18T09:02:06+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": null,
+          "tier": null,
+          "url": "/"
+        },
+        "content": null,
+        "id": 3553553,
+        "isThankYou": false,
+        "postDate": "2026-11-11T20:16:41.583Z",
+        "raw": {
+          "author": {
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+            "url": "/"
+          },
+          "author_type": "COMMENT",
+          "can_delete": true,
+          "feedback_tracking_data": {},
+          "id": 3553553,
+          "is_deleted": true,
+          "is_thank_you": false,
+          "is_user_author": true,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-11T20:16:41.583Z",
+          "raw_markdown": "",
+          "votes": {}
+        },
+        "rawMarkdown": null,
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 756294,
+      "message_id": 3555048,
+      "parent_message_id": null,
+      "author": "Abood PS",
+      "author_url": "/aboodps",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-14T14:41:15.827Z",
+      "raw_markdown": "Hi Emmanuel,\n\nI ran the check you suggested: on my grouped OOF our twin-LoRA blend (no external members) gets 0.633 alone, and adding your mistral7b on top gets 0.645 (+0.012 at w=1.0; +0.014 at w=1.5); olmo2_7b alone gives +0.002; greedy over {blend, mistral7b, olmo2_7b} lands on 0.6475. So your members do add real signal on our side — not the flashiest jump, but consistent.\n\nI'd like to explore a merge if you're still open. Our stack on its own scores 0.682 on the public board (fork of the current public 0.682) with a k=2-realistic validation harness, and we don't carry Mistral or OLMo — the gap is genuinely missing for us.\n\nI can publish our OOF as a public dataset this week so you can run the same mutual check you offered to Antonin. Let me know if that helps moved things forward.\n\nIs the team still looking for one more?\n",
+      "content_html": "<p>Hi Emmanuel,</p>\n<p>I ran the check you suggested: on my grouped OOF our twin-LoRA blend (no external members) gets 0.633 alone, and adding your mistral7b on top gets 0.645 (+0.012 at w=1.0; +0.014 at w=1.5); olmo2_7b alone gives +0.002; greedy over {blend, mistral7b, olmo2_7b} lands on 0.6475. So your members do add real signal on our side — not the flashiest jump, but consistent.</p>\n<p>I'd like to explore a merge if you're still open. Our stack on its own scores 0.682 on the public board (fork of the current public 0.682) with a k=2-realistic validation harness, and we don't carry Mistral or OLMo — the gap is genuinely missing for us.</p>\n<p>I can publish our OOF as a public dataset this week so you can run the same mutual check you offered to Antonin. Let me know if that helps moved things forward.</p>\n<p>Is the team still looking for one more?</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-16T16:22:21+00:00",
+      "last_seen_at": "2026-11-18T09:02:06+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T09:02:06+00:00",
+      "remote_last_listed_at": "2026-11-18T09:02:06+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Abood PS",
+          "tier": "CONTRIBUTOR",
+          "url": "/aboodps"
+        },
+        "content": "<p>Hi Emmanuel,</p>\n<p>I ran the check you suggested: on my grouped OOF our twin-LoRA blend (no external members) gets 0.633 alone, and adding your mistral7b on top gets 0.645 (+0.012 at w=1.0; +0.014 at w=1.5); olmo2_7b alone gives +0.002; greedy over {blend, mistral7b, olmo2_7b} lands on 0.6475. So your members do add real signal on our side — not the flashiest jump, but consistent.</p>\n<p>I'd like to explore a merge if you're still open. Our stack on its own scores 0.682 on the public board (fork of the current public 0.682) with a k=2-realistic validation harness, and we don't carry Mistral or OLMo — the gap is genuinely missing for us.</p>\n<p>I can publish our OOF as a public dataset this week so you can run the same mutual check you offered to Antonin. Let me know if that helps moved things forward.</p>\n<p>Is the team still looking for one more?</p>",
+        "id": 3555048,
+        "isThankYou": false,
+        "postDate": "2026-11-14T14:41:15.827Z",
+        "raw": {
+          "author": {
+            "display_name": "Abood PS",
+            "id": 36918046,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36918046-kg.jpg?t=2026-11-04-14-50-50",
+            "tier": "CONTRIBUTOR",
+            "url": "/aboodps"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 407,
+          "content": "<p>Hi Emmanuel,</p>\n<p>I ran the check you suggested: on my grouped OOF our twin-LoRA blend (no external members) gets 0.633 alone, and adding your mistral7b on top gets 0.645 (+0.012 at w=1.0; +0.014 at w=1.5); olmo2_7b alone gives +0.002; greedy over {blend, mistral7b, olmo2_7b} lands on 0.6475. So your members do add real signal on our side — not the flashiest jump, but consistent.</p>\n<p>I'd like to explore a merge if you're still open. Our stack on its own scores 0.682 on the public board (fork of the current public 0.682) with a k=2-realistic validation harness, and we don't carry Mistral or OLMo — the gap is genuinely missing for us.</p>\n<p>I can publish our OOF as a public dataset this week so you can run the same mutual check you offered to Antonin. Let me know if that helps moved things forward.</p>\n<p>Is the team still looking for one more?</p>",
+          "feedback_tracking_data": {},
+          "id": 3555048,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-14T14:41:15.827Z",
+          "raw_markdown": "Hi Emmanuel,\n\nI ran the check you suggested: on my grouped OOF our twin-LoRA blend (no external members) gets 0.633 alone, and adding your mistral7b on top gets 0.645 (+0.012 at w=1.0; +0.014 at w=1.5); olmo2_7b alone gives +0.002; greedy over {blend, mistral7b, olmo2_7b} lands on 0.6475. So your members do add real signal on our side — not the flashiest jump, but consistent.\n\nI'd like to explore a merge if you're still open. Our stack on its own scores 0.682 on the public board (fork of the current public 0.682) with a k=2-realistic validation harness, and we don't carry Mistral or OLMo — the gap is genuinely missing for us.\n\nI can publish our OOF as a public dataset this week so you can run the same mutual check you offered to Antonin. Let me know if that helps moved things forward.\n\nIs the team still looking for one more?\n",
+          "replies": [
+            {
+              "author": {
+                "display_name": "Emmanuel Ocheme",
+                "id": 28236510,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/emmanuelocheme"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 1307,
+              "content": "<p>Hi Abood,</p>\n<p>Thanks for running that check. +0.012 from the Mistral member is a much bigger gain than I expected, so I'm definitely interested in exploring a merge.</p>\n<p>Please go ahead and publish your OOF (same format is fine: id, fold, 18 probabilities). I'll add your twin-LoRA blend to our side and post the number here, so we both see the gain from each direction before deciding.</p>\n<p>Two updates so you have the full picture:\n• We're now at 0.684 public with a fork of the public all-public blend. Our own Mistral, OLMo and pool-v3 Qwen3-8B members aren't in that submission yet.\n• A correction to my original post: the free Gemini route turned out to be limited to about 20 rows a day, so I've parked it. There's no meaningful fresh Gemini data to bring. The Mistral and OLMo LoRAs are the real contribution.</p>\n<p>What base models and training data are your twin LoRAs on? That will help me see how much our pipelines overlap.</p>\n<p>Emmanuel</p>",
+              "feedback_tracking_data": {},
+              "id": 3555596,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-16T09:12:04.560Z",
+              "raw_markdown": "Hi Abood,\n\nThanks for running that check. +0.012 from the Mistral member is a much bigger gain than I expected, so I'm definitely interested in exploring a merge.\n\nPlease go ahead and publish your OOF (same format is fine: id, fold, 18 probabilities). I'll add your twin-LoRA blend to our side and post the number here, so we both see the gain from each direction before deciding.\n\nTwo updates so you have the full picture:\n• We're now at 0.684 public with a fork of the public all-public blend. Our own Mistral, OLMo and pool-v3 Qwen3-8B members aren't in that submission yet.\n• A correction to my original post: the free Gemini route turned out to be limited to about 20 rows a day, so I've parked it. There's no meaningful fresh Gemini data to bring. The Mistral and OLMo LoRAs are the real contribution.\n\nWhat base models and training data are your twin LoRAs on? That will help me see how much our pipelines overlap.\n\nEmmanuel",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Emmanuel Ocheme",
+                  "id": 28236510,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/emmanuelocheme",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/emmanuelocheme",
+                  "user_id": 28236510,
+                  "user_name": "emmanuelocheme"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            }
+          ],
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Abood PS",
+              "id": 36918046,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/aboodps",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36918046-kg.jpg?t=2026-11-04-14-50-50",
+              "tier": "CONTRIBUTOR",
+              "url": "/aboodps",
+              "user_id": 36918046,
+              "user_name": "aboodps"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "Hi Emmanuel,\n\nI ran the check you suggested: on my grouped OOF our twin-LoRA blend (no external members) gets 0.633 alone, and adding your mistral7b on top gets 0.645 (+0.012 at w=1.0; +0.014 at w=1.5); olmo2_7b alone gives +0.002; greedy over {blend, mistral7b, olmo2_7b} lands on 0.6475. So your members do add real signal on our side — not the flashiest jump, but consistent.\n\nI'd like to explore a merge if you're still open. Our stack on its own scores 0.682 on the public board (fork of the current public 0.682) with a k=2-realistic validation harness, and we don't carry Mistral or OLMo — the gap is genuinely missing for us.\n\nI can publish our OOF as a public dataset this week so you can run the same mutual check you offered to Antonin. Let me know if that helps moved things forward.\n\nIs the team still looking for one more?\n",
+        "replies": [
+          {
+            "author": {
+              "displayName": "Emmanuel Ocheme",
+              "tier": "CONTRIBUTOR",
+              "url": "/emmanuelocheme"
+            },
+            "content": "<p>Hi Abood,</p>\n<p>Thanks for running that check. +0.012 from the Mistral member is a much bigger gain than I expected, so I'm definitely interested in exploring a merge.</p>\n<p>Please go ahead and publish your OOF (same format is fine: id, fold, 18 probabilities). I'll add your twin-LoRA blend to our side and post the number here, so we both see the gain from each direction before deciding.</p>\n<p>Two updates so you have the full picture:\n• We're now at 0.684 public with a fork of the public all-public blend. Our own Mistral, OLMo and pool-v3 Qwen3-8B members aren't in that submission yet.\n• A correction to my original post: the free Gemini route turned out to be limited to about 20 rows a day, so I've parked it. There's no meaningful fresh Gemini data to bring. The Mistral and OLMo LoRAs are the real contribution.</p>\n<p>What base models and training data are your twin LoRAs on? That will help me see how much our pipelines overlap.</p>\n<p>Emmanuel</p>",
+            "id": 3555596,
+            "isThankYou": false,
+            "postDate": "2026-11-16T09:12:04.560Z",
+            "raw": {
+              "author": {
+                "display_name": "Emmanuel Ocheme",
+                "id": 28236510,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/emmanuelocheme"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 1307,
+              "content": "<p>Hi Abood,</p>\n<p>Thanks for running that check. +0.012 from the Mistral member is a much bigger gain than I expected, so I'm definitely interested in exploring a merge.</p>\n<p>Please go ahead and publish your OOF (same format is fine: id, fold, 18 probabilities). I'll add your twin-LoRA blend to our side and post the number here, so we both see the gain from each direction before deciding.</p>\n<p>Two updates so you have the full picture:\n• We're now at 0.684 public with a fork of the public all-public blend. Our own Mistral, OLMo and pool-v3 Qwen3-8B members aren't in that submission yet.\n• A correction to my original post: the free Gemini route turned out to be limited to about 20 rows a day, so I've parked it. There's no meaningful fresh Gemini data to bring. The Mistral and OLMo LoRAs are the real contribution.</p>\n<p>What base models and training data are your twin LoRAs on? That will help me see how much our pipelines overlap.</p>\n<p>Emmanuel</p>",
+              "feedback_tracking_data": {},
+              "id": 3555596,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-16T09:12:04.560Z",
+              "raw_markdown": "Hi Abood,\n\nThanks for running that check. +0.012 from the Mistral member is a much bigger gain than I expected, so I'm definitely interested in exploring a merge.\n\nPlease go ahead and publish your OOF (same format is fine: id, fold, 18 probabilities). I'll add your twin-LoRA blend to our side and post the number here, so we both see the gain from each direction before deciding.\n\nTwo updates so you have the full picture:\n• We're now at 0.684 public with a fork of the public all-public blend. Our own Mistral, OLMo and pool-v3 Qwen3-8B members aren't in that submission yet.\n• A correction to my original post: the free Gemini route turned out to be limited to about 20 rows a day, so I've parked it. There's no meaningful fresh Gemini data to bring. The Mistral and OLMo LoRAs are the real contribution.\n\nWhat base models and training data are your twin LoRAs on? That will help me see how much our pipelines overlap.\n\nEmmanuel",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Emmanuel Ocheme",
+                  "id": 28236510,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/emmanuelocheme",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/emmanuelocheme",
+                  "user_id": 28236510,
+                  "user_name": "emmanuelocheme"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "Hi Abood,\n\nThanks for running that check. +0.012 from the Mistral member is a much bigger gain than I expected, so I'm definitely interested in exploring a merge.\n\nPlease go ahead and publish your OOF (same format is fine: id, fold, 18 probabilities). I'll add your twin-LoRA blend to our side and post the number here, so we both see the gain from each direction before deciding.\n\nTwo updates so you have the full picture:\n• We're now at 0.684 public with a fork of the public all-public blend. Our own Mistral, OLMo and pool-v3 Qwen3-8B members aren't in that submission yet.\n• A correction to my original post: the free Gemini route turned out to be limited to about 20 rows a day, so I've parked it. There's no meaningful fresh Gemini data to bring. The Mistral and OLMo LoRAs are the real contribution.\n\nWhat base models and training data are your twin LoRAs on? That will help me see how much our pipelines overlap.\n\nEmmanuel",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 756294,
+      "message_id": 3555596,
+      "parent_message_id": 3555048,
+      "author": "Emmanuel Ocheme",
+      "author_url": "/emmanuelocheme",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-16T09:12:04.560Z",
+      "raw_markdown": "Hi Abood,\n\nThanks for running that check. +0.012 from the Mistral member is a much bigger gain than I expected, so I'm definitely interested in exploring a merge.\n\nPlease go ahead and publish your OOF (same format is fine: id, fold, 18 probabilities). I'll add your twin-LoRA blend to our side and post the number here, so we both see the gain from each direction before deciding.\n\nTwo updates so you have the full picture:\n• We're now at 0.684 public with a fork of the public all-public blend. Our own Mistral, OLMo and pool-v3 Qwen3-8B members aren't in that submission yet.\n• A correction to my original post: the free Gemini route turned out to be limited to about 20 rows a day, so I've parked it. There's no meaningful fresh Gemini data to bring. The Mistral and OLMo LoRAs are the real contribution.\n\nWhat base models and training data are your twin LoRAs on? That will help me see how much our pipelines overlap.\n\nEmmanuel",
+      "content_html": "<p>Hi Abood,</p>\n<p>Thanks for running that check. +0.012 from the Mistral member is a much bigger gain than I expected, so I'm definitely interested in exploring a merge.</p>\n<p>Please go ahead and publish your OOF (same format is fine: id, fold, 18 probabilities). I'll add your twin-LoRA blend to our side and post the number here, so we both see the gain from each direction before deciding.</p>\n<p>Two updates so you have the full picture:\n• We're now at 0.684 public with a fork of the public all-public blend. Our own Mistral, OLMo and pool-v3 Qwen3-8B members aren't in that submission yet.\n• A correction to my original post: the free Gemini route turned out to be limited to about 20 rows a day, so I've parked it. There's no meaningful fresh Gemini data to bring. The Mistral and OLMo LoRAs are the real contribution.</p>\n<p>What base models and training data are your twin LoRAs on? That will help me see how much our pipelines overlap.</p>\n<p>Emmanuel</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 1,
+      "first_seen_at": "2026-11-16T16:22:21+00:00",
+      "last_seen_at": "2026-11-18T09:02:06+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T09:02:06+00:00",
+      "remote_last_listed_at": "2026-11-18T09:02:06+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Emmanuel Ocheme",
+          "tier": "CONTRIBUTOR",
+          "url": "/emmanuelocheme"
+        },
+        "content": "<p>Hi Abood,</p>\n<p>Thanks for running that check. +0.012 from the Mistral member is a much bigger gain than I expected, so I'm definitely interested in exploring a merge.</p>\n<p>Please go ahead and publish your OOF (same format is fine: id, fold, 18 probabilities). I'll add your twin-LoRA blend to our side and post the number here, so we both see the gain from each direction before deciding.</p>\n<p>Two updates so you have the full picture:\n• We're now at 0.684 public with a fork of the public all-public blend. Our own Mistral, OLMo and pool-v3 Qwen3-8B members aren't in that submission yet.\n• A correction to my original post: the free Gemini route turned out to be limited to about 20 rows a day, so I've parked it. There's no meaningful fresh Gemini data to bring. The Mistral and OLMo LoRAs are the real contribution.</p>\n<p>What base models and training data are your twin LoRAs on? That will help me see how much our pipelines overlap.</p>\n<p>Emmanuel</p>",
+        "id": 3555596,
+        "isThankYou": false,
+        "postDate": "2026-11-16T09:12:04.560Z",
+        "raw": {
+          "author": {
+            "display_name": "Emmanuel Ocheme",
+            "id": 28236510,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+            "tier": "CONTRIBUTOR",
+            "url": "/emmanuelocheme"
+          },
+          "author_type": "TOPIC",
+          "competition_ranking": 1307,
+          "content": "<p>Hi Abood,</p>\n<p>Thanks for running that check. +0.012 from the Mistral member is a much bigger gain than I expected, so I'm definitely interested in exploring a merge.</p>\n<p>Please go ahead and publish your OOF (same format is fine: id, fold, 18 probabilities). I'll add your twin-LoRA blend to our side and post the number here, so we both see the gain from each direction before deciding.</p>\n<p>Two updates so you have the full picture:\n• We're now at 0.684 public with a fork of the public all-public blend. Our own Mistral, OLMo and pool-v3 Qwen3-8B members aren't in that submission yet.\n• A correction to my original post: the free Gemini route turned out to be limited to about 20 rows a day, so I've parked it. There's no meaningful fresh Gemini data to bring. The Mistral and OLMo LoRAs are the real contribution.</p>\n<p>What base models and training data are your twin LoRAs on? That will help me see how much our pipelines overlap.</p>\n<p>Emmanuel</p>",
+          "feedback_tracking_data": {},
+          "id": 3555596,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-16T09:12:04.560Z",
+          "raw_markdown": "Hi Abood,\n\nThanks for running that check. +0.012 from the Mistral member is a much bigger gain than I expected, so I'm definitely interested in exploring a merge.\n\nPlease go ahead and publish your OOF (same format is fine: id, fold, 18 probabilities). I'll add your twin-LoRA blend to our side and post the number here, so we both see the gain from each direction before deciding.\n\nTwo updates so you have the full picture:\n• We're now at 0.684 public with a fork of the public all-public blend. Our own Mistral, OLMo and pool-v3 Qwen3-8B members aren't in that submission yet.\n• A correction to my original post: the free Gemini route turned out to be limited to about 20 rows a day, so I've parked it. There's no meaningful fresh Gemini data to bring. The Mistral and OLMo LoRAs are the real contribution.\n\nWhat base models and training data are your twin LoRAs on? That will help me see how much our pipelines overlap.\n\nEmmanuel",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Emmanuel Ocheme",
+              "id": 28236510,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/emmanuelocheme",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "CONTRIBUTOR",
+              "url": "/emmanuelocheme",
+              "user_id": 28236510,
+              "user_name": "emmanuelocheme"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "Hi Abood,\n\nThanks for running that check. +0.012 from the Mistral member is a much bigger gain than I expected, so I'm definitely interested in exploring a merge.\n\nPlease go ahead and publish your OOF (same format is fine: id, fold, 18 probabilities). I'll add your twin-LoRA blend to our side and post the number here, so we both see the gain from each direction before deciding.\n\nTwo updates so you have the full picture:\n• We're now at 0.684 public with a fork of the public all-public blend. Our own Mistral, OLMo and pool-v3 Qwen3-8B members aren't in that submission yet.\n• A correction to my original post: the free Gemini route turned out to be limited to about 20 rows a day, so I've parked it. There's no meaningful fresh Gemini data to bring. The Mistral and OLMo LoRAs are the real contribution.\n\nWhat base models and training data are your twin LoRAs on? That will help me see how much our pipelines overlap.\n\nEmmanuel",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    }
+  ],
+  "writeup": null
+}

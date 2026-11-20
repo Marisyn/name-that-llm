@@ -1,0 +1,409 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 751011,
+    "title": "Section 2.6 question: training data generated from the candidate models",
+    "author": "Adisak Sukul",
+    "author_url": "/adisak",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-10-20T13:59:11.254772200Z",
+    "last_comment_post_date": "2026-10-23T03:18:12.786666700Z",
+    "comment_count": 1,
+    "votes": 10,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/751011",
+    "first_message_id": 3541605,
+    "first_seen_at": "2026-11-04T06:56:16+00:00",
+    "last_seen_at": "2026-11-16T16:36:04+00:00",
+    "detail_last_synced_at": "2026-11-16T16:30:42+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "727f49205e3a0a427aa12e6ff5591a03aa81b4fb8d345280109ffd483846e7d0",
+    "listing_metrics_hash": "8d48d9dc5f47c8f1257fa4ed62f5b5b354567e6fe163b3d22f1c91a03351d855",
+    "detail_content_hash": "099ca62916a4c9e91ba6ee0b689db6ac789ca437feff290394fb3d69b6750e5b",
+    "detail_last_checked_at": "2026-11-16T16:30:42+00:00",
+    "detail_next_check_at": "2026-11-23T16:30:42+00:00",
+    "detail_unchanged_count": 2,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 1,
+      "firstForumMessageId": null,
+      "id": 751011,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-10-23T03:18:12.786666700Z",
+      "postDate": "2026-10-20T13:59:11.254772200Z",
+      "raw": {
+        "comment_count": 1,
+        "id": 751011,
+        "last_comment_post_date": "2026-10-23T03:18:12.786666700Z",
+        "post_date": "2026-10-20T13:59:11.254772200Z",
+        "title": "Section 2.6 question: training data generated from the candidate models",
+        "topic_url": "/competitions/name-that-llm/discussion/751011",
+        "votes": 10
+      },
+      "title": "Section 2.6 question: training data generated from the candidate models",
+      "topicUrl": "/competitions/name-that-llm/discussion/751011",
+      "votes": 10
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "Adisak Sukul",
+        "authorUserName": "adisak",
+        "comments": [
+          {
+            "author": {
+              "displayName": "rw-nue",
+              "tier": "EXPERT",
+              "url": "/novatrade"
+            },
+            "content": "<p>Thanks, Adisak, for putting these questions together. \nI'd also appreciate the hosts' answers to all six points, with the following clarifications:</p>\n<ol>\n<li><p><strong>On Q3:</strong> Could you specify the maximum permitted total API generation cost in USD per participant or team? <strong>If no fixed USD limit exists, please explicitly confirm that and explain the criteria used to determine reasonableness.</strong></p></li>\n<li><p><strong>For publicly shared data:</strong> If API-generated data is made freely available for all participants to use, assuming redistribution is permitted, must the original generation costs still satisfy the Reasonableness Standard? Is any additional approval or disclosure required specifically because paid APIs were used?</p></li>\n<li><p><strong>On Q1 and Q4:</strong> If public release of the generated dataset is required, by what deadline?</p></li>\n</ol>\n<p>Thank you!</p>",
+            "id": 3543215,
+            "isThankYou": false,
+            "postDate": "2026-10-23T03:18:12.787Z",
+            "raw": {
+              "author": {
+                "display_name": "rw-nue",
+                "id": 1555725,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1555725-gr.jpg",
+                "tier": "EXPERT",
+                "url": "/novatrade"
+              },
+              "author_type": "COMMENT",
+              "content": "<p>Thanks, Adisak, for putting these questions together. \nI'd also appreciate the hosts' answers to all six points, with the following clarifications:</p>\n<ol>\n<li><p><strong>On Q3:</strong> Could you specify the maximum permitted total API generation cost in USD per participant or team? <strong>If no fixed USD limit exists, please explicitly confirm that and explain the criteria used to determine reasonableness.</strong></p></li>\n<li><p><strong>For publicly shared data:</strong> If API-generated data is made freely available for all participants to use, assuming redistribution is permitted, must the original generation costs still satisfy the Reasonableness Standard? Is any additional approval or disclosure required specifically because paid APIs were used?</p></li>\n<li><p><strong>On Q1 and Q4:</strong> If public release of the generated dataset is required, by what deadline?</p></li>\n</ol>\n<p>Thank you!</p>",
+              "feedback_tracking_data": {},
+              "id": 3543215,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-23T03:18:12.787Z",
+              "raw_markdown": "Thanks, Adisak, for putting these questions together. \nI'd also appreciate the hosts' answers to all six points, with the following clarifications:\n\n1. **On Q3:** Could you specify the maximum permitted total API generation cost in USD per participant or team? **If no fixed USD limit exists, please explicitly confirm that and explain the criteria used to determine reasonableness.**\n\n2. **For publicly shared data:** If API-generated data is made freely available for all participants to use, assuming redistribution is permitted, must the original generation costs still satisfy the Reasonableness Standard? Is any additional approval or disclosure required specifically because paid APIs were used?\n\n3. **On Q1 and Q4:** If public release of the generated dataset is required, by what deadline?\n\n\nThank you!",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "rw-nue",
+                  "id": 1555725,
+                  "performance_tier": "EXPERT",
+                  "profile_url": "/novatrade",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1555725-gr.jpg",
+                  "tier": "EXPERT",
+                  "url": "/novatrade",
+                  "user_id": 1555725,
+                  "user_name": "novatrade"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "Thanks, Adisak, for putting these questions together. \nI'd also appreciate the hosts' answers to all six points, with the following clarifications:\n\n1. **On Q3:** Could you specify the maximum permitted total API generation cost in USD per participant or team? **If no fixed USD limit exists, please explicitly confirm that and explain the criteria used to determine reasonableness.**\n\n2. **For publicly shared data:** If API-generated data is made freely available for all participants to use, assuming redistribution is permitted, must the original generation costs still satisfy the Reasonableness Standard? Is any additional approval or disclosure required specifically because paid APIs were used?\n\n3. **On Q1 and Q4:** If public release of the generated dataset is required, by what deadline?\n\n\nThank you!",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "expectedCommentCount": 1,
+        "firstMessage": {
+          "author": {
+            "displayName": "Adisak Sukul",
+            "tier": "CONTRIBUTOR",
+            "url": "/adisak"
+          },
+          "content": "<p>Hi hosts,</p>\n<p>Several threads ask about training passages generated by prompting the candidate models (<a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/749613\" target=\"_blank\">749613</a>, <a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/749664\" target=\"_blank\">749664</a>, <a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/750038\" target=\"_blank\">750038</a>). Section 2.6.a allows External Data that is either publicly available or \"satisfies the Reasonableness criteria\" of 2.6.b, and I'd find a few concrete follow-ups helpful. A one-line answer per item would be plenty.</p>\n<ol>\n<li><p><strong>Allowed:</strong> Can data a participant generates by prompting the candidate models qualify as External Data under the 2.6.a Reasonableness alternative, without having to be published during the competition (for example as a Kaggle Dataset)?</p></li>\n<li><p><strong>Access route:</strong> 2.6.b.2 gives \"a small subscription charge\" for a model such as Gemini Advanced as an example of what can be acceptable. More generally, is the Reasonableness Standard (2.6.b) applied to whether every participant could generate comparable data from the same models at \"minimal cost\" through access that is \"reasonably accessible to all\", whichever way a given participant gets access (for example paying per use, a subscription, or free credits)? If any of these is treated differently, which one?</p></li>\n<li><p><strong>Cost:</strong> 2.6.b.1 says the Reasonableness Standard is applied \"in light of things like cost thresholds and accessibility\", and 2.6.b.2 says a proprietary dataset license that \"exceeds the cost of a prize in the competition\" would not be reasonable. For generating such data, is a total cost below one prize ($5,000) considered reasonable, or is there a lower \"minimal cost\" threshold?</p></li>\n<li><p><strong>Winner delivery:</strong> For a winner, is delivering such data to the Sponsor enough under Sections 2.5 and 2.8, with all code (generation code included) open-sourced under 2.5.a.1, or must the data itself also be released publicly?</p></li>\n<li><p><strong>Licensing:</strong> If some generated data cannot be released under an open license (for example because of a model provider's terms of use), does 2.5.a.3 (\"input data or pretrained models with an incompatible license\") cover that data, so a winner need not openly license it while still open-sourcing all code?</p></li>\n<li><p><strong>Reproducibility:</strong> API outputs are not deterministic, and hosted models get updated or retired, so identical data cannot be regenerated later. Is it enough under 2.5.b and 2.8.a.1 that the Sponsor can retrain from the delivered data, with the full generation code showing how it was made?</p></li>\n</ol>\n<p>Thank you, this would help everyone plan on equal terms.</p>",
+          "id": 3541605,
+          "isThankYou": false,
+          "postDate": "2026-10-20T13:59:11.253Z",
+          "raw": {
+            "author": {
+              "display_name": "Adisak Sukul",
+              "id": 430820,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/430820-gr.jpg",
+              "tier": "CONTRIBUTOR",
+              "url": "/adisak"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 897,
+            "content": "<p>Hi hosts,</p>\n<p>Several threads ask about training passages generated by prompting the candidate models (<a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/749613\" target=\"_blank\">749613</a>, <a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/749664\" target=\"_blank\">749664</a>, <a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/750038\" target=\"_blank\">750038</a>). Section 2.6.a allows External Data that is either publicly available or \"satisfies the Reasonableness criteria\" of 2.6.b, and I'd find a few concrete follow-ups helpful. A one-line answer per item would be plenty.</p>\n<ol>\n<li><p><strong>Allowed:</strong> Can data a participant generates by prompting the candidate models qualify as External Data under the 2.6.a Reasonableness alternative, without having to be published during the competition (for example as a Kaggle Dataset)?</p></li>\n<li><p><strong>Access route:</strong> 2.6.b.2 gives \"a small subscription charge\" for a model such as Gemini Advanced as an example of what can be acceptable. More generally, is the Reasonableness Standard (2.6.b) applied to whether every participant could generate comparable data from the same models at \"minimal cost\" through access that is \"reasonably accessible to all\", whichever way a given participant gets access (for example paying per use, a subscription, or free credits)? If any of these is treated differently, which one?</p></li>\n<li><p><strong>Cost:</strong> 2.6.b.1 says the Reasonableness Standard is applied \"in light of things like cost thresholds and accessibility\", and 2.6.b.2 says a proprietary dataset license that \"exceeds the cost of a prize in the competition\" would not be reasonable. For generating such data, is a total cost below one prize ($5,000) considered reasonable, or is there a lower \"minimal cost\" threshold?</p></li>\n<li><p><strong>Winner delivery:</strong> For a winner, is delivering such data to the Sponsor enough under Sections 2.5 and 2.8, with all code (generation code included) open-sourced under 2.5.a.1, or must the data itself also be released publicly?</p></li>\n<li><p><strong>Licensing:</strong> If some generated data cannot be released under an open license (for example because of a model provider's terms of use), does 2.5.a.3 (\"input data or pretrained models with an incompatible license\") cover that data, so a winner need not openly license it while still open-sourcing all code?</p></li>\n<li><p><strong>Reproducibility:</strong> API outputs are not deterministic, and hosted models get updated or retired, so identical data cannot be regenerated later. Is it enough under 2.5.b and 2.8.a.1 that the Sponsor can retrain from the delivered data, with the full generation code showing how it was made?</p></li>\n</ol>\n<p>Thank you, this would help everyone plan on equal terms.</p>",
+            "feedback_tracking_data": {},
+            "id": 3541605,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-10-20T13:59:11.253Z",
+            "raw_markdown": "Hi hosts,\n\nSeveral threads ask about training passages generated by prompting the candidate models ([749613](https://www.kaggle.com/competitions/name-that-llm/discussion/749613), [749664](https://www.kaggle.com/competitions/name-that-llm/discussion/749664), [750038](https://www.kaggle.com/competitions/name-that-llm/discussion/750038)). Section 2.6.a allows External Data that is either publicly available or \"satisfies the Reasonableness criteria\" of 2.6.b, and I'd find a few concrete follow-ups helpful. A one-line answer per item would be plenty.\n\n1. **Allowed:** Can data a participant generates by prompting the candidate models qualify as External Data under the 2.6.a Reasonableness alternative, without having to be published during the competition (for example as a Kaggle Dataset)?\n\n2. **Access route:** 2.6.b.2 gives \"a small subscription charge\" for a model such as Gemini Advanced as an example of what can be acceptable. More generally, is the Reasonableness Standard (2.6.b) applied to whether every participant could generate comparable data from the same models at \"minimal cost\" through access that is \"reasonably accessible to all\", whichever way a given participant gets access (for example paying per use, a subscription, or free credits)? If any of these is treated differently, which one?\n\n3. **Cost:** 2.6.b.1 says the Reasonableness Standard is applied \"in light of things like cost thresholds and accessibility\", and 2.6.b.2 says a proprietary dataset license that \"exceeds the cost of a prize in the competition\" would not be reasonable. For generating such data, is a total cost below one prize ($5,000) considered reasonable, or is there a lower \"minimal cost\" threshold?\n\n4. **Winner delivery:** For a winner, is delivering such data to the Sponsor enough under Sections 2.5 and 2.8, with all code (generation code included) open-sourced under 2.5.a.1, or must the data itself also be released publicly?\n\n5. **Licensing:** If some generated data cannot be released under an open license (for example because of a model provider's terms of use), does 2.5.a.3 (\"input data or pretrained models with an incompatible license\") cover that data, so a winner need not openly license it while still open-sourcing all code?\n\n6. **Reproducibility:** API outputs are not deterministic, and hosted models get updated or retired, so identical data cannot be regenerated later. Is it enough under 2.5.b and 2.8.a.1 that the Sponsor can retrain from the delivered data, with the full generation code showing how it was made?\n\nThank you, this would help everyone plan on equal terms.",
+            "reactions": [
+              {
+                "emoji": "THANK_YOU",
+                "featured_user_names": [
+                  "novatrade",
+                  "osakanateishoku",
+                  "jayakrishnanrnair"
+                ],
+                "user_count": 3
+              }
+            ],
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "Adisak Sukul",
+                "id": 430820,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/adisak",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/430820-gr.jpg",
+                "tier": "CONTRIBUTOR",
+                "url": "/adisak",
+                "user_id": 430820,
+                "user_name": "adisak"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 10,
+              "total_votes": 10
+            }
+          },
+          "rawMarkdown": "Hi hosts,\n\nSeveral threads ask about training passages generated by prompting the candidate models ([749613](https://www.kaggle.com/competitions/name-that-llm/discussion/749613), [749664](https://www.kaggle.com/competitions/name-that-llm/discussion/749664), [750038](https://www.kaggle.com/competitions/name-that-llm/discussion/750038)). Section 2.6.a allows External Data that is either publicly available or \"satisfies the Reasonableness criteria\" of 2.6.b, and I'd find a few concrete follow-ups helpful. A one-line answer per item would be plenty.\n\n1. **Allowed:** Can data a participant generates by prompting the candidate models qualify as External Data under the 2.6.a Reasonableness alternative, without having to be published during the competition (for example as a Kaggle Dataset)?\n\n2. **Access route:** 2.6.b.2 gives \"a small subscription charge\" for a model such as Gemini Advanced as an example of what can be acceptable. More generally, is the Reasonableness Standard (2.6.b) applied to whether every participant could generate comparable data from the same models at \"minimal cost\" through access that is \"reasonably accessible to all\", whichever way a given participant gets access (for example paying per use, a subscription, or free credits)? If any of these is treated differently, which one?\n\n3. **Cost:** 2.6.b.1 says the Reasonableness Standard is applied \"in light of things like cost thresholds and accessibility\", and 2.6.b.2 says a proprietary dataset license that \"exceeds the cost of a prize in the competition\" would not be reasonable. For generating such data, is a total cost below one prize ($5,000) considered reasonable, or is there a lower \"minimal cost\" threshold?\n\n4. **Winner delivery:** For a winner, is delivering such data to the Sponsor enough under Sections 2.5 and 2.8, with all code (generation code included) open-sourced under 2.5.a.1, or must the data itself also be released publicly?\n\n5. **Licensing:** If some generated data cannot be released under an open license (for example because of a model provider's terms of use), does 2.5.a.3 (\"input data or pretrained models with an incompatible license\") cover that data, so a winner need not openly license it while still open-sourcing all code?\n\n6. **Reproducibility:** API outputs are not deterministic, and hosted models get updated or retired, so identical data cannot be regenerated later. Is it enough under 2.5.b and 2.8.a.1 that the Sponsor can retrain from the delivered data, with the full generation code showing how it was made?\n\nThank you, this would help everyone plan on equal terms.",
+          "replies": [],
+          "votes": {
+            "totalVotes": 10
+          }
+        },
+        "firstMessageId": 3541605,
+        "id": 751011,
+        "name": "Section 2.6 question: training data generated from the candidate models",
+        "postDate": "2026-10-20T13:59:11.254772200Z",
+        "url": "/competitions/name-that-llm/discussion/751011"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>Hi hosts,</p>\n<p>Several threads ask about training passages generated by prompting the candidate models (<a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/749613\" target=\"_blank\">749613</a>, <a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/749664\" target=\"_blank\">749664</a>, <a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/750038\" target=\"_blank\">750038</a>). Section 2.6.a allows External Data that is either publicly available or \"satisfies the Reasonableness criteria\" of 2.6.b, and I'd find a few concrete follow-ups helpful. A one-line answer per item would be plenty.</p>\n<ol>\n<li><p><strong>Allowed:</strong> Can data a participant generates by prompting the candidate models qualify as External Data under the 2.6.a Reasonableness alternative, without having to be published during the competition (for example as a Kaggle Dataset)?</p></li>\n<li><p><strong>Access route:</strong> 2.6.b.2 gives \"a small subscription charge\" for a model such as Gemini Advanced as an example of what can be acceptable. More generally, is the Reasonableness Standard (2.6.b) applied to whether every participant could generate comparable data from the same models at \"minimal cost\" through access that is \"reasonably accessible to all\", whichever way a given participant gets access (for example paying per use, a subscription, or free credits)? If any of these is treated differently, which one?</p></li>\n<li><p><strong>Cost:</strong> 2.6.b.1 says the Reasonableness Standard is applied \"in light of things like cost thresholds and accessibility\", and 2.6.b.2 says a proprietary dataset license that \"exceeds the cost of a prize in the competition\" would not be reasonable. For generating such data, is a total cost below one prize ($5,000) considered reasonable, or is there a lower \"minimal cost\" threshold?</p></li>\n<li><p><strong>Winner delivery:</strong> For a winner, is delivering such data to the Sponsor enough under Sections 2.5 and 2.8, with all code (generation code included) open-sourced under 2.5.a.1, or must the data itself also be released publicly?</p></li>\n<li><p><strong>Licensing:</strong> If some generated data cannot be released under an open license (for example because of a model provider's terms of use), does 2.5.a.3 (\"input data or pretrained models with an incompatible license\") cover that data, so a winner need not openly license it while still open-sourcing all code?</p></li>\n<li><p><strong>Reproducibility:</strong> API outputs are not deterministic, and hosted models get updated or retired, so identical data cannot be regenerated later. Is it enough under 2.5.b and 2.8.a.1 that the Sponsor can retrain from the delivered data, with the full generation code showing how it was made?</p></li>\n</ol>\n<p>Thank you, this would help everyone plan on equal terms.</p>",
+              "id": 3541605,
+              "post_date": "2026-10-20T13:59:11.253Z",
+              "raw_markdown": "Hi hosts,\n\nSeveral threads ask about training passages generated by prompting the candidate models ([749613](https://www.kaggle.com/competitions/name-that-llm/discussion/749613), [749664](https://www.kaggle.com/competitions/name-that-llm/discussion/749664), [750038](https://www.kaggle.com/competitions/name-that-llm/discussion/750038)). Section 2.6.a allows External Data that is either publicly available or \"satisfies the Reasonableness criteria\" of 2.6.b, and I'd find a few concrete follow-ups helpful. A one-line answer per item would be plenty.\n\n1. **Allowed:** Can data a participant generates by prompting the candidate models qualify as External Data under the 2.6.a Reasonableness alternative, without having to be published during the competition (for example as a Kaggle Dataset)?\n\n2. **Access route:** 2.6.b.2 gives \"a small subscription charge\" for a model such as Gemini Advanced as an example of what can be acceptable. More generally, is the Reasonableness Standard (2.6.b) applied to whether every participant could generate comparable data from the same models at \"minimal cost\" through access that is \"reasonably accessible to all\", whichever way a given participant gets access (for example paying per use, a subscription, or free credits)? If any of these is treated differently, which one?\n\n3. **Cost:** 2.6.b.1 says the Reasonableness Standard is applied \"in light of things like cost thresholds and accessibility\", and 2.6.b.2 says a proprietary dataset license that \"exceeds the cost of a prize in the competition\" would not be reasonable. For generating such data, is a total cost below one prize ($5,000) considered reasonable, or is there a lower \"minimal cost\" threshold?\n\n4. **Winner delivery:** For a winner, is delivering such data to the Sponsor enough under Sections 2.5 and 2.8, with all code (generation code included) open-sourced under 2.5.a.1, or must the data itself also be released publicly?\n\n5. **Licensing:** If some generated data cannot be released under an open license (for example because of a model provider's terms of use), does 2.5.a.3 (\"input data or pretrained models with an incompatible license\") cover that data, so a winner need not openly license it while still open-sourcing all code?\n\n6. **Reproducibility:** API outputs are not deterministic, and hosted models get updated or retired, so identical data cannot be regenerated later. Is it enough under 2.5.b and 2.8.a.1 that the Sponsor can retrain from the delivered data, with the full generation code showing how it was made?\n\nThank you, this would help everyone plan on equal terms.",
+              "votes": 10
+            },
+            {
+              "content": "<p>Thanks, Adisak, for putting these questions together. \nI'd also appreciate the hosts' answers to all six points, with the following clarifications:</p>\n<ol>\n<li><p><strong>On Q3:</strong> Could you specify the maximum permitted total API generation cost in USD per participant or team? <strong>If no fixed USD limit exists, please explicitly confirm that and explain the criteria used to determine reasonableness.</strong></p></li>\n<li><p><strong>For publicly shared data:</strong> If API-generated data is made freely available for all participants to use, assuming redistribution is permitted, must the original generation costs still satisfy the Reasonableness Standard? Is any additional approval or disclosure required specifically because paid APIs were used?</p></li>\n<li><p><strong>On Q1 and Q4:</strong> If public release of the generated dataset is required, by what deadline?</p></li>\n</ol>\n<p>Thank you!</p>",
+              "id": 3543215,
+              "post_date": "2026-10-23T03:18:12.787Z",
+              "raw_markdown": "Thanks, Adisak, for putting these questions together. \nI'd also appreciate the hosts' answers to all six points, with the following clarifications:\n\n1. **On Q3:** Could you specify the maximum permitted total API generation cost in USD per participant or team? **If no fixed USD limit exists, please explicitly confirm that and explain the criteria used to determine reasonableness.**\n\n2. **For publicly shared data:** If API-generated data is made freely available for all participants to use, assuming redistribution is permitted, must the original generation costs still satisfy the Reasonableness Standard? Is any additional approval or disclosure required specifically because paid APIs were used?\n\n3. **On Q1 and Q4:** If public release of the generated dataset is required, by what deadline?\n\n\nThank you!"
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 430820,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "430820-gr.jpg",
+            "author_user_display_name": "Adisak Sukul",
+            "author_user_name": "adisak",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "comments": [
+              {
+                "author": {
+                  "display_name": "rw-nue",
+                  "id": 1555725,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1555725-gr.jpg",
+                  "tier": "EXPERT",
+                  "url": "/novatrade"
+                },
+                "author_type": "COMMENT",
+                "content": "<p>Thanks, Adisak, for putting these questions together. \nI'd also appreciate the hosts' answers to all six points, with the following clarifications:</p>\n<ol>\n<li><p><strong>On Q3:</strong> Could you specify the maximum permitted total API generation cost in USD per participant or team? <strong>If no fixed USD limit exists, please explicitly confirm that and explain the criteria used to determine reasonableness.</strong></p></li>\n<li><p><strong>For publicly shared data:</strong> If API-generated data is made freely available for all participants to use, assuming redistribution is permitted, must the original generation costs still satisfy the Reasonableness Standard? Is any additional approval or disclosure required specifically because paid APIs were used?</p></li>\n<li><p><strong>On Q1 and Q4:</strong> If public release of the generated dataset is required, by what deadline?</p></li>\n</ol>\n<p>Thank you!</p>",
+                "feedback_tracking_data": {},
+                "id": 3543215,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-23T03:18:12.787Z",
+                "raw_markdown": "Thanks, Adisak, for putting these questions together. \nI'd also appreciate the hosts' answers to all six points, with the following clarifications:\n\n1. **On Q3:** Could you specify the maximum permitted total API generation cost in USD per participant or team? **If no fixed USD limit exists, please explicitly confirm that and explain the criteria used to determine reasonableness.**\n\n2. **For publicly shared data:** If API-generated data is made freely available for all participants to use, assuming redistribution is permitted, must the original generation costs still satisfy the Reasonableness Standard? Is any additional approval or disclosure required specifically because paid APIs were used?\n\n3. **On Q1 and Q4:** If public release of the generated dataset is required, by what deadline?\n\n\nThank you!",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "rw-nue",
+                    "id": 1555725,
+                    "performance_tier": "EXPERT",
+                    "profile_url": "/novatrade",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1555725-gr.jpg",
+                    "tier": "EXPERT",
+                    "url": "/novatrade",
+                    "user_id": 1555725,
+                    "user_name": "novatrade"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              }
+            ],
+            "first_message": {
+              "author": {
+                "display_name": "Adisak Sukul",
+                "id": 430820,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/430820-gr.jpg",
+                "tier": "CONTRIBUTOR",
+                "url": "/adisak"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 897,
+              "content": "<p>Hi hosts,</p>\n<p>Several threads ask about training passages generated by prompting the candidate models (<a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/749613\" target=\"_blank\">749613</a>, <a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/749664\" target=\"_blank\">749664</a>, <a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/750038\" target=\"_blank\">750038</a>). Section 2.6.a allows External Data that is either publicly available or \"satisfies the Reasonableness criteria\" of 2.6.b, and I'd find a few concrete follow-ups helpful. A one-line answer per item would be plenty.</p>\n<ol>\n<li><p><strong>Allowed:</strong> Can data a participant generates by prompting the candidate models qualify as External Data under the 2.6.a Reasonableness alternative, without having to be published during the competition (for example as a Kaggle Dataset)?</p></li>\n<li><p><strong>Access route:</strong> 2.6.b.2 gives \"a small subscription charge\" for a model such as Gemini Advanced as an example of what can be acceptable. More generally, is the Reasonableness Standard (2.6.b) applied to whether every participant could generate comparable data from the same models at \"minimal cost\" through access that is \"reasonably accessible to all\", whichever way a given participant gets access (for example paying per use, a subscription, or free credits)? If any of these is treated differently, which one?</p></li>\n<li><p><strong>Cost:</strong> 2.6.b.1 says the Reasonableness Standard is applied \"in light of things like cost thresholds and accessibility\", and 2.6.b.2 says a proprietary dataset license that \"exceeds the cost of a prize in the competition\" would not be reasonable. For generating such data, is a total cost below one prize ($5,000) considered reasonable, or is there a lower \"minimal cost\" threshold?</p></li>\n<li><p><strong>Winner delivery:</strong> For a winner, is delivering such data to the Sponsor enough under Sections 2.5 and 2.8, with all code (generation code included) open-sourced under 2.5.a.1, or must the data itself also be released publicly?</p></li>\n<li><p><strong>Licensing:</strong> If some generated data cannot be released under an open license (for example because of a model provider's terms of use), does 2.5.a.3 (\"input data or pretrained models with an incompatible license\") cover that data, so a winner need not openly license it while still open-sourcing all code?</p></li>\n<li><p><strong>Reproducibility:</strong> API outputs are not deterministic, and hosted models get updated or retired, so identical data cannot be regenerated later. Is it enough under 2.5.b and 2.8.a.1 that the Sponsor can retrain from the delivered data, with the full generation code showing how it was made?</p></li>\n</ol>\n<p>Thank you, this would help everyone plan on equal terms.</p>",
+              "feedback_tracking_data": {},
+              "id": 3541605,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-20T13:59:11.253Z",
+              "raw_markdown": "Hi hosts,\n\nSeveral threads ask about training passages generated by prompting the candidate models ([749613](https://www.kaggle.com/competitions/name-that-llm/discussion/749613), [749664](https://www.kaggle.com/competitions/name-that-llm/discussion/749664), [750038](https://www.kaggle.com/competitions/name-that-llm/discussion/750038)). Section 2.6.a allows External Data that is either publicly available or \"satisfies the Reasonableness criteria\" of 2.6.b, and I'd find a few concrete follow-ups helpful. A one-line answer per item would be plenty.\n\n1. **Allowed:** Can data a participant generates by prompting the candidate models qualify as External Data under the 2.6.a Reasonableness alternative, without having to be published during the competition (for example as a Kaggle Dataset)?\n\n2. **Access route:** 2.6.b.2 gives \"a small subscription charge\" for a model such as Gemini Advanced as an example of what can be acceptable. More generally, is the Reasonableness Standard (2.6.b) applied to whether every participant could generate comparable data from the same models at \"minimal cost\" through access that is \"reasonably accessible to all\", whichever way a given participant gets access (for example paying per use, a subscription, or free credits)? If any of these is treated differently, which one?\n\n3. **Cost:** 2.6.b.1 says the Reasonableness Standard is applied \"in light of things like cost thresholds and accessibility\", and 2.6.b.2 says a proprietary dataset license that \"exceeds the cost of a prize in the competition\" would not be reasonable. For generating such data, is a total cost below one prize ($5,000) considered reasonable, or is there a lower \"minimal cost\" threshold?\n\n4. **Winner delivery:** For a winner, is delivering such data to the Sponsor enough under Sections 2.5 and 2.8, with all code (generation code included) open-sourced under 2.5.a.1, or must the data itself also be released publicly?\n\n5. **Licensing:** If some generated data cannot be released under an open license (for example because of a model provider's terms of use), does 2.5.a.3 (\"input data or pretrained models with an incompatible license\") cover that data, so a winner need not openly license it while still open-sourcing all code?\n\n6. **Reproducibility:** API outputs are not deterministic, and hosted models get updated or retired, so identical data cannot be regenerated later. Is it enough under 2.5.b and 2.8.a.1 that the Sponsor can retrain from the delivered data, with the full generation code showing how it was made?\n\nThank you, this would help everyone plan on equal terms.",
+              "reactions": [
+                {
+                  "emoji": "THANK_YOU",
+                  "featured_user_names": [
+                    "novatrade",
+                    "osakanateishoku",
+                    "jayakrishnanrnair"
+                  ],
+                  "user_count": 3
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Adisak Sukul",
+                  "id": 430820,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/adisak",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/430820-gr.jpg",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/adisak",
+                  "user_id": 430820,
+                  "user_name": "adisak"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 10,
+                "total_votes": 10
+              }
+            },
+            "first_message_id": 3541605,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 751011,
+            "name": "Section 2.6 question: training data generated from the candidate models",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-10-20T13:59:11.254772200Z",
+            "total_messages": 1,
+            "total_votes": 10,
+            "url": "/competitions/name-that-llm/discussion/751011"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:30:42+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:30:42+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-10-23T03:18:12.786666700Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [
+    {
+      "slug": "name-that-llm",
+      "topic_id": 751011,
+      "message_id": 3543215,
+      "parent_message_id": null,
+      "author": "rw-nue",
+      "author_url": "/novatrade",
+      "author_tier": "EXPERT",
+      "post_date": "2026-10-23T03:18:12.787Z",
+      "raw_markdown": "Thanks, Adisak, for putting these questions together. \nI'd also appreciate the hosts' answers to all six points, with the following clarifications:\n\n1. **On Q3:** Could you specify the maximum permitted total API generation cost in USD per participant or team? **If no fixed USD limit exists, please explicitly confirm that and explain the criteria used to determine reasonableness.**\n\n2. **For publicly shared data:** If API-generated data is made freely available for all participants to use, assuming redistribution is permitted, must the original generation costs still satisfy the Reasonableness Standard? Is any additional approval or disclosure required specifically because paid APIs were used?\n\n3. **On Q1 and Q4:** If public release of the generated dataset is required, by what deadline?\n\n\nThank you!",
+      "content_html": "<p>Thanks, Adisak, for putting these questions together. \nI'd also appreciate the hosts' answers to all six points, with the following clarifications:</p>\n<ol>\n<li><p><strong>On Q3:</strong> Could you specify the maximum permitted total API generation cost in USD per participant or team? <strong>If no fixed USD limit exists, please explicitly confirm that and explain the criteria used to determine reasonableness.</strong></p></li>\n<li><p><strong>For publicly shared data:</strong> If API-generated data is made freely available for all participants to use, assuming redistribution is permitted, must the original generation costs still satisfy the Reasonableness Standard? Is any additional approval or disclosure required specifically because paid APIs were used?</p></li>\n<li><p><strong>On Q1 and Q4:</strong> If public release of the generated dataset is required, by what deadline?</p></li>\n</ol>\n<p>Thank you!</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:57:06+00:00",
+      "last_seen_at": "2026-11-16T16:30:42+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:30:42+00:00",
+      "remote_last_listed_at": "2026-11-16T16:30:42+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "rw-nue",
+          "tier": "EXPERT",
+          "url": "/novatrade"
+        },
+        "content": "<p>Thanks, Adisak, for putting these questions together. \nI'd also appreciate the hosts' answers to all six points, with the following clarifications:</p>\n<ol>\n<li><p><strong>On Q3:</strong> Could you specify the maximum permitted total API generation cost in USD per participant or team? <strong>If no fixed USD limit exists, please explicitly confirm that and explain the criteria used to determine reasonableness.</strong></p></li>\n<li><p><strong>For publicly shared data:</strong> If API-generated data is made freely available for all participants to use, assuming redistribution is permitted, must the original generation costs still satisfy the Reasonableness Standard? Is any additional approval or disclosure required specifically because paid APIs were used?</p></li>\n<li><p><strong>On Q1 and Q4:</strong> If public release of the generated dataset is required, by what deadline?</p></li>\n</ol>\n<p>Thank you!</p>",
+        "id": 3543215,
+        "isThankYou": false,
+        "postDate": "2026-10-23T03:18:12.787Z",
+        "raw": {
+          "author": {
+            "display_name": "rw-nue",
+            "id": 1555725,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1555725-gr.jpg",
+            "tier": "EXPERT",
+            "url": "/novatrade"
+          },
+          "author_type": "COMMENT",
+          "content": "<p>Thanks, Adisak, for putting these questions together. \nI'd also appreciate the hosts' answers to all six points, with the following clarifications:</p>\n<ol>\n<li><p><strong>On Q3:</strong> Could you specify the maximum permitted total API generation cost in USD per participant or team? <strong>If no fixed USD limit exists, please explicitly confirm that and explain the criteria used to determine reasonableness.</strong></p></li>\n<li><p><strong>For publicly shared data:</strong> If API-generated data is made freely available for all participants to use, assuming redistribution is permitted, must the original generation costs still satisfy the Reasonableness Standard? Is any additional approval or disclosure required specifically because paid APIs were used?</p></li>\n<li><p><strong>On Q1 and Q4:</strong> If public release of the generated dataset is required, by what deadline?</p></li>\n</ol>\n<p>Thank you!</p>",
+          "feedback_tracking_data": {},
+          "id": 3543215,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-23T03:18:12.787Z",
+          "raw_markdown": "Thanks, Adisak, for putting these questions together. \nI'd also appreciate the hosts' answers to all six points, with the following clarifications:\n\n1. **On Q3:** Could you specify the maximum permitted total API generation cost in USD per participant or team? **If no fixed USD limit exists, please explicitly confirm that and explain the criteria used to determine reasonableness.**\n\n2. **For publicly shared data:** If API-generated data is made freely available for all participants to use, assuming redistribution is permitted, must the original generation costs still satisfy the Reasonableness Standard? Is any additional approval or disclosure required specifically because paid APIs were used?\n\n3. **On Q1 and Q4:** If public release of the generated dataset is required, by what deadline?\n\n\nThank you!",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "rw-nue",
+              "id": 1555725,
+              "performance_tier": "EXPERT",
+              "profile_url": "/novatrade",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1555725-gr.jpg",
+              "tier": "EXPERT",
+              "url": "/novatrade",
+              "user_id": 1555725,
+              "user_name": "novatrade"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "Thanks, Adisak, for putting these questions together. \nI'd also appreciate the hosts' answers to all six points, with the following clarifications:\n\n1. **On Q3:** Could you specify the maximum permitted total API generation cost in USD per participant or team? **If no fixed USD limit exists, please explicitly confirm that and explain the criteria used to determine reasonableness.**\n\n2. **For publicly shared data:** If API-generated data is made freely available for all participants to use, assuming redistribution is permitted, must the original generation costs still satisfy the Reasonableness Standard? Is any additional approval or disclosure required specifically because paid APIs were used?\n\n3. **On Q1 and Q4:** If public release of the generated dataset is required, by what deadline?\n\n\nThank you!",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    }
+  ],
+  "writeup": null
+}

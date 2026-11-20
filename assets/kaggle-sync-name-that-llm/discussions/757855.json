@@ -1,0 +1,211 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 757855,
+    "title": "Notes from a solo pipeline: grouped CV, why prompt-group tricks didn't transfer, typographic invariants",
+    "author": "pedrohbenetton",
+    "author_url": "/pedrohbenetton",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-11-11T00:08:10.303073700Z",
+    "last_comment_post_date": "2026-11-11T00:08:10.303333300Z",
+    "comment_count": 0,
+    "votes": 2,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/757855",
+    "first_message_id": 3553095,
+    "first_seen_at": "2026-11-16T16:21:27+00:00",
+    "last_seen_at": "2026-11-18T09:02:41+00:00",
+    "detail_last_synced_at": "2026-11-18T09:02:41+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-18T09:01:51+00:00",
+    "remote_last_listed_at": "2026-11-18T09:01:51+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "cbe61849c695522eaa1c53b467f6774c46c0e2d65e660e5feb6c7d44c1b19547",
+    "listing_metrics_hash": "6db2b817333d85ee95f494a1b2ba941fb79d87d4e3e0c8718afed5f3c0bfd1fa",
+    "detail_content_hash": "8a27273a8c272e3f094bc788163139ae089f49ceafc8a766077d14f13ae30067",
+    "detail_last_checked_at": "2026-11-18T09:02:41+00:00",
+    "detail_next_check_at": "2026-11-21T09:02:41+00:00",
+    "detail_unchanged_count": 1,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 0,
+      "firstForumMessageId": null,
+      "id": 757855,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-11-11T00:08:10.303333300Z",
+      "postDate": "2026-11-11T00:08:10.303073700Z",
+      "raw": {
+        "id": 757855,
+        "last_comment_post_date": "2026-11-11T00:08:10.303333300Z",
+        "post_date": "2026-11-11T00:08:10.303073700Z",
+        "title": "Notes from a solo pipeline: grouped CV, why prompt-group tricks didn't transfer, typographic invariants",
+        "topic_url": "/competitions/name-that-llm/discussion/757855",
+        "votes": 2
+      },
+      "title": "Notes from a solo pipeline: grouped CV, why prompt-group tricks didn't transfer, typographic invariants",
+      "topicUrl": "/competitions/name-that-llm/discussion/757855",
+      "votes": 2
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "pedrohbenetton",
+        "authorUserName": "pedrohbenetton",
+        "comments": [],
+        "expectedCommentCount": 0,
+        "firstMessage": {
+          "author": {
+            "displayName": "pedrohbenetton",
+            "tier": "CONTRIBUTOR",
+            "url": "/pedrohbenetton"
+          },
+          "content": "<p>Code (MIT): <a href=\"https://github.com/pedrohbenetton/kaggle-name-that-llm\" target=\"_blank\">https://github.com/pedrohbenetton/kaggle-name-that-llm</a>\nNotebook (v3, LB 0.389): <a href=\"https://www.kaggle.com/code/pedrohbenetton/submissaov3\" target=\"_blank\">https://www.kaggle.com/code/pedrohbenetton/submissaov3</a>\nSome findings that may help others:</p>\n<ul>\n<li>Random CV is pessimistic here (0.104 vs 0.315 grouped by prompt): the other 17 texts of the same prompt sit in train and the topic points to the wrong models.</li>\n<li>Hungarian assignment within prompt groups gave +0.10 CV but +0.002 LB. Simulating unequal per-model counts in validation, n/18 grouping drops to ARI 0.61; capped agglomerative grouping stays at 0.995, but the gain still mostly vanishes on LB.</li>\n<li>Typographic negative invariants mined from train (each rule: chance level &lt; 1e-4): unspaced em dash never appears in gemini-3.1/3.6/3.8 (1,052 texts from others); straight apostrophe never in gpt-5.6-sol (835 texts); straight double quotes never in gpt-5.6-luna/sol/terra, gpt-6-astra, qwen3.8-max, gemini-3.7.</li>\n</ul>",
+          "id": 3553095,
+          "isThankYou": false,
+          "postDate": "2026-11-11T00:08:10.303Z",
+          "raw": {
+            "author": {
+              "display_name": "pedrohbenetton",
+              "id": 37681269,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/37681269-kg.jpg?t=2026-11-11-21-42-22",
+              "tier": "CONTRIBUTOR",
+              "url": "/pedrohbenetton"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 1733,
+            "content": "<p>Code (MIT): <a href=\"https://github.com/pedrohbenetton/kaggle-name-that-llm\" target=\"_blank\">https://github.com/pedrohbenetton/kaggle-name-that-llm</a>\nNotebook (v3, LB 0.389): <a href=\"https://www.kaggle.com/code/pedrohbenetton/submissaov3\" target=\"_blank\">https://www.kaggle.com/code/pedrohbenetton/submissaov3</a>\nSome findings that may help others:</p>\n<ul>\n<li>Random CV is pessimistic here (0.104 vs 0.315 grouped by prompt): the other 17 texts of the same prompt sit in train and the topic points to the wrong models.</li>\n<li>Hungarian assignment within prompt groups gave +0.10 CV but +0.002 LB. Simulating unequal per-model counts in validation, n/18 grouping drops to ARI 0.61; capped agglomerative grouping stays at 0.995, but the gain still mostly vanishes on LB.</li>\n<li>Typographic negative invariants mined from train (each rule: chance level &lt; 1e-4): unspaced em dash never appears in gemini-3.1/3.6/3.8 (1,052 texts from others); straight apostrophe never in gpt-5.6-sol (835 texts); straight double quotes never in gpt-5.6-luna/sol/terra, gpt-6-astra, qwen3.8-max, gemini-3.7.</li>\n</ul>",
+            "feedback_tracking_data": {},
+            "id": 3553095,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-11-11T00:08:10.303Z",
+            "raw_markdown": "\nCode (MIT): https://github.com/pedrohbenetton/kaggle-name-that-llm\nNotebook (v3, LB 0.389): https://www.kaggle.com/code/pedrohbenetton/submissaov3\n\nSome findings that may help others:\n- Random CV is pessimistic here (0.104 vs 0.315 grouped by prompt): the other 17 texts of the same prompt sit in train and the topic points to the wrong models.\n- Hungarian assignment within prompt groups gave +0.10 CV but +0.002 LB. Simulating unequal per-model counts in validation, n/18 grouping drops to ARI 0.61; capped agglomerative grouping stays at 0.995, but the gain still mostly vanishes on LB.\n- Typographic negative invariants mined from train (each rule: chance level < 1e-4): unspaced em dash never appears in gemini-3.1/3.6/3.8 (1,052 texts from others); straight apostrophe never in gpt-5.6-sol (835 texts); straight double quotes never in gpt-5.6-luna/sol/terra, gpt-6-astra, qwen3.8-max, gemini-3.7.",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "pedrohbenetton",
+                "id": 37681269,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/pedrohbenetton",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/37681269-kg.jpg?t=2026-11-11-21-42-22",
+                "tier": "CONTRIBUTOR",
+                "url": "/pedrohbenetton",
+                "user_id": 37681269,
+                "user_name": "pedrohbenetton"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 2,
+              "total_votes": 2
+            }
+          },
+          "rawMarkdown": "\nCode (MIT): https://github.com/pedrohbenetton/kaggle-name-that-llm\nNotebook (v3, LB 0.389): https://www.kaggle.com/code/pedrohbenetton/submissaov3\n\nSome findings that may help others:\n- Random CV is pessimistic here (0.104 vs 0.315 grouped by prompt): the other 17 texts of the same prompt sit in train and the topic points to the wrong models.\n- Hungarian assignment within prompt groups gave +0.10 CV but +0.002 LB. Simulating unequal per-model counts in validation, n/18 grouping drops to ARI 0.61; capped agglomerative grouping stays at 0.995, but the gain still mostly vanishes on LB.\n- Typographic negative invariants mined from train (each rule: chance level < 1e-4): unspaced em dash never appears in gemini-3.1/3.6/3.8 (1,052 texts from others); straight apostrophe never in gpt-5.6-sol (835 texts); straight double quotes never in gpt-5.6-luna/sol/terra, gpt-6-astra, qwen3.8-max, gemini-3.7.",
+          "replies": [],
+          "votes": {
+            "totalVotes": 2
+          }
+        },
+        "firstMessageId": 3553095,
+        "id": 757855,
+        "name": "Notes from a solo pipeline: grouped CV, why prompt-group tricks didn't transfer, typographic invariants",
+        "postDate": "2026-11-11T00:08:10.303073700Z",
+        "url": "/competitions/name-that-llm/discussion/757855"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>Code (MIT): <a href=\"https://github.com/pedrohbenetton/kaggle-name-that-llm\" target=\"_blank\">https://github.com/pedrohbenetton/kaggle-name-that-llm</a>\nNotebook (v3, LB 0.389): <a href=\"https://www.kaggle.com/code/pedrohbenetton/submissaov3\" target=\"_blank\">https://www.kaggle.com/code/pedrohbenetton/submissaov3</a>\nSome findings that may help others:</p>\n<ul>\n<li>Random CV is pessimistic here (0.104 vs 0.315 grouped by prompt): the other 17 texts of the same prompt sit in train and the topic points to the wrong models.</li>\n<li>Hungarian assignment within prompt groups gave +0.10 CV but +0.002 LB. Simulating unequal per-model counts in validation, n/18 grouping drops to ARI 0.61; capped agglomerative grouping stays at 0.995, but the gain still mostly vanishes on LB.</li>\n<li>Typographic negative invariants mined from train (each rule: chance level &lt; 1e-4): unspaced em dash never appears in gemini-3.1/3.6/3.8 (1,052 texts from others); straight apostrophe never in gpt-5.6-sol (835 texts); straight double quotes never in gpt-5.6-luna/sol/terra, gpt-6-astra, qwen3.8-max, gemini-3.7.</li>\n</ul>",
+              "id": 3553095,
+              "post_date": "2026-11-11T00:08:10.303Z",
+              "raw_markdown": "\nCode (MIT): https://github.com/pedrohbenetton/kaggle-name-that-llm\nNotebook (v3, LB 0.389): https://www.kaggle.com/code/pedrohbenetton/submissaov3\n\nSome findings that may help others:\n- Random CV is pessimistic here (0.104 vs 0.315 grouped by prompt): the other 17 texts of the same prompt sit in train and the topic points to the wrong models.\n- Hungarian assignment within prompt groups gave +0.10 CV but +0.002 LB. Simulating unequal per-model counts in validation, n/18 grouping drops to ARI 0.61; capped agglomerative grouping stays at 0.995, but the gain still mostly vanishes on LB.\n- Typographic negative invariants mined from train (each rule: chance level < 1e-4): unspaced em dash never appears in gemini-3.1/3.6/3.8 (1,052 texts from others); straight apostrophe never in gpt-5.6-sol (835 texts); straight double quotes never in gpt-5.6-luna/sol/terra, gpt-6-astra, qwen3.8-max, gemini-3.7.",
+              "votes": 2
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 37681269,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "37681269-kg.jpg?t=2026-11-11-21-42-22",
+            "author_user_display_name": "pedrohbenetton",
+            "author_user_name": "pedrohbenetton",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "first_message": {
+              "author": {
+                "display_name": "pedrohbenetton",
+                "id": 37681269,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/37681269-kg.jpg?t=2026-11-11-21-42-22",
+                "tier": "CONTRIBUTOR",
+                "url": "/pedrohbenetton"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 1733,
+              "content": "<p>Code (MIT): <a href=\"https://github.com/pedrohbenetton/kaggle-name-that-llm\" target=\"_blank\">https://github.com/pedrohbenetton/kaggle-name-that-llm</a>\nNotebook (v3, LB 0.389): <a href=\"https://www.kaggle.com/code/pedrohbenetton/submissaov3\" target=\"_blank\">https://www.kaggle.com/code/pedrohbenetton/submissaov3</a>\nSome findings that may help others:</p>\n<ul>\n<li>Random CV is pessimistic here (0.104 vs 0.315 grouped by prompt): the other 17 texts of the same prompt sit in train and the topic points to the wrong models.</li>\n<li>Hungarian assignment within prompt groups gave +0.10 CV but +0.002 LB. Simulating unequal per-model counts in validation, n/18 grouping drops to ARI 0.61; capped agglomerative grouping stays at 0.995, but the gain still mostly vanishes on LB.</li>\n<li>Typographic negative invariants mined from train (each rule: chance level &lt; 1e-4): unspaced em dash never appears in gemini-3.1/3.6/3.8 (1,052 texts from others); straight apostrophe never in gpt-5.6-sol (835 texts); straight double quotes never in gpt-5.6-luna/sol/terra, gpt-6-astra, qwen3.8-max, gemini-3.7.</li>\n</ul>",
+              "feedback_tracking_data": {},
+              "id": 3553095,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-11T00:08:10.303Z",
+              "raw_markdown": "\nCode (MIT): https://github.com/pedrohbenetton/kaggle-name-that-llm\nNotebook (v3, LB 0.389): https://www.kaggle.com/code/pedrohbenetton/submissaov3\n\nSome findings that may help others:\n- Random CV is pessimistic here (0.104 vs 0.315 grouped by prompt): the other 17 texts of the same prompt sit in train and the topic points to the wrong models.\n- Hungarian assignment within prompt groups gave +0.10 CV but +0.002 LB. Simulating unequal per-model counts in validation, n/18 grouping drops to ARI 0.61; capped agglomerative grouping stays at 0.995, but the gain still mostly vanishes on LB.\n- Typographic negative invariants mined from train (each rule: chance level < 1e-4): unspaced em dash never appears in gemini-3.1/3.6/3.8 (1,052 texts from others); straight apostrophe never in gpt-5.6-sol (835 texts); straight double quotes never in gpt-5.6-luna/sol/terra, gpt-6-astra, qwen3.8-max, gemini-3.7.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "pedrohbenetton",
+                  "id": 37681269,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/pedrohbenetton",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/37681269-kg.jpg?t=2026-11-11-21-42-22",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/pedrohbenetton",
+                  "user_id": 37681269,
+                  "user_name": "pedrohbenetton"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 2,
+                "total_votes": 2
+              }
+            },
+            "first_message_id": 3553095,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 757855,
+            "name": "Notes from a solo pipeline: grouped CV, why prompt-group tricks didn't transfer, typographic invariants",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-11-11T00:08:10.303073700Z",
+            "total_votes": 2,
+            "url": "/competitions/name-that-llm/discussion/757855"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-18T09:02:41+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-18T09:02:41+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-11-11T00:08:10.303333300Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [],
+  "writeup": null
+}

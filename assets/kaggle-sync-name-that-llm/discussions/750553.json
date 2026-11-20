@@ -1,0 +1,1189 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 750553,
+    "title": "Help locating logs for a generic hidden-rerun exception",
+    "author": "Sadiq Abdullahi",
+    "author_url": "/devsadeeq",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-10-18T20:24:19.726962Z",
+    "last_comment_post_date": "2026-10-20T04:34:21.150Z",
+    "comment_count": 4,
+    "votes": 1,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/750553",
+    "first_message_id": 3540757,
+    "first_seen_at": "2026-11-04T06:56:17+00:00",
+    "last_seen_at": "2026-11-18T12:04:41+00:00",
+    "detail_last_synced_at": "2026-11-18T12:04:41+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "df4c3a33f7d03c3cc02059de20ca4028b22448a750770796c756954f94101c69",
+    "listing_metrics_hash": "08a3f0e9d031723a4649730d445a527264427162f124c0c72a6c18d2e0b8e839",
+    "detail_content_hash": "ee175a22705eee76e2b48c6b4b4b8ce467f24e00bb8da00d98f43413a91cddd0",
+    "detail_last_checked_at": "2026-11-18T12:04:41+00:00",
+    "detail_next_check_at": "2026-11-21T12:04:41+00:00",
+    "detail_unchanged_count": 1,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 4,
+      "firstForumMessageId": null,
+      "id": 750553,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-10-20T04:34:21.150Z",
+      "postDate": "2026-10-18T20:24:19.726962Z",
+      "raw": {
+        "comment_count": 4,
+        "id": 750553,
+        "last_comment_post_date": "2026-10-20T04:34:21.150Z",
+        "post_date": "2026-10-18T20:24:19.726962Z",
+        "title": "Help locating logs for a generic hidden-rerun exception",
+        "topic_url": "/competitions/name-that-llm/discussion/750553",
+        "votes": 1
+      },
+      "title": "Help locating logs for a generic hidden-rerun exception",
+      "topicUrl": "/competitions/name-that-llm/discussion/750553",
+      "votes": 1
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "Sadiq Abdullahi",
+        "authorUserName": "devsadeeq",
+        "comments": [
+          {
+            "author": {
+              "displayName": "Prathamesh Chavan",
+              "tier": "CONTRIBUTOR",
+              "url": "/xerneas"
+            },
+            "content": "<p>Your code may have some assertion that pass on the kaggle run but fail in the hidden test as it is longer not consistent with test set like model accuracy anything check those and remove the assertions</p>",
+            "id": 3541382,
+            "isThankYou": false,
+            "postDate": "2026-10-20T00:45:13.827Z",
+            "raw": {
+              "author": {
+                "display_name": "Prathamesh Chavan",
+                "id": 23083280,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/xerneas"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 537,
+              "content": "<p>Your code may have some assertion that pass on the kaggle run but fail in the hidden test as it is longer not consistent with test set like model accuracy anything check those and remove the assertions</p>",
+              "feedback_tracking_data": {},
+              "id": 3541382,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-20T00:45:13.827Z",
+              "raw_markdown": "Your code may have some assertion that pass on the kaggle run but fail in the hidden test as it is longer not consistent with test set like model accuracy anything check those and remove the assertions\n",
+              "replies": [
+                {
+                  "author": {
+                    "display_name": "Sadiq Abdullahi",
+                    "id": 36034896,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36034896-kg.jpg?t=2026-10-17-12-23-16",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/devsadeeq"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 4491,
+                  "content": "<p>We are all here to learn and improve </p>",
+                  "feedback_tracking_data": {},
+                  "id": 3541436,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-20T04:33:29.557Z",
+                  "raw_markdown": "We are all here to learn and improve ",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Sadiq Abdullahi",
+                      "id": 36034896,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/devsadeeq",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36034896-kg.jpg?t=2026-10-17-12-23-16",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/devsadeeq",
+                      "user_id": 36034896,
+                      "user_name": "devsadeeq"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Prathamesh Chavan",
+                  "id": 23083280,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/xerneas",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/xerneas",
+                  "user_id": 23083280,
+                  "user_name": "xerneas"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "Your code may have some assertion that pass on the kaggle run but fail in the hidden test as it is longer not consistent with test set like model accuracy anything check those and remove the assertions\n",
+            "replies": [
+              {
+                "author": {
+                  "displayName": "Sadiq Abdullahi",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/devsadeeq"
+                },
+                "content": "<p>We are all here to learn and improve </p>",
+                "id": 3541436,
+                "isThankYou": false,
+                "postDate": "2026-10-20T04:33:29.557Z",
+                "raw": {
+                  "author": {
+                    "display_name": "Sadiq Abdullahi",
+                    "id": 36034896,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36034896-kg.jpg?t=2026-10-17-12-23-16",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/devsadeeq"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 4491,
+                  "content": "<p>We are all here to learn and improve </p>",
+                  "feedback_tracking_data": {},
+                  "id": 3541436,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-20T04:33:29.557Z",
+                  "raw_markdown": "We are all here to learn and improve ",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Sadiq Abdullahi",
+                      "id": 36034896,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/devsadeeq",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36034896-kg.jpg?t=2026-10-17-12-23-16",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/devsadeeq",
+                      "user_id": 36034896,
+                      "user_name": "devsadeeq"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                },
+                "rawMarkdown": "We are all here to learn and improve ",
+                "replies": [],
+                "votes": {
+                  "totalVotes": 0
+                }
+              }
+            ],
+            "votes": {
+              "totalVotes": 0
+            }
+          },
+          {
+            "author": {
+              "displayName": "Korokke3",
+              "tier": "CONTRIBUTOR",
+              "url": "/korokke3"
+            },
+            "content": "<p>As far as I know there is no place to see them. Kaggle does not show stdout/stderr from the hidden rerun (it would leak the test set), so all you get back is the status and, if it finishes, the score. What has worked for me in notebook-only comps is to make the visible run behave like the rerun, and make the rerun unable to throw:</p>\n<ol>\n<li><strong>Run on a full-size fake test.</strong> The visible <code>test.csv</code> here has one row, so anything that only breaks at scale never runs. Build a pseudo-test from train rows (same columns and dtypes, <code>model</code> dropped, a fresh <code>id</code>) at roughly the hidden size, and point the pipeline at it when <code>os.getenv('KAGGLE_IS_COMPETITION_RERUN')</code> is unset. Things that pass on 1 row and die on N:<ul>\n<li>pairwise distance / linkage matrices for prompt grouping. Dense N×N float64 costs 8·N² bytes, so N = 10k is 0.8 GB <em>per matrix</em>, and the public lineages build two.</li>\n<li>code paths that never trigger on one row: clusters of size ≥ 2, real groupbys, test-mean/std standardisation (std = 0 on one row, fine on many, or the reverse), Sinkhorn/balancing steps.</li>\n<li>GPU batch memory once real long passages show up.\nAn out-of-memory kill also comes back as a generic failure, so check peak RAM on the full-size run.</li></ul></li>\n<li><strong>Never let a stage raise.</strong> Wrap each stage in <code>try/except</code>, fall back to a cheap member (the starter's TF-IDF + LR is enough), and always write <code>submission.parquet</code> at the end, after <code>assert len(sub) == len(test) and set(sub.id) == set(test.id)</code>. A broken stage then lowers the score instead of failing the submission. If the score comes back equal to your fallback's known LB score, something failed, and disabling half the stages per submission bisects it within a day at 5 submissions per day.</li>\n<li><strong>Pin paths and offline assets.</strong> Resolve the input dir by globbing both <code>/kaggle/input/competitions/name-that-llm</code> and <code>/kaggle/input/name-that-llm</code> (the starter already does this), and make sure every tokenizer/model loads from an attached dataset with <code>local_files_only=True</code>.</li>\n</ol>\n<p>In RSNA Knee (also notebook-only; 3-study visible stub vs ~1.3k studies in the rerun) the full-size dry run caught a bug the stub never showed: a time-budget guard silently skipped parts of the model, so the configuration I had validated was not the one being scored. I would do step 1 before sharing a repro. It usually points at the line.</p>",
+            "id": 3541377,
+            "isThankYou": false,
+            "postDate": "2026-10-20T00:18:29.963Z",
+            "raw": {
+              "author": {
+                "display_name": "Korokke3",
+                "id": 22231691,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/korokke3"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 1481,
+              "content": "<p>As far as I know there is no place to see them. Kaggle does not show stdout/stderr from the hidden rerun (it would leak the test set), so all you get back is the status and, if it finishes, the score. What has worked for me in notebook-only comps is to make the visible run behave like the rerun, and make the rerun unable to throw:</p>\n<ol>\n<li><strong>Run on a full-size fake test.</strong> The visible <code>test.csv</code> here has one row, so anything that only breaks at scale never runs. Build a pseudo-test from train rows (same columns and dtypes, <code>model</code> dropped, a fresh <code>id</code>) at roughly the hidden size, and point the pipeline at it when <code>os.getenv('KAGGLE_IS_COMPETITION_RERUN')</code> is unset. Things that pass on 1 row and die on N:<ul>\n<li>pairwise distance / linkage matrices for prompt grouping. Dense N×N float64 costs 8·N² bytes, so N = 10k is 0.8 GB <em>per matrix</em>, and the public lineages build two.</li>\n<li>code paths that never trigger on one row: clusters of size ≥ 2, real groupbys, test-mean/std standardisation (std = 0 on one row, fine on many, or the reverse), Sinkhorn/balancing steps.</li>\n<li>GPU batch memory once real long passages show up.\nAn out-of-memory kill also comes back as a generic failure, so check peak RAM on the full-size run.</li></ul></li>\n<li><strong>Never let a stage raise.</strong> Wrap each stage in <code>try/except</code>, fall back to a cheap member (the starter's TF-IDF + LR is enough), and always write <code>submission.parquet</code> at the end, after <code>assert len(sub) == len(test) and set(sub.id) == set(test.id)</code>. A broken stage then lowers the score instead of failing the submission. If the score comes back equal to your fallback's known LB score, something failed, and disabling half the stages per submission bisects it within a day at 5 submissions per day.</li>\n<li><strong>Pin paths and offline assets.</strong> Resolve the input dir by globbing both <code>/kaggle/input/competitions/name-that-llm</code> and <code>/kaggle/input/name-that-llm</code> (the starter already does this), and make sure every tokenizer/model loads from an attached dataset with <code>local_files_only=True</code>.</li>\n</ol>\n<p>In RSNA Knee (also notebook-only; 3-study visible stub vs ~1.3k studies in the rerun) the full-size dry run caught a bug the stub never showed: a time-budget guard silently skipped parts of the model, so the configuration I had validated was not the one being scored. I would do step 1 before sharing a repro. It usually points at the line.</p>",
+              "feedback_tracking_data": {},
+              "id": 3541377,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-20T00:18:29.963Z",
+              "raw_markdown": "As far as I know there is no place to see them. Kaggle does not show stdout/stderr from the hidden rerun (it would leak the test set), so all you get back is the status and, if it finishes, the score. What has worked for me in notebook-only comps is to make the visible run behave like the rerun, and make the rerun unable to throw:\n\n1. **Run on a full-size fake test.** The visible `test.csv` here has one row, so anything that only breaks at scale never runs. Build a pseudo-test from train rows (same columns and dtypes, `model` dropped, a fresh `id`) at roughly the hidden size, and point the pipeline at it when `os.getenv('KAGGLE_IS_COMPETITION_RERUN')` is unset. Things that pass on 1 row and die on N:\n   - pairwise distance / linkage matrices for prompt grouping. Dense N×N float64 costs 8·N² bytes, so N = 10k is 0.8 GB *per matrix*, and the public lineages build two.\n   - code paths that never trigger on one row: clusters of size ≥ 2, real groupbys, test-mean/std standardisation (std = 0 on one row, fine on many, or the reverse), Sinkhorn/balancing steps.\n   - GPU batch memory once real long passages show up.\n   An out-of-memory kill also comes back as a generic failure, so check peak RAM on the full-size run.\n2. **Never let a stage raise.** Wrap each stage in `try/except`, fall back to a cheap member (the starter's TF-IDF + LR is enough), and always write `submission.parquet` at the end, after `assert len(sub) == len(test) and set(sub.id) == set(test.id)`. A broken stage then lowers the score instead of failing the submission. If the score comes back equal to your fallback's known LB score, something failed, and disabling half the stages per submission bisects it within a day at 5 submissions per day.\n3. **Pin paths and offline assets.** Resolve the input dir by globbing both `/kaggle/input/competitions/name-that-llm` and `/kaggle/input/name-that-llm` (the starter already does this), and make sure every tokenizer/model loads from an attached dataset with `local_files_only=True`.\n\nIn RSNA Knee (also notebook-only; 3-study visible stub vs ~1.3k studies in the rerun) the full-size dry run caught a bug the stub never showed: a time-budget guard silently skipped parts of the model, so the configuration I had validated was not the one being scored. I would do step 1 before sharing a repro. It usually points at the line.",
+              "replies": [
+                {
+                  "author": {
+                    "display_name": "Sadiq Abdullahi",
+                    "id": 36034896,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36034896-kg.jpg?t=2026-10-17-12-23-16",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/devsadeeq"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 4491,
+                  "content": "<p>About to improve on that</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3541437,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-20T04:34:21.150Z",
+                  "raw_markdown": "About to improve on that",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Sadiq Abdullahi",
+                      "id": 36034896,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/devsadeeq",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36034896-kg.jpg?t=2026-10-17-12-23-16",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/devsadeeq",
+                      "user_id": 36034896,
+                      "user_name": "devsadeeq"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Korokke3",
+                  "id": 22231691,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/korokke3",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/korokke3",
+                  "user_id": 22231691,
+                  "user_name": "korokke3"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "As far as I know there is no place to see them. Kaggle does not show stdout/stderr from the hidden rerun (it would leak the test set), so all you get back is the status and, if it finishes, the score. What has worked for me in notebook-only comps is to make the visible run behave like the rerun, and make the rerun unable to throw:\n\n1. **Run on a full-size fake test.** The visible `test.csv` here has one row, so anything that only breaks at scale never runs. Build a pseudo-test from train rows (same columns and dtypes, `model` dropped, a fresh `id`) at roughly the hidden size, and point the pipeline at it when `os.getenv('KAGGLE_IS_COMPETITION_RERUN')` is unset. Things that pass on 1 row and die on N:\n   - pairwise distance / linkage matrices for prompt grouping. Dense N×N float64 costs 8·N² bytes, so N = 10k is 0.8 GB *per matrix*, and the public lineages build two.\n   - code paths that never trigger on one row: clusters of size ≥ 2, real groupbys, test-mean/std standardisation (std = 0 on one row, fine on many, or the reverse), Sinkhorn/balancing steps.\n   - GPU batch memory once real long passages show up.\n   An out-of-memory kill also comes back as a generic failure, so check peak RAM on the full-size run.\n2. **Never let a stage raise.** Wrap each stage in `try/except`, fall back to a cheap member (the starter's TF-IDF + LR is enough), and always write `submission.parquet` at the end, after `assert len(sub) == len(test) and set(sub.id) == set(test.id)`. A broken stage then lowers the score instead of failing the submission. If the score comes back equal to your fallback's known LB score, something failed, and disabling half the stages per submission bisects it within a day at 5 submissions per day.\n3. **Pin paths and offline assets.** Resolve the input dir by globbing both `/kaggle/input/competitions/name-that-llm` and `/kaggle/input/name-that-llm` (the starter already does this), and make sure every tokenizer/model loads from an attached dataset with `local_files_only=True`.\n\nIn RSNA Knee (also notebook-only; 3-study visible stub vs ~1.3k studies in the rerun) the full-size dry run caught a bug the stub never showed: a time-budget guard silently skipped parts of the model, so the configuration I had validated was not the one being scored. I would do step 1 before sharing a repro. It usually points at the line.",
+            "replies": [
+              {
+                "author": {
+                  "displayName": "Sadiq Abdullahi",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/devsadeeq"
+                },
+                "content": "<p>About to improve on that</p>",
+                "id": 3541437,
+                "isThankYou": false,
+                "postDate": "2026-10-20T04:34:21.150Z",
+                "raw": {
+                  "author": {
+                    "display_name": "Sadiq Abdullahi",
+                    "id": 36034896,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36034896-kg.jpg?t=2026-10-17-12-23-16",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/devsadeeq"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 4491,
+                  "content": "<p>About to improve on that</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3541437,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-20T04:34:21.150Z",
+                  "raw_markdown": "About to improve on that",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Sadiq Abdullahi",
+                      "id": 36034896,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/devsadeeq",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36034896-kg.jpg?t=2026-10-17-12-23-16",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/devsadeeq",
+                      "user_id": 36034896,
+                      "user_name": "devsadeeq"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                },
+                "rawMarkdown": "About to improve on that",
+                "replies": [],
+                "votes": {
+                  "totalVotes": 0
+                }
+              }
+            ],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "expectedCommentCount": 4,
+        "firstMessage": {
+          "author": {
+            "displayName": "Sadiq Abdullahi",
+            "tier": "CONTRIBUTOR",
+            "url": "/devsadeeq"
+          },
+          "content": "<p>Hi, I’m troubleshooting a notebook-only submission that passes the visible sample run but fails on Kaggle’s hidden-data rerun with the generic ‘Notebook Threw Exception’ message. I’ve checked the required output file and schema, but the submission details don’t show a traceback. Is there another place to inspect the rerun logs, or a recommended checklist for isolating this kind of failure? I can share a minimal reproduction if useful.</p>",
+          "id": 3540757,
+          "isThankYou": false,
+          "postDate": "2026-10-18T20:24:19.727Z",
+          "raw": {
+            "author": {
+              "display_name": "Sadiq Abdullahi",
+              "id": 36034896,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36034896-kg.jpg?t=2026-10-17-12-23-16",
+              "tier": "CONTRIBUTOR",
+              "url": "/devsadeeq"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 4491,
+            "content": "<p>Hi, I’m troubleshooting a notebook-only submission that passes the visible sample run but fails on Kaggle’s hidden-data rerun with the generic ‘Notebook Threw Exception’ message. I’ve checked the required output file and schema, but the submission details don’t show a traceback. Is there another place to inspect the rerun logs, or a recommended checklist for isolating this kind of failure? I can share a minimal reproduction if useful.</p>",
+            "feedback_tracking_data": {},
+            "id": 3540757,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-10-18T20:24:19.727Z",
+            "raw_markdown": "Hi, I’m troubleshooting a notebook-only submission that passes the visible sample run but fails on Kaggle’s hidden-data rerun with the generic ‘Notebook Threw Exception’ message. I’ve checked the required output file and schema, but the submission details don’t show a traceback. Is there another place to inspect the rerun logs, or a recommended checklist for isolating this kind of failure? I can share a minimal reproduction if useful.",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "Sadiq Abdullahi",
+                "id": 36034896,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/devsadeeq",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36034896-kg.jpg?t=2026-10-17-12-23-16",
+                "tier": "CONTRIBUTOR",
+                "url": "/devsadeeq",
+                "user_id": 36034896,
+                "user_name": "devsadeeq"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 1,
+              "total_votes": 1
+            }
+          },
+          "rawMarkdown": "Hi, I’m troubleshooting a notebook-only submission that passes the visible sample run but fails on Kaggle’s hidden-data rerun with the generic ‘Notebook Threw Exception’ message. I’ve checked the required output file and schema, but the submission details don’t show a traceback. Is there another place to inspect the rerun logs, or a recommended checklist for isolating this kind of failure? I can share a minimal reproduction if useful.",
+          "replies": [],
+          "votes": {
+            "totalVotes": 1
+          }
+        },
+        "firstMessageId": 3540757,
+        "id": 750553,
+        "name": "Help locating logs for a generic hidden-rerun exception",
+        "postDate": "2026-10-18T20:24:19.726962Z",
+        "url": "/competitions/name-that-llm/discussion/750553"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>Hi, I’m troubleshooting a notebook-only submission that passes the visible sample run but fails on Kaggle’s hidden-data rerun with the generic ‘Notebook Threw Exception’ message. I’ve checked the required output file and schema, but the submission details don’t show a traceback. Is there another place to inspect the rerun logs, or a recommended checklist for isolating this kind of failure? I can share a minimal reproduction if useful.</p>",
+              "id": 3540757,
+              "post_date": "2026-10-18T20:24:19.727Z",
+              "raw_markdown": "Hi, I’m troubleshooting a notebook-only submission that passes the visible sample run but fails on Kaggle’s hidden-data rerun with the generic ‘Notebook Threw Exception’ message. I’ve checked the required output file and schema, but the submission details don’t show a traceback. Is there another place to inspect the rerun logs, or a recommended checklist for isolating this kind of failure? I can share a minimal reproduction if useful.",
+              "votes": 1
+            },
+            {
+              "content": "<p>As far as I know there is no place to see them. Kaggle does not show stdout/stderr from the hidden rerun (it would leak the test set), so all you get back is the status and, if it finishes, the score. What has worked for me in notebook-only comps is to make the visible run behave like the rerun, and make the rerun unable to throw:</p>\n<ol>\n<li><strong>Run on a full-size fake test.</strong> The visible <code>test.csv</code> here has one row, so anything that only breaks at scale never runs. Build a pseudo-test from train rows (same columns and dtypes, <code>model</code> dropped, a fresh <code>id</code>) at roughly the hidden size, and point the pipeline at it when <code>os.getenv('KAGGLE_IS_COMPETITION_RERUN')</code> is unset. Things that pass on 1 row and die on N:<ul>\n<li>pairwise distance / linkage matrices for prompt grouping. Dense N×N float64 costs 8·N² bytes, so N = 10k is 0.8 GB <em>per matrix</em>, and the public lineages build two.</li>\n<li>code paths that never trigger on one row: clusters of size ≥ 2, real groupbys, test-mean/std standardisation (std = 0 on one row, fine on many, or the reverse), Sinkhorn/balancing steps.</li>\n<li>GPU batch memory once real long passages show up.\nAn out-of-memory kill also comes back as a generic failure, so check peak RAM on the full-size run.</li></ul></li>\n<li><strong>Never let a stage raise.</strong> Wrap each stage in <code>try/except</code>, fall back to a cheap member (the starter's TF-IDF + LR is enough), and always write <code>submission.parquet</code> at the end, after <code>assert len(sub) == len(test) and set(sub.id) == set(test.id)</code>. A broken stage then lowers the score instead of failing the submission. If the score comes back equal to your fallback's known LB score, something failed, and disabling half the stages per submission bisects it within a day at 5 submissions per day.</li>\n<li><strong>Pin paths and offline assets.</strong> Resolve the input dir by globbing both <code>/kaggle/input/competitions/name-that-llm</code> and <code>/kaggle/input/name-that-llm</code> (the starter already does this), and make sure every tokenizer/model loads from an attached dataset with <code>local_files_only=True</code>.</li>\n</ol>\n<p>In RSNA Knee (also notebook-only; 3-study visible stub vs ~1.3k studies in the rerun) the full-size dry run caught a bug the stub never showed: a time-budget guard silently skipped parts of the model, so the configuration I had validated was not the one being scored. I would do step 1 before sharing a repro. It usually points at the line.</p>",
+              "id": 3541377,
+              "post_date": "2026-10-20T00:18:29.963Z",
+              "raw_markdown": "As far as I know there is no place to see them. Kaggle does not show stdout/stderr from the hidden rerun (it would leak the test set), so all you get back is the status and, if it finishes, the score. What has worked for me in notebook-only comps is to make the visible run behave like the rerun, and make the rerun unable to throw:\n\n1. **Run on a full-size fake test.** The visible `test.csv` here has one row, so anything that only breaks at scale never runs. Build a pseudo-test from train rows (same columns and dtypes, `model` dropped, a fresh `id`) at roughly the hidden size, and point the pipeline at it when `os.getenv('KAGGLE_IS_COMPETITION_RERUN')` is unset. Things that pass on 1 row and die on N:\n   - pairwise distance / linkage matrices for prompt grouping. Dense N×N float64 costs 8·N² bytes, so N = 10k is 0.8 GB *per matrix*, and the public lineages build two.\n   - code paths that never trigger on one row: clusters of size ≥ 2, real groupbys, test-mean/std standardisation (std = 0 on one row, fine on many, or the reverse), Sinkhorn/balancing steps.\n   - GPU batch memory once real long passages show up.\n   An out-of-memory kill also comes back as a generic failure, so check peak RAM on the full-size run.\n2. **Never let a stage raise.** Wrap each stage in `try/except`, fall back to a cheap member (the starter's TF-IDF + LR is enough), and always write `submission.parquet` at the end, after `assert len(sub) == len(test) and set(sub.id) == set(test.id)`. A broken stage then lowers the score instead of failing the submission. If the score comes back equal to your fallback's known LB score, something failed, and disabling half the stages per submission bisects it within a day at 5 submissions per day.\n3. **Pin paths and offline assets.** Resolve the input dir by globbing both `/kaggle/input/competitions/name-that-llm` and `/kaggle/input/name-that-llm` (the starter already does this), and make sure every tokenizer/model loads from an attached dataset with `local_files_only=True`.\n\nIn RSNA Knee (also notebook-only; 3-study visible stub vs ~1.3k studies in the rerun) the full-size dry run caught a bug the stub never showed: a time-budget guard silently skipped parts of the model, so the configuration I had validated was not the one being scored. I would do step 1 before sharing a repro. It usually points at the line.",
+              "replies": [
+                {
+                  "content": "<p>About to improve on that</p>",
+                  "id": 3541437,
+                  "post_date": "2026-10-20T04:34:21.150Z",
+                  "raw_markdown": "About to improve on that"
+                }
+              ]
+            },
+            {
+              "content": "<p>Your code may have some assertion that pass on the kaggle run but fail in the hidden test as it is longer not consistent with test set like model accuracy anything check those and remove the assertions</p>",
+              "id": 3541382,
+              "post_date": "2026-10-20T00:45:13.827Z",
+              "raw_markdown": "Your code may have some assertion that pass on the kaggle run but fail in the hidden test as it is longer not consistent with test set like model accuracy anything check those and remove the assertions\n",
+              "replies": [
+                {
+                  "content": "<p>We are all here to learn and improve </p>",
+                  "id": 3541436,
+                  "post_date": "2026-10-20T04:33:29.557Z",
+                  "raw_markdown": "We are all here to learn and improve "
+                }
+              ]
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 36034896,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "36034896-kg.jpg?t=2026-10-17-12-23-16",
+            "author_user_display_name": "Sadiq Abdullahi",
+            "author_user_name": "devsadeeq",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "comments": [
+              {
+                "author": {
+                  "display_name": "Prathamesh Chavan",
+                  "id": 23083280,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/xerneas"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 537,
+                "content": "<p>Your code may have some assertion that pass on the kaggle run but fail in the hidden test as it is longer not consistent with test set like model accuracy anything check those and remove the assertions</p>",
+                "feedback_tracking_data": {},
+                "id": 3541382,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-20T00:45:13.827Z",
+                "raw_markdown": "Your code may have some assertion that pass on the kaggle run but fail in the hidden test as it is longer not consistent with test set like model accuracy anything check those and remove the assertions\n",
+                "replies": [
+                  {
+                    "author": {
+                      "display_name": "Sadiq Abdullahi",
+                      "id": 36034896,
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36034896-kg.jpg?t=2026-10-17-12-23-16",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/devsadeeq"
+                    },
+                    "author_type": "TOPIC",
+                    "competition_ranking": 4491,
+                    "content": "<p>We are all here to learn and improve </p>",
+                    "feedback_tracking_data": {},
+                    "id": 3541436,
+                    "is_thank_you": false,
+                    "kernel_version": 0,
+                    "parent": {},
+                    "post_date": "2026-10-20T04:33:29.557Z",
+                    "raw_markdown": "We are all here to learn and improve ",
+                    "team_up_info": {
+                      "intro": "",
+                      "team_leader": {
+                        "display_name": "Sadiq Abdullahi",
+                        "id": 36034896,
+                        "performance_tier": "CONTRIBUTOR",
+                        "profile_url": "/devsadeeq",
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36034896-kg.jpg?t=2026-10-17-12-23-16",
+                        "tier": "CONTRIBUTOR",
+                        "url": "/devsadeeq",
+                        "user_id": 36034896,
+                        "user_name": "devsadeeq"
+                      }
+                    },
+                    "votes": {
+                      "can_upvote": true
+                    }
+                  }
+                ],
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "Prathamesh Chavan",
+                    "id": 23083280,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/xerneas",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/xerneas",
+                    "user_id": 23083280,
+                    "user_name": "xerneas"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              },
+              {
+                "author": {
+                  "display_name": "Korokke3",
+                  "id": 22231691,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/korokke3"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 1481,
+                "content": "<p>As far as I know there is no place to see them. Kaggle does not show stdout/stderr from the hidden rerun (it would leak the test set), so all you get back is the status and, if it finishes, the score. What has worked for me in notebook-only comps is to make the visible run behave like the rerun, and make the rerun unable to throw:</p>\n<ol>\n<li><strong>Run on a full-size fake test.</strong> The visible <code>test.csv</code> here has one row, so anything that only breaks at scale never runs. Build a pseudo-test from train rows (same columns and dtypes, <code>model</code> dropped, a fresh <code>id</code>) at roughly the hidden size, and point the pipeline at it when <code>os.getenv('KAGGLE_IS_COMPETITION_RERUN')</code> is unset. Things that pass on 1 row and die on N:<ul>\n<li>pairwise distance / linkage matrices for prompt grouping. Dense N×N float64 costs 8·N² bytes, so N = 10k is 0.8 GB <em>per matrix</em>, and the public lineages build two.</li>\n<li>code paths that never trigger on one row: clusters of size ≥ 2, real groupbys, test-mean/std standardisation (std = 0 on one row, fine on many, or the reverse), Sinkhorn/balancing steps.</li>\n<li>GPU batch memory once real long passages show up.\nAn out-of-memory kill also comes back as a generic failure, so check peak RAM on the full-size run.</li></ul></li>\n<li><strong>Never let a stage raise.</strong> Wrap each stage in <code>try/except</code>, fall back to a cheap member (the starter's TF-IDF + LR is enough), and always write <code>submission.parquet</code> at the end, after <code>assert len(sub) == len(test) and set(sub.id) == set(test.id)</code>. A broken stage then lowers the score instead of failing the submission. If the score comes back equal to your fallback's known LB score, something failed, and disabling half the stages per submission bisects it within a day at 5 submissions per day.</li>\n<li><strong>Pin paths and offline assets.</strong> Resolve the input dir by globbing both <code>/kaggle/input/competitions/name-that-llm</code> and <code>/kaggle/input/name-that-llm</code> (the starter already does this), and make sure every tokenizer/model loads from an attached dataset with <code>local_files_only=True</code>.</li>\n</ol>\n<p>In RSNA Knee (also notebook-only; 3-study visible stub vs ~1.3k studies in the rerun) the full-size dry run caught a bug the stub never showed: a time-budget guard silently skipped parts of the model, so the configuration I had validated was not the one being scored. I would do step 1 before sharing a repro. It usually points at the line.</p>",
+                "feedback_tracking_data": {},
+                "id": 3541377,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-20T00:18:29.963Z",
+                "raw_markdown": "As far as I know there is no place to see them. Kaggle does not show stdout/stderr from the hidden rerun (it would leak the test set), so all you get back is the status and, if it finishes, the score. What has worked for me in notebook-only comps is to make the visible run behave like the rerun, and make the rerun unable to throw:\n\n1. **Run on a full-size fake test.** The visible `test.csv` here has one row, so anything that only breaks at scale never runs. Build a pseudo-test from train rows (same columns and dtypes, `model` dropped, a fresh `id`) at roughly the hidden size, and point the pipeline at it when `os.getenv('KAGGLE_IS_COMPETITION_RERUN')` is unset. Things that pass on 1 row and die on N:\n   - pairwise distance / linkage matrices for prompt grouping. Dense N×N float64 costs 8·N² bytes, so N = 10k is 0.8 GB *per matrix*, and the public lineages build two.\n   - code paths that never trigger on one row: clusters of size ≥ 2, real groupbys, test-mean/std standardisation (std = 0 on one row, fine on many, or the reverse), Sinkhorn/balancing steps.\n   - GPU batch memory once real long passages show up.\n   An out-of-memory kill also comes back as a generic failure, so check peak RAM on the full-size run.\n2. **Never let a stage raise.** Wrap each stage in `try/except`, fall back to a cheap member (the starter's TF-IDF + LR is enough), and always write `submission.parquet` at the end, after `assert len(sub) == len(test) and set(sub.id) == set(test.id)`. A broken stage then lowers the score instead of failing the submission. If the score comes back equal to your fallback's known LB score, something failed, and disabling half the stages per submission bisects it within a day at 5 submissions per day.\n3. **Pin paths and offline assets.** Resolve the input dir by globbing both `/kaggle/input/competitions/name-that-llm` and `/kaggle/input/name-that-llm` (the starter already does this), and make sure every tokenizer/model loads from an attached dataset with `local_files_only=True`.\n\nIn RSNA Knee (also notebook-only; 3-study visible stub vs ~1.3k studies in the rerun) the full-size dry run caught a bug the stub never showed: a time-budget guard silently skipped parts of the model, so the configuration I had validated was not the one being scored. I would do step 1 before sharing a repro. It usually points at the line.",
+                "replies": [
+                  {
+                    "author": {
+                      "display_name": "Sadiq Abdullahi",
+                      "id": 36034896,
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36034896-kg.jpg?t=2026-10-17-12-23-16",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/devsadeeq"
+                    },
+                    "author_type": "TOPIC",
+                    "competition_ranking": 4491,
+                    "content": "<p>About to improve on that</p>",
+                    "feedback_tracking_data": {},
+                    "id": 3541437,
+                    "is_thank_you": false,
+                    "kernel_version": 0,
+                    "parent": {},
+                    "post_date": "2026-10-20T04:34:21.150Z",
+                    "raw_markdown": "About to improve on that",
+                    "team_up_info": {
+                      "intro": "",
+                      "team_leader": {
+                        "display_name": "Sadiq Abdullahi",
+                        "id": 36034896,
+                        "performance_tier": "CONTRIBUTOR",
+                        "profile_url": "/devsadeeq",
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36034896-kg.jpg?t=2026-10-17-12-23-16",
+                        "tier": "CONTRIBUTOR",
+                        "url": "/devsadeeq",
+                        "user_id": 36034896,
+                        "user_name": "devsadeeq"
+                      }
+                    },
+                    "votes": {
+                      "can_upvote": true
+                    }
+                  }
+                ],
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "Korokke3",
+                    "id": 22231691,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/korokke3",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/korokke3",
+                    "user_id": 22231691,
+                    "user_name": "korokke3"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              }
+            ],
+            "first_message": {
+              "author": {
+                "display_name": "Sadiq Abdullahi",
+                "id": 36034896,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36034896-kg.jpg?t=2026-10-17-12-23-16",
+                "tier": "CONTRIBUTOR",
+                "url": "/devsadeeq"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 4491,
+              "content": "<p>Hi, I’m troubleshooting a notebook-only submission that passes the visible sample run but fails on Kaggle’s hidden-data rerun with the generic ‘Notebook Threw Exception’ message. I’ve checked the required output file and schema, but the submission details don’t show a traceback. Is there another place to inspect the rerun logs, or a recommended checklist for isolating this kind of failure? I can share a minimal reproduction if useful.</p>",
+              "feedback_tracking_data": {},
+              "id": 3540757,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-18T20:24:19.727Z",
+              "raw_markdown": "Hi, I’m troubleshooting a notebook-only submission that passes the visible sample run but fails on Kaggle’s hidden-data rerun with the generic ‘Notebook Threw Exception’ message. I’ve checked the required output file and schema, but the submission details don’t show a traceback. Is there another place to inspect the rerun logs, or a recommended checklist for isolating this kind of failure? I can share a minimal reproduction if useful.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Sadiq Abdullahi",
+                  "id": 36034896,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/devsadeeq",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36034896-kg.jpg?t=2026-10-17-12-23-16",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/devsadeeq",
+                  "user_id": 36034896,
+                  "user_name": "devsadeeq"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": 1
+              }
+            },
+            "first_message_id": 3540757,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 750553,
+            "name": "Help locating logs for a generic hidden-rerun exception",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-10-18T20:24:19.726962Z",
+            "total_messages": 4,
+            "total_votes": 1,
+            "url": "/competitions/name-that-llm/discussion/750553"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-18T12:04:41+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-18T12:04:41+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-10-20T04:34:21.150Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [
+    {
+      "slug": "name-that-llm",
+      "topic_id": 750553,
+      "message_id": 3541377,
+      "parent_message_id": null,
+      "author": "Korokke3",
+      "author_url": "/korokke3",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-10-20T00:18:29.963Z",
+      "raw_markdown": "As far as I know there is no place to see them. Kaggle does not show stdout/stderr from the hidden rerun (it would leak the test set), so all you get back is the status and, if it finishes, the score. What has worked for me in notebook-only comps is to make the visible run behave like the rerun, and make the rerun unable to throw:\n\n1. **Run on a full-size fake test.** The visible `test.csv` here has one row, so anything that only breaks at scale never runs. Build a pseudo-test from train rows (same columns and dtypes, `model` dropped, a fresh `id`) at roughly the hidden size, and point the pipeline at it when `os.getenv('KAGGLE_IS_COMPETITION_RERUN')` is unset. Things that pass on 1 row and die on N:\n   - pairwise distance / linkage matrices for prompt grouping. Dense N×N float64 costs 8·N² bytes, so N = 10k is 0.8 GB *per matrix*, and the public lineages build two.\n   - code paths that never trigger on one row: clusters of size ≥ 2, real groupbys, test-mean/std standardisation (std = 0 on one row, fine on many, or the reverse), Sinkhorn/balancing steps.\n   - GPU batch memory once real long passages show up.\n   An out-of-memory kill also comes back as a generic failure, so check peak RAM on the full-size run.\n2. **Never let a stage raise.** Wrap each stage in `try/except`, fall back to a cheap member (the starter's TF-IDF + LR is enough), and always write `submission.parquet` at the end, after `assert len(sub) == len(test) and set(sub.id) == set(test.id)`. A broken stage then lowers the score instead of failing the submission. If the score comes back equal to your fallback's known LB score, something failed, and disabling half the stages per submission bisects it within a day at 5 submissions per day.\n3. **Pin paths and offline assets.** Resolve the input dir by globbing both `/kaggle/input/competitions/name-that-llm` and `/kaggle/input/name-that-llm` (the starter already does this), and make sure every tokenizer/model loads from an attached dataset with `local_files_only=True`.\n\nIn RSNA Knee (also notebook-only; 3-study visible stub vs ~1.3k studies in the rerun) the full-size dry run caught a bug the stub never showed: a time-budget guard silently skipped parts of the model, so the configuration I had validated was not the one being scored. I would do step 1 before sharing a repro. It usually points at the line.",
+      "content_html": "<p>As far as I know there is no place to see them. Kaggle does not show stdout/stderr from the hidden rerun (it would leak the test set), so all you get back is the status and, if it finishes, the score. What has worked for me in notebook-only comps is to make the visible run behave like the rerun, and make the rerun unable to throw:</p>\n<ol>\n<li><strong>Run on a full-size fake test.</strong> The visible <code>test.csv</code> here has one row, so anything that only breaks at scale never runs. Build a pseudo-test from train rows (same columns and dtypes, <code>model</code> dropped, a fresh <code>id</code>) at roughly the hidden size, and point the pipeline at it when <code>os.getenv('KAGGLE_IS_COMPETITION_RERUN')</code> is unset. Things that pass on 1 row and die on N:<ul>\n<li>pairwise distance / linkage matrices for prompt grouping. Dense N×N float64 costs 8·N² bytes, so N = 10k is 0.8 GB <em>per matrix</em>, and the public lineages build two.</li>\n<li>code paths that never trigger on one row: clusters of size ≥ 2, real groupbys, test-mean/std standardisation (std = 0 on one row, fine on many, or the reverse), Sinkhorn/balancing steps.</li>\n<li>GPU batch memory once real long passages show up.\nAn out-of-memory kill also comes back as a generic failure, so check peak RAM on the full-size run.</li></ul></li>\n<li><strong>Never let a stage raise.</strong> Wrap each stage in <code>try/except</code>, fall back to a cheap member (the starter's TF-IDF + LR is enough), and always write <code>submission.parquet</code> at the end, after <code>assert len(sub) == len(test) and set(sub.id) == set(test.id)</code>. A broken stage then lowers the score instead of failing the submission. If the score comes back equal to your fallback's known LB score, something failed, and disabling half the stages per submission bisects it within a day at 5 submissions per day.</li>\n<li><strong>Pin paths and offline assets.</strong> Resolve the input dir by globbing both <code>/kaggle/input/competitions/name-that-llm</code> and <code>/kaggle/input/name-that-llm</code> (the starter already does this), and make sure every tokenizer/model loads from an attached dataset with <code>local_files_only=True</code>.</li>\n</ol>\n<p>In RSNA Knee (also notebook-only; 3-study visible stub vs ~1.3k studies in the rerun) the full-size dry run caught a bug the stub never showed: a time-budget guard silently skipped parts of the model, so the configuration I had validated was not the one being scored. I would do step 1 before sharing a repro. It usually points at the line.</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:56:49+00:00",
+      "last_seen_at": "2026-11-18T12:04:41+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T12:04:41+00:00",
+      "remote_last_listed_at": "2026-11-18T12:04:41+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Korokke3",
+          "tier": "CONTRIBUTOR",
+          "url": "/korokke3"
+        },
+        "content": "<p>As far as I know there is no place to see them. Kaggle does not show stdout/stderr from the hidden rerun (it would leak the test set), so all you get back is the status and, if it finishes, the score. What has worked for me in notebook-only comps is to make the visible run behave like the rerun, and make the rerun unable to throw:</p>\n<ol>\n<li><strong>Run on a full-size fake test.</strong> The visible <code>test.csv</code> here has one row, so anything that only breaks at scale never runs. Build a pseudo-test from train rows (same columns and dtypes, <code>model</code> dropped, a fresh <code>id</code>) at roughly the hidden size, and point the pipeline at it when <code>os.getenv('KAGGLE_IS_COMPETITION_RERUN')</code> is unset. Things that pass on 1 row and die on N:<ul>\n<li>pairwise distance / linkage matrices for prompt grouping. Dense N×N float64 costs 8·N² bytes, so N = 10k is 0.8 GB <em>per matrix</em>, and the public lineages build two.</li>\n<li>code paths that never trigger on one row: clusters of size ≥ 2, real groupbys, test-mean/std standardisation (std = 0 on one row, fine on many, or the reverse), Sinkhorn/balancing steps.</li>\n<li>GPU batch memory once real long passages show up.\nAn out-of-memory kill also comes back as a generic failure, so check peak RAM on the full-size run.</li></ul></li>\n<li><strong>Never let a stage raise.</strong> Wrap each stage in <code>try/except</code>, fall back to a cheap member (the starter's TF-IDF + LR is enough), and always write <code>submission.parquet</code> at the end, after <code>assert len(sub) == len(test) and set(sub.id) == set(test.id)</code>. A broken stage then lowers the score instead of failing the submission. If the score comes back equal to your fallback's known LB score, something failed, and disabling half the stages per submission bisects it within a day at 5 submissions per day.</li>\n<li><strong>Pin paths and offline assets.</strong> Resolve the input dir by globbing both <code>/kaggle/input/competitions/name-that-llm</code> and <code>/kaggle/input/name-that-llm</code> (the starter already does this), and make sure every tokenizer/model loads from an attached dataset with <code>local_files_only=True</code>.</li>\n</ol>\n<p>In RSNA Knee (also notebook-only; 3-study visible stub vs ~1.3k studies in the rerun) the full-size dry run caught a bug the stub never showed: a time-budget guard silently skipped parts of the model, so the configuration I had validated was not the one being scored. I would do step 1 before sharing a repro. It usually points at the line.</p>",
+        "id": 3541377,
+        "isThankYou": false,
+        "postDate": "2026-10-20T00:18:29.963Z",
+        "raw": {
+          "author": {
+            "display_name": "Korokke3",
+            "id": 22231691,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+            "tier": "CONTRIBUTOR",
+            "url": "/korokke3"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 1481,
+          "content": "<p>As far as I know there is no place to see them. Kaggle does not show stdout/stderr from the hidden rerun (it would leak the test set), so all you get back is the status and, if it finishes, the score. What has worked for me in notebook-only comps is to make the visible run behave like the rerun, and make the rerun unable to throw:</p>\n<ol>\n<li><strong>Run on a full-size fake test.</strong> The visible <code>test.csv</code> here has one row, so anything that only breaks at scale never runs. Build a pseudo-test from train rows (same columns and dtypes, <code>model</code> dropped, a fresh <code>id</code>) at roughly the hidden size, and point the pipeline at it when <code>os.getenv('KAGGLE_IS_COMPETITION_RERUN')</code> is unset. Things that pass on 1 row and die on N:<ul>\n<li>pairwise distance / linkage matrices for prompt grouping. Dense N×N float64 costs 8·N² bytes, so N = 10k is 0.8 GB <em>per matrix</em>, and the public lineages build two.</li>\n<li>code paths that never trigger on one row: clusters of size ≥ 2, real groupbys, test-mean/std standardisation (std = 0 on one row, fine on many, or the reverse), Sinkhorn/balancing steps.</li>\n<li>GPU batch memory once real long passages show up.\nAn out-of-memory kill also comes back as a generic failure, so check peak RAM on the full-size run.</li></ul></li>\n<li><strong>Never let a stage raise.</strong> Wrap each stage in <code>try/except</code>, fall back to a cheap member (the starter's TF-IDF + LR is enough), and always write <code>submission.parquet</code> at the end, after <code>assert len(sub) == len(test) and set(sub.id) == set(test.id)</code>. A broken stage then lowers the score instead of failing the submission. If the score comes back equal to your fallback's known LB score, something failed, and disabling half the stages per submission bisects it within a day at 5 submissions per day.</li>\n<li><strong>Pin paths and offline assets.</strong> Resolve the input dir by globbing both <code>/kaggle/input/competitions/name-that-llm</code> and <code>/kaggle/input/name-that-llm</code> (the starter already does this), and make sure every tokenizer/model loads from an attached dataset with <code>local_files_only=True</code>.</li>\n</ol>\n<p>In RSNA Knee (also notebook-only; 3-study visible stub vs ~1.3k studies in the rerun) the full-size dry run caught a bug the stub never showed: a time-budget guard silently skipped parts of the model, so the configuration I had validated was not the one being scored. I would do step 1 before sharing a repro. It usually points at the line.</p>",
+          "feedback_tracking_data": {},
+          "id": 3541377,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-20T00:18:29.963Z",
+          "raw_markdown": "As far as I know there is no place to see them. Kaggle does not show stdout/stderr from the hidden rerun (it would leak the test set), so all you get back is the status and, if it finishes, the score. What has worked for me in notebook-only comps is to make the visible run behave like the rerun, and make the rerun unable to throw:\n\n1. **Run on a full-size fake test.** The visible `test.csv` here has one row, so anything that only breaks at scale never runs. Build a pseudo-test from train rows (same columns and dtypes, `model` dropped, a fresh `id`) at roughly the hidden size, and point the pipeline at it when `os.getenv('KAGGLE_IS_COMPETITION_RERUN')` is unset. Things that pass on 1 row and die on N:\n   - pairwise distance / linkage matrices for prompt grouping. Dense N×N float64 costs 8·N² bytes, so N = 10k is 0.8 GB *per matrix*, and the public lineages build two.\n   - code paths that never trigger on one row: clusters of size ≥ 2, real groupbys, test-mean/std standardisation (std = 0 on one row, fine on many, or the reverse), Sinkhorn/balancing steps.\n   - GPU batch memory once real long passages show up.\n   An out-of-memory kill also comes back as a generic failure, so check peak RAM on the full-size run.\n2. **Never let a stage raise.** Wrap each stage in `try/except`, fall back to a cheap member (the starter's TF-IDF + LR is enough), and always write `submission.parquet` at the end, after `assert len(sub) == len(test) and set(sub.id) == set(test.id)`. A broken stage then lowers the score instead of failing the submission. If the score comes back equal to your fallback's known LB score, something failed, and disabling half the stages per submission bisects it within a day at 5 submissions per day.\n3. **Pin paths and offline assets.** Resolve the input dir by globbing both `/kaggle/input/competitions/name-that-llm` and `/kaggle/input/name-that-llm` (the starter already does this), and make sure every tokenizer/model loads from an attached dataset with `local_files_only=True`.\n\nIn RSNA Knee (also notebook-only; 3-study visible stub vs ~1.3k studies in the rerun) the full-size dry run caught a bug the stub never showed: a time-budget guard silently skipped parts of the model, so the configuration I had validated was not the one being scored. I would do step 1 before sharing a repro. It usually points at the line.",
+          "replies": [
+            {
+              "author": {
+                "display_name": "Sadiq Abdullahi",
+                "id": 36034896,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36034896-kg.jpg?t=2026-10-17-12-23-16",
+                "tier": "CONTRIBUTOR",
+                "url": "/devsadeeq"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 4491,
+              "content": "<p>About to improve on that</p>",
+              "feedback_tracking_data": {},
+              "id": 3541437,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-20T04:34:21.150Z",
+              "raw_markdown": "About to improve on that",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Sadiq Abdullahi",
+                  "id": 36034896,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/devsadeeq",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36034896-kg.jpg?t=2026-10-17-12-23-16",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/devsadeeq",
+                  "user_id": 36034896,
+                  "user_name": "devsadeeq"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            }
+          ],
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Korokke3",
+              "id": 22231691,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/korokke3",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "CONTRIBUTOR",
+              "url": "/korokke3",
+              "user_id": 22231691,
+              "user_name": "korokke3"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "As far as I know there is no place to see them. Kaggle does not show stdout/stderr from the hidden rerun (it would leak the test set), so all you get back is the status and, if it finishes, the score. What has worked for me in notebook-only comps is to make the visible run behave like the rerun, and make the rerun unable to throw:\n\n1. **Run on a full-size fake test.** The visible `test.csv` here has one row, so anything that only breaks at scale never runs. Build a pseudo-test from train rows (same columns and dtypes, `model` dropped, a fresh `id`) at roughly the hidden size, and point the pipeline at it when `os.getenv('KAGGLE_IS_COMPETITION_RERUN')` is unset. Things that pass on 1 row and die on N:\n   - pairwise distance / linkage matrices for prompt grouping. Dense N×N float64 costs 8·N² bytes, so N = 10k is 0.8 GB *per matrix*, and the public lineages build two.\n   - code paths that never trigger on one row: clusters of size ≥ 2, real groupbys, test-mean/std standardisation (std = 0 on one row, fine on many, or the reverse), Sinkhorn/balancing steps.\n   - GPU batch memory once real long passages show up.\n   An out-of-memory kill also comes back as a generic failure, so check peak RAM on the full-size run.\n2. **Never let a stage raise.** Wrap each stage in `try/except`, fall back to a cheap member (the starter's TF-IDF + LR is enough), and always write `submission.parquet` at the end, after `assert len(sub) == len(test) and set(sub.id) == set(test.id)`. A broken stage then lowers the score instead of failing the submission. If the score comes back equal to your fallback's known LB score, something failed, and disabling half the stages per submission bisects it within a day at 5 submissions per day.\n3. **Pin paths and offline assets.** Resolve the input dir by globbing both `/kaggle/input/competitions/name-that-llm` and `/kaggle/input/name-that-llm` (the starter already does this), and make sure every tokenizer/model loads from an attached dataset with `local_files_only=True`.\n\nIn RSNA Knee (also notebook-only; 3-study visible stub vs ~1.3k studies in the rerun) the full-size dry run caught a bug the stub never showed: a time-budget guard silently skipped parts of the model, so the configuration I had validated was not the one being scored. I would do step 1 before sharing a repro. It usually points at the line.",
+        "replies": [
+          {
+            "author": {
+              "displayName": "Sadiq Abdullahi",
+              "tier": "CONTRIBUTOR",
+              "url": "/devsadeeq"
+            },
+            "content": "<p>About to improve on that</p>",
+            "id": 3541437,
+            "isThankYou": false,
+            "postDate": "2026-10-20T04:34:21.150Z",
+            "raw": {
+              "author": {
+                "display_name": "Sadiq Abdullahi",
+                "id": 36034896,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36034896-kg.jpg?t=2026-10-17-12-23-16",
+                "tier": "CONTRIBUTOR",
+                "url": "/devsadeeq"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 4491,
+              "content": "<p>About to improve on that</p>",
+              "feedback_tracking_data": {},
+              "id": 3541437,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-20T04:34:21.150Z",
+              "raw_markdown": "About to improve on that",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Sadiq Abdullahi",
+                  "id": 36034896,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/devsadeeq",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36034896-kg.jpg?t=2026-10-17-12-23-16",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/devsadeeq",
+                  "user_id": 36034896,
+                  "user_name": "devsadeeq"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "About to improve on that",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 750553,
+      "message_id": 3541382,
+      "parent_message_id": null,
+      "author": "Prathamesh Chavan",
+      "author_url": "/xerneas",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-10-20T00:45:13.827Z",
+      "raw_markdown": "Your code may have some assertion that pass on the kaggle run but fail in the hidden test as it is longer not consistent with test set like model accuracy anything check those and remove the assertions\n",
+      "content_html": "<p>Your code may have some assertion that pass on the kaggle run but fail in the hidden test as it is longer not consistent with test set like model accuracy anything check those and remove the assertions</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:56:49+00:00",
+      "last_seen_at": "2026-11-18T12:04:41+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T12:04:41+00:00",
+      "remote_last_listed_at": "2026-11-18T12:04:41+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Prathamesh Chavan",
+          "tier": "CONTRIBUTOR",
+          "url": "/xerneas"
+        },
+        "content": "<p>Your code may have some assertion that pass on the kaggle run but fail in the hidden test as it is longer not consistent with test set like model accuracy anything check those and remove the assertions</p>",
+        "id": 3541382,
+        "isThankYou": false,
+        "postDate": "2026-10-20T00:45:13.827Z",
+        "raw": {
+          "author": {
+            "display_name": "Prathamesh Chavan",
+            "id": 23083280,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+            "tier": "CONTRIBUTOR",
+            "url": "/xerneas"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 537,
+          "content": "<p>Your code may have some assertion that pass on the kaggle run but fail in the hidden test as it is longer not consistent with test set like model accuracy anything check those and remove the assertions</p>",
+          "feedback_tracking_data": {},
+          "id": 3541382,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-20T00:45:13.827Z",
+          "raw_markdown": "Your code may have some assertion that pass on the kaggle run but fail in the hidden test as it is longer not consistent with test set like model accuracy anything check those and remove the assertions\n",
+          "replies": [
+            {
+              "author": {
+                "display_name": "Sadiq Abdullahi",
+                "id": 36034896,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36034896-kg.jpg?t=2026-10-17-12-23-16",
+                "tier": "CONTRIBUTOR",
+                "url": "/devsadeeq"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 4491,
+              "content": "<p>We are all here to learn and improve </p>",
+              "feedback_tracking_data": {},
+              "id": 3541436,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-20T04:33:29.557Z",
+              "raw_markdown": "We are all here to learn and improve ",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Sadiq Abdullahi",
+                  "id": 36034896,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/devsadeeq",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36034896-kg.jpg?t=2026-10-17-12-23-16",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/devsadeeq",
+                  "user_id": 36034896,
+                  "user_name": "devsadeeq"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            }
+          ],
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Prathamesh Chavan",
+              "id": 23083280,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/xerneas",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "CONTRIBUTOR",
+              "url": "/xerneas",
+              "user_id": 23083280,
+              "user_name": "xerneas"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "Your code may have some assertion that pass on the kaggle run but fail in the hidden test as it is longer not consistent with test set like model accuracy anything check those and remove the assertions\n",
+        "replies": [
+          {
+            "author": {
+              "displayName": "Sadiq Abdullahi",
+              "tier": "CONTRIBUTOR",
+              "url": "/devsadeeq"
+            },
+            "content": "<p>We are all here to learn and improve </p>",
+            "id": 3541436,
+            "isThankYou": false,
+            "postDate": "2026-10-20T04:33:29.557Z",
+            "raw": {
+              "author": {
+                "display_name": "Sadiq Abdullahi",
+                "id": 36034896,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36034896-kg.jpg?t=2026-10-17-12-23-16",
+                "tier": "CONTRIBUTOR",
+                "url": "/devsadeeq"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 4491,
+              "content": "<p>We are all here to learn and improve </p>",
+              "feedback_tracking_data": {},
+              "id": 3541436,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-20T04:33:29.557Z",
+              "raw_markdown": "We are all here to learn and improve ",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Sadiq Abdullahi",
+                  "id": 36034896,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/devsadeeq",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36034896-kg.jpg?t=2026-10-17-12-23-16",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/devsadeeq",
+                  "user_id": 36034896,
+                  "user_name": "devsadeeq"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "We are all here to learn and improve ",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 750553,
+      "message_id": 3541436,
+      "parent_message_id": 3541382,
+      "author": "Sadiq Abdullahi",
+      "author_url": "/devsadeeq",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-10-20T04:33:29.557Z",
+      "raw_markdown": "We are all here to learn and improve ",
+      "content_html": "<p>We are all here to learn and improve </p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 1,
+      "first_seen_at": "2026-11-04T06:56:49+00:00",
+      "last_seen_at": "2026-11-18T12:04:41+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T12:04:41+00:00",
+      "remote_last_listed_at": "2026-11-18T12:04:41+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Sadiq Abdullahi",
+          "tier": "CONTRIBUTOR",
+          "url": "/devsadeeq"
+        },
+        "content": "<p>We are all here to learn and improve </p>",
+        "id": 3541436,
+        "isThankYou": false,
+        "postDate": "2026-10-20T04:33:29.557Z",
+        "raw": {
+          "author": {
+            "display_name": "Sadiq Abdullahi",
+            "id": 36034896,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36034896-kg.jpg?t=2026-10-17-12-23-16",
+            "tier": "CONTRIBUTOR",
+            "url": "/devsadeeq"
+          },
+          "author_type": "TOPIC",
+          "competition_ranking": 4491,
+          "content": "<p>We are all here to learn and improve </p>",
+          "feedback_tracking_data": {},
+          "id": 3541436,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-20T04:33:29.557Z",
+          "raw_markdown": "We are all here to learn and improve ",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Sadiq Abdullahi",
+              "id": 36034896,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/devsadeeq",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36034896-kg.jpg?t=2026-10-17-12-23-16",
+              "tier": "CONTRIBUTOR",
+              "url": "/devsadeeq",
+              "user_id": 36034896,
+              "user_name": "devsadeeq"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "We are all here to learn and improve ",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 750553,
+      "message_id": 3541437,
+      "parent_message_id": 3541377,
+      "author": "Sadiq Abdullahi",
+      "author_url": "/devsadeeq",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-10-20T04:34:21.150Z",
+      "raw_markdown": "About to improve on that",
+      "content_html": "<p>About to improve on that</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 1,
+      "first_seen_at": "2026-11-04T06:56:49+00:00",
+      "last_seen_at": "2026-11-18T12:04:41+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T12:04:41+00:00",
+      "remote_last_listed_at": "2026-11-18T12:04:41+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Sadiq Abdullahi",
+          "tier": "CONTRIBUTOR",
+          "url": "/devsadeeq"
+        },
+        "content": "<p>About to improve on that</p>",
+        "id": 3541437,
+        "isThankYou": false,
+        "postDate": "2026-10-20T04:34:21.150Z",
+        "raw": {
+          "author": {
+            "display_name": "Sadiq Abdullahi",
+            "id": 36034896,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36034896-kg.jpg?t=2026-10-17-12-23-16",
+            "tier": "CONTRIBUTOR",
+            "url": "/devsadeeq"
+          },
+          "author_type": "TOPIC",
+          "competition_ranking": 4491,
+          "content": "<p>About to improve on that</p>",
+          "feedback_tracking_data": {},
+          "id": 3541437,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-20T04:34:21.150Z",
+          "raw_markdown": "About to improve on that",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Sadiq Abdullahi",
+              "id": 36034896,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/devsadeeq",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36034896-kg.jpg?t=2026-10-17-12-23-16",
+              "tier": "CONTRIBUTOR",
+              "url": "/devsadeeq",
+              "user_id": 36034896,
+              "user_name": "devsadeeq"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "About to improve on that",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    }
+  ],
+  "writeup": null
+}

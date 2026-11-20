@@ -1,0 +1,563 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 754463,
+    "title": "Title: Beginner question: where does the gap between ~0.66 and ~0.70+ come from?",
+    "author": "Kratagya Jain 5846",
+    "author_url": "/kratagyajain5846",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-10-31T07:14:04.390343100Z",
+    "last_comment_post_date": "2026-10-31T17:01:11.973333300Z",
+    "comment_count": 2,
+    "votes": 1,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/754463",
+    "first_message_id": 3547653,
+    "first_seen_at": "2026-11-04T06:56:15+00:00",
+    "last_seen_at": "2026-11-16T16:36:03+00:00",
+    "detail_last_synced_at": "2026-11-16T16:23:38+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "98950d0055fed06dae6745d8eef0589c797cef9afd27405f5f7b05f623601dfd",
+    "listing_metrics_hash": "08a3f0e9d031723a4649730d445a527264427162f124c0c72a6c18d2e0b8e839",
+    "detail_content_hash": "c688a841f502049763ed49420192f05d1f0a31ac09b2f38264ab07d9bffecde9",
+    "detail_last_checked_at": "2026-11-16T16:23:38+00:00",
+    "detail_next_check_at": "2026-11-23T16:23:38+00:00",
+    "detail_unchanged_count": 2,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 2,
+      "firstForumMessageId": null,
+      "id": 754463,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-10-31T17:01:11.973333300Z",
+      "postDate": "2026-10-31T07:14:04.390343100Z",
+      "raw": {
+        "comment_count": 2,
+        "id": 754463,
+        "last_comment_post_date": "2026-10-31T17:01:11.973333300Z",
+        "post_date": "2026-10-31T07:14:04.390343100Z",
+        "title": "Title: Beginner question: where does the gap between ~0.66 and ~0.70+ come from?",
+        "topic_url": "/competitions/name-that-llm/discussion/754463",
+        "votes": 1
+      },
+      "title": "Title: Beginner question: where does the gap between ~0.66 and ~0.70+ come from?",
+      "topicUrl": "/competitions/name-that-llm/discussion/754463",
+      "votes": 1
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "Kratagya Jain 5846",
+        "authorUserName": "kratagyajain5846",
+        "comments": [
+          {
+            "author": {
+              "displayName": "Carrot Production",
+              "tier": "CONTRIBUTOR",
+              "url": "/crtproduction"
+            },
+            "content": "<p>Should be the data and the pipeline </p>",
+            "id": 3547852,
+            "isThankYou": false,
+            "postDate": "2026-10-31T17:01:11.973Z",
+            "raw": {
+              "author": {
+                "display_name": "Carrot Production",
+                "id": 20960131,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20960131-kg.jpg?t=2026-10-21-05-22-40",
+                "tier": "CONTRIBUTOR",
+                "url": "/crtproduction"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 2515,
+              "content": "<p>Should be the data and the pipeline </p>",
+              "feedback_tracking_data": {},
+              "id": 3547852,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-31T17:01:11.973Z",
+              "raw_markdown": "Should be the data and the pipeline ",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Carrot Production",
+                  "id": 20960131,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/crtproduction",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20960131-kg.jpg?t=2026-10-21-05-22-40",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/crtproduction",
+                  "user_id": 20960131,
+                  "user_name": "crtproduction"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "Should be the data and the pipeline ",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          },
+          {
+            "author": {
+              "displayName": "Civitasmass",
+              "tier": "MASTER",
+              "url": "/godhand"
+            },
+            "content": "<p>both important</p>",
+            "id": 3547654,
+            "isThankYou": false,
+            "postDate": "2026-10-31T07:16:23.517Z",
+            "raw": {
+              "author": {
+                "display_name": "Civitasmass",
+                "id": 992596,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/992596-kg.png?t=2026-07-03-03-04-34",
+                "tier": "MASTER",
+                "url": "/godhand"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 23,
+              "content": "<p>both important</p>",
+              "feedback_tracking_data": {},
+              "id": 3547654,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-31T07:16:23.517Z",
+              "raw_markdown": "both important",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Civitasmass",
+                  "id": 992596,
+                  "performance_tier": "MASTER",
+                  "profile_url": "/godhand",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/992596-kg.png?t=2026-07-03-03-04-34",
+                  "tier": "MASTER",
+                  "url": "/godhand",
+                  "user_id": 992596,
+                  "user_name": "godhand"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "both important",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "expectedCommentCount": 2,
+        "firstMessage": {
+          "author": {
+            "displayName": "Kratagya Jain 5846",
+            "tier": "CONTRIBUTOR",
+            "url": "/kratagyajain5846"
+          },
+          "content": "<p>I’m a student in my second competition. I’ve reproduced the public 0.66 recipe and tested a few changes (hard punctuation rules, softer balancing, pseudo-labelling the n-gram SVM, wider ATLAS coverage); all came out within the rerun noise. For those above 0.70, without revealing your solution: is the gap mainly data (more in-style passages per model) or modelling? Any general direction would really help someone learning. Thanks!</p>",
+          "id": 3547653,
+          "isThankYou": false,
+          "postDate": "2026-10-31T07:14:04.390Z",
+          "raw": {
+            "author": {
+              "display_name": "Kratagya Jain 5846",
+              "id": 21905510,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "CONTRIBUTOR",
+              "url": "/kratagyajain5846"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 271,
+            "content": "<p>I’m a student in my second competition. I’ve reproduced the public 0.66 recipe and tested a few changes (hard punctuation rules, softer balancing, pseudo-labelling the n-gram SVM, wider ATLAS coverage); all came out within the rerun noise. For those above 0.70, without revealing your solution: is the gap mainly data (more in-style passages per model) or modelling? Any general direction would really help someone learning. Thanks!</p>",
+            "feedback_tracking_data": {},
+            "id": 3547653,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-10-31T07:14:04.390Z",
+            "raw_markdown": "I’m a student in my second competition. I’ve reproduced the public 0.66 recipe and tested a few changes (hard punctuation rules, softer balancing, pseudo-labelling the n-gram SVM, wider ATLAS coverage); all came out within the rerun noise. For those above 0.70, without revealing your solution: is the gap mainly data (more in-style passages per model) or modelling? Any general direction would really help someone learning. Thanks!",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "Kratagya Jain 5846",
+                "id": 21905510,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/kratagyajain5846",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/kratagyajain5846",
+                "user_id": 21905510,
+                "user_name": "kratagyajain5846"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 1,
+              "total_votes": 1
+            }
+          },
+          "rawMarkdown": "I’m a student in my second competition. I’ve reproduced the public 0.66 recipe and tested a few changes (hard punctuation rules, softer balancing, pseudo-labelling the n-gram SVM, wider ATLAS coverage); all came out within the rerun noise. For those above 0.70, without revealing your solution: is the gap mainly data (more in-style passages per model) or modelling? Any general direction would really help someone learning. Thanks!",
+          "replies": [],
+          "votes": {
+            "totalVotes": 1
+          }
+        },
+        "firstMessageId": 3547653,
+        "id": 754463,
+        "name": "Title: Beginner question: where does the gap between ~0.66 and ~0.70+ come from?",
+        "postDate": "2026-10-31T07:14:04.390343100Z",
+        "url": "/competitions/name-that-llm/discussion/754463"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>I’m a student in my second competition. I’ve reproduced the public 0.66 recipe and tested a few changes (hard punctuation rules, softer balancing, pseudo-labelling the n-gram SVM, wider ATLAS coverage); all came out within the rerun noise. For those above 0.70, without revealing your solution: is the gap mainly data (more in-style passages per model) or modelling? Any general direction would really help someone learning. Thanks!</p>",
+              "id": 3547653,
+              "post_date": "2026-10-31T07:14:04.390Z",
+              "raw_markdown": "I’m a student in my second competition. I’ve reproduced the public 0.66 recipe and tested a few changes (hard punctuation rules, softer balancing, pseudo-labelling the n-gram SVM, wider ATLAS coverage); all came out within the rerun noise. For those above 0.70, without revealing your solution: is the gap mainly data (more in-style passages per model) or modelling? Any general direction would really help someone learning. Thanks!",
+              "votes": 1
+            },
+            {
+              "content": "<p>both important</p>",
+              "id": 3547654,
+              "post_date": "2026-10-31T07:16:23.517Z",
+              "raw_markdown": "both important"
+            },
+            {
+              "content": "<p>Should be the data and the pipeline </p>",
+              "id": 3547852,
+              "post_date": "2026-10-31T17:01:11.973Z",
+              "raw_markdown": "Should be the data and the pipeline "
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 21905510,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "default-thumb.png",
+            "author_user_display_name": "Kratagya Jain 5846",
+            "author_user_name": "kratagyajain5846",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "comments": [
+              {
+                "author": {
+                  "display_name": "Carrot Production",
+                  "id": 20960131,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20960131-kg.jpg?t=2026-10-21-05-22-40",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/crtproduction"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 2515,
+                "content": "<p>Should be the data and the pipeline </p>",
+                "feedback_tracking_data": {},
+                "id": 3547852,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-31T17:01:11.973Z",
+                "raw_markdown": "Should be the data and the pipeline ",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "Carrot Production",
+                    "id": 20960131,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/crtproduction",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20960131-kg.jpg?t=2026-10-21-05-22-40",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/crtproduction",
+                    "user_id": 20960131,
+                    "user_name": "crtproduction"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              },
+              {
+                "author": {
+                  "display_name": "Civitasmass",
+                  "id": 992596,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/992596-kg.png?t=2026-07-03-03-04-34",
+                  "tier": "MASTER",
+                  "url": "/godhand"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 23,
+                "content": "<p>both important</p>",
+                "feedback_tracking_data": {},
+                "id": 3547654,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-31T07:16:23.517Z",
+                "raw_markdown": "both important",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "Civitasmass",
+                    "id": 992596,
+                    "performance_tier": "MASTER",
+                    "profile_url": "/godhand",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/992596-kg.png?t=2026-07-03-03-04-34",
+                    "tier": "MASTER",
+                    "url": "/godhand",
+                    "user_id": 992596,
+                    "user_name": "godhand"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              }
+            ],
+            "first_message": {
+              "author": {
+                "display_name": "Kratagya Jain 5846",
+                "id": 21905510,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/kratagyajain5846"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 271,
+              "content": "<p>I’m a student in my second competition. I’ve reproduced the public 0.66 recipe and tested a few changes (hard punctuation rules, softer balancing, pseudo-labelling the n-gram SVM, wider ATLAS coverage); all came out within the rerun noise. For those above 0.70, without revealing your solution: is the gap mainly data (more in-style passages per model) or modelling? Any general direction would really help someone learning. Thanks!</p>",
+              "feedback_tracking_data": {},
+              "id": 3547653,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-31T07:14:04.390Z",
+              "raw_markdown": "I’m a student in my second competition. I’ve reproduced the public 0.66 recipe and tested a few changes (hard punctuation rules, softer balancing, pseudo-labelling the n-gram SVM, wider ATLAS coverage); all came out within the rerun noise. For those above 0.70, without revealing your solution: is the gap mainly data (more in-style passages per model) or modelling? Any general direction would really help someone learning. Thanks!",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Kratagya Jain 5846",
+                  "id": 21905510,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/kratagyajain5846",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/kratagyajain5846",
+                  "user_id": 21905510,
+                  "user_name": "kratagyajain5846"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": 1
+              }
+            },
+            "first_message_id": 3547653,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 754463,
+            "name": "Title: Beginner question: where does the gap between ~0.66 and ~0.70+ come from?",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-10-31T07:14:04.390343100Z",
+            "total_messages": 2,
+            "total_votes": 1,
+            "url": "/competitions/name-that-llm/discussion/754463"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:23:38+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:23:38+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-10-31T17:01:11.973333300Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [
+    {
+      "slug": "name-that-llm",
+      "topic_id": 754463,
+      "message_id": 3547654,
+      "parent_message_id": null,
+      "author": "Civitasmass",
+      "author_url": "/godhand",
+      "author_tier": "MASTER",
+      "post_date": "2026-10-31T07:16:23.517Z",
+      "raw_markdown": "both important",
+      "content_html": "<p>both important</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:57:53+00:00",
+      "last_seen_at": "2026-11-16T16:23:38+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:23:38+00:00",
+      "remote_last_listed_at": "2026-11-16T16:23:38+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Civitasmass",
+          "tier": "MASTER",
+          "url": "/godhand"
+        },
+        "content": "<p>both important</p>",
+        "id": 3547654,
+        "isThankYou": false,
+        "postDate": "2026-10-31T07:16:23.517Z",
+        "raw": {
+          "author": {
+            "display_name": "Civitasmass",
+            "id": 992596,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/992596-kg.png?t=2026-07-03-03-04-34",
+            "tier": "MASTER",
+            "url": "/godhand"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 23,
+          "content": "<p>both important</p>",
+          "feedback_tracking_data": {},
+          "id": 3547654,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-31T07:16:23.517Z",
+          "raw_markdown": "both important",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Civitasmass",
+              "id": 992596,
+              "performance_tier": "MASTER",
+              "profile_url": "/godhand",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/992596-kg.png?t=2026-07-03-03-04-34",
+              "tier": "MASTER",
+              "url": "/godhand",
+              "user_id": 992596,
+              "user_name": "godhand"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "both important",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 754463,
+      "message_id": 3547852,
+      "parent_message_id": null,
+      "author": "Carrot Production",
+      "author_url": "/crtproduction",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-10-31T17:01:11.973Z",
+      "raw_markdown": "Should be the data and the pipeline ",
+      "content_html": "<p>Should be the data and the pipeline </p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:57:53+00:00",
+      "last_seen_at": "2026-11-16T16:23:38+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:23:38+00:00",
+      "remote_last_listed_at": "2026-11-16T16:23:38+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Carrot Production",
+          "tier": "CONTRIBUTOR",
+          "url": "/crtproduction"
+        },
+        "content": "<p>Should be the data and the pipeline </p>",
+        "id": 3547852,
+        "isThankYou": false,
+        "postDate": "2026-10-31T17:01:11.973Z",
+        "raw": {
+          "author": {
+            "display_name": "Carrot Production",
+            "id": 20960131,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20960131-kg.jpg?t=2026-10-21-05-22-40",
+            "tier": "CONTRIBUTOR",
+            "url": "/crtproduction"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 2515,
+          "content": "<p>Should be the data and the pipeline </p>",
+          "feedback_tracking_data": {},
+          "id": 3547852,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-31T17:01:11.973Z",
+          "raw_markdown": "Should be the data and the pipeline ",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Carrot Production",
+              "id": 20960131,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/crtproduction",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20960131-kg.jpg?t=2026-10-21-05-22-40",
+              "tier": "CONTRIBUTOR",
+              "url": "/crtproduction",
+              "user_id": 20960131,
+              "user_name": "crtproduction"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "Should be the data and the pipeline ",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    }
+  ],
+  "writeup": null
+}

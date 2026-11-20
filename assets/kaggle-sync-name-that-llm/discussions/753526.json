@@ -1,0 +1,211 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 753526,
+    "title": "Stratified CV gives 0.13, prompt-grouped CV gives 0.31 (LB 0.308) for the same baseline",
+    "author": "Harshit Kumar",
+    "author_url": "/harshitsama",
+    "author_tier": "EXPERT",
+    "post_date": "2026-10-28T12:50:18.009177100Z",
+    "last_comment_post_date": "2026-10-28T12:50:18.010Z",
+    "comment_count": 0,
+    "votes": 1,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/753526",
+    "first_message_id": 3546146,
+    "first_seen_at": "2026-11-04T06:56:15+00:00",
+    "last_seen_at": "2026-11-16T16:36:03+00:00",
+    "detail_last_synced_at": "2026-11-16T16:23:41+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "a81e6e2e10e4a0c9d8efeb77569d8a42b1e11b01480df8f737dc5a1345e05da0",
+    "listing_metrics_hash": "08a3f0e9d031723a4649730d445a527264427162f124c0c72a6c18d2e0b8e839",
+    "detail_content_hash": "117612289e845c88f40ab7f156f6d997cc58f8fc5d8e6b37d7fd1b6ba1c616d3",
+    "detail_last_checked_at": "2026-11-16T16:23:41+00:00",
+    "detail_next_check_at": "2026-11-23T16:23:41+00:00",
+    "detail_unchanged_count": 2,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 0,
+      "firstForumMessageId": null,
+      "id": 753526,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-10-28T12:50:18.010Z",
+      "postDate": "2026-10-28T12:50:18.009177100Z",
+      "raw": {
+        "id": 753526,
+        "last_comment_post_date": "2026-10-28T12:50:18.010Z",
+        "post_date": "2026-10-28T12:50:18.009177100Z",
+        "title": "Stratified CV gives 0.13, prompt-grouped CV gives 0.31 (LB 0.308) for the same baseline",
+        "topic_url": "/competitions/name-that-llm/discussion/753526",
+        "votes": 1
+      },
+      "title": "Stratified CV gives 0.13, prompt-grouped CV gives 0.31 (LB 0.308) for the same baseline",
+      "topicUrl": "/competitions/name-that-llm/discussion/753526",
+      "votes": 1
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "EXPERT",
+        "authorUserDisplayName": "Harshit Kumar",
+        "authorUserName": "harshitsama",
+        "comments": [],
+        "expectedCommentCount": 0,
+        "firstMessage": {
+          "author": {
+            "displayName": "Harshit Kumar",
+            "tier": "EXPERT",
+            "url": "/harshitsama"
+          },
+          "content": "<p>Same model (word 1-2 + char 1-5 TF-IDF, LinearSVC, class_weight balanced), two validation schemes, one fold seed:</p>\n<ul>\n<li>prompt-grouped 5-fold: balanced accuracy 0.3126</li>\n<li>plain stratified 5-fold: 0.1315</li>\n<li>public LB of the same model trained on all of train: 0.308</li>\n</ul>\n<p>Reproducible on Kaggle CPU in about 3 minutes: <a href=\"https://www.kaggle.com/code/harshitsama/name-that-llm-grouped-cv-beats-stratified-cv\" target=\"_blank\">https://www.kaggle.com/code/harshitsama/name-that-llm-grouped-cv-beats-stratified-cv</a></p>\n<p>Data facts from the notebook: 2,699 train rows, 18 models, 150 prompts, 149-150 rows per model, so every prompt is answered by (almost) every model. My explanation (not isolated with a separate experiment): a random split puts the other models' answers to the same prompt in training, which teaches prompt-topic words that point at the wrong label for the held-out answer. Grouping by prompt_id removes that and matches the test (unseen prompts).</p>\n<p>If you tune on stratified folds you will be misled; group by prompt_id and average a few seeds of the group assignment (seed noise was about 0.001-0.004 in my runs). Corrections welcome.</p>",
+          "id": 3546146,
+          "isThankYou": false,
+          "postDate": "2026-10-28T12:50:18.010Z",
+          "raw": {
+            "author": {
+              "display_name": "Harshit Kumar",
+              "id": 26025170,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/26025170-kg.jpeg?t=2026-07-19-17-05-41",
+              "tier": "EXPERT",
+              "url": "/harshitsama"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 1305,
+            "content": "<p>Same model (word 1-2 + char 1-5 TF-IDF, LinearSVC, class_weight balanced), two validation schemes, one fold seed:</p>\n<ul>\n<li>prompt-grouped 5-fold: balanced accuracy 0.3126</li>\n<li>plain stratified 5-fold: 0.1315</li>\n<li>public LB of the same model trained on all of train: 0.308</li>\n</ul>\n<p>Reproducible on Kaggle CPU in about 3 minutes: <a href=\"https://www.kaggle.com/code/harshitsama/name-that-llm-grouped-cv-beats-stratified-cv\" target=\"_blank\">https://www.kaggle.com/code/harshitsama/name-that-llm-grouped-cv-beats-stratified-cv</a></p>\n<p>Data facts from the notebook: 2,699 train rows, 18 models, 150 prompts, 149-150 rows per model, so every prompt is answered by (almost) every model. My explanation (not isolated with a separate experiment): a random split puts the other models' answers to the same prompt in training, which teaches prompt-topic words that point at the wrong label for the held-out answer. Grouping by prompt_id removes that and matches the test (unseen prompts).</p>\n<p>If you tune on stratified folds you will be misled; group by prompt_id and average a few seeds of the group assignment (seed noise was about 0.001-0.004 in my runs). Corrections welcome.</p>",
+            "feedback_tracking_data": {},
+            "id": 3546146,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-10-28T12:50:18.010Z",
+            "raw_markdown": "Same model (word 1-2 + char 1-5 TF-IDF, LinearSVC, class_weight balanced), two validation schemes, one fold seed:\n- prompt-grouped 5-fold: balanced accuracy 0.3126\n- plain stratified 5-fold: 0.1315\n- public LB of the same model trained on all of train: 0.308\n\nReproducible on Kaggle CPU in about 3 minutes: https://www.kaggle.com/code/harshitsama/name-that-llm-grouped-cv-beats-stratified-cv\n\nData facts from the notebook: 2,699 train rows, 18 models, 150 prompts, 149-150 rows per model, so every prompt is answered by (almost) every model. My explanation (not isolated with a separate experiment): a random split puts the other models' answers to the same prompt in training, which teaches prompt-topic words that point at the wrong label for the held-out answer. Grouping by prompt_id removes that and matches the test (unseen prompts).\n\nIf you tune on stratified folds you will be misled; group by prompt_id and average a few seeds of the group assignment (seed noise was about 0.001-0.004 in my runs). Corrections welcome.",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "Harshit Kumar",
+                "id": 26025170,
+                "performance_tier": "EXPERT",
+                "profile_url": "/harshitsama",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/26025170-kg.jpeg?t=2026-07-19-17-05-41",
+                "tier": "EXPERT",
+                "url": "/harshitsama",
+                "user_id": 26025170,
+                "user_name": "harshitsama"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 1,
+              "total_votes": 1
+            }
+          },
+          "rawMarkdown": "Same model (word 1-2 + char 1-5 TF-IDF, LinearSVC, class_weight balanced), two validation schemes, one fold seed:\n- prompt-grouped 5-fold: balanced accuracy 0.3126\n- plain stratified 5-fold: 0.1315\n- public LB of the same model trained on all of train: 0.308\n\nReproducible on Kaggle CPU in about 3 minutes: https://www.kaggle.com/code/harshitsama/name-that-llm-grouped-cv-beats-stratified-cv\n\nData facts from the notebook: 2,699 train rows, 18 models, 150 prompts, 149-150 rows per model, so every prompt is answered by (almost) every model. My explanation (not isolated with a separate experiment): a random split puts the other models' answers to the same prompt in training, which teaches prompt-topic words that point at the wrong label for the held-out answer. Grouping by prompt_id removes that and matches the test (unseen prompts).\n\nIf you tune on stratified folds you will be misled; group by prompt_id and average a few seeds of the group assignment (seed noise was about 0.001-0.004 in my runs). Corrections welcome.",
+          "replies": [],
+          "votes": {
+            "totalVotes": 1
+          }
+        },
+        "firstMessageId": 3546146,
+        "id": 753526,
+        "name": "Stratified CV gives 0.13, prompt-grouped CV gives 0.31 (LB 0.308) for the same baseline",
+        "postDate": "2026-10-28T12:50:18.009177100Z",
+        "url": "/competitions/name-that-llm/discussion/753526"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>Same model (word 1-2 + char 1-5 TF-IDF, LinearSVC, class_weight balanced), two validation schemes, one fold seed:</p>\n<ul>\n<li>prompt-grouped 5-fold: balanced accuracy 0.3126</li>\n<li>plain stratified 5-fold: 0.1315</li>\n<li>public LB of the same model trained on all of train: 0.308</li>\n</ul>\n<p>Reproducible on Kaggle CPU in about 3 minutes: <a href=\"https://www.kaggle.com/code/harshitsama/name-that-llm-grouped-cv-beats-stratified-cv\" target=\"_blank\">https://www.kaggle.com/code/harshitsama/name-that-llm-grouped-cv-beats-stratified-cv</a></p>\n<p>Data facts from the notebook: 2,699 train rows, 18 models, 150 prompts, 149-150 rows per model, so every prompt is answered by (almost) every model. My explanation (not isolated with a separate experiment): a random split puts the other models' answers to the same prompt in training, which teaches prompt-topic words that point at the wrong label for the held-out answer. Grouping by prompt_id removes that and matches the test (unseen prompts).</p>\n<p>If you tune on stratified folds you will be misled; group by prompt_id and average a few seeds of the group assignment (seed noise was about 0.001-0.004 in my runs). Corrections welcome.</p>",
+              "id": 3546146,
+              "post_date": "2026-10-28T12:50:18.010Z",
+              "raw_markdown": "Same model (word 1-2 + char 1-5 TF-IDF, LinearSVC, class_weight balanced), two validation schemes, one fold seed:\n- prompt-grouped 5-fold: balanced accuracy 0.3126\n- plain stratified 5-fold: 0.1315\n- public LB of the same model trained on all of train: 0.308\n\nReproducible on Kaggle CPU in about 3 minutes: https://www.kaggle.com/code/harshitsama/name-that-llm-grouped-cv-beats-stratified-cv\n\nData facts from the notebook: 2,699 train rows, 18 models, 150 prompts, 149-150 rows per model, so every prompt is answered by (almost) every model. My explanation (not isolated with a separate experiment): a random split puts the other models' answers to the same prompt in training, which teaches prompt-topic words that point at the wrong label for the held-out answer. Grouping by prompt_id removes that and matches the test (unseen prompts).\n\nIf you tune on stratified folds you will be misled; group by prompt_id and average a few seeds of the group assignment (seed noise was about 0.001-0.004 in my runs). Corrections welcome.",
+              "votes": 1
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 26025170,
+            "author_performance_tier": "EXPERT",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "26025170-kg.jpeg?t=2026-07-19-17-05-41",
+            "author_user_display_name": "Harshit Kumar",
+            "author_user_name": "harshitsama",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "first_message": {
+              "author": {
+                "display_name": "Harshit Kumar",
+                "id": 26025170,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/26025170-kg.jpeg?t=2026-07-19-17-05-41",
+                "tier": "EXPERT",
+                "url": "/harshitsama"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 1305,
+              "content": "<p>Same model (word 1-2 + char 1-5 TF-IDF, LinearSVC, class_weight balanced), two validation schemes, one fold seed:</p>\n<ul>\n<li>prompt-grouped 5-fold: balanced accuracy 0.3126</li>\n<li>plain stratified 5-fold: 0.1315</li>\n<li>public LB of the same model trained on all of train: 0.308</li>\n</ul>\n<p>Reproducible on Kaggle CPU in about 3 minutes: <a href=\"https://www.kaggle.com/code/harshitsama/name-that-llm-grouped-cv-beats-stratified-cv\" target=\"_blank\">https://www.kaggle.com/code/harshitsama/name-that-llm-grouped-cv-beats-stratified-cv</a></p>\n<p>Data facts from the notebook: 2,699 train rows, 18 models, 150 prompts, 149-150 rows per model, so every prompt is answered by (almost) every model. My explanation (not isolated with a separate experiment): a random split puts the other models' answers to the same prompt in training, which teaches prompt-topic words that point at the wrong label for the held-out answer. Grouping by prompt_id removes that and matches the test (unseen prompts).</p>\n<p>If you tune on stratified folds you will be misled; group by prompt_id and average a few seeds of the group assignment (seed noise was about 0.001-0.004 in my runs). Corrections welcome.</p>",
+              "feedback_tracking_data": {},
+              "id": 3546146,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-28T12:50:18.010Z",
+              "raw_markdown": "Same model (word 1-2 + char 1-5 TF-IDF, LinearSVC, class_weight balanced), two validation schemes, one fold seed:\n- prompt-grouped 5-fold: balanced accuracy 0.3126\n- plain stratified 5-fold: 0.1315\n- public LB of the same model trained on all of train: 0.308\n\nReproducible on Kaggle CPU in about 3 minutes: https://www.kaggle.com/code/harshitsama/name-that-llm-grouped-cv-beats-stratified-cv\n\nData facts from the notebook: 2,699 train rows, 18 models, 150 prompts, 149-150 rows per model, so every prompt is answered by (almost) every model. My explanation (not isolated with a separate experiment): a random split puts the other models' answers to the same prompt in training, which teaches prompt-topic words that point at the wrong label for the held-out answer. Grouping by prompt_id removes that and matches the test (unseen prompts).\n\nIf you tune on stratified folds you will be misled; group by prompt_id and average a few seeds of the group assignment (seed noise was about 0.001-0.004 in my runs). Corrections welcome.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Harshit Kumar",
+                  "id": 26025170,
+                  "performance_tier": "EXPERT",
+                  "profile_url": "/harshitsama",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/26025170-kg.jpeg?t=2026-07-19-17-05-41",
+                  "tier": "EXPERT",
+                  "url": "/harshitsama",
+                  "user_id": 26025170,
+                  "user_name": "harshitsama"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": 1
+              }
+            },
+            "first_message_id": 3546146,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 753526,
+            "name": "Stratified CV gives 0.13, prompt-grouped CV gives 0.31 (LB 0.308) for the same baseline",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-10-28T12:50:18.009177100Z",
+            "total_votes": 1,
+            "url": "/competitions/name-that-llm/discussion/753526"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:23:41+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:23:41+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-10-28T12:50:18.010Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [],
+  "writeup": null
+}

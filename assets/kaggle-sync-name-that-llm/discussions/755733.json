@@ -1,0 +1,1376 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 755733,
+    "title": "Prompt Group Sizes: Is it always exactly 18 texts per prompt?",
+    "author": "ナハト・ ファウスト",
+    "author_url": "/vitalya05",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-11-04T13:26:42.902334400Z",
+    "last_comment_post_date": "2026-11-10T08:19:59.826666700Z",
+    "comment_count": 5,
+    "votes": 3,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/755733",
+    "first_message_id": 3549915,
+    "first_seen_at": "2026-11-09T03:54:40+00:00",
+    "last_seen_at": "2026-11-18T09:02:50+00:00",
+    "detail_last_synced_at": "2026-11-18T09:02:50+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-18T09:01:52+00:00",
+    "remote_last_listed_at": "2026-11-18T09:01:52+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "a62408e727278080d3b2c5f13a4c14d2af20a9aed97ac52d6c9ca0c4b2c6cef6",
+    "listing_metrics_hash": "6d8a74dbac9b4cd94399e9cc1520c8e662b0bbcc16c76b670939fedc4deb1f33",
+    "detail_content_hash": "47704681882851f6149ad5fda2cb5ec0cef0edbb89dce2bf9c5b216fe8607ae8",
+    "detail_last_checked_at": "2026-11-18T09:02:50+00:00",
+    "detail_next_check_at": "2026-11-21T09:02:50+00:00",
+    "detail_unchanged_count": 1,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 5,
+      "firstForumMessageId": null,
+      "id": 755733,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-11-10T08:19:59.826666700Z",
+      "postDate": "2026-11-04T13:26:42.902334400Z",
+      "raw": {
+        "comment_count": 5,
+        "id": 755733,
+        "last_comment_post_date": "2026-11-10T08:19:59.826666700Z",
+        "post_date": "2026-11-04T13:26:42.902334400Z",
+        "title": "Prompt Group Sizes: Is it always exactly 18 texts per prompt?",
+        "topic_url": "/competitions/name-that-llm/discussion/755733",
+        "votes": 3
+      },
+      "title": "Prompt Group Sizes: Is it always exactly 18 texts per prompt?",
+      "topicUrl": "/competitions/name-that-llm/discussion/755733",
+      "votes": 3
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "ナハト・ ファウスト",
+        "authorUserName": "vitalya05",
+        "comments": [
+          {
+            "author": {
+              "displayName": "John K",
+              "tier": "CONTRIBUTOR",
+              "url": "/johnnykhan1"
+            },
+            "content": "<p>Yes, the Overview line already answers the test-side question. On train, 149 of 150 prompts have 18 answers and one prompt has 17 (claude-fable-5 is the short model). That can make train look like neat rounds. Public and private do not promise a full 18-model group, and model counts are unequal, so anything that forces one of each label per prompt on test is fitting a structure the test set does not have.</p>",
+            "id": 3552641,
+            "isThankYou": false,
+            "postDate": "2026-11-10T02:48:07.733Z",
+            "raw": {
+              "author": {
+                "display_name": "John K",
+                "id": 37335549,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/37335549-kg.jpg?t=2026-10-24-04-37-50",
+                "tier": "CONTRIBUTOR",
+                "url": "/johnnykhan1"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 1360,
+              "content": "<p>Yes, the Overview line already answers the test-side question. On train, 149 of 150 prompts have 18 answers and one prompt has 17 (claude-fable-5 is the short model). That can make train look like neat rounds. Public and private do not promise a full 18-model group, and model counts are unequal, so anything that forces one of each label per prompt on test is fitting a structure the test set does not have.</p>",
+              "feedback_tracking_data": {},
+              "id": 3552641,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-10T02:48:07.733Z",
+              "raw_markdown": "Yes, the Overview line already answers the test-side question. On train, 149 of 150 prompts have 18 answers and one prompt has 17 (claude-fable-5 is the short model). That can make train look like neat rounds. Public and private do not promise a full 18-model group, and model counts are unequal, so anything that forces one of each label per prompt on test is fitting a structure the test set does not have.",
+              "replies": [
+                {
+                  "author": {
+                    "display_name": "ナハト・ ファウスト",
+                    "id": 31250079,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31250079-kg.png?t=2026-11-01-12-05-16",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/vitalya05"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 3888,
+                  "content": "<p>Got it. Thx</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3552738,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-10T06:54:32.097Z",
+                  "raw_markdown": "Got it. Thx",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "ナハト・ ファウスト",
+                      "id": 31250079,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/vitalya05",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31250079-kg.png?t=2026-11-01-12-05-16",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/vitalya05",
+                      "user_id": 31250079,
+                      "user_name": "vitalya05"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "John K",
+                  "id": 37335549,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/johnnykhan1",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/37335549-kg.jpg?t=2026-10-24-04-37-50",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/johnnykhan1",
+                  "user_id": 37335549,
+                  "user_name": "johnnykhan1"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": 1
+              }
+            },
+            "rawMarkdown": "Yes, the Overview line already answers the test-side question. On train, 149 of 150 prompts have 18 answers and one prompt has 17 (claude-fable-5 is the short model). That can make train look like neat rounds. Public and private do not promise a full 18-model group, and model counts are unequal, so anything that forces one of each label per prompt on test is fitting a structure the test set does not have.",
+            "replies": [
+              {
+                "author": {
+                  "displayName": "ナハト・ ファウスト",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/vitalya05"
+                },
+                "content": "<p>Got it. Thx</p>",
+                "id": 3552738,
+                "isThankYou": false,
+                "postDate": "2026-11-10T06:54:32.097Z",
+                "raw": {
+                  "author": {
+                    "display_name": "ナハト・ ファウスト",
+                    "id": 31250079,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31250079-kg.png?t=2026-11-01-12-05-16",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/vitalya05"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 3888,
+                  "content": "<p>Got it. Thx</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3552738,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-10T06:54:32.097Z",
+                  "raw_markdown": "Got it. Thx",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "ナハト・ ファウスト",
+                      "id": 31250079,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/vitalya05",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31250079-kg.png?t=2026-11-01-12-05-16",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/vitalya05",
+                      "user_id": 31250079,
+                      "user_name": "vitalya05"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                },
+                "rawMarkdown": "Got it. Thx",
+                "replies": [],
+                "votes": {
+                  "totalVotes": 0
+                }
+              }
+            ],
+            "votes": {
+              "totalVotes": 1
+            }
+          },
+          {
+            "author": {
+              "displayName": "somerandomguy",
+              "tier": "CONTRIBUTOR",
+              "url": "/stithpragya"
+            },
+            "content": "<p>Mentioned on Overview page. </p>\n<blockquote>\n  <p>The number of test passages per model is not equal, and the mix of models differs between the public and private leaderboard. Balanced accuracy gives every model the same weight.</p>\n</blockquote>\n<p>So yeah not all prompts will have an output by every model, worst case can be 4000 totally seperate prompts.</p>",
+            "id": 3550029,
+            "isThankYou": false,
+            "postDate": "2026-11-04T17:38:12.007Z",
+            "raw": {
+              "author": {
+                "display_name": "somerandomguy",
+                "id": 22597865,
+                "progression_opt_out": true,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                "tier": "CONTRIBUTOR",
+                "url": "/stithpragya"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 11,
+              "content": "<p>Mentioned on Overview page. </p>\n<blockquote>\n  <p>The number of test passages per model is not equal, and the mix of models differs between the public and private leaderboard. Balanced accuracy gives every model the same weight.</p>\n</blockquote>\n<p>So yeah not all prompts will have an output by every model, worst case can be 4000 totally seperate prompts.</p>",
+              "feedback_tracking_data": {},
+              "id": 3550029,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-04T17:38:12.007Z",
+              "raw_markdown": "Mentioned on Overview page. \n\n>The number of test passages per model is not equal, and the mix of models differs between the public and private leaderboard. Balanced accuracy gives every model the same weight.\n\nSo yeah not all prompts will have an output by every model, worst case can be 4000 totally seperate prompts.",
+              "replies": [
+                {
+                  "author": {
+                    "display_name": "ナハト・ ファウスト",
+                    "id": 31250079,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31250079-kg.png?t=2026-11-01-12-05-16",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/vitalya05"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 3888,
+                  "content": "<p>I see. Thx</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3550426,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-05T08:55:00.233Z",
+                  "raw_markdown": "I see. Thx",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "ナハト・ ファウスト",
+                      "id": 31250079,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/vitalya05",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31250079-kg.png?t=2026-11-01-12-05-16",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/vitalya05",
+                      "user_id": 31250079,
+                      "user_name": "vitalya05"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "somerandomguy",
+                  "id": 22597865,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/stithpragya",
+                  "progression_opt_out": true,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/stithpragya",
+                  "user_id": 22597865,
+                  "user_name": "stithpragya"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 2,
+                "total_votes": 2
+              }
+            },
+            "rawMarkdown": "Mentioned on Overview page. \n\n>The number of test passages per model is not equal, and the mix of models differs between the public and private leaderboard. Balanced accuracy gives every model the same weight.\n\nSo yeah not all prompts will have an output by every model, worst case can be 4000 totally seperate prompts.",
+            "replies": [
+              {
+                "author": {
+                  "displayName": "ナハト・ ファウスト",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/vitalya05"
+                },
+                "content": "<p>I see. Thx</p>",
+                "id": 3550426,
+                "isThankYou": false,
+                "postDate": "2026-11-05T08:55:00.233Z",
+                "raw": {
+                  "author": {
+                    "display_name": "ナハト・ ファウスト",
+                    "id": 31250079,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31250079-kg.png?t=2026-11-01-12-05-16",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/vitalya05"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 3888,
+                  "content": "<p>I see. Thx</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3550426,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-05T08:55:00.233Z",
+                  "raw_markdown": "I see. Thx",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "ナハト・ ファウスト",
+                      "id": 31250079,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/vitalya05",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31250079-kg.png?t=2026-11-01-12-05-16",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/vitalya05",
+                      "user_id": 31250079,
+                      "user_name": "vitalya05"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                },
+                "rawMarkdown": "I see. Thx",
+                "replies": [],
+                "votes": {
+                  "totalVotes": 0
+                }
+              }
+            ],
+            "votes": {
+              "totalVotes": 2
+            }
+          },
+          {
+            "author": {
+              "displayName": "AyoGG",
+              "tier": "MASTER",
+              "url": "/ggayoayogg"
+            },
+            "content": "<p>The test set is not uniform.</p>",
+            "id": 3552760,
+            "isThankYou": false,
+            "postDate": "2026-11-10T08:19:59.827Z",
+            "raw": {
+              "author": {
+                "display_name": "AyoGG",
+                "id": 15255201,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15255201-kg.png?t=2026-10-28-05-21-58",
+                "tier": "MASTER",
+                "url": "/ggayoayogg"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 14,
+              "content": "<p>The test set is not uniform.</p>",
+              "feedback_tracking_data": {},
+              "id": 3552760,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-10T08:19:59.827Z",
+              "raw_markdown": "The test set is not uniform.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "AyoGG",
+                  "id": 15255201,
+                  "performance_tier": "MASTER",
+                  "profile_url": "/ggayoayogg",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15255201-kg.png?t=2026-10-28-05-21-58",
+                  "tier": "MASTER",
+                  "url": "/ggayoayogg",
+                  "user_id": 15255201,
+                  "user_name": "ggayoayogg"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "The test set is not uniform.",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "expectedCommentCount": 5,
+        "firstMessage": {
+          "author": {
+            "displayName": "ナハト・ ファウスト",
+            "tier": "CONTRIBUTOR",
+            "url": "/vitalya05"
+          },
+          "content": "<ol>\n<li><strong>Test set contain exactly 18 texts per prompt like  train set?</strong></li>\n<li><strong>Is it possible that some prompt groups aren't full, I mean not 18 but 17 or less?</strong></li>\n</ol>\n<p>I know that train dataset contain 1 prompt of 17 texts. Is it possible that the same case will appear in test dataset? </p>",
+          "id": 3549915,
+          "isThankYou": false,
+          "postDate": "2026-11-04T13:26:42.903Z",
+          "raw": {
+            "author": {
+              "display_name": "ナハト・ ファウスト",
+              "id": 31250079,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31250079-kg.png?t=2026-11-01-12-05-16",
+              "tier": "CONTRIBUTOR",
+              "url": "/vitalya05"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 3888,
+            "content": "<ol>\n<li><strong>Test set contain exactly 18 texts per prompt like  train set?</strong></li>\n<li><strong>Is it possible that some prompt groups aren't full, I mean not 18 but 17 or less?</strong></li>\n</ol>\n<p>I know that train dataset contain 1 prompt of 17 texts. Is it possible that the same case will appear in test dataset? </p>",
+            "feedback_tracking_data": {},
+            "id": 3549915,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-11-04T13:26:42.903Z",
+            "raw_markdown": "1. **Test set contain exactly 18 texts per prompt like  train set?**\n2. **Is it possible that some prompt groups aren't full, I mean not 18 but 17 or less?**\n\nI know that train dataset contain 1 prompt of 17 texts. Is it possible that the same case will appear in test dataset? ",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "ナハト・ ファウスト",
+                "id": 31250079,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/vitalya05",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31250079-kg.png?t=2026-11-01-12-05-16",
+                "tier": "CONTRIBUTOR",
+                "url": "/vitalya05",
+                "user_id": 31250079,
+                "user_name": "vitalya05"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 3,
+              "total_votes": 3
+            }
+          },
+          "rawMarkdown": "1. **Test set contain exactly 18 texts per prompt like  train set?**\n2. **Is it possible that some prompt groups aren't full, I mean not 18 but 17 or less?**\n\nI know that train dataset contain 1 prompt of 17 texts. Is it possible that the same case will appear in test dataset? ",
+          "replies": [],
+          "votes": {
+            "totalVotes": 3
+          }
+        },
+        "firstMessageId": 3549915,
+        "id": 755733,
+        "name": "Prompt Group Sizes: Is it always exactly 18 texts per prompt?",
+        "postDate": "2026-11-04T13:26:42.902334400Z",
+        "url": "/competitions/name-that-llm/discussion/755733"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<ol>\n<li><strong>Test set contain exactly 18 texts per prompt like  train set?</strong></li>\n<li><strong>Is it possible that some prompt groups aren't full, I mean not 18 but 17 or less?</strong></li>\n</ol>\n<p>I know that train dataset contain 1 prompt of 17 texts. Is it possible that the same case will appear in test dataset? </p>",
+              "id": 3549915,
+              "post_date": "2026-11-04T13:26:42.903Z",
+              "raw_markdown": "1. **Test set contain exactly 18 texts per prompt like  train set?**\n2. **Is it possible that some prompt groups aren't full, I mean not 18 but 17 or less?**\n\nI know that train dataset contain 1 prompt of 17 texts. Is it possible that the same case will appear in test dataset? ",
+              "votes": 3
+            },
+            {
+              "content": "<p>Mentioned on Overview page. </p>\n<blockquote>\n  <p>The number of test passages per model is not equal, and the mix of models differs between the public and private leaderboard. Balanced accuracy gives every model the same weight.</p>\n</blockquote>\n<p>So yeah not all prompts will have an output by every model, worst case can be 4000 totally seperate prompts.</p>",
+              "id": 3550029,
+              "post_date": "2026-11-04T17:38:12.007Z",
+              "raw_markdown": "Mentioned on Overview page. \n\n>The number of test passages per model is not equal, and the mix of models differs between the public and private leaderboard. Balanced accuracy gives every model the same weight.\n\nSo yeah not all prompts will have an output by every model, worst case can be 4000 totally seperate prompts.",
+              "replies": [
+                {
+                  "content": "<p>I see. Thx</p>",
+                  "id": 3550426,
+                  "post_date": "2026-11-05T08:55:00.233Z",
+                  "raw_markdown": "I see. Thx"
+                }
+              ],
+              "votes": 2
+            },
+            {
+              "content": "<p>Yes, the Overview line already answers the test-side question. On train, 149 of 150 prompts have 18 answers and one prompt has 17 (claude-fable-5 is the short model). That can make train look like neat rounds. Public and private do not promise a full 18-model group, and model counts are unequal, so anything that forces one of each label per prompt on test is fitting a structure the test set does not have.</p>",
+              "id": 3552641,
+              "post_date": "2026-11-10T02:48:07.733Z",
+              "raw_markdown": "Yes, the Overview line already answers the test-side question. On train, 149 of 150 prompts have 18 answers and one prompt has 17 (claude-fable-5 is the short model). That can make train look like neat rounds. Public and private do not promise a full 18-model group, and model counts are unequal, so anything that forces one of each label per prompt on test is fitting a structure the test set does not have.",
+              "replies": [
+                {
+                  "content": "<p>Got it. Thx</p>",
+                  "id": 3552738,
+                  "post_date": "2026-11-10T06:54:32.097Z",
+                  "raw_markdown": "Got it. Thx"
+                }
+              ],
+              "votes": 1
+            },
+            {
+              "content": "<p>The test set is not uniform.</p>",
+              "id": 3552760,
+              "post_date": "2026-11-10T08:19:59.827Z",
+              "raw_markdown": "The test set is not uniform."
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 31250079,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "31250079-kg.png?t=2026-11-01-12-05-16",
+            "author_user_display_name": "ナハト・ ファウスト",
+            "author_user_name": "vitalya05",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "comments": [
+              {
+                "author": {
+                  "display_name": "John K",
+                  "id": 37335549,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/37335549-kg.jpg?t=2026-10-24-04-37-50",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/johnnykhan1"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 1360,
+                "content": "<p>Yes, the Overview line already answers the test-side question. On train, 149 of 150 prompts have 18 answers and one prompt has 17 (claude-fable-5 is the short model). That can make train look like neat rounds. Public and private do not promise a full 18-model group, and model counts are unequal, so anything that forces one of each label per prompt on test is fitting a structure the test set does not have.</p>",
+                "feedback_tracking_data": {},
+                "id": 3552641,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-11-10T02:48:07.733Z",
+                "raw_markdown": "Yes, the Overview line already answers the test-side question. On train, 149 of 150 prompts have 18 answers and one prompt has 17 (claude-fable-5 is the short model). That can make train look like neat rounds. Public and private do not promise a full 18-model group, and model counts are unequal, so anything that forces one of each label per prompt on test is fitting a structure the test set does not have.",
+                "replies": [
+                  {
+                    "author": {
+                      "display_name": "ナハト・ ファウスト",
+                      "id": 31250079,
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31250079-kg.png?t=2026-11-01-12-05-16",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/vitalya05"
+                    },
+                    "author_type": "TOPIC",
+                    "competition_ranking": 3888,
+                    "content": "<p>Got it. Thx</p>",
+                    "feedback_tracking_data": {},
+                    "id": 3552738,
+                    "is_thank_you": false,
+                    "kernel_version": 0,
+                    "parent": {},
+                    "post_date": "2026-11-10T06:54:32.097Z",
+                    "raw_markdown": "Got it. Thx",
+                    "team_up_info": {
+                      "intro": "",
+                      "team_leader": {
+                        "display_name": "ナハト・ ファウスト",
+                        "id": 31250079,
+                        "performance_tier": "CONTRIBUTOR",
+                        "profile_url": "/vitalya05",
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31250079-kg.png?t=2026-11-01-12-05-16",
+                        "tier": "CONTRIBUTOR",
+                        "url": "/vitalya05",
+                        "user_id": 31250079,
+                        "user_name": "vitalya05"
+                      }
+                    },
+                    "votes": {
+                      "can_upvote": true
+                    }
+                  }
+                ],
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "John K",
+                    "id": 37335549,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/johnnykhan1",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/37335549-kg.jpg?t=2026-10-24-04-37-50",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/johnnykhan1",
+                    "user_id": 37335549,
+                    "user_name": "johnnykhan1"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true,
+                  "total_upvotes": 1,
+                  "total_votes": 1
+                }
+              },
+              {
+                "author": {
+                  "display_name": "somerandomguy",
+                  "id": 22597865,
+                  "progression_opt_out": true,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/stithpragya"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 11,
+                "content": "<p>Mentioned on Overview page. </p>\n<blockquote>\n  <p>The number of test passages per model is not equal, and the mix of models differs between the public and private leaderboard. Balanced accuracy gives every model the same weight.</p>\n</blockquote>\n<p>So yeah not all prompts will have an output by every model, worst case can be 4000 totally seperate prompts.</p>",
+                "feedback_tracking_data": {},
+                "id": 3550029,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-11-04T17:38:12.007Z",
+                "raw_markdown": "Mentioned on Overview page. \n\n>The number of test passages per model is not equal, and the mix of models differs between the public and private leaderboard. Balanced accuracy gives every model the same weight.\n\nSo yeah not all prompts will have an output by every model, worst case can be 4000 totally seperate prompts.",
+                "replies": [
+                  {
+                    "author": {
+                      "display_name": "ナハト・ ファウスト",
+                      "id": 31250079,
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31250079-kg.png?t=2026-11-01-12-05-16",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/vitalya05"
+                    },
+                    "author_type": "TOPIC",
+                    "competition_ranking": 3888,
+                    "content": "<p>I see. Thx</p>",
+                    "feedback_tracking_data": {},
+                    "id": 3550426,
+                    "is_thank_you": false,
+                    "kernel_version": 0,
+                    "parent": {},
+                    "post_date": "2026-11-05T08:55:00.233Z",
+                    "raw_markdown": "I see. Thx",
+                    "team_up_info": {
+                      "intro": "",
+                      "team_leader": {
+                        "display_name": "ナハト・ ファウスト",
+                        "id": 31250079,
+                        "performance_tier": "CONTRIBUTOR",
+                        "profile_url": "/vitalya05",
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31250079-kg.png?t=2026-11-01-12-05-16",
+                        "tier": "CONTRIBUTOR",
+                        "url": "/vitalya05",
+                        "user_id": 31250079,
+                        "user_name": "vitalya05"
+                      }
+                    },
+                    "votes": {
+                      "can_upvote": true
+                    }
+                  }
+                ],
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "somerandomguy",
+                    "id": 22597865,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/stithpragya",
+                    "progression_opt_out": true,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/stithpragya",
+                    "user_id": 22597865,
+                    "user_name": "stithpragya"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true,
+                  "total_upvotes": 2,
+                  "total_votes": 2
+                }
+              },
+              {
+                "author": {
+                  "display_name": "AyoGG",
+                  "id": 15255201,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15255201-kg.png?t=2026-10-28-05-21-58",
+                  "tier": "MASTER",
+                  "url": "/ggayoayogg"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 14,
+                "content": "<p>The test set is not uniform.</p>",
+                "feedback_tracking_data": {},
+                "id": 3552760,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-11-10T08:19:59.827Z",
+                "raw_markdown": "The test set is not uniform.",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "AyoGG",
+                    "id": 15255201,
+                    "performance_tier": "MASTER",
+                    "profile_url": "/ggayoayogg",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15255201-kg.png?t=2026-10-28-05-21-58",
+                    "tier": "MASTER",
+                    "url": "/ggayoayogg",
+                    "user_id": 15255201,
+                    "user_name": "ggayoayogg"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              }
+            ],
+            "first_message": {
+              "author": {
+                "display_name": "ナハト・ ファウスト",
+                "id": 31250079,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31250079-kg.png?t=2026-11-01-12-05-16",
+                "tier": "CONTRIBUTOR",
+                "url": "/vitalya05"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 3888,
+              "content": "<ol>\n<li><strong>Test set contain exactly 18 texts per prompt like  train set?</strong></li>\n<li><strong>Is it possible that some prompt groups aren't full, I mean not 18 but 17 or less?</strong></li>\n</ol>\n<p>I know that train dataset contain 1 prompt of 17 texts. Is it possible that the same case will appear in test dataset? </p>",
+              "feedback_tracking_data": {},
+              "id": 3549915,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-04T13:26:42.903Z",
+              "raw_markdown": "1. **Test set contain exactly 18 texts per prompt like  train set?**\n2. **Is it possible that some prompt groups aren't full, I mean not 18 but 17 or less?**\n\nI know that train dataset contain 1 prompt of 17 texts. Is it possible that the same case will appear in test dataset? ",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "ナハト・ ファウスト",
+                  "id": 31250079,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/vitalya05",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31250079-kg.png?t=2026-11-01-12-05-16",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/vitalya05",
+                  "user_id": 31250079,
+                  "user_name": "vitalya05"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 3,
+                "total_votes": 3
+              }
+            },
+            "first_message_id": 3549915,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 755733,
+            "name": "Prompt Group Sizes: Is it always exactly 18 texts per prompt?",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-11-04T13:26:42.902334400Z",
+            "total_messages": 5,
+            "total_votes": 3,
+            "url": "/competitions/name-that-llm/discussion/755733"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-18T09:02:50+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-18T09:02:50+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-11-10T08:19:59.826666700Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [
+    {
+      "slug": "name-that-llm",
+      "topic_id": 755733,
+      "message_id": 3550029,
+      "parent_message_id": null,
+      "author": "somerandomguy",
+      "author_url": "/stithpragya",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-04T17:38:12.007Z",
+      "raw_markdown": "Mentioned on Overview page. \n\n>The number of test passages per model is not equal, and the mix of models differs between the public and private leaderboard. Balanced accuracy gives every model the same weight.\n\nSo yeah not all prompts will have an output by every model, worst case can be 4000 totally seperate prompts.",
+      "content_html": "<p>Mentioned on Overview page. </p>\n<blockquote>\n  <p>The number of test passages per model is not equal, and the mix of models differs between the public and private leaderboard. Balanced accuracy gives every model the same weight.</p>\n</blockquote>\n<p>So yeah not all prompts will have an output by every model, worst case can be 4000 totally seperate prompts.</p>",
+      "votes": 2,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-09T03:55:11+00:00",
+      "last_seen_at": "2026-11-18T09:02:50+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T09:02:50+00:00",
+      "remote_last_listed_at": "2026-11-18T09:02:50+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "somerandomguy",
+          "tier": "CONTRIBUTOR",
+          "url": "/stithpragya"
+        },
+        "content": "<p>Mentioned on Overview page. </p>\n<blockquote>\n  <p>The number of test passages per model is not equal, and the mix of models differs between the public and private leaderboard. Balanced accuracy gives every model the same weight.</p>\n</blockquote>\n<p>So yeah not all prompts will have an output by every model, worst case can be 4000 totally seperate prompts.</p>",
+        "id": 3550029,
+        "isThankYou": false,
+        "postDate": "2026-11-04T17:38:12.007Z",
+        "raw": {
+          "author": {
+            "display_name": "somerandomguy",
+            "id": 22597865,
+            "progression_opt_out": true,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+            "tier": "CONTRIBUTOR",
+            "url": "/stithpragya"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 11,
+          "content": "<p>Mentioned on Overview page. </p>\n<blockquote>\n  <p>The number of test passages per model is not equal, and the mix of models differs between the public and private leaderboard. Balanced accuracy gives every model the same weight.</p>\n</blockquote>\n<p>So yeah not all prompts will have an output by every model, worst case can be 4000 totally seperate prompts.</p>",
+          "feedback_tracking_data": {},
+          "id": 3550029,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-04T17:38:12.007Z",
+          "raw_markdown": "Mentioned on Overview page. \n\n>The number of test passages per model is not equal, and the mix of models differs between the public and private leaderboard. Balanced accuracy gives every model the same weight.\n\nSo yeah not all prompts will have an output by every model, worst case can be 4000 totally seperate prompts.",
+          "replies": [
+            {
+              "author": {
+                "display_name": "ナハト・ ファウスト",
+                "id": 31250079,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31250079-kg.png?t=2026-11-01-12-05-16",
+                "tier": "CONTRIBUTOR",
+                "url": "/vitalya05"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 3888,
+              "content": "<p>I see. Thx</p>",
+              "feedback_tracking_data": {},
+              "id": 3550426,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-05T08:55:00.233Z",
+              "raw_markdown": "I see. Thx",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "ナハト・ ファウスト",
+                  "id": 31250079,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/vitalya05",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31250079-kg.png?t=2026-11-01-12-05-16",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/vitalya05",
+                  "user_id": 31250079,
+                  "user_name": "vitalya05"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            }
+          ],
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "somerandomguy",
+              "id": 22597865,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/stithpragya",
+              "progression_opt_out": true,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+              "tier": "CONTRIBUTOR",
+              "url": "/stithpragya",
+              "user_id": 22597865,
+              "user_name": "stithpragya"
+            }
+          },
+          "votes": {
+            "can_upvote": true,
+            "total_upvotes": 2,
+            "total_votes": 2
+          }
+        },
+        "rawMarkdown": "Mentioned on Overview page. \n\n>The number of test passages per model is not equal, and the mix of models differs between the public and private leaderboard. Balanced accuracy gives every model the same weight.\n\nSo yeah not all prompts will have an output by every model, worst case can be 4000 totally seperate prompts.",
+        "replies": [
+          {
+            "author": {
+              "displayName": "ナハト・ ファウスト",
+              "tier": "CONTRIBUTOR",
+              "url": "/vitalya05"
+            },
+            "content": "<p>I see. Thx</p>",
+            "id": 3550426,
+            "isThankYou": false,
+            "postDate": "2026-11-05T08:55:00.233Z",
+            "raw": {
+              "author": {
+                "display_name": "ナハト・ ファウスト",
+                "id": 31250079,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31250079-kg.png?t=2026-11-01-12-05-16",
+                "tier": "CONTRIBUTOR",
+                "url": "/vitalya05"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 3888,
+              "content": "<p>I see. Thx</p>",
+              "feedback_tracking_data": {},
+              "id": 3550426,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-05T08:55:00.233Z",
+              "raw_markdown": "I see. Thx",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "ナハト・ ファウスト",
+                  "id": 31250079,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/vitalya05",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31250079-kg.png?t=2026-11-01-12-05-16",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/vitalya05",
+                  "user_id": 31250079,
+                  "user_name": "vitalya05"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "I see. Thx",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "votes": {
+          "totalVotes": 2
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 755733,
+      "message_id": 3550426,
+      "parent_message_id": 3550029,
+      "author": "ナハト・ ファウスト",
+      "author_url": "/vitalya05",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-05T08:55:00.233Z",
+      "raw_markdown": "I see. Thx",
+      "content_html": "<p>I see. Thx</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 1,
+      "first_seen_at": "2026-11-09T03:55:11+00:00",
+      "last_seen_at": "2026-11-18T09:02:50+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T09:02:50+00:00",
+      "remote_last_listed_at": "2026-11-18T09:02:50+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "ナハト・ ファウスト",
+          "tier": "CONTRIBUTOR",
+          "url": "/vitalya05"
+        },
+        "content": "<p>I see. Thx</p>",
+        "id": 3550426,
+        "isThankYou": false,
+        "postDate": "2026-11-05T08:55:00.233Z",
+        "raw": {
+          "author": {
+            "display_name": "ナハト・ ファウスト",
+            "id": 31250079,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31250079-kg.png?t=2026-11-01-12-05-16",
+            "tier": "CONTRIBUTOR",
+            "url": "/vitalya05"
+          },
+          "author_type": "TOPIC",
+          "competition_ranking": 3888,
+          "content": "<p>I see. Thx</p>",
+          "feedback_tracking_data": {},
+          "id": 3550426,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-05T08:55:00.233Z",
+          "raw_markdown": "I see. Thx",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "ナハト・ ファウスト",
+              "id": 31250079,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/vitalya05",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31250079-kg.png?t=2026-11-01-12-05-16",
+              "tier": "CONTRIBUTOR",
+              "url": "/vitalya05",
+              "user_id": 31250079,
+              "user_name": "vitalya05"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "I see. Thx",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 755733,
+      "message_id": 3552641,
+      "parent_message_id": null,
+      "author": "John K",
+      "author_url": "/johnnykhan1",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-10T02:48:07.733Z",
+      "raw_markdown": "Yes, the Overview line already answers the test-side question. On train, 149 of 150 prompts have 18 answers and one prompt has 17 (claude-fable-5 is the short model). That can make train look like neat rounds. Public and private do not promise a full 18-model group, and model counts are unequal, so anything that forces one of each label per prompt on test is fitting a structure the test set does not have.",
+      "content_html": "<p>Yes, the Overview line already answers the test-side question. On train, 149 of 150 prompts have 18 answers and one prompt has 17 (claude-fable-5 is the short model). That can make train look like neat rounds. Public and private do not promise a full 18-model group, and model counts are unequal, so anything that forces one of each label per prompt on test is fitting a structure the test set does not have.</p>",
+      "votes": 1,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-16T16:21:35+00:00",
+      "last_seen_at": "2026-11-18T09:02:50+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T09:02:50+00:00",
+      "remote_last_listed_at": "2026-11-18T09:02:50+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "John K",
+          "tier": "CONTRIBUTOR",
+          "url": "/johnnykhan1"
+        },
+        "content": "<p>Yes, the Overview line already answers the test-side question. On train, 149 of 150 prompts have 18 answers and one prompt has 17 (claude-fable-5 is the short model). That can make train look like neat rounds. Public and private do not promise a full 18-model group, and model counts are unequal, so anything that forces one of each label per prompt on test is fitting a structure the test set does not have.</p>",
+        "id": 3552641,
+        "isThankYou": false,
+        "postDate": "2026-11-10T02:48:07.733Z",
+        "raw": {
+          "author": {
+            "display_name": "John K",
+            "id": 37335549,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/37335549-kg.jpg?t=2026-10-24-04-37-50",
+            "tier": "CONTRIBUTOR",
+            "url": "/johnnykhan1"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 1360,
+          "content": "<p>Yes, the Overview line already answers the test-side question. On train, 149 of 150 prompts have 18 answers and one prompt has 17 (claude-fable-5 is the short model). That can make train look like neat rounds. Public and private do not promise a full 18-model group, and model counts are unequal, so anything that forces one of each label per prompt on test is fitting a structure the test set does not have.</p>",
+          "feedback_tracking_data": {},
+          "id": 3552641,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-10T02:48:07.733Z",
+          "raw_markdown": "Yes, the Overview line already answers the test-side question. On train, 149 of 150 prompts have 18 answers and one prompt has 17 (claude-fable-5 is the short model). That can make train look like neat rounds. Public and private do not promise a full 18-model group, and model counts are unequal, so anything that forces one of each label per prompt on test is fitting a structure the test set does not have.",
+          "replies": [
+            {
+              "author": {
+                "display_name": "ナハト・ ファウスト",
+                "id": 31250079,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31250079-kg.png?t=2026-11-01-12-05-16",
+                "tier": "CONTRIBUTOR",
+                "url": "/vitalya05"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 3888,
+              "content": "<p>Got it. Thx</p>",
+              "feedback_tracking_data": {},
+              "id": 3552738,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-10T06:54:32.097Z",
+              "raw_markdown": "Got it. Thx",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "ナハト・ ファウスト",
+                  "id": 31250079,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/vitalya05",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31250079-kg.png?t=2026-11-01-12-05-16",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/vitalya05",
+                  "user_id": 31250079,
+                  "user_name": "vitalya05"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            }
+          ],
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "John K",
+              "id": 37335549,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/johnnykhan1",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/37335549-kg.jpg?t=2026-10-24-04-37-50",
+              "tier": "CONTRIBUTOR",
+              "url": "/johnnykhan1",
+              "user_id": 37335549,
+              "user_name": "johnnykhan1"
+            }
+          },
+          "votes": {
+            "can_upvote": true,
+            "total_upvotes": 1,
+            "total_votes": 1
+          }
+        },
+        "rawMarkdown": "Yes, the Overview line already answers the test-side question. On train, 149 of 150 prompts have 18 answers and one prompt has 17 (claude-fable-5 is the short model). That can make train look like neat rounds. Public and private do not promise a full 18-model group, and model counts are unequal, so anything that forces one of each label per prompt on test is fitting a structure the test set does not have.",
+        "replies": [
+          {
+            "author": {
+              "displayName": "ナハト・ ファウスト",
+              "tier": "CONTRIBUTOR",
+              "url": "/vitalya05"
+            },
+            "content": "<p>Got it. Thx</p>",
+            "id": 3552738,
+            "isThankYou": false,
+            "postDate": "2026-11-10T06:54:32.097Z",
+            "raw": {
+              "author": {
+                "display_name": "ナハト・ ファウスト",
+                "id": 31250079,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31250079-kg.png?t=2026-11-01-12-05-16",
+                "tier": "CONTRIBUTOR",
+                "url": "/vitalya05"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 3888,
+              "content": "<p>Got it. Thx</p>",
+              "feedback_tracking_data": {},
+              "id": 3552738,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-10T06:54:32.097Z",
+              "raw_markdown": "Got it. Thx",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "ナハト・ ファウスト",
+                  "id": 31250079,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/vitalya05",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31250079-kg.png?t=2026-11-01-12-05-16",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/vitalya05",
+                  "user_id": 31250079,
+                  "user_name": "vitalya05"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "Got it. Thx",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "votes": {
+          "totalVotes": 1
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 755733,
+      "message_id": 3552738,
+      "parent_message_id": 3552641,
+      "author": "ナハト・ ファウスト",
+      "author_url": "/vitalya05",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-10T06:54:32.097Z",
+      "raw_markdown": "Got it. Thx",
+      "content_html": "<p>Got it. Thx</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 1,
+      "first_seen_at": "2026-11-16T16:21:35+00:00",
+      "last_seen_at": "2026-11-18T09:02:50+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T09:02:50+00:00",
+      "remote_last_listed_at": "2026-11-18T09:02:50+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "ナハト・ ファウスト",
+          "tier": "CONTRIBUTOR",
+          "url": "/vitalya05"
+        },
+        "content": "<p>Got it. Thx</p>",
+        "id": 3552738,
+        "isThankYou": false,
+        "postDate": "2026-11-10T06:54:32.097Z",
+        "raw": {
+          "author": {
+            "display_name": "ナハト・ ファウスト",
+            "id": 31250079,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31250079-kg.png?t=2026-11-01-12-05-16",
+            "tier": "CONTRIBUTOR",
+            "url": "/vitalya05"
+          },
+          "author_type": "TOPIC",
+          "competition_ranking": 3888,
+          "content": "<p>Got it. Thx</p>",
+          "feedback_tracking_data": {},
+          "id": 3552738,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-10T06:54:32.097Z",
+          "raw_markdown": "Got it. Thx",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "ナハト・ ファウスト",
+              "id": 31250079,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/vitalya05",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31250079-kg.png?t=2026-11-01-12-05-16",
+              "tier": "CONTRIBUTOR",
+              "url": "/vitalya05",
+              "user_id": 31250079,
+              "user_name": "vitalya05"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "Got it. Thx",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 755733,
+      "message_id": 3552760,
+      "parent_message_id": null,
+      "author": "AyoGG",
+      "author_url": "/ggayoayogg",
+      "author_tier": "MASTER",
+      "post_date": "2026-11-10T08:19:59.827Z",
+      "raw_markdown": "The test set is not uniform.",
+      "content_html": "<p>The test set is not uniform.</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-16T16:21:35+00:00",
+      "last_seen_at": "2026-11-18T09:02:50+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T09:02:50+00:00",
+      "remote_last_listed_at": "2026-11-18T09:02:50+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "AyoGG",
+          "tier": "MASTER",
+          "url": "/ggayoayogg"
+        },
+        "content": "<p>The test set is not uniform.</p>",
+        "id": 3552760,
+        "isThankYou": false,
+        "postDate": "2026-11-10T08:19:59.827Z",
+        "raw": {
+          "author": {
+            "display_name": "AyoGG",
+            "id": 15255201,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15255201-kg.png?t=2026-10-28-05-21-58",
+            "tier": "MASTER",
+            "url": "/ggayoayogg"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 14,
+          "content": "<p>The test set is not uniform.</p>",
+          "feedback_tracking_data": {},
+          "id": 3552760,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-10T08:19:59.827Z",
+          "raw_markdown": "The test set is not uniform.",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "AyoGG",
+              "id": 15255201,
+              "performance_tier": "MASTER",
+              "profile_url": "/ggayoayogg",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15255201-kg.png?t=2026-10-28-05-21-58",
+              "tier": "MASTER",
+              "url": "/ggayoayogg",
+              "user_id": 15255201,
+              "user_name": "ggayoayogg"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "The test set is not uniform.",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    }
+  ],
+  "writeup": null
+}

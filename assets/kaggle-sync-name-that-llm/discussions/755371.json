@@ -1,0 +1,1397 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 755371,
+    "title": "Will self-generated extra data help or hurt here?",
+    "author": "Ruslan Akhmetzianov",
+    "author_url": "/monkeflip",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-11-03T11:49:35.357733900Z",
+    "last_comment_post_date": "2026-11-06T17:43:26.726666700Z",
+    "comment_count": 4,
+    "votes": 3,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/755371",
+    "first_message_id": 3549333,
+    "first_seen_at": "2026-11-04T06:56:14+00:00",
+    "last_seen_at": "2026-11-18T09:02:55+00:00",
+    "detail_last_synced_at": "2026-11-18T09:02:55+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-18T09:01:52+00:00",
+    "remote_last_listed_at": "2026-11-18T09:01:52+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "b4c1fbc9b6932a0517144345c50302a8e5f37d8c80d3e88baed7fe7da4a61c82",
+    "listing_metrics_hash": "6d8a74dbac9b4cd94399e9cc1520c8e662b0bbcc16c76b670939fedc4deb1f33",
+    "detail_content_hash": "974f8aa45fe24fad929658954a1e6502c7a7b8feaa367564d5f0c13de7e40875",
+    "detail_last_checked_at": "2026-11-18T09:02:55+00:00",
+    "detail_next_check_at": "2026-11-21T09:02:55+00:00",
+    "detail_unchanged_count": 1,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 4,
+      "firstForumMessageId": null,
+      "id": 755371,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-11-06T17:43:26.726666700Z",
+      "postDate": "2026-11-03T11:49:35.357733900Z",
+      "raw": {
+        "comment_count": 4,
+        "id": 755371,
+        "last_comment_post_date": "2026-11-06T17:43:26.726666700Z",
+        "post_date": "2026-11-03T11:49:35.357733900Z",
+        "title": "Will self-generated extra data help or hurt here?",
+        "topic_url": "/competitions/name-that-llm/discussion/755371",
+        "votes": 3
+      },
+      "title": "Will self-generated extra data help or hurt here?",
+      "topicUrl": "/competitions/name-that-llm/discussion/755371",
+      "votes": 3
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "Ruslan Akhmetzianov",
+        "authorUserName": "monkeflip",
+        "comments": [
+          {
+            "author": {
+              "displayName": "somerandomguy",
+              "tier": "CONTRIBUTOR",
+              "url": "/stithpragya"
+            },
+            "content": "<p>I tried with a little bit of extra data but my val score decreased, might be due my generation setup not being exact(system prompt and other factors) or even due to the data volume, also might be some modelling issues.</p>\n<p>Yeah also generated data varied when i compared that to the original train prompts.</p>\n<p>I tried matching sturcture and length distrubution.</p>\n<p>You can measue other special symbols, as someone gave the analysis in one of this discussion.</p>",
+            "id": 3550039,
+            "isThankYou": false,
+            "postDate": "2026-11-04T17:46:12.410Z",
+            "raw": {
+              "author": {
+                "display_name": "somerandomguy",
+                "id": 22597865,
+                "progression_opt_out": true,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                "tier": "CONTRIBUTOR",
+                "url": "/stithpragya"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 11,
+              "content": "<p>I tried with a little bit of extra data but my val score decreased, might be due my generation setup not being exact(system prompt and other factors) or even due to the data volume, also might be some modelling issues.</p>\n<p>Yeah also generated data varied when i compared that to the original train prompts.</p>\n<p>I tried matching sturcture and length distrubution.</p>\n<p>You can measue other special symbols, as someone gave the analysis in one of this discussion.</p>",
+              "feedback_tracking_data": {},
+              "id": 3550039,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-04T17:46:12.410Z",
+              "raw_markdown": "I tried with a little bit of extra data but my val score decreased, might be due my generation setup not being exact(system prompt and other factors) or even due to the data volume, also might be some modelling issues.\n\nYeah also generated data varied when i compared that to the original train prompts.\n\nI tried matching sturcture and length distrubution.\n\nYou can measue other special symbols, as someone gave the analysis in one of this discussion.",
+              "replies": [
+                {
+                  "author": {
+                    "display_name": "Nic",
+                    "id": 2084214,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                    "tier": "EXPERT",
+                    "url": "/pejophylo"
+                  },
+                  "author_type": "COMMENT",
+                  "competition_ranking": 53,
+                  "content": "<p>are you saying you're not using any external data to train your models?</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3550427,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-05T08:59:31.507Z",
+                  "raw_markdown": "are you saying you're not using any external data to train your models?",
+                  "replies": [
+                    {
+                      "author": {
+                        "display_name": "somerandomguy",
+                        "id": 22597865,
+                        "progression_opt_out": true,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                        "tier": "CONTRIBUTOR",
+                        "url": "/stithpragya"
+                      },
+                      "author_type": "COMMENT",
+                      "competition_ranking": 11,
+                      "content": "<p>No, I was saying the my own generated data didn't had any positve effect on my score.</p>",
+                      "feedback_tracking_data": {},
+                      "id": 3551162,
+                      "is_thank_you": false,
+                      "kernel_version": 0,
+                      "parent": {},
+                      "post_date": "2026-11-06T17:43:26.727Z",
+                      "raw_markdown": "No, I was saying the my own generated data didn't had any positve effect on my score.",
+                      "team_up_info": {
+                        "intro": "",
+                        "team_leader": {
+                          "display_name": "somerandomguy",
+                          "id": 22597865,
+                          "performance_tier": "CONTRIBUTOR",
+                          "profile_url": "/stithpragya",
+                          "progression_opt_out": true,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                          "tier": "CONTRIBUTOR",
+                          "url": "/stithpragya",
+                          "user_id": 22597865,
+                          "user_name": "stithpragya"
+                        }
+                      },
+                      "votes": {
+                        "can_upvote": true
+                      }
+                    }
+                  ],
+                  "team_up_info": {
+                    "enabled": true,
+                    "intro": "Hi, my work currently consistent of 2 Qwen-based fine tuned models with my own filtering of public pools, on top of which I use some post-hoc tweaks using passage likelihoods.\n\nIf you have orthogonal approaches to team up/blend or just like to exchange ideas and learn from each other, get in touch!",
+                    "team_leader": {
+                      "display_name": "Nic",
+                      "id": 2084214,
+                      "performance_tier": "EXPERT",
+                      "profile_url": "/pejophylo",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                      "tier": "EXPERT",
+                      "url": "/pejophylo",
+                      "user_id": 2084214,
+                      "user_name": "pejophylo"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true,
+                    "total_upvotes": 2,
+                    "total_votes": 2
+                  }
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "somerandomguy",
+                  "id": 22597865,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/stithpragya",
+                  "progression_opt_out": true,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/stithpragya",
+                  "user_id": 22597865,
+                  "user_name": "stithpragya"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": 1
+              }
+            },
+            "rawMarkdown": "I tried with a little bit of extra data but my val score decreased, might be due my generation setup not being exact(system prompt and other factors) or even due to the data volume, also might be some modelling issues.\n\nYeah also generated data varied when i compared that to the original train prompts.\n\nI tried matching sturcture and length distrubution.\n\nYou can measue other special symbols, as someone gave the analysis in one of this discussion.",
+            "replies": [
+              {
+                "author": {
+                  "displayName": "Nic",
+                  "tier": "EXPERT",
+                  "url": "/pejophylo"
+                },
+                "content": "<p>are you saying you're not using any external data to train your models?</p>",
+                "id": 3550427,
+                "isThankYou": false,
+                "postDate": "2026-11-05T08:59:31.507Z",
+                "raw": {
+                  "author": {
+                    "display_name": "Nic",
+                    "id": 2084214,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                    "tier": "EXPERT",
+                    "url": "/pejophylo"
+                  },
+                  "author_type": "COMMENT",
+                  "competition_ranking": 53,
+                  "content": "<p>are you saying you're not using any external data to train your models?</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3550427,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-05T08:59:31.507Z",
+                  "raw_markdown": "are you saying you're not using any external data to train your models?",
+                  "replies": [
+                    {
+                      "author": {
+                        "display_name": "somerandomguy",
+                        "id": 22597865,
+                        "progression_opt_out": true,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                        "tier": "CONTRIBUTOR",
+                        "url": "/stithpragya"
+                      },
+                      "author_type": "COMMENT",
+                      "competition_ranking": 11,
+                      "content": "<p>No, I was saying the my own generated data didn't had any positve effect on my score.</p>",
+                      "feedback_tracking_data": {},
+                      "id": 3551162,
+                      "is_thank_you": false,
+                      "kernel_version": 0,
+                      "parent": {},
+                      "post_date": "2026-11-06T17:43:26.727Z",
+                      "raw_markdown": "No, I was saying the my own generated data didn't had any positve effect on my score.",
+                      "team_up_info": {
+                        "intro": "",
+                        "team_leader": {
+                          "display_name": "somerandomguy",
+                          "id": 22597865,
+                          "performance_tier": "CONTRIBUTOR",
+                          "profile_url": "/stithpragya",
+                          "progression_opt_out": true,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                          "tier": "CONTRIBUTOR",
+                          "url": "/stithpragya",
+                          "user_id": 22597865,
+                          "user_name": "stithpragya"
+                        }
+                      },
+                      "votes": {
+                        "can_upvote": true
+                      }
+                    }
+                  ],
+                  "team_up_info": {
+                    "enabled": true,
+                    "intro": "Hi, my work currently consistent of 2 Qwen-based fine tuned models with my own filtering of public pools, on top of which I use some post-hoc tweaks using passage likelihoods.\n\nIf you have orthogonal approaches to team up/blend or just like to exchange ideas and learn from each other, get in touch!",
+                    "team_leader": {
+                      "display_name": "Nic",
+                      "id": 2084214,
+                      "performance_tier": "EXPERT",
+                      "profile_url": "/pejophylo",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                      "tier": "EXPERT",
+                      "url": "/pejophylo",
+                      "user_id": 2084214,
+                      "user_name": "pejophylo"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true,
+                    "total_upvotes": 2,
+                    "total_votes": 2
+                  }
+                },
+                "rawMarkdown": "are you saying you're not using any external data to train your models?",
+                "replies": [
+                  {
+                    "author": {
+                      "displayName": "somerandomguy",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/stithpragya"
+                    },
+                    "content": "<p>No, I was saying the my own generated data didn't had any positve effect on my score.</p>",
+                    "id": 3551162,
+                    "isThankYou": false,
+                    "postDate": "2026-11-06T17:43:26.727Z",
+                    "raw": {
+                      "author": {
+                        "display_name": "somerandomguy",
+                        "id": 22597865,
+                        "progression_opt_out": true,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                        "tier": "CONTRIBUTOR",
+                        "url": "/stithpragya"
+                      },
+                      "author_type": "COMMENT",
+                      "competition_ranking": 11,
+                      "content": "<p>No, I was saying the my own generated data didn't had any positve effect on my score.</p>",
+                      "feedback_tracking_data": {},
+                      "id": 3551162,
+                      "is_thank_you": false,
+                      "kernel_version": 0,
+                      "parent": {},
+                      "post_date": "2026-11-06T17:43:26.727Z",
+                      "raw_markdown": "No, I was saying the my own generated data didn't had any positve effect on my score.",
+                      "team_up_info": {
+                        "intro": "",
+                        "team_leader": {
+                          "display_name": "somerandomguy",
+                          "id": 22597865,
+                          "performance_tier": "CONTRIBUTOR",
+                          "profile_url": "/stithpragya",
+                          "progression_opt_out": true,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                          "tier": "CONTRIBUTOR",
+                          "url": "/stithpragya",
+                          "user_id": 22597865,
+                          "user_name": "stithpragya"
+                        }
+                      },
+                      "votes": {
+                        "can_upvote": true
+                      }
+                    },
+                    "rawMarkdown": "No, I was saying the my own generated data didn't had any positve effect on my score.",
+                    "replies": [],
+                    "votes": {
+                      "totalVotes": 0
+                    }
+                  }
+                ],
+                "votes": {
+                  "totalVotes": 2
+                }
+              }
+            ],
+            "votes": {
+              "totalVotes": 1
+            }
+          },
+          {
+            "author": {
+              "displayName": "Soham Acharya",
+              "tier": "CONTRIBUTOR",
+              "url": "/sohamacharya1108"
+            },
+            "content": "<p>Same doubt as most of the data which is generated is of only gemini or only chatgpt/claude like that which i think could introduce topic based biasness which might look good right now but might get punished on overall test data</p>",
+            "id": 3549518,
+            "isThankYou": false,
+            "postDate": "2026-11-03T18:09:20.193Z",
+            "raw": {
+              "author": {
+                "display_name": "Soham Acharya",
+                "id": 28287002,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/sohamacharya1108"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 2270,
+              "content": "<p>Same doubt as most of the data which is generated is of only gemini or only chatgpt/claude like that which i think could introduce topic based biasness which might look good right now but might get punished on overall test data</p>",
+              "feedback_tracking_data": {},
+              "id": 3549518,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-03T18:09:20.193Z",
+              "raw_markdown": "Same doubt as most of the data which is generated is of only gemini or only chatgpt/claude like that which i think could introduce topic based biasness which might look good right now but might get punished on overall test data",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Soham Acharya",
+                  "id": 28287002,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/sohamacharya1108",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/sohamacharya1108",
+                  "user_id": 28287002,
+                  "user_name": "sohamacharya1108"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": 1
+              }
+            },
+            "rawMarkdown": "Same doubt as most of the data which is generated is of only gemini or only chatgpt/claude like that which i think could introduce topic based biasness which might look good right now but might get punished on overall test data",
+            "replies": [],
+            "votes": {
+              "totalVotes": 1
+            }
+          }
+        ],
+        "expectedCommentCount": 4,
+        "firstMessage": {
+          "author": {
+            "displayName": "Ruslan Akhmetzianov",
+            "tier": "CONTRIBUTOR",
+            "url": "/monkeflip"
+          },
+          "content": "<p>Hi all,</p>\n<p>Train has only 150 prompts, so generating extra passages via the models' APIs looks tempting. But we don't know the original setup (system prompt, temperature, length control, post-processing). Data generated under a different setup might teach the model our prompt template instead of the model's style.</p>\n<p>So, what do you think:</p>\n<ul>\n<li>Has anyone tried it? Did CV and LB improve?</li>\n<li>Any tricks to match the original style (e.g. few-shot with train passages)?</li>\n<li>Would it be safer to use extra data only for pre-training and then fine-tune on competition data?</li>\n</ul>\n<p>Would love to hear your experience!</p>",
+          "id": 3549333,
+          "isThankYou": false,
+          "postDate": "2026-11-03T11:49:35.357Z",
+          "raw": {
+            "author": {
+              "display_name": "Ruslan Akhmetzianov",
+              "id": 9337860,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9337860-kg.jpg?t=2025-06-21-07-29-06",
+              "tier": "CONTRIBUTOR",
+              "url": "/monkeflip"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 5196,
+            "content": "<p>Hi all,</p>\n<p>Train has only 150 prompts, so generating extra passages via the models' APIs looks tempting. But we don't know the original setup (system prompt, temperature, length control, post-processing). Data generated under a different setup might teach the model our prompt template instead of the model's style.</p>\n<p>So, what do you think:</p>\n<ul>\n<li>Has anyone tried it? Did CV and LB improve?</li>\n<li>Any tricks to match the original style (e.g. few-shot with train passages)?</li>\n<li>Would it be safer to use extra data only for pre-training and then fine-tune on competition data?</li>\n</ul>\n<p>Would love to hear your experience!</p>",
+            "feedback_tracking_data": {},
+            "id": 3549333,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-11-03T11:49:35.357Z",
+            "raw_markdown": "Hi all,\n\nTrain has only 150 prompts, so generating extra passages via the models' APIs looks tempting. But we don't know the original setup (system prompt, temperature, length control, post-processing). Data generated under a different setup might teach the model our prompt template instead of the model's style.\n\nSo, what do you think:\n- Has anyone tried it? Did CV and LB improve?\n- Any tricks to match the original style (e.g. few-shot with train passages)?\n- Would it be safer to use extra data only for pre-training and then fine-tune on competition data?\n\nWould love to hear your experience!",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "Ruslan Akhmetzianov",
+                "id": 9337860,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/monkeflip",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9337860-kg.jpg?t=2025-06-21-07-29-06",
+                "tier": "CONTRIBUTOR",
+                "url": "/monkeflip",
+                "user_id": 9337860,
+                "user_name": "monkeflip"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 3,
+              "total_votes": 3
+            }
+          },
+          "rawMarkdown": "Hi all,\n\nTrain has only 150 prompts, so generating extra passages via the models' APIs looks tempting. But we don't know the original setup (system prompt, temperature, length control, post-processing). Data generated under a different setup might teach the model our prompt template instead of the model's style.\n\nSo, what do you think:\n- Has anyone tried it? Did CV and LB improve?\n- Any tricks to match the original style (e.g. few-shot with train passages)?\n- Would it be safer to use extra data only for pre-training and then fine-tune on competition data?\n\nWould love to hear your experience!",
+          "replies": [],
+          "votes": {
+            "totalVotes": 3
+          }
+        },
+        "firstMessageId": 3549333,
+        "id": 755371,
+        "name": "Will self-generated extra data help or hurt here?",
+        "postDate": "2026-11-03T11:49:35.357733900Z",
+        "url": "/competitions/name-that-llm/discussion/755371"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>Hi all,</p>\n<p>Train has only 150 prompts, so generating extra passages via the models' APIs looks tempting. But we don't know the original setup (system prompt, temperature, length control, post-processing). Data generated under a different setup might teach the model our prompt template instead of the model's style.</p>\n<p>So, what do you think:</p>\n<ul>\n<li>Has anyone tried it? Did CV and LB improve?</li>\n<li>Any tricks to match the original style (e.g. few-shot with train passages)?</li>\n<li>Would it be safer to use extra data only for pre-training and then fine-tune on competition data?</li>\n</ul>\n<p>Would love to hear your experience!</p>",
+              "id": 3549333,
+              "post_date": "2026-11-03T11:49:35.357Z",
+              "raw_markdown": "Hi all,\n\nTrain has only 150 prompts, so generating extra passages via the models' APIs looks tempting. But we don't know the original setup (system prompt, temperature, length control, post-processing). Data generated under a different setup might teach the model our prompt template instead of the model's style.\n\nSo, what do you think:\n- Has anyone tried it? Did CV and LB improve?\n- Any tricks to match the original style (e.g. few-shot with train passages)?\n- Would it be safer to use extra data only for pre-training and then fine-tune on competition data?\n\nWould love to hear your experience!",
+              "votes": 3
+            },
+            {
+              "content": "<p>Same doubt as most of the data which is generated is of only gemini or only chatgpt/claude like that which i think could introduce topic based biasness which might look good right now but might get punished on overall test data</p>",
+              "id": 3549518,
+              "post_date": "2026-11-03T18:09:20.193Z",
+              "raw_markdown": "Same doubt as most of the data which is generated is of only gemini or only chatgpt/claude like that which i think could introduce topic based biasness which might look good right now but might get punished on overall test data",
+              "votes": 1
+            },
+            {
+              "content": "<p>I tried with a little bit of extra data but my val score decreased, might be due my generation setup not being exact(system prompt and other factors) or even due to the data volume, also might be some modelling issues.</p>\n<p>Yeah also generated data varied when i compared that to the original train prompts.</p>\n<p>I tried matching sturcture and length distrubution.</p>\n<p>You can measue other special symbols, as someone gave the analysis in one of this discussion.</p>",
+              "id": 3550039,
+              "post_date": "2026-11-04T17:46:12.410Z",
+              "raw_markdown": "I tried with a little bit of extra data but my val score decreased, might be due my generation setup not being exact(system prompt and other factors) or even due to the data volume, also might be some modelling issues.\n\nYeah also generated data varied when i compared that to the original train prompts.\n\nI tried matching sturcture and length distrubution.\n\nYou can measue other special symbols, as someone gave the analysis in one of this discussion.",
+              "replies": [
+                {
+                  "content": "<p>are you saying you're not using any external data to train your models?</p>",
+                  "id": 3550427,
+                  "post_date": "2026-11-05T08:59:31.507Z",
+                  "raw_markdown": "are you saying you're not using any external data to train your models?",
+                  "replies": [
+                    {
+                      "content": "<p>No, I was saying the my own generated data didn't had any positve effect on my score.</p>",
+                      "id": 3551162,
+                      "post_date": "2026-11-06T17:43:26.727Z",
+                      "raw_markdown": "No, I was saying the my own generated data didn't had any positve effect on my score."
+                    }
+                  ],
+                  "votes": 2
+                }
+              ],
+              "votes": 1
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 9337860,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "9337860-kg.jpg?t=2025-06-21-07-29-06",
+            "author_user_display_name": "Ruslan Akhmetzianov",
+            "author_user_name": "monkeflip",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "comments": [
+              {
+                "author": {
+                  "display_name": "somerandomguy",
+                  "id": 22597865,
+                  "progression_opt_out": true,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/stithpragya"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 11,
+                "content": "<p>I tried with a little bit of extra data but my val score decreased, might be due my generation setup not being exact(system prompt and other factors) or even due to the data volume, also might be some modelling issues.</p>\n<p>Yeah also generated data varied when i compared that to the original train prompts.</p>\n<p>I tried matching sturcture and length distrubution.</p>\n<p>You can measue other special symbols, as someone gave the analysis in one of this discussion.</p>",
+                "feedback_tracking_data": {},
+                "id": 3550039,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-11-04T17:46:12.410Z",
+                "raw_markdown": "I tried with a little bit of extra data but my val score decreased, might be due my generation setup not being exact(system prompt and other factors) or even due to the data volume, also might be some modelling issues.\n\nYeah also generated data varied when i compared that to the original train prompts.\n\nI tried matching sturcture and length distrubution.\n\nYou can measue other special symbols, as someone gave the analysis in one of this discussion.",
+                "replies": [
+                  {
+                    "author": {
+                      "display_name": "Nic",
+                      "id": 2084214,
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                      "tier": "EXPERT",
+                      "url": "/pejophylo"
+                    },
+                    "author_type": "COMMENT",
+                    "competition_ranking": 53,
+                    "content": "<p>are you saying you're not using any external data to train your models?</p>",
+                    "feedback_tracking_data": {},
+                    "id": 3550427,
+                    "is_thank_you": false,
+                    "kernel_version": 0,
+                    "parent": {},
+                    "post_date": "2026-11-05T08:59:31.507Z",
+                    "raw_markdown": "are you saying you're not using any external data to train your models?",
+                    "replies": [
+                      {
+                        "author": {
+                          "display_name": "somerandomguy",
+                          "id": 22597865,
+                          "progression_opt_out": true,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                          "tier": "CONTRIBUTOR",
+                          "url": "/stithpragya"
+                        },
+                        "author_type": "COMMENT",
+                        "competition_ranking": 11,
+                        "content": "<p>No, I was saying the my own generated data didn't had any positve effect on my score.</p>",
+                        "feedback_tracking_data": {},
+                        "id": 3551162,
+                        "is_thank_you": false,
+                        "kernel_version": 0,
+                        "parent": {},
+                        "post_date": "2026-11-06T17:43:26.727Z",
+                        "raw_markdown": "No, I was saying the my own generated data didn't had any positve effect on my score.",
+                        "team_up_info": {
+                          "intro": "",
+                          "team_leader": {
+                            "display_name": "somerandomguy",
+                            "id": 22597865,
+                            "performance_tier": "CONTRIBUTOR",
+                            "profile_url": "/stithpragya",
+                            "progression_opt_out": true,
+                            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                            "tier": "CONTRIBUTOR",
+                            "url": "/stithpragya",
+                            "user_id": 22597865,
+                            "user_name": "stithpragya"
+                          }
+                        },
+                        "votes": {
+                          "can_upvote": true
+                        }
+                      }
+                    ],
+                    "team_up_info": {
+                      "enabled": true,
+                      "intro": "Hi, my work currently consistent of 2 Qwen-based fine tuned models with my own filtering of public pools, on top of which I use some post-hoc tweaks using passage likelihoods.\n\nIf you have orthogonal approaches to team up/blend or just like to exchange ideas and learn from each other, get in touch!",
+                      "team_leader": {
+                        "display_name": "Nic",
+                        "id": 2084214,
+                        "performance_tier": "EXPERT",
+                        "profile_url": "/pejophylo",
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                        "tier": "EXPERT",
+                        "url": "/pejophylo",
+                        "user_id": 2084214,
+                        "user_name": "pejophylo"
+                      }
+                    },
+                    "votes": {
+                      "can_upvote": true,
+                      "total_upvotes": 2,
+                      "total_votes": 2
+                    }
+                  }
+                ],
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "somerandomguy",
+                    "id": 22597865,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/stithpragya",
+                    "progression_opt_out": true,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/stithpragya",
+                    "user_id": 22597865,
+                    "user_name": "stithpragya"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true,
+                  "total_upvotes": 1,
+                  "total_votes": 1
+                }
+              },
+              {
+                "author": {
+                  "display_name": "Soham Acharya",
+                  "id": 28287002,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/sohamacharya1108"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 2270,
+                "content": "<p>Same doubt as most of the data which is generated is of only gemini or only chatgpt/claude like that which i think could introduce topic based biasness which might look good right now but might get punished on overall test data</p>",
+                "feedback_tracking_data": {},
+                "id": 3549518,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-11-03T18:09:20.193Z",
+                "raw_markdown": "Same doubt as most of the data which is generated is of only gemini or only chatgpt/claude like that which i think could introduce topic based biasness which might look good right now but might get punished on overall test data",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "Soham Acharya",
+                    "id": 28287002,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/sohamacharya1108",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/sohamacharya1108",
+                    "user_id": 28287002,
+                    "user_name": "sohamacharya1108"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true,
+                  "total_upvotes": 1,
+                  "total_votes": 1
+                }
+              }
+            ],
+            "first_message": {
+              "author": {
+                "display_name": "Ruslan Akhmetzianov",
+                "id": 9337860,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9337860-kg.jpg?t=2025-06-21-07-29-06",
+                "tier": "CONTRIBUTOR",
+                "url": "/monkeflip"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 5196,
+              "content": "<p>Hi all,</p>\n<p>Train has only 150 prompts, so generating extra passages via the models' APIs looks tempting. But we don't know the original setup (system prompt, temperature, length control, post-processing). Data generated under a different setup might teach the model our prompt template instead of the model's style.</p>\n<p>So, what do you think:</p>\n<ul>\n<li>Has anyone tried it? Did CV and LB improve?</li>\n<li>Any tricks to match the original style (e.g. few-shot with train passages)?</li>\n<li>Would it be safer to use extra data only for pre-training and then fine-tune on competition data?</li>\n</ul>\n<p>Would love to hear your experience!</p>",
+              "feedback_tracking_data": {},
+              "id": 3549333,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-03T11:49:35.357Z",
+              "raw_markdown": "Hi all,\n\nTrain has only 150 prompts, so generating extra passages via the models' APIs looks tempting. But we don't know the original setup (system prompt, temperature, length control, post-processing). Data generated under a different setup might teach the model our prompt template instead of the model's style.\n\nSo, what do you think:\n- Has anyone tried it? Did CV and LB improve?\n- Any tricks to match the original style (e.g. few-shot with train passages)?\n- Would it be safer to use extra data only for pre-training and then fine-tune on competition data?\n\nWould love to hear your experience!",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Ruslan Akhmetzianov",
+                  "id": 9337860,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/monkeflip",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9337860-kg.jpg?t=2025-06-21-07-29-06",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/monkeflip",
+                  "user_id": 9337860,
+                  "user_name": "monkeflip"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 3,
+                "total_votes": 3
+              }
+            },
+            "first_message_id": 3549333,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 755371,
+            "name": "Will self-generated extra data help or hurt here?",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-11-03T11:49:35.357733900Z",
+            "total_messages": 4,
+            "total_votes": 3,
+            "url": "/competitions/name-that-llm/discussion/755371"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-18T09:02:55+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-18T09:02:55+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-11-06T17:43:26.726666700Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [
+    {
+      "slug": "name-that-llm",
+      "topic_id": 755371,
+      "message_id": 3549518,
+      "parent_message_id": null,
+      "author": "Soham Acharya",
+      "author_url": "/sohamacharya1108",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-03T18:09:20.193Z",
+      "raw_markdown": "Same doubt as most of the data which is generated is of only gemini or only chatgpt/claude like that which i think could introduce topic based biasness which might look good right now but might get punished on overall test data",
+      "content_html": "<p>Same doubt as most of the data which is generated is of only gemini or only chatgpt/claude like that which i think could introduce topic based biasness which might look good right now but might get punished on overall test data</p>",
+      "votes": 1,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:58:19+00:00",
+      "last_seen_at": "2026-11-18T09:02:55+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T09:02:55+00:00",
+      "remote_last_listed_at": "2026-11-18T09:02:55+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Soham Acharya",
+          "tier": "CONTRIBUTOR",
+          "url": "/sohamacharya1108"
+        },
+        "content": "<p>Same doubt as most of the data which is generated is of only gemini or only chatgpt/claude like that which i think could introduce topic based biasness which might look good right now but might get punished on overall test data</p>",
+        "id": 3549518,
+        "isThankYou": false,
+        "postDate": "2026-11-03T18:09:20.193Z",
+        "raw": {
+          "author": {
+            "display_name": "Soham Acharya",
+            "id": 28287002,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+            "tier": "CONTRIBUTOR",
+            "url": "/sohamacharya1108"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 2270,
+          "content": "<p>Same doubt as most of the data which is generated is of only gemini or only chatgpt/claude like that which i think could introduce topic based biasness which might look good right now but might get punished on overall test data</p>",
+          "feedback_tracking_data": {},
+          "id": 3549518,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-03T18:09:20.193Z",
+          "raw_markdown": "Same doubt as most of the data which is generated is of only gemini or only chatgpt/claude like that which i think could introduce topic based biasness which might look good right now but might get punished on overall test data",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Soham Acharya",
+              "id": 28287002,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/sohamacharya1108",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "CONTRIBUTOR",
+              "url": "/sohamacharya1108",
+              "user_id": 28287002,
+              "user_name": "sohamacharya1108"
+            }
+          },
+          "votes": {
+            "can_upvote": true,
+            "total_upvotes": 1,
+            "total_votes": 1
+          }
+        },
+        "rawMarkdown": "Same doubt as most of the data which is generated is of only gemini or only chatgpt/claude like that which i think could introduce topic based biasness which might look good right now but might get punished on overall test data",
+        "replies": [],
+        "votes": {
+          "totalVotes": 1
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 755371,
+      "message_id": 3550039,
+      "parent_message_id": null,
+      "author": "somerandomguy",
+      "author_url": "/stithpragya",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-04T17:46:12.410Z",
+      "raw_markdown": "I tried with a little bit of extra data but my val score decreased, might be due my generation setup not being exact(system prompt and other factors) or even due to the data volume, also might be some modelling issues.\n\nYeah also generated data varied when i compared that to the original train prompts.\n\nI tried matching sturcture and length distrubution.\n\nYou can measue other special symbols, as someone gave the analysis in one of this discussion.",
+      "content_html": "<p>I tried with a little bit of extra data but my val score decreased, might be due my generation setup not being exact(system prompt and other factors) or even due to the data volume, also might be some modelling issues.</p>\n<p>Yeah also generated data varied when i compared that to the original train prompts.</p>\n<p>I tried matching sturcture and length distrubution.</p>\n<p>You can measue other special symbols, as someone gave the analysis in one of this discussion.</p>",
+      "votes": 1,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-09T03:55:10+00:00",
+      "last_seen_at": "2026-11-18T09:02:55+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T09:02:55+00:00",
+      "remote_last_listed_at": "2026-11-18T09:02:55+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "somerandomguy",
+          "tier": "CONTRIBUTOR",
+          "url": "/stithpragya"
+        },
+        "content": "<p>I tried with a little bit of extra data but my val score decreased, might be due my generation setup not being exact(system prompt and other factors) or even due to the data volume, also might be some modelling issues.</p>\n<p>Yeah also generated data varied when i compared that to the original train prompts.</p>\n<p>I tried matching sturcture and length distrubution.</p>\n<p>You can measue other special symbols, as someone gave the analysis in one of this discussion.</p>",
+        "id": 3550039,
+        "isThankYou": false,
+        "postDate": "2026-11-04T17:46:12.410Z",
+        "raw": {
+          "author": {
+            "display_name": "somerandomguy",
+            "id": 22597865,
+            "progression_opt_out": true,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+            "tier": "CONTRIBUTOR",
+            "url": "/stithpragya"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 11,
+          "content": "<p>I tried with a little bit of extra data but my val score decreased, might be due my generation setup not being exact(system prompt and other factors) or even due to the data volume, also might be some modelling issues.</p>\n<p>Yeah also generated data varied when i compared that to the original train prompts.</p>\n<p>I tried matching sturcture and length distrubution.</p>\n<p>You can measue other special symbols, as someone gave the analysis in one of this discussion.</p>",
+          "feedback_tracking_data": {},
+          "id": 3550039,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-04T17:46:12.410Z",
+          "raw_markdown": "I tried with a little bit of extra data but my val score decreased, might be due my generation setup not being exact(system prompt and other factors) or even due to the data volume, also might be some modelling issues.\n\nYeah also generated data varied when i compared that to the original train prompts.\n\nI tried matching sturcture and length distrubution.\n\nYou can measue other special symbols, as someone gave the analysis in one of this discussion.",
+          "replies": [
+            {
+              "author": {
+                "display_name": "Nic",
+                "id": 2084214,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "EXPERT",
+                "url": "/pejophylo"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 53,
+              "content": "<p>are you saying you're not using any external data to train your models?</p>",
+              "feedback_tracking_data": {},
+              "id": 3550427,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-05T08:59:31.507Z",
+              "raw_markdown": "are you saying you're not using any external data to train your models?",
+              "replies": [
+                {
+                  "author": {
+                    "display_name": "somerandomguy",
+                    "id": 22597865,
+                    "progression_opt_out": true,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/stithpragya"
+                  },
+                  "author_type": "COMMENT",
+                  "competition_ranking": 11,
+                  "content": "<p>No, I was saying the my own generated data didn't had any positve effect on my score.</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3551162,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-06T17:43:26.727Z",
+                  "raw_markdown": "No, I was saying the my own generated data didn't had any positve effect on my score.",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "somerandomguy",
+                      "id": 22597865,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/stithpragya",
+                      "progression_opt_out": true,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/stithpragya",
+                      "user_id": 22597865,
+                      "user_name": "stithpragya"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                }
+              ],
+              "team_up_info": {
+                "enabled": true,
+                "intro": "Hi, my work currently consistent of 2 Qwen-based fine tuned models with my own filtering of public pools, on top of which I use some post-hoc tweaks using passage likelihoods.\n\nIf you have orthogonal approaches to team up/blend or just like to exchange ideas and learn from each other, get in touch!",
+                "team_leader": {
+                  "display_name": "Nic",
+                  "id": 2084214,
+                  "performance_tier": "EXPERT",
+                  "profile_url": "/pejophylo",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "EXPERT",
+                  "url": "/pejophylo",
+                  "user_id": 2084214,
+                  "user_name": "pejophylo"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 2,
+                "total_votes": 2
+              }
+            }
+          ],
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "somerandomguy",
+              "id": 22597865,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/stithpragya",
+              "progression_opt_out": true,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+              "tier": "CONTRIBUTOR",
+              "url": "/stithpragya",
+              "user_id": 22597865,
+              "user_name": "stithpragya"
+            }
+          },
+          "votes": {
+            "can_upvote": true,
+            "total_upvotes": 1,
+            "total_votes": 1
+          }
+        },
+        "rawMarkdown": "I tried with a little bit of extra data but my val score decreased, might be due my generation setup not being exact(system prompt and other factors) or even due to the data volume, also might be some modelling issues.\n\nYeah also generated data varied when i compared that to the original train prompts.\n\nI tried matching sturcture and length distrubution.\n\nYou can measue other special symbols, as someone gave the analysis in one of this discussion.",
+        "replies": [
+          {
+            "author": {
+              "displayName": "Nic",
+              "tier": "EXPERT",
+              "url": "/pejophylo"
+            },
+            "content": "<p>are you saying you're not using any external data to train your models?</p>",
+            "id": 3550427,
+            "isThankYou": false,
+            "postDate": "2026-11-05T08:59:31.507Z",
+            "raw": {
+              "author": {
+                "display_name": "Nic",
+                "id": 2084214,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "EXPERT",
+                "url": "/pejophylo"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 53,
+              "content": "<p>are you saying you're not using any external data to train your models?</p>",
+              "feedback_tracking_data": {},
+              "id": 3550427,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-05T08:59:31.507Z",
+              "raw_markdown": "are you saying you're not using any external data to train your models?",
+              "replies": [
+                {
+                  "author": {
+                    "display_name": "somerandomguy",
+                    "id": 22597865,
+                    "progression_opt_out": true,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/stithpragya"
+                  },
+                  "author_type": "COMMENT",
+                  "competition_ranking": 11,
+                  "content": "<p>No, I was saying the my own generated data didn't had any positve effect on my score.</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3551162,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-06T17:43:26.727Z",
+                  "raw_markdown": "No, I was saying the my own generated data didn't had any positve effect on my score.",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "somerandomguy",
+                      "id": 22597865,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/stithpragya",
+                      "progression_opt_out": true,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/stithpragya",
+                      "user_id": 22597865,
+                      "user_name": "stithpragya"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                }
+              ],
+              "team_up_info": {
+                "enabled": true,
+                "intro": "Hi, my work currently consistent of 2 Qwen-based fine tuned models with my own filtering of public pools, on top of which I use some post-hoc tweaks using passage likelihoods.\n\nIf you have orthogonal approaches to team up/blend or just like to exchange ideas and learn from each other, get in touch!",
+                "team_leader": {
+                  "display_name": "Nic",
+                  "id": 2084214,
+                  "performance_tier": "EXPERT",
+                  "profile_url": "/pejophylo",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "EXPERT",
+                  "url": "/pejophylo",
+                  "user_id": 2084214,
+                  "user_name": "pejophylo"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 2,
+                "total_votes": 2
+              }
+            },
+            "rawMarkdown": "are you saying you're not using any external data to train your models?",
+            "replies": [
+              {
+                "author": {
+                  "displayName": "somerandomguy",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/stithpragya"
+                },
+                "content": "<p>No, I was saying the my own generated data didn't had any positve effect on my score.</p>",
+                "id": 3551162,
+                "isThankYou": false,
+                "postDate": "2026-11-06T17:43:26.727Z",
+                "raw": {
+                  "author": {
+                    "display_name": "somerandomguy",
+                    "id": 22597865,
+                    "progression_opt_out": true,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/stithpragya"
+                  },
+                  "author_type": "COMMENT",
+                  "competition_ranking": 11,
+                  "content": "<p>No, I was saying the my own generated data didn't had any positve effect on my score.</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3551162,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-06T17:43:26.727Z",
+                  "raw_markdown": "No, I was saying the my own generated data didn't had any positve effect on my score.",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "somerandomguy",
+                      "id": 22597865,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/stithpragya",
+                      "progression_opt_out": true,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/stithpragya",
+                      "user_id": 22597865,
+                      "user_name": "stithpragya"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                },
+                "rawMarkdown": "No, I was saying the my own generated data didn't had any positve effect on my score.",
+                "replies": [],
+                "votes": {
+                  "totalVotes": 0
+                }
+              }
+            ],
+            "votes": {
+              "totalVotes": 2
+            }
+          }
+        ],
+        "votes": {
+          "totalVotes": 1
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 755371,
+      "message_id": 3550427,
+      "parent_message_id": 3550039,
+      "author": "Nic",
+      "author_url": "/pejophylo",
+      "author_tier": "EXPERT",
+      "post_date": "2026-11-05T08:59:31.507Z",
+      "raw_markdown": "are you saying you're not using any external data to train your models?",
+      "content_html": "<p>are you saying you're not using any external data to train your models?</p>",
+      "votes": 2,
+      "is_thank_you": 0,
+      "depth": 1,
+      "first_seen_at": "2026-11-09T03:55:10+00:00",
+      "last_seen_at": "2026-11-18T09:02:55+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T09:02:55+00:00",
+      "remote_last_listed_at": "2026-11-18T09:02:55+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Nic",
+          "tier": "EXPERT",
+          "url": "/pejophylo"
+        },
+        "content": "<p>are you saying you're not using any external data to train your models?</p>",
+        "id": 3550427,
+        "isThankYou": false,
+        "postDate": "2026-11-05T08:59:31.507Z",
+        "raw": {
+          "author": {
+            "display_name": "Nic",
+            "id": 2084214,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+            "tier": "EXPERT",
+            "url": "/pejophylo"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 53,
+          "content": "<p>are you saying you're not using any external data to train your models?</p>",
+          "feedback_tracking_data": {},
+          "id": 3550427,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-05T08:59:31.507Z",
+          "raw_markdown": "are you saying you're not using any external data to train your models?",
+          "replies": [
+            {
+              "author": {
+                "display_name": "somerandomguy",
+                "id": 22597865,
+                "progression_opt_out": true,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                "tier": "CONTRIBUTOR",
+                "url": "/stithpragya"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 11,
+              "content": "<p>No, I was saying the my own generated data didn't had any positve effect on my score.</p>",
+              "feedback_tracking_data": {},
+              "id": 3551162,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-06T17:43:26.727Z",
+              "raw_markdown": "No, I was saying the my own generated data didn't had any positve effect on my score.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "somerandomguy",
+                  "id": 22597865,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/stithpragya",
+                  "progression_opt_out": true,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/stithpragya",
+                  "user_id": 22597865,
+                  "user_name": "stithpragya"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            }
+          ],
+          "team_up_info": {
+            "enabled": true,
+            "intro": "Hi, my work currently consistent of 2 Qwen-based fine tuned models with my own filtering of public pools, on top of which I use some post-hoc tweaks using passage likelihoods.\n\nIf you have orthogonal approaches to team up/blend or just like to exchange ideas and learn from each other, get in touch!",
+            "team_leader": {
+              "display_name": "Nic",
+              "id": 2084214,
+              "performance_tier": "EXPERT",
+              "profile_url": "/pejophylo",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "EXPERT",
+              "url": "/pejophylo",
+              "user_id": 2084214,
+              "user_name": "pejophylo"
+            }
+          },
+          "votes": {
+            "can_upvote": true,
+            "total_upvotes": 2,
+            "total_votes": 2
+          }
+        },
+        "rawMarkdown": "are you saying you're not using any external data to train your models?",
+        "replies": [
+          {
+            "author": {
+              "displayName": "somerandomguy",
+              "tier": "CONTRIBUTOR",
+              "url": "/stithpragya"
+            },
+            "content": "<p>No, I was saying the my own generated data didn't had any positve effect on my score.</p>",
+            "id": 3551162,
+            "isThankYou": false,
+            "postDate": "2026-11-06T17:43:26.727Z",
+            "raw": {
+              "author": {
+                "display_name": "somerandomguy",
+                "id": 22597865,
+                "progression_opt_out": true,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                "tier": "CONTRIBUTOR",
+                "url": "/stithpragya"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 11,
+              "content": "<p>No, I was saying the my own generated data didn't had any positve effect on my score.</p>",
+              "feedback_tracking_data": {},
+              "id": 3551162,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-06T17:43:26.727Z",
+              "raw_markdown": "No, I was saying the my own generated data didn't had any positve effect on my score.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "somerandomguy",
+                  "id": 22597865,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/stithpragya",
+                  "progression_opt_out": true,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/stithpragya",
+                  "user_id": 22597865,
+                  "user_name": "stithpragya"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "No, I was saying the my own generated data didn't had any positve effect on my score.",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "votes": {
+          "totalVotes": 2
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 755371,
+      "message_id": 3551162,
+      "parent_message_id": 3550427,
+      "author": "somerandomguy",
+      "author_url": "/stithpragya",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-06T17:43:26.727Z",
+      "raw_markdown": "No, I was saying the my own generated data didn't had any positve effect on my score.",
+      "content_html": "<p>No, I was saying the my own generated data didn't had any positve effect on my score.</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 2,
+      "first_seen_at": "2026-11-09T03:55:10+00:00",
+      "last_seen_at": "2026-11-18T09:02:55+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T09:02:55+00:00",
+      "remote_last_listed_at": "2026-11-18T09:02:55+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "somerandomguy",
+          "tier": "CONTRIBUTOR",
+          "url": "/stithpragya"
+        },
+        "content": "<p>No, I was saying the my own generated data didn't had any positve effect on my score.</p>",
+        "id": 3551162,
+        "isThankYou": false,
+        "postDate": "2026-11-06T17:43:26.727Z",
+        "raw": {
+          "author": {
+            "display_name": "somerandomguy",
+            "id": 22597865,
+            "progression_opt_out": true,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+            "tier": "CONTRIBUTOR",
+            "url": "/stithpragya"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 11,
+          "content": "<p>No, I was saying the my own generated data didn't had any positve effect on my score.</p>",
+          "feedback_tracking_data": {},
+          "id": 3551162,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-06T17:43:26.727Z",
+          "raw_markdown": "No, I was saying the my own generated data didn't had any positve effect on my score.",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "somerandomguy",
+              "id": 22597865,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/stithpragya",
+              "progression_opt_out": true,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+              "tier": "CONTRIBUTOR",
+              "url": "/stithpragya",
+              "user_id": 22597865,
+              "user_name": "stithpragya"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "No, I was saying the my own generated data didn't had any positve effect on my score.",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    }
+  ],
+  "writeup": null
+}

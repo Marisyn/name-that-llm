@@ -1,0 +1,903 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 750224,
+    "title": "[Dataset] Extra Claude passages on new prompts, and what has worked with them so far",
+    "author": "Seyit kaan Gunes",
+    "author_url": "/seyitkaangunes",
+    "author_tier": "EXPERT",
+    "post_date": "2026-10-17T10:56:08.118864300Z",
+    "last_comment_post_date": "2026-10-17T16:22:25.056666700Z",
+    "comment_count": 3,
+    "votes": 10,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/750224",
+    "first_message_id": 3540208,
+    "first_seen_at": "2026-11-04T06:56:18+00:00",
+    "last_seen_at": "2026-11-16T16:36:20+00:00",
+    "detail_last_synced_at": "2026-11-16T16:36:20+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "6ad1abafb1692eaf19eda604ddd8d41789a80749eb9cc0a2459fc7b6124edff4",
+    "listing_metrics_hash": "8d48d9dc5f47c8f1257fa4ed62f5b5b354567e6fe163b3d22f1c91a03351d855",
+    "detail_content_hash": "b64964b19a20d3b812247794bcfba5aa867c78790d3f7876c84cfa9f6a3ad95d",
+    "detail_last_checked_at": "2026-11-16T16:36:20+00:00",
+    "detail_next_check_at": "2026-11-23T16:36:20+00:00",
+    "detail_unchanged_count": 2,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 3,
+      "firstForumMessageId": null,
+      "id": 750224,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-10-17T16:22:25.056666700Z",
+      "postDate": "2026-10-17T10:56:08.118864300Z",
+      "raw": {
+        "comment_count": 3,
+        "id": 750224,
+        "last_comment_post_date": "2026-10-17T16:22:25.056666700Z",
+        "post_date": "2026-10-17T10:56:08.118864300Z",
+        "title": "[Dataset] Extra Claude passages on new prompts, and what has worked with them so far",
+        "topic_url": "/competitions/name-that-llm/discussion/750224",
+        "votes": 10
+      },
+      "title": "[Dataset] Extra Claude passages on new prompts, and what has worked with them so far",
+      "topicUrl": "/competitions/name-that-llm/discussion/750224",
+      "votes": 10
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "EXPERT",
+        "authorUserDisplayName": "Seyit kaan Gunes",
+        "authorUserName": "seyitkaangunes",
+        "comments": [
+          {
+            "author": {
+              "displayName": "Zbigniew Kirchner",
+              "tier": "EXPERT",
+              "url": "/zbigniewkirchner"
+            },
+            "content": "<p>Thanks for the dataset and the shout-out! It's the cleanest extra data in this competition so far. Two more ways to use it, if anyone wants to go further:</p>\n<p>Inside a LoRA: I added a 5-way Claude head to a Qwen3-8B LoRA and trained it on the original Claude rows plus your passages, while the 18-way head sees only original data. On the public LoRA's own validation fold it gives 0.484 vs 0.456 (plain), and 0.493 with the Claude head used as a gate. Weights: <a href=\"https://www.kaggle.com/datasets/zbigniewkirchner/ntl-qwen3-8b-lora-claude-head\" target=\"_blank\">ntl-qwen3-8b-lora-claude-head</a></p>\n<p>In a hierarchy (lab → line → version, extra data only below the lab level): +2.4 pts for a plain CPU stylegram model, with a bootstrap CI that doesn't cross zero. <a href=\"https://www.kaggle.com/code/zbigniewkirchner/extra-data-hierarchical-classification-2-4-pts\" target=\"_blank\">Notebook</a></p>",
+            "id": 3540305,
+            "isThankYou": false,
+            "postDate": "2026-10-17T16:22:25.057Z",
+            "raw": {
+              "author": {
+                "display_name": "Zbigniew Kirchner",
+                "id": 18236248,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/18236248-kg.jpg?t=2024-01-27-22-57-59",
+                "tier": "EXPERT",
+                "url": "/zbigniewkirchner"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 344,
+              "content": "<p>Thanks for the dataset and the shout-out! It's the cleanest extra data in this competition so far. Two more ways to use it, if anyone wants to go further:</p>\n<p>Inside a LoRA: I added a 5-way Claude head to a Qwen3-8B LoRA and trained it on the original Claude rows plus your passages, while the 18-way head sees only original data. On the public LoRA's own validation fold it gives 0.484 vs 0.456 (plain), and 0.493 with the Claude head used as a gate. Weights: <a href=\"https://www.kaggle.com/datasets/zbigniewkirchner/ntl-qwen3-8b-lora-claude-head\" target=\"_blank\">ntl-qwen3-8b-lora-claude-head</a></p>\n<p>In a hierarchy (lab → line → version, extra data only below the lab level): +2.4 pts for a plain CPU stylegram model, with a bootstrap CI that doesn't cross zero. <a href=\"https://www.kaggle.com/code/zbigniewkirchner/extra-data-hierarchical-classification-2-4-pts\" target=\"_blank\">Notebook</a></p>",
+              "feedback_tracking_data": {},
+              "id": 3540305,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-17T16:22:25.057Z",
+              "raw_markdown": "Thanks for the dataset and the shout-out! It's the cleanest extra data in this competition so far. Two more ways to use it, if anyone wants to go further:\n\nInside a LoRA: I added a 5-way Claude head to a Qwen3-8B LoRA and trained it on the original Claude rows plus your passages, while the 18-way head sees only original data. On the public LoRA's own validation fold it gives 0.484 vs 0.456 (plain), and 0.493 with the Claude head used as a gate. Weights: [ntl-qwen3-8b-lora-claude-head](https://www.kaggle.com/datasets/zbigniewkirchner/ntl-qwen3-8b-lora-claude-head)\n\nIn a hierarchy (lab → line → version, extra data only below the lab level): +2.4 pts for a plain CPU stylegram model, with a bootstrap CI that doesn't cross zero. [Notebook](https://www.kaggle.com/code/zbigniewkirchner/extra-data-hierarchical-classification-2-4-pts)\n",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Zbigniew Kirchner",
+                  "id": 18236248,
+                  "performance_tier": "EXPERT",
+                  "profile_url": "/zbigniewkirchner",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/18236248-kg.jpg?t=2024-01-27-22-57-59",
+                  "tier": "EXPERT",
+                  "url": "/zbigniewkirchner",
+                  "user_id": 18236248,
+                  "user_name": "zbigniewkirchner"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": 1
+              }
+            },
+            "rawMarkdown": "Thanks for the dataset and the shout-out! It's the cleanest extra data in this competition so far. Two more ways to use it, if anyone wants to go further:\n\nInside a LoRA: I added a 5-way Claude head to a Qwen3-8B LoRA and trained it on the original Claude rows plus your passages, while the 18-way head sees only original data. On the public LoRA's own validation fold it gives 0.484 vs 0.456 (plain), and 0.493 with the Claude head used as a gate. Weights: [ntl-qwen3-8b-lora-claude-head](https://www.kaggle.com/datasets/zbigniewkirchner/ntl-qwen3-8b-lora-claude-head)\n\nIn a hierarchy (lab → line → version, extra data only below the lab level): +2.4 pts for a plain CPU stylegram model, with a bootstrap CI that doesn't cross zero. [Notebook](https://www.kaggle.com/code/zbigniewkirchner/extra-data-hierarchical-classification-2-4-pts)\n",
+            "replies": [],
+            "votes": {
+              "totalVotes": 1
+            }
+          },
+          {
+            "author": {
+              "displayName": "Valoryn",
+              "tier": "CONTRIBUTOR",
+              "url": "/ilyassouzzou01"
+            },
+            "content": "<p>Is using external data allowed in the competition? An explanation of the rules regarding this would be very helpful</p>",
+            "id": 3540282,
+            "isThankYou": false,
+            "postDate": "2026-10-17T14:53:43.417Z",
+            "raw": {
+              "author": {
+                "display_name": "Valoryn",
+                "id": 25752998,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25752998-kg.jpg?t=2026-10-18-22-39-35",
+                "tier": "CONTRIBUTOR",
+                "url": "/ilyassouzzou01"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 3572,
+              "content": "<p>Is using external data allowed in the competition? An explanation of the rules regarding this would be very helpful</p>",
+              "feedback_tracking_data": {},
+              "id": 3540282,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-17T14:53:43.417Z",
+              "raw_markdown": "Is using external data allowed in the competition? An explanation of the rules regarding this would be very helpful",
+              "replies": [
+                {
+                  "author": {
+                    "display_name": "Ravi Ramakrishnan",
+                    "id": 8273630,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8273630-kg.JPG?t=2024-03-26-14-51-52",
+                    "tier": "GRANDMASTER",
+                    "url": "/ravi20076"
+                  },
+                  "author_type": "COMMENT",
+                  "competition_ranking": 468,
+                  "content": "<p>Yes of course, why would this be debarred <a href=\"/ilyassouzzou01\" target=\"_blank\">@ilyassouzzou01</a> </p>",
+                  "feedback_tracking_data": {},
+                  "id": 3540288,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-17T15:14:04.313Z",
+                  "raw_markdown": "Yes of course, why would this be debarred @ilyassouzzou01 ",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Kishan Vavdara",
+                      "id": 12951282,
+                      "performance_tier": "MASTER",
+                      "profile_url": "/kishanvavdara",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/12951282-kg.jpeg",
+                      "tier": "MASTER",
+                      "url": "/kishanvavdara",
+                      "user_id": 12951282,
+                      "user_name": "kishanvavdara"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true,
+                    "total_upvotes": 1,
+                    "total_votes": 1
+                  }
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Valoryn",
+                  "id": 25752998,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/ilyassouzzou01",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25752998-kg.jpg?t=2026-10-18-22-39-35",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/ilyassouzzou01",
+                  "user_id": 25752998,
+                  "user_name": "ilyassouzzou01"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": 1
+              }
+            },
+            "rawMarkdown": "Is using external data allowed in the competition? An explanation of the rules regarding this would be very helpful",
+            "replies": [
+              {
+                "author": {
+                  "displayName": "Ravi Ramakrishnan",
+                  "tier": "GRANDMASTER",
+                  "url": "/ravi20076"
+                },
+                "content": "<p>Yes of course, why would this be debarred <a href=\"/ilyassouzzou01\" target=\"_blank\">@ilyassouzzou01</a> </p>",
+                "id": 3540288,
+                "isThankYou": false,
+                "postDate": "2026-10-17T15:14:04.313Z",
+                "raw": {
+                  "author": {
+                    "display_name": "Ravi Ramakrishnan",
+                    "id": 8273630,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8273630-kg.JPG?t=2024-03-26-14-51-52",
+                    "tier": "GRANDMASTER",
+                    "url": "/ravi20076"
+                  },
+                  "author_type": "COMMENT",
+                  "competition_ranking": 468,
+                  "content": "<p>Yes of course, why would this be debarred <a href=\"/ilyassouzzou01\" target=\"_blank\">@ilyassouzzou01</a> </p>",
+                  "feedback_tracking_data": {},
+                  "id": 3540288,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-17T15:14:04.313Z",
+                  "raw_markdown": "Yes of course, why would this be debarred @ilyassouzzou01 ",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Kishan Vavdara",
+                      "id": 12951282,
+                      "performance_tier": "MASTER",
+                      "profile_url": "/kishanvavdara",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/12951282-kg.jpeg",
+                      "tier": "MASTER",
+                      "url": "/kishanvavdara",
+                      "user_id": 12951282,
+                      "user_name": "kishanvavdara"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true,
+                    "total_upvotes": 1,
+                    "total_votes": 1
+                  }
+                },
+                "rawMarkdown": "Yes of course, why would this be debarred @ilyassouzzou01 ",
+                "replies": [],
+                "votes": {
+                  "totalVotes": 1
+                }
+              }
+            ],
+            "votes": {
+              "totalVotes": 1
+            }
+          }
+        ],
+        "expectedCommentCount": 3,
+        "firstMessage": {
+          "author": {
+            "displayName": "Seyit kaan Gunes",
+            "tier": "EXPERT",
+            "url": "/seyitkaangunes"
+          },
+          "content": "<p>A quick pointer for anyone who hasn't seen it: <a href=\"https://www.kaggle.com/datasets/seyitkaangunes/ntl-extra-api-passages\" target=\"_blank\">ntl-extra-api-passages</a> has ~5,000 labelled paragraphs from the 5 Claude labels.</p>\n<ul>\n<li>The prompts are 1,000 new ones in the competition's style.</li>\n<li>The passages were generated through the official API.</li>\n<li>No competition text is included.</li>\n</ul>\n<p><strong>What seems to work:</strong> use it to pick which Claude, not to train the 18-way classifier.</p>\n<ol>\n<li>Fit a small within-Claude model on the train Claude rows plus these passages.</li>\n<li>Apply it only to rows your blend already predicts as Claude.</li>\n</ol>\n<p>This is the \"Claude gate\" in <a href=\"/zbigniewkirchner\" target=\"_blank\">@zbigniewkirchner</a>'s public notebook, and it gave him a clear LB gain. Dropping the rows straight into the 18-class training tends to hurt the other classes.</p>",
+          "id": 3540208,
+          "isThankYou": false,
+          "postDate": "2026-10-17T10:56:08.120Z",
+          "raw": {
+            "author": {
+              "display_name": "Seyit kaan Gunes",
+              "id": 24119418,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24119418-kg.jpeg?t=2026-03-20-18-23-38",
+              "tier": "EXPERT",
+              "url": "/seyitkaangunes"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 20,
+            "content": "<p>A quick pointer for anyone who hasn't seen it: <a href=\"https://www.kaggle.com/datasets/seyitkaangunes/ntl-extra-api-passages\" target=\"_blank\">ntl-extra-api-passages</a> has ~5,000 labelled paragraphs from the 5 Claude labels.</p>\n<ul>\n<li>The prompts are 1,000 new ones in the competition's style.</li>\n<li>The passages were generated through the official API.</li>\n<li>No competition text is included.</li>\n</ul>\n<p><strong>What seems to work:</strong> use it to pick which Claude, not to train the 18-way classifier.</p>\n<ol>\n<li>Fit a small within-Claude model on the train Claude rows plus these passages.</li>\n<li>Apply it only to rows your blend already predicts as Claude.</li>\n</ol>\n<p>This is the \"Claude gate\" in <a href=\"/zbigniewkirchner\" target=\"_blank\">@zbigniewkirchner</a>'s public notebook, and it gave him a clear LB gain. Dropping the rows straight into the 18-class training tends to hurt the other classes.</p>",
+            "feedback_tracking_data": {},
+            "id": 3540208,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-10-17T10:56:08.120Z",
+            "raw_markdown": "A quick pointer for anyone who hasn't seen it: [ntl-extra-api-passages](https://www.kaggle.com/datasets/seyitkaangunes/ntl-extra-api-passages) has ~5,000 labelled paragraphs from the 5 Claude labels.\n\n- The prompts are 1,000 new ones in the competition's style.\n- The passages were generated through the official API.\n- No competition text is included.\n\n**What seems to work:** use it to pick which Claude, not to train the 18-way classifier.\n\n1. Fit a small within-Claude model on the train Claude rows plus these passages.\n2. Apply it only to rows your blend already predicts as Claude.\n\nThis is the \"Claude gate\" in @zbigniewkirchner's public notebook, and it gave him a clear LB gain. Dropping the rows straight into the 18-class training tends to hurt the other classes.",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "Ahmed Berat Özer",
+                "id": 24132111,
+                "performance_tier": "MASTER",
+                "profile_url": "/ahmedberatozer",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24132111-kg.jpg?t=2026-06-13-04-55-23",
+                "tier": "MASTER",
+                "url": "/ahmedberatozer",
+                "user_id": 24132111,
+                "user_name": "ahmedberatozer"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 10,
+              "total_votes": 10
+            }
+          },
+          "rawMarkdown": "A quick pointer for anyone who hasn't seen it: [ntl-extra-api-passages](https://www.kaggle.com/datasets/seyitkaangunes/ntl-extra-api-passages) has ~5,000 labelled paragraphs from the 5 Claude labels.\n\n- The prompts are 1,000 new ones in the competition's style.\n- The passages were generated through the official API.\n- No competition text is included.\n\n**What seems to work:** use it to pick which Claude, not to train the 18-way classifier.\n\n1. Fit a small within-Claude model on the train Claude rows plus these passages.\n2. Apply it only to rows your blend already predicts as Claude.\n\nThis is the \"Claude gate\" in @zbigniewkirchner's public notebook, and it gave him a clear LB gain. Dropping the rows straight into the 18-class training tends to hurt the other classes.",
+          "replies": [],
+          "votes": {
+            "totalVotes": 10
+          }
+        },
+        "firstMessageId": 3540208,
+        "id": 750224,
+        "name": "[Dataset] Extra Claude passages on new prompts, and what has worked with them so far",
+        "postDate": "2026-10-17T10:56:08.118864300Z",
+        "url": "/competitions/name-that-llm/discussion/750224"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>A quick pointer for anyone who hasn't seen it: <a href=\"https://www.kaggle.com/datasets/seyitkaangunes/ntl-extra-api-passages\" target=\"_blank\">ntl-extra-api-passages</a> has ~5,000 labelled paragraphs from the 5 Claude labels.</p>\n<ul>\n<li>The prompts are 1,000 new ones in the competition's style.</li>\n<li>The passages were generated through the official API.</li>\n<li>No competition text is included.</li>\n</ul>\n<p><strong>What seems to work:</strong> use it to pick which Claude, not to train the 18-way classifier.</p>\n<ol>\n<li>Fit a small within-Claude model on the train Claude rows plus these passages.</li>\n<li>Apply it only to rows your blend already predicts as Claude.</li>\n</ol>\n<p>This is the \"Claude gate\" in <a href=\"/zbigniewkirchner\" target=\"_blank\">@zbigniewkirchner</a>'s public notebook, and it gave him a clear LB gain. Dropping the rows straight into the 18-class training tends to hurt the other classes.</p>",
+              "id": 3540208,
+              "post_date": "2026-10-17T10:56:08.120Z",
+              "raw_markdown": "A quick pointer for anyone who hasn't seen it: [ntl-extra-api-passages](https://www.kaggle.com/datasets/seyitkaangunes/ntl-extra-api-passages) has ~5,000 labelled paragraphs from the 5 Claude labels.\n\n- The prompts are 1,000 new ones in the competition's style.\n- The passages were generated through the official API.\n- No competition text is included.\n\n**What seems to work:** use it to pick which Claude, not to train the 18-way classifier.\n\n1. Fit a small within-Claude model on the train Claude rows plus these passages.\n2. Apply it only to rows your blend already predicts as Claude.\n\nThis is the \"Claude gate\" in @zbigniewkirchner's public notebook, and it gave him a clear LB gain. Dropping the rows straight into the 18-class training tends to hurt the other classes.",
+              "votes": 10
+            },
+            {
+              "content": "<p>Is using external data allowed in the competition? An explanation of the rules regarding this would be very helpful</p>",
+              "id": 3540282,
+              "post_date": "2026-10-17T14:53:43.417Z",
+              "raw_markdown": "Is using external data allowed in the competition? An explanation of the rules regarding this would be very helpful",
+              "replies": [
+                {
+                  "content": "<p>Yes of course, why would this be debarred <a href=\"/ilyassouzzou01\" target=\"_blank\">@ilyassouzzou01</a> </p>",
+                  "id": 3540288,
+                  "post_date": "2026-10-17T15:14:04.313Z",
+                  "raw_markdown": "Yes of course, why would this be debarred @ilyassouzzou01 ",
+                  "votes": 1
+                }
+              ],
+              "votes": 1
+            },
+            {
+              "content": "<p>Thanks for the dataset and the shout-out! It's the cleanest extra data in this competition so far. Two more ways to use it, if anyone wants to go further:</p>\n<p>Inside a LoRA: I added a 5-way Claude head to a Qwen3-8B LoRA and trained it on the original Claude rows plus your passages, while the 18-way head sees only original data. On the public LoRA's own validation fold it gives 0.484 vs 0.456 (plain), and 0.493 with the Claude head used as a gate. Weights: <a href=\"https://www.kaggle.com/datasets/zbigniewkirchner/ntl-qwen3-8b-lora-claude-head\" target=\"_blank\">ntl-qwen3-8b-lora-claude-head</a></p>\n<p>In a hierarchy (lab → line → version, extra data only below the lab level): +2.4 pts for a plain CPU stylegram model, with a bootstrap CI that doesn't cross zero. <a href=\"https://www.kaggle.com/code/zbigniewkirchner/extra-data-hierarchical-classification-2-4-pts\" target=\"_blank\">Notebook</a></p>",
+              "id": 3540305,
+              "post_date": "2026-10-17T16:22:25.057Z",
+              "raw_markdown": "Thanks for the dataset and the shout-out! It's the cleanest extra data in this competition so far. Two more ways to use it, if anyone wants to go further:\n\nInside a LoRA: I added a 5-way Claude head to a Qwen3-8B LoRA and trained it on the original Claude rows plus your passages, while the 18-way head sees only original data. On the public LoRA's own validation fold it gives 0.484 vs 0.456 (plain), and 0.493 with the Claude head used as a gate. Weights: [ntl-qwen3-8b-lora-claude-head](https://www.kaggle.com/datasets/zbigniewkirchner/ntl-qwen3-8b-lora-claude-head)\n\nIn a hierarchy (lab → line → version, extra data only below the lab level): +2.4 pts for a plain CPU stylegram model, with a bootstrap CI that doesn't cross zero. [Notebook](https://www.kaggle.com/code/zbigniewkirchner/extra-data-hierarchical-classification-2-4-pts)\n",
+              "votes": 1
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 24119418,
+            "author_performance_tier": "EXPERT",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "24119418-kg.jpeg?t=2026-03-20-18-23-38",
+            "author_user_display_name": "Seyit kaan Gunes",
+            "author_user_name": "seyitkaangunes",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "comments": [
+              {
+                "author": {
+                  "display_name": "Zbigniew Kirchner",
+                  "id": 18236248,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/18236248-kg.jpg?t=2024-01-27-22-57-59",
+                  "tier": "EXPERT",
+                  "url": "/zbigniewkirchner"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 344,
+                "content": "<p>Thanks for the dataset and the shout-out! It's the cleanest extra data in this competition so far. Two more ways to use it, if anyone wants to go further:</p>\n<p>Inside a LoRA: I added a 5-way Claude head to a Qwen3-8B LoRA and trained it on the original Claude rows plus your passages, while the 18-way head sees only original data. On the public LoRA's own validation fold it gives 0.484 vs 0.456 (plain), and 0.493 with the Claude head used as a gate. Weights: <a href=\"https://www.kaggle.com/datasets/zbigniewkirchner/ntl-qwen3-8b-lora-claude-head\" target=\"_blank\">ntl-qwen3-8b-lora-claude-head</a></p>\n<p>In a hierarchy (lab → line → version, extra data only below the lab level): +2.4 pts for a plain CPU stylegram model, with a bootstrap CI that doesn't cross zero. <a href=\"https://www.kaggle.com/code/zbigniewkirchner/extra-data-hierarchical-classification-2-4-pts\" target=\"_blank\">Notebook</a></p>",
+                "feedback_tracking_data": {},
+                "id": 3540305,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-17T16:22:25.057Z",
+                "raw_markdown": "Thanks for the dataset and the shout-out! It's the cleanest extra data in this competition so far. Two more ways to use it, if anyone wants to go further:\n\nInside a LoRA: I added a 5-way Claude head to a Qwen3-8B LoRA and trained it on the original Claude rows plus your passages, while the 18-way head sees only original data. On the public LoRA's own validation fold it gives 0.484 vs 0.456 (plain), and 0.493 with the Claude head used as a gate. Weights: [ntl-qwen3-8b-lora-claude-head](https://www.kaggle.com/datasets/zbigniewkirchner/ntl-qwen3-8b-lora-claude-head)\n\nIn a hierarchy (lab → line → version, extra data only below the lab level): +2.4 pts for a plain CPU stylegram model, with a bootstrap CI that doesn't cross zero. [Notebook](https://www.kaggle.com/code/zbigniewkirchner/extra-data-hierarchical-classification-2-4-pts)\n",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "Zbigniew Kirchner",
+                    "id": 18236248,
+                    "performance_tier": "EXPERT",
+                    "profile_url": "/zbigniewkirchner",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/18236248-kg.jpg?t=2024-01-27-22-57-59",
+                    "tier": "EXPERT",
+                    "url": "/zbigniewkirchner",
+                    "user_id": 18236248,
+                    "user_name": "zbigniewkirchner"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true,
+                  "total_upvotes": 1,
+                  "total_votes": 1
+                }
+              },
+              {
+                "author": {
+                  "display_name": "Valoryn",
+                  "id": 25752998,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25752998-kg.jpg?t=2026-10-18-22-39-35",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/ilyassouzzou01"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 3572,
+                "content": "<p>Is using external data allowed in the competition? An explanation of the rules regarding this would be very helpful</p>",
+                "feedback_tracking_data": {},
+                "id": 3540282,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-17T14:53:43.417Z",
+                "raw_markdown": "Is using external data allowed in the competition? An explanation of the rules regarding this would be very helpful",
+                "replies": [
+                  {
+                    "author": {
+                      "display_name": "Ravi Ramakrishnan",
+                      "id": 8273630,
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8273630-kg.JPG?t=2024-03-26-14-51-52",
+                      "tier": "GRANDMASTER",
+                      "url": "/ravi20076"
+                    },
+                    "author_type": "COMMENT",
+                    "competition_ranking": 468,
+                    "content": "<p>Yes of course, why would this be debarred <a href=\"/ilyassouzzou01\" target=\"_blank\">@ilyassouzzou01</a> </p>",
+                    "feedback_tracking_data": {},
+                    "id": 3540288,
+                    "is_thank_you": false,
+                    "kernel_version": 0,
+                    "parent": {},
+                    "post_date": "2026-10-17T15:14:04.313Z",
+                    "raw_markdown": "Yes of course, why would this be debarred @ilyassouzzou01 ",
+                    "team_up_info": {
+                      "intro": "",
+                      "team_leader": {
+                        "display_name": "Kishan Vavdara",
+                        "id": 12951282,
+                        "performance_tier": "MASTER",
+                        "profile_url": "/kishanvavdara",
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/12951282-kg.jpeg",
+                        "tier": "MASTER",
+                        "url": "/kishanvavdara",
+                        "user_id": 12951282,
+                        "user_name": "kishanvavdara"
+                      }
+                    },
+                    "votes": {
+                      "can_upvote": true,
+                      "total_upvotes": 1,
+                      "total_votes": 1
+                    }
+                  }
+                ],
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "Valoryn",
+                    "id": 25752998,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/ilyassouzzou01",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25752998-kg.jpg?t=2026-10-18-22-39-35",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/ilyassouzzou01",
+                    "user_id": 25752998,
+                    "user_name": "ilyassouzzou01"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true,
+                  "total_upvotes": 1,
+                  "total_votes": 1
+                }
+              }
+            ],
+            "first_message": {
+              "author": {
+                "display_name": "Seyit kaan Gunes",
+                "id": 24119418,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24119418-kg.jpeg?t=2026-03-20-18-23-38",
+                "tier": "EXPERT",
+                "url": "/seyitkaangunes"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 20,
+              "content": "<p>A quick pointer for anyone who hasn't seen it: <a href=\"https://www.kaggle.com/datasets/seyitkaangunes/ntl-extra-api-passages\" target=\"_blank\">ntl-extra-api-passages</a> has ~5,000 labelled paragraphs from the 5 Claude labels.</p>\n<ul>\n<li>The prompts are 1,000 new ones in the competition's style.</li>\n<li>The passages were generated through the official API.</li>\n<li>No competition text is included.</li>\n</ul>\n<p><strong>What seems to work:</strong> use it to pick which Claude, not to train the 18-way classifier.</p>\n<ol>\n<li>Fit a small within-Claude model on the train Claude rows plus these passages.</li>\n<li>Apply it only to rows your blend already predicts as Claude.</li>\n</ol>\n<p>This is the \"Claude gate\" in <a href=\"/zbigniewkirchner\" target=\"_blank\">@zbigniewkirchner</a>'s public notebook, and it gave him a clear LB gain. Dropping the rows straight into the 18-class training tends to hurt the other classes.</p>",
+              "feedback_tracking_data": {},
+              "id": 3540208,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-17T10:56:08.120Z",
+              "raw_markdown": "A quick pointer for anyone who hasn't seen it: [ntl-extra-api-passages](https://www.kaggle.com/datasets/seyitkaangunes/ntl-extra-api-passages) has ~5,000 labelled paragraphs from the 5 Claude labels.\n\n- The prompts are 1,000 new ones in the competition's style.\n- The passages were generated through the official API.\n- No competition text is included.\n\n**What seems to work:** use it to pick which Claude, not to train the 18-way classifier.\n\n1. Fit a small within-Claude model on the train Claude rows plus these passages.\n2. Apply it only to rows your blend already predicts as Claude.\n\nThis is the \"Claude gate\" in @zbigniewkirchner's public notebook, and it gave him a clear LB gain. Dropping the rows straight into the 18-class training tends to hurt the other classes.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Ahmed Berat Özer",
+                  "id": 24132111,
+                  "performance_tier": "MASTER",
+                  "profile_url": "/ahmedberatozer",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24132111-kg.jpg?t=2026-06-13-04-55-23",
+                  "tier": "MASTER",
+                  "url": "/ahmedberatozer",
+                  "user_id": 24132111,
+                  "user_name": "ahmedberatozer"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 10,
+                "total_votes": 10
+              }
+            },
+            "first_message_id": 3540208,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 750224,
+            "name": "[Dataset] Extra Claude passages on new prompts, and what has worked with them so far",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-10-17T10:56:08.118864300Z",
+            "total_messages": 3,
+            "total_votes": 10,
+            "url": "/competitions/name-that-llm/discussion/750224"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:36:20+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:36:20+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-10-17T16:22:25.056666700Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [
+    {
+      "slug": "name-that-llm",
+      "topic_id": 750224,
+      "message_id": 3540282,
+      "parent_message_id": null,
+      "author": "Valoryn",
+      "author_url": "/ilyassouzzou01",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-10-17T14:53:43.417Z",
+      "raw_markdown": "Is using external data allowed in the competition? An explanation of the rules regarding this would be very helpful",
+      "content_html": "<p>Is using external data allowed in the competition? An explanation of the rules regarding this would be very helpful</p>",
+      "votes": 1,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:56:38+00:00",
+      "last_seen_at": "2026-11-16T16:36:20+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:36:20+00:00",
+      "remote_last_listed_at": "2026-11-16T16:36:20+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Valoryn",
+          "tier": "CONTRIBUTOR",
+          "url": "/ilyassouzzou01"
+        },
+        "content": "<p>Is using external data allowed in the competition? An explanation of the rules regarding this would be very helpful</p>",
+        "id": 3540282,
+        "isThankYou": false,
+        "postDate": "2026-10-17T14:53:43.417Z",
+        "raw": {
+          "author": {
+            "display_name": "Valoryn",
+            "id": 25752998,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25752998-kg.jpg?t=2026-10-18-22-39-35",
+            "tier": "CONTRIBUTOR",
+            "url": "/ilyassouzzou01"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 3572,
+          "content": "<p>Is using external data allowed in the competition? An explanation of the rules regarding this would be very helpful</p>",
+          "feedback_tracking_data": {},
+          "id": 3540282,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-17T14:53:43.417Z",
+          "raw_markdown": "Is using external data allowed in the competition? An explanation of the rules regarding this would be very helpful",
+          "replies": [
+            {
+              "author": {
+                "display_name": "Ravi Ramakrishnan",
+                "id": 8273630,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8273630-kg.JPG?t=2024-03-26-14-51-52",
+                "tier": "GRANDMASTER",
+                "url": "/ravi20076"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 468,
+              "content": "<p>Yes of course, why would this be debarred <a href=\"/ilyassouzzou01\" target=\"_blank\">@ilyassouzzou01</a> </p>",
+              "feedback_tracking_data": {},
+              "id": 3540288,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-17T15:14:04.313Z",
+              "raw_markdown": "Yes of course, why would this be debarred @ilyassouzzou01 ",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Kishan Vavdara",
+                  "id": 12951282,
+                  "performance_tier": "MASTER",
+                  "profile_url": "/kishanvavdara",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/12951282-kg.jpeg",
+                  "tier": "MASTER",
+                  "url": "/kishanvavdara",
+                  "user_id": 12951282,
+                  "user_name": "kishanvavdara"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": 1
+              }
+            }
+          ],
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Valoryn",
+              "id": 25752998,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/ilyassouzzou01",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25752998-kg.jpg?t=2026-10-18-22-39-35",
+              "tier": "CONTRIBUTOR",
+              "url": "/ilyassouzzou01",
+              "user_id": 25752998,
+              "user_name": "ilyassouzzou01"
+            }
+          },
+          "votes": {
+            "can_upvote": true,
+            "total_upvotes": 1,
+            "total_votes": 1
+          }
+        },
+        "rawMarkdown": "Is using external data allowed in the competition? An explanation of the rules regarding this would be very helpful",
+        "replies": [
+          {
+            "author": {
+              "displayName": "Ravi Ramakrishnan",
+              "tier": "GRANDMASTER",
+              "url": "/ravi20076"
+            },
+            "content": "<p>Yes of course, why would this be debarred <a href=\"/ilyassouzzou01\" target=\"_blank\">@ilyassouzzou01</a> </p>",
+            "id": 3540288,
+            "isThankYou": false,
+            "postDate": "2026-10-17T15:14:04.313Z",
+            "raw": {
+              "author": {
+                "display_name": "Ravi Ramakrishnan",
+                "id": 8273630,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8273630-kg.JPG?t=2024-03-26-14-51-52",
+                "tier": "GRANDMASTER",
+                "url": "/ravi20076"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 468,
+              "content": "<p>Yes of course, why would this be debarred <a href=\"/ilyassouzzou01\" target=\"_blank\">@ilyassouzzou01</a> </p>",
+              "feedback_tracking_data": {},
+              "id": 3540288,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-17T15:14:04.313Z",
+              "raw_markdown": "Yes of course, why would this be debarred @ilyassouzzou01 ",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Kishan Vavdara",
+                  "id": 12951282,
+                  "performance_tier": "MASTER",
+                  "profile_url": "/kishanvavdara",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/12951282-kg.jpeg",
+                  "tier": "MASTER",
+                  "url": "/kishanvavdara",
+                  "user_id": 12951282,
+                  "user_name": "kishanvavdara"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": 1
+              }
+            },
+            "rawMarkdown": "Yes of course, why would this be debarred @ilyassouzzou01 ",
+            "replies": [],
+            "votes": {
+              "totalVotes": 1
+            }
+          }
+        ],
+        "votes": {
+          "totalVotes": 1
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 750224,
+      "message_id": 3540288,
+      "parent_message_id": 3540282,
+      "author": "Ravi Ramakrishnan",
+      "author_url": "/ravi20076",
+      "author_tier": "GRANDMASTER",
+      "post_date": "2026-10-17T15:14:04.313Z",
+      "raw_markdown": "Yes of course, why would this be debarred @ilyassouzzou01 ",
+      "content_html": "<p>Yes of course, why would this be debarred <a href=\"/ilyassouzzou01\" target=\"_blank\">@ilyassouzzou01</a> </p>",
+      "votes": 1,
+      "is_thank_you": 0,
+      "depth": 1,
+      "first_seen_at": "2026-11-04T06:56:38+00:00",
+      "last_seen_at": "2026-11-16T16:36:20+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:36:20+00:00",
+      "remote_last_listed_at": "2026-11-16T16:36:20+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Ravi Ramakrishnan",
+          "tier": "GRANDMASTER",
+          "url": "/ravi20076"
+        },
+        "content": "<p>Yes of course, why would this be debarred <a href=\"/ilyassouzzou01\" target=\"_blank\">@ilyassouzzou01</a> </p>",
+        "id": 3540288,
+        "isThankYou": false,
+        "postDate": "2026-10-17T15:14:04.313Z",
+        "raw": {
+          "author": {
+            "display_name": "Ravi Ramakrishnan",
+            "id": 8273630,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8273630-kg.JPG?t=2024-03-26-14-51-52",
+            "tier": "GRANDMASTER",
+            "url": "/ravi20076"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 468,
+          "content": "<p>Yes of course, why would this be debarred <a href=\"/ilyassouzzou01\" target=\"_blank\">@ilyassouzzou01</a> </p>",
+          "feedback_tracking_data": {},
+          "id": 3540288,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-17T15:14:04.313Z",
+          "raw_markdown": "Yes of course, why would this be debarred @ilyassouzzou01 ",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Kishan Vavdara",
+              "id": 12951282,
+              "performance_tier": "MASTER",
+              "profile_url": "/kishanvavdara",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/12951282-kg.jpeg",
+              "tier": "MASTER",
+              "url": "/kishanvavdara",
+              "user_id": 12951282,
+              "user_name": "kishanvavdara"
+            }
+          },
+          "votes": {
+            "can_upvote": true,
+            "total_upvotes": 1,
+            "total_votes": 1
+          }
+        },
+        "rawMarkdown": "Yes of course, why would this be debarred @ilyassouzzou01 ",
+        "replies": [],
+        "votes": {
+          "totalVotes": 1
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 750224,
+      "message_id": 3540305,
+      "parent_message_id": null,
+      "author": "Zbigniew Kirchner",
+      "author_url": "/zbigniewkirchner",
+      "author_tier": "EXPERT",
+      "post_date": "2026-10-17T16:22:25.057Z",
+      "raw_markdown": "Thanks for the dataset and the shout-out! It's the cleanest extra data in this competition so far. Two more ways to use it, if anyone wants to go further:\n\nInside a LoRA: I added a 5-way Claude head to a Qwen3-8B LoRA and trained it on the original Claude rows plus your passages, while the 18-way head sees only original data. On the public LoRA's own validation fold it gives 0.484 vs 0.456 (plain), and 0.493 with the Claude head used as a gate. Weights: [ntl-qwen3-8b-lora-claude-head](https://www.kaggle.com/datasets/zbigniewkirchner/ntl-qwen3-8b-lora-claude-head)\n\nIn a hierarchy (lab → line → version, extra data only below the lab level): +2.4 pts for a plain CPU stylegram model, with a bootstrap CI that doesn't cross zero. [Notebook](https://www.kaggle.com/code/zbigniewkirchner/extra-data-hierarchical-classification-2-4-pts)\n",
+      "content_html": "<p>Thanks for the dataset and the shout-out! It's the cleanest extra data in this competition so far. Two more ways to use it, if anyone wants to go further:</p>\n<p>Inside a LoRA: I added a 5-way Claude head to a Qwen3-8B LoRA and trained it on the original Claude rows plus your passages, while the 18-way head sees only original data. On the public LoRA's own validation fold it gives 0.484 vs 0.456 (plain), and 0.493 with the Claude head used as a gate. Weights: <a href=\"https://www.kaggle.com/datasets/zbigniewkirchner/ntl-qwen3-8b-lora-claude-head\" target=\"_blank\">ntl-qwen3-8b-lora-claude-head</a></p>\n<p>In a hierarchy (lab → line → version, extra data only below the lab level): +2.4 pts for a plain CPU stylegram model, with a bootstrap CI that doesn't cross zero. <a href=\"https://www.kaggle.com/code/zbigniewkirchner/extra-data-hierarchical-classification-2-4-pts\" target=\"_blank\">Notebook</a></p>",
+      "votes": 1,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:56:38+00:00",
+      "last_seen_at": "2026-11-16T16:36:20+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:36:20+00:00",
+      "remote_last_listed_at": "2026-11-16T16:36:20+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Zbigniew Kirchner",
+          "tier": "EXPERT",
+          "url": "/zbigniewkirchner"
+        },
+        "content": "<p>Thanks for the dataset and the shout-out! It's the cleanest extra data in this competition so far. Two more ways to use it, if anyone wants to go further:</p>\n<p>Inside a LoRA: I added a 5-way Claude head to a Qwen3-8B LoRA and trained it on the original Claude rows plus your passages, while the 18-way head sees only original data. On the public LoRA's own validation fold it gives 0.484 vs 0.456 (plain), and 0.493 with the Claude head used as a gate. Weights: <a href=\"https://www.kaggle.com/datasets/zbigniewkirchner/ntl-qwen3-8b-lora-claude-head\" target=\"_blank\">ntl-qwen3-8b-lora-claude-head</a></p>\n<p>In a hierarchy (lab → line → version, extra data only below the lab level): +2.4 pts for a plain CPU stylegram model, with a bootstrap CI that doesn't cross zero. <a href=\"https://www.kaggle.com/code/zbigniewkirchner/extra-data-hierarchical-classification-2-4-pts\" target=\"_blank\">Notebook</a></p>",
+        "id": 3540305,
+        "isThankYou": false,
+        "postDate": "2026-10-17T16:22:25.057Z",
+        "raw": {
+          "author": {
+            "display_name": "Zbigniew Kirchner",
+            "id": 18236248,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/18236248-kg.jpg?t=2024-01-27-22-57-59",
+            "tier": "EXPERT",
+            "url": "/zbigniewkirchner"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 344,
+          "content": "<p>Thanks for the dataset and the shout-out! It's the cleanest extra data in this competition so far. Two more ways to use it, if anyone wants to go further:</p>\n<p>Inside a LoRA: I added a 5-way Claude head to a Qwen3-8B LoRA and trained it on the original Claude rows plus your passages, while the 18-way head sees only original data. On the public LoRA's own validation fold it gives 0.484 vs 0.456 (plain), and 0.493 with the Claude head used as a gate. Weights: <a href=\"https://www.kaggle.com/datasets/zbigniewkirchner/ntl-qwen3-8b-lora-claude-head\" target=\"_blank\">ntl-qwen3-8b-lora-claude-head</a></p>\n<p>In a hierarchy (lab → line → version, extra data only below the lab level): +2.4 pts for a plain CPU stylegram model, with a bootstrap CI that doesn't cross zero. <a href=\"https://www.kaggle.com/code/zbigniewkirchner/extra-data-hierarchical-classification-2-4-pts\" target=\"_blank\">Notebook</a></p>",
+          "feedback_tracking_data": {},
+          "id": 3540305,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-17T16:22:25.057Z",
+          "raw_markdown": "Thanks for the dataset and the shout-out! It's the cleanest extra data in this competition so far. Two more ways to use it, if anyone wants to go further:\n\nInside a LoRA: I added a 5-way Claude head to a Qwen3-8B LoRA and trained it on the original Claude rows plus your passages, while the 18-way head sees only original data. On the public LoRA's own validation fold it gives 0.484 vs 0.456 (plain), and 0.493 with the Claude head used as a gate. Weights: [ntl-qwen3-8b-lora-claude-head](https://www.kaggle.com/datasets/zbigniewkirchner/ntl-qwen3-8b-lora-claude-head)\n\nIn a hierarchy (lab → line → version, extra data only below the lab level): +2.4 pts for a plain CPU stylegram model, with a bootstrap CI that doesn't cross zero. [Notebook](https://www.kaggle.com/code/zbigniewkirchner/extra-data-hierarchical-classification-2-4-pts)\n",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Zbigniew Kirchner",
+              "id": 18236248,
+              "performance_tier": "EXPERT",
+              "profile_url": "/zbigniewkirchner",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/18236248-kg.jpg?t=2024-01-27-22-57-59",
+              "tier": "EXPERT",
+              "url": "/zbigniewkirchner",
+              "user_id": 18236248,
+              "user_name": "zbigniewkirchner"
+            }
+          },
+          "votes": {
+            "can_upvote": true,
+            "total_upvotes": 1,
+            "total_votes": 1
+          }
+        },
+        "rawMarkdown": "Thanks for the dataset and the shout-out! It's the cleanest extra data in this competition so far. Two more ways to use it, if anyone wants to go further:\n\nInside a LoRA: I added a 5-way Claude head to a Qwen3-8B LoRA and trained it on the original Claude rows plus your passages, while the 18-way head sees only original data. On the public LoRA's own validation fold it gives 0.484 vs 0.456 (plain), and 0.493 with the Claude head used as a gate. Weights: [ntl-qwen3-8b-lora-claude-head](https://www.kaggle.com/datasets/zbigniewkirchner/ntl-qwen3-8b-lora-claude-head)\n\nIn a hierarchy (lab → line → version, extra data only below the lab level): +2.4 pts for a plain CPU stylegram model, with a bootstrap CI that doesn't cross zero. [Notebook](https://www.kaggle.com/code/zbigniewkirchner/extra-data-hierarchical-classification-2-4-pts)\n",
+        "replies": [],
+        "votes": {
+          "totalVotes": 1
+        }
+      }
+    }
+  ],
+  "writeup": null
+}

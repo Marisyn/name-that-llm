@@ -1,0 +1,503 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 759102,
+    "title": "0.687 VERIFIED | Full Code Released - Can We Break 0.700 Together?",
+    "author": "Pengyi Peng1",
+    "author_url": "/pengyipeng1",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-11-13T19:27:34.797952400Z",
+    "last_comment_post_date": "2026-11-14T14:42:12.470Z",
+    "comment_count": 2,
+    "votes": 1,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/759102",
+    "first_message_id": 3554802,
+    "first_seen_at": "2026-11-16T16:21:25+00:00",
+    "last_seen_at": "2026-11-18T09:02:16+00:00",
+    "detail_last_synced_at": "2026-11-18T09:02:16+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-18T09:01:50+00:00",
+    "remote_last_listed_at": "2026-11-18T09:01:50+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "3e98f891753a62fa749e8aa63a52476f1377d1a7e976dec57825bdaa480bf3a7",
+    "listing_metrics_hash": "08a3f0e9d031723a4649730d445a527264427162f124c0c72a6c18d2e0b8e839",
+    "detail_content_hash": "11f92070ed7a2e54b56c7aa9d565d14b20f537b3f761b99219f8c1f1878d404b",
+    "detail_last_checked_at": "2026-11-18T09:02:16+00:00",
+    "detail_next_check_at": "2026-11-21T09:02:16+00:00",
+    "detail_unchanged_count": 1,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 2,
+      "firstForumMessageId": null,
+      "id": 759102,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-11-14T14:42:12.470Z",
+      "postDate": "2026-11-13T19:27:34.797952400Z",
+      "raw": {
+        "comment_count": 2,
+        "id": 759102,
+        "last_comment_post_date": "2026-11-14T14:42:12.470Z",
+        "post_date": "2026-11-13T19:27:34.797952400Z",
+        "title": "0.687 VERIFIED | Full Code Released - Can We Break 0.700 Together?",
+        "topic_url": "/competitions/name-that-llm/discussion/759102",
+        "votes": 1
+      },
+      "title": "0.687 VERIFIED | Full Code Released - Can We Break 0.700 Together?",
+      "topicUrl": "/competitions/name-that-llm/discussion/759102",
+      "votes": 1
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "Pengyi Peng1",
+        "authorUserName": "pengyipeng1",
+        "comments": [
+          {
+            "author": {
+              "displayName": "Abood PS",
+              "tier": "CONTRIBUTOR",
+              "url": "/aboodps"
+            },
+            "content": "<p>Hi Pengyi,</p>\n<p>Read the 0.687 write-up and the call for 0.700. Our grouped-OOF twin-LoRA blend sits at 0.633 locally and our fork of the public 0.682 lineage verified at 0.682 on the board. I'd be glad to run a couple of ablations against your base and report back what moved and what didn't.</p>\n<p>Two things first:</p>\n<ol>\n<li>Are you open to merging for this, or is the goal a loose collaboration where we stay on separate tracks?</li>\n<li>Which single experiment do you most want someone else to try — the STree residual vs a targeted seed/weight sweep of the LoRA members?</li>\n</ol>",
+            "id": 3555050,
+            "isThankYou": false,
+            "postDate": "2026-11-14T14:42:12.470Z",
+            "raw": {
+              "author": {
+                "display_name": "Abood PS",
+                "id": 36918046,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36918046-kg.jpg?t=2026-11-04-14-50-50",
+                "tier": "CONTRIBUTOR",
+                "url": "/aboodps"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 407,
+              "content": "<p>Hi Pengyi,</p>\n<p>Read the 0.687 write-up and the call for 0.700. Our grouped-OOF twin-LoRA blend sits at 0.633 locally and our fork of the public 0.682 lineage verified at 0.682 on the board. I'd be glad to run a couple of ablations against your base and report back what moved and what didn't.</p>\n<p>Two things first:</p>\n<ol>\n<li>Are you open to merging for this, or is the goal a loose collaboration where we stay on separate tracks?</li>\n<li>Which single experiment do you most want someone else to try — the STree residual vs a targeted seed/weight sweep of the LoRA members?</li>\n</ol>",
+              "feedback_tracking_data": {},
+              "id": 3555050,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-14T14:42:12.470Z",
+              "raw_markdown": "Hi Pengyi,\n\nRead the 0.687 write-up and the call for 0.700. Our grouped-OOF twin-LoRA blend sits at 0.633 locally and our fork of the public 0.682 lineage verified at 0.682 on the board. I'd be glad to run a couple of ablations against your base and report back what moved and what didn't.\n\nTwo things first:\n\n1. Are you open to merging for this, or is the goal a loose collaboration where we stay on separate tracks?\n2. Which single experiment do you most want someone else to try — the STree residual vs a targeted seed/weight sweep of the LoRA members?\n",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Abood PS",
+                  "id": 36918046,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/aboodps",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36918046-kg.jpg?t=2026-11-04-14-50-50",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/aboodps",
+                  "user_id": 36918046,
+                  "user_name": "aboodps"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "Hi Pengyi,\n\nRead the 0.687 write-up and the call for 0.700. Our grouped-OOF twin-LoRA blend sits at 0.633 locally and our fork of the public 0.682 lineage verified at 0.682 on the board. I'd be glad to run a couple of ablations against your base and report back what moved and what didn't.\n\nTwo things first:\n\n1. Are you open to merging for this, or is the goal a loose collaboration where we stay on separate tracks?\n2. Which single experiment do you most want someone else to try — the STree residual vs a targeted seed/weight sweep of the LoRA members?\n",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          },
+          {
+            "author": {
+              "displayName": null,
+              "tier": null,
+              "url": "/"
+            },
+            "content": null,
+            "id": 3554933,
+            "isThankYou": false,
+            "postDate": "2026-11-14T06:43:57.387Z",
+            "raw": {
+              "author": {
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "url": "/"
+              },
+              "author_type": "COMMENT",
+              "can_delete": true,
+              "feedback_tracking_data": {},
+              "id": 3554933,
+              "is_deleted": true,
+              "is_thank_you": false,
+              "is_user_author": true,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-14T06:43:57.387Z",
+              "raw_markdown": "",
+              "votes": {}
+            },
+            "rawMarkdown": null,
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "expectedCommentCount": 2,
+        "firstMessage": {
+          "author": {
+            "displayName": "Pengyi Peng1",
+            "tier": "CONTRIBUTOR",
+            "url": "/pengyipeng1"
+          },
+          "content": "<h2>0.687 is an actual scored result, and the exact code is now public</h2>\n<p>I have just made <strong><a href=\"https://www.kaggle.com/code/pengyipeng1/0-687-it-actually-works\" target=\"_blank\">0.687|IT ACTUALLY WORKS</a></strong> public under Apache-2.0.</p>\n<ul>\n<li><strong>Official public score: 0.687</strong>, completed submission 58260754.</li>\n<li><strong>Exact scored source: Version 1</strong>, script version 368656391. Publishing changed the title and visibility, not the code.</li>\n<li>This is an 18-class attribution task evaluated by <strong>balanced accuracy / macro recall</strong>.</li>\n<li>All upstream credits are retained. The base is Areeb Ali's public v11 recipe; our addition is a small row-local, family-mass-preserving official-style residual after the native probabilities, plus preview/output guards. This is not a from-scratch ensemble.</li>\n</ul>\n<p>Thanks to <strong>Areeb Ali and the upstream contributors</strong> for sharing the work this builds on. I am sharing the actual scored version so others can inspect it, reproduce it and suggest improvements.</p>\n<p><strong>A note on the timestamp:</strong> the Notebook still says it was updated two days ago because that is when Version 1 was saved/run. It was made public today. I have kept the scored source unchanged rather than creating a new run just to refresh the date.</p>\n<h2>What this result does and does not establish</h2>\n<p>Here, <strong>verified</strong> means Kaggle completed that submission with a public score of 0.687 and the published source matches its scored version. It is not a guarantee that every rerun will score identically.</p>\n<p>I am <strong>not claiming the highest public score</strong>: <a href=\"https://www.kaggle.com/code/estopadilla/0-689-real-glm-5-3-likelihood-on-2xt4?scriptVersionId=368783068\" target=\"_blank\">Jose Padilla's public GLM-likelihood Notebook has a scored 0.689 Version 4</a>. Notebook titles, latest versions and best scored versions can differ, so checking the actual version matters.</p>\n<p>Our local residual experiment also failed its confidence/robustness admission checks. The original caveat remains visible in the Notebook. One public score does not establish a reliable causal gain over the earlier 0.684 base. The displayed short runtime is a public-sample preview, not the full hidden inference time.</p>\n<h2>Next target: 0.700. What would actually get us there?</h2>\n<p>I would like to turn this into an evidence-led community discussion:</p>\n<ol>\n<li><strong>Validation that transfers.</strong> What prompt-disjoint split and response-per-prompt distribution best track the hidden task? How do you stress-test one, two or many responses per prompt without assuming a test-set grouping structure?</li>\n<li><strong>Complementary errors.</strong> Which evidence adds genuinely different information to a strong public stack: token likelihood, embeddings or sparse style signals? Per-class recall and error overlap would be especially useful.</li>\n<li><strong>OOF calibration and fusion.</strong> Has anyone obtained aligned, leakage-checked out-of-fold predictions for a full strong ensemble? I would prefer selecting temperatures/weights inside inner folds, then measuring them on held-out prompt groups.</li>\n<li><strong>External-data hygiene.</strong> Which source, prompt-overlap and near-duplicate checks have helped avoid misleading local improvements?</li>\n<li><strong>A practical compute budget.</strong> Which changes improve actual scored performance while keeping offline inference inside the competition's nine-hour limit? Runtime, failure cases and fallback behavior matter too.</li>\n</ol>\n<p>The plan is to document each change, test it against a fixed comparator, and share the next verified improvement as public code if the evidence supports it. <strong>0.700 is the target, not an achieved result or a promise.</strong></p>\n<p>If you try the Notebook, please share your scored version, validation protocol, runtime and what worked or failed. Suggestions, corrections and collaborative experiments are welcome.</p>\n<p><strong>Full code:</strong> <a href=\"https://www.kaggle.com/code/pengyipeng1/0-687-it-actually-works\" target=\"_blank\">https://www.kaggle.com/code/pengyipeng1/0-687-it-actually-works</a></p>\n<p>Thanks for reading, and thanks again to everyone sharing reproducible work in this competition. Let's keep building and testing together.</p>",
+          "id": 3554802,
+          "isThankYou": false,
+          "postDate": "2026-11-13T19:27:34.797Z",
+          "raw": {
+            "author": {
+              "display_name": "Pengyi Peng1",
+              "id": 21022718,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/21022718-kg.jpg?t=2024-11-07-09-33-05",
+              "tier": "CONTRIBUTOR",
+              "url": "/pengyipeng1"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 1035,
+            "content": "<h2>0.687 is an actual scored result, and the exact code is now public</h2>\n<p>I have just made <strong><a href=\"https://www.kaggle.com/code/pengyipeng1/0-687-it-actually-works\" target=\"_blank\">0.687|IT ACTUALLY WORKS</a></strong> public under Apache-2.0.</p>\n<ul>\n<li><strong>Official public score: 0.687</strong>, completed submission 58260754.</li>\n<li><strong>Exact scored source: Version 1</strong>, script version 368656391. Publishing changed the title and visibility, not the code.</li>\n<li>This is an 18-class attribution task evaluated by <strong>balanced accuracy / macro recall</strong>.</li>\n<li>All upstream credits are retained. The base is Areeb Ali's public v11 recipe; our addition is a small row-local, family-mass-preserving official-style residual after the native probabilities, plus preview/output guards. This is not a from-scratch ensemble.</li>\n</ul>\n<p>Thanks to <strong>Areeb Ali and the upstream contributors</strong> for sharing the work this builds on. I am sharing the actual scored version so others can inspect it, reproduce it and suggest improvements.</p>\n<p><strong>A note on the timestamp:</strong> the Notebook still says it was updated two days ago because that is when Version 1 was saved/run. It was made public today. I have kept the scored source unchanged rather than creating a new run just to refresh the date.</p>\n<h2>What this result does and does not establish</h2>\n<p>Here, <strong>verified</strong> means Kaggle completed that submission with a public score of 0.687 and the published source matches its scored version. It is not a guarantee that every rerun will score identically.</p>\n<p>I am <strong>not claiming the highest public score</strong>: <a href=\"https://www.kaggle.com/code/estopadilla/0-689-real-glm-5-3-likelihood-on-2xt4?scriptVersionId=368783068\" target=\"_blank\">Jose Padilla's public GLM-likelihood Notebook has a scored 0.689 Version 4</a>. Notebook titles, latest versions and best scored versions can differ, so checking the actual version matters.</p>\n<p>Our local residual experiment also failed its confidence/robustness admission checks. The original caveat remains visible in the Notebook. One public score does not establish a reliable causal gain over the earlier 0.684 base. The displayed short runtime is a public-sample preview, not the full hidden inference time.</p>\n<h2>Next target: 0.700. What would actually get us there?</h2>\n<p>I would like to turn this into an evidence-led community discussion:</p>\n<ol>\n<li><strong>Validation that transfers.</strong> What prompt-disjoint split and response-per-prompt distribution best track the hidden task? How do you stress-test one, two or many responses per prompt without assuming a test-set grouping structure?</li>\n<li><strong>Complementary errors.</strong> Which evidence adds genuinely different information to a strong public stack: token likelihood, embeddings or sparse style signals? Per-class recall and error overlap would be especially useful.</li>\n<li><strong>OOF calibration and fusion.</strong> Has anyone obtained aligned, leakage-checked out-of-fold predictions for a full strong ensemble? I would prefer selecting temperatures/weights inside inner folds, then measuring them on held-out prompt groups.</li>\n<li><strong>External-data hygiene.</strong> Which source, prompt-overlap and near-duplicate checks have helped avoid misleading local improvements?</li>\n<li><strong>A practical compute budget.</strong> Which changes improve actual scored performance while keeping offline inference inside the competition's nine-hour limit? Runtime, failure cases and fallback behavior matter too.</li>\n</ol>\n<p>The plan is to document each change, test it against a fixed comparator, and share the next verified improvement as public code if the evidence supports it. <strong>0.700 is the target, not an achieved result or a promise.</strong></p>\n<p>If you try the Notebook, please share your scored version, validation protocol, runtime and what worked or failed. Suggestions, corrections and collaborative experiments are welcome.</p>\n<p><strong>Full code:</strong> <a href=\"https://www.kaggle.com/code/pengyipeng1/0-687-it-actually-works\" target=\"_blank\">https://www.kaggle.com/code/pengyipeng1/0-687-it-actually-works</a></p>\n<p>Thanks for reading, and thanks again to everyone sharing reproducible work in this competition. Let's keep building and testing together.</p>",
+            "feedback_tracking_data": {},
+            "id": 3554802,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-11-13T19:27:34.797Z",
+            "raw_markdown": "## 0.687 is an actual scored result, and the exact code is now public\n\nI have just made **[0.687|IT ACTUALLY WORKS](https://www.kaggle.com/code/pengyipeng1/0-687-it-actually-works)** public under Apache-2.0.\n\n- **Official public score: 0.687**, completed submission 58260754.\n- **Exact scored source: Version 1**, script version 368656391. Publishing changed the title and visibility, not the code.\n- This is an 18-class attribution task evaluated by **balanced accuracy / macro recall**.\n- All upstream credits are retained. The base is Areeb Ali's public v11 recipe; our addition is a small row-local, family-mass-preserving official-style residual after the native probabilities, plus preview/output guards. This is not a from-scratch ensemble.\n\nThanks to **Areeb Ali and the upstream contributors** for sharing the work this builds on. I am sharing the actual scored version so others can inspect it, reproduce it and suggest improvements.\n\n**A note on the timestamp:** the Notebook still says it was updated two days ago because that is when Version 1 was saved/run. It was made public today. I have kept the scored source unchanged rather than creating a new run just to refresh the date.\n\n## What this result does and does not establish\n\nHere, **verified** means Kaggle completed that submission with a public score of 0.687 and the published source matches its scored version. It is not a guarantee that every rerun will score identically.\n\nI am **not claiming the highest public score**: [Jose Padilla's public GLM-likelihood Notebook has a scored 0.689 Version 4](https://www.kaggle.com/code/estopadilla/0-689-real-glm-5-3-likelihood-on-2xt4?scriptVersionId=368783068). Notebook titles, latest versions and best scored versions can differ, so checking the actual version matters.\n\nOur local residual experiment also failed its confidence/robustness admission checks. The original caveat remains visible in the Notebook. One public score does not establish a reliable causal gain over the earlier 0.684 base. The displayed short runtime is a public-sample preview, not the full hidden inference time.\n\n## Next target: 0.700. What would actually get us there?\n\nI would like to turn this into an evidence-led community discussion:\n\n1. **Validation that transfers.** What prompt-disjoint split and response-per-prompt distribution best track the hidden task? How do you stress-test one, two or many responses per prompt without assuming a test-set grouping structure?\n2. **Complementary errors.** Which evidence adds genuinely different information to a strong public stack: token likelihood, embeddings or sparse style signals? Per-class recall and error overlap would be especially useful.\n3. **OOF calibration and fusion.** Has anyone obtained aligned, leakage-checked out-of-fold predictions for a full strong ensemble? I would prefer selecting temperatures/weights inside inner folds, then measuring them on held-out prompt groups.\n4. **External-data hygiene.** Which source, prompt-overlap and near-duplicate checks have helped avoid misleading local improvements?\n5. **A practical compute budget.** Which changes improve actual scored performance while keeping offline inference inside the competition's nine-hour limit? Runtime, failure cases and fallback behavior matter too.\n\nThe plan is to document each change, test it against a fixed comparator, and share the next verified improvement as public code if the evidence supports it. **0.700 is the target, not an achieved result or a promise.**\n\nIf you try the Notebook, please share your scored version, validation protocol, runtime and what worked or failed. Suggestions, corrections and collaborative experiments are welcome.\n\n**Full code:** https://www.kaggle.com/code/pengyipeng1/0-687-it-actually-works\n\nThanks for reading, and thanks again to everyone sharing reproducible work in this competition. Let's keep building and testing together.\n",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "Pengyi Peng1",
+                "id": 21022718,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/pengyipeng1",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/21022718-kg.jpg?t=2024-11-07-09-33-05",
+                "tier": "CONTRIBUTOR",
+                "url": "/pengyipeng1",
+                "user_id": 21022718,
+                "user_name": "pengyipeng1"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 2,
+              "total_votes": 1
+            }
+          },
+          "rawMarkdown": "## 0.687 is an actual scored result, and the exact code is now public\n\nI have just made **[0.687|IT ACTUALLY WORKS](https://www.kaggle.com/code/pengyipeng1/0-687-it-actually-works)** public under Apache-2.0.\n\n- **Official public score: 0.687**, completed submission 58260754.\n- **Exact scored source: Version 1**, script version 368656391. Publishing changed the title and visibility, not the code.\n- This is an 18-class attribution task evaluated by **balanced accuracy / macro recall**.\n- All upstream credits are retained. The base is Areeb Ali's public v11 recipe; our addition is a small row-local, family-mass-preserving official-style residual after the native probabilities, plus preview/output guards. This is not a from-scratch ensemble.\n\nThanks to **Areeb Ali and the upstream contributors** for sharing the work this builds on. I am sharing the actual scored version so others can inspect it, reproduce it and suggest improvements.\n\n**A note on the timestamp:** the Notebook still says it was updated two days ago because that is when Version 1 was saved/run. It was made public today. I have kept the scored source unchanged rather than creating a new run just to refresh the date.\n\n## What this result does and does not establish\n\nHere, **verified** means Kaggle completed that submission with a public score of 0.687 and the published source matches its scored version. It is not a guarantee that every rerun will score identically.\n\nI am **not claiming the highest public score**: [Jose Padilla's public GLM-likelihood Notebook has a scored 0.689 Version 4](https://www.kaggle.com/code/estopadilla/0-689-real-glm-5-3-likelihood-on-2xt4?scriptVersionId=368783068). Notebook titles, latest versions and best scored versions can differ, so checking the actual version matters.\n\nOur local residual experiment also failed its confidence/robustness admission checks. The original caveat remains visible in the Notebook. One public score does not establish a reliable causal gain over the earlier 0.684 base. The displayed short runtime is a public-sample preview, not the full hidden inference time.\n\n## Next target: 0.700. What would actually get us there?\n\nI would like to turn this into an evidence-led community discussion:\n\n1. **Validation that transfers.** What prompt-disjoint split and response-per-prompt distribution best track the hidden task? How do you stress-test one, two or many responses per prompt without assuming a test-set grouping structure?\n2. **Complementary errors.** Which evidence adds genuinely different information to a strong public stack: token likelihood, embeddings or sparse style signals? Per-class recall and error overlap would be especially useful.\n3. **OOF calibration and fusion.** Has anyone obtained aligned, leakage-checked out-of-fold predictions for a full strong ensemble? I would prefer selecting temperatures/weights inside inner folds, then measuring them on held-out prompt groups.\n4. **External-data hygiene.** Which source, prompt-overlap and near-duplicate checks have helped avoid misleading local improvements?\n5. **A practical compute budget.** Which changes improve actual scored performance while keeping offline inference inside the competition's nine-hour limit? Runtime, failure cases and fallback behavior matter too.\n\nThe plan is to document each change, test it against a fixed comparator, and share the next verified improvement as public code if the evidence supports it. **0.700 is the target, not an achieved result or a promise.**\n\nIf you try the Notebook, please share your scored version, validation protocol, runtime and what worked or failed. Suggestions, corrections and collaborative experiments are welcome.\n\n**Full code:** https://www.kaggle.com/code/pengyipeng1/0-687-it-actually-works\n\nThanks for reading, and thanks again to everyone sharing reproducible work in this competition. Let's keep building and testing together.\n",
+          "replies": [],
+          "votes": {
+            "totalVotes": 1
+          }
+        },
+        "firstMessageId": 3554802,
+        "id": 759102,
+        "name": "0.687 VERIFIED | Full Code Released - Can We Break 0.700 Together?",
+        "postDate": "2026-11-13T19:27:34.797952400Z",
+        "url": "/competitions/name-that-llm/discussion/759102"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<h2>0.687 is an actual scored result, and the exact code is now public</h2>\n<p>I have just made <strong><a href=\"https://www.kaggle.com/code/pengyipeng1/0-687-it-actually-works\" target=\"_blank\">0.687|IT ACTUALLY WORKS</a></strong> public under Apache-2.0.</p>\n<ul>\n<li><strong>Official public score: 0.687</strong>, completed submission 58260754.</li>\n<li><strong>Exact scored source: Version 1</strong>, script version 368656391. Publishing changed the title and visibility, not the code.</li>\n<li>This is an 18-class attribution task evaluated by <strong>balanced accuracy / macro recall</strong>.</li>\n<li>All upstream credits are retained. The base is Areeb Ali's public v11 recipe; our addition is a small row-local, family-mass-preserving official-style residual after the native probabilities, plus preview/output guards. This is not a from-scratch ensemble.</li>\n</ul>\n<p>Thanks to <strong>Areeb Ali and the upstream contributors</strong> for sharing the work this builds on. I am sharing the actual scored version so others can inspect it, reproduce it and suggest improvements.</p>\n<p><strong>A note on the timestamp:</strong> the Notebook still says it was updated two days ago because that is when Version 1 was saved/run. It was made public today. I have kept the scored source unchanged rather than creating a new run just to refresh the date.</p>\n<h2>What this result does and does not establish</h2>\n<p>Here, <strong>verified</strong> means Kaggle completed that submission with a public score of 0.687 and the published source matches its scored version. It is not a guarantee that every rerun will score identically.</p>\n<p>I am <strong>not claiming the highest public score</strong>: <a href=\"https://www.kaggle.com/code/estopadilla/0-689-real-glm-5-3-likelihood-on-2xt4?scriptVersionId=368783068\" target=\"_blank\">Jose Padilla's public GLM-likelihood Notebook has a scored 0.689 Version 4</a>. Notebook titles, latest versions and best scored versions can differ, so checking the actual version matters.</p>\n<p>Our local residual experiment also failed its confidence/robustness admission checks. The original caveat remains visible in the Notebook. One public score does not establish a reliable causal gain over the earlier 0.684 base. The displayed short runtime is a public-sample preview, not the full hidden inference time.</p>\n<h2>Next target: 0.700. What would actually get us there?</h2>\n<p>I would like to turn this into an evidence-led community discussion:</p>\n<ol>\n<li><strong>Validation that transfers.</strong> What prompt-disjoint split and response-per-prompt distribution best track the hidden task? How do you stress-test one, two or many responses per prompt without assuming a test-set grouping structure?</li>\n<li><strong>Complementary errors.</strong> Which evidence adds genuinely different information to a strong public stack: token likelihood, embeddings or sparse style signals? Per-class recall and error overlap would be especially useful.</li>\n<li><strong>OOF calibration and fusion.</strong> Has anyone obtained aligned, leakage-checked out-of-fold predictions for a full strong ensemble? I would prefer selecting temperatures/weights inside inner folds, then measuring them on held-out prompt groups.</li>\n<li><strong>External-data hygiene.</strong> Which source, prompt-overlap and near-duplicate checks have helped avoid misleading local improvements?</li>\n<li><strong>A practical compute budget.</strong> Which changes improve actual scored performance while keeping offline inference inside the competition's nine-hour limit? Runtime, failure cases and fallback behavior matter too.</li>\n</ol>\n<p>The plan is to document each change, test it against a fixed comparator, and share the next verified improvement as public code if the evidence supports it. <strong>0.700 is the target, not an achieved result or a promise.</strong></p>\n<p>If you try the Notebook, please share your scored version, validation protocol, runtime and what worked or failed. Suggestions, corrections and collaborative experiments are welcome.</p>\n<p><strong>Full code:</strong> <a href=\"https://www.kaggle.com/code/pengyipeng1/0-687-it-actually-works\" target=\"_blank\">https://www.kaggle.com/code/pengyipeng1/0-687-it-actually-works</a></p>\n<p>Thanks for reading, and thanks again to everyone sharing reproducible work in this competition. Let's keep building and testing together.</p>",
+              "id": 3554802,
+              "post_date": "2026-11-13T19:27:34.797Z",
+              "raw_markdown": "## 0.687 is an actual scored result, and the exact code is now public\n\nI have just made **[0.687|IT ACTUALLY WORKS](https://www.kaggle.com/code/pengyipeng1/0-687-it-actually-works)** public under Apache-2.0.\n\n- **Official public score: 0.687**, completed submission 58260754.\n- **Exact scored source: Version 1**, script version 368656391. Publishing changed the title and visibility, not the code.\n- This is an 18-class attribution task evaluated by **balanced accuracy / macro recall**.\n- All upstream credits are retained. The base is Areeb Ali's public v11 recipe; our addition is a small row-local, family-mass-preserving official-style residual after the native probabilities, plus preview/output guards. This is not a from-scratch ensemble.\n\nThanks to **Areeb Ali and the upstream contributors** for sharing the work this builds on. I am sharing the actual scored version so others can inspect it, reproduce it and suggest improvements.\n\n**A note on the timestamp:** the Notebook still says it was updated two days ago because that is when Version 1 was saved/run. It was made public today. I have kept the scored source unchanged rather than creating a new run just to refresh the date.\n\n## What this result does and does not establish\n\nHere, **verified** means Kaggle completed that submission with a public score of 0.687 and the published source matches its scored version. It is not a guarantee that every rerun will score identically.\n\nI am **not claiming the highest public score**: [Jose Padilla's public GLM-likelihood Notebook has a scored 0.689 Version 4](https://www.kaggle.com/code/estopadilla/0-689-real-glm-5-3-likelihood-on-2xt4?scriptVersionId=368783068). Notebook titles, latest versions and best scored versions can differ, so checking the actual version matters.\n\nOur local residual experiment also failed its confidence/robustness admission checks. The original caveat remains visible in the Notebook. One public score does not establish a reliable causal gain over the earlier 0.684 base. The displayed short runtime is a public-sample preview, not the full hidden inference time.\n\n## Next target: 0.700. What would actually get us there?\n\nI would like to turn this into an evidence-led community discussion:\n\n1. **Validation that transfers.** What prompt-disjoint split and response-per-prompt distribution best track the hidden task? How do you stress-test one, two or many responses per prompt without assuming a test-set grouping structure?\n2. **Complementary errors.** Which evidence adds genuinely different information to a strong public stack: token likelihood, embeddings or sparse style signals? Per-class recall and error overlap would be especially useful.\n3. **OOF calibration and fusion.** Has anyone obtained aligned, leakage-checked out-of-fold predictions for a full strong ensemble? I would prefer selecting temperatures/weights inside inner folds, then measuring them on held-out prompt groups.\n4. **External-data hygiene.** Which source, prompt-overlap and near-duplicate checks have helped avoid misleading local improvements?\n5. **A practical compute budget.** Which changes improve actual scored performance while keeping offline inference inside the competition's nine-hour limit? Runtime, failure cases and fallback behavior matter too.\n\nThe plan is to document each change, test it against a fixed comparator, and share the next verified improvement as public code if the evidence supports it. **0.700 is the target, not an achieved result or a promise.**\n\nIf you try the Notebook, please share your scored version, validation protocol, runtime and what worked or failed. Suggestions, corrections and collaborative experiments are welcome.\n\n**Full code:** https://www.kaggle.com/code/pengyipeng1/0-687-it-actually-works\n\nThanks for reading, and thanks again to everyone sharing reproducible work in this competition. Let's keep building and testing together.\n",
+              "votes": 1
+            },
+            {
+              "id": 3554933,
+              "is_deleted": true,
+              "post_date": "2026-11-14T06:43:57.387Z",
+              "raw_markdown": ""
+            },
+            {
+              "content": "<p>Hi Pengyi,</p>\n<p>Read the 0.687 write-up and the call for 0.700. Our grouped-OOF twin-LoRA blend sits at 0.633 locally and our fork of the public 0.682 lineage verified at 0.682 on the board. I'd be glad to run a couple of ablations against your base and report back what moved and what didn't.</p>\n<p>Two things first:</p>\n<ol>\n<li>Are you open to merging for this, or is the goal a loose collaboration where we stay on separate tracks?</li>\n<li>Which single experiment do you most want someone else to try — the STree residual vs a targeted seed/weight sweep of the LoRA members?</li>\n</ol>",
+              "id": 3555050,
+              "post_date": "2026-11-14T14:42:12.470Z",
+              "raw_markdown": "Hi Pengyi,\n\nRead the 0.687 write-up and the call for 0.700. Our grouped-OOF twin-LoRA blend sits at 0.633 locally and our fork of the public 0.682 lineage verified at 0.682 on the board. I'd be glad to run a couple of ablations against your base and report back what moved and what didn't.\n\nTwo things first:\n\n1. Are you open to merging for this, or is the goal a loose collaboration where we stay on separate tracks?\n2. Which single experiment do you most want someone else to try — the STree residual vs a targeted seed/weight sweep of the LoRA members?\n"
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 21022718,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "21022718-kg.jpg?t=2024-11-07-09-33-05",
+            "author_user_display_name": "Pengyi Peng1",
+            "author_user_name": "pengyipeng1",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "comments": [
+              {
+                "author": {
+                  "display_name": "Abood PS",
+                  "id": 36918046,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36918046-kg.jpg?t=2026-11-04-14-50-50",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/aboodps"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 407,
+                "content": "<p>Hi Pengyi,</p>\n<p>Read the 0.687 write-up and the call for 0.700. Our grouped-OOF twin-LoRA blend sits at 0.633 locally and our fork of the public 0.682 lineage verified at 0.682 on the board. I'd be glad to run a couple of ablations against your base and report back what moved and what didn't.</p>\n<p>Two things first:</p>\n<ol>\n<li>Are you open to merging for this, or is the goal a loose collaboration where we stay on separate tracks?</li>\n<li>Which single experiment do you most want someone else to try — the STree residual vs a targeted seed/weight sweep of the LoRA members?</li>\n</ol>",
+                "feedback_tracking_data": {},
+                "id": 3555050,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-11-14T14:42:12.470Z",
+                "raw_markdown": "Hi Pengyi,\n\nRead the 0.687 write-up and the call for 0.700. Our grouped-OOF twin-LoRA blend sits at 0.633 locally and our fork of the public 0.682 lineage verified at 0.682 on the board. I'd be glad to run a couple of ablations against your base and report back what moved and what didn't.\n\nTwo things first:\n\n1. Are you open to merging for this, or is the goal a loose collaboration where we stay on separate tracks?\n2. Which single experiment do you most want someone else to try — the STree residual vs a targeted seed/weight sweep of the LoRA members?\n",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "Abood PS",
+                    "id": 36918046,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/aboodps",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36918046-kg.jpg?t=2026-11-04-14-50-50",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/aboodps",
+                    "user_id": 36918046,
+                    "user_name": "aboodps"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              },
+              {
+                "author": {
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "url": "/"
+                },
+                "author_type": "COMMENT",
+                "can_delete": true,
+                "feedback_tracking_data": {},
+                "id": 3554933,
+                "is_deleted": true,
+                "is_thank_you": false,
+                "is_user_author": true,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-11-14T06:43:57.387Z",
+                "raw_markdown": "",
+                "votes": {}
+              }
+            ],
+            "first_message": {
+              "author": {
+                "display_name": "Pengyi Peng1",
+                "id": 21022718,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/21022718-kg.jpg?t=2024-11-07-09-33-05",
+                "tier": "CONTRIBUTOR",
+                "url": "/pengyipeng1"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 1035,
+              "content": "<h2>0.687 is an actual scored result, and the exact code is now public</h2>\n<p>I have just made <strong><a href=\"https://www.kaggle.com/code/pengyipeng1/0-687-it-actually-works\" target=\"_blank\">0.687|IT ACTUALLY WORKS</a></strong> public under Apache-2.0.</p>\n<ul>\n<li><strong>Official public score: 0.687</strong>, completed submission 58260754.</li>\n<li><strong>Exact scored source: Version 1</strong>, script version 368656391. Publishing changed the title and visibility, not the code.</li>\n<li>This is an 18-class attribution task evaluated by <strong>balanced accuracy / macro recall</strong>.</li>\n<li>All upstream credits are retained. The base is Areeb Ali's public v11 recipe; our addition is a small row-local, family-mass-preserving official-style residual after the native probabilities, plus preview/output guards. This is not a from-scratch ensemble.</li>\n</ul>\n<p>Thanks to <strong>Areeb Ali and the upstream contributors</strong> for sharing the work this builds on. I am sharing the actual scored version so others can inspect it, reproduce it and suggest improvements.</p>\n<p><strong>A note on the timestamp:</strong> the Notebook still says it was updated two days ago because that is when Version 1 was saved/run. It was made public today. I have kept the scored source unchanged rather than creating a new run just to refresh the date.</p>\n<h2>What this result does and does not establish</h2>\n<p>Here, <strong>verified</strong> means Kaggle completed that submission with a public score of 0.687 and the published source matches its scored version. It is not a guarantee that every rerun will score identically.</p>\n<p>I am <strong>not claiming the highest public score</strong>: <a href=\"https://www.kaggle.com/code/estopadilla/0-689-real-glm-5-3-likelihood-on-2xt4?scriptVersionId=368783068\" target=\"_blank\">Jose Padilla's public GLM-likelihood Notebook has a scored 0.689 Version 4</a>. Notebook titles, latest versions and best scored versions can differ, so checking the actual version matters.</p>\n<p>Our local residual experiment also failed its confidence/robustness admission checks. The original caveat remains visible in the Notebook. One public score does not establish a reliable causal gain over the earlier 0.684 base. The displayed short runtime is a public-sample preview, not the full hidden inference time.</p>\n<h2>Next target: 0.700. What would actually get us there?</h2>\n<p>I would like to turn this into an evidence-led community discussion:</p>\n<ol>\n<li><strong>Validation that transfers.</strong> What prompt-disjoint split and response-per-prompt distribution best track the hidden task? How do you stress-test one, two or many responses per prompt without assuming a test-set grouping structure?</li>\n<li><strong>Complementary errors.</strong> Which evidence adds genuinely different information to a strong public stack: token likelihood, embeddings or sparse style signals? Per-class recall and error overlap would be especially useful.</li>\n<li><strong>OOF calibration and fusion.</strong> Has anyone obtained aligned, leakage-checked out-of-fold predictions for a full strong ensemble? I would prefer selecting temperatures/weights inside inner folds, then measuring them on held-out prompt groups.</li>\n<li><strong>External-data hygiene.</strong> Which source, prompt-overlap and near-duplicate checks have helped avoid misleading local improvements?</li>\n<li><strong>A practical compute budget.</strong> Which changes improve actual scored performance while keeping offline inference inside the competition's nine-hour limit? Runtime, failure cases and fallback behavior matter too.</li>\n</ol>\n<p>The plan is to document each change, test it against a fixed comparator, and share the next verified improvement as public code if the evidence supports it. <strong>0.700 is the target, not an achieved result or a promise.</strong></p>\n<p>If you try the Notebook, please share your scored version, validation protocol, runtime and what worked or failed. Suggestions, corrections and collaborative experiments are welcome.</p>\n<p><strong>Full code:</strong> <a href=\"https://www.kaggle.com/code/pengyipeng1/0-687-it-actually-works\" target=\"_blank\">https://www.kaggle.com/code/pengyipeng1/0-687-it-actually-works</a></p>\n<p>Thanks for reading, and thanks again to everyone sharing reproducible work in this competition. Let's keep building and testing together.</p>",
+              "feedback_tracking_data": {},
+              "id": 3554802,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-13T19:27:34.797Z",
+              "raw_markdown": "## 0.687 is an actual scored result, and the exact code is now public\n\nI have just made **[0.687|IT ACTUALLY WORKS](https://www.kaggle.com/code/pengyipeng1/0-687-it-actually-works)** public under Apache-2.0.\n\n- **Official public score: 0.687**, completed submission 58260754.\n- **Exact scored source: Version 1**, script version 368656391. Publishing changed the title and visibility, not the code.\n- This is an 18-class attribution task evaluated by **balanced accuracy / macro recall**.\n- All upstream credits are retained. The base is Areeb Ali's public v11 recipe; our addition is a small row-local, family-mass-preserving official-style residual after the native probabilities, plus preview/output guards. This is not a from-scratch ensemble.\n\nThanks to **Areeb Ali and the upstream contributors** for sharing the work this builds on. I am sharing the actual scored version so others can inspect it, reproduce it and suggest improvements.\n\n**A note on the timestamp:** the Notebook still says it was updated two days ago because that is when Version 1 was saved/run. It was made public today. I have kept the scored source unchanged rather than creating a new run just to refresh the date.\n\n## What this result does and does not establish\n\nHere, **verified** means Kaggle completed that submission with a public score of 0.687 and the published source matches its scored version. It is not a guarantee that every rerun will score identically.\n\nI am **not claiming the highest public score**: [Jose Padilla's public GLM-likelihood Notebook has a scored 0.689 Version 4](https://www.kaggle.com/code/estopadilla/0-689-real-glm-5-3-likelihood-on-2xt4?scriptVersionId=368783068). Notebook titles, latest versions and best scored versions can differ, so checking the actual version matters.\n\nOur local residual experiment also failed its confidence/robustness admission checks. The original caveat remains visible in the Notebook. One public score does not establish a reliable causal gain over the earlier 0.684 base. The displayed short runtime is a public-sample preview, not the full hidden inference time.\n\n## Next target: 0.700. What would actually get us there?\n\nI would like to turn this into an evidence-led community discussion:\n\n1. **Validation that transfers.** What prompt-disjoint split and response-per-prompt distribution best track the hidden task? How do you stress-test one, two or many responses per prompt without assuming a test-set grouping structure?\n2. **Complementary errors.** Which evidence adds genuinely different information to a strong public stack: token likelihood, embeddings or sparse style signals? Per-class recall and error overlap would be especially useful.\n3. **OOF calibration and fusion.** Has anyone obtained aligned, leakage-checked out-of-fold predictions for a full strong ensemble? I would prefer selecting temperatures/weights inside inner folds, then measuring them on held-out prompt groups.\n4. **External-data hygiene.** Which source, prompt-overlap and near-duplicate checks have helped avoid misleading local improvements?\n5. **A practical compute budget.** Which changes improve actual scored performance while keeping offline inference inside the competition's nine-hour limit? Runtime, failure cases and fallback behavior matter too.\n\nThe plan is to document each change, test it against a fixed comparator, and share the next verified improvement as public code if the evidence supports it. **0.700 is the target, not an achieved result or a promise.**\n\nIf you try the Notebook, please share your scored version, validation protocol, runtime and what worked or failed. Suggestions, corrections and collaborative experiments are welcome.\n\n**Full code:** https://www.kaggle.com/code/pengyipeng1/0-687-it-actually-works\n\nThanks for reading, and thanks again to everyone sharing reproducible work in this competition. Let's keep building and testing together.\n",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Pengyi Peng1",
+                  "id": 21022718,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/pengyipeng1",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/21022718-kg.jpg?t=2024-11-07-09-33-05",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/pengyipeng1",
+                  "user_id": 21022718,
+                  "user_name": "pengyipeng1"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 2,
+                "total_votes": 1
+              }
+            },
+            "first_message_id": 3554802,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 759102,
+            "name": "0.687 VERIFIED | Full Code Released - Can We Break 0.700 Together?",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-11-13T19:27:34.797952400Z",
+            "total_messages": 2,
+            "total_votes": 1,
+            "url": "/competitions/name-that-llm/discussion/759102"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-18T09:02:16+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-18T09:02:16+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-11-14T14:42:12.470Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [
+    {
+      "slug": "name-that-llm",
+      "topic_id": 759102,
+      "message_id": 3554933,
+      "parent_message_id": null,
+      "author": null,
+      "author_url": "/",
+      "author_tier": null,
+      "post_date": "2026-11-14T06:43:57.387Z",
+      "raw_markdown": null,
+      "content_html": null,
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-16T16:22:37+00:00",
+      "last_seen_at": "2026-11-18T09:02:16+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T09:02:16+00:00",
+      "remote_last_listed_at": "2026-11-18T09:02:16+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": null,
+          "tier": null,
+          "url": "/"
+        },
+        "content": null,
+        "id": 3554933,
+        "isThankYou": false,
+        "postDate": "2026-11-14T06:43:57.387Z",
+        "raw": {
+          "author": {
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+            "url": "/"
+          },
+          "author_type": "COMMENT",
+          "can_delete": true,
+          "feedback_tracking_data": {},
+          "id": 3554933,
+          "is_deleted": true,
+          "is_thank_you": false,
+          "is_user_author": true,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-14T06:43:57.387Z",
+          "raw_markdown": "",
+          "votes": {}
+        },
+        "rawMarkdown": null,
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 759102,
+      "message_id": 3555050,
+      "parent_message_id": null,
+      "author": "Abood PS",
+      "author_url": "/aboodps",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-14T14:42:12.470Z",
+      "raw_markdown": "Hi Pengyi,\n\nRead the 0.687 write-up and the call for 0.700. Our grouped-OOF twin-LoRA blend sits at 0.633 locally and our fork of the public 0.682 lineage verified at 0.682 on the board. I'd be glad to run a couple of ablations against your base and report back what moved and what didn't.\n\nTwo things first:\n\n1. Are you open to merging for this, or is the goal a loose collaboration where we stay on separate tracks?\n2. Which single experiment do you most want someone else to try — the STree residual vs a targeted seed/weight sweep of the LoRA members?\n",
+      "content_html": "<p>Hi Pengyi,</p>\n<p>Read the 0.687 write-up and the call for 0.700. Our grouped-OOF twin-LoRA blend sits at 0.633 locally and our fork of the public 0.682 lineage verified at 0.682 on the board. I'd be glad to run a couple of ablations against your base and report back what moved and what didn't.</p>\n<p>Two things first:</p>\n<ol>\n<li>Are you open to merging for this, or is the goal a loose collaboration where we stay on separate tracks?</li>\n<li>Which single experiment do you most want someone else to try — the STree residual vs a targeted seed/weight sweep of the LoRA members?</li>\n</ol>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-16T16:22:37+00:00",
+      "last_seen_at": "2026-11-18T09:02:16+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T09:02:16+00:00",
+      "remote_last_listed_at": "2026-11-18T09:02:16+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Abood PS",
+          "tier": "CONTRIBUTOR",
+          "url": "/aboodps"
+        },
+        "content": "<p>Hi Pengyi,</p>\n<p>Read the 0.687 write-up and the call for 0.700. Our grouped-OOF twin-LoRA blend sits at 0.633 locally and our fork of the public 0.682 lineage verified at 0.682 on the board. I'd be glad to run a couple of ablations against your base and report back what moved and what didn't.</p>\n<p>Two things first:</p>\n<ol>\n<li>Are you open to merging for this, or is the goal a loose collaboration where we stay on separate tracks?</li>\n<li>Which single experiment do you most want someone else to try — the STree residual vs a targeted seed/weight sweep of the LoRA members?</li>\n</ol>",
+        "id": 3555050,
+        "isThankYou": false,
+        "postDate": "2026-11-14T14:42:12.470Z",
+        "raw": {
+          "author": {
+            "display_name": "Abood PS",
+            "id": 36918046,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36918046-kg.jpg?t=2026-11-04-14-50-50",
+            "tier": "CONTRIBUTOR",
+            "url": "/aboodps"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 407,
+          "content": "<p>Hi Pengyi,</p>\n<p>Read the 0.687 write-up and the call for 0.700. Our grouped-OOF twin-LoRA blend sits at 0.633 locally and our fork of the public 0.682 lineage verified at 0.682 on the board. I'd be glad to run a couple of ablations against your base and report back what moved and what didn't.</p>\n<p>Two things first:</p>\n<ol>\n<li>Are you open to merging for this, or is the goal a loose collaboration where we stay on separate tracks?</li>\n<li>Which single experiment do you most want someone else to try — the STree residual vs a targeted seed/weight sweep of the LoRA members?</li>\n</ol>",
+          "feedback_tracking_data": {},
+          "id": 3555050,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-14T14:42:12.470Z",
+          "raw_markdown": "Hi Pengyi,\n\nRead the 0.687 write-up and the call for 0.700. Our grouped-OOF twin-LoRA blend sits at 0.633 locally and our fork of the public 0.682 lineage verified at 0.682 on the board. I'd be glad to run a couple of ablations against your base and report back what moved and what didn't.\n\nTwo things first:\n\n1. Are you open to merging for this, or is the goal a loose collaboration where we stay on separate tracks?\n2. Which single experiment do you most want someone else to try — the STree residual vs a targeted seed/weight sweep of the LoRA members?\n",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Abood PS",
+              "id": 36918046,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/aboodps",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36918046-kg.jpg?t=2026-11-04-14-50-50",
+              "tier": "CONTRIBUTOR",
+              "url": "/aboodps",
+              "user_id": 36918046,
+              "user_name": "aboodps"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "Hi Pengyi,\n\nRead the 0.687 write-up and the call for 0.700. Our grouped-OOF twin-LoRA blend sits at 0.633 locally and our fork of the public 0.682 lineage verified at 0.682 on the board. I'd be glad to run a couple of ablations against your base and report back what moved and what didn't.\n\nTwo things first:\n\n1. Are you open to merging for this, or is the goal a loose collaboration where we stay on separate tracks?\n2. Which single experiment do you most want someone else to try — the STree residual vs a targeted seed/weight sweep of the LoRA members?\n",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    }
+  ],
+  "writeup": null
+}

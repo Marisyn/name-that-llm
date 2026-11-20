@@ -1,0 +1,206 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 755215,
+    "title": "Your best public score is probably ~0.005-0.01 above its true score: a rule of thumb for near-copy submissions",
+    "author": "GoPain",
+    "author_url": "/locdunhat",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-11-03T01:08:39.193954600Z",
+    "last_comment_post_date": "2026-11-03T01:08:39.193333300Z",
+    "comment_count": 0,
+    "votes": 0,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/755215",
+    "first_message_id": 3549000,
+    "first_seen_at": "2026-11-04T06:56:14+00:00",
+    "last_seen_at": "2026-11-16T16:36:02+00:00",
+    "detail_last_synced_at": "2026-11-16T16:23:23+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "5b911a11dad02ab7239d7937b2e9d41a88f27eb12e2d376a0073a0056fefffda",
+    "listing_metrics_hash": "1d7b01d39d998f5caf0eb285f7806c0632a1cb146aadc79a9504e2481370b229",
+    "detail_content_hash": "bd90d9a26bdb39d49a8f6d9e923121bdd51ae5be307868cd6146263de4013700",
+    "detail_last_checked_at": "2026-11-16T16:23:23+00:00",
+    "detail_next_check_at": "2026-11-23T16:23:23+00:00",
+    "detail_unchanged_count": 2,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 0,
+      "firstForumMessageId": null,
+      "id": 755215,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-11-03T01:08:39.193333300Z",
+      "postDate": "2026-11-03T01:08:39.193954600Z",
+      "raw": {
+        "id": 755215,
+        "last_comment_post_date": "2026-11-03T01:08:39.193333300Z",
+        "post_date": "2026-11-03T01:08:39.193954600Z",
+        "title": "Your best public score is probably ~0.005-0.01 above its true score: a rule of thumb for near-copy submissions",
+        "topic_url": "/competitions/name-that-llm/discussion/755215"
+      },
+      "title": "Your best public score is probably ~0.005-0.01 above its true score: a rule of thumb for near-copy submissions",
+      "topicUrl": "/competitions/name-that-llm/discussion/755215",
+      "votes": 0
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "GoPain",
+        "authorUserName": "locdunhat",
+        "comments": [],
+        "expectedCommentCount": 0,
+        "firstMessage": {
+          "author": {
+            "displayName": "GoPain",
+            "tier": "CONTRIBUTOR",
+            "url": "/locdunhat"
+          },
+          "content": "<p>Late in a competition the best public score becomes the score to beat, and each new idea is judged against it. That best score was picked by the public rows, though. When most of your submissions are near-copies of one blend, part of it is luck on those rows. I simulated how large that part is, because it explained a run of results I could not make sense of otherwise.</p>\n<p><strong>Setup.</strong> One reference model gets each test row right with probability 0.62. Each submission matches it except on rows it flips, each row with probability q. Two submissions therefore disagree about correctness on about 2q(1 - q) of the rows. You can measure that <strong>pairwise flip rate</strong> on your own OOF predictions. The submission with the best public score is selected. All submissions are equally good, so any lead it shows is pure selection.</p>\n<p><strong>Optimism of the best public score</strong> (public minus true score), with 1,200 public rows:</p>\n<table>\n<thead>\n<tr>\n<th>similar submissions</th>\n<th>flip 2%</th>\n<th>flip 5%</th>\n<th>flip 10%</th>\n<th>flip 18%</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>2</td>\n<td>0.002</td>\n<td>0.003</td>\n<td>0.003</td>\n<td>0.005</td>\n</tr>\n<tr>\n<td>5</td>\n<td>0.003</td>\n<td>0.005</td>\n<td>0.007</td>\n<td>0.010</td>\n</tr>\n<tr>\n<td>10</td>\n<td>0.004</td>\n<td>0.007</td>\n<td>0.010</td>\n<td>0.013</td>\n</tr>\n<tr>\n<td>20</td>\n<td>0.005</td>\n<td>0.008</td>\n<td>0.012</td>\n<td>0.016</td>\n</tr>\n<tr>\n<td>50</td>\n<td>0.006</td>\n<td>0.010</td>\n<td>0.014</td>\n<td>0.019</td>\n</tr>\n</tbody>\n</table>\n<p>The simulation agrees within 10% with a one-line rule:</p>\n<pre><code>optimism ~= sqrt(q (1 - q) / n_public) x E[max of N normals]\n</code></pre>\n<p>E[max of N normals] is 0.56, 1.16, 1.54, 1.87 and 2.25 for N = 2, 5, 10, 20 and 50.</p>\n<p>What follows from it:</p>\n<ul>\n<li><strong>It is the same size as the gains you are chasing.</strong> With 20 blends that differ on 5% of rows, a real +0.005 idea will usually score below your current best.</li>\n<li><strong>It depends on how different the submissions are, not on how good they are.</strong> Identical copies give no bias. Blends that move 10-20% of rows give a lot.</li>\n<li><strong>More public rows help only with the square root of their number:</strong> 0.012 / 0.008 / 0.005 for 600 / 1,200 / 3,000 rows (20 submissions, 5% flip).</li>\n<li><strong>Real differences do not remove it.</strong> If the submissions differ in true score with an sd of 0.002, the best of 20 is still 0.007 above its true score, and it is the truly best one only 17% of the time.</li>\n</ul>\n<p><strong>Where I saw it.</strong> My best is 0.626, out of about 20 close variants of the same blend that disagree on 1-5% of OOF rows. The table puts 0.626 about 0.004 to 0.008 above that blend's true score. Over the last two days I submitted eight variants. Each changed one member and stayed within 0.006 of it at every OOF cut. All eight scored 0.614 to 0.624. I first read that as \"every change hurts\". It is also about what eight equally good blends should score against a selected 0.626. So I now compare a new submission against <strong>best minus the rule's optimism</strong>, not against the best itself. When the gap is smaller than that, I treat it as no evidence either way.</p>\n<p>This is close to the \"is this rerun noise?\" question in <a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/753177\" target=\"_blank\">Harshita Kumari's retraining thread</a>. A -0.004 swap at a single submission is inside this range.</p>\n<p>Caveats:</p>\n<ul>\n<li>Flips are independent in the simulation. Real near-copies share their flips, so count your submissions conservatively (two blends that differ only in one weight are close to one submission).</li>\n<li>It uses plain accuracy. Balanced accuracy weights rare-class rows more, so its noise is a bit larger.</li>\n<li>The 1,200 public rows is my guess.</li>\n</ul>\n<p>Code, grid and notebook (CPU, about 20 seconds): <a href=\"https://www.kaggle.com/code/locdunhat/how-much-does-the-best-public-score-overstate\" target=\"_blank\">How Much Does the Best Public Score Overstate</a> · <a href=\"https://www.kaggle.com/datasets/locdunhat/public-lb-selection-bias-grid\" target=\"_blank\">grid dataset (CC0)</a>.</p>",
+          "id": 3549000,
+          "isThankYou": false,
+          "postDate": "2026-11-03T01:08:39.193Z",
+          "raw": {
+            "author": {
+              "display_name": "GoPain",
+              "id": 3897663,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3897663-kg.jpg?t=2026-10-14-14-18-45",
+              "tier": "CONTRIBUTOR",
+              "url": "/locdunhat"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 1038,
+            "content": "<p>Late in a competition the best public score becomes the score to beat, and each new idea is judged against it. That best score was picked by the public rows, though. When most of your submissions are near-copies of one blend, part of it is luck on those rows. I simulated how large that part is, because it explained a run of results I could not make sense of otherwise.</p>\n<p><strong>Setup.</strong> One reference model gets each test row right with probability 0.62. Each submission matches it except on rows it flips, each row with probability q. Two submissions therefore disagree about correctness on about 2q(1 - q) of the rows. You can measure that <strong>pairwise flip rate</strong> on your own OOF predictions. The submission with the best public score is selected. All submissions are equally good, so any lead it shows is pure selection.</p>\n<p><strong>Optimism of the best public score</strong> (public minus true score), with 1,200 public rows:</p>\n<table>\n<thead>\n<tr>\n<th>similar submissions</th>\n<th>flip 2%</th>\n<th>flip 5%</th>\n<th>flip 10%</th>\n<th>flip 18%</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>2</td>\n<td>0.002</td>\n<td>0.003</td>\n<td>0.003</td>\n<td>0.005</td>\n</tr>\n<tr>\n<td>5</td>\n<td>0.003</td>\n<td>0.005</td>\n<td>0.007</td>\n<td>0.010</td>\n</tr>\n<tr>\n<td>10</td>\n<td>0.004</td>\n<td>0.007</td>\n<td>0.010</td>\n<td>0.013</td>\n</tr>\n<tr>\n<td>20</td>\n<td>0.005</td>\n<td>0.008</td>\n<td>0.012</td>\n<td>0.016</td>\n</tr>\n<tr>\n<td>50</td>\n<td>0.006</td>\n<td>0.010</td>\n<td>0.014</td>\n<td>0.019</td>\n</tr>\n</tbody>\n</table>\n<p>The simulation agrees within 10% with a one-line rule:</p>\n<pre><code>optimism ~= sqrt(q (1 - q) / n_public) x E[max of N normals]\n</code></pre>\n<p>E[max of N normals] is 0.56, 1.16, 1.54, 1.87 and 2.25 for N = 2, 5, 10, 20 and 50.</p>\n<p>What follows from it:</p>\n<ul>\n<li><strong>It is the same size as the gains you are chasing.</strong> With 20 blends that differ on 5% of rows, a real +0.005 idea will usually score below your current best.</li>\n<li><strong>It depends on how different the submissions are, not on how good they are.</strong> Identical copies give no bias. Blends that move 10-20% of rows give a lot.</li>\n<li><strong>More public rows help only with the square root of their number:</strong> 0.012 / 0.008 / 0.005 for 600 / 1,200 / 3,000 rows (20 submissions, 5% flip).</li>\n<li><strong>Real differences do not remove it.</strong> If the submissions differ in true score with an sd of 0.002, the best of 20 is still 0.007 above its true score, and it is the truly best one only 17% of the time.</li>\n</ul>\n<p><strong>Where I saw it.</strong> My best is 0.626, out of about 20 close variants of the same blend that disagree on 1-5% of OOF rows. The table puts 0.626 about 0.004 to 0.008 above that blend's true score. Over the last two days I submitted eight variants. Each changed one member and stayed within 0.006 of it at every OOF cut. All eight scored 0.614 to 0.624. I first read that as \"every change hurts\". It is also about what eight equally good blends should score against a selected 0.626. So I now compare a new submission against <strong>best minus the rule's optimism</strong>, not against the best itself. When the gap is smaller than that, I treat it as no evidence either way.</p>\n<p>This is close to the \"is this rerun noise?\" question in <a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/753177\" target=\"_blank\">Harshita Kumari's retraining thread</a>. A -0.004 swap at a single submission is inside this range.</p>\n<p>Caveats:</p>\n<ul>\n<li>Flips are independent in the simulation. Real near-copies share their flips, so count your submissions conservatively (two blends that differ only in one weight are close to one submission).</li>\n<li>It uses plain accuracy. Balanced accuracy weights rare-class rows more, so its noise is a bit larger.</li>\n<li>The 1,200 public rows is my guess.</li>\n</ul>\n<p>Code, grid and notebook (CPU, about 20 seconds): <a href=\"https://www.kaggle.com/code/locdunhat/how-much-does-the-best-public-score-overstate\" target=\"_blank\">How Much Does the Best Public Score Overstate</a> · <a href=\"https://www.kaggle.com/datasets/locdunhat/public-lb-selection-bias-grid\" target=\"_blank\">grid dataset (CC0)</a>.</p>",
+            "feedback_tracking_data": {},
+            "id": 3549000,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-11-03T01:08:39.193Z",
+            "raw_markdown": "Late in a competition the best public score becomes the score to beat, and each new idea is judged against it. That best score was picked by the public rows, though. When most of your submissions are near-copies of one blend, part of it is luck on those rows. I simulated how large that part is, because it explained a run of results I could not make sense of otherwise.\n\n**Setup.** One reference model gets each test row right with probability 0.62. Each submission matches it except on rows it flips, each row with probability q. Two submissions therefore disagree about correctness on about 2q(1 - q) of the rows. You can measure that **pairwise flip rate** on your own OOF predictions. The submission with the best public score is selected. All submissions are equally good, so any lead it shows is pure selection.\n\n**Optimism of the best public score** (public minus true score), with 1,200 public rows:\n\n| similar submissions | flip 2% | flip 5% | flip 10% | flip 18% |\n| --- | --- | --- | --- | --- |\n| 2 | 0.002 | 0.003 | 0.003 | 0.005 |\n| 5 | 0.003 | 0.005 | 0.007 | 0.010 |\n| 10 | 0.004 | 0.007 | 0.010 | 0.013 |\n| 20 | 0.005 | 0.008 | 0.012 | 0.016 |\n| 50 | 0.006 | 0.010 | 0.014 | 0.019 |\n\nThe simulation agrees within 10% with a one-line rule:\n\n    optimism ~= sqrt(q (1 - q) / n_public) x E[max of N normals]\n\nE[max of N normals] is 0.56, 1.16, 1.54, 1.87 and 2.25 for N = 2, 5, 10, 20 and 50.\n\nWhat follows from it:\n\n- **It is the same size as the gains you are chasing.** With 20 blends that differ on 5% of rows, a real +0.005 idea will usually score below your current best.\n- **It depends on how different the submissions are, not on how good they are.** Identical copies give no bias. Blends that move 10-20% of rows give a lot.\n- **More public rows help only with the square root of their number:** 0.012 / 0.008 / 0.005 for 600 / 1,200 / 3,000 rows (20 submissions, 5% flip).\n- **Real differences do not remove it.** If the submissions differ in true score with an sd of 0.002, the best of 20 is still 0.007 above its true score, and it is the truly best one only 17% of the time.\n\n**Where I saw it.** My best is 0.626, out of about 20 close variants of the same blend that disagree on 1-5% of OOF rows. The table puts 0.626 about 0.004 to 0.008 above that blend's true score. Over the last two days I submitted eight variants. Each changed one member and stayed within 0.006 of it at every OOF cut. All eight scored 0.614 to 0.624. I first read that as \"every change hurts\". It is also about what eight equally good blends should score against a selected 0.626. So I now compare a new submission against **best minus the rule's optimism**, not against the best itself. When the gap is smaller than that, I treat it as no evidence either way.\n\nThis is close to the \"is this rerun noise?\" question in [Harshita Kumari's retraining thread](https://www.kaggle.com/competitions/name-that-llm/discussion/753177). A -0.004 swap at a single submission is inside this range.\n\nCaveats:\n\n- Flips are independent in the simulation. Real near-copies share their flips, so count your submissions conservatively (two blends that differ only in one weight are close to one submission).\n- It uses plain accuracy. Balanced accuracy weights rare-class rows more, so its noise is a bit larger.\n- The 1,200 public rows is my guess.\n\nCode, grid and notebook (CPU, about 20 seconds): [How Much Does the Best Public Score Overstate](https://www.kaggle.com/code/locdunhat/how-much-does-the-best-public-score-overstate) · [grid dataset (CC0)](https://www.kaggle.com/datasets/locdunhat/public-lb-selection-bias-grid).",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "GoPain",
+                "id": 3897663,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/locdunhat",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3897663-kg.jpg?t=2026-10-14-14-18-45",
+                "tier": "CONTRIBUTOR",
+                "url": "/locdunhat",
+                "user_id": 3897663,
+                "user_name": "locdunhat"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 1
+            }
+          },
+          "rawMarkdown": "Late in a competition the best public score becomes the score to beat, and each new idea is judged against it. That best score was picked by the public rows, though. When most of your submissions are near-copies of one blend, part of it is luck on those rows. I simulated how large that part is, because it explained a run of results I could not make sense of otherwise.\n\n**Setup.** One reference model gets each test row right with probability 0.62. Each submission matches it except on rows it flips, each row with probability q. Two submissions therefore disagree about correctness on about 2q(1 - q) of the rows. You can measure that **pairwise flip rate** on your own OOF predictions. The submission with the best public score is selected. All submissions are equally good, so any lead it shows is pure selection.\n\n**Optimism of the best public score** (public minus true score), with 1,200 public rows:\n\n| similar submissions | flip 2% | flip 5% | flip 10% | flip 18% |\n| --- | --- | --- | --- | --- |\n| 2 | 0.002 | 0.003 | 0.003 | 0.005 |\n| 5 | 0.003 | 0.005 | 0.007 | 0.010 |\n| 10 | 0.004 | 0.007 | 0.010 | 0.013 |\n| 20 | 0.005 | 0.008 | 0.012 | 0.016 |\n| 50 | 0.006 | 0.010 | 0.014 | 0.019 |\n\nThe simulation agrees within 10% with a one-line rule:\n\n    optimism ~= sqrt(q (1 - q) / n_public) x E[max of N normals]\n\nE[max of N normals] is 0.56, 1.16, 1.54, 1.87 and 2.25 for N = 2, 5, 10, 20 and 50.\n\nWhat follows from it:\n\n- **It is the same size as the gains you are chasing.** With 20 blends that differ on 5% of rows, a real +0.005 idea will usually score below your current best.\n- **It depends on how different the submissions are, not on how good they are.** Identical copies give no bias. Blends that move 10-20% of rows give a lot.\n- **More public rows help only with the square root of their number:** 0.012 / 0.008 / 0.005 for 600 / 1,200 / 3,000 rows (20 submissions, 5% flip).\n- **Real differences do not remove it.** If the submissions differ in true score with an sd of 0.002, the best of 20 is still 0.007 above its true score, and it is the truly best one only 17% of the time.\n\n**Where I saw it.** My best is 0.626, out of about 20 close variants of the same blend that disagree on 1-5% of OOF rows. The table puts 0.626 about 0.004 to 0.008 above that blend's true score. Over the last two days I submitted eight variants. Each changed one member and stayed within 0.006 of it at every OOF cut. All eight scored 0.614 to 0.624. I first read that as \"every change hurts\". It is also about what eight equally good blends should score against a selected 0.626. So I now compare a new submission against **best minus the rule's optimism**, not against the best itself. When the gap is smaller than that, I treat it as no evidence either way.\n\nThis is close to the \"is this rerun noise?\" question in [Harshita Kumari's retraining thread](https://www.kaggle.com/competitions/name-that-llm/discussion/753177). A -0.004 swap at a single submission is inside this range.\n\nCaveats:\n\n- Flips are independent in the simulation. Real near-copies share their flips, so count your submissions conservatively (two blends that differ only in one weight are close to one submission).\n- It uses plain accuracy. Balanced accuracy weights rare-class rows more, so its noise is a bit larger.\n- The 1,200 public rows is my guess.\n\nCode, grid and notebook (CPU, about 20 seconds): [How Much Does the Best Public Score Overstate](https://www.kaggle.com/code/locdunhat/how-much-does-the-best-public-score-overstate) · [grid dataset (CC0)](https://www.kaggle.com/datasets/locdunhat/public-lb-selection-bias-grid).",
+          "replies": [],
+          "votes": {
+            "totalVotes": 0
+          }
+        },
+        "firstMessageId": 3549000,
+        "id": 755215,
+        "name": "Your best public score is probably ~0.005-0.01 above its true score: a rule of thumb for near-copy submissions",
+        "postDate": "2026-11-03T01:08:39.193954600Z",
+        "url": "/competitions/name-that-llm/discussion/755215"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>Late in a competition the best public score becomes the score to beat, and each new idea is judged against it. That best score was picked by the public rows, though. When most of your submissions are near-copies of one blend, part of it is luck on those rows. I simulated how large that part is, because it explained a run of results I could not make sense of otherwise.</p>\n<p><strong>Setup.</strong> One reference model gets each test row right with probability 0.62. Each submission matches it except on rows it flips, each row with probability q. Two submissions therefore disagree about correctness on about 2q(1 - q) of the rows. You can measure that <strong>pairwise flip rate</strong> on your own OOF predictions. The submission with the best public score is selected. All submissions are equally good, so any lead it shows is pure selection.</p>\n<p><strong>Optimism of the best public score</strong> (public minus true score), with 1,200 public rows:</p>\n<table>\n<thead>\n<tr>\n<th>similar submissions</th>\n<th>flip 2%</th>\n<th>flip 5%</th>\n<th>flip 10%</th>\n<th>flip 18%</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>2</td>\n<td>0.002</td>\n<td>0.003</td>\n<td>0.003</td>\n<td>0.005</td>\n</tr>\n<tr>\n<td>5</td>\n<td>0.003</td>\n<td>0.005</td>\n<td>0.007</td>\n<td>0.010</td>\n</tr>\n<tr>\n<td>10</td>\n<td>0.004</td>\n<td>0.007</td>\n<td>0.010</td>\n<td>0.013</td>\n</tr>\n<tr>\n<td>20</td>\n<td>0.005</td>\n<td>0.008</td>\n<td>0.012</td>\n<td>0.016</td>\n</tr>\n<tr>\n<td>50</td>\n<td>0.006</td>\n<td>0.010</td>\n<td>0.014</td>\n<td>0.019</td>\n</tr>\n</tbody>\n</table>\n<p>The simulation agrees within 10% with a one-line rule:</p>\n<pre><code>optimism ~= sqrt(q (1 - q) / n_public) x E[max of N normals]\n</code></pre>\n<p>E[max of N normals] is 0.56, 1.16, 1.54, 1.87 and 2.25 for N = 2, 5, 10, 20 and 50.</p>\n<p>What follows from it:</p>\n<ul>\n<li><strong>It is the same size as the gains you are chasing.</strong> With 20 blends that differ on 5% of rows, a real +0.005 idea will usually score below your current best.</li>\n<li><strong>It depends on how different the submissions are, not on how good they are.</strong> Identical copies give no bias. Blends that move 10-20% of rows give a lot.</li>\n<li><strong>More public rows help only with the square root of their number:</strong> 0.012 / 0.008 / 0.005 for 600 / 1,200 / 3,000 rows (20 submissions, 5% flip).</li>\n<li><strong>Real differences do not remove it.</strong> If the submissions differ in true score with an sd of 0.002, the best of 20 is still 0.007 above its true score, and it is the truly best one only 17% of the time.</li>\n</ul>\n<p><strong>Where I saw it.</strong> My best is 0.626, out of about 20 close variants of the same blend that disagree on 1-5% of OOF rows. The table puts 0.626 about 0.004 to 0.008 above that blend's true score. Over the last two days I submitted eight variants. Each changed one member and stayed within 0.006 of it at every OOF cut. All eight scored 0.614 to 0.624. I first read that as \"every change hurts\". It is also about what eight equally good blends should score against a selected 0.626. So I now compare a new submission against <strong>best minus the rule's optimism</strong>, not against the best itself. When the gap is smaller than that, I treat it as no evidence either way.</p>\n<p>This is close to the \"is this rerun noise?\" question in <a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/753177\" target=\"_blank\">Harshita Kumari's retraining thread</a>. A -0.004 swap at a single submission is inside this range.</p>\n<p>Caveats:</p>\n<ul>\n<li>Flips are independent in the simulation. Real near-copies share their flips, so count your submissions conservatively (two blends that differ only in one weight are close to one submission).</li>\n<li>It uses plain accuracy. Balanced accuracy weights rare-class rows more, so its noise is a bit larger.</li>\n<li>The 1,200 public rows is my guess.</li>\n</ul>\n<p>Code, grid and notebook (CPU, about 20 seconds): <a href=\"https://www.kaggle.com/code/locdunhat/how-much-does-the-best-public-score-overstate\" target=\"_blank\">How Much Does the Best Public Score Overstate</a> · <a href=\"https://www.kaggle.com/datasets/locdunhat/public-lb-selection-bias-grid\" target=\"_blank\">grid dataset (CC0)</a>.</p>",
+              "id": 3549000,
+              "post_date": "2026-11-03T01:08:39.193Z",
+              "raw_markdown": "Late in a competition the best public score becomes the score to beat, and each new idea is judged against it. That best score was picked by the public rows, though. When most of your submissions are near-copies of one blend, part of it is luck on those rows. I simulated how large that part is, because it explained a run of results I could not make sense of otherwise.\n\n**Setup.** One reference model gets each test row right with probability 0.62. Each submission matches it except on rows it flips, each row with probability q. Two submissions therefore disagree about correctness on about 2q(1 - q) of the rows. You can measure that **pairwise flip rate** on your own OOF predictions. The submission with the best public score is selected. All submissions are equally good, so any lead it shows is pure selection.\n\n**Optimism of the best public score** (public minus true score), with 1,200 public rows:\n\n| similar submissions | flip 2% | flip 5% | flip 10% | flip 18% |\n| --- | --- | --- | --- | --- |\n| 2 | 0.002 | 0.003 | 0.003 | 0.005 |\n| 5 | 0.003 | 0.005 | 0.007 | 0.010 |\n| 10 | 0.004 | 0.007 | 0.010 | 0.013 |\n| 20 | 0.005 | 0.008 | 0.012 | 0.016 |\n| 50 | 0.006 | 0.010 | 0.014 | 0.019 |\n\nThe simulation agrees within 10% with a one-line rule:\n\n    optimism ~= sqrt(q (1 - q) / n_public) x E[max of N normals]\n\nE[max of N normals] is 0.56, 1.16, 1.54, 1.87 and 2.25 for N = 2, 5, 10, 20 and 50.\n\nWhat follows from it:\n\n- **It is the same size as the gains you are chasing.** With 20 blends that differ on 5% of rows, a real +0.005 idea will usually score below your current best.\n- **It depends on how different the submissions are, not on how good they are.** Identical copies give no bias. Blends that move 10-20% of rows give a lot.\n- **More public rows help only with the square root of their number:** 0.012 / 0.008 / 0.005 for 600 / 1,200 / 3,000 rows (20 submissions, 5% flip).\n- **Real differences do not remove it.** If the submissions differ in true score with an sd of 0.002, the best of 20 is still 0.007 above its true score, and it is the truly best one only 17% of the time.\n\n**Where I saw it.** My best is 0.626, out of about 20 close variants of the same blend that disagree on 1-5% of OOF rows. The table puts 0.626 about 0.004 to 0.008 above that blend's true score. Over the last two days I submitted eight variants. Each changed one member and stayed within 0.006 of it at every OOF cut. All eight scored 0.614 to 0.624. I first read that as \"every change hurts\". It is also about what eight equally good blends should score against a selected 0.626. So I now compare a new submission against **best minus the rule's optimism**, not against the best itself. When the gap is smaller than that, I treat it as no evidence either way.\n\nThis is close to the \"is this rerun noise?\" question in [Harshita Kumari's retraining thread](https://www.kaggle.com/competitions/name-that-llm/discussion/753177). A -0.004 swap at a single submission is inside this range.\n\nCaveats:\n\n- Flips are independent in the simulation. Real near-copies share their flips, so count your submissions conservatively (two blends that differ only in one weight are close to one submission).\n- It uses plain accuracy. Balanced accuracy weights rare-class rows more, so its noise is a bit larger.\n- The 1,200 public rows is my guess.\n\nCode, grid and notebook (CPU, about 20 seconds): [How Much Does the Best Public Score Overstate](https://www.kaggle.com/code/locdunhat/how-much-does-the-best-public-score-overstate) · [grid dataset (CC0)](https://www.kaggle.com/datasets/locdunhat/public-lb-selection-bias-grid)."
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 3897663,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "3897663-kg.jpg?t=2026-10-14-14-18-45",
+            "author_user_display_name": "GoPain",
+            "author_user_name": "locdunhat",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "first_message": {
+              "author": {
+                "display_name": "GoPain",
+                "id": 3897663,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3897663-kg.jpg?t=2026-10-14-14-18-45",
+                "tier": "CONTRIBUTOR",
+                "url": "/locdunhat"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 1038,
+              "content": "<p>Late in a competition the best public score becomes the score to beat, and each new idea is judged against it. That best score was picked by the public rows, though. When most of your submissions are near-copies of one blend, part of it is luck on those rows. I simulated how large that part is, because it explained a run of results I could not make sense of otherwise.</p>\n<p><strong>Setup.</strong> One reference model gets each test row right with probability 0.62. Each submission matches it except on rows it flips, each row with probability q. Two submissions therefore disagree about correctness on about 2q(1 - q) of the rows. You can measure that <strong>pairwise flip rate</strong> on your own OOF predictions. The submission with the best public score is selected. All submissions are equally good, so any lead it shows is pure selection.</p>\n<p><strong>Optimism of the best public score</strong> (public minus true score), with 1,200 public rows:</p>\n<table>\n<thead>\n<tr>\n<th>similar submissions</th>\n<th>flip 2%</th>\n<th>flip 5%</th>\n<th>flip 10%</th>\n<th>flip 18%</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>2</td>\n<td>0.002</td>\n<td>0.003</td>\n<td>0.003</td>\n<td>0.005</td>\n</tr>\n<tr>\n<td>5</td>\n<td>0.003</td>\n<td>0.005</td>\n<td>0.007</td>\n<td>0.010</td>\n</tr>\n<tr>\n<td>10</td>\n<td>0.004</td>\n<td>0.007</td>\n<td>0.010</td>\n<td>0.013</td>\n</tr>\n<tr>\n<td>20</td>\n<td>0.005</td>\n<td>0.008</td>\n<td>0.012</td>\n<td>0.016</td>\n</tr>\n<tr>\n<td>50</td>\n<td>0.006</td>\n<td>0.010</td>\n<td>0.014</td>\n<td>0.019</td>\n</tr>\n</tbody>\n</table>\n<p>The simulation agrees within 10% with a one-line rule:</p>\n<pre><code>optimism ~= sqrt(q (1 - q) / n_public) x E[max of N normals]\n</code></pre>\n<p>E[max of N normals] is 0.56, 1.16, 1.54, 1.87 and 2.25 for N = 2, 5, 10, 20 and 50.</p>\n<p>What follows from it:</p>\n<ul>\n<li><strong>It is the same size as the gains you are chasing.</strong> With 20 blends that differ on 5% of rows, a real +0.005 idea will usually score below your current best.</li>\n<li><strong>It depends on how different the submissions are, not on how good they are.</strong> Identical copies give no bias. Blends that move 10-20% of rows give a lot.</li>\n<li><strong>More public rows help only with the square root of their number:</strong> 0.012 / 0.008 / 0.005 for 600 / 1,200 / 3,000 rows (20 submissions, 5% flip).</li>\n<li><strong>Real differences do not remove it.</strong> If the submissions differ in true score with an sd of 0.002, the best of 20 is still 0.007 above its true score, and it is the truly best one only 17% of the time.</li>\n</ul>\n<p><strong>Where I saw it.</strong> My best is 0.626, out of about 20 close variants of the same blend that disagree on 1-5% of OOF rows. The table puts 0.626 about 0.004 to 0.008 above that blend's true score. Over the last two days I submitted eight variants. Each changed one member and stayed within 0.006 of it at every OOF cut. All eight scored 0.614 to 0.624. I first read that as \"every change hurts\". It is also about what eight equally good blends should score against a selected 0.626. So I now compare a new submission against <strong>best minus the rule's optimism</strong>, not against the best itself. When the gap is smaller than that, I treat it as no evidence either way.</p>\n<p>This is close to the \"is this rerun noise?\" question in <a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/753177\" target=\"_blank\">Harshita Kumari's retraining thread</a>. A -0.004 swap at a single submission is inside this range.</p>\n<p>Caveats:</p>\n<ul>\n<li>Flips are independent in the simulation. Real near-copies share their flips, so count your submissions conservatively (two blends that differ only in one weight are close to one submission).</li>\n<li>It uses plain accuracy. Balanced accuracy weights rare-class rows more, so its noise is a bit larger.</li>\n<li>The 1,200 public rows is my guess.</li>\n</ul>\n<p>Code, grid and notebook (CPU, about 20 seconds): <a href=\"https://www.kaggle.com/code/locdunhat/how-much-does-the-best-public-score-overstate\" target=\"_blank\">How Much Does the Best Public Score Overstate</a> · <a href=\"https://www.kaggle.com/datasets/locdunhat/public-lb-selection-bias-grid\" target=\"_blank\">grid dataset (CC0)</a>.</p>",
+              "feedback_tracking_data": {},
+              "id": 3549000,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-03T01:08:39.193Z",
+              "raw_markdown": "Late in a competition the best public score becomes the score to beat, and each new idea is judged against it. That best score was picked by the public rows, though. When most of your submissions are near-copies of one blend, part of it is luck on those rows. I simulated how large that part is, because it explained a run of results I could not make sense of otherwise.\n\n**Setup.** One reference model gets each test row right with probability 0.62. Each submission matches it except on rows it flips, each row with probability q. Two submissions therefore disagree about correctness on about 2q(1 - q) of the rows. You can measure that **pairwise flip rate** on your own OOF predictions. The submission with the best public score is selected. All submissions are equally good, so any lead it shows is pure selection.\n\n**Optimism of the best public score** (public minus true score), with 1,200 public rows:\n\n| similar submissions | flip 2% | flip 5% | flip 10% | flip 18% |\n| --- | --- | --- | --- | --- |\n| 2 | 0.002 | 0.003 | 0.003 | 0.005 |\n| 5 | 0.003 | 0.005 | 0.007 | 0.010 |\n| 10 | 0.004 | 0.007 | 0.010 | 0.013 |\n| 20 | 0.005 | 0.008 | 0.012 | 0.016 |\n| 50 | 0.006 | 0.010 | 0.014 | 0.019 |\n\nThe simulation agrees within 10% with a one-line rule:\n\n    optimism ~= sqrt(q (1 - q) / n_public) x E[max of N normals]\n\nE[max of N normals] is 0.56, 1.16, 1.54, 1.87 and 2.25 for N = 2, 5, 10, 20 and 50.\n\nWhat follows from it:\n\n- **It is the same size as the gains you are chasing.** With 20 blends that differ on 5% of rows, a real +0.005 idea will usually score below your current best.\n- **It depends on how different the submissions are, not on how good they are.** Identical copies give no bias. Blends that move 10-20% of rows give a lot.\n- **More public rows help only with the square root of their number:** 0.012 / 0.008 / 0.005 for 600 / 1,200 / 3,000 rows (20 submissions, 5% flip).\n- **Real differences do not remove it.** If the submissions differ in true score with an sd of 0.002, the best of 20 is still 0.007 above its true score, and it is the truly best one only 17% of the time.\n\n**Where I saw it.** My best is 0.626, out of about 20 close variants of the same blend that disagree on 1-5% of OOF rows. The table puts 0.626 about 0.004 to 0.008 above that blend's true score. Over the last two days I submitted eight variants. Each changed one member and stayed within 0.006 of it at every OOF cut. All eight scored 0.614 to 0.624. I first read that as \"every change hurts\". It is also about what eight equally good blends should score against a selected 0.626. So I now compare a new submission against **best minus the rule's optimism**, not against the best itself. When the gap is smaller than that, I treat it as no evidence either way.\n\nThis is close to the \"is this rerun noise?\" question in [Harshita Kumari's retraining thread](https://www.kaggle.com/competitions/name-that-llm/discussion/753177). A -0.004 swap at a single submission is inside this range.\n\nCaveats:\n\n- Flips are independent in the simulation. Real near-copies share their flips, so count your submissions conservatively (two blends that differ only in one weight are close to one submission).\n- It uses plain accuracy. Balanced accuracy weights rare-class rows more, so its noise is a bit larger.\n- The 1,200 public rows is my guess.\n\nCode, grid and notebook (CPU, about 20 seconds): [How Much Does the Best Public Score Overstate](https://www.kaggle.com/code/locdunhat/how-much-does-the-best-public-score-overstate) · [grid dataset (CC0)](https://www.kaggle.com/datasets/locdunhat/public-lb-selection-bias-grid).",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "GoPain",
+                  "id": 3897663,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/locdunhat",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3897663-kg.jpg?t=2026-10-14-14-18-45",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/locdunhat",
+                  "user_id": 3897663,
+                  "user_name": "locdunhat"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1
+              }
+            },
+            "first_message_id": 3549000,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 755215,
+            "name": "Your best public score is probably ~0.005-0.01 above its true score: a rule of thumb for near-copy submissions",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-11-03T01:08:39.193954600Z",
+            "url": "/competitions/name-that-llm/discussion/755215"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:23:23+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:23:23+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-11-03T01:08:39.193954600Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [],
+  "writeup": null
+}

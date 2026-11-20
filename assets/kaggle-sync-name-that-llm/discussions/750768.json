@@ -1,0 +1,408 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 750768,
+    "title": "Clarification on test set structure: do multiple models answer the same prompt?",
+    "author": "Sujal Bist",
+    "author_url": "/sujalbist",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-10-19T19:03:04.290256400Z",
+    "last_comment_post_date": "2026-10-25T01:18:01.660Z",
+    "comment_count": 1,
+    "votes": 3,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/750768",
+    "first_message_id": 3541235,
+    "first_seen_at": "2026-11-04T06:56:16+00:00",
+    "last_seen_at": "2026-11-16T16:36:03+00:00",
+    "detail_last_synced_at": "2026-11-16T16:24:03+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "ca5909993a11776de7ee9f49fa3e1930949ff1bcbd6a756d4e6c93f2326cef7f",
+    "listing_metrics_hash": "6d8a74dbac9b4cd94399e9cc1520c8e662b0bbcc16c76b670939fedc4deb1f33",
+    "detail_content_hash": "5992de0edd4280494ccd9d29d6b9078c48ff231fdd2f0005ac546394544d1f32",
+    "detail_last_checked_at": "2026-11-16T16:24:03+00:00",
+    "detail_next_check_at": "2026-11-23T16:24:03+00:00",
+    "detail_unchanged_count": 2,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 1,
+      "firstForumMessageId": null,
+      "id": 750768,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-10-25T01:18:01.660Z",
+      "postDate": "2026-10-19T19:03:04.290256400Z",
+      "raw": {
+        "comment_count": 1,
+        "id": 750768,
+        "last_comment_post_date": "2026-10-25T01:18:01.660Z",
+        "post_date": "2026-10-19T19:03:04.290256400Z",
+        "title": "Clarification on test set structure: do multiple models answer the same prompt?",
+        "topic_url": "/competitions/name-that-llm/discussion/750768",
+        "votes": 3
+      },
+      "title": "Clarification on test set structure: do multiple models answer the same prompt?",
+      "topicUrl": "/competitions/name-that-llm/discussion/750768",
+      "votes": 3
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "Sujal Bist",
+        "authorUserName": "sujalbist",
+        "comments": [
+          {
+            "author": {
+              "displayName": "Ace",
+              "tier": "EXPERT",
+              "url": "/shikhageekachad"
+            },
+            "content": "<p>I feel, Since the metric is balanced accuracy and test counts per model are unequal, some hidden prompts(but there is no prompt id) in test may not include all 18 models, so the constraint might be “at most once per model”, not “exactly once”.</p>\n<p>The host wrote that test passages are written for “<strong>prompts that do not appear in train</strong>,” which implies new prompts with several answers each. And 4,000 ÷ 18 ≈ 222(220), which looks like about 222 new prompts answered by the models, built the same way as train.</p>\n<p><em>Each model at most once per prompt? Likely yes.</em></p>\n<p>Train data was made by asking each model each prompt(1 prompt id ) once. So hoping, they used the same process for test. But test counts per model are unequal, so some models were probably dropped from some prompts. So “at most once” is likely true; “exactly once” probably isn’t.</p>\n<p>this trick might actually work to predict the topic ig, since we dont have access anyway to test promptid column, </p>",
+            "id": 3544210,
+            "isThankYou": false,
+            "postDate": "2026-10-25T01:18:01.660Z",
+            "raw": {
+              "author": {
+                "display_name": "Ace",
+                "id": 22169099,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22169099-kg.png?t=2026-01-27-00-40-56",
+                "tier": "EXPERT",
+                "url": "/shikhageekachad"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 116,
+              "content": "<p>I feel, Since the metric is balanced accuracy and test counts per model are unequal, some hidden prompts(but there is no prompt id) in test may not include all 18 models, so the constraint might be “at most once per model”, not “exactly once”.</p>\n<p>The host wrote that test passages are written for “<strong>prompts that do not appear in train</strong>,” which implies new prompts with several answers each. And 4,000 ÷ 18 ≈ 222(220), which looks like about 222 new prompts answered by the models, built the same way as train.</p>\n<p><em>Each model at most once per prompt? Likely yes.</em></p>\n<p>Train data was made by asking each model each prompt(1 prompt id ) once. So hoping, they used the same process for test. But test counts per model are unequal, so some models were probably dropped from some prompts. So “at most once” is likely true; “exactly once” probably isn’t.</p>\n<p>this trick might actually work to predict the topic ig, since we dont have access anyway to test promptid column, </p>",
+              "feedback_tracking_data": {},
+              "id": 3544210,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-25T01:18:01.660Z",
+              "raw_markdown": "I feel, Since the metric is balanced accuracy and test counts per model are unequal, some hidden prompts(but there is no prompt id) in test may not include all 18 models, so the constraint might be “at most once per model”, not “exactly once”.\n\n\nThe host wrote that test passages are written for “**prompts that do not appear in train**,” which implies new prompts with several answers each. And 4,000 ÷ 18 ≈ 222(220), which looks like about 222 new prompts answered by the models, built the same way as train.\n\n\n*Each model at most once per prompt? Likely yes.*\n\nTrain data was made by asking each model each prompt(1 prompt id ) once. So hoping, they used the same process for test. But test counts per model are unequal, so some models were probably dropped from some prompts. So “at most once” is likely true; “exactly once” probably isn’t.\n\n this trick might actually work to predict the topic ig, since we dont have access anyway to test promptid column, ",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Nischay Dhankhar",
+                  "id": 4712534,
+                  "performance_tier": "GRANDMASTER",
+                  "profile_url": "/nischaydnk",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4712534-kg.jpg?t=2025-07-08-18-30-02",
+                  "tier": "GRANDMASTER",
+                  "url": "/nischaydnk",
+                  "user_id": 4712534,
+                  "user_name": "nischaydnk"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "I feel, Since the metric is balanced accuracy and test counts per model are unequal, some hidden prompts(but there is no prompt id) in test may not include all 18 models, so the constraint might be “at most once per model”, not “exactly once”.\n\n\nThe host wrote that test passages are written for “**prompts that do not appear in train**,” which implies new prompts with several answers each. And 4,000 ÷ 18 ≈ 222(220), which looks like about 222 new prompts answered by the models, built the same way as train.\n\n\n*Each model at most once per prompt? Likely yes.*\n\nTrain data was made by asking each model each prompt(1 prompt id ) once. So hoping, they used the same process for test. But test counts per model are unequal, so some models were probably dropped from some prompts. So “at most once” is likely true; “exactly once” probably isn’t.\n\n this trick might actually work to predict the topic ig, since we dont have access anyway to test promptid column, ",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "expectedCommentCount": 1,
+        "firstMessage": {
+          "author": {
+            "displayName": "Sujal Bist",
+            "tier": "CONTRIBUTOR",
+            "url": "/sujalbist"
+          },
+          "content": "<p>Hi hosts, thanks for the competition!</p>\n<p>In train.csv, each prompt_id has exactly one passage from each of the 18 models. The Overview says the hidden test has unequal counts per model and unseen prompts, so I know that exact structure doesn't carry over. Two clarifications would help:</p>\n<p>In the hidden test set, do several passages share the same underlying prompt? If so, does any one model answer a given prompt at most once?\nIs it within the rules for a notebook to use relationships between test passages at inference time? For example, it could automatically cluster test passages by topic and make predictions jointly within a cluster. This would be fully automated, with no hand labelling or human judgment on test data.\n Thanks!</p>",
+          "id": 3541235,
+          "isThankYou": false,
+          "postDate": "2026-10-19T19:03:04.290Z",
+          "raw": {
+            "author": {
+              "display_name": "Sujal Bist",
+              "id": 23128781,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/23128781-kg.jpeg?t=2025-06-15-12-28-26",
+              "tier": "CONTRIBUTOR",
+              "url": "/sujalbist"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 3362,
+            "content": "<p>Hi hosts, thanks for the competition!</p>\n<p>In train.csv, each prompt_id has exactly one passage from each of the 18 models. The Overview says the hidden test has unequal counts per model and unseen prompts, so I know that exact structure doesn't carry over. Two clarifications would help:</p>\n<p>In the hidden test set, do several passages share the same underlying prompt? If so, does any one model answer a given prompt at most once?\nIs it within the rules for a notebook to use relationships between test passages at inference time? For example, it could automatically cluster test passages by topic and make predictions jointly within a cluster. This would be fully automated, with no hand labelling or human judgment on test data.\n Thanks!</p>",
+            "feedback_tracking_data": {},
+            "id": 3541235,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-10-19T19:03:04.290Z",
+            "raw_markdown": "Hi hosts, thanks for the competition!\n\nIn train.csv, each prompt_id has exactly one passage from each of the 18 models. The Overview says the hidden test has unequal counts per model and unseen prompts, so I know that exact structure doesn't carry over. Two clarifications would help:\n\nIn the hidden test set, do several passages share the same underlying prompt? If so, does any one model answer a given prompt at most once?\nIs it within the rules for a notebook to use relationships between test passages at inference time? For example, it could automatically cluster test passages by topic and make predictions jointly within a cluster. This would be fully automated, with no hand labelling or human judgment on test data.\n Thanks!",
+            "reactions": [
+              {
+                "emoji": "LOVE",
+                "featured_user_names": [
+                  "jazivxt"
+                ],
+                "user_count": 1
+              }
+            ],
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "Sujal Bist",
+                "id": 23128781,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/sujalbist",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/23128781-kg.jpeg?t=2025-06-15-12-28-26",
+                "tier": "CONTRIBUTOR",
+                "url": "/sujalbist",
+                "user_id": 23128781,
+                "user_name": "sujalbist"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 3,
+              "total_votes": 3
+            }
+          },
+          "rawMarkdown": "Hi hosts, thanks for the competition!\n\nIn train.csv, each prompt_id has exactly one passage from each of the 18 models. The Overview says the hidden test has unequal counts per model and unseen prompts, so I know that exact structure doesn't carry over. Two clarifications would help:\n\nIn the hidden test set, do several passages share the same underlying prompt? If so, does any one model answer a given prompt at most once?\nIs it within the rules for a notebook to use relationships between test passages at inference time? For example, it could automatically cluster test passages by topic and make predictions jointly within a cluster. This would be fully automated, with no hand labelling or human judgment on test data.\n Thanks!",
+          "replies": [],
+          "votes": {
+            "totalVotes": 3
+          }
+        },
+        "firstMessageId": 3541235,
+        "id": 750768,
+        "name": "Clarification on test set structure: do multiple models answer the same prompt?",
+        "postDate": "2026-10-19T19:03:04.290256400Z",
+        "url": "/competitions/name-that-llm/discussion/750768"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>Hi hosts, thanks for the competition!</p>\n<p>In train.csv, each prompt_id has exactly one passage from each of the 18 models. The Overview says the hidden test has unequal counts per model and unseen prompts, so I know that exact structure doesn't carry over. Two clarifications would help:</p>\n<p>In the hidden test set, do several passages share the same underlying prompt? If so, does any one model answer a given prompt at most once?\nIs it within the rules for a notebook to use relationships between test passages at inference time? For example, it could automatically cluster test passages by topic and make predictions jointly within a cluster. This would be fully automated, with no hand labelling or human judgment on test data.\n Thanks!</p>",
+              "id": 3541235,
+              "post_date": "2026-10-19T19:03:04.290Z",
+              "raw_markdown": "Hi hosts, thanks for the competition!\n\nIn train.csv, each prompt_id has exactly one passage from each of the 18 models. The Overview says the hidden test has unequal counts per model and unseen prompts, so I know that exact structure doesn't carry over. Two clarifications would help:\n\nIn the hidden test set, do several passages share the same underlying prompt? If so, does any one model answer a given prompt at most once?\nIs it within the rules for a notebook to use relationships between test passages at inference time? For example, it could automatically cluster test passages by topic and make predictions jointly within a cluster. This would be fully automated, with no hand labelling or human judgment on test data.\n Thanks!",
+              "votes": 3
+            },
+            {
+              "content": "<p>I feel, Since the metric is balanced accuracy and test counts per model are unequal, some hidden prompts(but there is no prompt id) in test may not include all 18 models, so the constraint might be “at most once per model”, not “exactly once”.</p>\n<p>The host wrote that test passages are written for “<strong>prompts that do not appear in train</strong>,” which implies new prompts with several answers each. And 4,000 ÷ 18 ≈ 222(220), which looks like about 222 new prompts answered by the models, built the same way as train.</p>\n<p><em>Each model at most once per prompt? Likely yes.</em></p>\n<p>Train data was made by asking each model each prompt(1 prompt id ) once. So hoping, they used the same process for test. But test counts per model are unequal, so some models were probably dropped from some prompts. So “at most once” is likely true; “exactly once” probably isn’t.</p>\n<p>this trick might actually work to predict the topic ig, since we dont have access anyway to test promptid column, </p>",
+              "id": 3544210,
+              "post_date": "2026-10-25T01:18:01.660Z",
+              "raw_markdown": "I feel, Since the metric is balanced accuracy and test counts per model are unequal, some hidden prompts(but there is no prompt id) in test may not include all 18 models, so the constraint might be “at most once per model”, not “exactly once”.\n\n\nThe host wrote that test passages are written for “**prompts that do not appear in train**,” which implies new prompts with several answers each. And 4,000 ÷ 18 ≈ 222(220), which looks like about 222 new prompts answered by the models, built the same way as train.\n\n\n*Each model at most once per prompt? Likely yes.*\n\nTrain data was made by asking each model each prompt(1 prompt id ) once. So hoping, they used the same process for test. But test counts per model are unequal, so some models were probably dropped from some prompts. So “at most once” is likely true; “exactly once” probably isn’t.\n\n this trick might actually work to predict the topic ig, since we dont have access anyway to test promptid column, "
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 23128781,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "23128781-kg.jpeg?t=2025-06-15-12-28-26",
+            "author_user_display_name": "Sujal Bist",
+            "author_user_name": "sujalbist",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "comments": [
+              {
+                "author": {
+                  "display_name": "Ace",
+                  "id": 22169099,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22169099-kg.png?t=2026-01-27-00-40-56",
+                  "tier": "EXPERT",
+                  "url": "/shikhageekachad"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 116,
+                "content": "<p>I feel, Since the metric is balanced accuracy and test counts per model are unequal, some hidden prompts(but there is no prompt id) in test may not include all 18 models, so the constraint might be “at most once per model”, not “exactly once”.</p>\n<p>The host wrote that test passages are written for “<strong>prompts that do not appear in train</strong>,” which implies new prompts with several answers each. And 4,000 ÷ 18 ≈ 222(220), which looks like about 222 new prompts answered by the models, built the same way as train.</p>\n<p><em>Each model at most once per prompt? Likely yes.</em></p>\n<p>Train data was made by asking each model each prompt(1 prompt id ) once. So hoping, they used the same process for test. But test counts per model are unequal, so some models were probably dropped from some prompts. So “at most once” is likely true; “exactly once” probably isn’t.</p>\n<p>this trick might actually work to predict the topic ig, since we dont have access anyway to test promptid column, </p>",
+                "feedback_tracking_data": {},
+                "id": 3544210,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-25T01:18:01.660Z",
+                "raw_markdown": "I feel, Since the metric is balanced accuracy and test counts per model are unequal, some hidden prompts(but there is no prompt id) in test may not include all 18 models, so the constraint might be “at most once per model”, not “exactly once”.\n\n\nThe host wrote that test passages are written for “**prompts that do not appear in train**,” which implies new prompts with several answers each. And 4,000 ÷ 18 ≈ 222(220), which looks like about 222 new prompts answered by the models, built the same way as train.\n\n\n*Each model at most once per prompt? Likely yes.*\n\nTrain data was made by asking each model each prompt(1 prompt id ) once. So hoping, they used the same process for test. But test counts per model are unequal, so some models were probably dropped from some prompts. So “at most once” is likely true; “exactly once” probably isn’t.\n\n this trick might actually work to predict the topic ig, since we dont have access anyway to test promptid column, ",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "Nischay Dhankhar",
+                    "id": 4712534,
+                    "performance_tier": "GRANDMASTER",
+                    "profile_url": "/nischaydnk",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4712534-kg.jpg?t=2025-07-08-18-30-02",
+                    "tier": "GRANDMASTER",
+                    "url": "/nischaydnk",
+                    "user_id": 4712534,
+                    "user_name": "nischaydnk"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              }
+            ],
+            "first_message": {
+              "author": {
+                "display_name": "Sujal Bist",
+                "id": 23128781,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/23128781-kg.jpeg?t=2025-06-15-12-28-26",
+                "tier": "CONTRIBUTOR",
+                "url": "/sujalbist"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 3362,
+              "content": "<p>Hi hosts, thanks for the competition!</p>\n<p>In train.csv, each prompt_id has exactly one passage from each of the 18 models. The Overview says the hidden test has unequal counts per model and unseen prompts, so I know that exact structure doesn't carry over. Two clarifications would help:</p>\n<p>In the hidden test set, do several passages share the same underlying prompt? If so, does any one model answer a given prompt at most once?\nIs it within the rules for a notebook to use relationships between test passages at inference time? For example, it could automatically cluster test passages by topic and make predictions jointly within a cluster. This would be fully automated, with no hand labelling or human judgment on test data.\n Thanks!</p>",
+              "feedback_tracking_data": {},
+              "id": 3541235,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-19T19:03:04.290Z",
+              "raw_markdown": "Hi hosts, thanks for the competition!\n\nIn train.csv, each prompt_id has exactly one passage from each of the 18 models. The Overview says the hidden test has unequal counts per model and unseen prompts, so I know that exact structure doesn't carry over. Two clarifications would help:\n\nIn the hidden test set, do several passages share the same underlying prompt? If so, does any one model answer a given prompt at most once?\nIs it within the rules for a notebook to use relationships between test passages at inference time? For example, it could automatically cluster test passages by topic and make predictions jointly within a cluster. This would be fully automated, with no hand labelling or human judgment on test data.\n Thanks!",
+              "reactions": [
+                {
+                  "emoji": "LOVE",
+                  "featured_user_names": [
+                    "jazivxt"
+                  ],
+                  "user_count": 1
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Sujal Bist",
+                  "id": 23128781,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/sujalbist",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/23128781-kg.jpeg?t=2025-06-15-12-28-26",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/sujalbist",
+                  "user_id": 23128781,
+                  "user_name": "sujalbist"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 3,
+                "total_votes": 3
+              }
+            },
+            "first_message_id": 3541235,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 750768,
+            "name": "Clarification on test set structure: do multiple models answer the same prompt?",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-10-19T19:03:04.290256400Z",
+            "total_messages": 1,
+            "total_votes": 3,
+            "url": "/competitions/name-that-llm/discussion/750768"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:24:03+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:24:03+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-10-25T01:18:01.660Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [
+    {
+      "slug": "name-that-llm",
+      "topic_id": 750768,
+      "message_id": 3544210,
+      "parent_message_id": null,
+      "author": "Ace",
+      "author_url": "/shikhageekachad",
+      "author_tier": "EXPERT",
+      "post_date": "2026-10-25T01:18:01.660Z",
+      "raw_markdown": "I feel, Since the metric is balanced accuracy and test counts per model are unequal, some hidden prompts(but there is no prompt id) in test may not include all 18 models, so the constraint might be “at most once per model”, not “exactly once”.\n\n\nThe host wrote that test passages are written for “**prompts that do not appear in train**,” which implies new prompts with several answers each. And 4,000 ÷ 18 ≈ 222(220), which looks like about 222 new prompts answered by the models, built the same way as train.\n\n\n*Each model at most once per prompt? Likely yes.*\n\nTrain data was made by asking each model each prompt(1 prompt id ) once. So hoping, they used the same process for test. But test counts per model are unequal, so some models were probably dropped from some prompts. So “at most once” is likely true; “exactly once” probably isn’t.\n\n this trick might actually work to predict the topic ig, since we dont have access anyway to test promptid column, ",
+      "content_html": "<p>I feel, Since the metric is balanced accuracy and test counts per model are unequal, some hidden prompts(but there is no prompt id) in test may not include all 18 models, so the constraint might be “at most once per model”, not “exactly once”.</p>\n<p>The host wrote that test passages are written for “<strong>prompts that do not appear in train</strong>,” which implies new prompts with several answers each. And 4,000 ÷ 18 ≈ 222(220), which looks like about 222 new prompts answered by the models, built the same way as train.</p>\n<p><em>Each model at most once per prompt? Likely yes.</em></p>\n<p>Train data was made by asking each model each prompt(1 prompt id ) once. So hoping, they used the same process for test. But test counts per model are unequal, so some models were probably dropped from some prompts. So “at most once” is likely true; “exactly once” probably isn’t.</p>\n<p>this trick might actually work to predict the topic ig, since we dont have access anyway to test promptid column, </p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:57:04+00:00",
+      "last_seen_at": "2026-11-16T16:24:03+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:24:03+00:00",
+      "remote_last_listed_at": "2026-11-16T16:24:03+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Ace",
+          "tier": "EXPERT",
+          "url": "/shikhageekachad"
+        },
+        "content": "<p>I feel, Since the metric is balanced accuracy and test counts per model are unequal, some hidden prompts(but there is no prompt id) in test may not include all 18 models, so the constraint might be “at most once per model”, not “exactly once”.</p>\n<p>The host wrote that test passages are written for “<strong>prompts that do not appear in train</strong>,” which implies new prompts with several answers each. And 4,000 ÷ 18 ≈ 222(220), which looks like about 222 new prompts answered by the models, built the same way as train.</p>\n<p><em>Each model at most once per prompt? Likely yes.</em></p>\n<p>Train data was made by asking each model each prompt(1 prompt id ) once. So hoping, they used the same process for test. But test counts per model are unequal, so some models were probably dropped from some prompts. So “at most once” is likely true; “exactly once” probably isn’t.</p>\n<p>this trick might actually work to predict the topic ig, since we dont have access anyway to test promptid column, </p>",
+        "id": 3544210,
+        "isThankYou": false,
+        "postDate": "2026-10-25T01:18:01.660Z",
+        "raw": {
+          "author": {
+            "display_name": "Ace",
+            "id": 22169099,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22169099-kg.png?t=2026-01-27-00-40-56",
+            "tier": "EXPERT",
+            "url": "/shikhageekachad"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 116,
+          "content": "<p>I feel, Since the metric is balanced accuracy and test counts per model are unequal, some hidden prompts(but there is no prompt id) in test may not include all 18 models, so the constraint might be “at most once per model”, not “exactly once”.</p>\n<p>The host wrote that test passages are written for “<strong>prompts that do not appear in train</strong>,” which implies new prompts with several answers each. And 4,000 ÷ 18 ≈ 222(220), which looks like about 222 new prompts answered by the models, built the same way as train.</p>\n<p><em>Each model at most once per prompt? Likely yes.</em></p>\n<p>Train data was made by asking each model each prompt(1 prompt id ) once. So hoping, they used the same process for test. But test counts per model are unequal, so some models were probably dropped from some prompts. So “at most once” is likely true; “exactly once” probably isn’t.</p>\n<p>this trick might actually work to predict the topic ig, since we dont have access anyway to test promptid column, </p>",
+          "feedback_tracking_data": {},
+          "id": 3544210,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-25T01:18:01.660Z",
+          "raw_markdown": "I feel, Since the metric is balanced accuracy and test counts per model are unequal, some hidden prompts(but there is no prompt id) in test may not include all 18 models, so the constraint might be “at most once per model”, not “exactly once”.\n\n\nThe host wrote that test passages are written for “**prompts that do not appear in train**,” which implies new prompts with several answers each. And 4,000 ÷ 18 ≈ 222(220), which looks like about 222 new prompts answered by the models, built the same way as train.\n\n\n*Each model at most once per prompt? Likely yes.*\n\nTrain data was made by asking each model each prompt(1 prompt id ) once. So hoping, they used the same process for test. But test counts per model are unequal, so some models were probably dropped from some prompts. So “at most once” is likely true; “exactly once” probably isn’t.\n\n this trick might actually work to predict the topic ig, since we dont have access anyway to test promptid column, ",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Nischay Dhankhar",
+              "id": 4712534,
+              "performance_tier": "GRANDMASTER",
+              "profile_url": "/nischaydnk",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4712534-kg.jpg?t=2025-07-08-18-30-02",
+              "tier": "GRANDMASTER",
+              "url": "/nischaydnk",
+              "user_id": 4712534,
+              "user_name": "nischaydnk"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "I feel, Since the metric is balanced accuracy and test counts per model are unequal, some hidden prompts(but there is no prompt id) in test may not include all 18 models, so the constraint might be “at most once per model”, not “exactly once”.\n\n\nThe host wrote that test passages are written for “**prompts that do not appear in train**,” which implies new prompts with several answers each. And 4,000 ÷ 18 ≈ 222(220), which looks like about 222 new prompts answered by the models, built the same way as train.\n\n\n*Each model at most once per prompt? Likely yes.*\n\nTrain data was made by asking each model each prompt(1 prompt id ) once. So hoping, they used the same process for test. But test counts per model are unequal, so some models were probably dropped from some prompts. So “at most once” is likely true; “exactly once” probably isn’t.\n\n this trick might actually work to predict the topic ig, since we dont have access anyway to test promptid column, ",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    }
+  ],
+  "writeup": null
+}

@@ -1,0 +1,1363 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 750065,
+    "title": "Can we please get non-zero score for guessing correct family?",
+    "author": "Serhii Hrynko",
+    "author_url": "/elvenmonk",
+    "author_tier": "EXPERT",
+    "post_date": "2026-10-16T20:29:24.483051200Z",
+    "last_comment_post_date": "2026-10-17T19:09:45.210Z",
+    "comment_count": 4,
+    "votes": 1,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/750065",
+    "first_message_id": 3539959,
+    "first_seen_at": "2026-11-04T06:56:18+00:00",
+    "last_seen_at": "2026-11-16T16:36:18+00:00",
+    "detail_last_synced_at": "2026-11-16T16:36:18+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "45cf4068faf378dc92ce1819b7e666e0a5745db714bedf64d77f5a6dc4a10514",
+    "listing_metrics_hash": "08a3f0e9d031723a4649730d445a527264427162f124c0c72a6c18d2e0b8e839",
+    "detail_content_hash": "4581ff6a4e21e9f47946a197dab168eff99f1fce5dd20114fd9277f2675f4c42",
+    "detail_last_checked_at": "2026-11-16T16:36:18+00:00",
+    "detail_next_check_at": "2026-11-23T16:36:18+00:00",
+    "detail_unchanged_count": 2,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 4,
+      "firstForumMessageId": null,
+      "id": 750065,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-10-17T19:09:45.210Z",
+      "postDate": "2026-10-16T20:29:24.483051200Z",
+      "raw": {
+        "comment_count": 4,
+        "id": 750065,
+        "last_comment_post_date": "2026-10-17T19:09:45.210Z",
+        "post_date": "2026-10-16T20:29:24.483051200Z",
+        "title": "Can we please get non-zero score for guessing correct family?",
+        "topic_url": "/competitions/name-that-llm/discussion/750065",
+        "votes": 1
+      },
+      "title": "Can we please get non-zero score for guessing correct family?",
+      "topicUrl": "/competitions/name-that-llm/discussion/750065",
+      "votes": 1
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "EXPERT",
+        "authorUserDisplayName": "Serhii Hrynko",
+        "authorUserName": "elvenmonk",
+        "comments": [
+          {
+            "author": {
+              "displayName": "Maniceet Sahay",
+              "tier": "EXPERT",
+              "url": "/maniceet"
+            },
+            "content": "<p>In actual life, this might be needed, but this is a competition, if its given for model family, everyone's needle will move and people will game the system to get ahead on this aspect. \nSo from a competition perspective, I think it doesn't matter.</p>",
+            "id": 3540376,
+            "isThankYou": false,
+            "postDate": "2026-10-17T19:09:45.210Z",
+            "raw": {
+              "author": {
+                "display_name": "Maniceet Sahay",
+                "id": 700245,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/700245-kg.jpg",
+                "tier": "EXPERT",
+                "url": "/maniceet"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 43,
+              "content": "<p>In actual life, this might be needed, but this is a competition, if its given for model family, everyone's needle will move and people will game the system to get ahead on this aspect. \nSo from a competition perspective, I think it doesn't matter.</p>",
+              "feedback_tracking_data": {},
+              "id": 3540376,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-17T19:09:45.210Z",
+              "raw_markdown": "In actual life, this might be needed, but this is a competition, if its given for model family, everyone's needle will move and people will game the system to get ahead on this aspect. \nSo from a competition perspective, I think it doesn't matter.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Maniceet Sahay",
+                  "id": 700245,
+                  "performance_tier": "EXPERT",
+                  "profile_url": "/maniceet",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/700245-kg.jpg",
+                  "tier": "EXPERT",
+                  "url": "/maniceet",
+                  "user_id": 700245,
+                  "user_name": "maniceet"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": 1
+              }
+            },
+            "rawMarkdown": "In actual life, this might be needed, but this is a competition, if its given for model family, everyone's needle will move and people will game the system to get ahead on this aspect. \nSo from a competition perspective, I think it doesn't matter.",
+            "replies": [],
+            "votes": {
+              "totalVotes": 1
+            }
+          },
+          {
+            "author": {
+              "displayName": "Preet Patel",
+              "tier": "CONTRIBUTOR",
+              "url": "/patelpb"
+            },
+            "content": "<p>Even if they're the same family, aren't they actually different models? I.e. Sol vs Terra, Opus vs Sonnet. For that reason alone I imagine that the competition isn't seeing as much value in determining family, since even simple feature construction reveals several strata between families by itself. </p>",
+            "id": 3540052,
+            "isThankYou": false,
+            "postDate": "2026-10-17T00:47:30.850Z",
+            "raw": {
+              "author": {
+                "display_name": "Preet Patel",
+                "id": 16278395,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16278395-gr.jpg",
+                "tier": "CONTRIBUTOR",
+                "url": "/patelpb"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 5751,
+              "content": "<p>Even if they're the same family, aren't they actually different models? I.e. Sol vs Terra, Opus vs Sonnet. For that reason alone I imagine that the competition isn't seeing as much value in determining family, since even simple feature construction reveals several strata between families by itself. </p>",
+              "feedback_tracking_data": {},
+              "id": 3540052,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-17T00:47:30.850Z",
+              "raw_markdown": "Even if they're the same family, aren't they actually different models? I.e. Sol vs Terra, Opus vs Sonnet. For that reason alone I imagine that the competition isn't seeing as much value in determining family, since even simple feature construction reveals several strata between families by itself. ",
+              "replies": [
+                {
+                  "author": {
+                    "display_name": "Serhii Hrynko",
+                    "id": 2586962,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2586962-kg.jpg",
+                    "tier": "EXPERT",
+                    "url": "/elvenmonk"
+                  },
+                  "author_type": "TOPIC",
+                  "content": "<p>Well my point is, when you predicted the family if it’s Qwen or Kimi you automatically know the model. When it’s ChatGPT you’re making blind 20% guess.\nEven worse if we had 5 Qwen models we could at least collect our own training data by running those models locally.\nProprietary closed models used via proprietary APIs silently substitute responses from larger models with responses from smaller models and you are not told when that happens. You basically can not collect reliable data to distinguish between models, regardless of how much you pay </p>",
+                  "feedback_tracking_data": {},
+                  "id": 3540088,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-17T02:39:17.827Z",
+                  "raw_markdown": "Well my point is, when you predicted the family if it’s Qwen or Kimi you automatically know the model. When it’s ChatGPT you’re making blind 20% guess.\nEven worse if we had 5 Qwen models we could at least collect our own training data by running those models locally.\nProprietary closed models used via proprietary APIs silently substitute responses from larger models with responses from smaller models and you are not told when that happens. You basically can not collect reliable data to distinguish between models, regardless of how much you pay ",
+                  "replies": [
+                    {
+                      "author": {
+                        "display_name": "Amzker",
+                        "id": 8240459,
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8240459-gr.jpg",
+                        "tier": "CONTRIBUTOR",
+                        "url": "/amzker"
+                      },
+                      "author_type": "COMMENT",
+                      "competition_ranking": 2246,
+                      "content": "<p>yeah  , also i feel like separating within family on short tasks is really hard like those differences can emerge on long horizon tasks, having single generation per prompt is also not the proper differentiator either  </p>",
+                      "feedback_tracking_data": {},
+                      "id": 3540368,
+                      "is_thank_you": false,
+                      "kernel_version": 0,
+                      "parent": {},
+                      "post_date": "2026-10-17T18:37:49.970Z",
+                      "raw_markdown": "yeah  , also i feel like separating within family on short tasks is really hard like those differences can emerge on long horizon tasks, having single generation per prompt is also not the proper differentiator either  ",
+                      "team_up_info": {
+                        "intro": "",
+                        "team_leader": {
+                          "display_name": "Amzker",
+                          "id": 8240459,
+                          "performance_tier": "CONTRIBUTOR",
+                          "profile_url": "/amzker",
+                          "progression_opt_out": false,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8240459-gr.jpg",
+                          "tier": "CONTRIBUTOR",
+                          "url": "/amzker",
+                          "user_id": 8240459,
+                          "user_name": "amzker"
+                        }
+                      },
+                      "votes": {
+                        "can_upvote": true
+                      }
+                    }
+                  ],
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Serhii Hrynko",
+                      "id": 2586962,
+                      "performance_tier": "EXPERT",
+                      "profile_url": "/elvenmonk",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2586962-kg.jpg",
+                      "tier": "EXPERT",
+                      "url": "/elvenmonk",
+                      "user_id": 2586962,
+                      "user_name": "elvenmonk"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Preet Patel",
+                  "id": 16278395,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/patelpb",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16278395-gr.jpg",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/patelpb",
+                  "user_id": 16278395,
+                  "user_name": "patelpb"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "Even if they're the same family, aren't they actually different models? I.e. Sol vs Terra, Opus vs Sonnet. For that reason alone I imagine that the competition isn't seeing as much value in determining family, since even simple feature construction reveals several strata between families by itself. ",
+            "replies": [
+              {
+                "author": {
+                  "displayName": "Serhii Hrynko",
+                  "tier": "EXPERT",
+                  "url": "/elvenmonk"
+                },
+                "content": "<p>Well my point is, when you predicted the family if it’s Qwen or Kimi you automatically know the model. When it’s ChatGPT you’re making blind 20% guess.\nEven worse if we had 5 Qwen models we could at least collect our own training data by running those models locally.\nProprietary closed models used via proprietary APIs silently substitute responses from larger models with responses from smaller models and you are not told when that happens. You basically can not collect reliable data to distinguish between models, regardless of how much you pay </p>",
+                "id": 3540088,
+                "isThankYou": false,
+                "postDate": "2026-10-17T02:39:17.827Z",
+                "raw": {
+                  "author": {
+                    "display_name": "Serhii Hrynko",
+                    "id": 2586962,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2586962-kg.jpg",
+                    "tier": "EXPERT",
+                    "url": "/elvenmonk"
+                  },
+                  "author_type": "TOPIC",
+                  "content": "<p>Well my point is, when you predicted the family if it’s Qwen or Kimi you automatically know the model. When it’s ChatGPT you’re making blind 20% guess.\nEven worse if we had 5 Qwen models we could at least collect our own training data by running those models locally.\nProprietary closed models used via proprietary APIs silently substitute responses from larger models with responses from smaller models and you are not told when that happens. You basically can not collect reliable data to distinguish between models, regardless of how much you pay </p>",
+                  "feedback_tracking_data": {},
+                  "id": 3540088,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-17T02:39:17.827Z",
+                  "raw_markdown": "Well my point is, when you predicted the family if it’s Qwen or Kimi you automatically know the model. When it’s ChatGPT you’re making blind 20% guess.\nEven worse if we had 5 Qwen models we could at least collect our own training data by running those models locally.\nProprietary closed models used via proprietary APIs silently substitute responses from larger models with responses from smaller models and you are not told when that happens. You basically can not collect reliable data to distinguish between models, regardless of how much you pay ",
+                  "replies": [
+                    {
+                      "author": {
+                        "display_name": "Amzker",
+                        "id": 8240459,
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8240459-gr.jpg",
+                        "tier": "CONTRIBUTOR",
+                        "url": "/amzker"
+                      },
+                      "author_type": "COMMENT",
+                      "competition_ranking": 2246,
+                      "content": "<p>yeah  , also i feel like separating within family on short tasks is really hard like those differences can emerge on long horizon tasks, having single generation per prompt is also not the proper differentiator either  </p>",
+                      "feedback_tracking_data": {},
+                      "id": 3540368,
+                      "is_thank_you": false,
+                      "kernel_version": 0,
+                      "parent": {},
+                      "post_date": "2026-10-17T18:37:49.970Z",
+                      "raw_markdown": "yeah  , also i feel like separating within family on short tasks is really hard like those differences can emerge on long horizon tasks, having single generation per prompt is also not the proper differentiator either  ",
+                      "team_up_info": {
+                        "intro": "",
+                        "team_leader": {
+                          "display_name": "Amzker",
+                          "id": 8240459,
+                          "performance_tier": "CONTRIBUTOR",
+                          "profile_url": "/amzker",
+                          "progression_opt_out": false,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8240459-gr.jpg",
+                          "tier": "CONTRIBUTOR",
+                          "url": "/amzker",
+                          "user_id": 8240459,
+                          "user_name": "amzker"
+                        }
+                      },
+                      "votes": {
+                        "can_upvote": true
+                      }
+                    }
+                  ],
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Serhii Hrynko",
+                      "id": 2586962,
+                      "performance_tier": "EXPERT",
+                      "profile_url": "/elvenmonk",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2586962-kg.jpg",
+                      "tier": "EXPERT",
+                      "url": "/elvenmonk",
+                      "user_id": 2586962,
+                      "user_name": "elvenmonk"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                },
+                "rawMarkdown": "Well my point is, when you predicted the family if it’s Qwen or Kimi you automatically know the model. When it’s ChatGPT you’re making blind 20% guess.\nEven worse if we had 5 Qwen models we could at least collect our own training data by running those models locally.\nProprietary closed models used via proprietary APIs silently substitute responses from larger models with responses from smaller models and you are not told when that happens. You basically can not collect reliable data to distinguish between models, regardless of how much you pay ",
+                "replies": [
+                  {
+                    "author": {
+                      "displayName": "Amzker",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/amzker"
+                    },
+                    "content": "<p>yeah  , also i feel like separating within family on short tasks is really hard like those differences can emerge on long horizon tasks, having single generation per prompt is also not the proper differentiator either  </p>",
+                    "id": 3540368,
+                    "isThankYou": false,
+                    "postDate": "2026-10-17T18:37:49.970Z",
+                    "raw": {
+                      "author": {
+                        "display_name": "Amzker",
+                        "id": 8240459,
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8240459-gr.jpg",
+                        "tier": "CONTRIBUTOR",
+                        "url": "/amzker"
+                      },
+                      "author_type": "COMMENT",
+                      "competition_ranking": 2246,
+                      "content": "<p>yeah  , also i feel like separating within family on short tasks is really hard like those differences can emerge on long horizon tasks, having single generation per prompt is also not the proper differentiator either  </p>",
+                      "feedback_tracking_data": {},
+                      "id": 3540368,
+                      "is_thank_you": false,
+                      "kernel_version": 0,
+                      "parent": {},
+                      "post_date": "2026-10-17T18:37:49.970Z",
+                      "raw_markdown": "yeah  , also i feel like separating within family on short tasks is really hard like those differences can emerge on long horizon tasks, having single generation per prompt is also not the proper differentiator either  ",
+                      "team_up_info": {
+                        "intro": "",
+                        "team_leader": {
+                          "display_name": "Amzker",
+                          "id": 8240459,
+                          "performance_tier": "CONTRIBUTOR",
+                          "profile_url": "/amzker",
+                          "progression_opt_out": false,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8240459-gr.jpg",
+                          "tier": "CONTRIBUTOR",
+                          "url": "/amzker",
+                          "user_id": 8240459,
+                          "user_name": "amzker"
+                        }
+                      },
+                      "votes": {
+                        "can_upvote": true
+                      }
+                    },
+                    "rawMarkdown": "yeah  , also i feel like separating within family on short tasks is really hard like those differences can emerge on long horizon tasks, having single generation per prompt is also not the proper differentiator either  ",
+                    "replies": [],
+                    "votes": {
+                      "totalVotes": 0
+                    }
+                  }
+                ],
+                "votes": {
+                  "totalVotes": 0
+                }
+              }
+            ],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "expectedCommentCount": 4,
+        "firstMessage": {
+          "author": {
+            "displayName": "Serhii Hrynko",
+            "tier": "EXPERT",
+            "url": "/elvenmonk"
+          },
+          "content": "<p>Telling Claude vs Chat GPT is obvious, telling Sol vs Terra can be a pain. Yet, solution that get's model's family correctly every time can score 0 if it's not able to reliably tell particular model. This might be a little bit frustrating and may give impression when looking only at leaderboard scores, that telling what family wrote the response is harder that it actually is. Also current metric may skew public solutions towards giveing better scores for model families that don't have a lot of participating models (Qwen, GLM, Kimi), and worse scores for families with a lot of models (GPT, Claude, Gemini), which can create another false impression that texts generated by Open AI, Gemini or Claude models are harder to detect.</p>\n<p>Having something in the metric that rewards correct model's family prediction can be beneficial.</p>",
+          "id": 3539959,
+          "isThankYou": false,
+          "postDate": "2026-10-16T20:29:24.483Z",
+          "raw": {
+            "author": {
+              "display_name": "Serhii Hrynko",
+              "id": 2586962,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2586962-kg.jpg",
+              "tier": "EXPERT",
+              "url": "/elvenmonk"
+            },
+            "author_type": "TOPIC",
+            "content": "<p>Telling Claude vs Chat GPT is obvious, telling Sol vs Terra can be a pain. Yet, solution that get's model's family correctly every time can score 0 if it's not able to reliably tell particular model. This might be a little bit frustrating and may give impression when looking only at leaderboard scores, that telling what family wrote the response is harder that it actually is. Also current metric may skew public solutions towards giveing better scores for model families that don't have a lot of participating models (Qwen, GLM, Kimi), and worse scores for families with a lot of models (GPT, Claude, Gemini), which can create another false impression that texts generated by Open AI, Gemini or Claude models are harder to detect.</p>\n<p>Having something in the metric that rewards correct model's family prediction can be beneficial.</p>",
+            "feedback_tracking_data": {},
+            "id": 3539959,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-10-16T20:29:24.483Z",
+            "raw_markdown": "Telling Claude vs Chat GPT is obvious, telling Sol vs Terra can be a pain. Yet, solution that get's model's family correctly every time can score 0 if it's not able to reliably tell particular model. This might be a little bit frustrating and may give impression when looking only at leaderboard scores, that telling what family wrote the response is harder that it actually is. Also current metric may skew public solutions towards giveing better scores for model families that don't have a lot of participating models (Qwen, GLM, Kimi), and worse scores for families with a lot of models (GPT, Claude, Gemini), which can create another false impression that texts generated by Open AI, Gemini or Claude models are harder to detect.\n\n\nHaving something in the metric that rewards correct model's family prediction can be beneficial.",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "Serhii Hrynko",
+                "id": 2586962,
+                "performance_tier": "EXPERT",
+                "profile_url": "/elvenmonk",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2586962-kg.jpg",
+                "tier": "EXPERT",
+                "url": "/elvenmonk",
+                "user_id": 2586962,
+                "user_name": "elvenmonk"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 4,
+              "total_votes": 1
+            }
+          },
+          "rawMarkdown": "Telling Claude vs Chat GPT is obvious, telling Sol vs Terra can be a pain. Yet, solution that get's model's family correctly every time can score 0 if it's not able to reliably tell particular model. This might be a little bit frustrating and may give impression when looking only at leaderboard scores, that telling what family wrote the response is harder that it actually is. Also current metric may skew public solutions towards giveing better scores for model families that don't have a lot of participating models (Qwen, GLM, Kimi), and worse scores for families with a lot of models (GPT, Claude, Gemini), which can create another false impression that texts generated by Open AI, Gemini or Claude models are harder to detect.\n\n\nHaving something in the metric that rewards correct model's family prediction can be beneficial.",
+          "replies": [],
+          "votes": {
+            "totalVotes": 1
+          }
+        },
+        "firstMessageId": 3539959,
+        "id": 750065,
+        "name": "Can we please get non-zero score for guessing correct family?",
+        "postDate": "2026-10-16T20:29:24.483051200Z",
+        "url": "/competitions/name-that-llm/discussion/750065"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>Telling Claude vs Chat GPT is obvious, telling Sol vs Terra can be a pain. Yet, solution that get's model's family correctly every time can score 0 if it's not able to reliably tell particular model. This might be a little bit frustrating and may give impression when looking only at leaderboard scores, that telling what family wrote the response is harder that it actually is. Also current metric may skew public solutions towards giveing better scores for model families that don't have a lot of participating models (Qwen, GLM, Kimi), and worse scores for families with a lot of models (GPT, Claude, Gemini), which can create another false impression that texts generated by Open AI, Gemini or Claude models are harder to detect.</p>\n<p>Having something in the metric that rewards correct model's family prediction can be beneficial.</p>",
+              "id": 3539959,
+              "post_date": "2026-10-16T20:29:24.483Z",
+              "raw_markdown": "Telling Claude vs Chat GPT is obvious, telling Sol vs Terra can be a pain. Yet, solution that get's model's family correctly every time can score 0 if it's not able to reliably tell particular model. This might be a little bit frustrating and may give impression when looking only at leaderboard scores, that telling what family wrote the response is harder that it actually is. Also current metric may skew public solutions towards giveing better scores for model families that don't have a lot of participating models (Qwen, GLM, Kimi), and worse scores for families with a lot of models (GPT, Claude, Gemini), which can create another false impression that texts generated by Open AI, Gemini or Claude models are harder to detect.\n\n\nHaving something in the metric that rewards correct model's family prediction can be beneficial.",
+              "votes": 1
+            },
+            {
+              "content": "<p>Even if they're the same family, aren't they actually different models? I.e. Sol vs Terra, Opus vs Sonnet. For that reason alone I imagine that the competition isn't seeing as much value in determining family, since even simple feature construction reveals several strata between families by itself. </p>",
+              "id": 3540052,
+              "post_date": "2026-10-17T00:47:30.850Z",
+              "raw_markdown": "Even if they're the same family, aren't they actually different models? I.e. Sol vs Terra, Opus vs Sonnet. For that reason alone I imagine that the competition isn't seeing as much value in determining family, since even simple feature construction reveals several strata between families by itself. ",
+              "replies": [
+                {
+                  "content": "<p>Well my point is, when you predicted the family if it’s Qwen or Kimi you automatically know the model. When it’s ChatGPT you’re making blind 20% guess.\nEven worse if we had 5 Qwen models we could at least collect our own training data by running those models locally.\nProprietary closed models used via proprietary APIs silently substitute responses from larger models with responses from smaller models and you are not told when that happens. You basically can not collect reliable data to distinguish between models, regardless of how much you pay </p>",
+                  "id": 3540088,
+                  "post_date": "2026-10-17T02:39:17.827Z",
+                  "raw_markdown": "Well my point is, when you predicted the family if it’s Qwen or Kimi you automatically know the model. When it’s ChatGPT you’re making blind 20% guess.\nEven worse if we had 5 Qwen models we could at least collect our own training data by running those models locally.\nProprietary closed models used via proprietary APIs silently substitute responses from larger models with responses from smaller models and you are not told when that happens. You basically can not collect reliable data to distinguish between models, regardless of how much you pay ",
+                  "replies": [
+                    {
+                      "content": "<p>yeah  , also i feel like separating within family on short tasks is really hard like those differences can emerge on long horizon tasks, having single generation per prompt is also not the proper differentiator either  </p>",
+                      "id": 3540368,
+                      "post_date": "2026-10-17T18:37:49.970Z",
+                      "raw_markdown": "yeah  , also i feel like separating within family on short tasks is really hard like those differences can emerge on long horizon tasks, having single generation per prompt is also not the proper differentiator either  "
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": "<p>In actual life, this might be needed, but this is a competition, if its given for model family, everyone's needle will move and people will game the system to get ahead on this aspect. \nSo from a competition perspective, I think it doesn't matter.</p>",
+              "id": 3540376,
+              "post_date": "2026-10-17T19:09:45.210Z",
+              "raw_markdown": "In actual life, this might be needed, but this is a competition, if its given for model family, everyone's needle will move and people will game the system to get ahead on this aspect. \nSo from a competition perspective, I think it doesn't matter.",
+              "votes": 1
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 2586962,
+            "author_performance_tier": "EXPERT",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "2586962-kg.jpg",
+            "author_user_display_name": "Serhii Hrynko",
+            "author_user_name": "elvenmonk",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "comments": [
+              {
+                "author": {
+                  "display_name": "Maniceet Sahay",
+                  "id": 700245,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/700245-kg.jpg",
+                  "tier": "EXPERT",
+                  "url": "/maniceet"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 43,
+                "content": "<p>In actual life, this might be needed, but this is a competition, if its given for model family, everyone's needle will move and people will game the system to get ahead on this aspect. \nSo from a competition perspective, I think it doesn't matter.</p>",
+                "feedback_tracking_data": {},
+                "id": 3540376,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-17T19:09:45.210Z",
+                "raw_markdown": "In actual life, this might be needed, but this is a competition, if its given for model family, everyone's needle will move and people will game the system to get ahead on this aspect. \nSo from a competition perspective, I think it doesn't matter.",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "Maniceet Sahay",
+                    "id": 700245,
+                    "performance_tier": "EXPERT",
+                    "profile_url": "/maniceet",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/700245-kg.jpg",
+                    "tier": "EXPERT",
+                    "url": "/maniceet",
+                    "user_id": 700245,
+                    "user_name": "maniceet"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true,
+                  "total_upvotes": 1,
+                  "total_votes": 1
+                }
+              },
+              {
+                "author": {
+                  "display_name": "Preet Patel",
+                  "id": 16278395,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16278395-gr.jpg",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/patelpb"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 5751,
+                "content": "<p>Even if they're the same family, aren't they actually different models? I.e. Sol vs Terra, Opus vs Sonnet. For that reason alone I imagine that the competition isn't seeing as much value in determining family, since even simple feature construction reveals several strata between families by itself. </p>",
+                "feedback_tracking_data": {},
+                "id": 3540052,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-17T00:47:30.850Z",
+                "raw_markdown": "Even if they're the same family, aren't they actually different models? I.e. Sol vs Terra, Opus vs Sonnet. For that reason alone I imagine that the competition isn't seeing as much value in determining family, since even simple feature construction reveals several strata between families by itself. ",
+                "replies": [
+                  {
+                    "author": {
+                      "display_name": "Serhii Hrynko",
+                      "id": 2586962,
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2586962-kg.jpg",
+                      "tier": "EXPERT",
+                      "url": "/elvenmonk"
+                    },
+                    "author_type": "TOPIC",
+                    "content": "<p>Well my point is, when you predicted the family if it’s Qwen or Kimi you automatically know the model. When it’s ChatGPT you’re making blind 20% guess.\nEven worse if we had 5 Qwen models we could at least collect our own training data by running those models locally.\nProprietary closed models used via proprietary APIs silently substitute responses from larger models with responses from smaller models and you are not told when that happens. You basically can not collect reliable data to distinguish between models, regardless of how much you pay </p>",
+                    "feedback_tracking_data": {},
+                    "id": 3540088,
+                    "is_thank_you": false,
+                    "kernel_version": 0,
+                    "parent": {},
+                    "post_date": "2026-10-17T02:39:17.827Z",
+                    "raw_markdown": "Well my point is, when you predicted the family if it’s Qwen or Kimi you automatically know the model. When it’s ChatGPT you’re making blind 20% guess.\nEven worse if we had 5 Qwen models we could at least collect our own training data by running those models locally.\nProprietary closed models used via proprietary APIs silently substitute responses from larger models with responses from smaller models and you are not told when that happens. You basically can not collect reliable data to distinguish between models, regardless of how much you pay ",
+                    "replies": [
+                      {
+                        "author": {
+                          "display_name": "Amzker",
+                          "id": 8240459,
+                          "progression_opt_out": false,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8240459-gr.jpg",
+                          "tier": "CONTRIBUTOR",
+                          "url": "/amzker"
+                        },
+                        "author_type": "COMMENT",
+                        "competition_ranking": 2246,
+                        "content": "<p>yeah  , also i feel like separating within family on short tasks is really hard like those differences can emerge on long horizon tasks, having single generation per prompt is also not the proper differentiator either  </p>",
+                        "feedback_tracking_data": {},
+                        "id": 3540368,
+                        "is_thank_you": false,
+                        "kernel_version": 0,
+                        "parent": {},
+                        "post_date": "2026-10-17T18:37:49.970Z",
+                        "raw_markdown": "yeah  , also i feel like separating within family on short tasks is really hard like those differences can emerge on long horizon tasks, having single generation per prompt is also not the proper differentiator either  ",
+                        "team_up_info": {
+                          "intro": "",
+                          "team_leader": {
+                            "display_name": "Amzker",
+                            "id": 8240459,
+                            "performance_tier": "CONTRIBUTOR",
+                            "profile_url": "/amzker",
+                            "progression_opt_out": false,
+                            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8240459-gr.jpg",
+                            "tier": "CONTRIBUTOR",
+                            "url": "/amzker",
+                            "user_id": 8240459,
+                            "user_name": "amzker"
+                          }
+                        },
+                        "votes": {
+                          "can_upvote": true
+                        }
+                      }
+                    ],
+                    "team_up_info": {
+                      "intro": "",
+                      "team_leader": {
+                        "display_name": "Serhii Hrynko",
+                        "id": 2586962,
+                        "performance_tier": "EXPERT",
+                        "profile_url": "/elvenmonk",
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2586962-kg.jpg",
+                        "tier": "EXPERT",
+                        "url": "/elvenmonk",
+                        "user_id": 2586962,
+                        "user_name": "elvenmonk"
+                      }
+                    },
+                    "votes": {
+                      "can_upvote": true
+                    }
+                  }
+                ],
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "Preet Patel",
+                    "id": 16278395,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/patelpb",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16278395-gr.jpg",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/patelpb",
+                    "user_id": 16278395,
+                    "user_name": "patelpb"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              }
+            ],
+            "first_message": {
+              "author": {
+                "display_name": "Serhii Hrynko",
+                "id": 2586962,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2586962-kg.jpg",
+                "tier": "EXPERT",
+                "url": "/elvenmonk"
+              },
+              "author_type": "TOPIC",
+              "content": "<p>Telling Claude vs Chat GPT is obvious, telling Sol vs Terra can be a pain. Yet, solution that get's model's family correctly every time can score 0 if it's not able to reliably tell particular model. This might be a little bit frustrating and may give impression when looking only at leaderboard scores, that telling what family wrote the response is harder that it actually is. Also current metric may skew public solutions towards giveing better scores for model families that don't have a lot of participating models (Qwen, GLM, Kimi), and worse scores for families with a lot of models (GPT, Claude, Gemini), which can create another false impression that texts generated by Open AI, Gemini or Claude models are harder to detect.</p>\n<p>Having something in the metric that rewards correct model's family prediction can be beneficial.</p>",
+              "feedback_tracking_data": {},
+              "id": 3539959,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-16T20:29:24.483Z",
+              "raw_markdown": "Telling Claude vs Chat GPT is obvious, telling Sol vs Terra can be a pain. Yet, solution that get's model's family correctly every time can score 0 if it's not able to reliably tell particular model. This might be a little bit frustrating and may give impression when looking only at leaderboard scores, that telling what family wrote the response is harder that it actually is. Also current metric may skew public solutions towards giveing better scores for model families that don't have a lot of participating models (Qwen, GLM, Kimi), and worse scores for families with a lot of models (GPT, Claude, Gemini), which can create another false impression that texts generated by Open AI, Gemini or Claude models are harder to detect.\n\n\nHaving something in the metric that rewards correct model's family prediction can be beneficial.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Serhii Hrynko",
+                  "id": 2586962,
+                  "performance_tier": "EXPERT",
+                  "profile_url": "/elvenmonk",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2586962-kg.jpg",
+                  "tier": "EXPERT",
+                  "url": "/elvenmonk",
+                  "user_id": 2586962,
+                  "user_name": "elvenmonk"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 4,
+                "total_votes": 1
+              }
+            },
+            "first_message_id": 3539959,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 750065,
+            "name": "Can we please get non-zero score for guessing correct family?",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-10-16T20:29:24.483051200Z",
+            "total_messages": 4,
+            "total_votes": 1,
+            "url": "/competitions/name-that-llm/discussion/750065"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:36:18+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:36:18+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-10-17T19:09:45.210Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [
+    {
+      "slug": "name-that-llm",
+      "topic_id": 750065,
+      "message_id": 3540052,
+      "parent_message_id": null,
+      "author": "Preet Patel",
+      "author_url": "/patelpb",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-10-17T00:47:30.850Z",
+      "raw_markdown": "Even if they're the same family, aren't they actually different models? I.e. Sol vs Terra, Opus vs Sonnet. For that reason alone I imagine that the competition isn't seeing as much value in determining family, since even simple feature construction reveals several strata between families by itself. ",
+      "content_html": "<p>Even if they're the same family, aren't they actually different models? I.e. Sol vs Terra, Opus vs Sonnet. For that reason alone I imagine that the competition isn't seeing as much value in determining family, since even simple feature construction reveals several strata between families by itself. </p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:56:35+00:00",
+      "last_seen_at": "2026-11-16T16:36:18+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:36:18+00:00",
+      "remote_last_listed_at": "2026-11-16T16:36:18+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Preet Patel",
+          "tier": "CONTRIBUTOR",
+          "url": "/patelpb"
+        },
+        "content": "<p>Even if they're the same family, aren't they actually different models? I.e. Sol vs Terra, Opus vs Sonnet. For that reason alone I imagine that the competition isn't seeing as much value in determining family, since even simple feature construction reveals several strata between families by itself. </p>",
+        "id": 3540052,
+        "isThankYou": false,
+        "postDate": "2026-10-17T00:47:30.850Z",
+        "raw": {
+          "author": {
+            "display_name": "Preet Patel",
+            "id": 16278395,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16278395-gr.jpg",
+            "tier": "CONTRIBUTOR",
+            "url": "/patelpb"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 5751,
+          "content": "<p>Even if they're the same family, aren't they actually different models? I.e. Sol vs Terra, Opus vs Sonnet. For that reason alone I imagine that the competition isn't seeing as much value in determining family, since even simple feature construction reveals several strata between families by itself. </p>",
+          "feedback_tracking_data": {},
+          "id": 3540052,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-17T00:47:30.850Z",
+          "raw_markdown": "Even if they're the same family, aren't they actually different models? I.e. Sol vs Terra, Opus vs Sonnet. For that reason alone I imagine that the competition isn't seeing as much value in determining family, since even simple feature construction reveals several strata between families by itself. ",
+          "replies": [
+            {
+              "author": {
+                "display_name": "Serhii Hrynko",
+                "id": 2586962,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2586962-kg.jpg",
+                "tier": "EXPERT",
+                "url": "/elvenmonk"
+              },
+              "author_type": "TOPIC",
+              "content": "<p>Well my point is, when you predicted the family if it’s Qwen or Kimi you automatically know the model. When it’s ChatGPT you’re making blind 20% guess.\nEven worse if we had 5 Qwen models we could at least collect our own training data by running those models locally.\nProprietary closed models used via proprietary APIs silently substitute responses from larger models with responses from smaller models and you are not told when that happens. You basically can not collect reliable data to distinguish between models, regardless of how much you pay </p>",
+              "feedback_tracking_data": {},
+              "id": 3540088,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-17T02:39:17.827Z",
+              "raw_markdown": "Well my point is, when you predicted the family if it’s Qwen or Kimi you automatically know the model. When it’s ChatGPT you’re making blind 20% guess.\nEven worse if we had 5 Qwen models we could at least collect our own training data by running those models locally.\nProprietary closed models used via proprietary APIs silently substitute responses from larger models with responses from smaller models and you are not told when that happens. You basically can not collect reliable data to distinguish between models, regardless of how much you pay ",
+              "replies": [
+                {
+                  "author": {
+                    "display_name": "Amzker",
+                    "id": 8240459,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8240459-gr.jpg",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/amzker"
+                  },
+                  "author_type": "COMMENT",
+                  "competition_ranking": 2246,
+                  "content": "<p>yeah  , also i feel like separating within family on short tasks is really hard like those differences can emerge on long horizon tasks, having single generation per prompt is also not the proper differentiator either  </p>",
+                  "feedback_tracking_data": {},
+                  "id": 3540368,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-17T18:37:49.970Z",
+                  "raw_markdown": "yeah  , also i feel like separating within family on short tasks is really hard like those differences can emerge on long horizon tasks, having single generation per prompt is also not the proper differentiator either  ",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Amzker",
+                      "id": 8240459,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/amzker",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8240459-gr.jpg",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/amzker",
+                      "user_id": 8240459,
+                      "user_name": "amzker"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Serhii Hrynko",
+                  "id": 2586962,
+                  "performance_tier": "EXPERT",
+                  "profile_url": "/elvenmonk",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2586962-kg.jpg",
+                  "tier": "EXPERT",
+                  "url": "/elvenmonk",
+                  "user_id": 2586962,
+                  "user_name": "elvenmonk"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            }
+          ],
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Preet Patel",
+              "id": 16278395,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/patelpb",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16278395-gr.jpg",
+              "tier": "CONTRIBUTOR",
+              "url": "/patelpb",
+              "user_id": 16278395,
+              "user_name": "patelpb"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "Even if they're the same family, aren't they actually different models? I.e. Sol vs Terra, Opus vs Sonnet. For that reason alone I imagine that the competition isn't seeing as much value in determining family, since even simple feature construction reveals several strata between families by itself. ",
+        "replies": [
+          {
+            "author": {
+              "displayName": "Serhii Hrynko",
+              "tier": "EXPERT",
+              "url": "/elvenmonk"
+            },
+            "content": "<p>Well my point is, when you predicted the family if it’s Qwen or Kimi you automatically know the model. When it’s ChatGPT you’re making blind 20% guess.\nEven worse if we had 5 Qwen models we could at least collect our own training data by running those models locally.\nProprietary closed models used via proprietary APIs silently substitute responses from larger models with responses from smaller models and you are not told when that happens. You basically can not collect reliable data to distinguish between models, regardless of how much you pay </p>",
+            "id": 3540088,
+            "isThankYou": false,
+            "postDate": "2026-10-17T02:39:17.827Z",
+            "raw": {
+              "author": {
+                "display_name": "Serhii Hrynko",
+                "id": 2586962,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2586962-kg.jpg",
+                "tier": "EXPERT",
+                "url": "/elvenmonk"
+              },
+              "author_type": "TOPIC",
+              "content": "<p>Well my point is, when you predicted the family if it’s Qwen or Kimi you automatically know the model. When it’s ChatGPT you’re making blind 20% guess.\nEven worse if we had 5 Qwen models we could at least collect our own training data by running those models locally.\nProprietary closed models used via proprietary APIs silently substitute responses from larger models with responses from smaller models and you are not told when that happens. You basically can not collect reliable data to distinguish between models, regardless of how much you pay </p>",
+              "feedback_tracking_data": {},
+              "id": 3540088,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-17T02:39:17.827Z",
+              "raw_markdown": "Well my point is, when you predicted the family if it’s Qwen or Kimi you automatically know the model. When it’s ChatGPT you’re making blind 20% guess.\nEven worse if we had 5 Qwen models we could at least collect our own training data by running those models locally.\nProprietary closed models used via proprietary APIs silently substitute responses from larger models with responses from smaller models and you are not told when that happens. You basically can not collect reliable data to distinguish between models, regardless of how much you pay ",
+              "replies": [
+                {
+                  "author": {
+                    "display_name": "Amzker",
+                    "id": 8240459,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8240459-gr.jpg",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/amzker"
+                  },
+                  "author_type": "COMMENT",
+                  "competition_ranking": 2246,
+                  "content": "<p>yeah  , also i feel like separating within family on short tasks is really hard like those differences can emerge on long horizon tasks, having single generation per prompt is also not the proper differentiator either  </p>",
+                  "feedback_tracking_data": {},
+                  "id": 3540368,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-17T18:37:49.970Z",
+                  "raw_markdown": "yeah  , also i feel like separating within family on short tasks is really hard like those differences can emerge on long horizon tasks, having single generation per prompt is also not the proper differentiator either  ",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Amzker",
+                      "id": 8240459,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/amzker",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8240459-gr.jpg",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/amzker",
+                      "user_id": 8240459,
+                      "user_name": "amzker"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Serhii Hrynko",
+                  "id": 2586962,
+                  "performance_tier": "EXPERT",
+                  "profile_url": "/elvenmonk",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2586962-kg.jpg",
+                  "tier": "EXPERT",
+                  "url": "/elvenmonk",
+                  "user_id": 2586962,
+                  "user_name": "elvenmonk"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "Well my point is, when you predicted the family if it’s Qwen or Kimi you automatically know the model. When it’s ChatGPT you’re making blind 20% guess.\nEven worse if we had 5 Qwen models we could at least collect our own training data by running those models locally.\nProprietary closed models used via proprietary APIs silently substitute responses from larger models with responses from smaller models and you are not told when that happens. You basically can not collect reliable data to distinguish between models, regardless of how much you pay ",
+            "replies": [
+              {
+                "author": {
+                  "displayName": "Amzker",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/amzker"
+                },
+                "content": "<p>yeah  , also i feel like separating within family on short tasks is really hard like those differences can emerge on long horizon tasks, having single generation per prompt is also not the proper differentiator either  </p>",
+                "id": 3540368,
+                "isThankYou": false,
+                "postDate": "2026-10-17T18:37:49.970Z",
+                "raw": {
+                  "author": {
+                    "display_name": "Amzker",
+                    "id": 8240459,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8240459-gr.jpg",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/amzker"
+                  },
+                  "author_type": "COMMENT",
+                  "competition_ranking": 2246,
+                  "content": "<p>yeah  , also i feel like separating within family on short tasks is really hard like those differences can emerge on long horizon tasks, having single generation per prompt is also not the proper differentiator either  </p>",
+                  "feedback_tracking_data": {},
+                  "id": 3540368,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-17T18:37:49.970Z",
+                  "raw_markdown": "yeah  , also i feel like separating within family on short tasks is really hard like those differences can emerge on long horizon tasks, having single generation per prompt is also not the proper differentiator either  ",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Amzker",
+                      "id": 8240459,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/amzker",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8240459-gr.jpg",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/amzker",
+                      "user_id": 8240459,
+                      "user_name": "amzker"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                },
+                "rawMarkdown": "yeah  , also i feel like separating within family on short tasks is really hard like those differences can emerge on long horizon tasks, having single generation per prompt is also not the proper differentiator either  ",
+                "replies": [],
+                "votes": {
+                  "totalVotes": 0
+                }
+              }
+            ],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 750065,
+      "message_id": 3540088,
+      "parent_message_id": 3540052,
+      "author": "Serhii Hrynko",
+      "author_url": "/elvenmonk",
+      "author_tier": "EXPERT",
+      "post_date": "2026-10-17T02:39:17.827Z",
+      "raw_markdown": "Well my point is, when you predicted the family if it’s Qwen or Kimi you automatically know the model. When it’s ChatGPT you’re making blind 20% guess.\nEven worse if we had 5 Qwen models we could at least collect our own training data by running those models locally.\nProprietary closed models used via proprietary APIs silently substitute responses from larger models with responses from smaller models and you are not told when that happens. You basically can not collect reliable data to distinguish between models, regardless of how much you pay ",
+      "content_html": "<p>Well my point is, when you predicted the family if it’s Qwen or Kimi you automatically know the model. When it’s ChatGPT you’re making blind 20% guess.\nEven worse if we had 5 Qwen models we could at least collect our own training data by running those models locally.\nProprietary closed models used via proprietary APIs silently substitute responses from larger models with responses from smaller models and you are not told when that happens. You basically can not collect reliable data to distinguish between models, regardless of how much you pay </p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 1,
+      "first_seen_at": "2026-11-04T06:56:35+00:00",
+      "last_seen_at": "2026-11-16T16:36:18+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:36:18+00:00",
+      "remote_last_listed_at": "2026-11-16T16:36:18+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Serhii Hrynko",
+          "tier": "EXPERT",
+          "url": "/elvenmonk"
+        },
+        "content": "<p>Well my point is, when you predicted the family if it’s Qwen or Kimi you automatically know the model. When it’s ChatGPT you’re making blind 20% guess.\nEven worse if we had 5 Qwen models we could at least collect our own training data by running those models locally.\nProprietary closed models used via proprietary APIs silently substitute responses from larger models with responses from smaller models and you are not told when that happens. You basically can not collect reliable data to distinguish between models, regardless of how much you pay </p>",
+        "id": 3540088,
+        "isThankYou": false,
+        "postDate": "2026-10-17T02:39:17.827Z",
+        "raw": {
+          "author": {
+            "display_name": "Serhii Hrynko",
+            "id": 2586962,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2586962-kg.jpg",
+            "tier": "EXPERT",
+            "url": "/elvenmonk"
+          },
+          "author_type": "TOPIC",
+          "content": "<p>Well my point is, when you predicted the family if it’s Qwen or Kimi you automatically know the model. When it’s ChatGPT you’re making blind 20% guess.\nEven worse if we had 5 Qwen models we could at least collect our own training data by running those models locally.\nProprietary closed models used via proprietary APIs silently substitute responses from larger models with responses from smaller models and you are not told when that happens. You basically can not collect reliable data to distinguish between models, regardless of how much you pay </p>",
+          "feedback_tracking_data": {},
+          "id": 3540088,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-17T02:39:17.827Z",
+          "raw_markdown": "Well my point is, when you predicted the family if it’s Qwen or Kimi you automatically know the model. When it’s ChatGPT you’re making blind 20% guess.\nEven worse if we had 5 Qwen models we could at least collect our own training data by running those models locally.\nProprietary closed models used via proprietary APIs silently substitute responses from larger models with responses from smaller models and you are not told when that happens. You basically can not collect reliable data to distinguish between models, regardless of how much you pay ",
+          "replies": [
+            {
+              "author": {
+                "display_name": "Amzker",
+                "id": 8240459,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8240459-gr.jpg",
+                "tier": "CONTRIBUTOR",
+                "url": "/amzker"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 2246,
+              "content": "<p>yeah  , also i feel like separating within family on short tasks is really hard like those differences can emerge on long horizon tasks, having single generation per prompt is also not the proper differentiator either  </p>",
+              "feedback_tracking_data": {},
+              "id": 3540368,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-17T18:37:49.970Z",
+              "raw_markdown": "yeah  , also i feel like separating within family on short tasks is really hard like those differences can emerge on long horizon tasks, having single generation per prompt is also not the proper differentiator either  ",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Amzker",
+                  "id": 8240459,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/amzker",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8240459-gr.jpg",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/amzker",
+                  "user_id": 8240459,
+                  "user_name": "amzker"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            }
+          ],
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Serhii Hrynko",
+              "id": 2586962,
+              "performance_tier": "EXPERT",
+              "profile_url": "/elvenmonk",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2586962-kg.jpg",
+              "tier": "EXPERT",
+              "url": "/elvenmonk",
+              "user_id": 2586962,
+              "user_name": "elvenmonk"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "Well my point is, when you predicted the family if it’s Qwen or Kimi you automatically know the model. When it’s ChatGPT you’re making blind 20% guess.\nEven worse if we had 5 Qwen models we could at least collect our own training data by running those models locally.\nProprietary closed models used via proprietary APIs silently substitute responses from larger models with responses from smaller models and you are not told when that happens. You basically can not collect reliable data to distinguish between models, regardless of how much you pay ",
+        "replies": [
+          {
+            "author": {
+              "displayName": "Amzker",
+              "tier": "CONTRIBUTOR",
+              "url": "/amzker"
+            },
+            "content": "<p>yeah  , also i feel like separating within family on short tasks is really hard like those differences can emerge on long horizon tasks, having single generation per prompt is also not the proper differentiator either  </p>",
+            "id": 3540368,
+            "isThankYou": false,
+            "postDate": "2026-10-17T18:37:49.970Z",
+            "raw": {
+              "author": {
+                "display_name": "Amzker",
+                "id": 8240459,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8240459-gr.jpg",
+                "tier": "CONTRIBUTOR",
+                "url": "/amzker"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 2246,
+              "content": "<p>yeah  , also i feel like separating within family on short tasks is really hard like those differences can emerge on long horizon tasks, having single generation per prompt is also not the proper differentiator either  </p>",
+              "feedback_tracking_data": {},
+              "id": 3540368,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-17T18:37:49.970Z",
+              "raw_markdown": "yeah  , also i feel like separating within family on short tasks is really hard like those differences can emerge on long horizon tasks, having single generation per prompt is also not the proper differentiator either  ",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Amzker",
+                  "id": 8240459,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/amzker",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8240459-gr.jpg",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/amzker",
+                  "user_id": 8240459,
+                  "user_name": "amzker"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "yeah  , also i feel like separating within family on short tasks is really hard like those differences can emerge on long horizon tasks, having single generation per prompt is also not the proper differentiator either  ",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 750065,
+      "message_id": 3540368,
+      "parent_message_id": 3540088,
+      "author": "Amzker",
+      "author_url": "/amzker",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-10-17T18:37:49.970Z",
+      "raw_markdown": "yeah  , also i feel like separating within family on short tasks is really hard like those differences can emerge on long horizon tasks, having single generation per prompt is also not the proper differentiator either  ",
+      "content_html": "<p>yeah  , also i feel like separating within family on short tasks is really hard like those differences can emerge on long horizon tasks, having single generation per prompt is also not the proper differentiator either  </p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 2,
+      "first_seen_at": "2026-11-04T06:56:35+00:00",
+      "last_seen_at": "2026-11-16T16:36:18+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:36:18+00:00",
+      "remote_last_listed_at": "2026-11-16T16:36:18+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Amzker",
+          "tier": "CONTRIBUTOR",
+          "url": "/amzker"
+        },
+        "content": "<p>yeah  , also i feel like separating within family on short tasks is really hard like those differences can emerge on long horizon tasks, having single generation per prompt is also not the proper differentiator either  </p>",
+        "id": 3540368,
+        "isThankYou": false,
+        "postDate": "2026-10-17T18:37:49.970Z",
+        "raw": {
+          "author": {
+            "display_name": "Amzker",
+            "id": 8240459,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8240459-gr.jpg",
+            "tier": "CONTRIBUTOR",
+            "url": "/amzker"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 2246,
+          "content": "<p>yeah  , also i feel like separating within family on short tasks is really hard like those differences can emerge on long horizon tasks, having single generation per prompt is also not the proper differentiator either  </p>",
+          "feedback_tracking_data": {},
+          "id": 3540368,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-17T18:37:49.970Z",
+          "raw_markdown": "yeah  , also i feel like separating within family on short tasks is really hard like those differences can emerge on long horizon tasks, having single generation per prompt is also not the proper differentiator either  ",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Amzker",
+              "id": 8240459,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/amzker",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8240459-gr.jpg",
+              "tier": "CONTRIBUTOR",
+              "url": "/amzker",
+              "user_id": 8240459,
+              "user_name": "amzker"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "yeah  , also i feel like separating within family on short tasks is really hard like those differences can emerge on long horizon tasks, having single generation per prompt is also not the proper differentiator either  ",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 750065,
+      "message_id": 3540376,
+      "parent_message_id": null,
+      "author": "Maniceet Sahay",
+      "author_url": "/maniceet",
+      "author_tier": "EXPERT",
+      "post_date": "2026-10-17T19:09:45.210Z",
+      "raw_markdown": "In actual life, this might be needed, but this is a competition, if its given for model family, everyone's needle will move and people will game the system to get ahead on this aspect. \nSo from a competition perspective, I think it doesn't matter.",
+      "content_html": "<p>In actual life, this might be needed, but this is a competition, if its given for model family, everyone's needle will move and people will game the system to get ahead on this aspect. \nSo from a competition perspective, I think it doesn't matter.</p>",
+      "votes": 1,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:56:35+00:00",
+      "last_seen_at": "2026-11-16T16:36:18+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:36:18+00:00",
+      "remote_last_listed_at": "2026-11-16T16:36:18+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Maniceet Sahay",
+          "tier": "EXPERT",
+          "url": "/maniceet"
+        },
+        "content": "<p>In actual life, this might be needed, but this is a competition, if its given for model family, everyone's needle will move and people will game the system to get ahead on this aspect. \nSo from a competition perspective, I think it doesn't matter.</p>",
+        "id": 3540376,
+        "isThankYou": false,
+        "postDate": "2026-10-17T19:09:45.210Z",
+        "raw": {
+          "author": {
+            "display_name": "Maniceet Sahay",
+            "id": 700245,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/700245-kg.jpg",
+            "tier": "EXPERT",
+            "url": "/maniceet"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 43,
+          "content": "<p>In actual life, this might be needed, but this is a competition, if its given for model family, everyone's needle will move and people will game the system to get ahead on this aspect. \nSo from a competition perspective, I think it doesn't matter.</p>",
+          "feedback_tracking_data": {},
+          "id": 3540376,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-17T19:09:45.210Z",
+          "raw_markdown": "In actual life, this might be needed, but this is a competition, if its given for model family, everyone's needle will move and people will game the system to get ahead on this aspect. \nSo from a competition perspective, I think it doesn't matter.",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Maniceet Sahay",
+              "id": 700245,
+              "performance_tier": "EXPERT",
+              "profile_url": "/maniceet",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/700245-kg.jpg",
+              "tier": "EXPERT",
+              "url": "/maniceet",
+              "user_id": 700245,
+              "user_name": "maniceet"
+            }
+          },
+          "votes": {
+            "can_upvote": true,
+            "total_upvotes": 1,
+            "total_votes": 1
+          }
+        },
+        "rawMarkdown": "In actual life, this might be needed, but this is a competition, if its given for model family, everyone's needle will move and people will game the system to get ahead on this aspect. \nSo from a competition perspective, I think it doesn't matter.",
+        "replies": [],
+        "votes": {
+          "totalVotes": 1
+        }
+      }
+    }
+  ],
+  "writeup": null
+}

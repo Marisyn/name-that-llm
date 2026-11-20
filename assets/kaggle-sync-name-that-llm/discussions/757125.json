@@ -1,0 +1,211 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 757125,
+    "title": "Model Parameterizations",
+    "author": "James Bedichek",
+    "author_url": "/jamesbedichek",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-11-09T02:09:08.706460400Z",
+    "last_comment_post_date": "2026-11-09T02:09:08.706666700Z",
+    "comment_count": 0,
+    "votes": 1,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/757125",
+    "first_message_id": 3552041,
+    "first_seen_at": "2026-11-09T03:54:40+00:00",
+    "last_seen_at": "2026-11-16T16:36:01+00:00",
+    "detail_last_synced_at": "2026-11-16T16:22:48+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "c29b516e3d0462f694918343dda3c4fc0a80692b0b1a4c89a81378746d0c0910",
+    "listing_metrics_hash": "08a3f0e9d031723a4649730d445a527264427162f124c0c72a6c18d2e0b8e839",
+    "detail_content_hash": "d6f59412cc8dc16a6c8cfb66bd1ae6b5391b63bd92073a70c8c0dedaaaacd96b",
+    "detail_last_checked_at": "2026-11-16T16:22:48+00:00",
+    "detail_next_check_at": "2026-11-19T16:22:48+00:00",
+    "detail_unchanged_count": 1,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 0,
+      "firstForumMessageId": null,
+      "id": 757125,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-11-09T02:09:08.706666700Z",
+      "postDate": "2026-11-09T02:09:08.706460400Z",
+      "raw": {
+        "id": 757125,
+        "last_comment_post_date": "2026-11-09T02:09:08.706666700Z",
+        "post_date": "2026-11-09T02:09:08.706460400Z",
+        "title": "Model Parameterizations",
+        "topic_url": "/competitions/name-that-llm/discussion/757125",
+        "votes": 1
+      },
+      "title": "Model Parameterizations",
+      "topicUrl": "/competitions/name-that-llm/discussion/757125",
+      "votes": 1
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "James Bedichek",
+        "authorUserName": "jamesbedichek",
+        "comments": [],
+        "expectedCommentCount": 0,
+        "firstMessage": {
+          "author": {
+            "displayName": "James Bedichek",
+            "tier": "CONTRIBUTOR",
+            "url": "/jamesbedichek"
+          },
+          "content": "<p>Hey guys,</p>\n<p>I've tried a bunch of stuff on the LoRA front, my best accuracy is somewhere between 0.64-0.65 (best case, I've had a hard time with calibration).  I've just been doing mean pooling of tokens at a few different probe layers (4), with a linear head.  Anyone find anything that works better? Any interesting model parameterizations you guys have tried?</p>\n<p>I've tried a bunch of stuff, haven't been able to surpass mean pooling.  I tried training from top-k logits on a frozen Qwen3.8-27B, token level expert routes on olmo, I've found a bunch of things which seem to match a linear head trained on frozen mean pooled tokens, but nothing that surpasses it.</p>\n<p>How are you guys leveraging pretrained weights?  </p>",
+          "id": 3552041,
+          "isThankYou": false,
+          "postDate": "2026-11-09T02:09:08.707Z",
+          "raw": {
+            "author": {
+              "display_name": "James Bedichek",
+              "id": 15294853,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "CONTRIBUTOR",
+              "url": "/jamesbedichek"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 1601,
+            "content": "<p>Hey guys,</p>\n<p>I've tried a bunch of stuff on the LoRA front, my best accuracy is somewhere between 0.64-0.65 (best case, I've had a hard time with calibration).  I've just been doing mean pooling of tokens at a few different probe layers (4), with a linear head.  Anyone find anything that works better? Any interesting model parameterizations you guys have tried?</p>\n<p>I've tried a bunch of stuff, haven't been able to surpass mean pooling.  I tried training from top-k logits on a frozen Qwen3.8-27B, token level expert routes on olmo, I've found a bunch of things which seem to match a linear head trained on frozen mean pooled tokens, but nothing that surpasses it.</p>\n<p>How are you guys leveraging pretrained weights?  </p>",
+            "feedback_tracking_data": {},
+            "id": 3552041,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-11-09T02:09:08.707Z",
+            "raw_markdown": "Hey guys,\n\nI've tried a bunch of stuff on the LoRA front, my best accuracy is somewhere between 0.64-0.65 (best case, I've had a hard time with calibration).  I've just been doing mean pooling of tokens at a few different probe layers (4), with a linear head.  Anyone find anything that works better? Any interesting model parameterizations you guys have tried?\n\nI've tried a bunch of stuff, haven't been able to surpass mean pooling.  I tried training from top-k logits on a frozen Qwen3.8-27B, token level expert routes on olmo, I've found a bunch of things which seem to match a linear head trained on frozen mean pooled tokens, but nothing that surpasses it.\n\nHow are you guys leveraging pretrained weights?  ",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "James Bedichek",
+                "id": 15294853,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/jamesbedichek",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/jamesbedichek",
+                "user_id": 15294853,
+                "user_name": "jamesbedichek"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 1,
+              "total_votes": 1
+            }
+          },
+          "rawMarkdown": "Hey guys,\n\nI've tried a bunch of stuff on the LoRA front, my best accuracy is somewhere between 0.64-0.65 (best case, I've had a hard time with calibration).  I've just been doing mean pooling of tokens at a few different probe layers (4), with a linear head.  Anyone find anything that works better? Any interesting model parameterizations you guys have tried?\n\nI've tried a bunch of stuff, haven't been able to surpass mean pooling.  I tried training from top-k logits on a frozen Qwen3.8-27B, token level expert routes on olmo, I've found a bunch of things which seem to match a linear head trained on frozen mean pooled tokens, but nothing that surpasses it.\n\nHow are you guys leveraging pretrained weights?  ",
+          "replies": [],
+          "votes": {
+            "totalVotes": 1
+          }
+        },
+        "firstMessageId": 3552041,
+        "id": 757125,
+        "name": "Model Parameterizations",
+        "postDate": "2026-11-09T02:09:08.706460400Z",
+        "url": "/competitions/name-that-llm/discussion/757125"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>Hey guys,</p>\n<p>I've tried a bunch of stuff on the LoRA front, my best accuracy is somewhere between 0.64-0.65 (best case, I've had a hard time with calibration).  I've just been doing mean pooling of tokens at a few different probe layers (4), with a linear head.  Anyone find anything that works better? Any interesting model parameterizations you guys have tried?</p>\n<p>I've tried a bunch of stuff, haven't been able to surpass mean pooling.  I tried training from top-k logits on a frozen Qwen3.8-27B, token level expert routes on olmo, I've found a bunch of things which seem to match a linear head trained on frozen mean pooled tokens, but nothing that surpasses it.</p>\n<p>How are you guys leveraging pretrained weights?  </p>",
+              "id": 3552041,
+              "post_date": "2026-11-09T02:09:08.707Z",
+              "raw_markdown": "Hey guys,\n\nI've tried a bunch of stuff on the LoRA front, my best accuracy is somewhere between 0.64-0.65 (best case, I've had a hard time with calibration).  I've just been doing mean pooling of tokens at a few different probe layers (4), with a linear head.  Anyone find anything that works better? Any interesting model parameterizations you guys have tried?\n\nI've tried a bunch of stuff, haven't been able to surpass mean pooling.  I tried training from top-k logits on a frozen Qwen3.8-27B, token level expert routes on olmo, I've found a bunch of things which seem to match a linear head trained on frozen mean pooled tokens, but nothing that surpasses it.\n\nHow are you guys leveraging pretrained weights?  ",
+              "votes": 1
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 15294853,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "default-thumb.png",
+            "author_user_display_name": "James Bedichek",
+            "author_user_name": "jamesbedichek",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "first_message": {
+              "author": {
+                "display_name": "James Bedichek",
+                "id": 15294853,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/jamesbedichek"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 1601,
+              "content": "<p>Hey guys,</p>\n<p>I've tried a bunch of stuff on the LoRA front, my best accuracy is somewhere between 0.64-0.65 (best case, I've had a hard time with calibration).  I've just been doing mean pooling of tokens at a few different probe layers (4), with a linear head.  Anyone find anything that works better? Any interesting model parameterizations you guys have tried?</p>\n<p>I've tried a bunch of stuff, haven't been able to surpass mean pooling.  I tried training from top-k logits on a frozen Qwen3.8-27B, token level expert routes on olmo, I've found a bunch of things which seem to match a linear head trained on frozen mean pooled tokens, but nothing that surpasses it.</p>\n<p>How are you guys leveraging pretrained weights?  </p>",
+              "feedback_tracking_data": {},
+              "id": 3552041,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-09T02:09:08.707Z",
+              "raw_markdown": "Hey guys,\n\nI've tried a bunch of stuff on the LoRA front, my best accuracy is somewhere between 0.64-0.65 (best case, I've had a hard time with calibration).  I've just been doing mean pooling of tokens at a few different probe layers (4), with a linear head.  Anyone find anything that works better? Any interesting model parameterizations you guys have tried?\n\nI've tried a bunch of stuff, haven't been able to surpass mean pooling.  I tried training from top-k logits on a frozen Qwen3.8-27B, token level expert routes on olmo, I've found a bunch of things which seem to match a linear head trained on frozen mean pooled tokens, but nothing that surpasses it.\n\nHow are you guys leveraging pretrained weights?  ",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "James Bedichek",
+                  "id": 15294853,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/jamesbedichek",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/jamesbedichek",
+                  "user_id": 15294853,
+                  "user_name": "jamesbedichek"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": 1
+              }
+            },
+            "first_message_id": 3552041,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 757125,
+            "name": "Model Parameterizations",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-11-09T02:09:08.706460400Z",
+            "total_votes": 1,
+            "url": "/competitions/name-that-llm/discussion/757125"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:22:48+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:22:48+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-11-09T02:09:08.706666700Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [],
+  "writeup": null
+}

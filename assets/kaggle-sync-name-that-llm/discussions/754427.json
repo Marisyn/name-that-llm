@@ -1,0 +1,883 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 754427,
+    "title": "I couldn't replace the Llama member: three add-on attempts that didn't recover the score",
+    "author": "HALX2158",
+    "author_url": "/mizuno0522",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-10-31T05:50:13.135235200Z",
+    "last_comment_post_date": "2026-11-03T02:27:44.296666700Z",
+    "comment_count": 3,
+    "votes": 1,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/754427",
+    "first_message_id": 3547599,
+    "first_seen_at": "2026-11-04T06:56:14+00:00",
+    "last_seen_at": "2026-11-16T16:36:02+00:00",
+    "detail_last_synced_at": "2026-11-16T16:23:22+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "96c5a051f69c6539c8bb0fa4d97cd1f8d9fc9f122c5ee523426b707932218f5b",
+    "listing_metrics_hash": "08a3f0e9d031723a4649730d445a527264427162f124c0c72a6c18d2e0b8e839",
+    "detail_content_hash": "6b30b2200896ba0679af345f4d7640144b7653049b693882517c417ce0d16462",
+    "detail_last_checked_at": "2026-11-16T16:23:22+00:00",
+    "detail_next_check_at": "2026-11-23T16:23:22+00:00",
+    "detail_unchanged_count": 2,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 3,
+      "firstForumMessageId": null,
+      "id": 754427,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-11-03T02:27:44.296666700Z",
+      "postDate": "2026-10-31T05:50:13.135235200Z",
+      "raw": {
+        "comment_count": 3,
+        "id": 754427,
+        "last_comment_post_date": "2026-11-03T02:27:44.296666700Z",
+        "post_date": "2026-10-31T05:50:13.135235200Z",
+        "title": "I couldn't replace the Llama member: three add-on attempts that didn't recover the score",
+        "topic_url": "/competitions/name-that-llm/discussion/754427",
+        "votes": 1
+      },
+      "title": "I couldn't replace the Llama member: three add-on attempts that didn't recover the score",
+      "topicUrl": "/competitions/name-that-llm/discussion/754427",
+      "votes": 1
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "HALX2158",
+        "authorUserName": "mizuno0522",
+        "comments": [
+          {
+            "author": {
+              "displayName": "GoPain",
+              "tier": "CONTRIBUTOR",
+              "url": "/locdunhat"
+            },
+            "content": "<p>Your table matches something I measured this week from the other direction, so here is one more data point and a rough rule for what to expect.</p>\n<p>I retrained one DeBERTa member on the clean Open Pool. Alone it went from 0.522 to 0.566 on the public LB, the largest single-member jump I've had. Back in my blend, which scored 0.626, four weightings gave:</p>\n<table>\n<thead>\n<tr>\n<th>new member's share of the blend weight</th>\n<th>correctness flips vs the old blend (OOF)</th>\n<th>paired sd on 1,200 rows</th>\n<th>public LB</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>0.22 (replaces the old member)</td>\n<td>5.3%</td>\n<td>0.0067</td>\n<td>0.621</td>\n</tr>\n<tr>\n<td>0.11 (half old, half new)</td>\n<td>2.9%</td>\n<td>0.0049</td>\n<td>0.624</td>\n</tr>\n<tr>\n<td>0.11 (less old, half new)</td>\n<td>2.6%</td>\n<td>0.0047</td>\n<td>0.624</td>\n</tr>\n<tr>\n<td>0.10 (old kept, new added)</td>\n<td>3.6%</td>\n<td>0.0055</td>\n<td>0.620</td>\n</tr>\n</tbody>\n</table>\n<p>To see whether that was surprising, I simulated a soft-voting blend: 18 classes, members with shared and private Gaussian noise. Three things came out of it.</p>\n<ol>\n<li><strong>A blend sees about <code>share x solo gain</code>.</strong> For correlated members, a 0.044 solo gain at 20% of the weight is worth about +0.008.</li>\n<li><strong>One submission usually can't show that.</strong> Two such blends disagree on 2-5% of rows, so the paired sd on the public rows is 0.004-0.006.</li>\n<li><strong>A member below the rest of the blend can hurt at any real weight, even with a decent OOF.</strong> In one setting (rest of the blend at 0.69, errors correlated at rho = 0.7), a new member with solo 0.55 changes the blend by 0.000 / -0.002 / -0.010 / -0.029 at 10 / 20 / 33 / 50% of the weight. Your ModernBERT result looks like this case: smaller weight, smaller damage.</li>\n</ol>\n<p>A caveat on my own numbers: the simulation is not a full explanation. It expected about +0.005 to +0.009 for my four blends. The results are compatible with no change at all (-0.4 to -1.1 sd), but they sit 1.4 to 2.2 sd below that expectation, so the rule was too optimistic here. They also aren't independent checks, because the four blends share most of their members. Likely reasons: my solo gain is noisy too (sd about 0.012), those solo submissions used Sinkhorn and the blends did not, and the gain may fall on rows the other members already get right.</p>\n<p>The practical change for me: I now work out the expected blend gain and its paired sd before spending a submission on a new member. If the expected gain is below one sd, the result can't settle much either way.</p>\n<p>Notebook and grid: <a href=\"https://www.kaggle.com/code/locdunhat/how-much-of-a-solo-gain-reaches-the-blend\" target=\"_blank\">How Much of a Solo Gain Reaches the Blend</a>.</p>",
+            "id": 3548391,
+            "isThankYou": false,
+            "postDate": "2026-11-02T03:21:15.610Z",
+            "raw": {
+              "author": {
+                "display_name": "GoPain",
+                "id": 3897663,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3897663-kg.jpg?t=2026-10-14-14-18-45",
+                "tier": "CONTRIBUTOR",
+                "url": "/locdunhat"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 1038,
+              "content": "<p>Your table matches something I measured this week from the other direction, so here is one more data point and a rough rule for what to expect.</p>\n<p>I retrained one DeBERTa member on the clean Open Pool. Alone it went from 0.522 to 0.566 on the public LB, the largest single-member jump I've had. Back in my blend, which scored 0.626, four weightings gave:</p>\n<table>\n<thead>\n<tr>\n<th>new member's share of the blend weight</th>\n<th>correctness flips vs the old blend (OOF)</th>\n<th>paired sd on 1,200 rows</th>\n<th>public LB</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>0.22 (replaces the old member)</td>\n<td>5.3%</td>\n<td>0.0067</td>\n<td>0.621</td>\n</tr>\n<tr>\n<td>0.11 (half old, half new)</td>\n<td>2.9%</td>\n<td>0.0049</td>\n<td>0.624</td>\n</tr>\n<tr>\n<td>0.11 (less old, half new)</td>\n<td>2.6%</td>\n<td>0.0047</td>\n<td>0.624</td>\n</tr>\n<tr>\n<td>0.10 (old kept, new added)</td>\n<td>3.6%</td>\n<td>0.0055</td>\n<td>0.620</td>\n</tr>\n</tbody>\n</table>\n<p>To see whether that was surprising, I simulated a soft-voting blend: 18 classes, members with shared and private Gaussian noise. Three things came out of it.</p>\n<ol>\n<li><strong>A blend sees about <code>share x solo gain</code>.</strong> For correlated members, a 0.044 solo gain at 20% of the weight is worth about +0.008.</li>\n<li><strong>One submission usually can't show that.</strong> Two such blends disagree on 2-5% of rows, so the paired sd on the public rows is 0.004-0.006.</li>\n<li><strong>A member below the rest of the blend can hurt at any real weight, even with a decent OOF.</strong> In one setting (rest of the blend at 0.69, errors correlated at rho = 0.7), a new member with solo 0.55 changes the blend by 0.000 / -0.002 / -0.010 / -0.029 at 10 / 20 / 33 / 50% of the weight. Your ModernBERT result looks like this case: smaller weight, smaller damage.</li>\n</ol>\n<p>A caveat on my own numbers: the simulation is not a full explanation. It expected about +0.005 to +0.009 for my four blends. The results are compatible with no change at all (-0.4 to -1.1 sd), but they sit 1.4 to 2.2 sd below that expectation, so the rule was too optimistic here. They also aren't independent checks, because the four blends share most of their members. Likely reasons: my solo gain is noisy too (sd about 0.012), those solo submissions used Sinkhorn and the blends did not, and the gain may fall on rows the other members already get right.</p>\n<p>The practical change for me: I now work out the expected blend gain and its paired sd before spending a submission on a new member. If the expected gain is below one sd, the result can't settle much either way.</p>\n<p>Notebook and grid: <a href=\"https://www.kaggle.com/code/locdunhat/how-much-of-a-solo-gain-reaches-the-blend\" target=\"_blank\">How Much of a Solo Gain Reaches the Blend</a>.</p>",
+              "feedback_tracking_data": {},
+              "id": 3548391,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-02T03:21:15.610Z",
+              "raw_markdown": "Your table matches something I measured this week from the other direction, so here is one more data point and a rough rule for what to expect.\n\nI retrained one DeBERTa member on the clean Open Pool. Alone it went from 0.522 to 0.566 on the public LB, the largest single-member jump I've had. Back in my blend, which scored 0.626, four weightings gave:\n\n| new member's share of the blend weight | correctness flips vs the old blend (OOF) | paired sd on 1,200 rows | public LB |\n| --- | --- | --- | --- |\n| 0.22 (replaces the old member) | 5.3% | 0.0067 | 0.621 |\n| 0.11 (half old, half new) | 2.9% | 0.0049 | 0.624 |\n| 0.11 (less old, half new) | 2.6% | 0.0047 | 0.624 |\n| 0.10 (old kept, new added) | 3.6% | 0.0055 | 0.620 |\n\nTo see whether that was surprising, I simulated a soft-voting blend: 18 classes, members with shared and private Gaussian noise. Three things came out of it.\n\n1. **A blend sees about `share x solo gain`.** For correlated members, a 0.044 solo gain at 20% of the weight is worth about +0.008.\n2. **One submission usually can't show that.** Two such blends disagree on 2-5% of rows, so the paired sd on the public rows is 0.004-0.006.\n3. **A member below the rest of the blend can hurt at any real weight, even with a decent OOF.** In one setting (rest of the blend at 0.69, errors correlated at rho = 0.7), a new member with solo 0.55 changes the blend by 0.000 / -0.002 / -0.010 / -0.029 at 10 / 20 / 33 / 50% of the weight. Your ModernBERT result looks like this case: smaller weight, smaller damage.\n\nA caveat on my own numbers: the simulation is not a full explanation. It expected about +0.005 to +0.009 for my four blends. The results are compatible with no change at all (-0.4 to -1.1 sd), but they sit 1.4 to 2.2 sd below that expectation, so the rule was too optimistic here. They also aren't independent checks, because the four blends share most of their members. Likely reasons: my solo gain is noisy too (sd about 0.012), those solo submissions used Sinkhorn and the blends did not, and the gain may fall on rows the other members already get right.\n\nThe practical change for me: I now work out the expected blend gain and its paired sd before spending a submission on a new member. If the expected gain is below one sd, the result can't settle much either way.\n\nNotebook and grid: [How Much of a Solo Gain Reaches the Blend](https://www.kaggle.com/code/locdunhat/how-much-of-a-solo-gain-reaches-the-blend).",
+              "replies": [
+                {
+                  "author": {
+                    "display_name": "HALX2158",
+                    "id": 16294566,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/mizuno0522"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 1098,
+                  "content": "<p>Thanks, that rule is useful. Two measurements from my side that bear on it:</p>\n<ul>\n<li><strong>Rescoring:</strong> I resubmitted my 0.659 notebook unchanged (same kernel version). It scored 0.659 again. That is one pair, so it only shows that rescoring the same code didn't move the score this time. It doesn't measure the blend-vs-blend sd you worked out.</li>\n<li><strong>The gap I mentioned above</strong> (my fork at 0.659 vs the notebook's displayed 0.664) is now explained. The code I pulled was a later version than the scored one. The scored version 2 uses a Sinkhorn mix of 0.30 and a typography coefficient of 1.5; my pull had 0.60 and 1.2. With version 2's two values, my fork scored 0.663.</li>\n</ul>",
+                  "feedback_tracking_data": {},
+                  "id": 3549069,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-03T02:27:44.297Z",
+                  "raw_markdown": "Thanks, that rule is useful. Two measurements from my side that bear on it:\n\n- **Rescoring:** I resubmitted my 0.659 notebook unchanged (same kernel version). It scored 0.659 again. That is one pair, so it only shows that rescoring the same code didn't move the score this time. It doesn't measure the blend-vs-blend sd you worked out.\n- **The gap I mentioned above** (my fork at 0.659 vs the notebook's displayed 0.664) is now explained. The code I pulled was a later version than the scored one. The scored version 2 uses a Sinkhorn mix of 0.30 and a typography coefficient of 1.5; my pull had 0.60 and 1.2. With version 2's two values, my fork scored 0.663.",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "HALX2158",
+                      "id": 16294566,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/mizuno0522",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/mizuno0522",
+                      "user_id": 16294566,
+                      "user_name": "mizuno0522"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "GoPain",
+                  "id": 3897663,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/locdunhat",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3897663-kg.jpg?t=2026-10-14-14-18-45",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/locdunhat",
+                  "user_id": 3897663,
+                  "user_name": "locdunhat"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": 1
+              }
+            },
+            "rawMarkdown": "Your table matches something I measured this week from the other direction, so here is one more data point and a rough rule for what to expect.\n\nI retrained one DeBERTa member on the clean Open Pool. Alone it went from 0.522 to 0.566 on the public LB, the largest single-member jump I've had. Back in my blend, which scored 0.626, four weightings gave:\n\n| new member's share of the blend weight | correctness flips vs the old blend (OOF) | paired sd on 1,200 rows | public LB |\n| --- | --- | --- | --- |\n| 0.22 (replaces the old member) | 5.3% | 0.0067 | 0.621 |\n| 0.11 (half old, half new) | 2.9% | 0.0049 | 0.624 |\n| 0.11 (less old, half new) | 2.6% | 0.0047 | 0.624 |\n| 0.10 (old kept, new added) | 3.6% | 0.0055 | 0.620 |\n\nTo see whether that was surprising, I simulated a soft-voting blend: 18 classes, members with shared and private Gaussian noise. Three things came out of it.\n\n1. **A blend sees about `share x solo gain`.** For correlated members, a 0.044 solo gain at 20% of the weight is worth about +0.008.\n2. **One submission usually can't show that.** Two such blends disagree on 2-5% of rows, so the paired sd on the public rows is 0.004-0.006.\n3. **A member below the rest of the blend can hurt at any real weight, even with a decent OOF.** In one setting (rest of the blend at 0.69, errors correlated at rho = 0.7), a new member with solo 0.55 changes the blend by 0.000 / -0.002 / -0.010 / -0.029 at 10 / 20 / 33 / 50% of the weight. Your ModernBERT result looks like this case: smaller weight, smaller damage.\n\nA caveat on my own numbers: the simulation is not a full explanation. It expected about +0.005 to +0.009 for my four blends. The results are compatible with no change at all (-0.4 to -1.1 sd), but they sit 1.4 to 2.2 sd below that expectation, so the rule was too optimistic here. They also aren't independent checks, because the four blends share most of their members. Likely reasons: my solo gain is noisy too (sd about 0.012), those solo submissions used Sinkhorn and the blends did not, and the gain may fall on rows the other members already get right.\n\nThe practical change for me: I now work out the expected blend gain and its paired sd before spending a submission on a new member. If the expected gain is below one sd, the result can't settle much either way.\n\nNotebook and grid: [How Much of a Solo Gain Reaches the Blend](https://www.kaggle.com/code/locdunhat/how-much-of-a-solo-gain-reaches-the-blend).",
+            "replies": [
+              {
+                "author": {
+                  "displayName": "HALX2158",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/mizuno0522"
+                },
+                "content": "<p>Thanks, that rule is useful. Two measurements from my side that bear on it:</p>\n<ul>\n<li><strong>Rescoring:</strong> I resubmitted my 0.659 notebook unchanged (same kernel version). It scored 0.659 again. That is one pair, so it only shows that rescoring the same code didn't move the score this time. It doesn't measure the blend-vs-blend sd you worked out.</li>\n<li><strong>The gap I mentioned above</strong> (my fork at 0.659 vs the notebook's displayed 0.664) is now explained. The code I pulled was a later version than the scored one. The scored version 2 uses a Sinkhorn mix of 0.30 and a typography coefficient of 1.5; my pull had 0.60 and 1.2. With version 2's two values, my fork scored 0.663.</li>\n</ul>",
+                "id": 3549069,
+                "isThankYou": false,
+                "postDate": "2026-11-03T02:27:44.297Z",
+                "raw": {
+                  "author": {
+                    "display_name": "HALX2158",
+                    "id": 16294566,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/mizuno0522"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 1098,
+                  "content": "<p>Thanks, that rule is useful. Two measurements from my side that bear on it:</p>\n<ul>\n<li><strong>Rescoring:</strong> I resubmitted my 0.659 notebook unchanged (same kernel version). It scored 0.659 again. That is one pair, so it only shows that rescoring the same code didn't move the score this time. It doesn't measure the blend-vs-blend sd you worked out.</li>\n<li><strong>The gap I mentioned above</strong> (my fork at 0.659 vs the notebook's displayed 0.664) is now explained. The code I pulled was a later version than the scored one. The scored version 2 uses a Sinkhorn mix of 0.30 and a typography coefficient of 1.5; my pull had 0.60 and 1.2. With version 2's two values, my fork scored 0.663.</li>\n</ul>",
+                  "feedback_tracking_data": {},
+                  "id": 3549069,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-03T02:27:44.297Z",
+                  "raw_markdown": "Thanks, that rule is useful. Two measurements from my side that bear on it:\n\n- **Rescoring:** I resubmitted my 0.659 notebook unchanged (same kernel version). It scored 0.659 again. That is one pair, so it only shows that rescoring the same code didn't move the score this time. It doesn't measure the blend-vs-blend sd you worked out.\n- **The gap I mentioned above** (my fork at 0.659 vs the notebook's displayed 0.664) is now explained. The code I pulled was a later version than the scored one. The scored version 2 uses a Sinkhorn mix of 0.30 and a typography coefficient of 1.5; my pull had 0.60 and 1.2. With version 2's two values, my fork scored 0.663.",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "HALX2158",
+                      "id": 16294566,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/mizuno0522",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/mizuno0522",
+                      "user_id": 16294566,
+                      "user_name": "mizuno0522"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                },
+                "rawMarkdown": "Thanks, that rule is useful. Two measurements from my side that bear on it:\n\n- **Rescoring:** I resubmitted my 0.659 notebook unchanged (same kernel version). It scored 0.659 again. That is one pair, so it only shows that rescoring the same code didn't move the score this time. It doesn't measure the blend-vs-blend sd you worked out.\n- **The gap I mentioned above** (my fork at 0.659 vs the notebook's displayed 0.664) is now explained. The code I pulled was a later version than the scored one. The scored version 2 uses a Sinkhorn mix of 0.30 and a typography coefficient of 1.5; my pull had 0.60 and 1.2. With version 2's two values, my fork scored 0.663.",
+                "replies": [],
+                "votes": {
+                  "totalVotes": 0
+                }
+              }
+            ],
+            "votes": {
+              "totalVotes": 1
+            }
+          },
+          {
+            "author": {
+              "displayName": "HALX2158",
+              "tier": "CONTRIBUTOR",
+              "url": "/mizuno0522"
+            },
+            "content": "<p>Update: Llama access came through, so I measured the same comparison on a different base, a fork of judith007's public 0.664 notebook with my reliability changes.</p>\n<table>\n<thead>\n<tr>\n<th>Version</th>\n<th>Public LB</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Without the Llama member (5 members)</td>\n<td>0.657</td>\n</tr>\n<tr>\n<td>With official Llama 3.1 (6 members)</td>\n<td>0.659</td>\n</tr>\n</tbody>\n</table>\n<p>That is a difference of 0.002, from one submission each. I have seen differences of up to 0.009 <a href=\"https://www.kaggle.com/code/alexchilton/name-that-llm-0-662-all-public-what-failed\" target=\"_blank\">reported</a> between submissions of identical code, so this doesn't separate the two. My fork also scored below the notebook's displayed 0.664. I haven't found out why, and I haven't verified that the code I pulled is the scored version.</p>",
+            "id": 3548126,
+            "isThankYou": false,
+            "postDate": "2026-11-01T12:39:46.590Z",
+            "raw": {
+              "author": {
+                "display_name": "HALX2158",
+                "id": 16294566,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                "tier": "CONTRIBUTOR",
+                "url": "/mizuno0522"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 1098,
+              "content": "<p>Update: Llama access came through, so I measured the same comparison on a different base, a fork of judith007's public 0.664 notebook with my reliability changes.</p>\n<table>\n<thead>\n<tr>\n<th>Version</th>\n<th>Public LB</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Without the Llama member (5 members)</td>\n<td>0.657</td>\n</tr>\n<tr>\n<td>With official Llama 3.1 (6 members)</td>\n<td>0.659</td>\n</tr>\n</tbody>\n</table>\n<p>That is a difference of 0.002, from one submission each. I have seen differences of up to 0.009 <a href=\"https://www.kaggle.com/code/alexchilton/name-that-llm-0-662-all-public-what-failed\" target=\"_blank\">reported</a> between submissions of identical code, so this doesn't separate the two. My fork also scored below the notebook's displayed 0.664. I haven't found out why, and I haven't verified that the code I pulled is the scored version.</p>",
+              "feedback_tracking_data": {},
+              "id": 3548126,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-01T12:39:46.590Z",
+              "raw_markdown": "Update: Llama access came through, so I measured the same comparison on a different base, a fork of judith007's public 0.664 notebook with my reliability changes.\n\n| Version | Public LB |\n|---|---|\n| Without the Llama member (5 members) | 0.657 |\n| With official Llama 3.1 (6 members) | 0.659 |\n\nThat is a difference of 0.002, from one submission each. I have seen differences of up to 0.009 [reported](https://www.kaggle.com/code/alexchilton/name-that-llm-0-662-all-public-what-failed) between submissions of identical code, so this doesn't separate the two. My fork also scored below the notebook's displayed 0.664. I haven't found out why, and I haven't verified that the code I pulled is the scored version.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "HALX2158",
+                  "id": 16294566,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/mizuno0522",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/mizuno0522",
+                  "user_id": 16294566,
+                  "user_name": "mizuno0522"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "Update: Llama access came through, so I measured the same comparison on a different base, a fork of judith007's public 0.664 notebook with my reliability changes.\n\n| Version | Public LB |\n|---|---|\n| Without the Llama member (5 members) | 0.657 |\n| With official Llama 3.1 (6 members) | 0.659 |\n\nThat is a difference of 0.002, from one submission each. I have seen differences of up to 0.009 [reported](https://www.kaggle.com/code/alexchilton/name-that-llm-0-662-all-public-what-failed) between submissions of identical code, so this doesn't separate the two. My fork also scored below the notebook's displayed 0.664. I haven't found out why, and I haven't verified that the code I pulled is the scored version.",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "expectedCommentCount": 3,
+        "firstMessage": {
+          "author": {
+            "displayName": "HALX2158",
+            "tier": "CONTRIBUTOR",
+            "url": "/mizuno0522"
+          },
+          "content": "<p>I can't access Llama 3.1 (still 403 for me), so I forked nlm-v27 by dhruvtibarewal (public 0.651) without its <code>ll8v5</code> member and tried to win the score back. It didn't work, so here are the results in case they save someone a few slots.</p>\n<table>\n<thead>\n<tr>\n<th>Version</th>\n<th>Change</th>\n<th>Public LB</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Original</td>\n<td>With Llama</td>\n<td>0.651</td>\n</tr>\n<tr>\n<td>v22</td>\n<td>Without Llama, plus runtime guards</td>\n<td>0.642</td>\n</tr>\n<tr>\n<td>v23</td>\n<td>v22 + the author's ModernBERT-large (OOF 0.588, weight 1.5)</td>\n<td>0.638</td>\n</tr>\n<tr>\n<td>v24</td>\n<td>v23 + my own Mistral-7B two-stage (OOF 0.578, weight 1.0)</td>\n<td>0.640</td>\n</tr>\n<tr>\n<td>v25</td>\n<td>v22 + Mistral-7B only</td>\n<td>0.641</td>\n</tr>\n<tr>\n<td>v26</td>\n<td>v22 + ModernBERT-large at weight 0.5</td>\n<td>0.641</td>\n</tr>\n<tr>\n<td>v26</td>\n<td>v22 + ModernBERT-large at weight 0.3</td>\n<td>0.642</td>\n</tr>\n</tbody>\n</table>\n<p><strong>What I take from this</strong></p>\n<ul>\n<li><strong>A decent OOF didn't help here.</strong> ModernBERT's OOF is close to the 0.597 the author reports for Llama, yet adding it lowered my score by 0.004. Smaller weights removed the loss but added nothing: 0.641 at weight 0.5 and 0.642 at weight 0.3, against 0.642 for v22.</li>\n<li><strong>The same member moved in opposite directions.</strong> Mistral gave +0.002 on v23 and −0.001 on v22. At that size I treat it as roughly zero.</li>\n<li><strong>Next time I'd add one part at a time at a modest weight</strong>, and check each on the LB.</li>\n</ul>\n<p><strong>What I don't know:</strong> I attribute the 0.009 drop to removing Llama, but I haven't isolated it. A public no-Llama version scoring 0.643 is consistent with that, but it isn't proof. I also don't know whether a different non-Llama model would have worked.</p>\n<p>Has anyone recovered this gap without Llama? I'd like to know what kind of model did it.</p>",
+          "id": 3547599,
+          "isThankYou": false,
+          "postDate": "2026-10-31T05:50:13.137Z",
+          "raw": {
+            "author": {
+              "display_name": "HALX2158",
+              "id": 16294566,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+              "tier": "CONTRIBUTOR",
+              "url": "/mizuno0522"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 1098,
+            "content": "<p>I can't access Llama 3.1 (still 403 for me), so I forked nlm-v27 by dhruvtibarewal (public 0.651) without its <code>ll8v5</code> member and tried to win the score back. It didn't work, so here are the results in case they save someone a few slots.</p>\n<table>\n<thead>\n<tr>\n<th>Version</th>\n<th>Change</th>\n<th>Public LB</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Original</td>\n<td>With Llama</td>\n<td>0.651</td>\n</tr>\n<tr>\n<td>v22</td>\n<td>Without Llama, plus runtime guards</td>\n<td>0.642</td>\n</tr>\n<tr>\n<td>v23</td>\n<td>v22 + the author's ModernBERT-large (OOF 0.588, weight 1.5)</td>\n<td>0.638</td>\n</tr>\n<tr>\n<td>v24</td>\n<td>v23 + my own Mistral-7B two-stage (OOF 0.578, weight 1.0)</td>\n<td>0.640</td>\n</tr>\n<tr>\n<td>v25</td>\n<td>v22 + Mistral-7B only</td>\n<td>0.641</td>\n</tr>\n<tr>\n<td>v26</td>\n<td>v22 + ModernBERT-large at weight 0.5</td>\n<td>0.641</td>\n</tr>\n<tr>\n<td>v26</td>\n<td>v22 + ModernBERT-large at weight 0.3</td>\n<td>0.642</td>\n</tr>\n</tbody>\n</table>\n<p><strong>What I take from this</strong></p>\n<ul>\n<li><strong>A decent OOF didn't help here.</strong> ModernBERT's OOF is close to the 0.597 the author reports for Llama, yet adding it lowered my score by 0.004. Smaller weights removed the loss but added nothing: 0.641 at weight 0.5 and 0.642 at weight 0.3, against 0.642 for v22.</li>\n<li><strong>The same member moved in opposite directions.</strong> Mistral gave +0.002 on v23 and −0.001 on v22. At that size I treat it as roughly zero.</li>\n<li><strong>Next time I'd add one part at a time at a modest weight</strong>, and check each on the LB.</li>\n</ul>\n<p><strong>What I don't know:</strong> I attribute the 0.009 drop to removing Llama, but I haven't isolated it. A public no-Llama version scoring 0.643 is consistent with that, but it isn't proof. I also don't know whether a different non-Llama model would have worked.</p>\n<p>Has anyone recovered this gap without Llama? I'd like to know what kind of model did it.</p>",
+            "feedback_tracking_data": {},
+            "id": 3547599,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-10-31T05:50:13.137Z",
+            "raw_markdown": "I can't access Llama 3.1 (still 403 for me), so I forked nlm-v27 by dhruvtibarewal (public 0.651) without its `ll8v5` member and tried to win the score back. It didn't work, so here are the results in case they save someone a few slots.\n\n| Version | Change | Public LB |\n|---|---|---|\n| Original | With Llama | 0.651 |\n| v22 | Without Llama, plus runtime guards | 0.642 |\n| v23 | v22 + the author's ModernBERT-large (OOF 0.588, weight 1.5) | 0.638 |\n| v24 | v23 + my own Mistral-7B two-stage (OOF 0.578, weight 1.0) | 0.640 |\n| v25 | v22 + Mistral-7B only | 0.641 |\n| v26 | v22 + ModernBERT-large at weight 0.5 | 0.641 |\n| v26 | v22 + ModernBERT-large at weight 0.3 | 0.642 |\n\n**What I take from this**\n\n- **A decent OOF didn't help here.** ModernBERT's OOF is close to the 0.597 the author reports for Llama, yet adding it lowered my score by 0.004. Smaller weights removed the loss but added nothing: 0.641 at weight 0.5 and 0.642 at weight 0.3, against 0.642 for v22.\n- **The same member moved in opposite directions.** Mistral gave +0.002 on v23 and −0.001 on v22. At that size I treat it as roughly zero.\n- **Next time I'd add one part at a time at a modest weight**, and check each on the LB.\n\n**What I don't know:** I attribute the 0.009 drop to removing Llama, but I haven't isolated it. A public no-Llama version scoring 0.643 is consistent with that, but it isn't proof. I also don't know whether a different non-Llama model would have worked.\n\nHas anyone recovered this gap without Llama? I'd like to know what kind of model did it.",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "HALX2158",
+                "id": 16294566,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/mizuno0522",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                "tier": "CONTRIBUTOR",
+                "url": "/mizuno0522",
+                "user_id": 16294566,
+                "user_name": "mizuno0522"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 1,
+              "total_votes": 1
+            }
+          },
+          "rawMarkdown": "I can't access Llama 3.1 (still 403 for me), so I forked nlm-v27 by dhruvtibarewal (public 0.651) without its `ll8v5` member and tried to win the score back. It didn't work, so here are the results in case they save someone a few slots.\n\n| Version | Change | Public LB |\n|---|---|---|\n| Original | With Llama | 0.651 |\n| v22 | Without Llama, plus runtime guards | 0.642 |\n| v23 | v22 + the author's ModernBERT-large (OOF 0.588, weight 1.5) | 0.638 |\n| v24 | v23 + my own Mistral-7B two-stage (OOF 0.578, weight 1.0) | 0.640 |\n| v25 | v22 + Mistral-7B only | 0.641 |\n| v26 | v22 + ModernBERT-large at weight 0.5 | 0.641 |\n| v26 | v22 + ModernBERT-large at weight 0.3 | 0.642 |\n\n**What I take from this**\n\n- **A decent OOF didn't help here.** ModernBERT's OOF is close to the 0.597 the author reports for Llama, yet adding it lowered my score by 0.004. Smaller weights removed the loss but added nothing: 0.641 at weight 0.5 and 0.642 at weight 0.3, against 0.642 for v22.\n- **The same member moved in opposite directions.** Mistral gave +0.002 on v23 and −0.001 on v22. At that size I treat it as roughly zero.\n- **Next time I'd add one part at a time at a modest weight**, and check each on the LB.\n\n**What I don't know:** I attribute the 0.009 drop to removing Llama, but I haven't isolated it. A public no-Llama version scoring 0.643 is consistent with that, but it isn't proof. I also don't know whether a different non-Llama model would have worked.\n\nHas anyone recovered this gap without Llama? I'd like to know what kind of model did it.",
+          "replies": [],
+          "votes": {
+            "totalVotes": 1
+          }
+        },
+        "firstMessageId": 3547599,
+        "id": 754427,
+        "name": "I couldn't replace the Llama member: three add-on attempts that didn't recover the score",
+        "postDate": "2026-10-31T05:50:13.135235200Z",
+        "url": "/competitions/name-that-llm/discussion/754427"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>I can't access Llama 3.1 (still 403 for me), so I forked nlm-v27 by dhruvtibarewal (public 0.651) without its <code>ll8v5</code> member and tried to win the score back. It didn't work, so here are the results in case they save someone a few slots.</p>\n<table>\n<thead>\n<tr>\n<th>Version</th>\n<th>Change</th>\n<th>Public LB</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Original</td>\n<td>With Llama</td>\n<td>0.651</td>\n</tr>\n<tr>\n<td>v22</td>\n<td>Without Llama, plus runtime guards</td>\n<td>0.642</td>\n</tr>\n<tr>\n<td>v23</td>\n<td>v22 + the author's ModernBERT-large (OOF 0.588, weight 1.5)</td>\n<td>0.638</td>\n</tr>\n<tr>\n<td>v24</td>\n<td>v23 + my own Mistral-7B two-stage (OOF 0.578, weight 1.0)</td>\n<td>0.640</td>\n</tr>\n<tr>\n<td>v25</td>\n<td>v22 + Mistral-7B only</td>\n<td>0.641</td>\n</tr>\n<tr>\n<td>v26</td>\n<td>v22 + ModernBERT-large at weight 0.5</td>\n<td>0.641</td>\n</tr>\n<tr>\n<td>v26</td>\n<td>v22 + ModernBERT-large at weight 0.3</td>\n<td>0.642</td>\n</tr>\n</tbody>\n</table>\n<p><strong>What I take from this</strong></p>\n<ul>\n<li><strong>A decent OOF didn't help here.</strong> ModernBERT's OOF is close to the 0.597 the author reports for Llama, yet adding it lowered my score by 0.004. Smaller weights removed the loss but added nothing: 0.641 at weight 0.5 and 0.642 at weight 0.3, against 0.642 for v22.</li>\n<li><strong>The same member moved in opposite directions.</strong> Mistral gave +0.002 on v23 and −0.001 on v22. At that size I treat it as roughly zero.</li>\n<li><strong>Next time I'd add one part at a time at a modest weight</strong>, and check each on the LB.</li>\n</ul>\n<p><strong>What I don't know:</strong> I attribute the 0.009 drop to removing Llama, but I haven't isolated it. A public no-Llama version scoring 0.643 is consistent with that, but it isn't proof. I also don't know whether a different non-Llama model would have worked.</p>\n<p>Has anyone recovered this gap without Llama? I'd like to know what kind of model did it.</p>",
+              "id": 3547599,
+              "post_date": "2026-10-31T05:50:13.137Z",
+              "raw_markdown": "I can't access Llama 3.1 (still 403 for me), so I forked nlm-v27 by dhruvtibarewal (public 0.651) without its `ll8v5` member and tried to win the score back. It didn't work, so here are the results in case they save someone a few slots.\n\n| Version | Change | Public LB |\n|---|---|---|\n| Original | With Llama | 0.651 |\n| v22 | Without Llama, plus runtime guards | 0.642 |\n| v23 | v22 + the author's ModernBERT-large (OOF 0.588, weight 1.5) | 0.638 |\n| v24 | v23 + my own Mistral-7B two-stage (OOF 0.578, weight 1.0) | 0.640 |\n| v25 | v22 + Mistral-7B only | 0.641 |\n| v26 | v22 + ModernBERT-large at weight 0.5 | 0.641 |\n| v26 | v22 + ModernBERT-large at weight 0.3 | 0.642 |\n\n**What I take from this**\n\n- **A decent OOF didn't help here.** ModernBERT's OOF is close to the 0.597 the author reports for Llama, yet adding it lowered my score by 0.004. Smaller weights removed the loss but added nothing: 0.641 at weight 0.5 and 0.642 at weight 0.3, against 0.642 for v22.\n- **The same member moved in opposite directions.** Mistral gave +0.002 on v23 and −0.001 on v22. At that size I treat it as roughly zero.\n- **Next time I'd add one part at a time at a modest weight**, and check each on the LB.\n\n**What I don't know:** I attribute the 0.009 drop to removing Llama, but I haven't isolated it. A public no-Llama version scoring 0.643 is consistent with that, but it isn't proof. I also don't know whether a different non-Llama model would have worked.\n\nHas anyone recovered this gap without Llama? I'd like to know what kind of model did it.",
+              "votes": 1
+            },
+            {
+              "content": "<p>Update: Llama access came through, so I measured the same comparison on a different base, a fork of judith007's public 0.664 notebook with my reliability changes.</p>\n<table>\n<thead>\n<tr>\n<th>Version</th>\n<th>Public LB</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Without the Llama member (5 members)</td>\n<td>0.657</td>\n</tr>\n<tr>\n<td>With official Llama 3.1 (6 members)</td>\n<td>0.659</td>\n</tr>\n</tbody>\n</table>\n<p>That is a difference of 0.002, from one submission each. I have seen differences of up to 0.009 <a href=\"https://www.kaggle.com/code/alexchilton/name-that-llm-0-662-all-public-what-failed\" target=\"_blank\">reported</a> between submissions of identical code, so this doesn't separate the two. My fork also scored below the notebook's displayed 0.664. I haven't found out why, and I haven't verified that the code I pulled is the scored version.</p>",
+              "id": 3548126,
+              "post_date": "2026-11-01T12:39:46.590Z",
+              "raw_markdown": "Update: Llama access came through, so I measured the same comparison on a different base, a fork of judith007's public 0.664 notebook with my reliability changes.\n\n| Version | Public LB |\n|---|---|\n| Without the Llama member (5 members) | 0.657 |\n| With official Llama 3.1 (6 members) | 0.659 |\n\nThat is a difference of 0.002, from one submission each. I have seen differences of up to 0.009 [reported](https://www.kaggle.com/code/alexchilton/name-that-llm-0-662-all-public-what-failed) between submissions of identical code, so this doesn't separate the two. My fork also scored below the notebook's displayed 0.664. I haven't found out why, and I haven't verified that the code I pulled is the scored version."
+            },
+            {
+              "content": "<p>Your table matches something I measured this week from the other direction, so here is one more data point and a rough rule for what to expect.</p>\n<p>I retrained one DeBERTa member on the clean Open Pool. Alone it went from 0.522 to 0.566 on the public LB, the largest single-member jump I've had. Back in my blend, which scored 0.626, four weightings gave:</p>\n<table>\n<thead>\n<tr>\n<th>new member's share of the blend weight</th>\n<th>correctness flips vs the old blend (OOF)</th>\n<th>paired sd on 1,200 rows</th>\n<th>public LB</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>0.22 (replaces the old member)</td>\n<td>5.3%</td>\n<td>0.0067</td>\n<td>0.621</td>\n</tr>\n<tr>\n<td>0.11 (half old, half new)</td>\n<td>2.9%</td>\n<td>0.0049</td>\n<td>0.624</td>\n</tr>\n<tr>\n<td>0.11 (less old, half new)</td>\n<td>2.6%</td>\n<td>0.0047</td>\n<td>0.624</td>\n</tr>\n<tr>\n<td>0.10 (old kept, new added)</td>\n<td>3.6%</td>\n<td>0.0055</td>\n<td>0.620</td>\n</tr>\n</tbody>\n</table>\n<p>To see whether that was surprising, I simulated a soft-voting blend: 18 classes, members with shared and private Gaussian noise. Three things came out of it.</p>\n<ol>\n<li><strong>A blend sees about <code>share x solo gain</code>.</strong> For correlated members, a 0.044 solo gain at 20% of the weight is worth about +0.008.</li>\n<li><strong>One submission usually can't show that.</strong> Two such blends disagree on 2-5% of rows, so the paired sd on the public rows is 0.004-0.006.</li>\n<li><strong>A member below the rest of the blend can hurt at any real weight, even with a decent OOF.</strong> In one setting (rest of the blend at 0.69, errors correlated at rho = 0.7), a new member with solo 0.55 changes the blend by 0.000 / -0.002 / -0.010 / -0.029 at 10 / 20 / 33 / 50% of the weight. Your ModernBERT result looks like this case: smaller weight, smaller damage.</li>\n</ol>\n<p>A caveat on my own numbers: the simulation is not a full explanation. It expected about +0.005 to +0.009 for my four blends. The results are compatible with no change at all (-0.4 to -1.1 sd), but they sit 1.4 to 2.2 sd below that expectation, so the rule was too optimistic here. They also aren't independent checks, because the four blends share most of their members. Likely reasons: my solo gain is noisy too (sd about 0.012), those solo submissions used Sinkhorn and the blends did not, and the gain may fall on rows the other members already get right.</p>\n<p>The practical change for me: I now work out the expected blend gain and its paired sd before spending a submission on a new member. If the expected gain is below one sd, the result can't settle much either way.</p>\n<p>Notebook and grid: <a href=\"https://www.kaggle.com/code/locdunhat/how-much-of-a-solo-gain-reaches-the-blend\" target=\"_blank\">How Much of a Solo Gain Reaches the Blend</a>.</p>",
+              "id": 3548391,
+              "post_date": "2026-11-02T03:21:15.610Z",
+              "raw_markdown": "Your table matches something I measured this week from the other direction, so here is one more data point and a rough rule for what to expect.\n\nI retrained one DeBERTa member on the clean Open Pool. Alone it went from 0.522 to 0.566 on the public LB, the largest single-member jump I've had. Back in my blend, which scored 0.626, four weightings gave:\n\n| new member's share of the blend weight | correctness flips vs the old blend (OOF) | paired sd on 1,200 rows | public LB |\n| --- | --- | --- | --- |\n| 0.22 (replaces the old member) | 5.3% | 0.0067 | 0.621 |\n| 0.11 (half old, half new) | 2.9% | 0.0049 | 0.624 |\n| 0.11 (less old, half new) | 2.6% | 0.0047 | 0.624 |\n| 0.10 (old kept, new added) | 3.6% | 0.0055 | 0.620 |\n\nTo see whether that was surprising, I simulated a soft-voting blend: 18 classes, members with shared and private Gaussian noise. Three things came out of it.\n\n1. **A blend sees about `share x solo gain`.** For correlated members, a 0.044 solo gain at 20% of the weight is worth about +0.008.\n2. **One submission usually can't show that.** Two such blends disagree on 2-5% of rows, so the paired sd on the public rows is 0.004-0.006.\n3. **A member below the rest of the blend can hurt at any real weight, even with a decent OOF.** In one setting (rest of the blend at 0.69, errors correlated at rho = 0.7), a new member with solo 0.55 changes the blend by 0.000 / -0.002 / -0.010 / -0.029 at 10 / 20 / 33 / 50% of the weight. Your ModernBERT result looks like this case: smaller weight, smaller damage.\n\nA caveat on my own numbers: the simulation is not a full explanation. It expected about +0.005 to +0.009 for my four blends. The results are compatible with no change at all (-0.4 to -1.1 sd), but they sit 1.4 to 2.2 sd below that expectation, so the rule was too optimistic here. They also aren't independent checks, because the four blends share most of their members. Likely reasons: my solo gain is noisy too (sd about 0.012), those solo submissions used Sinkhorn and the blends did not, and the gain may fall on rows the other members already get right.\n\nThe practical change for me: I now work out the expected blend gain and its paired sd before spending a submission on a new member. If the expected gain is below one sd, the result can't settle much either way.\n\nNotebook and grid: [How Much of a Solo Gain Reaches the Blend](https://www.kaggle.com/code/locdunhat/how-much-of-a-solo-gain-reaches-the-blend).",
+              "replies": [
+                {
+                  "content": "<p>Thanks, that rule is useful. Two measurements from my side that bear on it:</p>\n<ul>\n<li><strong>Rescoring:</strong> I resubmitted my 0.659 notebook unchanged (same kernel version). It scored 0.659 again. That is one pair, so it only shows that rescoring the same code didn't move the score this time. It doesn't measure the blend-vs-blend sd you worked out.</li>\n<li><strong>The gap I mentioned above</strong> (my fork at 0.659 vs the notebook's displayed 0.664) is now explained. The code I pulled was a later version than the scored one. The scored version 2 uses a Sinkhorn mix of 0.30 and a typography coefficient of 1.5; my pull had 0.60 and 1.2. With version 2's two values, my fork scored 0.663.</li>\n</ul>",
+                  "id": 3549069,
+                  "post_date": "2026-11-03T02:27:44.297Z",
+                  "raw_markdown": "Thanks, that rule is useful. Two measurements from my side that bear on it:\n\n- **Rescoring:** I resubmitted my 0.659 notebook unchanged (same kernel version). It scored 0.659 again. That is one pair, so it only shows that rescoring the same code didn't move the score this time. It doesn't measure the blend-vs-blend sd you worked out.\n- **The gap I mentioned above** (my fork at 0.659 vs the notebook's displayed 0.664) is now explained. The code I pulled was a later version than the scored one. The scored version 2 uses a Sinkhorn mix of 0.30 and a typography coefficient of 1.5; my pull had 0.60 and 1.2. With version 2's two values, my fork scored 0.663."
+                }
+              ],
+              "votes": 1
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 16294566,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "16294566-kg.jpeg?t=2026-10-16-21-22-02",
+            "author_user_display_name": "HALX2158",
+            "author_user_name": "mizuno0522",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "comments": [
+              {
+                "author": {
+                  "display_name": "GoPain",
+                  "id": 3897663,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3897663-kg.jpg?t=2026-10-14-14-18-45",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/locdunhat"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 1038,
+                "content": "<p>Your table matches something I measured this week from the other direction, so here is one more data point and a rough rule for what to expect.</p>\n<p>I retrained one DeBERTa member on the clean Open Pool. Alone it went from 0.522 to 0.566 on the public LB, the largest single-member jump I've had. Back in my blend, which scored 0.626, four weightings gave:</p>\n<table>\n<thead>\n<tr>\n<th>new member's share of the blend weight</th>\n<th>correctness flips vs the old blend (OOF)</th>\n<th>paired sd on 1,200 rows</th>\n<th>public LB</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>0.22 (replaces the old member)</td>\n<td>5.3%</td>\n<td>0.0067</td>\n<td>0.621</td>\n</tr>\n<tr>\n<td>0.11 (half old, half new)</td>\n<td>2.9%</td>\n<td>0.0049</td>\n<td>0.624</td>\n</tr>\n<tr>\n<td>0.11 (less old, half new)</td>\n<td>2.6%</td>\n<td>0.0047</td>\n<td>0.624</td>\n</tr>\n<tr>\n<td>0.10 (old kept, new added)</td>\n<td>3.6%</td>\n<td>0.0055</td>\n<td>0.620</td>\n</tr>\n</tbody>\n</table>\n<p>To see whether that was surprising, I simulated a soft-voting blend: 18 classes, members with shared and private Gaussian noise. Three things came out of it.</p>\n<ol>\n<li><strong>A blend sees about <code>share x solo gain</code>.</strong> For correlated members, a 0.044 solo gain at 20% of the weight is worth about +0.008.</li>\n<li><strong>One submission usually can't show that.</strong> Two such blends disagree on 2-5% of rows, so the paired sd on the public rows is 0.004-0.006.</li>\n<li><strong>A member below the rest of the blend can hurt at any real weight, even with a decent OOF.</strong> In one setting (rest of the blend at 0.69, errors correlated at rho = 0.7), a new member with solo 0.55 changes the blend by 0.000 / -0.002 / -0.010 / -0.029 at 10 / 20 / 33 / 50% of the weight. Your ModernBERT result looks like this case: smaller weight, smaller damage.</li>\n</ol>\n<p>A caveat on my own numbers: the simulation is not a full explanation. It expected about +0.005 to +0.009 for my four blends. The results are compatible with no change at all (-0.4 to -1.1 sd), but they sit 1.4 to 2.2 sd below that expectation, so the rule was too optimistic here. They also aren't independent checks, because the four blends share most of their members. Likely reasons: my solo gain is noisy too (sd about 0.012), those solo submissions used Sinkhorn and the blends did not, and the gain may fall on rows the other members already get right.</p>\n<p>The practical change for me: I now work out the expected blend gain and its paired sd before spending a submission on a new member. If the expected gain is below one sd, the result can't settle much either way.</p>\n<p>Notebook and grid: <a href=\"https://www.kaggle.com/code/locdunhat/how-much-of-a-solo-gain-reaches-the-blend\" target=\"_blank\">How Much of a Solo Gain Reaches the Blend</a>.</p>",
+                "feedback_tracking_data": {},
+                "id": 3548391,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-11-02T03:21:15.610Z",
+                "raw_markdown": "Your table matches something I measured this week from the other direction, so here is one more data point and a rough rule for what to expect.\n\nI retrained one DeBERTa member on the clean Open Pool. Alone it went from 0.522 to 0.566 on the public LB, the largest single-member jump I've had. Back in my blend, which scored 0.626, four weightings gave:\n\n| new member's share of the blend weight | correctness flips vs the old blend (OOF) | paired sd on 1,200 rows | public LB |\n| --- | --- | --- | --- |\n| 0.22 (replaces the old member) | 5.3% | 0.0067 | 0.621 |\n| 0.11 (half old, half new) | 2.9% | 0.0049 | 0.624 |\n| 0.11 (less old, half new) | 2.6% | 0.0047 | 0.624 |\n| 0.10 (old kept, new added) | 3.6% | 0.0055 | 0.620 |\n\nTo see whether that was surprising, I simulated a soft-voting blend: 18 classes, members with shared and private Gaussian noise. Three things came out of it.\n\n1. **A blend sees about `share x solo gain`.** For correlated members, a 0.044 solo gain at 20% of the weight is worth about +0.008.\n2. **One submission usually can't show that.** Two such blends disagree on 2-5% of rows, so the paired sd on the public rows is 0.004-0.006.\n3. **A member below the rest of the blend can hurt at any real weight, even with a decent OOF.** In one setting (rest of the blend at 0.69, errors correlated at rho = 0.7), a new member with solo 0.55 changes the blend by 0.000 / -0.002 / -0.010 / -0.029 at 10 / 20 / 33 / 50% of the weight. Your ModernBERT result looks like this case: smaller weight, smaller damage.\n\nA caveat on my own numbers: the simulation is not a full explanation. It expected about +0.005 to +0.009 for my four blends. The results are compatible with no change at all (-0.4 to -1.1 sd), but they sit 1.4 to 2.2 sd below that expectation, so the rule was too optimistic here. They also aren't independent checks, because the four blends share most of their members. Likely reasons: my solo gain is noisy too (sd about 0.012), those solo submissions used Sinkhorn and the blends did not, and the gain may fall on rows the other members already get right.\n\nThe practical change for me: I now work out the expected blend gain and its paired sd before spending a submission on a new member. If the expected gain is below one sd, the result can't settle much either way.\n\nNotebook and grid: [How Much of a Solo Gain Reaches the Blend](https://www.kaggle.com/code/locdunhat/how-much-of-a-solo-gain-reaches-the-blend).",
+                "replies": [
+                  {
+                    "author": {
+                      "display_name": "HALX2158",
+                      "id": 16294566,
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/mizuno0522"
+                    },
+                    "author_type": "TOPIC",
+                    "competition_ranking": 1098,
+                    "content": "<p>Thanks, that rule is useful. Two measurements from my side that bear on it:</p>\n<ul>\n<li><strong>Rescoring:</strong> I resubmitted my 0.659 notebook unchanged (same kernel version). It scored 0.659 again. That is one pair, so it only shows that rescoring the same code didn't move the score this time. It doesn't measure the blend-vs-blend sd you worked out.</li>\n<li><strong>The gap I mentioned above</strong> (my fork at 0.659 vs the notebook's displayed 0.664) is now explained. The code I pulled was a later version than the scored one. The scored version 2 uses a Sinkhorn mix of 0.30 and a typography coefficient of 1.5; my pull had 0.60 and 1.2. With version 2's two values, my fork scored 0.663.</li>\n</ul>",
+                    "feedback_tracking_data": {},
+                    "id": 3549069,
+                    "is_thank_you": false,
+                    "kernel_version": 0,
+                    "parent": {},
+                    "post_date": "2026-11-03T02:27:44.297Z",
+                    "raw_markdown": "Thanks, that rule is useful. Two measurements from my side that bear on it:\n\n- **Rescoring:** I resubmitted my 0.659 notebook unchanged (same kernel version). It scored 0.659 again. That is one pair, so it only shows that rescoring the same code didn't move the score this time. It doesn't measure the blend-vs-blend sd you worked out.\n- **The gap I mentioned above** (my fork at 0.659 vs the notebook's displayed 0.664) is now explained. The code I pulled was a later version than the scored one. The scored version 2 uses a Sinkhorn mix of 0.30 and a typography coefficient of 1.5; my pull had 0.60 and 1.2. With version 2's two values, my fork scored 0.663.",
+                    "team_up_info": {
+                      "intro": "",
+                      "team_leader": {
+                        "display_name": "HALX2158",
+                        "id": 16294566,
+                        "performance_tier": "CONTRIBUTOR",
+                        "profile_url": "/mizuno0522",
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                        "tier": "CONTRIBUTOR",
+                        "url": "/mizuno0522",
+                        "user_id": 16294566,
+                        "user_name": "mizuno0522"
+                      }
+                    },
+                    "votes": {
+                      "can_upvote": true
+                    }
+                  }
+                ],
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "GoPain",
+                    "id": 3897663,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/locdunhat",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3897663-kg.jpg?t=2026-10-14-14-18-45",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/locdunhat",
+                    "user_id": 3897663,
+                    "user_name": "locdunhat"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true,
+                  "total_upvotes": 1,
+                  "total_votes": 1
+                }
+              },
+              {
+                "author": {
+                  "display_name": "HALX2158",
+                  "id": 16294566,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/mizuno0522"
+                },
+                "author_type": "TOPIC",
+                "competition_ranking": 1098,
+                "content": "<p>Update: Llama access came through, so I measured the same comparison on a different base, a fork of judith007's public 0.664 notebook with my reliability changes.</p>\n<table>\n<thead>\n<tr>\n<th>Version</th>\n<th>Public LB</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Without the Llama member (5 members)</td>\n<td>0.657</td>\n</tr>\n<tr>\n<td>With official Llama 3.1 (6 members)</td>\n<td>0.659</td>\n</tr>\n</tbody>\n</table>\n<p>That is a difference of 0.002, from one submission each. I have seen differences of up to 0.009 <a href=\"https://www.kaggle.com/code/alexchilton/name-that-llm-0-662-all-public-what-failed\" target=\"_blank\">reported</a> between submissions of identical code, so this doesn't separate the two. My fork also scored below the notebook's displayed 0.664. I haven't found out why, and I haven't verified that the code I pulled is the scored version.</p>",
+                "feedback_tracking_data": {},
+                "id": 3548126,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-11-01T12:39:46.590Z",
+                "raw_markdown": "Update: Llama access came through, so I measured the same comparison on a different base, a fork of judith007's public 0.664 notebook with my reliability changes.\n\n| Version | Public LB |\n|---|---|\n| Without the Llama member (5 members) | 0.657 |\n| With official Llama 3.1 (6 members) | 0.659 |\n\nThat is a difference of 0.002, from one submission each. I have seen differences of up to 0.009 [reported](https://www.kaggle.com/code/alexchilton/name-that-llm-0-662-all-public-what-failed) between submissions of identical code, so this doesn't separate the two. My fork also scored below the notebook's displayed 0.664. I haven't found out why, and I haven't verified that the code I pulled is the scored version.",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "HALX2158",
+                    "id": 16294566,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/mizuno0522",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/mizuno0522",
+                    "user_id": 16294566,
+                    "user_name": "mizuno0522"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              }
+            ],
+            "first_message": {
+              "author": {
+                "display_name": "HALX2158",
+                "id": 16294566,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                "tier": "CONTRIBUTOR",
+                "url": "/mizuno0522"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 1098,
+              "content": "<p>I can't access Llama 3.1 (still 403 for me), so I forked nlm-v27 by dhruvtibarewal (public 0.651) without its <code>ll8v5</code> member and tried to win the score back. It didn't work, so here are the results in case they save someone a few slots.</p>\n<table>\n<thead>\n<tr>\n<th>Version</th>\n<th>Change</th>\n<th>Public LB</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Original</td>\n<td>With Llama</td>\n<td>0.651</td>\n</tr>\n<tr>\n<td>v22</td>\n<td>Without Llama, plus runtime guards</td>\n<td>0.642</td>\n</tr>\n<tr>\n<td>v23</td>\n<td>v22 + the author's ModernBERT-large (OOF 0.588, weight 1.5)</td>\n<td>0.638</td>\n</tr>\n<tr>\n<td>v24</td>\n<td>v23 + my own Mistral-7B two-stage (OOF 0.578, weight 1.0)</td>\n<td>0.640</td>\n</tr>\n<tr>\n<td>v25</td>\n<td>v22 + Mistral-7B only</td>\n<td>0.641</td>\n</tr>\n<tr>\n<td>v26</td>\n<td>v22 + ModernBERT-large at weight 0.5</td>\n<td>0.641</td>\n</tr>\n<tr>\n<td>v26</td>\n<td>v22 + ModernBERT-large at weight 0.3</td>\n<td>0.642</td>\n</tr>\n</tbody>\n</table>\n<p><strong>What I take from this</strong></p>\n<ul>\n<li><strong>A decent OOF didn't help here.</strong> ModernBERT's OOF is close to the 0.597 the author reports for Llama, yet adding it lowered my score by 0.004. Smaller weights removed the loss but added nothing: 0.641 at weight 0.5 and 0.642 at weight 0.3, against 0.642 for v22.</li>\n<li><strong>The same member moved in opposite directions.</strong> Mistral gave +0.002 on v23 and −0.001 on v22. At that size I treat it as roughly zero.</li>\n<li><strong>Next time I'd add one part at a time at a modest weight</strong>, and check each on the LB.</li>\n</ul>\n<p><strong>What I don't know:</strong> I attribute the 0.009 drop to removing Llama, but I haven't isolated it. A public no-Llama version scoring 0.643 is consistent with that, but it isn't proof. I also don't know whether a different non-Llama model would have worked.</p>\n<p>Has anyone recovered this gap without Llama? I'd like to know what kind of model did it.</p>",
+              "feedback_tracking_data": {},
+              "id": 3547599,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-31T05:50:13.137Z",
+              "raw_markdown": "I can't access Llama 3.1 (still 403 for me), so I forked nlm-v27 by dhruvtibarewal (public 0.651) without its `ll8v5` member and tried to win the score back. It didn't work, so here are the results in case they save someone a few slots.\n\n| Version | Change | Public LB |\n|---|---|---|\n| Original | With Llama | 0.651 |\n| v22 | Without Llama, plus runtime guards | 0.642 |\n| v23 | v22 + the author's ModernBERT-large (OOF 0.588, weight 1.5) | 0.638 |\n| v24 | v23 + my own Mistral-7B two-stage (OOF 0.578, weight 1.0) | 0.640 |\n| v25 | v22 + Mistral-7B only | 0.641 |\n| v26 | v22 + ModernBERT-large at weight 0.5 | 0.641 |\n| v26 | v22 + ModernBERT-large at weight 0.3 | 0.642 |\n\n**What I take from this**\n\n- **A decent OOF didn't help here.** ModernBERT's OOF is close to the 0.597 the author reports for Llama, yet adding it lowered my score by 0.004. Smaller weights removed the loss but added nothing: 0.641 at weight 0.5 and 0.642 at weight 0.3, against 0.642 for v22.\n- **The same member moved in opposite directions.** Mistral gave +0.002 on v23 and −0.001 on v22. At that size I treat it as roughly zero.\n- **Next time I'd add one part at a time at a modest weight**, and check each on the LB.\n\n**What I don't know:** I attribute the 0.009 drop to removing Llama, but I haven't isolated it. A public no-Llama version scoring 0.643 is consistent with that, but it isn't proof. I also don't know whether a different non-Llama model would have worked.\n\nHas anyone recovered this gap without Llama? I'd like to know what kind of model did it.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "HALX2158",
+                  "id": 16294566,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/mizuno0522",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/mizuno0522",
+                  "user_id": 16294566,
+                  "user_name": "mizuno0522"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": 1
+              }
+            },
+            "first_message_id": 3547599,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 754427,
+            "name": "I couldn't replace the Llama member: three add-on attempts that didn't recover the score",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-10-31T05:50:13.135235200Z",
+            "total_messages": 3,
+            "total_votes": 1,
+            "url": "/competitions/name-that-llm/discussion/754427"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:23:22+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:23:22+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-11-03T02:27:44.296666700Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [
+    {
+      "slug": "name-that-llm",
+      "topic_id": 754427,
+      "message_id": 3548126,
+      "parent_message_id": null,
+      "author": "HALX2158",
+      "author_url": "/mizuno0522",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-01T12:39:46.590Z",
+      "raw_markdown": "Update: Llama access came through, so I measured the same comparison on a different base, a fork of judith007's public 0.664 notebook with my reliability changes.\n\n| Version | Public LB |\n|---|---|\n| Without the Llama member (5 members) | 0.657 |\n| With official Llama 3.1 (6 members) | 0.659 |\n\nThat is a difference of 0.002, from one submission each. I have seen differences of up to 0.009 [reported](https://www.kaggle.com/code/alexchilton/name-that-llm-0-662-all-public-what-failed) between submissions of identical code, so this doesn't separate the two. My fork also scored below the notebook's displayed 0.664. I haven't found out why, and I haven't verified that the code I pulled is the scored version.",
+      "content_html": "<p>Update: Llama access came through, so I measured the same comparison on a different base, a fork of judith007's public 0.664 notebook with my reliability changes.</p>\n<table>\n<thead>\n<tr>\n<th>Version</th>\n<th>Public LB</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Without the Llama member (5 members)</td>\n<td>0.657</td>\n</tr>\n<tr>\n<td>With official Llama 3.1 (6 members)</td>\n<td>0.659</td>\n</tr>\n</tbody>\n</table>\n<p>That is a difference of 0.002, from one submission each. I have seen differences of up to 0.009 <a href=\"https://www.kaggle.com/code/alexchilton/name-that-llm-0-662-all-public-what-failed\" target=\"_blank\">reported</a> between submissions of identical code, so this doesn't separate the two. My fork also scored below the notebook's displayed 0.664. I haven't found out why, and I haven't verified that the code I pulled is the scored version.</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:58:11+00:00",
+      "last_seen_at": "2026-11-16T16:23:22+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:23:22+00:00",
+      "remote_last_listed_at": "2026-11-16T16:23:22+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "HALX2158",
+          "tier": "CONTRIBUTOR",
+          "url": "/mizuno0522"
+        },
+        "content": "<p>Update: Llama access came through, so I measured the same comparison on a different base, a fork of judith007's public 0.664 notebook with my reliability changes.</p>\n<table>\n<thead>\n<tr>\n<th>Version</th>\n<th>Public LB</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Without the Llama member (5 members)</td>\n<td>0.657</td>\n</tr>\n<tr>\n<td>With official Llama 3.1 (6 members)</td>\n<td>0.659</td>\n</tr>\n</tbody>\n</table>\n<p>That is a difference of 0.002, from one submission each. I have seen differences of up to 0.009 <a href=\"https://www.kaggle.com/code/alexchilton/name-that-llm-0-662-all-public-what-failed\" target=\"_blank\">reported</a> between submissions of identical code, so this doesn't separate the two. My fork also scored below the notebook's displayed 0.664. I haven't found out why, and I haven't verified that the code I pulled is the scored version.</p>",
+        "id": 3548126,
+        "isThankYou": false,
+        "postDate": "2026-11-01T12:39:46.590Z",
+        "raw": {
+          "author": {
+            "display_name": "HALX2158",
+            "id": 16294566,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+            "tier": "CONTRIBUTOR",
+            "url": "/mizuno0522"
+          },
+          "author_type": "TOPIC",
+          "competition_ranking": 1098,
+          "content": "<p>Update: Llama access came through, so I measured the same comparison on a different base, a fork of judith007's public 0.664 notebook with my reliability changes.</p>\n<table>\n<thead>\n<tr>\n<th>Version</th>\n<th>Public LB</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Without the Llama member (5 members)</td>\n<td>0.657</td>\n</tr>\n<tr>\n<td>With official Llama 3.1 (6 members)</td>\n<td>0.659</td>\n</tr>\n</tbody>\n</table>\n<p>That is a difference of 0.002, from one submission each. I have seen differences of up to 0.009 <a href=\"https://www.kaggle.com/code/alexchilton/name-that-llm-0-662-all-public-what-failed\" target=\"_blank\">reported</a> between submissions of identical code, so this doesn't separate the two. My fork also scored below the notebook's displayed 0.664. I haven't found out why, and I haven't verified that the code I pulled is the scored version.</p>",
+          "feedback_tracking_data": {},
+          "id": 3548126,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-01T12:39:46.590Z",
+          "raw_markdown": "Update: Llama access came through, so I measured the same comparison on a different base, a fork of judith007's public 0.664 notebook with my reliability changes.\n\n| Version | Public LB |\n|---|---|\n| Without the Llama member (5 members) | 0.657 |\n| With official Llama 3.1 (6 members) | 0.659 |\n\nThat is a difference of 0.002, from one submission each. I have seen differences of up to 0.009 [reported](https://www.kaggle.com/code/alexchilton/name-that-llm-0-662-all-public-what-failed) between submissions of identical code, so this doesn't separate the two. My fork also scored below the notebook's displayed 0.664. I haven't found out why, and I haven't verified that the code I pulled is the scored version.",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "HALX2158",
+              "id": 16294566,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/mizuno0522",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+              "tier": "CONTRIBUTOR",
+              "url": "/mizuno0522",
+              "user_id": 16294566,
+              "user_name": "mizuno0522"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "Update: Llama access came through, so I measured the same comparison on a different base, a fork of judith007's public 0.664 notebook with my reliability changes.\n\n| Version | Public LB |\n|---|---|\n| Without the Llama member (5 members) | 0.657 |\n| With official Llama 3.1 (6 members) | 0.659 |\n\nThat is a difference of 0.002, from one submission each. I have seen differences of up to 0.009 [reported](https://www.kaggle.com/code/alexchilton/name-that-llm-0-662-all-public-what-failed) between submissions of identical code, so this doesn't separate the two. My fork also scored below the notebook's displayed 0.664. I haven't found out why, and I haven't verified that the code I pulled is the scored version.",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 754427,
+      "message_id": 3548391,
+      "parent_message_id": null,
+      "author": "GoPain",
+      "author_url": "/locdunhat",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-02T03:21:15.610Z",
+      "raw_markdown": "Your table matches something I measured this week from the other direction, so here is one more data point and a rough rule for what to expect.\n\nI retrained one DeBERTa member on the clean Open Pool. Alone it went from 0.522 to 0.566 on the public LB, the largest single-member jump I've had. Back in my blend, which scored 0.626, four weightings gave:\n\n| new member's share of the blend weight | correctness flips vs the old blend (OOF) | paired sd on 1,200 rows | public LB |\n| --- | --- | --- | --- |\n| 0.22 (replaces the old member) | 5.3% | 0.0067 | 0.621 |\n| 0.11 (half old, half new) | 2.9% | 0.0049 | 0.624 |\n| 0.11 (less old, half new) | 2.6% | 0.0047 | 0.624 |\n| 0.10 (old kept, new added) | 3.6% | 0.0055 | 0.620 |\n\nTo see whether that was surprising, I simulated a soft-voting blend: 18 classes, members with shared and private Gaussian noise. Three things came out of it.\n\n1. **A blend sees about `share x solo gain`.** For correlated members, a 0.044 solo gain at 20% of the weight is worth about +0.008.\n2. **One submission usually can't show that.** Two such blends disagree on 2-5% of rows, so the paired sd on the public rows is 0.004-0.006.\n3. **A member below the rest of the blend can hurt at any real weight, even with a decent OOF.** In one setting (rest of the blend at 0.69, errors correlated at rho = 0.7), a new member with solo 0.55 changes the blend by 0.000 / -0.002 / -0.010 / -0.029 at 10 / 20 / 33 / 50% of the weight. Your ModernBERT result looks like this case: smaller weight, smaller damage.\n\nA caveat on my own numbers: the simulation is not a full explanation. It expected about +0.005 to +0.009 for my four blends. The results are compatible with no change at all (-0.4 to -1.1 sd), but they sit 1.4 to 2.2 sd below that expectation, so the rule was too optimistic here. They also aren't independent checks, because the four blends share most of their members. Likely reasons: my solo gain is noisy too (sd about 0.012), those solo submissions used Sinkhorn and the blends did not, and the gain may fall on rows the other members already get right.\n\nThe practical change for me: I now work out the expected blend gain and its paired sd before spending a submission on a new member. If the expected gain is below one sd, the result can't settle much either way.\n\nNotebook and grid: [How Much of a Solo Gain Reaches the Blend](https://www.kaggle.com/code/locdunhat/how-much-of-a-solo-gain-reaches-the-blend).",
+      "content_html": "<p>Your table matches something I measured this week from the other direction, so here is one more data point and a rough rule for what to expect.</p>\n<p>I retrained one DeBERTa member on the clean Open Pool. Alone it went from 0.522 to 0.566 on the public LB, the largest single-member jump I've had. Back in my blend, which scored 0.626, four weightings gave:</p>\n<table>\n<thead>\n<tr>\n<th>new member's share of the blend weight</th>\n<th>correctness flips vs the old blend (OOF)</th>\n<th>paired sd on 1,200 rows</th>\n<th>public LB</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>0.22 (replaces the old member)</td>\n<td>5.3%</td>\n<td>0.0067</td>\n<td>0.621</td>\n</tr>\n<tr>\n<td>0.11 (half old, half new)</td>\n<td>2.9%</td>\n<td>0.0049</td>\n<td>0.624</td>\n</tr>\n<tr>\n<td>0.11 (less old, half new)</td>\n<td>2.6%</td>\n<td>0.0047</td>\n<td>0.624</td>\n</tr>\n<tr>\n<td>0.10 (old kept, new added)</td>\n<td>3.6%</td>\n<td>0.0055</td>\n<td>0.620</td>\n</tr>\n</tbody>\n</table>\n<p>To see whether that was surprising, I simulated a soft-voting blend: 18 classes, members with shared and private Gaussian noise. Three things came out of it.</p>\n<ol>\n<li><strong>A blend sees about <code>share x solo gain</code>.</strong> For correlated members, a 0.044 solo gain at 20% of the weight is worth about +0.008.</li>\n<li><strong>One submission usually can't show that.</strong> Two such blends disagree on 2-5% of rows, so the paired sd on the public rows is 0.004-0.006.</li>\n<li><strong>A member below the rest of the blend can hurt at any real weight, even with a decent OOF.</strong> In one setting (rest of the blend at 0.69, errors correlated at rho = 0.7), a new member with solo 0.55 changes the blend by 0.000 / -0.002 / -0.010 / -0.029 at 10 / 20 / 33 / 50% of the weight. Your ModernBERT result looks like this case: smaller weight, smaller damage.</li>\n</ol>\n<p>A caveat on my own numbers: the simulation is not a full explanation. It expected about +0.005 to +0.009 for my four blends. The results are compatible with no change at all (-0.4 to -1.1 sd), but they sit 1.4 to 2.2 sd below that expectation, so the rule was too optimistic here. They also aren't independent checks, because the four blends share most of their members. Likely reasons: my solo gain is noisy too (sd about 0.012), those solo submissions used Sinkhorn and the blends did not, and the gain may fall on rows the other members already get right.</p>\n<p>The practical change for me: I now work out the expected blend gain and its paired sd before spending a submission on a new member. If the expected gain is below one sd, the result can't settle much either way.</p>\n<p>Notebook and grid: <a href=\"https://www.kaggle.com/code/locdunhat/how-much-of-a-solo-gain-reaches-the-blend\" target=\"_blank\">How Much of a Solo Gain Reaches the Blend</a>.</p>",
+      "votes": 1,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:58:11+00:00",
+      "last_seen_at": "2026-11-16T16:23:22+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:23:22+00:00",
+      "remote_last_listed_at": "2026-11-16T16:23:22+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "GoPain",
+          "tier": "CONTRIBUTOR",
+          "url": "/locdunhat"
+        },
+        "content": "<p>Your table matches something I measured this week from the other direction, so here is one more data point and a rough rule for what to expect.</p>\n<p>I retrained one DeBERTa member on the clean Open Pool. Alone it went from 0.522 to 0.566 on the public LB, the largest single-member jump I've had. Back in my blend, which scored 0.626, four weightings gave:</p>\n<table>\n<thead>\n<tr>\n<th>new member's share of the blend weight</th>\n<th>correctness flips vs the old blend (OOF)</th>\n<th>paired sd on 1,200 rows</th>\n<th>public LB</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>0.22 (replaces the old member)</td>\n<td>5.3%</td>\n<td>0.0067</td>\n<td>0.621</td>\n</tr>\n<tr>\n<td>0.11 (half old, half new)</td>\n<td>2.9%</td>\n<td>0.0049</td>\n<td>0.624</td>\n</tr>\n<tr>\n<td>0.11 (less old, half new)</td>\n<td>2.6%</td>\n<td>0.0047</td>\n<td>0.624</td>\n</tr>\n<tr>\n<td>0.10 (old kept, new added)</td>\n<td>3.6%</td>\n<td>0.0055</td>\n<td>0.620</td>\n</tr>\n</tbody>\n</table>\n<p>To see whether that was surprising, I simulated a soft-voting blend: 18 classes, members with shared and private Gaussian noise. Three things came out of it.</p>\n<ol>\n<li><strong>A blend sees about <code>share x solo gain</code>.</strong> For correlated members, a 0.044 solo gain at 20% of the weight is worth about +0.008.</li>\n<li><strong>One submission usually can't show that.</strong> Two such blends disagree on 2-5% of rows, so the paired sd on the public rows is 0.004-0.006.</li>\n<li><strong>A member below the rest of the blend can hurt at any real weight, even with a decent OOF.</strong> In one setting (rest of the blend at 0.69, errors correlated at rho = 0.7), a new member with solo 0.55 changes the blend by 0.000 / -0.002 / -0.010 / -0.029 at 10 / 20 / 33 / 50% of the weight. Your ModernBERT result looks like this case: smaller weight, smaller damage.</li>\n</ol>\n<p>A caveat on my own numbers: the simulation is not a full explanation. It expected about +0.005 to +0.009 for my four blends. The results are compatible with no change at all (-0.4 to -1.1 sd), but they sit 1.4 to 2.2 sd below that expectation, so the rule was too optimistic here. They also aren't independent checks, because the four blends share most of their members. Likely reasons: my solo gain is noisy too (sd about 0.012), those solo submissions used Sinkhorn and the blends did not, and the gain may fall on rows the other members already get right.</p>\n<p>The practical change for me: I now work out the expected blend gain and its paired sd before spending a submission on a new member. If the expected gain is below one sd, the result can't settle much either way.</p>\n<p>Notebook and grid: <a href=\"https://www.kaggle.com/code/locdunhat/how-much-of-a-solo-gain-reaches-the-blend\" target=\"_blank\">How Much of a Solo Gain Reaches the Blend</a>.</p>",
+        "id": 3548391,
+        "isThankYou": false,
+        "postDate": "2026-11-02T03:21:15.610Z",
+        "raw": {
+          "author": {
+            "display_name": "GoPain",
+            "id": 3897663,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3897663-kg.jpg?t=2026-10-14-14-18-45",
+            "tier": "CONTRIBUTOR",
+            "url": "/locdunhat"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 1038,
+          "content": "<p>Your table matches something I measured this week from the other direction, so here is one more data point and a rough rule for what to expect.</p>\n<p>I retrained one DeBERTa member on the clean Open Pool. Alone it went from 0.522 to 0.566 on the public LB, the largest single-member jump I've had. Back in my blend, which scored 0.626, four weightings gave:</p>\n<table>\n<thead>\n<tr>\n<th>new member's share of the blend weight</th>\n<th>correctness flips vs the old blend (OOF)</th>\n<th>paired sd on 1,200 rows</th>\n<th>public LB</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>0.22 (replaces the old member)</td>\n<td>5.3%</td>\n<td>0.0067</td>\n<td>0.621</td>\n</tr>\n<tr>\n<td>0.11 (half old, half new)</td>\n<td>2.9%</td>\n<td>0.0049</td>\n<td>0.624</td>\n</tr>\n<tr>\n<td>0.11 (less old, half new)</td>\n<td>2.6%</td>\n<td>0.0047</td>\n<td>0.624</td>\n</tr>\n<tr>\n<td>0.10 (old kept, new added)</td>\n<td>3.6%</td>\n<td>0.0055</td>\n<td>0.620</td>\n</tr>\n</tbody>\n</table>\n<p>To see whether that was surprising, I simulated a soft-voting blend: 18 classes, members with shared and private Gaussian noise. Three things came out of it.</p>\n<ol>\n<li><strong>A blend sees about <code>share x solo gain</code>.</strong> For correlated members, a 0.044 solo gain at 20% of the weight is worth about +0.008.</li>\n<li><strong>One submission usually can't show that.</strong> Two such blends disagree on 2-5% of rows, so the paired sd on the public rows is 0.004-0.006.</li>\n<li><strong>A member below the rest of the blend can hurt at any real weight, even with a decent OOF.</strong> In one setting (rest of the blend at 0.69, errors correlated at rho = 0.7), a new member with solo 0.55 changes the blend by 0.000 / -0.002 / -0.010 / -0.029 at 10 / 20 / 33 / 50% of the weight. Your ModernBERT result looks like this case: smaller weight, smaller damage.</li>\n</ol>\n<p>A caveat on my own numbers: the simulation is not a full explanation. It expected about +0.005 to +0.009 for my four blends. The results are compatible with no change at all (-0.4 to -1.1 sd), but they sit 1.4 to 2.2 sd below that expectation, so the rule was too optimistic here. They also aren't independent checks, because the four blends share most of their members. Likely reasons: my solo gain is noisy too (sd about 0.012), those solo submissions used Sinkhorn and the blends did not, and the gain may fall on rows the other members already get right.</p>\n<p>The practical change for me: I now work out the expected blend gain and its paired sd before spending a submission on a new member. If the expected gain is below one sd, the result can't settle much either way.</p>\n<p>Notebook and grid: <a href=\"https://www.kaggle.com/code/locdunhat/how-much-of-a-solo-gain-reaches-the-blend\" target=\"_blank\">How Much of a Solo Gain Reaches the Blend</a>.</p>",
+          "feedback_tracking_data": {},
+          "id": 3548391,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-02T03:21:15.610Z",
+          "raw_markdown": "Your table matches something I measured this week from the other direction, so here is one more data point and a rough rule for what to expect.\n\nI retrained one DeBERTa member on the clean Open Pool. Alone it went from 0.522 to 0.566 on the public LB, the largest single-member jump I've had. Back in my blend, which scored 0.626, four weightings gave:\n\n| new member's share of the blend weight | correctness flips vs the old blend (OOF) | paired sd on 1,200 rows | public LB |\n| --- | --- | --- | --- |\n| 0.22 (replaces the old member) | 5.3% | 0.0067 | 0.621 |\n| 0.11 (half old, half new) | 2.9% | 0.0049 | 0.624 |\n| 0.11 (less old, half new) | 2.6% | 0.0047 | 0.624 |\n| 0.10 (old kept, new added) | 3.6% | 0.0055 | 0.620 |\n\nTo see whether that was surprising, I simulated a soft-voting blend: 18 classes, members with shared and private Gaussian noise. Three things came out of it.\n\n1. **A blend sees about `share x solo gain`.** For correlated members, a 0.044 solo gain at 20% of the weight is worth about +0.008.\n2. **One submission usually can't show that.** Two such blends disagree on 2-5% of rows, so the paired sd on the public rows is 0.004-0.006.\n3. **A member below the rest of the blend can hurt at any real weight, even with a decent OOF.** In one setting (rest of the blend at 0.69, errors correlated at rho = 0.7), a new member with solo 0.55 changes the blend by 0.000 / -0.002 / -0.010 / -0.029 at 10 / 20 / 33 / 50% of the weight. Your ModernBERT result looks like this case: smaller weight, smaller damage.\n\nA caveat on my own numbers: the simulation is not a full explanation. It expected about +0.005 to +0.009 for my four blends. The results are compatible with no change at all (-0.4 to -1.1 sd), but they sit 1.4 to 2.2 sd below that expectation, so the rule was too optimistic here. They also aren't independent checks, because the four blends share most of their members. Likely reasons: my solo gain is noisy too (sd about 0.012), those solo submissions used Sinkhorn and the blends did not, and the gain may fall on rows the other members already get right.\n\nThe practical change for me: I now work out the expected blend gain and its paired sd before spending a submission on a new member. If the expected gain is below one sd, the result can't settle much either way.\n\nNotebook and grid: [How Much of a Solo Gain Reaches the Blend](https://www.kaggle.com/code/locdunhat/how-much-of-a-solo-gain-reaches-the-blend).",
+          "replies": [
+            {
+              "author": {
+                "display_name": "HALX2158",
+                "id": 16294566,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                "tier": "CONTRIBUTOR",
+                "url": "/mizuno0522"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 1098,
+              "content": "<p>Thanks, that rule is useful. Two measurements from my side that bear on it:</p>\n<ul>\n<li><strong>Rescoring:</strong> I resubmitted my 0.659 notebook unchanged (same kernel version). It scored 0.659 again. That is one pair, so it only shows that rescoring the same code didn't move the score this time. It doesn't measure the blend-vs-blend sd you worked out.</li>\n<li><strong>The gap I mentioned above</strong> (my fork at 0.659 vs the notebook's displayed 0.664) is now explained. The code I pulled was a later version than the scored one. The scored version 2 uses a Sinkhorn mix of 0.30 and a typography coefficient of 1.5; my pull had 0.60 and 1.2. With version 2's two values, my fork scored 0.663.</li>\n</ul>",
+              "feedback_tracking_data": {},
+              "id": 3549069,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-03T02:27:44.297Z",
+              "raw_markdown": "Thanks, that rule is useful. Two measurements from my side that bear on it:\n\n- **Rescoring:** I resubmitted my 0.659 notebook unchanged (same kernel version). It scored 0.659 again. That is one pair, so it only shows that rescoring the same code didn't move the score this time. It doesn't measure the blend-vs-blend sd you worked out.\n- **The gap I mentioned above** (my fork at 0.659 vs the notebook's displayed 0.664) is now explained. The code I pulled was a later version than the scored one. The scored version 2 uses a Sinkhorn mix of 0.30 and a typography coefficient of 1.5; my pull had 0.60 and 1.2. With version 2's two values, my fork scored 0.663.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "HALX2158",
+                  "id": 16294566,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/mizuno0522",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/mizuno0522",
+                  "user_id": 16294566,
+                  "user_name": "mizuno0522"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            }
+          ],
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "GoPain",
+              "id": 3897663,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/locdunhat",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3897663-kg.jpg?t=2026-10-14-14-18-45",
+              "tier": "CONTRIBUTOR",
+              "url": "/locdunhat",
+              "user_id": 3897663,
+              "user_name": "locdunhat"
+            }
+          },
+          "votes": {
+            "can_upvote": true,
+            "total_upvotes": 1,
+            "total_votes": 1
+          }
+        },
+        "rawMarkdown": "Your table matches something I measured this week from the other direction, so here is one more data point and a rough rule for what to expect.\n\nI retrained one DeBERTa member on the clean Open Pool. Alone it went from 0.522 to 0.566 on the public LB, the largest single-member jump I've had. Back in my blend, which scored 0.626, four weightings gave:\n\n| new member's share of the blend weight | correctness flips vs the old blend (OOF) | paired sd on 1,200 rows | public LB |\n| --- | --- | --- | --- |\n| 0.22 (replaces the old member) | 5.3% | 0.0067 | 0.621 |\n| 0.11 (half old, half new) | 2.9% | 0.0049 | 0.624 |\n| 0.11 (less old, half new) | 2.6% | 0.0047 | 0.624 |\n| 0.10 (old kept, new added) | 3.6% | 0.0055 | 0.620 |\n\nTo see whether that was surprising, I simulated a soft-voting blend: 18 classes, members with shared and private Gaussian noise. Three things came out of it.\n\n1. **A blend sees about `share x solo gain`.** For correlated members, a 0.044 solo gain at 20% of the weight is worth about +0.008.\n2. **One submission usually can't show that.** Two such blends disagree on 2-5% of rows, so the paired sd on the public rows is 0.004-0.006.\n3. **A member below the rest of the blend can hurt at any real weight, even with a decent OOF.** In one setting (rest of the blend at 0.69, errors correlated at rho = 0.7), a new member with solo 0.55 changes the blend by 0.000 / -0.002 / -0.010 / -0.029 at 10 / 20 / 33 / 50% of the weight. Your ModernBERT result looks like this case: smaller weight, smaller damage.\n\nA caveat on my own numbers: the simulation is not a full explanation. It expected about +0.005 to +0.009 for my four blends. The results are compatible with no change at all (-0.4 to -1.1 sd), but they sit 1.4 to 2.2 sd below that expectation, so the rule was too optimistic here. They also aren't independent checks, because the four blends share most of their members. Likely reasons: my solo gain is noisy too (sd about 0.012), those solo submissions used Sinkhorn and the blends did not, and the gain may fall on rows the other members already get right.\n\nThe practical change for me: I now work out the expected blend gain and its paired sd before spending a submission on a new member. If the expected gain is below one sd, the result can't settle much either way.\n\nNotebook and grid: [How Much of a Solo Gain Reaches the Blend](https://www.kaggle.com/code/locdunhat/how-much-of-a-solo-gain-reaches-the-blend).",
+        "replies": [
+          {
+            "author": {
+              "displayName": "HALX2158",
+              "tier": "CONTRIBUTOR",
+              "url": "/mizuno0522"
+            },
+            "content": "<p>Thanks, that rule is useful. Two measurements from my side that bear on it:</p>\n<ul>\n<li><strong>Rescoring:</strong> I resubmitted my 0.659 notebook unchanged (same kernel version). It scored 0.659 again. That is one pair, so it only shows that rescoring the same code didn't move the score this time. It doesn't measure the blend-vs-blend sd you worked out.</li>\n<li><strong>The gap I mentioned above</strong> (my fork at 0.659 vs the notebook's displayed 0.664) is now explained. The code I pulled was a later version than the scored one. The scored version 2 uses a Sinkhorn mix of 0.30 and a typography coefficient of 1.5; my pull had 0.60 and 1.2. With version 2's two values, my fork scored 0.663.</li>\n</ul>",
+            "id": 3549069,
+            "isThankYou": false,
+            "postDate": "2026-11-03T02:27:44.297Z",
+            "raw": {
+              "author": {
+                "display_name": "HALX2158",
+                "id": 16294566,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                "tier": "CONTRIBUTOR",
+                "url": "/mizuno0522"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 1098,
+              "content": "<p>Thanks, that rule is useful. Two measurements from my side that bear on it:</p>\n<ul>\n<li><strong>Rescoring:</strong> I resubmitted my 0.659 notebook unchanged (same kernel version). It scored 0.659 again. That is one pair, so it only shows that rescoring the same code didn't move the score this time. It doesn't measure the blend-vs-blend sd you worked out.</li>\n<li><strong>The gap I mentioned above</strong> (my fork at 0.659 vs the notebook's displayed 0.664) is now explained. The code I pulled was a later version than the scored one. The scored version 2 uses a Sinkhorn mix of 0.30 and a typography coefficient of 1.5; my pull had 0.60 and 1.2. With version 2's two values, my fork scored 0.663.</li>\n</ul>",
+              "feedback_tracking_data": {},
+              "id": 3549069,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-03T02:27:44.297Z",
+              "raw_markdown": "Thanks, that rule is useful. Two measurements from my side that bear on it:\n\n- **Rescoring:** I resubmitted my 0.659 notebook unchanged (same kernel version). It scored 0.659 again. That is one pair, so it only shows that rescoring the same code didn't move the score this time. It doesn't measure the blend-vs-blend sd you worked out.\n- **The gap I mentioned above** (my fork at 0.659 vs the notebook's displayed 0.664) is now explained. The code I pulled was a later version than the scored one. The scored version 2 uses a Sinkhorn mix of 0.30 and a typography coefficient of 1.5; my pull had 0.60 and 1.2. With version 2's two values, my fork scored 0.663.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "HALX2158",
+                  "id": 16294566,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/mizuno0522",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/mizuno0522",
+                  "user_id": 16294566,
+                  "user_name": "mizuno0522"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "Thanks, that rule is useful. Two measurements from my side that bear on it:\n\n- **Rescoring:** I resubmitted my 0.659 notebook unchanged (same kernel version). It scored 0.659 again. That is one pair, so it only shows that rescoring the same code didn't move the score this time. It doesn't measure the blend-vs-blend sd you worked out.\n- **The gap I mentioned above** (my fork at 0.659 vs the notebook's displayed 0.664) is now explained. The code I pulled was a later version than the scored one. The scored version 2 uses a Sinkhorn mix of 0.30 and a typography coefficient of 1.5; my pull had 0.60 and 1.2. With version 2's two values, my fork scored 0.663.",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "votes": {
+          "totalVotes": 1
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 754427,
+      "message_id": 3549069,
+      "parent_message_id": 3548391,
+      "author": "HALX2158",
+      "author_url": "/mizuno0522",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-03T02:27:44.297Z",
+      "raw_markdown": "Thanks, that rule is useful. Two measurements from my side that bear on it:\n\n- **Rescoring:** I resubmitted my 0.659 notebook unchanged (same kernel version). It scored 0.659 again. That is one pair, so it only shows that rescoring the same code didn't move the score this time. It doesn't measure the blend-vs-blend sd you worked out.\n- **The gap I mentioned above** (my fork at 0.659 vs the notebook's displayed 0.664) is now explained. The code I pulled was a later version than the scored one. The scored version 2 uses a Sinkhorn mix of 0.30 and a typography coefficient of 1.5; my pull had 0.60 and 1.2. With version 2's two values, my fork scored 0.663.",
+      "content_html": "<p>Thanks, that rule is useful. Two measurements from my side that bear on it:</p>\n<ul>\n<li><strong>Rescoring:</strong> I resubmitted my 0.659 notebook unchanged (same kernel version). It scored 0.659 again. That is one pair, so it only shows that rescoring the same code didn't move the score this time. It doesn't measure the blend-vs-blend sd you worked out.</li>\n<li><strong>The gap I mentioned above</strong> (my fork at 0.659 vs the notebook's displayed 0.664) is now explained. The code I pulled was a later version than the scored one. The scored version 2 uses a Sinkhorn mix of 0.30 and a typography coefficient of 1.5; my pull had 0.60 and 1.2. With version 2's two values, my fork scored 0.663.</li>\n</ul>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 1,
+      "first_seen_at": "2026-11-04T06:58:11+00:00",
+      "last_seen_at": "2026-11-16T16:23:22+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:23:22+00:00",
+      "remote_last_listed_at": "2026-11-16T16:23:22+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "HALX2158",
+          "tier": "CONTRIBUTOR",
+          "url": "/mizuno0522"
+        },
+        "content": "<p>Thanks, that rule is useful. Two measurements from my side that bear on it:</p>\n<ul>\n<li><strong>Rescoring:</strong> I resubmitted my 0.659 notebook unchanged (same kernel version). It scored 0.659 again. That is one pair, so it only shows that rescoring the same code didn't move the score this time. It doesn't measure the blend-vs-blend sd you worked out.</li>\n<li><strong>The gap I mentioned above</strong> (my fork at 0.659 vs the notebook's displayed 0.664) is now explained. The code I pulled was a later version than the scored one. The scored version 2 uses a Sinkhorn mix of 0.30 and a typography coefficient of 1.5; my pull had 0.60 and 1.2. With version 2's two values, my fork scored 0.663.</li>\n</ul>",
+        "id": 3549069,
+        "isThankYou": false,
+        "postDate": "2026-11-03T02:27:44.297Z",
+        "raw": {
+          "author": {
+            "display_name": "HALX2158",
+            "id": 16294566,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+            "tier": "CONTRIBUTOR",
+            "url": "/mizuno0522"
+          },
+          "author_type": "TOPIC",
+          "competition_ranking": 1098,
+          "content": "<p>Thanks, that rule is useful. Two measurements from my side that bear on it:</p>\n<ul>\n<li><strong>Rescoring:</strong> I resubmitted my 0.659 notebook unchanged (same kernel version). It scored 0.659 again. That is one pair, so it only shows that rescoring the same code didn't move the score this time. It doesn't measure the blend-vs-blend sd you worked out.</li>\n<li><strong>The gap I mentioned above</strong> (my fork at 0.659 vs the notebook's displayed 0.664) is now explained. The code I pulled was a later version than the scored one. The scored version 2 uses a Sinkhorn mix of 0.30 and a typography coefficient of 1.5; my pull had 0.60 and 1.2. With version 2's two values, my fork scored 0.663.</li>\n</ul>",
+          "feedback_tracking_data": {},
+          "id": 3549069,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-03T02:27:44.297Z",
+          "raw_markdown": "Thanks, that rule is useful. Two measurements from my side that bear on it:\n\n- **Rescoring:** I resubmitted my 0.659 notebook unchanged (same kernel version). It scored 0.659 again. That is one pair, so it only shows that rescoring the same code didn't move the score this time. It doesn't measure the blend-vs-blend sd you worked out.\n- **The gap I mentioned above** (my fork at 0.659 vs the notebook's displayed 0.664) is now explained. The code I pulled was a later version than the scored one. The scored version 2 uses a Sinkhorn mix of 0.30 and a typography coefficient of 1.5; my pull had 0.60 and 1.2. With version 2's two values, my fork scored 0.663.",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "HALX2158",
+              "id": 16294566,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/mizuno0522",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+              "tier": "CONTRIBUTOR",
+              "url": "/mizuno0522",
+              "user_id": 16294566,
+              "user_name": "mizuno0522"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "Thanks, that rule is useful. Two measurements from my side that bear on it:\n\n- **Rescoring:** I resubmitted my 0.659 notebook unchanged (same kernel version). It scored 0.659 again. That is one pair, so it only shows that rescoring the same code didn't move the score this time. It doesn't measure the blend-vs-blend sd you worked out.\n- **The gap I mentioned above** (my fork at 0.659 vs the notebook's displayed 0.664) is now explained. The code I pulled was a later version than the scored one. The scored version 2 uses a Sinkhorn mix of 0.30 and a typography coefficient of 1.5; my pull had 0.60 and 1.2. With version 2's two values, my fork scored 0.663.",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    }
+  ],
+  "writeup": null
+}

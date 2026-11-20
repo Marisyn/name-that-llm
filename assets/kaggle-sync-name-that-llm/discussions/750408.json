@@ -1,0 +1,211 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 750408,
+    "title": "What is the exact formatting procedure?",
+    "author": "ln",
+    "author_url": "/nazarov",
+    "author_tier": "GRANDMASTER",
+    "post_date": "2026-10-18T06:44:18.468547900Z",
+    "last_comment_post_date": "2026-10-18T06:44:18.470Z",
+    "comment_count": 0,
+    "votes": 4,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/750408",
+    "first_message_id": 3540519,
+    "first_seen_at": "2026-11-04T06:56:18+00:00",
+    "last_seen_at": "2026-11-16T16:36:10+00:00",
+    "detail_last_synced_at": "2026-11-16T16:36:10+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "aa0dae11526f44e97797904b54521b8ec71a20f9ca06d10b61fb941e75b929bf",
+    "listing_metrics_hash": "818a5cc0f2253a82207ce555576d24d0d4b4461b2ac293b834a011f9d570c30a",
+    "detail_content_hash": "5b07b7ded13e4a5a70c72269566935acc6d26ecbec1dde8edeb5e320a90ca490",
+    "detail_last_checked_at": "2026-11-16T16:36:10+00:00",
+    "detail_next_check_at": "2026-11-23T16:36:10+00:00",
+    "detail_unchanged_count": 2,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 0,
+      "firstForumMessageId": null,
+      "id": 750408,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-10-18T06:44:18.470Z",
+      "postDate": "2026-10-18T06:44:18.468547900Z",
+      "raw": {
+        "id": 750408,
+        "last_comment_post_date": "2026-10-18T06:44:18.470Z",
+        "post_date": "2026-10-18T06:44:18.468547900Z",
+        "title": "What is the exact formatting procedure?",
+        "topic_url": "/competitions/name-that-llm/discussion/750408",
+        "votes": 4
+      },
+      "title": "What is the exact formatting procedure?",
+      "topicUrl": "/competitions/name-that-llm/discussion/750408",
+      "votes": 4
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "GRANDMASTER",
+        "authorUserDisplayName": "ln",
+        "authorUserName": "nazarov",
+        "comments": [],
+        "expectedCommentCount": 0,
+        "firstMessage": {
+          "author": {
+            "displayName": "ln",
+            "tier": "GRANDMASTER",
+            "url": "/nazarov"
+          },
+          "content": "<p>From Dataset Description: \"Only light formatting cleanup was applied (for example, removing a <strong>bold</strong> wrapper around a whole passage).\"</p>\n<p>A description of the exact formatting procedure would be very helpful when creating new data.</p>",
+          "id": 3540519,
+          "isThankYou": false,
+          "postDate": "2026-10-18T06:44:18.470Z",
+          "raw": {
+            "author": {
+              "display_name": "ln",
+              "id": 291846,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/291846-kg.jpg",
+              "tier": "GRANDMASTER",
+              "url": "/nazarov"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 1499,
+            "content": "<p>From Dataset Description: \"Only light formatting cleanup was applied (for example, removing a <strong>bold</strong> wrapper around a whole passage).\"</p>\n<p>A description of the exact formatting procedure would be very helpful when creating new data.</p>",
+            "feedback_tracking_data": {},
+            "id": 3540519,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-10-18T06:44:18.470Z",
+            "raw_markdown": "From Dataset Description: \"Only light formatting cleanup was applied (for example, removing a **bold** wrapper around a whole passage).\"\n\nA description of the exact formatting procedure would be very helpful when creating new data.",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "ln",
+                "id": 291846,
+                "performance_tier": "GRANDMASTER",
+                "profile_url": "/nazarov",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/291846-kg.jpg",
+                "tier": "GRANDMASTER",
+                "url": "/nazarov",
+                "user_id": 291846,
+                "user_name": "nazarov"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 4,
+              "total_votes": 4
+            }
+          },
+          "rawMarkdown": "From Dataset Description: \"Only light formatting cleanup was applied (for example, removing a **bold** wrapper around a whole passage).\"\n\nA description of the exact formatting procedure would be very helpful when creating new data.",
+          "replies": [],
+          "votes": {
+            "totalVotes": 4
+          }
+        },
+        "firstMessageId": 3540519,
+        "id": 750408,
+        "name": "What is the exact formatting procedure?",
+        "postDate": "2026-10-18T06:44:18.468547900Z",
+        "url": "/competitions/name-that-llm/discussion/750408"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>From Dataset Description: \"Only light formatting cleanup was applied (for example, removing a <strong>bold</strong> wrapper around a whole passage).\"</p>\n<p>A description of the exact formatting procedure would be very helpful when creating new data.</p>",
+              "id": 3540519,
+              "post_date": "2026-10-18T06:44:18.470Z",
+              "raw_markdown": "From Dataset Description: \"Only light formatting cleanup was applied (for example, removing a **bold** wrapper around a whole passage).\"\n\nA description of the exact formatting procedure would be very helpful when creating new data.",
+              "votes": 4
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 291846,
+            "author_performance_tier": "GRANDMASTER",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "291846-kg.jpg",
+            "author_user_display_name": "ln",
+            "author_user_name": "nazarov",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "first_message": {
+              "author": {
+                "display_name": "ln",
+                "id": 291846,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/291846-kg.jpg",
+                "tier": "GRANDMASTER",
+                "url": "/nazarov"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 1499,
+              "content": "<p>From Dataset Description: \"Only light formatting cleanup was applied (for example, removing a <strong>bold</strong> wrapper around a whole passage).\"</p>\n<p>A description of the exact formatting procedure would be very helpful when creating new data.</p>",
+              "feedback_tracking_data": {},
+              "id": 3540519,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-18T06:44:18.470Z",
+              "raw_markdown": "From Dataset Description: \"Only light formatting cleanup was applied (for example, removing a **bold** wrapper around a whole passage).\"\n\nA description of the exact formatting procedure would be very helpful when creating new data.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "ln",
+                  "id": 291846,
+                  "performance_tier": "GRANDMASTER",
+                  "profile_url": "/nazarov",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/291846-kg.jpg",
+                  "tier": "GRANDMASTER",
+                  "url": "/nazarov",
+                  "user_id": 291846,
+                  "user_name": "nazarov"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 4,
+                "total_votes": 4
+              }
+            },
+            "first_message_id": 3540519,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 750408,
+            "name": "What is the exact formatting procedure?",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-10-18T06:44:18.468547900Z",
+            "total_votes": 4,
+            "url": "/competitions/name-that-llm/discussion/750408"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:36:10+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:36:10+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-10-18T06:44:18.470Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [],
+  "writeup": null
+}

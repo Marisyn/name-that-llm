@@ -1,0 +1,86 @@
+{
+  "slug": "name-that-llm",
+  "job_id": 1235,
+  "started_at": "2026-11-19T13:49:02+00:00",
+  "finished_at": "2026-11-19T13:49:30+00:00",
+  "after": {
+    "job_id": 1234,
+    "kind": "writeups",
+    "mode": "delta"
+  },
+  "files": {
+    "written": 11,
+    "removed": 0,
+    "unchanged": 19785,
+    "kept_incomplete": 0,
+    "written_files": [
+      "code/RANKING.md",
+      "code/ahin05__inference-notebook/metadata.json",
+      "code/arsen123__ntl-0704-fable-routing-repro/metadata.json",
+      "code/cosheimil__name-that-llm-tfidf-baseline-v2/metadata.json",
+      "code/index.json",
+      "code/lightningv08__0-704-glm-fable-routing-qwen3-8-27b-lora/metadata.json",
+      "code/lucasboesen__name-that-llm-train-lora24-s7/metadata.json",
+      "code/martynaplomecka__starter-notebook-for-name-that-llm-competition/metadata.json",
+      "code/muhammadshoaibaltaf__name-that-llm-starter-experiment/metadata.json",
+      "code/romantamrazov__name-that-llm-who-am-i/metadata.json",
+      "code/sahangunasekara92__eda-fingerprinting-with-n-grams-and-pos-patterns/metadata.json"
+    ],
+    "removed_files": [],
+    "kept_incomplete_files": []
+  },
+  "counts": {
+    "discussions": 132,
+    "writeups": 0,
+    "code": 1655,
+    "unlisted_discussions": 2,
+    "unlisted_writeups": 0,
+    "unlisted_code": 0,
+    "historical_code_versions": 0,
+    "submissions": 0,
+    "submission_files": 0,
+    "overview": 1,
+    "data": 1,
+    "pages": 9,
+    "media": 18,
+    "unavailable_original_media": 0,
+    "source_files": 1653,
+    "exported_media_files": 18
+  },
+  "complete": true,
+  "incomplete_items": 0,
+  "ranked_notebooks": 1098,
+  "changes": {
+    "new_topics": 0,
+    "active_topics": 0,
+    "gone_topics": 0,
+    "new_writeups": 0,
+    "new_code": 0,
+    "new_code_versions": 0,
+    "code_score_changes": 1,
+    "gone_code": 0
+  },
+  "entries": [
+    "code",
+    "competition.json",
+    "data.md",
+    "discussions",
+    "manifest.json",
+    "media",
+    "overview.md",
+    "pages.json",
+    "submissions",
+    "writeups"
+  ],
+  "first_run": false,
+  "recent_changes": {
+    "new_topics": 3,
+    "active_topics": 3,
+    "gone_topics": 0,
+    "new_writeups": 0,
+    "new_code": 83,
+    "new_code_versions": 17,
+    "code_score_changes": 26,
+    "gone_code": 6
+  }
+}

@@ -1,0 +1,204 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 760286,
+    "title": "A calibrated CPU baseline (CV 0.3515 -> LB 0.339) and an 18-model confusability atlas",
+    "author": "suyuchuan",
+    "author_url": "/suyuchuan",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-11-19T03:23:59.788986300Z",
+    "last_comment_post_date": "2026-11-19T03:23:59.790Z",
+    "comment_count": 0,
+    "votes": 0,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/760286",
+    "first_message_id": 3556757,
+    "first_seen_at": "2026-11-19T12:45:20+00:00",
+    "last_seen_at": "2026-11-19T12:45:28+00:00",
+    "detail_last_synced_at": "2026-11-19T12:45:28+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-19T12:45:20+00:00",
+    "remote_last_listed_at": "2026-11-19T12:45:20+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "8db7d25f7206fc50a8a20ac0712037d6b1763c21ac8030819eb2ee75d76e767d",
+    "listing_metrics_hash": "1d7b01d39d998f5caf0eb285f7806c0632a1cb146aadc79a9504e2481370b229",
+    "detail_content_hash": "6ef3a802edeeaf1d7fc71a5155533abd77af23e9436b015a0eb0e8b7bdab6798",
+    "detail_last_checked_at": "2026-11-19T12:45:28+00:00",
+    "detail_next_check_at": "2026-11-20T12:45:28+00:00",
+    "detail_unchanged_count": 0,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 0,
+      "firstForumMessageId": null,
+      "id": 760286,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-11-19T03:23:59.790Z",
+      "postDate": "2026-11-19T03:23:59.788986300Z",
+      "raw": {
+        "id": 760286,
+        "last_comment_post_date": "2026-11-19T03:23:59.790Z",
+        "post_date": "2026-11-19T03:23:59.788986300Z",
+        "title": "A calibrated CPU baseline (CV 0.3515 -> LB 0.339) and an 18-model confusability atlas",
+        "topic_url": "/competitions/name-that-llm/discussion/760286"
+      },
+      "title": "A calibrated CPU baseline (CV 0.3515 -> LB 0.339) and an 18-model confusability atlas",
+      "topicUrl": "/competitions/name-that-llm/discussion/760286",
+      "votes": 0
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "suyuchuan",
+        "authorUserName": "suyuchuan",
+        "comments": [],
+        "expectedCommentCount": 0,
+        "firstMessage": {
+          "author": {
+            "displayName": "suyuchuan",
+            "tier": "CONTRIBUTOR",
+            "url": "/suyuchuan"
+          },
+          "content": "<p>Most public notebooks here sit at 0.68-0.78, and nearly all of them need a GPU plus model inference. If you are on CPU — or you just want a starting point whose leaderboard number you can trust — the useful question is different: what does a pure feature-based baseline actually score, and why can't it go higher?</p>\n<p>I tried to answer that with measurements rather than guesses.</p>\n<p><strong>1. The CV protocol decides everything.</strong> Identical word+char TF-IDF with a logistic regression:</p>\n<ul>\n<li>StratifiedKFold: <strong>0.09</strong></li>\n<li>GroupKFold(prompt_id): <strong>0.32</strong></li>\n</ul>\n<p>The hidden test uses prompts never seen in training, so only the grouped split is honest.</p>\n<p><strong>2. CV to LB calibration.</strong> Tuned CPU pipeline (char_wb + 26 style features computed from the text + LinearSVC):</p>\n<ul>\n<li>GroupKFold CV: <strong>0.3515</strong></li>\n<li>actual public LB: <strong>0.339</strong> (gap 0.013)</li>\n</ul>\n<p>The protocol transfers, so the number means something.</p>\n<p><strong>3. Ablations</strong> (same folds, same protocol):</p>\n<table>\n<thead>\n<tr>\n<th>Configuration</th>\n<th>BA</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>word-only TF-IDF + LinearSVC</td>\n<td>0.221</td>\n</tr>\n<tr>\n<td>char-only (3,5) + LinearSVC</td>\n<td>0.275</td>\n</tr>\n<tr>\n<td>ComplementNB</td>\n<td>0.244</td>\n</tr>\n<tr>\n<td>soft-vote ensemble (LR+SVC+NB)</td>\n<td>0.278</td>\n</tr>\n<tr>\n<td>word+char(3,5) + LR C=2</td>\n<td>0.3197</td>\n</tr>\n<tr>\n<td><strong>char_wb(2,5) + style x0.3 + LinearSVC</strong></td>\n<td><strong>0.3515</strong></td>\n</tr>\n<tr>\n<td>style x0.5</td>\n<td>0.348</td>\n</tr>\n<tr>\n<td>word(1,3)+char_wb, 100k features</td>\n<td>0.276</td>\n</tr>\n</tbody>\n</table>\n<p>More features is worse here: with 2,699 rows the vocabulary drowns.</p>\n<p><strong>4. Where the errors actually go</strong> (the part I did not expect): about <strong>48%</strong> of off-diagonal errors stay inside a model family. gemini-3.8-flash leaks <strong>36%</strong> of its own samples into gemini-3.7-flash; gpt-5.6-sol to luna 19%; glm-5.3 to claude-opus-5 20%. And claude-fable-5 has <strong>6% recall</strong>. The label is a <em>version</em> label, not a style label.</p>\n<p><strong>5. A negative result worth sharing:</strong> routing family-first and then model-within-family is <em>worse</em> — 0.333 against 0.348 flat. The family head compounds its own errors (family-level BA is only 0.555), so the router loses more than the specialists gain.</p>\n<p><strong>Conclusion:</strong> n-gram features top out around 0.35. The jump to 0.70 is not tuning, it is likelihood scoring — the probability each model assigns to the text. Everything in the 0.68+ tier pays for that in GPU hours.</p>\n<p>Notebook (self-contained, ~6 min on CPU, reruns clean, no datasets to attach): <a href=\"https://www.kaggle.com/code/suyuchuan/name-that-llm-quickstart-leaderboard-ladder\" target=\"_blank\">https://www.kaggle.com/code/suyuchuan/name-that-llm-quickstart-leaderboard-ladder</a></p>\n<p>Happy to discuss the CV design or the confusion analysis.</p>",
+          "id": 3556757,
+          "isThankYou": false,
+          "postDate": "2026-11-19T03:23:59.790Z",
+          "raw": {
+            "author": {
+              "display_name": "suyuchuan",
+              "id": 37970783,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/37970783-kg.jpg?t=2026-11-16-04-49-08",
+              "tier": "CONTRIBUTOR",
+              "url": "/suyuchuan"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 968,
+            "content": "<p>Most public notebooks here sit at 0.68-0.78, and nearly all of them need a GPU plus model inference. If you are on CPU — or you just want a starting point whose leaderboard number you can trust — the useful question is different: what does a pure feature-based baseline actually score, and why can't it go higher?</p>\n<p>I tried to answer that with measurements rather than guesses.</p>\n<p><strong>1. The CV protocol decides everything.</strong> Identical word+char TF-IDF with a logistic regression:</p>\n<ul>\n<li>StratifiedKFold: <strong>0.09</strong></li>\n<li>GroupKFold(prompt_id): <strong>0.32</strong></li>\n</ul>\n<p>The hidden test uses prompts never seen in training, so only the grouped split is honest.</p>\n<p><strong>2. CV to LB calibration.</strong> Tuned CPU pipeline (char_wb + 26 style features computed from the text + LinearSVC):</p>\n<ul>\n<li>GroupKFold CV: <strong>0.3515</strong></li>\n<li>actual public LB: <strong>0.339</strong> (gap 0.013)</li>\n</ul>\n<p>The protocol transfers, so the number means something.</p>\n<p><strong>3. Ablations</strong> (same folds, same protocol):</p>\n<table>\n<thead>\n<tr>\n<th>Configuration</th>\n<th>BA</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>word-only TF-IDF + LinearSVC</td>\n<td>0.221</td>\n</tr>\n<tr>\n<td>char-only (3,5) + LinearSVC</td>\n<td>0.275</td>\n</tr>\n<tr>\n<td>ComplementNB</td>\n<td>0.244</td>\n</tr>\n<tr>\n<td>soft-vote ensemble (LR+SVC+NB)</td>\n<td>0.278</td>\n</tr>\n<tr>\n<td>word+char(3,5) + LR C=2</td>\n<td>0.3197</td>\n</tr>\n<tr>\n<td><strong>char_wb(2,5) + style x0.3 + LinearSVC</strong></td>\n<td><strong>0.3515</strong></td>\n</tr>\n<tr>\n<td>style x0.5</td>\n<td>0.348</td>\n</tr>\n<tr>\n<td>word(1,3)+char_wb, 100k features</td>\n<td>0.276</td>\n</tr>\n</tbody>\n</table>\n<p>More features is worse here: with 2,699 rows the vocabulary drowns.</p>\n<p><strong>4. Where the errors actually go</strong> (the part I did not expect): about <strong>48%</strong> of off-diagonal errors stay inside a model family. gemini-3.8-flash leaks <strong>36%</strong> of its own samples into gemini-3.7-flash; gpt-5.6-sol to luna 19%; glm-5.3 to claude-opus-5 20%. And claude-fable-5 has <strong>6% recall</strong>. The label is a <em>version</em> label, not a style label.</p>\n<p><strong>5. A negative result worth sharing:</strong> routing family-first and then model-within-family is <em>worse</em> — 0.333 against 0.348 flat. The family head compounds its own errors (family-level BA is only 0.555), so the router loses more than the specialists gain.</p>\n<p><strong>Conclusion:</strong> n-gram features top out around 0.35. The jump to 0.70 is not tuning, it is likelihood scoring — the probability each model assigns to the text. Everything in the 0.68+ tier pays for that in GPU hours.</p>\n<p>Notebook (self-contained, ~6 min on CPU, reruns clean, no datasets to attach): <a href=\"https://www.kaggle.com/code/suyuchuan/name-that-llm-quickstart-leaderboard-ladder\" target=\"_blank\">https://www.kaggle.com/code/suyuchuan/name-that-llm-quickstart-leaderboard-ladder</a></p>\n<p>Happy to discuss the CV design or the confusion analysis.</p>",
+            "feedback_tracking_data": {},
+            "id": 3556757,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-11-19T03:23:59.790Z",
+            "raw_markdown": "Most public notebooks here sit at 0.68-0.78, and nearly all of them need a GPU plus model inference. If you are on CPU — or you just want a starting point whose leaderboard number you can trust — the useful question is different: what does a pure feature-based baseline actually score, and why can't it go higher?\n\nI tried to answer that with measurements rather than guesses.\n\n**1. The CV protocol decides everything.** Identical word+char TF-IDF with a logistic regression:\n- StratifiedKFold: **0.09**\n- GroupKFold(prompt_id): **0.32**\n\nThe hidden test uses prompts never seen in training, so only the grouped split is honest.\n\n**2. CV to LB calibration.** Tuned CPU pipeline (char_wb + 26 style features computed from the text + LinearSVC):\n- GroupKFold CV: **0.3515**\n- actual public LB: **0.339** (gap 0.013)\n\nThe protocol transfers, so the number means something.\n\n**3. Ablations** (same folds, same protocol):\n\n| Configuration | BA |\n|---|---|\n| word-only TF-IDF + LinearSVC | 0.221 |\n| char-only (3,5) + LinearSVC | 0.275 |\n| ComplementNB | 0.244 |\n| soft-vote ensemble (LR+SVC+NB) | 0.278 |\n| word+char(3,5) + LR C=2 | 0.3197 |\n| **char_wb(2,5) + style x0.3 + LinearSVC** | **0.3515** |\n| style x0.5 | 0.348 |\n| word(1,3)+char_wb, 100k features | 0.276 |\n\nMore features is worse here: with 2,699 rows the vocabulary drowns.\n\n**4. Where the errors actually go** (the part I did not expect): about **48%** of off-diagonal errors stay inside a model family. gemini-3.8-flash leaks **36%** of its own samples into gemini-3.7-flash; gpt-5.6-sol to luna 19%; glm-5.3 to claude-opus-5 20%. And claude-fable-5 has **6% recall**. The label is a *version* label, not a style label.\n\n**5. A negative result worth sharing:** routing family-first and then model-within-family is *worse* — 0.333 against 0.348 flat. The family head compounds its own errors (family-level BA is only 0.555), so the router loses more than the specialists gain.\n\n**Conclusion:** n-gram features top out around 0.35. The jump to 0.70 is not tuning, it is likelihood scoring — the probability each model assigns to the text. Everything in the 0.68+ tier pays for that in GPU hours.\n\nNotebook (self-contained, ~6 min on CPU, reruns clean, no datasets to attach): https://www.kaggle.com/code/suyuchuan/name-that-llm-quickstart-leaderboard-ladder\n\nHappy to discuss the CV design or the confusion analysis.",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "suyuchuan",
+                "id": 37970783,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/suyuchuan",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/37970783-kg.jpg?t=2026-11-16-04-49-08",
+                "tier": "CONTRIBUTOR",
+                "url": "/suyuchuan",
+                "user_id": 37970783,
+                "user_name": "suyuchuan"
+              }
+            },
+            "votes": {
+              "can_upvote": true
+            }
+          },
+          "rawMarkdown": "Most public notebooks here sit at 0.68-0.78, and nearly all of them need a GPU plus model inference. If you are on CPU — or you just want a starting point whose leaderboard number you can trust — the useful question is different: what does a pure feature-based baseline actually score, and why can't it go higher?\n\nI tried to answer that with measurements rather than guesses.\n\n**1. The CV protocol decides everything.** Identical word+char TF-IDF with a logistic regression:\n- StratifiedKFold: **0.09**\n- GroupKFold(prompt_id): **0.32**\n\nThe hidden test uses prompts never seen in training, so only the grouped split is honest.\n\n**2. CV to LB calibration.** Tuned CPU pipeline (char_wb + 26 style features computed from the text + LinearSVC):\n- GroupKFold CV: **0.3515**\n- actual public LB: **0.339** (gap 0.013)\n\nThe protocol transfers, so the number means something.\n\n**3. Ablations** (same folds, same protocol):\n\n| Configuration | BA |\n|---|---|\n| word-only TF-IDF + LinearSVC | 0.221 |\n| char-only (3,5) + LinearSVC | 0.275 |\n| ComplementNB | 0.244 |\n| soft-vote ensemble (LR+SVC+NB) | 0.278 |\n| word+char(3,5) + LR C=2 | 0.3197 |\n| **char_wb(2,5) + style x0.3 + LinearSVC** | **0.3515** |\n| style x0.5 | 0.348 |\n| word(1,3)+char_wb, 100k features | 0.276 |\n\nMore features is worse here: with 2,699 rows the vocabulary drowns.\n\n**4. Where the errors actually go** (the part I did not expect): about **48%** of off-diagonal errors stay inside a model family. gemini-3.8-flash leaks **36%** of its own samples into gemini-3.7-flash; gpt-5.6-sol to luna 19%; glm-5.3 to claude-opus-5 20%. And claude-fable-5 has **6% recall**. The label is a *version* label, not a style label.\n\n**5. A negative result worth sharing:** routing family-first and then model-within-family is *worse* — 0.333 against 0.348 flat. The family head compounds its own errors (family-level BA is only 0.555), so the router loses more than the specialists gain.\n\n**Conclusion:** n-gram features top out around 0.35. The jump to 0.70 is not tuning, it is likelihood scoring — the probability each model assigns to the text. Everything in the 0.68+ tier pays for that in GPU hours.\n\nNotebook (self-contained, ~6 min on CPU, reruns clean, no datasets to attach): https://www.kaggle.com/code/suyuchuan/name-that-llm-quickstart-leaderboard-ladder\n\nHappy to discuss the CV design or the confusion analysis.",
+          "replies": [],
+          "votes": {
+            "totalVotes": 0
+          }
+        },
+        "firstMessageId": 3556757,
+        "id": 760286,
+        "name": "A calibrated CPU baseline (CV 0.3515 -> LB 0.339) and an 18-model confusability atlas",
+        "postDate": "2026-11-19T03:23:59.788986300Z",
+        "url": "/competitions/name-that-llm/discussion/760286"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>Most public notebooks here sit at 0.68-0.78, and nearly all of them need a GPU plus model inference. If you are on CPU — or you just want a starting point whose leaderboard number you can trust — the useful question is different: what does a pure feature-based baseline actually score, and why can't it go higher?</p>\n<p>I tried to answer that with measurements rather than guesses.</p>\n<p><strong>1. The CV protocol decides everything.</strong> Identical word+char TF-IDF with a logistic regression:</p>\n<ul>\n<li>StratifiedKFold: <strong>0.09</strong></li>\n<li>GroupKFold(prompt_id): <strong>0.32</strong></li>\n</ul>\n<p>The hidden test uses prompts never seen in training, so only the grouped split is honest.</p>\n<p><strong>2. CV to LB calibration.</strong> Tuned CPU pipeline (char_wb + 26 style features computed from the text + LinearSVC):</p>\n<ul>\n<li>GroupKFold CV: <strong>0.3515</strong></li>\n<li>actual public LB: <strong>0.339</strong> (gap 0.013)</li>\n</ul>\n<p>The protocol transfers, so the number means something.</p>\n<p><strong>3. Ablations</strong> (same folds, same protocol):</p>\n<table>\n<thead>\n<tr>\n<th>Configuration</th>\n<th>BA</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>word-only TF-IDF + LinearSVC</td>\n<td>0.221</td>\n</tr>\n<tr>\n<td>char-only (3,5) + LinearSVC</td>\n<td>0.275</td>\n</tr>\n<tr>\n<td>ComplementNB</td>\n<td>0.244</td>\n</tr>\n<tr>\n<td>soft-vote ensemble (LR+SVC+NB)</td>\n<td>0.278</td>\n</tr>\n<tr>\n<td>word+char(3,5) + LR C=2</td>\n<td>0.3197</td>\n</tr>\n<tr>\n<td><strong>char_wb(2,5) + style x0.3 + LinearSVC</strong></td>\n<td><strong>0.3515</strong></td>\n</tr>\n<tr>\n<td>style x0.5</td>\n<td>0.348</td>\n</tr>\n<tr>\n<td>word(1,3)+char_wb, 100k features</td>\n<td>0.276</td>\n</tr>\n</tbody>\n</table>\n<p>More features is worse here: with 2,699 rows the vocabulary drowns.</p>\n<p><strong>4. Where the errors actually go</strong> (the part I did not expect): about <strong>48%</strong> of off-diagonal errors stay inside a model family. gemini-3.8-flash leaks <strong>36%</strong> of its own samples into gemini-3.7-flash; gpt-5.6-sol to luna 19%; glm-5.3 to claude-opus-5 20%. And claude-fable-5 has <strong>6% recall</strong>. The label is a <em>version</em> label, not a style label.</p>\n<p><strong>5. A negative result worth sharing:</strong> routing family-first and then model-within-family is <em>worse</em> — 0.333 against 0.348 flat. The family head compounds its own errors (family-level BA is only 0.555), so the router loses more than the specialists gain.</p>\n<p><strong>Conclusion:</strong> n-gram features top out around 0.35. The jump to 0.70 is not tuning, it is likelihood scoring — the probability each model assigns to the text. Everything in the 0.68+ tier pays for that in GPU hours.</p>\n<p>Notebook (self-contained, ~6 min on CPU, reruns clean, no datasets to attach): <a href=\"https://www.kaggle.com/code/suyuchuan/name-that-llm-quickstart-leaderboard-ladder\" target=\"_blank\">https://www.kaggle.com/code/suyuchuan/name-that-llm-quickstart-leaderboard-ladder</a></p>\n<p>Happy to discuss the CV design or the confusion analysis.</p>",
+              "id": 3556757,
+              "post_date": "2026-11-19T03:23:59.790Z",
+              "raw_markdown": "Most public notebooks here sit at 0.68-0.78, and nearly all of them need a GPU plus model inference. If you are on CPU — or you just want a starting point whose leaderboard number you can trust — the useful question is different: what does a pure feature-based baseline actually score, and why can't it go higher?\n\nI tried to answer that with measurements rather than guesses.\n\n**1. The CV protocol decides everything.** Identical word+char TF-IDF with a logistic regression:\n- StratifiedKFold: **0.09**\n- GroupKFold(prompt_id): **0.32**\n\nThe hidden test uses prompts never seen in training, so only the grouped split is honest.\n\n**2. CV to LB calibration.** Tuned CPU pipeline (char_wb + 26 style features computed from the text + LinearSVC):\n- GroupKFold CV: **0.3515**\n- actual public LB: **0.339** (gap 0.013)\n\nThe protocol transfers, so the number means something.\n\n**3. Ablations** (same folds, same protocol):\n\n| Configuration | BA |\n|---|---|\n| word-only TF-IDF + LinearSVC | 0.221 |\n| char-only (3,5) + LinearSVC | 0.275 |\n| ComplementNB | 0.244 |\n| soft-vote ensemble (LR+SVC+NB) | 0.278 |\n| word+char(3,5) + LR C=2 | 0.3197 |\n| **char_wb(2,5) + style x0.3 + LinearSVC** | **0.3515** |\n| style x0.5 | 0.348 |\n| word(1,3)+char_wb, 100k features | 0.276 |\n\nMore features is worse here: with 2,699 rows the vocabulary drowns.\n\n**4. Where the errors actually go** (the part I did not expect): about **48%** of off-diagonal errors stay inside a model family. gemini-3.8-flash leaks **36%** of its own samples into gemini-3.7-flash; gpt-5.6-sol to luna 19%; glm-5.3 to claude-opus-5 20%. And claude-fable-5 has **6% recall**. The label is a *version* label, not a style label.\n\n**5. A negative result worth sharing:** routing family-first and then model-within-family is *worse* — 0.333 against 0.348 flat. The family head compounds its own errors (family-level BA is only 0.555), so the router loses more than the specialists gain.\n\n**Conclusion:** n-gram features top out around 0.35. The jump to 0.70 is not tuning, it is likelihood scoring — the probability each model assigns to the text. Everything in the 0.68+ tier pays for that in GPU hours.\n\nNotebook (self-contained, ~6 min on CPU, reruns clean, no datasets to attach): https://www.kaggle.com/code/suyuchuan/name-that-llm-quickstart-leaderboard-ladder\n\nHappy to discuss the CV design or the confusion analysis."
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 37970783,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "37970783-kg.jpg?t=2026-11-16-04-49-08",
+            "author_user_display_name": "suyuchuan",
+            "author_user_name": "suyuchuan",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "first_message": {
+              "author": {
+                "display_name": "suyuchuan",
+                "id": 37970783,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/37970783-kg.jpg?t=2026-11-16-04-49-08",
+                "tier": "CONTRIBUTOR",
+                "url": "/suyuchuan"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 968,
+              "content": "<p>Most public notebooks here sit at 0.68-0.78, and nearly all of them need a GPU plus model inference. If you are on CPU — or you just want a starting point whose leaderboard number you can trust — the useful question is different: what does a pure feature-based baseline actually score, and why can't it go higher?</p>\n<p>I tried to answer that with measurements rather than guesses.</p>\n<p><strong>1. The CV protocol decides everything.</strong> Identical word+char TF-IDF with a logistic regression:</p>\n<ul>\n<li>StratifiedKFold: <strong>0.09</strong></li>\n<li>GroupKFold(prompt_id): <strong>0.32</strong></li>\n</ul>\n<p>The hidden test uses prompts never seen in training, so only the grouped split is honest.</p>\n<p><strong>2. CV to LB calibration.</strong> Tuned CPU pipeline (char_wb + 26 style features computed from the text + LinearSVC):</p>\n<ul>\n<li>GroupKFold CV: <strong>0.3515</strong></li>\n<li>actual public LB: <strong>0.339</strong> (gap 0.013)</li>\n</ul>\n<p>The protocol transfers, so the number means something.</p>\n<p><strong>3. Ablations</strong> (same folds, same protocol):</p>\n<table>\n<thead>\n<tr>\n<th>Configuration</th>\n<th>BA</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>word-only TF-IDF + LinearSVC</td>\n<td>0.221</td>\n</tr>\n<tr>\n<td>char-only (3,5) + LinearSVC</td>\n<td>0.275</td>\n</tr>\n<tr>\n<td>ComplementNB</td>\n<td>0.244</td>\n</tr>\n<tr>\n<td>soft-vote ensemble (LR+SVC+NB)</td>\n<td>0.278</td>\n</tr>\n<tr>\n<td>word+char(3,5) + LR C=2</td>\n<td>0.3197</td>\n</tr>\n<tr>\n<td><strong>char_wb(2,5) + style x0.3 + LinearSVC</strong></td>\n<td><strong>0.3515</strong></td>\n</tr>\n<tr>\n<td>style x0.5</td>\n<td>0.348</td>\n</tr>\n<tr>\n<td>word(1,3)+char_wb, 100k features</td>\n<td>0.276</td>\n</tr>\n</tbody>\n</table>\n<p>More features is worse here: with 2,699 rows the vocabulary drowns.</p>\n<p><strong>4. Where the errors actually go</strong> (the part I did not expect): about <strong>48%</strong> of off-diagonal errors stay inside a model family. gemini-3.8-flash leaks <strong>36%</strong> of its own samples into gemini-3.7-flash; gpt-5.6-sol to luna 19%; glm-5.3 to claude-opus-5 20%. And claude-fable-5 has <strong>6% recall</strong>. The label is a <em>version</em> label, not a style label.</p>\n<p><strong>5. A negative result worth sharing:</strong> routing family-first and then model-within-family is <em>worse</em> — 0.333 against 0.348 flat. The family head compounds its own errors (family-level BA is only 0.555), so the router loses more than the specialists gain.</p>\n<p><strong>Conclusion:</strong> n-gram features top out around 0.35. The jump to 0.70 is not tuning, it is likelihood scoring — the probability each model assigns to the text. Everything in the 0.68+ tier pays for that in GPU hours.</p>\n<p>Notebook (self-contained, ~6 min on CPU, reruns clean, no datasets to attach): <a href=\"https://www.kaggle.com/code/suyuchuan/name-that-llm-quickstart-leaderboard-ladder\" target=\"_blank\">https://www.kaggle.com/code/suyuchuan/name-that-llm-quickstart-leaderboard-ladder</a></p>\n<p>Happy to discuss the CV design or the confusion analysis.</p>",
+              "feedback_tracking_data": {},
+              "id": 3556757,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-19T03:23:59.790Z",
+              "raw_markdown": "Most public notebooks here sit at 0.68-0.78, and nearly all of them need a GPU plus model inference. If you are on CPU — or you just want a starting point whose leaderboard number you can trust — the useful question is different: what does a pure feature-based baseline actually score, and why can't it go higher?\n\nI tried to answer that with measurements rather than guesses.\n\n**1. The CV protocol decides everything.** Identical word+char TF-IDF with a logistic regression:\n- StratifiedKFold: **0.09**\n- GroupKFold(prompt_id): **0.32**\n\nThe hidden test uses prompts never seen in training, so only the grouped split is honest.\n\n**2. CV to LB calibration.** Tuned CPU pipeline (char_wb + 26 style features computed from the text + LinearSVC):\n- GroupKFold CV: **0.3515**\n- actual public LB: **0.339** (gap 0.013)\n\nThe protocol transfers, so the number means something.\n\n**3. Ablations** (same folds, same protocol):\n\n| Configuration | BA |\n|---|---|\n| word-only TF-IDF + LinearSVC | 0.221 |\n| char-only (3,5) + LinearSVC | 0.275 |\n| ComplementNB | 0.244 |\n| soft-vote ensemble (LR+SVC+NB) | 0.278 |\n| word+char(3,5) + LR C=2 | 0.3197 |\n| **char_wb(2,5) + style x0.3 + LinearSVC** | **0.3515** |\n| style x0.5 | 0.348 |\n| word(1,3)+char_wb, 100k features | 0.276 |\n\nMore features is worse here: with 2,699 rows the vocabulary drowns.\n\n**4. Where the errors actually go** (the part I did not expect): about **48%** of off-diagonal errors stay inside a model family. gemini-3.8-flash leaks **36%** of its own samples into gemini-3.7-flash; gpt-5.6-sol to luna 19%; glm-5.3 to claude-opus-5 20%. And claude-fable-5 has **6% recall**. The label is a *version* label, not a style label.\n\n**5. A negative result worth sharing:** routing family-first and then model-within-family is *worse* — 0.333 against 0.348 flat. The family head compounds its own errors (family-level BA is only 0.555), so the router loses more than the specialists gain.\n\n**Conclusion:** n-gram features top out around 0.35. The jump to 0.70 is not tuning, it is likelihood scoring — the probability each model assigns to the text. Everything in the 0.68+ tier pays for that in GPU hours.\n\nNotebook (self-contained, ~6 min on CPU, reruns clean, no datasets to attach): https://www.kaggle.com/code/suyuchuan/name-that-llm-quickstart-leaderboard-ladder\n\nHappy to discuss the CV design or the confusion analysis.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "suyuchuan",
+                  "id": 37970783,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/suyuchuan",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/37970783-kg.jpg?t=2026-11-16-04-49-08",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/suyuchuan",
+                  "user_id": 37970783,
+                  "user_name": "suyuchuan"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "first_message_id": 3556757,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 760286,
+            "name": "A calibrated CPU baseline (CV 0.3515 -> LB 0.339) and an 18-model confusability atlas",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-11-19T03:23:59.788986300Z",
+            "url": "/competitions/name-that-llm/discussion/760286"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-19T12:45:28+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-19T12:45:28+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-11-19T03:23:59.790Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [],
+  "writeup": null
+}

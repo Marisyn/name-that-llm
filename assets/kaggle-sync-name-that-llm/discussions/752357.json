@@ -1,0 +1,211 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 752357,
+    "title": "What 134 public versions show about which changes repeat, and what we think is left past 0.639",
+    "author": "Aryan Awasthi",
+    "author_url": "/aryanawasthiteykik",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-10-24T15:24:06.735506Z",
+    "last_comment_post_date": "2026-10-24T15:24:06.736666700Z",
+    "comment_count": 0,
+    "votes": 2,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/752357",
+    "first_message_id": 3544019,
+    "first_seen_at": "2026-11-04T06:56:16+00:00",
+    "last_seen_at": "2026-11-16T16:36:03+00:00",
+    "detail_last_synced_at": "2026-11-16T16:24:07+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "7cb0df9475fa4b29a693c1f67a14620cbb006cb252e0a0ccb0f590c3c936e9ec",
+    "listing_metrics_hash": "6db2b817333d85ee95f494a1b2ba941fb79d87d4e3e0c8718afed5f3c0bfd1fa",
+    "detail_content_hash": "0378313c0d7968535217ecde374a3210bd8ff9d102157bc1968c6e04a518480c",
+    "detail_last_checked_at": "2026-11-16T16:24:07+00:00",
+    "detail_next_check_at": "2026-11-23T16:24:07+00:00",
+    "detail_unchanged_count": 2,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 0,
+      "firstForumMessageId": null,
+      "id": 752357,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-10-24T15:24:06.736666700Z",
+      "postDate": "2026-10-24T15:24:06.735506Z",
+      "raw": {
+        "id": 752357,
+        "last_comment_post_date": "2026-10-24T15:24:06.736666700Z",
+        "post_date": "2026-10-24T15:24:06.735506Z",
+        "title": "What 134 public versions show about which changes repeat, and what we think is left past 0.639",
+        "topic_url": "/competitions/name-that-llm/discussion/752357",
+        "votes": 2
+      },
+      "title": "What 134 public versions show about which changes repeat, and what we think is left past 0.639",
+      "topicUrl": "/competitions/name-that-llm/discussion/752357",
+      "votes": 2
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "Aryan Awasthi",
+        "authorUserName": "aryanawasthiteykik",
+        "comments": [],
+        "expectedCommentCount": 0,
+        "firstMessage": {
+          "author": {
+            "displayName": "Aryan Awasthi",
+            "tier": "CONTRIBUTOR",
+            "url": "/aryanawasthiteykik"
+          },
+          "content": "<h2>TL;DR</h2>\n<p>We sit at 0.639 (an unmodified public notebook, credited in ours). We have <strong>no scored change of our own in this competition that beat its parent</strong>: our stylegram addition scored 0.550 and a GLM gate 0.555. So this post is about what we learned from reading the public lineage and from the parts we built and tested ourselves.</p>\n<h2>What the public lineage shows (55 notebooks, 134 scored versions)</h2>\n<table>\n<thead>\n<tr>\n<th>Change type</th>\n<th>What it bought</th>\n<th>Repeats?</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Bigger / cleaner training pool (35k → 84k)</td>\n<td>+0.028, then +0.003, +0.002</td>\n<td>yes, the biggest lever</td>\n</tr>\n<tr>\n<td>Two-stage recipe (public pool first, then train)</td>\n<td>+0.023 once</td>\n<td>one-off</td>\n</tr>\n<tr>\n<td>Gaussian group heads</td>\n<td>+0.006, +0.006, +0.006, +0.005, +0.004</td>\n<td>yes, about +0.005 each</td>\n</tr>\n<tr>\n<td>Complementary stack (0.85 main + 0.15 stack)</td>\n<td>up to +0.016; removing it −0.006 / −0.011</td>\n<td>yes</td>\n</tr>\n<tr>\n<td>ATLAS at 10% on low-margin rows</td>\n<td>+0.002 to +0.007 (−0.002 at 15%)</td>\n<td>mostly</td>\n</tr>\n<tr>\n<td>ModernBERT / desklib encoders</td>\n<td>+0.002 to +0.004 on the 0.620 base; 0.634 on the 0.636</td>\n<td>no</td>\n</tr>\n<tr>\n<td>New large LLM members</td>\n<td>early +0.005 / +0.006; nothing above 0.61</td>\n<td>no</td>\n</tr>\n<tr>\n<td>Reweighting, typography guards, Hungarian assignment</td>\n<td>flat to negative</td>\n<td>no</td>\n</tr>\n</tbody>\n</table>\n<p>The encoders hurt the 0.636 (0.634) most likely because desklib, UltraBERT, ELECTRA and DeBERTa are already inside its complementary stack, so they were counted twice.</p>\n<h2>What we built and tested ourselves</h2>\n<ol>\n<li><strong>The stylegram addition and a GLM gate</strong> (earlier): 0.550 and 0.555. Our simulation scored the stylegram alone; inside the blend it doubled the weight of evidence already present.</li>\n<li><strong>A rebuild of the two encoder members</strong> (ModernBERT-large, desklib): out-of-fold 0.553 and 0.499 against nuridudak's 0.569 and 0.523, because we used a 75k pool against his 122k. We did not submit it, since we expected about 0.622-0.625.</li>\n<li><strong>A re-implementation of ATLAS</strong> (shared LoRA with per-source up-projections on a frozen Qwen3-8B): verified to load in the public notebook and match its output, not trained at full scale.</li>\n</ol>\n<p>A practical note for anyone copying notebooks: if the original runs on the \"latest\" environment, don't pin its image digest. We pinned <code>kaggle-images/python@sha256:17b2fc…</code>, which is Kaggle's CPU image, and got \"Torch not compiled with CUDA\" despite a GPU being enabled.</p>\n<h2>Open questions</h2>\n<ul>\n<li><strong>Licences and rule 2.6.</strong> The 0.639's readout bank is fit partly on 4,404 privately generated passages and its dataset licence is \"unknown\"; the train-only version is 0.637. Has the host answered adisak's question about privately generated data?</li>\n<li>Has anyone put Gaussian group heads on the two 14B LoRAs of the 0.620 main? We can't find it in any public version, and it repeated about +0.005 four times.</li>\n</ul>\n<h2>Would we reach gold?</h2>\n<p>Gold sits at about 0.653 and the top at 0.700. We think the gap from 0.639 is <strong>mostly data, not architecture</strong>: the #1 poster writes that part of their pre-external-data 0.583 may have been probing, and #3 reports that removing an API passage set dropped validation 0.463 → 0.456. The one concrete idea we plan to test is Gaussian heads on the 14B LoRAs, which would still leave us short. Our odds of gold are <strong>low</strong>.</p>\n<p>Credits: lucasboesen, kirilltym, prvsiyan, nishantdahal, dhruvtibarewal, fleongg, cosmorin, lightningv08, alexchilton, nuridudak, mrpicklerick, romantamrazov, josephadamski91 (ATLAS, CC BY-SA 4.0), pjmathematician.</p>",
+          "id": 3544019,
+          "isThankYou": false,
+          "postDate": "2026-10-24T15:24:06.737Z",
+          "raw": {
+            "author": {
+              "display_name": "Aryan Awasthi",
+              "id": 24442364,
+              "progression_opt_out": true,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24442364-kg.png?t=2026-10-29-08-39-57",
+              "tier": "CONTRIBUTOR",
+              "url": "/aryanawasthiteykik"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 208,
+            "content": "<h2>TL;DR</h2>\n<p>We sit at 0.639 (an unmodified public notebook, credited in ours). We have <strong>no scored change of our own in this competition that beat its parent</strong>: our stylegram addition scored 0.550 and a GLM gate 0.555. So this post is about what we learned from reading the public lineage and from the parts we built and tested ourselves.</p>\n<h2>What the public lineage shows (55 notebooks, 134 scored versions)</h2>\n<table>\n<thead>\n<tr>\n<th>Change type</th>\n<th>What it bought</th>\n<th>Repeats?</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Bigger / cleaner training pool (35k → 84k)</td>\n<td>+0.028, then +0.003, +0.002</td>\n<td>yes, the biggest lever</td>\n</tr>\n<tr>\n<td>Two-stage recipe (public pool first, then train)</td>\n<td>+0.023 once</td>\n<td>one-off</td>\n</tr>\n<tr>\n<td>Gaussian group heads</td>\n<td>+0.006, +0.006, +0.006, +0.005, +0.004</td>\n<td>yes, about +0.005 each</td>\n</tr>\n<tr>\n<td>Complementary stack (0.85 main + 0.15 stack)</td>\n<td>up to +0.016; removing it −0.006 / −0.011</td>\n<td>yes</td>\n</tr>\n<tr>\n<td>ATLAS at 10% on low-margin rows</td>\n<td>+0.002 to +0.007 (−0.002 at 15%)</td>\n<td>mostly</td>\n</tr>\n<tr>\n<td>ModernBERT / desklib encoders</td>\n<td>+0.002 to +0.004 on the 0.620 base; 0.634 on the 0.636</td>\n<td>no</td>\n</tr>\n<tr>\n<td>New large LLM members</td>\n<td>early +0.005 / +0.006; nothing above 0.61</td>\n<td>no</td>\n</tr>\n<tr>\n<td>Reweighting, typography guards, Hungarian assignment</td>\n<td>flat to negative</td>\n<td>no</td>\n</tr>\n</tbody>\n</table>\n<p>The encoders hurt the 0.636 (0.634) most likely because desklib, UltraBERT, ELECTRA and DeBERTa are already inside its complementary stack, so they were counted twice.</p>\n<h2>What we built and tested ourselves</h2>\n<ol>\n<li><strong>The stylegram addition and a GLM gate</strong> (earlier): 0.550 and 0.555. Our simulation scored the stylegram alone; inside the blend it doubled the weight of evidence already present.</li>\n<li><strong>A rebuild of the two encoder members</strong> (ModernBERT-large, desklib): out-of-fold 0.553 and 0.499 against nuridudak's 0.569 and 0.523, because we used a 75k pool against his 122k. We did not submit it, since we expected about 0.622-0.625.</li>\n<li><strong>A re-implementation of ATLAS</strong> (shared LoRA with per-source up-projections on a frozen Qwen3-8B): verified to load in the public notebook and match its output, not trained at full scale.</li>\n</ol>\n<p>A practical note for anyone copying notebooks: if the original runs on the \"latest\" environment, don't pin its image digest. We pinned <code>kaggle-images/python@sha256:17b2fc…</code>, which is Kaggle's CPU image, and got \"Torch not compiled with CUDA\" despite a GPU being enabled.</p>\n<h2>Open questions</h2>\n<ul>\n<li><strong>Licences and rule 2.6.</strong> The 0.639's readout bank is fit partly on 4,404 privately generated passages and its dataset licence is \"unknown\"; the train-only version is 0.637. Has the host answered adisak's question about privately generated data?</li>\n<li>Has anyone put Gaussian group heads on the two 14B LoRAs of the 0.620 main? We can't find it in any public version, and it repeated about +0.005 four times.</li>\n</ul>\n<h2>Would we reach gold?</h2>\n<p>Gold sits at about 0.653 and the top at 0.700. We think the gap from 0.639 is <strong>mostly data, not architecture</strong>: the #1 poster writes that part of their pre-external-data 0.583 may have been probing, and #3 reports that removing an API passage set dropped validation 0.463 → 0.456. The one concrete idea we plan to test is Gaussian heads on the 14B LoRAs, which would still leave us short. Our odds of gold are <strong>low</strong>.</p>\n<p>Credits: lucasboesen, kirilltym, prvsiyan, nishantdahal, dhruvtibarewal, fleongg, cosmorin, lightningv08, alexchilton, nuridudak, mrpicklerick, romantamrazov, josephadamski91 (ATLAS, CC BY-SA 4.0), pjmathematician.</p>",
+            "feedback_tracking_data": {},
+            "id": 3544019,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-10-24T15:24:06.737Z",
+            "raw_markdown": "## TL;DR\n\nWe sit at 0.639 (an unmodified public notebook, credited in ours). We have **no scored change of our own in this competition that beat its parent**: our stylegram addition scored 0.550 and a GLM gate 0.555. So this post is about what we learned from reading the public lineage and from the parts we built and tested ourselves.\n\n## What the public lineage shows (55 notebooks, 134 scored versions)\n\n| Change type | What it bought | Repeats? |\n|---|---|---|\n| Bigger / cleaner training pool (35k → 84k) | +0.028, then +0.003, +0.002 | yes, the biggest lever |\n| Two-stage recipe (public pool first, then train) | +0.023 once | one-off |\n| Gaussian group heads | +0.006, +0.006, +0.006, +0.005, +0.004 | yes, about +0.005 each |\n| Complementary stack (0.85 main + 0.15 stack) | up to +0.016; removing it −0.006 / −0.011 | yes |\n| ATLAS at 10% on low-margin rows | +0.002 to +0.007 (−0.002 at 15%) | mostly |\n| ModernBERT / desklib encoders | +0.002 to +0.004 on the 0.620 base; 0.634 on the 0.636 | no |\n| New large LLM members | early +0.005 / +0.006; nothing above 0.61 | no |\n| Reweighting, typography guards, Hungarian assignment | flat to negative | no |\n\nThe encoders hurt the 0.636 (0.634) most likely because desklib, UltraBERT, ELECTRA and DeBERTa are already inside its complementary stack, so they were counted twice.\n\n## What we built and tested ourselves\n\n1. **The stylegram addition and a GLM gate** (earlier): 0.550 and 0.555. Our simulation scored the stylegram alone; inside the blend it doubled the weight of evidence already present.\n2. **A rebuild of the two encoder members** (ModernBERT-large, desklib): out-of-fold 0.553 and 0.499 against nuridudak's 0.569 and 0.523, because we used a 75k pool against his 122k. We did not submit it, since we expected about 0.622-0.625.\n3. **A re-implementation of ATLAS** (shared LoRA with per-source up-projections on a frozen Qwen3-8B): verified to load in the public notebook and match its output, not trained at full scale.\n\nA practical note for anyone copying notebooks: if the original runs on the \"latest\" environment, don't pin its image digest. We pinned `kaggle-images/python@sha256:17b2fc…`, which is Kaggle's CPU image, and got \"Torch not compiled with CUDA\" despite a GPU being enabled.\n\n## Open questions\n\n- **Licences and rule 2.6.** The 0.639's readout bank is fit partly on 4,404 privately generated passages and its dataset licence is \"unknown\"; the train-only version is 0.637. Has the host answered adisak's question about privately generated data?\n- Has anyone put Gaussian group heads on the two 14B LoRAs of the 0.620 main? We can't find it in any public version, and it repeated about +0.005 four times.\n\n## Would we reach gold?\n\nGold sits at about 0.653 and the top at 0.700. We think the gap from 0.639 is **mostly data, not architecture**: the #1 poster writes that part of their pre-external-data 0.583 may have been probing, and #3 reports that removing an API passage set dropped validation 0.463 → 0.456. The one concrete idea we plan to test is Gaussian heads on the 14B LoRAs, which would still leave us short. Our odds of gold are **low**.\n\nCredits: lucasboesen, kirilltym, prvsiyan, nishantdahal, dhruvtibarewal, fleongg, cosmorin, lightningv08, alexchilton, nuridudak, mrpicklerick, romantamrazov, josephadamski91 (ATLAS, CC BY-SA 4.0), pjmathematician.",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "Aryan Awasthi",
+                "id": 24442364,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/aryanawasthiteykik",
+                "progression_opt_out": true,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24442364-kg.png?t=2026-10-29-08-39-57",
+                "tier": "CONTRIBUTOR",
+                "url": "/aryanawasthiteykik",
+                "user_id": 24442364,
+                "user_name": "aryanawasthiteykik"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 3,
+              "total_votes": 2
+            }
+          },
+          "rawMarkdown": "## TL;DR\n\nWe sit at 0.639 (an unmodified public notebook, credited in ours). We have **no scored change of our own in this competition that beat its parent**: our stylegram addition scored 0.550 and a GLM gate 0.555. So this post is about what we learned from reading the public lineage and from the parts we built and tested ourselves.\n\n## What the public lineage shows (55 notebooks, 134 scored versions)\n\n| Change type | What it bought | Repeats? |\n|---|---|---|\n| Bigger / cleaner training pool (35k → 84k) | +0.028, then +0.003, +0.002 | yes, the biggest lever |\n| Two-stage recipe (public pool first, then train) | +0.023 once | one-off |\n| Gaussian group heads | +0.006, +0.006, +0.006, +0.005, +0.004 | yes, about +0.005 each |\n| Complementary stack (0.85 main + 0.15 stack) | up to +0.016; removing it −0.006 / −0.011 | yes |\n| ATLAS at 10% on low-margin rows | +0.002 to +0.007 (−0.002 at 15%) | mostly |\n| ModernBERT / desklib encoders | +0.002 to +0.004 on the 0.620 base; 0.634 on the 0.636 | no |\n| New large LLM members | early +0.005 / +0.006; nothing above 0.61 | no |\n| Reweighting, typography guards, Hungarian assignment | flat to negative | no |\n\nThe encoders hurt the 0.636 (0.634) most likely because desklib, UltraBERT, ELECTRA and DeBERTa are already inside its complementary stack, so they were counted twice.\n\n## What we built and tested ourselves\n\n1. **The stylegram addition and a GLM gate** (earlier): 0.550 and 0.555. Our simulation scored the stylegram alone; inside the blend it doubled the weight of evidence already present.\n2. **A rebuild of the two encoder members** (ModernBERT-large, desklib): out-of-fold 0.553 and 0.499 against nuridudak's 0.569 and 0.523, because we used a 75k pool against his 122k. We did not submit it, since we expected about 0.622-0.625.\n3. **A re-implementation of ATLAS** (shared LoRA with per-source up-projections on a frozen Qwen3-8B): verified to load in the public notebook and match its output, not trained at full scale.\n\nA practical note for anyone copying notebooks: if the original runs on the \"latest\" environment, don't pin its image digest. We pinned `kaggle-images/python@sha256:17b2fc…`, which is Kaggle's CPU image, and got \"Torch not compiled with CUDA\" despite a GPU being enabled.\n\n## Open questions\n\n- **Licences and rule 2.6.** The 0.639's readout bank is fit partly on 4,404 privately generated passages and its dataset licence is \"unknown\"; the train-only version is 0.637. Has the host answered adisak's question about privately generated data?\n- Has anyone put Gaussian group heads on the two 14B LoRAs of the 0.620 main? We can't find it in any public version, and it repeated about +0.005 four times.\n\n## Would we reach gold?\n\nGold sits at about 0.653 and the top at 0.700. We think the gap from 0.639 is **mostly data, not architecture**: the #1 poster writes that part of their pre-external-data 0.583 may have been probing, and #3 reports that removing an API passage set dropped validation 0.463 → 0.456. The one concrete idea we plan to test is Gaussian heads on the 14B LoRAs, which would still leave us short. Our odds of gold are **low**.\n\nCredits: lucasboesen, kirilltym, prvsiyan, nishantdahal, dhruvtibarewal, fleongg, cosmorin, lightningv08, alexchilton, nuridudak, mrpicklerick, romantamrazov, josephadamski91 (ATLAS, CC BY-SA 4.0), pjmathematician.",
+          "replies": [],
+          "votes": {
+            "totalVotes": 2
+          }
+        },
+        "firstMessageId": 3544019,
+        "id": 752357,
+        "name": "What 134 public versions show about which changes repeat, and what we think is left past 0.639",
+        "postDate": "2026-10-24T15:24:06.735506Z",
+        "url": "/competitions/name-that-llm/discussion/752357"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<h2>TL;DR</h2>\n<p>We sit at 0.639 (an unmodified public notebook, credited in ours). We have <strong>no scored change of our own in this competition that beat its parent</strong>: our stylegram addition scored 0.550 and a GLM gate 0.555. So this post is about what we learned from reading the public lineage and from the parts we built and tested ourselves.</p>\n<h2>What the public lineage shows (55 notebooks, 134 scored versions)</h2>\n<table>\n<thead>\n<tr>\n<th>Change type</th>\n<th>What it bought</th>\n<th>Repeats?</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Bigger / cleaner training pool (35k → 84k)</td>\n<td>+0.028, then +0.003, +0.002</td>\n<td>yes, the biggest lever</td>\n</tr>\n<tr>\n<td>Two-stage recipe (public pool first, then train)</td>\n<td>+0.023 once</td>\n<td>one-off</td>\n</tr>\n<tr>\n<td>Gaussian group heads</td>\n<td>+0.006, +0.006, +0.006, +0.005, +0.004</td>\n<td>yes, about +0.005 each</td>\n</tr>\n<tr>\n<td>Complementary stack (0.85 main + 0.15 stack)</td>\n<td>up to +0.016; removing it −0.006 / −0.011</td>\n<td>yes</td>\n</tr>\n<tr>\n<td>ATLAS at 10% on low-margin rows</td>\n<td>+0.002 to +0.007 (−0.002 at 15%)</td>\n<td>mostly</td>\n</tr>\n<tr>\n<td>ModernBERT / desklib encoders</td>\n<td>+0.002 to +0.004 on the 0.620 base; 0.634 on the 0.636</td>\n<td>no</td>\n</tr>\n<tr>\n<td>New large LLM members</td>\n<td>early +0.005 / +0.006; nothing above 0.61</td>\n<td>no</td>\n</tr>\n<tr>\n<td>Reweighting, typography guards, Hungarian assignment</td>\n<td>flat to negative</td>\n<td>no</td>\n</tr>\n</tbody>\n</table>\n<p>The encoders hurt the 0.636 (0.634) most likely because desklib, UltraBERT, ELECTRA and DeBERTa are already inside its complementary stack, so they were counted twice.</p>\n<h2>What we built and tested ourselves</h2>\n<ol>\n<li><strong>The stylegram addition and a GLM gate</strong> (earlier): 0.550 and 0.555. Our simulation scored the stylegram alone; inside the blend it doubled the weight of evidence already present.</li>\n<li><strong>A rebuild of the two encoder members</strong> (ModernBERT-large, desklib): out-of-fold 0.553 and 0.499 against nuridudak's 0.569 and 0.523, because we used a 75k pool against his 122k. We did not submit it, since we expected about 0.622-0.625.</li>\n<li><strong>A re-implementation of ATLAS</strong> (shared LoRA with per-source up-projections on a frozen Qwen3-8B): verified to load in the public notebook and match its output, not trained at full scale.</li>\n</ol>\n<p>A practical note for anyone copying notebooks: if the original runs on the \"latest\" environment, don't pin its image digest. We pinned <code>kaggle-images/python@sha256:17b2fc…</code>, which is Kaggle's CPU image, and got \"Torch not compiled with CUDA\" despite a GPU being enabled.</p>\n<h2>Open questions</h2>\n<ul>\n<li><strong>Licences and rule 2.6.</strong> The 0.639's readout bank is fit partly on 4,404 privately generated passages and its dataset licence is \"unknown\"; the train-only version is 0.637. Has the host answered adisak's question about privately generated data?</li>\n<li>Has anyone put Gaussian group heads on the two 14B LoRAs of the 0.620 main? We can't find it in any public version, and it repeated about +0.005 four times.</li>\n</ul>\n<h2>Would we reach gold?</h2>\n<p>Gold sits at about 0.653 and the top at 0.700. We think the gap from 0.639 is <strong>mostly data, not architecture</strong>: the #1 poster writes that part of their pre-external-data 0.583 may have been probing, and #3 reports that removing an API passage set dropped validation 0.463 → 0.456. The one concrete idea we plan to test is Gaussian heads on the 14B LoRAs, which would still leave us short. Our odds of gold are <strong>low</strong>.</p>\n<p>Credits: lucasboesen, kirilltym, prvsiyan, nishantdahal, dhruvtibarewal, fleongg, cosmorin, lightningv08, alexchilton, nuridudak, mrpicklerick, romantamrazov, josephadamski91 (ATLAS, CC BY-SA 4.0), pjmathematician.</p>",
+              "id": 3544019,
+              "post_date": "2026-10-24T15:24:06.737Z",
+              "raw_markdown": "## TL;DR\n\nWe sit at 0.639 (an unmodified public notebook, credited in ours). We have **no scored change of our own in this competition that beat its parent**: our stylegram addition scored 0.550 and a GLM gate 0.555. So this post is about what we learned from reading the public lineage and from the parts we built and tested ourselves.\n\n## What the public lineage shows (55 notebooks, 134 scored versions)\n\n| Change type | What it bought | Repeats? |\n|---|---|---|\n| Bigger / cleaner training pool (35k → 84k) | +0.028, then +0.003, +0.002 | yes, the biggest lever |\n| Two-stage recipe (public pool first, then train) | +0.023 once | one-off |\n| Gaussian group heads | +0.006, +0.006, +0.006, +0.005, +0.004 | yes, about +0.005 each |\n| Complementary stack (0.85 main + 0.15 stack) | up to +0.016; removing it −0.006 / −0.011 | yes |\n| ATLAS at 10% on low-margin rows | +0.002 to +0.007 (−0.002 at 15%) | mostly |\n| ModernBERT / desklib encoders | +0.002 to +0.004 on the 0.620 base; 0.634 on the 0.636 | no |\n| New large LLM members | early +0.005 / +0.006; nothing above 0.61 | no |\n| Reweighting, typography guards, Hungarian assignment | flat to negative | no |\n\nThe encoders hurt the 0.636 (0.634) most likely because desklib, UltraBERT, ELECTRA and DeBERTa are already inside its complementary stack, so they were counted twice.\n\n## What we built and tested ourselves\n\n1. **The stylegram addition and a GLM gate** (earlier): 0.550 and 0.555. Our simulation scored the stylegram alone; inside the blend it doubled the weight of evidence already present.\n2. **A rebuild of the two encoder members** (ModernBERT-large, desklib): out-of-fold 0.553 and 0.499 against nuridudak's 0.569 and 0.523, because we used a 75k pool against his 122k. We did not submit it, since we expected about 0.622-0.625.\n3. **A re-implementation of ATLAS** (shared LoRA with per-source up-projections on a frozen Qwen3-8B): verified to load in the public notebook and match its output, not trained at full scale.\n\nA practical note for anyone copying notebooks: if the original runs on the \"latest\" environment, don't pin its image digest. We pinned `kaggle-images/python@sha256:17b2fc…`, which is Kaggle's CPU image, and got \"Torch not compiled with CUDA\" despite a GPU being enabled.\n\n## Open questions\n\n- **Licences and rule 2.6.** The 0.639's readout bank is fit partly on 4,404 privately generated passages and its dataset licence is \"unknown\"; the train-only version is 0.637. Has the host answered adisak's question about privately generated data?\n- Has anyone put Gaussian group heads on the two 14B LoRAs of the 0.620 main? We can't find it in any public version, and it repeated about +0.005 four times.\n\n## Would we reach gold?\n\nGold sits at about 0.653 and the top at 0.700. We think the gap from 0.639 is **mostly data, not architecture**: the #1 poster writes that part of their pre-external-data 0.583 may have been probing, and #3 reports that removing an API passage set dropped validation 0.463 → 0.456. The one concrete idea we plan to test is Gaussian heads on the 14B LoRAs, which would still leave us short. Our odds of gold are **low**.\n\nCredits: lucasboesen, kirilltym, prvsiyan, nishantdahal, dhruvtibarewal, fleongg, cosmorin, lightningv08, alexchilton, nuridudak, mrpicklerick, romantamrazov, josephadamski91 (ATLAS, CC BY-SA 4.0), pjmathematician.",
+              "votes": 2
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 24442364,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": true,
+            "author_thumbnail_name": "24442364-kg.png?t=2026-10-29-08-39-57",
+            "author_user_display_name": "Aryan Awasthi",
+            "author_user_name": "aryanawasthiteykik",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "first_message": {
+              "author": {
+                "display_name": "Aryan Awasthi",
+                "id": 24442364,
+                "progression_opt_out": true,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24442364-kg.png?t=2026-10-29-08-39-57",
+                "tier": "CONTRIBUTOR",
+                "url": "/aryanawasthiteykik"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 208,
+              "content": "<h2>TL;DR</h2>\n<p>We sit at 0.639 (an unmodified public notebook, credited in ours). We have <strong>no scored change of our own in this competition that beat its parent</strong>: our stylegram addition scored 0.550 and a GLM gate 0.555. So this post is about what we learned from reading the public lineage and from the parts we built and tested ourselves.</p>\n<h2>What the public lineage shows (55 notebooks, 134 scored versions)</h2>\n<table>\n<thead>\n<tr>\n<th>Change type</th>\n<th>What it bought</th>\n<th>Repeats?</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Bigger / cleaner training pool (35k → 84k)</td>\n<td>+0.028, then +0.003, +0.002</td>\n<td>yes, the biggest lever</td>\n</tr>\n<tr>\n<td>Two-stage recipe (public pool first, then train)</td>\n<td>+0.023 once</td>\n<td>one-off</td>\n</tr>\n<tr>\n<td>Gaussian group heads</td>\n<td>+0.006, +0.006, +0.006, +0.005, +0.004</td>\n<td>yes, about +0.005 each</td>\n</tr>\n<tr>\n<td>Complementary stack (0.85 main + 0.15 stack)</td>\n<td>up to +0.016; removing it −0.006 / −0.011</td>\n<td>yes</td>\n</tr>\n<tr>\n<td>ATLAS at 10% on low-margin rows</td>\n<td>+0.002 to +0.007 (−0.002 at 15%)</td>\n<td>mostly</td>\n</tr>\n<tr>\n<td>ModernBERT / desklib encoders</td>\n<td>+0.002 to +0.004 on the 0.620 base; 0.634 on the 0.636</td>\n<td>no</td>\n</tr>\n<tr>\n<td>New large LLM members</td>\n<td>early +0.005 / +0.006; nothing above 0.61</td>\n<td>no</td>\n</tr>\n<tr>\n<td>Reweighting, typography guards, Hungarian assignment</td>\n<td>flat to negative</td>\n<td>no</td>\n</tr>\n</tbody>\n</table>\n<p>The encoders hurt the 0.636 (0.634) most likely because desklib, UltraBERT, ELECTRA and DeBERTa are already inside its complementary stack, so they were counted twice.</p>\n<h2>What we built and tested ourselves</h2>\n<ol>\n<li><strong>The stylegram addition and a GLM gate</strong> (earlier): 0.550 and 0.555. Our simulation scored the stylegram alone; inside the blend it doubled the weight of evidence already present.</li>\n<li><strong>A rebuild of the two encoder members</strong> (ModernBERT-large, desklib): out-of-fold 0.553 and 0.499 against nuridudak's 0.569 and 0.523, because we used a 75k pool against his 122k. We did not submit it, since we expected about 0.622-0.625.</li>\n<li><strong>A re-implementation of ATLAS</strong> (shared LoRA with per-source up-projections on a frozen Qwen3-8B): verified to load in the public notebook and match its output, not trained at full scale.</li>\n</ol>\n<p>A practical note for anyone copying notebooks: if the original runs on the \"latest\" environment, don't pin its image digest. We pinned <code>kaggle-images/python@sha256:17b2fc…</code>, which is Kaggle's CPU image, and got \"Torch not compiled with CUDA\" despite a GPU being enabled.</p>\n<h2>Open questions</h2>\n<ul>\n<li><strong>Licences and rule 2.6.</strong> The 0.639's readout bank is fit partly on 4,404 privately generated passages and its dataset licence is \"unknown\"; the train-only version is 0.637. Has the host answered adisak's question about privately generated data?</li>\n<li>Has anyone put Gaussian group heads on the two 14B LoRAs of the 0.620 main? We can't find it in any public version, and it repeated about +0.005 four times.</li>\n</ul>\n<h2>Would we reach gold?</h2>\n<p>Gold sits at about 0.653 and the top at 0.700. We think the gap from 0.639 is <strong>mostly data, not architecture</strong>: the #1 poster writes that part of their pre-external-data 0.583 may have been probing, and #3 reports that removing an API passage set dropped validation 0.463 → 0.456. The one concrete idea we plan to test is Gaussian heads on the 14B LoRAs, which would still leave us short. Our odds of gold are <strong>low</strong>.</p>\n<p>Credits: lucasboesen, kirilltym, prvsiyan, nishantdahal, dhruvtibarewal, fleongg, cosmorin, lightningv08, alexchilton, nuridudak, mrpicklerick, romantamrazov, josephadamski91 (ATLAS, CC BY-SA 4.0), pjmathematician.</p>",
+              "feedback_tracking_data": {},
+              "id": 3544019,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-24T15:24:06.737Z",
+              "raw_markdown": "## TL;DR\n\nWe sit at 0.639 (an unmodified public notebook, credited in ours). We have **no scored change of our own in this competition that beat its parent**: our stylegram addition scored 0.550 and a GLM gate 0.555. So this post is about what we learned from reading the public lineage and from the parts we built and tested ourselves.\n\n## What the public lineage shows (55 notebooks, 134 scored versions)\n\n| Change type | What it bought | Repeats? |\n|---|---|---|\n| Bigger / cleaner training pool (35k → 84k) | +0.028, then +0.003, +0.002 | yes, the biggest lever |\n| Two-stage recipe (public pool first, then train) | +0.023 once | one-off |\n| Gaussian group heads | +0.006, +0.006, +0.006, +0.005, +0.004 | yes, about +0.005 each |\n| Complementary stack (0.85 main + 0.15 stack) | up to +0.016; removing it −0.006 / −0.011 | yes |\n| ATLAS at 10% on low-margin rows | +0.002 to +0.007 (−0.002 at 15%) | mostly |\n| ModernBERT / desklib encoders | +0.002 to +0.004 on the 0.620 base; 0.634 on the 0.636 | no |\n| New large LLM members | early +0.005 / +0.006; nothing above 0.61 | no |\n| Reweighting, typography guards, Hungarian assignment | flat to negative | no |\n\nThe encoders hurt the 0.636 (0.634) most likely because desklib, UltraBERT, ELECTRA and DeBERTa are already inside its complementary stack, so they were counted twice.\n\n## What we built and tested ourselves\n\n1. **The stylegram addition and a GLM gate** (earlier): 0.550 and 0.555. Our simulation scored the stylegram alone; inside the blend it doubled the weight of evidence already present.\n2. **A rebuild of the two encoder members** (ModernBERT-large, desklib): out-of-fold 0.553 and 0.499 against nuridudak's 0.569 and 0.523, because we used a 75k pool against his 122k. We did not submit it, since we expected about 0.622-0.625.\n3. **A re-implementation of ATLAS** (shared LoRA with per-source up-projections on a frozen Qwen3-8B): verified to load in the public notebook and match its output, not trained at full scale.\n\nA practical note for anyone copying notebooks: if the original runs on the \"latest\" environment, don't pin its image digest. We pinned `kaggle-images/python@sha256:17b2fc…`, which is Kaggle's CPU image, and got \"Torch not compiled with CUDA\" despite a GPU being enabled.\n\n## Open questions\n\n- **Licences and rule 2.6.** The 0.639's readout bank is fit partly on 4,404 privately generated passages and its dataset licence is \"unknown\"; the train-only version is 0.637. Has the host answered adisak's question about privately generated data?\n- Has anyone put Gaussian group heads on the two 14B LoRAs of the 0.620 main? We can't find it in any public version, and it repeated about +0.005 four times.\n\n## Would we reach gold?\n\nGold sits at about 0.653 and the top at 0.700. We think the gap from 0.639 is **mostly data, not architecture**: the #1 poster writes that part of their pre-external-data 0.583 may have been probing, and #3 reports that removing an API passage set dropped validation 0.463 → 0.456. The one concrete idea we plan to test is Gaussian heads on the 14B LoRAs, which would still leave us short. Our odds of gold are **low**.\n\nCredits: lucasboesen, kirilltym, prvsiyan, nishantdahal, dhruvtibarewal, fleongg, cosmorin, lightningv08, alexchilton, nuridudak, mrpicklerick, romantamrazov, josephadamski91 (ATLAS, CC BY-SA 4.0), pjmathematician.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Aryan Awasthi",
+                  "id": 24442364,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/aryanawasthiteykik",
+                  "progression_opt_out": true,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24442364-kg.png?t=2026-10-29-08-39-57",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/aryanawasthiteykik",
+                  "user_id": 24442364,
+                  "user_name": "aryanawasthiteykik"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 3,
+                "total_votes": 2
+              }
+            },
+            "first_message_id": 3544019,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 752357,
+            "name": "What 134 public versions show about which changes repeat, and what we think is left past 0.639",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-10-24T15:24:06.735506Z",
+            "total_votes": 2,
+            "url": "/competitions/name-that-llm/discussion/752357"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:24:07+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:24:07+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-10-24T15:24:06.736666700Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [],
+  "writeup": null
+}

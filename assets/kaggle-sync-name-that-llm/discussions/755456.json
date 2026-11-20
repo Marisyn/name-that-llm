@@ -1,0 +1,390 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 755456,
+    "title": "My approach for DistilBERT fine-tuning (0.2515 OOF)",
+    "author": "Qhaleesh",
+    "author_url": "/archaeopetryxzz",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-11-03T17:34:44.451942200Z",
+    "last_comment_post_date": "2026-11-04T11:14:29.693333300Z",
+    "comment_count": 1,
+    "votes": -2,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/755456",
+    "first_message_id": 3549497,
+    "first_seen_at": "2026-11-04T06:56:14+00:00",
+    "last_seen_at": "2026-11-16T16:36:02+00:00",
+    "detail_last_synced_at": "2026-11-16T16:23:11+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "5d7493cf8a2f8a785158bb1a8be6ed427fc86c7dcccd13c93806016b50954a1c",
+    "listing_metrics_hash": "71157cc16ff433a5a8a18f0931aab22d75677ac4ca2c82a767312fef3bc6f675",
+    "detail_content_hash": "ef42be7ba01703c891c5d7d2fc758e83d1ef9cc39274fd90e282508fb8024914",
+    "detail_last_checked_at": "2026-11-16T16:23:11+00:00",
+    "detail_next_check_at": "2026-11-19T16:23:11+00:00",
+    "detail_unchanged_count": 1,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 1,
+      "firstForumMessageId": null,
+      "id": 755456,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-11-04T11:14:29.693333300Z",
+      "postDate": "2026-11-03T17:34:44.451942200Z",
+      "raw": {
+        "comment_count": 1,
+        "id": 755456,
+        "last_comment_post_date": "2026-11-04T11:14:29.693333300Z",
+        "post_date": "2026-11-03T17:34:44.451942200Z",
+        "title": "My approach for DistilBERT fine-tuning (0.2515 OOF)",
+        "topic_url": "/competitions/name-that-llm/discussion/755456",
+        "votes": -2
+      },
+      "title": "My approach for DistilBERT fine-tuning (0.2515 OOF)",
+      "topicUrl": "/competitions/name-that-llm/discussion/755456",
+      "votes": -2
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "Qhaleesh",
+        "authorUserName": "archaeopetryxzz",
+        "comments": [
+          {
+            "author": {
+              "displayName": "OsakanaTeishoku",
+              "tier": "EXPERT",
+              "url": "/osakanateishoku"
+            },
+            "content": "<p>You should try StratifiedGroupKFold instead of StratifiedKFold, since prompts are unknown in the test set.</p>",
+            "id": 3549871,
+            "isThankYou": false,
+            "postDate": "2026-11-04T11:14:29.693Z",
+            "raw": {
+              "author": {
+                "display_name": "OsakanaTeishoku",
+                "id": 14521003,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "EXPERT",
+                "url": "/osakanateishoku"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 2841,
+              "content": "<p>You should try StratifiedGroupKFold instead of StratifiedKFold, since prompts are unknown in the test set.</p>",
+              "feedback_tracking_data": {},
+              "id": 3549871,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-04T11:14:29.693Z",
+              "raw_markdown": "You should try StratifiedGroupKFold instead of StratifiedKFold, since prompts are unknown in the test set.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "OsakanaTeishoku",
+                  "id": 14521003,
+                  "performance_tier": "EXPERT",
+                  "profile_url": "/osakanateishoku",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "EXPERT",
+                  "url": "/osakanateishoku",
+                  "user_id": 14521003,
+                  "user_name": "osakanateishoku"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "You should try StratifiedGroupKFold instead of StratifiedKFold, since prompts are unknown in the test set.",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "expectedCommentCount": 1,
+        "firstMessage": {
+          "author": {
+            "displayName": "Qhaleesh",
+            "tier": "CONTRIBUTOR",
+            "url": "/archaeopetryxzz"
+          },
+          "content": "<p>Hi everyone! First time competing on Kaggle so still learning, but here’s what I tried:</p>\n<p>Approach: Fine tuned DistilBERT (keras/distil_bert_base_en_uncased) on the training set with 5-fold stratified cross-validation.</p>\n<p>Config: MAX_LEN=256, BATCH_SIZE=16, EPOCHS=4, LR=2e-5</p>\n<p>Result: OOF balanced accuracy ~0.2515</p>\n<p>The model is still learning to distinguish between models from the same provider (e.g. the different GPT-5.6 variants are tricky). Curious if others are finding stylometric features useful on top of embeddings, or going purely with transformers.</p>\n<p>Happy to hear any tips!</p>",
+          "id": 3549497,
+          "isThankYou": false,
+          "postDate": "2026-11-03T17:34:44.453Z",
+          "raw": {
+            "author": {
+              "display_name": "Qhaleesh",
+              "id": 37670594,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/37670594-kg.jpg?t=2026-11-03-13-01-49",
+              "tier": "CONTRIBUTOR",
+              "url": "/archaeopetryxzz"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 1583,
+            "content": "<p>Hi everyone! First time competing on Kaggle so still learning, but here’s what I tried:</p>\n<p>Approach: Fine tuned DistilBERT (keras/distil_bert_base_en_uncased) on the training set with 5-fold stratified cross-validation.</p>\n<p>Config: MAX_LEN=256, BATCH_SIZE=16, EPOCHS=4, LR=2e-5</p>\n<p>Result: OOF balanced accuracy ~0.2515</p>\n<p>The model is still learning to distinguish between models from the same provider (e.g. the different GPT-5.6 variants are tricky). Curious if others are finding stylometric features useful on top of embeddings, or going purely with transformers.</p>\n<p>Happy to hear any tips!</p>",
+            "feedback_tracking_data": {},
+            "id": 3549497,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-11-03T17:34:44.453Z",
+            "raw_markdown": "Hi everyone! First time competing on Kaggle so still learning, but here’s what I tried:\n\nApproach: Fine tuned DistilBERT (keras/distil_bert_base_en_uncased) on the training set with 5-fold stratified cross-validation.\n\nConfig: MAX_LEN=256, BATCH_SIZE=16, EPOCHS=4, LR=2e-5\n\nResult: OOF balanced accuracy ~0.2515\n\nThe model is still learning to distinguish between models from the same provider (e.g. the different GPT-5.6 variants are tricky). Curious if others are finding stylometric features useful on top of embeddings, or going purely with transformers.\n\nHappy to hear any tips!",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "Qhaleesh",
+                "id": 37670594,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/archaeopetryxzz",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/37670594-kg.jpg?t=2026-11-03-13-01-49",
+                "tier": "CONTRIBUTOR",
+                "url": "/archaeopetryxzz",
+                "user_id": 37670594,
+                "user_name": "archaeopetryxzz"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 1,
+              "total_votes": -2
+            }
+          },
+          "rawMarkdown": "Hi everyone! First time competing on Kaggle so still learning, but here’s what I tried:\n\nApproach: Fine tuned DistilBERT (keras/distil_bert_base_en_uncased) on the training set with 5-fold stratified cross-validation.\n\nConfig: MAX_LEN=256, BATCH_SIZE=16, EPOCHS=4, LR=2e-5\n\nResult: OOF balanced accuracy ~0.2515\n\nThe model is still learning to distinguish between models from the same provider (e.g. the different GPT-5.6 variants are tricky). Curious if others are finding stylometric features useful on top of embeddings, or going purely with transformers.\n\nHappy to hear any tips!",
+          "replies": [],
+          "votes": {
+            "totalVotes": -2
+          }
+        },
+        "firstMessageId": 3549497,
+        "id": 755456,
+        "name": "My approach for DistilBERT fine-tuning (0.2515 OOF)",
+        "postDate": "2026-11-03T17:34:44.451942200Z",
+        "url": "/competitions/name-that-llm/discussion/755456"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>Hi everyone! First time competing on Kaggle so still learning, but here’s what I tried:</p>\n<p>Approach: Fine tuned DistilBERT (keras/distil_bert_base_en_uncased) on the training set with 5-fold stratified cross-validation.</p>\n<p>Config: MAX_LEN=256, BATCH_SIZE=16, EPOCHS=4, LR=2e-5</p>\n<p>Result: OOF balanced accuracy ~0.2515</p>\n<p>The model is still learning to distinguish between models from the same provider (e.g. the different GPT-5.6 variants are tricky). Curious if others are finding stylometric features useful on top of embeddings, or going purely with transformers.</p>\n<p>Happy to hear any tips!</p>",
+              "id": 3549497,
+              "post_date": "2026-11-03T17:34:44.453Z",
+              "raw_markdown": "Hi everyone! First time competing on Kaggle so still learning, but here’s what I tried:\n\nApproach: Fine tuned DistilBERT (keras/distil_bert_base_en_uncased) on the training set with 5-fold stratified cross-validation.\n\nConfig: MAX_LEN=256, BATCH_SIZE=16, EPOCHS=4, LR=2e-5\n\nResult: OOF balanced accuracy ~0.2515\n\nThe model is still learning to distinguish between models from the same provider (e.g. the different GPT-5.6 variants are tricky). Curious if others are finding stylometric features useful on top of embeddings, or going purely with transformers.\n\nHappy to hear any tips!",
+              "votes": -2
+            },
+            {
+              "content": "<p>You should try StratifiedGroupKFold instead of StratifiedKFold, since prompts are unknown in the test set.</p>",
+              "id": 3549871,
+              "post_date": "2026-11-04T11:14:29.693Z",
+              "raw_markdown": "You should try StratifiedGroupKFold instead of StratifiedKFold, since prompts are unknown in the test set."
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 37670594,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "37670594-kg.jpg?t=2026-11-03-13-01-49",
+            "author_user_display_name": "Qhaleesh",
+            "author_user_name": "archaeopetryxzz",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "comments": [
+              {
+                "author": {
+                  "display_name": "OsakanaTeishoku",
+                  "id": 14521003,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "EXPERT",
+                  "url": "/osakanateishoku"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 2841,
+                "content": "<p>You should try StratifiedGroupKFold instead of StratifiedKFold, since prompts are unknown in the test set.</p>",
+                "feedback_tracking_data": {},
+                "id": 3549871,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-11-04T11:14:29.693Z",
+                "raw_markdown": "You should try StratifiedGroupKFold instead of StratifiedKFold, since prompts are unknown in the test set.",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "OsakanaTeishoku",
+                    "id": 14521003,
+                    "performance_tier": "EXPERT",
+                    "profile_url": "/osakanateishoku",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                    "tier": "EXPERT",
+                    "url": "/osakanateishoku",
+                    "user_id": 14521003,
+                    "user_name": "osakanateishoku"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              }
+            ],
+            "first_message": {
+              "author": {
+                "display_name": "Qhaleesh",
+                "id": 37670594,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/37670594-kg.jpg?t=2026-11-03-13-01-49",
+                "tier": "CONTRIBUTOR",
+                "url": "/archaeopetryxzz"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 1583,
+              "content": "<p>Hi everyone! First time competing on Kaggle so still learning, but here’s what I tried:</p>\n<p>Approach: Fine tuned DistilBERT (keras/distil_bert_base_en_uncased) on the training set with 5-fold stratified cross-validation.</p>\n<p>Config: MAX_LEN=256, BATCH_SIZE=16, EPOCHS=4, LR=2e-5</p>\n<p>Result: OOF balanced accuracy ~0.2515</p>\n<p>The model is still learning to distinguish between models from the same provider (e.g. the different GPT-5.6 variants are tricky). Curious if others are finding stylometric features useful on top of embeddings, or going purely with transformers.</p>\n<p>Happy to hear any tips!</p>",
+              "feedback_tracking_data": {},
+              "id": 3549497,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-03T17:34:44.453Z",
+              "raw_markdown": "Hi everyone! First time competing on Kaggle so still learning, but here’s what I tried:\n\nApproach: Fine tuned DistilBERT (keras/distil_bert_base_en_uncased) on the training set with 5-fold stratified cross-validation.\n\nConfig: MAX_LEN=256, BATCH_SIZE=16, EPOCHS=4, LR=2e-5\n\nResult: OOF balanced accuracy ~0.2515\n\nThe model is still learning to distinguish between models from the same provider (e.g. the different GPT-5.6 variants are tricky). Curious if others are finding stylometric features useful on top of embeddings, or going purely with transformers.\n\nHappy to hear any tips!",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Qhaleesh",
+                  "id": 37670594,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/archaeopetryxzz",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/37670594-kg.jpg?t=2026-11-03-13-01-49",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/archaeopetryxzz",
+                  "user_id": 37670594,
+                  "user_name": "archaeopetryxzz"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": -2
+              }
+            },
+            "first_message_id": 3549497,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 755456,
+            "name": "My approach for DistilBERT fine-tuning (0.2515 OOF)",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-11-03T17:34:44.451942200Z",
+            "total_messages": 1,
+            "total_votes": -2,
+            "url": "/competitions/name-that-llm/discussion/755456"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:23:11+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:23:11+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-11-04T11:14:29.693333300Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [
+    {
+      "slug": "name-that-llm",
+      "topic_id": 755456,
+      "message_id": 3549871,
+      "parent_message_id": null,
+      "author": "OsakanaTeishoku",
+      "author_url": "/osakanateishoku",
+      "author_tier": "EXPERT",
+      "post_date": "2026-11-04T11:14:29.693Z",
+      "raw_markdown": "You should try StratifiedGroupKFold instead of StratifiedKFold, since prompts are unknown in the test set.",
+      "content_html": "<p>You should try StratifiedGroupKFold instead of StratifiedKFold, since prompts are unknown in the test set.</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-09T03:54:55+00:00",
+      "last_seen_at": "2026-11-16T16:23:11+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:23:11+00:00",
+      "remote_last_listed_at": "2026-11-16T16:23:11+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "OsakanaTeishoku",
+          "tier": "EXPERT",
+          "url": "/osakanateishoku"
+        },
+        "content": "<p>You should try StratifiedGroupKFold instead of StratifiedKFold, since prompts are unknown in the test set.</p>",
+        "id": 3549871,
+        "isThankYou": false,
+        "postDate": "2026-11-04T11:14:29.693Z",
+        "raw": {
+          "author": {
+            "display_name": "OsakanaTeishoku",
+            "id": 14521003,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+            "tier": "EXPERT",
+            "url": "/osakanateishoku"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 2841,
+          "content": "<p>You should try StratifiedGroupKFold instead of StratifiedKFold, since prompts are unknown in the test set.</p>",
+          "feedback_tracking_data": {},
+          "id": 3549871,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-04T11:14:29.693Z",
+          "raw_markdown": "You should try StratifiedGroupKFold instead of StratifiedKFold, since prompts are unknown in the test set.",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "OsakanaTeishoku",
+              "id": 14521003,
+              "performance_tier": "EXPERT",
+              "profile_url": "/osakanateishoku",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "EXPERT",
+              "url": "/osakanateishoku",
+              "user_id": 14521003,
+              "user_name": "osakanateishoku"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "You should try StratifiedGroupKFold instead of StratifiedKFold, since prompts are unknown in the test set.",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    }
+  ],
+  "writeup": null
+}

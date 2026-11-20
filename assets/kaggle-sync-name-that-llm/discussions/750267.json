@@ -1,0 +1,3389 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 750267,
+    "title": "Useful helper dataset",
+    "author": "prvsiyan",
+    "author_url": "/prvsiyan",
+    "author_tier": "MASTER",
+    "post_date": "2026-10-17T14:17:43.637853700Z",
+    "last_comment_post_date": "2026-10-22T12:45:22.716666700Z",
+    "comment_count": 13,
+    "votes": 56,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/750267",
+    "first_message_id": 3540272,
+    "first_seen_at": "2026-11-04T06:56:17+00:00",
+    "last_seen_at": "2026-11-16T16:36:04+00:00",
+    "detail_last_synced_at": "2026-11-16T16:30:53+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "485389d000e84c6d6c8560a465115546ab2e61cae422ef9a6052e77330182935",
+    "listing_metrics_hash": "3893269f99b9af95abaf240a2b46131bd590c49a6397a3095e4a6487eb362db6",
+    "detail_content_hash": "d5b335483db2ad12e019f0be2ab2900e041c551fdb28c5a1af7cec0c066bb472",
+    "detail_last_checked_at": "2026-11-16T16:30:53+00:00",
+    "detail_next_check_at": "2026-11-23T16:30:53+00:00",
+    "detail_unchanged_count": 2,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 13,
+      "firstForumMessageId": null,
+      "id": 750267,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-10-22T12:45:22.716666700Z",
+      "postDate": "2026-10-17T14:17:43.637853700Z",
+      "raw": {
+        "comment_count": 13,
+        "id": 750267,
+        "last_comment_post_date": "2026-10-22T12:45:22.716666700Z",
+        "post_date": "2026-10-17T14:17:43.637853700Z",
+        "title": "Useful helper dataset",
+        "topic_url": "/competitions/name-that-llm/discussion/750267",
+        "votes": 56
+      },
+      "title": "Useful helper dataset",
+      "topicUrl": "/competitions/name-that-llm/discussion/750267",
+      "votes": 56
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "MASTER",
+        "authorUserDisplayName": "prvsiyan",
+        "authorUserName": "prvsiyan",
+        "comments": [
+          {
+            "author": {
+              "displayName": "Darragh1Walsh",
+              "tier": "CONTRIBUTOR",
+              "url": "/darragh1walsh"
+            },
+            "content": "<p>Another dataset <a href=\"https://www.kaggle.com/datasets/darragh1walsh/ntl-kaggle-ai-gen-run-1\" target=\"_blank\">here</a>. I’ll try to update it every day with my daily allowance!</p>",
+            "id": 3542743,
+            "isThankYou": false,
+            "postDate": "2026-10-22T10:50:35.220Z",
+            "raw": {
+              "author": {
+                "display_name": "Darragh1Walsh",
+                "id": 36600810,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/darragh1walsh"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 1324,
+              "content": "<p>Another dataset <a href=\"https://www.kaggle.com/datasets/darragh1walsh/ntl-kaggle-ai-gen-run-1\" target=\"_blank\">here</a>. I’ll try to update it every day with my daily allowance!</p>",
+              "feedback_tracking_data": {},
+              "id": 3542743,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-22T10:50:35.220Z",
+              "raw_markdown": "Another dataset [here](https://www.kaggle.com/datasets/darragh1walsh/ntl-kaggle-ai-gen-run-1). I’ll try to update it every day with my daily allowance!",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Colm Looney",
+                  "id": 36609156,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/colmlooney",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36609156-kg.png?t=2026-10-11-21-58-39",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/colmlooney",
+                  "user_id": 36609156,
+                  "user_name": "colmlooney"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 4,
+                "total_votes": 4
+              }
+            },
+            "rawMarkdown": "Another dataset [here](https://www.kaggle.com/datasets/darragh1walsh/ntl-kaggle-ai-gen-run-1). I’ll try to update it every day with my daily allowance!",
+            "replies": [],
+            "votes": {
+              "totalVotes": 4
+            }
+          },
+          {
+            "author": {
+              "displayName": "water joe",
+              "tier": "EXPERT",
+              "url": "/waterjoe"
+            },
+            "content": "<p>Praise the great spirit of sharing😇</p>",
+            "id": 3540280,
+            "isThankYou": false,
+            "postDate": "2026-10-17T14:53:03.617Z",
+            "raw": {
+              "author": {
+                "display_name": "water joe",
+                "id": 16297364,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "EXPERT",
+                "url": "/waterjoe"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 4893,
+              "content": "<p>Praise the great spirit of sharing😇</p>",
+              "feedback_tracking_data": {},
+              "id": 3540280,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-17T14:53:03.617Z",
+              "raw_markdown": "Praise the great spirit of sharing😇",
+              "reactions": [
+                {
+                  "emoji": "LOVE",
+                  "featured_user_names": [
+                    "jazivxt",
+                    "nguyenphucmac",
+                    "petrovmarko",
+                    "nivind"
+                  ],
+                  "user_count": 4
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "water joe",
+                  "id": 16297364,
+                  "performance_tier": "EXPERT",
+                  "profile_url": "/waterjoe",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "EXPERT",
+                  "url": "/waterjoe",
+                  "user_id": 16297364,
+                  "user_name": "waterjoe"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 3,
+                "total_votes": 3
+              }
+            },
+            "rawMarkdown": "Praise the great spirit of sharing😇",
+            "replies": [],
+            "votes": {
+              "totalVotes": 3
+            }
+          },
+          {
+            "author": {
+              "displayName": "Noa Roggendorff",
+              "tier": "CONTRIBUTOR",
+              "url": "/nroggendorff"
+            },
+            "content": "<p>Do you pinky promise this data is real? Training on mislabeled data would be really bad.</p>",
+            "id": 3540819,
+            "isThankYou": false,
+            "postDate": "2026-10-19T00:57:16.270Z",
+            "raw": {
+              "author": {
+                "display_name": "Noa Roggendorff",
+                "id": 20524125,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20524125-kg.png?t=2024-07-06-19-06-05",
+                "tier": "CONTRIBUTOR",
+                "url": "/nroggendorff"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 2549,
+              "content": "<p>Do you pinky promise this data is real? Training on mislabeled data would be really bad.</p>",
+              "feedback_tracking_data": {},
+              "id": 3540819,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-19T00:57:16.270Z",
+              "raw_markdown": "Do you pinky promise this data is real? Training on mislabeled data would be really bad.",
+              "reactions": [
+                {
+                  "emoji": "FUNNY",
+                  "featured_user_names": [
+                    "aroraaman",
+                    "harshraj22",
+                    "maso0dahmed"
+                  ],
+                  "user_count": 3
+                }
+              ],
+              "replies": [
+                {
+                  "author": {
+                    "display_name": "Masood Ahmed",
+                    "id": 13659939,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13659939-kg.jpeg?t=2026-10-19-12-26-15",
+                    "tier": "EXPERT",
+                    "url": "/maso0dahmed"
+                  },
+                  "author_type": "COMMENT",
+                  "competition_ranking": 3440,
+                  "content": "<p>Hahaha, was about to sa the same thing</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3540825,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-19T01:14:11.687Z",
+                  "raw_markdown": "Hahaha, was about to sa the same thing",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Masood Ahmed",
+                      "id": 13659939,
+                      "performance_tier": "EXPERT",
+                      "profile_url": "/maso0dahmed",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13659939-kg.jpeg?t=2026-10-19-12-26-15",
+                      "tier": "EXPERT",
+                      "url": "/maso0dahmed",
+                      "user_id": 13659939,
+                      "user_name": "maso0dahmed"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                },
+                {
+                  "author": {
+                    "display_name": "Donald Galliano III",
+                    "id": 29434769,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/29434769-kg.png?t=2026-08-20-08-42-54",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/donaldgalliano"
+                  },
+                  "author_type": "COMMENT",
+                  "content": "<p>its not like there is 50,000 on the line dont worry :D</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3540826,
+                  "is_collapsed": true,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-19T01:16:37.940Z",
+                  "raw_markdown": "its not like there is 50,000 on the line dont worry :D\n",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Donald Galliano III",
+                      "id": 29434769,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/donaldgalliano",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/29434769-kg.png?t=2026-08-20-08-42-54",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/donaldgalliano",
+                      "user_id": 29434769,
+                      "user_name": "donaldgalliano"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                },
+                {
+                  "author": {
+                    "display_name": "water joe",
+                    "id": 16297364,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                    "tier": "EXPERT",
+                    "url": "/waterjoe"
+                  },
+                  "author_type": "COMMENT",
+                  "competition_ranking": 4893,
+                  "content": "<p>It's not an official API, so who can guarantee it? Any relay/proxy service could be cutting corners (diluting the service).😆</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3540833,
+                  "is_collapsed": true,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-19T02:00:40.810Z",
+                  "raw_markdown": "It's not an official API, so who can guarantee it? Any relay/proxy service could be cutting corners (diluting the service).😆",
+                  "reactions": [
+                    {
+                      "emoji": "SURPRISE",
+                      "featured_user_names": [
+                        "nroggendorff"
+                      ],
+                      "user_count": 1
+                    }
+                  ],
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "water joe",
+                      "id": 16297364,
+                      "performance_tier": "EXPERT",
+                      "profile_url": "/waterjoe",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                      "tier": "EXPERT",
+                      "url": "/waterjoe",
+                      "user_id": 16297364,
+                      "user_name": "waterjoe"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                },
+                {
+                  "author": {
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                    "url": "/"
+                  },
+                  "author_type": "COMMENT",
+                  "can_delete": true,
+                  "feedback_tracking_data": {},
+                  "id": 3540931,
+                  "is_collapsed": true,
+                  "is_deleted": true,
+                  "is_thank_you": false,
+                  "is_user_author": true,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-19T08:17:33.590Z",
+                  "raw_markdown": "",
+                  "reactions": [
+                    {
+                      "emoji": "THANK_YOU",
+                      "featured_user_names": [
+                        "nguynhucng",
+                        "nroggendorff",
+                        "nikhilagrawal24"
+                      ],
+                      "user_count": 3
+                    }
+                  ],
+                  "votes": {}
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Noa Roggendorff",
+                  "id": 20524125,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/nroggendorff",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20524125-kg.png?t=2024-07-06-19-06-05",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/nroggendorff",
+                  "user_id": 20524125,
+                  "user_name": "nroggendorff"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": 1
+              }
+            },
+            "rawMarkdown": "Do you pinky promise this data is real? Training on mislabeled data would be really bad.",
+            "replies": [
+              {
+                "author": {
+                  "displayName": "Masood Ahmed",
+                  "tier": "EXPERT",
+                  "url": "/maso0dahmed"
+                },
+                "content": "<p>Hahaha, was about to sa the same thing</p>",
+                "id": 3540825,
+                "isThankYou": false,
+                "postDate": "2026-10-19T01:14:11.687Z",
+                "raw": {
+                  "author": {
+                    "display_name": "Masood Ahmed",
+                    "id": 13659939,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13659939-kg.jpeg?t=2026-10-19-12-26-15",
+                    "tier": "EXPERT",
+                    "url": "/maso0dahmed"
+                  },
+                  "author_type": "COMMENT",
+                  "competition_ranking": 3440,
+                  "content": "<p>Hahaha, was about to sa the same thing</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3540825,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-19T01:14:11.687Z",
+                  "raw_markdown": "Hahaha, was about to sa the same thing",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Masood Ahmed",
+                      "id": 13659939,
+                      "performance_tier": "EXPERT",
+                      "profile_url": "/maso0dahmed",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13659939-kg.jpeg?t=2026-10-19-12-26-15",
+                      "tier": "EXPERT",
+                      "url": "/maso0dahmed",
+                      "user_id": 13659939,
+                      "user_name": "maso0dahmed"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                },
+                "rawMarkdown": "Hahaha, was about to sa the same thing",
+                "replies": [],
+                "votes": {
+                  "totalVotes": 0
+                }
+              },
+              {
+                "author": {
+                  "displayName": "Donald Galliano III",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/donaldgalliano"
+                },
+                "content": "<p>its not like there is 50,000 on the line dont worry :D</p>",
+                "id": 3540826,
+                "isThankYou": false,
+                "postDate": "2026-10-19T01:16:37.940Z",
+                "raw": {
+                  "author": {
+                    "display_name": "Donald Galliano III",
+                    "id": 29434769,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/29434769-kg.png?t=2026-08-20-08-42-54",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/donaldgalliano"
+                  },
+                  "author_type": "COMMENT",
+                  "content": "<p>its not like there is 50,000 on the line dont worry :D</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3540826,
+                  "is_collapsed": true,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-19T01:16:37.940Z",
+                  "raw_markdown": "its not like there is 50,000 on the line dont worry :D\n",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Donald Galliano III",
+                      "id": 29434769,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/donaldgalliano",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/29434769-kg.png?t=2026-08-20-08-42-54",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/donaldgalliano",
+                      "user_id": 29434769,
+                      "user_name": "donaldgalliano"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                },
+                "rawMarkdown": "its not like there is 50,000 on the line dont worry :D\n",
+                "replies": [],
+                "votes": {
+                  "totalVotes": 0
+                }
+              },
+              {
+                "author": {
+                  "displayName": "water joe",
+                  "tier": "EXPERT",
+                  "url": "/waterjoe"
+                },
+                "content": "<p>It's not an official API, so who can guarantee it? Any relay/proxy service could be cutting corners (diluting the service).😆</p>",
+                "id": 3540833,
+                "isThankYou": false,
+                "postDate": "2026-10-19T02:00:40.810Z",
+                "raw": {
+                  "author": {
+                    "display_name": "water joe",
+                    "id": 16297364,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                    "tier": "EXPERT",
+                    "url": "/waterjoe"
+                  },
+                  "author_type": "COMMENT",
+                  "competition_ranking": 4893,
+                  "content": "<p>It's not an official API, so who can guarantee it? Any relay/proxy service could be cutting corners (diluting the service).😆</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3540833,
+                  "is_collapsed": true,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-19T02:00:40.810Z",
+                  "raw_markdown": "It's not an official API, so who can guarantee it? Any relay/proxy service could be cutting corners (diluting the service).😆",
+                  "reactions": [
+                    {
+                      "emoji": "SURPRISE",
+                      "featured_user_names": [
+                        "nroggendorff"
+                      ],
+                      "user_count": 1
+                    }
+                  ],
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "water joe",
+                      "id": 16297364,
+                      "performance_tier": "EXPERT",
+                      "profile_url": "/waterjoe",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                      "tier": "EXPERT",
+                      "url": "/waterjoe",
+                      "user_id": 16297364,
+                      "user_name": "waterjoe"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                },
+                "rawMarkdown": "It's not an official API, so who can guarantee it? Any relay/proxy service could be cutting corners (diluting the service).😆",
+                "replies": [],
+                "votes": {
+                  "totalVotes": 0
+                }
+              },
+              {
+                "author": {
+                  "displayName": null,
+                  "tier": null,
+                  "url": "/"
+                },
+                "content": null,
+                "id": 3540931,
+                "isThankYou": false,
+                "postDate": "2026-10-19T08:17:33.590Z",
+                "raw": {
+                  "author": {
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                    "url": "/"
+                  },
+                  "author_type": "COMMENT",
+                  "can_delete": true,
+                  "feedback_tracking_data": {},
+                  "id": 3540931,
+                  "is_collapsed": true,
+                  "is_deleted": true,
+                  "is_thank_you": false,
+                  "is_user_author": true,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-19T08:17:33.590Z",
+                  "raw_markdown": "",
+                  "reactions": [
+                    {
+                      "emoji": "THANK_YOU",
+                      "featured_user_names": [
+                        "nguynhucng",
+                        "nroggendorff",
+                        "nikhilagrawal24"
+                      ],
+                      "user_count": 3
+                    }
+                  ],
+                  "votes": {}
+                },
+                "rawMarkdown": null,
+                "replies": [],
+                "votes": {
+                  "totalVotes": 0
+                }
+              }
+            ],
+            "votes": {
+              "totalVotes": 1
+            }
+          },
+          {
+            "author": {
+              "displayName": "十方空烬",
+              "tier": "CONTRIBUTOR",
+              "url": "/xover2022"
+            },
+            "content": "<p>Written with OpenAI Codex.</p>\n<p>Could you clarify which licence covers the new split in V4? The README and data-card text say CC BY-SA 4.0, but the dataset's License field says CC BY 4.0. I want to cite it correctly.</p>",
+            "id": 3541515,
+            "isThankYou": false,
+            "postDate": "2026-10-20T08:15:24.090Z",
+            "raw": {
+              "author": {
+                "display_name": "十方空烬",
+                "id": 12710833,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/xover2022"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 4199,
+              "content": "<p>Written with OpenAI Codex.</p>\n<p>Could you clarify which licence covers the new split in V4? The README and data-card text say CC BY-SA 4.0, but the dataset's License field says CC BY 4.0. I want to cite it correctly.</p>",
+              "feedback_tracking_data": {},
+              "id": 3541515,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-20T08:15:24.090Z",
+              "raw_markdown": "Written with OpenAI Codex.\n\nCould you clarify which licence covers the new split in V4? The README and data-card text say CC BY-SA 4.0, but the dataset's License field says CC BY 4.0. I want to cite it correctly.",
+              "replies": [
+                {
+                  "author": {
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                    "url": "/"
+                  },
+                  "author_type": "COMMENT",
+                  "can_delete": true,
+                  "feedback_tracking_data": {},
+                  "id": 3542783,
+                  "is_deleted": true,
+                  "is_thank_you": false,
+                  "is_user_author": true,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-22T12:45:22.717Z",
+                  "raw_markdown": "",
+                  "votes": {}
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "十方空烬",
+                  "id": 12710833,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/xover2022",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/xover2022",
+                  "user_id": 12710833,
+                  "user_name": "xover2022"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "Written with OpenAI Codex.\n\nCould you clarify which licence covers the new split in V4? The README and data-card text say CC BY-SA 4.0, but the dataset's License field says CC BY 4.0. I want to cite it correctly.",
+            "replies": [
+              {
+                "author": {
+                  "displayName": null,
+                  "tier": null,
+                  "url": "/"
+                },
+                "content": null,
+                "id": 3542783,
+                "isThankYou": false,
+                "postDate": "2026-10-22T12:45:22.717Z",
+                "raw": {
+                  "author": {
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                    "url": "/"
+                  },
+                  "author_type": "COMMENT",
+                  "can_delete": true,
+                  "feedback_tracking_data": {},
+                  "id": 3542783,
+                  "is_deleted": true,
+                  "is_thank_you": false,
+                  "is_user_author": true,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-22T12:45:22.717Z",
+                  "raw_markdown": "",
+                  "votes": {}
+                },
+                "rawMarkdown": null,
+                "replies": [],
+                "votes": {
+                  "totalVotes": 0
+                }
+              }
+            ],
+            "votes": {
+              "totalVotes": 0
+            }
+          },
+          {
+            "author": {
+              "displayName": "Marie Victoire IPOUK",
+              "tier": "CONTRIBUTOR",
+              "url": "/marydata"
+            },
+            "content": "<p>let's kaggling dear</p>",
+            "id": 3541326,
+            "isThankYou": false,
+            "postDate": "2026-10-19T22:32:24.653Z",
+            "raw": {
+              "author": {
+                "display_name": "Marie Victoire IPOUK",
+                "id": 14122706,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/marydata"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 4895,
+              "content": "<p>let's kaggling dear</p>",
+              "feedback_tracking_data": {},
+              "id": 3541326,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-19T22:32:24.653Z",
+              "raw_markdown": "let's kaggling dear\n",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Marie Victoire IPOUK",
+                  "id": 14122706,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/marydata",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/marydata",
+                  "user_id": 14122706,
+                  "user_name": "marydata"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "let's kaggling dear\n",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          },
+          {
+            "author": {
+              "displayName": "Enai",
+              "tier": "CONTRIBUTOR",
+              "url": "/enaimaan"
+            },
+            "content": "<p>right now there are <code>6,425 Entrants and 1,862 Participants</code> with more to come. How about we create a community shared dataset. I am open to use my kaggle quota and share the result. but I just joined so I don't know what and how to generate.</p>",
+            "id": 3541012,
+            "isThankYou": false,
+            "postDate": "2026-10-19T10:55:21.150Z",
+            "raw": {
+              "author": {
+                "display_name": "Enai",
+                "id": 2630633,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2630633-kg.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/enaimaan"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 3997,
+              "content": "<p>right now there are <code>6,425 Entrants and 1,862 Participants</code> with more to come. How about we create a community shared dataset. I am open to use my kaggle quota and share the result. but I just joined so I don't know what and how to generate.</p>",
+              "feedback_tracking_data": {},
+              "id": 3541012,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-19T10:55:21.150Z",
+              "raw_markdown": "right now there are `6,425 Entrants and 1,862 Participants` with more to come. How about we create a community shared dataset. I am open to use my kaggle quota and share the result. but I just joined so I don't know what and how to generate.",
+              "replies": [
+                {
+                  "author": {
+                    "display_name": "Enai",
+                    "id": 2630633,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2630633-kg.png",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/enaimaan"
+                  },
+                  "author_type": "COMMENT",
+                  "competition_ranking": 3997,
+                  "content": "<p>Does kaggle allow many people to contiribute to one public dataset?</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3541014,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-19T10:57:08.553Z",
+                  "raw_markdown": "Does kaggle allow many people to contiribute to one public dataset?\n",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Enai",
+                      "id": 2630633,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/enaimaan",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2630633-kg.png",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/enaimaan",
+                      "user_id": 2630633,
+                      "user_name": "enaimaan"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Enai",
+                  "id": 2630633,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/enaimaan",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2630633-kg.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/enaimaan",
+                  "user_id": 2630633,
+                  "user_name": "enaimaan"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "right now there are `6,425 Entrants and 1,862 Participants` with more to come. How about we create a community shared dataset. I am open to use my kaggle quota and share the result. but I just joined so I don't know what and how to generate.",
+            "replies": [
+              {
+                "author": {
+                  "displayName": "Enai",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/enaimaan"
+                },
+                "content": "<p>Does kaggle allow many people to contiribute to one public dataset?</p>",
+                "id": 3541014,
+                "isThankYou": false,
+                "postDate": "2026-10-19T10:57:08.553Z",
+                "raw": {
+                  "author": {
+                    "display_name": "Enai",
+                    "id": 2630633,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2630633-kg.png",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/enaimaan"
+                  },
+                  "author_type": "COMMENT",
+                  "competition_ranking": 3997,
+                  "content": "<p>Does kaggle allow many people to contiribute to one public dataset?</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3541014,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-19T10:57:08.553Z",
+                  "raw_markdown": "Does kaggle allow many people to contiribute to one public dataset?\n",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Enai",
+                      "id": 2630633,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/enaimaan",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2630633-kg.png",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/enaimaan",
+                      "user_id": 2630633,
+                      "user_name": "enaimaan"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                },
+                "rawMarkdown": "Does kaggle allow many people to contiribute to one public dataset?\n",
+                "replies": [],
+                "votes": {
+                  "totalVotes": 0
+                }
+              }
+            ],
+            "votes": {
+              "totalVotes": 0
+            }
+          },
+          {
+            "author": {
+              "displayName": "Donald Galliano III",
+              "tier": "CONTRIBUTOR",
+              "url": "/donaldgalliano"
+            },
+            "content": "<p>Goated activity. Best of luck in the comp bro</p>",
+            "id": 3540818,
+            "isThankYou": false,
+            "postDate": "2026-10-19T00:47:51.557Z",
+            "raw": {
+              "author": {
+                "display_name": "Donald Galliano III",
+                "id": 29434769,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/29434769-kg.png?t=2026-08-20-08-42-54",
+                "tier": "CONTRIBUTOR",
+                "url": "/donaldgalliano"
+              },
+              "author_type": "COMMENT",
+              "content": "<p>Goated activity. Best of luck in the comp bro</p>",
+              "feedback_tracking_data": {},
+              "id": 3540818,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-19T00:47:51.557Z",
+              "raw_markdown": "Goated activity. Best of luck in the comp bro",
+              "reactions": [
+                {
+                  "emoji": "LOVE",
+                  "featured_user_names": [
+                    "prvsiyan",
+                    "kozykappa"
+                  ],
+                  "user_count": 2
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Donald Galliano III",
+                  "id": 29434769,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/donaldgalliano",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/29434769-kg.png?t=2026-08-20-08-42-54",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/donaldgalliano",
+                  "user_id": 29434769,
+                  "user_name": "donaldgalliano"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "Goated activity. Best of luck in the comp bro",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "expectedCommentCount": 13,
+        "firstMessage": {
+          "author": {
+            "displayName": "prvsiyan",
+            "tier": "MASTER",
+            "url": "/prvsiyan"
+          },
+          "content": "<p><a href=\"https://www.kaggle.com/datasets/prvsiyan/prvsiyans-extended-name-that-llm-dataset\" target=\"_blank\">https://www.kaggle.com/datasets/prvsiyan/prvsiyans-extended-name-that-llm-dataset</a></p>\n<p>Hi, fellow competitors!</p>\n<p>Inspired by comments about this competition being \"pay to win\" and being particularly data-hungry (friendly reminder that <a href=\"https://www.kaggle.com/competitions/name-that-llm/rules\" target=\"_blank\">Kaggle competition TOS</a> prohibit using data that is not public and freely usable by all competitors), I have decided to put my free Claude API credits and whatever little credits I had on Openrouter to good use. Above is a dataset that I plan on updating from time to time, i.e. when my AI quotas on kaggle reset. I implore everybody participating to make good use of the monthly 100$ worth of credits for this competition - at the end of the day, we can gather a large portion of high-quality, matched data for this competition together :)</p>\n<p>I would make an effort to make a high-quality pipeline for this dataset, or to expand this database into a truly massive one, but I am currently working very hard on college apps, so that will have to wait. For now, this is all that I can contribute; I advise everybody that has some leftover or free promotional credits to create similar databases for everybody to use.</p>\n<p>Happy Kaggling!</p>",
+          "id": 3540272,
+          "isThankYou": false,
+          "postDate": "2026-10-17T14:17:43.637Z",
+          "raw": {
+            "author": {
+              "display_name": "prvsiyan",
+              "id": 34659500,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/34659500-kg.jpg?t=2026-08-09-23-08-44",
+              "tier": "MASTER",
+              "url": "/prvsiyan"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 862,
+            "content": "<p><a href=\"https://www.kaggle.com/datasets/prvsiyan/prvsiyans-extended-name-that-llm-dataset\" target=\"_blank\">https://www.kaggle.com/datasets/prvsiyan/prvsiyans-extended-name-that-llm-dataset</a></p>\n<p>Hi, fellow competitors!</p>\n<p>Inspired by comments about this competition being \"pay to win\" and being particularly data-hungry (friendly reminder that <a href=\"https://www.kaggle.com/competitions/name-that-llm/rules\" target=\"_blank\">Kaggle competition TOS</a> prohibit using data that is not public and freely usable by all competitors), I have decided to put my free Claude API credits and whatever little credits I had on Openrouter to good use. Above is a dataset that I plan on updating from time to time, i.e. when my AI quotas on kaggle reset. I implore everybody participating to make good use of the monthly 100$ worth of credits for this competition - at the end of the day, we can gather a large portion of high-quality, matched data for this competition together :)</p>\n<p>I would make an effort to make a high-quality pipeline for this dataset, or to expand this database into a truly massive one, but I am currently working very hard on college apps, so that will have to wait. For now, this is all that I can contribute; I advise everybody that has some leftover or free promotional credits to create similar databases for everybody to use.</p>\n<p>Happy Kaggling!</p>",
+            "feedback_tracking_data": {},
+            "id": 3540272,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-10-17T14:17:43.637Z",
+            "raw_markdown": "https://www.kaggle.com/datasets/prvsiyan/prvsiyans-extended-name-that-llm-dataset\n\nHi, fellow competitors!\n\nInspired by comments about this competition being \"pay to win\" and being particularly data-hungry (friendly reminder that [Kaggle competition TOS](https://www.kaggle.com/competitions/name-that-llm/rules) prohibit using data that is not public and freely usable by all competitors), I have decided to put my free Claude API credits and whatever little credits I had on Openrouter to good use. Above is a dataset that I plan on updating from time to time, i.e. when my AI quotas on kaggle reset. I implore everybody participating to make good use of the monthly 100$ worth of credits for this competition - at the end of the day, we can gather a large portion of high-quality, matched data for this competition together :)\n\nI would make an effort to make a high-quality pipeline for this dataset, or to expand this database into a truly massive one, but I am currently working very hard on college apps, so that will have to wait. For now, this is all that I can contribute; I advise everybody that has some leftover or free promotional credits to create similar databases for everybody to use.\n\nHappy Kaggling!",
+            "reactions": [
+              {
+                "emoji": "LOVE",
+                "featured_user_names": [
+                  "mshubham",
+                  "ibillxia",
+                  "maniceet",
+                  "mming0430",
+                  "pratyushh",
+                  "revathiprakash",
+                  "jazivxt",
+                  "enaimaan",
+                  "masoudmzb",
+                  "amzker",
+                  "skuro0315",
+                  "wqlun06",
+                  "waterjoe",
+                  "nguynhucng",
+                  "nguyenphucmac",
+                  "kaitochen",
+                  "petrovmarko",
+                  "shashankdattu",
+                  "kelleyarthur",
+                  "marineyy",
+                  "renta0426",
+                  "rijals",
+                  "donaldgalliano",
+                  "harsithasenthilkumar",
+                  "nishchaljainds",
+                  "kartikeypanwar",
+                  "sunnyhe123",
+                  "prvsiyan",
+                  "darragh1walsh",
+                  "cupidmoolchandani",
+                  "tdrlnd"
+                ],
+                "user_count": 31
+              },
+              {
+                "emoji": "THANK_YOU",
+                "featured_user_names": [
+                  "mpwolke",
+                  "fautei",
+                  "hashimrazi",
+                  "urbestfriend",
+                  "nikhilagrawal24",
+                  "xumingjunx",
+                  "cookake"
+                ],
+                "user_count": 7
+              }
+            ],
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "prvsiyan",
+                "id": 34659500,
+                "performance_tier": "MASTER",
+                "profile_url": "/prvsiyan",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/34659500-kg.jpg?t=2026-08-09-23-08-44",
+                "tier": "MASTER",
+                "url": "/prvsiyan",
+                "user_id": 34659500,
+                "user_name": "prvsiyan"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 57,
+              "total_votes": 56
+            }
+          },
+          "rawMarkdown": "https://www.kaggle.com/datasets/prvsiyan/prvsiyans-extended-name-that-llm-dataset\n\nHi, fellow competitors!\n\nInspired by comments about this competition being \"pay to win\" and being particularly data-hungry (friendly reminder that [Kaggle competition TOS](https://www.kaggle.com/competitions/name-that-llm/rules) prohibit using data that is not public and freely usable by all competitors), I have decided to put my free Claude API credits and whatever little credits I had on Openrouter to good use. Above is a dataset that I plan on updating from time to time, i.e. when my AI quotas on kaggle reset. I implore everybody participating to make good use of the monthly 100$ worth of credits for this competition - at the end of the day, we can gather a large portion of high-quality, matched data for this competition together :)\n\nI would make an effort to make a high-quality pipeline for this dataset, or to expand this database into a truly massive one, but I am currently working very hard on college apps, so that will have to wait. For now, this is all that I can contribute; I advise everybody that has some leftover or free promotional credits to create similar databases for everybody to use.\n\nHappy Kaggling!",
+          "replies": [],
+          "votes": {
+            "totalVotes": 56
+          }
+        },
+        "firstMessageId": 3540272,
+        "id": 750267,
+        "name": "Useful helper dataset",
+        "postDate": "2026-10-17T14:17:43.637853700Z",
+        "url": "/competitions/name-that-llm/discussion/750267"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p><a href=\"https://www.kaggle.com/datasets/prvsiyan/prvsiyans-extended-name-that-llm-dataset\" target=\"_blank\">https://www.kaggle.com/datasets/prvsiyan/prvsiyans-extended-name-that-llm-dataset</a></p>\n<p>Hi, fellow competitors!</p>\n<p>Inspired by comments about this competition being \"pay to win\" and being particularly data-hungry (friendly reminder that <a href=\"https://www.kaggle.com/competitions/name-that-llm/rules\" target=\"_blank\">Kaggle competition TOS</a> prohibit using data that is not public and freely usable by all competitors), I have decided to put my free Claude API credits and whatever little credits I had on Openrouter to good use. Above is a dataset that I plan on updating from time to time, i.e. when my AI quotas on kaggle reset. I implore everybody participating to make good use of the monthly 100$ worth of credits for this competition - at the end of the day, we can gather a large portion of high-quality, matched data for this competition together :)</p>\n<p>I would make an effort to make a high-quality pipeline for this dataset, or to expand this database into a truly massive one, but I am currently working very hard on college apps, so that will have to wait. For now, this is all that I can contribute; I advise everybody that has some leftover or free promotional credits to create similar databases for everybody to use.</p>\n<p>Happy Kaggling!</p>",
+              "id": 3540272,
+              "post_date": "2026-10-17T14:17:43.637Z",
+              "raw_markdown": "https://www.kaggle.com/datasets/prvsiyan/prvsiyans-extended-name-that-llm-dataset\n\nHi, fellow competitors!\n\nInspired by comments about this competition being \"pay to win\" and being particularly data-hungry (friendly reminder that [Kaggle competition TOS](https://www.kaggle.com/competitions/name-that-llm/rules) prohibit using data that is not public and freely usable by all competitors), I have decided to put my free Claude API credits and whatever little credits I had on Openrouter to good use. Above is a dataset that I plan on updating from time to time, i.e. when my AI quotas on kaggle reset. I implore everybody participating to make good use of the monthly 100$ worth of credits for this competition - at the end of the day, we can gather a large portion of high-quality, matched data for this competition together :)\n\nI would make an effort to make a high-quality pipeline for this dataset, or to expand this database into a truly massive one, but I am currently working very hard on college apps, so that will have to wait. For now, this is all that I can contribute; I advise everybody that has some leftover or free promotional credits to create similar databases for everybody to use.\n\nHappy Kaggling!",
+              "votes": 56
+            },
+            {
+              "content": "<p>Praise the great spirit of sharing😇</p>",
+              "id": 3540280,
+              "post_date": "2026-10-17T14:53:03.617Z",
+              "raw_markdown": "Praise the great spirit of sharing😇",
+              "votes": 3
+            },
+            {
+              "content": "<p>Goated activity. Best of luck in the comp bro</p>",
+              "id": 3540818,
+              "post_date": "2026-10-19T00:47:51.557Z",
+              "raw_markdown": "Goated activity. Best of luck in the comp bro"
+            },
+            {
+              "content": "<p>Do you pinky promise this data is real? Training on mislabeled data would be really bad.</p>",
+              "id": 3540819,
+              "post_date": "2026-10-19T00:57:16.270Z",
+              "raw_markdown": "Do you pinky promise this data is real? Training on mislabeled data would be really bad.",
+              "replies": [
+                {
+                  "content": "<p>Hahaha, was about to sa the same thing</p>",
+                  "id": 3540825,
+                  "post_date": "2026-10-19T01:14:11.687Z",
+                  "raw_markdown": "Hahaha, was about to sa the same thing"
+                },
+                {
+                  "content": "<p>its not like there is 50,000 on the line dont worry :D</p>",
+                  "id": 3540826,
+                  "post_date": "2026-10-19T01:16:37.940Z",
+                  "raw_markdown": "its not like there is 50,000 on the line dont worry :D\n"
+                },
+                {
+                  "content": "<p>It's not an official API, so who can guarantee it? Any relay/proxy service could be cutting corners (diluting the service).😆</p>",
+                  "id": 3540833,
+                  "post_date": "2026-10-19T02:00:40.810Z",
+                  "raw_markdown": "It's not an official API, so who can guarantee it? Any relay/proxy service could be cutting corners (diluting the service).😆"
+                },
+                {
+                  "id": 3540931,
+                  "is_deleted": true,
+                  "post_date": "2026-10-19T08:17:33.590Z",
+                  "raw_markdown": ""
+                }
+              ],
+              "votes": 1
+            },
+            {
+              "content": "<p>right now there are <code>6,425 Entrants and 1,862 Participants</code> with more to come. How about we create a community shared dataset. I am open to use my kaggle quota and share the result. but I just joined so I don't know what and how to generate.</p>",
+              "id": 3541012,
+              "post_date": "2026-10-19T10:55:21.150Z",
+              "raw_markdown": "right now there are `6,425 Entrants and 1,862 Participants` with more to come. How about we create a community shared dataset. I am open to use my kaggle quota and share the result. but I just joined so I don't know what and how to generate.",
+              "replies": [
+                {
+                  "content": "<p>Does kaggle allow many people to contiribute to one public dataset?</p>",
+                  "id": 3541014,
+                  "post_date": "2026-10-19T10:57:08.553Z",
+                  "raw_markdown": "Does kaggle allow many people to contiribute to one public dataset?\n"
+                }
+              ]
+            },
+            {
+              "content": "<p>let's kaggling dear</p>",
+              "id": 3541326,
+              "post_date": "2026-10-19T22:32:24.653Z",
+              "raw_markdown": "let's kaggling dear\n"
+            },
+            {
+              "content": "<p>Written with OpenAI Codex.</p>\n<p>Could you clarify which licence covers the new split in V4? The README and data-card text say CC BY-SA 4.0, but the dataset's License field says CC BY 4.0. I want to cite it correctly.</p>",
+              "id": 3541515,
+              "post_date": "2026-10-20T08:15:24.090Z",
+              "raw_markdown": "Written with OpenAI Codex.\n\nCould you clarify which licence covers the new split in V4? The README and data-card text say CC BY-SA 4.0, but the dataset's License field says CC BY 4.0. I want to cite it correctly.",
+              "replies": [
+                {
+                  "id": 3542783,
+                  "is_deleted": true,
+                  "post_date": "2026-10-22T12:45:22.717Z",
+                  "raw_markdown": ""
+                }
+              ]
+            },
+            {
+              "content": "<p>Another dataset <a href=\"https://www.kaggle.com/datasets/darragh1walsh/ntl-kaggle-ai-gen-run-1\" target=\"_blank\">here</a>. I’ll try to update it every day with my daily allowance!</p>",
+              "id": 3542743,
+              "post_date": "2026-10-22T10:50:35.220Z",
+              "raw_markdown": "Another dataset [here](https://www.kaggle.com/datasets/darragh1walsh/ntl-kaggle-ai-gen-run-1). I’ll try to update it every day with my daily allowance!",
+              "votes": 4
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 34659500,
+            "author_performance_tier": "MASTER",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "34659500-kg.jpg?t=2026-08-09-23-08-44",
+            "author_user_display_name": "prvsiyan",
+            "author_user_name": "prvsiyan",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "comments": [
+              {
+                "author": {
+                  "display_name": "Darragh1Walsh",
+                  "id": 36600810,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/darragh1walsh"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 1324,
+                "content": "<p>Another dataset <a href=\"https://www.kaggle.com/datasets/darragh1walsh/ntl-kaggle-ai-gen-run-1\" target=\"_blank\">here</a>. I’ll try to update it every day with my daily allowance!</p>",
+                "feedback_tracking_data": {},
+                "id": 3542743,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-22T10:50:35.220Z",
+                "raw_markdown": "Another dataset [here](https://www.kaggle.com/datasets/darragh1walsh/ntl-kaggle-ai-gen-run-1). I’ll try to update it every day with my daily allowance!",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "Colm Looney",
+                    "id": 36609156,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/colmlooney",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36609156-kg.png?t=2026-10-11-21-58-39",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/colmlooney",
+                    "user_id": 36609156,
+                    "user_name": "colmlooney"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true,
+                  "total_upvotes": 4,
+                  "total_votes": 4
+                }
+              },
+              {
+                "author": {
+                  "display_name": "water joe",
+                  "id": 16297364,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "EXPERT",
+                  "url": "/waterjoe"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 4893,
+                "content": "<p>Praise the great spirit of sharing😇</p>",
+                "feedback_tracking_data": {},
+                "id": 3540280,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-17T14:53:03.617Z",
+                "raw_markdown": "Praise the great spirit of sharing😇",
+                "reactions": [
+                  {
+                    "emoji": "LOVE",
+                    "featured_user_names": [
+                      "jazivxt",
+                      "nguyenphucmac",
+                      "petrovmarko",
+                      "nivind"
+                    ],
+                    "user_count": 4
+                  }
+                ],
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "water joe",
+                    "id": 16297364,
+                    "performance_tier": "EXPERT",
+                    "profile_url": "/waterjoe",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                    "tier": "EXPERT",
+                    "url": "/waterjoe",
+                    "user_id": 16297364,
+                    "user_name": "waterjoe"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true,
+                  "total_upvotes": 3,
+                  "total_votes": 3
+                }
+              },
+              {
+                "author": {
+                  "display_name": "Noa Roggendorff",
+                  "id": 20524125,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20524125-kg.png?t=2024-07-06-19-06-05",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/nroggendorff"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 2549,
+                "content": "<p>Do you pinky promise this data is real? Training on mislabeled data would be really bad.</p>",
+                "feedback_tracking_data": {},
+                "id": 3540819,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-19T00:57:16.270Z",
+                "raw_markdown": "Do you pinky promise this data is real? Training on mislabeled data would be really bad.",
+                "reactions": [
+                  {
+                    "emoji": "FUNNY",
+                    "featured_user_names": [
+                      "aroraaman",
+                      "harshraj22",
+                      "maso0dahmed"
+                    ],
+                    "user_count": 3
+                  }
+                ],
+                "replies": [
+                  {
+                    "author": {
+                      "display_name": "Masood Ahmed",
+                      "id": 13659939,
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13659939-kg.jpeg?t=2026-10-19-12-26-15",
+                      "tier": "EXPERT",
+                      "url": "/maso0dahmed"
+                    },
+                    "author_type": "COMMENT",
+                    "competition_ranking": 3440,
+                    "content": "<p>Hahaha, was about to sa the same thing</p>",
+                    "feedback_tracking_data": {},
+                    "id": 3540825,
+                    "is_thank_you": false,
+                    "kernel_version": 0,
+                    "parent": {},
+                    "post_date": "2026-10-19T01:14:11.687Z",
+                    "raw_markdown": "Hahaha, was about to sa the same thing",
+                    "team_up_info": {
+                      "intro": "",
+                      "team_leader": {
+                        "display_name": "Masood Ahmed",
+                        "id": 13659939,
+                        "performance_tier": "EXPERT",
+                        "profile_url": "/maso0dahmed",
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13659939-kg.jpeg?t=2026-10-19-12-26-15",
+                        "tier": "EXPERT",
+                        "url": "/maso0dahmed",
+                        "user_id": 13659939,
+                        "user_name": "maso0dahmed"
+                      }
+                    },
+                    "votes": {
+                      "can_upvote": true
+                    }
+                  },
+                  {
+                    "author": {
+                      "display_name": "Donald Galliano III",
+                      "id": 29434769,
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/29434769-kg.png?t=2026-08-20-08-42-54",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/donaldgalliano"
+                    },
+                    "author_type": "COMMENT",
+                    "content": "<p>its not like there is 50,000 on the line dont worry :D</p>",
+                    "feedback_tracking_data": {},
+                    "id": 3540826,
+                    "is_collapsed": true,
+                    "is_thank_you": false,
+                    "kernel_version": 0,
+                    "parent": {},
+                    "post_date": "2026-10-19T01:16:37.940Z",
+                    "raw_markdown": "its not like there is 50,000 on the line dont worry :D\n",
+                    "team_up_info": {
+                      "intro": "",
+                      "team_leader": {
+                        "display_name": "Donald Galliano III",
+                        "id": 29434769,
+                        "performance_tier": "CONTRIBUTOR",
+                        "profile_url": "/donaldgalliano",
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/29434769-kg.png?t=2026-08-20-08-42-54",
+                        "tier": "CONTRIBUTOR",
+                        "url": "/donaldgalliano",
+                        "user_id": 29434769,
+                        "user_name": "donaldgalliano"
+                      }
+                    },
+                    "votes": {
+                      "can_upvote": true
+                    }
+                  },
+                  {
+                    "author": {
+                      "display_name": "water joe",
+                      "id": 16297364,
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                      "tier": "EXPERT",
+                      "url": "/waterjoe"
+                    },
+                    "author_type": "COMMENT",
+                    "competition_ranking": 4893,
+                    "content": "<p>It's not an official API, so who can guarantee it? Any relay/proxy service could be cutting corners (diluting the service).😆</p>",
+                    "feedback_tracking_data": {},
+                    "id": 3540833,
+                    "is_collapsed": true,
+                    "is_thank_you": false,
+                    "kernel_version": 0,
+                    "parent": {},
+                    "post_date": "2026-10-19T02:00:40.810Z",
+                    "raw_markdown": "It's not an official API, so who can guarantee it? Any relay/proxy service could be cutting corners (diluting the service).😆",
+                    "reactions": [
+                      {
+                        "emoji": "SURPRISE",
+                        "featured_user_names": [
+                          "nroggendorff"
+                        ],
+                        "user_count": 1
+                      }
+                    ],
+                    "team_up_info": {
+                      "intro": "",
+                      "team_leader": {
+                        "display_name": "water joe",
+                        "id": 16297364,
+                        "performance_tier": "EXPERT",
+                        "profile_url": "/waterjoe",
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                        "tier": "EXPERT",
+                        "url": "/waterjoe",
+                        "user_id": 16297364,
+                        "user_name": "waterjoe"
+                      }
+                    },
+                    "votes": {
+                      "can_upvote": true
+                    }
+                  },
+                  {
+                    "author": {
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                      "url": "/"
+                    },
+                    "author_type": "COMMENT",
+                    "can_delete": true,
+                    "feedback_tracking_data": {},
+                    "id": 3540931,
+                    "is_collapsed": true,
+                    "is_deleted": true,
+                    "is_thank_you": false,
+                    "is_user_author": true,
+                    "kernel_version": 0,
+                    "parent": {},
+                    "post_date": "2026-10-19T08:17:33.590Z",
+                    "raw_markdown": "",
+                    "reactions": [
+                      {
+                        "emoji": "THANK_YOU",
+                        "featured_user_names": [
+                          "nguynhucng",
+                          "nroggendorff",
+                          "nikhilagrawal24"
+                        ],
+                        "user_count": 3
+                      }
+                    ],
+                    "votes": {}
+                  }
+                ],
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "Noa Roggendorff",
+                    "id": 20524125,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/nroggendorff",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20524125-kg.png?t=2024-07-06-19-06-05",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/nroggendorff",
+                    "user_id": 20524125,
+                    "user_name": "nroggendorff"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true,
+                  "total_upvotes": 1,
+                  "total_votes": 1
+                }
+              },
+              {
+                "author": {
+                  "display_name": "十方空烬",
+                  "id": 12710833,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/xover2022"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 4199,
+                "content": "<p>Written with OpenAI Codex.</p>\n<p>Could you clarify which licence covers the new split in V4? The README and data-card text say CC BY-SA 4.0, but the dataset's License field says CC BY 4.0. I want to cite it correctly.</p>",
+                "feedback_tracking_data": {},
+                "id": 3541515,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-20T08:15:24.090Z",
+                "raw_markdown": "Written with OpenAI Codex.\n\nCould you clarify which licence covers the new split in V4? The README and data-card text say CC BY-SA 4.0, but the dataset's License field says CC BY 4.0. I want to cite it correctly.",
+                "replies": [
+                  {
+                    "author": {
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                      "url": "/"
+                    },
+                    "author_type": "COMMENT",
+                    "can_delete": true,
+                    "feedback_tracking_data": {},
+                    "id": 3542783,
+                    "is_deleted": true,
+                    "is_thank_you": false,
+                    "is_user_author": true,
+                    "kernel_version": 0,
+                    "parent": {},
+                    "post_date": "2026-10-22T12:45:22.717Z",
+                    "raw_markdown": "",
+                    "votes": {}
+                  }
+                ],
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "十方空烬",
+                    "id": 12710833,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/xover2022",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/xover2022",
+                    "user_id": 12710833,
+                    "user_name": "xover2022"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              },
+              {
+                "author": {
+                  "display_name": "Marie Victoire IPOUK",
+                  "id": 14122706,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/marydata"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 4895,
+                "content": "<p>let's kaggling dear</p>",
+                "feedback_tracking_data": {},
+                "id": 3541326,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-19T22:32:24.653Z",
+                "raw_markdown": "let's kaggling dear\n",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "Marie Victoire IPOUK",
+                    "id": 14122706,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/marydata",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/marydata",
+                    "user_id": 14122706,
+                    "user_name": "marydata"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              },
+              {
+                "author": {
+                  "display_name": "Enai",
+                  "id": 2630633,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2630633-kg.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/enaimaan"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 3997,
+                "content": "<p>right now there are <code>6,425 Entrants and 1,862 Participants</code> with more to come. How about we create a community shared dataset. I am open to use my kaggle quota and share the result. but I just joined so I don't know what and how to generate.</p>",
+                "feedback_tracking_data": {},
+                "id": 3541012,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-19T10:55:21.150Z",
+                "raw_markdown": "right now there are `6,425 Entrants and 1,862 Participants` with more to come. How about we create a community shared dataset. I am open to use my kaggle quota and share the result. but I just joined so I don't know what and how to generate.",
+                "replies": [
+                  {
+                    "author": {
+                      "display_name": "Enai",
+                      "id": 2630633,
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2630633-kg.png",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/enaimaan"
+                    },
+                    "author_type": "COMMENT",
+                    "competition_ranking": 3997,
+                    "content": "<p>Does kaggle allow many people to contiribute to one public dataset?</p>",
+                    "feedback_tracking_data": {},
+                    "id": 3541014,
+                    "is_thank_you": false,
+                    "kernel_version": 0,
+                    "parent": {},
+                    "post_date": "2026-10-19T10:57:08.553Z",
+                    "raw_markdown": "Does kaggle allow many people to contiribute to one public dataset?\n",
+                    "team_up_info": {
+                      "intro": "",
+                      "team_leader": {
+                        "display_name": "Enai",
+                        "id": 2630633,
+                        "performance_tier": "CONTRIBUTOR",
+                        "profile_url": "/enaimaan",
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2630633-kg.png",
+                        "tier": "CONTRIBUTOR",
+                        "url": "/enaimaan",
+                        "user_id": 2630633,
+                        "user_name": "enaimaan"
+                      }
+                    },
+                    "votes": {
+                      "can_upvote": true
+                    }
+                  }
+                ],
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "Enai",
+                    "id": 2630633,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/enaimaan",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2630633-kg.png",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/enaimaan",
+                    "user_id": 2630633,
+                    "user_name": "enaimaan"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              },
+              {
+                "author": {
+                  "display_name": "Donald Galliano III",
+                  "id": 29434769,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/29434769-kg.png?t=2026-08-20-08-42-54",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/donaldgalliano"
+                },
+                "author_type": "COMMENT",
+                "content": "<p>Goated activity. Best of luck in the comp bro</p>",
+                "feedback_tracking_data": {},
+                "id": 3540818,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-19T00:47:51.557Z",
+                "raw_markdown": "Goated activity. Best of luck in the comp bro",
+                "reactions": [
+                  {
+                    "emoji": "LOVE",
+                    "featured_user_names": [
+                      "prvsiyan",
+                      "kozykappa"
+                    ],
+                    "user_count": 2
+                  }
+                ],
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "Donald Galliano III",
+                    "id": 29434769,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/donaldgalliano",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/29434769-kg.png?t=2026-08-20-08-42-54",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/donaldgalliano",
+                    "user_id": 29434769,
+                    "user_name": "donaldgalliano"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              }
+            ],
+            "first_message": {
+              "author": {
+                "display_name": "prvsiyan",
+                "id": 34659500,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/34659500-kg.jpg?t=2026-08-09-23-08-44",
+                "tier": "MASTER",
+                "url": "/prvsiyan"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 862,
+              "content": "<p><a href=\"https://www.kaggle.com/datasets/prvsiyan/prvsiyans-extended-name-that-llm-dataset\" target=\"_blank\">https://www.kaggle.com/datasets/prvsiyan/prvsiyans-extended-name-that-llm-dataset</a></p>\n<p>Hi, fellow competitors!</p>\n<p>Inspired by comments about this competition being \"pay to win\" and being particularly data-hungry (friendly reminder that <a href=\"https://www.kaggle.com/competitions/name-that-llm/rules\" target=\"_blank\">Kaggle competition TOS</a> prohibit using data that is not public and freely usable by all competitors), I have decided to put my free Claude API credits and whatever little credits I had on Openrouter to good use. Above is a dataset that I plan on updating from time to time, i.e. when my AI quotas on kaggle reset. I implore everybody participating to make good use of the monthly 100$ worth of credits for this competition - at the end of the day, we can gather a large portion of high-quality, matched data for this competition together :)</p>\n<p>I would make an effort to make a high-quality pipeline for this dataset, or to expand this database into a truly massive one, but I am currently working very hard on college apps, so that will have to wait. For now, this is all that I can contribute; I advise everybody that has some leftover or free promotional credits to create similar databases for everybody to use.</p>\n<p>Happy Kaggling!</p>",
+              "feedback_tracking_data": {},
+              "id": 3540272,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-17T14:17:43.637Z",
+              "raw_markdown": "https://www.kaggle.com/datasets/prvsiyan/prvsiyans-extended-name-that-llm-dataset\n\nHi, fellow competitors!\n\nInspired by comments about this competition being \"pay to win\" and being particularly data-hungry (friendly reminder that [Kaggle competition TOS](https://www.kaggle.com/competitions/name-that-llm/rules) prohibit using data that is not public and freely usable by all competitors), I have decided to put my free Claude API credits and whatever little credits I had on Openrouter to good use. Above is a dataset that I plan on updating from time to time, i.e. when my AI quotas on kaggle reset. I implore everybody participating to make good use of the monthly 100$ worth of credits for this competition - at the end of the day, we can gather a large portion of high-quality, matched data for this competition together :)\n\nI would make an effort to make a high-quality pipeline for this dataset, or to expand this database into a truly massive one, but I am currently working very hard on college apps, so that will have to wait. For now, this is all that I can contribute; I advise everybody that has some leftover or free promotional credits to create similar databases for everybody to use.\n\nHappy Kaggling!",
+              "reactions": [
+                {
+                  "emoji": "LOVE",
+                  "featured_user_names": [
+                    "mshubham",
+                    "ibillxia",
+                    "maniceet",
+                    "mming0430",
+                    "pratyushh",
+                    "revathiprakash",
+                    "jazivxt",
+                    "enaimaan",
+                    "masoudmzb",
+                    "amzker",
+                    "skuro0315",
+                    "wqlun06",
+                    "waterjoe",
+                    "nguynhucng",
+                    "nguyenphucmac",
+                    "kaitochen",
+                    "petrovmarko",
+                    "shashankdattu",
+                    "kelleyarthur",
+                    "marineyy",
+                    "renta0426",
+                    "rijals",
+                    "donaldgalliano",
+                    "harsithasenthilkumar",
+                    "nishchaljainds",
+                    "kartikeypanwar",
+                    "sunnyhe123",
+                    "prvsiyan",
+                    "darragh1walsh",
+                    "cupidmoolchandani",
+                    "tdrlnd"
+                  ],
+                  "user_count": 31
+                },
+                {
+                  "emoji": "THANK_YOU",
+                  "featured_user_names": [
+                    "mpwolke",
+                    "fautei",
+                    "hashimrazi",
+                    "urbestfriend",
+                    "nikhilagrawal24",
+                    "xumingjunx",
+                    "cookake"
+                  ],
+                  "user_count": 7
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "prvsiyan",
+                  "id": 34659500,
+                  "performance_tier": "MASTER",
+                  "profile_url": "/prvsiyan",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/34659500-kg.jpg?t=2026-08-09-23-08-44",
+                  "tier": "MASTER",
+                  "url": "/prvsiyan",
+                  "user_id": 34659500,
+                  "user_name": "prvsiyan"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 57,
+                "total_votes": 56
+              }
+            },
+            "first_message_id": 3540272,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 750267,
+            "name": "Useful helper dataset",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-10-17T14:17:43.637853700Z",
+            "total_messages": 13,
+            "total_votes": 56,
+            "url": "/competitions/name-that-llm/discussion/750267"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:30:53+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:30:53+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-10-22T12:45:22.716666700Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [
+    {
+      "slug": "name-that-llm",
+      "topic_id": 750267,
+      "message_id": 3540280,
+      "parent_message_id": null,
+      "author": "water joe",
+      "author_url": "/waterjoe",
+      "author_tier": "EXPERT",
+      "post_date": "2026-10-17T14:53:03.617Z",
+      "raw_markdown": "Praise the great spirit of sharing😇",
+      "content_html": "<p>Praise the great spirit of sharing😇</p>",
+      "votes": 3,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:56:46+00:00",
+      "last_seen_at": "2026-11-16T16:30:53+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:30:53+00:00",
+      "remote_last_listed_at": "2026-11-16T16:30:53+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "water joe",
+          "tier": "EXPERT",
+          "url": "/waterjoe"
+        },
+        "content": "<p>Praise the great spirit of sharing😇</p>",
+        "id": 3540280,
+        "isThankYou": false,
+        "postDate": "2026-10-17T14:53:03.617Z",
+        "raw": {
+          "author": {
+            "display_name": "water joe",
+            "id": 16297364,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+            "tier": "EXPERT",
+            "url": "/waterjoe"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 4893,
+          "content": "<p>Praise the great spirit of sharing😇</p>",
+          "feedback_tracking_data": {},
+          "id": 3540280,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-17T14:53:03.617Z",
+          "raw_markdown": "Praise the great spirit of sharing😇",
+          "reactions": [
+            {
+              "emoji": "LOVE",
+              "featured_user_names": [
+                "jazivxt",
+                "nguyenphucmac",
+                "petrovmarko",
+                "nivind"
+              ],
+              "user_count": 4
+            }
+          ],
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "water joe",
+              "id": 16297364,
+              "performance_tier": "EXPERT",
+              "profile_url": "/waterjoe",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "EXPERT",
+              "url": "/waterjoe",
+              "user_id": 16297364,
+              "user_name": "waterjoe"
+            }
+          },
+          "votes": {
+            "can_upvote": true,
+            "total_upvotes": 3,
+            "total_votes": 3
+          }
+        },
+        "rawMarkdown": "Praise the great spirit of sharing😇",
+        "replies": [],
+        "votes": {
+          "totalVotes": 3
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 750267,
+      "message_id": 3540818,
+      "parent_message_id": null,
+      "author": "Donald Galliano III",
+      "author_url": "/donaldgalliano",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-10-19T00:47:51.557Z",
+      "raw_markdown": "Goated activity. Best of luck in the comp bro",
+      "content_html": "<p>Goated activity. Best of luck in the comp bro</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:56:46+00:00",
+      "last_seen_at": "2026-11-16T16:30:53+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:30:53+00:00",
+      "remote_last_listed_at": "2026-11-16T16:30:53+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Donald Galliano III",
+          "tier": "CONTRIBUTOR",
+          "url": "/donaldgalliano"
+        },
+        "content": "<p>Goated activity. Best of luck in the comp bro</p>",
+        "id": 3540818,
+        "isThankYou": false,
+        "postDate": "2026-10-19T00:47:51.557Z",
+        "raw": {
+          "author": {
+            "display_name": "Donald Galliano III",
+            "id": 29434769,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/29434769-kg.png?t=2026-08-20-08-42-54",
+            "tier": "CONTRIBUTOR",
+            "url": "/donaldgalliano"
+          },
+          "author_type": "COMMENT",
+          "content": "<p>Goated activity. Best of luck in the comp bro</p>",
+          "feedback_tracking_data": {},
+          "id": 3540818,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-19T00:47:51.557Z",
+          "raw_markdown": "Goated activity. Best of luck in the comp bro",
+          "reactions": [
+            {
+              "emoji": "LOVE",
+              "featured_user_names": [
+                "prvsiyan",
+                "kozykappa"
+              ],
+              "user_count": 2
+            }
+          ],
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Donald Galliano III",
+              "id": 29434769,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/donaldgalliano",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/29434769-kg.png?t=2026-08-20-08-42-54",
+              "tier": "CONTRIBUTOR",
+              "url": "/donaldgalliano",
+              "user_id": 29434769,
+              "user_name": "donaldgalliano"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "Goated activity. Best of luck in the comp bro",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 750267,
+      "message_id": 3540819,
+      "parent_message_id": null,
+      "author": "Noa Roggendorff",
+      "author_url": "/nroggendorff",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-10-19T00:57:16.270Z",
+      "raw_markdown": "Do you pinky promise this data is real? Training on mislabeled data would be really bad.",
+      "content_html": "<p>Do you pinky promise this data is real? Training on mislabeled data would be really bad.</p>",
+      "votes": 1,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:56:46+00:00",
+      "last_seen_at": "2026-11-16T16:30:53+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:30:53+00:00",
+      "remote_last_listed_at": "2026-11-16T16:30:53+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Noa Roggendorff",
+          "tier": "CONTRIBUTOR",
+          "url": "/nroggendorff"
+        },
+        "content": "<p>Do you pinky promise this data is real? Training on mislabeled data would be really bad.</p>",
+        "id": 3540819,
+        "isThankYou": false,
+        "postDate": "2026-10-19T00:57:16.270Z",
+        "raw": {
+          "author": {
+            "display_name": "Noa Roggendorff",
+            "id": 20524125,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20524125-kg.png?t=2024-07-06-19-06-05",
+            "tier": "CONTRIBUTOR",
+            "url": "/nroggendorff"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 2549,
+          "content": "<p>Do you pinky promise this data is real? Training on mislabeled data would be really bad.</p>",
+          "feedback_tracking_data": {},
+          "id": 3540819,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-19T00:57:16.270Z",
+          "raw_markdown": "Do you pinky promise this data is real? Training on mislabeled data would be really bad.",
+          "reactions": [
+            {
+              "emoji": "FUNNY",
+              "featured_user_names": [
+                "aroraaman",
+                "harshraj22",
+                "maso0dahmed"
+              ],
+              "user_count": 3
+            }
+          ],
+          "replies": [
+            {
+              "author": {
+                "display_name": "Masood Ahmed",
+                "id": 13659939,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13659939-kg.jpeg?t=2026-10-19-12-26-15",
+                "tier": "EXPERT",
+                "url": "/maso0dahmed"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 3440,
+              "content": "<p>Hahaha, was about to sa the same thing</p>",
+              "feedback_tracking_data": {},
+              "id": 3540825,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-19T01:14:11.687Z",
+              "raw_markdown": "Hahaha, was about to sa the same thing",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Masood Ahmed",
+                  "id": 13659939,
+                  "performance_tier": "EXPERT",
+                  "profile_url": "/maso0dahmed",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13659939-kg.jpeg?t=2026-10-19-12-26-15",
+                  "tier": "EXPERT",
+                  "url": "/maso0dahmed",
+                  "user_id": 13659939,
+                  "user_name": "maso0dahmed"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            {
+              "author": {
+                "display_name": "Donald Galliano III",
+                "id": 29434769,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/29434769-kg.png?t=2026-08-20-08-42-54",
+                "tier": "CONTRIBUTOR",
+                "url": "/donaldgalliano"
+              },
+              "author_type": "COMMENT",
+              "content": "<p>its not like there is 50,000 on the line dont worry :D</p>",
+              "feedback_tracking_data": {},
+              "id": 3540826,
+              "is_collapsed": true,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-19T01:16:37.940Z",
+              "raw_markdown": "its not like there is 50,000 on the line dont worry :D\n",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Donald Galliano III",
+                  "id": 29434769,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/donaldgalliano",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/29434769-kg.png?t=2026-08-20-08-42-54",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/donaldgalliano",
+                  "user_id": 29434769,
+                  "user_name": "donaldgalliano"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            {
+              "author": {
+                "display_name": "water joe",
+                "id": 16297364,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "EXPERT",
+                "url": "/waterjoe"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 4893,
+              "content": "<p>It's not an official API, so who can guarantee it? Any relay/proxy service could be cutting corners (diluting the service).😆</p>",
+              "feedback_tracking_data": {},
+              "id": 3540833,
+              "is_collapsed": true,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-19T02:00:40.810Z",
+              "raw_markdown": "It's not an official API, so who can guarantee it? Any relay/proxy service could be cutting corners (diluting the service).😆",
+              "reactions": [
+                {
+                  "emoji": "SURPRISE",
+                  "featured_user_names": [
+                    "nroggendorff"
+                  ],
+                  "user_count": 1
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "water joe",
+                  "id": 16297364,
+                  "performance_tier": "EXPERT",
+                  "profile_url": "/waterjoe",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "EXPERT",
+                  "url": "/waterjoe",
+                  "user_id": 16297364,
+                  "user_name": "waterjoe"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            {
+              "author": {
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "url": "/"
+              },
+              "author_type": "COMMENT",
+              "can_delete": true,
+              "feedback_tracking_data": {},
+              "id": 3540931,
+              "is_collapsed": true,
+              "is_deleted": true,
+              "is_thank_you": false,
+              "is_user_author": true,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-19T08:17:33.590Z",
+              "raw_markdown": "",
+              "reactions": [
+                {
+                  "emoji": "THANK_YOU",
+                  "featured_user_names": [
+                    "nguynhucng",
+                    "nroggendorff",
+                    "nikhilagrawal24"
+                  ],
+                  "user_count": 3
+                }
+              ],
+              "votes": {}
+            }
+          ],
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Noa Roggendorff",
+              "id": 20524125,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/nroggendorff",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20524125-kg.png?t=2024-07-06-19-06-05",
+              "tier": "CONTRIBUTOR",
+              "url": "/nroggendorff",
+              "user_id": 20524125,
+              "user_name": "nroggendorff"
+            }
+          },
+          "votes": {
+            "can_upvote": true,
+            "total_upvotes": 1,
+            "total_votes": 1
+          }
+        },
+        "rawMarkdown": "Do you pinky promise this data is real? Training on mislabeled data would be really bad.",
+        "replies": [
+          {
+            "author": {
+              "displayName": "Masood Ahmed",
+              "tier": "EXPERT",
+              "url": "/maso0dahmed"
+            },
+            "content": "<p>Hahaha, was about to sa the same thing</p>",
+            "id": 3540825,
+            "isThankYou": false,
+            "postDate": "2026-10-19T01:14:11.687Z",
+            "raw": {
+              "author": {
+                "display_name": "Masood Ahmed",
+                "id": 13659939,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13659939-kg.jpeg?t=2026-10-19-12-26-15",
+                "tier": "EXPERT",
+                "url": "/maso0dahmed"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 3440,
+              "content": "<p>Hahaha, was about to sa the same thing</p>",
+              "feedback_tracking_data": {},
+              "id": 3540825,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-19T01:14:11.687Z",
+              "raw_markdown": "Hahaha, was about to sa the same thing",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Masood Ahmed",
+                  "id": 13659939,
+                  "performance_tier": "EXPERT",
+                  "profile_url": "/maso0dahmed",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13659939-kg.jpeg?t=2026-10-19-12-26-15",
+                  "tier": "EXPERT",
+                  "url": "/maso0dahmed",
+                  "user_id": 13659939,
+                  "user_name": "maso0dahmed"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "Hahaha, was about to sa the same thing",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          },
+          {
+            "author": {
+              "displayName": "Donald Galliano III",
+              "tier": "CONTRIBUTOR",
+              "url": "/donaldgalliano"
+            },
+            "content": "<p>its not like there is 50,000 on the line dont worry :D</p>",
+            "id": 3540826,
+            "isThankYou": false,
+            "postDate": "2026-10-19T01:16:37.940Z",
+            "raw": {
+              "author": {
+                "display_name": "Donald Galliano III",
+                "id": 29434769,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/29434769-kg.png?t=2026-08-20-08-42-54",
+                "tier": "CONTRIBUTOR",
+                "url": "/donaldgalliano"
+              },
+              "author_type": "COMMENT",
+              "content": "<p>its not like there is 50,000 on the line dont worry :D</p>",
+              "feedback_tracking_data": {},
+              "id": 3540826,
+              "is_collapsed": true,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-19T01:16:37.940Z",
+              "raw_markdown": "its not like there is 50,000 on the line dont worry :D\n",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Donald Galliano III",
+                  "id": 29434769,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/donaldgalliano",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/29434769-kg.png?t=2026-08-20-08-42-54",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/donaldgalliano",
+                  "user_id": 29434769,
+                  "user_name": "donaldgalliano"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "its not like there is 50,000 on the line dont worry :D\n",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          },
+          {
+            "author": {
+              "displayName": "water joe",
+              "tier": "EXPERT",
+              "url": "/waterjoe"
+            },
+            "content": "<p>It's not an official API, so who can guarantee it? Any relay/proxy service could be cutting corners (diluting the service).😆</p>",
+            "id": 3540833,
+            "isThankYou": false,
+            "postDate": "2026-10-19T02:00:40.810Z",
+            "raw": {
+              "author": {
+                "display_name": "water joe",
+                "id": 16297364,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "EXPERT",
+                "url": "/waterjoe"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 4893,
+              "content": "<p>It's not an official API, so who can guarantee it? Any relay/proxy service could be cutting corners (diluting the service).😆</p>",
+              "feedback_tracking_data": {},
+              "id": 3540833,
+              "is_collapsed": true,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-19T02:00:40.810Z",
+              "raw_markdown": "It's not an official API, so who can guarantee it? Any relay/proxy service could be cutting corners (diluting the service).😆",
+              "reactions": [
+                {
+                  "emoji": "SURPRISE",
+                  "featured_user_names": [
+                    "nroggendorff"
+                  ],
+                  "user_count": 1
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "water joe",
+                  "id": 16297364,
+                  "performance_tier": "EXPERT",
+                  "profile_url": "/waterjoe",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "EXPERT",
+                  "url": "/waterjoe",
+                  "user_id": 16297364,
+                  "user_name": "waterjoe"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "It's not an official API, so who can guarantee it? Any relay/proxy service could be cutting corners (diluting the service).😆",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          },
+          {
+            "author": {
+              "displayName": null,
+              "tier": null,
+              "url": "/"
+            },
+            "content": null,
+            "id": 3540931,
+            "isThankYou": false,
+            "postDate": "2026-10-19T08:17:33.590Z",
+            "raw": {
+              "author": {
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "url": "/"
+              },
+              "author_type": "COMMENT",
+              "can_delete": true,
+              "feedback_tracking_data": {},
+              "id": 3540931,
+              "is_collapsed": true,
+              "is_deleted": true,
+              "is_thank_you": false,
+              "is_user_author": true,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-19T08:17:33.590Z",
+              "raw_markdown": "",
+              "reactions": [
+                {
+                  "emoji": "THANK_YOU",
+                  "featured_user_names": [
+                    "nguynhucng",
+                    "nroggendorff",
+                    "nikhilagrawal24"
+                  ],
+                  "user_count": 3
+                }
+              ],
+              "votes": {}
+            },
+            "rawMarkdown": null,
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "votes": {
+          "totalVotes": 1
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 750267,
+      "message_id": 3540825,
+      "parent_message_id": 3540819,
+      "author": "Masood Ahmed",
+      "author_url": "/maso0dahmed",
+      "author_tier": "EXPERT",
+      "post_date": "2026-10-19T01:14:11.687Z",
+      "raw_markdown": "Hahaha, was about to sa the same thing",
+      "content_html": "<p>Hahaha, was about to sa the same thing</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 1,
+      "first_seen_at": "2026-11-04T06:56:46+00:00",
+      "last_seen_at": "2026-11-16T16:30:53+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:30:53+00:00",
+      "remote_last_listed_at": "2026-11-16T16:30:53+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Masood Ahmed",
+          "tier": "EXPERT",
+          "url": "/maso0dahmed"
+        },
+        "content": "<p>Hahaha, was about to sa the same thing</p>",
+        "id": 3540825,
+        "isThankYou": false,
+        "postDate": "2026-10-19T01:14:11.687Z",
+        "raw": {
+          "author": {
+            "display_name": "Masood Ahmed",
+            "id": 13659939,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13659939-kg.jpeg?t=2026-10-19-12-26-15",
+            "tier": "EXPERT",
+            "url": "/maso0dahmed"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 3440,
+          "content": "<p>Hahaha, was about to sa the same thing</p>",
+          "feedback_tracking_data": {},
+          "id": 3540825,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-19T01:14:11.687Z",
+          "raw_markdown": "Hahaha, was about to sa the same thing",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Masood Ahmed",
+              "id": 13659939,
+              "performance_tier": "EXPERT",
+              "profile_url": "/maso0dahmed",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/13659939-kg.jpeg?t=2026-10-19-12-26-15",
+              "tier": "EXPERT",
+              "url": "/maso0dahmed",
+              "user_id": 13659939,
+              "user_name": "maso0dahmed"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "Hahaha, was about to sa the same thing",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 750267,
+      "message_id": 3540826,
+      "parent_message_id": 3540819,
+      "author": "Donald Galliano III",
+      "author_url": "/donaldgalliano",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-10-19T01:16:37.940Z",
+      "raw_markdown": "its not like there is 50,000 on the line dont worry :D\n",
+      "content_html": "<p>its not like there is 50,000 on the line dont worry :D</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 1,
+      "first_seen_at": "2026-11-04T06:56:46+00:00",
+      "last_seen_at": "2026-11-16T16:30:53+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:30:53+00:00",
+      "remote_last_listed_at": "2026-11-16T16:30:53+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Donald Galliano III",
+          "tier": "CONTRIBUTOR",
+          "url": "/donaldgalliano"
+        },
+        "content": "<p>its not like there is 50,000 on the line dont worry :D</p>",
+        "id": 3540826,
+        "isThankYou": false,
+        "postDate": "2026-10-19T01:16:37.940Z",
+        "raw": {
+          "author": {
+            "display_name": "Donald Galliano III",
+            "id": 29434769,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/29434769-kg.png?t=2026-08-20-08-42-54",
+            "tier": "CONTRIBUTOR",
+            "url": "/donaldgalliano"
+          },
+          "author_type": "COMMENT",
+          "content": "<p>its not like there is 50,000 on the line dont worry :D</p>",
+          "feedback_tracking_data": {},
+          "id": 3540826,
+          "is_collapsed": true,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-19T01:16:37.940Z",
+          "raw_markdown": "its not like there is 50,000 on the line dont worry :D\n",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Donald Galliano III",
+              "id": 29434769,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/donaldgalliano",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/29434769-kg.png?t=2026-08-20-08-42-54",
+              "tier": "CONTRIBUTOR",
+              "url": "/donaldgalliano",
+              "user_id": 29434769,
+              "user_name": "donaldgalliano"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "its not like there is 50,000 on the line dont worry :D\n",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 750267,
+      "message_id": 3540833,
+      "parent_message_id": 3540819,
+      "author": "water joe",
+      "author_url": "/waterjoe",
+      "author_tier": "EXPERT",
+      "post_date": "2026-10-19T02:00:40.810Z",
+      "raw_markdown": "It's not an official API, so who can guarantee it? Any relay/proxy service could be cutting corners (diluting the service).😆",
+      "content_html": "<p>It's not an official API, so who can guarantee it? Any relay/proxy service could be cutting corners (diluting the service).😆</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 1,
+      "first_seen_at": "2026-11-04T06:56:46+00:00",
+      "last_seen_at": "2026-11-16T16:30:53+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:30:53+00:00",
+      "remote_last_listed_at": "2026-11-16T16:30:53+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "water joe",
+          "tier": "EXPERT",
+          "url": "/waterjoe"
+        },
+        "content": "<p>It's not an official API, so who can guarantee it? Any relay/proxy service could be cutting corners (diluting the service).😆</p>",
+        "id": 3540833,
+        "isThankYou": false,
+        "postDate": "2026-10-19T02:00:40.810Z",
+        "raw": {
+          "author": {
+            "display_name": "water joe",
+            "id": 16297364,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+            "tier": "EXPERT",
+            "url": "/waterjoe"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 4893,
+          "content": "<p>It's not an official API, so who can guarantee it? Any relay/proxy service could be cutting corners (diluting the service).😆</p>",
+          "feedback_tracking_data": {},
+          "id": 3540833,
+          "is_collapsed": true,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-19T02:00:40.810Z",
+          "raw_markdown": "It's not an official API, so who can guarantee it? Any relay/proxy service could be cutting corners (diluting the service).😆",
+          "reactions": [
+            {
+              "emoji": "SURPRISE",
+              "featured_user_names": [
+                "nroggendorff"
+              ],
+              "user_count": 1
+            }
+          ],
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "water joe",
+              "id": 16297364,
+              "performance_tier": "EXPERT",
+              "profile_url": "/waterjoe",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "EXPERT",
+              "url": "/waterjoe",
+              "user_id": 16297364,
+              "user_name": "waterjoe"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "It's not an official API, so who can guarantee it? Any relay/proxy service could be cutting corners (diluting the service).😆",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 750267,
+      "message_id": 3540931,
+      "parent_message_id": 3540819,
+      "author": null,
+      "author_url": "/",
+      "author_tier": null,
+      "post_date": "2026-10-19T08:17:33.590Z",
+      "raw_markdown": null,
+      "content_html": null,
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 1,
+      "first_seen_at": "2026-11-04T06:56:46+00:00",
+      "last_seen_at": "2026-11-16T16:30:53+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:30:53+00:00",
+      "remote_last_listed_at": "2026-11-16T16:30:53+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": null,
+          "tier": null,
+          "url": "/"
+        },
+        "content": null,
+        "id": 3540931,
+        "isThankYou": false,
+        "postDate": "2026-10-19T08:17:33.590Z",
+        "raw": {
+          "author": {
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+            "url": "/"
+          },
+          "author_type": "COMMENT",
+          "can_delete": true,
+          "feedback_tracking_data": {},
+          "id": 3540931,
+          "is_collapsed": true,
+          "is_deleted": true,
+          "is_thank_you": false,
+          "is_user_author": true,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-19T08:17:33.590Z",
+          "raw_markdown": "",
+          "reactions": [
+            {
+              "emoji": "THANK_YOU",
+              "featured_user_names": [
+                "nguynhucng",
+                "nroggendorff",
+                "nikhilagrawal24"
+              ],
+              "user_count": 3
+            }
+          ],
+          "votes": {}
+        },
+        "rawMarkdown": null,
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 750267,
+      "message_id": 3541012,
+      "parent_message_id": null,
+      "author": "Enai",
+      "author_url": "/enaimaan",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-10-19T10:55:21.150Z",
+      "raw_markdown": "right now there are `6,425 Entrants and 1,862 Participants` with more to come. How about we create a community shared dataset. I am open to use my kaggle quota and share the result. but I just joined so I don't know what and how to generate.",
+      "content_html": "<p>right now there are <code>6,425 Entrants and 1,862 Participants</code> with more to come. How about we create a community shared dataset. I am open to use my kaggle quota and share the result. but I just joined so I don't know what and how to generate.</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:56:46+00:00",
+      "last_seen_at": "2026-11-16T16:30:53+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:30:53+00:00",
+      "remote_last_listed_at": "2026-11-16T16:30:53+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Enai",
+          "tier": "CONTRIBUTOR",
+          "url": "/enaimaan"
+        },
+        "content": "<p>right now there are <code>6,425 Entrants and 1,862 Participants</code> with more to come. How about we create a community shared dataset. I am open to use my kaggle quota and share the result. but I just joined so I don't know what and how to generate.</p>",
+        "id": 3541012,
+        "isThankYou": false,
+        "postDate": "2026-10-19T10:55:21.150Z",
+        "raw": {
+          "author": {
+            "display_name": "Enai",
+            "id": 2630633,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2630633-kg.png",
+            "tier": "CONTRIBUTOR",
+            "url": "/enaimaan"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 3997,
+          "content": "<p>right now there are <code>6,425 Entrants and 1,862 Participants</code> with more to come. How about we create a community shared dataset. I am open to use my kaggle quota and share the result. but I just joined so I don't know what and how to generate.</p>",
+          "feedback_tracking_data": {},
+          "id": 3541012,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-19T10:55:21.150Z",
+          "raw_markdown": "right now there are `6,425 Entrants and 1,862 Participants` with more to come. How about we create a community shared dataset. I am open to use my kaggle quota and share the result. but I just joined so I don't know what and how to generate.",
+          "replies": [
+            {
+              "author": {
+                "display_name": "Enai",
+                "id": 2630633,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2630633-kg.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/enaimaan"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 3997,
+              "content": "<p>Does kaggle allow many people to contiribute to one public dataset?</p>",
+              "feedback_tracking_data": {},
+              "id": 3541014,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-19T10:57:08.553Z",
+              "raw_markdown": "Does kaggle allow many people to contiribute to one public dataset?\n",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Enai",
+                  "id": 2630633,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/enaimaan",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2630633-kg.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/enaimaan",
+                  "user_id": 2630633,
+                  "user_name": "enaimaan"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            }
+          ],
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Enai",
+              "id": 2630633,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/enaimaan",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2630633-kg.png",
+              "tier": "CONTRIBUTOR",
+              "url": "/enaimaan",
+              "user_id": 2630633,
+              "user_name": "enaimaan"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "right now there are `6,425 Entrants and 1,862 Participants` with more to come. How about we create a community shared dataset. I am open to use my kaggle quota and share the result. but I just joined so I don't know what and how to generate.",
+        "replies": [
+          {
+            "author": {
+              "displayName": "Enai",
+              "tier": "CONTRIBUTOR",
+              "url": "/enaimaan"
+            },
+            "content": "<p>Does kaggle allow many people to contiribute to one public dataset?</p>",
+            "id": 3541014,
+            "isThankYou": false,
+            "postDate": "2026-10-19T10:57:08.553Z",
+            "raw": {
+              "author": {
+                "display_name": "Enai",
+                "id": 2630633,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2630633-kg.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/enaimaan"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 3997,
+              "content": "<p>Does kaggle allow many people to contiribute to one public dataset?</p>",
+              "feedback_tracking_data": {},
+              "id": 3541014,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-19T10:57:08.553Z",
+              "raw_markdown": "Does kaggle allow many people to contiribute to one public dataset?\n",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Enai",
+                  "id": 2630633,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/enaimaan",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2630633-kg.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/enaimaan",
+                  "user_id": 2630633,
+                  "user_name": "enaimaan"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "Does kaggle allow many people to contiribute to one public dataset?\n",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 750267,
+      "message_id": 3541014,
+      "parent_message_id": 3541012,
+      "author": "Enai",
+      "author_url": "/enaimaan",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-10-19T10:57:08.553Z",
+      "raw_markdown": "Does kaggle allow many people to contiribute to one public dataset?\n",
+      "content_html": "<p>Does kaggle allow many people to contiribute to one public dataset?</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 1,
+      "first_seen_at": "2026-11-04T06:56:46+00:00",
+      "last_seen_at": "2026-11-16T16:30:53+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:30:53+00:00",
+      "remote_last_listed_at": "2026-11-16T16:30:53+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Enai",
+          "tier": "CONTRIBUTOR",
+          "url": "/enaimaan"
+        },
+        "content": "<p>Does kaggle allow many people to contiribute to one public dataset?</p>",
+        "id": 3541014,
+        "isThankYou": false,
+        "postDate": "2026-10-19T10:57:08.553Z",
+        "raw": {
+          "author": {
+            "display_name": "Enai",
+            "id": 2630633,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2630633-kg.png",
+            "tier": "CONTRIBUTOR",
+            "url": "/enaimaan"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 3997,
+          "content": "<p>Does kaggle allow many people to contiribute to one public dataset?</p>",
+          "feedback_tracking_data": {},
+          "id": 3541014,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-19T10:57:08.553Z",
+          "raw_markdown": "Does kaggle allow many people to contiribute to one public dataset?\n",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Enai",
+              "id": 2630633,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/enaimaan",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2630633-kg.png",
+              "tier": "CONTRIBUTOR",
+              "url": "/enaimaan",
+              "user_id": 2630633,
+              "user_name": "enaimaan"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "Does kaggle allow many people to contiribute to one public dataset?\n",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 750267,
+      "message_id": 3541326,
+      "parent_message_id": null,
+      "author": "Marie Victoire IPOUK",
+      "author_url": "/marydata",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-10-19T22:32:24.653Z",
+      "raw_markdown": "let's kaggling dear\n",
+      "content_html": "<p>let's kaggling dear</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:56:46+00:00",
+      "last_seen_at": "2026-11-16T16:30:53+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:30:53+00:00",
+      "remote_last_listed_at": "2026-11-16T16:30:53+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Marie Victoire IPOUK",
+          "tier": "CONTRIBUTOR",
+          "url": "/marydata"
+        },
+        "content": "<p>let's kaggling dear</p>",
+        "id": 3541326,
+        "isThankYou": false,
+        "postDate": "2026-10-19T22:32:24.653Z",
+        "raw": {
+          "author": {
+            "display_name": "Marie Victoire IPOUK",
+            "id": 14122706,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+            "tier": "CONTRIBUTOR",
+            "url": "/marydata"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 4895,
+          "content": "<p>let's kaggling dear</p>",
+          "feedback_tracking_data": {},
+          "id": 3541326,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-19T22:32:24.653Z",
+          "raw_markdown": "let's kaggling dear\n",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Marie Victoire IPOUK",
+              "id": 14122706,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/marydata",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "CONTRIBUTOR",
+              "url": "/marydata",
+              "user_id": 14122706,
+              "user_name": "marydata"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "let's kaggling dear\n",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 750267,
+      "message_id": 3541515,
+      "parent_message_id": null,
+      "author": "十方空烬",
+      "author_url": "/xover2022",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-10-20T08:15:24.090Z",
+      "raw_markdown": "Written with OpenAI Codex.\n\nCould you clarify which licence covers the new split in V4? The README and data-card text say CC BY-SA 4.0, but the dataset's License field says CC BY 4.0. I want to cite it correctly.",
+      "content_html": "<p>Written with OpenAI Codex.</p>\n<p>Could you clarify which licence covers the new split in V4? The README and data-card text say CC BY-SA 4.0, but the dataset's License field says CC BY 4.0. I want to cite it correctly.</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:56:46+00:00",
+      "last_seen_at": "2026-11-16T16:30:53+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:30:53+00:00",
+      "remote_last_listed_at": "2026-11-16T16:30:53+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "十方空烬",
+          "tier": "CONTRIBUTOR",
+          "url": "/xover2022"
+        },
+        "content": "<p>Written with OpenAI Codex.</p>\n<p>Could you clarify which licence covers the new split in V4? The README and data-card text say CC BY-SA 4.0, but the dataset's License field says CC BY 4.0. I want to cite it correctly.</p>",
+        "id": 3541515,
+        "isThankYou": false,
+        "postDate": "2026-10-20T08:15:24.090Z",
+        "raw": {
+          "author": {
+            "display_name": "十方空烬",
+            "id": 12710833,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+            "tier": "CONTRIBUTOR",
+            "url": "/xover2022"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 4199,
+          "content": "<p>Written with OpenAI Codex.</p>\n<p>Could you clarify which licence covers the new split in V4? The README and data-card text say CC BY-SA 4.0, but the dataset's License field says CC BY 4.0. I want to cite it correctly.</p>",
+          "feedback_tracking_data": {},
+          "id": 3541515,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-20T08:15:24.090Z",
+          "raw_markdown": "Written with OpenAI Codex.\n\nCould you clarify which licence covers the new split in V4? The README and data-card text say CC BY-SA 4.0, but the dataset's License field says CC BY 4.0. I want to cite it correctly.",
+          "replies": [
+            {
+              "author": {
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "url": "/"
+              },
+              "author_type": "COMMENT",
+              "can_delete": true,
+              "feedback_tracking_data": {},
+              "id": 3542783,
+              "is_deleted": true,
+              "is_thank_you": false,
+              "is_user_author": true,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-22T12:45:22.717Z",
+              "raw_markdown": "",
+              "votes": {}
+            }
+          ],
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "十方空烬",
+              "id": 12710833,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/xover2022",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "CONTRIBUTOR",
+              "url": "/xover2022",
+              "user_id": 12710833,
+              "user_name": "xover2022"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "Written with OpenAI Codex.\n\nCould you clarify which licence covers the new split in V4? The README and data-card text say CC BY-SA 4.0, but the dataset's License field says CC BY 4.0. I want to cite it correctly.",
+        "replies": [
+          {
+            "author": {
+              "displayName": null,
+              "tier": null,
+              "url": "/"
+            },
+            "content": null,
+            "id": 3542783,
+            "isThankYou": false,
+            "postDate": "2026-10-22T12:45:22.717Z",
+            "raw": {
+              "author": {
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "url": "/"
+              },
+              "author_type": "COMMENT",
+              "can_delete": true,
+              "feedback_tracking_data": {},
+              "id": 3542783,
+              "is_deleted": true,
+              "is_thank_you": false,
+              "is_user_author": true,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-22T12:45:22.717Z",
+              "raw_markdown": "",
+              "votes": {}
+            },
+            "rawMarkdown": null,
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 750267,
+      "message_id": 3542743,
+      "parent_message_id": null,
+      "author": "Darragh1Walsh",
+      "author_url": "/darragh1walsh",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-10-22T10:50:35.220Z",
+      "raw_markdown": "Another dataset [here](https://www.kaggle.com/datasets/darragh1walsh/ntl-kaggle-ai-gen-run-1). I’ll try to update it every day with my daily allowance!",
+      "content_html": "<p>Another dataset <a href=\"https://www.kaggle.com/datasets/darragh1walsh/ntl-kaggle-ai-gen-run-1\" target=\"_blank\">here</a>. I’ll try to update it every day with my daily allowance!</p>",
+      "votes": 4,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:56:46+00:00",
+      "last_seen_at": "2026-11-16T16:30:53+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:30:53+00:00",
+      "remote_last_listed_at": "2026-11-16T16:30:53+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Darragh1Walsh",
+          "tier": "CONTRIBUTOR",
+          "url": "/darragh1walsh"
+        },
+        "content": "<p>Another dataset <a href=\"https://www.kaggle.com/datasets/darragh1walsh/ntl-kaggle-ai-gen-run-1\" target=\"_blank\">here</a>. I’ll try to update it every day with my daily allowance!</p>",
+        "id": 3542743,
+        "isThankYou": false,
+        "postDate": "2026-10-22T10:50:35.220Z",
+        "raw": {
+          "author": {
+            "display_name": "Darragh1Walsh",
+            "id": 36600810,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+            "tier": "CONTRIBUTOR",
+            "url": "/darragh1walsh"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 1324,
+          "content": "<p>Another dataset <a href=\"https://www.kaggle.com/datasets/darragh1walsh/ntl-kaggle-ai-gen-run-1\" target=\"_blank\">here</a>. I’ll try to update it every day with my daily allowance!</p>",
+          "feedback_tracking_data": {},
+          "id": 3542743,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-22T10:50:35.220Z",
+          "raw_markdown": "Another dataset [here](https://www.kaggle.com/datasets/darragh1walsh/ntl-kaggle-ai-gen-run-1). I’ll try to update it every day with my daily allowance!",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Colm Looney",
+              "id": 36609156,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/colmlooney",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36609156-kg.png?t=2026-10-11-21-58-39",
+              "tier": "CONTRIBUTOR",
+              "url": "/colmlooney",
+              "user_id": 36609156,
+              "user_name": "colmlooney"
+            }
+          },
+          "votes": {
+            "can_upvote": true,
+            "total_upvotes": 4,
+            "total_votes": 4
+          }
+        },
+        "rawMarkdown": "Another dataset [here](https://www.kaggle.com/datasets/darragh1walsh/ntl-kaggle-ai-gen-run-1). I’ll try to update it every day with my daily allowance!",
+        "replies": [],
+        "votes": {
+          "totalVotes": 4
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 750267,
+      "message_id": 3542783,
+      "parent_message_id": 3541515,
+      "author": null,
+      "author_url": "/",
+      "author_tier": null,
+      "post_date": "2026-10-22T12:45:22.717Z",
+      "raw_markdown": null,
+      "content_html": null,
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 1,
+      "first_seen_at": "2026-11-04T06:56:46+00:00",
+      "last_seen_at": "2026-11-16T16:30:53+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:30:53+00:00",
+      "remote_last_listed_at": "2026-11-16T16:30:53+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": null,
+          "tier": null,
+          "url": "/"
+        },
+        "content": null,
+        "id": 3542783,
+        "isThankYou": false,
+        "postDate": "2026-10-22T12:45:22.717Z",
+        "raw": {
+          "author": {
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+            "url": "/"
+          },
+          "author_type": "COMMENT",
+          "can_delete": true,
+          "feedback_tracking_data": {},
+          "id": 3542783,
+          "is_deleted": true,
+          "is_thank_you": false,
+          "is_user_author": true,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-22T12:45:22.717Z",
+          "raw_markdown": "",
+          "votes": {}
+        },
+        "rawMarkdown": null,
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    }
+  ],
+  "writeup": null
+}

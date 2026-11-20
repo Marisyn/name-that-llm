@@ -1,0 +1,211 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 756848,
+    "title": "Under-18 participation and consent procedure",
+    "author": "cora zeng",
+    "author_url": "/corazeng",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-11-07T20:46:55.801693400Z",
+    "last_comment_post_date": "2026-11-07T20:46:55.803333300Z",
+    "comment_count": 0,
+    "votes": 1,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/756848",
+    "first_message_id": 3551629,
+    "first_seen_at": "2026-11-09T03:54:40+00:00",
+    "last_seen_at": "2026-11-16T16:36:01+00:00",
+    "detail_last_synced_at": "2026-11-16T16:22:51+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "5d5b9d3a8281af2b1c0fca2189a8afbcf7a9182a002fee41d3436ab356566d67",
+    "listing_metrics_hash": "08a3f0e9d031723a4649730d445a527264427162f124c0c72a6c18d2e0b8e839",
+    "detail_content_hash": "4e0414776a7863bc3eacc7942cf0b9bb67b0cd2d53e199ddeef37eec4efae3ba",
+    "detail_last_checked_at": "2026-11-16T16:22:51+00:00",
+    "detail_next_check_at": "2026-11-19T16:22:51+00:00",
+    "detail_unchanged_count": 1,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 0,
+      "firstForumMessageId": null,
+      "id": 756848,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-11-07T20:46:55.803333300Z",
+      "postDate": "2026-11-07T20:46:55.801693400Z",
+      "raw": {
+        "id": 756848,
+        "last_comment_post_date": "2026-11-07T20:46:55.803333300Z",
+        "post_date": "2026-11-07T20:46:55.801693400Z",
+        "title": "Under-18 participation and consent procedure",
+        "topic_url": "/competitions/name-that-llm/discussion/756848",
+        "votes": 1
+      },
+      "title": "Under-18 participation and consent procedure",
+      "topicUrl": "/competitions/name-that-llm/discussion/756848",
+      "votes": 1
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "cora zeng",
+        "authorUserName": "corazeng",
+        "comments": [],
+        "expectedCommentCount": 0,
+        "firstMessage": {
+          "author": {
+            "displayName": "cora zeng",
+            "tier": "CONTRIBUTOR",
+            "url": "/corazeng"
+          },
+          "content": "<p>Could the competition organizers clarify whether under-18 students may participate under the exception in the Kaggle Foundational Competition Rules, and if so, how the sponsor agreement and competition-specific guardian consent should be obtained? Please share the appropriate private process for providing any required documentation. Thank you.</p>",
+          "id": 3551629,
+          "isThankYou": false,
+          "postDate": "2026-11-07T20:46:55.803Z",
+          "raw": {
+            "author": {
+              "display_name": "cora zeng",
+              "id": 33334459,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "CONTRIBUTOR",
+              "url": "/corazeng"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 4378,
+            "content": "<p>Could the competition organizers clarify whether under-18 students may participate under the exception in the Kaggle Foundational Competition Rules, and if so, how the sponsor agreement and competition-specific guardian consent should be obtained? Please share the appropriate private process for providing any required documentation. Thank you.</p>",
+            "feedback_tracking_data": {},
+            "id": 3551629,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-11-07T20:46:55.803Z",
+            "raw_markdown": "Could the competition organizers clarify whether under-18 students may participate under the exception in the Kaggle Foundational Competition Rules, and if so, how the sponsor agreement and competition-specific guardian consent should be obtained? Please share the appropriate private process for providing any required documentation. Thank you.",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "cora zeng",
+                "id": 33334459,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/corazeng",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/corazeng",
+                "user_id": 33334459,
+                "user_name": "corazeng"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 1,
+              "total_votes": 1
+            }
+          },
+          "rawMarkdown": "Could the competition organizers clarify whether under-18 students may participate under the exception in the Kaggle Foundational Competition Rules, and if so, how the sponsor agreement and competition-specific guardian consent should be obtained? Please share the appropriate private process for providing any required documentation. Thank you.",
+          "replies": [],
+          "votes": {
+            "totalVotes": 1
+          }
+        },
+        "firstMessageId": 3551629,
+        "id": 756848,
+        "name": "Under-18 participation and consent procedure",
+        "postDate": "2026-11-07T20:46:55.801693400Z",
+        "url": "/competitions/name-that-llm/discussion/756848"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>Could the competition organizers clarify whether under-18 students may participate under the exception in the Kaggle Foundational Competition Rules, and if so, how the sponsor agreement and competition-specific guardian consent should be obtained? Please share the appropriate private process for providing any required documentation. Thank you.</p>",
+              "id": 3551629,
+              "post_date": "2026-11-07T20:46:55.803Z",
+              "raw_markdown": "Could the competition organizers clarify whether under-18 students may participate under the exception in the Kaggle Foundational Competition Rules, and if so, how the sponsor agreement and competition-specific guardian consent should be obtained? Please share the appropriate private process for providing any required documentation. Thank you.",
+              "votes": 1
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 33334459,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "default-thumb.png",
+            "author_user_display_name": "cora zeng",
+            "author_user_name": "corazeng",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "first_message": {
+              "author": {
+                "display_name": "cora zeng",
+                "id": 33334459,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/corazeng"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 4378,
+              "content": "<p>Could the competition organizers clarify whether under-18 students may participate under the exception in the Kaggle Foundational Competition Rules, and if so, how the sponsor agreement and competition-specific guardian consent should be obtained? Please share the appropriate private process for providing any required documentation. Thank you.</p>",
+              "feedback_tracking_data": {},
+              "id": 3551629,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-07T20:46:55.803Z",
+              "raw_markdown": "Could the competition organizers clarify whether under-18 students may participate under the exception in the Kaggle Foundational Competition Rules, and if so, how the sponsor agreement and competition-specific guardian consent should be obtained? Please share the appropriate private process for providing any required documentation. Thank you.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "cora zeng",
+                  "id": 33334459,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/corazeng",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/corazeng",
+                  "user_id": 33334459,
+                  "user_name": "corazeng"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": 1
+              }
+            },
+            "first_message_id": 3551629,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 756848,
+            "name": "Under-18 participation and consent procedure",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-11-07T20:46:55.801693400Z",
+            "total_votes": 1,
+            "url": "/competitions/name-that-llm/discussion/756848"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:22:51+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:22:51+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-11-07T20:46:55.803333300Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [],
+  "writeup": null
+}

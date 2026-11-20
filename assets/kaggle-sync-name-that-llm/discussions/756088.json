@@ -1,0 +1,211 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 756088,
+    "title": "Same ablations on two bases: what each part is worth on the public LB (0.638 vs 0.659)",
+    "author": "HALX2158",
+    "author_url": "/mizuno0522",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-11-05T11:09:54.036919100Z",
+    "last_comment_post_date": "2026-11-05T11:09:54.036666700Z",
+    "comment_count": 0,
+    "votes": 1,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/756088",
+    "first_message_id": 3550465,
+    "first_seen_at": "2026-11-09T03:54:40+00:00",
+    "last_seen_at": "2026-11-16T16:36:02+00:00",
+    "detail_last_synced_at": "2026-11-16T16:23:01+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "6fff1c5858838dca558bf8dc78a3c003da4aafe6febbee8448a52a780c0b9f44",
+    "listing_metrics_hash": "08a3f0e9d031723a4649730d445a527264427162f124c0c72a6c18d2e0b8e839",
+    "detail_content_hash": "1ba1b606776915b23cab673d090654b440756802c4e02129f45baed0732751ae",
+    "detail_last_checked_at": "2026-11-16T16:23:01+00:00",
+    "detail_next_check_at": "2026-11-19T16:23:01+00:00",
+    "detail_unchanged_count": 1,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 0,
+      "firstForumMessageId": null,
+      "id": 756088,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-11-05T11:09:54.036666700Z",
+      "postDate": "2026-11-05T11:09:54.036919100Z",
+      "raw": {
+        "id": 756088,
+        "last_comment_post_date": "2026-11-05T11:09:54.036666700Z",
+        "post_date": "2026-11-05T11:09:54.036919100Z",
+        "title": "Same ablations on two bases: what each part is worth on the public LB (0.638 vs 0.659)",
+        "topic_url": "/competitions/name-that-llm/discussion/756088",
+        "votes": 1
+      },
+      "title": "Same ablations on two bases: what each part is worth on the public LB (0.638 vs 0.659)",
+      "topicUrl": "/competitions/name-that-llm/discussion/756088",
+      "votes": 1
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "HALX2158",
+        "authorUserName": "mizuno0522",
+        "comments": [],
+        "expectedCommentCount": 0,
+        "firstMessage": {
+          "author": {
+            "displayName": "HALX2158",
+            "tier": "CONTRIBUTOR",
+            "url": "/mizuno0522"
+          },
+          "content": "<p>I measured what each part of a public ensemble is worth on the public LB. I took a scored base, set one part's weight to 0 (or removed the part), and submitted it as a light commit. I did this on two bases:</p>\n<ul>\n<li><strong>Base A: v21c, 0.638.</strong> A fork of the nlm-v27 line.</li>\n<li><strong>Base B: v28, 0.659.</strong> A fork of the public 0.664 notebook, with Llama 3.1 from metaresearch.</li>\n</ul>\n<p>Every number below is a public LB score. \"Δ\" means the change from the base it was measured on.</p>\n<h3>Removal deltas on both bases</h3>\n<table>\n<thead>\n<tr>\n<th>Part removed</th>\n<th>Base A (0.638) Δ</th>\n<th>Base B (0.659) Δ</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Qwen3-14B member</td>\n<td>−0.020 (plain head + twin)</td>\n<td>−0.010 (plain head, twin and Gaussian head)</td>\n</tr>\n<tr>\n<td>Centred twins</td>\n<td>−0.017 (both twins)</td>\n<td>−0.006 (<code>adapt_w=0</code>: twins, Gaussian head and test clustering off)</td>\n</tr>\n<tr>\n<td>Complementary frozen stack</td>\n<td>−0.008</td>\n<td>−0.004</td>\n</tr>\n<tr>\n<td>n-gram SVC</td>\n<td>−0.011</td>\n<td>−0.001</td>\n</tr>\n<tr>\n<td>ATLAS</td>\n<td>−0.009 (10% mix)</td>\n<td>+0.001 (20% mix)</td>\n</tr>\n<tr>\n<td>Sinkhorn</td>\n<td>−0.002 (off)</td>\n<td>see below</td>\n</tr>\n</tbody>\n</table>\n<p>On Base A, every removal lowered the score. On Base B, removing SVC or ATLAS changed the score by 0.001 or less. The same part can be worth 0.01 on one base and nothing on another, so I re-measure after switching forks instead of reusing old numbers.</p>\n<p>The two columns don't match exactly. On Base B, the Qwen3 and twin rows also turn off the Gaussian head, and ATLAS has a different mix weight.</p>\n<h3>Sinkhorn and typography on Base B</h3>\n<table>\n<thead>\n<tr>\n<th>Change</th>\n<th>LB</th>\n<th>Δ</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Sinkhorn 0.60 → 0.45</td>\n<td>0.662</td>\n<td>+0.003</td>\n</tr>\n<tr>\n<td>Sinkhorn 0.60 → 0.30</td>\n<td>0.662</td>\n<td>+0.003</td>\n</tr>\n<tr>\n<td>Typography factor 1.2 → 1.5</td>\n<td>0.658</td>\n<td>−0.001</td>\n</tr>\n<tr>\n<td>Both (0.30 and 1.5)</td>\n<td>0.663</td>\n<td>+0.004</td>\n</tr>\n</tbody>\n</table>\n<p><strong>Rescoring noise:</strong> I resubmitted v28 unchanged (same kernel version), and it scored 0.659 again. On Base A, two identical runs also scored the same (0.617 and 0.617). So in my runs, a delta of 0.001 or more came from the change, not from rescoring.</p>\n<p><strong>Pitfall when forking:</strong> <code>kaggle kernels pull</code> gets the notebook's latest version, not the version that was scored. The 0.664 notebook's scored version 2 used Sinkhorn 0.30 and typography 1.5. My pull had 0.60 and 1.2. That difference alone was 0.659 vs 0.663.</p>\n<p><strong>Adding is not the reverse of removing:</strong> On a 0.642 base (nlm-v27 without Llama), I added a ModernBERT-large member.</p>\n<ul>\n<li>At weight 1.5, it scored 0.638.</li>\n<li>At 0.5, it scored 0.641.</li>\n<li>At 0.3, it scored 0.642.</li>\n</ul>\n<p>A lower weight only brought the score back to the base. None of the weights went above it.</p>\n<p><strong>Cost:</strong> each ablation is a light commit, which uses a few minutes of GPU. The scoring rerun doesn't use GPU quota.</p>",
+          "id": 3550465,
+          "isThankYou": false,
+          "postDate": "2026-11-05T11:09:54.037Z",
+          "raw": {
+            "author": {
+              "display_name": "HALX2158",
+              "id": 16294566,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+              "tier": "CONTRIBUTOR",
+              "url": "/mizuno0522"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 1098,
+            "content": "<p>I measured what each part of a public ensemble is worth on the public LB. I took a scored base, set one part's weight to 0 (or removed the part), and submitted it as a light commit. I did this on two bases:</p>\n<ul>\n<li><strong>Base A: v21c, 0.638.</strong> A fork of the nlm-v27 line.</li>\n<li><strong>Base B: v28, 0.659.</strong> A fork of the public 0.664 notebook, with Llama 3.1 from metaresearch.</li>\n</ul>\n<p>Every number below is a public LB score. \"Δ\" means the change from the base it was measured on.</p>\n<h3>Removal deltas on both bases</h3>\n<table>\n<thead>\n<tr>\n<th>Part removed</th>\n<th>Base A (0.638) Δ</th>\n<th>Base B (0.659) Δ</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Qwen3-14B member</td>\n<td>−0.020 (plain head + twin)</td>\n<td>−0.010 (plain head, twin and Gaussian head)</td>\n</tr>\n<tr>\n<td>Centred twins</td>\n<td>−0.017 (both twins)</td>\n<td>−0.006 (<code>adapt_w=0</code>: twins, Gaussian head and test clustering off)</td>\n</tr>\n<tr>\n<td>Complementary frozen stack</td>\n<td>−0.008</td>\n<td>−0.004</td>\n</tr>\n<tr>\n<td>n-gram SVC</td>\n<td>−0.011</td>\n<td>−0.001</td>\n</tr>\n<tr>\n<td>ATLAS</td>\n<td>−0.009 (10% mix)</td>\n<td>+0.001 (20% mix)</td>\n</tr>\n<tr>\n<td>Sinkhorn</td>\n<td>−0.002 (off)</td>\n<td>see below</td>\n</tr>\n</tbody>\n</table>\n<p>On Base A, every removal lowered the score. On Base B, removing SVC or ATLAS changed the score by 0.001 or less. The same part can be worth 0.01 on one base and nothing on another, so I re-measure after switching forks instead of reusing old numbers.</p>\n<p>The two columns don't match exactly. On Base B, the Qwen3 and twin rows also turn off the Gaussian head, and ATLAS has a different mix weight.</p>\n<h3>Sinkhorn and typography on Base B</h3>\n<table>\n<thead>\n<tr>\n<th>Change</th>\n<th>LB</th>\n<th>Δ</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Sinkhorn 0.60 → 0.45</td>\n<td>0.662</td>\n<td>+0.003</td>\n</tr>\n<tr>\n<td>Sinkhorn 0.60 → 0.30</td>\n<td>0.662</td>\n<td>+0.003</td>\n</tr>\n<tr>\n<td>Typography factor 1.2 → 1.5</td>\n<td>0.658</td>\n<td>−0.001</td>\n</tr>\n<tr>\n<td>Both (0.30 and 1.5)</td>\n<td>0.663</td>\n<td>+0.004</td>\n</tr>\n</tbody>\n</table>\n<p><strong>Rescoring noise:</strong> I resubmitted v28 unchanged (same kernel version), and it scored 0.659 again. On Base A, two identical runs also scored the same (0.617 and 0.617). So in my runs, a delta of 0.001 or more came from the change, not from rescoring.</p>\n<p><strong>Pitfall when forking:</strong> <code>kaggle kernels pull</code> gets the notebook's latest version, not the version that was scored. The 0.664 notebook's scored version 2 used Sinkhorn 0.30 and typography 1.5. My pull had 0.60 and 1.2. That difference alone was 0.659 vs 0.663.</p>\n<p><strong>Adding is not the reverse of removing:</strong> On a 0.642 base (nlm-v27 without Llama), I added a ModernBERT-large member.</p>\n<ul>\n<li>At weight 1.5, it scored 0.638.</li>\n<li>At 0.5, it scored 0.641.</li>\n<li>At 0.3, it scored 0.642.</li>\n</ul>\n<p>A lower weight only brought the score back to the base. None of the weights went above it.</p>\n<p><strong>Cost:</strong> each ablation is a light commit, which uses a few minutes of GPU. The scoring rerun doesn't use GPU quota.</p>",
+            "feedback_tracking_data": {},
+            "id": 3550465,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-11-05T11:09:54.037Z",
+            "raw_markdown": "I measured what each part of a public ensemble is worth on the public LB. I took a scored base, set one part's weight to 0 (or removed the part), and submitted it as a light commit. I did this on two bases:\n\n- **Base A: v21c, 0.638.** A fork of the nlm-v27 line.\n- **Base B: v28, 0.659.** A fork of the public 0.664 notebook, with Llama 3.1 from metaresearch.\n\nEvery number below is a public LB score. \"Δ\" means the change from the base it was measured on.\n\n### Removal deltas on both bases\n\n| Part removed | Base A (0.638) Δ | Base B (0.659) Δ |\n|---|---|---|\n| Qwen3-14B member | −0.020 (plain head + twin) | −0.010 (plain head, twin and Gaussian head) |\n| Centred twins | −0.017 (both twins) | −0.006 (`adapt_w=0`: twins, Gaussian head and test clustering off) |\n| Complementary frozen stack | −0.008 | −0.004 |\n| n-gram SVC | −0.011 | −0.001 |\n| ATLAS | −0.009 (10% mix) | +0.001 (20% mix) |\n| Sinkhorn | −0.002 (off) | see below |\n\nOn Base A, every removal lowered the score. On Base B, removing SVC or ATLAS changed the score by 0.001 or less. The same part can be worth 0.01 on one base and nothing on another, so I re-measure after switching forks instead of reusing old numbers.\n\nThe two columns don't match exactly. On Base B, the Qwen3 and twin rows also turn off the Gaussian head, and ATLAS has a different mix weight.\n\n### Sinkhorn and typography on Base B\n\n| Change | LB | Δ |\n|---|---|---|\n| Sinkhorn 0.60 → 0.45 | 0.662 | +0.003 |\n| Sinkhorn 0.60 → 0.30 | 0.662 | +0.003 |\n| Typography factor 1.2 → 1.5 | 0.658 | −0.001 |\n| Both (0.30 and 1.5) | 0.663 | +0.004 |\n\n**Rescoring noise:** I resubmitted v28 unchanged (same kernel version), and it scored 0.659 again. On Base A, two identical runs also scored the same (0.617 and 0.617). So in my runs, a delta of 0.001 or more came from the change, not from rescoring.\n\n**Pitfall when forking:** `kaggle kernels pull` gets the notebook's latest version, not the version that was scored. The 0.664 notebook's scored version 2 used Sinkhorn 0.30 and typography 1.5. My pull had 0.60 and 1.2. That difference alone was 0.659 vs 0.663.\n\n**Adding is not the reverse of removing:** On a 0.642 base (nlm-v27 without Llama), I added a ModernBERT-large member.\n\n- At weight 1.5, it scored 0.638.\n- At 0.5, it scored 0.641.\n- At 0.3, it scored 0.642.\n\nA lower weight only brought the score back to the base. None of the weights went above it.\n\n**Cost:** each ablation is a light commit, which uses a few minutes of GPU. The scoring rerun doesn't use GPU quota.",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "HALX2158",
+                "id": 16294566,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/mizuno0522",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                "tier": "CONTRIBUTOR",
+                "url": "/mizuno0522",
+                "user_id": 16294566,
+                "user_name": "mizuno0522"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 1,
+              "total_votes": 1
+            }
+          },
+          "rawMarkdown": "I measured what each part of a public ensemble is worth on the public LB. I took a scored base, set one part's weight to 0 (or removed the part), and submitted it as a light commit. I did this on two bases:\n\n- **Base A: v21c, 0.638.** A fork of the nlm-v27 line.\n- **Base B: v28, 0.659.** A fork of the public 0.664 notebook, with Llama 3.1 from metaresearch.\n\nEvery number below is a public LB score. \"Δ\" means the change from the base it was measured on.\n\n### Removal deltas on both bases\n\n| Part removed | Base A (0.638) Δ | Base B (0.659) Δ |\n|---|---|---|\n| Qwen3-14B member | −0.020 (plain head + twin) | −0.010 (plain head, twin and Gaussian head) |\n| Centred twins | −0.017 (both twins) | −0.006 (`adapt_w=0`: twins, Gaussian head and test clustering off) |\n| Complementary frozen stack | −0.008 | −0.004 |\n| n-gram SVC | −0.011 | −0.001 |\n| ATLAS | −0.009 (10% mix) | +0.001 (20% mix) |\n| Sinkhorn | −0.002 (off) | see below |\n\nOn Base A, every removal lowered the score. On Base B, removing SVC or ATLAS changed the score by 0.001 or less. The same part can be worth 0.01 on one base and nothing on another, so I re-measure after switching forks instead of reusing old numbers.\n\nThe two columns don't match exactly. On Base B, the Qwen3 and twin rows also turn off the Gaussian head, and ATLAS has a different mix weight.\n\n### Sinkhorn and typography on Base B\n\n| Change | LB | Δ |\n|---|---|---|\n| Sinkhorn 0.60 → 0.45 | 0.662 | +0.003 |\n| Sinkhorn 0.60 → 0.30 | 0.662 | +0.003 |\n| Typography factor 1.2 → 1.5 | 0.658 | −0.001 |\n| Both (0.30 and 1.5) | 0.663 | +0.004 |\n\n**Rescoring noise:** I resubmitted v28 unchanged (same kernel version), and it scored 0.659 again. On Base A, two identical runs also scored the same (0.617 and 0.617). So in my runs, a delta of 0.001 or more came from the change, not from rescoring.\n\n**Pitfall when forking:** `kaggle kernels pull` gets the notebook's latest version, not the version that was scored. The 0.664 notebook's scored version 2 used Sinkhorn 0.30 and typography 1.5. My pull had 0.60 and 1.2. That difference alone was 0.659 vs 0.663.\n\n**Adding is not the reverse of removing:** On a 0.642 base (nlm-v27 without Llama), I added a ModernBERT-large member.\n\n- At weight 1.5, it scored 0.638.\n- At 0.5, it scored 0.641.\n- At 0.3, it scored 0.642.\n\nA lower weight only brought the score back to the base. None of the weights went above it.\n\n**Cost:** each ablation is a light commit, which uses a few minutes of GPU. The scoring rerun doesn't use GPU quota.",
+          "replies": [],
+          "votes": {
+            "totalVotes": 1
+          }
+        },
+        "firstMessageId": 3550465,
+        "id": 756088,
+        "name": "Same ablations on two bases: what each part is worth on the public LB (0.638 vs 0.659)",
+        "postDate": "2026-11-05T11:09:54.036919100Z",
+        "url": "/competitions/name-that-llm/discussion/756088"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>I measured what each part of a public ensemble is worth on the public LB. I took a scored base, set one part's weight to 0 (or removed the part), and submitted it as a light commit. I did this on two bases:</p>\n<ul>\n<li><strong>Base A: v21c, 0.638.</strong> A fork of the nlm-v27 line.</li>\n<li><strong>Base B: v28, 0.659.</strong> A fork of the public 0.664 notebook, with Llama 3.1 from metaresearch.</li>\n</ul>\n<p>Every number below is a public LB score. \"Δ\" means the change from the base it was measured on.</p>\n<h3>Removal deltas on both bases</h3>\n<table>\n<thead>\n<tr>\n<th>Part removed</th>\n<th>Base A (0.638) Δ</th>\n<th>Base B (0.659) Δ</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Qwen3-14B member</td>\n<td>−0.020 (plain head + twin)</td>\n<td>−0.010 (plain head, twin and Gaussian head)</td>\n</tr>\n<tr>\n<td>Centred twins</td>\n<td>−0.017 (both twins)</td>\n<td>−0.006 (<code>adapt_w=0</code>: twins, Gaussian head and test clustering off)</td>\n</tr>\n<tr>\n<td>Complementary frozen stack</td>\n<td>−0.008</td>\n<td>−0.004</td>\n</tr>\n<tr>\n<td>n-gram SVC</td>\n<td>−0.011</td>\n<td>−0.001</td>\n</tr>\n<tr>\n<td>ATLAS</td>\n<td>−0.009 (10% mix)</td>\n<td>+0.001 (20% mix)</td>\n</tr>\n<tr>\n<td>Sinkhorn</td>\n<td>−0.002 (off)</td>\n<td>see below</td>\n</tr>\n</tbody>\n</table>\n<p>On Base A, every removal lowered the score. On Base B, removing SVC or ATLAS changed the score by 0.001 or less. The same part can be worth 0.01 on one base and nothing on another, so I re-measure after switching forks instead of reusing old numbers.</p>\n<p>The two columns don't match exactly. On Base B, the Qwen3 and twin rows also turn off the Gaussian head, and ATLAS has a different mix weight.</p>\n<h3>Sinkhorn and typography on Base B</h3>\n<table>\n<thead>\n<tr>\n<th>Change</th>\n<th>LB</th>\n<th>Δ</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Sinkhorn 0.60 → 0.45</td>\n<td>0.662</td>\n<td>+0.003</td>\n</tr>\n<tr>\n<td>Sinkhorn 0.60 → 0.30</td>\n<td>0.662</td>\n<td>+0.003</td>\n</tr>\n<tr>\n<td>Typography factor 1.2 → 1.5</td>\n<td>0.658</td>\n<td>−0.001</td>\n</tr>\n<tr>\n<td>Both (0.30 and 1.5)</td>\n<td>0.663</td>\n<td>+0.004</td>\n</tr>\n</tbody>\n</table>\n<p><strong>Rescoring noise:</strong> I resubmitted v28 unchanged (same kernel version), and it scored 0.659 again. On Base A, two identical runs also scored the same (0.617 and 0.617). So in my runs, a delta of 0.001 or more came from the change, not from rescoring.</p>\n<p><strong>Pitfall when forking:</strong> <code>kaggle kernels pull</code> gets the notebook's latest version, not the version that was scored. The 0.664 notebook's scored version 2 used Sinkhorn 0.30 and typography 1.5. My pull had 0.60 and 1.2. That difference alone was 0.659 vs 0.663.</p>\n<p><strong>Adding is not the reverse of removing:</strong> On a 0.642 base (nlm-v27 without Llama), I added a ModernBERT-large member.</p>\n<ul>\n<li>At weight 1.5, it scored 0.638.</li>\n<li>At 0.5, it scored 0.641.</li>\n<li>At 0.3, it scored 0.642.</li>\n</ul>\n<p>A lower weight only brought the score back to the base. None of the weights went above it.</p>\n<p><strong>Cost:</strong> each ablation is a light commit, which uses a few minutes of GPU. The scoring rerun doesn't use GPU quota.</p>",
+              "id": 3550465,
+              "post_date": "2026-11-05T11:09:54.037Z",
+              "raw_markdown": "I measured what each part of a public ensemble is worth on the public LB. I took a scored base, set one part's weight to 0 (or removed the part), and submitted it as a light commit. I did this on two bases:\n\n- **Base A: v21c, 0.638.** A fork of the nlm-v27 line.\n- **Base B: v28, 0.659.** A fork of the public 0.664 notebook, with Llama 3.1 from metaresearch.\n\nEvery number below is a public LB score. \"Δ\" means the change from the base it was measured on.\n\n### Removal deltas on both bases\n\n| Part removed | Base A (0.638) Δ | Base B (0.659) Δ |\n|---|---|---|\n| Qwen3-14B member | −0.020 (plain head + twin) | −0.010 (plain head, twin and Gaussian head) |\n| Centred twins | −0.017 (both twins) | −0.006 (`adapt_w=0`: twins, Gaussian head and test clustering off) |\n| Complementary frozen stack | −0.008 | −0.004 |\n| n-gram SVC | −0.011 | −0.001 |\n| ATLAS | −0.009 (10% mix) | +0.001 (20% mix) |\n| Sinkhorn | −0.002 (off) | see below |\n\nOn Base A, every removal lowered the score. On Base B, removing SVC or ATLAS changed the score by 0.001 or less. The same part can be worth 0.01 on one base and nothing on another, so I re-measure after switching forks instead of reusing old numbers.\n\nThe two columns don't match exactly. On Base B, the Qwen3 and twin rows also turn off the Gaussian head, and ATLAS has a different mix weight.\n\n### Sinkhorn and typography on Base B\n\n| Change | LB | Δ |\n|---|---|---|\n| Sinkhorn 0.60 → 0.45 | 0.662 | +0.003 |\n| Sinkhorn 0.60 → 0.30 | 0.662 | +0.003 |\n| Typography factor 1.2 → 1.5 | 0.658 | −0.001 |\n| Both (0.30 and 1.5) | 0.663 | +0.004 |\n\n**Rescoring noise:** I resubmitted v28 unchanged (same kernel version), and it scored 0.659 again. On Base A, two identical runs also scored the same (0.617 and 0.617). So in my runs, a delta of 0.001 or more came from the change, not from rescoring.\n\n**Pitfall when forking:** `kaggle kernels pull` gets the notebook's latest version, not the version that was scored. The 0.664 notebook's scored version 2 used Sinkhorn 0.30 and typography 1.5. My pull had 0.60 and 1.2. That difference alone was 0.659 vs 0.663.\n\n**Adding is not the reverse of removing:** On a 0.642 base (nlm-v27 without Llama), I added a ModernBERT-large member.\n\n- At weight 1.5, it scored 0.638.\n- At 0.5, it scored 0.641.\n- At 0.3, it scored 0.642.\n\nA lower weight only brought the score back to the base. None of the weights went above it.\n\n**Cost:** each ablation is a light commit, which uses a few minutes of GPU. The scoring rerun doesn't use GPU quota.",
+              "votes": 1
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 16294566,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "16294566-kg.jpeg?t=2026-10-16-21-22-02",
+            "author_user_display_name": "HALX2158",
+            "author_user_name": "mizuno0522",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "first_message": {
+              "author": {
+                "display_name": "HALX2158",
+                "id": 16294566,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                "tier": "CONTRIBUTOR",
+                "url": "/mizuno0522"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 1098,
+              "content": "<p>I measured what each part of a public ensemble is worth on the public LB. I took a scored base, set one part's weight to 0 (or removed the part), and submitted it as a light commit. I did this on two bases:</p>\n<ul>\n<li><strong>Base A: v21c, 0.638.</strong> A fork of the nlm-v27 line.</li>\n<li><strong>Base B: v28, 0.659.</strong> A fork of the public 0.664 notebook, with Llama 3.1 from metaresearch.</li>\n</ul>\n<p>Every number below is a public LB score. \"Δ\" means the change from the base it was measured on.</p>\n<h3>Removal deltas on both bases</h3>\n<table>\n<thead>\n<tr>\n<th>Part removed</th>\n<th>Base A (0.638) Δ</th>\n<th>Base B (0.659) Δ</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Qwen3-14B member</td>\n<td>−0.020 (plain head + twin)</td>\n<td>−0.010 (plain head, twin and Gaussian head)</td>\n</tr>\n<tr>\n<td>Centred twins</td>\n<td>−0.017 (both twins)</td>\n<td>−0.006 (<code>adapt_w=0</code>: twins, Gaussian head and test clustering off)</td>\n</tr>\n<tr>\n<td>Complementary frozen stack</td>\n<td>−0.008</td>\n<td>−0.004</td>\n</tr>\n<tr>\n<td>n-gram SVC</td>\n<td>−0.011</td>\n<td>−0.001</td>\n</tr>\n<tr>\n<td>ATLAS</td>\n<td>−0.009 (10% mix)</td>\n<td>+0.001 (20% mix)</td>\n</tr>\n<tr>\n<td>Sinkhorn</td>\n<td>−0.002 (off)</td>\n<td>see below</td>\n</tr>\n</tbody>\n</table>\n<p>On Base A, every removal lowered the score. On Base B, removing SVC or ATLAS changed the score by 0.001 or less. The same part can be worth 0.01 on one base and nothing on another, so I re-measure after switching forks instead of reusing old numbers.</p>\n<p>The two columns don't match exactly. On Base B, the Qwen3 and twin rows also turn off the Gaussian head, and ATLAS has a different mix weight.</p>\n<h3>Sinkhorn and typography on Base B</h3>\n<table>\n<thead>\n<tr>\n<th>Change</th>\n<th>LB</th>\n<th>Δ</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Sinkhorn 0.60 → 0.45</td>\n<td>0.662</td>\n<td>+0.003</td>\n</tr>\n<tr>\n<td>Sinkhorn 0.60 → 0.30</td>\n<td>0.662</td>\n<td>+0.003</td>\n</tr>\n<tr>\n<td>Typography factor 1.2 → 1.5</td>\n<td>0.658</td>\n<td>−0.001</td>\n</tr>\n<tr>\n<td>Both (0.30 and 1.5)</td>\n<td>0.663</td>\n<td>+0.004</td>\n</tr>\n</tbody>\n</table>\n<p><strong>Rescoring noise:</strong> I resubmitted v28 unchanged (same kernel version), and it scored 0.659 again. On Base A, two identical runs also scored the same (0.617 and 0.617). So in my runs, a delta of 0.001 or more came from the change, not from rescoring.</p>\n<p><strong>Pitfall when forking:</strong> <code>kaggle kernels pull</code> gets the notebook's latest version, not the version that was scored. The 0.664 notebook's scored version 2 used Sinkhorn 0.30 and typography 1.5. My pull had 0.60 and 1.2. That difference alone was 0.659 vs 0.663.</p>\n<p><strong>Adding is not the reverse of removing:</strong> On a 0.642 base (nlm-v27 without Llama), I added a ModernBERT-large member.</p>\n<ul>\n<li>At weight 1.5, it scored 0.638.</li>\n<li>At 0.5, it scored 0.641.</li>\n<li>At 0.3, it scored 0.642.</li>\n</ul>\n<p>A lower weight only brought the score back to the base. None of the weights went above it.</p>\n<p><strong>Cost:</strong> each ablation is a light commit, which uses a few minutes of GPU. The scoring rerun doesn't use GPU quota.</p>",
+              "feedback_tracking_data": {},
+              "id": 3550465,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-05T11:09:54.037Z",
+              "raw_markdown": "I measured what each part of a public ensemble is worth on the public LB. I took a scored base, set one part's weight to 0 (or removed the part), and submitted it as a light commit. I did this on two bases:\n\n- **Base A: v21c, 0.638.** A fork of the nlm-v27 line.\n- **Base B: v28, 0.659.** A fork of the public 0.664 notebook, with Llama 3.1 from metaresearch.\n\nEvery number below is a public LB score. \"Δ\" means the change from the base it was measured on.\n\n### Removal deltas on both bases\n\n| Part removed | Base A (0.638) Δ | Base B (0.659) Δ |\n|---|---|---|\n| Qwen3-14B member | −0.020 (plain head + twin) | −0.010 (plain head, twin and Gaussian head) |\n| Centred twins | −0.017 (both twins) | −0.006 (`adapt_w=0`: twins, Gaussian head and test clustering off) |\n| Complementary frozen stack | −0.008 | −0.004 |\n| n-gram SVC | −0.011 | −0.001 |\n| ATLAS | −0.009 (10% mix) | +0.001 (20% mix) |\n| Sinkhorn | −0.002 (off) | see below |\n\nOn Base A, every removal lowered the score. On Base B, removing SVC or ATLAS changed the score by 0.001 or less. The same part can be worth 0.01 on one base and nothing on another, so I re-measure after switching forks instead of reusing old numbers.\n\nThe two columns don't match exactly. On Base B, the Qwen3 and twin rows also turn off the Gaussian head, and ATLAS has a different mix weight.\n\n### Sinkhorn and typography on Base B\n\n| Change | LB | Δ |\n|---|---|---|\n| Sinkhorn 0.60 → 0.45 | 0.662 | +0.003 |\n| Sinkhorn 0.60 → 0.30 | 0.662 | +0.003 |\n| Typography factor 1.2 → 1.5 | 0.658 | −0.001 |\n| Both (0.30 and 1.5) | 0.663 | +0.004 |\n\n**Rescoring noise:** I resubmitted v28 unchanged (same kernel version), and it scored 0.659 again. On Base A, two identical runs also scored the same (0.617 and 0.617). So in my runs, a delta of 0.001 or more came from the change, not from rescoring.\n\n**Pitfall when forking:** `kaggle kernels pull` gets the notebook's latest version, not the version that was scored. The 0.664 notebook's scored version 2 used Sinkhorn 0.30 and typography 1.5. My pull had 0.60 and 1.2. That difference alone was 0.659 vs 0.663.\n\n**Adding is not the reverse of removing:** On a 0.642 base (nlm-v27 without Llama), I added a ModernBERT-large member.\n\n- At weight 1.5, it scored 0.638.\n- At 0.5, it scored 0.641.\n- At 0.3, it scored 0.642.\n\nA lower weight only brought the score back to the base. None of the weights went above it.\n\n**Cost:** each ablation is a light commit, which uses a few minutes of GPU. The scoring rerun doesn't use GPU quota.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "HALX2158",
+                  "id": 16294566,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/mizuno0522",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/mizuno0522",
+                  "user_id": 16294566,
+                  "user_name": "mizuno0522"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": 1
+              }
+            },
+            "first_message_id": 3550465,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 756088,
+            "name": "Same ablations on two bases: what each part is worth on the public LB (0.638 vs 0.659)",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-11-05T11:09:54.036919100Z",
+            "total_votes": 1,
+            "url": "/competitions/name-that-llm/discussion/756088"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:23:01+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:23:01+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-11-05T11:09:54.036919100Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [],
+  "writeup": null
+}

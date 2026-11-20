@@ -1,0 +1,581 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 756477,
+    "title": "Random K-fold is pessimistic here: 0.11 vs 0.35 with grouped folds (reverse leakage)",
+    "author": "Renan Pinheiro",
+    "author_url": "/pinheirodw17",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-11-06T14:00:37.661064900Z",
+    "last_comment_post_date": "2026-11-10T02:45:57.506666700Z",
+    "comment_count": 2,
+    "votes": 2,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/756477",
+    "first_message_id": 3551058,
+    "first_seen_at": "2026-11-09T03:54:40+00:00",
+    "last_seen_at": "2026-11-18T09:02:53+00:00",
+    "detail_last_synced_at": "2026-11-18T09:02:53+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-18T09:01:52+00:00",
+    "remote_last_listed_at": "2026-11-18T09:01:52+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "04198011c49168e7d1a3833111af5d7e2c6b264287f15e953225d831fb2d5e65",
+    "listing_metrics_hash": "6db2b817333d85ee95f494a1b2ba941fb79d87d4e3e0c8718afed5f3c0bfd1fa",
+    "detail_content_hash": "fbb4cc2f58c9e4bb25762c86d8f6b015b0d33686febbbabc96401c78ea46a972",
+    "detail_last_checked_at": "2026-11-18T09:02:53+00:00",
+    "detail_next_check_at": "2026-11-21T09:02:53+00:00",
+    "detail_unchanged_count": 1,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 2,
+      "firstForumMessageId": null,
+      "id": 756477,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-11-10T02:45:57.506666700Z",
+      "postDate": "2026-11-06T14:00:37.661064900Z",
+      "raw": {
+        "comment_count": 2,
+        "id": 756477,
+        "last_comment_post_date": "2026-11-10T02:45:57.506666700Z",
+        "post_date": "2026-11-06T14:00:37.661064900Z",
+        "title": "Random K-fold is pessimistic here: 0.11 vs 0.35 with grouped folds (reverse leakage)",
+        "topic_url": "/competitions/name-that-llm/discussion/756477",
+        "votes": 2
+      },
+      "title": "Random K-fold is pessimistic here: 0.11 vs 0.35 with grouped folds (reverse leakage)",
+      "topicUrl": "/competitions/name-that-llm/discussion/756477",
+      "votes": 2
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "Renan Pinheiro",
+        "authorUserName": "pinheirodw17",
+        "comments": [
+          {
+            "author": {
+              "displayName": "John K",
+              "tier": "CONTRIBUTOR",
+              "url": "/johnnykhan1"
+            },
+            "content": "<p>I used GroupKFold on prompt_id for a TF-IDF plus logistic baseline and got 0.3119 balanced accuracy on the 2,699 row train file. I haven't run a random split side by side, so I can't confirm your 0.109 vs 0.347 gap from my end. With 149 of 150 prompts carrying all 18 models in train though, it makes sense that the split choice swings the number this much.</p>",
+            "id": 3552640,
+            "isThankYou": false,
+            "postDate": "2026-11-10T02:45:57.507Z",
+            "raw": {
+              "author": {
+                "display_name": "John K",
+                "id": 37335549,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/37335549-kg.jpg?t=2026-10-24-04-37-50",
+                "tier": "CONTRIBUTOR",
+                "url": "/johnnykhan1"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 1360,
+              "content": "<p>I used GroupKFold on prompt_id for a TF-IDF plus logistic baseline and got 0.3119 balanced accuracy on the 2,699 row train file. I haven't run a random split side by side, so I can't confirm your 0.109 vs 0.347 gap from my end. With 149 of 150 prompts carrying all 18 models in train though, it makes sense that the split choice swings the number this much.</p>",
+              "feedback_tracking_data": {},
+              "id": 3552640,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-10T02:45:57.507Z",
+              "raw_markdown": "I used GroupKFold on prompt_id for a TF-IDF plus logistic baseline and got 0.3119 balanced accuracy on the 2,699 row train file. I haven't run a random split side by side, so I can't confirm your 0.109 vs 0.347 gap from my end. With 149 of 150 prompts carrying all 18 models in train though, it makes sense that the split choice swings the number this much.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "John K",
+                  "id": 37335549,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/johnnykhan1",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/37335549-kg.jpg?t=2026-10-24-04-37-50",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/johnnykhan1",
+                  "user_id": 37335549,
+                  "user_name": "johnnykhan1"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "I used GroupKFold on prompt_id for a TF-IDF plus logistic baseline and got 0.3119 balanced accuracy on the 2,699 row train file. I haven't run a random split side by side, so I can't confirm your 0.109 vs 0.347 gap from my end. With 149 of 150 prompts carrying all 18 models in train though, it makes sense that the split choice swings the number this much.",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          },
+          {
+            "author": {
+              "displayName": "Renan Pinheiro",
+              "tier": "CONTRIBUTOR",
+              "url": "/pinheirodw17"
+            },
+            "content": "<p><strong>Update:</strong> the notebook now ends with two things you can reuse directly:</p>\n<ul>\n<li><strong>Section 6, grouped-CV template:</strong> <code>StratifiedGroupKFold</code> on <code>prompt_id</code>, with an <code>assert</code> that fails if any prompt ends up in both train and validation.</li>\n<li><strong>Section 7, baseline submission:</strong> TF-IDF + logistic regression that writes <code>submission.parquet</code>. It scores <strong>0.355</strong> on the public LB, against <strong>0.347</strong> grouped CV.</li>\n</ul>\n<p>New finding: under the grouped split, <strong>55%</strong> of wrong predictions still land in the right model family (GPT, Gemini, Claude…), against 17% by chance. Family-level structure is worth exploiting, for example with a family-then-model hierarchy.</p>\n<p><a href=\"https://www.kaggle.com/code/pinheirodw17/reverse-leakage-why-random-cv-is-pessimistic\" target=\"_blank\">Reverse leakage: why random CV is pessimistic</a></p>",
+            "id": 3551980,
+            "isThankYou": false,
+            "postDate": "2026-11-08T20:41:21.850Z",
+            "raw": {
+              "author": {
+                "display_name": "Renan Pinheiro",
+                "id": 32146403,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/32146403-kg.png?t=2026-10-30-22-09-23",
+                "tier": "CONTRIBUTOR",
+                "url": "/pinheirodw17"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 4055,
+              "content": "<p><strong>Update:</strong> the notebook now ends with two things you can reuse directly:</p>\n<ul>\n<li><strong>Section 6, grouped-CV template:</strong> <code>StratifiedGroupKFold</code> on <code>prompt_id</code>, with an <code>assert</code> that fails if any prompt ends up in both train and validation.</li>\n<li><strong>Section 7, baseline submission:</strong> TF-IDF + logistic regression that writes <code>submission.parquet</code>. It scores <strong>0.355</strong> on the public LB, against <strong>0.347</strong> grouped CV.</li>\n</ul>\n<p>New finding: under the grouped split, <strong>55%</strong> of wrong predictions still land in the right model family (GPT, Gemini, Claude…), against 17% by chance. Family-level structure is worth exploiting, for example with a family-then-model hierarchy.</p>\n<p><a href=\"https://www.kaggle.com/code/pinheirodw17/reverse-leakage-why-random-cv-is-pessimistic\" target=\"_blank\">Reverse leakage: why random CV is pessimistic</a></p>",
+              "feedback_tracking_data": {},
+              "id": 3551980,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-08T20:41:21.850Z",
+              "raw_markdown": "**Update:** the notebook now ends with two things you can reuse directly:\n\n- **Section 6, grouped-CV template:** `StratifiedGroupKFold` on `prompt_id`, with an `assert` that fails if any prompt ends up in both train and validation.\n- **Section 7, baseline submission:** TF-IDF + logistic regression that writes `submission.parquet`. It scores **0.355** on the public LB, against **0.347** grouped CV.\n\nNew finding: under the grouped split, **55%** of wrong predictions still land in the right model family (GPT, Gemini, Claude…), against 17% by chance. Family-level structure is worth exploiting, for example with a family-then-model hierarchy.\n\n[Reverse leakage: why random CV is pessimistic](https://www.kaggle.com/code/pinheirodw17/reverse-leakage-why-random-cv-is-pessimistic)",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Renan Pinheiro",
+                  "id": 32146403,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/pinheirodw17",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/32146403-kg.png?t=2026-10-30-22-09-23",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/pinheirodw17",
+                  "user_id": 32146403,
+                  "user_name": "pinheirodw17"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "**Update:** the notebook now ends with two things you can reuse directly:\n\n- **Section 6, grouped-CV template:** `StratifiedGroupKFold` on `prompt_id`, with an `assert` that fails if any prompt ends up in both train and validation.\n- **Section 7, baseline submission:** TF-IDF + logistic regression that writes `submission.parquet`. It scores **0.355** on the public LB, against **0.347** grouped CV.\n\nNew finding: under the grouped split, **55%** of wrong predictions still land in the right model family (GPT, Gemini, Claude…), against 17% by chance. Family-level structure is worth exploiting, for example with a family-then-model hierarchy.\n\n[Reverse leakage: why random CV is pessimistic](https://www.kaggle.com/code/pinheirodw17/reverse-leakage-why-random-cv-is-pessimistic)",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "expectedCommentCount": 2,
+        "firstMessage": {
+          "author": {
+            "displayName": "Renan Pinheiro",
+            "tier": "CONTRIBUTOR",
+            "url": "/pinheirodw17"
+          },
+          "content": "<p>If you validate with a random K-fold in this competition, your CV is probably far <strong>below</strong> what the leaderboard will give you. That is the opposite of the usual leakage story.</p>\n<p>Same TF-IDF + logistic regression baseline, only the folds change:</p>\n<table>\n<thead>\n<tr>\n<th>Folds</th>\n<th>Balanced accuracy</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>KFold (random)</td>\n<td>0.109</td>\n</tr>\n<tr>\n<td>StratifiedKFold (random)</td>\n<td>0.114</td>\n</tr>\n<tr>\n<td>StratifiedGroupKFold by <code>prompt_id</code></td>\n<td><strong>0.347</strong></td>\n</tr>\n</tbody>\n</table>\n<p><strong>Why:</strong> every prompt was answered once by (almost) each of the 18 models. Under a random split, ~14 of a text's 17 \"siblings\" (same prompt, different model) sit in training. They share its topic and none of them has its label, so the model is pulled towards the wrong answers. In the random split, the nearest training text is a sibling 99.6% of the time.</p>\n<p><strong>Dose-response:</strong> starting from grouped folds, moving 2 / 4 / 8 siblings per prompt back into training drops accuracy from 0.347 to 0.264 / 0.215 / 0.156. It then flattens around 0.15.</p>\n<p><strong>Takeaways</strong></p>\n<ul>\n<li>Group by <code>prompt_id</code>. In my submissions, grouped CV and public LB moved together every time (r ≈ 0.99).</li>\n<li>Topic is a confounder. Removing per-prompt topic from embeddings (\"prompt-centering\"), and grouping test texts by similarity, gave me real gains.</li>\n</ul>\n<p>Notebook with code, curve and details: <a href=\"https://www.kaggle.com/code/pinheirodw17/reverse-leakage-why-random-cv-is-pessimistic\" target=\"_blank\">Reverse leakage: why random CV is pessimistic</a></p>\n<p>Counter-examples or different results welcome.</p>",
+          "id": 3551058,
+          "isThankYou": false,
+          "postDate": "2026-11-06T14:00:37.660Z",
+          "raw": {
+            "author": {
+              "display_name": "Renan Pinheiro",
+              "id": 32146403,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/32146403-kg.png?t=2026-10-30-22-09-23",
+              "tier": "CONTRIBUTOR",
+              "url": "/pinheirodw17"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 4055,
+            "content": "<p>If you validate with a random K-fold in this competition, your CV is probably far <strong>below</strong> what the leaderboard will give you. That is the opposite of the usual leakage story.</p>\n<p>Same TF-IDF + logistic regression baseline, only the folds change:</p>\n<table>\n<thead>\n<tr>\n<th>Folds</th>\n<th>Balanced accuracy</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>KFold (random)</td>\n<td>0.109</td>\n</tr>\n<tr>\n<td>StratifiedKFold (random)</td>\n<td>0.114</td>\n</tr>\n<tr>\n<td>StratifiedGroupKFold by <code>prompt_id</code></td>\n<td><strong>0.347</strong></td>\n</tr>\n</tbody>\n</table>\n<p><strong>Why:</strong> every prompt was answered once by (almost) each of the 18 models. Under a random split, ~14 of a text's 17 \"siblings\" (same prompt, different model) sit in training. They share its topic and none of them has its label, so the model is pulled towards the wrong answers. In the random split, the nearest training text is a sibling 99.6% of the time.</p>\n<p><strong>Dose-response:</strong> starting from grouped folds, moving 2 / 4 / 8 siblings per prompt back into training drops accuracy from 0.347 to 0.264 / 0.215 / 0.156. It then flattens around 0.15.</p>\n<p><strong>Takeaways</strong></p>\n<ul>\n<li>Group by <code>prompt_id</code>. In my submissions, grouped CV and public LB moved together every time (r ≈ 0.99).</li>\n<li>Topic is a confounder. Removing per-prompt topic from embeddings (\"prompt-centering\"), and grouping test texts by similarity, gave me real gains.</li>\n</ul>\n<p>Notebook with code, curve and details: <a href=\"https://www.kaggle.com/code/pinheirodw17/reverse-leakage-why-random-cv-is-pessimistic\" target=\"_blank\">Reverse leakage: why random CV is pessimistic</a></p>\n<p>Counter-examples or different results welcome.</p>",
+            "feedback_tracking_data": {},
+            "id": 3551058,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-11-06T14:00:37.660Z",
+            "raw_markdown": "If you validate with a random K-fold in this competition, your CV is probably far **below** what the leaderboard will give you. That is the opposite of the usual leakage story.\n\nSame TF-IDF + logistic regression baseline, only the folds change:\n\n| Folds | Balanced accuracy |\n|---|---|\n| KFold (random) | 0.109 |\n| StratifiedKFold (random) | 0.114 |\n| StratifiedGroupKFold by `prompt_id` | **0.347** |\n\n**Why:** every prompt was answered once by (almost) each of the 18 models. Under a random split, ~14 of a text's 17 \"siblings\" (same prompt, different model) sit in training. They share its topic and none of them has its label, so the model is pulled towards the wrong answers. In the random split, the nearest training text is a sibling 99.6% of the time.\n\n**Dose-response:** starting from grouped folds, moving 2 / 4 / 8 siblings per prompt back into training drops accuracy from 0.347 to 0.264 / 0.215 / 0.156. It then flattens around 0.15.\n\n**Takeaways**\n\n- Group by `prompt_id`. In my submissions, grouped CV and public LB moved together every time (r ≈ 0.99).\n- Topic is a confounder. Removing per-prompt topic from embeddings (\"prompt-centering\"), and grouping test texts by similarity, gave me real gains.\n\nNotebook with code, curve and details: [Reverse leakage: why random CV is pessimistic](https://www.kaggle.com/code/pinheirodw17/reverse-leakage-why-random-cv-is-pessimistic)\n\nCounter-examples or different results welcome.",
+            "reactions": [
+              {
+                "emoji": "LOVE",
+                "featured_user_names": [
+                  "kokatrn"
+                ],
+                "user_count": 1
+              }
+            ],
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "Renan Pinheiro",
+                "id": 32146403,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/pinheirodw17",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/32146403-kg.png?t=2026-10-30-22-09-23",
+                "tier": "CONTRIBUTOR",
+                "url": "/pinheirodw17",
+                "user_id": 32146403,
+                "user_name": "pinheirodw17"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 2,
+              "total_votes": 2
+            }
+          },
+          "rawMarkdown": "If you validate with a random K-fold in this competition, your CV is probably far **below** what the leaderboard will give you. That is the opposite of the usual leakage story.\n\nSame TF-IDF + logistic regression baseline, only the folds change:\n\n| Folds | Balanced accuracy |\n|---|---|\n| KFold (random) | 0.109 |\n| StratifiedKFold (random) | 0.114 |\n| StratifiedGroupKFold by `prompt_id` | **0.347** |\n\n**Why:** every prompt was answered once by (almost) each of the 18 models. Under a random split, ~14 of a text's 17 \"siblings\" (same prompt, different model) sit in training. They share its topic and none of them has its label, so the model is pulled towards the wrong answers. In the random split, the nearest training text is a sibling 99.6% of the time.\n\n**Dose-response:** starting from grouped folds, moving 2 / 4 / 8 siblings per prompt back into training drops accuracy from 0.347 to 0.264 / 0.215 / 0.156. It then flattens around 0.15.\n\n**Takeaways**\n\n- Group by `prompt_id`. In my submissions, grouped CV and public LB moved together every time (r ≈ 0.99).\n- Topic is a confounder. Removing per-prompt topic from embeddings (\"prompt-centering\"), and grouping test texts by similarity, gave me real gains.\n\nNotebook with code, curve and details: [Reverse leakage: why random CV is pessimistic](https://www.kaggle.com/code/pinheirodw17/reverse-leakage-why-random-cv-is-pessimistic)\n\nCounter-examples or different results welcome.",
+          "replies": [],
+          "votes": {
+            "totalVotes": 2
+          }
+        },
+        "firstMessageId": 3551058,
+        "id": 756477,
+        "name": "Random K-fold is pessimistic here: 0.11 vs 0.35 with grouped folds (reverse leakage)",
+        "postDate": "2026-11-06T14:00:37.661064900Z",
+        "url": "/competitions/name-that-llm/discussion/756477"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>If you validate with a random K-fold in this competition, your CV is probably far <strong>below</strong> what the leaderboard will give you. That is the opposite of the usual leakage story.</p>\n<p>Same TF-IDF + logistic regression baseline, only the folds change:</p>\n<table>\n<thead>\n<tr>\n<th>Folds</th>\n<th>Balanced accuracy</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>KFold (random)</td>\n<td>0.109</td>\n</tr>\n<tr>\n<td>StratifiedKFold (random)</td>\n<td>0.114</td>\n</tr>\n<tr>\n<td>StratifiedGroupKFold by <code>prompt_id</code></td>\n<td><strong>0.347</strong></td>\n</tr>\n</tbody>\n</table>\n<p><strong>Why:</strong> every prompt was answered once by (almost) each of the 18 models. Under a random split, ~14 of a text's 17 \"siblings\" (same prompt, different model) sit in training. They share its topic and none of them has its label, so the model is pulled towards the wrong answers. In the random split, the nearest training text is a sibling 99.6% of the time.</p>\n<p><strong>Dose-response:</strong> starting from grouped folds, moving 2 / 4 / 8 siblings per prompt back into training drops accuracy from 0.347 to 0.264 / 0.215 / 0.156. It then flattens around 0.15.</p>\n<p><strong>Takeaways</strong></p>\n<ul>\n<li>Group by <code>prompt_id</code>. In my submissions, grouped CV and public LB moved together every time (r ≈ 0.99).</li>\n<li>Topic is a confounder. Removing per-prompt topic from embeddings (\"prompt-centering\"), and grouping test texts by similarity, gave me real gains.</li>\n</ul>\n<p>Notebook with code, curve and details: <a href=\"https://www.kaggle.com/code/pinheirodw17/reverse-leakage-why-random-cv-is-pessimistic\" target=\"_blank\">Reverse leakage: why random CV is pessimistic</a></p>\n<p>Counter-examples or different results welcome.</p>",
+              "id": 3551058,
+              "post_date": "2026-11-06T14:00:37.660Z",
+              "raw_markdown": "If you validate with a random K-fold in this competition, your CV is probably far **below** what the leaderboard will give you. That is the opposite of the usual leakage story.\n\nSame TF-IDF + logistic regression baseline, only the folds change:\n\n| Folds | Balanced accuracy |\n|---|---|\n| KFold (random) | 0.109 |\n| StratifiedKFold (random) | 0.114 |\n| StratifiedGroupKFold by `prompt_id` | **0.347** |\n\n**Why:** every prompt was answered once by (almost) each of the 18 models. Under a random split, ~14 of a text's 17 \"siblings\" (same prompt, different model) sit in training. They share its topic and none of them has its label, so the model is pulled towards the wrong answers. In the random split, the nearest training text is a sibling 99.6% of the time.\n\n**Dose-response:** starting from grouped folds, moving 2 / 4 / 8 siblings per prompt back into training drops accuracy from 0.347 to 0.264 / 0.215 / 0.156. It then flattens around 0.15.\n\n**Takeaways**\n\n- Group by `prompt_id`. In my submissions, grouped CV and public LB moved together every time (r ≈ 0.99).\n- Topic is a confounder. Removing per-prompt topic from embeddings (\"prompt-centering\"), and grouping test texts by similarity, gave me real gains.\n\nNotebook with code, curve and details: [Reverse leakage: why random CV is pessimistic](https://www.kaggle.com/code/pinheirodw17/reverse-leakage-why-random-cv-is-pessimistic)\n\nCounter-examples or different results welcome.",
+              "votes": 2
+            },
+            {
+              "content": "<p><strong>Update:</strong> the notebook now ends with two things you can reuse directly:</p>\n<ul>\n<li><strong>Section 6, grouped-CV template:</strong> <code>StratifiedGroupKFold</code> on <code>prompt_id</code>, with an <code>assert</code> that fails if any prompt ends up in both train and validation.</li>\n<li><strong>Section 7, baseline submission:</strong> TF-IDF + logistic regression that writes <code>submission.parquet</code>. It scores <strong>0.355</strong> on the public LB, against <strong>0.347</strong> grouped CV.</li>\n</ul>\n<p>New finding: under the grouped split, <strong>55%</strong> of wrong predictions still land in the right model family (GPT, Gemini, Claude…), against 17% by chance. Family-level structure is worth exploiting, for example with a family-then-model hierarchy.</p>\n<p><a href=\"https://www.kaggle.com/code/pinheirodw17/reverse-leakage-why-random-cv-is-pessimistic\" target=\"_blank\">Reverse leakage: why random CV is pessimistic</a></p>",
+              "id": 3551980,
+              "post_date": "2026-11-08T20:41:21.850Z",
+              "raw_markdown": "**Update:** the notebook now ends with two things you can reuse directly:\n\n- **Section 6, grouped-CV template:** `StratifiedGroupKFold` on `prompt_id`, with an `assert` that fails if any prompt ends up in both train and validation.\n- **Section 7, baseline submission:** TF-IDF + logistic regression that writes `submission.parquet`. It scores **0.355** on the public LB, against **0.347** grouped CV.\n\nNew finding: under the grouped split, **55%** of wrong predictions still land in the right model family (GPT, Gemini, Claude…), against 17% by chance. Family-level structure is worth exploiting, for example with a family-then-model hierarchy.\n\n[Reverse leakage: why random CV is pessimistic](https://www.kaggle.com/code/pinheirodw17/reverse-leakage-why-random-cv-is-pessimistic)"
+            },
+            {
+              "content": "<p>I used GroupKFold on prompt_id for a TF-IDF plus logistic baseline and got 0.3119 balanced accuracy on the 2,699 row train file. I haven't run a random split side by side, so I can't confirm your 0.109 vs 0.347 gap from my end. With 149 of 150 prompts carrying all 18 models in train though, it makes sense that the split choice swings the number this much.</p>",
+              "id": 3552640,
+              "post_date": "2026-11-10T02:45:57.507Z",
+              "raw_markdown": "I used GroupKFold on prompt_id for a TF-IDF plus logistic baseline and got 0.3119 balanced accuracy on the 2,699 row train file. I haven't run a random split side by side, so I can't confirm your 0.109 vs 0.347 gap from my end. With 149 of 150 prompts carrying all 18 models in train though, it makes sense that the split choice swings the number this much."
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 32146403,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "32146403-kg.png?t=2026-10-30-22-09-23",
+            "author_user_display_name": "Renan Pinheiro",
+            "author_user_name": "pinheirodw17",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "comments": [
+              {
+                "author": {
+                  "display_name": "John K",
+                  "id": 37335549,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/37335549-kg.jpg?t=2026-10-24-04-37-50",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/johnnykhan1"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 1360,
+                "content": "<p>I used GroupKFold on prompt_id for a TF-IDF plus logistic baseline and got 0.3119 balanced accuracy on the 2,699 row train file. I haven't run a random split side by side, so I can't confirm your 0.109 vs 0.347 gap from my end. With 149 of 150 prompts carrying all 18 models in train though, it makes sense that the split choice swings the number this much.</p>",
+                "feedback_tracking_data": {},
+                "id": 3552640,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-11-10T02:45:57.507Z",
+                "raw_markdown": "I used GroupKFold on prompt_id for a TF-IDF plus logistic baseline and got 0.3119 balanced accuracy on the 2,699 row train file. I haven't run a random split side by side, so I can't confirm your 0.109 vs 0.347 gap from my end. With 149 of 150 prompts carrying all 18 models in train though, it makes sense that the split choice swings the number this much.",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "John K",
+                    "id": 37335549,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/johnnykhan1",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/37335549-kg.jpg?t=2026-10-24-04-37-50",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/johnnykhan1",
+                    "user_id": 37335549,
+                    "user_name": "johnnykhan1"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              },
+              {
+                "author": {
+                  "display_name": "Renan Pinheiro",
+                  "id": 32146403,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/32146403-kg.png?t=2026-10-30-22-09-23",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/pinheirodw17"
+                },
+                "author_type": "TOPIC",
+                "competition_ranking": 4055,
+                "content": "<p><strong>Update:</strong> the notebook now ends with two things you can reuse directly:</p>\n<ul>\n<li><strong>Section 6, grouped-CV template:</strong> <code>StratifiedGroupKFold</code> on <code>prompt_id</code>, with an <code>assert</code> that fails if any prompt ends up in both train and validation.</li>\n<li><strong>Section 7, baseline submission:</strong> TF-IDF + logistic regression that writes <code>submission.parquet</code>. It scores <strong>0.355</strong> on the public LB, against <strong>0.347</strong> grouped CV.</li>\n</ul>\n<p>New finding: under the grouped split, <strong>55%</strong> of wrong predictions still land in the right model family (GPT, Gemini, Claude…), against 17% by chance. Family-level structure is worth exploiting, for example with a family-then-model hierarchy.</p>\n<p><a href=\"https://www.kaggle.com/code/pinheirodw17/reverse-leakage-why-random-cv-is-pessimistic\" target=\"_blank\">Reverse leakage: why random CV is pessimistic</a></p>",
+                "feedback_tracking_data": {},
+                "id": 3551980,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-11-08T20:41:21.850Z",
+                "raw_markdown": "**Update:** the notebook now ends with two things you can reuse directly:\n\n- **Section 6, grouped-CV template:** `StratifiedGroupKFold` on `prompt_id`, with an `assert` that fails if any prompt ends up in both train and validation.\n- **Section 7, baseline submission:** TF-IDF + logistic regression that writes `submission.parquet`. It scores **0.355** on the public LB, against **0.347** grouped CV.\n\nNew finding: under the grouped split, **55%** of wrong predictions still land in the right model family (GPT, Gemini, Claude…), against 17% by chance. Family-level structure is worth exploiting, for example with a family-then-model hierarchy.\n\n[Reverse leakage: why random CV is pessimistic](https://www.kaggle.com/code/pinheirodw17/reverse-leakage-why-random-cv-is-pessimistic)",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "Renan Pinheiro",
+                    "id": 32146403,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/pinheirodw17",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/32146403-kg.png?t=2026-10-30-22-09-23",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/pinheirodw17",
+                    "user_id": 32146403,
+                    "user_name": "pinheirodw17"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              }
+            ],
+            "first_message": {
+              "author": {
+                "display_name": "Renan Pinheiro",
+                "id": 32146403,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/32146403-kg.png?t=2026-10-30-22-09-23",
+                "tier": "CONTRIBUTOR",
+                "url": "/pinheirodw17"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 4055,
+              "content": "<p>If you validate with a random K-fold in this competition, your CV is probably far <strong>below</strong> what the leaderboard will give you. That is the opposite of the usual leakage story.</p>\n<p>Same TF-IDF + logistic regression baseline, only the folds change:</p>\n<table>\n<thead>\n<tr>\n<th>Folds</th>\n<th>Balanced accuracy</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>KFold (random)</td>\n<td>0.109</td>\n</tr>\n<tr>\n<td>StratifiedKFold (random)</td>\n<td>0.114</td>\n</tr>\n<tr>\n<td>StratifiedGroupKFold by <code>prompt_id</code></td>\n<td><strong>0.347</strong></td>\n</tr>\n</tbody>\n</table>\n<p><strong>Why:</strong> every prompt was answered once by (almost) each of the 18 models. Under a random split, ~14 of a text's 17 \"siblings\" (same prompt, different model) sit in training. They share its topic and none of them has its label, so the model is pulled towards the wrong answers. In the random split, the nearest training text is a sibling 99.6% of the time.</p>\n<p><strong>Dose-response:</strong> starting from grouped folds, moving 2 / 4 / 8 siblings per prompt back into training drops accuracy from 0.347 to 0.264 / 0.215 / 0.156. It then flattens around 0.15.</p>\n<p><strong>Takeaways</strong></p>\n<ul>\n<li>Group by <code>prompt_id</code>. In my submissions, grouped CV and public LB moved together every time (r ≈ 0.99).</li>\n<li>Topic is a confounder. Removing per-prompt topic from embeddings (\"prompt-centering\"), and grouping test texts by similarity, gave me real gains.</li>\n</ul>\n<p>Notebook with code, curve and details: <a href=\"https://www.kaggle.com/code/pinheirodw17/reverse-leakage-why-random-cv-is-pessimistic\" target=\"_blank\">Reverse leakage: why random CV is pessimistic</a></p>\n<p>Counter-examples or different results welcome.</p>",
+              "feedback_tracking_data": {},
+              "id": 3551058,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-06T14:00:37.660Z",
+              "raw_markdown": "If you validate with a random K-fold in this competition, your CV is probably far **below** what the leaderboard will give you. That is the opposite of the usual leakage story.\n\nSame TF-IDF + logistic regression baseline, only the folds change:\n\n| Folds | Balanced accuracy |\n|---|---|\n| KFold (random) | 0.109 |\n| StratifiedKFold (random) | 0.114 |\n| StratifiedGroupKFold by `prompt_id` | **0.347** |\n\n**Why:** every prompt was answered once by (almost) each of the 18 models. Under a random split, ~14 of a text's 17 \"siblings\" (same prompt, different model) sit in training. They share its topic and none of them has its label, so the model is pulled towards the wrong answers. In the random split, the nearest training text is a sibling 99.6% of the time.\n\n**Dose-response:** starting from grouped folds, moving 2 / 4 / 8 siblings per prompt back into training drops accuracy from 0.347 to 0.264 / 0.215 / 0.156. It then flattens around 0.15.\n\n**Takeaways**\n\n- Group by `prompt_id`. In my submissions, grouped CV and public LB moved together every time (r ≈ 0.99).\n- Topic is a confounder. Removing per-prompt topic from embeddings (\"prompt-centering\"), and grouping test texts by similarity, gave me real gains.\n\nNotebook with code, curve and details: [Reverse leakage: why random CV is pessimistic](https://www.kaggle.com/code/pinheirodw17/reverse-leakage-why-random-cv-is-pessimistic)\n\nCounter-examples or different results welcome.",
+              "reactions": [
+                {
+                  "emoji": "LOVE",
+                  "featured_user_names": [
+                    "kokatrn"
+                  ],
+                  "user_count": 1
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Renan Pinheiro",
+                  "id": 32146403,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/pinheirodw17",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/32146403-kg.png?t=2026-10-30-22-09-23",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/pinheirodw17",
+                  "user_id": 32146403,
+                  "user_name": "pinheirodw17"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 2,
+                "total_votes": 2
+              }
+            },
+            "first_message_id": 3551058,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 756477,
+            "name": "Random K-fold is pessimistic here: 0.11 vs 0.35 with grouped folds (reverse leakage)",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-11-06T14:00:37.661064900Z",
+            "total_messages": 2,
+            "total_votes": 2,
+            "url": "/competitions/name-that-llm/discussion/756477"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-18T09:02:53+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-18T09:02:53+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-11-10T02:45:57.506666700Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [
+    {
+      "slug": "name-that-llm",
+      "topic_id": 756477,
+      "message_id": 3551980,
+      "parent_message_id": null,
+      "author": "Renan Pinheiro",
+      "author_url": "/pinheirodw17",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-08T20:41:21.850Z",
+      "raw_markdown": "**Update:** the notebook now ends with two things you can reuse directly:\n\n- **Section 6, grouped-CV template:** `StratifiedGroupKFold` on `prompt_id`, with an `assert` that fails if any prompt ends up in both train and validation.\n- **Section 7, baseline submission:** TF-IDF + logistic regression that writes `submission.parquet`. It scores **0.355** on the public LB, against **0.347** grouped CV.\n\nNew finding: under the grouped split, **55%** of wrong predictions still land in the right model family (GPT, Gemini, Claude…), against 17% by chance. Family-level structure is worth exploiting, for example with a family-then-model hierarchy.\n\n[Reverse leakage: why random CV is pessimistic](https://www.kaggle.com/code/pinheirodw17/reverse-leakage-why-random-cv-is-pessimistic)",
+      "content_html": "<p><strong>Update:</strong> the notebook now ends with two things you can reuse directly:</p>\n<ul>\n<li><strong>Section 6, grouped-CV template:</strong> <code>StratifiedGroupKFold</code> on <code>prompt_id</code>, with an <code>assert</code> that fails if any prompt ends up in both train and validation.</li>\n<li><strong>Section 7, baseline submission:</strong> TF-IDF + logistic regression that writes <code>submission.parquet</code>. It scores <strong>0.355</strong> on the public LB, against <strong>0.347</strong> grouped CV.</li>\n</ul>\n<p>New finding: under the grouped split, <strong>55%</strong> of wrong predictions still land in the right model family (GPT, Gemini, Claude…), against 17% by chance. Family-level structure is worth exploiting, for example with a family-then-model hierarchy.</p>\n<p><a href=\"https://www.kaggle.com/code/pinheirodw17/reverse-leakage-why-random-cv-is-pessimistic\" target=\"_blank\">Reverse leakage: why random CV is pessimistic</a></p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-09T03:55:15+00:00",
+      "last_seen_at": "2026-11-18T09:02:53+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T09:02:53+00:00",
+      "remote_last_listed_at": "2026-11-18T09:02:53+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Renan Pinheiro",
+          "tier": "CONTRIBUTOR",
+          "url": "/pinheirodw17"
+        },
+        "content": "<p><strong>Update:</strong> the notebook now ends with two things you can reuse directly:</p>\n<ul>\n<li><strong>Section 6, grouped-CV template:</strong> <code>StratifiedGroupKFold</code> on <code>prompt_id</code>, with an <code>assert</code> that fails if any prompt ends up in both train and validation.</li>\n<li><strong>Section 7, baseline submission:</strong> TF-IDF + logistic regression that writes <code>submission.parquet</code>. It scores <strong>0.355</strong> on the public LB, against <strong>0.347</strong> grouped CV.</li>\n</ul>\n<p>New finding: under the grouped split, <strong>55%</strong> of wrong predictions still land in the right model family (GPT, Gemini, Claude…), against 17% by chance. Family-level structure is worth exploiting, for example with a family-then-model hierarchy.</p>\n<p><a href=\"https://www.kaggle.com/code/pinheirodw17/reverse-leakage-why-random-cv-is-pessimistic\" target=\"_blank\">Reverse leakage: why random CV is pessimistic</a></p>",
+        "id": 3551980,
+        "isThankYou": false,
+        "postDate": "2026-11-08T20:41:21.850Z",
+        "raw": {
+          "author": {
+            "display_name": "Renan Pinheiro",
+            "id": 32146403,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/32146403-kg.png?t=2026-10-30-22-09-23",
+            "tier": "CONTRIBUTOR",
+            "url": "/pinheirodw17"
+          },
+          "author_type": "TOPIC",
+          "competition_ranking": 4055,
+          "content": "<p><strong>Update:</strong> the notebook now ends with two things you can reuse directly:</p>\n<ul>\n<li><strong>Section 6, grouped-CV template:</strong> <code>StratifiedGroupKFold</code> on <code>prompt_id</code>, with an <code>assert</code> that fails if any prompt ends up in both train and validation.</li>\n<li><strong>Section 7, baseline submission:</strong> TF-IDF + logistic regression that writes <code>submission.parquet</code>. It scores <strong>0.355</strong> on the public LB, against <strong>0.347</strong> grouped CV.</li>\n</ul>\n<p>New finding: under the grouped split, <strong>55%</strong> of wrong predictions still land in the right model family (GPT, Gemini, Claude…), against 17% by chance. Family-level structure is worth exploiting, for example with a family-then-model hierarchy.</p>\n<p><a href=\"https://www.kaggle.com/code/pinheirodw17/reverse-leakage-why-random-cv-is-pessimistic\" target=\"_blank\">Reverse leakage: why random CV is pessimistic</a></p>",
+          "feedback_tracking_data": {},
+          "id": 3551980,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-08T20:41:21.850Z",
+          "raw_markdown": "**Update:** the notebook now ends with two things you can reuse directly:\n\n- **Section 6, grouped-CV template:** `StratifiedGroupKFold` on `prompt_id`, with an `assert` that fails if any prompt ends up in both train and validation.\n- **Section 7, baseline submission:** TF-IDF + logistic regression that writes `submission.parquet`. It scores **0.355** on the public LB, against **0.347** grouped CV.\n\nNew finding: under the grouped split, **55%** of wrong predictions still land in the right model family (GPT, Gemini, Claude…), against 17% by chance. Family-level structure is worth exploiting, for example with a family-then-model hierarchy.\n\n[Reverse leakage: why random CV is pessimistic](https://www.kaggle.com/code/pinheirodw17/reverse-leakage-why-random-cv-is-pessimistic)",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Renan Pinheiro",
+              "id": 32146403,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/pinheirodw17",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/32146403-kg.png?t=2026-10-30-22-09-23",
+              "tier": "CONTRIBUTOR",
+              "url": "/pinheirodw17",
+              "user_id": 32146403,
+              "user_name": "pinheirodw17"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "**Update:** the notebook now ends with two things you can reuse directly:\n\n- **Section 6, grouped-CV template:** `StratifiedGroupKFold` on `prompt_id`, with an `assert` that fails if any prompt ends up in both train and validation.\n- **Section 7, baseline submission:** TF-IDF + logistic regression that writes `submission.parquet`. It scores **0.355** on the public LB, against **0.347** grouped CV.\n\nNew finding: under the grouped split, **55%** of wrong predictions still land in the right model family (GPT, Gemini, Claude…), against 17% by chance. Family-level structure is worth exploiting, for example with a family-then-model hierarchy.\n\n[Reverse leakage: why random CV is pessimistic](https://www.kaggle.com/code/pinheirodw17/reverse-leakage-why-random-cv-is-pessimistic)",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 756477,
+      "message_id": 3552640,
+      "parent_message_id": null,
+      "author": "John K",
+      "author_url": "/johnnykhan1",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-10T02:45:57.507Z",
+      "raw_markdown": "I used GroupKFold on prompt_id for a TF-IDF plus logistic baseline and got 0.3119 balanced accuracy on the 2,699 row train file. I haven't run a random split side by side, so I can't confirm your 0.109 vs 0.347 gap from my end. With 149 of 150 prompts carrying all 18 models in train though, it makes sense that the split choice swings the number this much.",
+      "content_html": "<p>I used GroupKFold on prompt_id for a TF-IDF plus logistic baseline and got 0.3119 balanced accuracy on the 2,699 row train file. I haven't run a random split side by side, so I can't confirm your 0.109 vs 0.347 gap from my end. With 149 of 150 prompts carrying all 18 models in train though, it makes sense that the split choice swings the number this much.</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-16T16:21:37+00:00",
+      "last_seen_at": "2026-11-18T09:02:53+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T09:02:53+00:00",
+      "remote_last_listed_at": "2026-11-18T09:02:53+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "John K",
+          "tier": "CONTRIBUTOR",
+          "url": "/johnnykhan1"
+        },
+        "content": "<p>I used GroupKFold on prompt_id for a TF-IDF plus logistic baseline and got 0.3119 balanced accuracy on the 2,699 row train file. I haven't run a random split side by side, so I can't confirm your 0.109 vs 0.347 gap from my end. With 149 of 150 prompts carrying all 18 models in train though, it makes sense that the split choice swings the number this much.</p>",
+        "id": 3552640,
+        "isThankYou": false,
+        "postDate": "2026-11-10T02:45:57.507Z",
+        "raw": {
+          "author": {
+            "display_name": "John K",
+            "id": 37335549,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/37335549-kg.jpg?t=2026-10-24-04-37-50",
+            "tier": "CONTRIBUTOR",
+            "url": "/johnnykhan1"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 1360,
+          "content": "<p>I used GroupKFold on prompt_id for a TF-IDF plus logistic baseline and got 0.3119 balanced accuracy on the 2,699 row train file. I haven't run a random split side by side, so I can't confirm your 0.109 vs 0.347 gap from my end. With 149 of 150 prompts carrying all 18 models in train though, it makes sense that the split choice swings the number this much.</p>",
+          "feedback_tracking_data": {},
+          "id": 3552640,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-10T02:45:57.507Z",
+          "raw_markdown": "I used GroupKFold on prompt_id for a TF-IDF plus logistic baseline and got 0.3119 balanced accuracy on the 2,699 row train file. I haven't run a random split side by side, so I can't confirm your 0.109 vs 0.347 gap from my end. With 149 of 150 prompts carrying all 18 models in train though, it makes sense that the split choice swings the number this much.",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "John K",
+              "id": 37335549,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/johnnykhan1",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/37335549-kg.jpg?t=2026-10-24-04-37-50",
+              "tier": "CONTRIBUTOR",
+              "url": "/johnnykhan1",
+              "user_id": 37335549,
+              "user_name": "johnnykhan1"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "I used GroupKFold on prompt_id for a TF-IDF plus logistic baseline and got 0.3119 balanced accuracy on the 2,699 row train file. I haven't run a random split side by side, so I can't confirm your 0.109 vs 0.347 gap from my end. With 149 of 150 prompts carrying all 18 models in train though, it makes sense that the split choice swings the number this much.",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    }
+  ],
+  "writeup": null
+}

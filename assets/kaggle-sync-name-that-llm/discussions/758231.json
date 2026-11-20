@@ -1,0 +1,229 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 758231,
+    "title": "Reason for qwen performing so well in classifying :/",
+    "author": "Gaurav Rawat",
+    "author_url": "/gauravbrills",
+    "author_tier": "MASTER",
+    "post_date": "2026-11-11T23:47:46.089153200Z",
+    "last_comment_post_date": "2026-11-11T23:47:46.090Z",
+    "comment_count": 0,
+    "votes": 2,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/758231",
+    "first_message_id": 3553629,
+    "first_seen_at": "2026-11-16T16:21:25+00:00",
+    "last_seen_at": "2026-11-18T09:02:37+00:00",
+    "detail_last_synced_at": "2026-11-18T09:02:37+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-18T09:01:50+00:00",
+    "remote_last_listed_at": "2026-11-18T09:01:50+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "9949aa9f5ea1dbeeafab252bee45502dfe0105c4ec3984b77071acbea590b5fd",
+    "listing_metrics_hash": "6db2b817333d85ee95f494a1b2ba941fb79d87d4e3e0c8718afed5f3c0bfd1fa",
+    "detail_content_hash": "0bd9b642b0caedc376d8bb19bf24ac6c552abbf7d2b3c795cb48f7fab2aabaee",
+    "detail_last_checked_at": "2026-11-18T09:02:37+00:00",
+    "detail_next_check_at": "2026-11-21T09:02:37+00:00",
+    "detail_unchanged_count": 1,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 0,
+      "firstForumMessageId": null,
+      "id": 758231,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-11-11T23:47:46.090Z",
+      "postDate": "2026-11-11T23:47:46.089153200Z",
+      "raw": {
+        "id": 758231,
+        "last_comment_post_date": "2026-11-11T23:47:46.090Z",
+        "post_date": "2026-11-11T23:47:46.089153200Z",
+        "title": "Reason for qwen performing so well in classifying :/",
+        "topic_url": "/competitions/name-that-llm/discussion/758231",
+        "votes": 2
+      },
+      "title": "Reason for qwen performing so well in classifying :/",
+      "topicUrl": "/competitions/name-that-llm/discussion/758231",
+      "votes": 2
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "MASTER",
+        "authorUserDisplayName": "Gaurav Rawat",
+        "authorUserName": "gauravbrills",
+        "comments": [],
+        "expectedCommentCount": 0,
+        "firstMessage": {
+          "author": {
+            "displayName": "Gaurav Rawat",
+            "tier": "MASTER",
+            "url": "/gauravbrills"
+          },
+          "content": "<p>Though things are alleged I am wondering why qwen is generally being good in this combination is it somewhat either distilled or maybe trained on some sythentic data from these llm so based on how the next token gets predicted it can detect the source from its pretraining or fine tuning . </p>\n<p>It's alleged, not proven:</p>\n<p>Anthropic reportedly told the US Senate that Alibaba used about 25,000 fake accounts for roughly 28.8 million Claude exchanges in April–June 2026 to train Qwen. Alibaba hasn't confirmed or denied it. Other coverage stresses that the evidence hasn't been made public.\nIt isn't one‑way. Kimi K3 called itself Claude in 40% of direct queries, and GLM appears to have a selectable \"Claude persona\". Claude Opus 4.8 has sometimes said it was Qwen when asked in Chinese, which analysts put down more to contaminated training data than to distillation.</p>\n<p>Whatever the truth, two things still think are pertinent</p>\n<p>Qwen's hidden states have probably absorbed the style of several of these models, which is part of why it works as a feature extractor.\nSome classes will look alike in the data. If Kimi or GLM were trained on Claude output, Claude vs Kimi will be a hard pair, just like the GPT siblings.</p>",
+          "id": 3553629,
+          "isThankYou": false,
+          "postDate": "2026-11-11T23:47:46.090Z",
+          "raw": {
+            "author": {
+              "display_name": "Gaurav Rawat",
+              "id": 768166,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/768166-kg.png?t=2024-01-23-01-39-07",
+              "tier": "MASTER",
+              "url": "/gauravbrills"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 4413,
+            "content": "<p>Though things are alleged I am wondering why qwen is generally being good in this combination is it somewhat either distilled or maybe trained on some sythentic data from these llm so based on how the next token gets predicted it can detect the source from its pretraining or fine tuning . </p>\n<p>It's alleged, not proven:</p>\n<p>Anthropic reportedly told the US Senate that Alibaba used about 25,000 fake accounts for roughly 28.8 million Claude exchanges in April–June 2026 to train Qwen. Alibaba hasn't confirmed or denied it. Other coverage stresses that the evidence hasn't been made public.\nIt isn't one‑way. Kimi K3 called itself Claude in 40% of direct queries, and GLM appears to have a selectable \"Claude persona\". Claude Opus 4.8 has sometimes said it was Qwen when asked in Chinese, which analysts put down more to contaminated training data than to distillation.</p>\n<p>Whatever the truth, two things still think are pertinent</p>\n<p>Qwen's hidden states have probably absorbed the style of several of these models, which is part of why it works as a feature extractor.\nSome classes will look alike in the data. If Kimi or GLM were trained on Claude output, Claude vs Kimi will be a hard pair, just like the GPT siblings.</p>",
+            "feedback_tracking_data": {},
+            "id": 3553629,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-11-11T23:47:46.090Z",
+            "raw_markdown": "Though things are alleged I am wondering why qwen is generally being good in this combination is it somewhat either distilled or maybe trained on some sythentic data from these llm so based on how the next token gets predicted it can detect the source from its pretraining or fine tuning . \n\nIt's alleged, not proven:\n\nAnthropic reportedly told the US Senate that Alibaba used about 25,000 fake accounts for roughly 28.8 million Claude exchanges in April–June 2026 to train Qwen. Alibaba hasn't confirmed or denied it. Other coverage stresses that the evidence hasn't been made public.\nIt isn't one‑way. Kimi K3 called itself Claude in 40% of direct queries, and GLM appears to have a selectable \"Claude persona\". Claude Opus 4.8 has sometimes said it was Qwen when asked in Chinese, which analysts put down more to contaminated training data than to distillation.\n\nWhatever the truth, two things still think are pertinent\n\nQwen's hidden states have probably absorbed the style of several of these models, which is part of why it works as a feature extractor.\nSome classes will look alike in the data. If Kimi or GLM were trained on Claude output, Claude vs Kimi will be a hard pair, just like the GPT siblings.",
+            "reactions": [
+              {
+                "emoji": "SURPRISE",
+                "featured_user_names": [
+                  "osakanateishoku"
+                ],
+                "user_count": 1
+              }
+            ],
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "Gaurav Rawat",
+                "id": 768166,
+                "performance_tier": "MASTER",
+                "profile_url": "/gauravbrills",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/768166-kg.png?t=2024-01-23-01-39-07",
+                "tier": "MASTER",
+                "url": "/gauravbrills",
+                "user_id": 768166,
+                "user_name": "gauravbrills"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 2,
+              "total_votes": 2
+            }
+          },
+          "rawMarkdown": "Though things are alleged I am wondering why qwen is generally being good in this combination is it somewhat either distilled or maybe trained on some sythentic data from these llm so based on how the next token gets predicted it can detect the source from its pretraining or fine tuning . \n\nIt's alleged, not proven:\n\nAnthropic reportedly told the US Senate that Alibaba used about 25,000 fake accounts for roughly 28.8 million Claude exchanges in April–June 2026 to train Qwen. Alibaba hasn't confirmed or denied it. Other coverage stresses that the evidence hasn't been made public.\nIt isn't one‑way. Kimi K3 called itself Claude in 40% of direct queries, and GLM appears to have a selectable \"Claude persona\". Claude Opus 4.8 has sometimes said it was Qwen when asked in Chinese, which analysts put down more to contaminated training data than to distillation.\n\nWhatever the truth, two things still think are pertinent\n\nQwen's hidden states have probably absorbed the style of several of these models, which is part of why it works as a feature extractor.\nSome classes will look alike in the data. If Kimi or GLM were trained on Claude output, Claude vs Kimi will be a hard pair, just like the GPT siblings.",
+          "replies": [],
+          "votes": {
+            "totalVotes": 2
+          }
+        },
+        "firstMessageId": 3553629,
+        "id": 758231,
+        "name": "Reason for qwen performing so well in classifying :/",
+        "postDate": "2026-11-11T23:47:46.089153200Z",
+        "url": "/competitions/name-that-llm/discussion/758231"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>Though things are alleged I am wondering why qwen is generally being good in this combination is it somewhat either distilled or maybe trained on some sythentic data from these llm so based on how the next token gets predicted it can detect the source from its pretraining or fine tuning . </p>\n<p>It's alleged, not proven:</p>\n<p>Anthropic reportedly told the US Senate that Alibaba used about 25,000 fake accounts for roughly 28.8 million Claude exchanges in April–June 2026 to train Qwen. Alibaba hasn't confirmed or denied it. Other coverage stresses that the evidence hasn't been made public.\nIt isn't one‑way. Kimi K3 called itself Claude in 40% of direct queries, and GLM appears to have a selectable \"Claude persona\". Claude Opus 4.8 has sometimes said it was Qwen when asked in Chinese, which analysts put down more to contaminated training data than to distillation.</p>\n<p>Whatever the truth, two things still think are pertinent</p>\n<p>Qwen's hidden states have probably absorbed the style of several of these models, which is part of why it works as a feature extractor.\nSome classes will look alike in the data. If Kimi or GLM were trained on Claude output, Claude vs Kimi will be a hard pair, just like the GPT siblings.</p>",
+              "id": 3553629,
+              "post_date": "2026-11-11T23:47:46.090Z",
+              "raw_markdown": "Though things are alleged I am wondering why qwen is generally being good in this combination is it somewhat either distilled or maybe trained on some sythentic data from these llm so based on how the next token gets predicted it can detect the source from its pretraining or fine tuning . \n\nIt's alleged, not proven:\n\nAnthropic reportedly told the US Senate that Alibaba used about 25,000 fake accounts for roughly 28.8 million Claude exchanges in April–June 2026 to train Qwen. Alibaba hasn't confirmed or denied it. Other coverage stresses that the evidence hasn't been made public.\nIt isn't one‑way. Kimi K3 called itself Claude in 40% of direct queries, and GLM appears to have a selectable \"Claude persona\". Claude Opus 4.8 has sometimes said it was Qwen when asked in Chinese, which analysts put down more to contaminated training data than to distillation.\n\nWhatever the truth, two things still think are pertinent\n\nQwen's hidden states have probably absorbed the style of several of these models, which is part of why it works as a feature extractor.\nSome classes will look alike in the data. If Kimi or GLM were trained on Claude output, Claude vs Kimi will be a hard pair, just like the GPT siblings.",
+              "votes": 2
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 768166,
+            "author_performance_tier": "MASTER",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "768166-kg.png?t=2024-01-23-01-39-07",
+            "author_user_display_name": "Gaurav Rawat",
+            "author_user_name": "gauravbrills",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "first_message": {
+              "author": {
+                "display_name": "Gaurav Rawat",
+                "id": 768166,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/768166-kg.png?t=2024-01-23-01-39-07",
+                "tier": "MASTER",
+                "url": "/gauravbrills"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 4413,
+              "content": "<p>Though things are alleged I am wondering why qwen is generally being good in this combination is it somewhat either distilled or maybe trained on some sythentic data from these llm so based on how the next token gets predicted it can detect the source from its pretraining or fine tuning . </p>\n<p>It's alleged, not proven:</p>\n<p>Anthropic reportedly told the US Senate that Alibaba used about 25,000 fake accounts for roughly 28.8 million Claude exchanges in April–June 2026 to train Qwen. Alibaba hasn't confirmed or denied it. Other coverage stresses that the evidence hasn't been made public.\nIt isn't one‑way. Kimi K3 called itself Claude in 40% of direct queries, and GLM appears to have a selectable \"Claude persona\". Claude Opus 4.8 has sometimes said it was Qwen when asked in Chinese, which analysts put down more to contaminated training data than to distillation.</p>\n<p>Whatever the truth, two things still think are pertinent</p>\n<p>Qwen's hidden states have probably absorbed the style of several of these models, which is part of why it works as a feature extractor.\nSome classes will look alike in the data. If Kimi or GLM were trained on Claude output, Claude vs Kimi will be a hard pair, just like the GPT siblings.</p>",
+              "feedback_tracking_data": {},
+              "id": 3553629,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-11T23:47:46.090Z",
+              "raw_markdown": "Though things are alleged I am wondering why qwen is generally being good in this combination is it somewhat either distilled or maybe trained on some sythentic data from these llm so based on how the next token gets predicted it can detect the source from its pretraining or fine tuning . \n\nIt's alleged, not proven:\n\nAnthropic reportedly told the US Senate that Alibaba used about 25,000 fake accounts for roughly 28.8 million Claude exchanges in April–June 2026 to train Qwen. Alibaba hasn't confirmed or denied it. Other coverage stresses that the evidence hasn't been made public.\nIt isn't one‑way. Kimi K3 called itself Claude in 40% of direct queries, and GLM appears to have a selectable \"Claude persona\". Claude Opus 4.8 has sometimes said it was Qwen when asked in Chinese, which analysts put down more to contaminated training data than to distillation.\n\nWhatever the truth, two things still think are pertinent\n\nQwen's hidden states have probably absorbed the style of several of these models, which is part of why it works as a feature extractor.\nSome classes will look alike in the data. If Kimi or GLM were trained on Claude output, Claude vs Kimi will be a hard pair, just like the GPT siblings.",
+              "reactions": [
+                {
+                  "emoji": "SURPRISE",
+                  "featured_user_names": [
+                    "osakanateishoku"
+                  ],
+                  "user_count": 1
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Gaurav Rawat",
+                  "id": 768166,
+                  "performance_tier": "MASTER",
+                  "profile_url": "/gauravbrills",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/768166-kg.png?t=2024-01-23-01-39-07",
+                  "tier": "MASTER",
+                  "url": "/gauravbrills",
+                  "user_id": 768166,
+                  "user_name": "gauravbrills"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 2,
+                "total_votes": 2
+              }
+            },
+            "first_message_id": 3553629,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 758231,
+            "name": "Reason for qwen performing so well in classifying :/",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-11-11T23:47:46.089153200Z",
+            "total_votes": 2,
+            "url": "/competitions/name-that-llm/discussion/758231"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-18T09:02:37+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-18T09:02:37+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-11-11T23:47:46.090Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [],
+  "writeup": null
+}

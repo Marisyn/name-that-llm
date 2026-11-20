@@ -1,0 +1,209 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 759328,
+    "title": "Looking for advice: 0.383 public score with TF-IDF, style features and a small encoder",
+    "author": "moruku36",
+    "author_url": "/morikentaro36",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-11-15T02:55:25.051384700Z",
+    "last_comment_post_date": "2026-11-15T02:55:25.050Z",
+    "comment_count": 0,
+    "votes": -1,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/759328",
+    "first_message_id": 3555207,
+    "first_seen_at": "2026-11-16T16:21:25+00:00",
+    "last_seen_at": "2026-11-18T09:02:14+00:00",
+    "detail_last_synced_at": "2026-11-18T09:02:14+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-18T09:01:50+00:00",
+    "remote_last_listed_at": "2026-11-18T09:01:50+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "0f9525cf18aace3de1e27cdcb70bf0ee9b24851d4c9b43f026c73ed88625c522",
+    "listing_metrics_hash": "0eb635446470adac6a7f3a348995e0dbc84605127e97b571f74d3f2262540d5d",
+    "detail_content_hash": "46107b301a28211443c7b26f69264659bad2c1bfcbf047f374c0e9bddcfdd9a2",
+    "detail_last_checked_at": "2026-11-18T09:02:14+00:00",
+    "detail_next_check_at": "2026-11-21T09:02:14+00:00",
+    "detail_unchanged_count": 1,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 0,
+      "firstForumMessageId": null,
+      "id": 759328,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-11-15T02:55:25.050Z",
+      "postDate": "2026-11-15T02:55:25.051384700Z",
+      "raw": {
+        "id": 759328,
+        "last_comment_post_date": "2026-11-15T02:55:25.050Z",
+        "post_date": "2026-11-15T02:55:25.051384700Z",
+        "title": "Looking for advice: 0.383 public score with TF-IDF, style features and a small encoder",
+        "topic_url": "/competitions/name-that-llm/discussion/759328",
+        "votes": -1
+      },
+      "title": "Looking for advice: 0.383 public score with TF-IDF, style features and a small encoder",
+      "topicUrl": "/competitions/name-that-llm/discussion/759328",
+      "votes": -1
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "moruku36",
+        "authorUserName": "morikentaro36",
+        "comments": [],
+        "expectedCommentCount": 0,
+        "firstMessage": {
+          "author": {
+            "displayName": "moruku36",
+            "tier": "CONTRIBUTOR",
+            "url": "/morikentaro36"
+          },
+          "content": "<p>Hi everyone! I'm working on a relatively lightweight approach and would appreciate ideas for the next useful experiment.</p>\n<p>What I've tried</p>\n<ul>\n<li>Character/word TF-IDF with linear classifiers and simple writing-style features. The earlier TF-IDF models reached 0.331 on the public leaderboard; a joint-feature SVM reached 0.348.</li>\n<li>A fixed rank-based blend of the sparse classifier and an Ettin 68M encoder reached 0.375 public score.</li>\n<li>Lowercasing the word features while retaining punctuation-aware tokenization reached 0.377 in that blended pipeline.</li>\n<li>My latest blend adds positional style and lexical views. It combines a global sparse/style head (40%), a positional sparse/style head (40%), and the existing Ettin model (20%), using per-row class ranks. This submitted version scored 0.383 publicly.</li>\n</ul>\n<p>Validation and what the numbers do not show</p>\n<p>I use prompt-grouped 5-fold validation and balanced accuracy. The earlier positional-style blend, before adding positional lexical views, had OOF balanced accuracy 0.403753. Adding word n-gram views of the first and last 512 characters gave 0.404867: only 3 extra correct predictions overall, with 3 of 5 folds improving. A paired bootstrap over prompts gave a difference interval that includes zero.</p>\n<p>All 150 training prompts have already been used during development, so I treat these OOF results as exploratory rather than an untouched confirmation set. The positional-style-only comparator has not received an official score yet. Consequently, the 0.377 to 0.383 public improvement does not isolate the effect of the positional lexical features alone.</p>\n<p>I also tried several encoder-training variations, including LoRA/DoRA, weight averaging, partial-layer training, and style-oriented auxiliary training. Those particular experiments did not give a convincing improvement over my existing blend on the development splits. I don't take that as evidence that those methods cannot work here.</p>\n<p>What I'm considering next</p>\n<ol>\n<li>Measure the frozen positional-style comparator on the official evaluation, to better understand the latest change before adding more components.</li>\n<li>Compare binary word occurrence with frequency-based TF-IDF while keeping the rest fixed. This comparison has no completed result yet.</li>\n<li>Look for a genuinely complementary representation rather than repeatedly tuning blend weights on the same validation prompts. I'd like to keep offline inference practical and avoid assuming that hidden-test rows form complete 18-model prompt groups.</li>\n</ol>\n<p>For people working on similar approaches:</p>\n<ul>\n<li>Would you prioritize a stronger encoder, model-likelihood features, or more careful sparse/stylometric features from this point?</li>\n<li>What validation checks have helped you distinguish model style from prompt/topic leakage, especially after reusing the same small set of prompts?</li>\n<li>Are there useful public notebooks or papers for a small, controlled next experiment? Negative results or pitfalls would be helpful too.</li>\n</ul>\n<p>Thanks! I'm sharing aggregate results and methods here, not test predictions or individual dataset examples.</p>",
+          "id": 3555207,
+          "isThankYou": false,
+          "postDate": "2026-11-15T02:55:25.050Z",
+          "raw": {
+            "author": {
+              "display_name": "moruku36",
+              "id": 15887016,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15887016-kg.png?t=2026-10-29-15-51-37",
+              "tier": "CONTRIBUTOR",
+              "url": "/morikentaro36"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 4776,
+            "content": "<p>Hi everyone! I'm working on a relatively lightweight approach and would appreciate ideas for the next useful experiment.</p>\n<p>What I've tried</p>\n<ul>\n<li>Character/word TF-IDF with linear classifiers and simple writing-style features. The earlier TF-IDF models reached 0.331 on the public leaderboard; a joint-feature SVM reached 0.348.</li>\n<li>A fixed rank-based blend of the sparse classifier and an Ettin 68M encoder reached 0.375 public score.</li>\n<li>Lowercasing the word features while retaining punctuation-aware tokenization reached 0.377 in that blended pipeline.</li>\n<li>My latest blend adds positional style and lexical views. It combines a global sparse/style head (40%), a positional sparse/style head (40%), and the existing Ettin model (20%), using per-row class ranks. This submitted version scored 0.383 publicly.</li>\n</ul>\n<p>Validation and what the numbers do not show</p>\n<p>I use prompt-grouped 5-fold validation and balanced accuracy. The earlier positional-style blend, before adding positional lexical views, had OOF balanced accuracy 0.403753. Adding word n-gram views of the first and last 512 characters gave 0.404867: only 3 extra correct predictions overall, with 3 of 5 folds improving. A paired bootstrap over prompts gave a difference interval that includes zero.</p>\n<p>All 150 training prompts have already been used during development, so I treat these OOF results as exploratory rather than an untouched confirmation set. The positional-style-only comparator has not received an official score yet. Consequently, the 0.377 to 0.383 public improvement does not isolate the effect of the positional lexical features alone.</p>\n<p>I also tried several encoder-training variations, including LoRA/DoRA, weight averaging, partial-layer training, and style-oriented auxiliary training. Those particular experiments did not give a convincing improvement over my existing blend on the development splits. I don't take that as evidence that those methods cannot work here.</p>\n<p>What I'm considering next</p>\n<ol>\n<li>Measure the frozen positional-style comparator on the official evaluation, to better understand the latest change before adding more components.</li>\n<li>Compare binary word occurrence with frequency-based TF-IDF while keeping the rest fixed. This comparison has no completed result yet.</li>\n<li>Look for a genuinely complementary representation rather than repeatedly tuning blend weights on the same validation prompts. I'd like to keep offline inference practical and avoid assuming that hidden-test rows form complete 18-model prompt groups.</li>\n</ol>\n<p>For people working on similar approaches:</p>\n<ul>\n<li>Would you prioritize a stronger encoder, model-likelihood features, or more careful sparse/stylometric features from this point?</li>\n<li>What validation checks have helped you distinguish model style from prompt/topic leakage, especially after reusing the same small set of prompts?</li>\n<li>Are there useful public notebooks or papers for a small, controlled next experiment? Negative results or pitfalls would be helpful too.</li>\n</ul>\n<p>Thanks! I'm sharing aggregate results and methods here, not test predictions or individual dataset examples.</p>",
+            "feedback_tracking_data": {},
+            "id": 3555207,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-11-15T02:55:25.050Z",
+            "raw_markdown": "Hi everyone! I'm working on a relatively lightweight approach and would appreciate ideas for the next useful experiment.\n\nWhat I've tried\n\n- Character/word TF-IDF with linear classifiers and simple writing-style features. The earlier TF-IDF models reached 0.331 on the public leaderboard; a joint-feature SVM reached 0.348.\n- A fixed rank-based blend of the sparse classifier and an Ettin 68M encoder reached 0.375 public score.\n- Lowercasing the word features while retaining punctuation-aware tokenization reached 0.377 in that blended pipeline.\n- My latest blend adds positional style and lexical views. It combines a global sparse/style head (40%), a positional sparse/style head (40%), and the existing Ettin model (20%), using per-row class ranks. This submitted version scored 0.383 publicly.\n\nValidation and what the numbers do not show\n\nI use prompt-grouped 5-fold validation and balanced accuracy. The earlier positional-style blend, before adding positional lexical views, had OOF balanced accuracy 0.403753. Adding word n-gram views of the first and last 512 characters gave 0.404867: only 3 extra correct predictions overall, with 3 of 5 folds improving. A paired bootstrap over prompts gave a difference interval that includes zero.\n\nAll 150 training prompts have already been used during development, so I treat these OOF results as exploratory rather than an untouched confirmation set. The positional-style-only comparator has not received an official score yet. Consequently, the 0.377 to 0.383 public improvement does not isolate the effect of the positional lexical features alone.\n\nI also tried several encoder-training variations, including LoRA/DoRA, weight averaging, partial-layer training, and style-oriented auxiliary training. Those particular experiments did not give a convincing improvement over my existing blend on the development splits. I don't take that as evidence that those methods cannot work here.\n\nWhat I'm considering next\n\n1. Measure the frozen positional-style comparator on the official evaluation, to better understand the latest change before adding more components.\n2. Compare binary word occurrence with frequency-based TF-IDF while keeping the rest fixed. This comparison has no completed result yet.\n3. Look for a genuinely complementary representation rather than repeatedly tuning blend weights on the same validation prompts. I'd like to keep offline inference practical and avoid assuming that hidden-test rows form complete 18-model prompt groups.\n\nFor people working on similar approaches:\n\n- Would you prioritize a stronger encoder, model-likelihood features, or more careful sparse/stylometric features from this point?\n- What validation checks have helped you distinguish model style from prompt/topic leakage, especially after reusing the same small set of prompts?\n- Are there useful public notebooks or papers for a small, controlled next experiment? Negative results or pitfalls would be helpful too.\n\nThanks! I'm sharing aggregate results and methods here, not test predictions or individual dataset examples.",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "moruku36",
+                "id": 15887016,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/morikentaro36",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15887016-kg.png?t=2026-10-29-15-51-37",
+                "tier": "CONTRIBUTOR",
+                "url": "/morikentaro36",
+                "user_id": 15887016,
+                "user_name": "morikentaro36"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_votes": -1
+            }
+          },
+          "rawMarkdown": "Hi everyone! I'm working on a relatively lightweight approach and would appreciate ideas for the next useful experiment.\n\nWhat I've tried\n\n- Character/word TF-IDF with linear classifiers and simple writing-style features. The earlier TF-IDF models reached 0.331 on the public leaderboard; a joint-feature SVM reached 0.348.\n- A fixed rank-based blend of the sparse classifier and an Ettin 68M encoder reached 0.375 public score.\n- Lowercasing the word features while retaining punctuation-aware tokenization reached 0.377 in that blended pipeline.\n- My latest blend adds positional style and lexical views. It combines a global sparse/style head (40%), a positional sparse/style head (40%), and the existing Ettin model (20%), using per-row class ranks. This submitted version scored 0.383 publicly.\n\nValidation and what the numbers do not show\n\nI use prompt-grouped 5-fold validation and balanced accuracy. The earlier positional-style blend, before adding positional lexical views, had OOF balanced accuracy 0.403753. Adding word n-gram views of the first and last 512 characters gave 0.404867: only 3 extra correct predictions overall, with 3 of 5 folds improving. A paired bootstrap over prompts gave a difference interval that includes zero.\n\nAll 150 training prompts have already been used during development, so I treat these OOF results as exploratory rather than an untouched confirmation set. The positional-style-only comparator has not received an official score yet. Consequently, the 0.377 to 0.383 public improvement does not isolate the effect of the positional lexical features alone.\n\nI also tried several encoder-training variations, including LoRA/DoRA, weight averaging, partial-layer training, and style-oriented auxiliary training. Those particular experiments did not give a convincing improvement over my existing blend on the development splits. I don't take that as evidence that those methods cannot work here.\n\nWhat I'm considering next\n\n1. Measure the frozen positional-style comparator on the official evaluation, to better understand the latest change before adding more components.\n2. Compare binary word occurrence with frequency-based TF-IDF while keeping the rest fixed. This comparison has no completed result yet.\n3. Look for a genuinely complementary representation rather than repeatedly tuning blend weights on the same validation prompts. I'd like to keep offline inference practical and avoid assuming that hidden-test rows form complete 18-model prompt groups.\n\nFor people working on similar approaches:\n\n- Would you prioritize a stronger encoder, model-likelihood features, or more careful sparse/stylometric features from this point?\n- What validation checks have helped you distinguish model style from prompt/topic leakage, especially after reusing the same small set of prompts?\n- Are there useful public notebooks or papers for a small, controlled next experiment? Negative results or pitfalls would be helpful too.\n\nThanks! I'm sharing aggregate results and methods here, not test predictions or individual dataset examples.",
+          "replies": [],
+          "votes": {
+            "totalVotes": -1
+          }
+        },
+        "firstMessageId": 3555207,
+        "id": 759328,
+        "name": "Looking for advice: 0.383 public score with TF-IDF, style features and a small encoder",
+        "postDate": "2026-11-15T02:55:25.051384700Z",
+        "url": "/competitions/name-that-llm/discussion/759328"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>Hi everyone! I'm working on a relatively lightweight approach and would appreciate ideas for the next useful experiment.</p>\n<p>What I've tried</p>\n<ul>\n<li>Character/word TF-IDF with linear classifiers and simple writing-style features. The earlier TF-IDF models reached 0.331 on the public leaderboard; a joint-feature SVM reached 0.348.</li>\n<li>A fixed rank-based blend of the sparse classifier and an Ettin 68M encoder reached 0.375 public score.</li>\n<li>Lowercasing the word features while retaining punctuation-aware tokenization reached 0.377 in that blended pipeline.</li>\n<li>My latest blend adds positional style and lexical views. It combines a global sparse/style head (40%), a positional sparse/style head (40%), and the existing Ettin model (20%), using per-row class ranks. This submitted version scored 0.383 publicly.</li>\n</ul>\n<p>Validation and what the numbers do not show</p>\n<p>I use prompt-grouped 5-fold validation and balanced accuracy. The earlier positional-style blend, before adding positional lexical views, had OOF balanced accuracy 0.403753. Adding word n-gram views of the first and last 512 characters gave 0.404867: only 3 extra correct predictions overall, with 3 of 5 folds improving. A paired bootstrap over prompts gave a difference interval that includes zero.</p>\n<p>All 150 training prompts have already been used during development, so I treat these OOF results as exploratory rather than an untouched confirmation set. The positional-style-only comparator has not received an official score yet. Consequently, the 0.377 to 0.383 public improvement does not isolate the effect of the positional lexical features alone.</p>\n<p>I also tried several encoder-training variations, including LoRA/DoRA, weight averaging, partial-layer training, and style-oriented auxiliary training. Those particular experiments did not give a convincing improvement over my existing blend on the development splits. I don't take that as evidence that those methods cannot work here.</p>\n<p>What I'm considering next</p>\n<ol>\n<li>Measure the frozen positional-style comparator on the official evaluation, to better understand the latest change before adding more components.</li>\n<li>Compare binary word occurrence with frequency-based TF-IDF while keeping the rest fixed. This comparison has no completed result yet.</li>\n<li>Look for a genuinely complementary representation rather than repeatedly tuning blend weights on the same validation prompts. I'd like to keep offline inference practical and avoid assuming that hidden-test rows form complete 18-model prompt groups.</li>\n</ol>\n<p>For people working on similar approaches:</p>\n<ul>\n<li>Would you prioritize a stronger encoder, model-likelihood features, or more careful sparse/stylometric features from this point?</li>\n<li>What validation checks have helped you distinguish model style from prompt/topic leakage, especially after reusing the same small set of prompts?</li>\n<li>Are there useful public notebooks or papers for a small, controlled next experiment? Negative results or pitfalls would be helpful too.</li>\n</ul>\n<p>Thanks! I'm sharing aggregate results and methods here, not test predictions or individual dataset examples.</p>",
+              "id": 3555207,
+              "post_date": "2026-11-15T02:55:25.050Z",
+              "raw_markdown": "Hi everyone! I'm working on a relatively lightweight approach and would appreciate ideas for the next useful experiment.\n\nWhat I've tried\n\n- Character/word TF-IDF with linear classifiers and simple writing-style features. The earlier TF-IDF models reached 0.331 on the public leaderboard; a joint-feature SVM reached 0.348.\n- A fixed rank-based blend of the sparse classifier and an Ettin 68M encoder reached 0.375 public score.\n- Lowercasing the word features while retaining punctuation-aware tokenization reached 0.377 in that blended pipeline.\n- My latest blend adds positional style and lexical views. It combines a global sparse/style head (40%), a positional sparse/style head (40%), and the existing Ettin model (20%), using per-row class ranks. This submitted version scored 0.383 publicly.\n\nValidation and what the numbers do not show\n\nI use prompt-grouped 5-fold validation and balanced accuracy. The earlier positional-style blend, before adding positional lexical views, had OOF balanced accuracy 0.403753. Adding word n-gram views of the first and last 512 characters gave 0.404867: only 3 extra correct predictions overall, with 3 of 5 folds improving. A paired bootstrap over prompts gave a difference interval that includes zero.\n\nAll 150 training prompts have already been used during development, so I treat these OOF results as exploratory rather than an untouched confirmation set. The positional-style-only comparator has not received an official score yet. Consequently, the 0.377 to 0.383 public improvement does not isolate the effect of the positional lexical features alone.\n\nI also tried several encoder-training variations, including LoRA/DoRA, weight averaging, partial-layer training, and style-oriented auxiliary training. Those particular experiments did not give a convincing improvement over my existing blend on the development splits. I don't take that as evidence that those methods cannot work here.\n\nWhat I'm considering next\n\n1. Measure the frozen positional-style comparator on the official evaluation, to better understand the latest change before adding more components.\n2. Compare binary word occurrence with frequency-based TF-IDF while keeping the rest fixed. This comparison has no completed result yet.\n3. Look for a genuinely complementary representation rather than repeatedly tuning blend weights on the same validation prompts. I'd like to keep offline inference practical and avoid assuming that hidden-test rows form complete 18-model prompt groups.\n\nFor people working on similar approaches:\n\n- Would you prioritize a stronger encoder, model-likelihood features, or more careful sparse/stylometric features from this point?\n- What validation checks have helped you distinguish model style from prompt/topic leakage, especially after reusing the same small set of prompts?\n- Are there useful public notebooks or papers for a small, controlled next experiment? Negative results or pitfalls would be helpful too.\n\nThanks! I'm sharing aggregate results and methods here, not test predictions or individual dataset examples.",
+              "votes": -1
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 15887016,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "15887016-kg.png?t=2026-10-29-15-51-37",
+            "author_user_display_name": "moruku36",
+            "author_user_name": "morikentaro36",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "first_message": {
+              "author": {
+                "display_name": "moruku36",
+                "id": 15887016,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15887016-kg.png?t=2026-10-29-15-51-37",
+                "tier": "CONTRIBUTOR",
+                "url": "/morikentaro36"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 4776,
+              "content": "<p>Hi everyone! I'm working on a relatively lightweight approach and would appreciate ideas for the next useful experiment.</p>\n<p>What I've tried</p>\n<ul>\n<li>Character/word TF-IDF with linear classifiers and simple writing-style features. The earlier TF-IDF models reached 0.331 on the public leaderboard; a joint-feature SVM reached 0.348.</li>\n<li>A fixed rank-based blend of the sparse classifier and an Ettin 68M encoder reached 0.375 public score.</li>\n<li>Lowercasing the word features while retaining punctuation-aware tokenization reached 0.377 in that blended pipeline.</li>\n<li>My latest blend adds positional style and lexical views. It combines a global sparse/style head (40%), a positional sparse/style head (40%), and the existing Ettin model (20%), using per-row class ranks. This submitted version scored 0.383 publicly.</li>\n</ul>\n<p>Validation and what the numbers do not show</p>\n<p>I use prompt-grouped 5-fold validation and balanced accuracy. The earlier positional-style blend, before adding positional lexical views, had OOF balanced accuracy 0.403753. Adding word n-gram views of the first and last 512 characters gave 0.404867: only 3 extra correct predictions overall, with 3 of 5 folds improving. A paired bootstrap over prompts gave a difference interval that includes zero.</p>\n<p>All 150 training prompts have already been used during development, so I treat these OOF results as exploratory rather than an untouched confirmation set. The positional-style-only comparator has not received an official score yet. Consequently, the 0.377 to 0.383 public improvement does not isolate the effect of the positional lexical features alone.</p>\n<p>I also tried several encoder-training variations, including LoRA/DoRA, weight averaging, partial-layer training, and style-oriented auxiliary training. Those particular experiments did not give a convincing improvement over my existing blend on the development splits. I don't take that as evidence that those methods cannot work here.</p>\n<p>What I'm considering next</p>\n<ol>\n<li>Measure the frozen positional-style comparator on the official evaluation, to better understand the latest change before adding more components.</li>\n<li>Compare binary word occurrence with frequency-based TF-IDF while keeping the rest fixed. This comparison has no completed result yet.</li>\n<li>Look for a genuinely complementary representation rather than repeatedly tuning blend weights on the same validation prompts. I'd like to keep offline inference practical and avoid assuming that hidden-test rows form complete 18-model prompt groups.</li>\n</ol>\n<p>For people working on similar approaches:</p>\n<ul>\n<li>Would you prioritize a stronger encoder, model-likelihood features, or more careful sparse/stylometric features from this point?</li>\n<li>What validation checks have helped you distinguish model style from prompt/topic leakage, especially after reusing the same small set of prompts?</li>\n<li>Are there useful public notebooks or papers for a small, controlled next experiment? Negative results or pitfalls would be helpful too.</li>\n</ul>\n<p>Thanks! I'm sharing aggregate results and methods here, not test predictions or individual dataset examples.</p>",
+              "feedback_tracking_data": {},
+              "id": 3555207,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-15T02:55:25.050Z",
+              "raw_markdown": "Hi everyone! I'm working on a relatively lightweight approach and would appreciate ideas for the next useful experiment.\n\nWhat I've tried\n\n- Character/word TF-IDF with linear classifiers and simple writing-style features. The earlier TF-IDF models reached 0.331 on the public leaderboard; a joint-feature SVM reached 0.348.\n- A fixed rank-based blend of the sparse classifier and an Ettin 68M encoder reached 0.375 public score.\n- Lowercasing the word features while retaining punctuation-aware tokenization reached 0.377 in that blended pipeline.\n- My latest blend adds positional style and lexical views. It combines a global sparse/style head (40%), a positional sparse/style head (40%), and the existing Ettin model (20%), using per-row class ranks. This submitted version scored 0.383 publicly.\n\nValidation and what the numbers do not show\n\nI use prompt-grouped 5-fold validation and balanced accuracy. The earlier positional-style blend, before adding positional lexical views, had OOF balanced accuracy 0.403753. Adding word n-gram views of the first and last 512 characters gave 0.404867: only 3 extra correct predictions overall, with 3 of 5 folds improving. A paired bootstrap over prompts gave a difference interval that includes zero.\n\nAll 150 training prompts have already been used during development, so I treat these OOF results as exploratory rather than an untouched confirmation set. The positional-style-only comparator has not received an official score yet. Consequently, the 0.377 to 0.383 public improvement does not isolate the effect of the positional lexical features alone.\n\nI also tried several encoder-training variations, including LoRA/DoRA, weight averaging, partial-layer training, and style-oriented auxiliary training. Those particular experiments did not give a convincing improvement over my existing blend on the development splits. I don't take that as evidence that those methods cannot work here.\n\nWhat I'm considering next\n\n1. Measure the frozen positional-style comparator on the official evaluation, to better understand the latest change before adding more components.\n2. Compare binary word occurrence with frequency-based TF-IDF while keeping the rest fixed. This comparison has no completed result yet.\n3. Look for a genuinely complementary representation rather than repeatedly tuning blend weights on the same validation prompts. I'd like to keep offline inference practical and avoid assuming that hidden-test rows form complete 18-model prompt groups.\n\nFor people working on similar approaches:\n\n- Would you prioritize a stronger encoder, model-likelihood features, or more careful sparse/stylometric features from this point?\n- What validation checks have helped you distinguish model style from prompt/topic leakage, especially after reusing the same small set of prompts?\n- Are there useful public notebooks or papers for a small, controlled next experiment? Negative results or pitfalls would be helpful too.\n\nThanks! I'm sharing aggregate results and methods here, not test predictions or individual dataset examples.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "moruku36",
+                  "id": 15887016,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/morikentaro36",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15887016-kg.png?t=2026-10-29-15-51-37",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/morikentaro36",
+                  "user_id": 15887016,
+                  "user_name": "morikentaro36"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_votes": -1
+              }
+            },
+            "first_message_id": 3555207,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 759328,
+            "name": "Looking for advice: 0.383 public score with TF-IDF, style features and a small encoder",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-11-15T02:55:25.051384700Z",
+            "total_votes": -1,
+            "url": "/competitions/name-that-llm/discussion/759328"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-18T09:02:14+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-18T09:02:14+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-11-15T02:55:25.051384700Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [],
+  "writeup": null
+}

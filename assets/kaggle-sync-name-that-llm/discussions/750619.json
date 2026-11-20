@@ -1,0 +1,447 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 750619,
+    "title": "Why ensemble?",
+    "author": "Rustam Bazarbayev",
+    "author_url": "/rustambazarbayev",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-10-19T07:36:06.032627300Z",
+    "last_comment_post_date": "2026-10-19T23:30:54.153333300Z",
+    "comment_count": 1,
+    "votes": 2,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/750619",
+    "first_message_id": 3540921,
+    "first_seen_at": "2026-11-04T06:56:17+00:00",
+    "last_seen_at": "2026-11-16T16:36:05+00:00",
+    "detail_last_synced_at": "2026-11-16T16:24:21+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "2509f67b917aafd3f9e2454133d2618a6f924aafe15db1f920045ac28b12277c",
+    "listing_metrics_hash": "6db2b817333d85ee95f494a1b2ba941fb79d87d4e3e0c8718afed5f3c0bfd1fa",
+    "detail_content_hash": "709916eb00d941dba1aa7fc037ca1afdce541ede7e2f300df06b95bd666c08e9",
+    "detail_last_checked_at": "2026-11-16T16:24:21+00:00",
+    "detail_next_check_at": "2026-11-19T16:24:21+00:00",
+    "detail_unchanged_count": 1,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 1,
+      "firstForumMessageId": null,
+      "id": 750619,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-10-19T23:30:54.153333300Z",
+      "postDate": "2026-10-19T07:36:06.032627300Z",
+      "raw": {
+        "comment_count": 1,
+        "id": 750619,
+        "last_comment_post_date": "2026-10-19T23:30:54.153333300Z",
+        "post_date": "2026-10-19T07:36:06.032627300Z",
+        "title": "Why ensemble?",
+        "topic_url": "/competitions/name-that-llm/discussion/750619",
+        "votes": 2
+      },
+      "title": "Why ensemble?",
+      "topicUrl": "/competitions/name-that-llm/discussion/750619",
+      "votes": 2
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "Rustam Bazarbayev",
+        "authorUserName": "rustambazarbayev",
+        "comments": [
+          {
+            "author": {
+              "displayName": "Ravi Ramakrishnan",
+              "tier": "GRANDMASTER",
+              "url": "/ravi20076"
+            },
+            "content": "<p><a href=\"/rustambazarbayev\" target=\"_blank\">@rustambazarbayev</a> good point  - follow your own process. You may choose to refer public work, but focus on your own ideas. Start small, then develop your pipeline over 3 months.</p>\n<p>Public work with so much AI involvement could distract you a lot - you may start with your process from a public kernel and before you finish your ideas, 3-4 blends with higher LB will come up. Don't worry about these notebooks at this stage of the competition. </p>",
+            "id": 3541356,
+            "isThankYou": false,
+            "postDate": "2026-10-19T23:30:54.153Z",
+            "raw": {
+              "author": {
+                "display_name": "Ravi Ramakrishnan",
+                "id": 8273630,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8273630-kg.JPG?t=2024-03-26-14-51-52",
+                "tier": "GRANDMASTER",
+                "url": "/ravi20076"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 466,
+              "content": "<p><a href=\"/rustambazarbayev\" target=\"_blank\">@rustambazarbayev</a> good point  - follow your own process. You may choose to refer public work, but focus on your own ideas. Start small, then develop your pipeline over 3 months.</p>\n<p>Public work with so much AI involvement could distract you a lot - you may start with your process from a public kernel and before you finish your ideas, 3-4 blends with higher LB will come up. Don't worry about these notebooks at this stage of the competition. </p>",
+              "feedback_tracking_data": {},
+              "id": 3541356,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-19T23:30:54.153Z",
+              "raw_markdown": "@rustambazarbayev good point  - follow your own process. You may choose to refer public work, but focus on your own ideas. Start small, then develop your pipeline over 3 months.\n\nPublic work with so much AI involvement could distract you a lot - you may start with your process from a public kernel and before you finish your ideas, 3-4 blends with higher LB will come up. Don't worry about these notebooks at this stage of the competition. ",
+              "reactions": [
+                {
+                  "emoji": "THANK_YOU",
+                  "featured_user_names": [
+                    "rustambazarbayev",
+                    "vladimir1506",
+                    "r8huhy"
+                  ],
+                  "user_count": 3
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Kishan Vavdara",
+                  "id": 12951282,
+                  "performance_tier": "MASTER",
+                  "profile_url": "/kishanvavdara",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/12951282-kg.jpeg",
+                  "tier": "MASTER",
+                  "url": "/kishanvavdara",
+                  "user_id": 12951282,
+                  "user_name": "kishanvavdara"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "@rustambazarbayev good point  - follow your own process. You may choose to refer public work, but focus on your own ideas. Start small, then develop your pipeline over 3 months.\n\nPublic work with so much AI involvement could distract you a lot - you may start with your process from a public kernel and before you finish your ideas, 3-4 blends with higher LB will come up. Don't worry about these notebooks at this stage of the competition. ",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "expectedCommentCount": 1,
+        "firstMessage": {
+          "author": {
+            "displayName": "Rustam Bazarbayev",
+            "tier": "CONTRIBUTOR",
+            "url": "/rustambazarbayev"
+          },
+          "content": "<p>Many open-source notebooks start ensembling at an early stage. Has anyone achieved higher results with single models?</p>",
+          "id": 3540921,
+          "isThankYou": false,
+          "postDate": "2026-10-19T07:36:06.033Z",
+          "raw": {
+            "author": {
+              "display_name": "Rustam Bazarbayev",
+              "id": 5591682,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5591682-kg.jpg?t=2025-09-12-06-50-17",
+              "tier": "CONTRIBUTOR",
+              "url": "/rustambazarbayev"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 1671,
+            "content": "<p>Many open-source notebooks start ensembling at an early stage. Has anyone achieved higher results with single models?</p>",
+            "feedback_tracking_data": {},
+            "id": 3540921,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-10-19T07:36:06.033Z",
+            "raw_markdown": "Many open-source notebooks start ensembling at an early stage. Has anyone achieved higher results with single models?",
+            "reactions": [
+              {
+                "emoji": "SURPRISE",
+                "featured_user_names": [
+                  "osakanateishoku",
+                  "lightningv08",
+                  "vladimir1506",
+                  "alisalmanrana"
+                ],
+                "user_count": 4
+              }
+            ],
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "Rustam Bazarbayev",
+                "id": 5591682,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/rustambazarbayev",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5591682-kg.jpg?t=2025-09-12-06-50-17",
+                "tier": "CONTRIBUTOR",
+                "url": "/rustambazarbayev",
+                "user_id": 5591682,
+                "user_name": "rustambazarbayev"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 2,
+              "total_votes": 2
+            }
+          },
+          "rawMarkdown": "Many open-source notebooks start ensembling at an early stage. Has anyone achieved higher results with single models?",
+          "replies": [],
+          "votes": {
+            "totalVotes": 2
+          }
+        },
+        "firstMessageId": 3540921,
+        "id": 750619,
+        "name": "Why ensemble?",
+        "postDate": "2026-10-19T07:36:06.032627300Z",
+        "url": "/competitions/name-that-llm/discussion/750619"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>Many open-source notebooks start ensembling at an early stage. Has anyone achieved higher results with single models?</p>",
+              "id": 3540921,
+              "post_date": "2026-10-19T07:36:06.033Z",
+              "raw_markdown": "Many open-source notebooks start ensembling at an early stage. Has anyone achieved higher results with single models?",
+              "votes": 2
+            },
+            {
+              "content": "<p><a href=\"/rustambazarbayev\" target=\"_blank\">@rustambazarbayev</a> good point  - follow your own process. You may choose to refer public work, but focus on your own ideas. Start small, then develop your pipeline over 3 months.</p>\n<p>Public work with so much AI involvement could distract you a lot - you may start with your process from a public kernel and before you finish your ideas, 3-4 blends with higher LB will come up. Don't worry about these notebooks at this stage of the competition. </p>",
+              "id": 3541356,
+              "post_date": "2026-10-19T23:30:54.153Z",
+              "raw_markdown": "@rustambazarbayev good point  - follow your own process. You may choose to refer public work, but focus on your own ideas. Start small, then develop your pipeline over 3 months.\n\nPublic work with so much AI involvement could distract you a lot - you may start with your process from a public kernel and before you finish your ideas, 3-4 blends with higher LB will come up. Don't worry about these notebooks at this stage of the competition. "
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 5591682,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "5591682-kg.jpg?t=2025-09-12-06-50-17",
+            "author_user_display_name": "Rustam Bazarbayev",
+            "author_user_name": "rustambazarbayev",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "comments": [
+              {
+                "author": {
+                  "display_name": "Ravi Ramakrishnan",
+                  "id": 8273630,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8273630-kg.JPG?t=2024-03-26-14-51-52",
+                  "tier": "GRANDMASTER",
+                  "url": "/ravi20076"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 466,
+                "content": "<p><a href=\"/rustambazarbayev\" target=\"_blank\">@rustambazarbayev</a> good point  - follow your own process. You may choose to refer public work, but focus on your own ideas. Start small, then develop your pipeline over 3 months.</p>\n<p>Public work with so much AI involvement could distract you a lot - you may start with your process from a public kernel and before you finish your ideas, 3-4 blends with higher LB will come up. Don't worry about these notebooks at this stage of the competition. </p>",
+                "feedback_tracking_data": {},
+                "id": 3541356,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-19T23:30:54.153Z",
+                "raw_markdown": "@rustambazarbayev good point  - follow your own process. You may choose to refer public work, but focus on your own ideas. Start small, then develop your pipeline over 3 months.\n\nPublic work with so much AI involvement could distract you a lot - you may start with your process from a public kernel and before you finish your ideas, 3-4 blends with higher LB will come up. Don't worry about these notebooks at this stage of the competition. ",
+                "reactions": [
+                  {
+                    "emoji": "THANK_YOU",
+                    "featured_user_names": [
+                      "rustambazarbayev",
+                      "vladimir1506",
+                      "r8huhy"
+                    ],
+                    "user_count": 3
+                  }
+                ],
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "Kishan Vavdara",
+                    "id": 12951282,
+                    "performance_tier": "MASTER",
+                    "profile_url": "/kishanvavdara",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/12951282-kg.jpeg",
+                    "tier": "MASTER",
+                    "url": "/kishanvavdara",
+                    "user_id": 12951282,
+                    "user_name": "kishanvavdara"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              }
+            ],
+            "first_message": {
+              "author": {
+                "display_name": "Rustam Bazarbayev",
+                "id": 5591682,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5591682-kg.jpg?t=2025-09-12-06-50-17",
+                "tier": "CONTRIBUTOR",
+                "url": "/rustambazarbayev"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 1671,
+              "content": "<p>Many open-source notebooks start ensembling at an early stage. Has anyone achieved higher results with single models?</p>",
+              "feedback_tracking_data": {},
+              "id": 3540921,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-19T07:36:06.033Z",
+              "raw_markdown": "Many open-source notebooks start ensembling at an early stage. Has anyone achieved higher results with single models?",
+              "reactions": [
+                {
+                  "emoji": "SURPRISE",
+                  "featured_user_names": [
+                    "osakanateishoku",
+                    "lightningv08",
+                    "vladimir1506",
+                    "alisalmanrana"
+                  ],
+                  "user_count": 4
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Rustam Bazarbayev",
+                  "id": 5591682,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/rustambazarbayev",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5591682-kg.jpg?t=2025-09-12-06-50-17",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/rustambazarbayev",
+                  "user_id": 5591682,
+                  "user_name": "rustambazarbayev"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 2,
+                "total_votes": 2
+              }
+            },
+            "first_message_id": 3540921,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 750619,
+            "name": "Why ensemble?",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-10-19T07:36:06.032627300Z",
+            "total_messages": 1,
+            "total_votes": 2,
+            "url": "/competitions/name-that-llm/discussion/750619"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:24:21+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:24:21+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-10-19T23:30:54.153333300Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [
+    {
+      "slug": "name-that-llm",
+      "topic_id": 750619,
+      "message_id": 3541356,
+      "parent_message_id": null,
+      "author": "Ravi Ramakrishnan",
+      "author_url": "/ravi20076",
+      "author_tier": "GRANDMASTER",
+      "post_date": "2026-10-19T23:30:54.153Z",
+      "raw_markdown": "@rustambazarbayev good point  - follow your own process. You may choose to refer public work, but focus on your own ideas. Start small, then develop your pipeline over 3 months.\n\nPublic work with so much AI involvement could distract you a lot - you may start with your process from a public kernel and before you finish your ideas, 3-4 blends with higher LB will come up. Don't worry about these notebooks at this stage of the competition. ",
+      "content_html": "<p><a href=\"/rustambazarbayev\" target=\"_blank\">@rustambazarbayev</a> good point  - follow your own process. You may choose to refer public work, but focus on your own ideas. Start small, then develop your pipeline over 3 months.</p>\n<p>Public work with so much AI involvement could distract you a lot - you may start with your process from a public kernel and before you finish your ideas, 3-4 blends with higher LB will come up. Don't worry about these notebooks at this stage of the competition. </p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:56:50+00:00",
+      "last_seen_at": "2026-11-16T16:24:21+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:24:21+00:00",
+      "remote_last_listed_at": "2026-11-16T16:24:21+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Ravi Ramakrishnan",
+          "tier": "GRANDMASTER",
+          "url": "/ravi20076"
+        },
+        "content": "<p><a href=\"/rustambazarbayev\" target=\"_blank\">@rustambazarbayev</a> good point  - follow your own process. You may choose to refer public work, but focus on your own ideas. Start small, then develop your pipeline over 3 months.</p>\n<p>Public work with so much AI involvement could distract you a lot - you may start with your process from a public kernel and before you finish your ideas, 3-4 blends with higher LB will come up. Don't worry about these notebooks at this stage of the competition. </p>",
+        "id": 3541356,
+        "isThankYou": false,
+        "postDate": "2026-10-19T23:30:54.153Z",
+        "raw": {
+          "author": {
+            "display_name": "Ravi Ramakrishnan",
+            "id": 8273630,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8273630-kg.JPG?t=2024-03-26-14-51-52",
+            "tier": "GRANDMASTER",
+            "url": "/ravi20076"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 466,
+          "content": "<p><a href=\"/rustambazarbayev\" target=\"_blank\">@rustambazarbayev</a> good point  - follow your own process. You may choose to refer public work, but focus on your own ideas. Start small, then develop your pipeline over 3 months.</p>\n<p>Public work with so much AI involvement could distract you a lot - you may start with your process from a public kernel and before you finish your ideas, 3-4 blends with higher LB will come up. Don't worry about these notebooks at this stage of the competition. </p>",
+          "feedback_tracking_data": {},
+          "id": 3541356,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-19T23:30:54.153Z",
+          "raw_markdown": "@rustambazarbayev good point  - follow your own process. You may choose to refer public work, but focus on your own ideas. Start small, then develop your pipeline over 3 months.\n\nPublic work with so much AI involvement could distract you a lot - you may start with your process from a public kernel and before you finish your ideas, 3-4 blends with higher LB will come up. Don't worry about these notebooks at this stage of the competition. ",
+          "reactions": [
+            {
+              "emoji": "THANK_YOU",
+              "featured_user_names": [
+                "rustambazarbayev",
+                "vladimir1506",
+                "r8huhy"
+              ],
+              "user_count": 3
+            }
+          ],
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Kishan Vavdara",
+              "id": 12951282,
+              "performance_tier": "MASTER",
+              "profile_url": "/kishanvavdara",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/12951282-kg.jpeg",
+              "tier": "MASTER",
+              "url": "/kishanvavdara",
+              "user_id": 12951282,
+              "user_name": "kishanvavdara"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "@rustambazarbayev good point  - follow your own process. You may choose to refer public work, but focus on your own ideas. Start small, then develop your pipeline over 3 months.\n\nPublic work with so much AI involvement could distract you a lot - you may start with your process from a public kernel and before you finish your ideas, 3-4 blends with higher LB will come up. Don't worry about these notebooks at this stage of the competition. ",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    }
+  ],
+  "writeup": null
+}

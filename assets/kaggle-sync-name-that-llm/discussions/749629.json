@@ -1,0 +1,1842 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 749629,
+    "title": "18-model wide response additional corpus",
+    "author": "Oleg Zholobov",
+    "author_url": "/olegzholobov",
+    "author_tier": "EXPERT",
+    "post_date": "2026-10-15T16:27:34.561619600Z",
+    "last_comment_post_date": "2026-10-18T06:30:17.526666700Z",
+    "comment_count": 5,
+    "votes": 33,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/749629",
+    "first_message_id": 3539242,
+    "first_seen_at": "2026-11-04T06:56:18+00:00",
+    "last_seen_at": "2026-11-16T16:36:12+00:00",
+    "detail_last_synced_at": "2026-11-16T16:36:12+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "f42abd78540b8e8e209c29861bff508fdcf0b97a173c02ce858e35bfb6517d20",
+    "listing_metrics_hash": "e9d0ff736196cd3ea9b33f0008d9236174bdcce1f99a4cfd0156ffe10d2b877e",
+    "detail_content_hash": "8360b4d3b3edf4f22aaa3c3eeb60127418880dc1197f809989bec2e2d5ebddd1",
+    "detail_last_checked_at": "2026-11-16T16:36:12+00:00",
+    "detail_next_check_at": "2026-11-23T16:36:12+00:00",
+    "detail_unchanged_count": 2,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 5,
+      "firstForumMessageId": null,
+      "id": 749629,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-10-18T06:30:17.526666700Z",
+      "postDate": "2026-10-15T16:27:34.561619600Z",
+      "raw": {
+        "comment_count": 5,
+        "id": 749629,
+        "last_comment_post_date": "2026-10-18T06:30:17.526666700Z",
+        "post_date": "2026-10-15T16:27:34.561619600Z",
+        "title": "18-model wide response additional corpus",
+        "topic_url": "/competitions/name-that-llm/discussion/749629",
+        "votes": 33
+      },
+      "title": "18-model wide response additional corpus",
+      "topicUrl": "/competitions/name-that-llm/discussion/749629",
+      "votes": 33
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "EXPERT",
+        "authorUserDisplayName": "Oleg Zholobov",
+        "authorUserName": "olegzholobov",
+        "comments": [
+          {
+            "author": {
+              "displayName": "HZM",
+              "tier": "GRANDMASTER",
+              "url": "/leehann"
+            },
+            "content": "<p>may i know where and how you grab so valuable data, it is helpful</p>",
+            "id": 3539627,
+            "isThankYou": false,
+            "postDate": "2026-10-16T07:18:41.063Z",
+            "raw": {
+              "author": {
+                "display_name": "HZM",
+                "id": 9464013,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9464013-kg.jpg?t=2023-09-30-12-35-57",
+                "tier": "GRANDMASTER",
+                "url": "/leehann"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 3394,
+              "content": "<p>may i know where and how you grab so valuable data, it is helpful</p>",
+              "feedback_tracking_data": {},
+              "id": 3539627,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-16T07:18:41.063Z",
+              "raw_markdown": "may i know where and how you grab so valuable data, it is helpful",
+              "replies": [
+                {
+                  "author": {
+                    "display_name": "Oleg Zholobov",
+                    "id": 8291866,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8291866-kg.jpg?t=2025-08-09-13-38-59",
+                    "tier": "EXPERT",
+                    "url": "/olegzholobov"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 4369,
+                  "content": "<p>Mostly from public Hugging Face datasets, GitHub evaluation logs, etc. I preserve each source’s license metadata.</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3539632,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-16T07:29:57.500Z",
+                  "raw_markdown": "Mostly from public Hugging Face datasets, GitHub evaluation logs, etc. I preserve each source’s license metadata.\n",
+                  "replies": [
+                    {
+                      "author": {
+                        "display_name": "HZM",
+                        "id": 9464013,
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9464013-kg.jpg?t=2023-09-30-12-35-57",
+                        "tier": "GRANDMASTER",
+                        "url": "/leehann"
+                      },
+                      "author_type": "COMMENT",
+                      "competition_ranking": 3394,
+                      "content": "<p>did you try it to sft?</p>",
+                      "feedback_tracking_data": {},
+                      "id": 3539645,
+                      "is_thank_you": false,
+                      "kernel_version": 0,
+                      "parent": {},
+                      "post_date": "2026-10-16T08:05:10.930Z",
+                      "raw_markdown": "did you try it to sft?",
+                      "team_up_info": {
+                        "intro": "",
+                        "team_leader": {
+                          "display_name": "HZM",
+                          "id": 9464013,
+                          "performance_tier": "GRANDMASTER",
+                          "profile_url": "/leehann",
+                          "progression_opt_out": false,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9464013-kg.jpg?t=2023-09-30-12-35-57",
+                          "tier": "GRANDMASTER",
+                          "url": "/leehann",
+                          "user_id": 9464013,
+                          "user_name": "leehann"
+                        }
+                      },
+                      "votes": {
+                        "can_upvote": true
+                      }
+                    },
+                    {
+                      "author": {
+                        "display_name": "Oleg Zholobov",
+                        "id": 8291866,
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8291866-kg.jpg?t=2025-08-09-13-38-59",
+                        "tier": "EXPERT",
+                        "url": "/olegzholobov"
+                      },
+                      "author_type": "TOPIC",
+                      "competition_ranking": 4369,
+                      "content": "<p>not yet       </p>",
+                      "feedback_tracking_data": {},
+                      "id": 3539646,
+                      "is_thank_you": false,
+                      "kernel_version": 0,
+                      "parent": {},
+                      "post_date": "2026-10-16T08:06:09.120Z",
+                      "raw_markdown": "not yet       \n",
+                      "team_up_info": {
+                        "intro": "",
+                        "team_leader": {
+                          "display_name": "Oleg Zholobov",
+                          "id": 8291866,
+                          "performance_tier": "EXPERT",
+                          "profile_url": "/olegzholobov",
+                          "progression_opt_out": false,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8291866-kg.jpg?t=2025-08-09-13-38-59",
+                          "tier": "EXPERT",
+                          "url": "/olegzholobov",
+                          "user_id": 8291866,
+                          "user_name": "olegzholobov"
+                        }
+                      },
+                      "votes": {
+                        "can_upvote": true
+                      }
+                    }
+                  ],
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Oleg Zholobov",
+                      "id": 8291866,
+                      "performance_tier": "EXPERT",
+                      "profile_url": "/olegzholobov",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8291866-kg.jpg?t=2025-08-09-13-38-59",
+                      "tier": "EXPERT",
+                      "url": "/olegzholobov",
+                      "user_id": 8291866,
+                      "user_name": "olegzholobov"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "HZM",
+                  "id": 9464013,
+                  "performance_tier": "GRANDMASTER",
+                  "profile_url": "/leehann",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9464013-kg.jpg?t=2023-09-30-12-35-57",
+                  "tier": "GRANDMASTER",
+                  "url": "/leehann",
+                  "user_id": 9464013,
+                  "user_name": "leehann"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": 1
+              }
+            },
+            "rawMarkdown": "may i know where and how you grab so valuable data, it is helpful",
+            "replies": [
+              {
+                "author": {
+                  "displayName": "Oleg Zholobov",
+                  "tier": "EXPERT",
+                  "url": "/olegzholobov"
+                },
+                "content": "<p>Mostly from public Hugging Face datasets, GitHub evaluation logs, etc. I preserve each source’s license metadata.</p>",
+                "id": 3539632,
+                "isThankYou": false,
+                "postDate": "2026-10-16T07:29:57.500Z",
+                "raw": {
+                  "author": {
+                    "display_name": "Oleg Zholobov",
+                    "id": 8291866,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8291866-kg.jpg?t=2025-08-09-13-38-59",
+                    "tier": "EXPERT",
+                    "url": "/olegzholobov"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 4369,
+                  "content": "<p>Mostly from public Hugging Face datasets, GitHub evaluation logs, etc. I preserve each source’s license metadata.</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3539632,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-16T07:29:57.500Z",
+                  "raw_markdown": "Mostly from public Hugging Face datasets, GitHub evaluation logs, etc. I preserve each source’s license metadata.\n",
+                  "replies": [
+                    {
+                      "author": {
+                        "display_name": "HZM",
+                        "id": 9464013,
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9464013-kg.jpg?t=2023-09-30-12-35-57",
+                        "tier": "GRANDMASTER",
+                        "url": "/leehann"
+                      },
+                      "author_type": "COMMENT",
+                      "competition_ranking": 3394,
+                      "content": "<p>did you try it to sft?</p>",
+                      "feedback_tracking_data": {},
+                      "id": 3539645,
+                      "is_thank_you": false,
+                      "kernel_version": 0,
+                      "parent": {},
+                      "post_date": "2026-10-16T08:05:10.930Z",
+                      "raw_markdown": "did you try it to sft?",
+                      "team_up_info": {
+                        "intro": "",
+                        "team_leader": {
+                          "display_name": "HZM",
+                          "id": 9464013,
+                          "performance_tier": "GRANDMASTER",
+                          "profile_url": "/leehann",
+                          "progression_opt_out": false,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9464013-kg.jpg?t=2023-09-30-12-35-57",
+                          "tier": "GRANDMASTER",
+                          "url": "/leehann",
+                          "user_id": 9464013,
+                          "user_name": "leehann"
+                        }
+                      },
+                      "votes": {
+                        "can_upvote": true
+                      }
+                    },
+                    {
+                      "author": {
+                        "display_name": "Oleg Zholobov",
+                        "id": 8291866,
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8291866-kg.jpg?t=2025-08-09-13-38-59",
+                        "tier": "EXPERT",
+                        "url": "/olegzholobov"
+                      },
+                      "author_type": "TOPIC",
+                      "competition_ranking": 4369,
+                      "content": "<p>not yet       </p>",
+                      "feedback_tracking_data": {},
+                      "id": 3539646,
+                      "is_thank_you": false,
+                      "kernel_version": 0,
+                      "parent": {},
+                      "post_date": "2026-10-16T08:06:09.120Z",
+                      "raw_markdown": "not yet       \n",
+                      "team_up_info": {
+                        "intro": "",
+                        "team_leader": {
+                          "display_name": "Oleg Zholobov",
+                          "id": 8291866,
+                          "performance_tier": "EXPERT",
+                          "profile_url": "/olegzholobov",
+                          "progression_opt_out": false,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8291866-kg.jpg?t=2025-08-09-13-38-59",
+                          "tier": "EXPERT",
+                          "url": "/olegzholobov",
+                          "user_id": 8291866,
+                          "user_name": "olegzholobov"
+                        }
+                      },
+                      "votes": {
+                        "can_upvote": true
+                      }
+                    }
+                  ],
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Oleg Zholobov",
+                      "id": 8291866,
+                      "performance_tier": "EXPERT",
+                      "profile_url": "/olegzholobov",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8291866-kg.jpg?t=2025-08-09-13-38-59",
+                      "tier": "EXPERT",
+                      "url": "/olegzholobov",
+                      "user_id": 8291866,
+                      "user_name": "olegzholobov"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                },
+                "rawMarkdown": "Mostly from public Hugging Face datasets, GitHub evaluation logs, etc. I preserve each source’s license metadata.\n",
+                "replies": [
+                  {
+                    "author": {
+                      "displayName": "HZM",
+                      "tier": "GRANDMASTER",
+                      "url": "/leehann"
+                    },
+                    "content": "<p>did you try it to sft?</p>",
+                    "id": 3539645,
+                    "isThankYou": false,
+                    "postDate": "2026-10-16T08:05:10.930Z",
+                    "raw": {
+                      "author": {
+                        "display_name": "HZM",
+                        "id": 9464013,
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9464013-kg.jpg?t=2023-09-30-12-35-57",
+                        "tier": "GRANDMASTER",
+                        "url": "/leehann"
+                      },
+                      "author_type": "COMMENT",
+                      "competition_ranking": 3394,
+                      "content": "<p>did you try it to sft?</p>",
+                      "feedback_tracking_data": {},
+                      "id": 3539645,
+                      "is_thank_you": false,
+                      "kernel_version": 0,
+                      "parent": {},
+                      "post_date": "2026-10-16T08:05:10.930Z",
+                      "raw_markdown": "did you try it to sft?",
+                      "team_up_info": {
+                        "intro": "",
+                        "team_leader": {
+                          "display_name": "HZM",
+                          "id": 9464013,
+                          "performance_tier": "GRANDMASTER",
+                          "profile_url": "/leehann",
+                          "progression_opt_out": false,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9464013-kg.jpg?t=2023-09-30-12-35-57",
+                          "tier": "GRANDMASTER",
+                          "url": "/leehann",
+                          "user_id": 9464013,
+                          "user_name": "leehann"
+                        }
+                      },
+                      "votes": {
+                        "can_upvote": true
+                      }
+                    },
+                    "rawMarkdown": "did you try it to sft?",
+                    "replies": [],
+                    "votes": {
+                      "totalVotes": 0
+                    }
+                  },
+                  {
+                    "author": {
+                      "displayName": "Oleg Zholobov",
+                      "tier": "EXPERT",
+                      "url": "/olegzholobov"
+                    },
+                    "content": "<p>not yet       </p>",
+                    "id": 3539646,
+                    "isThankYou": false,
+                    "postDate": "2026-10-16T08:06:09.120Z",
+                    "raw": {
+                      "author": {
+                        "display_name": "Oleg Zholobov",
+                        "id": 8291866,
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8291866-kg.jpg?t=2025-08-09-13-38-59",
+                        "tier": "EXPERT",
+                        "url": "/olegzholobov"
+                      },
+                      "author_type": "TOPIC",
+                      "competition_ranking": 4369,
+                      "content": "<p>not yet       </p>",
+                      "feedback_tracking_data": {},
+                      "id": 3539646,
+                      "is_thank_you": false,
+                      "kernel_version": 0,
+                      "parent": {},
+                      "post_date": "2026-10-16T08:06:09.120Z",
+                      "raw_markdown": "not yet       \n",
+                      "team_up_info": {
+                        "intro": "",
+                        "team_leader": {
+                          "display_name": "Oleg Zholobov",
+                          "id": 8291866,
+                          "performance_tier": "EXPERT",
+                          "profile_url": "/olegzholobov",
+                          "progression_opt_out": false,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8291866-kg.jpg?t=2025-08-09-13-38-59",
+                          "tier": "EXPERT",
+                          "url": "/olegzholobov",
+                          "user_id": 8291866,
+                          "user_name": "olegzholobov"
+                        }
+                      },
+                      "votes": {
+                        "can_upvote": true
+                      }
+                    },
+                    "rawMarkdown": "not yet       \n",
+                    "replies": [],
+                    "votes": {
+                      "totalVotes": 0
+                    }
+                  }
+                ],
+                "votes": {
+                  "totalVotes": 0
+                }
+              }
+            ],
+            "votes": {
+              "totalVotes": 1
+            }
+          },
+          {
+            "author": {
+              "displayName": "HALX2158",
+              "tier": "CONTRIBUTOR",
+              "url": "/mizuno0522"
+            },
+            "content": "<p>Thanks for putting this together, the provenance columns made it easy to keep only licensed rows. One thing others may want to know: in our tests the formatting gap (line breaks, Markdown, length) made the corpus hurt CV when added to training, even after flattening. Per-model numbers are in <a href=\"https://www.kaggle.com/code/mizuno0522/model-fingerprints-punctuation-external-data\" target=\"_blank\">https://www.kaggle.com/code/mizuno0522/model-fingerprints-punctuation-external-data</a></p>\n<p>Maybe a \"single-paragraph, 40-250 words\" view would help people use it.</p>",
+            "id": 3540514,
+            "isThankYou": false,
+            "postDate": "2026-10-18T06:30:17.527Z",
+            "raw": {
+              "author": {
+                "display_name": "HALX2158",
+                "id": 16294566,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                "tier": "CONTRIBUTOR",
+                "url": "/mizuno0522"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 1099,
+              "content": "<p>Thanks for putting this together, the provenance columns made it easy to keep only licensed rows. One thing others may want to know: in our tests the formatting gap (line breaks, Markdown, length) made the corpus hurt CV when added to training, even after flattening. Per-model numbers are in <a href=\"https://www.kaggle.com/code/mizuno0522/model-fingerprints-punctuation-external-data\" target=\"_blank\">https://www.kaggle.com/code/mizuno0522/model-fingerprints-punctuation-external-data</a></p>\n<p>Maybe a \"single-paragraph, 40-250 words\" view would help people use it.</p>",
+              "feedback_tracking_data": {},
+              "id": 3540514,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-18T06:30:17.527Z",
+              "raw_markdown": "Thanks for putting this together, the provenance columns made it easy to keep only licensed rows. One thing others may want to know: in our tests the formatting gap (line breaks, Markdown, length) made the corpus hurt CV when added to training, even after flattening. Per-model numbers are in https://www.kaggle.com/code/mizuno0522/model-fingerprints-punctuation-external-data\n\nMaybe a \"single-paragraph, 40-250 words\" view would help people use it.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "HALX2158",
+                  "id": 16294566,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/mizuno0522",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/mizuno0522",
+                  "user_id": 16294566,
+                  "user_name": "mizuno0522"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "Thanks for putting this together, the provenance columns made it easy to keep only licensed rows. One thing others may want to know: in our tests the formatting gap (line breaks, Markdown, length) made the corpus hurt CV when added to training, even after flattening. Per-model numbers are in https://www.kaggle.com/code/mizuno0522/model-fingerprints-punctuation-external-data\n\nMaybe a \"single-paragraph, 40-250 words\" view would help people use it.",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "expectedCommentCount": 5,
+        "firstMessage": {
+          "author": {
+            "displayName": "Oleg Zholobov",
+            "tier": "EXPERT",
+            "url": "/olegzholobov"
+          },
+          "content": "<p>I collected an external response corpus for <strong>Name That LLM</strong>, organized as:</p>\n<p><code>id</code> · <code>prompt</code> · <strong>18 model-name columns</strong></p>\n<p><a href=\"https://www.kaggle.com/datasets/olegzholobov/name-that-llm-response-corpus\" target=\"_blank\"><strong>Dataset</strong></a> · <a href=\"https://www.kaggle.com/code/olegzholobov/name-that-llm-wide-data-overview\" target=\"_blank\"><strong>Overview notebook</strong></a> · <a href=\"https://www.kaggle.com/code/olegzholobov/name-that-llm-seaborn-nlp-explorer\" target=\"_blank\"><strong>Seaborn NLP explorer</strong></a></p>\n<table>\n<thead>\n<tr>\n<th>External view</th>\n<th>Unique responses</th>\n<th>Wide rows</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Full corpus</td>\n<td><strong>135,171</strong></td>\n<td>70,980</td>\n</tr>\n<tr>\n<td>40–250-word candidates</td>\n<td><strong>24,015</strong></td>\n<td>13,642</td>\n</tr>\n</tbody>\n</table>\n<p><strong>1,902 prompt groups have answers from all 18 models.</strong> Source URLs, model-label evidence and quality flags are preserved. The latest additions include Artificial Analysis, Novigens, APIFlow, JetBrains and RISE releases.</p>\n<p><strong>Overlap check:</strong> no exact or normalized matches with 2,699 original training answers, and no complete original answer found inside a longer external response. Candidate-based similarity checks also found no matches at 90%; this does not rule out every paraphrase.</p>\n<p>The notebooks keep original and external data separate. Original data loads through the competition attachment; missing prompt wording remains null. The NLP notebook has nine charts covering length, vocabulary, punctuation and prompt coverage.</p>\n<p><strong>Start with</strong> <code>external_short_wide.parquet</code>. Full data includes code, categorical and multimodal answers. A separate Luna quarantine has weaker labels and is excluded from default analysis.</p>\n<p>For validation, group by prompt and keep duplicate responses together. Shared prompts may have different system/history settings. Source licenses vary; see provenance and README.</p>",
+          "id": 3539242,
+          "isThankYou": false,
+          "postDate": "2026-10-15T16:27:34.560Z",
+          "raw": {
+            "author": {
+              "display_name": "Oleg Zholobov",
+              "id": 8291866,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8291866-kg.jpg?t=2025-08-09-13-38-59",
+              "tier": "EXPERT",
+              "url": "/olegzholobov"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 4369,
+            "content": "<p>I collected an external response corpus for <strong>Name That LLM</strong>, organized as:</p>\n<p><code>id</code> · <code>prompt</code> · <strong>18 model-name columns</strong></p>\n<p><a href=\"https://www.kaggle.com/datasets/olegzholobov/name-that-llm-response-corpus\" target=\"_blank\"><strong>Dataset</strong></a> · <a href=\"https://www.kaggle.com/code/olegzholobov/name-that-llm-wide-data-overview\" target=\"_blank\"><strong>Overview notebook</strong></a> · <a href=\"https://www.kaggle.com/code/olegzholobov/name-that-llm-seaborn-nlp-explorer\" target=\"_blank\"><strong>Seaborn NLP explorer</strong></a></p>\n<table>\n<thead>\n<tr>\n<th>External view</th>\n<th>Unique responses</th>\n<th>Wide rows</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Full corpus</td>\n<td><strong>135,171</strong></td>\n<td>70,980</td>\n</tr>\n<tr>\n<td>40–250-word candidates</td>\n<td><strong>24,015</strong></td>\n<td>13,642</td>\n</tr>\n</tbody>\n</table>\n<p><strong>1,902 prompt groups have answers from all 18 models.</strong> Source URLs, model-label evidence and quality flags are preserved. The latest additions include Artificial Analysis, Novigens, APIFlow, JetBrains and RISE releases.</p>\n<p><strong>Overlap check:</strong> no exact or normalized matches with 2,699 original training answers, and no complete original answer found inside a longer external response. Candidate-based similarity checks also found no matches at 90%; this does not rule out every paraphrase.</p>\n<p>The notebooks keep original and external data separate. Original data loads through the competition attachment; missing prompt wording remains null. The NLP notebook has nine charts covering length, vocabulary, punctuation and prompt coverage.</p>\n<p><strong>Start with</strong> <code>external_short_wide.parquet</code>. Full data includes code, categorical and multimodal answers. A separate Luna quarantine has weaker labels and is excluded from default analysis.</p>\n<p>For validation, group by prompt and keep duplicate responses together. Shared prompts may have different system/history settings. Source licenses vary; see provenance and README.</p>",
+            "feedback_tracking_data": {},
+            "id": 3539242,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-10-15T16:27:34.560Z",
+            "raw_markdown": "I collected an external response corpus for **Name That LLM**, organized as:\n\n`id` · `prompt` · **18 model-name columns**\n\n[**Dataset**](https://www.kaggle.com/datasets/olegzholobov/name-that-llm-response-corpus) · [**Overview notebook**](https://www.kaggle.com/code/olegzholobov/name-that-llm-wide-data-overview) · [**Seaborn NLP explorer**](https://www.kaggle.com/code/olegzholobov/name-that-llm-seaborn-nlp-explorer)\n\n| External view | Unique responses | Wide rows |\n|---|---:|---:|\n| Full corpus | **135,171** | 70,980 |\n| 40–250-word candidates | **24,015** | 13,642 |\n\n**1,902 prompt groups have answers from all 18 models.** Source URLs, model-label evidence and quality flags are preserved. The latest additions include Artificial Analysis, Novigens, APIFlow, JetBrains and RISE releases.\n\n**Overlap check:** no exact or normalized matches with 2,699 original training answers, and no complete original answer found inside a longer external response. Candidate-based similarity checks also found no matches at 90%; this does not rule out every paraphrase.\n\nThe notebooks keep original and external data separate. Original data loads through the competition attachment; missing prompt wording remains null. The NLP notebook has nine charts covering length, vocabulary, punctuation and prompt coverage.\n\n**Start with** `external_short_wide.parquet`. Full data includes code, categorical and multimodal answers. A separate Luna quarantine has weaker labels and is excluded from default analysis.\n\nFor validation, group by prompt and keep duplicate responses together. Shared prompts may have different system/history settings. Source licenses vary; see provenance and README.\n",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "Oleg Zholobov",
+                "id": 8291866,
+                "performance_tier": "EXPERT",
+                "profile_url": "/olegzholobov",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8291866-kg.jpg?t=2025-08-09-13-38-59",
+                "tier": "EXPERT",
+                "url": "/olegzholobov",
+                "user_id": 8291866,
+                "user_name": "olegzholobov"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 33,
+              "total_votes": 33
+            }
+          },
+          "rawMarkdown": "I collected an external response corpus for **Name That LLM**, organized as:\n\n`id` · `prompt` · **18 model-name columns**\n\n[**Dataset**](https://www.kaggle.com/datasets/olegzholobov/name-that-llm-response-corpus) · [**Overview notebook**](https://www.kaggle.com/code/olegzholobov/name-that-llm-wide-data-overview) · [**Seaborn NLP explorer**](https://www.kaggle.com/code/olegzholobov/name-that-llm-seaborn-nlp-explorer)\n\n| External view | Unique responses | Wide rows |\n|---|---:|---:|\n| Full corpus | **135,171** | 70,980 |\n| 40–250-word candidates | **24,015** | 13,642 |\n\n**1,902 prompt groups have answers from all 18 models.** Source URLs, model-label evidence and quality flags are preserved. The latest additions include Artificial Analysis, Novigens, APIFlow, JetBrains and RISE releases.\n\n**Overlap check:** no exact or normalized matches with 2,699 original training answers, and no complete original answer found inside a longer external response. Candidate-based similarity checks also found no matches at 90%; this does not rule out every paraphrase.\n\nThe notebooks keep original and external data separate. Original data loads through the competition attachment; missing prompt wording remains null. The NLP notebook has nine charts covering length, vocabulary, punctuation and prompt coverage.\n\n**Start with** `external_short_wide.parquet`. Full data includes code, categorical and multimodal answers. A separate Luna quarantine has weaker labels and is excluded from default analysis.\n\nFor validation, group by prompt and keep duplicate responses together. Shared prompts may have different system/history settings. Source licenses vary; see provenance and README.\n",
+          "replies": [],
+          "votes": {
+            "totalVotes": 33
+          }
+        },
+        "firstMessageId": 3539242,
+        "id": 749629,
+        "name": "18-model wide response additional corpus",
+        "postDate": "2026-10-15T16:27:34.561619600Z",
+        "url": "/competitions/name-that-llm/discussion/749629"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>I collected an external response corpus for <strong>Name That LLM</strong>, organized as:</p>\n<p><code>id</code> · <code>prompt</code> · <strong>18 model-name columns</strong></p>\n<p><a href=\"https://www.kaggle.com/datasets/olegzholobov/name-that-llm-response-corpus\" target=\"_blank\"><strong>Dataset</strong></a> · <a href=\"https://www.kaggle.com/code/olegzholobov/name-that-llm-wide-data-overview\" target=\"_blank\"><strong>Overview notebook</strong></a> · <a href=\"https://www.kaggle.com/code/olegzholobov/name-that-llm-seaborn-nlp-explorer\" target=\"_blank\"><strong>Seaborn NLP explorer</strong></a></p>\n<table>\n<thead>\n<tr>\n<th>External view</th>\n<th>Unique responses</th>\n<th>Wide rows</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Full corpus</td>\n<td><strong>135,171</strong></td>\n<td>70,980</td>\n</tr>\n<tr>\n<td>40–250-word candidates</td>\n<td><strong>24,015</strong></td>\n<td>13,642</td>\n</tr>\n</tbody>\n</table>\n<p><strong>1,902 prompt groups have answers from all 18 models.</strong> Source URLs, model-label evidence and quality flags are preserved. The latest additions include Artificial Analysis, Novigens, APIFlow, JetBrains and RISE releases.</p>\n<p><strong>Overlap check:</strong> no exact or normalized matches with 2,699 original training answers, and no complete original answer found inside a longer external response. Candidate-based similarity checks also found no matches at 90%; this does not rule out every paraphrase.</p>\n<p>The notebooks keep original and external data separate. Original data loads through the competition attachment; missing prompt wording remains null. The NLP notebook has nine charts covering length, vocabulary, punctuation and prompt coverage.</p>\n<p><strong>Start with</strong> <code>external_short_wide.parquet</code>. Full data includes code, categorical and multimodal answers. A separate Luna quarantine has weaker labels and is excluded from default analysis.</p>\n<p>For validation, group by prompt and keep duplicate responses together. Shared prompts may have different system/history settings. Source licenses vary; see provenance and README.</p>",
+              "id": 3539242,
+              "post_date": "2026-10-15T16:27:34.560Z",
+              "raw_markdown": "I collected an external response corpus for **Name That LLM**, organized as:\n\n`id` · `prompt` · **18 model-name columns**\n\n[**Dataset**](https://www.kaggle.com/datasets/olegzholobov/name-that-llm-response-corpus) · [**Overview notebook**](https://www.kaggle.com/code/olegzholobov/name-that-llm-wide-data-overview) · [**Seaborn NLP explorer**](https://www.kaggle.com/code/olegzholobov/name-that-llm-seaborn-nlp-explorer)\n\n| External view | Unique responses | Wide rows |\n|---|---:|---:|\n| Full corpus | **135,171** | 70,980 |\n| 40–250-word candidates | **24,015** | 13,642 |\n\n**1,902 prompt groups have answers from all 18 models.** Source URLs, model-label evidence and quality flags are preserved. The latest additions include Artificial Analysis, Novigens, APIFlow, JetBrains and RISE releases.\n\n**Overlap check:** no exact or normalized matches with 2,699 original training answers, and no complete original answer found inside a longer external response. Candidate-based similarity checks also found no matches at 90%; this does not rule out every paraphrase.\n\nThe notebooks keep original and external data separate. Original data loads through the competition attachment; missing prompt wording remains null. The NLP notebook has nine charts covering length, vocabulary, punctuation and prompt coverage.\n\n**Start with** `external_short_wide.parquet`. Full data includes code, categorical and multimodal answers. A separate Luna quarantine has weaker labels and is excluded from default analysis.\n\nFor validation, group by prompt and keep duplicate responses together. Shared prompts may have different system/history settings. Source licenses vary; see provenance and README.\n",
+              "votes": 33
+            },
+            {
+              "content": "<p>may i know where and how you grab so valuable data, it is helpful</p>",
+              "id": 3539627,
+              "post_date": "2026-10-16T07:18:41.063Z",
+              "raw_markdown": "may i know where and how you grab so valuable data, it is helpful",
+              "replies": [
+                {
+                  "content": "<p>Mostly from public Hugging Face datasets, GitHub evaluation logs, etc. I preserve each source’s license metadata.</p>",
+                  "id": 3539632,
+                  "post_date": "2026-10-16T07:29:57.500Z",
+                  "raw_markdown": "Mostly from public Hugging Face datasets, GitHub evaluation logs, etc. I preserve each source’s license metadata.\n",
+                  "replies": [
+                    {
+                      "content": "<p>did you try it to sft?</p>",
+                      "id": 3539645,
+                      "post_date": "2026-10-16T08:05:10.930Z",
+                      "raw_markdown": "did you try it to sft?"
+                    },
+                    {
+                      "content": "<p>not yet       </p>",
+                      "id": 3539646,
+                      "post_date": "2026-10-16T08:06:09.120Z",
+                      "raw_markdown": "not yet       \n"
+                    }
+                  ]
+                }
+              ],
+              "votes": 1
+            },
+            {
+              "content": "<p>Thanks for putting this together, the provenance columns made it easy to keep only licensed rows. One thing others may want to know: in our tests the formatting gap (line breaks, Markdown, length) made the corpus hurt CV when added to training, even after flattening. Per-model numbers are in <a href=\"https://www.kaggle.com/code/mizuno0522/model-fingerprints-punctuation-external-data\" target=\"_blank\">https://www.kaggle.com/code/mizuno0522/model-fingerprints-punctuation-external-data</a></p>\n<p>Maybe a \"single-paragraph, 40-250 words\" view would help people use it.</p>",
+              "id": 3540514,
+              "post_date": "2026-10-18T06:30:17.527Z",
+              "raw_markdown": "Thanks for putting this together, the provenance columns made it easy to keep only licensed rows. One thing others may want to know: in our tests the formatting gap (line breaks, Markdown, length) made the corpus hurt CV when added to training, even after flattening. Per-model numbers are in https://www.kaggle.com/code/mizuno0522/model-fingerprints-punctuation-external-data\n\nMaybe a \"single-paragraph, 40-250 words\" view would help people use it."
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 8291866,
+            "author_performance_tier": "EXPERT",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "8291866-kg.jpg?t=2025-08-09-13-38-59",
+            "author_user_display_name": "Oleg Zholobov",
+            "author_user_name": "olegzholobov",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "comments": [
+              {
+                "author": {
+                  "display_name": "HZM",
+                  "id": 9464013,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9464013-kg.jpg?t=2023-09-30-12-35-57",
+                  "tier": "GRANDMASTER",
+                  "url": "/leehann"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 3394,
+                "content": "<p>may i know where and how you grab so valuable data, it is helpful</p>",
+                "feedback_tracking_data": {},
+                "id": 3539627,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-16T07:18:41.063Z",
+                "raw_markdown": "may i know where and how you grab so valuable data, it is helpful",
+                "replies": [
+                  {
+                    "author": {
+                      "display_name": "Oleg Zholobov",
+                      "id": 8291866,
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8291866-kg.jpg?t=2025-08-09-13-38-59",
+                      "tier": "EXPERT",
+                      "url": "/olegzholobov"
+                    },
+                    "author_type": "TOPIC",
+                    "competition_ranking": 4369,
+                    "content": "<p>Mostly from public Hugging Face datasets, GitHub evaluation logs, etc. I preserve each source’s license metadata.</p>",
+                    "feedback_tracking_data": {},
+                    "id": 3539632,
+                    "is_thank_you": false,
+                    "kernel_version": 0,
+                    "parent": {},
+                    "post_date": "2026-10-16T07:29:57.500Z",
+                    "raw_markdown": "Mostly from public Hugging Face datasets, GitHub evaluation logs, etc. I preserve each source’s license metadata.\n",
+                    "replies": [
+                      {
+                        "author": {
+                          "display_name": "HZM",
+                          "id": 9464013,
+                          "progression_opt_out": false,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9464013-kg.jpg?t=2023-09-30-12-35-57",
+                          "tier": "GRANDMASTER",
+                          "url": "/leehann"
+                        },
+                        "author_type": "COMMENT",
+                        "competition_ranking": 3394,
+                        "content": "<p>did you try it to sft?</p>",
+                        "feedback_tracking_data": {},
+                        "id": 3539645,
+                        "is_thank_you": false,
+                        "kernel_version": 0,
+                        "parent": {},
+                        "post_date": "2026-10-16T08:05:10.930Z",
+                        "raw_markdown": "did you try it to sft?",
+                        "team_up_info": {
+                          "intro": "",
+                          "team_leader": {
+                            "display_name": "HZM",
+                            "id": 9464013,
+                            "performance_tier": "GRANDMASTER",
+                            "profile_url": "/leehann",
+                            "progression_opt_out": false,
+                            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9464013-kg.jpg?t=2023-09-30-12-35-57",
+                            "tier": "GRANDMASTER",
+                            "url": "/leehann",
+                            "user_id": 9464013,
+                            "user_name": "leehann"
+                          }
+                        },
+                        "votes": {
+                          "can_upvote": true
+                        }
+                      },
+                      {
+                        "author": {
+                          "display_name": "Oleg Zholobov",
+                          "id": 8291866,
+                          "progression_opt_out": false,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8291866-kg.jpg?t=2025-08-09-13-38-59",
+                          "tier": "EXPERT",
+                          "url": "/olegzholobov"
+                        },
+                        "author_type": "TOPIC",
+                        "competition_ranking": 4369,
+                        "content": "<p>not yet       </p>",
+                        "feedback_tracking_data": {},
+                        "id": 3539646,
+                        "is_thank_you": false,
+                        "kernel_version": 0,
+                        "parent": {},
+                        "post_date": "2026-10-16T08:06:09.120Z",
+                        "raw_markdown": "not yet       \n",
+                        "team_up_info": {
+                          "intro": "",
+                          "team_leader": {
+                            "display_name": "Oleg Zholobov",
+                            "id": 8291866,
+                            "performance_tier": "EXPERT",
+                            "profile_url": "/olegzholobov",
+                            "progression_opt_out": false,
+                            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8291866-kg.jpg?t=2025-08-09-13-38-59",
+                            "tier": "EXPERT",
+                            "url": "/olegzholobov",
+                            "user_id": 8291866,
+                            "user_name": "olegzholobov"
+                          }
+                        },
+                        "votes": {
+                          "can_upvote": true
+                        }
+                      }
+                    ],
+                    "team_up_info": {
+                      "intro": "",
+                      "team_leader": {
+                        "display_name": "Oleg Zholobov",
+                        "id": 8291866,
+                        "performance_tier": "EXPERT",
+                        "profile_url": "/olegzholobov",
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8291866-kg.jpg?t=2025-08-09-13-38-59",
+                        "tier": "EXPERT",
+                        "url": "/olegzholobov",
+                        "user_id": 8291866,
+                        "user_name": "olegzholobov"
+                      }
+                    },
+                    "votes": {
+                      "can_upvote": true
+                    }
+                  }
+                ],
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "HZM",
+                    "id": 9464013,
+                    "performance_tier": "GRANDMASTER",
+                    "profile_url": "/leehann",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9464013-kg.jpg?t=2023-09-30-12-35-57",
+                    "tier": "GRANDMASTER",
+                    "url": "/leehann",
+                    "user_id": 9464013,
+                    "user_name": "leehann"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true,
+                  "total_upvotes": 1,
+                  "total_votes": 1
+                }
+              },
+              {
+                "author": {
+                  "display_name": "HALX2158",
+                  "id": 16294566,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/mizuno0522"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 1099,
+                "content": "<p>Thanks for putting this together, the provenance columns made it easy to keep only licensed rows. One thing others may want to know: in our tests the formatting gap (line breaks, Markdown, length) made the corpus hurt CV when added to training, even after flattening. Per-model numbers are in <a href=\"https://www.kaggle.com/code/mizuno0522/model-fingerprints-punctuation-external-data\" target=\"_blank\">https://www.kaggle.com/code/mizuno0522/model-fingerprints-punctuation-external-data</a></p>\n<p>Maybe a \"single-paragraph, 40-250 words\" view would help people use it.</p>",
+                "feedback_tracking_data": {},
+                "id": 3540514,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-18T06:30:17.527Z",
+                "raw_markdown": "Thanks for putting this together, the provenance columns made it easy to keep only licensed rows. One thing others may want to know: in our tests the formatting gap (line breaks, Markdown, length) made the corpus hurt CV when added to training, even after flattening. Per-model numbers are in https://www.kaggle.com/code/mizuno0522/model-fingerprints-punctuation-external-data\n\nMaybe a \"single-paragraph, 40-250 words\" view would help people use it.",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "HALX2158",
+                    "id": 16294566,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/mizuno0522",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/mizuno0522",
+                    "user_id": 16294566,
+                    "user_name": "mizuno0522"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              }
+            ],
+            "first_message": {
+              "author": {
+                "display_name": "Oleg Zholobov",
+                "id": 8291866,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8291866-kg.jpg?t=2025-08-09-13-38-59",
+                "tier": "EXPERT",
+                "url": "/olegzholobov"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 4369,
+              "content": "<p>I collected an external response corpus for <strong>Name That LLM</strong>, organized as:</p>\n<p><code>id</code> · <code>prompt</code> · <strong>18 model-name columns</strong></p>\n<p><a href=\"https://www.kaggle.com/datasets/olegzholobov/name-that-llm-response-corpus\" target=\"_blank\"><strong>Dataset</strong></a> · <a href=\"https://www.kaggle.com/code/olegzholobov/name-that-llm-wide-data-overview\" target=\"_blank\"><strong>Overview notebook</strong></a> · <a href=\"https://www.kaggle.com/code/olegzholobov/name-that-llm-seaborn-nlp-explorer\" target=\"_blank\"><strong>Seaborn NLP explorer</strong></a></p>\n<table>\n<thead>\n<tr>\n<th>External view</th>\n<th>Unique responses</th>\n<th>Wide rows</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Full corpus</td>\n<td><strong>135,171</strong></td>\n<td>70,980</td>\n</tr>\n<tr>\n<td>40–250-word candidates</td>\n<td><strong>24,015</strong></td>\n<td>13,642</td>\n</tr>\n</tbody>\n</table>\n<p><strong>1,902 prompt groups have answers from all 18 models.</strong> Source URLs, model-label evidence and quality flags are preserved. The latest additions include Artificial Analysis, Novigens, APIFlow, JetBrains and RISE releases.</p>\n<p><strong>Overlap check:</strong> no exact or normalized matches with 2,699 original training answers, and no complete original answer found inside a longer external response. Candidate-based similarity checks also found no matches at 90%; this does not rule out every paraphrase.</p>\n<p>The notebooks keep original and external data separate. Original data loads through the competition attachment; missing prompt wording remains null. The NLP notebook has nine charts covering length, vocabulary, punctuation and prompt coverage.</p>\n<p><strong>Start with</strong> <code>external_short_wide.parquet</code>. Full data includes code, categorical and multimodal answers. A separate Luna quarantine has weaker labels and is excluded from default analysis.</p>\n<p>For validation, group by prompt and keep duplicate responses together. Shared prompts may have different system/history settings. Source licenses vary; see provenance and README.</p>",
+              "feedback_tracking_data": {},
+              "id": 3539242,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-15T16:27:34.560Z",
+              "raw_markdown": "I collected an external response corpus for **Name That LLM**, organized as:\n\n`id` · `prompt` · **18 model-name columns**\n\n[**Dataset**](https://www.kaggle.com/datasets/olegzholobov/name-that-llm-response-corpus) · [**Overview notebook**](https://www.kaggle.com/code/olegzholobov/name-that-llm-wide-data-overview) · [**Seaborn NLP explorer**](https://www.kaggle.com/code/olegzholobov/name-that-llm-seaborn-nlp-explorer)\n\n| External view | Unique responses | Wide rows |\n|---|---:|---:|\n| Full corpus | **135,171** | 70,980 |\n| 40–250-word candidates | **24,015** | 13,642 |\n\n**1,902 prompt groups have answers from all 18 models.** Source URLs, model-label evidence and quality flags are preserved. The latest additions include Artificial Analysis, Novigens, APIFlow, JetBrains and RISE releases.\n\n**Overlap check:** no exact or normalized matches with 2,699 original training answers, and no complete original answer found inside a longer external response. Candidate-based similarity checks also found no matches at 90%; this does not rule out every paraphrase.\n\nThe notebooks keep original and external data separate. Original data loads through the competition attachment; missing prompt wording remains null. The NLP notebook has nine charts covering length, vocabulary, punctuation and prompt coverage.\n\n**Start with** `external_short_wide.parquet`. Full data includes code, categorical and multimodal answers. A separate Luna quarantine has weaker labels and is excluded from default analysis.\n\nFor validation, group by prompt and keep duplicate responses together. Shared prompts may have different system/history settings. Source licenses vary; see provenance and README.\n",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Oleg Zholobov",
+                  "id": 8291866,
+                  "performance_tier": "EXPERT",
+                  "profile_url": "/olegzholobov",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8291866-kg.jpg?t=2025-08-09-13-38-59",
+                  "tier": "EXPERT",
+                  "url": "/olegzholobov",
+                  "user_id": 8291866,
+                  "user_name": "olegzholobov"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 33,
+                "total_votes": 33
+              }
+            },
+            "first_message_id": 3539242,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 749629,
+            "name": "18-model wide response additional corpus",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-10-15T16:27:34.561619600Z",
+            "total_messages": 5,
+            "total_votes": 33,
+            "url": "/competitions/name-that-llm/discussion/749629"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:36:12+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:36:12+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-10-18T06:30:17.526666700Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [
+    {
+      "slug": "name-that-llm",
+      "topic_id": 749629,
+      "message_id": 3539627,
+      "parent_message_id": null,
+      "author": "HZM",
+      "author_url": "/leehann",
+      "author_tier": "GRANDMASTER",
+      "post_date": "2026-10-16T07:18:41.063Z",
+      "raw_markdown": "may i know where and how you grab so valuable data, it is helpful",
+      "content_html": "<p>may i know where and how you grab so valuable data, it is helpful</p>",
+      "votes": 1,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:56:29+00:00",
+      "last_seen_at": "2026-11-16T16:36:12+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:36:12+00:00",
+      "remote_last_listed_at": "2026-11-16T16:36:12+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "HZM",
+          "tier": "GRANDMASTER",
+          "url": "/leehann"
+        },
+        "content": "<p>may i know where and how you grab so valuable data, it is helpful</p>",
+        "id": 3539627,
+        "isThankYou": false,
+        "postDate": "2026-10-16T07:18:41.063Z",
+        "raw": {
+          "author": {
+            "display_name": "HZM",
+            "id": 9464013,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9464013-kg.jpg?t=2023-09-30-12-35-57",
+            "tier": "GRANDMASTER",
+            "url": "/leehann"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 3394,
+          "content": "<p>may i know where and how you grab so valuable data, it is helpful</p>",
+          "feedback_tracking_data": {},
+          "id": 3539627,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-16T07:18:41.063Z",
+          "raw_markdown": "may i know where and how you grab so valuable data, it is helpful",
+          "replies": [
+            {
+              "author": {
+                "display_name": "Oleg Zholobov",
+                "id": 8291866,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8291866-kg.jpg?t=2025-08-09-13-38-59",
+                "tier": "EXPERT",
+                "url": "/olegzholobov"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 4369,
+              "content": "<p>Mostly from public Hugging Face datasets, GitHub evaluation logs, etc. I preserve each source’s license metadata.</p>",
+              "feedback_tracking_data": {},
+              "id": 3539632,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-16T07:29:57.500Z",
+              "raw_markdown": "Mostly from public Hugging Face datasets, GitHub evaluation logs, etc. I preserve each source’s license metadata.\n",
+              "replies": [
+                {
+                  "author": {
+                    "display_name": "HZM",
+                    "id": 9464013,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9464013-kg.jpg?t=2023-09-30-12-35-57",
+                    "tier": "GRANDMASTER",
+                    "url": "/leehann"
+                  },
+                  "author_type": "COMMENT",
+                  "competition_ranking": 3394,
+                  "content": "<p>did you try it to sft?</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3539645,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-16T08:05:10.930Z",
+                  "raw_markdown": "did you try it to sft?",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "HZM",
+                      "id": 9464013,
+                      "performance_tier": "GRANDMASTER",
+                      "profile_url": "/leehann",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9464013-kg.jpg?t=2023-09-30-12-35-57",
+                      "tier": "GRANDMASTER",
+                      "url": "/leehann",
+                      "user_id": 9464013,
+                      "user_name": "leehann"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                },
+                {
+                  "author": {
+                    "display_name": "Oleg Zholobov",
+                    "id": 8291866,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8291866-kg.jpg?t=2025-08-09-13-38-59",
+                    "tier": "EXPERT",
+                    "url": "/olegzholobov"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 4369,
+                  "content": "<p>not yet       </p>",
+                  "feedback_tracking_data": {},
+                  "id": 3539646,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-16T08:06:09.120Z",
+                  "raw_markdown": "not yet       \n",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Oleg Zholobov",
+                      "id": 8291866,
+                      "performance_tier": "EXPERT",
+                      "profile_url": "/olegzholobov",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8291866-kg.jpg?t=2025-08-09-13-38-59",
+                      "tier": "EXPERT",
+                      "url": "/olegzholobov",
+                      "user_id": 8291866,
+                      "user_name": "olegzholobov"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Oleg Zholobov",
+                  "id": 8291866,
+                  "performance_tier": "EXPERT",
+                  "profile_url": "/olegzholobov",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8291866-kg.jpg?t=2025-08-09-13-38-59",
+                  "tier": "EXPERT",
+                  "url": "/olegzholobov",
+                  "user_id": 8291866,
+                  "user_name": "olegzholobov"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            }
+          ],
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "HZM",
+              "id": 9464013,
+              "performance_tier": "GRANDMASTER",
+              "profile_url": "/leehann",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9464013-kg.jpg?t=2023-09-30-12-35-57",
+              "tier": "GRANDMASTER",
+              "url": "/leehann",
+              "user_id": 9464013,
+              "user_name": "leehann"
+            }
+          },
+          "votes": {
+            "can_upvote": true,
+            "total_upvotes": 1,
+            "total_votes": 1
+          }
+        },
+        "rawMarkdown": "may i know where and how you grab so valuable data, it is helpful",
+        "replies": [
+          {
+            "author": {
+              "displayName": "Oleg Zholobov",
+              "tier": "EXPERT",
+              "url": "/olegzholobov"
+            },
+            "content": "<p>Mostly from public Hugging Face datasets, GitHub evaluation logs, etc. I preserve each source’s license metadata.</p>",
+            "id": 3539632,
+            "isThankYou": false,
+            "postDate": "2026-10-16T07:29:57.500Z",
+            "raw": {
+              "author": {
+                "display_name": "Oleg Zholobov",
+                "id": 8291866,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8291866-kg.jpg?t=2025-08-09-13-38-59",
+                "tier": "EXPERT",
+                "url": "/olegzholobov"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 4369,
+              "content": "<p>Mostly from public Hugging Face datasets, GitHub evaluation logs, etc. I preserve each source’s license metadata.</p>",
+              "feedback_tracking_data": {},
+              "id": 3539632,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-16T07:29:57.500Z",
+              "raw_markdown": "Mostly from public Hugging Face datasets, GitHub evaluation logs, etc. I preserve each source’s license metadata.\n",
+              "replies": [
+                {
+                  "author": {
+                    "display_name": "HZM",
+                    "id": 9464013,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9464013-kg.jpg?t=2023-09-30-12-35-57",
+                    "tier": "GRANDMASTER",
+                    "url": "/leehann"
+                  },
+                  "author_type": "COMMENT",
+                  "competition_ranking": 3394,
+                  "content": "<p>did you try it to sft?</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3539645,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-16T08:05:10.930Z",
+                  "raw_markdown": "did you try it to sft?",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "HZM",
+                      "id": 9464013,
+                      "performance_tier": "GRANDMASTER",
+                      "profile_url": "/leehann",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9464013-kg.jpg?t=2023-09-30-12-35-57",
+                      "tier": "GRANDMASTER",
+                      "url": "/leehann",
+                      "user_id": 9464013,
+                      "user_name": "leehann"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                },
+                {
+                  "author": {
+                    "display_name": "Oleg Zholobov",
+                    "id": 8291866,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8291866-kg.jpg?t=2025-08-09-13-38-59",
+                    "tier": "EXPERT",
+                    "url": "/olegzholobov"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 4369,
+                  "content": "<p>not yet       </p>",
+                  "feedback_tracking_data": {},
+                  "id": 3539646,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-16T08:06:09.120Z",
+                  "raw_markdown": "not yet       \n",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Oleg Zholobov",
+                      "id": 8291866,
+                      "performance_tier": "EXPERT",
+                      "profile_url": "/olegzholobov",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8291866-kg.jpg?t=2025-08-09-13-38-59",
+                      "tier": "EXPERT",
+                      "url": "/olegzholobov",
+                      "user_id": 8291866,
+                      "user_name": "olegzholobov"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Oleg Zholobov",
+                  "id": 8291866,
+                  "performance_tier": "EXPERT",
+                  "profile_url": "/olegzholobov",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8291866-kg.jpg?t=2025-08-09-13-38-59",
+                  "tier": "EXPERT",
+                  "url": "/olegzholobov",
+                  "user_id": 8291866,
+                  "user_name": "olegzholobov"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "Mostly from public Hugging Face datasets, GitHub evaluation logs, etc. I preserve each source’s license metadata.\n",
+            "replies": [
+              {
+                "author": {
+                  "displayName": "HZM",
+                  "tier": "GRANDMASTER",
+                  "url": "/leehann"
+                },
+                "content": "<p>did you try it to sft?</p>",
+                "id": 3539645,
+                "isThankYou": false,
+                "postDate": "2026-10-16T08:05:10.930Z",
+                "raw": {
+                  "author": {
+                    "display_name": "HZM",
+                    "id": 9464013,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9464013-kg.jpg?t=2023-09-30-12-35-57",
+                    "tier": "GRANDMASTER",
+                    "url": "/leehann"
+                  },
+                  "author_type": "COMMENT",
+                  "competition_ranking": 3394,
+                  "content": "<p>did you try it to sft?</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3539645,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-16T08:05:10.930Z",
+                  "raw_markdown": "did you try it to sft?",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "HZM",
+                      "id": 9464013,
+                      "performance_tier": "GRANDMASTER",
+                      "profile_url": "/leehann",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9464013-kg.jpg?t=2023-09-30-12-35-57",
+                      "tier": "GRANDMASTER",
+                      "url": "/leehann",
+                      "user_id": 9464013,
+                      "user_name": "leehann"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                },
+                "rawMarkdown": "did you try it to sft?",
+                "replies": [],
+                "votes": {
+                  "totalVotes": 0
+                }
+              },
+              {
+                "author": {
+                  "displayName": "Oleg Zholobov",
+                  "tier": "EXPERT",
+                  "url": "/olegzholobov"
+                },
+                "content": "<p>not yet       </p>",
+                "id": 3539646,
+                "isThankYou": false,
+                "postDate": "2026-10-16T08:06:09.120Z",
+                "raw": {
+                  "author": {
+                    "display_name": "Oleg Zholobov",
+                    "id": 8291866,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8291866-kg.jpg?t=2025-08-09-13-38-59",
+                    "tier": "EXPERT",
+                    "url": "/olegzholobov"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 4369,
+                  "content": "<p>not yet       </p>",
+                  "feedback_tracking_data": {},
+                  "id": 3539646,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-16T08:06:09.120Z",
+                  "raw_markdown": "not yet       \n",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Oleg Zholobov",
+                      "id": 8291866,
+                      "performance_tier": "EXPERT",
+                      "profile_url": "/olegzholobov",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8291866-kg.jpg?t=2025-08-09-13-38-59",
+                      "tier": "EXPERT",
+                      "url": "/olegzholobov",
+                      "user_id": 8291866,
+                      "user_name": "olegzholobov"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                },
+                "rawMarkdown": "not yet       \n",
+                "replies": [],
+                "votes": {
+                  "totalVotes": 0
+                }
+              }
+            ],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "votes": {
+          "totalVotes": 1
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 749629,
+      "message_id": 3539632,
+      "parent_message_id": 3539627,
+      "author": "Oleg Zholobov",
+      "author_url": "/olegzholobov",
+      "author_tier": "EXPERT",
+      "post_date": "2026-10-16T07:29:57.500Z",
+      "raw_markdown": "Mostly from public Hugging Face datasets, GitHub evaluation logs, etc. I preserve each source’s license metadata.\n",
+      "content_html": "<p>Mostly from public Hugging Face datasets, GitHub evaluation logs, etc. I preserve each source’s license metadata.</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 1,
+      "first_seen_at": "2026-11-04T06:56:29+00:00",
+      "last_seen_at": "2026-11-16T16:36:12+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:36:12+00:00",
+      "remote_last_listed_at": "2026-11-16T16:36:12+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Oleg Zholobov",
+          "tier": "EXPERT",
+          "url": "/olegzholobov"
+        },
+        "content": "<p>Mostly from public Hugging Face datasets, GitHub evaluation logs, etc. I preserve each source’s license metadata.</p>",
+        "id": 3539632,
+        "isThankYou": false,
+        "postDate": "2026-10-16T07:29:57.500Z",
+        "raw": {
+          "author": {
+            "display_name": "Oleg Zholobov",
+            "id": 8291866,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8291866-kg.jpg?t=2025-08-09-13-38-59",
+            "tier": "EXPERT",
+            "url": "/olegzholobov"
+          },
+          "author_type": "TOPIC",
+          "competition_ranking": 4369,
+          "content": "<p>Mostly from public Hugging Face datasets, GitHub evaluation logs, etc. I preserve each source’s license metadata.</p>",
+          "feedback_tracking_data": {},
+          "id": 3539632,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-16T07:29:57.500Z",
+          "raw_markdown": "Mostly from public Hugging Face datasets, GitHub evaluation logs, etc. I preserve each source’s license metadata.\n",
+          "replies": [
+            {
+              "author": {
+                "display_name": "HZM",
+                "id": 9464013,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9464013-kg.jpg?t=2023-09-30-12-35-57",
+                "tier": "GRANDMASTER",
+                "url": "/leehann"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 3394,
+              "content": "<p>did you try it to sft?</p>",
+              "feedback_tracking_data": {},
+              "id": 3539645,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-16T08:05:10.930Z",
+              "raw_markdown": "did you try it to sft?",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "HZM",
+                  "id": 9464013,
+                  "performance_tier": "GRANDMASTER",
+                  "profile_url": "/leehann",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9464013-kg.jpg?t=2023-09-30-12-35-57",
+                  "tier": "GRANDMASTER",
+                  "url": "/leehann",
+                  "user_id": 9464013,
+                  "user_name": "leehann"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            {
+              "author": {
+                "display_name": "Oleg Zholobov",
+                "id": 8291866,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8291866-kg.jpg?t=2025-08-09-13-38-59",
+                "tier": "EXPERT",
+                "url": "/olegzholobov"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 4369,
+              "content": "<p>not yet       </p>",
+              "feedback_tracking_data": {},
+              "id": 3539646,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-16T08:06:09.120Z",
+              "raw_markdown": "not yet       \n",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Oleg Zholobov",
+                  "id": 8291866,
+                  "performance_tier": "EXPERT",
+                  "profile_url": "/olegzholobov",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8291866-kg.jpg?t=2025-08-09-13-38-59",
+                  "tier": "EXPERT",
+                  "url": "/olegzholobov",
+                  "user_id": 8291866,
+                  "user_name": "olegzholobov"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            }
+          ],
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Oleg Zholobov",
+              "id": 8291866,
+              "performance_tier": "EXPERT",
+              "profile_url": "/olegzholobov",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8291866-kg.jpg?t=2025-08-09-13-38-59",
+              "tier": "EXPERT",
+              "url": "/olegzholobov",
+              "user_id": 8291866,
+              "user_name": "olegzholobov"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "Mostly from public Hugging Face datasets, GitHub evaluation logs, etc. I preserve each source’s license metadata.\n",
+        "replies": [
+          {
+            "author": {
+              "displayName": "HZM",
+              "tier": "GRANDMASTER",
+              "url": "/leehann"
+            },
+            "content": "<p>did you try it to sft?</p>",
+            "id": 3539645,
+            "isThankYou": false,
+            "postDate": "2026-10-16T08:05:10.930Z",
+            "raw": {
+              "author": {
+                "display_name": "HZM",
+                "id": 9464013,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9464013-kg.jpg?t=2023-09-30-12-35-57",
+                "tier": "GRANDMASTER",
+                "url": "/leehann"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 3394,
+              "content": "<p>did you try it to sft?</p>",
+              "feedback_tracking_data": {},
+              "id": 3539645,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-16T08:05:10.930Z",
+              "raw_markdown": "did you try it to sft?",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "HZM",
+                  "id": 9464013,
+                  "performance_tier": "GRANDMASTER",
+                  "profile_url": "/leehann",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9464013-kg.jpg?t=2023-09-30-12-35-57",
+                  "tier": "GRANDMASTER",
+                  "url": "/leehann",
+                  "user_id": 9464013,
+                  "user_name": "leehann"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "did you try it to sft?",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          },
+          {
+            "author": {
+              "displayName": "Oleg Zholobov",
+              "tier": "EXPERT",
+              "url": "/olegzholobov"
+            },
+            "content": "<p>not yet       </p>",
+            "id": 3539646,
+            "isThankYou": false,
+            "postDate": "2026-10-16T08:06:09.120Z",
+            "raw": {
+              "author": {
+                "display_name": "Oleg Zholobov",
+                "id": 8291866,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8291866-kg.jpg?t=2025-08-09-13-38-59",
+                "tier": "EXPERT",
+                "url": "/olegzholobov"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 4369,
+              "content": "<p>not yet       </p>",
+              "feedback_tracking_data": {},
+              "id": 3539646,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-16T08:06:09.120Z",
+              "raw_markdown": "not yet       \n",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Oleg Zholobov",
+                  "id": 8291866,
+                  "performance_tier": "EXPERT",
+                  "profile_url": "/olegzholobov",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8291866-kg.jpg?t=2025-08-09-13-38-59",
+                  "tier": "EXPERT",
+                  "url": "/olegzholobov",
+                  "user_id": 8291866,
+                  "user_name": "olegzholobov"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "not yet       \n",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 749629,
+      "message_id": 3539645,
+      "parent_message_id": 3539632,
+      "author": "HZM",
+      "author_url": "/leehann",
+      "author_tier": "GRANDMASTER",
+      "post_date": "2026-10-16T08:05:10.930Z",
+      "raw_markdown": "did you try it to sft?",
+      "content_html": "<p>did you try it to sft?</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 2,
+      "first_seen_at": "2026-11-04T06:56:29+00:00",
+      "last_seen_at": "2026-11-16T16:36:12+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:36:12+00:00",
+      "remote_last_listed_at": "2026-11-16T16:36:12+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "HZM",
+          "tier": "GRANDMASTER",
+          "url": "/leehann"
+        },
+        "content": "<p>did you try it to sft?</p>",
+        "id": 3539645,
+        "isThankYou": false,
+        "postDate": "2026-10-16T08:05:10.930Z",
+        "raw": {
+          "author": {
+            "display_name": "HZM",
+            "id": 9464013,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9464013-kg.jpg?t=2023-09-30-12-35-57",
+            "tier": "GRANDMASTER",
+            "url": "/leehann"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 3394,
+          "content": "<p>did you try it to sft?</p>",
+          "feedback_tracking_data": {},
+          "id": 3539645,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-16T08:05:10.930Z",
+          "raw_markdown": "did you try it to sft?",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "HZM",
+              "id": 9464013,
+              "performance_tier": "GRANDMASTER",
+              "profile_url": "/leehann",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9464013-kg.jpg?t=2023-09-30-12-35-57",
+              "tier": "GRANDMASTER",
+              "url": "/leehann",
+              "user_id": 9464013,
+              "user_name": "leehann"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "did you try it to sft?",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 749629,
+      "message_id": 3539646,
+      "parent_message_id": 3539632,
+      "author": "Oleg Zholobov",
+      "author_url": "/olegzholobov",
+      "author_tier": "EXPERT",
+      "post_date": "2026-10-16T08:06:09.120Z",
+      "raw_markdown": "not yet       \n",
+      "content_html": "<p>not yet       </p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 2,
+      "first_seen_at": "2026-11-04T06:56:29+00:00",
+      "last_seen_at": "2026-11-16T16:36:12+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:36:12+00:00",
+      "remote_last_listed_at": "2026-11-16T16:36:12+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Oleg Zholobov",
+          "tier": "EXPERT",
+          "url": "/olegzholobov"
+        },
+        "content": "<p>not yet       </p>",
+        "id": 3539646,
+        "isThankYou": false,
+        "postDate": "2026-10-16T08:06:09.120Z",
+        "raw": {
+          "author": {
+            "display_name": "Oleg Zholobov",
+            "id": 8291866,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8291866-kg.jpg?t=2025-08-09-13-38-59",
+            "tier": "EXPERT",
+            "url": "/olegzholobov"
+          },
+          "author_type": "TOPIC",
+          "competition_ranking": 4369,
+          "content": "<p>not yet       </p>",
+          "feedback_tracking_data": {},
+          "id": 3539646,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-16T08:06:09.120Z",
+          "raw_markdown": "not yet       \n",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Oleg Zholobov",
+              "id": 8291866,
+              "performance_tier": "EXPERT",
+              "profile_url": "/olegzholobov",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8291866-kg.jpg?t=2025-08-09-13-38-59",
+              "tier": "EXPERT",
+              "url": "/olegzholobov",
+              "user_id": 8291866,
+              "user_name": "olegzholobov"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "not yet       \n",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 749629,
+      "message_id": 3540514,
+      "parent_message_id": null,
+      "author": "HALX2158",
+      "author_url": "/mizuno0522",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-10-18T06:30:17.527Z",
+      "raw_markdown": "Thanks for putting this together, the provenance columns made it easy to keep only licensed rows. One thing others may want to know: in our tests the formatting gap (line breaks, Markdown, length) made the corpus hurt CV when added to training, even after flattening. Per-model numbers are in https://www.kaggle.com/code/mizuno0522/model-fingerprints-punctuation-external-data\n\nMaybe a \"single-paragraph, 40-250 words\" view would help people use it.",
+      "content_html": "<p>Thanks for putting this together, the provenance columns made it easy to keep only licensed rows. One thing others may want to know: in our tests the formatting gap (line breaks, Markdown, length) made the corpus hurt CV when added to training, even after flattening. Per-model numbers are in <a href=\"https://www.kaggle.com/code/mizuno0522/model-fingerprints-punctuation-external-data\" target=\"_blank\">https://www.kaggle.com/code/mizuno0522/model-fingerprints-punctuation-external-data</a></p>\n<p>Maybe a \"single-paragraph, 40-250 words\" view would help people use it.</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:56:29+00:00",
+      "last_seen_at": "2026-11-16T16:36:12+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:36:12+00:00",
+      "remote_last_listed_at": "2026-11-16T16:36:12+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "HALX2158",
+          "tier": "CONTRIBUTOR",
+          "url": "/mizuno0522"
+        },
+        "content": "<p>Thanks for putting this together, the provenance columns made it easy to keep only licensed rows. One thing others may want to know: in our tests the formatting gap (line breaks, Markdown, length) made the corpus hurt CV when added to training, even after flattening. Per-model numbers are in <a href=\"https://www.kaggle.com/code/mizuno0522/model-fingerprints-punctuation-external-data\" target=\"_blank\">https://www.kaggle.com/code/mizuno0522/model-fingerprints-punctuation-external-data</a></p>\n<p>Maybe a \"single-paragraph, 40-250 words\" view would help people use it.</p>",
+        "id": 3540514,
+        "isThankYou": false,
+        "postDate": "2026-10-18T06:30:17.527Z",
+        "raw": {
+          "author": {
+            "display_name": "HALX2158",
+            "id": 16294566,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+            "tier": "CONTRIBUTOR",
+            "url": "/mizuno0522"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 1099,
+          "content": "<p>Thanks for putting this together, the provenance columns made it easy to keep only licensed rows. One thing others may want to know: in our tests the formatting gap (line breaks, Markdown, length) made the corpus hurt CV when added to training, even after flattening. Per-model numbers are in <a href=\"https://www.kaggle.com/code/mizuno0522/model-fingerprints-punctuation-external-data\" target=\"_blank\">https://www.kaggle.com/code/mizuno0522/model-fingerprints-punctuation-external-data</a></p>\n<p>Maybe a \"single-paragraph, 40-250 words\" view would help people use it.</p>",
+          "feedback_tracking_data": {},
+          "id": 3540514,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-18T06:30:17.527Z",
+          "raw_markdown": "Thanks for putting this together, the provenance columns made it easy to keep only licensed rows. One thing others may want to know: in our tests the formatting gap (line breaks, Markdown, length) made the corpus hurt CV when added to training, even after flattening. Per-model numbers are in https://www.kaggle.com/code/mizuno0522/model-fingerprints-punctuation-external-data\n\nMaybe a \"single-paragraph, 40-250 words\" view would help people use it.",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "HALX2158",
+              "id": 16294566,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/mizuno0522",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+              "tier": "CONTRIBUTOR",
+              "url": "/mizuno0522",
+              "user_id": 16294566,
+              "user_name": "mizuno0522"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "Thanks for putting this together, the provenance columns made it easy to keep only licensed rows. One thing others may want to know: in our tests the formatting gap (line breaks, Markdown, length) made the corpus hurt CV when added to training, even after flattening. Per-model numbers are in https://www.kaggle.com/code/mizuno0522/model-fingerprints-punctuation-external-data\n\nMaybe a \"single-paragraph, 40-250 words\" view would help people use it.",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    }
+  ],
+  "writeup": null
+}

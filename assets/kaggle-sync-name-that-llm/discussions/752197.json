@@ -1,0 +1,623 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 752197,
+    "title": "The glm-5.3 / glm-5.3-flash / claude-fable-5 corner: noise floor, or is there a lever?",
+    "author": "Meni David Gottesman",
+    "author_url": "/menidavidgottesman",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-10-23T22:42:16.825807500Z",
+    "last_comment_post_date": "2026-11-19T09:56:57.966666700Z",
+    "comment_count": 2,
+    "votes": 4,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/752197",
+    "first_message_id": 3543716,
+    "first_seen_at": "2026-11-04T06:56:16+00:00",
+    "last_seen_at": "2026-11-19T12:45:34+00:00",
+    "detail_last_synced_at": "2026-11-19T12:45:34+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-19T12:45:20+00:00",
+    "remote_last_listed_at": "2026-11-19T12:45:20+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "a280ea0b72cbe34ef6d2c9de48c001329de5c0258d9f5110849708ea7716860e",
+    "listing_metrics_hash": "818a5cc0f2253a82207ce555576d24d0d4b4461b2ac293b834a011f9d570c30a",
+    "detail_content_hash": "340783d148ba0e73f8df415b9e2fce25fdc7e2a61f0963e531c30471b6c89267",
+    "detail_last_checked_at": "2026-11-19T12:45:34+00:00",
+    "detail_next_check_at": "2026-11-22T12:45:34+00:00",
+    "detail_unchanged_count": 1,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 2,
+      "firstForumMessageId": null,
+      "id": 752197,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-11-19T09:56:57.966666700Z",
+      "postDate": "2026-10-23T22:42:16.825807500Z",
+      "raw": {
+        "comment_count": 2,
+        "id": 752197,
+        "last_comment_post_date": "2026-11-19T09:56:57.966666700Z",
+        "post_date": "2026-10-23T22:42:16.825807500Z",
+        "title": "The glm-5.3 / glm-5.3-flash / claude-fable-5 corner: noise floor, or is there a lever?",
+        "topic_url": "/competitions/name-that-llm/discussion/752197",
+        "votes": 4
+      },
+      "title": "The glm-5.3 / glm-5.3-flash / claude-fable-5 corner: noise floor, or is there a lever?",
+      "topicUrl": "/competitions/name-that-llm/discussion/752197",
+      "votes": 4
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "Meni David Gottesman",
+        "authorUserName": "menidavidgottesman",
+        "comments": [
+          {
+            "author": {
+              "displayName": "AliMhd",
+              "tier": "CONTRIBUTOR",
+              "url": "/alimhd"
+            },
+            "content": "<p>I think you found your answer since you are leading the board </p>",
+            "id": 3556391,
+            "isThankYou": false,
+            "postDate": "2026-11-18T09:08:12.867Z",
+            "raw": {
+              "author": {
+                "display_name": "AliMhd",
+                "id": 5303174,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/alimhd"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 861,
+              "content": "<p>I think you found your answer since you are leading the board </p>",
+              "feedback_tracking_data": {},
+              "id": 3556391,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-18T09:08:12.867Z",
+              "raw_markdown": "I think you found your answer since you are leading the board ",
+              "reactions": [
+                {
+                  "emoji": "LOVE",
+                  "featured_user_names": [
+                    "mikoajkurtyka",
+                    "ggayoayogg",
+                    "tsydenovbair"
+                  ],
+                  "user_count": 3
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "AliMhd",
+                  "id": 5303174,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/alimhd",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/alimhd",
+                  "user_id": 5303174,
+                  "user_name": "alimhd"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 2,
+                "total_votes": 2
+              }
+            },
+            "rawMarkdown": "I think you found your answer since you are leading the board ",
+            "replies": [],
+            "votes": {
+              "totalVotes": 2
+            }
+          },
+          {
+            "author": {
+              "displayName": "Zuuk",
+              "tier": "CONTRIBUTOR",
+              "url": "/tzurvaich"
+            },
+            "content": "<p>I’m doing error analysis on a somewhat older shared solution, reported around 0.660. My reproduction reached 0.658. I started mainly to understand the system, then explore improvements through its existing representations and decision process.</p>\n<p>I captured component scores and intermediate blending stages for all 2,699 training passages, then analyzed expert disagreements, component removals and cases where blending overrides a correct expert. This includes tracing the existing family specialists.</p>\n<p>One negative result may be relevant. Removing a Qwen3-14B score head improved the training proxy but lowered my submission score to 0.649. A confidence-based override using the complementary stack scored 0.643 at a 90% threshold and 0.655 at 98%.</p>\n<p>My next step is prompt-held-out evaluation of the style components to see which apparent distinctions survive.</p>",
+            "id": 3556864,
+            "isThankYou": false,
+            "postDate": "2026-11-19T09:56:57.967Z",
+            "raw": {
+              "author": {
+                "display_name": "Zuuk",
+                "id": 69790,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/tzurvaich"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 2566,
+              "content": "<p>I’m doing error analysis on a somewhat older shared solution, reported around 0.660. My reproduction reached 0.658. I started mainly to understand the system, then explore improvements through its existing representations and decision process.</p>\n<p>I captured component scores and intermediate blending stages for all 2,699 training passages, then analyzed expert disagreements, component removals and cases where blending overrides a correct expert. This includes tracing the existing family specialists.</p>\n<p>One negative result may be relevant. Removing a Qwen3-14B score head improved the training proxy but lowered my submission score to 0.649. A confidence-based override using the complementary stack scored 0.643 at a 90% threshold and 0.655 at 98%.</p>\n<p>My next step is prompt-held-out evaluation of the style components to see which apparent distinctions survive.</p>",
+              "feedback_tracking_data": {},
+              "id": 3556864,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-19T09:56:57.967Z",
+              "raw_markdown": "I’m doing error analysis on a somewhat older shared solution, reported around 0.660. My reproduction reached 0.658. I started mainly to understand the system, then explore improvements through its existing representations and decision process.\n\nI captured component scores and intermediate blending stages for all 2,699 training passages, then analyzed expert disagreements, component removals and cases where blending overrides a correct expert. This includes tracing the existing family specialists.\n\nOne negative result may be relevant. Removing a Qwen3-14B score head improved the training proxy but lowered my submission score to 0.649. A confidence-based override using the complementary stack scored 0.643 at a 90% threshold and 0.655 at 98%.\n\nMy next step is prompt-held-out evaluation of the style components to see which apparent distinctions survive.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Zuuk",
+                  "id": 69790,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/tzurvaich",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/tzurvaich",
+                  "user_id": 69790,
+                  "user_name": "tzurvaich"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "I’m doing error analysis on a somewhat older shared solution, reported around 0.660. My reproduction reached 0.658. I started mainly to understand the system, then explore improvements through its existing representations and decision process.\n\nI captured component scores and intermediate blending stages for all 2,699 training passages, then analyzed expert disagreements, component removals and cases where blending overrides a correct expert. This includes tracing the existing family specialists.\n\nOne negative result may be relevant. Removing a Qwen3-14B score head improved the training proxy but lowered my submission score to 0.649. A confidence-based override using the complementary stack scored 0.643 at a 90% threshold and 0.655 at 98%.\n\nMy next step is prompt-held-out evaluation of the style components to see which apparent distinctions survive.",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "expectedCommentCount": 2,
+        "firstMessage": {
+          "author": {
+            "displayName": "Meni David Gottesman",
+            "tier": "CONTRIBUTOR",
+            "url": "/menidavidgottesman"
+          },
+          "content": "<p>Has anyone found something that genuinely separates these three (a representation, a training-data choice, a decoding trick), or is the working assumption that it's near the noise floor and effort is better spent elsewhere? Negative results are just as useful.</p>",
+          "id": 3543716,
+          "isThankYou": false,
+          "postDate": "2026-10-23T22:42:16.827Z",
+          "raw": {
+            "author": {
+              "display_name": "Meni David Gottesman",
+              "id": 37057971,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/37057971-kg.png?t=2026-11-18-18-12-06",
+              "tier": "CONTRIBUTOR",
+              "url": "/menidavidgottesman"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 1,
+            "content": "<p>Has anyone found something that genuinely separates these three (a representation, a training-data choice, a decoding trick), or is the working assumption that it's near the noise floor and effort is better spent elsewhere? Negative results are just as useful.</p>",
+            "feedback_tracking_data": {},
+            "id": 3543716,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-10-23T22:42:16.827Z",
+            "raw_markdown": "Has anyone found something that genuinely separates these three (a representation, a training-data choice, a decoding trick), or is the working assumption that it's near the noise floor and effort is better spent elsewhere? Negative results are just as useful.",
+            "reactions": [
+              {
+                "emoji": "SURPRISE",
+                "featured_user_names": [
+                  "osakanateishoku"
+                ],
+                "user_count": 1
+              }
+            ],
+            "team_up_info": {
+              "enabled": true,
+              "intro": "",
+              "team_leader": {
+                "display_name": "Meni David Gottesman",
+                "id": 37057971,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/menidavidgottesman",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/37057971-kg.png?t=2026-11-18-18-12-06",
+                "tier": "CONTRIBUTOR",
+                "url": "/menidavidgottesman",
+                "user_id": 37057971,
+                "user_name": "menidavidgottesman"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 5,
+              "total_votes": 4
+            }
+          },
+          "rawMarkdown": "Has anyone found something that genuinely separates these three (a representation, a training-data choice, a decoding trick), or is the working assumption that it's near the noise floor and effort is better spent elsewhere? Negative results are just as useful.",
+          "replies": [],
+          "votes": {
+            "totalVotes": 4
+          }
+        },
+        "firstMessageId": 3543716,
+        "id": 752197,
+        "name": "The glm-5.3 / glm-5.3-flash / claude-fable-5 corner: noise floor, or is there a lever?",
+        "postDate": "2026-10-23T22:42:16.825807500Z",
+        "url": "/competitions/name-that-llm/discussion/752197"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>Has anyone found something that genuinely separates these three (a representation, a training-data choice, a decoding trick), or is the working assumption that it's near the noise floor and effort is better spent elsewhere? Negative results are just as useful.</p>",
+              "id": 3543716,
+              "post_date": "2026-10-23T22:42:16.827Z",
+              "raw_markdown": "Has anyone found something that genuinely separates these three (a representation, a training-data choice, a decoding trick), or is the working assumption that it's near the noise floor and effort is better spent elsewhere? Negative results are just as useful.",
+              "votes": 4
+            },
+            {
+              "content": "<p>I think you found your answer since you are leading the board </p>",
+              "id": 3556391,
+              "post_date": "2026-11-18T09:08:12.867Z",
+              "raw_markdown": "I think you found your answer since you are leading the board ",
+              "votes": 2
+            },
+            {
+              "content": "<p>I’m doing error analysis on a somewhat older shared solution, reported around 0.660. My reproduction reached 0.658. I started mainly to understand the system, then explore improvements through its existing representations and decision process.</p>\n<p>I captured component scores and intermediate blending stages for all 2,699 training passages, then analyzed expert disagreements, component removals and cases where blending overrides a correct expert. This includes tracing the existing family specialists.</p>\n<p>One negative result may be relevant. Removing a Qwen3-14B score head improved the training proxy but lowered my submission score to 0.649. A confidence-based override using the complementary stack scored 0.643 at a 90% threshold and 0.655 at 98%.</p>\n<p>My next step is prompt-held-out evaluation of the style components to see which apparent distinctions survive.</p>",
+              "id": 3556864,
+              "post_date": "2026-11-19T09:56:57.967Z",
+              "raw_markdown": "I’m doing error analysis on a somewhat older shared solution, reported around 0.660. My reproduction reached 0.658. I started mainly to understand the system, then explore improvements through its existing representations and decision process.\n\nI captured component scores and intermediate blending stages for all 2,699 training passages, then analyzed expert disagreements, component removals and cases where blending overrides a correct expert. This includes tracing the existing family specialists.\n\nOne negative result may be relevant. Removing a Qwen3-14B score head improved the training proxy but lowered my submission score to 0.649. A confidence-based override using the complementary stack scored 0.643 at a 90% threshold and 0.655 at 98%.\n\nMy next step is prompt-held-out evaluation of the style components to see which apparent distinctions survive."
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 37057971,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "37057971-kg.png?t=2026-11-18-18-12-06",
+            "author_user_display_name": "Meni David Gottesman",
+            "author_user_name": "menidavidgottesman",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "comments": [
+              {
+                "author": {
+                  "display_name": "AliMhd",
+                  "id": 5303174,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/alimhd"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 861,
+                "content": "<p>I think you found your answer since you are leading the board </p>",
+                "feedback_tracking_data": {},
+                "id": 3556391,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-11-18T09:08:12.867Z",
+                "raw_markdown": "I think you found your answer since you are leading the board ",
+                "reactions": [
+                  {
+                    "emoji": "LOVE",
+                    "featured_user_names": [
+                      "mikoajkurtyka",
+                      "ggayoayogg",
+                      "tsydenovbair"
+                    ],
+                    "user_count": 3
+                  }
+                ],
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "AliMhd",
+                    "id": 5303174,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/alimhd",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/alimhd",
+                    "user_id": 5303174,
+                    "user_name": "alimhd"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true,
+                  "total_upvotes": 2,
+                  "total_votes": 2
+                }
+              },
+              {
+                "author": {
+                  "display_name": "Zuuk",
+                  "id": 69790,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/tzurvaich"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 2566,
+                "content": "<p>I’m doing error analysis on a somewhat older shared solution, reported around 0.660. My reproduction reached 0.658. I started mainly to understand the system, then explore improvements through its existing representations and decision process.</p>\n<p>I captured component scores and intermediate blending stages for all 2,699 training passages, then analyzed expert disagreements, component removals and cases where blending overrides a correct expert. This includes tracing the existing family specialists.</p>\n<p>One negative result may be relevant. Removing a Qwen3-14B score head improved the training proxy but lowered my submission score to 0.649. A confidence-based override using the complementary stack scored 0.643 at a 90% threshold and 0.655 at 98%.</p>\n<p>My next step is prompt-held-out evaluation of the style components to see which apparent distinctions survive.</p>",
+                "feedback_tracking_data": {},
+                "id": 3556864,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-11-19T09:56:57.967Z",
+                "raw_markdown": "I’m doing error analysis on a somewhat older shared solution, reported around 0.660. My reproduction reached 0.658. I started mainly to understand the system, then explore improvements through its existing representations and decision process.\n\nI captured component scores and intermediate blending stages for all 2,699 training passages, then analyzed expert disagreements, component removals and cases where blending overrides a correct expert. This includes tracing the existing family specialists.\n\nOne negative result may be relevant. Removing a Qwen3-14B score head improved the training proxy but lowered my submission score to 0.649. A confidence-based override using the complementary stack scored 0.643 at a 90% threshold and 0.655 at 98%.\n\nMy next step is prompt-held-out evaluation of the style components to see which apparent distinctions survive.",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "Zuuk",
+                    "id": 69790,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/tzurvaich",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/tzurvaich",
+                    "user_id": 69790,
+                    "user_name": "tzurvaich"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              }
+            ],
+            "first_message": {
+              "author": {
+                "display_name": "Meni David Gottesman",
+                "id": 37057971,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/37057971-kg.png?t=2026-11-18-18-12-06",
+                "tier": "CONTRIBUTOR",
+                "url": "/menidavidgottesman"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 1,
+              "content": "<p>Has anyone found something that genuinely separates these three (a representation, a training-data choice, a decoding trick), or is the working assumption that it's near the noise floor and effort is better spent elsewhere? Negative results are just as useful.</p>",
+              "feedback_tracking_data": {},
+              "id": 3543716,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-23T22:42:16.827Z",
+              "raw_markdown": "Has anyone found something that genuinely separates these three (a representation, a training-data choice, a decoding trick), or is the working assumption that it's near the noise floor and effort is better spent elsewhere? Negative results are just as useful.",
+              "reactions": [
+                {
+                  "emoji": "SURPRISE",
+                  "featured_user_names": [
+                    "osakanateishoku"
+                  ],
+                  "user_count": 1
+                }
+              ],
+              "team_up_info": {
+                "enabled": true,
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Meni David Gottesman",
+                  "id": 37057971,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/menidavidgottesman",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/37057971-kg.png?t=2026-11-18-18-12-06",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/menidavidgottesman",
+                  "user_id": 37057971,
+                  "user_name": "menidavidgottesman"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 5,
+                "total_votes": 4
+              }
+            },
+            "first_message_id": 3543716,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 752197,
+            "name": "The glm-5.3 / glm-5.3-flash / claude-fable-5 corner: noise floor, or is there a lever?",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-10-23T22:42:16.825807500Z",
+            "total_messages": 2,
+            "total_votes": 4,
+            "url": "/competitions/name-that-llm/discussion/752197"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-19T12:45:34+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-19T12:45:34+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-11-19T09:56:57.966666700Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [
+    {
+      "slug": "name-that-llm",
+      "topic_id": 752197,
+      "message_id": 3556391,
+      "parent_message_id": null,
+      "author": "AliMhd",
+      "author_url": "/alimhd",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-18T09:08:12.867Z",
+      "raw_markdown": "I think you found your answer since you are leading the board ",
+      "content_html": "<p>I think you found your answer since you are leading the board </p>",
+      "votes": 2,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-18T12:04:24+00:00",
+      "last_seen_at": "2026-11-19T12:45:34+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-19T12:45:34+00:00",
+      "remote_last_listed_at": "2026-11-19T12:45:34+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "AliMhd",
+          "tier": "CONTRIBUTOR",
+          "url": "/alimhd"
+        },
+        "content": "<p>I think you found your answer since you are leading the board </p>",
+        "id": 3556391,
+        "isThankYou": false,
+        "postDate": "2026-11-18T09:08:12.867Z",
+        "raw": {
+          "author": {
+            "display_name": "AliMhd",
+            "id": 5303174,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+            "tier": "CONTRIBUTOR",
+            "url": "/alimhd"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 861,
+          "content": "<p>I think you found your answer since you are leading the board </p>",
+          "feedback_tracking_data": {},
+          "id": 3556391,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-18T09:08:12.867Z",
+          "raw_markdown": "I think you found your answer since you are leading the board ",
+          "reactions": [
+            {
+              "emoji": "LOVE",
+              "featured_user_names": [
+                "mikoajkurtyka",
+                "ggayoayogg",
+                "tsydenovbair"
+              ],
+              "user_count": 3
+            }
+          ],
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "AliMhd",
+              "id": 5303174,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/alimhd",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "CONTRIBUTOR",
+              "url": "/alimhd",
+              "user_id": 5303174,
+              "user_name": "alimhd"
+            }
+          },
+          "votes": {
+            "can_upvote": true,
+            "total_upvotes": 2,
+            "total_votes": 2
+          }
+        },
+        "rawMarkdown": "I think you found your answer since you are leading the board ",
+        "replies": [],
+        "votes": {
+          "totalVotes": 2
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 752197,
+      "message_id": 3556864,
+      "parent_message_id": null,
+      "author": "Zuuk",
+      "author_url": "/tzurvaich",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-19T09:56:57.967Z",
+      "raw_markdown": "I’m doing error analysis on a somewhat older shared solution, reported around 0.660. My reproduction reached 0.658. I started mainly to understand the system, then explore improvements through its existing representations and decision process.\n\nI captured component scores and intermediate blending stages for all 2,699 training passages, then analyzed expert disagreements, component removals and cases where blending overrides a correct expert. This includes tracing the existing family specialists.\n\nOne negative result may be relevant. Removing a Qwen3-14B score head improved the training proxy but lowered my submission score to 0.649. A confidence-based override using the complementary stack scored 0.643 at a 90% threshold and 0.655 at 98%.\n\nMy next step is prompt-held-out evaluation of the style components to see which apparent distinctions survive.",
+      "content_html": "<p>I’m doing error analysis on a somewhat older shared solution, reported around 0.660. My reproduction reached 0.658. I started mainly to understand the system, then explore improvements through its existing representations and decision process.</p>\n<p>I captured component scores and intermediate blending stages for all 2,699 training passages, then analyzed expert disagreements, component removals and cases where blending overrides a correct expert. This includes tracing the existing family specialists.</p>\n<p>One negative result may be relevant. Removing a Qwen3-14B score head improved the training proxy but lowered my submission score to 0.649. A confidence-based override using the complementary stack scored 0.643 at a 90% threshold and 0.655 at 98%.</p>\n<p>My next step is prompt-held-out evaluation of the style components to see which apparent distinctions survive.</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-19T12:45:26+00:00",
+      "last_seen_at": "2026-11-19T12:45:34+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-19T12:45:34+00:00",
+      "remote_last_listed_at": "2026-11-19T12:45:34+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Zuuk",
+          "tier": "CONTRIBUTOR",
+          "url": "/tzurvaich"
+        },
+        "content": "<p>I’m doing error analysis on a somewhat older shared solution, reported around 0.660. My reproduction reached 0.658. I started mainly to understand the system, then explore improvements through its existing representations and decision process.</p>\n<p>I captured component scores and intermediate blending stages for all 2,699 training passages, then analyzed expert disagreements, component removals and cases where blending overrides a correct expert. This includes tracing the existing family specialists.</p>\n<p>One negative result may be relevant. Removing a Qwen3-14B score head improved the training proxy but lowered my submission score to 0.649. A confidence-based override using the complementary stack scored 0.643 at a 90% threshold and 0.655 at 98%.</p>\n<p>My next step is prompt-held-out evaluation of the style components to see which apparent distinctions survive.</p>",
+        "id": 3556864,
+        "isThankYou": false,
+        "postDate": "2026-11-19T09:56:57.967Z",
+        "raw": {
+          "author": {
+            "display_name": "Zuuk",
+            "id": 69790,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+            "tier": "CONTRIBUTOR",
+            "url": "/tzurvaich"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 2566,
+          "content": "<p>I’m doing error analysis on a somewhat older shared solution, reported around 0.660. My reproduction reached 0.658. I started mainly to understand the system, then explore improvements through its existing representations and decision process.</p>\n<p>I captured component scores and intermediate blending stages for all 2,699 training passages, then analyzed expert disagreements, component removals and cases where blending overrides a correct expert. This includes tracing the existing family specialists.</p>\n<p>One negative result may be relevant. Removing a Qwen3-14B score head improved the training proxy but lowered my submission score to 0.649. A confidence-based override using the complementary stack scored 0.643 at a 90% threshold and 0.655 at 98%.</p>\n<p>My next step is prompt-held-out evaluation of the style components to see which apparent distinctions survive.</p>",
+          "feedback_tracking_data": {},
+          "id": 3556864,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-19T09:56:57.967Z",
+          "raw_markdown": "I’m doing error analysis on a somewhat older shared solution, reported around 0.660. My reproduction reached 0.658. I started mainly to understand the system, then explore improvements through its existing representations and decision process.\n\nI captured component scores and intermediate blending stages for all 2,699 training passages, then analyzed expert disagreements, component removals and cases where blending overrides a correct expert. This includes tracing the existing family specialists.\n\nOne negative result may be relevant. Removing a Qwen3-14B score head improved the training proxy but lowered my submission score to 0.649. A confidence-based override using the complementary stack scored 0.643 at a 90% threshold and 0.655 at 98%.\n\nMy next step is prompt-held-out evaluation of the style components to see which apparent distinctions survive.",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Zuuk",
+              "id": 69790,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/tzurvaich",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "CONTRIBUTOR",
+              "url": "/tzurvaich",
+              "user_id": 69790,
+              "user_name": "tzurvaich"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "I’m doing error analysis on a somewhat older shared solution, reported around 0.660. My reproduction reached 0.658. I started mainly to understand the system, then explore improvements through its existing representations and decision process.\n\nI captured component scores and intermediate blending stages for all 2,699 training passages, then analyzed expert disagreements, component removals and cases where blending overrides a correct expert. This includes tracing the existing family specialists.\n\nOne negative result may be relevant. Removing a Qwen3-14B score head improved the training proxy but lowered my submission score to 0.649. A confidence-based override using the complementary stack scored 0.643 at a 90% threshold and 0.655 at 98%.\n\nMy next step is prompt-held-out evaluation of the style components to see which apparent distinctions survive.",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    }
+  ],
+  "writeup": null
+}

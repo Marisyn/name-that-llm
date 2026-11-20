@@ -1,0 +1,390 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 752280,
+    "title": "How were the passages generated (API vs. chat apps/agents), and when?",
+    "author": "codex rybaka",
+    "author_url": "/yuriplot",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-10-24T07:54:41.945293900Z",
+    "last_comment_post_date": "2026-11-05T17:51:02.070Z",
+    "comment_count": 1,
+    "votes": 2,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/752280",
+    "first_message_id": 3543870,
+    "first_seen_at": "2026-11-04T06:56:16+00:00",
+    "last_seen_at": "2026-11-16T16:36:01+00:00",
+    "detail_last_synced_at": "2026-11-16T16:22:58+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "3a562401b9c9d70c7370f82313aacc8272cd48df8b466cca213f6908d29e932a",
+    "listing_metrics_hash": "6db2b817333d85ee95f494a1b2ba941fb79d87d4e3e0c8718afed5f3c0bfd1fa",
+    "detail_content_hash": "84ff7a835a36c5c78853f0f614c0bbb062cdda15bde20d2340366878f041a259",
+    "detail_last_checked_at": "2026-11-16T16:22:58+00:00",
+    "detail_next_check_at": "2026-11-19T16:22:58+00:00",
+    "detail_unchanged_count": 1,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 1,
+      "firstForumMessageId": null,
+      "id": 752280,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-11-05T17:51:02.070Z",
+      "postDate": "2026-10-24T07:54:41.945293900Z",
+      "raw": {
+        "comment_count": 1,
+        "id": 752280,
+        "last_comment_post_date": "2026-11-05T17:51:02.070Z",
+        "post_date": "2026-10-24T07:54:41.945293900Z",
+        "title": "How were the passages generated (API vs. chat apps/agents), and when?",
+        "topic_url": "/competitions/name-that-llm/discussion/752280",
+        "votes": 2
+      },
+      "title": "How were the passages generated (API vs. chat apps/agents), and when?",
+      "topicUrl": "/competitions/name-that-llm/discussion/752280",
+      "votes": 2
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "codex rybaka",
+        "authorUserName": "yuriplot",
+        "comments": [
+          {
+            "author": {
+              "displayName": "Amr Yasser",
+              "tier": "CONTRIBUTOR",
+              "url": "/amryasswe"
+            },
+            "content": "<p>Could the organizers clarify whether the official training and hidden-test passages were collected through the same API/channel and generation settings (reasoning level, temperature, system prompt, and paragraph-length instructions)? It would also help to know the approximate collection dates and whether model labels were checked against the returned/served model version, particularly for Gemini 3.7 versus 3.8 routing. These details would help us evaluate the provenance and distribution of external training data. Thank you!</p>",
+            "id": 3550659,
+            "isThankYou": false,
+            "postDate": "2026-11-05T17:51:02.070Z",
+            "raw": {
+              "author": {
+                "display_name": "Amr Yasser",
+                "id": 21993967,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/21993967-kg.png?t=2026-07-22-23-12-32",
+                "tier": "CONTRIBUTOR",
+                "url": "/amryasswe"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 1585,
+              "content": "<p>Could the organizers clarify whether the official training and hidden-test passages were collected through the same API/channel and generation settings (reasoning level, temperature, system prompt, and paragraph-length instructions)? It would also help to know the approximate collection dates and whether model labels were checked against the returned/served model version, particularly for Gemini 3.7 versus 3.8 routing. These details would help us evaluate the provenance and distribution of external training data. Thank you!</p>",
+              "feedback_tracking_data": {},
+              "id": 3550659,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-05T17:51:02.070Z",
+              "raw_markdown": "Could the organizers clarify whether the official training and hidden-test passages were collected through the same API/channel and generation settings (reasoning level, temperature, system prompt, and paragraph-length instructions)? It would also help to know the approximate collection dates and whether model labels were checked against the returned/served model version, particularly for Gemini 3.7 versus 3.8 routing. These details would help us evaluate the provenance and distribution of external training data. Thank you!",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Amr Yasser",
+                  "id": 21993967,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/amryasswe",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/21993967-kg.png?t=2026-07-22-23-12-32",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/amryasswe",
+                  "user_id": 21993967,
+                  "user_name": "amryasswe"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "Could the organizers clarify whether the official training and hidden-test passages were collected through the same API/channel and generation settings (reasoning level, temperature, system prompt, and paragraph-length instructions)? It would also help to know the approximate collection dates and whether model labels were checked against the returned/served model version, particularly for Gemini 3.7 versus 3.8 routing. These details would help us evaluate the provenance and distribution of external training data. Thank you!",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "expectedCommentCount": 1,
+        "firstMessage": {
+          "author": {
+            "displayName": "codex rybaka",
+            "tier": "CONTRIBUTOR",
+            "url": "/yuriplot"
+          },
+          "content": "<p>Hi, could you clarify how the passages were generated?</p>\n<p>Were all passages (train and test) generated through the providers’ APIs, or were some produced in consumer chat apps or agent products?\nRoughly when were they generated? This matters because some providers started watermarking text in autumn 2026.</p>",
+          "id": 3543870,
+          "isThankYou": false,
+          "postDate": "2026-10-24T07:54:41.947Z",
+          "raw": {
+            "author": {
+              "display_name": "codex rybaka",
+              "id": 16796017,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "CONTRIBUTOR",
+              "url": "/yuriplot"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 366,
+            "content": "<p>Hi, could you clarify how the passages were generated?</p>\n<p>Were all passages (train and test) generated through the providers’ APIs, or were some produced in consumer chat apps or agent products?\nRoughly when were they generated? This matters because some providers started watermarking text in autumn 2026.</p>",
+            "feedback_tracking_data": {},
+            "id": 3543870,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-10-24T07:54:41.947Z",
+            "raw_markdown": "Hi, could you clarify how the passages were generated?\n\nWere all passages (train and test) generated through the providers’ APIs, or were some produced in consumer chat apps or agent products?\nRoughly when were they generated? This matters because some providers started watermarking text in autumn 2026.",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "codex rybaka",
+                "id": 16796017,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/yuriplot",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/yuriplot",
+                "user_id": 16796017,
+                "user_name": "yuriplot"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 2,
+              "total_votes": 2
+            }
+          },
+          "rawMarkdown": "Hi, could you clarify how the passages were generated?\n\nWere all passages (train and test) generated through the providers’ APIs, or were some produced in consumer chat apps or agent products?\nRoughly when were they generated? This matters because some providers started watermarking text in autumn 2026.",
+          "replies": [],
+          "votes": {
+            "totalVotes": 2
+          }
+        },
+        "firstMessageId": 3543870,
+        "id": 752280,
+        "name": "How were the passages generated (API vs. chat apps/agents), and when?",
+        "postDate": "2026-10-24T07:54:41.945293900Z",
+        "url": "/competitions/name-that-llm/discussion/752280"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>Hi, could you clarify how the passages were generated?</p>\n<p>Were all passages (train and test) generated through the providers’ APIs, or were some produced in consumer chat apps or agent products?\nRoughly when were they generated? This matters because some providers started watermarking text in autumn 2026.</p>",
+              "id": 3543870,
+              "post_date": "2026-10-24T07:54:41.947Z",
+              "raw_markdown": "Hi, could you clarify how the passages were generated?\n\nWere all passages (train and test) generated through the providers’ APIs, or were some produced in consumer chat apps or agent products?\nRoughly when were they generated? This matters because some providers started watermarking text in autumn 2026.",
+              "votes": 2
+            },
+            {
+              "content": "<p>Could the organizers clarify whether the official training and hidden-test passages were collected through the same API/channel and generation settings (reasoning level, temperature, system prompt, and paragraph-length instructions)? It would also help to know the approximate collection dates and whether model labels were checked against the returned/served model version, particularly for Gemini 3.7 versus 3.8 routing. These details would help us evaluate the provenance and distribution of external training data. Thank you!</p>",
+              "id": 3550659,
+              "post_date": "2026-11-05T17:51:02.070Z",
+              "raw_markdown": "Could the organizers clarify whether the official training and hidden-test passages were collected through the same API/channel and generation settings (reasoning level, temperature, system prompt, and paragraph-length instructions)? It would also help to know the approximate collection dates and whether model labels were checked against the returned/served model version, particularly for Gemini 3.7 versus 3.8 routing. These details would help us evaluate the provenance and distribution of external training data. Thank you!"
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 16796017,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "default-thumb.png",
+            "author_user_display_name": "codex rybaka",
+            "author_user_name": "yuriplot",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "comments": [
+              {
+                "author": {
+                  "display_name": "Amr Yasser",
+                  "id": 21993967,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/21993967-kg.png?t=2026-07-22-23-12-32",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/amryasswe"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 1585,
+                "content": "<p>Could the organizers clarify whether the official training and hidden-test passages were collected through the same API/channel and generation settings (reasoning level, temperature, system prompt, and paragraph-length instructions)? It would also help to know the approximate collection dates and whether model labels were checked against the returned/served model version, particularly for Gemini 3.7 versus 3.8 routing. These details would help us evaluate the provenance and distribution of external training data. Thank you!</p>",
+                "feedback_tracking_data": {},
+                "id": 3550659,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-11-05T17:51:02.070Z",
+                "raw_markdown": "Could the organizers clarify whether the official training and hidden-test passages were collected through the same API/channel and generation settings (reasoning level, temperature, system prompt, and paragraph-length instructions)? It would also help to know the approximate collection dates and whether model labels were checked against the returned/served model version, particularly for Gemini 3.7 versus 3.8 routing. These details would help us evaluate the provenance and distribution of external training data. Thank you!",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "Amr Yasser",
+                    "id": 21993967,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/amryasswe",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/21993967-kg.png?t=2026-07-22-23-12-32",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/amryasswe",
+                    "user_id": 21993967,
+                    "user_name": "amryasswe"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              }
+            ],
+            "first_message": {
+              "author": {
+                "display_name": "codex rybaka",
+                "id": 16796017,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/yuriplot"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 366,
+              "content": "<p>Hi, could you clarify how the passages were generated?</p>\n<p>Were all passages (train and test) generated through the providers’ APIs, or were some produced in consumer chat apps or agent products?\nRoughly when were they generated? This matters because some providers started watermarking text in autumn 2026.</p>",
+              "feedback_tracking_data": {},
+              "id": 3543870,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-24T07:54:41.947Z",
+              "raw_markdown": "Hi, could you clarify how the passages were generated?\n\nWere all passages (train and test) generated through the providers’ APIs, or were some produced in consumer chat apps or agent products?\nRoughly when were they generated? This matters because some providers started watermarking text in autumn 2026.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "codex rybaka",
+                  "id": 16796017,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/yuriplot",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/yuriplot",
+                  "user_id": 16796017,
+                  "user_name": "yuriplot"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 2,
+                "total_votes": 2
+              }
+            },
+            "first_message_id": 3543870,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 752280,
+            "name": "How were the passages generated (API vs. chat apps/agents), and when?",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-10-24T07:54:41.945293900Z",
+            "total_messages": 1,
+            "total_votes": 2,
+            "url": "/competitions/name-that-llm/discussion/752280"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:22:58+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:22:58+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-11-05T17:51:02.070Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [
+    {
+      "slug": "name-that-llm",
+      "topic_id": 752280,
+      "message_id": 3550659,
+      "parent_message_id": null,
+      "author": "Amr Yasser",
+      "author_url": "/amryasswe",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-05T17:51:02.070Z",
+      "raw_markdown": "Could the organizers clarify whether the official training and hidden-test passages were collected through the same API/channel and generation settings (reasoning level, temperature, system prompt, and paragraph-length instructions)? It would also help to know the approximate collection dates and whether model labels were checked against the returned/served model version, particularly for Gemini 3.7 versus 3.8 routing. These details would help us evaluate the provenance and distribution of external training data. Thank you!",
+      "content_html": "<p>Could the organizers clarify whether the official training and hidden-test passages were collected through the same API/channel and generation settings (reasoning level, temperature, system prompt, and paragraph-length instructions)? It would also help to know the approximate collection dates and whether model labels were checked against the returned/served model version, particularly for Gemini 3.7 versus 3.8 routing. These details would help us evaluate the provenance and distribution of external training data. Thank you!</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-09T03:55:02+00:00",
+      "last_seen_at": "2026-11-16T16:22:58+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:22:58+00:00",
+      "remote_last_listed_at": "2026-11-16T16:22:58+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Amr Yasser",
+          "tier": "CONTRIBUTOR",
+          "url": "/amryasswe"
+        },
+        "content": "<p>Could the organizers clarify whether the official training and hidden-test passages were collected through the same API/channel and generation settings (reasoning level, temperature, system prompt, and paragraph-length instructions)? It would also help to know the approximate collection dates and whether model labels were checked against the returned/served model version, particularly for Gemini 3.7 versus 3.8 routing. These details would help us evaluate the provenance and distribution of external training data. Thank you!</p>",
+        "id": 3550659,
+        "isThankYou": false,
+        "postDate": "2026-11-05T17:51:02.070Z",
+        "raw": {
+          "author": {
+            "display_name": "Amr Yasser",
+            "id": 21993967,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/21993967-kg.png?t=2026-07-22-23-12-32",
+            "tier": "CONTRIBUTOR",
+            "url": "/amryasswe"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 1585,
+          "content": "<p>Could the organizers clarify whether the official training and hidden-test passages were collected through the same API/channel and generation settings (reasoning level, temperature, system prompt, and paragraph-length instructions)? It would also help to know the approximate collection dates and whether model labels were checked against the returned/served model version, particularly for Gemini 3.7 versus 3.8 routing. These details would help us evaluate the provenance and distribution of external training data. Thank you!</p>",
+          "feedback_tracking_data": {},
+          "id": 3550659,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-05T17:51:02.070Z",
+          "raw_markdown": "Could the organizers clarify whether the official training and hidden-test passages were collected through the same API/channel and generation settings (reasoning level, temperature, system prompt, and paragraph-length instructions)? It would also help to know the approximate collection dates and whether model labels were checked against the returned/served model version, particularly for Gemini 3.7 versus 3.8 routing. These details would help us evaluate the provenance and distribution of external training data. Thank you!",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Amr Yasser",
+              "id": 21993967,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/amryasswe",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/21993967-kg.png?t=2026-07-22-23-12-32",
+              "tier": "CONTRIBUTOR",
+              "url": "/amryasswe",
+              "user_id": 21993967,
+              "user_name": "amryasswe"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "Could the organizers clarify whether the official training and hidden-test passages were collected through the same API/channel and generation settings (reasoning level, temperature, system prompt, and paragraph-length instructions)? It would also help to know the approximate collection dates and whether model labels were checked against the returned/served model version, particularly for Gemini 3.7 versus 3.8 routing. These details would help us evaluate the provenance and distribution of external training data. Thank you!",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    }
+  ],
+  "writeup": null
+}

@@ -1,0 +1,1396 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 757199,
+    "title": "Running GLM-5.3 / GLM-5.3-Flash inside the 9h limit — has anyone got the public GGUF segments working?",
+    "author": "vishu phalswal",
+    "author_url": "/vishuphalswal",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-11-09T07:38:49.092450600Z",
+    "last_comment_post_date": "2026-11-10T14:40:54.923333300Z",
+    "comment_count": 5,
+    "votes": 6,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/757199",
+    "first_message_id": 3552144,
+    "first_seen_at": "2026-11-16T16:21:27+00:00",
+    "last_seen_at": "2026-11-18T09:02:48+00:00",
+    "detail_last_synced_at": "2026-11-18T09:02:48+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-18T09:01:52+00:00",
+    "remote_last_listed_at": "2026-11-18T09:01:52+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "a3b35fdd9bcbf3886d5b88e8e21e2ce4dff41751cfd2d96ae04c32f432d9ff04",
+    "listing_metrics_hash": "6f35fc5deadf205cc8ea21fc21c41649aefb2e2b273060f53fa1172ce48bfb9a",
+    "detail_content_hash": "b290ab78fd3bfba9d8c4387010f776cdfbe13c24cd86b2affadc352d30a6fdc6",
+    "detail_last_checked_at": "2026-11-18T09:02:48+00:00",
+    "detail_next_check_at": "2026-11-21T09:02:48+00:00",
+    "detail_unchanged_count": 1,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 5,
+      "firstForumMessageId": null,
+      "id": 757199,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-11-10T14:40:54.923333300Z",
+      "postDate": "2026-11-09T07:38:49.092450600Z",
+      "raw": {
+        "comment_count": 5,
+        "id": 757199,
+        "last_comment_post_date": "2026-11-10T14:40:54.923333300Z",
+        "post_date": "2026-11-09T07:38:49.092450600Z",
+        "title": "Running GLM-5.3 / GLM-5.3-Flash inside the 9h limit — has anyone got the public GGUF segments working?",
+        "topic_url": "/competitions/name-that-llm/discussion/757199",
+        "votes": 6
+      },
+      "title": "Running GLM-5.3 / GLM-5.3-Flash inside the 9h limit — has anyone got the public GGUF segments working?",
+      "topicUrl": "/competitions/name-that-llm/discussion/757199",
+      "votes": 6
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "vishu phalswal",
+        "authorUserName": "vishuphalswal",
+        "comments": [
+          {
+            "author": {
+              "displayName": "Vijay Konda",
+              "tier": "CONTRIBUTOR",
+              "url": "/vijaykonda"
+            },
+            "content": "<p>Check general.architecture in the GGUF with gguf-py, and attach a newer llama.cpp build as a dataset; the preinstalled one is likely too old. Per-passage mmap inference won't fit 9h for a model that size: prefill touches most experts, so you stream most of the model each passage. The workable route is layer streaming over the whole test set: load one layer, run all passages' hidden states through it, free it, next layer. That reads the weights once. 128–256 tokens is usually enough for log-prob stats. Measure the curve on a train subset, and remember the feature has to exist for train rows too. I'd try GLM-5.3-Flash first, since it's smaller and targets the glm-5.3 vs Flash split directly.</p>",
+            "id": 3552889,
+            "isThankYou": false,
+            "postDate": "2026-11-10T14:40:54.923Z",
+            "raw": {
+              "author": {
+                "display_name": "Vijay Konda",
+                "id": 118239,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/vijaykonda"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 960,
+              "content": "<p>Check general.architecture in the GGUF with gguf-py, and attach a newer llama.cpp build as a dataset; the preinstalled one is likely too old. Per-passage mmap inference won't fit 9h for a model that size: prefill touches most experts, so you stream most of the model each passage. The workable route is layer streaming over the whole test set: load one layer, run all passages' hidden states through it, free it, next layer. That reads the weights once. 128–256 tokens is usually enough for log-prob stats. Measure the curve on a train subset, and remember the feature has to exist for train rows too. I'd try GLM-5.3-Flash first, since it's smaller and targets the glm-5.3 vs Flash split directly.</p>",
+              "feedback_tracking_data": {},
+              "id": 3552889,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-10T14:40:54.923Z",
+              "raw_markdown": "Check general.architecture in the GGUF with gguf-py, and attach a newer llama.cpp build as a dataset; the preinstalled one is likely too old. Per-passage mmap inference won't fit 9h for a model that size: prefill touches most experts, so you stream most of the model each passage. The workable route is layer streaming over the whole test set: load one layer, run all passages' hidden states through it, free it, next layer. That reads the weights once. 128–256 tokens is usually enough for log-prob stats. Measure the curve on a train subset, and remember the feature has to exist for train rows too. I'd try GLM-5.3-Flash first, since it's smaller and targets the glm-5.3 vs Flash split directly.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Vijay Konda",
+                  "id": 118239,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/vijaykonda",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/vijaykonda",
+                  "user_id": 118239,
+                  "user_name": "vijaykonda"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": 1
+              }
+            },
+            "rawMarkdown": "Check general.architecture in the GGUF with gguf-py, and attach a newer llama.cpp build as a dataset; the preinstalled one is likely too old. Per-passage mmap inference won't fit 9h for a model that size: prefill touches most experts, so you stream most of the model each passage. The workable route is layer streaming over the whole test set: load one layer, run all passages' hidden states through it, free it, next layer. That reads the weights once. 128–256 tokens is usually enough for log-prob stats. Measure the curve on a train subset, and remember the feature has to exist for train rows too. I'd try GLM-5.3-Flash first, since it's smaller and targets the glm-5.3 vs Flash split directly.",
+            "replies": [],
+            "votes": {
+              "totalVotes": 1
+            }
+          },
+          {
+            "author": {
+              "displayName": "John K",
+              "tier": "CONTRIBUTOR",
+              "url": "/johnnykhan1"
+            },
+            "content": "<p>The GLM and Claude mixup shows up in a simple TF-IDF plus logistic GroupKFold pass too. On that confusion matrix, true glm-5.3 was predicted as glm-5.3 27 times, as claude-opus-5 27 times, and as claude-fable-5 18 times (150 rows). True claude-fable-5 went to glm-5.3-flash 22 times and glm-5.3 21 times, against only 16 correct (149 rows). Across the two GLM labels and the five Claude labels, 125 true-GLM rows were called Claude and 119 true-Claude rows were called GLM. I have not run a GLM-5.3 likelihood feature, so I cannot help on the GGUF segment path.</p>",
+            "id": 3552644,
+            "isThankYou": false,
+            "postDate": "2026-11-10T02:55:31.193Z",
+            "raw": {
+              "author": {
+                "display_name": "John K",
+                "id": 37335549,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/37335549-kg.jpg?t=2026-10-24-04-37-50",
+                "tier": "CONTRIBUTOR",
+                "url": "/johnnykhan1"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 1360,
+              "content": "<p>The GLM and Claude mixup shows up in a simple TF-IDF plus logistic GroupKFold pass too. On that confusion matrix, true glm-5.3 was predicted as glm-5.3 27 times, as claude-opus-5 27 times, and as claude-fable-5 18 times (150 rows). True claude-fable-5 went to glm-5.3-flash 22 times and glm-5.3 21 times, against only 16 correct (149 rows). Across the two GLM labels and the five Claude labels, 125 true-GLM rows were called Claude and 119 true-Claude rows were called GLM. I have not run a GLM-5.3 likelihood feature, so I cannot help on the GGUF segment path.</p>",
+              "feedback_tracking_data": {},
+              "id": 3552644,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-10T02:55:31.193Z",
+              "raw_markdown": "The GLM and Claude mixup shows up in a simple TF-IDF plus logistic GroupKFold pass too. On that confusion matrix, true glm-5.3 was predicted as glm-5.3 27 times, as claude-opus-5 27 times, and as claude-fable-5 18 times (150 rows). True claude-fable-5 went to glm-5.3-flash 22 times and glm-5.3 21 times, against only 16 correct (149 rows). Across the two GLM labels and the five Claude labels, 125 true-GLM rows were called Claude and 119 true-Claude rows were called GLM. I have not run a GLM-5.3 likelihood feature, so I cannot help on the GGUF segment path.",
+              "replies": [
+                {
+                  "author": {
+                    "display_name": "vishu phalswal",
+                    "id": 35760329,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/vishuphalswal"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 570,
+                  "content": "<p>Thanks John, that's really useful. The GLM ↔ Claude confusion matches what I see in my own out-of-fold confusion matrix too: the glm-5.3 / glm-5.3-flash / claude-fable-5 / claude-opus-5 group is where most of my errors are. Appreciate you sharing the numbers!</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3552671,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-10T03:54:42.023Z",
+                  "raw_markdown": "Thanks John, that's really useful. The GLM ↔ Claude confusion matches what I see in my own out-of-fold confusion matrix too: the glm-5.3 / glm-5.3-flash / claude-fable-5 / claude-opus-5 group is where most of my errors are. Appreciate you sharing the numbers!",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "vishu phalswal",
+                      "id": 35760329,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/vishuphalswal",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/vishuphalswal",
+                      "user_id": 35760329,
+                      "user_name": "vishuphalswal"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "John K",
+                  "id": 37335549,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/johnnykhan1",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/37335549-kg.jpg?t=2026-10-24-04-37-50",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/johnnykhan1",
+                  "user_id": 37335549,
+                  "user_name": "johnnykhan1"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": 1
+              }
+            },
+            "rawMarkdown": "The GLM and Claude mixup shows up in a simple TF-IDF plus logistic GroupKFold pass too. On that confusion matrix, true glm-5.3 was predicted as glm-5.3 27 times, as claude-opus-5 27 times, and as claude-fable-5 18 times (150 rows). True claude-fable-5 went to glm-5.3-flash 22 times and glm-5.3 21 times, against only 16 correct (149 rows). Across the two GLM labels and the five Claude labels, 125 true-GLM rows were called Claude and 119 true-Claude rows were called GLM. I have not run a GLM-5.3 likelihood feature, so I cannot help on the GGUF segment path.",
+            "replies": [
+              {
+                "author": {
+                  "displayName": "vishu phalswal",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/vishuphalswal"
+                },
+                "content": "<p>Thanks John, that's really useful. The GLM ↔ Claude confusion matches what I see in my own out-of-fold confusion matrix too: the glm-5.3 / glm-5.3-flash / claude-fable-5 / claude-opus-5 group is where most of my errors are. Appreciate you sharing the numbers!</p>",
+                "id": 3552671,
+                "isThankYou": false,
+                "postDate": "2026-11-10T03:54:42.023Z",
+                "raw": {
+                  "author": {
+                    "display_name": "vishu phalswal",
+                    "id": 35760329,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/vishuphalswal"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 570,
+                  "content": "<p>Thanks John, that's really useful. The GLM ↔ Claude confusion matches what I see in my own out-of-fold confusion matrix too: the glm-5.3 / glm-5.3-flash / claude-fable-5 / claude-opus-5 group is where most of my errors are. Appreciate you sharing the numbers!</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3552671,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-10T03:54:42.023Z",
+                  "raw_markdown": "Thanks John, that's really useful. The GLM ↔ Claude confusion matches what I see in my own out-of-fold confusion matrix too: the glm-5.3 / glm-5.3-flash / claude-fable-5 / claude-opus-5 group is where most of my errors are. Appreciate you sharing the numbers!",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "vishu phalswal",
+                      "id": 35760329,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/vishuphalswal",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/vishuphalswal",
+                      "user_id": 35760329,
+                      "user_name": "vishuphalswal"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                },
+                "rawMarkdown": "Thanks John, that's really useful. The GLM ↔ Claude confusion matches what I see in my own out-of-fold confusion matrix too: the glm-5.3 / glm-5.3-flash / claude-fable-5 / claude-opus-5 group is where most of my errors are. Appreciate you sharing the numbers!",
+                "replies": [],
+                "votes": {
+                  "totalVotes": 0
+                }
+              }
+            ],
+            "votes": {
+              "totalVotes": 1
+            }
+          },
+          {
+            "author": {
+              "displayName": "AyoGG",
+              "tier": "MASTER",
+              "url": "/ggayoayogg"
+            },
+            "content": "<p>You can take a closer look at the publicly available models from the top-performing group.</p>",
+            "id": 3552249,
+            "isThankYou": false,
+            "postDate": "2026-11-09T12:26:04.863Z",
+            "raw": {
+              "author": {
+                "display_name": "AyoGG",
+                "id": 15255201,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15255201-kg.png?t=2026-10-28-05-21-58",
+                "tier": "MASTER",
+                "url": "/ggayoayogg"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 14,
+              "content": "<p>You can take a closer look at the publicly available models from the top-performing group.</p>",
+              "feedback_tracking_data": {},
+              "id": 3552249,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-09T12:26:04.863Z",
+              "raw_markdown": "You can take a closer look at the publicly available models from the top-performing group.",
+              "replies": [
+                {
+                  "author": {
+                    "display_name": "vishu phalswal",
+                    "id": 35760329,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/vishuphalswal"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 570,
+                  "content": "<p>Thanks a lot! Do you mean the GLM-5.3 / GLM-5.3-Flash GGUF segment datasets (e.g. from jinghengwu), or are there also public trained models (adapters/heads) from that team under Kaggle Models? A link to where to start would help a lot.</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3552254,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-09T12:36:18.570Z",
+                  "raw_markdown": "Thanks a lot! Do you mean the GLM-5.3 / GLM-5.3-Flash GGUF segment datasets (e.g. from jinghengwu), or are there also public trained models (adapters/heads) from that team under Kaggle Models? A link to where to start would help a lot.",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "vishu phalswal",
+                      "id": 35760329,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/vishuphalswal",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/vishuphalswal",
+                      "user_id": 35760329,
+                      "user_name": "vishuphalswal"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true,
+                    "total_upvotes": 1,
+                    "total_votes": 1
+                  }
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "AyoGG",
+                  "id": 15255201,
+                  "performance_tier": "MASTER",
+                  "profile_url": "/ggayoayogg",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15255201-kg.png?t=2026-10-28-05-21-58",
+                  "tier": "MASTER",
+                  "url": "/ggayoayogg",
+                  "user_id": 15255201,
+                  "user_name": "ggayoayogg"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": 1
+              }
+            },
+            "rawMarkdown": "You can take a closer look at the publicly available models from the top-performing group.",
+            "replies": [
+              {
+                "author": {
+                  "displayName": "vishu phalswal",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/vishuphalswal"
+                },
+                "content": "<p>Thanks a lot! Do you mean the GLM-5.3 / GLM-5.3-Flash GGUF segment datasets (e.g. from jinghengwu), or are there also public trained models (adapters/heads) from that team under Kaggle Models? A link to where to start would help a lot.</p>",
+                "id": 3552254,
+                "isThankYou": false,
+                "postDate": "2026-11-09T12:36:18.570Z",
+                "raw": {
+                  "author": {
+                    "display_name": "vishu phalswal",
+                    "id": 35760329,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/vishuphalswal"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 570,
+                  "content": "<p>Thanks a lot! Do you mean the GLM-5.3 / GLM-5.3-Flash GGUF segment datasets (e.g. from jinghengwu), or are there also public trained models (adapters/heads) from that team under Kaggle Models? A link to where to start would help a lot.</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3552254,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-09T12:36:18.570Z",
+                  "raw_markdown": "Thanks a lot! Do you mean the GLM-5.3 / GLM-5.3-Flash GGUF segment datasets (e.g. from jinghengwu), or are there also public trained models (adapters/heads) from that team under Kaggle Models? A link to where to start would help a lot.",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "vishu phalswal",
+                      "id": 35760329,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/vishuphalswal",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/vishuphalswal",
+                      "user_id": 35760329,
+                      "user_name": "vishuphalswal"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true,
+                    "total_upvotes": 1,
+                    "total_votes": 1
+                  }
+                },
+                "rawMarkdown": "Thanks a lot! Do you mean the GLM-5.3 / GLM-5.3-Flash GGUF segment datasets (e.g. from jinghengwu), or are there also public trained models (adapters/heads) from that team under Kaggle Models? A link to where to start would help a lot.",
+                "replies": [],
+                "votes": {
+                  "totalVotes": 1
+                }
+              }
+            ],
+            "votes": {
+              "totalVotes": 1
+            }
+          }
+        ],
+        "expectedCommentCount": 5,
+        "firstMessage": {
+          "author": {
+            "displayName": "vishu phalswal",
+            "tier": "CONTRIBUTOR",
+            "url": "/vishuphalswal"
+          },
+          "content": "<p>Hi everyone,</p>\n<p>I'm a solo competitor, currently around 0.68 with a Qwen-based ensemble plus my own fine-tuned Qwen3-Embedding-4B expert. My out-of-fold analysis shows where most of my remaining error is: the GLM corner.</p>\n<p>My OOF accuracy on these three models:</p>\n<ul>\n<li>glm-5.3: 0.32</li>\n<li>glm-5.3-flash: 0.44</li>\n<li>claude-fable-5: 0.48</li>\n</ul>\n<p>Most of the mistakes are these three being confused with each other. GLM-5.3 seems to write a lot like Claude.</p>\n<p>Things I tried that did NOT help:</p>\n<ul>\n<li>GLM-4-9B-0414 + Qwen3-8B-Base log-likelihood features (-0.002 in a prompt-grouped CV stack)</li>\n<li>~33k extra rows from public datasets (lower OOF)</li>\n<li>Pseudo-labelling the test set (negative in simulation)</li>\n</ul>\n<p>I noticed public datasets with IQ3_XXS GGUF layer segments of GLM-5.3 and GLM-5.3-Flash, so the real model's likelihood looks like the missing signal. I'd appreciate any public pointers on:</p>\n<ol>\n<li>Does the llama.cpp build available offline on Kaggle support the GLM-5 / GLM-5.3 MoE architecture, or does it need a newer build attached as a dataset?</li>\n<li>How do you load or run the model segment by segment within the RAM and disk limits (2xT4, ~30 GB RAM)? Streaming layers or memory-mapping?</li>\n<li>Roughly how many tokens per passage is enough for a useful likelihood score within 9 hours on ~4,000 test passages?</li>\n</ol>\n<p>I'm not asking for anyone's private pipeline, just general guidance or links to public resources. If I get it working, I'll publish a notebook with the results so everyone benefits.</p>\n<p>Thanks!</p>",
+          "id": 3552144,
+          "isThankYou": false,
+          "postDate": "2026-11-09T07:38:49.093Z",
+          "raw": {
+            "author": {
+              "display_name": "vishu phalswal",
+              "id": 35760329,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "CONTRIBUTOR",
+              "url": "/vishuphalswal"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 570,
+            "content": "<p>Hi everyone,</p>\n<p>I'm a solo competitor, currently around 0.68 with a Qwen-based ensemble plus my own fine-tuned Qwen3-Embedding-4B expert. My out-of-fold analysis shows where most of my remaining error is: the GLM corner.</p>\n<p>My OOF accuracy on these three models:</p>\n<ul>\n<li>glm-5.3: 0.32</li>\n<li>glm-5.3-flash: 0.44</li>\n<li>claude-fable-5: 0.48</li>\n</ul>\n<p>Most of the mistakes are these three being confused with each other. GLM-5.3 seems to write a lot like Claude.</p>\n<p>Things I tried that did NOT help:</p>\n<ul>\n<li>GLM-4-9B-0414 + Qwen3-8B-Base log-likelihood features (-0.002 in a prompt-grouped CV stack)</li>\n<li>~33k extra rows from public datasets (lower OOF)</li>\n<li>Pseudo-labelling the test set (negative in simulation)</li>\n</ul>\n<p>I noticed public datasets with IQ3_XXS GGUF layer segments of GLM-5.3 and GLM-5.3-Flash, so the real model's likelihood looks like the missing signal. I'd appreciate any public pointers on:</p>\n<ol>\n<li>Does the llama.cpp build available offline on Kaggle support the GLM-5 / GLM-5.3 MoE architecture, or does it need a newer build attached as a dataset?</li>\n<li>How do you load or run the model segment by segment within the RAM and disk limits (2xT4, ~30 GB RAM)? Streaming layers or memory-mapping?</li>\n<li>Roughly how many tokens per passage is enough for a useful likelihood score within 9 hours on ~4,000 test passages?</li>\n</ol>\n<p>I'm not asking for anyone's private pipeline, just general guidance or links to public resources. If I get it working, I'll publish a notebook with the results so everyone benefits.</p>\n<p>Thanks!</p>",
+            "feedback_tracking_data": {},
+            "id": 3552144,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-11-09T07:38:49.093Z",
+            "raw_markdown": "Hi everyone,\n\nI'm a solo competitor, currently around 0.68 with a Qwen-based ensemble plus my own fine-tuned Qwen3-Embedding-4B expert. My out-of-fold analysis shows where most of my remaining error is: the GLM corner.\n\nMy OOF accuracy on these three models:\n- glm-5.3: 0.32\n- glm-5.3-flash: 0.44\n- claude-fable-5: 0.48\n\nMost of the mistakes are these three being confused with each other. GLM-5.3 seems to write a lot like Claude.\n\nThings I tried that did NOT help:\n- GLM-4-9B-0414 + Qwen3-8B-Base log-likelihood features (-0.002 in a prompt-grouped CV stack)\n- ~33k extra rows from public datasets (lower OOF)\n- Pseudo-labelling the test set (negative in simulation)\n\nI noticed public datasets with IQ3_XXS GGUF layer segments of GLM-5.3 and GLM-5.3-Flash, so the real model's likelihood looks like the missing signal. I'd appreciate any public pointers on:\n\n1. Does the llama.cpp build available offline on Kaggle support the GLM-5 / GLM-5.3 MoE architecture, or does it need a newer build attached as a dataset?\n2. How do you load or run the model segment by segment within the RAM and disk limits (2xT4, ~30 GB RAM)? Streaming layers or memory-mapping?\n3. Roughly how many tokens per passage is enough for a useful likelihood score within 9 hours on ~4,000 test passages?\n\nI'm not asking for anyone's private pipeline, just general guidance or links to public resources. If I get it working, I'll publish a notebook with the results so everyone benefits.\n\nThanks!",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "vishu phalswal",
+                "id": 35760329,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/vishuphalswal",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/vishuphalswal",
+                "user_id": 35760329,
+                "user_name": "vishuphalswal"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 7,
+              "total_votes": 6
+            }
+          },
+          "rawMarkdown": "Hi everyone,\n\nI'm a solo competitor, currently around 0.68 with a Qwen-based ensemble plus my own fine-tuned Qwen3-Embedding-4B expert. My out-of-fold analysis shows where most of my remaining error is: the GLM corner.\n\nMy OOF accuracy on these three models:\n- glm-5.3: 0.32\n- glm-5.3-flash: 0.44\n- claude-fable-5: 0.48\n\nMost of the mistakes are these three being confused with each other. GLM-5.3 seems to write a lot like Claude.\n\nThings I tried that did NOT help:\n- GLM-4-9B-0414 + Qwen3-8B-Base log-likelihood features (-0.002 in a prompt-grouped CV stack)\n- ~33k extra rows from public datasets (lower OOF)\n- Pseudo-labelling the test set (negative in simulation)\n\nI noticed public datasets with IQ3_XXS GGUF layer segments of GLM-5.3 and GLM-5.3-Flash, so the real model's likelihood looks like the missing signal. I'd appreciate any public pointers on:\n\n1. Does the llama.cpp build available offline on Kaggle support the GLM-5 / GLM-5.3 MoE architecture, or does it need a newer build attached as a dataset?\n2. How do you load or run the model segment by segment within the RAM and disk limits (2xT4, ~30 GB RAM)? Streaming layers or memory-mapping?\n3. Roughly how many tokens per passage is enough for a useful likelihood score within 9 hours on ~4,000 test passages?\n\nI'm not asking for anyone's private pipeline, just general guidance or links to public resources. If I get it working, I'll publish a notebook with the results so everyone benefits.\n\nThanks!",
+          "replies": [],
+          "votes": {
+            "totalVotes": 6
+          }
+        },
+        "firstMessageId": 3552144,
+        "id": 757199,
+        "name": "Running GLM-5.3 / GLM-5.3-Flash inside the 9h limit — has anyone got the public GGUF segments working?",
+        "postDate": "2026-11-09T07:38:49.092450600Z",
+        "url": "/competitions/name-that-llm/discussion/757199"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>Hi everyone,</p>\n<p>I'm a solo competitor, currently around 0.68 with a Qwen-based ensemble plus my own fine-tuned Qwen3-Embedding-4B expert. My out-of-fold analysis shows where most of my remaining error is: the GLM corner.</p>\n<p>My OOF accuracy on these three models:</p>\n<ul>\n<li>glm-5.3: 0.32</li>\n<li>glm-5.3-flash: 0.44</li>\n<li>claude-fable-5: 0.48</li>\n</ul>\n<p>Most of the mistakes are these three being confused with each other. GLM-5.3 seems to write a lot like Claude.</p>\n<p>Things I tried that did NOT help:</p>\n<ul>\n<li>GLM-4-9B-0414 + Qwen3-8B-Base log-likelihood features (-0.002 in a prompt-grouped CV stack)</li>\n<li>~33k extra rows from public datasets (lower OOF)</li>\n<li>Pseudo-labelling the test set (negative in simulation)</li>\n</ul>\n<p>I noticed public datasets with IQ3_XXS GGUF layer segments of GLM-5.3 and GLM-5.3-Flash, so the real model's likelihood looks like the missing signal. I'd appreciate any public pointers on:</p>\n<ol>\n<li>Does the llama.cpp build available offline on Kaggle support the GLM-5 / GLM-5.3 MoE architecture, or does it need a newer build attached as a dataset?</li>\n<li>How do you load or run the model segment by segment within the RAM and disk limits (2xT4, ~30 GB RAM)? Streaming layers or memory-mapping?</li>\n<li>Roughly how many tokens per passage is enough for a useful likelihood score within 9 hours on ~4,000 test passages?</li>\n</ol>\n<p>I'm not asking for anyone's private pipeline, just general guidance or links to public resources. If I get it working, I'll publish a notebook with the results so everyone benefits.</p>\n<p>Thanks!</p>",
+              "id": 3552144,
+              "post_date": "2026-11-09T07:38:49.093Z",
+              "raw_markdown": "Hi everyone,\n\nI'm a solo competitor, currently around 0.68 with a Qwen-based ensemble plus my own fine-tuned Qwen3-Embedding-4B expert. My out-of-fold analysis shows where most of my remaining error is: the GLM corner.\n\nMy OOF accuracy on these three models:\n- glm-5.3: 0.32\n- glm-5.3-flash: 0.44\n- claude-fable-5: 0.48\n\nMost of the mistakes are these three being confused with each other. GLM-5.3 seems to write a lot like Claude.\n\nThings I tried that did NOT help:\n- GLM-4-9B-0414 + Qwen3-8B-Base log-likelihood features (-0.002 in a prompt-grouped CV stack)\n- ~33k extra rows from public datasets (lower OOF)\n- Pseudo-labelling the test set (negative in simulation)\n\nI noticed public datasets with IQ3_XXS GGUF layer segments of GLM-5.3 and GLM-5.3-Flash, so the real model's likelihood looks like the missing signal. I'd appreciate any public pointers on:\n\n1. Does the llama.cpp build available offline on Kaggle support the GLM-5 / GLM-5.3 MoE architecture, or does it need a newer build attached as a dataset?\n2. How do you load or run the model segment by segment within the RAM and disk limits (2xT4, ~30 GB RAM)? Streaming layers or memory-mapping?\n3. Roughly how many tokens per passage is enough for a useful likelihood score within 9 hours on ~4,000 test passages?\n\nI'm not asking for anyone's private pipeline, just general guidance or links to public resources. If I get it working, I'll publish a notebook with the results so everyone benefits.\n\nThanks!",
+              "votes": 6
+            },
+            {
+              "content": "<p>You can take a closer look at the publicly available models from the top-performing group.</p>",
+              "id": 3552249,
+              "post_date": "2026-11-09T12:26:04.863Z",
+              "raw_markdown": "You can take a closer look at the publicly available models from the top-performing group.",
+              "replies": [
+                {
+                  "content": "<p>Thanks a lot! Do you mean the GLM-5.3 / GLM-5.3-Flash GGUF segment datasets (e.g. from jinghengwu), or are there also public trained models (adapters/heads) from that team under Kaggle Models? A link to where to start would help a lot.</p>",
+                  "id": 3552254,
+                  "post_date": "2026-11-09T12:36:18.570Z",
+                  "raw_markdown": "Thanks a lot! Do you mean the GLM-5.3 / GLM-5.3-Flash GGUF segment datasets (e.g. from jinghengwu), or are there also public trained models (adapters/heads) from that team under Kaggle Models? A link to where to start would help a lot.",
+                  "votes": 1
+                }
+              ],
+              "votes": 1
+            },
+            {
+              "content": "<p>The GLM and Claude mixup shows up in a simple TF-IDF plus logistic GroupKFold pass too. On that confusion matrix, true glm-5.3 was predicted as glm-5.3 27 times, as claude-opus-5 27 times, and as claude-fable-5 18 times (150 rows). True claude-fable-5 went to glm-5.3-flash 22 times and glm-5.3 21 times, against only 16 correct (149 rows). Across the two GLM labels and the five Claude labels, 125 true-GLM rows were called Claude and 119 true-Claude rows were called GLM. I have not run a GLM-5.3 likelihood feature, so I cannot help on the GGUF segment path.</p>",
+              "id": 3552644,
+              "post_date": "2026-11-10T02:55:31.193Z",
+              "raw_markdown": "The GLM and Claude mixup shows up in a simple TF-IDF plus logistic GroupKFold pass too. On that confusion matrix, true glm-5.3 was predicted as glm-5.3 27 times, as claude-opus-5 27 times, and as claude-fable-5 18 times (150 rows). True claude-fable-5 went to glm-5.3-flash 22 times and glm-5.3 21 times, against only 16 correct (149 rows). Across the two GLM labels and the five Claude labels, 125 true-GLM rows were called Claude and 119 true-Claude rows were called GLM. I have not run a GLM-5.3 likelihood feature, so I cannot help on the GGUF segment path.",
+              "replies": [
+                {
+                  "content": "<p>Thanks John, that's really useful. The GLM ↔ Claude confusion matches what I see in my own out-of-fold confusion matrix too: the glm-5.3 / glm-5.3-flash / claude-fable-5 / claude-opus-5 group is where most of my errors are. Appreciate you sharing the numbers!</p>",
+                  "id": 3552671,
+                  "post_date": "2026-11-10T03:54:42.023Z",
+                  "raw_markdown": "Thanks John, that's really useful. The GLM ↔ Claude confusion matches what I see in my own out-of-fold confusion matrix too: the glm-5.3 / glm-5.3-flash / claude-fable-5 / claude-opus-5 group is where most of my errors are. Appreciate you sharing the numbers!"
+                }
+              ],
+              "votes": 1
+            },
+            {
+              "content": "<p>Check general.architecture in the GGUF with gguf-py, and attach a newer llama.cpp build as a dataset; the preinstalled one is likely too old. Per-passage mmap inference won't fit 9h for a model that size: prefill touches most experts, so you stream most of the model each passage. The workable route is layer streaming over the whole test set: load one layer, run all passages' hidden states through it, free it, next layer. That reads the weights once. 128–256 tokens is usually enough for log-prob stats. Measure the curve on a train subset, and remember the feature has to exist for train rows too. I'd try GLM-5.3-Flash first, since it's smaller and targets the glm-5.3 vs Flash split directly.</p>",
+              "id": 3552889,
+              "post_date": "2026-11-10T14:40:54.923Z",
+              "raw_markdown": "Check general.architecture in the GGUF with gguf-py, and attach a newer llama.cpp build as a dataset; the preinstalled one is likely too old. Per-passage mmap inference won't fit 9h for a model that size: prefill touches most experts, so you stream most of the model each passage. The workable route is layer streaming over the whole test set: load one layer, run all passages' hidden states through it, free it, next layer. That reads the weights once. 128–256 tokens is usually enough for log-prob stats. Measure the curve on a train subset, and remember the feature has to exist for train rows too. I'd try GLM-5.3-Flash first, since it's smaller and targets the glm-5.3 vs Flash split directly.",
+              "votes": 1
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 35760329,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "default-thumb.png",
+            "author_user_display_name": "vishu phalswal",
+            "author_user_name": "vishuphalswal",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "comments": [
+              {
+                "author": {
+                  "display_name": "Vijay Konda",
+                  "id": 118239,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/vijaykonda"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 960,
+                "content": "<p>Check general.architecture in the GGUF with gguf-py, and attach a newer llama.cpp build as a dataset; the preinstalled one is likely too old. Per-passage mmap inference won't fit 9h for a model that size: prefill touches most experts, so you stream most of the model each passage. The workable route is layer streaming over the whole test set: load one layer, run all passages' hidden states through it, free it, next layer. That reads the weights once. 128–256 tokens is usually enough for log-prob stats. Measure the curve on a train subset, and remember the feature has to exist for train rows too. I'd try GLM-5.3-Flash first, since it's smaller and targets the glm-5.3 vs Flash split directly.</p>",
+                "feedback_tracking_data": {},
+                "id": 3552889,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-11-10T14:40:54.923Z",
+                "raw_markdown": "Check general.architecture in the GGUF with gguf-py, and attach a newer llama.cpp build as a dataset; the preinstalled one is likely too old. Per-passage mmap inference won't fit 9h for a model that size: prefill touches most experts, so you stream most of the model each passage. The workable route is layer streaming over the whole test set: load one layer, run all passages' hidden states through it, free it, next layer. That reads the weights once. 128–256 tokens is usually enough for log-prob stats. Measure the curve on a train subset, and remember the feature has to exist for train rows too. I'd try GLM-5.3-Flash first, since it's smaller and targets the glm-5.3 vs Flash split directly.",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "Vijay Konda",
+                    "id": 118239,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/vijaykonda",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/vijaykonda",
+                    "user_id": 118239,
+                    "user_name": "vijaykonda"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true,
+                  "total_upvotes": 1,
+                  "total_votes": 1
+                }
+              },
+              {
+                "author": {
+                  "display_name": "John K",
+                  "id": 37335549,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/37335549-kg.jpg?t=2026-10-24-04-37-50",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/johnnykhan1"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 1360,
+                "content": "<p>The GLM and Claude mixup shows up in a simple TF-IDF plus logistic GroupKFold pass too. On that confusion matrix, true glm-5.3 was predicted as glm-5.3 27 times, as claude-opus-5 27 times, and as claude-fable-5 18 times (150 rows). True claude-fable-5 went to glm-5.3-flash 22 times and glm-5.3 21 times, against only 16 correct (149 rows). Across the two GLM labels and the five Claude labels, 125 true-GLM rows were called Claude and 119 true-Claude rows were called GLM. I have not run a GLM-5.3 likelihood feature, so I cannot help on the GGUF segment path.</p>",
+                "feedback_tracking_data": {},
+                "id": 3552644,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-11-10T02:55:31.193Z",
+                "raw_markdown": "The GLM and Claude mixup shows up in a simple TF-IDF plus logistic GroupKFold pass too. On that confusion matrix, true glm-5.3 was predicted as glm-5.3 27 times, as claude-opus-5 27 times, and as claude-fable-5 18 times (150 rows). True claude-fable-5 went to glm-5.3-flash 22 times and glm-5.3 21 times, against only 16 correct (149 rows). Across the two GLM labels and the five Claude labels, 125 true-GLM rows were called Claude and 119 true-Claude rows were called GLM. I have not run a GLM-5.3 likelihood feature, so I cannot help on the GGUF segment path.",
+                "replies": [
+                  {
+                    "author": {
+                      "display_name": "vishu phalswal",
+                      "id": 35760329,
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/vishuphalswal"
+                    },
+                    "author_type": "TOPIC",
+                    "competition_ranking": 570,
+                    "content": "<p>Thanks John, that's really useful. The GLM ↔ Claude confusion matches what I see in my own out-of-fold confusion matrix too: the glm-5.3 / glm-5.3-flash / claude-fable-5 / claude-opus-5 group is where most of my errors are. Appreciate you sharing the numbers!</p>",
+                    "feedback_tracking_data": {},
+                    "id": 3552671,
+                    "is_thank_you": false,
+                    "kernel_version": 0,
+                    "parent": {},
+                    "post_date": "2026-11-10T03:54:42.023Z",
+                    "raw_markdown": "Thanks John, that's really useful. The GLM ↔ Claude confusion matches what I see in my own out-of-fold confusion matrix too: the glm-5.3 / glm-5.3-flash / claude-fable-5 / claude-opus-5 group is where most of my errors are. Appreciate you sharing the numbers!",
+                    "team_up_info": {
+                      "intro": "",
+                      "team_leader": {
+                        "display_name": "vishu phalswal",
+                        "id": 35760329,
+                        "performance_tier": "CONTRIBUTOR",
+                        "profile_url": "/vishuphalswal",
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                        "tier": "CONTRIBUTOR",
+                        "url": "/vishuphalswal",
+                        "user_id": 35760329,
+                        "user_name": "vishuphalswal"
+                      }
+                    },
+                    "votes": {
+                      "can_upvote": true
+                    }
+                  }
+                ],
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "John K",
+                    "id": 37335549,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/johnnykhan1",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/37335549-kg.jpg?t=2026-10-24-04-37-50",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/johnnykhan1",
+                    "user_id": 37335549,
+                    "user_name": "johnnykhan1"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true,
+                  "total_upvotes": 1,
+                  "total_votes": 1
+                }
+              },
+              {
+                "author": {
+                  "display_name": "AyoGG",
+                  "id": 15255201,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15255201-kg.png?t=2026-10-28-05-21-58",
+                  "tier": "MASTER",
+                  "url": "/ggayoayogg"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 14,
+                "content": "<p>You can take a closer look at the publicly available models from the top-performing group.</p>",
+                "feedback_tracking_data": {},
+                "id": 3552249,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-11-09T12:26:04.863Z",
+                "raw_markdown": "You can take a closer look at the publicly available models from the top-performing group.",
+                "replies": [
+                  {
+                    "author": {
+                      "display_name": "vishu phalswal",
+                      "id": 35760329,
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/vishuphalswal"
+                    },
+                    "author_type": "TOPIC",
+                    "competition_ranking": 570,
+                    "content": "<p>Thanks a lot! Do you mean the GLM-5.3 / GLM-5.3-Flash GGUF segment datasets (e.g. from jinghengwu), or are there also public trained models (adapters/heads) from that team under Kaggle Models? A link to where to start would help a lot.</p>",
+                    "feedback_tracking_data": {},
+                    "id": 3552254,
+                    "is_thank_you": false,
+                    "kernel_version": 0,
+                    "parent": {},
+                    "post_date": "2026-11-09T12:36:18.570Z",
+                    "raw_markdown": "Thanks a lot! Do you mean the GLM-5.3 / GLM-5.3-Flash GGUF segment datasets (e.g. from jinghengwu), or are there also public trained models (adapters/heads) from that team under Kaggle Models? A link to where to start would help a lot.",
+                    "team_up_info": {
+                      "intro": "",
+                      "team_leader": {
+                        "display_name": "vishu phalswal",
+                        "id": 35760329,
+                        "performance_tier": "CONTRIBUTOR",
+                        "profile_url": "/vishuphalswal",
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                        "tier": "CONTRIBUTOR",
+                        "url": "/vishuphalswal",
+                        "user_id": 35760329,
+                        "user_name": "vishuphalswal"
+                      }
+                    },
+                    "votes": {
+                      "can_upvote": true,
+                      "total_upvotes": 1,
+                      "total_votes": 1
+                    }
+                  }
+                ],
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "AyoGG",
+                    "id": 15255201,
+                    "performance_tier": "MASTER",
+                    "profile_url": "/ggayoayogg",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15255201-kg.png?t=2026-10-28-05-21-58",
+                    "tier": "MASTER",
+                    "url": "/ggayoayogg",
+                    "user_id": 15255201,
+                    "user_name": "ggayoayogg"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true,
+                  "total_upvotes": 1,
+                  "total_votes": 1
+                }
+              }
+            ],
+            "first_message": {
+              "author": {
+                "display_name": "vishu phalswal",
+                "id": 35760329,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/vishuphalswal"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 570,
+              "content": "<p>Hi everyone,</p>\n<p>I'm a solo competitor, currently around 0.68 with a Qwen-based ensemble plus my own fine-tuned Qwen3-Embedding-4B expert. My out-of-fold analysis shows where most of my remaining error is: the GLM corner.</p>\n<p>My OOF accuracy on these three models:</p>\n<ul>\n<li>glm-5.3: 0.32</li>\n<li>glm-5.3-flash: 0.44</li>\n<li>claude-fable-5: 0.48</li>\n</ul>\n<p>Most of the mistakes are these three being confused with each other. GLM-5.3 seems to write a lot like Claude.</p>\n<p>Things I tried that did NOT help:</p>\n<ul>\n<li>GLM-4-9B-0414 + Qwen3-8B-Base log-likelihood features (-0.002 in a prompt-grouped CV stack)</li>\n<li>~33k extra rows from public datasets (lower OOF)</li>\n<li>Pseudo-labelling the test set (negative in simulation)</li>\n</ul>\n<p>I noticed public datasets with IQ3_XXS GGUF layer segments of GLM-5.3 and GLM-5.3-Flash, so the real model's likelihood looks like the missing signal. I'd appreciate any public pointers on:</p>\n<ol>\n<li>Does the llama.cpp build available offline on Kaggle support the GLM-5 / GLM-5.3 MoE architecture, or does it need a newer build attached as a dataset?</li>\n<li>How do you load or run the model segment by segment within the RAM and disk limits (2xT4, ~30 GB RAM)? Streaming layers or memory-mapping?</li>\n<li>Roughly how many tokens per passage is enough for a useful likelihood score within 9 hours on ~4,000 test passages?</li>\n</ol>\n<p>I'm not asking for anyone's private pipeline, just general guidance or links to public resources. If I get it working, I'll publish a notebook with the results so everyone benefits.</p>\n<p>Thanks!</p>",
+              "feedback_tracking_data": {},
+              "id": 3552144,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-09T07:38:49.093Z",
+              "raw_markdown": "Hi everyone,\n\nI'm a solo competitor, currently around 0.68 with a Qwen-based ensemble plus my own fine-tuned Qwen3-Embedding-4B expert. My out-of-fold analysis shows where most of my remaining error is: the GLM corner.\n\nMy OOF accuracy on these three models:\n- glm-5.3: 0.32\n- glm-5.3-flash: 0.44\n- claude-fable-5: 0.48\n\nMost of the mistakes are these three being confused with each other. GLM-5.3 seems to write a lot like Claude.\n\nThings I tried that did NOT help:\n- GLM-4-9B-0414 + Qwen3-8B-Base log-likelihood features (-0.002 in a prompt-grouped CV stack)\n- ~33k extra rows from public datasets (lower OOF)\n- Pseudo-labelling the test set (negative in simulation)\n\nI noticed public datasets with IQ3_XXS GGUF layer segments of GLM-5.3 and GLM-5.3-Flash, so the real model's likelihood looks like the missing signal. I'd appreciate any public pointers on:\n\n1. Does the llama.cpp build available offline on Kaggle support the GLM-5 / GLM-5.3 MoE architecture, or does it need a newer build attached as a dataset?\n2. How do you load or run the model segment by segment within the RAM and disk limits (2xT4, ~30 GB RAM)? Streaming layers or memory-mapping?\n3. Roughly how many tokens per passage is enough for a useful likelihood score within 9 hours on ~4,000 test passages?\n\nI'm not asking for anyone's private pipeline, just general guidance or links to public resources. If I get it working, I'll publish a notebook with the results so everyone benefits.\n\nThanks!",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "vishu phalswal",
+                  "id": 35760329,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/vishuphalswal",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/vishuphalswal",
+                  "user_id": 35760329,
+                  "user_name": "vishuphalswal"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 7,
+                "total_votes": 6
+              }
+            },
+            "first_message_id": 3552144,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 757199,
+            "name": "Running GLM-5.3 / GLM-5.3-Flash inside the 9h limit — has anyone got the public GGUF segments working?",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-11-09T07:38:49.092450600Z",
+            "total_messages": 5,
+            "total_votes": 6,
+            "url": "/competitions/name-that-llm/discussion/757199"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-18T09:02:48+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-18T09:02:48+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-11-10T14:40:54.923333300Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [
+    {
+      "slug": "name-that-llm",
+      "topic_id": 757199,
+      "message_id": 3552249,
+      "parent_message_id": null,
+      "author": "AyoGG",
+      "author_url": "/ggayoayogg",
+      "author_tier": "MASTER",
+      "post_date": "2026-11-09T12:26:04.863Z",
+      "raw_markdown": "You can take a closer look at the publicly available models from the top-performing group.",
+      "content_html": "<p>You can take a closer look at the publicly available models from the top-performing group.</p>",
+      "votes": 1,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-16T16:21:39+00:00",
+      "last_seen_at": "2026-11-18T09:02:48+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T09:02:48+00:00",
+      "remote_last_listed_at": "2026-11-18T09:02:48+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "AyoGG",
+          "tier": "MASTER",
+          "url": "/ggayoayogg"
+        },
+        "content": "<p>You can take a closer look at the publicly available models from the top-performing group.</p>",
+        "id": 3552249,
+        "isThankYou": false,
+        "postDate": "2026-11-09T12:26:04.863Z",
+        "raw": {
+          "author": {
+            "display_name": "AyoGG",
+            "id": 15255201,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15255201-kg.png?t=2026-10-28-05-21-58",
+            "tier": "MASTER",
+            "url": "/ggayoayogg"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 14,
+          "content": "<p>You can take a closer look at the publicly available models from the top-performing group.</p>",
+          "feedback_tracking_data": {},
+          "id": 3552249,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-09T12:26:04.863Z",
+          "raw_markdown": "You can take a closer look at the publicly available models from the top-performing group.",
+          "replies": [
+            {
+              "author": {
+                "display_name": "vishu phalswal",
+                "id": 35760329,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/vishuphalswal"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 570,
+              "content": "<p>Thanks a lot! Do you mean the GLM-5.3 / GLM-5.3-Flash GGUF segment datasets (e.g. from jinghengwu), or are there also public trained models (adapters/heads) from that team under Kaggle Models? A link to where to start would help a lot.</p>",
+              "feedback_tracking_data": {},
+              "id": 3552254,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-09T12:36:18.570Z",
+              "raw_markdown": "Thanks a lot! Do you mean the GLM-5.3 / GLM-5.3-Flash GGUF segment datasets (e.g. from jinghengwu), or are there also public trained models (adapters/heads) from that team under Kaggle Models? A link to where to start would help a lot.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "vishu phalswal",
+                  "id": 35760329,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/vishuphalswal",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/vishuphalswal",
+                  "user_id": 35760329,
+                  "user_name": "vishuphalswal"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": 1
+              }
+            }
+          ],
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "AyoGG",
+              "id": 15255201,
+              "performance_tier": "MASTER",
+              "profile_url": "/ggayoayogg",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15255201-kg.png?t=2026-10-28-05-21-58",
+              "tier": "MASTER",
+              "url": "/ggayoayogg",
+              "user_id": 15255201,
+              "user_name": "ggayoayogg"
+            }
+          },
+          "votes": {
+            "can_upvote": true,
+            "total_upvotes": 1,
+            "total_votes": 1
+          }
+        },
+        "rawMarkdown": "You can take a closer look at the publicly available models from the top-performing group.",
+        "replies": [
+          {
+            "author": {
+              "displayName": "vishu phalswal",
+              "tier": "CONTRIBUTOR",
+              "url": "/vishuphalswal"
+            },
+            "content": "<p>Thanks a lot! Do you mean the GLM-5.3 / GLM-5.3-Flash GGUF segment datasets (e.g. from jinghengwu), or are there also public trained models (adapters/heads) from that team under Kaggle Models? A link to where to start would help a lot.</p>",
+            "id": 3552254,
+            "isThankYou": false,
+            "postDate": "2026-11-09T12:36:18.570Z",
+            "raw": {
+              "author": {
+                "display_name": "vishu phalswal",
+                "id": 35760329,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/vishuphalswal"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 570,
+              "content": "<p>Thanks a lot! Do you mean the GLM-5.3 / GLM-5.3-Flash GGUF segment datasets (e.g. from jinghengwu), or are there also public trained models (adapters/heads) from that team under Kaggle Models? A link to where to start would help a lot.</p>",
+              "feedback_tracking_data": {},
+              "id": 3552254,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-09T12:36:18.570Z",
+              "raw_markdown": "Thanks a lot! Do you mean the GLM-5.3 / GLM-5.3-Flash GGUF segment datasets (e.g. from jinghengwu), or are there also public trained models (adapters/heads) from that team under Kaggle Models? A link to where to start would help a lot.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "vishu phalswal",
+                  "id": 35760329,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/vishuphalswal",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/vishuphalswal",
+                  "user_id": 35760329,
+                  "user_name": "vishuphalswal"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": 1
+              }
+            },
+            "rawMarkdown": "Thanks a lot! Do you mean the GLM-5.3 / GLM-5.3-Flash GGUF segment datasets (e.g. from jinghengwu), or are there also public trained models (adapters/heads) from that team under Kaggle Models? A link to where to start would help a lot.",
+            "replies": [],
+            "votes": {
+              "totalVotes": 1
+            }
+          }
+        ],
+        "votes": {
+          "totalVotes": 1
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 757199,
+      "message_id": 3552254,
+      "parent_message_id": 3552249,
+      "author": "vishu phalswal",
+      "author_url": "/vishuphalswal",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-09T12:36:18.570Z",
+      "raw_markdown": "Thanks a lot! Do you mean the GLM-5.3 / GLM-5.3-Flash GGUF segment datasets (e.g. from jinghengwu), or are there also public trained models (adapters/heads) from that team under Kaggle Models? A link to where to start would help a lot.",
+      "content_html": "<p>Thanks a lot! Do you mean the GLM-5.3 / GLM-5.3-Flash GGUF segment datasets (e.g. from jinghengwu), or are there also public trained models (adapters/heads) from that team under Kaggle Models? A link to where to start would help a lot.</p>",
+      "votes": 1,
+      "is_thank_you": 0,
+      "depth": 1,
+      "first_seen_at": "2026-11-16T16:21:39+00:00",
+      "last_seen_at": "2026-11-18T09:02:48+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T09:02:48+00:00",
+      "remote_last_listed_at": "2026-11-18T09:02:48+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "vishu phalswal",
+          "tier": "CONTRIBUTOR",
+          "url": "/vishuphalswal"
+        },
+        "content": "<p>Thanks a lot! Do you mean the GLM-5.3 / GLM-5.3-Flash GGUF segment datasets (e.g. from jinghengwu), or are there also public trained models (adapters/heads) from that team under Kaggle Models? A link to where to start would help a lot.</p>",
+        "id": 3552254,
+        "isThankYou": false,
+        "postDate": "2026-11-09T12:36:18.570Z",
+        "raw": {
+          "author": {
+            "display_name": "vishu phalswal",
+            "id": 35760329,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+            "tier": "CONTRIBUTOR",
+            "url": "/vishuphalswal"
+          },
+          "author_type": "TOPIC",
+          "competition_ranking": 570,
+          "content": "<p>Thanks a lot! Do you mean the GLM-5.3 / GLM-5.3-Flash GGUF segment datasets (e.g. from jinghengwu), or are there also public trained models (adapters/heads) from that team under Kaggle Models? A link to where to start would help a lot.</p>",
+          "feedback_tracking_data": {},
+          "id": 3552254,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-09T12:36:18.570Z",
+          "raw_markdown": "Thanks a lot! Do you mean the GLM-5.3 / GLM-5.3-Flash GGUF segment datasets (e.g. from jinghengwu), or are there also public trained models (adapters/heads) from that team under Kaggle Models? A link to where to start would help a lot.",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "vishu phalswal",
+              "id": 35760329,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/vishuphalswal",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "CONTRIBUTOR",
+              "url": "/vishuphalswal",
+              "user_id": 35760329,
+              "user_name": "vishuphalswal"
+            }
+          },
+          "votes": {
+            "can_upvote": true,
+            "total_upvotes": 1,
+            "total_votes": 1
+          }
+        },
+        "rawMarkdown": "Thanks a lot! Do you mean the GLM-5.3 / GLM-5.3-Flash GGUF segment datasets (e.g. from jinghengwu), or are there also public trained models (adapters/heads) from that team under Kaggle Models? A link to where to start would help a lot.",
+        "replies": [],
+        "votes": {
+          "totalVotes": 1
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 757199,
+      "message_id": 3552644,
+      "parent_message_id": null,
+      "author": "John K",
+      "author_url": "/johnnykhan1",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-10T02:55:31.193Z",
+      "raw_markdown": "The GLM and Claude mixup shows up in a simple TF-IDF plus logistic GroupKFold pass too. On that confusion matrix, true glm-5.3 was predicted as glm-5.3 27 times, as claude-opus-5 27 times, and as claude-fable-5 18 times (150 rows). True claude-fable-5 went to glm-5.3-flash 22 times and glm-5.3 21 times, against only 16 correct (149 rows). Across the two GLM labels and the five Claude labels, 125 true-GLM rows were called Claude and 119 true-Claude rows were called GLM. I have not run a GLM-5.3 likelihood feature, so I cannot help on the GGUF segment path.",
+      "content_html": "<p>The GLM and Claude mixup shows up in a simple TF-IDF plus logistic GroupKFold pass too. On that confusion matrix, true glm-5.3 was predicted as glm-5.3 27 times, as claude-opus-5 27 times, and as claude-fable-5 18 times (150 rows). True claude-fable-5 went to glm-5.3-flash 22 times and glm-5.3 21 times, against only 16 correct (149 rows). Across the two GLM labels and the five Claude labels, 125 true-GLM rows were called Claude and 119 true-Claude rows were called GLM. I have not run a GLM-5.3 likelihood feature, so I cannot help on the GGUF segment path.</p>",
+      "votes": 1,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-16T16:21:39+00:00",
+      "last_seen_at": "2026-11-18T09:02:48+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T09:02:48+00:00",
+      "remote_last_listed_at": "2026-11-18T09:02:48+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "John K",
+          "tier": "CONTRIBUTOR",
+          "url": "/johnnykhan1"
+        },
+        "content": "<p>The GLM and Claude mixup shows up in a simple TF-IDF plus logistic GroupKFold pass too. On that confusion matrix, true glm-5.3 was predicted as glm-5.3 27 times, as claude-opus-5 27 times, and as claude-fable-5 18 times (150 rows). True claude-fable-5 went to glm-5.3-flash 22 times and glm-5.3 21 times, against only 16 correct (149 rows). Across the two GLM labels and the five Claude labels, 125 true-GLM rows were called Claude and 119 true-Claude rows were called GLM. I have not run a GLM-5.3 likelihood feature, so I cannot help on the GGUF segment path.</p>",
+        "id": 3552644,
+        "isThankYou": false,
+        "postDate": "2026-11-10T02:55:31.193Z",
+        "raw": {
+          "author": {
+            "display_name": "John K",
+            "id": 37335549,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/37335549-kg.jpg?t=2026-10-24-04-37-50",
+            "tier": "CONTRIBUTOR",
+            "url": "/johnnykhan1"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 1360,
+          "content": "<p>The GLM and Claude mixup shows up in a simple TF-IDF plus logistic GroupKFold pass too. On that confusion matrix, true glm-5.3 was predicted as glm-5.3 27 times, as claude-opus-5 27 times, and as claude-fable-5 18 times (150 rows). True claude-fable-5 went to glm-5.3-flash 22 times and glm-5.3 21 times, against only 16 correct (149 rows). Across the two GLM labels and the five Claude labels, 125 true-GLM rows were called Claude and 119 true-Claude rows were called GLM. I have not run a GLM-5.3 likelihood feature, so I cannot help on the GGUF segment path.</p>",
+          "feedback_tracking_data": {},
+          "id": 3552644,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-10T02:55:31.193Z",
+          "raw_markdown": "The GLM and Claude mixup shows up in a simple TF-IDF plus logistic GroupKFold pass too. On that confusion matrix, true glm-5.3 was predicted as glm-5.3 27 times, as claude-opus-5 27 times, and as claude-fable-5 18 times (150 rows). True claude-fable-5 went to glm-5.3-flash 22 times and glm-5.3 21 times, against only 16 correct (149 rows). Across the two GLM labels and the five Claude labels, 125 true-GLM rows were called Claude and 119 true-Claude rows were called GLM. I have not run a GLM-5.3 likelihood feature, so I cannot help on the GGUF segment path.",
+          "replies": [
+            {
+              "author": {
+                "display_name": "vishu phalswal",
+                "id": 35760329,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/vishuphalswal"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 570,
+              "content": "<p>Thanks John, that's really useful. The GLM ↔ Claude confusion matches what I see in my own out-of-fold confusion matrix too: the glm-5.3 / glm-5.3-flash / claude-fable-5 / claude-opus-5 group is where most of my errors are. Appreciate you sharing the numbers!</p>",
+              "feedback_tracking_data": {},
+              "id": 3552671,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-10T03:54:42.023Z",
+              "raw_markdown": "Thanks John, that's really useful. The GLM ↔ Claude confusion matches what I see in my own out-of-fold confusion matrix too: the glm-5.3 / glm-5.3-flash / claude-fable-5 / claude-opus-5 group is where most of my errors are. Appreciate you sharing the numbers!",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "vishu phalswal",
+                  "id": 35760329,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/vishuphalswal",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/vishuphalswal",
+                  "user_id": 35760329,
+                  "user_name": "vishuphalswal"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            }
+          ],
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "John K",
+              "id": 37335549,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/johnnykhan1",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/37335549-kg.jpg?t=2026-10-24-04-37-50",
+              "tier": "CONTRIBUTOR",
+              "url": "/johnnykhan1",
+              "user_id": 37335549,
+              "user_name": "johnnykhan1"
+            }
+          },
+          "votes": {
+            "can_upvote": true,
+            "total_upvotes": 1,
+            "total_votes": 1
+          }
+        },
+        "rawMarkdown": "The GLM and Claude mixup shows up in a simple TF-IDF plus logistic GroupKFold pass too. On that confusion matrix, true glm-5.3 was predicted as glm-5.3 27 times, as claude-opus-5 27 times, and as claude-fable-5 18 times (150 rows). True claude-fable-5 went to glm-5.3-flash 22 times and glm-5.3 21 times, against only 16 correct (149 rows). Across the two GLM labels and the five Claude labels, 125 true-GLM rows were called Claude and 119 true-Claude rows were called GLM. I have not run a GLM-5.3 likelihood feature, so I cannot help on the GGUF segment path.",
+        "replies": [
+          {
+            "author": {
+              "displayName": "vishu phalswal",
+              "tier": "CONTRIBUTOR",
+              "url": "/vishuphalswal"
+            },
+            "content": "<p>Thanks John, that's really useful. The GLM ↔ Claude confusion matches what I see in my own out-of-fold confusion matrix too: the glm-5.3 / glm-5.3-flash / claude-fable-5 / claude-opus-5 group is where most of my errors are. Appreciate you sharing the numbers!</p>",
+            "id": 3552671,
+            "isThankYou": false,
+            "postDate": "2026-11-10T03:54:42.023Z",
+            "raw": {
+              "author": {
+                "display_name": "vishu phalswal",
+                "id": 35760329,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/vishuphalswal"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 570,
+              "content": "<p>Thanks John, that's really useful. The GLM ↔ Claude confusion matches what I see in my own out-of-fold confusion matrix too: the glm-5.3 / glm-5.3-flash / claude-fable-5 / claude-opus-5 group is where most of my errors are. Appreciate you sharing the numbers!</p>",
+              "feedback_tracking_data": {},
+              "id": 3552671,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-10T03:54:42.023Z",
+              "raw_markdown": "Thanks John, that's really useful. The GLM ↔ Claude confusion matches what I see in my own out-of-fold confusion matrix too: the glm-5.3 / glm-5.3-flash / claude-fable-5 / claude-opus-5 group is where most of my errors are. Appreciate you sharing the numbers!",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "vishu phalswal",
+                  "id": 35760329,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/vishuphalswal",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/vishuphalswal",
+                  "user_id": 35760329,
+                  "user_name": "vishuphalswal"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "Thanks John, that's really useful. The GLM ↔ Claude confusion matches what I see in my own out-of-fold confusion matrix too: the glm-5.3 / glm-5.3-flash / claude-fable-5 / claude-opus-5 group is where most of my errors are. Appreciate you sharing the numbers!",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "votes": {
+          "totalVotes": 1
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 757199,
+      "message_id": 3552671,
+      "parent_message_id": 3552644,
+      "author": "vishu phalswal",
+      "author_url": "/vishuphalswal",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-10T03:54:42.023Z",
+      "raw_markdown": "Thanks John, that's really useful. The GLM ↔ Claude confusion matches what I see in my own out-of-fold confusion matrix too: the glm-5.3 / glm-5.3-flash / claude-fable-5 / claude-opus-5 group is where most of my errors are. Appreciate you sharing the numbers!",
+      "content_html": "<p>Thanks John, that's really useful. The GLM ↔ Claude confusion matches what I see in my own out-of-fold confusion matrix too: the glm-5.3 / glm-5.3-flash / claude-fable-5 / claude-opus-5 group is where most of my errors are. Appreciate you sharing the numbers!</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 1,
+      "first_seen_at": "2026-11-16T16:21:39+00:00",
+      "last_seen_at": "2026-11-18T09:02:48+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T09:02:48+00:00",
+      "remote_last_listed_at": "2026-11-18T09:02:48+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "vishu phalswal",
+          "tier": "CONTRIBUTOR",
+          "url": "/vishuphalswal"
+        },
+        "content": "<p>Thanks John, that's really useful. The GLM ↔ Claude confusion matches what I see in my own out-of-fold confusion matrix too: the glm-5.3 / glm-5.3-flash / claude-fable-5 / claude-opus-5 group is where most of my errors are. Appreciate you sharing the numbers!</p>",
+        "id": 3552671,
+        "isThankYou": false,
+        "postDate": "2026-11-10T03:54:42.023Z",
+        "raw": {
+          "author": {
+            "display_name": "vishu phalswal",
+            "id": 35760329,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+            "tier": "CONTRIBUTOR",
+            "url": "/vishuphalswal"
+          },
+          "author_type": "TOPIC",
+          "competition_ranking": 570,
+          "content": "<p>Thanks John, that's really useful. The GLM ↔ Claude confusion matches what I see in my own out-of-fold confusion matrix too: the glm-5.3 / glm-5.3-flash / claude-fable-5 / claude-opus-5 group is where most of my errors are. Appreciate you sharing the numbers!</p>",
+          "feedback_tracking_data": {},
+          "id": 3552671,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-10T03:54:42.023Z",
+          "raw_markdown": "Thanks John, that's really useful. The GLM ↔ Claude confusion matches what I see in my own out-of-fold confusion matrix too: the glm-5.3 / glm-5.3-flash / claude-fable-5 / claude-opus-5 group is where most of my errors are. Appreciate you sharing the numbers!",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "vishu phalswal",
+              "id": 35760329,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/vishuphalswal",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "CONTRIBUTOR",
+              "url": "/vishuphalswal",
+              "user_id": 35760329,
+              "user_name": "vishuphalswal"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "Thanks John, that's really useful. The GLM ↔ Claude confusion matches what I see in my own out-of-fold confusion matrix too: the glm-5.3 / glm-5.3-flash / claude-fable-5 / claude-opus-5 group is where most of my errors are. Appreciate you sharing the numbers!",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 757199,
+      "message_id": 3552889,
+      "parent_message_id": null,
+      "author": "Vijay Konda",
+      "author_url": "/vijaykonda",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-10T14:40:54.923Z",
+      "raw_markdown": "Check general.architecture in the GGUF with gguf-py, and attach a newer llama.cpp build as a dataset; the preinstalled one is likely too old. Per-passage mmap inference won't fit 9h for a model that size: prefill touches most experts, so you stream most of the model each passage. The workable route is layer streaming over the whole test set: load one layer, run all passages' hidden states through it, free it, next layer. That reads the weights once. 128–256 tokens is usually enough for log-prob stats. Measure the curve on a train subset, and remember the feature has to exist for train rows too. I'd try GLM-5.3-Flash first, since it's smaller and targets the glm-5.3 vs Flash split directly.",
+      "content_html": "<p>Check general.architecture in the GGUF with gguf-py, and attach a newer llama.cpp build as a dataset; the preinstalled one is likely too old. Per-passage mmap inference won't fit 9h for a model that size: prefill touches most experts, so you stream most of the model each passage. The workable route is layer streaming over the whole test set: load one layer, run all passages' hidden states through it, free it, next layer. That reads the weights once. 128–256 tokens is usually enough for log-prob stats. Measure the curve on a train subset, and remember the feature has to exist for train rows too. I'd try GLM-5.3-Flash first, since it's smaller and targets the glm-5.3 vs Flash split directly.</p>",
+      "votes": 1,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-16T16:21:39+00:00",
+      "last_seen_at": "2026-11-18T09:02:48+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T09:02:48+00:00",
+      "remote_last_listed_at": "2026-11-18T09:02:48+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Vijay Konda",
+          "tier": "CONTRIBUTOR",
+          "url": "/vijaykonda"
+        },
+        "content": "<p>Check general.architecture in the GGUF with gguf-py, and attach a newer llama.cpp build as a dataset; the preinstalled one is likely too old. Per-passage mmap inference won't fit 9h for a model that size: prefill touches most experts, so you stream most of the model each passage. The workable route is layer streaming over the whole test set: load one layer, run all passages' hidden states through it, free it, next layer. That reads the weights once. 128–256 tokens is usually enough for log-prob stats. Measure the curve on a train subset, and remember the feature has to exist for train rows too. I'd try GLM-5.3-Flash first, since it's smaller and targets the glm-5.3 vs Flash split directly.</p>",
+        "id": 3552889,
+        "isThankYou": false,
+        "postDate": "2026-11-10T14:40:54.923Z",
+        "raw": {
+          "author": {
+            "display_name": "Vijay Konda",
+            "id": 118239,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+            "tier": "CONTRIBUTOR",
+            "url": "/vijaykonda"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 960,
+          "content": "<p>Check general.architecture in the GGUF with gguf-py, and attach a newer llama.cpp build as a dataset; the preinstalled one is likely too old. Per-passage mmap inference won't fit 9h for a model that size: prefill touches most experts, so you stream most of the model each passage. The workable route is layer streaming over the whole test set: load one layer, run all passages' hidden states through it, free it, next layer. That reads the weights once. 128–256 tokens is usually enough for log-prob stats. Measure the curve on a train subset, and remember the feature has to exist for train rows too. I'd try GLM-5.3-Flash first, since it's smaller and targets the glm-5.3 vs Flash split directly.</p>",
+          "feedback_tracking_data": {},
+          "id": 3552889,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-10T14:40:54.923Z",
+          "raw_markdown": "Check general.architecture in the GGUF with gguf-py, and attach a newer llama.cpp build as a dataset; the preinstalled one is likely too old. Per-passage mmap inference won't fit 9h for a model that size: prefill touches most experts, so you stream most of the model each passage. The workable route is layer streaming over the whole test set: load one layer, run all passages' hidden states through it, free it, next layer. That reads the weights once. 128–256 tokens is usually enough for log-prob stats. Measure the curve on a train subset, and remember the feature has to exist for train rows too. I'd try GLM-5.3-Flash first, since it's smaller and targets the glm-5.3 vs Flash split directly.",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Vijay Konda",
+              "id": 118239,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/vijaykonda",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "CONTRIBUTOR",
+              "url": "/vijaykonda",
+              "user_id": 118239,
+              "user_name": "vijaykonda"
+            }
+          },
+          "votes": {
+            "can_upvote": true,
+            "total_upvotes": 1,
+            "total_votes": 1
+          }
+        },
+        "rawMarkdown": "Check general.architecture in the GGUF with gguf-py, and attach a newer llama.cpp build as a dataset; the preinstalled one is likely too old. Per-passage mmap inference won't fit 9h for a model that size: prefill touches most experts, so you stream most of the model each passage. The workable route is layer streaming over the whole test set: load one layer, run all passages' hidden states through it, free it, next layer. That reads the weights once. 128–256 tokens is usually enough for log-prob stats. Measure the curve on a train subset, and remember the feature has to exist for train rows too. I'd try GLM-5.3-Flash first, since it's smaller and targets the glm-5.3 vs Flash split directly.",
+        "replies": [],
+        "votes": {
+          "totalVotes": 1
+        }
+      }
+    }
+  ],
+  "writeup": null
+}

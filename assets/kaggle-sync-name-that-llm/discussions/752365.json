@@ -1,0 +1,1051 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 752365,
+    "title": "Sinkhorn balancing: what it costs when the test mix is uneven",
+    "author": "Boris Konstantinovskii",
+    "author_url": "/jusill",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-10-24T15:41:06.711732300Z",
+    "last_comment_post_date": "2026-11-03T12:41:23.146666700Z",
+    "comment_count": 4,
+    "votes": 2,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/752365",
+    "first_message_id": 3544029,
+    "first_seen_at": "2026-11-04T06:56:14+00:00",
+    "last_seen_at": "2026-11-16T16:36:02+00:00",
+    "detail_last_synced_at": "2026-11-16T16:23:18+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "fd5c3888b28e75dc26651321872fc04faf83d1b1ef51e928dd9c3b03c2cd3218",
+    "listing_metrics_hash": "6db2b817333d85ee95f494a1b2ba941fb79d87d4e3e0c8718afed5f3c0bfd1fa",
+    "detail_content_hash": "5918de5d8434022990aae338ccaf809b2847bc608ae89793d28fb322f8e929f8",
+    "detail_last_checked_at": "2026-11-16T16:23:18+00:00",
+    "detail_next_check_at": "2026-11-23T16:23:18+00:00",
+    "detail_unchanged_count": 2,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 4,
+      "firstForumMessageId": null,
+      "id": 752365,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-11-03T12:41:23.146666700Z",
+      "postDate": "2026-10-24T15:41:06.711732300Z",
+      "raw": {
+        "comment_count": 4,
+        "id": 752365,
+        "last_comment_post_date": "2026-11-03T12:41:23.146666700Z",
+        "post_date": "2026-10-24T15:41:06.711732300Z",
+        "title": "Sinkhorn balancing: what it costs when the test mix is uneven",
+        "topic_url": "/competitions/name-that-llm/discussion/752365",
+        "votes": 2
+      },
+      "title": "Sinkhorn balancing: what it costs when the test mix is uneven",
+      "topicUrl": "/competitions/name-that-llm/discussion/752365",
+      "votes": 2
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "Boris Konstantinovskii",
+        "authorUserName": "jusill",
+        "comments": [
+          {
+            "author": {
+              "displayName": "bosprimigenious",
+              "tier": "CONTRIBUTOR",
+              "url": "/bosprimigenious"
+            },
+            "content": "<p>Hi Boris, I noticed your Team Up status and read your audit of Sinkhorn under uneven model mixtures. I’m currently solo (best public score 0.473), looking for two complementary teammates for a three-person team. I can contribute reproducible baseline and grouped-validation work; my experiments are AI-assisted, using an owned RTX 4060 and free Kaggle compute. Would this setup interest you? What is your current team size and available time? Your validation and calibration experience would be a useful complement. Details: <a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/755378\" target=\"_blank\">https://www.kaggle.com/competitions/name-that-llm/discussion/755378</a> . No problem if you are already committed elsewhere.</p>",
+            "id": 3549359,
+            "isThankYou": false,
+            "postDate": "2026-11-03T12:41:23.147Z",
+            "raw": {
+              "author": {
+                "display_name": "bosprimigenious",
+                "id": 29167060,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/bosprimigenious"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 1775,
+              "content": "<p>Hi Boris, I noticed your Team Up status and read your audit of Sinkhorn under uneven model mixtures. I’m currently solo (best public score 0.473), looking for two complementary teammates for a three-person team. I can contribute reproducible baseline and grouped-validation work; my experiments are AI-assisted, using an owned RTX 4060 and free Kaggle compute. Would this setup interest you? What is your current team size and available time? Your validation and calibration experience would be a useful complement. Details: <a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/755378\" target=\"_blank\">https://www.kaggle.com/competitions/name-that-llm/discussion/755378</a> . No problem if you are already committed elsewhere.</p>",
+              "feedback_tracking_data": {},
+              "id": 3549359,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-03T12:41:23.147Z",
+              "raw_markdown": "Hi Boris, I noticed your Team Up status and read your audit of Sinkhorn under uneven model mixtures. I’m currently solo (best public score 0.473), looking for two complementary teammates for a three-person team. I can contribute reproducible baseline and grouped-validation work; my experiments are AI-assisted, using an owned RTX 4060 and free Kaggle compute. Would this setup interest you? What is your current team size and available time? Your validation and calibration experience would be a useful complement. Details: https://www.kaggle.com/competitions/name-that-llm/discussion/755378 . No problem if you are already committed elsewhere.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "bosprimigenious",
+                  "id": 29167060,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/bosprimigenious",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/bosprimigenious",
+                  "user_id": 29167060,
+                  "user_name": "bosprimigenious"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "Hi Boris, I noticed your Team Up status and read your audit of Sinkhorn under uneven model mixtures. I’m currently solo (best public score 0.473), looking for two complementary teammates for a three-person team. I can contribute reproducible baseline and grouped-validation work; my experiments are AI-assisted, using an owned RTX 4060 and free Kaggle compute. Would this setup interest you? What is your current team size and available time? Your validation and calibration experience would be a useful complement. Details: https://www.kaggle.com/competitions/name-that-llm/discussion/755378 . No problem if you are already committed elsewhere.",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          },
+          {
+            "author": {
+              "displayName": "HALX2158",
+              "tier": "CONTRIBUTOR",
+              "url": "/mizuno0522"
+            },
+            "content": "<p>One LB data point to set against your CV table: on a 0.638 blend, turning off the final Sinkhorn (300 iterations, so full balancing) and changing nothing else gave 0.636 on the public LB. So full balancing was worth +0.002 there, on the public part only. That is in line with your \"few thousandths\" on an even test, though as you say it shows how our test predictions lean, not what the test's mix is. I haven't tried 1 to 3 iterations on the LB.</p>",
+            "id": 3547495,
+            "isThankYou": false,
+            "postDate": "2026-10-31T03:24:10.303Z",
+            "raw": {
+              "author": {
+                "display_name": "HALX2158",
+                "id": 16294566,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                "tier": "CONTRIBUTOR",
+                "url": "/mizuno0522"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 1098,
+              "content": "<p>One LB data point to set against your CV table: on a 0.638 blend, turning off the final Sinkhorn (300 iterations, so full balancing) and changing nothing else gave 0.636 on the public LB. So full balancing was worth +0.002 there, on the public part only. That is in line with your \"few thousandths\" on an even test, though as you say it shows how our test predictions lean, not what the test's mix is. I haven't tried 1 to 3 iterations on the LB.</p>",
+              "feedback_tracking_data": {},
+              "id": 3547495,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-31T03:24:10.303Z",
+              "raw_markdown": "One LB data point to set against your CV table: on a 0.638 blend, turning off the final Sinkhorn (300 iterations, so full balancing) and changing nothing else gave 0.636 on the public LB. So full balancing was worth +0.002 there, on the public part only. That is in line with your \"few thousandths\" on an even test, though as you say it shows how our test predictions lean, not what the test's mix is. I haven't tried 1 to 3 iterations on the LB.",
+              "replies": [
+                {
+                  "author": {
+                    "display_name": "HALX2158",
+                    "id": 16294566,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/mizuno0522"
+                  },
+                  "author_type": "COMMENT",
+                  "competition_ranking": 1098,
+                  "content": "<p>A second LB data point, on a different base (a fork of judith007's 0.664 notebook, 6 members). Here Sinkhorn is a mix strength <em>s</em>: final log-scores = (1−s)·log P + s·log Q, where Q is P balanced toward a target marginal (the predicted marginal shrunk 35% toward the train prior).</p>\n<table>\n<thead>\n<tr>\n<th>s</th>\n<th>Public LB</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>0.60</td>\n<td>0.659 (0.659 again on an unchanged resubmission)</td>\n</tr>\n<tr>\n<td>0.45</td>\n<td>0.662</td>\n</tr>\n<tr>\n<td>0.30, plus typography coefficient 1.2 → 1.5</td>\n<td>0.663</td>\n</tr>\n</tbody>\n</table>\n<p>The last row changes two things, so it isn't a clean point for <em>s</em>. These are single submissions on the public part only. I haven't measured s = 0 on this base.</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3549071,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-03T02:28:20.057Z",
+                  "raw_markdown": "A second LB data point, on a different base (a fork of judith007's 0.664 notebook, 6 members). Here Sinkhorn is a mix strength *s*: final log-scores = (1−s)·log P + s·log Q, where Q is P balanced toward a target marginal (the predicted marginal shrunk 35% toward the train prior).\n\n| s | Public LB |\n|---|---|\n| 0.60 | 0.659 (0.659 again on an unchanged resubmission) |\n| 0.45 | 0.662 |\n| 0.30, plus typography coefficient 1.2 → 1.5 | 0.663 |\n\nThe last row changes two things, so it isn't a clean point for *s*. These are single submissions on the public part only. I haven't measured s = 0 on this base.",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "HALX2158",
+                      "id": 16294566,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/mizuno0522",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/mizuno0522",
+                      "user_id": 16294566,
+                      "user_name": "mizuno0522"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "HALX2158",
+                  "id": 16294566,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/mizuno0522",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/mizuno0522",
+                  "user_id": 16294566,
+                  "user_name": "mizuno0522"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "One LB data point to set against your CV table: on a 0.638 blend, turning off the final Sinkhorn (300 iterations, so full balancing) and changing nothing else gave 0.636 on the public LB. So full balancing was worth +0.002 there, on the public part only. That is in line with your \"few thousandths\" on an even test, though as you say it shows how our test predictions lean, not what the test's mix is. I haven't tried 1 to 3 iterations on the LB.",
+            "replies": [
+              {
+                "author": {
+                  "displayName": "HALX2158",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/mizuno0522"
+                },
+                "content": "<p>A second LB data point, on a different base (a fork of judith007's 0.664 notebook, 6 members). Here Sinkhorn is a mix strength <em>s</em>: final log-scores = (1−s)·log P + s·log Q, where Q is P balanced toward a target marginal (the predicted marginal shrunk 35% toward the train prior).</p>\n<table>\n<thead>\n<tr>\n<th>s</th>\n<th>Public LB</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>0.60</td>\n<td>0.659 (0.659 again on an unchanged resubmission)</td>\n</tr>\n<tr>\n<td>0.45</td>\n<td>0.662</td>\n</tr>\n<tr>\n<td>0.30, plus typography coefficient 1.2 → 1.5</td>\n<td>0.663</td>\n</tr>\n</tbody>\n</table>\n<p>The last row changes two things, so it isn't a clean point for <em>s</em>. These are single submissions on the public part only. I haven't measured s = 0 on this base.</p>",
+                "id": 3549071,
+                "isThankYou": false,
+                "postDate": "2026-11-03T02:28:20.057Z",
+                "raw": {
+                  "author": {
+                    "display_name": "HALX2158",
+                    "id": 16294566,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/mizuno0522"
+                  },
+                  "author_type": "COMMENT",
+                  "competition_ranking": 1098,
+                  "content": "<p>A second LB data point, on a different base (a fork of judith007's 0.664 notebook, 6 members). Here Sinkhorn is a mix strength <em>s</em>: final log-scores = (1−s)·log P + s·log Q, where Q is P balanced toward a target marginal (the predicted marginal shrunk 35% toward the train prior).</p>\n<table>\n<thead>\n<tr>\n<th>s</th>\n<th>Public LB</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>0.60</td>\n<td>0.659 (0.659 again on an unchanged resubmission)</td>\n</tr>\n<tr>\n<td>0.45</td>\n<td>0.662</td>\n</tr>\n<tr>\n<td>0.30, plus typography coefficient 1.2 → 1.5</td>\n<td>0.663</td>\n</tr>\n</tbody>\n</table>\n<p>The last row changes two things, so it isn't a clean point for <em>s</em>. These are single submissions on the public part only. I haven't measured s = 0 on this base.</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3549071,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-03T02:28:20.057Z",
+                  "raw_markdown": "A second LB data point, on a different base (a fork of judith007's 0.664 notebook, 6 members). Here Sinkhorn is a mix strength *s*: final log-scores = (1−s)·log P + s·log Q, where Q is P balanced toward a target marginal (the predicted marginal shrunk 35% toward the train prior).\n\n| s | Public LB |\n|---|---|\n| 0.60 | 0.659 (0.659 again on an unchanged resubmission) |\n| 0.45 | 0.662 |\n| 0.30, plus typography coefficient 1.2 → 1.5 | 0.663 |\n\nThe last row changes two things, so it isn't a clean point for *s*. These are single submissions on the public part only. I haven't measured s = 0 on this base.",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "HALX2158",
+                      "id": 16294566,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/mizuno0522",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/mizuno0522",
+                      "user_id": 16294566,
+                      "user_name": "mizuno0522"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                },
+                "rawMarkdown": "A second LB data point, on a different base (a fork of judith007's 0.664 notebook, 6 members). Here Sinkhorn is a mix strength *s*: final log-scores = (1−s)·log P + s·log Q, where Q is P balanced toward a target marginal (the predicted marginal shrunk 35% toward the train prior).\n\n| s | Public LB |\n|---|---|\n| 0.60 | 0.659 (0.659 again on an unchanged resubmission) |\n| 0.45 | 0.662 |\n| 0.30, plus typography coefficient 1.2 → 1.5 | 0.663 |\n\nThe last row changes two things, so it isn't a clean point for *s*. These are single submissions on the public part only. I haven't measured s = 0 on this base.",
+                "replies": [],
+                "votes": {
+                  "totalVotes": 0
+                }
+              }
+            ],
+            "votes": {
+              "totalVotes": 0
+            }
+          },
+          {
+            "author": {
+              "displayName": "GoPain",
+              "tier": "CONTRIBUTOR",
+              "url": "/locdunhat"
+            },
+            "content": "<p>Thanks, this matches what I see. One addition: what Sinkhorn removes is a per-class offset in the scores, so the same gain can be learned on OOF and applied to test without any assumption about the test mix.</p>\n<p>Cross-fitted offsets: learn one log-offset per class on four folds' OOF (Sinkhorn on those rows, keep the column scalings), add them to the fifth fold's scores, then argmax. My grouped 5-fold OOF (2,699 rows):</p>\n<table>\n<thead>\n<tr>\n<th></th>\n<th>argmax</th>\n<th>Sinkhorn, all rows</th>\n<th>cross-fitted offsets</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>DeBERTa-v3-large, two-stage</td>\n<td>0.521</td>\n<td>0.564</td>\n<td>0.560</td>\n</tr>\n<tr>\n<td>Qwen3-8B LoRA</td>\n<td>0.595</td>\n<td>0.600</td>\n<td>0.599</td>\n</tr>\n<tr>\n<td>LoRA + 0.5 DeBERTa + 1.0 n-gram SVC</td>\n<td>0.626</td>\n<td>0.626</td>\n<td>0.621</td>\n</tr>\n</tbody>\n</table>\n<ul>\n<li>A single member with strong class preferences (the DeBERTa here) gets almost all of its Sinkhorn gain from offsets learned on OOF. Offsets learned that way do not care what the test mix is.</li>\n<li>On a blend whose members lean in different directions, little is left to remove: plain argmax already equals Sinkhorn on OOF. Cross-fitted offsets only add noise (−0.005). Full balancing then buys nothing on CV and keeps the risk you measured.</li>\n<li>On the public LB, Sinkhorn on an earlier LoRA alone gave +0.011 (0.538 to 0.549) while its OOF did not move (0.5760 to 0.5761). That fits your last point: the LB gain reflects how test predictions lean, not the test's mix.</li>\n</ul>\n<p>I checked the same comparison on a known-truth simulation (18 Gaussian classes with per-class offsets). On a balanced test, offsets from validation are within 0.003 of Sinkhorn. With a Dirichlet(1) test mix, Sinkhorn's regret against the Bayes rule rises to 0.060 while the offsets stay at 0.018. Estimating the test prior by EM and balancing towards it was worse than both. That is expected, because for balanced accuracy the optimal decision does not depend on the test prior. Notebook with the code and tables: <a href=\"https://www.kaggle.com/code/locdunhat/sinkhorn-rebalancing-under-balanced-accuracy\" target=\"_blank\">https://www.kaggle.com/code/locdunhat/sinkhorn-rebalancing-under-balanced-accuracy</a></p>",
+            "id": 3544106,
+            "isThankYou": false,
+            "postDate": "2026-10-24T19:37:07.997Z",
+            "raw": {
+              "author": {
+                "display_name": "GoPain",
+                "id": 3897663,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3897663-kg.jpg?t=2026-10-14-14-18-45",
+                "tier": "CONTRIBUTOR",
+                "url": "/locdunhat"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 1038,
+              "content": "<p>Thanks, this matches what I see. One addition: what Sinkhorn removes is a per-class offset in the scores, so the same gain can be learned on OOF and applied to test without any assumption about the test mix.</p>\n<p>Cross-fitted offsets: learn one log-offset per class on four folds' OOF (Sinkhorn on those rows, keep the column scalings), add them to the fifth fold's scores, then argmax. My grouped 5-fold OOF (2,699 rows):</p>\n<table>\n<thead>\n<tr>\n<th></th>\n<th>argmax</th>\n<th>Sinkhorn, all rows</th>\n<th>cross-fitted offsets</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>DeBERTa-v3-large, two-stage</td>\n<td>0.521</td>\n<td>0.564</td>\n<td>0.560</td>\n</tr>\n<tr>\n<td>Qwen3-8B LoRA</td>\n<td>0.595</td>\n<td>0.600</td>\n<td>0.599</td>\n</tr>\n<tr>\n<td>LoRA + 0.5 DeBERTa + 1.0 n-gram SVC</td>\n<td>0.626</td>\n<td>0.626</td>\n<td>0.621</td>\n</tr>\n</tbody>\n</table>\n<ul>\n<li>A single member with strong class preferences (the DeBERTa here) gets almost all of its Sinkhorn gain from offsets learned on OOF. Offsets learned that way do not care what the test mix is.</li>\n<li>On a blend whose members lean in different directions, little is left to remove: plain argmax already equals Sinkhorn on OOF. Cross-fitted offsets only add noise (−0.005). Full balancing then buys nothing on CV and keeps the risk you measured.</li>\n<li>On the public LB, Sinkhorn on an earlier LoRA alone gave +0.011 (0.538 to 0.549) while its OOF did not move (0.5760 to 0.5761). That fits your last point: the LB gain reflects how test predictions lean, not the test's mix.</li>\n</ul>\n<p>I checked the same comparison on a known-truth simulation (18 Gaussian classes with per-class offsets). On a balanced test, offsets from validation are within 0.003 of Sinkhorn. With a Dirichlet(1) test mix, Sinkhorn's regret against the Bayes rule rises to 0.060 while the offsets stay at 0.018. Estimating the test prior by EM and balancing towards it was worse than both. That is expected, because for balanced accuracy the optimal decision does not depend on the test prior. Notebook with the code and tables: <a href=\"https://www.kaggle.com/code/locdunhat/sinkhorn-rebalancing-under-balanced-accuracy\" target=\"_blank\">https://www.kaggle.com/code/locdunhat/sinkhorn-rebalancing-under-balanced-accuracy</a></p>",
+              "feedback_tracking_data": {},
+              "id": 3544106,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-24T19:37:07.997Z",
+              "raw_markdown": "Thanks, this matches what I see. One addition: what Sinkhorn removes is a per-class offset in the scores, so the same gain can be learned on OOF and applied to test without any assumption about the test mix.\n\nCross-fitted offsets: learn one log-offset per class on four folds' OOF (Sinkhorn on those rows, keep the column scalings), add them to the fifth fold's scores, then argmax. My grouped 5-fold OOF (2,699 rows):\n\n| | argmax | Sinkhorn, all rows | cross-fitted offsets |\n| --- | --- | --- | --- |\n| DeBERTa-v3-large, two-stage | 0.521 | 0.564 | 0.560 |\n| Qwen3-8B LoRA | 0.595 | 0.600 | 0.599 |\n| LoRA + 0.5 DeBERTa + 1.0 n-gram SVC | 0.626 | 0.626 | 0.621 |\n\n- A single member with strong class preferences (the DeBERTa here) gets almost all of its Sinkhorn gain from offsets learned on OOF. Offsets learned that way do not care what the test mix is.\n- On a blend whose members lean in different directions, little is left to remove: plain argmax already equals Sinkhorn on OOF. Cross-fitted offsets only add noise (−0.005). Full balancing then buys nothing on CV and keeps the risk you measured.\n- On the public LB, Sinkhorn on an earlier LoRA alone gave +0.011 (0.538 to 0.549) while its OOF did not move (0.5760 to 0.5761). That fits your last point: the LB gain reflects how test predictions lean, not the test's mix.\n\nI checked the same comparison on a known-truth simulation (18 Gaussian classes with per-class offsets). On a balanced test, offsets from validation are within 0.003 of Sinkhorn. With a Dirichlet(1) test mix, Sinkhorn's regret against the Bayes rule rises to 0.060 while the offsets stay at 0.018. Estimating the test prior by EM and balancing towards it was worse than both. That is expected, because for balanced accuracy the optimal decision does not depend on the test prior. Notebook with the code and tables: https://www.kaggle.com/code/locdunhat/sinkhorn-rebalancing-under-balanced-accuracy",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "GoPain",
+                  "id": 3897663,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/locdunhat",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3897663-kg.jpg?t=2026-10-14-14-18-45",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/locdunhat",
+                  "user_id": 3897663,
+                  "user_name": "locdunhat"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "Thanks, this matches what I see. One addition: what Sinkhorn removes is a per-class offset in the scores, so the same gain can be learned on OOF and applied to test without any assumption about the test mix.\n\nCross-fitted offsets: learn one log-offset per class on four folds' OOF (Sinkhorn on those rows, keep the column scalings), add them to the fifth fold's scores, then argmax. My grouped 5-fold OOF (2,699 rows):\n\n| | argmax | Sinkhorn, all rows | cross-fitted offsets |\n| --- | --- | --- | --- |\n| DeBERTa-v3-large, two-stage | 0.521 | 0.564 | 0.560 |\n| Qwen3-8B LoRA | 0.595 | 0.600 | 0.599 |\n| LoRA + 0.5 DeBERTa + 1.0 n-gram SVC | 0.626 | 0.626 | 0.621 |\n\n- A single member with strong class preferences (the DeBERTa here) gets almost all of its Sinkhorn gain from offsets learned on OOF. Offsets learned that way do not care what the test mix is.\n- On a blend whose members lean in different directions, little is left to remove: plain argmax already equals Sinkhorn on OOF. Cross-fitted offsets only add noise (−0.005). Full balancing then buys nothing on CV and keeps the risk you measured.\n- On the public LB, Sinkhorn on an earlier LoRA alone gave +0.011 (0.538 to 0.549) while its OOF did not move (0.5760 to 0.5761). That fits your last point: the LB gain reflects how test predictions lean, not the test's mix.\n\nI checked the same comparison on a known-truth simulation (18 Gaussian classes with per-class offsets). On a balanced test, offsets from validation are within 0.003 of Sinkhorn. With a Dirichlet(1) test mix, Sinkhorn's regret against the Bayes rule rises to 0.060 while the offsets stay at 0.018. Estimating the test prior by EM and balancing towards it was worse than both. That is expected, because for balanced accuracy the optimal decision does not depend on the test prior. Notebook with the code and tables: https://www.kaggle.com/code/locdunhat/sinkhorn-rebalancing-under-balanced-accuracy",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "expectedCommentCount": 4,
+        "firstMessage": {
+          "author": {
+            "displayName": "Boris Konstantinovskii",
+            "tier": "CONTRIBUTOR",
+            "url": "/jusill"
+          },
+          "content": "<p>Many public notebooks end with Sinkhorn balancing: the test probabilities are rescaled until every class gets the same total mass. For balanced accuracy this is a sensible correction if the test is close to even. We do not know the hidden test's mix, so we measured what balancing costs when the mix is uneven.</p>\n<p><strong>Setup.</strong></p>\n<ul>\n<li>Out-of-fold probabilities of a strong blend: 2,699 passages, prompt-grouped 5-fold CV, about 0.64 balanced accuracy.</li>\n<li>Test pools of 2,000 passages, the model mix drawn from a symmetric Dirichlet(alpha), 40 pools per setting. Alpha 1 is a very uneven mix, with some models nearly absent. Alpha 100 is nearly even.</li>\n<li>On each pool: the plain argmax, and Sinkhorn at 1, 3 and 50 iterations.</li>\n</ul>\n<table>\n<thead>\n<tr>\n<th>test mix</th>\n<th>plain</th>\n<th>1 iteration</th>\n<th>3 iterations</th>\n<th>50 iterations</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>exactly even (all OOF rows)</td>\n<td>0.6387</td>\n<td>0.6398</td>\n<td><strong>0.6409</strong></td>\n<td>0.6379</td>\n</tr>\n<tr>\n<td>alpha 100, nearly even</td>\n<td>0.6384</td>\n<td>0.6391</td>\n<td><strong>0.6395</strong></td>\n<td>0.6363</td>\n</tr>\n<tr>\n<td>alpha 20</td>\n<td>0.6357</td>\n<td>0.6376</td>\n<td><strong>0.6379</strong></td>\n<td>0.6298</td>\n</tr>\n<tr>\n<td>alpha 5</td>\n<td><strong>0.6393</strong></td>\n<td>0.6391</td>\n<td>0.6384</td>\n<td>0.6167</td>\n</tr>\n<tr>\n<td>alpha 1, very uneven</td>\n<td><strong>0.6361</strong></td>\n<td>0.6345</td>\n<td>0.6284</td>\n<td>0.5704</td>\n</tr>\n</tbody>\n</table>\n<p>Small pools are worse still. On a sparse CV scheme (about 75 passages per pool, 1 to 4 per prompt, uneven mix), full balancing took the same blend from 0.645 to 0.475.</p>\n<p><strong>What we take from it.</strong></p>\n<ul>\n<li><strong>Full balancing is a bet that the test is close to even.</strong> If it is, you gain a few thousandths. If it is not, you can lose several points.</li>\n<li><strong>A partial balance is a cheap hedge.</strong> One to three iterations keep most of the gain on an even test and lose under 0.01 on the most uneven mix we tried.</li>\n<li><strong>OOF predictions cannot show the gain some people see on the LB.</strong> OOF rows carry no shift between train and test, so this measures the risk only. If balancing helps you on the public LB, that says your test predictions lean towards some models. It says nothing about the test's mix.</li>\n</ul>\n<p>To check your own blend, take its OOF log-probabilities and labels:</p>\n<pre><code>import numpy as np\nfrom sklearn.metrics import balanced_accuracy_score\n\ndef sinkhorn(logp, iters):\n    \"\"\"Rescale log-probabilities until every class gets the same total mass; rows stay normalised.\"\"\"\n    z, target = logp.copy(), np.log(len(logp) / logp.shape[1])\n    for _ in range(iters):\n        m = z.max(0, keepdims=True)\n        z = z - (m + np.log(np.exp(z - m).sum(0, keepdims=True))) + target\n        z = z - z.max(1, keepdims=True)\n        z -= np.log(np.exp(z).sum(1, keepdims=True))\n    return z\n\ndef uneven_pools(y, alpha, size=2000, draws=40, seed=0):\n    \"\"\"Row indices of test pools whose class mix is drawn from a symmetric Dirichlet(alpha).\"\"\"\n    rng, classes = np.random.default_rng(seed), np.unique(y)\n    by_class = [np.flatnonzero(y == c) for c in classes]\n    for _ in range(draws):\n        counts = rng.multinomial(size, rng.dirichlet([alpha] * len(classes)))\n        yield np.concatenate([rng.choice(ix, k) for ix, k in zip(by_class, counts) if k])\n\n# logp: (n, 18) OOF log-probabilities, y: (n,) labels, labels: class names in column order\nfor alpha in [1, 5, 20, 100]:\n    scores = np.mean([[balanced_accuracy_score(y[r], labels[sinkhorn(logp[r], k).argmax(1)]) for k in (0, 1, 3, 50)]\n                      for r in uneven_pools(y, alpha)], axis=0)\n    print(alpha, scores.round(4))\n</code></pre>",
+          "id": 3544029,
+          "isThankYou": false,
+          "postDate": "2026-10-24T15:41:06.713Z",
+          "raw": {
+            "author": {
+              "display_name": "Boris Konstantinovskii",
+              "id": 1695468,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1695468-kg.png?t=2026-01-11-09-27-25",
+              "tier": "CONTRIBUTOR",
+              "url": "/jusill"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 52,
+            "content": "<p>Many public notebooks end with Sinkhorn balancing: the test probabilities are rescaled until every class gets the same total mass. For balanced accuracy this is a sensible correction if the test is close to even. We do not know the hidden test's mix, so we measured what balancing costs when the mix is uneven.</p>\n<p><strong>Setup.</strong></p>\n<ul>\n<li>Out-of-fold probabilities of a strong blend: 2,699 passages, prompt-grouped 5-fold CV, about 0.64 balanced accuracy.</li>\n<li>Test pools of 2,000 passages, the model mix drawn from a symmetric Dirichlet(alpha), 40 pools per setting. Alpha 1 is a very uneven mix, with some models nearly absent. Alpha 100 is nearly even.</li>\n<li>On each pool: the plain argmax, and Sinkhorn at 1, 3 and 50 iterations.</li>\n</ul>\n<table>\n<thead>\n<tr>\n<th>test mix</th>\n<th>plain</th>\n<th>1 iteration</th>\n<th>3 iterations</th>\n<th>50 iterations</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>exactly even (all OOF rows)</td>\n<td>0.6387</td>\n<td>0.6398</td>\n<td><strong>0.6409</strong></td>\n<td>0.6379</td>\n</tr>\n<tr>\n<td>alpha 100, nearly even</td>\n<td>0.6384</td>\n<td>0.6391</td>\n<td><strong>0.6395</strong></td>\n<td>0.6363</td>\n</tr>\n<tr>\n<td>alpha 20</td>\n<td>0.6357</td>\n<td>0.6376</td>\n<td><strong>0.6379</strong></td>\n<td>0.6298</td>\n</tr>\n<tr>\n<td>alpha 5</td>\n<td><strong>0.6393</strong></td>\n<td>0.6391</td>\n<td>0.6384</td>\n<td>0.6167</td>\n</tr>\n<tr>\n<td>alpha 1, very uneven</td>\n<td><strong>0.6361</strong></td>\n<td>0.6345</td>\n<td>0.6284</td>\n<td>0.5704</td>\n</tr>\n</tbody>\n</table>\n<p>Small pools are worse still. On a sparse CV scheme (about 75 passages per pool, 1 to 4 per prompt, uneven mix), full balancing took the same blend from 0.645 to 0.475.</p>\n<p><strong>What we take from it.</strong></p>\n<ul>\n<li><strong>Full balancing is a bet that the test is close to even.</strong> If it is, you gain a few thousandths. If it is not, you can lose several points.</li>\n<li><strong>A partial balance is a cheap hedge.</strong> One to three iterations keep most of the gain on an even test and lose under 0.01 on the most uneven mix we tried.</li>\n<li><strong>OOF predictions cannot show the gain some people see on the LB.</strong> OOF rows carry no shift between train and test, so this measures the risk only. If balancing helps you on the public LB, that says your test predictions lean towards some models. It says nothing about the test's mix.</li>\n</ul>\n<p>To check your own blend, take its OOF log-probabilities and labels:</p>\n<pre><code>import numpy as np\nfrom sklearn.metrics import balanced_accuracy_score\n\ndef sinkhorn(logp, iters):\n    \"\"\"Rescale log-probabilities until every class gets the same total mass; rows stay normalised.\"\"\"\n    z, target = logp.copy(), np.log(len(logp) / logp.shape[1])\n    for _ in range(iters):\n        m = z.max(0, keepdims=True)\n        z = z - (m + np.log(np.exp(z - m).sum(0, keepdims=True))) + target\n        z = z - z.max(1, keepdims=True)\n        z -= np.log(np.exp(z).sum(1, keepdims=True))\n    return z\n\ndef uneven_pools(y, alpha, size=2000, draws=40, seed=0):\n    \"\"\"Row indices of test pools whose class mix is drawn from a symmetric Dirichlet(alpha).\"\"\"\n    rng, classes = np.random.default_rng(seed), np.unique(y)\n    by_class = [np.flatnonzero(y == c) for c in classes]\n    for _ in range(draws):\n        counts = rng.multinomial(size, rng.dirichlet([alpha] * len(classes)))\n        yield np.concatenate([rng.choice(ix, k) for ix, k in zip(by_class, counts) if k])\n\n# logp: (n, 18) OOF log-probabilities, y: (n,) labels, labels: class names in column order\nfor alpha in [1, 5, 20, 100]:\n    scores = np.mean([[balanced_accuracy_score(y[r], labels[sinkhorn(logp[r], k).argmax(1)]) for k in (0, 1, 3, 50)]\n                      for r in uneven_pools(y, alpha)], axis=0)\n    print(alpha, scores.round(4))\n</code></pre>",
+            "feedback_tracking_data": {},
+            "id": 3544029,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-10-24T15:41:06.713Z",
+            "raw_markdown": "Many public notebooks end with Sinkhorn balancing: the test probabilities are rescaled until every class gets the same total mass. For balanced accuracy this is a sensible correction if the test is close to even. We do not know the hidden test's mix, so we measured what balancing costs when the mix is uneven.\n\n**Setup.**\n\n- Out-of-fold probabilities of a strong blend: 2,699 passages, prompt-grouped 5-fold CV, about 0.64 balanced accuracy.\n- Test pools of 2,000 passages, the model mix drawn from a symmetric Dirichlet(alpha), 40 pools per setting. Alpha 1 is a very uneven mix, with some models nearly absent. Alpha 100 is nearly even.\n- On each pool: the plain argmax, and Sinkhorn at 1, 3 and 50 iterations.\n\n| test mix | plain | 1 iteration | 3 iterations | 50 iterations |\n|---|---|---|---|---|\n| exactly even (all OOF rows) | 0.6387 | 0.6398 | **0.6409** | 0.6379 |\n| alpha 100, nearly even | 0.6384 | 0.6391 | **0.6395** | 0.6363 |\n| alpha 20 | 0.6357 | 0.6376 | **0.6379** | 0.6298 |\n| alpha 5 | **0.6393** | 0.6391 | 0.6384 | 0.6167 |\n| alpha 1, very uneven | **0.6361** | 0.6345 | 0.6284 | 0.5704 |\n\nSmall pools are worse still. On a sparse CV scheme (about 75 passages per pool, 1 to 4 per prompt, uneven mix), full balancing took the same blend from 0.645 to 0.475.\n\n**What we take from it.**\n\n- **Full balancing is a bet that the test is close to even.** If it is, you gain a few thousandths. If it is not, you can lose several points.\n- **A partial balance is a cheap hedge.** One to three iterations keep most of the gain on an even test and lose under 0.01 on the most uneven mix we tried.\n- **OOF predictions cannot show the gain some people see on the LB.** OOF rows carry no shift between train and test, so this measures the risk only. If balancing helps you on the public LB, that says your test predictions lean towards some models. It says nothing about the test's mix.\n\nTo check your own blend, take its OOF log-probabilities and labels:\n\n```python\nimport numpy as np\nfrom sklearn.metrics import balanced_accuracy_score\n\ndef sinkhorn(logp, iters):\n    \"\"\"Rescale log-probabilities until every class gets the same total mass; rows stay normalised.\"\"\"\n    z, target = logp.copy(), np.log(len(logp) / logp.shape[1])\n    for _ in range(iters):\n        m = z.max(0, keepdims=True)\n        z = z - (m + np.log(np.exp(z - m).sum(0, keepdims=True))) + target\n        z = z - z.max(1, keepdims=True)\n        z -= np.log(np.exp(z).sum(1, keepdims=True))\n    return z\n\ndef uneven_pools(y, alpha, size=2000, draws=40, seed=0):\n    \"\"\"Row indices of test pools whose class mix is drawn from a symmetric Dirichlet(alpha).\"\"\"\n    rng, classes = np.random.default_rng(seed), np.unique(y)\n    by_class = [np.flatnonzero(y == c) for c in classes]\n    for _ in range(draws):\n        counts = rng.multinomial(size, rng.dirichlet([alpha] * len(classes)))\n        yield np.concatenate([rng.choice(ix, k) for ix, k in zip(by_class, counts) if k])\n\n# logp: (n, 18) OOF log-probabilities, y: (n,) labels, labels: class names in column order\nfor alpha in [1, 5, 20, 100]:\n    scores = np.mean([[balanced_accuracy_score(y[r], labels[sinkhorn(logp[r], k).argmax(1)]) for k in (0, 1, 3, 50)]\n                      for r in uneven_pools(y, alpha)], axis=0)\n    print(alpha, scores.round(4))\n```",
+            "team_up_info": {
+              "enabled": true,
+              "intro": "",
+              "team_leader": {
+                "display_name": "Ruben Safaryan",
+                "id": 6939789,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/rubensafaryan",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/rubensafaryan",
+                "user_id": 6939789,
+                "user_name": "rubensafaryan"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 3,
+              "total_votes": 2
+            }
+          },
+          "rawMarkdown": "Many public notebooks end with Sinkhorn balancing: the test probabilities are rescaled until every class gets the same total mass. For balanced accuracy this is a sensible correction if the test is close to even. We do not know the hidden test's mix, so we measured what balancing costs when the mix is uneven.\n\n**Setup.**\n\n- Out-of-fold probabilities of a strong blend: 2,699 passages, prompt-grouped 5-fold CV, about 0.64 balanced accuracy.\n- Test pools of 2,000 passages, the model mix drawn from a symmetric Dirichlet(alpha), 40 pools per setting. Alpha 1 is a very uneven mix, with some models nearly absent. Alpha 100 is nearly even.\n- On each pool: the plain argmax, and Sinkhorn at 1, 3 and 50 iterations.\n\n| test mix | plain | 1 iteration | 3 iterations | 50 iterations |\n|---|---|---|---|---|\n| exactly even (all OOF rows) | 0.6387 | 0.6398 | **0.6409** | 0.6379 |\n| alpha 100, nearly even | 0.6384 | 0.6391 | **0.6395** | 0.6363 |\n| alpha 20 | 0.6357 | 0.6376 | **0.6379** | 0.6298 |\n| alpha 5 | **0.6393** | 0.6391 | 0.6384 | 0.6167 |\n| alpha 1, very uneven | **0.6361** | 0.6345 | 0.6284 | 0.5704 |\n\nSmall pools are worse still. On a sparse CV scheme (about 75 passages per pool, 1 to 4 per prompt, uneven mix), full balancing took the same blend from 0.645 to 0.475.\n\n**What we take from it.**\n\n- **Full balancing is a bet that the test is close to even.** If it is, you gain a few thousandths. If it is not, you can lose several points.\n- **A partial balance is a cheap hedge.** One to three iterations keep most of the gain on an even test and lose under 0.01 on the most uneven mix we tried.\n- **OOF predictions cannot show the gain some people see on the LB.** OOF rows carry no shift between train and test, so this measures the risk only. If balancing helps you on the public LB, that says your test predictions lean towards some models. It says nothing about the test's mix.\n\nTo check your own blend, take its OOF log-probabilities and labels:\n\n```python\nimport numpy as np\nfrom sklearn.metrics import balanced_accuracy_score\n\ndef sinkhorn(logp, iters):\n    \"\"\"Rescale log-probabilities until every class gets the same total mass; rows stay normalised.\"\"\"\n    z, target = logp.copy(), np.log(len(logp) / logp.shape[1])\n    for _ in range(iters):\n        m = z.max(0, keepdims=True)\n        z = z - (m + np.log(np.exp(z - m).sum(0, keepdims=True))) + target\n        z = z - z.max(1, keepdims=True)\n        z -= np.log(np.exp(z).sum(1, keepdims=True))\n    return z\n\ndef uneven_pools(y, alpha, size=2000, draws=40, seed=0):\n    \"\"\"Row indices of test pools whose class mix is drawn from a symmetric Dirichlet(alpha).\"\"\"\n    rng, classes = np.random.default_rng(seed), np.unique(y)\n    by_class = [np.flatnonzero(y == c) for c in classes]\n    for _ in range(draws):\n        counts = rng.multinomial(size, rng.dirichlet([alpha] * len(classes)))\n        yield np.concatenate([rng.choice(ix, k) for ix, k in zip(by_class, counts) if k])\n\n# logp: (n, 18) OOF log-probabilities, y: (n,) labels, labels: class names in column order\nfor alpha in [1, 5, 20, 100]:\n    scores = np.mean([[balanced_accuracy_score(y[r], labels[sinkhorn(logp[r], k).argmax(1)]) for k in (0, 1, 3, 50)]\n                      for r in uneven_pools(y, alpha)], axis=0)\n    print(alpha, scores.round(4))\n```",
+          "replies": [],
+          "votes": {
+            "totalVotes": 2
+          }
+        },
+        "firstMessageId": 3544029,
+        "id": 752365,
+        "name": "Sinkhorn balancing: what it costs when the test mix is uneven",
+        "postDate": "2026-10-24T15:41:06.711732300Z",
+        "url": "/competitions/name-that-llm/discussion/752365"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>Many public notebooks end with Sinkhorn balancing: the test probabilities are rescaled until every class gets the same total mass. For balanced accuracy this is a sensible correction if the test is close to even. We do not know the hidden test's mix, so we measured what balancing costs when the mix is uneven.</p>\n<p><strong>Setup.</strong></p>\n<ul>\n<li>Out-of-fold probabilities of a strong blend: 2,699 passages, prompt-grouped 5-fold CV, about 0.64 balanced accuracy.</li>\n<li>Test pools of 2,000 passages, the model mix drawn from a symmetric Dirichlet(alpha), 40 pools per setting. Alpha 1 is a very uneven mix, with some models nearly absent. Alpha 100 is nearly even.</li>\n<li>On each pool: the plain argmax, and Sinkhorn at 1, 3 and 50 iterations.</li>\n</ul>\n<table>\n<thead>\n<tr>\n<th>test mix</th>\n<th>plain</th>\n<th>1 iteration</th>\n<th>3 iterations</th>\n<th>50 iterations</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>exactly even (all OOF rows)</td>\n<td>0.6387</td>\n<td>0.6398</td>\n<td><strong>0.6409</strong></td>\n<td>0.6379</td>\n</tr>\n<tr>\n<td>alpha 100, nearly even</td>\n<td>0.6384</td>\n<td>0.6391</td>\n<td><strong>0.6395</strong></td>\n<td>0.6363</td>\n</tr>\n<tr>\n<td>alpha 20</td>\n<td>0.6357</td>\n<td>0.6376</td>\n<td><strong>0.6379</strong></td>\n<td>0.6298</td>\n</tr>\n<tr>\n<td>alpha 5</td>\n<td><strong>0.6393</strong></td>\n<td>0.6391</td>\n<td>0.6384</td>\n<td>0.6167</td>\n</tr>\n<tr>\n<td>alpha 1, very uneven</td>\n<td><strong>0.6361</strong></td>\n<td>0.6345</td>\n<td>0.6284</td>\n<td>0.5704</td>\n</tr>\n</tbody>\n</table>\n<p>Small pools are worse still. On a sparse CV scheme (about 75 passages per pool, 1 to 4 per prompt, uneven mix), full balancing took the same blend from 0.645 to 0.475.</p>\n<p><strong>What we take from it.</strong></p>\n<ul>\n<li><strong>Full balancing is a bet that the test is close to even.</strong> If it is, you gain a few thousandths. If it is not, you can lose several points.</li>\n<li><strong>A partial balance is a cheap hedge.</strong> One to three iterations keep most of the gain on an even test and lose under 0.01 on the most uneven mix we tried.</li>\n<li><strong>OOF predictions cannot show the gain some people see on the LB.</strong> OOF rows carry no shift between train and test, so this measures the risk only. If balancing helps you on the public LB, that says your test predictions lean towards some models. It says nothing about the test's mix.</li>\n</ul>\n<p>To check your own blend, take its OOF log-probabilities and labels:</p>\n<pre><code>import numpy as np\nfrom sklearn.metrics import balanced_accuracy_score\n\ndef sinkhorn(logp, iters):\n    \"\"\"Rescale log-probabilities until every class gets the same total mass; rows stay normalised.\"\"\"\n    z, target = logp.copy(), np.log(len(logp) / logp.shape[1])\n    for _ in range(iters):\n        m = z.max(0, keepdims=True)\n        z = z - (m + np.log(np.exp(z - m).sum(0, keepdims=True))) + target\n        z = z - z.max(1, keepdims=True)\n        z -= np.log(np.exp(z).sum(1, keepdims=True))\n    return z\n\ndef uneven_pools(y, alpha, size=2000, draws=40, seed=0):\n    \"\"\"Row indices of test pools whose class mix is drawn from a symmetric Dirichlet(alpha).\"\"\"\n    rng, classes = np.random.default_rng(seed), np.unique(y)\n    by_class = [np.flatnonzero(y == c) for c in classes]\n    for _ in range(draws):\n        counts = rng.multinomial(size, rng.dirichlet([alpha] * len(classes)))\n        yield np.concatenate([rng.choice(ix, k) for ix, k in zip(by_class, counts) if k])\n\n# logp: (n, 18) OOF log-probabilities, y: (n,) labels, labels: class names in column order\nfor alpha in [1, 5, 20, 100]:\n    scores = np.mean([[balanced_accuracy_score(y[r], labels[sinkhorn(logp[r], k).argmax(1)]) for k in (0, 1, 3, 50)]\n                      for r in uneven_pools(y, alpha)], axis=0)\n    print(alpha, scores.round(4))\n</code></pre>",
+              "id": 3544029,
+              "post_date": "2026-10-24T15:41:06.713Z",
+              "raw_markdown": "Many public notebooks end with Sinkhorn balancing: the test probabilities are rescaled until every class gets the same total mass. For balanced accuracy this is a sensible correction if the test is close to even. We do not know the hidden test's mix, so we measured what balancing costs when the mix is uneven.\n\n**Setup.**\n\n- Out-of-fold probabilities of a strong blend: 2,699 passages, prompt-grouped 5-fold CV, about 0.64 balanced accuracy.\n- Test pools of 2,000 passages, the model mix drawn from a symmetric Dirichlet(alpha), 40 pools per setting. Alpha 1 is a very uneven mix, with some models nearly absent. Alpha 100 is nearly even.\n- On each pool: the plain argmax, and Sinkhorn at 1, 3 and 50 iterations.\n\n| test mix | plain | 1 iteration | 3 iterations | 50 iterations |\n|---|---|---|---|---|\n| exactly even (all OOF rows) | 0.6387 | 0.6398 | **0.6409** | 0.6379 |\n| alpha 100, nearly even | 0.6384 | 0.6391 | **0.6395** | 0.6363 |\n| alpha 20 | 0.6357 | 0.6376 | **0.6379** | 0.6298 |\n| alpha 5 | **0.6393** | 0.6391 | 0.6384 | 0.6167 |\n| alpha 1, very uneven | **0.6361** | 0.6345 | 0.6284 | 0.5704 |\n\nSmall pools are worse still. On a sparse CV scheme (about 75 passages per pool, 1 to 4 per prompt, uneven mix), full balancing took the same blend from 0.645 to 0.475.\n\n**What we take from it.**\n\n- **Full balancing is a bet that the test is close to even.** If it is, you gain a few thousandths. If it is not, you can lose several points.\n- **A partial balance is a cheap hedge.** One to three iterations keep most of the gain on an even test and lose under 0.01 on the most uneven mix we tried.\n- **OOF predictions cannot show the gain some people see on the LB.** OOF rows carry no shift between train and test, so this measures the risk only. If balancing helps you on the public LB, that says your test predictions lean towards some models. It says nothing about the test's mix.\n\nTo check your own blend, take its OOF log-probabilities and labels:\n\n```python\nimport numpy as np\nfrom sklearn.metrics import balanced_accuracy_score\n\ndef sinkhorn(logp, iters):\n    \"\"\"Rescale log-probabilities until every class gets the same total mass; rows stay normalised.\"\"\"\n    z, target = logp.copy(), np.log(len(logp) / logp.shape[1])\n    for _ in range(iters):\n        m = z.max(0, keepdims=True)\n        z = z - (m + np.log(np.exp(z - m).sum(0, keepdims=True))) + target\n        z = z - z.max(1, keepdims=True)\n        z -= np.log(np.exp(z).sum(1, keepdims=True))\n    return z\n\ndef uneven_pools(y, alpha, size=2000, draws=40, seed=0):\n    \"\"\"Row indices of test pools whose class mix is drawn from a symmetric Dirichlet(alpha).\"\"\"\n    rng, classes = np.random.default_rng(seed), np.unique(y)\n    by_class = [np.flatnonzero(y == c) for c in classes]\n    for _ in range(draws):\n        counts = rng.multinomial(size, rng.dirichlet([alpha] * len(classes)))\n        yield np.concatenate([rng.choice(ix, k) for ix, k in zip(by_class, counts) if k])\n\n# logp: (n, 18) OOF log-probabilities, y: (n,) labels, labels: class names in column order\nfor alpha in [1, 5, 20, 100]:\n    scores = np.mean([[balanced_accuracy_score(y[r], labels[sinkhorn(logp[r], k).argmax(1)]) for k in (0, 1, 3, 50)]\n                      for r in uneven_pools(y, alpha)], axis=0)\n    print(alpha, scores.round(4))\n```",
+              "votes": 2
+            },
+            {
+              "content": "<p>Thanks, this matches what I see. One addition: what Sinkhorn removes is a per-class offset in the scores, so the same gain can be learned on OOF and applied to test without any assumption about the test mix.</p>\n<p>Cross-fitted offsets: learn one log-offset per class on four folds' OOF (Sinkhorn on those rows, keep the column scalings), add them to the fifth fold's scores, then argmax. My grouped 5-fold OOF (2,699 rows):</p>\n<table>\n<thead>\n<tr>\n<th></th>\n<th>argmax</th>\n<th>Sinkhorn, all rows</th>\n<th>cross-fitted offsets</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>DeBERTa-v3-large, two-stage</td>\n<td>0.521</td>\n<td>0.564</td>\n<td>0.560</td>\n</tr>\n<tr>\n<td>Qwen3-8B LoRA</td>\n<td>0.595</td>\n<td>0.600</td>\n<td>0.599</td>\n</tr>\n<tr>\n<td>LoRA + 0.5 DeBERTa + 1.0 n-gram SVC</td>\n<td>0.626</td>\n<td>0.626</td>\n<td>0.621</td>\n</tr>\n</tbody>\n</table>\n<ul>\n<li>A single member with strong class preferences (the DeBERTa here) gets almost all of its Sinkhorn gain from offsets learned on OOF. Offsets learned that way do not care what the test mix is.</li>\n<li>On a blend whose members lean in different directions, little is left to remove: plain argmax already equals Sinkhorn on OOF. Cross-fitted offsets only add noise (−0.005). Full balancing then buys nothing on CV and keeps the risk you measured.</li>\n<li>On the public LB, Sinkhorn on an earlier LoRA alone gave +0.011 (0.538 to 0.549) while its OOF did not move (0.5760 to 0.5761). That fits your last point: the LB gain reflects how test predictions lean, not the test's mix.</li>\n</ul>\n<p>I checked the same comparison on a known-truth simulation (18 Gaussian classes with per-class offsets). On a balanced test, offsets from validation are within 0.003 of Sinkhorn. With a Dirichlet(1) test mix, Sinkhorn's regret against the Bayes rule rises to 0.060 while the offsets stay at 0.018. Estimating the test prior by EM and balancing towards it was worse than both. That is expected, because for balanced accuracy the optimal decision does not depend on the test prior. Notebook with the code and tables: <a href=\"https://www.kaggle.com/code/locdunhat/sinkhorn-rebalancing-under-balanced-accuracy\" target=\"_blank\">https://www.kaggle.com/code/locdunhat/sinkhorn-rebalancing-under-balanced-accuracy</a></p>",
+              "id": 3544106,
+              "post_date": "2026-10-24T19:37:07.997Z",
+              "raw_markdown": "Thanks, this matches what I see. One addition: what Sinkhorn removes is a per-class offset in the scores, so the same gain can be learned on OOF and applied to test without any assumption about the test mix.\n\nCross-fitted offsets: learn one log-offset per class on four folds' OOF (Sinkhorn on those rows, keep the column scalings), add them to the fifth fold's scores, then argmax. My grouped 5-fold OOF (2,699 rows):\n\n| | argmax | Sinkhorn, all rows | cross-fitted offsets |\n| --- | --- | --- | --- |\n| DeBERTa-v3-large, two-stage | 0.521 | 0.564 | 0.560 |\n| Qwen3-8B LoRA | 0.595 | 0.600 | 0.599 |\n| LoRA + 0.5 DeBERTa + 1.0 n-gram SVC | 0.626 | 0.626 | 0.621 |\n\n- A single member with strong class preferences (the DeBERTa here) gets almost all of its Sinkhorn gain from offsets learned on OOF. Offsets learned that way do not care what the test mix is.\n- On a blend whose members lean in different directions, little is left to remove: plain argmax already equals Sinkhorn on OOF. Cross-fitted offsets only add noise (−0.005). Full balancing then buys nothing on CV and keeps the risk you measured.\n- On the public LB, Sinkhorn on an earlier LoRA alone gave +0.011 (0.538 to 0.549) while its OOF did not move (0.5760 to 0.5761). That fits your last point: the LB gain reflects how test predictions lean, not the test's mix.\n\nI checked the same comparison on a known-truth simulation (18 Gaussian classes with per-class offsets). On a balanced test, offsets from validation are within 0.003 of Sinkhorn. With a Dirichlet(1) test mix, Sinkhorn's regret against the Bayes rule rises to 0.060 while the offsets stay at 0.018. Estimating the test prior by EM and balancing towards it was worse than both. That is expected, because for balanced accuracy the optimal decision does not depend on the test prior. Notebook with the code and tables: https://www.kaggle.com/code/locdunhat/sinkhorn-rebalancing-under-balanced-accuracy"
+            },
+            {
+              "content": "<p>One LB data point to set against your CV table: on a 0.638 blend, turning off the final Sinkhorn (300 iterations, so full balancing) and changing nothing else gave 0.636 on the public LB. So full balancing was worth +0.002 there, on the public part only. That is in line with your \"few thousandths\" on an even test, though as you say it shows how our test predictions lean, not what the test's mix is. I haven't tried 1 to 3 iterations on the LB.</p>",
+              "id": 3547495,
+              "post_date": "2026-10-31T03:24:10.303Z",
+              "raw_markdown": "One LB data point to set against your CV table: on a 0.638 blend, turning off the final Sinkhorn (300 iterations, so full balancing) and changing nothing else gave 0.636 on the public LB. So full balancing was worth +0.002 there, on the public part only. That is in line with your \"few thousandths\" on an even test, though as you say it shows how our test predictions lean, not what the test's mix is. I haven't tried 1 to 3 iterations on the LB.",
+              "replies": [
+                {
+                  "content": "<p>A second LB data point, on a different base (a fork of judith007's 0.664 notebook, 6 members). Here Sinkhorn is a mix strength <em>s</em>: final log-scores = (1−s)·log P + s·log Q, where Q is P balanced toward a target marginal (the predicted marginal shrunk 35% toward the train prior).</p>\n<table>\n<thead>\n<tr>\n<th>s</th>\n<th>Public LB</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>0.60</td>\n<td>0.659 (0.659 again on an unchanged resubmission)</td>\n</tr>\n<tr>\n<td>0.45</td>\n<td>0.662</td>\n</tr>\n<tr>\n<td>0.30, plus typography coefficient 1.2 → 1.5</td>\n<td>0.663</td>\n</tr>\n</tbody>\n</table>\n<p>The last row changes two things, so it isn't a clean point for <em>s</em>. These are single submissions on the public part only. I haven't measured s = 0 on this base.</p>",
+                  "id": 3549071,
+                  "post_date": "2026-11-03T02:28:20.057Z",
+                  "raw_markdown": "A second LB data point, on a different base (a fork of judith007's 0.664 notebook, 6 members). Here Sinkhorn is a mix strength *s*: final log-scores = (1−s)·log P + s·log Q, where Q is P balanced toward a target marginal (the predicted marginal shrunk 35% toward the train prior).\n\n| s | Public LB |\n|---|---|\n| 0.60 | 0.659 (0.659 again on an unchanged resubmission) |\n| 0.45 | 0.662 |\n| 0.30, plus typography coefficient 1.2 → 1.5 | 0.663 |\n\nThe last row changes two things, so it isn't a clean point for *s*. These are single submissions on the public part only. I haven't measured s = 0 on this base."
+                }
+              ]
+            },
+            {
+              "content": "<p>Hi Boris, I noticed your Team Up status and read your audit of Sinkhorn under uneven model mixtures. I’m currently solo (best public score 0.473), looking for two complementary teammates for a three-person team. I can contribute reproducible baseline and grouped-validation work; my experiments are AI-assisted, using an owned RTX 4060 and free Kaggle compute. Would this setup interest you? What is your current team size and available time? Your validation and calibration experience would be a useful complement. Details: <a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/755378\" target=\"_blank\">https://www.kaggle.com/competitions/name-that-llm/discussion/755378</a> . No problem if you are already committed elsewhere.</p>",
+              "id": 3549359,
+              "post_date": "2026-11-03T12:41:23.147Z",
+              "raw_markdown": "Hi Boris, I noticed your Team Up status and read your audit of Sinkhorn under uneven model mixtures. I’m currently solo (best public score 0.473), looking for two complementary teammates for a three-person team. I can contribute reproducible baseline and grouped-validation work; my experiments are AI-assisted, using an owned RTX 4060 and free Kaggle compute. Would this setup interest you? What is your current team size and available time? Your validation and calibration experience would be a useful complement. Details: https://www.kaggle.com/competitions/name-that-llm/discussion/755378 . No problem if you are already committed elsewhere."
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 1695468,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "1695468-kg.png?t=2026-01-11-09-27-25",
+            "author_user_display_name": "Boris Konstantinovskii",
+            "author_user_name": "jusill",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "comments": [
+              {
+                "author": {
+                  "display_name": "bosprimigenious",
+                  "id": 29167060,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/bosprimigenious"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 1775,
+                "content": "<p>Hi Boris, I noticed your Team Up status and read your audit of Sinkhorn under uneven model mixtures. I’m currently solo (best public score 0.473), looking for two complementary teammates for a three-person team. I can contribute reproducible baseline and grouped-validation work; my experiments are AI-assisted, using an owned RTX 4060 and free Kaggle compute. Would this setup interest you? What is your current team size and available time? Your validation and calibration experience would be a useful complement. Details: <a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/755378\" target=\"_blank\">https://www.kaggle.com/competitions/name-that-llm/discussion/755378</a> . No problem if you are already committed elsewhere.</p>",
+                "feedback_tracking_data": {},
+                "id": 3549359,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-11-03T12:41:23.147Z",
+                "raw_markdown": "Hi Boris, I noticed your Team Up status and read your audit of Sinkhorn under uneven model mixtures. I’m currently solo (best public score 0.473), looking for two complementary teammates for a three-person team. I can contribute reproducible baseline and grouped-validation work; my experiments are AI-assisted, using an owned RTX 4060 and free Kaggle compute. Would this setup interest you? What is your current team size and available time? Your validation and calibration experience would be a useful complement. Details: https://www.kaggle.com/competitions/name-that-llm/discussion/755378 . No problem if you are already committed elsewhere.",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "bosprimigenious",
+                    "id": 29167060,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/bosprimigenious",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/bosprimigenious",
+                    "user_id": 29167060,
+                    "user_name": "bosprimigenious"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              },
+              {
+                "author": {
+                  "display_name": "HALX2158",
+                  "id": 16294566,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/mizuno0522"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 1098,
+                "content": "<p>One LB data point to set against your CV table: on a 0.638 blend, turning off the final Sinkhorn (300 iterations, so full balancing) and changing nothing else gave 0.636 on the public LB. So full balancing was worth +0.002 there, on the public part only. That is in line with your \"few thousandths\" on an even test, though as you say it shows how our test predictions lean, not what the test's mix is. I haven't tried 1 to 3 iterations on the LB.</p>",
+                "feedback_tracking_data": {},
+                "id": 3547495,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-31T03:24:10.303Z",
+                "raw_markdown": "One LB data point to set against your CV table: on a 0.638 blend, turning off the final Sinkhorn (300 iterations, so full balancing) and changing nothing else gave 0.636 on the public LB. So full balancing was worth +0.002 there, on the public part only. That is in line with your \"few thousandths\" on an even test, though as you say it shows how our test predictions lean, not what the test's mix is. I haven't tried 1 to 3 iterations on the LB.",
+                "replies": [
+                  {
+                    "author": {
+                      "display_name": "HALX2158",
+                      "id": 16294566,
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/mizuno0522"
+                    },
+                    "author_type": "COMMENT",
+                    "competition_ranking": 1098,
+                    "content": "<p>A second LB data point, on a different base (a fork of judith007's 0.664 notebook, 6 members). Here Sinkhorn is a mix strength <em>s</em>: final log-scores = (1−s)·log P + s·log Q, where Q is P balanced toward a target marginal (the predicted marginal shrunk 35% toward the train prior).</p>\n<table>\n<thead>\n<tr>\n<th>s</th>\n<th>Public LB</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>0.60</td>\n<td>0.659 (0.659 again on an unchanged resubmission)</td>\n</tr>\n<tr>\n<td>0.45</td>\n<td>0.662</td>\n</tr>\n<tr>\n<td>0.30, plus typography coefficient 1.2 → 1.5</td>\n<td>0.663</td>\n</tr>\n</tbody>\n</table>\n<p>The last row changes two things, so it isn't a clean point for <em>s</em>. These are single submissions on the public part only. I haven't measured s = 0 on this base.</p>",
+                    "feedback_tracking_data": {},
+                    "id": 3549071,
+                    "is_thank_you": false,
+                    "kernel_version": 0,
+                    "parent": {},
+                    "post_date": "2026-11-03T02:28:20.057Z",
+                    "raw_markdown": "A second LB data point, on a different base (a fork of judith007's 0.664 notebook, 6 members). Here Sinkhorn is a mix strength *s*: final log-scores = (1−s)·log P + s·log Q, where Q is P balanced toward a target marginal (the predicted marginal shrunk 35% toward the train prior).\n\n| s | Public LB |\n|---|---|\n| 0.60 | 0.659 (0.659 again on an unchanged resubmission) |\n| 0.45 | 0.662 |\n| 0.30, plus typography coefficient 1.2 → 1.5 | 0.663 |\n\nThe last row changes two things, so it isn't a clean point for *s*. These are single submissions on the public part only. I haven't measured s = 0 on this base.",
+                    "team_up_info": {
+                      "intro": "",
+                      "team_leader": {
+                        "display_name": "HALX2158",
+                        "id": 16294566,
+                        "performance_tier": "CONTRIBUTOR",
+                        "profile_url": "/mizuno0522",
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                        "tier": "CONTRIBUTOR",
+                        "url": "/mizuno0522",
+                        "user_id": 16294566,
+                        "user_name": "mizuno0522"
+                      }
+                    },
+                    "votes": {
+                      "can_upvote": true
+                    }
+                  }
+                ],
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "HALX2158",
+                    "id": 16294566,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/mizuno0522",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/mizuno0522",
+                    "user_id": 16294566,
+                    "user_name": "mizuno0522"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              },
+              {
+                "author": {
+                  "display_name": "GoPain",
+                  "id": 3897663,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3897663-kg.jpg?t=2026-10-14-14-18-45",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/locdunhat"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 1038,
+                "content": "<p>Thanks, this matches what I see. One addition: what Sinkhorn removes is a per-class offset in the scores, so the same gain can be learned on OOF and applied to test without any assumption about the test mix.</p>\n<p>Cross-fitted offsets: learn one log-offset per class on four folds' OOF (Sinkhorn on those rows, keep the column scalings), add them to the fifth fold's scores, then argmax. My grouped 5-fold OOF (2,699 rows):</p>\n<table>\n<thead>\n<tr>\n<th></th>\n<th>argmax</th>\n<th>Sinkhorn, all rows</th>\n<th>cross-fitted offsets</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>DeBERTa-v3-large, two-stage</td>\n<td>0.521</td>\n<td>0.564</td>\n<td>0.560</td>\n</tr>\n<tr>\n<td>Qwen3-8B LoRA</td>\n<td>0.595</td>\n<td>0.600</td>\n<td>0.599</td>\n</tr>\n<tr>\n<td>LoRA + 0.5 DeBERTa + 1.0 n-gram SVC</td>\n<td>0.626</td>\n<td>0.626</td>\n<td>0.621</td>\n</tr>\n</tbody>\n</table>\n<ul>\n<li>A single member with strong class preferences (the DeBERTa here) gets almost all of its Sinkhorn gain from offsets learned on OOF. Offsets learned that way do not care what the test mix is.</li>\n<li>On a blend whose members lean in different directions, little is left to remove: plain argmax already equals Sinkhorn on OOF. Cross-fitted offsets only add noise (−0.005). Full balancing then buys nothing on CV and keeps the risk you measured.</li>\n<li>On the public LB, Sinkhorn on an earlier LoRA alone gave +0.011 (0.538 to 0.549) while its OOF did not move (0.5760 to 0.5761). That fits your last point: the LB gain reflects how test predictions lean, not the test's mix.</li>\n</ul>\n<p>I checked the same comparison on a known-truth simulation (18 Gaussian classes with per-class offsets). On a balanced test, offsets from validation are within 0.003 of Sinkhorn. With a Dirichlet(1) test mix, Sinkhorn's regret against the Bayes rule rises to 0.060 while the offsets stay at 0.018. Estimating the test prior by EM and balancing towards it was worse than both. That is expected, because for balanced accuracy the optimal decision does not depend on the test prior. Notebook with the code and tables: <a href=\"https://www.kaggle.com/code/locdunhat/sinkhorn-rebalancing-under-balanced-accuracy\" target=\"_blank\">https://www.kaggle.com/code/locdunhat/sinkhorn-rebalancing-under-balanced-accuracy</a></p>",
+                "feedback_tracking_data": {},
+                "id": 3544106,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-24T19:37:07.997Z",
+                "raw_markdown": "Thanks, this matches what I see. One addition: what Sinkhorn removes is a per-class offset in the scores, so the same gain can be learned on OOF and applied to test without any assumption about the test mix.\n\nCross-fitted offsets: learn one log-offset per class on four folds' OOF (Sinkhorn on those rows, keep the column scalings), add them to the fifth fold's scores, then argmax. My grouped 5-fold OOF (2,699 rows):\n\n| | argmax | Sinkhorn, all rows | cross-fitted offsets |\n| --- | --- | --- | --- |\n| DeBERTa-v3-large, two-stage | 0.521 | 0.564 | 0.560 |\n| Qwen3-8B LoRA | 0.595 | 0.600 | 0.599 |\n| LoRA + 0.5 DeBERTa + 1.0 n-gram SVC | 0.626 | 0.626 | 0.621 |\n\n- A single member with strong class preferences (the DeBERTa here) gets almost all of its Sinkhorn gain from offsets learned on OOF. Offsets learned that way do not care what the test mix is.\n- On a blend whose members lean in different directions, little is left to remove: plain argmax already equals Sinkhorn on OOF. Cross-fitted offsets only add noise (−0.005). Full balancing then buys nothing on CV and keeps the risk you measured.\n- On the public LB, Sinkhorn on an earlier LoRA alone gave +0.011 (0.538 to 0.549) while its OOF did not move (0.5760 to 0.5761). That fits your last point: the LB gain reflects how test predictions lean, not the test's mix.\n\nI checked the same comparison on a known-truth simulation (18 Gaussian classes with per-class offsets). On a balanced test, offsets from validation are within 0.003 of Sinkhorn. With a Dirichlet(1) test mix, Sinkhorn's regret against the Bayes rule rises to 0.060 while the offsets stay at 0.018. Estimating the test prior by EM and balancing towards it was worse than both. That is expected, because for balanced accuracy the optimal decision does not depend on the test prior. Notebook with the code and tables: https://www.kaggle.com/code/locdunhat/sinkhorn-rebalancing-under-balanced-accuracy",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "GoPain",
+                    "id": 3897663,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/locdunhat",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3897663-kg.jpg?t=2026-10-14-14-18-45",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/locdunhat",
+                    "user_id": 3897663,
+                    "user_name": "locdunhat"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              }
+            ],
+            "first_message": {
+              "author": {
+                "display_name": "Boris Konstantinovskii",
+                "id": 1695468,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/1695468-kg.png?t=2026-01-11-09-27-25",
+                "tier": "CONTRIBUTOR",
+                "url": "/jusill"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 52,
+              "content": "<p>Many public notebooks end with Sinkhorn balancing: the test probabilities are rescaled until every class gets the same total mass. For balanced accuracy this is a sensible correction if the test is close to even. We do not know the hidden test's mix, so we measured what balancing costs when the mix is uneven.</p>\n<p><strong>Setup.</strong></p>\n<ul>\n<li>Out-of-fold probabilities of a strong blend: 2,699 passages, prompt-grouped 5-fold CV, about 0.64 balanced accuracy.</li>\n<li>Test pools of 2,000 passages, the model mix drawn from a symmetric Dirichlet(alpha), 40 pools per setting. Alpha 1 is a very uneven mix, with some models nearly absent. Alpha 100 is nearly even.</li>\n<li>On each pool: the plain argmax, and Sinkhorn at 1, 3 and 50 iterations.</li>\n</ul>\n<table>\n<thead>\n<tr>\n<th>test mix</th>\n<th>plain</th>\n<th>1 iteration</th>\n<th>3 iterations</th>\n<th>50 iterations</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>exactly even (all OOF rows)</td>\n<td>0.6387</td>\n<td>0.6398</td>\n<td><strong>0.6409</strong></td>\n<td>0.6379</td>\n</tr>\n<tr>\n<td>alpha 100, nearly even</td>\n<td>0.6384</td>\n<td>0.6391</td>\n<td><strong>0.6395</strong></td>\n<td>0.6363</td>\n</tr>\n<tr>\n<td>alpha 20</td>\n<td>0.6357</td>\n<td>0.6376</td>\n<td><strong>0.6379</strong></td>\n<td>0.6298</td>\n</tr>\n<tr>\n<td>alpha 5</td>\n<td><strong>0.6393</strong></td>\n<td>0.6391</td>\n<td>0.6384</td>\n<td>0.6167</td>\n</tr>\n<tr>\n<td>alpha 1, very uneven</td>\n<td><strong>0.6361</strong></td>\n<td>0.6345</td>\n<td>0.6284</td>\n<td>0.5704</td>\n</tr>\n</tbody>\n</table>\n<p>Small pools are worse still. On a sparse CV scheme (about 75 passages per pool, 1 to 4 per prompt, uneven mix), full balancing took the same blend from 0.645 to 0.475.</p>\n<p><strong>What we take from it.</strong></p>\n<ul>\n<li><strong>Full balancing is a bet that the test is close to even.</strong> If it is, you gain a few thousandths. If it is not, you can lose several points.</li>\n<li><strong>A partial balance is a cheap hedge.</strong> One to three iterations keep most of the gain on an even test and lose under 0.01 on the most uneven mix we tried.</li>\n<li><strong>OOF predictions cannot show the gain some people see on the LB.</strong> OOF rows carry no shift between train and test, so this measures the risk only. If balancing helps you on the public LB, that says your test predictions lean towards some models. It says nothing about the test's mix.</li>\n</ul>\n<p>To check your own blend, take its OOF log-probabilities and labels:</p>\n<pre><code>import numpy as np\nfrom sklearn.metrics import balanced_accuracy_score\n\ndef sinkhorn(logp, iters):\n    \"\"\"Rescale log-probabilities until every class gets the same total mass; rows stay normalised.\"\"\"\n    z, target = logp.copy(), np.log(len(logp) / logp.shape[1])\n    for _ in range(iters):\n        m = z.max(0, keepdims=True)\n        z = z - (m + np.log(np.exp(z - m).sum(0, keepdims=True))) + target\n        z = z - z.max(1, keepdims=True)\n        z -= np.log(np.exp(z).sum(1, keepdims=True))\n    return z\n\ndef uneven_pools(y, alpha, size=2000, draws=40, seed=0):\n    \"\"\"Row indices of test pools whose class mix is drawn from a symmetric Dirichlet(alpha).\"\"\"\n    rng, classes = np.random.default_rng(seed), np.unique(y)\n    by_class = [np.flatnonzero(y == c) for c in classes]\n    for _ in range(draws):\n        counts = rng.multinomial(size, rng.dirichlet([alpha] * len(classes)))\n        yield np.concatenate([rng.choice(ix, k) for ix, k in zip(by_class, counts) if k])\n\n# logp: (n, 18) OOF log-probabilities, y: (n,) labels, labels: class names in column order\nfor alpha in [1, 5, 20, 100]:\n    scores = np.mean([[balanced_accuracy_score(y[r], labels[sinkhorn(logp[r], k).argmax(1)]) for k in (0, 1, 3, 50)]\n                      for r in uneven_pools(y, alpha)], axis=0)\n    print(alpha, scores.round(4))\n</code></pre>",
+              "feedback_tracking_data": {},
+              "id": 3544029,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-24T15:41:06.713Z",
+              "raw_markdown": "Many public notebooks end with Sinkhorn balancing: the test probabilities are rescaled until every class gets the same total mass. For balanced accuracy this is a sensible correction if the test is close to even. We do not know the hidden test's mix, so we measured what balancing costs when the mix is uneven.\n\n**Setup.**\n\n- Out-of-fold probabilities of a strong blend: 2,699 passages, prompt-grouped 5-fold CV, about 0.64 balanced accuracy.\n- Test pools of 2,000 passages, the model mix drawn from a symmetric Dirichlet(alpha), 40 pools per setting. Alpha 1 is a very uneven mix, with some models nearly absent. Alpha 100 is nearly even.\n- On each pool: the plain argmax, and Sinkhorn at 1, 3 and 50 iterations.\n\n| test mix | plain | 1 iteration | 3 iterations | 50 iterations |\n|---|---|---|---|---|\n| exactly even (all OOF rows) | 0.6387 | 0.6398 | **0.6409** | 0.6379 |\n| alpha 100, nearly even | 0.6384 | 0.6391 | **0.6395** | 0.6363 |\n| alpha 20 | 0.6357 | 0.6376 | **0.6379** | 0.6298 |\n| alpha 5 | **0.6393** | 0.6391 | 0.6384 | 0.6167 |\n| alpha 1, very uneven | **0.6361** | 0.6345 | 0.6284 | 0.5704 |\n\nSmall pools are worse still. On a sparse CV scheme (about 75 passages per pool, 1 to 4 per prompt, uneven mix), full balancing took the same blend from 0.645 to 0.475.\n\n**What we take from it.**\n\n- **Full balancing is a bet that the test is close to even.** If it is, you gain a few thousandths. If it is not, you can lose several points.\n- **A partial balance is a cheap hedge.** One to three iterations keep most of the gain on an even test and lose under 0.01 on the most uneven mix we tried.\n- **OOF predictions cannot show the gain some people see on the LB.** OOF rows carry no shift between train and test, so this measures the risk only. If balancing helps you on the public LB, that says your test predictions lean towards some models. It says nothing about the test's mix.\n\nTo check your own blend, take its OOF log-probabilities and labels:\n\n```python\nimport numpy as np\nfrom sklearn.metrics import balanced_accuracy_score\n\ndef sinkhorn(logp, iters):\n    \"\"\"Rescale log-probabilities until every class gets the same total mass; rows stay normalised.\"\"\"\n    z, target = logp.copy(), np.log(len(logp) / logp.shape[1])\n    for _ in range(iters):\n        m = z.max(0, keepdims=True)\n        z = z - (m + np.log(np.exp(z - m).sum(0, keepdims=True))) + target\n        z = z - z.max(1, keepdims=True)\n        z -= np.log(np.exp(z).sum(1, keepdims=True))\n    return z\n\ndef uneven_pools(y, alpha, size=2000, draws=40, seed=0):\n    \"\"\"Row indices of test pools whose class mix is drawn from a symmetric Dirichlet(alpha).\"\"\"\n    rng, classes = np.random.default_rng(seed), np.unique(y)\n    by_class = [np.flatnonzero(y == c) for c in classes]\n    for _ in range(draws):\n        counts = rng.multinomial(size, rng.dirichlet([alpha] * len(classes)))\n        yield np.concatenate([rng.choice(ix, k) for ix, k in zip(by_class, counts) if k])\n\n# logp: (n, 18) OOF log-probabilities, y: (n,) labels, labels: class names in column order\nfor alpha in [1, 5, 20, 100]:\n    scores = np.mean([[balanced_accuracy_score(y[r], labels[sinkhorn(logp[r], k).argmax(1)]) for k in (0, 1, 3, 50)]\n                      for r in uneven_pools(y, alpha)], axis=0)\n    print(alpha, scores.round(4))\n```",
+              "team_up_info": {
+                "enabled": true,
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Ruben Safaryan",
+                  "id": 6939789,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/rubensafaryan",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/rubensafaryan",
+                  "user_id": 6939789,
+                  "user_name": "rubensafaryan"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 3,
+                "total_votes": 2
+              }
+            },
+            "first_message_id": 3544029,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 752365,
+            "name": "Sinkhorn balancing: what it costs when the test mix is uneven",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-10-24T15:41:06.711732300Z",
+            "total_messages": 4,
+            "total_votes": 2,
+            "url": "/competitions/name-that-llm/discussion/752365"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:23:18+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:23:18+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-11-03T12:41:23.146666700Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [
+    {
+      "slug": "name-that-llm",
+      "topic_id": 752365,
+      "message_id": 3544106,
+      "parent_message_id": null,
+      "author": "GoPain",
+      "author_url": "/locdunhat",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-10-24T19:37:07.997Z",
+      "raw_markdown": "Thanks, this matches what I see. One addition: what Sinkhorn removes is a per-class offset in the scores, so the same gain can be learned on OOF and applied to test without any assumption about the test mix.\n\nCross-fitted offsets: learn one log-offset per class on four folds' OOF (Sinkhorn on those rows, keep the column scalings), add them to the fifth fold's scores, then argmax. My grouped 5-fold OOF (2,699 rows):\n\n| | argmax | Sinkhorn, all rows | cross-fitted offsets |\n| --- | --- | --- | --- |\n| DeBERTa-v3-large, two-stage | 0.521 | 0.564 | 0.560 |\n| Qwen3-8B LoRA | 0.595 | 0.600 | 0.599 |\n| LoRA + 0.5 DeBERTa + 1.0 n-gram SVC | 0.626 | 0.626 | 0.621 |\n\n- A single member with strong class preferences (the DeBERTa here) gets almost all of its Sinkhorn gain from offsets learned on OOF. Offsets learned that way do not care what the test mix is.\n- On a blend whose members lean in different directions, little is left to remove: plain argmax already equals Sinkhorn on OOF. Cross-fitted offsets only add noise (−0.005). Full balancing then buys nothing on CV and keeps the risk you measured.\n- On the public LB, Sinkhorn on an earlier LoRA alone gave +0.011 (0.538 to 0.549) while its OOF did not move (0.5760 to 0.5761). That fits your last point: the LB gain reflects how test predictions lean, not the test's mix.\n\nI checked the same comparison on a known-truth simulation (18 Gaussian classes with per-class offsets). On a balanced test, offsets from validation are within 0.003 of Sinkhorn. With a Dirichlet(1) test mix, Sinkhorn's regret against the Bayes rule rises to 0.060 while the offsets stay at 0.018. Estimating the test prior by EM and balancing towards it was worse than both. That is expected, because for balanced accuracy the optimal decision does not depend on the test prior. Notebook with the code and tables: https://www.kaggle.com/code/locdunhat/sinkhorn-rebalancing-under-balanced-accuracy",
+      "content_html": "<p>Thanks, this matches what I see. One addition: what Sinkhorn removes is a per-class offset in the scores, so the same gain can be learned on OOF and applied to test without any assumption about the test mix.</p>\n<p>Cross-fitted offsets: learn one log-offset per class on four folds' OOF (Sinkhorn on those rows, keep the column scalings), add them to the fifth fold's scores, then argmax. My grouped 5-fold OOF (2,699 rows):</p>\n<table>\n<thead>\n<tr>\n<th></th>\n<th>argmax</th>\n<th>Sinkhorn, all rows</th>\n<th>cross-fitted offsets</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>DeBERTa-v3-large, two-stage</td>\n<td>0.521</td>\n<td>0.564</td>\n<td>0.560</td>\n</tr>\n<tr>\n<td>Qwen3-8B LoRA</td>\n<td>0.595</td>\n<td>0.600</td>\n<td>0.599</td>\n</tr>\n<tr>\n<td>LoRA + 0.5 DeBERTa + 1.0 n-gram SVC</td>\n<td>0.626</td>\n<td>0.626</td>\n<td>0.621</td>\n</tr>\n</tbody>\n</table>\n<ul>\n<li>A single member with strong class preferences (the DeBERTa here) gets almost all of its Sinkhorn gain from offsets learned on OOF. Offsets learned that way do not care what the test mix is.</li>\n<li>On a blend whose members lean in different directions, little is left to remove: plain argmax already equals Sinkhorn on OOF. Cross-fitted offsets only add noise (−0.005). Full balancing then buys nothing on CV and keeps the risk you measured.</li>\n<li>On the public LB, Sinkhorn on an earlier LoRA alone gave +0.011 (0.538 to 0.549) while its OOF did not move (0.5760 to 0.5761). That fits your last point: the LB gain reflects how test predictions lean, not the test's mix.</li>\n</ul>\n<p>I checked the same comparison on a known-truth simulation (18 Gaussian classes with per-class offsets). On a balanced test, offsets from validation are within 0.003 of Sinkhorn. With a Dirichlet(1) test mix, Sinkhorn's regret against the Bayes rule rises to 0.060 while the offsets stay at 0.018. Estimating the test prior by EM and balancing towards it was worse than both. That is expected, because for balanced accuracy the optimal decision does not depend on the test prior. Notebook with the code and tables: <a href=\"https://www.kaggle.com/code/locdunhat/sinkhorn-rebalancing-under-balanced-accuracy\" target=\"_blank\">https://www.kaggle.com/code/locdunhat/sinkhorn-rebalancing-under-balanced-accuracy</a></p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:58:04+00:00",
+      "last_seen_at": "2026-11-16T16:23:18+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:23:18+00:00",
+      "remote_last_listed_at": "2026-11-16T16:23:18+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "GoPain",
+          "tier": "CONTRIBUTOR",
+          "url": "/locdunhat"
+        },
+        "content": "<p>Thanks, this matches what I see. One addition: what Sinkhorn removes is a per-class offset in the scores, so the same gain can be learned on OOF and applied to test without any assumption about the test mix.</p>\n<p>Cross-fitted offsets: learn one log-offset per class on four folds' OOF (Sinkhorn on those rows, keep the column scalings), add them to the fifth fold's scores, then argmax. My grouped 5-fold OOF (2,699 rows):</p>\n<table>\n<thead>\n<tr>\n<th></th>\n<th>argmax</th>\n<th>Sinkhorn, all rows</th>\n<th>cross-fitted offsets</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>DeBERTa-v3-large, two-stage</td>\n<td>0.521</td>\n<td>0.564</td>\n<td>0.560</td>\n</tr>\n<tr>\n<td>Qwen3-8B LoRA</td>\n<td>0.595</td>\n<td>0.600</td>\n<td>0.599</td>\n</tr>\n<tr>\n<td>LoRA + 0.5 DeBERTa + 1.0 n-gram SVC</td>\n<td>0.626</td>\n<td>0.626</td>\n<td>0.621</td>\n</tr>\n</tbody>\n</table>\n<ul>\n<li>A single member with strong class preferences (the DeBERTa here) gets almost all of its Sinkhorn gain from offsets learned on OOF. Offsets learned that way do not care what the test mix is.</li>\n<li>On a blend whose members lean in different directions, little is left to remove: plain argmax already equals Sinkhorn on OOF. Cross-fitted offsets only add noise (−0.005). Full balancing then buys nothing on CV and keeps the risk you measured.</li>\n<li>On the public LB, Sinkhorn on an earlier LoRA alone gave +0.011 (0.538 to 0.549) while its OOF did not move (0.5760 to 0.5761). That fits your last point: the LB gain reflects how test predictions lean, not the test's mix.</li>\n</ul>\n<p>I checked the same comparison on a known-truth simulation (18 Gaussian classes with per-class offsets). On a balanced test, offsets from validation are within 0.003 of Sinkhorn. With a Dirichlet(1) test mix, Sinkhorn's regret against the Bayes rule rises to 0.060 while the offsets stay at 0.018. Estimating the test prior by EM and balancing towards it was worse than both. That is expected, because for balanced accuracy the optimal decision does not depend on the test prior. Notebook with the code and tables: <a href=\"https://www.kaggle.com/code/locdunhat/sinkhorn-rebalancing-under-balanced-accuracy\" target=\"_blank\">https://www.kaggle.com/code/locdunhat/sinkhorn-rebalancing-under-balanced-accuracy</a></p>",
+        "id": 3544106,
+        "isThankYou": false,
+        "postDate": "2026-10-24T19:37:07.997Z",
+        "raw": {
+          "author": {
+            "display_name": "GoPain",
+            "id": 3897663,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3897663-kg.jpg?t=2026-10-14-14-18-45",
+            "tier": "CONTRIBUTOR",
+            "url": "/locdunhat"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 1038,
+          "content": "<p>Thanks, this matches what I see. One addition: what Sinkhorn removes is a per-class offset in the scores, so the same gain can be learned on OOF and applied to test without any assumption about the test mix.</p>\n<p>Cross-fitted offsets: learn one log-offset per class on four folds' OOF (Sinkhorn on those rows, keep the column scalings), add them to the fifth fold's scores, then argmax. My grouped 5-fold OOF (2,699 rows):</p>\n<table>\n<thead>\n<tr>\n<th></th>\n<th>argmax</th>\n<th>Sinkhorn, all rows</th>\n<th>cross-fitted offsets</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>DeBERTa-v3-large, two-stage</td>\n<td>0.521</td>\n<td>0.564</td>\n<td>0.560</td>\n</tr>\n<tr>\n<td>Qwen3-8B LoRA</td>\n<td>0.595</td>\n<td>0.600</td>\n<td>0.599</td>\n</tr>\n<tr>\n<td>LoRA + 0.5 DeBERTa + 1.0 n-gram SVC</td>\n<td>0.626</td>\n<td>0.626</td>\n<td>0.621</td>\n</tr>\n</tbody>\n</table>\n<ul>\n<li>A single member with strong class preferences (the DeBERTa here) gets almost all of its Sinkhorn gain from offsets learned on OOF. Offsets learned that way do not care what the test mix is.</li>\n<li>On a blend whose members lean in different directions, little is left to remove: plain argmax already equals Sinkhorn on OOF. Cross-fitted offsets only add noise (−0.005). Full balancing then buys nothing on CV and keeps the risk you measured.</li>\n<li>On the public LB, Sinkhorn on an earlier LoRA alone gave +0.011 (0.538 to 0.549) while its OOF did not move (0.5760 to 0.5761). That fits your last point: the LB gain reflects how test predictions lean, not the test's mix.</li>\n</ul>\n<p>I checked the same comparison on a known-truth simulation (18 Gaussian classes with per-class offsets). On a balanced test, offsets from validation are within 0.003 of Sinkhorn. With a Dirichlet(1) test mix, Sinkhorn's regret against the Bayes rule rises to 0.060 while the offsets stay at 0.018. Estimating the test prior by EM and balancing towards it was worse than both. That is expected, because for balanced accuracy the optimal decision does not depend on the test prior. Notebook with the code and tables: <a href=\"https://www.kaggle.com/code/locdunhat/sinkhorn-rebalancing-under-balanced-accuracy\" target=\"_blank\">https://www.kaggle.com/code/locdunhat/sinkhorn-rebalancing-under-balanced-accuracy</a></p>",
+          "feedback_tracking_data": {},
+          "id": 3544106,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-24T19:37:07.997Z",
+          "raw_markdown": "Thanks, this matches what I see. One addition: what Sinkhorn removes is a per-class offset in the scores, so the same gain can be learned on OOF and applied to test without any assumption about the test mix.\n\nCross-fitted offsets: learn one log-offset per class on four folds' OOF (Sinkhorn on those rows, keep the column scalings), add them to the fifth fold's scores, then argmax. My grouped 5-fold OOF (2,699 rows):\n\n| | argmax | Sinkhorn, all rows | cross-fitted offsets |\n| --- | --- | --- | --- |\n| DeBERTa-v3-large, two-stage | 0.521 | 0.564 | 0.560 |\n| Qwen3-8B LoRA | 0.595 | 0.600 | 0.599 |\n| LoRA + 0.5 DeBERTa + 1.0 n-gram SVC | 0.626 | 0.626 | 0.621 |\n\n- A single member with strong class preferences (the DeBERTa here) gets almost all of its Sinkhorn gain from offsets learned on OOF. Offsets learned that way do not care what the test mix is.\n- On a blend whose members lean in different directions, little is left to remove: plain argmax already equals Sinkhorn on OOF. Cross-fitted offsets only add noise (−0.005). Full balancing then buys nothing on CV and keeps the risk you measured.\n- On the public LB, Sinkhorn on an earlier LoRA alone gave +0.011 (0.538 to 0.549) while its OOF did not move (0.5760 to 0.5761). That fits your last point: the LB gain reflects how test predictions lean, not the test's mix.\n\nI checked the same comparison on a known-truth simulation (18 Gaussian classes with per-class offsets). On a balanced test, offsets from validation are within 0.003 of Sinkhorn. With a Dirichlet(1) test mix, Sinkhorn's regret against the Bayes rule rises to 0.060 while the offsets stay at 0.018. Estimating the test prior by EM and balancing towards it was worse than both. That is expected, because for balanced accuracy the optimal decision does not depend on the test prior. Notebook with the code and tables: https://www.kaggle.com/code/locdunhat/sinkhorn-rebalancing-under-balanced-accuracy",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "GoPain",
+              "id": 3897663,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/locdunhat",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3897663-kg.jpg?t=2026-10-14-14-18-45",
+              "tier": "CONTRIBUTOR",
+              "url": "/locdunhat",
+              "user_id": 3897663,
+              "user_name": "locdunhat"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "Thanks, this matches what I see. One addition: what Sinkhorn removes is a per-class offset in the scores, so the same gain can be learned on OOF and applied to test without any assumption about the test mix.\n\nCross-fitted offsets: learn one log-offset per class on four folds' OOF (Sinkhorn on those rows, keep the column scalings), add them to the fifth fold's scores, then argmax. My grouped 5-fold OOF (2,699 rows):\n\n| | argmax | Sinkhorn, all rows | cross-fitted offsets |\n| --- | --- | --- | --- |\n| DeBERTa-v3-large, two-stage | 0.521 | 0.564 | 0.560 |\n| Qwen3-8B LoRA | 0.595 | 0.600 | 0.599 |\n| LoRA + 0.5 DeBERTa + 1.0 n-gram SVC | 0.626 | 0.626 | 0.621 |\n\n- A single member with strong class preferences (the DeBERTa here) gets almost all of its Sinkhorn gain from offsets learned on OOF. Offsets learned that way do not care what the test mix is.\n- On a blend whose members lean in different directions, little is left to remove: plain argmax already equals Sinkhorn on OOF. Cross-fitted offsets only add noise (−0.005). Full balancing then buys nothing on CV and keeps the risk you measured.\n- On the public LB, Sinkhorn on an earlier LoRA alone gave +0.011 (0.538 to 0.549) while its OOF did not move (0.5760 to 0.5761). That fits your last point: the LB gain reflects how test predictions lean, not the test's mix.\n\nI checked the same comparison on a known-truth simulation (18 Gaussian classes with per-class offsets). On a balanced test, offsets from validation are within 0.003 of Sinkhorn. With a Dirichlet(1) test mix, Sinkhorn's regret against the Bayes rule rises to 0.060 while the offsets stay at 0.018. Estimating the test prior by EM and balancing towards it was worse than both. That is expected, because for balanced accuracy the optimal decision does not depend on the test prior. Notebook with the code and tables: https://www.kaggle.com/code/locdunhat/sinkhorn-rebalancing-under-balanced-accuracy",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 752365,
+      "message_id": 3547495,
+      "parent_message_id": null,
+      "author": "HALX2158",
+      "author_url": "/mizuno0522",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-10-31T03:24:10.303Z",
+      "raw_markdown": "One LB data point to set against your CV table: on a 0.638 blend, turning off the final Sinkhorn (300 iterations, so full balancing) and changing nothing else gave 0.636 on the public LB. So full balancing was worth +0.002 there, on the public part only. That is in line with your \"few thousandths\" on an even test, though as you say it shows how our test predictions lean, not what the test's mix is. I haven't tried 1 to 3 iterations on the LB.",
+      "content_html": "<p>One LB data point to set against your CV table: on a 0.638 blend, turning off the final Sinkhorn (300 iterations, so full balancing) and changing nothing else gave 0.636 on the public LB. So full balancing was worth +0.002 there, on the public part only. That is in line with your \"few thousandths\" on an even test, though as you say it shows how our test predictions lean, not what the test's mix is. I haven't tried 1 to 3 iterations on the LB.</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:58:04+00:00",
+      "last_seen_at": "2026-11-16T16:23:18+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:23:18+00:00",
+      "remote_last_listed_at": "2026-11-16T16:23:18+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "HALX2158",
+          "tier": "CONTRIBUTOR",
+          "url": "/mizuno0522"
+        },
+        "content": "<p>One LB data point to set against your CV table: on a 0.638 blend, turning off the final Sinkhorn (300 iterations, so full balancing) and changing nothing else gave 0.636 on the public LB. So full balancing was worth +0.002 there, on the public part only. That is in line with your \"few thousandths\" on an even test, though as you say it shows how our test predictions lean, not what the test's mix is. I haven't tried 1 to 3 iterations on the LB.</p>",
+        "id": 3547495,
+        "isThankYou": false,
+        "postDate": "2026-10-31T03:24:10.303Z",
+        "raw": {
+          "author": {
+            "display_name": "HALX2158",
+            "id": 16294566,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+            "tier": "CONTRIBUTOR",
+            "url": "/mizuno0522"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 1098,
+          "content": "<p>One LB data point to set against your CV table: on a 0.638 blend, turning off the final Sinkhorn (300 iterations, so full balancing) and changing nothing else gave 0.636 on the public LB. So full balancing was worth +0.002 there, on the public part only. That is in line with your \"few thousandths\" on an even test, though as you say it shows how our test predictions lean, not what the test's mix is. I haven't tried 1 to 3 iterations on the LB.</p>",
+          "feedback_tracking_data": {},
+          "id": 3547495,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-31T03:24:10.303Z",
+          "raw_markdown": "One LB data point to set against your CV table: on a 0.638 blend, turning off the final Sinkhorn (300 iterations, so full balancing) and changing nothing else gave 0.636 on the public LB. So full balancing was worth +0.002 there, on the public part only. That is in line with your \"few thousandths\" on an even test, though as you say it shows how our test predictions lean, not what the test's mix is. I haven't tried 1 to 3 iterations on the LB.",
+          "replies": [
+            {
+              "author": {
+                "display_name": "HALX2158",
+                "id": 16294566,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                "tier": "CONTRIBUTOR",
+                "url": "/mizuno0522"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 1098,
+              "content": "<p>A second LB data point, on a different base (a fork of judith007's 0.664 notebook, 6 members). Here Sinkhorn is a mix strength <em>s</em>: final log-scores = (1−s)·log P + s·log Q, where Q is P balanced toward a target marginal (the predicted marginal shrunk 35% toward the train prior).</p>\n<table>\n<thead>\n<tr>\n<th>s</th>\n<th>Public LB</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>0.60</td>\n<td>0.659 (0.659 again on an unchanged resubmission)</td>\n</tr>\n<tr>\n<td>0.45</td>\n<td>0.662</td>\n</tr>\n<tr>\n<td>0.30, plus typography coefficient 1.2 → 1.5</td>\n<td>0.663</td>\n</tr>\n</tbody>\n</table>\n<p>The last row changes two things, so it isn't a clean point for <em>s</em>. These are single submissions on the public part only. I haven't measured s = 0 on this base.</p>",
+              "feedback_tracking_data": {},
+              "id": 3549071,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-03T02:28:20.057Z",
+              "raw_markdown": "A second LB data point, on a different base (a fork of judith007's 0.664 notebook, 6 members). Here Sinkhorn is a mix strength *s*: final log-scores = (1−s)·log P + s·log Q, where Q is P balanced toward a target marginal (the predicted marginal shrunk 35% toward the train prior).\n\n| s | Public LB |\n|---|---|\n| 0.60 | 0.659 (0.659 again on an unchanged resubmission) |\n| 0.45 | 0.662 |\n| 0.30, plus typography coefficient 1.2 → 1.5 | 0.663 |\n\nThe last row changes two things, so it isn't a clean point for *s*. These are single submissions on the public part only. I haven't measured s = 0 on this base.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "HALX2158",
+                  "id": 16294566,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/mizuno0522",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/mizuno0522",
+                  "user_id": 16294566,
+                  "user_name": "mizuno0522"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            }
+          ],
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "HALX2158",
+              "id": 16294566,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/mizuno0522",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+              "tier": "CONTRIBUTOR",
+              "url": "/mizuno0522",
+              "user_id": 16294566,
+              "user_name": "mizuno0522"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "One LB data point to set against your CV table: on a 0.638 blend, turning off the final Sinkhorn (300 iterations, so full balancing) and changing nothing else gave 0.636 on the public LB. So full balancing was worth +0.002 there, on the public part only. That is in line with your \"few thousandths\" on an even test, though as you say it shows how our test predictions lean, not what the test's mix is. I haven't tried 1 to 3 iterations on the LB.",
+        "replies": [
+          {
+            "author": {
+              "displayName": "HALX2158",
+              "tier": "CONTRIBUTOR",
+              "url": "/mizuno0522"
+            },
+            "content": "<p>A second LB data point, on a different base (a fork of judith007's 0.664 notebook, 6 members). Here Sinkhorn is a mix strength <em>s</em>: final log-scores = (1−s)·log P + s·log Q, where Q is P balanced toward a target marginal (the predicted marginal shrunk 35% toward the train prior).</p>\n<table>\n<thead>\n<tr>\n<th>s</th>\n<th>Public LB</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>0.60</td>\n<td>0.659 (0.659 again on an unchanged resubmission)</td>\n</tr>\n<tr>\n<td>0.45</td>\n<td>0.662</td>\n</tr>\n<tr>\n<td>0.30, plus typography coefficient 1.2 → 1.5</td>\n<td>0.663</td>\n</tr>\n</tbody>\n</table>\n<p>The last row changes two things, so it isn't a clean point for <em>s</em>. These are single submissions on the public part only. I haven't measured s = 0 on this base.</p>",
+            "id": 3549071,
+            "isThankYou": false,
+            "postDate": "2026-11-03T02:28:20.057Z",
+            "raw": {
+              "author": {
+                "display_name": "HALX2158",
+                "id": 16294566,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                "tier": "CONTRIBUTOR",
+                "url": "/mizuno0522"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 1098,
+              "content": "<p>A second LB data point, on a different base (a fork of judith007's 0.664 notebook, 6 members). Here Sinkhorn is a mix strength <em>s</em>: final log-scores = (1−s)·log P + s·log Q, where Q is P balanced toward a target marginal (the predicted marginal shrunk 35% toward the train prior).</p>\n<table>\n<thead>\n<tr>\n<th>s</th>\n<th>Public LB</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>0.60</td>\n<td>0.659 (0.659 again on an unchanged resubmission)</td>\n</tr>\n<tr>\n<td>0.45</td>\n<td>0.662</td>\n</tr>\n<tr>\n<td>0.30, plus typography coefficient 1.2 → 1.5</td>\n<td>0.663</td>\n</tr>\n</tbody>\n</table>\n<p>The last row changes two things, so it isn't a clean point for <em>s</em>. These are single submissions on the public part only. I haven't measured s = 0 on this base.</p>",
+              "feedback_tracking_data": {},
+              "id": 3549071,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-03T02:28:20.057Z",
+              "raw_markdown": "A second LB data point, on a different base (a fork of judith007's 0.664 notebook, 6 members). Here Sinkhorn is a mix strength *s*: final log-scores = (1−s)·log P + s·log Q, where Q is P balanced toward a target marginal (the predicted marginal shrunk 35% toward the train prior).\n\n| s | Public LB |\n|---|---|\n| 0.60 | 0.659 (0.659 again on an unchanged resubmission) |\n| 0.45 | 0.662 |\n| 0.30, plus typography coefficient 1.2 → 1.5 | 0.663 |\n\nThe last row changes two things, so it isn't a clean point for *s*. These are single submissions on the public part only. I haven't measured s = 0 on this base.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "HALX2158",
+                  "id": 16294566,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/mizuno0522",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/mizuno0522",
+                  "user_id": 16294566,
+                  "user_name": "mizuno0522"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "A second LB data point, on a different base (a fork of judith007's 0.664 notebook, 6 members). Here Sinkhorn is a mix strength *s*: final log-scores = (1−s)·log P + s·log Q, where Q is P balanced toward a target marginal (the predicted marginal shrunk 35% toward the train prior).\n\n| s | Public LB |\n|---|---|\n| 0.60 | 0.659 (0.659 again on an unchanged resubmission) |\n| 0.45 | 0.662 |\n| 0.30, plus typography coefficient 1.2 → 1.5 | 0.663 |\n\nThe last row changes two things, so it isn't a clean point for *s*. These are single submissions on the public part only. I haven't measured s = 0 on this base.",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 752365,
+      "message_id": 3549071,
+      "parent_message_id": 3547495,
+      "author": "HALX2158",
+      "author_url": "/mizuno0522",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-03T02:28:20.057Z",
+      "raw_markdown": "A second LB data point, on a different base (a fork of judith007's 0.664 notebook, 6 members). Here Sinkhorn is a mix strength *s*: final log-scores = (1−s)·log P + s·log Q, where Q is P balanced toward a target marginal (the predicted marginal shrunk 35% toward the train prior).\n\n| s | Public LB |\n|---|---|\n| 0.60 | 0.659 (0.659 again on an unchanged resubmission) |\n| 0.45 | 0.662 |\n| 0.30, plus typography coefficient 1.2 → 1.5 | 0.663 |\n\nThe last row changes two things, so it isn't a clean point for *s*. These are single submissions on the public part only. I haven't measured s = 0 on this base.",
+      "content_html": "<p>A second LB data point, on a different base (a fork of judith007's 0.664 notebook, 6 members). Here Sinkhorn is a mix strength <em>s</em>: final log-scores = (1−s)·log P + s·log Q, where Q is P balanced toward a target marginal (the predicted marginal shrunk 35% toward the train prior).</p>\n<table>\n<thead>\n<tr>\n<th>s</th>\n<th>Public LB</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>0.60</td>\n<td>0.659 (0.659 again on an unchanged resubmission)</td>\n</tr>\n<tr>\n<td>0.45</td>\n<td>0.662</td>\n</tr>\n<tr>\n<td>0.30, plus typography coefficient 1.2 → 1.5</td>\n<td>0.663</td>\n</tr>\n</tbody>\n</table>\n<p>The last row changes two things, so it isn't a clean point for <em>s</em>. These are single submissions on the public part only. I haven't measured s = 0 on this base.</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 1,
+      "first_seen_at": "2026-11-04T06:58:04+00:00",
+      "last_seen_at": "2026-11-16T16:23:18+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:23:18+00:00",
+      "remote_last_listed_at": "2026-11-16T16:23:18+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "HALX2158",
+          "tier": "CONTRIBUTOR",
+          "url": "/mizuno0522"
+        },
+        "content": "<p>A second LB data point, on a different base (a fork of judith007's 0.664 notebook, 6 members). Here Sinkhorn is a mix strength <em>s</em>: final log-scores = (1−s)·log P + s·log Q, where Q is P balanced toward a target marginal (the predicted marginal shrunk 35% toward the train prior).</p>\n<table>\n<thead>\n<tr>\n<th>s</th>\n<th>Public LB</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>0.60</td>\n<td>0.659 (0.659 again on an unchanged resubmission)</td>\n</tr>\n<tr>\n<td>0.45</td>\n<td>0.662</td>\n</tr>\n<tr>\n<td>0.30, plus typography coefficient 1.2 → 1.5</td>\n<td>0.663</td>\n</tr>\n</tbody>\n</table>\n<p>The last row changes two things, so it isn't a clean point for <em>s</em>. These are single submissions on the public part only. I haven't measured s = 0 on this base.</p>",
+        "id": 3549071,
+        "isThankYou": false,
+        "postDate": "2026-11-03T02:28:20.057Z",
+        "raw": {
+          "author": {
+            "display_name": "HALX2158",
+            "id": 16294566,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+            "tier": "CONTRIBUTOR",
+            "url": "/mizuno0522"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 1098,
+          "content": "<p>A second LB data point, on a different base (a fork of judith007's 0.664 notebook, 6 members). Here Sinkhorn is a mix strength <em>s</em>: final log-scores = (1−s)·log P + s·log Q, where Q is P balanced toward a target marginal (the predicted marginal shrunk 35% toward the train prior).</p>\n<table>\n<thead>\n<tr>\n<th>s</th>\n<th>Public LB</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>0.60</td>\n<td>0.659 (0.659 again on an unchanged resubmission)</td>\n</tr>\n<tr>\n<td>0.45</td>\n<td>0.662</td>\n</tr>\n<tr>\n<td>0.30, plus typography coefficient 1.2 → 1.5</td>\n<td>0.663</td>\n</tr>\n</tbody>\n</table>\n<p>The last row changes two things, so it isn't a clean point for <em>s</em>. These are single submissions on the public part only. I haven't measured s = 0 on this base.</p>",
+          "feedback_tracking_data": {},
+          "id": 3549071,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-03T02:28:20.057Z",
+          "raw_markdown": "A second LB data point, on a different base (a fork of judith007's 0.664 notebook, 6 members). Here Sinkhorn is a mix strength *s*: final log-scores = (1−s)·log P + s·log Q, where Q is P balanced toward a target marginal (the predicted marginal shrunk 35% toward the train prior).\n\n| s | Public LB |\n|---|---|\n| 0.60 | 0.659 (0.659 again on an unchanged resubmission) |\n| 0.45 | 0.662 |\n| 0.30, plus typography coefficient 1.2 → 1.5 | 0.663 |\n\nThe last row changes two things, so it isn't a clean point for *s*. These are single submissions on the public part only. I haven't measured s = 0 on this base.",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "HALX2158",
+              "id": 16294566,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/mizuno0522",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+              "tier": "CONTRIBUTOR",
+              "url": "/mizuno0522",
+              "user_id": 16294566,
+              "user_name": "mizuno0522"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "A second LB data point, on a different base (a fork of judith007's 0.664 notebook, 6 members). Here Sinkhorn is a mix strength *s*: final log-scores = (1−s)·log P + s·log Q, where Q is P balanced toward a target marginal (the predicted marginal shrunk 35% toward the train prior).\n\n| s | Public LB |\n|---|---|\n| 0.60 | 0.659 (0.659 again on an unchanged resubmission) |\n| 0.45 | 0.662 |\n| 0.30, plus typography coefficient 1.2 → 1.5 | 0.663 |\n\nThe last row changes two things, so it isn't a clean point for *s*. These are single submissions on the public part only. I haven't measured s = 0 on this base.",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 752365,
+      "message_id": 3549359,
+      "parent_message_id": null,
+      "author": "bosprimigenious",
+      "author_url": "/bosprimigenious",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-03T12:41:23.147Z",
+      "raw_markdown": "Hi Boris, I noticed your Team Up status and read your audit of Sinkhorn under uneven model mixtures. I’m currently solo (best public score 0.473), looking for two complementary teammates for a three-person team. I can contribute reproducible baseline and grouped-validation work; my experiments are AI-assisted, using an owned RTX 4060 and free Kaggle compute. Would this setup interest you? What is your current team size and available time? Your validation and calibration experience would be a useful complement. Details: https://www.kaggle.com/competitions/name-that-llm/discussion/755378 . No problem if you are already committed elsewhere.",
+      "content_html": "<p>Hi Boris, I noticed your Team Up status and read your audit of Sinkhorn under uneven model mixtures. I’m currently solo (best public score 0.473), looking for two complementary teammates for a three-person team. I can contribute reproducible baseline and grouped-validation work; my experiments are AI-assisted, using an owned RTX 4060 and free Kaggle compute. Would this setup interest you? What is your current team size and available time? Your validation and calibration experience would be a useful complement. Details: <a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/755378\" target=\"_blank\">https://www.kaggle.com/competitions/name-that-llm/discussion/755378</a> . No problem if you are already committed elsewhere.</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:58:04+00:00",
+      "last_seen_at": "2026-11-16T16:23:18+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:23:18+00:00",
+      "remote_last_listed_at": "2026-11-16T16:23:18+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "bosprimigenious",
+          "tier": "CONTRIBUTOR",
+          "url": "/bosprimigenious"
+        },
+        "content": "<p>Hi Boris, I noticed your Team Up status and read your audit of Sinkhorn under uneven model mixtures. I’m currently solo (best public score 0.473), looking for two complementary teammates for a three-person team. I can contribute reproducible baseline and grouped-validation work; my experiments are AI-assisted, using an owned RTX 4060 and free Kaggle compute. Would this setup interest you? What is your current team size and available time? Your validation and calibration experience would be a useful complement. Details: <a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/755378\" target=\"_blank\">https://www.kaggle.com/competitions/name-that-llm/discussion/755378</a> . No problem if you are already committed elsewhere.</p>",
+        "id": 3549359,
+        "isThankYou": false,
+        "postDate": "2026-11-03T12:41:23.147Z",
+        "raw": {
+          "author": {
+            "display_name": "bosprimigenious",
+            "id": 29167060,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+            "tier": "CONTRIBUTOR",
+            "url": "/bosprimigenious"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 1775,
+          "content": "<p>Hi Boris, I noticed your Team Up status and read your audit of Sinkhorn under uneven model mixtures. I’m currently solo (best public score 0.473), looking for two complementary teammates for a three-person team. I can contribute reproducible baseline and grouped-validation work; my experiments are AI-assisted, using an owned RTX 4060 and free Kaggle compute. Would this setup interest you? What is your current team size and available time? Your validation and calibration experience would be a useful complement. Details: <a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/755378\" target=\"_blank\">https://www.kaggle.com/competitions/name-that-llm/discussion/755378</a> . No problem if you are already committed elsewhere.</p>",
+          "feedback_tracking_data": {},
+          "id": 3549359,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-03T12:41:23.147Z",
+          "raw_markdown": "Hi Boris, I noticed your Team Up status and read your audit of Sinkhorn under uneven model mixtures. I’m currently solo (best public score 0.473), looking for two complementary teammates for a three-person team. I can contribute reproducible baseline and grouped-validation work; my experiments are AI-assisted, using an owned RTX 4060 and free Kaggle compute. Would this setup interest you? What is your current team size and available time? Your validation and calibration experience would be a useful complement. Details: https://www.kaggle.com/competitions/name-that-llm/discussion/755378 . No problem if you are already committed elsewhere.",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "bosprimigenious",
+              "id": 29167060,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/bosprimigenious",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "CONTRIBUTOR",
+              "url": "/bosprimigenious",
+              "user_id": 29167060,
+              "user_name": "bosprimigenious"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "Hi Boris, I noticed your Team Up status and read your audit of Sinkhorn under uneven model mixtures. I’m currently solo (best public score 0.473), looking for two complementary teammates for a three-person team. I can contribute reproducible baseline and grouped-validation work; my experiments are AI-assisted, using an owned RTX 4060 and free Kaggle compute. Would this setup interest you? What is your current team size and available time? Your validation and calibration experience would be a useful complement. Details: https://www.kaggle.com/competitions/name-that-llm/discussion/755378 . No problem if you are already committed elsewhere.",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    }
+  ],
+  "writeup": null
+}

@@ -1,0 +1,204 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 758259,
+    "title": "Scoring-run hardware",
+    "author": "vishu phalswal",
+    "author_url": "/vishuphalswal",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-11-12T02:39:16.080798400Z",
+    "last_comment_post_date": "2026-11-12T02:39:16.080Z",
+    "comment_count": 0,
+    "votes": 0,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/758259",
+    "first_message_id": 3553672,
+    "first_seen_at": "2026-11-16T16:21:25+00:00",
+    "last_seen_at": "2026-11-18T09:02:34+00:00",
+    "detail_last_synced_at": "2026-11-18T09:02:34+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-18T09:01:50+00:00",
+    "remote_last_listed_at": "2026-11-18T09:01:50+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "52d948db7b57a66103f44700901c62bd0725c0010844543274d30c425cfa7a35",
+    "listing_metrics_hash": "1d7b01d39d998f5caf0eb285f7806c0632a1cb146aadc79a9504e2481370b229",
+    "detail_content_hash": "a3876f476249bee7c8d6f4408337f121beb6459c6e105028ea596b00b9509729",
+    "detail_last_checked_at": "2026-11-18T09:02:34+00:00",
+    "detail_next_check_at": "2026-11-21T09:02:34+00:00",
+    "detail_unchanged_count": 1,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 0,
+      "firstForumMessageId": null,
+      "id": 758259,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-11-12T02:39:16.080Z",
+      "postDate": "2026-11-12T02:39:16.080798400Z",
+      "raw": {
+        "id": 758259,
+        "last_comment_post_date": "2026-11-12T02:39:16.080Z",
+        "post_date": "2026-11-12T02:39:16.080798400Z",
+        "title": "Scoring-run hardware",
+        "topic_url": "/competitions/name-that-llm/discussion/758259"
+      },
+      "title": "Scoring-run hardware",
+      "topicUrl": "/competitions/name-that-llm/discussion/758259",
+      "votes": 0
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "vishu phalswal",
+        "authorUserName": "vishuphalswal",
+        "comments": [],
+        "expectedCommentCount": 0,
+        "firstMessage": {
+          "author": {
+            "displayName": "vishu phalswal",
+            "tier": "CONTRIBUTOR",
+            "url": "/vishuphalswal"
+          },
+          "content": "<p>Does anyone know if the scoring rerun has the same machine as a normal commit: same RAM, same /dev/shm size, and the same local disk space in /tmp? I’m trying to plan memory and disk use for large intermediate files.</p>",
+          "id": 3553672,
+          "isThankYou": false,
+          "postDate": "2026-11-12T02:39:16.080Z",
+          "raw": {
+            "author": {
+              "display_name": "vishu phalswal",
+              "id": 35760329,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "CONTRIBUTOR",
+              "url": "/vishuphalswal"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 570,
+            "content": "<p>Does anyone know if the scoring rerun has the same machine as a normal commit: same RAM, same /dev/shm size, and the same local disk space in /tmp? I’m trying to plan memory and disk use for large intermediate files.</p>",
+            "feedback_tracking_data": {},
+            "id": 3553672,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-11-12T02:39:16.080Z",
+            "raw_markdown": "Does anyone know if the scoring rerun has the same machine as a normal commit: same RAM, same /dev/shm size, and the same local disk space in /tmp? I’m trying to plan memory and disk use for large intermediate files.",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "vishu phalswal",
+                "id": 35760329,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/vishuphalswal",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/vishuphalswal",
+                "user_id": 35760329,
+                "user_name": "vishuphalswal"
+              }
+            },
+            "votes": {
+              "can_upvote": true
+            }
+          },
+          "rawMarkdown": "Does anyone know if the scoring rerun has the same machine as a normal commit: same RAM, same /dev/shm size, and the same local disk space in /tmp? I’m trying to plan memory and disk use for large intermediate files.",
+          "replies": [],
+          "votes": {
+            "totalVotes": 0
+          }
+        },
+        "firstMessageId": 3553672,
+        "id": 758259,
+        "name": "Scoring-run hardware",
+        "postDate": "2026-11-12T02:39:16.080798400Z",
+        "url": "/competitions/name-that-llm/discussion/758259"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>Does anyone know if the scoring rerun has the same machine as a normal commit: same RAM, same /dev/shm size, and the same local disk space in /tmp? I’m trying to plan memory and disk use for large intermediate files.</p>",
+              "id": 3553672,
+              "post_date": "2026-11-12T02:39:16.080Z",
+              "raw_markdown": "Does anyone know if the scoring rerun has the same machine as a normal commit: same RAM, same /dev/shm size, and the same local disk space in /tmp? I’m trying to plan memory and disk use for large intermediate files."
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 35760329,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "default-thumb.png",
+            "author_user_display_name": "vishu phalswal",
+            "author_user_name": "vishuphalswal",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "first_message": {
+              "author": {
+                "display_name": "vishu phalswal",
+                "id": 35760329,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/vishuphalswal"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 570,
+              "content": "<p>Does anyone know if the scoring rerun has the same machine as a normal commit: same RAM, same /dev/shm size, and the same local disk space in /tmp? I’m trying to plan memory and disk use for large intermediate files.</p>",
+              "feedback_tracking_data": {},
+              "id": 3553672,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-12T02:39:16.080Z",
+              "raw_markdown": "Does anyone know if the scoring rerun has the same machine as a normal commit: same RAM, same /dev/shm size, and the same local disk space in /tmp? I’m trying to plan memory and disk use for large intermediate files.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "vishu phalswal",
+                  "id": 35760329,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/vishuphalswal",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/vishuphalswal",
+                  "user_id": 35760329,
+                  "user_name": "vishuphalswal"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "first_message_id": 3553672,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 758259,
+            "name": "Scoring-run hardware",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-11-12T02:39:16.080798400Z",
+            "url": "/competitions/name-that-llm/discussion/758259"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-18T09:02:34+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-18T09:02:34+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-11-12T02:39:16.080798400Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [],
+  "writeup": null
+}

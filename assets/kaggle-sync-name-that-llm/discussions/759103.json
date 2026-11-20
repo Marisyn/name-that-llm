@@ -1,0 +1,3181 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 759103,
+    "title": "how good have non LLM or Bert or NLI methods faired",
+    "author": "Gaurav Rawat",
+    "author_url": "/gauravbrills",
+    "author_tier": "MASTER",
+    "post_date": "2026-11-13T19:33:48.755228Z",
+    "last_comment_post_date": "2026-11-17T17:32:37.843333300Z",
+    "comment_count": 9,
+    "votes": 3,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/759103",
+    "first_message_id": 3554804,
+    "first_seen_at": "2026-11-16T16:21:25+00:00",
+    "last_seen_at": "2026-11-19T12:45:20+00:00",
+    "detail_last_synced_at": "2026-11-18T09:03:03+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-19T12:45:20+00:00",
+    "remote_last_listed_at": "2026-11-19T12:45:20+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "3162b0cb78ccbf78802563da2d45b2dff30d66f87b6aa34870b69285f91ee78a",
+    "listing_metrics_hash": "6d8a74dbac9b4cd94399e9cc1520c8e662b0bbcc16c76b670939fedc4deb1f33",
+    "detail_content_hash": "b0cfa2910bec87a365fb0a1c71953f2ff988bc33303f689c54a47132f458c37c",
+    "detail_last_checked_at": "2026-11-18T09:03:03+00:00",
+    "detail_next_check_at": "2026-11-21T09:03:03+00:00",
+    "detail_unchanged_count": 1,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 9,
+      "firstForumMessageId": null,
+      "id": 759103,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-11-17T17:32:37.843333300Z",
+      "postDate": "2026-11-13T19:33:48.755228Z",
+      "raw": {
+        "comment_count": 9,
+        "id": 759103,
+        "last_comment_post_date": "2026-11-17T17:32:37.843333300Z",
+        "post_date": "2026-11-13T19:33:48.755228Z",
+        "title": "how good have non LLM or Bert or NLI methods faired",
+        "topic_url": "/competitions/name-that-llm/discussion/759103",
+        "votes": 3
+      },
+      "title": "how good have non LLM or Bert or NLI methods faired",
+      "topicUrl": "/competitions/name-that-llm/discussion/759103",
+      "votes": 3
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "MASTER",
+        "authorUserDisplayName": "Gaurav Rawat",
+        "authorUserName": "gauravbrills",
+        "comments": [
+          {
+            "author": {
+              "displayName": "Mikołaj Kurtyka",
+              "tier": "CONTRIBUTOR",
+              "url": "/mikoajkurtyka"
+            },
+            "content": "<p>I've mostly run non-LLM methods so far. Short answer: yes, they get past 0.5, but on my runs they flatten out around 0.60–0.62. All numbers are balanced accuracy: OOF is cross-validation with prompts split across folds, LB is the public leaderboard.</p>\n<p>Intrinsic watermarks: typography nearly identifies the model family. Gemini almost never uses em-dashes, Claude and GLM use em-dashes but never curly quotes, and GPT uses curly quotes. Getting the family right is easy (87–99%). Telling versions apart within a family is the hard part (67–76%). Keep the raw characters, and don't normalise punctuation.</p>\n<p>What I got:</p>\n<p>Aapproach    OOF LB</p>\n<ol>\n<li>TF-IDF + logistic regression    0.31    0.32</li>\n<li>+ external data + class weights    0.46    0.40</li>\n<li>+ stylometric features stacked with XGBoost    0.49    0.43</li>\n<li>DeBERTa-v3-large    0.50    –</li>\n<li>ModernBERT-large    0.55    0.55</li>\n<li>UltraBERT-380M, on 241k external rows    0.60    –</li>\n<li>Equal blend of encoders + TF-IDF stack    0.625   0.616</li>\n</ol>",
+            "id": 3556151,
+            "isThankYou": false,
+            "postDate": "2026-11-17T17:32:37.843Z",
+            "raw": {
+              "author": {
+                "display_name": "Mikołaj Kurtyka",
+                "id": 14413593,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/mikoajkurtyka"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 2624,
+              "content": "<p>I've mostly run non-LLM methods so far. Short answer: yes, they get past 0.5, but on my runs they flatten out around 0.60–0.62. All numbers are balanced accuracy: OOF is cross-validation with prompts split across folds, LB is the public leaderboard.</p>\n<p>Intrinsic watermarks: typography nearly identifies the model family. Gemini almost never uses em-dashes, Claude and GLM use em-dashes but never curly quotes, and GPT uses curly quotes. Getting the family right is easy (87–99%). Telling versions apart within a family is the hard part (67–76%). Keep the raw characters, and don't normalise punctuation.</p>\n<p>What I got:</p>\n<p>Aapproach    OOF LB</p>\n<ol>\n<li>TF-IDF + logistic regression    0.31    0.32</li>\n<li>+ external data + class weights    0.46    0.40</li>\n<li>+ stylometric features stacked with XGBoost    0.49    0.43</li>\n<li>DeBERTa-v3-large    0.50    –</li>\n<li>ModernBERT-large    0.55    0.55</li>\n<li>UltraBERT-380M, on 241k external rows    0.60    –</li>\n<li>Equal blend of encoders + TF-IDF stack    0.625   0.616</li>\n</ol>",
+              "feedback_tracking_data": {},
+              "id": 3556151,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-17T17:32:37.843Z",
+              "raw_markdown": "I've mostly run non-LLM methods so far. Short answer: yes, they get past 0.5, but on my runs they flatten out around 0.60–0.62. All numbers are balanced accuracy: OOF is cross-validation with prompts split across folds, LB is the public leaderboard.\n\nIntrinsic watermarks: typography nearly identifies the model family. Gemini almost never uses em-dashes, Claude and GLM use em-dashes but never curly quotes, and GPT uses curly quotes. Getting the family right is easy (87–99%). Telling versions apart within a family is the hard part (67–76%). Keep the raw characters, and don't normalise punctuation.\n\nWhat I got:\n\nAapproach\tOOF\tLB\n1. TF-IDF + logistic regression\t0.31\t0.32\n2. + external data + class weights\t0.46\t0.40\n3. + stylometric features stacked with XGBoost\t0.49\t0.43\n4. DeBERTa-v3-large\t0.50\t–\n5. ModernBERT-large\t0.55\t0.55\n6. UltraBERT-380M, on 241k external rows\t0.60\t–\n7. Equal blend of encoders + TF-IDF stack\t0.625\t0.616\n",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Mikołaj Kurtyka",
+                  "id": 14413593,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/mikoajkurtyka",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/mikoajkurtyka",
+                  "user_id": 14413593,
+                  "user_name": "mikoajkurtyka"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": 1
+              }
+            },
+            "rawMarkdown": "I've mostly run non-LLM methods so far. Short answer: yes, they get past 0.5, but on my runs they flatten out around 0.60–0.62. All numbers are balanced accuracy: OOF is cross-validation with prompts split across folds, LB is the public leaderboard.\n\nIntrinsic watermarks: typography nearly identifies the model family. Gemini almost never uses em-dashes, Claude and GLM use em-dashes but never curly quotes, and GPT uses curly quotes. Getting the family right is easy (87–99%). Telling versions apart within a family is the hard part (67–76%). Keep the raw characters, and don't normalise punctuation.\n\nWhat I got:\n\nAapproach\tOOF\tLB\n1. TF-IDF + logistic regression\t0.31\t0.32\n2. + external data + class weights\t0.46\t0.40\n3. + stylometric features stacked with XGBoost\t0.49\t0.43\n4. DeBERTa-v3-large\t0.50\t–\n5. ModernBERT-large\t0.55\t0.55\n6. UltraBERT-380M, on 241k external rows\t0.60\t–\n7. Equal blend of encoders + TF-IDF stack\t0.625\t0.616\n",
+            "replies": [],
+            "votes": {
+              "totalVotes": 1
+            }
+          },
+          {
+            "author": {
+              "displayName": "Ravi Ramakrishnan",
+              "tier": "GRANDMASTER",
+              "url": "/ravi20076"
+            },
+            "content": "<p>Our modern-bert is around 0.55-0.56 without much effort. Other similar models are also at 0.55 levels CV and LB <a href=\"/gauravbrills\" target=\"_blank\">@gauravbrills</a> </p>",
+            "id": 3554818,
+            "isThankYou": false,
+            "postDate": "2026-11-13T20:30:25.383Z",
+            "raw": {
+              "author": {
+                "display_name": "Ravi Ramakrishnan",
+                "id": 8273630,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8273630-kg.JPG?t=2024-03-26-14-51-52",
+                "tier": "GRANDMASTER",
+                "url": "/ravi20076"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 702,
+              "content": "<p>Our modern-bert is around 0.55-0.56 without much effort. Other similar models are also at 0.55 levels CV and LB <a href=\"/gauravbrills\" target=\"_blank\">@gauravbrills</a> </p>",
+              "feedback_tracking_data": {},
+              "id": 3554818,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-13T20:30:25.383Z",
+              "raw_markdown": "Our modern-bert is around 0.55-0.56 without much effort. Other similar models are also at 0.55 levels CV and LB @gauravbrills ",
+              "reactions": [
+                {
+                  "emoji": "LOVE",
+                  "featured_user_names": [
+                    "gauravbrills"
+                  ],
+                  "user_count": 1
+                }
+              ],
+              "replies": [
+                {
+                  "author": {
+                    "display_name": "Gaurav Rawat",
+                    "id": 768166,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/768166-kg.png?t=2024-01-23-01-39-07",
+                    "tier": "MASTER",
+                    "url": "/gauravbrills"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 4413,
+                  "content": "<p>ya good cv lb correlates . but so far the data and train ideas area almost pretty placid in the comp . </p>",
+                  "feedback_tracking_data": {},
+                  "id": 3554834,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-13T21:32:17.087Z",
+                  "raw_markdown": "ya good cv lb correlates . but so far the data and train ideas area almost pretty placid in the comp . ",
+                  "replies": [
+                    {
+                      "author": {
+                        "display_name": "Ravi Ramakrishnan",
+                        "id": 8273630,
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8273630-kg.JPG?t=2024-03-26-14-51-52",
+                        "tier": "GRANDMASTER",
+                        "url": "/ravi20076"
+                      },
+                      "author_type": "COMMENT",
+                      "competition_ranking": 702,
+                      "content": "<p>Yes, bigger dataset does not guarantee better CV and LB. After a while, it degrades actually <a href=\"/gauravbrills\" target=\"_blank\">@gauravbrills</a> </p>",
+                      "feedback_tracking_data": {},
+                      "id": 3554948,
+                      "is_thank_you": false,
+                      "kernel_version": 0,
+                      "parent": {},
+                      "post_date": "2026-11-14T07:50:30.897Z",
+                      "raw_markdown": "Yes, bigger dataset does not guarantee better CV and LB. After a while, it degrades actually @gauravbrills ",
+                      "team_up_info": {
+                        "intro": "",
+                        "team_leader": {
+                          "display_name": "Kishan Vavdara",
+                          "id": 12951282,
+                          "performance_tier": "MASTER",
+                          "profile_url": "/kishanvavdara",
+                          "progression_opt_out": false,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/12951282-kg.jpeg",
+                          "tier": "MASTER",
+                          "url": "/kishanvavdara",
+                          "user_id": 12951282,
+                          "user_name": "kishanvavdara"
+                        }
+                      },
+                      "votes": {
+                        "can_upvote": true,
+                        "total_upvotes": 1,
+                        "total_votes": 1
+                      }
+                    }
+                  ],
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Gaurav Rawat",
+                      "id": 768166,
+                      "performance_tier": "MASTER",
+                      "profile_url": "/gauravbrills",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/768166-kg.png?t=2024-01-23-01-39-07",
+                      "tier": "MASTER",
+                      "url": "/gauravbrills",
+                      "user_id": 768166,
+                      "user_name": "gauravbrills"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true,
+                    "total_upvotes": 1,
+                    "total_votes": 1
+                  }
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Kishan Vavdara",
+                  "id": 12951282,
+                  "performance_tier": "MASTER",
+                  "profile_url": "/kishanvavdara",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/12951282-kg.jpeg",
+                  "tier": "MASTER",
+                  "url": "/kishanvavdara",
+                  "user_id": 12951282,
+                  "user_name": "kishanvavdara"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": 1
+              }
+            },
+            "rawMarkdown": "Our modern-bert is around 0.55-0.56 without much effort. Other similar models are also at 0.55 levels CV and LB @gauravbrills ",
+            "replies": [
+              {
+                "author": {
+                  "displayName": "Gaurav Rawat",
+                  "tier": "MASTER",
+                  "url": "/gauravbrills"
+                },
+                "content": "<p>ya good cv lb correlates . but so far the data and train ideas area almost pretty placid in the comp . </p>",
+                "id": 3554834,
+                "isThankYou": false,
+                "postDate": "2026-11-13T21:32:17.087Z",
+                "raw": {
+                  "author": {
+                    "display_name": "Gaurav Rawat",
+                    "id": 768166,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/768166-kg.png?t=2024-01-23-01-39-07",
+                    "tier": "MASTER",
+                    "url": "/gauravbrills"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 4413,
+                  "content": "<p>ya good cv lb correlates . but so far the data and train ideas area almost pretty placid in the comp . </p>",
+                  "feedback_tracking_data": {},
+                  "id": 3554834,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-13T21:32:17.087Z",
+                  "raw_markdown": "ya good cv lb correlates . but so far the data and train ideas area almost pretty placid in the comp . ",
+                  "replies": [
+                    {
+                      "author": {
+                        "display_name": "Ravi Ramakrishnan",
+                        "id": 8273630,
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8273630-kg.JPG?t=2024-03-26-14-51-52",
+                        "tier": "GRANDMASTER",
+                        "url": "/ravi20076"
+                      },
+                      "author_type": "COMMENT",
+                      "competition_ranking": 702,
+                      "content": "<p>Yes, bigger dataset does not guarantee better CV and LB. After a while, it degrades actually <a href=\"/gauravbrills\" target=\"_blank\">@gauravbrills</a> </p>",
+                      "feedback_tracking_data": {},
+                      "id": 3554948,
+                      "is_thank_you": false,
+                      "kernel_version": 0,
+                      "parent": {},
+                      "post_date": "2026-11-14T07:50:30.897Z",
+                      "raw_markdown": "Yes, bigger dataset does not guarantee better CV and LB. After a while, it degrades actually @gauravbrills ",
+                      "team_up_info": {
+                        "intro": "",
+                        "team_leader": {
+                          "display_name": "Kishan Vavdara",
+                          "id": 12951282,
+                          "performance_tier": "MASTER",
+                          "profile_url": "/kishanvavdara",
+                          "progression_opt_out": false,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/12951282-kg.jpeg",
+                          "tier": "MASTER",
+                          "url": "/kishanvavdara",
+                          "user_id": 12951282,
+                          "user_name": "kishanvavdara"
+                        }
+                      },
+                      "votes": {
+                        "can_upvote": true,
+                        "total_upvotes": 1,
+                        "total_votes": 1
+                      }
+                    }
+                  ],
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Gaurav Rawat",
+                      "id": 768166,
+                      "performance_tier": "MASTER",
+                      "profile_url": "/gauravbrills",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/768166-kg.png?t=2024-01-23-01-39-07",
+                      "tier": "MASTER",
+                      "url": "/gauravbrills",
+                      "user_id": 768166,
+                      "user_name": "gauravbrills"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true,
+                    "total_upvotes": 1,
+                    "total_votes": 1
+                  }
+                },
+                "rawMarkdown": "ya good cv lb correlates . but so far the data and train ideas area almost pretty placid in the comp . ",
+                "replies": [
+                  {
+                    "author": {
+                      "displayName": "Ravi Ramakrishnan",
+                      "tier": "GRANDMASTER",
+                      "url": "/ravi20076"
+                    },
+                    "content": "<p>Yes, bigger dataset does not guarantee better CV and LB. After a while, it degrades actually <a href=\"/gauravbrills\" target=\"_blank\">@gauravbrills</a> </p>",
+                    "id": 3554948,
+                    "isThankYou": false,
+                    "postDate": "2026-11-14T07:50:30.897Z",
+                    "raw": {
+                      "author": {
+                        "display_name": "Ravi Ramakrishnan",
+                        "id": 8273630,
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8273630-kg.JPG?t=2024-03-26-14-51-52",
+                        "tier": "GRANDMASTER",
+                        "url": "/ravi20076"
+                      },
+                      "author_type": "COMMENT",
+                      "competition_ranking": 702,
+                      "content": "<p>Yes, bigger dataset does not guarantee better CV and LB. After a while, it degrades actually <a href=\"/gauravbrills\" target=\"_blank\">@gauravbrills</a> </p>",
+                      "feedback_tracking_data": {},
+                      "id": 3554948,
+                      "is_thank_you": false,
+                      "kernel_version": 0,
+                      "parent": {},
+                      "post_date": "2026-11-14T07:50:30.897Z",
+                      "raw_markdown": "Yes, bigger dataset does not guarantee better CV and LB. After a while, it degrades actually @gauravbrills ",
+                      "team_up_info": {
+                        "intro": "",
+                        "team_leader": {
+                          "display_name": "Kishan Vavdara",
+                          "id": 12951282,
+                          "performance_tier": "MASTER",
+                          "profile_url": "/kishanvavdara",
+                          "progression_opt_out": false,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/12951282-kg.jpeg",
+                          "tier": "MASTER",
+                          "url": "/kishanvavdara",
+                          "user_id": 12951282,
+                          "user_name": "kishanvavdara"
+                        }
+                      },
+                      "votes": {
+                        "can_upvote": true,
+                        "total_upvotes": 1,
+                        "total_votes": 1
+                      }
+                    },
+                    "rawMarkdown": "Yes, bigger dataset does not guarantee better CV and LB. After a while, it degrades actually @gauravbrills ",
+                    "replies": [],
+                    "votes": {
+                      "totalVotes": 1
+                    }
+                  }
+                ],
+                "votes": {
+                  "totalVotes": 1
+                }
+              }
+            ],
+            "votes": {
+              "totalVotes": 1
+            }
+          },
+          {
+            "author": {
+              "displayName": "water joe",
+              "tier": "EXPERT",
+              "url": "/waterjoe"
+            },
+            "content": "<p>May I ask, did you only test DeBERTa? Did you compare the BERT variants, such as ModernBERT、base and large? Is DeBERTa currently the best among BERT models?</p>",
+            "id": 3555577,
+            "isThankYou": false,
+            "postDate": "2026-11-16T07:10:45.207Z",
+            "raw": {
+              "author": {
+                "display_name": "water joe",
+                "id": 16297364,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "EXPERT",
+                "url": "/waterjoe"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 5073,
+              "content": "<p>May I ask, did you only test DeBERTa? Did you compare the BERT variants, such as ModernBERT、base and large? Is DeBERTa currently the best among BERT models?</p>",
+              "feedback_tracking_data": {},
+              "id": 3555577,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-16T07:10:45.207Z",
+              "raw_markdown": "May I ask, did you only test DeBERTa? Did you compare the BERT variants, such as ModernBERT、base and large? Is DeBERTa currently the best among BERT models?",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "water joe",
+                  "id": 16297364,
+                  "performance_tier": "EXPERT",
+                  "profile_url": "/waterjoe",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "EXPERT",
+                  "url": "/waterjoe",
+                  "user_id": 16297364,
+                  "user_name": "waterjoe"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "May I ask, did you only test DeBERTa? Did you compare the BERT variants, such as ModernBERT、base and large? Is DeBERTa currently the best among BERT models?",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          },
+          {
+            "author": {
+              "displayName": "harshraj22",
+              "tier": "CONTRIBUTOR",
+              "url": "/harshraj22"
+            },
+            "content": "<p>DeBERTa finetuned on openpool + tfidf and ensemble of Logistic Regression &amp; SVM goes around 0.55 in LB</p>",
+            "id": 3555406,
+            "isThankYou": false,
+            "postDate": "2026-11-15T17:28:34.117Z",
+            "raw": {
+              "author": {
+                "display_name": "harshraj22",
+                "id": 3384390,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3384390-kg.jpg",
+                "tier": "CONTRIBUTOR",
+                "url": "/harshraj22"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 3355,
+              "content": "<p>DeBERTa finetuned on openpool + tfidf and ensemble of Logistic Regression &amp; SVM goes around 0.55 in LB</p>",
+              "feedback_tracking_data": {},
+              "id": 3555406,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-15T17:28:34.117Z",
+              "raw_markdown": "DeBERTa finetuned on openpool + tfidf and ensemble of Logistic Regression & SVM goes around 0.55 in LB",
+              "replies": [
+                {
+                  "author": {
+                    "display_name": "Gaurav Rawat",
+                    "id": 768166,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/768166-kg.png?t=2024-01-23-01-39-07",
+                    "tier": "MASTER",
+                    "url": "/gauravbrills"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 4413,
+                  "content": "<p>yup right </p>",
+                  "feedback_tracking_data": {},
+                  "id": 3555428,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-15T19:36:02.680Z",
+                  "raw_markdown": "yup right ",
+                  "replies": [
+                    {
+                      "author": {
+                        "display_name": "Gaurav Rawat",
+                        "id": 768166,
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/768166-kg.png?t=2024-01-23-01-39-07",
+                        "tier": "MASTER",
+                        "url": "/gauravbrills"
+                      },
+                      "author_type": "TOPIC",
+                      "competition_ranking": 4413,
+                      "content": "<p>How much deberta got alone I bet around 0.48 -0.5 on base ..  so far base is like 0.45 .. but ya need to find some better ways then just fine tuning </p>",
+                      "feedback_tracking_data": {},
+                      "id": 3555429,
+                      "is_thank_you": false,
+                      "kernel_version": 0,
+                      "parent": {},
+                      "post_date": "2026-11-15T19:42:41.280Z",
+                      "raw_markdown": "How much deberta got alone I bet around 0.48 -0.5 on base ..  so far base is like 0.45 .. but ya need to find some better ways then just fine tuning ",
+                      "team_up_info": {
+                        "intro": "",
+                        "team_leader": {
+                          "display_name": "Gaurav Rawat",
+                          "id": 768166,
+                          "performance_tier": "MASTER",
+                          "profile_url": "/gauravbrills",
+                          "progression_opt_out": false,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/768166-kg.png?t=2024-01-23-01-39-07",
+                          "tier": "MASTER",
+                          "url": "/gauravbrills",
+                          "user_id": 768166,
+                          "user_name": "gauravbrills"
+                        }
+                      },
+                      "votes": {
+                        "can_upvote": true
+                      }
+                    },
+                    {
+                      "author": {
+                        "display_name": "harshraj22",
+                        "id": 3384390,
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3384390-kg.jpg",
+                        "tier": "CONTRIBUTOR",
+                        "url": "/harshraj22"
+                      },
+                      "author_type": "COMMENT",
+                      "competition_ranking": 3355,
+                      "content": "<p>It was around 0.496, though I am a bit surprised, the training objective of DeBERTa is supposed to ideally give better embeddings, as the task is closer to this one, compared to a general purpose LLM like Qwen which has been trained on multiple objectives using RL. But here, it seems the other way. Probably if deberta was also trained on massive dataset, it would have better features.</p>",
+                      "feedback_tracking_data": {},
+                      "id": 3555553,
+                      "is_thank_you": false,
+                      "kernel_version": 0,
+                      "parent": {},
+                      "post_date": "2026-11-16T05:07:57.560Z",
+                      "raw_markdown": "It was around 0.496, though I am a bit surprised, the training objective of DeBERTa is supposed to ideally give better embeddings, as the task is closer to this one, compared to a general purpose LLM like Qwen which has been trained on multiple objectives using RL. But here, it seems the other way. Probably if deberta was also trained on massive dataset, it would have better features.",
+                      "reactions": [
+                        {
+                          "emoji": "SURPRISE",
+                          "featured_user_names": [
+                            "gauravbrills"
+                          ],
+                          "user_count": 1
+                        }
+                      ],
+                      "team_up_info": {
+                        "enabled": true,
+                        "intro": "",
+                        "team_leader": {
+                          "display_name": "harshraj22",
+                          "id": 3384390,
+                          "performance_tier": "CONTRIBUTOR",
+                          "profile_url": "/harshraj22",
+                          "progression_opt_out": false,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3384390-kg.jpg",
+                          "tier": "CONTRIBUTOR",
+                          "url": "/harshraj22",
+                          "user_id": 3384390,
+                          "user_name": "harshraj22"
+                        }
+                      },
+                      "votes": {
+                        "can_upvote": true,
+                        "total_upvotes": 1,
+                        "total_votes": 1
+                      }
+                    }
+                  ],
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Gaurav Rawat",
+                      "id": 768166,
+                      "performance_tier": "MASTER",
+                      "profile_url": "/gauravbrills",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/768166-kg.png?t=2024-01-23-01-39-07",
+                      "tier": "MASTER",
+                      "url": "/gauravbrills",
+                      "user_id": 768166,
+                      "user_name": "gauravbrills"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                }
+              ],
+              "team_up_info": {
+                "enabled": true,
+                "intro": "",
+                "team_leader": {
+                  "display_name": "harshraj22",
+                  "id": 3384390,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/harshraj22",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3384390-kg.jpg",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/harshraj22",
+                  "user_id": 3384390,
+                  "user_name": "harshraj22"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "DeBERTa finetuned on openpool + tfidf and ensemble of Logistic Regression & SVM goes around 0.55 in LB",
+            "replies": [
+              {
+                "author": {
+                  "displayName": "Gaurav Rawat",
+                  "tier": "MASTER",
+                  "url": "/gauravbrills"
+                },
+                "content": "<p>yup right </p>",
+                "id": 3555428,
+                "isThankYou": false,
+                "postDate": "2026-11-15T19:36:02.680Z",
+                "raw": {
+                  "author": {
+                    "display_name": "Gaurav Rawat",
+                    "id": 768166,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/768166-kg.png?t=2024-01-23-01-39-07",
+                    "tier": "MASTER",
+                    "url": "/gauravbrills"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 4413,
+                  "content": "<p>yup right </p>",
+                  "feedback_tracking_data": {},
+                  "id": 3555428,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-15T19:36:02.680Z",
+                  "raw_markdown": "yup right ",
+                  "replies": [
+                    {
+                      "author": {
+                        "display_name": "Gaurav Rawat",
+                        "id": 768166,
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/768166-kg.png?t=2024-01-23-01-39-07",
+                        "tier": "MASTER",
+                        "url": "/gauravbrills"
+                      },
+                      "author_type": "TOPIC",
+                      "competition_ranking": 4413,
+                      "content": "<p>How much deberta got alone I bet around 0.48 -0.5 on base ..  so far base is like 0.45 .. but ya need to find some better ways then just fine tuning </p>",
+                      "feedback_tracking_data": {},
+                      "id": 3555429,
+                      "is_thank_you": false,
+                      "kernel_version": 0,
+                      "parent": {},
+                      "post_date": "2026-11-15T19:42:41.280Z",
+                      "raw_markdown": "How much deberta got alone I bet around 0.48 -0.5 on base ..  so far base is like 0.45 .. but ya need to find some better ways then just fine tuning ",
+                      "team_up_info": {
+                        "intro": "",
+                        "team_leader": {
+                          "display_name": "Gaurav Rawat",
+                          "id": 768166,
+                          "performance_tier": "MASTER",
+                          "profile_url": "/gauravbrills",
+                          "progression_opt_out": false,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/768166-kg.png?t=2024-01-23-01-39-07",
+                          "tier": "MASTER",
+                          "url": "/gauravbrills",
+                          "user_id": 768166,
+                          "user_name": "gauravbrills"
+                        }
+                      },
+                      "votes": {
+                        "can_upvote": true
+                      }
+                    },
+                    {
+                      "author": {
+                        "display_name": "harshraj22",
+                        "id": 3384390,
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3384390-kg.jpg",
+                        "tier": "CONTRIBUTOR",
+                        "url": "/harshraj22"
+                      },
+                      "author_type": "COMMENT",
+                      "competition_ranking": 3355,
+                      "content": "<p>It was around 0.496, though I am a bit surprised, the training objective of DeBERTa is supposed to ideally give better embeddings, as the task is closer to this one, compared to a general purpose LLM like Qwen which has been trained on multiple objectives using RL. But here, it seems the other way. Probably if deberta was also trained on massive dataset, it would have better features.</p>",
+                      "feedback_tracking_data": {},
+                      "id": 3555553,
+                      "is_thank_you": false,
+                      "kernel_version": 0,
+                      "parent": {},
+                      "post_date": "2026-11-16T05:07:57.560Z",
+                      "raw_markdown": "It was around 0.496, though I am a bit surprised, the training objective of DeBERTa is supposed to ideally give better embeddings, as the task is closer to this one, compared to a general purpose LLM like Qwen which has been trained on multiple objectives using RL. But here, it seems the other way. Probably if deberta was also trained on massive dataset, it would have better features.",
+                      "reactions": [
+                        {
+                          "emoji": "SURPRISE",
+                          "featured_user_names": [
+                            "gauravbrills"
+                          ],
+                          "user_count": 1
+                        }
+                      ],
+                      "team_up_info": {
+                        "enabled": true,
+                        "intro": "",
+                        "team_leader": {
+                          "display_name": "harshraj22",
+                          "id": 3384390,
+                          "performance_tier": "CONTRIBUTOR",
+                          "profile_url": "/harshraj22",
+                          "progression_opt_out": false,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3384390-kg.jpg",
+                          "tier": "CONTRIBUTOR",
+                          "url": "/harshraj22",
+                          "user_id": 3384390,
+                          "user_name": "harshraj22"
+                        }
+                      },
+                      "votes": {
+                        "can_upvote": true,
+                        "total_upvotes": 1,
+                        "total_votes": 1
+                      }
+                    }
+                  ],
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Gaurav Rawat",
+                      "id": 768166,
+                      "performance_tier": "MASTER",
+                      "profile_url": "/gauravbrills",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/768166-kg.png?t=2024-01-23-01-39-07",
+                      "tier": "MASTER",
+                      "url": "/gauravbrills",
+                      "user_id": 768166,
+                      "user_name": "gauravbrills"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                },
+                "rawMarkdown": "yup right ",
+                "replies": [
+                  {
+                    "author": {
+                      "displayName": "Gaurav Rawat",
+                      "tier": "MASTER",
+                      "url": "/gauravbrills"
+                    },
+                    "content": "<p>How much deberta got alone I bet around 0.48 -0.5 on base ..  so far base is like 0.45 .. but ya need to find some better ways then just fine tuning </p>",
+                    "id": 3555429,
+                    "isThankYou": false,
+                    "postDate": "2026-11-15T19:42:41.280Z",
+                    "raw": {
+                      "author": {
+                        "display_name": "Gaurav Rawat",
+                        "id": 768166,
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/768166-kg.png?t=2024-01-23-01-39-07",
+                        "tier": "MASTER",
+                        "url": "/gauravbrills"
+                      },
+                      "author_type": "TOPIC",
+                      "competition_ranking": 4413,
+                      "content": "<p>How much deberta got alone I bet around 0.48 -0.5 on base ..  so far base is like 0.45 .. but ya need to find some better ways then just fine tuning </p>",
+                      "feedback_tracking_data": {},
+                      "id": 3555429,
+                      "is_thank_you": false,
+                      "kernel_version": 0,
+                      "parent": {},
+                      "post_date": "2026-11-15T19:42:41.280Z",
+                      "raw_markdown": "How much deberta got alone I bet around 0.48 -0.5 on base ..  so far base is like 0.45 .. but ya need to find some better ways then just fine tuning ",
+                      "team_up_info": {
+                        "intro": "",
+                        "team_leader": {
+                          "display_name": "Gaurav Rawat",
+                          "id": 768166,
+                          "performance_tier": "MASTER",
+                          "profile_url": "/gauravbrills",
+                          "progression_opt_out": false,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/768166-kg.png?t=2024-01-23-01-39-07",
+                          "tier": "MASTER",
+                          "url": "/gauravbrills",
+                          "user_id": 768166,
+                          "user_name": "gauravbrills"
+                        }
+                      },
+                      "votes": {
+                        "can_upvote": true
+                      }
+                    },
+                    "rawMarkdown": "How much deberta got alone I bet around 0.48 -0.5 on base ..  so far base is like 0.45 .. but ya need to find some better ways then just fine tuning ",
+                    "replies": [],
+                    "votes": {
+                      "totalVotes": 0
+                    }
+                  },
+                  {
+                    "author": {
+                      "displayName": "harshraj22",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/harshraj22"
+                    },
+                    "content": "<p>It was around 0.496, though I am a bit surprised, the training objective of DeBERTa is supposed to ideally give better embeddings, as the task is closer to this one, compared to a general purpose LLM like Qwen which has been trained on multiple objectives using RL. But here, it seems the other way. Probably if deberta was also trained on massive dataset, it would have better features.</p>",
+                    "id": 3555553,
+                    "isThankYou": false,
+                    "postDate": "2026-11-16T05:07:57.560Z",
+                    "raw": {
+                      "author": {
+                        "display_name": "harshraj22",
+                        "id": 3384390,
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3384390-kg.jpg",
+                        "tier": "CONTRIBUTOR",
+                        "url": "/harshraj22"
+                      },
+                      "author_type": "COMMENT",
+                      "competition_ranking": 3355,
+                      "content": "<p>It was around 0.496, though I am a bit surprised, the training objective of DeBERTa is supposed to ideally give better embeddings, as the task is closer to this one, compared to a general purpose LLM like Qwen which has been trained on multiple objectives using RL. But here, it seems the other way. Probably if deberta was also trained on massive dataset, it would have better features.</p>",
+                      "feedback_tracking_data": {},
+                      "id": 3555553,
+                      "is_thank_you": false,
+                      "kernel_version": 0,
+                      "parent": {},
+                      "post_date": "2026-11-16T05:07:57.560Z",
+                      "raw_markdown": "It was around 0.496, though I am a bit surprised, the training objective of DeBERTa is supposed to ideally give better embeddings, as the task is closer to this one, compared to a general purpose LLM like Qwen which has been trained on multiple objectives using RL. But here, it seems the other way. Probably if deberta was also trained on massive dataset, it would have better features.",
+                      "reactions": [
+                        {
+                          "emoji": "SURPRISE",
+                          "featured_user_names": [
+                            "gauravbrills"
+                          ],
+                          "user_count": 1
+                        }
+                      ],
+                      "team_up_info": {
+                        "enabled": true,
+                        "intro": "",
+                        "team_leader": {
+                          "display_name": "harshraj22",
+                          "id": 3384390,
+                          "performance_tier": "CONTRIBUTOR",
+                          "profile_url": "/harshraj22",
+                          "progression_opt_out": false,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3384390-kg.jpg",
+                          "tier": "CONTRIBUTOR",
+                          "url": "/harshraj22",
+                          "user_id": 3384390,
+                          "user_name": "harshraj22"
+                        }
+                      },
+                      "votes": {
+                        "can_upvote": true,
+                        "total_upvotes": 1,
+                        "total_votes": 1
+                      }
+                    },
+                    "rawMarkdown": "It was around 0.496, though I am a bit surprised, the training objective of DeBERTa is supposed to ideally give better embeddings, as the task is closer to this one, compared to a general purpose LLM like Qwen which has been trained on multiple objectives using RL. But here, it seems the other way. Probably if deberta was also trained on massive dataset, it would have better features.",
+                    "replies": [],
+                    "votes": {
+                      "totalVotes": 1
+                    }
+                  }
+                ],
+                "votes": {
+                  "totalVotes": 0
+                }
+              }
+            ],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "expectedCommentCount": 9,
+        "firstMessage": {
+          "author": {
+            "displayName": "Gaurav Rawat",
+            "tier": "MASTER",
+            "url": "/gauravbrills"
+          },
+          "content": "<p>Hi not yet trained a llm was first playing aroudn can we find intrinsic watermarks from the data itself which signals there origin . How far have classical NLI or Bert deberta techniques faired . so far think they can reach around 0.5 but can they move higher . I feel a good classical solution maybe will scale better without inherent biases from a trained LLM or I might be wrong also here . </p>",
+          "id": 3554804,
+          "isThankYou": false,
+          "postDate": "2026-11-13T19:33:48.757Z",
+          "raw": {
+            "author": {
+              "display_name": "Gaurav Rawat",
+              "id": 768166,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/768166-kg.png?t=2024-01-23-01-39-07",
+              "tier": "MASTER",
+              "url": "/gauravbrills"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 4413,
+            "content": "<p>Hi not yet trained a llm was first playing aroudn can we find intrinsic watermarks from the data itself which signals there origin . How far have classical NLI or Bert deberta techniques faired . so far think they can reach around 0.5 but can they move higher . I feel a good classical solution maybe will scale better without inherent biases from a trained LLM or I might be wrong also here . </p>",
+            "feedback_tracking_data": {},
+            "id": 3554804,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-11-13T19:33:48.757Z",
+            "raw_markdown": "Hi not yet trained a llm was first playing aroudn can we find intrinsic watermarks from the data itself which signals there origin . How far have classical NLI or Bert deberta techniques faired . so far think they can reach around 0.5 but can they move higher . I feel a good classical solution maybe will scale better without inherent biases from a trained LLM or I might be wrong also here . ",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "Gaurav Rawat",
+                "id": 768166,
+                "performance_tier": "MASTER",
+                "profile_url": "/gauravbrills",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/768166-kg.png?t=2024-01-23-01-39-07",
+                "tier": "MASTER",
+                "url": "/gauravbrills",
+                "user_id": 768166,
+                "user_name": "gauravbrills"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 2,
+              "total_votes": 2
+            }
+          },
+          "rawMarkdown": "Hi not yet trained a llm was first playing aroudn can we find intrinsic watermarks from the data itself which signals there origin . How far have classical NLI or Bert deberta techniques faired . so far think they can reach around 0.5 but can they move higher . I feel a good classical solution maybe will scale better without inherent biases from a trained LLM or I might be wrong also here . ",
+          "replies": [],
+          "votes": {
+            "totalVotes": 2
+          }
+        },
+        "firstMessageId": 3554804,
+        "id": 759103,
+        "name": "how good have non LLM or Bert or NLI methods faired",
+        "postDate": "2026-11-13T19:33:48.755228Z",
+        "url": "/competitions/name-that-llm/discussion/759103"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>Hi not yet trained a llm was first playing aroudn can we find intrinsic watermarks from the data itself which signals there origin . How far have classical NLI or Bert deberta techniques faired . so far think they can reach around 0.5 but can they move higher . I feel a good classical solution maybe will scale better without inherent biases from a trained LLM or I might be wrong also here . </p>",
+              "id": 3554804,
+              "post_date": "2026-11-13T19:33:48.757Z",
+              "raw_markdown": "Hi not yet trained a llm was first playing aroudn can we find intrinsic watermarks from the data itself which signals there origin . How far have classical NLI or Bert deberta techniques faired . so far think they can reach around 0.5 but can they move higher . I feel a good classical solution maybe will scale better without inherent biases from a trained LLM or I might be wrong also here . ",
+              "votes": 2
+            },
+            {
+              "content": "<p>Our modern-bert is around 0.55-0.56 without much effort. Other similar models are also at 0.55 levels CV and LB <a href=\"/gauravbrills\" target=\"_blank\">@gauravbrills</a> </p>",
+              "id": 3554818,
+              "post_date": "2026-11-13T20:30:25.383Z",
+              "raw_markdown": "Our modern-bert is around 0.55-0.56 without much effort. Other similar models are also at 0.55 levels CV and LB @gauravbrills ",
+              "replies": [
+                {
+                  "content": "<p>ya good cv lb correlates . but so far the data and train ideas area almost pretty placid in the comp . </p>",
+                  "id": 3554834,
+                  "post_date": "2026-11-13T21:32:17.087Z",
+                  "raw_markdown": "ya good cv lb correlates . but so far the data and train ideas area almost pretty placid in the comp . ",
+                  "replies": [
+                    {
+                      "content": "<p>Yes, bigger dataset does not guarantee better CV and LB. After a while, it degrades actually <a href=\"/gauravbrills\" target=\"_blank\">@gauravbrills</a> </p>",
+                      "id": 3554948,
+                      "post_date": "2026-11-14T07:50:30.897Z",
+                      "raw_markdown": "Yes, bigger dataset does not guarantee better CV and LB. After a while, it degrades actually @gauravbrills ",
+                      "votes": 1
+                    }
+                  ],
+                  "votes": 1
+                }
+              ],
+              "votes": 1
+            },
+            {
+              "content": "<p>DeBERTa finetuned on openpool + tfidf and ensemble of Logistic Regression &amp; SVM goes around 0.55 in LB</p>",
+              "id": 3555406,
+              "post_date": "2026-11-15T17:28:34.117Z",
+              "raw_markdown": "DeBERTa finetuned on openpool + tfidf and ensemble of Logistic Regression & SVM goes around 0.55 in LB",
+              "replies": [
+                {
+                  "content": "<p>yup right </p>",
+                  "id": 3555428,
+                  "post_date": "2026-11-15T19:36:02.680Z",
+                  "raw_markdown": "yup right ",
+                  "replies": [
+                    {
+                      "content": "<p>How much deberta got alone I bet around 0.48 -0.5 on base ..  so far base is like 0.45 .. but ya need to find some better ways then just fine tuning </p>",
+                      "id": 3555429,
+                      "post_date": "2026-11-15T19:42:41.280Z",
+                      "raw_markdown": "How much deberta got alone I bet around 0.48 -0.5 on base ..  so far base is like 0.45 .. but ya need to find some better ways then just fine tuning "
+                    },
+                    {
+                      "content": "<p>It was around 0.496, though I am a bit surprised, the training objective of DeBERTa is supposed to ideally give better embeddings, as the task is closer to this one, compared to a general purpose LLM like Qwen which has been trained on multiple objectives using RL. But here, it seems the other way. Probably if deberta was also trained on massive dataset, it would have better features.</p>",
+                      "id": 3555553,
+                      "post_date": "2026-11-16T05:07:57.560Z",
+                      "raw_markdown": "It was around 0.496, though I am a bit surprised, the training objective of DeBERTa is supposed to ideally give better embeddings, as the task is closer to this one, compared to a general purpose LLM like Qwen which has been trained on multiple objectives using RL. But here, it seems the other way. Probably if deberta was also trained on massive dataset, it would have better features.",
+                      "votes": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": "<p>May I ask, did you only test DeBERTa? Did you compare the BERT variants, such as ModernBERT、base and large? Is DeBERTa currently the best among BERT models?</p>",
+              "id": 3555577,
+              "post_date": "2026-11-16T07:10:45.207Z",
+              "raw_markdown": "May I ask, did you only test DeBERTa? Did you compare the BERT variants, such as ModernBERT、base and large? Is DeBERTa currently the best among BERT models?"
+            },
+            {
+              "content": "<p>I've mostly run non-LLM methods so far. Short answer: yes, they get past 0.5, but on my runs they flatten out around 0.60–0.62. All numbers are balanced accuracy: OOF is cross-validation with prompts split across folds, LB is the public leaderboard.</p>\n<p>Intrinsic watermarks: typography nearly identifies the model family. Gemini almost never uses em-dashes, Claude and GLM use em-dashes but never curly quotes, and GPT uses curly quotes. Getting the family right is easy (87–99%). Telling versions apart within a family is the hard part (67–76%). Keep the raw characters, and don't normalise punctuation.</p>\n<p>What I got:</p>\n<p>Aapproach    OOF LB</p>\n<ol>\n<li>TF-IDF + logistic regression    0.31    0.32</li>\n<li>+ external data + class weights    0.46    0.40</li>\n<li>+ stylometric features stacked with XGBoost    0.49    0.43</li>\n<li>DeBERTa-v3-large    0.50    –</li>\n<li>ModernBERT-large    0.55    0.55</li>\n<li>UltraBERT-380M, on 241k external rows    0.60    –</li>\n<li>Equal blend of encoders + TF-IDF stack    0.625   0.616</li>\n</ol>",
+              "id": 3556151,
+              "post_date": "2026-11-17T17:32:37.843Z",
+              "raw_markdown": "I've mostly run non-LLM methods so far. Short answer: yes, they get past 0.5, but on my runs they flatten out around 0.60–0.62. All numbers are balanced accuracy: OOF is cross-validation with prompts split across folds, LB is the public leaderboard.\n\nIntrinsic watermarks: typography nearly identifies the model family. Gemini almost never uses em-dashes, Claude and GLM use em-dashes but never curly quotes, and GPT uses curly quotes. Getting the family right is easy (87–99%). Telling versions apart within a family is the hard part (67–76%). Keep the raw characters, and don't normalise punctuation.\n\nWhat I got:\n\nAapproach\tOOF\tLB\n1. TF-IDF + logistic regression\t0.31\t0.32\n2. + external data + class weights\t0.46\t0.40\n3. + stylometric features stacked with XGBoost\t0.49\t0.43\n4. DeBERTa-v3-large\t0.50\t–\n5. ModernBERT-large\t0.55\t0.55\n6. UltraBERT-380M, on 241k external rows\t0.60\t–\n7. Equal blend of encoders + TF-IDF stack\t0.625\t0.616\n",
+              "votes": 1
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 768166,
+            "author_performance_tier": "MASTER",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "768166-kg.png?t=2024-01-23-01-39-07",
+            "author_user_display_name": "Gaurav Rawat",
+            "author_user_name": "gauravbrills",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "comments": [
+              {
+                "author": {
+                  "display_name": "Mikołaj Kurtyka",
+                  "id": 14413593,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/mikoajkurtyka"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 2624,
+                "content": "<p>I've mostly run non-LLM methods so far. Short answer: yes, they get past 0.5, but on my runs they flatten out around 0.60–0.62. All numbers are balanced accuracy: OOF is cross-validation with prompts split across folds, LB is the public leaderboard.</p>\n<p>Intrinsic watermarks: typography nearly identifies the model family. Gemini almost never uses em-dashes, Claude and GLM use em-dashes but never curly quotes, and GPT uses curly quotes. Getting the family right is easy (87–99%). Telling versions apart within a family is the hard part (67–76%). Keep the raw characters, and don't normalise punctuation.</p>\n<p>What I got:</p>\n<p>Aapproach    OOF LB</p>\n<ol>\n<li>TF-IDF + logistic regression    0.31    0.32</li>\n<li>+ external data + class weights    0.46    0.40</li>\n<li>+ stylometric features stacked with XGBoost    0.49    0.43</li>\n<li>DeBERTa-v3-large    0.50    –</li>\n<li>ModernBERT-large    0.55    0.55</li>\n<li>UltraBERT-380M, on 241k external rows    0.60    –</li>\n<li>Equal blend of encoders + TF-IDF stack    0.625   0.616</li>\n</ol>",
+                "feedback_tracking_data": {},
+                "id": 3556151,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-11-17T17:32:37.843Z",
+                "raw_markdown": "I've mostly run non-LLM methods so far. Short answer: yes, they get past 0.5, but on my runs they flatten out around 0.60–0.62. All numbers are balanced accuracy: OOF is cross-validation with prompts split across folds, LB is the public leaderboard.\n\nIntrinsic watermarks: typography nearly identifies the model family. Gemini almost never uses em-dashes, Claude and GLM use em-dashes but never curly quotes, and GPT uses curly quotes. Getting the family right is easy (87–99%). Telling versions apart within a family is the hard part (67–76%). Keep the raw characters, and don't normalise punctuation.\n\nWhat I got:\n\nAapproach\tOOF\tLB\n1. TF-IDF + logistic regression\t0.31\t0.32\n2. + external data + class weights\t0.46\t0.40\n3. + stylometric features stacked with XGBoost\t0.49\t0.43\n4. DeBERTa-v3-large\t0.50\t–\n5. ModernBERT-large\t0.55\t0.55\n6. UltraBERT-380M, on 241k external rows\t0.60\t–\n7. Equal blend of encoders + TF-IDF stack\t0.625\t0.616\n",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "Mikołaj Kurtyka",
+                    "id": 14413593,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/mikoajkurtyka",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/mikoajkurtyka",
+                    "user_id": 14413593,
+                    "user_name": "mikoajkurtyka"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true,
+                  "total_upvotes": 1,
+                  "total_votes": 1
+                }
+              },
+              {
+                "author": {
+                  "display_name": "Ravi Ramakrishnan",
+                  "id": 8273630,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8273630-kg.JPG?t=2024-03-26-14-51-52",
+                  "tier": "GRANDMASTER",
+                  "url": "/ravi20076"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 702,
+                "content": "<p>Our modern-bert is around 0.55-0.56 without much effort. Other similar models are also at 0.55 levels CV and LB <a href=\"/gauravbrills\" target=\"_blank\">@gauravbrills</a> </p>",
+                "feedback_tracking_data": {},
+                "id": 3554818,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-11-13T20:30:25.383Z",
+                "raw_markdown": "Our modern-bert is around 0.55-0.56 without much effort. Other similar models are also at 0.55 levels CV and LB @gauravbrills ",
+                "reactions": [
+                  {
+                    "emoji": "LOVE",
+                    "featured_user_names": [
+                      "gauravbrills"
+                    ],
+                    "user_count": 1
+                  }
+                ],
+                "replies": [
+                  {
+                    "author": {
+                      "display_name": "Gaurav Rawat",
+                      "id": 768166,
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/768166-kg.png?t=2024-01-23-01-39-07",
+                      "tier": "MASTER",
+                      "url": "/gauravbrills"
+                    },
+                    "author_type": "TOPIC",
+                    "competition_ranking": 4413,
+                    "content": "<p>ya good cv lb correlates . but so far the data and train ideas area almost pretty placid in the comp . </p>",
+                    "feedback_tracking_data": {},
+                    "id": 3554834,
+                    "is_thank_you": false,
+                    "kernel_version": 0,
+                    "parent": {},
+                    "post_date": "2026-11-13T21:32:17.087Z",
+                    "raw_markdown": "ya good cv lb correlates . but so far the data and train ideas area almost pretty placid in the comp . ",
+                    "replies": [
+                      {
+                        "author": {
+                          "display_name": "Ravi Ramakrishnan",
+                          "id": 8273630,
+                          "progression_opt_out": false,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8273630-kg.JPG?t=2024-03-26-14-51-52",
+                          "tier": "GRANDMASTER",
+                          "url": "/ravi20076"
+                        },
+                        "author_type": "COMMENT",
+                        "competition_ranking": 702,
+                        "content": "<p>Yes, bigger dataset does not guarantee better CV and LB. After a while, it degrades actually <a href=\"/gauravbrills\" target=\"_blank\">@gauravbrills</a> </p>",
+                        "feedback_tracking_data": {},
+                        "id": 3554948,
+                        "is_thank_you": false,
+                        "kernel_version": 0,
+                        "parent": {},
+                        "post_date": "2026-11-14T07:50:30.897Z",
+                        "raw_markdown": "Yes, bigger dataset does not guarantee better CV and LB. After a while, it degrades actually @gauravbrills ",
+                        "team_up_info": {
+                          "intro": "",
+                          "team_leader": {
+                            "display_name": "Kishan Vavdara",
+                            "id": 12951282,
+                            "performance_tier": "MASTER",
+                            "profile_url": "/kishanvavdara",
+                            "progression_opt_out": false,
+                            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/12951282-kg.jpeg",
+                            "tier": "MASTER",
+                            "url": "/kishanvavdara",
+                            "user_id": 12951282,
+                            "user_name": "kishanvavdara"
+                          }
+                        },
+                        "votes": {
+                          "can_upvote": true,
+                          "total_upvotes": 1,
+                          "total_votes": 1
+                        }
+                      }
+                    ],
+                    "team_up_info": {
+                      "intro": "",
+                      "team_leader": {
+                        "display_name": "Gaurav Rawat",
+                        "id": 768166,
+                        "performance_tier": "MASTER",
+                        "profile_url": "/gauravbrills",
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/768166-kg.png?t=2024-01-23-01-39-07",
+                        "tier": "MASTER",
+                        "url": "/gauravbrills",
+                        "user_id": 768166,
+                        "user_name": "gauravbrills"
+                      }
+                    },
+                    "votes": {
+                      "can_upvote": true,
+                      "total_upvotes": 1,
+                      "total_votes": 1
+                    }
+                  }
+                ],
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "Kishan Vavdara",
+                    "id": 12951282,
+                    "performance_tier": "MASTER",
+                    "profile_url": "/kishanvavdara",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/12951282-kg.jpeg",
+                    "tier": "MASTER",
+                    "url": "/kishanvavdara",
+                    "user_id": 12951282,
+                    "user_name": "kishanvavdara"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true,
+                  "total_upvotes": 1,
+                  "total_votes": 1
+                }
+              },
+              {
+                "author": {
+                  "display_name": "water joe",
+                  "id": 16297364,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "EXPERT",
+                  "url": "/waterjoe"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 5073,
+                "content": "<p>May I ask, did you only test DeBERTa? Did you compare the BERT variants, such as ModernBERT、base and large? Is DeBERTa currently the best among BERT models?</p>",
+                "feedback_tracking_data": {},
+                "id": 3555577,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-11-16T07:10:45.207Z",
+                "raw_markdown": "May I ask, did you only test DeBERTa? Did you compare the BERT variants, such as ModernBERT、base and large? Is DeBERTa currently the best among BERT models?",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "water joe",
+                    "id": 16297364,
+                    "performance_tier": "EXPERT",
+                    "profile_url": "/waterjoe",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                    "tier": "EXPERT",
+                    "url": "/waterjoe",
+                    "user_id": 16297364,
+                    "user_name": "waterjoe"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              },
+              {
+                "author": {
+                  "display_name": "harshraj22",
+                  "id": 3384390,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3384390-kg.jpg",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/harshraj22"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 3355,
+                "content": "<p>DeBERTa finetuned on openpool + tfidf and ensemble of Logistic Regression &amp; SVM goes around 0.55 in LB</p>",
+                "feedback_tracking_data": {},
+                "id": 3555406,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-11-15T17:28:34.117Z",
+                "raw_markdown": "DeBERTa finetuned on openpool + tfidf and ensemble of Logistic Regression & SVM goes around 0.55 in LB",
+                "replies": [
+                  {
+                    "author": {
+                      "display_name": "Gaurav Rawat",
+                      "id": 768166,
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/768166-kg.png?t=2024-01-23-01-39-07",
+                      "tier": "MASTER",
+                      "url": "/gauravbrills"
+                    },
+                    "author_type": "TOPIC",
+                    "competition_ranking": 4413,
+                    "content": "<p>yup right </p>",
+                    "feedback_tracking_data": {},
+                    "id": 3555428,
+                    "is_thank_you": false,
+                    "kernel_version": 0,
+                    "parent": {},
+                    "post_date": "2026-11-15T19:36:02.680Z",
+                    "raw_markdown": "yup right ",
+                    "replies": [
+                      {
+                        "author": {
+                          "display_name": "Gaurav Rawat",
+                          "id": 768166,
+                          "progression_opt_out": false,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/768166-kg.png?t=2024-01-23-01-39-07",
+                          "tier": "MASTER",
+                          "url": "/gauravbrills"
+                        },
+                        "author_type": "TOPIC",
+                        "competition_ranking": 4413,
+                        "content": "<p>How much deberta got alone I bet around 0.48 -0.5 on base ..  so far base is like 0.45 .. but ya need to find some better ways then just fine tuning </p>",
+                        "feedback_tracking_data": {},
+                        "id": 3555429,
+                        "is_thank_you": false,
+                        "kernel_version": 0,
+                        "parent": {},
+                        "post_date": "2026-11-15T19:42:41.280Z",
+                        "raw_markdown": "How much deberta got alone I bet around 0.48 -0.5 on base ..  so far base is like 0.45 .. but ya need to find some better ways then just fine tuning ",
+                        "team_up_info": {
+                          "intro": "",
+                          "team_leader": {
+                            "display_name": "Gaurav Rawat",
+                            "id": 768166,
+                            "performance_tier": "MASTER",
+                            "profile_url": "/gauravbrills",
+                            "progression_opt_out": false,
+                            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/768166-kg.png?t=2024-01-23-01-39-07",
+                            "tier": "MASTER",
+                            "url": "/gauravbrills",
+                            "user_id": 768166,
+                            "user_name": "gauravbrills"
+                          }
+                        },
+                        "votes": {
+                          "can_upvote": true
+                        }
+                      },
+                      {
+                        "author": {
+                          "display_name": "harshraj22",
+                          "id": 3384390,
+                          "progression_opt_out": false,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3384390-kg.jpg",
+                          "tier": "CONTRIBUTOR",
+                          "url": "/harshraj22"
+                        },
+                        "author_type": "COMMENT",
+                        "competition_ranking": 3355,
+                        "content": "<p>It was around 0.496, though I am a bit surprised, the training objective of DeBERTa is supposed to ideally give better embeddings, as the task is closer to this one, compared to a general purpose LLM like Qwen which has been trained on multiple objectives using RL. But here, it seems the other way. Probably if deberta was also trained on massive dataset, it would have better features.</p>",
+                        "feedback_tracking_data": {},
+                        "id": 3555553,
+                        "is_thank_you": false,
+                        "kernel_version": 0,
+                        "parent": {},
+                        "post_date": "2026-11-16T05:07:57.560Z",
+                        "raw_markdown": "It was around 0.496, though I am a bit surprised, the training objective of DeBERTa is supposed to ideally give better embeddings, as the task is closer to this one, compared to a general purpose LLM like Qwen which has been trained on multiple objectives using RL. But here, it seems the other way. Probably if deberta was also trained on massive dataset, it would have better features.",
+                        "reactions": [
+                          {
+                            "emoji": "SURPRISE",
+                            "featured_user_names": [
+                              "gauravbrills"
+                            ],
+                            "user_count": 1
+                          }
+                        ],
+                        "team_up_info": {
+                          "enabled": true,
+                          "intro": "",
+                          "team_leader": {
+                            "display_name": "harshraj22",
+                            "id": 3384390,
+                            "performance_tier": "CONTRIBUTOR",
+                            "profile_url": "/harshraj22",
+                            "progression_opt_out": false,
+                            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3384390-kg.jpg",
+                            "tier": "CONTRIBUTOR",
+                            "url": "/harshraj22",
+                            "user_id": 3384390,
+                            "user_name": "harshraj22"
+                          }
+                        },
+                        "votes": {
+                          "can_upvote": true,
+                          "total_upvotes": 1,
+                          "total_votes": 1
+                        }
+                      }
+                    ],
+                    "team_up_info": {
+                      "intro": "",
+                      "team_leader": {
+                        "display_name": "Gaurav Rawat",
+                        "id": 768166,
+                        "performance_tier": "MASTER",
+                        "profile_url": "/gauravbrills",
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/768166-kg.png?t=2024-01-23-01-39-07",
+                        "tier": "MASTER",
+                        "url": "/gauravbrills",
+                        "user_id": 768166,
+                        "user_name": "gauravbrills"
+                      }
+                    },
+                    "votes": {
+                      "can_upvote": true
+                    }
+                  }
+                ],
+                "team_up_info": {
+                  "enabled": true,
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "harshraj22",
+                    "id": 3384390,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/harshraj22",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3384390-kg.jpg",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/harshraj22",
+                    "user_id": 3384390,
+                    "user_name": "harshraj22"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              }
+            ],
+            "first_message": {
+              "author": {
+                "display_name": "Gaurav Rawat",
+                "id": 768166,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/768166-kg.png?t=2024-01-23-01-39-07",
+                "tier": "MASTER",
+                "url": "/gauravbrills"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 4413,
+              "content": "<p>Hi not yet trained a llm was first playing aroudn can we find intrinsic watermarks from the data itself which signals there origin . How far have classical NLI or Bert deberta techniques faired . so far think they can reach around 0.5 but can they move higher . I feel a good classical solution maybe will scale better without inherent biases from a trained LLM or I might be wrong also here . </p>",
+              "feedback_tracking_data": {},
+              "id": 3554804,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-13T19:33:48.757Z",
+              "raw_markdown": "Hi not yet trained a llm was first playing aroudn can we find intrinsic watermarks from the data itself which signals there origin . How far have classical NLI or Bert deberta techniques faired . so far think they can reach around 0.5 but can they move higher . I feel a good classical solution maybe will scale better without inherent biases from a trained LLM or I might be wrong also here . ",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Gaurav Rawat",
+                  "id": 768166,
+                  "performance_tier": "MASTER",
+                  "profile_url": "/gauravbrills",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/768166-kg.png?t=2024-01-23-01-39-07",
+                  "tier": "MASTER",
+                  "url": "/gauravbrills",
+                  "user_id": 768166,
+                  "user_name": "gauravbrills"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 2,
+                "total_votes": 2
+              }
+            },
+            "first_message_id": 3554804,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 759103,
+            "name": "how good have non LLM or Bert or NLI methods faired",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-11-13T19:33:48.755228Z",
+            "total_messages": 9,
+            "total_votes": 2,
+            "url": "/competitions/name-that-llm/discussion/759103"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-18T09:03:03+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-18T09:03:03+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-11-17T17:32:37.843333300Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [
+    {
+      "slug": "name-that-llm",
+      "topic_id": 759103,
+      "message_id": 3554818,
+      "parent_message_id": null,
+      "author": "Ravi Ramakrishnan",
+      "author_url": "/ravi20076",
+      "author_tier": "GRANDMASTER",
+      "post_date": "2026-11-13T20:30:25.383Z",
+      "raw_markdown": "Our modern-bert is around 0.55-0.56 without much effort. Other similar models are also at 0.55 levels CV and LB @gauravbrills ",
+      "content_html": "<p>Our modern-bert is around 0.55-0.56 without much effort. Other similar models are also at 0.55 levels CV and LB <a href=\"/gauravbrills\" target=\"_blank\">@gauravbrills</a> </p>",
+      "votes": 1,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-16T16:22:39+00:00",
+      "last_seen_at": "2026-11-18T09:03:03+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T09:03:03+00:00",
+      "remote_last_listed_at": "2026-11-18T09:03:03+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Ravi Ramakrishnan",
+          "tier": "GRANDMASTER",
+          "url": "/ravi20076"
+        },
+        "content": "<p>Our modern-bert is around 0.55-0.56 without much effort. Other similar models are also at 0.55 levels CV and LB <a href=\"/gauravbrills\" target=\"_blank\">@gauravbrills</a> </p>",
+        "id": 3554818,
+        "isThankYou": false,
+        "postDate": "2026-11-13T20:30:25.383Z",
+        "raw": {
+          "author": {
+            "display_name": "Ravi Ramakrishnan",
+            "id": 8273630,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8273630-kg.JPG?t=2024-03-26-14-51-52",
+            "tier": "GRANDMASTER",
+            "url": "/ravi20076"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 702,
+          "content": "<p>Our modern-bert is around 0.55-0.56 without much effort. Other similar models are also at 0.55 levels CV and LB <a href=\"/gauravbrills\" target=\"_blank\">@gauravbrills</a> </p>",
+          "feedback_tracking_data": {},
+          "id": 3554818,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-13T20:30:25.383Z",
+          "raw_markdown": "Our modern-bert is around 0.55-0.56 without much effort. Other similar models are also at 0.55 levels CV and LB @gauravbrills ",
+          "reactions": [
+            {
+              "emoji": "LOVE",
+              "featured_user_names": [
+                "gauravbrills"
+              ],
+              "user_count": 1
+            }
+          ],
+          "replies": [
+            {
+              "author": {
+                "display_name": "Gaurav Rawat",
+                "id": 768166,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/768166-kg.png?t=2024-01-23-01-39-07",
+                "tier": "MASTER",
+                "url": "/gauravbrills"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 4413,
+              "content": "<p>ya good cv lb correlates . but so far the data and train ideas area almost pretty placid in the comp . </p>",
+              "feedback_tracking_data": {},
+              "id": 3554834,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-13T21:32:17.087Z",
+              "raw_markdown": "ya good cv lb correlates . but so far the data and train ideas area almost pretty placid in the comp . ",
+              "replies": [
+                {
+                  "author": {
+                    "display_name": "Ravi Ramakrishnan",
+                    "id": 8273630,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8273630-kg.JPG?t=2024-03-26-14-51-52",
+                    "tier": "GRANDMASTER",
+                    "url": "/ravi20076"
+                  },
+                  "author_type": "COMMENT",
+                  "competition_ranking": 702,
+                  "content": "<p>Yes, bigger dataset does not guarantee better CV and LB. After a while, it degrades actually <a href=\"/gauravbrills\" target=\"_blank\">@gauravbrills</a> </p>",
+                  "feedback_tracking_data": {},
+                  "id": 3554948,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-14T07:50:30.897Z",
+                  "raw_markdown": "Yes, bigger dataset does not guarantee better CV and LB. After a while, it degrades actually @gauravbrills ",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Kishan Vavdara",
+                      "id": 12951282,
+                      "performance_tier": "MASTER",
+                      "profile_url": "/kishanvavdara",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/12951282-kg.jpeg",
+                      "tier": "MASTER",
+                      "url": "/kishanvavdara",
+                      "user_id": 12951282,
+                      "user_name": "kishanvavdara"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true,
+                    "total_upvotes": 1,
+                    "total_votes": 1
+                  }
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Gaurav Rawat",
+                  "id": 768166,
+                  "performance_tier": "MASTER",
+                  "profile_url": "/gauravbrills",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/768166-kg.png?t=2024-01-23-01-39-07",
+                  "tier": "MASTER",
+                  "url": "/gauravbrills",
+                  "user_id": 768166,
+                  "user_name": "gauravbrills"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": 1
+              }
+            }
+          ],
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Kishan Vavdara",
+              "id": 12951282,
+              "performance_tier": "MASTER",
+              "profile_url": "/kishanvavdara",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/12951282-kg.jpeg",
+              "tier": "MASTER",
+              "url": "/kishanvavdara",
+              "user_id": 12951282,
+              "user_name": "kishanvavdara"
+            }
+          },
+          "votes": {
+            "can_upvote": true,
+            "total_upvotes": 1,
+            "total_votes": 1
+          }
+        },
+        "rawMarkdown": "Our modern-bert is around 0.55-0.56 without much effort. Other similar models are also at 0.55 levels CV and LB @gauravbrills ",
+        "replies": [
+          {
+            "author": {
+              "displayName": "Gaurav Rawat",
+              "tier": "MASTER",
+              "url": "/gauravbrills"
+            },
+            "content": "<p>ya good cv lb correlates . but so far the data and train ideas area almost pretty placid in the comp . </p>",
+            "id": 3554834,
+            "isThankYou": false,
+            "postDate": "2026-11-13T21:32:17.087Z",
+            "raw": {
+              "author": {
+                "display_name": "Gaurav Rawat",
+                "id": 768166,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/768166-kg.png?t=2024-01-23-01-39-07",
+                "tier": "MASTER",
+                "url": "/gauravbrills"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 4413,
+              "content": "<p>ya good cv lb correlates . but so far the data and train ideas area almost pretty placid in the comp . </p>",
+              "feedback_tracking_data": {},
+              "id": 3554834,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-13T21:32:17.087Z",
+              "raw_markdown": "ya good cv lb correlates . but so far the data and train ideas area almost pretty placid in the comp . ",
+              "replies": [
+                {
+                  "author": {
+                    "display_name": "Ravi Ramakrishnan",
+                    "id": 8273630,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8273630-kg.JPG?t=2024-03-26-14-51-52",
+                    "tier": "GRANDMASTER",
+                    "url": "/ravi20076"
+                  },
+                  "author_type": "COMMENT",
+                  "competition_ranking": 702,
+                  "content": "<p>Yes, bigger dataset does not guarantee better CV and LB. After a while, it degrades actually <a href=\"/gauravbrills\" target=\"_blank\">@gauravbrills</a> </p>",
+                  "feedback_tracking_data": {},
+                  "id": 3554948,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-14T07:50:30.897Z",
+                  "raw_markdown": "Yes, bigger dataset does not guarantee better CV and LB. After a while, it degrades actually @gauravbrills ",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Kishan Vavdara",
+                      "id": 12951282,
+                      "performance_tier": "MASTER",
+                      "profile_url": "/kishanvavdara",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/12951282-kg.jpeg",
+                      "tier": "MASTER",
+                      "url": "/kishanvavdara",
+                      "user_id": 12951282,
+                      "user_name": "kishanvavdara"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true,
+                    "total_upvotes": 1,
+                    "total_votes": 1
+                  }
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Gaurav Rawat",
+                  "id": 768166,
+                  "performance_tier": "MASTER",
+                  "profile_url": "/gauravbrills",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/768166-kg.png?t=2024-01-23-01-39-07",
+                  "tier": "MASTER",
+                  "url": "/gauravbrills",
+                  "user_id": 768166,
+                  "user_name": "gauravbrills"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": 1
+              }
+            },
+            "rawMarkdown": "ya good cv lb correlates . but so far the data and train ideas area almost pretty placid in the comp . ",
+            "replies": [
+              {
+                "author": {
+                  "displayName": "Ravi Ramakrishnan",
+                  "tier": "GRANDMASTER",
+                  "url": "/ravi20076"
+                },
+                "content": "<p>Yes, bigger dataset does not guarantee better CV and LB. After a while, it degrades actually <a href=\"/gauravbrills\" target=\"_blank\">@gauravbrills</a> </p>",
+                "id": 3554948,
+                "isThankYou": false,
+                "postDate": "2026-11-14T07:50:30.897Z",
+                "raw": {
+                  "author": {
+                    "display_name": "Ravi Ramakrishnan",
+                    "id": 8273630,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8273630-kg.JPG?t=2024-03-26-14-51-52",
+                    "tier": "GRANDMASTER",
+                    "url": "/ravi20076"
+                  },
+                  "author_type": "COMMENT",
+                  "competition_ranking": 702,
+                  "content": "<p>Yes, bigger dataset does not guarantee better CV and LB. After a while, it degrades actually <a href=\"/gauravbrills\" target=\"_blank\">@gauravbrills</a> </p>",
+                  "feedback_tracking_data": {},
+                  "id": 3554948,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-14T07:50:30.897Z",
+                  "raw_markdown": "Yes, bigger dataset does not guarantee better CV and LB. After a while, it degrades actually @gauravbrills ",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Kishan Vavdara",
+                      "id": 12951282,
+                      "performance_tier": "MASTER",
+                      "profile_url": "/kishanvavdara",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/12951282-kg.jpeg",
+                      "tier": "MASTER",
+                      "url": "/kishanvavdara",
+                      "user_id": 12951282,
+                      "user_name": "kishanvavdara"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true,
+                    "total_upvotes": 1,
+                    "total_votes": 1
+                  }
+                },
+                "rawMarkdown": "Yes, bigger dataset does not guarantee better CV and LB. After a while, it degrades actually @gauravbrills ",
+                "replies": [],
+                "votes": {
+                  "totalVotes": 1
+                }
+              }
+            ],
+            "votes": {
+              "totalVotes": 1
+            }
+          }
+        ],
+        "votes": {
+          "totalVotes": 1
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 759103,
+      "message_id": 3554834,
+      "parent_message_id": 3554818,
+      "author": "Gaurav Rawat",
+      "author_url": "/gauravbrills",
+      "author_tier": "MASTER",
+      "post_date": "2026-11-13T21:32:17.087Z",
+      "raw_markdown": "ya good cv lb correlates . but so far the data and train ideas area almost pretty placid in the comp . ",
+      "content_html": "<p>ya good cv lb correlates . but so far the data and train ideas area almost pretty placid in the comp . </p>",
+      "votes": 1,
+      "is_thank_you": 0,
+      "depth": 1,
+      "first_seen_at": "2026-11-16T16:22:39+00:00",
+      "last_seen_at": "2026-11-18T09:03:03+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T09:03:03+00:00",
+      "remote_last_listed_at": "2026-11-18T09:03:03+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Gaurav Rawat",
+          "tier": "MASTER",
+          "url": "/gauravbrills"
+        },
+        "content": "<p>ya good cv lb correlates . but so far the data and train ideas area almost pretty placid in the comp . </p>",
+        "id": 3554834,
+        "isThankYou": false,
+        "postDate": "2026-11-13T21:32:17.087Z",
+        "raw": {
+          "author": {
+            "display_name": "Gaurav Rawat",
+            "id": 768166,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/768166-kg.png?t=2024-01-23-01-39-07",
+            "tier": "MASTER",
+            "url": "/gauravbrills"
+          },
+          "author_type": "TOPIC",
+          "competition_ranking": 4413,
+          "content": "<p>ya good cv lb correlates . but so far the data and train ideas area almost pretty placid in the comp . </p>",
+          "feedback_tracking_data": {},
+          "id": 3554834,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-13T21:32:17.087Z",
+          "raw_markdown": "ya good cv lb correlates . but so far the data and train ideas area almost pretty placid in the comp . ",
+          "replies": [
+            {
+              "author": {
+                "display_name": "Ravi Ramakrishnan",
+                "id": 8273630,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8273630-kg.JPG?t=2024-03-26-14-51-52",
+                "tier": "GRANDMASTER",
+                "url": "/ravi20076"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 702,
+              "content": "<p>Yes, bigger dataset does not guarantee better CV and LB. After a while, it degrades actually <a href=\"/gauravbrills\" target=\"_blank\">@gauravbrills</a> </p>",
+              "feedback_tracking_data": {},
+              "id": 3554948,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-14T07:50:30.897Z",
+              "raw_markdown": "Yes, bigger dataset does not guarantee better CV and LB. After a while, it degrades actually @gauravbrills ",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Kishan Vavdara",
+                  "id": 12951282,
+                  "performance_tier": "MASTER",
+                  "profile_url": "/kishanvavdara",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/12951282-kg.jpeg",
+                  "tier": "MASTER",
+                  "url": "/kishanvavdara",
+                  "user_id": 12951282,
+                  "user_name": "kishanvavdara"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": 1
+              }
+            }
+          ],
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Gaurav Rawat",
+              "id": 768166,
+              "performance_tier": "MASTER",
+              "profile_url": "/gauravbrills",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/768166-kg.png?t=2024-01-23-01-39-07",
+              "tier": "MASTER",
+              "url": "/gauravbrills",
+              "user_id": 768166,
+              "user_name": "gauravbrills"
+            }
+          },
+          "votes": {
+            "can_upvote": true,
+            "total_upvotes": 1,
+            "total_votes": 1
+          }
+        },
+        "rawMarkdown": "ya good cv lb correlates . but so far the data and train ideas area almost pretty placid in the comp . ",
+        "replies": [
+          {
+            "author": {
+              "displayName": "Ravi Ramakrishnan",
+              "tier": "GRANDMASTER",
+              "url": "/ravi20076"
+            },
+            "content": "<p>Yes, bigger dataset does not guarantee better CV and LB. After a while, it degrades actually <a href=\"/gauravbrills\" target=\"_blank\">@gauravbrills</a> </p>",
+            "id": 3554948,
+            "isThankYou": false,
+            "postDate": "2026-11-14T07:50:30.897Z",
+            "raw": {
+              "author": {
+                "display_name": "Ravi Ramakrishnan",
+                "id": 8273630,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8273630-kg.JPG?t=2024-03-26-14-51-52",
+                "tier": "GRANDMASTER",
+                "url": "/ravi20076"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 702,
+              "content": "<p>Yes, bigger dataset does not guarantee better CV and LB. After a while, it degrades actually <a href=\"/gauravbrills\" target=\"_blank\">@gauravbrills</a> </p>",
+              "feedback_tracking_data": {},
+              "id": 3554948,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-14T07:50:30.897Z",
+              "raw_markdown": "Yes, bigger dataset does not guarantee better CV and LB. After a while, it degrades actually @gauravbrills ",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Kishan Vavdara",
+                  "id": 12951282,
+                  "performance_tier": "MASTER",
+                  "profile_url": "/kishanvavdara",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/12951282-kg.jpeg",
+                  "tier": "MASTER",
+                  "url": "/kishanvavdara",
+                  "user_id": 12951282,
+                  "user_name": "kishanvavdara"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": 1
+              }
+            },
+            "rawMarkdown": "Yes, bigger dataset does not guarantee better CV and LB. After a while, it degrades actually @gauravbrills ",
+            "replies": [],
+            "votes": {
+              "totalVotes": 1
+            }
+          }
+        ],
+        "votes": {
+          "totalVotes": 1
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 759103,
+      "message_id": 3554948,
+      "parent_message_id": 3554834,
+      "author": "Ravi Ramakrishnan",
+      "author_url": "/ravi20076",
+      "author_tier": "GRANDMASTER",
+      "post_date": "2026-11-14T07:50:30.897Z",
+      "raw_markdown": "Yes, bigger dataset does not guarantee better CV and LB. After a while, it degrades actually @gauravbrills ",
+      "content_html": "<p>Yes, bigger dataset does not guarantee better CV and LB. After a while, it degrades actually <a href=\"/gauravbrills\" target=\"_blank\">@gauravbrills</a> </p>",
+      "votes": 1,
+      "is_thank_you": 0,
+      "depth": 2,
+      "first_seen_at": "2026-11-16T16:22:39+00:00",
+      "last_seen_at": "2026-11-18T09:03:03+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T09:03:03+00:00",
+      "remote_last_listed_at": "2026-11-18T09:03:03+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Ravi Ramakrishnan",
+          "tier": "GRANDMASTER",
+          "url": "/ravi20076"
+        },
+        "content": "<p>Yes, bigger dataset does not guarantee better CV and LB. After a while, it degrades actually <a href=\"/gauravbrills\" target=\"_blank\">@gauravbrills</a> </p>",
+        "id": 3554948,
+        "isThankYou": false,
+        "postDate": "2026-11-14T07:50:30.897Z",
+        "raw": {
+          "author": {
+            "display_name": "Ravi Ramakrishnan",
+            "id": 8273630,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8273630-kg.JPG?t=2024-03-26-14-51-52",
+            "tier": "GRANDMASTER",
+            "url": "/ravi20076"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 702,
+          "content": "<p>Yes, bigger dataset does not guarantee better CV and LB. After a while, it degrades actually <a href=\"/gauravbrills\" target=\"_blank\">@gauravbrills</a> </p>",
+          "feedback_tracking_data": {},
+          "id": 3554948,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-14T07:50:30.897Z",
+          "raw_markdown": "Yes, bigger dataset does not guarantee better CV and LB. After a while, it degrades actually @gauravbrills ",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Kishan Vavdara",
+              "id": 12951282,
+              "performance_tier": "MASTER",
+              "profile_url": "/kishanvavdara",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/12951282-kg.jpeg",
+              "tier": "MASTER",
+              "url": "/kishanvavdara",
+              "user_id": 12951282,
+              "user_name": "kishanvavdara"
+            }
+          },
+          "votes": {
+            "can_upvote": true,
+            "total_upvotes": 1,
+            "total_votes": 1
+          }
+        },
+        "rawMarkdown": "Yes, bigger dataset does not guarantee better CV and LB. After a while, it degrades actually @gauravbrills ",
+        "replies": [],
+        "votes": {
+          "totalVotes": 1
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 759103,
+      "message_id": 3555406,
+      "parent_message_id": null,
+      "author": "harshraj22",
+      "author_url": "/harshraj22",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-15T17:28:34.117Z",
+      "raw_markdown": "DeBERTa finetuned on openpool + tfidf and ensemble of Logistic Regression & SVM goes around 0.55 in LB",
+      "content_html": "<p>DeBERTa finetuned on openpool + tfidf and ensemble of Logistic Regression &amp; SVM goes around 0.55 in LB</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-16T16:22:39+00:00",
+      "last_seen_at": "2026-11-18T09:03:03+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T09:03:03+00:00",
+      "remote_last_listed_at": "2026-11-18T09:03:03+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "harshraj22",
+          "tier": "CONTRIBUTOR",
+          "url": "/harshraj22"
+        },
+        "content": "<p>DeBERTa finetuned on openpool + tfidf and ensemble of Logistic Regression &amp; SVM goes around 0.55 in LB</p>",
+        "id": 3555406,
+        "isThankYou": false,
+        "postDate": "2026-11-15T17:28:34.117Z",
+        "raw": {
+          "author": {
+            "display_name": "harshraj22",
+            "id": 3384390,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3384390-kg.jpg",
+            "tier": "CONTRIBUTOR",
+            "url": "/harshraj22"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 3355,
+          "content": "<p>DeBERTa finetuned on openpool + tfidf and ensemble of Logistic Regression &amp; SVM goes around 0.55 in LB</p>",
+          "feedback_tracking_data": {},
+          "id": 3555406,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-15T17:28:34.117Z",
+          "raw_markdown": "DeBERTa finetuned on openpool + tfidf and ensemble of Logistic Regression & SVM goes around 0.55 in LB",
+          "replies": [
+            {
+              "author": {
+                "display_name": "Gaurav Rawat",
+                "id": 768166,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/768166-kg.png?t=2024-01-23-01-39-07",
+                "tier": "MASTER",
+                "url": "/gauravbrills"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 4413,
+              "content": "<p>yup right </p>",
+              "feedback_tracking_data": {},
+              "id": 3555428,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-15T19:36:02.680Z",
+              "raw_markdown": "yup right ",
+              "replies": [
+                {
+                  "author": {
+                    "display_name": "Gaurav Rawat",
+                    "id": 768166,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/768166-kg.png?t=2024-01-23-01-39-07",
+                    "tier": "MASTER",
+                    "url": "/gauravbrills"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 4413,
+                  "content": "<p>How much deberta got alone I bet around 0.48 -0.5 on base ..  so far base is like 0.45 .. but ya need to find some better ways then just fine tuning </p>",
+                  "feedback_tracking_data": {},
+                  "id": 3555429,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-15T19:42:41.280Z",
+                  "raw_markdown": "How much deberta got alone I bet around 0.48 -0.5 on base ..  so far base is like 0.45 .. but ya need to find some better ways then just fine tuning ",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Gaurav Rawat",
+                      "id": 768166,
+                      "performance_tier": "MASTER",
+                      "profile_url": "/gauravbrills",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/768166-kg.png?t=2024-01-23-01-39-07",
+                      "tier": "MASTER",
+                      "url": "/gauravbrills",
+                      "user_id": 768166,
+                      "user_name": "gauravbrills"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                },
+                {
+                  "author": {
+                    "display_name": "harshraj22",
+                    "id": 3384390,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3384390-kg.jpg",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/harshraj22"
+                  },
+                  "author_type": "COMMENT",
+                  "competition_ranking": 3355,
+                  "content": "<p>It was around 0.496, though I am a bit surprised, the training objective of DeBERTa is supposed to ideally give better embeddings, as the task is closer to this one, compared to a general purpose LLM like Qwen which has been trained on multiple objectives using RL. But here, it seems the other way. Probably if deberta was also trained on massive dataset, it would have better features.</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3555553,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-16T05:07:57.560Z",
+                  "raw_markdown": "It was around 0.496, though I am a bit surprised, the training objective of DeBERTa is supposed to ideally give better embeddings, as the task is closer to this one, compared to a general purpose LLM like Qwen which has been trained on multiple objectives using RL. But here, it seems the other way. Probably if deberta was also trained on massive dataset, it would have better features.",
+                  "reactions": [
+                    {
+                      "emoji": "SURPRISE",
+                      "featured_user_names": [
+                        "gauravbrills"
+                      ],
+                      "user_count": 1
+                    }
+                  ],
+                  "team_up_info": {
+                    "enabled": true,
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "harshraj22",
+                      "id": 3384390,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/harshraj22",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3384390-kg.jpg",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/harshraj22",
+                      "user_id": 3384390,
+                      "user_name": "harshraj22"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true,
+                    "total_upvotes": 1,
+                    "total_votes": 1
+                  }
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Gaurav Rawat",
+                  "id": 768166,
+                  "performance_tier": "MASTER",
+                  "profile_url": "/gauravbrills",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/768166-kg.png?t=2024-01-23-01-39-07",
+                  "tier": "MASTER",
+                  "url": "/gauravbrills",
+                  "user_id": 768166,
+                  "user_name": "gauravbrills"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            }
+          ],
+          "team_up_info": {
+            "enabled": true,
+            "intro": "",
+            "team_leader": {
+              "display_name": "harshraj22",
+              "id": 3384390,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/harshraj22",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3384390-kg.jpg",
+              "tier": "CONTRIBUTOR",
+              "url": "/harshraj22",
+              "user_id": 3384390,
+              "user_name": "harshraj22"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "DeBERTa finetuned on openpool + tfidf and ensemble of Logistic Regression & SVM goes around 0.55 in LB",
+        "replies": [
+          {
+            "author": {
+              "displayName": "Gaurav Rawat",
+              "tier": "MASTER",
+              "url": "/gauravbrills"
+            },
+            "content": "<p>yup right </p>",
+            "id": 3555428,
+            "isThankYou": false,
+            "postDate": "2026-11-15T19:36:02.680Z",
+            "raw": {
+              "author": {
+                "display_name": "Gaurav Rawat",
+                "id": 768166,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/768166-kg.png?t=2024-01-23-01-39-07",
+                "tier": "MASTER",
+                "url": "/gauravbrills"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 4413,
+              "content": "<p>yup right </p>",
+              "feedback_tracking_data": {},
+              "id": 3555428,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-15T19:36:02.680Z",
+              "raw_markdown": "yup right ",
+              "replies": [
+                {
+                  "author": {
+                    "display_name": "Gaurav Rawat",
+                    "id": 768166,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/768166-kg.png?t=2024-01-23-01-39-07",
+                    "tier": "MASTER",
+                    "url": "/gauravbrills"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 4413,
+                  "content": "<p>How much deberta got alone I bet around 0.48 -0.5 on base ..  so far base is like 0.45 .. but ya need to find some better ways then just fine tuning </p>",
+                  "feedback_tracking_data": {},
+                  "id": 3555429,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-15T19:42:41.280Z",
+                  "raw_markdown": "How much deberta got alone I bet around 0.48 -0.5 on base ..  so far base is like 0.45 .. but ya need to find some better ways then just fine tuning ",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Gaurav Rawat",
+                      "id": 768166,
+                      "performance_tier": "MASTER",
+                      "profile_url": "/gauravbrills",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/768166-kg.png?t=2024-01-23-01-39-07",
+                      "tier": "MASTER",
+                      "url": "/gauravbrills",
+                      "user_id": 768166,
+                      "user_name": "gauravbrills"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                },
+                {
+                  "author": {
+                    "display_name": "harshraj22",
+                    "id": 3384390,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3384390-kg.jpg",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/harshraj22"
+                  },
+                  "author_type": "COMMENT",
+                  "competition_ranking": 3355,
+                  "content": "<p>It was around 0.496, though I am a bit surprised, the training objective of DeBERTa is supposed to ideally give better embeddings, as the task is closer to this one, compared to a general purpose LLM like Qwen which has been trained on multiple objectives using RL. But here, it seems the other way. Probably if deberta was also trained on massive dataset, it would have better features.</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3555553,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-16T05:07:57.560Z",
+                  "raw_markdown": "It was around 0.496, though I am a bit surprised, the training objective of DeBERTa is supposed to ideally give better embeddings, as the task is closer to this one, compared to a general purpose LLM like Qwen which has been trained on multiple objectives using RL. But here, it seems the other way. Probably if deberta was also trained on massive dataset, it would have better features.",
+                  "reactions": [
+                    {
+                      "emoji": "SURPRISE",
+                      "featured_user_names": [
+                        "gauravbrills"
+                      ],
+                      "user_count": 1
+                    }
+                  ],
+                  "team_up_info": {
+                    "enabled": true,
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "harshraj22",
+                      "id": 3384390,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/harshraj22",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3384390-kg.jpg",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/harshraj22",
+                      "user_id": 3384390,
+                      "user_name": "harshraj22"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true,
+                    "total_upvotes": 1,
+                    "total_votes": 1
+                  }
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Gaurav Rawat",
+                  "id": 768166,
+                  "performance_tier": "MASTER",
+                  "profile_url": "/gauravbrills",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/768166-kg.png?t=2024-01-23-01-39-07",
+                  "tier": "MASTER",
+                  "url": "/gauravbrills",
+                  "user_id": 768166,
+                  "user_name": "gauravbrills"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "yup right ",
+            "replies": [
+              {
+                "author": {
+                  "displayName": "Gaurav Rawat",
+                  "tier": "MASTER",
+                  "url": "/gauravbrills"
+                },
+                "content": "<p>How much deberta got alone I bet around 0.48 -0.5 on base ..  so far base is like 0.45 .. but ya need to find some better ways then just fine tuning </p>",
+                "id": 3555429,
+                "isThankYou": false,
+                "postDate": "2026-11-15T19:42:41.280Z",
+                "raw": {
+                  "author": {
+                    "display_name": "Gaurav Rawat",
+                    "id": 768166,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/768166-kg.png?t=2024-01-23-01-39-07",
+                    "tier": "MASTER",
+                    "url": "/gauravbrills"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 4413,
+                  "content": "<p>How much deberta got alone I bet around 0.48 -0.5 on base ..  so far base is like 0.45 .. but ya need to find some better ways then just fine tuning </p>",
+                  "feedback_tracking_data": {},
+                  "id": 3555429,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-15T19:42:41.280Z",
+                  "raw_markdown": "How much deberta got alone I bet around 0.48 -0.5 on base ..  so far base is like 0.45 .. but ya need to find some better ways then just fine tuning ",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Gaurav Rawat",
+                      "id": 768166,
+                      "performance_tier": "MASTER",
+                      "profile_url": "/gauravbrills",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/768166-kg.png?t=2024-01-23-01-39-07",
+                      "tier": "MASTER",
+                      "url": "/gauravbrills",
+                      "user_id": 768166,
+                      "user_name": "gauravbrills"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                },
+                "rawMarkdown": "How much deberta got alone I bet around 0.48 -0.5 on base ..  so far base is like 0.45 .. but ya need to find some better ways then just fine tuning ",
+                "replies": [],
+                "votes": {
+                  "totalVotes": 0
+                }
+              },
+              {
+                "author": {
+                  "displayName": "harshraj22",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/harshraj22"
+                },
+                "content": "<p>It was around 0.496, though I am a bit surprised, the training objective of DeBERTa is supposed to ideally give better embeddings, as the task is closer to this one, compared to a general purpose LLM like Qwen which has been trained on multiple objectives using RL. But here, it seems the other way. Probably if deberta was also trained on massive dataset, it would have better features.</p>",
+                "id": 3555553,
+                "isThankYou": false,
+                "postDate": "2026-11-16T05:07:57.560Z",
+                "raw": {
+                  "author": {
+                    "display_name": "harshraj22",
+                    "id": 3384390,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3384390-kg.jpg",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/harshraj22"
+                  },
+                  "author_type": "COMMENT",
+                  "competition_ranking": 3355,
+                  "content": "<p>It was around 0.496, though I am a bit surprised, the training objective of DeBERTa is supposed to ideally give better embeddings, as the task is closer to this one, compared to a general purpose LLM like Qwen which has been trained on multiple objectives using RL. But here, it seems the other way. Probably if deberta was also trained on massive dataset, it would have better features.</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3555553,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-16T05:07:57.560Z",
+                  "raw_markdown": "It was around 0.496, though I am a bit surprised, the training objective of DeBERTa is supposed to ideally give better embeddings, as the task is closer to this one, compared to a general purpose LLM like Qwen which has been trained on multiple objectives using RL. But here, it seems the other way. Probably if deberta was also trained on massive dataset, it would have better features.",
+                  "reactions": [
+                    {
+                      "emoji": "SURPRISE",
+                      "featured_user_names": [
+                        "gauravbrills"
+                      ],
+                      "user_count": 1
+                    }
+                  ],
+                  "team_up_info": {
+                    "enabled": true,
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "harshraj22",
+                      "id": 3384390,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/harshraj22",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3384390-kg.jpg",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/harshraj22",
+                      "user_id": 3384390,
+                      "user_name": "harshraj22"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true,
+                    "total_upvotes": 1,
+                    "total_votes": 1
+                  }
+                },
+                "rawMarkdown": "It was around 0.496, though I am a bit surprised, the training objective of DeBERTa is supposed to ideally give better embeddings, as the task is closer to this one, compared to a general purpose LLM like Qwen which has been trained on multiple objectives using RL. But here, it seems the other way. Probably if deberta was also trained on massive dataset, it would have better features.",
+                "replies": [],
+                "votes": {
+                  "totalVotes": 1
+                }
+              }
+            ],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 759103,
+      "message_id": 3555428,
+      "parent_message_id": 3555406,
+      "author": "Gaurav Rawat",
+      "author_url": "/gauravbrills",
+      "author_tier": "MASTER",
+      "post_date": "2026-11-15T19:36:02.680Z",
+      "raw_markdown": "yup right ",
+      "content_html": "<p>yup right </p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 1,
+      "first_seen_at": "2026-11-16T16:22:39+00:00",
+      "last_seen_at": "2026-11-18T09:03:03+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T09:03:03+00:00",
+      "remote_last_listed_at": "2026-11-18T09:03:03+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Gaurav Rawat",
+          "tier": "MASTER",
+          "url": "/gauravbrills"
+        },
+        "content": "<p>yup right </p>",
+        "id": 3555428,
+        "isThankYou": false,
+        "postDate": "2026-11-15T19:36:02.680Z",
+        "raw": {
+          "author": {
+            "display_name": "Gaurav Rawat",
+            "id": 768166,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/768166-kg.png?t=2024-01-23-01-39-07",
+            "tier": "MASTER",
+            "url": "/gauravbrills"
+          },
+          "author_type": "TOPIC",
+          "competition_ranking": 4413,
+          "content": "<p>yup right </p>",
+          "feedback_tracking_data": {},
+          "id": 3555428,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-15T19:36:02.680Z",
+          "raw_markdown": "yup right ",
+          "replies": [
+            {
+              "author": {
+                "display_name": "Gaurav Rawat",
+                "id": 768166,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/768166-kg.png?t=2024-01-23-01-39-07",
+                "tier": "MASTER",
+                "url": "/gauravbrills"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 4413,
+              "content": "<p>How much deberta got alone I bet around 0.48 -0.5 on base ..  so far base is like 0.45 .. but ya need to find some better ways then just fine tuning </p>",
+              "feedback_tracking_data": {},
+              "id": 3555429,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-15T19:42:41.280Z",
+              "raw_markdown": "How much deberta got alone I bet around 0.48 -0.5 on base ..  so far base is like 0.45 .. but ya need to find some better ways then just fine tuning ",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Gaurav Rawat",
+                  "id": 768166,
+                  "performance_tier": "MASTER",
+                  "profile_url": "/gauravbrills",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/768166-kg.png?t=2024-01-23-01-39-07",
+                  "tier": "MASTER",
+                  "url": "/gauravbrills",
+                  "user_id": 768166,
+                  "user_name": "gauravbrills"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            {
+              "author": {
+                "display_name": "harshraj22",
+                "id": 3384390,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3384390-kg.jpg",
+                "tier": "CONTRIBUTOR",
+                "url": "/harshraj22"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 3355,
+              "content": "<p>It was around 0.496, though I am a bit surprised, the training objective of DeBERTa is supposed to ideally give better embeddings, as the task is closer to this one, compared to a general purpose LLM like Qwen which has been trained on multiple objectives using RL. But here, it seems the other way. Probably if deberta was also trained on massive dataset, it would have better features.</p>",
+              "feedback_tracking_data": {},
+              "id": 3555553,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-16T05:07:57.560Z",
+              "raw_markdown": "It was around 0.496, though I am a bit surprised, the training objective of DeBERTa is supposed to ideally give better embeddings, as the task is closer to this one, compared to a general purpose LLM like Qwen which has been trained on multiple objectives using RL. But here, it seems the other way. Probably if deberta was also trained on massive dataset, it would have better features.",
+              "reactions": [
+                {
+                  "emoji": "SURPRISE",
+                  "featured_user_names": [
+                    "gauravbrills"
+                  ],
+                  "user_count": 1
+                }
+              ],
+              "team_up_info": {
+                "enabled": true,
+                "intro": "",
+                "team_leader": {
+                  "display_name": "harshraj22",
+                  "id": 3384390,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/harshraj22",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3384390-kg.jpg",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/harshraj22",
+                  "user_id": 3384390,
+                  "user_name": "harshraj22"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": 1
+              }
+            }
+          ],
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Gaurav Rawat",
+              "id": 768166,
+              "performance_tier": "MASTER",
+              "profile_url": "/gauravbrills",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/768166-kg.png?t=2024-01-23-01-39-07",
+              "tier": "MASTER",
+              "url": "/gauravbrills",
+              "user_id": 768166,
+              "user_name": "gauravbrills"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "yup right ",
+        "replies": [
+          {
+            "author": {
+              "displayName": "Gaurav Rawat",
+              "tier": "MASTER",
+              "url": "/gauravbrills"
+            },
+            "content": "<p>How much deberta got alone I bet around 0.48 -0.5 on base ..  so far base is like 0.45 .. but ya need to find some better ways then just fine tuning </p>",
+            "id": 3555429,
+            "isThankYou": false,
+            "postDate": "2026-11-15T19:42:41.280Z",
+            "raw": {
+              "author": {
+                "display_name": "Gaurav Rawat",
+                "id": 768166,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/768166-kg.png?t=2024-01-23-01-39-07",
+                "tier": "MASTER",
+                "url": "/gauravbrills"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 4413,
+              "content": "<p>How much deberta got alone I bet around 0.48 -0.5 on base ..  so far base is like 0.45 .. but ya need to find some better ways then just fine tuning </p>",
+              "feedback_tracking_data": {},
+              "id": 3555429,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-15T19:42:41.280Z",
+              "raw_markdown": "How much deberta got alone I bet around 0.48 -0.5 on base ..  so far base is like 0.45 .. but ya need to find some better ways then just fine tuning ",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Gaurav Rawat",
+                  "id": 768166,
+                  "performance_tier": "MASTER",
+                  "profile_url": "/gauravbrills",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/768166-kg.png?t=2024-01-23-01-39-07",
+                  "tier": "MASTER",
+                  "url": "/gauravbrills",
+                  "user_id": 768166,
+                  "user_name": "gauravbrills"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "How much deberta got alone I bet around 0.48 -0.5 on base ..  so far base is like 0.45 .. but ya need to find some better ways then just fine tuning ",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          },
+          {
+            "author": {
+              "displayName": "harshraj22",
+              "tier": "CONTRIBUTOR",
+              "url": "/harshraj22"
+            },
+            "content": "<p>It was around 0.496, though I am a bit surprised, the training objective of DeBERTa is supposed to ideally give better embeddings, as the task is closer to this one, compared to a general purpose LLM like Qwen which has been trained on multiple objectives using RL. But here, it seems the other way. Probably if deberta was also trained on massive dataset, it would have better features.</p>",
+            "id": 3555553,
+            "isThankYou": false,
+            "postDate": "2026-11-16T05:07:57.560Z",
+            "raw": {
+              "author": {
+                "display_name": "harshraj22",
+                "id": 3384390,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3384390-kg.jpg",
+                "tier": "CONTRIBUTOR",
+                "url": "/harshraj22"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 3355,
+              "content": "<p>It was around 0.496, though I am a bit surprised, the training objective of DeBERTa is supposed to ideally give better embeddings, as the task is closer to this one, compared to a general purpose LLM like Qwen which has been trained on multiple objectives using RL. But here, it seems the other way. Probably if deberta was also trained on massive dataset, it would have better features.</p>",
+              "feedback_tracking_data": {},
+              "id": 3555553,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-16T05:07:57.560Z",
+              "raw_markdown": "It was around 0.496, though I am a bit surprised, the training objective of DeBERTa is supposed to ideally give better embeddings, as the task is closer to this one, compared to a general purpose LLM like Qwen which has been trained on multiple objectives using RL. But here, it seems the other way. Probably if deberta was also trained on massive dataset, it would have better features.",
+              "reactions": [
+                {
+                  "emoji": "SURPRISE",
+                  "featured_user_names": [
+                    "gauravbrills"
+                  ],
+                  "user_count": 1
+                }
+              ],
+              "team_up_info": {
+                "enabled": true,
+                "intro": "",
+                "team_leader": {
+                  "display_name": "harshraj22",
+                  "id": 3384390,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/harshraj22",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3384390-kg.jpg",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/harshraj22",
+                  "user_id": 3384390,
+                  "user_name": "harshraj22"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": 1
+              }
+            },
+            "rawMarkdown": "It was around 0.496, though I am a bit surprised, the training objective of DeBERTa is supposed to ideally give better embeddings, as the task is closer to this one, compared to a general purpose LLM like Qwen which has been trained on multiple objectives using RL. But here, it seems the other way. Probably if deberta was also trained on massive dataset, it would have better features.",
+            "replies": [],
+            "votes": {
+              "totalVotes": 1
+            }
+          }
+        ],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 759103,
+      "message_id": 3555429,
+      "parent_message_id": 3555428,
+      "author": "Gaurav Rawat",
+      "author_url": "/gauravbrills",
+      "author_tier": "MASTER",
+      "post_date": "2026-11-15T19:42:41.280Z",
+      "raw_markdown": "How much deberta got alone I bet around 0.48 -0.5 on base ..  so far base is like 0.45 .. but ya need to find some better ways then just fine tuning ",
+      "content_html": "<p>How much deberta got alone I bet around 0.48 -0.5 on base ..  so far base is like 0.45 .. but ya need to find some better ways then just fine tuning </p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 2,
+      "first_seen_at": "2026-11-16T16:22:39+00:00",
+      "last_seen_at": "2026-11-18T09:03:03+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T09:03:03+00:00",
+      "remote_last_listed_at": "2026-11-18T09:03:03+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Gaurav Rawat",
+          "tier": "MASTER",
+          "url": "/gauravbrills"
+        },
+        "content": "<p>How much deberta got alone I bet around 0.48 -0.5 on base ..  so far base is like 0.45 .. but ya need to find some better ways then just fine tuning </p>",
+        "id": 3555429,
+        "isThankYou": false,
+        "postDate": "2026-11-15T19:42:41.280Z",
+        "raw": {
+          "author": {
+            "display_name": "Gaurav Rawat",
+            "id": 768166,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/768166-kg.png?t=2024-01-23-01-39-07",
+            "tier": "MASTER",
+            "url": "/gauravbrills"
+          },
+          "author_type": "TOPIC",
+          "competition_ranking": 4413,
+          "content": "<p>How much deberta got alone I bet around 0.48 -0.5 on base ..  so far base is like 0.45 .. but ya need to find some better ways then just fine tuning </p>",
+          "feedback_tracking_data": {},
+          "id": 3555429,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-15T19:42:41.280Z",
+          "raw_markdown": "How much deberta got alone I bet around 0.48 -0.5 on base ..  so far base is like 0.45 .. but ya need to find some better ways then just fine tuning ",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Gaurav Rawat",
+              "id": 768166,
+              "performance_tier": "MASTER",
+              "profile_url": "/gauravbrills",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/768166-kg.png?t=2024-01-23-01-39-07",
+              "tier": "MASTER",
+              "url": "/gauravbrills",
+              "user_id": 768166,
+              "user_name": "gauravbrills"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "How much deberta got alone I bet around 0.48 -0.5 on base ..  so far base is like 0.45 .. but ya need to find some better ways then just fine tuning ",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 759103,
+      "message_id": 3555553,
+      "parent_message_id": 3555428,
+      "author": "harshraj22",
+      "author_url": "/harshraj22",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-16T05:07:57.560Z",
+      "raw_markdown": "It was around 0.496, though I am a bit surprised, the training objective of DeBERTa is supposed to ideally give better embeddings, as the task is closer to this one, compared to a general purpose LLM like Qwen which has been trained on multiple objectives using RL. But here, it seems the other way. Probably if deberta was also trained on massive dataset, it would have better features.",
+      "content_html": "<p>It was around 0.496, though I am a bit surprised, the training objective of DeBERTa is supposed to ideally give better embeddings, as the task is closer to this one, compared to a general purpose LLM like Qwen which has been trained on multiple objectives using RL. But here, it seems the other way. Probably if deberta was also trained on massive dataset, it would have better features.</p>",
+      "votes": 1,
+      "is_thank_you": 0,
+      "depth": 2,
+      "first_seen_at": "2026-11-16T16:22:39+00:00",
+      "last_seen_at": "2026-11-18T09:03:03+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T09:03:03+00:00",
+      "remote_last_listed_at": "2026-11-18T09:03:03+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "harshraj22",
+          "tier": "CONTRIBUTOR",
+          "url": "/harshraj22"
+        },
+        "content": "<p>It was around 0.496, though I am a bit surprised, the training objective of DeBERTa is supposed to ideally give better embeddings, as the task is closer to this one, compared to a general purpose LLM like Qwen which has been trained on multiple objectives using RL. But here, it seems the other way. Probably if deberta was also trained on massive dataset, it would have better features.</p>",
+        "id": 3555553,
+        "isThankYou": false,
+        "postDate": "2026-11-16T05:07:57.560Z",
+        "raw": {
+          "author": {
+            "display_name": "harshraj22",
+            "id": 3384390,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3384390-kg.jpg",
+            "tier": "CONTRIBUTOR",
+            "url": "/harshraj22"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 3355,
+          "content": "<p>It was around 0.496, though I am a bit surprised, the training objective of DeBERTa is supposed to ideally give better embeddings, as the task is closer to this one, compared to a general purpose LLM like Qwen which has been trained on multiple objectives using RL. But here, it seems the other way. Probably if deberta was also trained on massive dataset, it would have better features.</p>",
+          "feedback_tracking_data": {},
+          "id": 3555553,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-16T05:07:57.560Z",
+          "raw_markdown": "It was around 0.496, though I am a bit surprised, the training objective of DeBERTa is supposed to ideally give better embeddings, as the task is closer to this one, compared to a general purpose LLM like Qwen which has been trained on multiple objectives using RL. But here, it seems the other way. Probably if deberta was also trained on massive dataset, it would have better features.",
+          "reactions": [
+            {
+              "emoji": "SURPRISE",
+              "featured_user_names": [
+                "gauravbrills"
+              ],
+              "user_count": 1
+            }
+          ],
+          "team_up_info": {
+            "enabled": true,
+            "intro": "",
+            "team_leader": {
+              "display_name": "harshraj22",
+              "id": 3384390,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/harshraj22",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3384390-kg.jpg",
+              "tier": "CONTRIBUTOR",
+              "url": "/harshraj22",
+              "user_id": 3384390,
+              "user_name": "harshraj22"
+            }
+          },
+          "votes": {
+            "can_upvote": true,
+            "total_upvotes": 1,
+            "total_votes": 1
+          }
+        },
+        "rawMarkdown": "It was around 0.496, though I am a bit surprised, the training objective of DeBERTa is supposed to ideally give better embeddings, as the task is closer to this one, compared to a general purpose LLM like Qwen which has been trained on multiple objectives using RL. But here, it seems the other way. Probably if deberta was also trained on massive dataset, it would have better features.",
+        "replies": [],
+        "votes": {
+          "totalVotes": 1
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 759103,
+      "message_id": 3555577,
+      "parent_message_id": null,
+      "author": "water joe",
+      "author_url": "/waterjoe",
+      "author_tier": "EXPERT",
+      "post_date": "2026-11-16T07:10:45.207Z",
+      "raw_markdown": "May I ask, did you only test DeBERTa? Did you compare the BERT variants, such as ModernBERT、base and large? Is DeBERTa currently the best among BERT models?",
+      "content_html": "<p>May I ask, did you only test DeBERTa? Did you compare the BERT variants, such as ModernBERT、base and large? Is DeBERTa currently the best among BERT models?</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-16T16:22:39+00:00",
+      "last_seen_at": "2026-11-18T09:03:03+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T09:03:03+00:00",
+      "remote_last_listed_at": "2026-11-18T09:03:03+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "water joe",
+          "tier": "EXPERT",
+          "url": "/waterjoe"
+        },
+        "content": "<p>May I ask, did you only test DeBERTa? Did you compare the BERT variants, such as ModernBERT、base and large? Is DeBERTa currently the best among BERT models?</p>",
+        "id": 3555577,
+        "isThankYou": false,
+        "postDate": "2026-11-16T07:10:45.207Z",
+        "raw": {
+          "author": {
+            "display_name": "water joe",
+            "id": 16297364,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+            "tier": "EXPERT",
+            "url": "/waterjoe"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 5073,
+          "content": "<p>May I ask, did you only test DeBERTa? Did you compare the BERT variants, such as ModernBERT、base and large? Is DeBERTa currently the best among BERT models?</p>",
+          "feedback_tracking_data": {},
+          "id": 3555577,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-16T07:10:45.207Z",
+          "raw_markdown": "May I ask, did you only test DeBERTa? Did you compare the BERT variants, such as ModernBERT、base and large? Is DeBERTa currently the best among BERT models?",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "water joe",
+              "id": 16297364,
+              "performance_tier": "EXPERT",
+              "profile_url": "/waterjoe",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "EXPERT",
+              "url": "/waterjoe",
+              "user_id": 16297364,
+              "user_name": "waterjoe"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "May I ask, did you only test DeBERTa? Did you compare the BERT variants, such as ModernBERT、base and large? Is DeBERTa currently the best among BERT models?",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 759103,
+      "message_id": 3556151,
+      "parent_message_id": null,
+      "author": "Mikołaj Kurtyka",
+      "author_url": "/mikoajkurtyka",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-17T17:32:37.843Z",
+      "raw_markdown": "I've mostly run non-LLM methods so far. Short answer: yes, they get past 0.5, but on my runs they flatten out around 0.60–0.62. All numbers are balanced accuracy: OOF is cross-validation with prompts split across folds, LB is the public leaderboard.\n\nIntrinsic watermarks: typography nearly identifies the model family. Gemini almost never uses em-dashes, Claude and GLM use em-dashes but never curly quotes, and GPT uses curly quotes. Getting the family right is easy (87–99%). Telling versions apart within a family is the hard part (67–76%). Keep the raw characters, and don't normalise punctuation.\n\nWhat I got:\n\nAapproach\tOOF\tLB\n1. TF-IDF + logistic regression\t0.31\t0.32\n2. + external data + class weights\t0.46\t0.40\n3. + stylometric features stacked with XGBoost\t0.49\t0.43\n4. DeBERTa-v3-large\t0.50\t–\n5. ModernBERT-large\t0.55\t0.55\n6. UltraBERT-380M, on 241k external rows\t0.60\t–\n7. Equal blend of encoders + TF-IDF stack\t0.625\t0.616\n",
+      "content_html": "<p>I've mostly run non-LLM methods so far. Short answer: yes, they get past 0.5, but on my runs they flatten out around 0.60–0.62. All numbers are balanced accuracy: OOF is cross-validation with prompts split across folds, LB is the public leaderboard.</p>\n<p>Intrinsic watermarks: typography nearly identifies the model family. Gemini almost never uses em-dashes, Claude and GLM use em-dashes but never curly quotes, and GPT uses curly quotes. Getting the family right is easy (87–99%). Telling versions apart within a family is the hard part (67–76%). Keep the raw characters, and don't normalise punctuation.</p>\n<p>What I got:</p>\n<p>Aapproach    OOF LB</p>\n<ol>\n<li>TF-IDF + logistic regression    0.31    0.32</li>\n<li>+ external data + class weights    0.46    0.40</li>\n<li>+ stylometric features stacked with XGBoost    0.49    0.43</li>\n<li>DeBERTa-v3-large    0.50    –</li>\n<li>ModernBERT-large    0.55    0.55</li>\n<li>UltraBERT-380M, on 241k external rows    0.60    –</li>\n<li>Equal blend of encoders + TF-IDF stack    0.625   0.616</li>\n</ol>",
+      "votes": 1,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-18T09:02:03+00:00",
+      "last_seen_at": "2026-11-18T09:03:03+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T09:03:03+00:00",
+      "remote_last_listed_at": "2026-11-18T09:03:03+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Mikołaj Kurtyka",
+          "tier": "CONTRIBUTOR",
+          "url": "/mikoajkurtyka"
+        },
+        "content": "<p>I've mostly run non-LLM methods so far. Short answer: yes, they get past 0.5, but on my runs they flatten out around 0.60–0.62. All numbers are balanced accuracy: OOF is cross-validation with prompts split across folds, LB is the public leaderboard.</p>\n<p>Intrinsic watermarks: typography nearly identifies the model family. Gemini almost never uses em-dashes, Claude and GLM use em-dashes but never curly quotes, and GPT uses curly quotes. Getting the family right is easy (87–99%). Telling versions apart within a family is the hard part (67–76%). Keep the raw characters, and don't normalise punctuation.</p>\n<p>What I got:</p>\n<p>Aapproach    OOF LB</p>\n<ol>\n<li>TF-IDF + logistic regression    0.31    0.32</li>\n<li>+ external data + class weights    0.46    0.40</li>\n<li>+ stylometric features stacked with XGBoost    0.49    0.43</li>\n<li>DeBERTa-v3-large    0.50    –</li>\n<li>ModernBERT-large    0.55    0.55</li>\n<li>UltraBERT-380M, on 241k external rows    0.60    –</li>\n<li>Equal blend of encoders + TF-IDF stack    0.625   0.616</li>\n</ol>",
+        "id": 3556151,
+        "isThankYou": false,
+        "postDate": "2026-11-17T17:32:37.843Z",
+        "raw": {
+          "author": {
+            "display_name": "Mikołaj Kurtyka",
+            "id": 14413593,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+            "tier": "CONTRIBUTOR",
+            "url": "/mikoajkurtyka"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 2624,
+          "content": "<p>I've mostly run non-LLM methods so far. Short answer: yes, they get past 0.5, but on my runs they flatten out around 0.60–0.62. All numbers are balanced accuracy: OOF is cross-validation with prompts split across folds, LB is the public leaderboard.</p>\n<p>Intrinsic watermarks: typography nearly identifies the model family. Gemini almost never uses em-dashes, Claude and GLM use em-dashes but never curly quotes, and GPT uses curly quotes. Getting the family right is easy (87–99%). Telling versions apart within a family is the hard part (67–76%). Keep the raw characters, and don't normalise punctuation.</p>\n<p>What I got:</p>\n<p>Aapproach    OOF LB</p>\n<ol>\n<li>TF-IDF + logistic regression    0.31    0.32</li>\n<li>+ external data + class weights    0.46    0.40</li>\n<li>+ stylometric features stacked with XGBoost    0.49    0.43</li>\n<li>DeBERTa-v3-large    0.50    –</li>\n<li>ModernBERT-large    0.55    0.55</li>\n<li>UltraBERT-380M, on 241k external rows    0.60    –</li>\n<li>Equal blend of encoders + TF-IDF stack    0.625   0.616</li>\n</ol>",
+          "feedback_tracking_data": {},
+          "id": 3556151,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-17T17:32:37.843Z",
+          "raw_markdown": "I've mostly run non-LLM methods so far. Short answer: yes, they get past 0.5, but on my runs they flatten out around 0.60–0.62. All numbers are balanced accuracy: OOF is cross-validation with prompts split across folds, LB is the public leaderboard.\n\nIntrinsic watermarks: typography nearly identifies the model family. Gemini almost never uses em-dashes, Claude and GLM use em-dashes but never curly quotes, and GPT uses curly quotes. Getting the family right is easy (87–99%). Telling versions apart within a family is the hard part (67–76%). Keep the raw characters, and don't normalise punctuation.\n\nWhat I got:\n\nAapproach\tOOF\tLB\n1. TF-IDF + logistic regression\t0.31\t0.32\n2. + external data + class weights\t0.46\t0.40\n3. + stylometric features stacked with XGBoost\t0.49\t0.43\n4. DeBERTa-v3-large\t0.50\t–\n5. ModernBERT-large\t0.55\t0.55\n6. UltraBERT-380M, on 241k external rows\t0.60\t–\n7. Equal blend of encoders + TF-IDF stack\t0.625\t0.616\n",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Mikołaj Kurtyka",
+              "id": 14413593,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/mikoajkurtyka",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "CONTRIBUTOR",
+              "url": "/mikoajkurtyka",
+              "user_id": 14413593,
+              "user_name": "mikoajkurtyka"
+            }
+          },
+          "votes": {
+            "can_upvote": true,
+            "total_upvotes": 1,
+            "total_votes": 1
+          }
+        },
+        "rawMarkdown": "I've mostly run non-LLM methods so far. Short answer: yes, they get past 0.5, but on my runs they flatten out around 0.60–0.62. All numbers are balanced accuracy: OOF is cross-validation with prompts split across folds, LB is the public leaderboard.\n\nIntrinsic watermarks: typography nearly identifies the model family. Gemini almost never uses em-dashes, Claude and GLM use em-dashes but never curly quotes, and GPT uses curly quotes. Getting the family right is easy (87–99%). Telling versions apart within a family is the hard part (67–76%). Keep the raw characters, and don't normalise punctuation.\n\nWhat I got:\n\nAapproach\tOOF\tLB\n1. TF-IDF + logistic regression\t0.31\t0.32\n2. + external data + class weights\t0.46\t0.40\n3. + stylometric features stacked with XGBoost\t0.49\t0.43\n4. DeBERTa-v3-large\t0.50\t–\n5. ModernBERT-large\t0.55\t0.55\n6. UltraBERT-380M, on 241k external rows\t0.60\t–\n7. Equal blend of encoders + TF-IDF stack\t0.625\t0.616\n",
+        "replies": [],
+        "votes": {
+          "totalVotes": 1
+        }
+      }
+    }
+  ],
+  "writeup": null
+}

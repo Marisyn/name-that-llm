@@ -1,0 +1,563 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 752690,
+    "title": "Looking for teammates: read the public Code guide, then apply",
+    "author": "cosmorin",
+    "author_url": "/cosmorin",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-10-25T23:14:50.367611200Z",
+    "last_comment_post_date": "2026-11-05T12:15:26.373333300Z",
+    "comment_count": 2,
+    "votes": -14,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/752690",
+    "first_message_id": 3544626,
+    "first_seen_at": "2026-11-04T06:56:14+00:00",
+    "last_seen_at": "2026-11-16T16:36:02+00:00",
+    "detail_last_synced_at": "2026-11-16T16:22:59+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "4736fad0b3ad25b240323b561a62692ef1c8c42cfecedf4b99861db49c51a878",
+    "listing_metrics_hash": "7f469ea3fe181b8dfd1efa0e5987ab30e05fc0c3963eb706882f97bedaec2605",
+    "detail_content_hash": "5b845e93dda47e99b572dcfc921e88a2873b66038b8693626007b255dc58af54",
+    "detail_last_checked_at": "2026-11-16T16:22:59+00:00",
+    "detail_next_check_at": "2026-11-19T16:22:59+00:00",
+    "detail_unchanged_count": 1,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 2,
+      "firstForumMessageId": null,
+      "id": 752690,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-11-05T12:15:26.373333300Z",
+      "postDate": "2026-10-25T23:14:50.367611200Z",
+      "raw": {
+        "comment_count": 2,
+        "id": 752690,
+        "last_comment_post_date": "2026-11-05T12:15:26.373333300Z",
+        "post_date": "2026-10-25T23:14:50.367611200Z",
+        "title": "Looking for teammates: read the public Code guide, then apply",
+        "topic_url": "/competitions/name-that-llm/discussion/752690",
+        "votes": -14
+      },
+      "title": "Looking for teammates: read the public Code guide, then apply",
+      "topicUrl": "/competitions/name-that-llm/discussion/752690",
+      "votes": -14
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "cosmorin",
+        "authorUserName": "cosmorin",
+        "comments": [
+          {
+            "author": {
+              "displayName": "Magellan P",
+              "tier": "CONTRIBUTOR",
+              "url": "/coiland1"
+            },
+            "content": "<p>can i join you cosmorin</p>",
+            "id": 3550483,
+            "isThankYou": false,
+            "postDate": "2026-11-05T12:15:26.373Z",
+            "raw": {
+              "author": {
+                "display_name": "Magellan P",
+                "id": 37331879,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/coiland1"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 477,
+              "content": "<p>can i join you cosmorin</p>",
+              "feedback_tracking_data": {},
+              "id": 3550483,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-05T12:15:26.373Z",
+              "raw_markdown": "can i join you cosmorin\n",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Magellan P",
+                  "id": 37331879,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/coiland1",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/coiland1",
+                  "user_id": 37331879,
+                  "user_name": "coiland1"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "can i join you cosmorin\n",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          },
+          {
+            "author": {
+              "displayName": "bosprimigenious",
+              "tier": "CONTRIBUTOR",
+              "url": "/bosprimigenious"
+            },
+            "content": "<p>Hi cosmorin, I read your public guide, including the fixed input versions, upstream attribution, and distinction between visible-sample checks and the scored rerun. I’m currently solo, with a best public score of 0.473. I can contribute reproducible baselines and grouped-validation/integration work; my experiments are AI-assisted, using an owned RTX 4060 and free Kaggle compute.</p>\n<p>One concrete experiment I’d propose is a prompt-grouped paired ablation by passage length and model family, keeping model weights fixed, to identify complementary errors rather than selecting only on public LB.</p>\n<p>Would a three-person team in total and free-compute-only collaboration fit your plans? Could you confirm your current team size and expected time contribution? I’m checking compatibility before any formal invitation or merger. My recruitment details: <a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/755378\" target=\"_blank\">https://www.kaggle.com/competitions/name-that-llm/discussion/755378</a></p>",
+            "id": 3549363,
+            "isThankYou": false,
+            "postDate": "2026-11-03T12:43:45.710Z",
+            "raw": {
+              "author": {
+                "display_name": "bosprimigenious",
+                "id": 29167060,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/bosprimigenious"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 1775,
+              "content": "<p>Hi cosmorin, I read your public guide, including the fixed input versions, upstream attribution, and distinction between visible-sample checks and the scored rerun. I’m currently solo, with a best public score of 0.473. I can contribute reproducible baselines and grouped-validation/integration work; my experiments are AI-assisted, using an owned RTX 4060 and free Kaggle compute.</p>\n<p>One concrete experiment I’d propose is a prompt-grouped paired ablation by passage length and model family, keeping model weights fixed, to identify complementary errors rather than selecting only on public LB.</p>\n<p>Would a three-person team in total and free-compute-only collaboration fit your plans? Could you confirm your current team size and expected time contribution? I’m checking compatibility before any formal invitation or merger. My recruitment details: <a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/755378\" target=\"_blank\">https://www.kaggle.com/competitions/name-that-llm/discussion/755378</a></p>",
+              "feedback_tracking_data": {},
+              "id": 3549363,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-03T12:43:45.710Z",
+              "raw_markdown": "Hi cosmorin, I read your public guide, including the fixed input versions, upstream attribution, and distinction between visible-sample checks and the scored rerun. I’m currently solo, with a best public score of 0.473. I can contribute reproducible baselines and grouped-validation/integration work; my experiments are AI-assisted, using an owned RTX 4060 and free Kaggle compute.\n\nOne concrete experiment I’d propose is a prompt-grouped paired ablation by passage length and model family, keeping model weights fixed, to identify complementary errors rather than selecting only on public LB.\n\nWould a three-person team in total and free-compute-only collaboration fit your plans? Could you confirm your current team size and expected time contribution? I’m checking compatibility before any formal invitation or merger. My recruitment details: https://www.kaggle.com/competitions/name-that-llm/discussion/755378",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "bosprimigenious",
+                  "id": 29167060,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/bosprimigenious",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/bosprimigenious",
+                  "user_id": 29167060,
+                  "user_name": "bosprimigenious"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "Hi cosmorin, I read your public guide, including the fixed input versions, upstream attribution, and distinction between visible-sample checks and the scored rerun. I’m currently solo, with a best public score of 0.473. I can contribute reproducible baselines and grouped-validation/integration work; my experiments are AI-assisted, using an owned RTX 4060 and free Kaggle compute.\n\nOne concrete experiment I’d propose is a prompt-grouped paired ablation by passage length and model family, keeping model weights fixed, to identify complementary errors rather than selecting only on public LB.\n\nWould a three-person team in total and free-compute-only collaboration fit your plans? Could you confirm your current team size and expected time contribution? I’m checking compatibility before any formal invitation or merger. My recruitment details: https://www.kaggle.com/competitions/name-that-llm/discussion/755378",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "expectedCommentCount": 2,
+        "firstMessage": {
+          "author": {
+            "displayName": "cosmorin",
+            "tier": "CONTRIBUTOR",
+            "url": "/cosmorin"
+          },
+          "content": "<p>We are looking for teammates interested in model identification, grouped validation, complementary features or efficient inference.</p>\n<p>Please read our public Code guide before applying:\n<a href=\"https://www.kaggle.com/code/cosmorin/name-that-llm-how-to-reproduce-0-636\" target=\"_blank\">https://www.kaggle.com/code/cosmorin/name-that-llm-how-to-reproduce-0-636</a></p>\n<p>The guide documents an earlier reproduction, its upstream credits, fixed inputs and limitations. Its title is a historical result, not a claim about our current leaderboard position or a guaranteed rerun score.</p>\n<p>If you would like to join, apply by replying here after reading the Code. Tell us which part you could contribute to and one concrete experiment or validation check you would propose. Please respect the competition's data rules and the separate licenses of the referenced assets.</p>\n<p>We currently have two open places. Team fit and competition eligibility will be checked before invitations; applications are not automatic acceptance.</p>",
+          "id": 3544626,
+          "isThankYou": false,
+          "postDate": "2026-10-25T23:14:50.367Z",
+          "raw": {
+            "author": {
+              "display_name": "cosmorin",
+              "id": 37406919,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/37406919-kg.jpeg?t=2026-10-25-07-21-03",
+              "tier": "CONTRIBUTOR",
+              "url": "/cosmorin"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 828,
+            "content": "<p>We are looking for teammates interested in model identification, grouped validation, complementary features or efficient inference.</p>\n<p>Please read our public Code guide before applying:\n<a href=\"https://www.kaggle.com/code/cosmorin/name-that-llm-how-to-reproduce-0-636\" target=\"_blank\">https://www.kaggle.com/code/cosmorin/name-that-llm-how-to-reproduce-0-636</a></p>\n<p>The guide documents an earlier reproduction, its upstream credits, fixed inputs and limitations. Its title is a historical result, not a claim about our current leaderboard position or a guaranteed rerun score.</p>\n<p>If you would like to join, apply by replying here after reading the Code. Tell us which part you could contribute to and one concrete experiment or validation check you would propose. Please respect the competition's data rules and the separate licenses of the referenced assets.</p>\n<p>We currently have two open places. Team fit and competition eligibility will be checked before invitations; applications are not automatic acceptance.</p>",
+            "feedback_tracking_data": {},
+            "id": 3544626,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-10-25T23:14:50.367Z",
+            "raw_markdown": "We are looking for teammates interested in model identification, grouped validation, complementary features or efficient inference.\n\nPlease read our public Code guide before applying:\nhttps://www.kaggle.com/code/cosmorin/name-that-llm-how-to-reproduce-0-636\n\nThe guide documents an earlier reproduction, its upstream credits, fixed inputs and limitations. Its title is a historical result, not a claim about our current leaderboard position or a guaranteed rerun score.\n\nIf you would like to join, apply by replying here after reading the Code. Tell us which part you could contribute to and one concrete experiment or validation check you would propose. Please respect the competition's data rules and the separate licenses of the referenced assets.\n\nWe currently have two open places. Team fit and competition eligibility will be checked before invitations; applications are not automatic acceptance.",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "cosmorin",
+                "id": 37406919,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/cosmorin",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/37406919-kg.jpeg?t=2026-10-25-07-21-03",
+                "tier": "CONTRIBUTOR",
+                "url": "/cosmorin",
+                "user_id": 37406919,
+                "user_name": "cosmorin"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 1,
+              "total_votes": -14
+            }
+          },
+          "rawMarkdown": "We are looking for teammates interested in model identification, grouped validation, complementary features or efficient inference.\n\nPlease read our public Code guide before applying:\nhttps://www.kaggle.com/code/cosmorin/name-that-llm-how-to-reproduce-0-636\n\nThe guide documents an earlier reproduction, its upstream credits, fixed inputs and limitations. Its title is a historical result, not a claim about our current leaderboard position or a guaranteed rerun score.\n\nIf you would like to join, apply by replying here after reading the Code. Tell us which part you could contribute to and one concrete experiment or validation check you would propose. Please respect the competition's data rules and the separate licenses of the referenced assets.\n\nWe currently have two open places. Team fit and competition eligibility will be checked before invitations; applications are not automatic acceptance.",
+          "replies": [],
+          "votes": {
+            "totalVotes": -14
+          }
+        },
+        "firstMessageId": 3544626,
+        "id": 752690,
+        "name": "Looking for teammates: read the public Code guide, then apply",
+        "postDate": "2026-10-25T23:14:50.367611200Z",
+        "url": "/competitions/name-that-llm/discussion/752690"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>We are looking for teammates interested in model identification, grouped validation, complementary features or efficient inference.</p>\n<p>Please read our public Code guide before applying:\n<a href=\"https://www.kaggle.com/code/cosmorin/name-that-llm-how-to-reproduce-0-636\" target=\"_blank\">https://www.kaggle.com/code/cosmorin/name-that-llm-how-to-reproduce-0-636</a></p>\n<p>The guide documents an earlier reproduction, its upstream credits, fixed inputs and limitations. Its title is a historical result, not a claim about our current leaderboard position or a guaranteed rerun score.</p>\n<p>If you would like to join, apply by replying here after reading the Code. Tell us which part you could contribute to and one concrete experiment or validation check you would propose. Please respect the competition's data rules and the separate licenses of the referenced assets.</p>\n<p>We currently have two open places. Team fit and competition eligibility will be checked before invitations; applications are not automatic acceptance.</p>",
+              "id": 3544626,
+              "post_date": "2026-10-25T23:14:50.367Z",
+              "raw_markdown": "We are looking for teammates interested in model identification, grouped validation, complementary features or efficient inference.\n\nPlease read our public Code guide before applying:\nhttps://www.kaggle.com/code/cosmorin/name-that-llm-how-to-reproduce-0-636\n\nThe guide documents an earlier reproduction, its upstream credits, fixed inputs and limitations. Its title is a historical result, not a claim about our current leaderboard position or a guaranteed rerun score.\n\nIf you would like to join, apply by replying here after reading the Code. Tell us which part you could contribute to and one concrete experiment or validation check you would propose. Please respect the competition's data rules and the separate licenses of the referenced assets.\n\nWe currently have two open places. Team fit and competition eligibility will be checked before invitations; applications are not automatic acceptance.",
+              "votes": -14
+            },
+            {
+              "content": "<p>Hi cosmorin, I read your public guide, including the fixed input versions, upstream attribution, and distinction between visible-sample checks and the scored rerun. I’m currently solo, with a best public score of 0.473. I can contribute reproducible baselines and grouped-validation/integration work; my experiments are AI-assisted, using an owned RTX 4060 and free Kaggle compute.</p>\n<p>One concrete experiment I’d propose is a prompt-grouped paired ablation by passage length and model family, keeping model weights fixed, to identify complementary errors rather than selecting only on public LB.</p>\n<p>Would a three-person team in total and free-compute-only collaboration fit your plans? Could you confirm your current team size and expected time contribution? I’m checking compatibility before any formal invitation or merger. My recruitment details: <a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/755378\" target=\"_blank\">https://www.kaggle.com/competitions/name-that-llm/discussion/755378</a></p>",
+              "id": 3549363,
+              "post_date": "2026-11-03T12:43:45.710Z",
+              "raw_markdown": "Hi cosmorin, I read your public guide, including the fixed input versions, upstream attribution, and distinction between visible-sample checks and the scored rerun. I’m currently solo, with a best public score of 0.473. I can contribute reproducible baselines and grouped-validation/integration work; my experiments are AI-assisted, using an owned RTX 4060 and free Kaggle compute.\n\nOne concrete experiment I’d propose is a prompt-grouped paired ablation by passage length and model family, keeping model weights fixed, to identify complementary errors rather than selecting only on public LB.\n\nWould a three-person team in total and free-compute-only collaboration fit your plans? Could you confirm your current team size and expected time contribution? I’m checking compatibility before any formal invitation or merger. My recruitment details: https://www.kaggle.com/competitions/name-that-llm/discussion/755378"
+            },
+            {
+              "content": "<p>can i join you cosmorin</p>",
+              "id": 3550483,
+              "post_date": "2026-11-05T12:15:26.373Z",
+              "raw_markdown": "can i join you cosmorin\n"
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 37406919,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "37406919-kg.jpeg?t=2026-10-25-07-21-03",
+            "author_user_display_name": "cosmorin",
+            "author_user_name": "cosmorin",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "comments": [
+              {
+                "author": {
+                  "display_name": "Magellan P",
+                  "id": 37331879,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/coiland1"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 477,
+                "content": "<p>can i join you cosmorin</p>",
+                "feedback_tracking_data": {},
+                "id": 3550483,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-11-05T12:15:26.373Z",
+                "raw_markdown": "can i join you cosmorin\n",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "Magellan P",
+                    "id": 37331879,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/coiland1",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/coiland1",
+                    "user_id": 37331879,
+                    "user_name": "coiland1"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              },
+              {
+                "author": {
+                  "display_name": "bosprimigenious",
+                  "id": 29167060,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/bosprimigenious"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 1775,
+                "content": "<p>Hi cosmorin, I read your public guide, including the fixed input versions, upstream attribution, and distinction between visible-sample checks and the scored rerun. I’m currently solo, with a best public score of 0.473. I can contribute reproducible baselines and grouped-validation/integration work; my experiments are AI-assisted, using an owned RTX 4060 and free Kaggle compute.</p>\n<p>One concrete experiment I’d propose is a prompt-grouped paired ablation by passage length and model family, keeping model weights fixed, to identify complementary errors rather than selecting only on public LB.</p>\n<p>Would a three-person team in total and free-compute-only collaboration fit your plans? Could you confirm your current team size and expected time contribution? I’m checking compatibility before any formal invitation or merger. My recruitment details: <a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/755378\" target=\"_blank\">https://www.kaggle.com/competitions/name-that-llm/discussion/755378</a></p>",
+                "feedback_tracking_data": {},
+                "id": 3549363,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-11-03T12:43:45.710Z",
+                "raw_markdown": "Hi cosmorin, I read your public guide, including the fixed input versions, upstream attribution, and distinction between visible-sample checks and the scored rerun. I’m currently solo, with a best public score of 0.473. I can contribute reproducible baselines and grouped-validation/integration work; my experiments are AI-assisted, using an owned RTX 4060 and free Kaggle compute.\n\nOne concrete experiment I’d propose is a prompt-grouped paired ablation by passage length and model family, keeping model weights fixed, to identify complementary errors rather than selecting only on public LB.\n\nWould a three-person team in total and free-compute-only collaboration fit your plans? Could you confirm your current team size and expected time contribution? I’m checking compatibility before any formal invitation or merger. My recruitment details: https://www.kaggle.com/competitions/name-that-llm/discussion/755378",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "bosprimigenious",
+                    "id": 29167060,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/bosprimigenious",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/bosprimigenious",
+                    "user_id": 29167060,
+                    "user_name": "bosprimigenious"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              }
+            ],
+            "first_message": {
+              "author": {
+                "display_name": "cosmorin",
+                "id": 37406919,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/37406919-kg.jpeg?t=2026-10-25-07-21-03",
+                "tier": "CONTRIBUTOR",
+                "url": "/cosmorin"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 828,
+              "content": "<p>We are looking for teammates interested in model identification, grouped validation, complementary features or efficient inference.</p>\n<p>Please read our public Code guide before applying:\n<a href=\"https://www.kaggle.com/code/cosmorin/name-that-llm-how-to-reproduce-0-636\" target=\"_blank\">https://www.kaggle.com/code/cosmorin/name-that-llm-how-to-reproduce-0-636</a></p>\n<p>The guide documents an earlier reproduction, its upstream credits, fixed inputs and limitations. Its title is a historical result, not a claim about our current leaderboard position or a guaranteed rerun score.</p>\n<p>If you would like to join, apply by replying here after reading the Code. Tell us which part you could contribute to and one concrete experiment or validation check you would propose. Please respect the competition's data rules and the separate licenses of the referenced assets.</p>\n<p>We currently have two open places. Team fit and competition eligibility will be checked before invitations; applications are not automatic acceptance.</p>",
+              "feedback_tracking_data": {},
+              "id": 3544626,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-25T23:14:50.367Z",
+              "raw_markdown": "We are looking for teammates interested in model identification, grouped validation, complementary features or efficient inference.\n\nPlease read our public Code guide before applying:\nhttps://www.kaggle.com/code/cosmorin/name-that-llm-how-to-reproduce-0-636\n\nThe guide documents an earlier reproduction, its upstream credits, fixed inputs and limitations. Its title is a historical result, not a claim about our current leaderboard position or a guaranteed rerun score.\n\nIf you would like to join, apply by replying here after reading the Code. Tell us which part you could contribute to and one concrete experiment or validation check you would propose. Please respect the competition's data rules and the separate licenses of the referenced assets.\n\nWe currently have two open places. Team fit and competition eligibility will be checked before invitations; applications are not automatic acceptance.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "cosmorin",
+                  "id": 37406919,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/cosmorin",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/37406919-kg.jpeg?t=2026-10-25-07-21-03",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/cosmorin",
+                  "user_id": 37406919,
+                  "user_name": "cosmorin"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": -14
+              }
+            },
+            "first_message_id": 3544626,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 752690,
+            "name": "Looking for teammates: read the public Code guide, then apply",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-10-25T23:14:50.367611200Z",
+            "total_messages": 2,
+            "total_votes": -14,
+            "url": "/competitions/name-that-llm/discussion/752690"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:22:59+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:22:59+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-11-05T12:15:26.373333300Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [
+    {
+      "slug": "name-that-llm",
+      "topic_id": 752690,
+      "message_id": 3549363,
+      "parent_message_id": null,
+      "author": "bosprimigenious",
+      "author_url": "/bosprimigenious",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-03T12:43:45.710Z",
+      "raw_markdown": "Hi cosmorin, I read your public guide, including the fixed input versions, upstream attribution, and distinction between visible-sample checks and the scored rerun. I’m currently solo, with a best public score of 0.473. I can contribute reproducible baselines and grouped-validation/integration work; my experiments are AI-assisted, using an owned RTX 4060 and free Kaggle compute.\n\nOne concrete experiment I’d propose is a prompt-grouped paired ablation by passage length and model family, keeping model weights fixed, to identify complementary errors rather than selecting only on public LB.\n\nWould a three-person team in total and free-compute-only collaboration fit your plans? Could you confirm your current team size and expected time contribution? I’m checking compatibility before any formal invitation or merger. My recruitment details: https://www.kaggle.com/competitions/name-that-llm/discussion/755378",
+      "content_html": "<p>Hi cosmorin, I read your public guide, including the fixed input versions, upstream attribution, and distinction between visible-sample checks and the scored rerun. I’m currently solo, with a best public score of 0.473. I can contribute reproducible baselines and grouped-validation/integration work; my experiments are AI-assisted, using an owned RTX 4060 and free Kaggle compute.</p>\n<p>One concrete experiment I’d propose is a prompt-grouped paired ablation by passage length and model family, keeping model weights fixed, to identify complementary errors rather than selecting only on public LB.</p>\n<p>Would a three-person team in total and free-compute-only collaboration fit your plans? Could you confirm your current team size and expected time contribution? I’m checking compatibility before any formal invitation or merger. My recruitment details: <a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/755378\" target=\"_blank\">https://www.kaggle.com/competitions/name-that-llm/discussion/755378</a></p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:58:05+00:00",
+      "last_seen_at": "2026-11-16T16:22:59+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:22:59+00:00",
+      "remote_last_listed_at": "2026-11-16T16:22:59+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "bosprimigenious",
+          "tier": "CONTRIBUTOR",
+          "url": "/bosprimigenious"
+        },
+        "content": "<p>Hi cosmorin, I read your public guide, including the fixed input versions, upstream attribution, and distinction between visible-sample checks and the scored rerun. I’m currently solo, with a best public score of 0.473. I can contribute reproducible baselines and grouped-validation/integration work; my experiments are AI-assisted, using an owned RTX 4060 and free Kaggle compute.</p>\n<p>One concrete experiment I’d propose is a prompt-grouped paired ablation by passage length and model family, keeping model weights fixed, to identify complementary errors rather than selecting only on public LB.</p>\n<p>Would a three-person team in total and free-compute-only collaboration fit your plans? Could you confirm your current team size and expected time contribution? I’m checking compatibility before any formal invitation or merger. My recruitment details: <a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/755378\" target=\"_blank\">https://www.kaggle.com/competitions/name-that-llm/discussion/755378</a></p>",
+        "id": 3549363,
+        "isThankYou": false,
+        "postDate": "2026-11-03T12:43:45.710Z",
+        "raw": {
+          "author": {
+            "display_name": "bosprimigenious",
+            "id": 29167060,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+            "tier": "CONTRIBUTOR",
+            "url": "/bosprimigenious"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 1775,
+          "content": "<p>Hi cosmorin, I read your public guide, including the fixed input versions, upstream attribution, and distinction between visible-sample checks and the scored rerun. I’m currently solo, with a best public score of 0.473. I can contribute reproducible baselines and grouped-validation/integration work; my experiments are AI-assisted, using an owned RTX 4060 and free Kaggle compute.</p>\n<p>One concrete experiment I’d propose is a prompt-grouped paired ablation by passage length and model family, keeping model weights fixed, to identify complementary errors rather than selecting only on public LB.</p>\n<p>Would a three-person team in total and free-compute-only collaboration fit your plans? Could you confirm your current team size and expected time contribution? I’m checking compatibility before any formal invitation or merger. My recruitment details: <a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/755378\" target=\"_blank\">https://www.kaggle.com/competitions/name-that-llm/discussion/755378</a></p>",
+          "feedback_tracking_data": {},
+          "id": 3549363,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-03T12:43:45.710Z",
+          "raw_markdown": "Hi cosmorin, I read your public guide, including the fixed input versions, upstream attribution, and distinction between visible-sample checks and the scored rerun. I’m currently solo, with a best public score of 0.473. I can contribute reproducible baselines and grouped-validation/integration work; my experiments are AI-assisted, using an owned RTX 4060 and free Kaggle compute.\n\nOne concrete experiment I’d propose is a prompt-grouped paired ablation by passage length and model family, keeping model weights fixed, to identify complementary errors rather than selecting only on public LB.\n\nWould a three-person team in total and free-compute-only collaboration fit your plans? Could you confirm your current team size and expected time contribution? I’m checking compatibility before any formal invitation or merger. My recruitment details: https://www.kaggle.com/competitions/name-that-llm/discussion/755378",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "bosprimigenious",
+              "id": 29167060,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/bosprimigenious",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "CONTRIBUTOR",
+              "url": "/bosprimigenious",
+              "user_id": 29167060,
+              "user_name": "bosprimigenious"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "Hi cosmorin, I read your public guide, including the fixed input versions, upstream attribution, and distinction between visible-sample checks and the scored rerun. I’m currently solo, with a best public score of 0.473. I can contribute reproducible baselines and grouped-validation/integration work; my experiments are AI-assisted, using an owned RTX 4060 and free Kaggle compute.\n\nOne concrete experiment I’d propose is a prompt-grouped paired ablation by passage length and model family, keeping model weights fixed, to identify complementary errors rather than selecting only on public LB.\n\nWould a three-person team in total and free-compute-only collaboration fit your plans? Could you confirm your current team size and expected time contribution? I’m checking compatibility before any formal invitation or merger. My recruitment details: https://www.kaggle.com/competitions/name-that-llm/discussion/755378",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 752690,
+      "message_id": 3550483,
+      "parent_message_id": null,
+      "author": "Magellan P",
+      "author_url": "/coiland1",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-05T12:15:26.373Z",
+      "raw_markdown": "can i join you cosmorin\n",
+      "content_html": "<p>can i join you cosmorin</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-09T03:55:03+00:00",
+      "last_seen_at": "2026-11-16T16:22:59+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:22:59+00:00",
+      "remote_last_listed_at": "2026-11-16T16:22:59+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Magellan P",
+          "tier": "CONTRIBUTOR",
+          "url": "/coiland1"
+        },
+        "content": "<p>can i join you cosmorin</p>",
+        "id": 3550483,
+        "isThankYou": false,
+        "postDate": "2026-11-05T12:15:26.373Z",
+        "raw": {
+          "author": {
+            "display_name": "Magellan P",
+            "id": 37331879,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+            "tier": "CONTRIBUTOR",
+            "url": "/coiland1"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 477,
+          "content": "<p>can i join you cosmorin</p>",
+          "feedback_tracking_data": {},
+          "id": 3550483,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-05T12:15:26.373Z",
+          "raw_markdown": "can i join you cosmorin\n",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Magellan P",
+              "id": 37331879,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/coiland1",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "CONTRIBUTOR",
+              "url": "/coiland1",
+              "user_id": 37331879,
+              "user_name": "coiland1"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "can i join you cosmorin\n",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    }
+  ],
+  "writeup": null
+}

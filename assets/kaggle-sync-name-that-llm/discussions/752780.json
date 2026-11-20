@@ -1,0 +1,515 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 752780,
+    "title": "Curly apostrophes never appear in Claude or GLM passages (EDA)",
+    "author": "yuna5577",
+    "author_url": "/yuna5577",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-10-26T09:37:01.094895300Z",
+    "last_comment_post_date": "2026-10-26T12:33:51.970Z",
+    "comment_count": 2,
+    "votes": 3,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/752780",
+    "first_message_id": 3544793,
+    "first_seen_at": "2026-11-04T06:56:15+00:00",
+    "last_seen_at": "2026-11-16T16:36:03+00:00",
+    "detail_last_synced_at": "2026-11-16T16:23:51+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "33dcd42356d51546e0c7380fc7bca40b70bf291504cb09757818bb5e82833b9f",
+    "listing_metrics_hash": "6d8a74dbac9b4cd94399e9cc1520c8e662b0bbcc16c76b670939fedc4deb1f33",
+    "detail_content_hash": "f43530d5e1ebfd69d58be95e80364ee0da9ee4490fd4a68a5fadb7950ce8007d",
+    "detail_last_checked_at": "2026-11-16T16:23:51+00:00",
+    "detail_next_check_at": "2026-11-23T16:23:51+00:00",
+    "detail_unchanged_count": 2,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 2,
+      "firstForumMessageId": null,
+      "id": 752780,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-10-26T12:33:51.970Z",
+      "postDate": "2026-10-26T09:37:01.094895300Z",
+      "raw": {
+        "comment_count": 2,
+        "id": 752780,
+        "last_comment_post_date": "2026-10-26T12:33:51.970Z",
+        "post_date": "2026-10-26T09:37:01.094895300Z",
+        "title": "Curly apostrophes never appear in Claude or GLM passages (EDA)",
+        "topic_url": "/competitions/name-that-llm/discussion/752780",
+        "votes": 3
+      },
+      "title": "Curly apostrophes never appear in Claude or GLM passages (EDA)",
+      "topicUrl": "/competitions/name-that-llm/discussion/752780",
+      "votes": 3
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "yuna5577",
+        "authorUserName": "yuna5577",
+        "comments": [
+          {
+            "author": {
+              "displayName": "Pavel Danilov",
+              "tier": "CONTRIBUTOR",
+              "url": "/pauldanilov"
+            },
+            "content": "<p>👍       </p>",
+            "id": 3544872,
+            "isThankYou": false,
+            "postDate": "2026-10-26T12:33:51.970Z",
+            "raw": {
+              "author": {
+                "display_name": "Pavel Danilov",
+                "id": 20759312,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20759312-kg.png?t=2025-08-02-13-22-22",
+                "tier": "CONTRIBUTOR",
+                "url": "/pauldanilov"
+              },
+              "author_type": "COMMENT",
+              "content": "<p>👍       </p>",
+              "feedback_tracking_data": {},
+              "id": 3544872,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-26T12:33:51.970Z",
+              "raw_markdown": ":+1:       ",
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": ":+1:       ",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          },
+          {
+            "author": {
+              "displayName": "Vivaan Satija",
+              "tier": "CONTRIBUTOR",
+              "url": "/vivaansatija"
+            },
+            "content": "<p>thanks! it was helpful</p>",
+            "id": 3544819,
+            "isThankYou": true,
+            "postDate": "2026-10-26T10:39:33.280Z",
+            "raw": {
+              "author": {
+                "display_name": "Vivaan Satija",
+                "id": 32163545,
+                "progression_opt_out": true,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/32163545-kg.jpg?t=2026-10-21-11-04-35",
+                "tier": "CONTRIBUTOR",
+                "url": "/vivaansatija"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 636,
+              "content": "<p>thanks! it was helpful</p>",
+              "feedback_tracking_data": {},
+              "id": 3544819,
+              "is_thank_you": true,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-26T10:39:33.280Z",
+              "raw_markdown": "thanks! it was helpful\n",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Vivaan Satija",
+                  "id": 32163545,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/vivaansatija",
+                  "progression_opt_out": true,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/32163545-kg.jpg?t=2026-10-21-11-04-35",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/vivaansatija",
+                  "user_id": 32163545,
+                  "user_name": "vivaansatija"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "thanks! it was helpful\n",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "expectedCommentCount": 2,
+        "firstMessage": {
+          "author": {
+            "displayName": "yuna5577",
+            "tier": "CONTRIBUTOR",
+            "url": "/yuna5577"
+          },
+          "content": "<p>I looked at what actually separates the 18 models, using only train.csv and CPU.</p>\n<p>A few findings:</p>\n<ul>\n<li>The curly apostrophe (’) never appears in any Claude or GLM passage in train (0 of 567 passages that contain it).</li>\n<li>The em dash (—) almost never appears in Gemini (1 of 1,052 passages that contain it).</li>\n<li>Punctuation alone predicts the lab with 0.41 balanced accuracy (chance 0.17), but only 0.16 for the exact model.</li>\n<li>The hardest pairs are sibling versions (Gemini 3.7 vs 3.8 Flash, GPT-5.6 Luna vs Sol), plus Kimi vs GPT-5.5 and GLM-5.3 vs Claude Opus 5.</li>\n</ul>\n<p>Notebook: <a href=\"https://www.kaggle.com/code/yuna5577/name-that-llm-18-fingerprints\" target=\"_blank\">https://www.kaggle.com/code/yuna5577/name-that-llm-18-fingerprints</a></p>\n<p>Feedback welcome, especially if anyone has checked whether these rules hold on the public LB.</p>",
+          "id": 3544793,
+          "isThankYou": false,
+          "postDate": "2026-10-26T09:37:01.093Z",
+          "raw": {
+            "author": {
+              "display_name": "yuna5577",
+              "id": 20655757,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20655757-kg.png?t=2026-10-30-04-05-04",
+              "tier": "CONTRIBUTOR",
+              "url": "/yuna5577"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 1012,
+            "content": "<p>I looked at what actually separates the 18 models, using only train.csv and CPU.</p>\n<p>A few findings:</p>\n<ul>\n<li>The curly apostrophe (’) never appears in any Claude or GLM passage in train (0 of 567 passages that contain it).</li>\n<li>The em dash (—) almost never appears in Gemini (1 of 1,052 passages that contain it).</li>\n<li>Punctuation alone predicts the lab with 0.41 balanced accuracy (chance 0.17), but only 0.16 for the exact model.</li>\n<li>The hardest pairs are sibling versions (Gemini 3.7 vs 3.8 Flash, GPT-5.6 Luna vs Sol), plus Kimi vs GPT-5.5 and GLM-5.3 vs Claude Opus 5.</li>\n</ul>\n<p>Notebook: <a href=\"https://www.kaggle.com/code/yuna5577/name-that-llm-18-fingerprints\" target=\"_blank\">https://www.kaggle.com/code/yuna5577/name-that-llm-18-fingerprints</a></p>\n<p>Feedback welcome, especially if anyone has checked whether these rules hold on the public LB.</p>",
+            "feedback_tracking_data": {},
+            "id": 3544793,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-10-26T09:37:01.093Z",
+            "raw_markdown": "I looked at what actually separates the 18 models, using only train.csv and CPU.\n\nA few findings:\n* The curly apostrophe (’) never appears in any Claude or GLM passage in train (0 of 567 passages that contain it).\n* The em dash (—) almost never appears in Gemini (1 of 1,052 passages that contain it).\n* Punctuation alone predicts the lab with 0.41 balanced accuracy (chance 0.17), but only 0.16 for the exact model.\n* The hardest pairs are sibling versions (Gemini 3.7 vs 3.8 Flash, GPT-5.6 Luna vs Sol), plus Kimi vs GPT-5.5 and GLM-5.3 vs Claude Opus 5.\n\nNotebook: https://www.kaggle.com/code/yuna5577/name-that-llm-18-fingerprints\n\nFeedback welcome, especially if anyone has checked whether these rules hold on the public LB.",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "yuna5577",
+                "id": 20655757,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/yuna5577",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20655757-kg.png?t=2026-10-30-04-05-04",
+                "tier": "CONTRIBUTOR",
+                "url": "/yuna5577",
+                "user_id": 20655757,
+                "user_name": "yuna5577"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 3,
+              "total_votes": 3
+            }
+          },
+          "rawMarkdown": "I looked at what actually separates the 18 models, using only train.csv and CPU.\n\nA few findings:\n* The curly apostrophe (’) never appears in any Claude or GLM passage in train (0 of 567 passages that contain it).\n* The em dash (—) almost never appears in Gemini (1 of 1,052 passages that contain it).\n* Punctuation alone predicts the lab with 0.41 balanced accuracy (chance 0.17), but only 0.16 for the exact model.\n* The hardest pairs are sibling versions (Gemini 3.7 vs 3.8 Flash, GPT-5.6 Luna vs Sol), plus Kimi vs GPT-5.5 and GLM-5.3 vs Claude Opus 5.\n\nNotebook: https://www.kaggle.com/code/yuna5577/name-that-llm-18-fingerprints\n\nFeedback welcome, especially if anyone has checked whether these rules hold on the public LB.",
+          "replies": [],
+          "votes": {
+            "totalVotes": 3
+          }
+        },
+        "firstMessageId": 3544793,
+        "id": 752780,
+        "name": "Curly apostrophes never appear in Claude or GLM passages (EDA)",
+        "postDate": "2026-10-26T09:37:01.094895300Z",
+        "url": "/competitions/name-that-llm/discussion/752780"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>I looked at what actually separates the 18 models, using only train.csv and CPU.</p>\n<p>A few findings:</p>\n<ul>\n<li>The curly apostrophe (’) never appears in any Claude or GLM passage in train (0 of 567 passages that contain it).</li>\n<li>The em dash (—) almost never appears in Gemini (1 of 1,052 passages that contain it).</li>\n<li>Punctuation alone predicts the lab with 0.41 balanced accuracy (chance 0.17), but only 0.16 for the exact model.</li>\n<li>The hardest pairs are sibling versions (Gemini 3.7 vs 3.8 Flash, GPT-5.6 Luna vs Sol), plus Kimi vs GPT-5.5 and GLM-5.3 vs Claude Opus 5.</li>\n</ul>\n<p>Notebook: <a href=\"https://www.kaggle.com/code/yuna5577/name-that-llm-18-fingerprints\" target=\"_blank\">https://www.kaggle.com/code/yuna5577/name-that-llm-18-fingerprints</a></p>\n<p>Feedback welcome, especially if anyone has checked whether these rules hold on the public LB.</p>",
+              "id": 3544793,
+              "post_date": "2026-10-26T09:37:01.093Z",
+              "raw_markdown": "I looked at what actually separates the 18 models, using only train.csv and CPU.\n\nA few findings:\n* The curly apostrophe (’) never appears in any Claude or GLM passage in train (0 of 567 passages that contain it).\n* The em dash (—) almost never appears in Gemini (1 of 1,052 passages that contain it).\n* Punctuation alone predicts the lab with 0.41 balanced accuracy (chance 0.17), but only 0.16 for the exact model.\n* The hardest pairs are sibling versions (Gemini 3.7 vs 3.8 Flash, GPT-5.6 Luna vs Sol), plus Kimi vs GPT-5.5 and GLM-5.3 vs Claude Opus 5.\n\nNotebook: https://www.kaggle.com/code/yuna5577/name-that-llm-18-fingerprints\n\nFeedback welcome, especially if anyone has checked whether these rules hold on the public LB.",
+              "votes": 3
+            },
+            {
+              "content": "<p>👍       </p>",
+              "id": 3544872,
+              "post_date": "2026-10-26T12:33:51.970Z",
+              "raw_markdown": ":+1:       "
+            },
+            {
+              "content": "<p>thanks! it was helpful</p>",
+              "id": 3544819,
+              "post_date": "2026-10-26T10:39:33.280Z",
+              "raw_markdown": "thanks! it was helpful\n"
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 20655757,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "20655757-kg.png?t=2026-10-30-04-05-04",
+            "author_user_display_name": "yuna5577",
+            "author_user_name": "yuna5577",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "comments": [
+              {
+                "author": {
+                  "display_name": "Pavel Danilov",
+                  "id": 20759312,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20759312-kg.png?t=2025-08-02-13-22-22",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/pauldanilov"
+                },
+                "author_type": "COMMENT",
+                "content": "<p>👍       </p>",
+                "feedback_tracking_data": {},
+                "id": 3544872,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-26T12:33:51.970Z",
+                "raw_markdown": ":+1:       ",
+                "votes": {
+                  "can_upvote": true
+                }
+              },
+              {
+                "author": {
+                  "display_name": "Vivaan Satija",
+                  "id": 32163545,
+                  "progression_opt_out": true,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/32163545-kg.jpg?t=2026-10-21-11-04-35",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/vivaansatija"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 636,
+                "content": "<p>thanks! it was helpful</p>",
+                "feedback_tracking_data": {},
+                "id": 3544819,
+                "is_thank_you": true,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-26T10:39:33.280Z",
+                "raw_markdown": "thanks! it was helpful\n",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "Vivaan Satija",
+                    "id": 32163545,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/vivaansatija",
+                    "progression_opt_out": true,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/32163545-kg.jpg?t=2026-10-21-11-04-35",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/vivaansatija",
+                    "user_id": 32163545,
+                    "user_name": "vivaansatija"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              }
+            ],
+            "first_message": {
+              "author": {
+                "display_name": "yuna5577",
+                "id": 20655757,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20655757-kg.png?t=2026-10-30-04-05-04",
+                "tier": "CONTRIBUTOR",
+                "url": "/yuna5577"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 1012,
+              "content": "<p>I looked at what actually separates the 18 models, using only train.csv and CPU.</p>\n<p>A few findings:</p>\n<ul>\n<li>The curly apostrophe (’) never appears in any Claude or GLM passage in train (0 of 567 passages that contain it).</li>\n<li>The em dash (—) almost never appears in Gemini (1 of 1,052 passages that contain it).</li>\n<li>Punctuation alone predicts the lab with 0.41 balanced accuracy (chance 0.17), but only 0.16 for the exact model.</li>\n<li>The hardest pairs are sibling versions (Gemini 3.7 vs 3.8 Flash, GPT-5.6 Luna vs Sol), plus Kimi vs GPT-5.5 and GLM-5.3 vs Claude Opus 5.</li>\n</ul>\n<p>Notebook: <a href=\"https://www.kaggle.com/code/yuna5577/name-that-llm-18-fingerprints\" target=\"_blank\">https://www.kaggle.com/code/yuna5577/name-that-llm-18-fingerprints</a></p>\n<p>Feedback welcome, especially if anyone has checked whether these rules hold on the public LB.</p>",
+              "feedback_tracking_data": {},
+              "id": 3544793,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-26T09:37:01.093Z",
+              "raw_markdown": "I looked at what actually separates the 18 models, using only train.csv and CPU.\n\nA few findings:\n* The curly apostrophe (’) never appears in any Claude or GLM passage in train (0 of 567 passages that contain it).\n* The em dash (—) almost never appears in Gemini (1 of 1,052 passages that contain it).\n* Punctuation alone predicts the lab with 0.41 balanced accuracy (chance 0.17), but only 0.16 for the exact model.\n* The hardest pairs are sibling versions (Gemini 3.7 vs 3.8 Flash, GPT-5.6 Luna vs Sol), plus Kimi vs GPT-5.5 and GLM-5.3 vs Claude Opus 5.\n\nNotebook: https://www.kaggle.com/code/yuna5577/name-that-llm-18-fingerprints\n\nFeedback welcome, especially if anyone has checked whether these rules hold on the public LB.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "yuna5577",
+                  "id": 20655757,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/yuna5577",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20655757-kg.png?t=2026-10-30-04-05-04",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/yuna5577",
+                  "user_id": 20655757,
+                  "user_name": "yuna5577"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 3,
+                "total_votes": 3
+              }
+            },
+            "first_message_id": 3544793,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 752780,
+            "name": "Curly apostrophes never appear in Claude or GLM passages (EDA)",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-10-26T09:37:01.094895300Z",
+            "total_messages": 2,
+            "total_votes": 3,
+            "url": "/competitions/name-that-llm/discussion/752780"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:23:51+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:23:51+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-10-26T12:33:51.970Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [
+    {
+      "slug": "name-that-llm",
+      "topic_id": 752780,
+      "message_id": 3544819,
+      "parent_message_id": null,
+      "author": "Vivaan Satija",
+      "author_url": "/vivaansatija",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-10-26T10:39:33.280Z",
+      "raw_markdown": "thanks! it was helpful\n",
+      "content_html": "<p>thanks! it was helpful</p>",
+      "votes": 0,
+      "is_thank_you": 1,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:57:34+00:00",
+      "last_seen_at": "2026-11-16T16:23:51+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:23:51+00:00",
+      "remote_last_listed_at": "2026-11-16T16:23:51+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Vivaan Satija",
+          "tier": "CONTRIBUTOR",
+          "url": "/vivaansatija"
+        },
+        "content": "<p>thanks! it was helpful</p>",
+        "id": 3544819,
+        "isThankYou": true,
+        "postDate": "2026-10-26T10:39:33.280Z",
+        "raw": {
+          "author": {
+            "display_name": "Vivaan Satija",
+            "id": 32163545,
+            "progression_opt_out": true,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/32163545-kg.jpg?t=2026-10-21-11-04-35",
+            "tier": "CONTRIBUTOR",
+            "url": "/vivaansatija"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 636,
+          "content": "<p>thanks! it was helpful</p>",
+          "feedback_tracking_data": {},
+          "id": 3544819,
+          "is_thank_you": true,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-26T10:39:33.280Z",
+          "raw_markdown": "thanks! it was helpful\n",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Vivaan Satija",
+              "id": 32163545,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/vivaansatija",
+              "progression_opt_out": true,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/32163545-kg.jpg?t=2026-10-21-11-04-35",
+              "tier": "CONTRIBUTOR",
+              "url": "/vivaansatija",
+              "user_id": 32163545,
+              "user_name": "vivaansatija"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "thanks! it was helpful\n",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 752780,
+      "message_id": 3544872,
+      "parent_message_id": null,
+      "author": "Pavel Danilov",
+      "author_url": "/pauldanilov",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-10-26T12:33:51.970Z",
+      "raw_markdown": ":+1:       ",
+      "content_html": "<p>👍       </p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:57:34+00:00",
+      "last_seen_at": "2026-11-16T16:23:51+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:23:51+00:00",
+      "remote_last_listed_at": "2026-11-16T16:23:51+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Pavel Danilov",
+          "tier": "CONTRIBUTOR",
+          "url": "/pauldanilov"
+        },
+        "content": "<p>👍       </p>",
+        "id": 3544872,
+        "isThankYou": false,
+        "postDate": "2026-10-26T12:33:51.970Z",
+        "raw": {
+          "author": {
+            "display_name": "Pavel Danilov",
+            "id": 20759312,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20759312-kg.png?t=2025-08-02-13-22-22",
+            "tier": "CONTRIBUTOR",
+            "url": "/pauldanilov"
+          },
+          "author_type": "COMMENT",
+          "content": "<p>👍       </p>",
+          "feedback_tracking_data": {},
+          "id": 3544872,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-26T12:33:51.970Z",
+          "raw_markdown": ":+1:       ",
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": ":+1:       ",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    }
+  ],
+  "writeup": null
+}

@@ -1,0 +1,85 @@
+{
+  "schema_version": 4,
+  "exported_at": "2026-11-19T13:00:11.961143+00:00",
+  "filters": {
+    "kind": "all",
+    "kinds": [
+      "overview",
+      "data",
+      "discussion",
+      "writeup",
+      "code",
+      "submission"
+    ],
+    "query": "",
+    "min_votes": 0,
+    "min_comments": 0,
+    "code_versions": "current",
+    "code_top_n": null,
+    "exclude_unready_code": false
+  },
+  "competition": {
+    "slug": "name-that-llm",
+    "title": "Name That LLM",
+    "url": "https://www.kaggle.com/competitions/name-that-llm"
+  },
+  "counts": {
+    "discussions": 132,
+    "writeups": 0,
+    "code": 1655,
+    "unlisted_discussions": 2,
+    "unlisted_writeups": 0,
+    "unlisted_code": 0,
+    "historical_code_versions": 0,
+    "submissions": 0,
+    "submission_files": 0,
+    "overview": 1,
+    "data": 1,
+    "pages": 9,
+    "media": 18,
+    "unavailable_original_media": 0,
+    "source_files": 1653,
+    "exported_media_files": 18
+  },
+  "files": {
+    "competition": "competition.json",
+    "media": "media/index.json",
+    "discussions": "discussions/index.json",
+    "writeups": "writeups/index.json",
+    "code": "code/index.json",
+    "submissions": "submissions/index.json",
+    "pages": "pages.json",
+    "overview": "overview.md",
+    "data": "data.md"
+  },
+  "complete": true,
+  "incomplete_items": [],
+  "media_archive": {
+    "required_complete": false,
+    "markdown_references_localized": true,
+    "unavailable_originals_use_explicit_placeholders": true,
+    "code_sources_preserved_verbatim": true,
+    "localized_code_copy_policy": "generated_when_external_images_are_rewritten"
+  },
+  "known_limitations": {
+    "code_runtime_artifacts": {
+      "outputs_included": false,
+      "logs_included": false,
+      "status": "unavailable_for_exact_historical_version",
+      "reason": "Kaggle's public historical-version/source interface does not expose output files or logs keyed to an exact official vN; the latest-session endpoint is not used because it could be misattributed during a concurrent new run."
+    },
+    "non_image_attachments": {
+      "links_preserved": true,
+      "binary_files_included": false,
+      "status": "external_links_only",
+      "reason": "Ordinary non-image attachments, audio and video remain external links."
+    }
+  },
+  "submission_archive": {
+    "metadata_included": true,
+    "submitted_files_included": true,
+    "required_complete": true,
+    "integrity": "size_and_archive_state",
+    "scope": "authenticated_account_team"
+  }
+}

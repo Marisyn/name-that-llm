@@ -1,0 +1,204 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 758260,
+    "title": "Reading speed for large model files",
+    "author": "vishu phalswal",
+    "author_url": "/vishuphalswal",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-11-12T02:39:50.192689600Z",
+    "last_comment_post_date": "2026-11-12T02:39:50.193333300Z",
+    "comment_count": 0,
+    "votes": 0,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/758260",
+    "first_message_id": 3553673,
+    "first_seen_at": "2026-11-16T16:21:25+00:00",
+    "last_seen_at": "2026-11-18T09:02:32+00:00",
+    "detail_last_synced_at": "2026-11-18T09:02:32+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-18T09:01:50+00:00",
+    "remote_last_listed_at": "2026-11-18T09:01:50+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "c42fddc0671e23b34238388b36e2e56c028bf792030b1ae52b36a20a7016795b",
+    "listing_metrics_hash": "1d7b01d39d998f5caf0eb285f7806c0632a1cb146aadc79a9504e2481370b229",
+    "detail_content_hash": "fe8b8185080226fc03fec9a82b58df7ec475f34d8492a10d1aacd53f366238f2",
+    "detail_last_checked_at": "2026-11-18T09:02:32+00:00",
+    "detail_next_check_at": "2026-11-21T09:02:32+00:00",
+    "detail_unchanged_count": 1,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 0,
+      "firstForumMessageId": null,
+      "id": 758260,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-11-12T02:39:50.193333300Z",
+      "postDate": "2026-11-12T02:39:50.192689600Z",
+      "raw": {
+        "id": 758260,
+        "last_comment_post_date": "2026-11-12T02:39:50.193333300Z",
+        "post_date": "2026-11-12T02:39:50.192689600Z",
+        "title": "Reading speed for large model files",
+        "topic_url": "/competitions/name-that-llm/discussion/758260"
+      },
+      "title": "Reading speed for large model files",
+      "topicUrl": "/competitions/name-that-llm/discussion/758260",
+      "votes": 0
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "vishu phalswal",
+        "authorUserName": "vishuphalswal",
+        "comments": [],
+        "expectedCommentCount": 0,
+        "firstMessage": {
+          "author": {
+            "displayName": "vishu phalswal",
+            "tier": "CONTRIBUTOR",
+            "url": "/vishuphalswal"
+          },
+          "content": "<p>For large model files (100+ GB, split into parts), what has worked best for you in the scoring run: copying each part to local disk first, or reading directly from /kaggle/input? Has anyone measured load speeds since the caching fix?</p>",
+          "id": 3553673,
+          "isThankYou": false,
+          "postDate": "2026-11-12T02:39:50.193Z",
+          "raw": {
+            "author": {
+              "display_name": "vishu phalswal",
+              "id": 35760329,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "CONTRIBUTOR",
+              "url": "/vishuphalswal"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 570,
+            "content": "<p>For large model files (100+ GB, split into parts), what has worked best for you in the scoring run: copying each part to local disk first, or reading directly from /kaggle/input? Has anyone measured load speeds since the caching fix?</p>",
+            "feedback_tracking_data": {},
+            "id": 3553673,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-11-12T02:39:50.193Z",
+            "raw_markdown": "For large model files (100+ GB, split into parts), what has worked best for you in the scoring run: copying each part to local disk first, or reading directly from /kaggle/input? Has anyone measured load speeds since the caching fix?",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "vishu phalswal",
+                "id": 35760329,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/vishuphalswal",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/vishuphalswal",
+                "user_id": 35760329,
+                "user_name": "vishuphalswal"
+              }
+            },
+            "votes": {
+              "can_upvote": true
+            }
+          },
+          "rawMarkdown": "For large model files (100+ GB, split into parts), what has worked best for you in the scoring run: copying each part to local disk first, or reading directly from /kaggle/input? Has anyone measured load speeds since the caching fix?",
+          "replies": [],
+          "votes": {
+            "totalVotes": 0
+          }
+        },
+        "firstMessageId": 3553673,
+        "id": 758260,
+        "name": "Reading speed for large model files",
+        "postDate": "2026-11-12T02:39:50.192689600Z",
+        "url": "/competitions/name-that-llm/discussion/758260"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>For large model files (100+ GB, split into parts), what has worked best for you in the scoring run: copying each part to local disk first, or reading directly from /kaggle/input? Has anyone measured load speeds since the caching fix?</p>",
+              "id": 3553673,
+              "post_date": "2026-11-12T02:39:50.193Z",
+              "raw_markdown": "For large model files (100+ GB, split into parts), what has worked best for you in the scoring run: copying each part to local disk first, or reading directly from /kaggle/input? Has anyone measured load speeds since the caching fix?"
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 35760329,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "default-thumb.png",
+            "author_user_display_name": "vishu phalswal",
+            "author_user_name": "vishuphalswal",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "first_message": {
+              "author": {
+                "display_name": "vishu phalswal",
+                "id": 35760329,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/vishuphalswal"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 570,
+              "content": "<p>For large model files (100+ GB, split into parts), what has worked best for you in the scoring run: copying each part to local disk first, or reading directly from /kaggle/input? Has anyone measured load speeds since the caching fix?</p>",
+              "feedback_tracking_data": {},
+              "id": 3553673,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-12T02:39:50.193Z",
+              "raw_markdown": "For large model files (100+ GB, split into parts), what has worked best for you in the scoring run: copying each part to local disk first, or reading directly from /kaggle/input? Has anyone measured load speeds since the caching fix?",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "vishu phalswal",
+                  "id": 35760329,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/vishuphalswal",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/vishuphalswal",
+                  "user_id": 35760329,
+                  "user_name": "vishuphalswal"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "first_message_id": 3553673,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 758260,
+            "name": "Reading speed for large model files",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-11-12T02:39:50.192689600Z",
+            "url": "/competitions/name-that-llm/discussion/758260"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-18T09:02:32+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-18T09:02:32+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-11-12T02:39:50.193333300Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [],
+  "writeup": null
+}

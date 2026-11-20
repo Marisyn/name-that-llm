@@ -1,0 +1,390 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 750447,
+    "title": "10% ATLAS Blend, improvements to tested public notebooks.",
+    "author": "Joseph Adamski",
+    "author_url": "/josephadamski91",
+    "author_tier": "EXPERT",
+    "post_date": "2026-10-18T11:18:41.989446700Z",
+    "last_comment_post_date": "2026-10-19T10:22:33.483333300Z",
+    "comment_count": 1,
+    "votes": 1,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/750447",
+    "first_message_id": 3540583,
+    "first_seen_at": "2026-11-04T06:56:17+00:00",
+    "last_seen_at": "2026-11-16T16:36:05+00:00",
+    "detail_last_synced_at": "2026-11-16T16:24:18+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "6b260dc38372c7b9faf15643a0bddaafa2191a437d5e93a2e1c87f3896280695",
+    "listing_metrics_hash": "08a3f0e9d031723a4649730d445a527264427162f124c0c72a6c18d2e0b8e839",
+    "detail_content_hash": "f57cc075d8d4125a38ddd32d3a13d8790e4c54569e2d4b48c2ca2f624c28ec37",
+    "detail_last_checked_at": "2026-11-16T16:24:18+00:00",
+    "detail_next_check_at": "2026-11-19T16:24:18+00:00",
+    "detail_unchanged_count": 1,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 1,
+      "firstForumMessageId": null,
+      "id": 750447,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-10-19T10:22:33.483333300Z",
+      "postDate": "2026-10-18T11:18:41.989446700Z",
+      "raw": {
+        "comment_count": 1,
+        "id": 750447,
+        "last_comment_post_date": "2026-10-19T10:22:33.483333300Z",
+        "post_date": "2026-10-18T11:18:41.989446700Z",
+        "title": "10% ATLAS Blend, improvements to tested public notebooks.",
+        "topic_url": "/competitions/name-that-llm/discussion/750447",
+        "votes": 1
+      },
+      "title": "10% ATLAS Blend, improvements to tested public notebooks.",
+      "topicUrl": "/competitions/name-that-llm/discussion/750447",
+      "votes": 1
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "EXPERT",
+        "authorUserDisplayName": "Joseph Adamski",
+        "authorUserName": "josephadamski91",
+        "comments": [
+          {
+            "author": {
+              "displayName": "Joseph Adamski",
+              "tier": "EXPERT",
+              "url": "/josephadamski91"
+            },
+            "content": "<p>Some more tests:</p>\n<table>\n<thead>\n<tr>\n<th>Original public notebook</th>\n<th>ATLAS variant</th>\n<th>Original score</th>\n<th>With ATLAS</th>\n<th>Improvement</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><a href=\"https://www.kaggle.com/code/lucasboesen/lora-x-adaptive-centering?scriptVersionId=359126546\" target=\"_blank\">Lucas Boesen v3</a></td>\n<td>10% blend</td>\n<td>0.549</td>\n<td>0.551</td>\n<td>+0.002</td>\n</tr>\n<tr>\n<td><a href=\"https://www.kaggle.com/code/saddamaditya/apex-attribution-multi-lora-claude-gate?scriptVersionId=359409956\" target=\"_blank\">Apex v4</a></td>\n<td>10% blend</td>\n<td>0.556</td>\n<td>0.558</td>\n<td>+0.002</td>\n</tr>\n<tr>\n<td><a href=\"https://www.kaggle.com/code/vnton37nguyn/ntl-lora-instyle-0-563-please-vote-me?scriptVersionId=359729598\" target=\"_blank\">InStyle v1</a></td>\n<td>10% blend</td>\n<td>0.563</td>\n<td>0.567</td>\n<td>+0.004</td>\n</tr>\n<tr>\n<td><a href=\"https://www.kaggle.com/code/prvsiyan/the-prompt-is-not-the-author?scriptVersionId=359792979\" target=\"_blank\">The Prompt Is Not the Author v1</a></td>\n<td>10% blend</td>\n<td>0.569</td>\n<td>0.572</td>\n<td>+0.003</td>\n</tr>\n<tr>\n<td><a href=\"https://www.kaggle.com/code/prvsiyan/the-prompt-is-not-the-author?scriptVersionId=359792979\" target=\"_blank\">The Prompt Is Not the Author v1</a></td>\n<td>ATLAS within Gaussian groups</td>\n<td>0.569</td>\n<td>0.572</td>\n<td>+0.003</td>\n</tr>\n<tr>\n<td><a href=\"https://www.kaggle.com/code/nishantdahal/two-stage-lora-on-the-public-pool?scriptVersionId=359887828\" target=\"_blank\">Two-stage LoRA v2</a></td>\n<td>10% ATLAS + 10% early layers</td>\n<td>0.592</td>\n<td>0.596</td>\n<td>+0.004</td>\n</tr>\n<tr>\n<td><a href=\"https://www.kaggle.com/code/kirilltym/0-600-teach-the-model-remove-the-prompt?scriptVersionId=360088024\" target=\"_blank\">Teach the Model, Remove the Prompt v20</a></td>\n<td><a href=\"https://www.kaggle.com/code/josephadamski91/teach-the-model-10-atlas\" target=\"_blank\">10% blend</a></td>\n<td>0.600</td>\n<td>0.607</td>\n<td>+0.007</td>\n</tr>\n</tbody>\n</table>",
+            "id": 3541004,
+            "isThankYou": false,
+            "postDate": "2026-10-19T10:22:33.483Z",
+            "raw": {
+              "author": {
+                "display_name": "Joseph Adamski",
+                "id": 33210778,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/33210778-kg.jpg?t=2026-09-02-13-53-56",
+                "tier": "EXPERT",
+                "url": "/josephadamski91"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 1286,
+              "content": "<p>Some more tests:</p>\n<table>\n<thead>\n<tr>\n<th>Original public notebook</th>\n<th>ATLAS variant</th>\n<th>Original score</th>\n<th>With ATLAS</th>\n<th>Improvement</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><a href=\"https://www.kaggle.com/code/lucasboesen/lora-x-adaptive-centering?scriptVersionId=359126546\" target=\"_blank\">Lucas Boesen v3</a></td>\n<td>10% blend</td>\n<td>0.549</td>\n<td>0.551</td>\n<td>+0.002</td>\n</tr>\n<tr>\n<td><a href=\"https://www.kaggle.com/code/saddamaditya/apex-attribution-multi-lora-claude-gate?scriptVersionId=359409956\" target=\"_blank\">Apex v4</a></td>\n<td>10% blend</td>\n<td>0.556</td>\n<td>0.558</td>\n<td>+0.002</td>\n</tr>\n<tr>\n<td><a href=\"https://www.kaggle.com/code/vnton37nguyn/ntl-lora-instyle-0-563-please-vote-me?scriptVersionId=359729598\" target=\"_blank\">InStyle v1</a></td>\n<td>10% blend</td>\n<td>0.563</td>\n<td>0.567</td>\n<td>+0.004</td>\n</tr>\n<tr>\n<td><a href=\"https://www.kaggle.com/code/prvsiyan/the-prompt-is-not-the-author?scriptVersionId=359792979\" target=\"_blank\">The Prompt Is Not the Author v1</a></td>\n<td>10% blend</td>\n<td>0.569</td>\n<td>0.572</td>\n<td>+0.003</td>\n</tr>\n<tr>\n<td><a href=\"https://www.kaggle.com/code/prvsiyan/the-prompt-is-not-the-author?scriptVersionId=359792979\" target=\"_blank\">The Prompt Is Not the Author v1</a></td>\n<td>ATLAS within Gaussian groups</td>\n<td>0.569</td>\n<td>0.572</td>\n<td>+0.003</td>\n</tr>\n<tr>\n<td><a href=\"https://www.kaggle.com/code/nishantdahal/two-stage-lora-on-the-public-pool?scriptVersionId=359887828\" target=\"_blank\">Two-stage LoRA v2</a></td>\n<td>10% ATLAS + 10% early layers</td>\n<td>0.592</td>\n<td>0.596</td>\n<td>+0.004</td>\n</tr>\n<tr>\n<td><a href=\"https://www.kaggle.com/code/kirilltym/0-600-teach-the-model-remove-the-prompt?scriptVersionId=360088024\" target=\"_blank\">Teach the Model, Remove the Prompt v20</a></td>\n<td><a href=\"https://www.kaggle.com/code/josephadamski91/teach-the-model-10-atlas\" target=\"_blank\">10% blend</a></td>\n<td>0.600</td>\n<td>0.607</td>\n<td>+0.007</td>\n</tr>\n</tbody>\n</table>",
+              "feedback_tracking_data": {},
+              "id": 3541004,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-19T10:22:33.483Z",
+              "raw_markdown": "Some more tests:\n\n| Original public notebook | ATLAS variant | Original score | With ATLAS | Improvement |\n|---|---|---:|---:|---:|\n| [Lucas Boesen v3](https://www.kaggle.com/code/lucasboesen/lora-x-adaptive-centering?scriptVersionId=359126546) | 10% blend | 0.549 | 0.551 | +0.002 |\n| [Apex v4](https://www.kaggle.com/code/saddamaditya/apex-attribution-multi-lora-claude-gate?scriptVersionId=359409956) | 10% blend | 0.556 | 0.558 | +0.002 |\n| [InStyle v1](https://www.kaggle.com/code/vnton37nguyn/ntl-lora-instyle-0-563-please-vote-me?scriptVersionId=359729598) | 10% blend | 0.563 | 0.567 | +0.004 |\n| [The Prompt Is Not the Author v1](https://www.kaggle.com/code/prvsiyan/the-prompt-is-not-the-author?scriptVersionId=359792979) | 10% blend | 0.569 | 0.572 | +0.003 |\n| [The Prompt Is Not the Author v1](https://www.kaggle.com/code/prvsiyan/the-prompt-is-not-the-author?scriptVersionId=359792979) | ATLAS within Gaussian groups | 0.569 | 0.572 | +0.003 |\n| [Two-stage LoRA v2](https://www.kaggle.com/code/nishantdahal/two-stage-lora-on-the-public-pool?scriptVersionId=359887828) | 10% ATLAS + 10% early layers | 0.592 | 0.596 | +0.004 |\n| [Teach the Model, Remove the Prompt v20](https://www.kaggle.com/code/kirilltym/0-600-teach-the-model-remove-the-prompt?scriptVersionId=360088024) | [10% blend](https://www.kaggle.com/code/josephadamski91/teach-the-model-10-atlas) | 0.600 | 0.607 | +0.007 |",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Joseph Adamski",
+                  "id": 33210778,
+                  "performance_tier": "EXPERT",
+                  "profile_url": "/josephadamski91",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/33210778-kg.jpg?t=2026-09-02-13-53-56",
+                  "tier": "EXPERT",
+                  "url": "/josephadamski91",
+                  "user_id": 33210778,
+                  "user_name": "josephadamski91"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "Some more tests:\n\n| Original public notebook | ATLAS variant | Original score | With ATLAS | Improvement |\n|---|---|---:|---:|---:|\n| [Lucas Boesen v3](https://www.kaggle.com/code/lucasboesen/lora-x-adaptive-centering?scriptVersionId=359126546) | 10% blend | 0.549 | 0.551 | +0.002 |\n| [Apex v4](https://www.kaggle.com/code/saddamaditya/apex-attribution-multi-lora-claude-gate?scriptVersionId=359409956) | 10% blend | 0.556 | 0.558 | +0.002 |\n| [InStyle v1](https://www.kaggle.com/code/vnton37nguyn/ntl-lora-instyle-0-563-please-vote-me?scriptVersionId=359729598) | 10% blend | 0.563 | 0.567 | +0.004 |\n| [The Prompt Is Not the Author v1](https://www.kaggle.com/code/prvsiyan/the-prompt-is-not-the-author?scriptVersionId=359792979) | 10% blend | 0.569 | 0.572 | +0.003 |\n| [The Prompt Is Not the Author v1](https://www.kaggle.com/code/prvsiyan/the-prompt-is-not-the-author?scriptVersionId=359792979) | ATLAS within Gaussian groups | 0.569 | 0.572 | +0.003 |\n| [Two-stage LoRA v2](https://www.kaggle.com/code/nishantdahal/two-stage-lora-on-the-public-pool?scriptVersionId=359887828) | 10% ATLAS + 10% early layers | 0.592 | 0.596 | +0.004 |\n| [Teach the Model, Remove the Prompt v20](https://www.kaggle.com/code/kirilltym/0-600-teach-the-model-remove-the-prompt?scriptVersionId=360088024) | [10% blend](https://www.kaggle.com/code/josephadamski91/teach-the-model-10-atlas) | 0.600 | 0.607 | +0.007 |",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "expectedCommentCount": 1,
+        "firstMessage": {
+          "author": {
+            "displayName": "Joseph Adamski",
+            "tier": "EXPERT",
+            "url": "/josephadamski91"
+          },
+          "content": "<p>Edit: see comments for latest data.</p>\n<p><a href=\"https://www.kaggle.com/code/josephadamski91/apex-v4-10-atlas\" target=\"_blank\">https://www.kaggle.com/code/josephadamski91/apex-v4-10-atlas</a></p>\n<p><a href=\"https://www.kaggle.com/datasets/josephadamski91/ntl-atlas-qwen3-8b-v1/data\" target=\"_blank\">https://www.kaggle.com/datasets/josephadamski91/ntl-atlas-qwen3-8b-v1/data</a></p>\n<p><a href=\"https://arxiv.org/pdf/2610.19583\" target=\"_blank\">https://arxiv.org/pdf/2610.19583</a></p>\n<p>I added a 10% ATLAS blend to Maman Salto’s Apex v4 and got 0.558 on the public leaderboard, up from the original 0.556. The ATLAS adapter uses Qwen3-8B-Base and was trained on the official 2,699 training rows. Its probabilities are mixed in before the original balancing, with the rest of the Apex prediction logic unchanged. The same 10% blend also took Lucas Boesen’s v3 from 0.549 to 0.551. I’ve made the notebook⁠ and adapter public with the code and credits if anyone wants to try it.</p>\n<p>Thanks to the public notebooks mentioned!</p>",
+          "id": 3540583,
+          "isThankYou": false,
+          "postDate": "2026-10-18T11:18:41.990Z",
+          "raw": {
+            "author": {
+              "display_name": "Joseph Adamski",
+              "id": 33210778,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/33210778-kg.jpg?t=2026-09-02-13-53-56",
+              "tier": "EXPERT",
+              "url": "/josephadamski91"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 1286,
+            "content": "<p>Edit: see comments for latest data.</p>\n<p><a href=\"https://www.kaggle.com/code/josephadamski91/apex-v4-10-atlas\" target=\"_blank\">https://www.kaggle.com/code/josephadamski91/apex-v4-10-atlas</a></p>\n<p><a href=\"https://www.kaggle.com/datasets/josephadamski91/ntl-atlas-qwen3-8b-v1/data\" target=\"_blank\">https://www.kaggle.com/datasets/josephadamski91/ntl-atlas-qwen3-8b-v1/data</a></p>\n<p><a href=\"https://arxiv.org/pdf/2610.19583\" target=\"_blank\">https://arxiv.org/pdf/2610.19583</a></p>\n<p>I added a 10% ATLAS blend to Maman Salto’s Apex v4 and got 0.558 on the public leaderboard, up from the original 0.556. The ATLAS adapter uses Qwen3-8B-Base and was trained on the official 2,699 training rows. Its probabilities are mixed in before the original balancing, with the rest of the Apex prediction logic unchanged. The same 10% blend also took Lucas Boesen’s v3 from 0.549 to 0.551. I’ve made the notebook⁠ and adapter public with the code and credits if anyone wants to try it.</p>\n<p>Thanks to the public notebooks mentioned!</p>",
+            "feedback_tracking_data": {},
+            "id": 3540583,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-10-18T11:18:41.990Z",
+            "raw_markdown": "Edit: see comments for latest data.\n\nhttps://www.kaggle.com/code/josephadamski91/apex-v4-10-atlas\n\nhttps://www.kaggle.com/datasets/josephadamski91/ntl-atlas-qwen3-8b-v1/data\n\nhttps://arxiv.org/pdf/2610.19583\n\nI added a 10% ATLAS blend to Maman Salto’s Apex v4 and got 0.558 on the public leaderboard, up from the original 0.556. The ATLAS adapter uses Qwen3-8B-Base and was trained on the official 2,699 training rows. Its probabilities are mixed in before the original balancing, with the rest of the Apex prediction logic unchanged. The same 10% blend also took Lucas Boesen’s v3 from 0.549 to 0.551. I’ve made the notebook⁠ and adapter public with the code and credits if anyone wants to try it.\n\nThanks to the public notebooks mentioned!",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "Joseph Adamski",
+                "id": 33210778,
+                "performance_tier": "EXPERT",
+                "profile_url": "/josephadamski91",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/33210778-kg.jpg?t=2026-09-02-13-53-56",
+                "tier": "EXPERT",
+                "url": "/josephadamski91",
+                "user_id": 33210778,
+                "user_name": "josephadamski91"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 1,
+              "total_votes": 1
+            }
+          },
+          "rawMarkdown": "Edit: see comments for latest data.\n\nhttps://www.kaggle.com/code/josephadamski91/apex-v4-10-atlas\n\nhttps://www.kaggle.com/datasets/josephadamski91/ntl-atlas-qwen3-8b-v1/data\n\nhttps://arxiv.org/pdf/2610.19583\n\nI added a 10% ATLAS blend to Maman Salto’s Apex v4 and got 0.558 on the public leaderboard, up from the original 0.556. The ATLAS adapter uses Qwen3-8B-Base and was trained on the official 2,699 training rows. Its probabilities are mixed in before the original balancing, with the rest of the Apex prediction logic unchanged. The same 10% blend also took Lucas Boesen’s v3 from 0.549 to 0.551. I’ve made the notebook⁠ and adapter public with the code and credits if anyone wants to try it.\n\nThanks to the public notebooks mentioned!",
+          "replies": [],
+          "votes": {
+            "totalVotes": 1
+          }
+        },
+        "firstMessageId": 3540583,
+        "id": 750447,
+        "name": "10% ATLAS Blend, improvements to tested public notebooks.",
+        "postDate": "2026-10-18T11:18:41.989446700Z",
+        "url": "/competitions/name-that-llm/discussion/750447"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>Edit: see comments for latest data.</p>\n<p><a href=\"https://www.kaggle.com/code/josephadamski91/apex-v4-10-atlas\" target=\"_blank\">https://www.kaggle.com/code/josephadamski91/apex-v4-10-atlas</a></p>\n<p><a href=\"https://www.kaggle.com/datasets/josephadamski91/ntl-atlas-qwen3-8b-v1/data\" target=\"_blank\">https://www.kaggle.com/datasets/josephadamski91/ntl-atlas-qwen3-8b-v1/data</a></p>\n<p><a href=\"https://arxiv.org/pdf/2610.19583\" target=\"_blank\">https://arxiv.org/pdf/2610.19583</a></p>\n<p>I added a 10% ATLAS blend to Maman Salto’s Apex v4 and got 0.558 on the public leaderboard, up from the original 0.556. The ATLAS adapter uses Qwen3-8B-Base and was trained on the official 2,699 training rows. Its probabilities are mixed in before the original balancing, with the rest of the Apex prediction logic unchanged. The same 10% blend also took Lucas Boesen’s v3 from 0.549 to 0.551. I’ve made the notebook⁠ and adapter public with the code and credits if anyone wants to try it.</p>\n<p>Thanks to the public notebooks mentioned!</p>",
+              "id": 3540583,
+              "post_date": "2026-10-18T11:18:41.990Z",
+              "raw_markdown": "Edit: see comments for latest data.\n\nhttps://www.kaggle.com/code/josephadamski91/apex-v4-10-atlas\n\nhttps://www.kaggle.com/datasets/josephadamski91/ntl-atlas-qwen3-8b-v1/data\n\nhttps://arxiv.org/pdf/2610.19583\n\nI added a 10% ATLAS blend to Maman Salto’s Apex v4 and got 0.558 on the public leaderboard, up from the original 0.556. The ATLAS adapter uses Qwen3-8B-Base and was trained on the official 2,699 training rows. Its probabilities are mixed in before the original balancing, with the rest of the Apex prediction logic unchanged. The same 10% blend also took Lucas Boesen’s v3 from 0.549 to 0.551. I’ve made the notebook⁠ and adapter public with the code and credits if anyone wants to try it.\n\nThanks to the public notebooks mentioned!",
+              "votes": 1
+            },
+            {
+              "content": "<p>Some more tests:</p>\n<table>\n<thead>\n<tr>\n<th>Original public notebook</th>\n<th>ATLAS variant</th>\n<th>Original score</th>\n<th>With ATLAS</th>\n<th>Improvement</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><a href=\"https://www.kaggle.com/code/lucasboesen/lora-x-adaptive-centering?scriptVersionId=359126546\" target=\"_blank\">Lucas Boesen v3</a></td>\n<td>10% blend</td>\n<td>0.549</td>\n<td>0.551</td>\n<td>+0.002</td>\n</tr>\n<tr>\n<td><a href=\"https://www.kaggle.com/code/saddamaditya/apex-attribution-multi-lora-claude-gate?scriptVersionId=359409956\" target=\"_blank\">Apex v4</a></td>\n<td>10% blend</td>\n<td>0.556</td>\n<td>0.558</td>\n<td>+0.002</td>\n</tr>\n<tr>\n<td><a href=\"https://www.kaggle.com/code/vnton37nguyn/ntl-lora-instyle-0-563-please-vote-me?scriptVersionId=359729598\" target=\"_blank\">InStyle v1</a></td>\n<td>10% blend</td>\n<td>0.563</td>\n<td>0.567</td>\n<td>+0.004</td>\n</tr>\n<tr>\n<td><a href=\"https://www.kaggle.com/code/prvsiyan/the-prompt-is-not-the-author?scriptVersionId=359792979\" target=\"_blank\">The Prompt Is Not the Author v1</a></td>\n<td>10% blend</td>\n<td>0.569</td>\n<td>0.572</td>\n<td>+0.003</td>\n</tr>\n<tr>\n<td><a href=\"https://www.kaggle.com/code/prvsiyan/the-prompt-is-not-the-author?scriptVersionId=359792979\" target=\"_blank\">The Prompt Is Not the Author v1</a></td>\n<td>ATLAS within Gaussian groups</td>\n<td>0.569</td>\n<td>0.572</td>\n<td>+0.003</td>\n</tr>\n<tr>\n<td><a href=\"https://www.kaggle.com/code/nishantdahal/two-stage-lora-on-the-public-pool?scriptVersionId=359887828\" target=\"_blank\">Two-stage LoRA v2</a></td>\n<td>10% ATLAS + 10% early layers</td>\n<td>0.592</td>\n<td>0.596</td>\n<td>+0.004</td>\n</tr>\n<tr>\n<td><a href=\"https://www.kaggle.com/code/kirilltym/0-600-teach-the-model-remove-the-prompt?scriptVersionId=360088024\" target=\"_blank\">Teach the Model, Remove the Prompt v20</a></td>\n<td><a href=\"https://www.kaggle.com/code/josephadamski91/teach-the-model-10-atlas\" target=\"_blank\">10% blend</a></td>\n<td>0.600</td>\n<td>0.607</td>\n<td>+0.007</td>\n</tr>\n</tbody>\n</table>",
+              "id": 3541004,
+              "post_date": "2026-10-19T10:22:33.483Z",
+              "raw_markdown": "Some more tests:\n\n| Original public notebook | ATLAS variant | Original score | With ATLAS | Improvement |\n|---|---|---:|---:|---:|\n| [Lucas Boesen v3](https://www.kaggle.com/code/lucasboesen/lora-x-adaptive-centering?scriptVersionId=359126546) | 10% blend | 0.549 | 0.551 | +0.002 |\n| [Apex v4](https://www.kaggle.com/code/saddamaditya/apex-attribution-multi-lora-claude-gate?scriptVersionId=359409956) | 10% blend | 0.556 | 0.558 | +0.002 |\n| [InStyle v1](https://www.kaggle.com/code/vnton37nguyn/ntl-lora-instyle-0-563-please-vote-me?scriptVersionId=359729598) | 10% blend | 0.563 | 0.567 | +0.004 |\n| [The Prompt Is Not the Author v1](https://www.kaggle.com/code/prvsiyan/the-prompt-is-not-the-author?scriptVersionId=359792979) | 10% blend | 0.569 | 0.572 | +0.003 |\n| [The Prompt Is Not the Author v1](https://www.kaggle.com/code/prvsiyan/the-prompt-is-not-the-author?scriptVersionId=359792979) | ATLAS within Gaussian groups | 0.569 | 0.572 | +0.003 |\n| [Two-stage LoRA v2](https://www.kaggle.com/code/nishantdahal/two-stage-lora-on-the-public-pool?scriptVersionId=359887828) | 10% ATLAS + 10% early layers | 0.592 | 0.596 | +0.004 |\n| [Teach the Model, Remove the Prompt v20](https://www.kaggle.com/code/kirilltym/0-600-teach-the-model-remove-the-prompt?scriptVersionId=360088024) | [10% blend](https://www.kaggle.com/code/josephadamski91/teach-the-model-10-atlas) | 0.600 | 0.607 | +0.007 |"
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 33210778,
+            "author_performance_tier": "EXPERT",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "33210778-kg.jpg?t=2026-09-02-13-53-56",
+            "author_user_display_name": "Joseph Adamski",
+            "author_user_name": "josephadamski91",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "comments": [
+              {
+                "author": {
+                  "display_name": "Joseph Adamski",
+                  "id": 33210778,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/33210778-kg.jpg?t=2026-09-02-13-53-56",
+                  "tier": "EXPERT",
+                  "url": "/josephadamski91"
+                },
+                "author_type": "TOPIC",
+                "competition_ranking": 1286,
+                "content": "<p>Some more tests:</p>\n<table>\n<thead>\n<tr>\n<th>Original public notebook</th>\n<th>ATLAS variant</th>\n<th>Original score</th>\n<th>With ATLAS</th>\n<th>Improvement</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><a href=\"https://www.kaggle.com/code/lucasboesen/lora-x-adaptive-centering?scriptVersionId=359126546\" target=\"_blank\">Lucas Boesen v3</a></td>\n<td>10% blend</td>\n<td>0.549</td>\n<td>0.551</td>\n<td>+0.002</td>\n</tr>\n<tr>\n<td><a href=\"https://www.kaggle.com/code/saddamaditya/apex-attribution-multi-lora-claude-gate?scriptVersionId=359409956\" target=\"_blank\">Apex v4</a></td>\n<td>10% blend</td>\n<td>0.556</td>\n<td>0.558</td>\n<td>+0.002</td>\n</tr>\n<tr>\n<td><a href=\"https://www.kaggle.com/code/vnton37nguyn/ntl-lora-instyle-0-563-please-vote-me?scriptVersionId=359729598\" target=\"_blank\">InStyle v1</a></td>\n<td>10% blend</td>\n<td>0.563</td>\n<td>0.567</td>\n<td>+0.004</td>\n</tr>\n<tr>\n<td><a href=\"https://www.kaggle.com/code/prvsiyan/the-prompt-is-not-the-author?scriptVersionId=359792979\" target=\"_blank\">The Prompt Is Not the Author v1</a></td>\n<td>10% blend</td>\n<td>0.569</td>\n<td>0.572</td>\n<td>+0.003</td>\n</tr>\n<tr>\n<td><a href=\"https://www.kaggle.com/code/prvsiyan/the-prompt-is-not-the-author?scriptVersionId=359792979\" target=\"_blank\">The Prompt Is Not the Author v1</a></td>\n<td>ATLAS within Gaussian groups</td>\n<td>0.569</td>\n<td>0.572</td>\n<td>+0.003</td>\n</tr>\n<tr>\n<td><a href=\"https://www.kaggle.com/code/nishantdahal/two-stage-lora-on-the-public-pool?scriptVersionId=359887828\" target=\"_blank\">Two-stage LoRA v2</a></td>\n<td>10% ATLAS + 10% early layers</td>\n<td>0.592</td>\n<td>0.596</td>\n<td>+0.004</td>\n</tr>\n<tr>\n<td><a href=\"https://www.kaggle.com/code/kirilltym/0-600-teach-the-model-remove-the-prompt?scriptVersionId=360088024\" target=\"_blank\">Teach the Model, Remove the Prompt v20</a></td>\n<td><a href=\"https://www.kaggle.com/code/josephadamski91/teach-the-model-10-atlas\" target=\"_blank\">10% blend</a></td>\n<td>0.600</td>\n<td>0.607</td>\n<td>+0.007</td>\n</tr>\n</tbody>\n</table>",
+                "feedback_tracking_data": {},
+                "id": 3541004,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-19T10:22:33.483Z",
+                "raw_markdown": "Some more tests:\n\n| Original public notebook | ATLAS variant | Original score | With ATLAS | Improvement |\n|---|---|---:|---:|---:|\n| [Lucas Boesen v3](https://www.kaggle.com/code/lucasboesen/lora-x-adaptive-centering?scriptVersionId=359126546) | 10% blend | 0.549 | 0.551 | +0.002 |\n| [Apex v4](https://www.kaggle.com/code/saddamaditya/apex-attribution-multi-lora-claude-gate?scriptVersionId=359409956) | 10% blend | 0.556 | 0.558 | +0.002 |\n| [InStyle v1](https://www.kaggle.com/code/vnton37nguyn/ntl-lora-instyle-0-563-please-vote-me?scriptVersionId=359729598) | 10% blend | 0.563 | 0.567 | +0.004 |\n| [The Prompt Is Not the Author v1](https://www.kaggle.com/code/prvsiyan/the-prompt-is-not-the-author?scriptVersionId=359792979) | 10% blend | 0.569 | 0.572 | +0.003 |\n| [The Prompt Is Not the Author v1](https://www.kaggle.com/code/prvsiyan/the-prompt-is-not-the-author?scriptVersionId=359792979) | ATLAS within Gaussian groups | 0.569 | 0.572 | +0.003 |\n| [Two-stage LoRA v2](https://www.kaggle.com/code/nishantdahal/two-stage-lora-on-the-public-pool?scriptVersionId=359887828) | 10% ATLAS + 10% early layers | 0.592 | 0.596 | +0.004 |\n| [Teach the Model, Remove the Prompt v20](https://www.kaggle.com/code/kirilltym/0-600-teach-the-model-remove-the-prompt?scriptVersionId=360088024) | [10% blend](https://www.kaggle.com/code/josephadamski91/teach-the-model-10-atlas) | 0.600 | 0.607 | +0.007 |",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "Joseph Adamski",
+                    "id": 33210778,
+                    "performance_tier": "EXPERT",
+                    "profile_url": "/josephadamski91",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/33210778-kg.jpg?t=2026-09-02-13-53-56",
+                    "tier": "EXPERT",
+                    "url": "/josephadamski91",
+                    "user_id": 33210778,
+                    "user_name": "josephadamski91"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              }
+            ],
+            "first_message": {
+              "author": {
+                "display_name": "Joseph Adamski",
+                "id": 33210778,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/33210778-kg.jpg?t=2026-09-02-13-53-56",
+                "tier": "EXPERT",
+                "url": "/josephadamski91"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 1286,
+              "content": "<p>Edit: see comments for latest data.</p>\n<p><a href=\"https://www.kaggle.com/code/josephadamski91/apex-v4-10-atlas\" target=\"_blank\">https://www.kaggle.com/code/josephadamski91/apex-v4-10-atlas</a></p>\n<p><a href=\"https://www.kaggle.com/datasets/josephadamski91/ntl-atlas-qwen3-8b-v1/data\" target=\"_blank\">https://www.kaggle.com/datasets/josephadamski91/ntl-atlas-qwen3-8b-v1/data</a></p>\n<p><a href=\"https://arxiv.org/pdf/2610.19583\" target=\"_blank\">https://arxiv.org/pdf/2610.19583</a></p>\n<p>I added a 10% ATLAS blend to Maman Salto’s Apex v4 and got 0.558 on the public leaderboard, up from the original 0.556. The ATLAS adapter uses Qwen3-8B-Base and was trained on the official 2,699 training rows. Its probabilities are mixed in before the original balancing, with the rest of the Apex prediction logic unchanged. The same 10% blend also took Lucas Boesen’s v3 from 0.549 to 0.551. I’ve made the notebook⁠ and adapter public with the code and credits if anyone wants to try it.</p>\n<p>Thanks to the public notebooks mentioned!</p>",
+              "feedback_tracking_data": {},
+              "id": 3540583,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-18T11:18:41.990Z",
+              "raw_markdown": "Edit: see comments for latest data.\n\nhttps://www.kaggle.com/code/josephadamski91/apex-v4-10-atlas\n\nhttps://www.kaggle.com/datasets/josephadamski91/ntl-atlas-qwen3-8b-v1/data\n\nhttps://arxiv.org/pdf/2610.19583\n\nI added a 10% ATLAS blend to Maman Salto’s Apex v4 and got 0.558 on the public leaderboard, up from the original 0.556. The ATLAS adapter uses Qwen3-8B-Base and was trained on the official 2,699 training rows. Its probabilities are mixed in before the original balancing, with the rest of the Apex prediction logic unchanged. The same 10% blend also took Lucas Boesen’s v3 from 0.549 to 0.551. I’ve made the notebook⁠ and adapter public with the code and credits if anyone wants to try it.\n\nThanks to the public notebooks mentioned!",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Joseph Adamski",
+                  "id": 33210778,
+                  "performance_tier": "EXPERT",
+                  "profile_url": "/josephadamski91",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/33210778-kg.jpg?t=2026-09-02-13-53-56",
+                  "tier": "EXPERT",
+                  "url": "/josephadamski91",
+                  "user_id": 33210778,
+                  "user_name": "josephadamski91"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": 1
+              }
+            },
+            "first_message_id": 3540583,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 750447,
+            "name": "10% ATLAS Blend, improvements to tested public notebooks.",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-10-18T11:18:41.989446700Z",
+            "total_messages": 1,
+            "total_votes": 1,
+            "url": "/competitions/name-that-llm/discussion/750447"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:24:18+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:24:18+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-10-19T10:22:33.483333300Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [
+    {
+      "slug": "name-that-llm",
+      "topic_id": 750447,
+      "message_id": 3541004,
+      "parent_message_id": null,
+      "author": "Joseph Adamski",
+      "author_url": "/josephadamski91",
+      "author_tier": "EXPERT",
+      "post_date": "2026-10-19T10:22:33.483Z",
+      "raw_markdown": "Some more tests:\n\n| Original public notebook | ATLAS variant | Original score | With ATLAS | Improvement |\n|---|---|---:|---:|---:|\n| [Lucas Boesen v3](https://www.kaggle.com/code/lucasboesen/lora-x-adaptive-centering?scriptVersionId=359126546) | 10% blend | 0.549 | 0.551 | +0.002 |\n| [Apex v4](https://www.kaggle.com/code/saddamaditya/apex-attribution-multi-lora-claude-gate?scriptVersionId=359409956) | 10% blend | 0.556 | 0.558 | +0.002 |\n| [InStyle v1](https://www.kaggle.com/code/vnton37nguyn/ntl-lora-instyle-0-563-please-vote-me?scriptVersionId=359729598) | 10% blend | 0.563 | 0.567 | +0.004 |\n| [The Prompt Is Not the Author v1](https://www.kaggle.com/code/prvsiyan/the-prompt-is-not-the-author?scriptVersionId=359792979) | 10% blend | 0.569 | 0.572 | +0.003 |\n| [The Prompt Is Not the Author v1](https://www.kaggle.com/code/prvsiyan/the-prompt-is-not-the-author?scriptVersionId=359792979) | ATLAS within Gaussian groups | 0.569 | 0.572 | +0.003 |\n| [Two-stage LoRA v2](https://www.kaggle.com/code/nishantdahal/two-stage-lora-on-the-public-pool?scriptVersionId=359887828) | 10% ATLAS + 10% early layers | 0.592 | 0.596 | +0.004 |\n| [Teach the Model, Remove the Prompt v20](https://www.kaggle.com/code/kirilltym/0-600-teach-the-model-remove-the-prompt?scriptVersionId=360088024) | [10% blend](https://www.kaggle.com/code/josephadamski91/teach-the-model-10-atlas) | 0.600 | 0.607 | +0.007 |",
+      "content_html": "<p>Some more tests:</p>\n<table>\n<thead>\n<tr>\n<th>Original public notebook</th>\n<th>ATLAS variant</th>\n<th>Original score</th>\n<th>With ATLAS</th>\n<th>Improvement</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><a href=\"https://www.kaggle.com/code/lucasboesen/lora-x-adaptive-centering?scriptVersionId=359126546\" target=\"_blank\">Lucas Boesen v3</a></td>\n<td>10% blend</td>\n<td>0.549</td>\n<td>0.551</td>\n<td>+0.002</td>\n</tr>\n<tr>\n<td><a href=\"https://www.kaggle.com/code/saddamaditya/apex-attribution-multi-lora-claude-gate?scriptVersionId=359409956\" target=\"_blank\">Apex v4</a></td>\n<td>10% blend</td>\n<td>0.556</td>\n<td>0.558</td>\n<td>+0.002</td>\n</tr>\n<tr>\n<td><a href=\"https://www.kaggle.com/code/vnton37nguyn/ntl-lora-instyle-0-563-please-vote-me?scriptVersionId=359729598\" target=\"_blank\">InStyle v1</a></td>\n<td>10% blend</td>\n<td>0.563</td>\n<td>0.567</td>\n<td>+0.004</td>\n</tr>\n<tr>\n<td><a href=\"https://www.kaggle.com/code/prvsiyan/the-prompt-is-not-the-author?scriptVersionId=359792979\" target=\"_blank\">The Prompt Is Not the Author v1</a></td>\n<td>10% blend</td>\n<td>0.569</td>\n<td>0.572</td>\n<td>+0.003</td>\n</tr>\n<tr>\n<td><a href=\"https://www.kaggle.com/code/prvsiyan/the-prompt-is-not-the-author?scriptVersionId=359792979\" target=\"_blank\">The Prompt Is Not the Author v1</a></td>\n<td>ATLAS within Gaussian groups</td>\n<td>0.569</td>\n<td>0.572</td>\n<td>+0.003</td>\n</tr>\n<tr>\n<td><a href=\"https://www.kaggle.com/code/nishantdahal/two-stage-lora-on-the-public-pool?scriptVersionId=359887828\" target=\"_blank\">Two-stage LoRA v2</a></td>\n<td>10% ATLAS + 10% early layers</td>\n<td>0.592</td>\n<td>0.596</td>\n<td>+0.004</td>\n</tr>\n<tr>\n<td><a href=\"https://www.kaggle.com/code/kirilltym/0-600-teach-the-model-remove-the-prompt?scriptVersionId=360088024\" target=\"_blank\">Teach the Model, Remove the Prompt v20</a></td>\n<td><a href=\"https://www.kaggle.com/code/josephadamski91/teach-the-model-10-atlas\" target=\"_blank\">10% blend</a></td>\n<td>0.600</td>\n<td>0.607</td>\n<td>+0.007</td>\n</tr>\n</tbody>\n</table>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:56:47+00:00",
+      "last_seen_at": "2026-11-16T16:24:18+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:24:18+00:00",
+      "remote_last_listed_at": "2026-11-16T16:24:18+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Joseph Adamski",
+          "tier": "EXPERT",
+          "url": "/josephadamski91"
+        },
+        "content": "<p>Some more tests:</p>\n<table>\n<thead>\n<tr>\n<th>Original public notebook</th>\n<th>ATLAS variant</th>\n<th>Original score</th>\n<th>With ATLAS</th>\n<th>Improvement</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><a href=\"https://www.kaggle.com/code/lucasboesen/lora-x-adaptive-centering?scriptVersionId=359126546\" target=\"_blank\">Lucas Boesen v3</a></td>\n<td>10% blend</td>\n<td>0.549</td>\n<td>0.551</td>\n<td>+0.002</td>\n</tr>\n<tr>\n<td><a href=\"https://www.kaggle.com/code/saddamaditya/apex-attribution-multi-lora-claude-gate?scriptVersionId=359409956\" target=\"_blank\">Apex v4</a></td>\n<td>10% blend</td>\n<td>0.556</td>\n<td>0.558</td>\n<td>+0.002</td>\n</tr>\n<tr>\n<td><a href=\"https://www.kaggle.com/code/vnton37nguyn/ntl-lora-instyle-0-563-please-vote-me?scriptVersionId=359729598\" target=\"_blank\">InStyle v1</a></td>\n<td>10% blend</td>\n<td>0.563</td>\n<td>0.567</td>\n<td>+0.004</td>\n</tr>\n<tr>\n<td><a href=\"https://www.kaggle.com/code/prvsiyan/the-prompt-is-not-the-author?scriptVersionId=359792979\" target=\"_blank\">The Prompt Is Not the Author v1</a></td>\n<td>10% blend</td>\n<td>0.569</td>\n<td>0.572</td>\n<td>+0.003</td>\n</tr>\n<tr>\n<td><a href=\"https://www.kaggle.com/code/prvsiyan/the-prompt-is-not-the-author?scriptVersionId=359792979\" target=\"_blank\">The Prompt Is Not the Author v1</a></td>\n<td>ATLAS within Gaussian groups</td>\n<td>0.569</td>\n<td>0.572</td>\n<td>+0.003</td>\n</tr>\n<tr>\n<td><a href=\"https://www.kaggle.com/code/nishantdahal/two-stage-lora-on-the-public-pool?scriptVersionId=359887828\" target=\"_blank\">Two-stage LoRA v2</a></td>\n<td>10% ATLAS + 10% early layers</td>\n<td>0.592</td>\n<td>0.596</td>\n<td>+0.004</td>\n</tr>\n<tr>\n<td><a href=\"https://www.kaggle.com/code/kirilltym/0-600-teach-the-model-remove-the-prompt?scriptVersionId=360088024\" target=\"_blank\">Teach the Model, Remove the Prompt v20</a></td>\n<td><a href=\"https://www.kaggle.com/code/josephadamski91/teach-the-model-10-atlas\" target=\"_blank\">10% blend</a></td>\n<td>0.600</td>\n<td>0.607</td>\n<td>+0.007</td>\n</tr>\n</tbody>\n</table>",
+        "id": 3541004,
+        "isThankYou": false,
+        "postDate": "2026-10-19T10:22:33.483Z",
+        "raw": {
+          "author": {
+            "display_name": "Joseph Adamski",
+            "id": 33210778,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/33210778-kg.jpg?t=2026-09-02-13-53-56",
+            "tier": "EXPERT",
+            "url": "/josephadamski91"
+          },
+          "author_type": "TOPIC",
+          "competition_ranking": 1286,
+          "content": "<p>Some more tests:</p>\n<table>\n<thead>\n<tr>\n<th>Original public notebook</th>\n<th>ATLAS variant</th>\n<th>Original score</th>\n<th>With ATLAS</th>\n<th>Improvement</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><a href=\"https://www.kaggle.com/code/lucasboesen/lora-x-adaptive-centering?scriptVersionId=359126546\" target=\"_blank\">Lucas Boesen v3</a></td>\n<td>10% blend</td>\n<td>0.549</td>\n<td>0.551</td>\n<td>+0.002</td>\n</tr>\n<tr>\n<td><a href=\"https://www.kaggle.com/code/saddamaditya/apex-attribution-multi-lora-claude-gate?scriptVersionId=359409956\" target=\"_blank\">Apex v4</a></td>\n<td>10% blend</td>\n<td>0.556</td>\n<td>0.558</td>\n<td>+0.002</td>\n</tr>\n<tr>\n<td><a href=\"https://www.kaggle.com/code/vnton37nguyn/ntl-lora-instyle-0-563-please-vote-me?scriptVersionId=359729598\" target=\"_blank\">InStyle v1</a></td>\n<td>10% blend</td>\n<td>0.563</td>\n<td>0.567</td>\n<td>+0.004</td>\n</tr>\n<tr>\n<td><a href=\"https://www.kaggle.com/code/prvsiyan/the-prompt-is-not-the-author?scriptVersionId=359792979\" target=\"_blank\">The Prompt Is Not the Author v1</a></td>\n<td>10% blend</td>\n<td>0.569</td>\n<td>0.572</td>\n<td>+0.003</td>\n</tr>\n<tr>\n<td><a href=\"https://www.kaggle.com/code/prvsiyan/the-prompt-is-not-the-author?scriptVersionId=359792979\" target=\"_blank\">The Prompt Is Not the Author v1</a></td>\n<td>ATLAS within Gaussian groups</td>\n<td>0.569</td>\n<td>0.572</td>\n<td>+0.003</td>\n</tr>\n<tr>\n<td><a href=\"https://www.kaggle.com/code/nishantdahal/two-stage-lora-on-the-public-pool?scriptVersionId=359887828\" target=\"_blank\">Two-stage LoRA v2</a></td>\n<td>10% ATLAS + 10% early layers</td>\n<td>0.592</td>\n<td>0.596</td>\n<td>+0.004</td>\n</tr>\n<tr>\n<td><a href=\"https://www.kaggle.com/code/kirilltym/0-600-teach-the-model-remove-the-prompt?scriptVersionId=360088024\" target=\"_blank\">Teach the Model, Remove the Prompt v20</a></td>\n<td><a href=\"https://www.kaggle.com/code/josephadamski91/teach-the-model-10-atlas\" target=\"_blank\">10% blend</a></td>\n<td>0.600</td>\n<td>0.607</td>\n<td>+0.007</td>\n</tr>\n</tbody>\n</table>",
+          "feedback_tracking_data": {},
+          "id": 3541004,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-19T10:22:33.483Z",
+          "raw_markdown": "Some more tests:\n\n| Original public notebook | ATLAS variant | Original score | With ATLAS | Improvement |\n|---|---|---:|---:|---:|\n| [Lucas Boesen v3](https://www.kaggle.com/code/lucasboesen/lora-x-adaptive-centering?scriptVersionId=359126546) | 10% blend | 0.549 | 0.551 | +0.002 |\n| [Apex v4](https://www.kaggle.com/code/saddamaditya/apex-attribution-multi-lora-claude-gate?scriptVersionId=359409956) | 10% blend | 0.556 | 0.558 | +0.002 |\n| [InStyle v1](https://www.kaggle.com/code/vnton37nguyn/ntl-lora-instyle-0-563-please-vote-me?scriptVersionId=359729598) | 10% blend | 0.563 | 0.567 | +0.004 |\n| [The Prompt Is Not the Author v1](https://www.kaggle.com/code/prvsiyan/the-prompt-is-not-the-author?scriptVersionId=359792979) | 10% blend | 0.569 | 0.572 | +0.003 |\n| [The Prompt Is Not the Author v1](https://www.kaggle.com/code/prvsiyan/the-prompt-is-not-the-author?scriptVersionId=359792979) | ATLAS within Gaussian groups | 0.569 | 0.572 | +0.003 |\n| [Two-stage LoRA v2](https://www.kaggle.com/code/nishantdahal/two-stage-lora-on-the-public-pool?scriptVersionId=359887828) | 10% ATLAS + 10% early layers | 0.592 | 0.596 | +0.004 |\n| [Teach the Model, Remove the Prompt v20](https://www.kaggle.com/code/kirilltym/0-600-teach-the-model-remove-the-prompt?scriptVersionId=360088024) | [10% blend](https://www.kaggle.com/code/josephadamski91/teach-the-model-10-atlas) | 0.600 | 0.607 | +0.007 |",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Joseph Adamski",
+              "id": 33210778,
+              "performance_tier": "EXPERT",
+              "profile_url": "/josephadamski91",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/33210778-kg.jpg?t=2026-09-02-13-53-56",
+              "tier": "EXPERT",
+              "url": "/josephadamski91",
+              "user_id": 33210778,
+              "user_name": "josephadamski91"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "Some more tests:\n\n| Original public notebook | ATLAS variant | Original score | With ATLAS | Improvement |\n|---|---|---:|---:|---:|\n| [Lucas Boesen v3](https://www.kaggle.com/code/lucasboesen/lora-x-adaptive-centering?scriptVersionId=359126546) | 10% blend | 0.549 | 0.551 | +0.002 |\n| [Apex v4](https://www.kaggle.com/code/saddamaditya/apex-attribution-multi-lora-claude-gate?scriptVersionId=359409956) | 10% blend | 0.556 | 0.558 | +0.002 |\n| [InStyle v1](https://www.kaggle.com/code/vnton37nguyn/ntl-lora-instyle-0-563-please-vote-me?scriptVersionId=359729598) | 10% blend | 0.563 | 0.567 | +0.004 |\n| [The Prompt Is Not the Author v1](https://www.kaggle.com/code/prvsiyan/the-prompt-is-not-the-author?scriptVersionId=359792979) | 10% blend | 0.569 | 0.572 | +0.003 |\n| [The Prompt Is Not the Author v1](https://www.kaggle.com/code/prvsiyan/the-prompt-is-not-the-author?scriptVersionId=359792979) | ATLAS within Gaussian groups | 0.569 | 0.572 | +0.003 |\n| [Two-stage LoRA v2](https://www.kaggle.com/code/nishantdahal/two-stage-lora-on-the-public-pool?scriptVersionId=359887828) | 10% ATLAS + 10% early layers | 0.592 | 0.596 | +0.004 |\n| [Teach the Model, Remove the Prompt v20](https://www.kaggle.com/code/kirilltym/0-600-teach-the-model-remove-the-prompt?scriptVersionId=360088024) | [10% blend](https://www.kaggle.com/code/josephadamski91/teach-the-model-10-atlas) | 0.600 | 0.607 | +0.007 |",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    }
+  ],
+  "writeup": null
+}

@@ -1,0 +1,1317 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 755314,
+    "title": "My classifier thinks GLM-5.3 is more Claude than GLM",
+    "author": "AyoGG",
+    "author_url": "/ggayoayogg",
+    "author_tier": "MASTER",
+    "post_date": "2026-11-03T07:38:06.530458200Z",
+    "last_comment_post_date": "2026-11-14T08:24:36.906666700Z",
+    "comment_count": 6,
+    "votes": 10,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/755314",
+    "first_message_id": 3549229,
+    "first_seen_at": "2026-11-04T06:56:14+00:00",
+    "last_seen_at": "2026-11-19T12:45:20+00:00",
+    "detail_last_synced_at": "2026-11-18T09:02:19+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-19T12:45:20+00:00",
+    "remote_last_listed_at": "2026-11-19T12:45:20+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "7a87d779a9e1ccaec5924c786eeb285d277d9cf60ccb3eb2ed4b23d28c630981",
+    "listing_metrics_hash": "8d48d9dc5f47c8f1257fa4ed62f5b5b354567e6fe163b3d22f1c91a03351d855",
+    "detail_content_hash": "87738026d5eb69dd6a04777568b7cc9f7972faa7488cbc60f23d71f09bd226b7",
+    "detail_last_checked_at": "2026-11-18T09:02:19+00:00",
+    "detail_next_check_at": "2026-11-21T09:02:19+00:00",
+    "detail_unchanged_count": 1,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 6,
+      "firstForumMessageId": null,
+      "id": 755314,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-11-14T08:24:36.906666700Z",
+      "postDate": "2026-11-03T07:38:06.530458200Z",
+      "raw": {
+        "comment_count": 6,
+        "id": 755314,
+        "last_comment_post_date": "2026-11-14T08:24:36.906666700Z",
+        "post_date": "2026-11-03T07:38:06.530458200Z",
+        "title": "My classifier thinks GLM-5.3 is more Claude than GLM",
+        "topic_url": "/competitions/name-that-llm/discussion/755314",
+        "votes": 10
+      },
+      "title": "My classifier thinks GLM-5.3 is more Claude than GLM",
+      "topicUrl": "/competitions/name-that-llm/discussion/755314",
+      "votes": 10
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "MASTER",
+        "authorUserDisplayName": "AyoGG",
+        "authorUserName": "ggayoayogg",
+        "comments": [
+          {
+            "author": {
+              "displayName": "Hotson Honet",
+              "tier": "EXPERT",
+              "url": "/hotsonhonet"
+            },
+            "content": "<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F5157521%2F800f03713c4229901bf36edda2d4ee1c%2Fimage_2026-11-14_134757400.png?generation=1794644278629888&amp;alt=media\" alt=\"\"></p>\n<p>feeling bad for google, no frontier open weights model uses it 😂. </p>\n<p>What I have done is trained a model specific to closed weights model and performed the inference on the open weights model. This is the normalized confusion matrix (across rows) for it. This is the main reason why throwing more money on data generation is giving folks a good score as their model is seeing more examples of open weights model to build an segregation criteria.</p>\n<p>The dataset I have used is shown here is from the provided training dataset.</p>",
+            "id": 3554954,
+            "isThankYou": false,
+            "postDate": "2026-11-14T08:24:36.907Z",
+            "raw": {
+              "author": {
+                "display_name": "Hotson Honet",
+                "id": 5157521,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5157521-kg.jpeg",
+                "tier": "EXPERT",
+                "url": "/hotsonhonet"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 3452,
+              "content": "<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F5157521%2F800f03713c4229901bf36edda2d4ee1c%2Fimage_2026-11-14_134757400.png?generation=1794644278629888&amp;alt=media\" alt=\"\"></p>\n<p>feeling bad for google, no frontier open weights model uses it 😂. </p>\n<p>What I have done is trained a model specific to closed weights model and performed the inference on the open weights model. This is the normalized confusion matrix (across rows) for it. This is the main reason why throwing more money on data generation is giving folks a good score as their model is seeing more examples of open weights model to build an segregation criteria.</p>\n<p>The dataset I have used is shown here is from the provided training dataset.</p>",
+              "feedback_tracking_data": {},
+              "id": 3554954,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-14T08:24:36.907Z",
+              "raw_markdown": "![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F5157521%2F800f03713c4229901bf36edda2d4ee1c%2Fimage_2026-11-14_134757400.png?generation=1794644278629888&alt=media)\n\nfeeling bad for google, no frontier open weights model uses it 😂. \n\nWhat I have done is trained a model specific to closed weights model and performed the inference on the open weights model. This is the normalized confusion matrix (across rows) for it. This is the main reason why throwing more money on data generation is giving folks a good score as their model is seeing more examples of open weights model to build an segregation criteria.\n\nThe dataset I have used is shown here is from the provided training dataset.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Hotson Honet",
+                  "id": 5157521,
+                  "performance_tier": "EXPERT",
+                  "profile_url": "/hotsonhonet",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5157521-kg.jpeg",
+                  "tier": "EXPERT",
+                  "url": "/hotsonhonet",
+                  "user_id": 5157521,
+                  "user_name": "hotsonhonet"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 2,
+                "total_votes": 2
+              }
+            },
+            "rawMarkdown": "![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F5157521%2F800f03713c4229901bf36edda2d4ee1c%2Fimage_2026-11-14_134757400.png?generation=1794644278629888&alt=media)\n\nfeeling bad for google, no frontier open weights model uses it 😂. \n\nWhat I have done is trained a model specific to closed weights model and performed the inference on the open weights model. This is the normalized confusion matrix (across rows) for it. This is the main reason why throwing more money on data generation is giving folks a good score as their model is seeing more examples of open weights model to build an segregation criteria.\n\nThe dataset I have used is shown here is from the provided training dataset.",
+            "replies": [],
+            "votes": {
+              "totalVotes": 2
+            }
+          },
+          {
+            "author": {
+              "displayName": "somerandomguy",
+              "tier": "CONTRIBUTOR",
+              "url": "/stithpragya"
+            },
+            "content": "<p>Anthropic claims their model being distilled, so yeah that explains some of that.</p>",
+            "id": 3550042,
+            "isThankYou": false,
+            "postDate": "2026-11-04T17:48:06.763Z",
+            "raw": {
+              "author": {
+                "display_name": "somerandomguy",
+                "id": 22597865,
+                "progression_opt_out": true,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                "tier": "CONTRIBUTOR",
+                "url": "/stithpragya"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 11,
+              "content": "<p>Anthropic claims their model being distilled, so yeah that explains some of that.</p>",
+              "feedback_tracking_data": {},
+              "id": 3550042,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-04T17:48:06.763Z",
+              "raw_markdown": "Anthropic claims their model being distilled, so yeah that explains some of that.\n",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "somerandomguy",
+                  "id": 22597865,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/stithpragya",
+                  "progression_opt_out": true,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/stithpragya",
+                  "user_id": 22597865,
+                  "user_name": "stithpragya"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 4,
+                "total_votes": 4
+              }
+            },
+            "rawMarkdown": "Anthropic claims their model being distilled, so yeah that explains some of that.\n",
+            "replies": [],
+            "votes": {
+              "totalVotes": 4
+            }
+          },
+          {
+            "author": {
+              "displayName": "Subhranil Paul",
+              "tier": "CONTRIBUTOR",
+              "url": "/subhranilpaul"
+            },
+            "content": "<p><a href=\"https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities\" target=\"_blank\">https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities</a></p>",
+            "id": 3550388,
+            "isThankYou": false,
+            "postDate": "2026-11-05T07:19:34.257Z",
+            "raw": {
+              "author": {
+                "display_name": "Subhranil Paul",
+                "id": 9258646,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9258646-kg.jpg?t=2024-01-27-18-44-01",
+                "tier": "CONTRIBUTOR",
+                "url": "/subhranilpaul"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 2975,
+              "content": "<p><a href=\"https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities\" target=\"_blank\">https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities</a></p>",
+              "feedback_tracking_data": {},
+              "id": 3550388,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-05T07:19:34.257Z",
+              "raw_markdown": "https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Subhranil Paul",
+                  "id": 9258646,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/subhranilpaul",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9258646-kg.jpg?t=2024-01-27-18-44-01",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/subhranilpaul",
+                  "user_id": 9258646,
+                  "user_name": "subhranilpaul"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": 1
+              }
+            },
+            "rawMarkdown": "https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities",
+            "replies": [],
+            "votes": {
+              "totalVotes": 1
+            }
+          },
+          {
+            "author": {
+              "displayName": "hsiaosuan",
+              "tier": "EXPERT",
+              "url": "/hsiaosuan"
+            },
+            "content": "<p>XD same observations for mee as well \nTwo non-exclusive possibilities</p>\n<ol>\n<li>GLM distills claude</li>\n<li>GLM routes some requests to claude\nIMO both are very possible</li>\n</ol>",
+            "id": 3550370,
+            "isThankYou": false,
+            "postDate": "2026-11-05T06:37:43.387Z",
+            "raw": {
+              "author": {
+                "display_name": "hsiaosuan",
+                "id": 25207474,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25207474-kg.PNG?t=2025-06-25-05-59-19",
+                "tier": "EXPERT",
+                "url": "/hsiaosuan"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 1864,
+              "content": "<p>XD same observations for mee as well \nTwo non-exclusive possibilities</p>\n<ol>\n<li>GLM distills claude</li>\n<li>GLM routes some requests to claude\nIMO both are very possible</li>\n</ol>",
+              "feedback_tracking_data": {},
+              "id": 3550370,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-05T06:37:43.387Z",
+              "raw_markdown": "\nXD same observations for mee as well \nTwo non-exclusive possibilities\n1. GLM distills claude\n2. GLM routes some requests to claude\n\nIMO both are very possible",
+              "reactions": [
+                {
+                  "emoji": "SURPRISE",
+                  "featured_user_names": [
+                    "gauravbrills"
+                  ],
+                  "user_count": 1
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "hsiaosuan",
+                  "id": 25207474,
+                  "performance_tier": "EXPERT",
+                  "profile_url": "/hsiaosuan",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25207474-kg.PNG?t=2025-06-25-05-59-19",
+                  "tier": "EXPERT",
+                  "url": "/hsiaosuan",
+                  "user_id": 25207474,
+                  "user_name": "hsiaosuan"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": 1
+              }
+            },
+            "rawMarkdown": "\nXD same observations for mee as well \nTwo non-exclusive possibilities\n1. GLM distills claude\n2. GLM routes some requests to claude\n\nIMO both are very possible",
+            "replies": [],
+            "votes": {
+              "totalVotes": 1
+            }
+          },
+          {
+            "author": {
+              "displayName": "tingyi",
+              "tier": "EXPERT",
+              "url": "/chengtingyi"
+            },
+            "content": "<p>maybe GLM5.3 API will rerouter to fable5?</p>",
+            "id": 3549231,
+            "isThankYou": false,
+            "postDate": "2026-11-03T07:40:43.373Z",
+            "raw": {
+              "author": {
+                "display_name": "tingyi",
+                "id": 8788200,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8788200-kg.jpg?t=2026-10-27-16-32-40",
+                "tier": "EXPERT",
+                "url": "/chengtingyi"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 14,
+              "content": "<p>maybe GLM5.3 API will rerouter to fable5?</p>",
+              "feedback_tracking_data": {},
+              "id": 3549231,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-03T07:40:43.373Z",
+              "raw_markdown": "maybe GLM5.3 API will rerouter to fable5?",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "AyoGG",
+                  "id": 15255201,
+                  "performance_tier": "MASTER",
+                  "profile_url": "/ggayoayogg",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15255201-kg.png?t=2026-10-28-05-21-58",
+                  "tier": "MASTER",
+                  "url": "/ggayoayogg",
+                  "user_id": 15255201,
+                  "user_name": "ggayoayogg"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 2,
+                "total_votes": 2
+              }
+            },
+            "rawMarkdown": "maybe GLM5.3 API will rerouter to fable5?",
+            "replies": [],
+            "votes": {
+              "totalVotes": 2
+            }
+          },
+          {
+            "author": {
+              "displayName": "jp@sightsource",
+              "tier": "CONTRIBUTOR",
+              "url": "/jpsightsource"
+            },
+            "content": "<p>Z.AI has marketed GLM for use inside coding tools built around Claude, with an Anthropic-compatible API. Tuning a model to behave like a drop-in replacement for Claude would push its style toward Claude’s, whether or not Claude was distilled to create its weights.</p>",
+            "id": 3554009,
+            "isThankYou": false,
+            "postDate": "2026-11-12T14:09:00.693Z",
+            "raw": {
+              "author": {
+                "display_name": "jp@sightsource",
+                "id": 28499966,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/jpsightsource"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 1340,
+              "content": "<p>Z.AI has marketed GLM for use inside coding tools built around Claude, with an Anthropic-compatible API. Tuning a model to behave like a drop-in replacement for Claude would push its style toward Claude’s, whether or not Claude was distilled to create its weights.</p>",
+              "feedback_tracking_data": {},
+              "id": 3554009,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-12T14:09:00.693Z",
+              "raw_markdown": "Z.AI has marketed GLM for use inside coding tools built around Claude, with an Anthropic-compatible API. Tuning a model to behave like a drop-in replacement for Claude would push its style toward Claude’s, whether or not Claude was distilled to create its weights.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "jp@sightsource",
+                  "id": 28499966,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/jpsightsource",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/jpsightsource",
+                  "user_id": 28499966,
+                  "user_name": "jpsightsource"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "Z.AI has marketed GLM for use inside coding tools built around Claude, with an Anthropic-compatible API. Tuning a model to behave like a drop-in replacement for Claude would push its style toward Claude’s, whether or not Claude was distilled to create its weights.",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "expectedCommentCount": 6,
+        "firstMessage": {
+          "author": {
+            "displayName": "AyoGG",
+            "tier": "MASTER",
+            "url": "/ggayoayogg"
+          },
+          "content": "<p>Trained a 9B classifier to tell 18 LLMs apart.\nGemini only gets confused with Gemini. GPT only with GPT.\nGLM-5.3? Classified as Claude more often than as GLM-5.3 itself (68 vs 34 out of 150).\nFamily resemblance is a hell of a thing.</p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F15255201%2Fadc6e47319cc189848e66bbe504f7f53%2Fimage-1793691457725.png?generation=1793691468047983&amp;alt=media\" alt=\"\"></p>",
+          "id": 3549229,
+          "isThankYou": false,
+          "postDate": "2026-11-03T07:38:06.530Z",
+          "raw": {
+            "author": {
+              "display_name": "AyoGG",
+              "id": 15255201,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15255201-kg.png?t=2026-10-28-05-21-58",
+              "tier": "MASTER",
+              "url": "/ggayoayogg"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 14,
+            "content": "<p>Trained a 9B classifier to tell 18 LLMs apart.\nGemini only gets confused with Gemini. GPT only with GPT.\nGLM-5.3? Classified as Claude more often than as GLM-5.3 itself (68 vs 34 out of 150).\nFamily resemblance is a hell of a thing.</p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F15255201%2Fadc6e47319cc189848e66bbe504f7f53%2Fimage-1793691457725.png?generation=1793691468047983&amp;alt=media\" alt=\"\"></p>",
+            "feedback_tracking_data": {},
+            "id": 3549229,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-11-03T07:38:06.530Z",
+            "raw_markdown": "Trained a 9B classifier to tell 18 LLMs apart.\nGemini only gets confused with Gemini. GPT only with GPT.\nGLM-5.3? Classified as Claude more often than as GLM-5.3 itself (68 vs 34 out of 150).\nFamily resemblance is a hell of a thing.\n\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F15255201%2Fadc6e47319cc189848e66bbe504f7f53%2Fimage-1793691457725.png?generation=1793691468047983&alt=media)",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "AyoGG",
+                "id": 15255201,
+                "performance_tier": "MASTER",
+                "profile_url": "/ggayoayogg",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15255201-kg.png?t=2026-10-28-05-21-58",
+                "tier": "MASTER",
+                "url": "/ggayoayogg",
+                "user_id": 15255201,
+                "user_name": "ggayoayogg"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 9,
+              "total_votes": 9
+            }
+          },
+          "rawMarkdown": "Trained a 9B classifier to tell 18 LLMs apart.\nGemini only gets confused with Gemini. GPT only with GPT.\nGLM-5.3? Classified as Claude more often than as GLM-5.3 itself (68 vs 34 out of 150).\nFamily resemblance is a hell of a thing.\n\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F15255201%2Fadc6e47319cc189848e66bbe504f7f53%2Fimage-1793691457725.png?generation=1793691468047983&alt=media)",
+          "replies": [],
+          "votes": {
+            "totalVotes": 9
+          }
+        },
+        "firstMessageId": 3549229,
+        "id": 755314,
+        "name": "My classifier thinks GLM-5.3 is more Claude than GLM",
+        "postDate": "2026-11-03T07:38:06.530458200Z",
+        "url": "/competitions/name-that-llm/discussion/755314"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>Trained a 9B classifier to tell 18 LLMs apart.\nGemini only gets confused with Gemini. GPT only with GPT.\nGLM-5.3? Classified as Claude more often than as GLM-5.3 itself (68 vs 34 out of 150).\nFamily resemblance is a hell of a thing.</p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F15255201%2Fadc6e47319cc189848e66bbe504f7f53%2Fimage-1793691457725.png?generation=1793691468047983&amp;alt=media\" alt=\"\"></p>",
+              "id": 3549229,
+              "post_date": "2026-11-03T07:38:06.530Z",
+              "raw_markdown": "Trained a 9B classifier to tell 18 LLMs apart.\nGemini only gets confused with Gemini. GPT only with GPT.\nGLM-5.3? Classified as Claude more often than as GLM-5.3 itself (68 vs 34 out of 150).\nFamily resemblance is a hell of a thing.\n\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F15255201%2Fadc6e47319cc189848e66bbe504f7f53%2Fimage-1793691457725.png?generation=1793691468047983&alt=media)",
+              "votes": 9
+            },
+            {
+              "content": "<p>maybe GLM5.3 API will rerouter to fable5?</p>",
+              "id": 3549231,
+              "post_date": "2026-11-03T07:40:43.373Z",
+              "raw_markdown": "maybe GLM5.3 API will rerouter to fable5?",
+              "votes": 2
+            },
+            {
+              "content": "<p>Anthropic claims their model being distilled, so yeah that explains some of that.</p>",
+              "id": 3550042,
+              "post_date": "2026-11-04T17:48:06.763Z",
+              "raw_markdown": "Anthropic claims their model being distilled, so yeah that explains some of that.\n",
+              "votes": 4
+            },
+            {
+              "content": "<p>XD same observations for mee as well \nTwo non-exclusive possibilities</p>\n<ol>\n<li>GLM distills claude</li>\n<li>GLM routes some requests to claude\nIMO both are very possible</li>\n</ol>",
+              "id": 3550370,
+              "post_date": "2026-11-05T06:37:43.387Z",
+              "raw_markdown": "\nXD same observations for mee as well \nTwo non-exclusive possibilities\n1. GLM distills claude\n2. GLM routes some requests to claude\n\nIMO both are very possible",
+              "votes": 1
+            },
+            {
+              "content": "<p><a href=\"https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities\" target=\"_blank\">https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities</a></p>",
+              "id": 3550388,
+              "post_date": "2026-11-05T07:19:34.257Z",
+              "raw_markdown": "https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities",
+              "votes": 1
+            },
+            {
+              "content": "<p>Z.AI has marketed GLM for use inside coding tools built around Claude, with an Anthropic-compatible API. Tuning a model to behave like a drop-in replacement for Claude would push its style toward Claude’s, whether or not Claude was distilled to create its weights.</p>",
+              "id": 3554009,
+              "post_date": "2026-11-12T14:09:00.693Z",
+              "raw_markdown": "Z.AI has marketed GLM for use inside coding tools built around Claude, with an Anthropic-compatible API. Tuning a model to behave like a drop-in replacement for Claude would push its style toward Claude’s, whether or not Claude was distilled to create its weights."
+            },
+            {
+              "content": "<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F5157521%2F800f03713c4229901bf36edda2d4ee1c%2Fimage_2026-11-14_134757400.png?generation=1794644278629888&amp;alt=media\" alt=\"\"></p>\n<p>feeling bad for google, no frontier open weights model uses it 😂. </p>\n<p>What I have done is trained a model specific to closed weights model and performed the inference on the open weights model. This is the normalized confusion matrix (across rows) for it. This is the main reason why throwing more money on data generation is giving folks a good score as their model is seeing more examples of open weights model to build an segregation criteria.</p>\n<p>The dataset I have used is shown here is from the provided training dataset.</p>",
+              "id": 3554954,
+              "post_date": "2026-11-14T08:24:36.907Z",
+              "raw_markdown": "![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F5157521%2F800f03713c4229901bf36edda2d4ee1c%2Fimage_2026-11-14_134757400.png?generation=1794644278629888&alt=media)\n\nfeeling bad for google, no frontier open weights model uses it 😂. \n\nWhat I have done is trained a model specific to closed weights model and performed the inference on the open weights model. This is the normalized confusion matrix (across rows) for it. This is the main reason why throwing more money on data generation is giving folks a good score as their model is seeing more examples of open weights model to build an segregation criteria.\n\nThe dataset I have used is shown here is from the provided training dataset.",
+              "votes": 2
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 15255201,
+            "author_performance_tier": "MASTER",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "15255201-kg.png?t=2026-10-28-05-21-58",
+            "author_user_display_name": "AyoGG",
+            "author_user_name": "ggayoayogg",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "comments": [
+              {
+                "author": {
+                  "display_name": "Hotson Honet",
+                  "id": 5157521,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5157521-kg.jpeg",
+                  "tier": "EXPERT",
+                  "url": "/hotsonhonet"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 3452,
+                "content": "<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F5157521%2F800f03713c4229901bf36edda2d4ee1c%2Fimage_2026-11-14_134757400.png?generation=1794644278629888&amp;alt=media\" alt=\"\"></p>\n<p>feeling bad for google, no frontier open weights model uses it 😂. </p>\n<p>What I have done is trained a model specific to closed weights model and performed the inference on the open weights model. This is the normalized confusion matrix (across rows) for it. This is the main reason why throwing more money on data generation is giving folks a good score as their model is seeing more examples of open weights model to build an segregation criteria.</p>\n<p>The dataset I have used is shown here is from the provided training dataset.</p>",
+                "feedback_tracking_data": {},
+                "id": 3554954,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-11-14T08:24:36.907Z",
+                "raw_markdown": "![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F5157521%2F800f03713c4229901bf36edda2d4ee1c%2Fimage_2026-11-14_134757400.png?generation=1794644278629888&alt=media)\n\nfeeling bad for google, no frontier open weights model uses it 😂. \n\nWhat I have done is trained a model specific to closed weights model and performed the inference on the open weights model. This is the normalized confusion matrix (across rows) for it. This is the main reason why throwing more money on data generation is giving folks a good score as their model is seeing more examples of open weights model to build an segregation criteria.\n\nThe dataset I have used is shown here is from the provided training dataset.",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "Hotson Honet",
+                    "id": 5157521,
+                    "performance_tier": "EXPERT",
+                    "profile_url": "/hotsonhonet",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5157521-kg.jpeg",
+                    "tier": "EXPERT",
+                    "url": "/hotsonhonet",
+                    "user_id": 5157521,
+                    "user_name": "hotsonhonet"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true,
+                  "total_upvotes": 2,
+                  "total_votes": 2
+                }
+              },
+              {
+                "author": {
+                  "display_name": "somerandomguy",
+                  "id": 22597865,
+                  "progression_opt_out": true,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/stithpragya"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 11,
+                "content": "<p>Anthropic claims their model being distilled, so yeah that explains some of that.</p>",
+                "feedback_tracking_data": {},
+                "id": 3550042,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-11-04T17:48:06.763Z",
+                "raw_markdown": "Anthropic claims their model being distilled, so yeah that explains some of that.\n",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "somerandomguy",
+                    "id": 22597865,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/stithpragya",
+                    "progression_opt_out": true,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/stithpragya",
+                    "user_id": 22597865,
+                    "user_name": "stithpragya"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true,
+                  "total_upvotes": 4,
+                  "total_votes": 4
+                }
+              },
+              {
+                "author": {
+                  "display_name": "Subhranil Paul",
+                  "id": 9258646,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9258646-kg.jpg?t=2024-01-27-18-44-01",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/subhranilpaul"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 2975,
+                "content": "<p><a href=\"https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities\" target=\"_blank\">https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities</a></p>",
+                "feedback_tracking_data": {},
+                "id": 3550388,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-11-05T07:19:34.257Z",
+                "raw_markdown": "https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "Subhranil Paul",
+                    "id": 9258646,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/subhranilpaul",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9258646-kg.jpg?t=2024-01-27-18-44-01",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/subhranilpaul",
+                    "user_id": 9258646,
+                    "user_name": "subhranilpaul"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true,
+                  "total_upvotes": 1,
+                  "total_votes": 1
+                }
+              },
+              {
+                "author": {
+                  "display_name": "hsiaosuan",
+                  "id": 25207474,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25207474-kg.PNG?t=2025-06-25-05-59-19",
+                  "tier": "EXPERT",
+                  "url": "/hsiaosuan"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 1864,
+                "content": "<p>XD same observations for mee as well \nTwo non-exclusive possibilities</p>\n<ol>\n<li>GLM distills claude</li>\n<li>GLM routes some requests to claude\nIMO both are very possible</li>\n</ol>",
+                "feedback_tracking_data": {},
+                "id": 3550370,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-11-05T06:37:43.387Z",
+                "raw_markdown": "\nXD same observations for mee as well \nTwo non-exclusive possibilities\n1. GLM distills claude\n2. GLM routes some requests to claude\n\nIMO both are very possible",
+                "reactions": [
+                  {
+                    "emoji": "SURPRISE",
+                    "featured_user_names": [
+                      "gauravbrills"
+                    ],
+                    "user_count": 1
+                  }
+                ],
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "hsiaosuan",
+                    "id": 25207474,
+                    "performance_tier": "EXPERT",
+                    "profile_url": "/hsiaosuan",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25207474-kg.PNG?t=2025-06-25-05-59-19",
+                    "tier": "EXPERT",
+                    "url": "/hsiaosuan",
+                    "user_id": 25207474,
+                    "user_name": "hsiaosuan"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true,
+                  "total_upvotes": 1,
+                  "total_votes": 1
+                }
+              },
+              {
+                "author": {
+                  "display_name": "tingyi",
+                  "id": 8788200,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8788200-kg.jpg?t=2026-10-27-16-32-40",
+                  "tier": "EXPERT",
+                  "url": "/chengtingyi"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 14,
+                "content": "<p>maybe GLM5.3 API will rerouter to fable5?</p>",
+                "feedback_tracking_data": {},
+                "id": 3549231,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-11-03T07:40:43.373Z",
+                "raw_markdown": "maybe GLM5.3 API will rerouter to fable5?",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "AyoGG",
+                    "id": 15255201,
+                    "performance_tier": "MASTER",
+                    "profile_url": "/ggayoayogg",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15255201-kg.png?t=2026-10-28-05-21-58",
+                    "tier": "MASTER",
+                    "url": "/ggayoayogg",
+                    "user_id": 15255201,
+                    "user_name": "ggayoayogg"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true,
+                  "total_upvotes": 2,
+                  "total_votes": 2
+                }
+              },
+              {
+                "author": {
+                  "display_name": "jp@sightsource",
+                  "id": 28499966,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/jpsightsource"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 1340,
+                "content": "<p>Z.AI has marketed GLM for use inside coding tools built around Claude, with an Anthropic-compatible API. Tuning a model to behave like a drop-in replacement for Claude would push its style toward Claude’s, whether or not Claude was distilled to create its weights.</p>",
+                "feedback_tracking_data": {},
+                "id": 3554009,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-11-12T14:09:00.693Z",
+                "raw_markdown": "Z.AI has marketed GLM for use inside coding tools built around Claude, with an Anthropic-compatible API. Tuning a model to behave like a drop-in replacement for Claude would push its style toward Claude’s, whether or not Claude was distilled to create its weights.",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "jp@sightsource",
+                    "id": 28499966,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/jpsightsource",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/jpsightsource",
+                    "user_id": 28499966,
+                    "user_name": "jpsightsource"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              }
+            ],
+            "first_message": {
+              "author": {
+                "display_name": "AyoGG",
+                "id": 15255201,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15255201-kg.png?t=2026-10-28-05-21-58",
+                "tier": "MASTER",
+                "url": "/ggayoayogg"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 14,
+              "content": "<p>Trained a 9B classifier to tell 18 LLMs apart.\nGemini only gets confused with Gemini. GPT only with GPT.\nGLM-5.3? Classified as Claude more often than as GLM-5.3 itself (68 vs 34 out of 150).\nFamily resemblance is a hell of a thing.</p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F15255201%2Fadc6e47319cc189848e66bbe504f7f53%2Fimage-1793691457725.png?generation=1793691468047983&amp;alt=media\" alt=\"\"></p>",
+              "feedback_tracking_data": {},
+              "id": 3549229,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-03T07:38:06.530Z",
+              "raw_markdown": "Trained a 9B classifier to tell 18 LLMs apart.\nGemini only gets confused with Gemini. GPT only with GPT.\nGLM-5.3? Classified as Claude more often than as GLM-5.3 itself (68 vs 34 out of 150).\nFamily resemblance is a hell of a thing.\n\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F15255201%2Fadc6e47319cc189848e66bbe504f7f53%2Fimage-1793691457725.png?generation=1793691468047983&alt=media)",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "AyoGG",
+                  "id": 15255201,
+                  "performance_tier": "MASTER",
+                  "profile_url": "/ggayoayogg",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15255201-kg.png?t=2026-10-28-05-21-58",
+                  "tier": "MASTER",
+                  "url": "/ggayoayogg",
+                  "user_id": 15255201,
+                  "user_name": "ggayoayogg"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 9,
+                "total_votes": 9
+              }
+            },
+            "first_message_id": 3549229,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 755314,
+            "name": "My classifier thinks GLM-5.3 is more Claude than GLM",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-11-03T07:38:06.530458200Z",
+            "total_messages": 6,
+            "total_votes": 9,
+            "url": "/competitions/name-that-llm/discussion/755314"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-18T09:02:19+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-18T09:02:19+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-11-14T08:24:36.906666700Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [
+    {
+      "slug": "name-that-llm",
+      "topic_id": 755314,
+      "message_id": 3549231,
+      "parent_message_id": null,
+      "author": "tingyi",
+      "author_url": "/chengtingyi",
+      "author_tier": "EXPERT",
+      "post_date": "2026-11-03T07:40:43.373Z",
+      "raw_markdown": "maybe GLM5.3 API will rerouter to fable5?",
+      "content_html": "<p>maybe GLM5.3 API will rerouter to fable5?</p>",
+      "votes": 2,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:58:17+00:00",
+      "last_seen_at": "2026-11-18T09:02:19+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T09:02:19+00:00",
+      "remote_last_listed_at": "2026-11-18T09:02:19+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "tingyi",
+          "tier": "EXPERT",
+          "url": "/chengtingyi"
+        },
+        "content": "<p>maybe GLM5.3 API will rerouter to fable5?</p>",
+        "id": 3549231,
+        "isThankYou": false,
+        "postDate": "2026-11-03T07:40:43.373Z",
+        "raw": {
+          "author": {
+            "display_name": "tingyi",
+            "id": 8788200,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8788200-kg.jpg?t=2026-10-27-16-32-40",
+            "tier": "EXPERT",
+            "url": "/chengtingyi"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 14,
+          "content": "<p>maybe GLM5.3 API will rerouter to fable5?</p>",
+          "feedback_tracking_data": {},
+          "id": 3549231,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-03T07:40:43.373Z",
+          "raw_markdown": "maybe GLM5.3 API will rerouter to fable5?",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "AyoGG",
+              "id": 15255201,
+              "performance_tier": "MASTER",
+              "profile_url": "/ggayoayogg",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15255201-kg.png?t=2026-10-28-05-21-58",
+              "tier": "MASTER",
+              "url": "/ggayoayogg",
+              "user_id": 15255201,
+              "user_name": "ggayoayogg"
+            }
+          },
+          "votes": {
+            "can_upvote": true,
+            "total_upvotes": 2,
+            "total_votes": 2
+          }
+        },
+        "rawMarkdown": "maybe GLM5.3 API will rerouter to fable5?",
+        "replies": [],
+        "votes": {
+          "totalVotes": 2
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 755314,
+      "message_id": 3550042,
+      "parent_message_id": null,
+      "author": "somerandomguy",
+      "author_url": "/stithpragya",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-04T17:48:06.763Z",
+      "raw_markdown": "Anthropic claims their model being distilled, so yeah that explains some of that.\n",
+      "content_html": "<p>Anthropic claims their model being distilled, so yeah that explains some of that.</p>",
+      "votes": 4,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-09T03:55:08+00:00",
+      "last_seen_at": "2026-11-18T09:02:19+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T09:02:19+00:00",
+      "remote_last_listed_at": "2026-11-18T09:02:19+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "somerandomguy",
+          "tier": "CONTRIBUTOR",
+          "url": "/stithpragya"
+        },
+        "content": "<p>Anthropic claims their model being distilled, so yeah that explains some of that.</p>",
+        "id": 3550042,
+        "isThankYou": false,
+        "postDate": "2026-11-04T17:48:06.763Z",
+        "raw": {
+          "author": {
+            "display_name": "somerandomguy",
+            "id": 22597865,
+            "progression_opt_out": true,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+            "tier": "CONTRIBUTOR",
+            "url": "/stithpragya"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 11,
+          "content": "<p>Anthropic claims their model being distilled, so yeah that explains some of that.</p>",
+          "feedback_tracking_data": {},
+          "id": 3550042,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-04T17:48:06.763Z",
+          "raw_markdown": "Anthropic claims their model being distilled, so yeah that explains some of that.\n",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "somerandomguy",
+              "id": 22597865,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/stithpragya",
+              "progression_opt_out": true,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+              "tier": "CONTRIBUTOR",
+              "url": "/stithpragya",
+              "user_id": 22597865,
+              "user_name": "stithpragya"
+            }
+          },
+          "votes": {
+            "can_upvote": true,
+            "total_upvotes": 4,
+            "total_votes": 4
+          }
+        },
+        "rawMarkdown": "Anthropic claims their model being distilled, so yeah that explains some of that.\n",
+        "replies": [],
+        "votes": {
+          "totalVotes": 4
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 755314,
+      "message_id": 3550370,
+      "parent_message_id": null,
+      "author": "hsiaosuan",
+      "author_url": "/hsiaosuan",
+      "author_tier": "EXPERT",
+      "post_date": "2026-11-05T06:37:43.387Z",
+      "raw_markdown": "\nXD same observations for mee as well \nTwo non-exclusive possibilities\n1. GLM distills claude\n2. GLM routes some requests to claude\n\nIMO both are very possible",
+      "content_html": "<p>XD same observations for mee as well \nTwo non-exclusive possibilities</p>\n<ol>\n<li>GLM distills claude</li>\n<li>GLM routes some requests to claude\nIMO both are very possible</li>\n</ol>",
+      "votes": 1,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-09T03:55:08+00:00",
+      "last_seen_at": "2026-11-18T09:02:19+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T09:02:19+00:00",
+      "remote_last_listed_at": "2026-11-18T09:02:19+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "hsiaosuan",
+          "tier": "EXPERT",
+          "url": "/hsiaosuan"
+        },
+        "content": "<p>XD same observations for mee as well \nTwo non-exclusive possibilities</p>\n<ol>\n<li>GLM distills claude</li>\n<li>GLM routes some requests to claude\nIMO both are very possible</li>\n</ol>",
+        "id": 3550370,
+        "isThankYou": false,
+        "postDate": "2026-11-05T06:37:43.387Z",
+        "raw": {
+          "author": {
+            "display_name": "hsiaosuan",
+            "id": 25207474,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25207474-kg.PNG?t=2025-06-25-05-59-19",
+            "tier": "EXPERT",
+            "url": "/hsiaosuan"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 1864,
+          "content": "<p>XD same observations for mee as well \nTwo non-exclusive possibilities</p>\n<ol>\n<li>GLM distills claude</li>\n<li>GLM routes some requests to claude\nIMO both are very possible</li>\n</ol>",
+          "feedback_tracking_data": {},
+          "id": 3550370,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-05T06:37:43.387Z",
+          "raw_markdown": "\nXD same observations for mee as well \nTwo non-exclusive possibilities\n1. GLM distills claude\n2. GLM routes some requests to claude\n\nIMO both are very possible",
+          "reactions": [
+            {
+              "emoji": "SURPRISE",
+              "featured_user_names": [
+                "gauravbrills"
+              ],
+              "user_count": 1
+            }
+          ],
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "hsiaosuan",
+              "id": 25207474,
+              "performance_tier": "EXPERT",
+              "profile_url": "/hsiaosuan",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25207474-kg.PNG?t=2025-06-25-05-59-19",
+              "tier": "EXPERT",
+              "url": "/hsiaosuan",
+              "user_id": 25207474,
+              "user_name": "hsiaosuan"
+            }
+          },
+          "votes": {
+            "can_upvote": true,
+            "total_upvotes": 1,
+            "total_votes": 1
+          }
+        },
+        "rawMarkdown": "\nXD same observations for mee as well \nTwo non-exclusive possibilities\n1. GLM distills claude\n2. GLM routes some requests to claude\n\nIMO both are very possible",
+        "replies": [],
+        "votes": {
+          "totalVotes": 1
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 755314,
+      "message_id": 3550388,
+      "parent_message_id": null,
+      "author": "Subhranil Paul",
+      "author_url": "/subhranilpaul",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-05T07:19:34.257Z",
+      "raw_markdown": "https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities",
+      "content_html": "<p><a href=\"https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities\" target=\"_blank\">https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities</a></p>",
+      "votes": 1,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-09T03:55:08+00:00",
+      "last_seen_at": "2026-11-18T09:02:19+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T09:02:19+00:00",
+      "remote_last_listed_at": "2026-11-18T09:02:19+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Subhranil Paul",
+          "tier": "CONTRIBUTOR",
+          "url": "/subhranilpaul"
+        },
+        "content": "<p><a href=\"https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities\" target=\"_blank\">https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities</a></p>",
+        "id": 3550388,
+        "isThankYou": false,
+        "postDate": "2026-11-05T07:19:34.257Z",
+        "raw": {
+          "author": {
+            "display_name": "Subhranil Paul",
+            "id": 9258646,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9258646-kg.jpg?t=2024-01-27-18-44-01",
+            "tier": "CONTRIBUTOR",
+            "url": "/subhranilpaul"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 2975,
+          "content": "<p><a href=\"https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities\" target=\"_blank\">https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities</a></p>",
+          "feedback_tracking_data": {},
+          "id": 3550388,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-05T07:19:34.257Z",
+          "raw_markdown": "https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Subhranil Paul",
+              "id": 9258646,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/subhranilpaul",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9258646-kg.jpg?t=2024-01-27-18-44-01",
+              "tier": "CONTRIBUTOR",
+              "url": "/subhranilpaul",
+              "user_id": 9258646,
+              "user_name": "subhranilpaul"
+            }
+          },
+          "votes": {
+            "can_upvote": true,
+            "total_upvotes": 1,
+            "total_votes": 1
+          }
+        },
+        "rawMarkdown": "https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities",
+        "replies": [],
+        "votes": {
+          "totalVotes": 1
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 755314,
+      "message_id": 3554009,
+      "parent_message_id": null,
+      "author": "jp@sightsource",
+      "author_url": "/jpsightsource",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-12T14:09:00.693Z",
+      "raw_markdown": "Z.AI has marketed GLM for use inside coding tools built around Claude, with an Anthropic-compatible API. Tuning a model to behave like a drop-in replacement for Claude would push its style toward Claude’s, whether or not Claude was distilled to create its weights.",
+      "content_html": "<p>Z.AI has marketed GLM for use inside coding tools built around Claude, with an Anthropic-compatible API. Tuning a model to behave like a drop-in replacement for Claude would push its style toward Claude’s, whether or not Claude was distilled to create its weights.</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-16T16:22:15+00:00",
+      "last_seen_at": "2026-11-18T09:02:19+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T09:02:19+00:00",
+      "remote_last_listed_at": "2026-11-18T09:02:19+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "jp@sightsource",
+          "tier": "CONTRIBUTOR",
+          "url": "/jpsightsource"
+        },
+        "content": "<p>Z.AI has marketed GLM for use inside coding tools built around Claude, with an Anthropic-compatible API. Tuning a model to behave like a drop-in replacement for Claude would push its style toward Claude’s, whether or not Claude was distilled to create its weights.</p>",
+        "id": 3554009,
+        "isThankYou": false,
+        "postDate": "2026-11-12T14:09:00.693Z",
+        "raw": {
+          "author": {
+            "display_name": "jp@sightsource",
+            "id": 28499966,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+            "tier": "CONTRIBUTOR",
+            "url": "/jpsightsource"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 1340,
+          "content": "<p>Z.AI has marketed GLM for use inside coding tools built around Claude, with an Anthropic-compatible API. Tuning a model to behave like a drop-in replacement for Claude would push its style toward Claude’s, whether or not Claude was distilled to create its weights.</p>",
+          "feedback_tracking_data": {},
+          "id": 3554009,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-12T14:09:00.693Z",
+          "raw_markdown": "Z.AI has marketed GLM for use inside coding tools built around Claude, with an Anthropic-compatible API. Tuning a model to behave like a drop-in replacement for Claude would push its style toward Claude’s, whether or not Claude was distilled to create its weights.",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "jp@sightsource",
+              "id": 28499966,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/jpsightsource",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "CONTRIBUTOR",
+              "url": "/jpsightsource",
+              "user_id": 28499966,
+              "user_name": "jpsightsource"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "Z.AI has marketed GLM for use inside coding tools built around Claude, with an Anthropic-compatible API. Tuning a model to behave like a drop-in replacement for Claude would push its style toward Claude’s, whether or not Claude was distilled to create its weights.",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 755314,
+      "message_id": 3554954,
+      "parent_message_id": null,
+      "author": "Hotson Honet",
+      "author_url": "/hotsonhonet",
+      "author_tier": "EXPERT",
+      "post_date": "2026-11-14T08:24:36.907Z",
+      "raw_markdown": "![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F5157521%2F800f03713c4229901bf36edda2d4ee1c%2Fimage_2026-11-14_134757400.png?generation=1794644278629888&alt=media)\n\nfeeling bad for google, no frontier open weights model uses it 😂. \n\nWhat I have done is trained a model specific to closed weights model and performed the inference on the open weights model. This is the normalized confusion matrix (across rows) for it. This is the main reason why throwing more money on data generation is giving folks a good score as their model is seeing more examples of open weights model to build an segregation criteria.\n\nThe dataset I have used is shown here is from the provided training dataset.",
+      "content_html": "<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F5157521%2F800f03713c4229901bf36edda2d4ee1c%2Fimage_2026-11-14_134757400.png?generation=1794644278629888&amp;alt=media\" alt=\"\"></p>\n<p>feeling bad for google, no frontier open weights model uses it 😂. </p>\n<p>What I have done is trained a model specific to closed weights model and performed the inference on the open weights model. This is the normalized confusion matrix (across rows) for it. This is the main reason why throwing more money on data generation is giving folks a good score as their model is seeing more examples of open weights model to build an segregation criteria.</p>\n<p>The dataset I have used is shown here is from the provided training dataset.</p>",
+      "votes": 2,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-16T16:22:15+00:00",
+      "last_seen_at": "2026-11-18T09:02:19+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T09:02:19+00:00",
+      "remote_last_listed_at": "2026-11-18T09:02:19+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Hotson Honet",
+          "tier": "EXPERT",
+          "url": "/hotsonhonet"
+        },
+        "content": "<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F5157521%2F800f03713c4229901bf36edda2d4ee1c%2Fimage_2026-11-14_134757400.png?generation=1794644278629888&amp;alt=media\" alt=\"\"></p>\n<p>feeling bad for google, no frontier open weights model uses it 😂. </p>\n<p>What I have done is trained a model specific to closed weights model and performed the inference on the open weights model. This is the normalized confusion matrix (across rows) for it. This is the main reason why throwing more money on data generation is giving folks a good score as their model is seeing more examples of open weights model to build an segregation criteria.</p>\n<p>The dataset I have used is shown here is from the provided training dataset.</p>",
+        "id": 3554954,
+        "isThankYou": false,
+        "postDate": "2026-11-14T08:24:36.907Z",
+        "raw": {
+          "author": {
+            "display_name": "Hotson Honet",
+            "id": 5157521,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5157521-kg.jpeg",
+            "tier": "EXPERT",
+            "url": "/hotsonhonet"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 3452,
+          "content": "<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F5157521%2F800f03713c4229901bf36edda2d4ee1c%2Fimage_2026-11-14_134757400.png?generation=1794644278629888&amp;alt=media\" alt=\"\"></p>\n<p>feeling bad for google, no frontier open weights model uses it 😂. </p>\n<p>What I have done is trained a model specific to closed weights model and performed the inference on the open weights model. This is the normalized confusion matrix (across rows) for it. This is the main reason why throwing more money on data generation is giving folks a good score as their model is seeing more examples of open weights model to build an segregation criteria.</p>\n<p>The dataset I have used is shown here is from the provided training dataset.</p>",
+          "feedback_tracking_data": {},
+          "id": 3554954,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-14T08:24:36.907Z",
+          "raw_markdown": "![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F5157521%2F800f03713c4229901bf36edda2d4ee1c%2Fimage_2026-11-14_134757400.png?generation=1794644278629888&alt=media)\n\nfeeling bad for google, no frontier open weights model uses it 😂. \n\nWhat I have done is trained a model specific to closed weights model and performed the inference on the open weights model. This is the normalized confusion matrix (across rows) for it. This is the main reason why throwing more money on data generation is giving folks a good score as their model is seeing more examples of open weights model to build an segregation criteria.\n\nThe dataset I have used is shown here is from the provided training dataset.",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Hotson Honet",
+              "id": 5157521,
+              "performance_tier": "EXPERT",
+              "profile_url": "/hotsonhonet",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5157521-kg.jpeg",
+              "tier": "EXPERT",
+              "url": "/hotsonhonet",
+              "user_id": 5157521,
+              "user_name": "hotsonhonet"
+            }
+          },
+          "votes": {
+            "can_upvote": true,
+            "total_upvotes": 2,
+            "total_votes": 2
+          }
+        },
+        "rawMarkdown": "![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F5157521%2F800f03713c4229901bf36edda2d4ee1c%2Fimage_2026-11-14_134757400.png?generation=1794644278629888&alt=media)\n\nfeeling bad for google, no frontier open weights model uses it 😂. \n\nWhat I have done is trained a model specific to closed weights model and performed the inference on the open weights model. This is the normalized confusion matrix (across rows) for it. This is the main reason why throwing more money on data generation is giving folks a good score as their model is seeing more examples of open weights model to build an segregation criteria.\n\nThe dataset I have used is shown here is from the provided training dataset.",
+        "replies": [],
+        "votes": {
+          "totalVotes": 2
+        }
+      }
+    }
+  ],
+  "writeup": null
+}

@@ -1,0 +1,227 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 752810,
+    "title": "Same recipe, bigger pool: 36k → 124k passages took our blend from 0.618 to 0.639 CV (LB 0.586 → 0.617)",
+    "author": "Daniel Andres Miranda",
+    "author_url": "/danielandresmiranda",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-10-26T12:57:57.603569400Z",
+    "last_comment_post_date": "2026-10-26T12:57:57.603333300Z",
+    "comment_count": 0,
+    "votes": -2,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/752810",
+    "first_message_id": 3544878,
+    "first_seen_at": "2026-11-04T06:56:15+00:00",
+    "last_seen_at": "2026-11-16T16:36:03+00:00",
+    "detail_last_synced_at": "2026-11-16T16:23:49+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "5d885aa215e4dcebe2274f3c976087fdb0b8f50080f3d9b7f7c2378b0a389156",
+    "listing_metrics_hash": "71157cc16ff433a5a8a18f0931aab22d75677ac4ca2c82a767312fef3bc6f675",
+    "detail_content_hash": "e46d539ed4b1d35d3929a58f8b5ce3c3a0dc3a8cccb0a12a6119aff320500828",
+    "detail_last_checked_at": "2026-11-16T16:23:49+00:00",
+    "detail_next_check_at": "2026-11-23T16:23:49+00:00",
+    "detail_unchanged_count": 2,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 0,
+      "firstForumMessageId": null,
+      "id": 752810,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-10-26T12:57:57.603333300Z",
+      "postDate": "2026-10-26T12:57:57.603569400Z",
+      "raw": {
+        "id": 752810,
+        "last_comment_post_date": "2026-10-26T12:57:57.603333300Z",
+        "post_date": "2026-10-26T12:57:57.603569400Z",
+        "title": "Same recipe, bigger pool: 36k → 124k passages took our blend from 0.618 to 0.639 CV (LB 0.586 → 0.617)",
+        "topic_url": "/competitions/name-that-llm/discussion/752810",
+        "votes": -2
+      },
+      "title": "Same recipe, bigger pool: 36k → 124k passages took our blend from 0.618 to 0.639 CV (LB 0.586 → 0.617)",
+      "topicUrl": "/competitions/name-that-llm/discussion/752810",
+      "votes": -2
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "Daniel Andres Miranda",
+        "authorUserName": "danielandresmiranda",
+        "comments": [],
+        "expectedCommentCount": 0,
+        "firstMessage": {
+          "author": {
+            "displayName": "Daniel Andres Miranda",
+            "tier": "CONTRIBUTOR",
+            "url": "/danielandresmiranda"
+          },
+          "content": "<p>A short follow-up to <a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/751871\" target=\"_blank\">our earlier notes</a>. We kept our recipe fixed and only changed the stage-1 pool. Numbers are prompt-grouped 5-fold CV on the 2,699 host passages, each passage scored on its own (no test-time grouping), balanced accuracy.</p>\n<p><strong>Setup (unchanged).</strong> Qwen3.5-9B-Base cut to its first 19 layers (fits a T4 in fp16), LoRA r16 trained in two stages (1 epoch on the external pool with class weights, then 2 epochs on train), a readout that averages 8 layers with a LayerNorm each; plus the 4-view n-gram LinearSVC (chars 3–5, words 1–3, shape, function words) fit on train + pool.</p>\n<p><strong>The only change: the pool.</strong> We used <code>ntl_encoder_pool_122k.parquet</code> from nuridudak's <a href=\"https://www.kaggle.com/datasets/nuridudak/ntl-130k-clean-passages\" target=\"_blank\">130k clean passages</a>, added our own 1,538 OpenRouter passages, and dropped 112 rows (see the warning below): 123,851 passages, 3.1k–10.9k per model. Our old pool had 36,424.</p>\n<table>\n<thead>\n<tr>\n<th></th>\n<th>old pool (36k)</th>\n<th>new pool (124k)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>LoRA after stage 1 only, scored on all of train</td>\n<td>0.486</td>\n<td><strong>0.577</strong></td>\n</tr>\n<tr>\n<td>LoRA after stage 2, CV</td>\n<td>0.578</td>\n<td><strong>0.611</strong></td>\n</tr>\n<tr>\n<td>4-view n-gram SVC, CV</td>\n<td>0.436</td>\n<td><strong>0.467</strong></td>\n</tr>\n<tr>\n<td>Blend, CV (weights chosen by nested CV)</td>\n<td>0.618</td>\n<td><strong>0.639</strong></td>\n</tr>\n<tr>\n<td>Public LB</td>\n<td>0.586</td>\n<td><strong>0.617</strong></td>\n</tr>\n</tbody>\n</table>\n<p>Stage 1 alone on the bigger pool already matches what our full two-stage model reached before. The blend gain shows up in all five folds (0.613 / 0.626 / 0.635 / 0.652 / 0.671 against 0.602 / 0.604 / 0.626 / 0.615 / 0.645).</p>\n<p><strong>Warning about the 122k file.</strong> 96 of its rows come from the <code>train_regen</code> split of prvsiyan's extended dataset, which answers the host's train prompts (<code>subset == \"train_regen\"</code> in <code>ntl_merged_external.parquet</code>). Their TF-IDF similarity to train passages is twice that of the rest of the pool (median 0.18 against 0.09). That is a small leak into grouped CV, not a test problem, but worth removing. We also dropped 16 rows with cosine ≥ 0.3 to any train passage; after that, no pool row is closer to a train passage than 0.3 (passages answering the same train prompt sit at a median of 0.35).</p>\n<p><strong>Things that did not help us</strong> (CV of the blend, so you can skip them):</p>\n<ul>\n<li><strong>Qwen3-8B-Base as a second backbone</strong>, same two-stage recipe and an 8-layer readout: 0.559 alone, and blending it in gave 0.615 against 0.618. It is weaker and wrong on the same passages. It disagrees with our Qwen3.5 readout on 24.5% of passages, while our two Qwen3.5 readouts (8 layers and layer 18) disagree on 28.2%.</li>\n<li><strong>Learned stacking</strong> (per-member weights, per-class weights, or logistic regression on the members' log-probabilities): it tied or lost against fixed weights. With 2,699 rows, log-loss weights overfit and do not track balanced accuracy.</li>\n<li><strong>Tuning the 4-view SVC:</strong> the public config (C = 0.5, view weights 1 / 0.7 / 0.5 / 0.5) was already the best for the blend. A lower C makes the SVC better on its own (0.449 at C = 0.1) but the blend worse. Dropping the char view costs the most (−1.2).</li>\n<li><strong>Adding maniceet's GLM / GPT-5.6 passages to the old 36k pool:</strong> noise on the total. glm-5.3-flash and gpt-5.6-luna gained 3–5 points of recall, claude-fable-5 lost 3, and glm-5.3 did not move.</li>\n</ul>\n<p><strong>A Kaggle note.</strong> If a run fails with <code>ERRORED_MOUNTING_DATASET ... retry budget exhausted</code> and an empty log, it is Kaggle failing to mount an input dataset. Nothing ran and no GPU quota was used, so pushing the same version again worked for us.</p>\n<p>Credits: nuridudak for the merged pool (CC BY-SA 4.0) and every author of the datasets it merges; nishantdahal and huangkx666 for the two-stage recipe and the 4-view SVC; maniceet for the OpenRouter / OpenAI generations.</p>",
+          "id": 3544878,
+          "isThankYou": false,
+          "postDate": "2026-10-26T12:57:57.603Z",
+          "raw": {
+            "author": {
+              "display_name": "Daniel Andres Miranda",
+              "id": 5822289,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5822289-gr.jpg",
+              "tier": "CONTRIBUTOR",
+              "url": "/danielandresmiranda"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 2496,
+            "content": "<p>A short follow-up to <a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/751871\" target=\"_blank\">our earlier notes</a>. We kept our recipe fixed and only changed the stage-1 pool. Numbers are prompt-grouped 5-fold CV on the 2,699 host passages, each passage scored on its own (no test-time grouping), balanced accuracy.</p>\n<p><strong>Setup (unchanged).</strong> Qwen3.5-9B-Base cut to its first 19 layers (fits a T4 in fp16), LoRA r16 trained in two stages (1 epoch on the external pool with class weights, then 2 epochs on train), a readout that averages 8 layers with a LayerNorm each; plus the 4-view n-gram LinearSVC (chars 3–5, words 1–3, shape, function words) fit on train + pool.</p>\n<p><strong>The only change: the pool.</strong> We used <code>ntl_encoder_pool_122k.parquet</code> from nuridudak's <a href=\"https://www.kaggle.com/datasets/nuridudak/ntl-130k-clean-passages\" target=\"_blank\">130k clean passages</a>, added our own 1,538 OpenRouter passages, and dropped 112 rows (see the warning below): 123,851 passages, 3.1k–10.9k per model. Our old pool had 36,424.</p>\n<table>\n<thead>\n<tr>\n<th></th>\n<th>old pool (36k)</th>\n<th>new pool (124k)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>LoRA after stage 1 only, scored on all of train</td>\n<td>0.486</td>\n<td><strong>0.577</strong></td>\n</tr>\n<tr>\n<td>LoRA after stage 2, CV</td>\n<td>0.578</td>\n<td><strong>0.611</strong></td>\n</tr>\n<tr>\n<td>4-view n-gram SVC, CV</td>\n<td>0.436</td>\n<td><strong>0.467</strong></td>\n</tr>\n<tr>\n<td>Blend, CV (weights chosen by nested CV)</td>\n<td>0.618</td>\n<td><strong>0.639</strong></td>\n</tr>\n<tr>\n<td>Public LB</td>\n<td>0.586</td>\n<td><strong>0.617</strong></td>\n</tr>\n</tbody>\n</table>\n<p>Stage 1 alone on the bigger pool already matches what our full two-stage model reached before. The blend gain shows up in all five folds (0.613 / 0.626 / 0.635 / 0.652 / 0.671 against 0.602 / 0.604 / 0.626 / 0.615 / 0.645).</p>\n<p><strong>Warning about the 122k file.</strong> 96 of its rows come from the <code>train_regen</code> split of prvsiyan's extended dataset, which answers the host's train prompts (<code>subset == \"train_regen\"</code> in <code>ntl_merged_external.parquet</code>). Their TF-IDF similarity to train passages is twice that of the rest of the pool (median 0.18 against 0.09). That is a small leak into grouped CV, not a test problem, but worth removing. We also dropped 16 rows with cosine ≥ 0.3 to any train passage; after that, no pool row is closer to a train passage than 0.3 (passages answering the same train prompt sit at a median of 0.35).</p>\n<p><strong>Things that did not help us</strong> (CV of the blend, so you can skip them):</p>\n<ul>\n<li><strong>Qwen3-8B-Base as a second backbone</strong>, same two-stage recipe and an 8-layer readout: 0.559 alone, and blending it in gave 0.615 against 0.618. It is weaker and wrong on the same passages. It disagrees with our Qwen3.5 readout on 24.5% of passages, while our two Qwen3.5 readouts (8 layers and layer 18) disagree on 28.2%.</li>\n<li><strong>Learned stacking</strong> (per-member weights, per-class weights, or logistic regression on the members' log-probabilities): it tied or lost against fixed weights. With 2,699 rows, log-loss weights overfit and do not track balanced accuracy.</li>\n<li><strong>Tuning the 4-view SVC:</strong> the public config (C = 0.5, view weights 1 / 0.7 / 0.5 / 0.5) was already the best for the blend. A lower C makes the SVC better on its own (0.449 at C = 0.1) but the blend worse. Dropping the char view costs the most (−1.2).</li>\n<li><strong>Adding maniceet's GLM / GPT-5.6 passages to the old 36k pool:</strong> noise on the total. glm-5.3-flash and gpt-5.6-luna gained 3–5 points of recall, claude-fable-5 lost 3, and glm-5.3 did not move.</li>\n</ul>\n<p><strong>A Kaggle note.</strong> If a run fails with <code>ERRORED_MOUNTING_DATASET ... retry budget exhausted</code> and an empty log, it is Kaggle failing to mount an input dataset. Nothing ran and no GPU quota was used, so pushing the same version again worked for us.</p>\n<p>Credits: nuridudak for the merged pool (CC BY-SA 4.0) and every author of the datasets it merges; nishantdahal and huangkx666 for the two-stage recipe and the 4-view SVC; maniceet for the OpenRouter / OpenAI generations.</p>",
+            "feedback_tracking_data": {},
+            "id": 3544878,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-10-26T12:57:57.603Z",
+            "raw_markdown": "A short follow-up to [our earlier notes](https://www.kaggle.com/competitions/name-that-llm/discussion/751871). We kept our recipe fixed and only changed the stage-1 pool. Numbers are prompt-grouped 5-fold CV on the 2,699 host passages, each passage scored on its own (no test-time grouping), balanced accuracy.\n\n**Setup (unchanged).** Qwen3.5-9B-Base cut to its first 19 layers (fits a T4 in fp16), LoRA r16 trained in two stages (1 epoch on the external pool with class weights, then 2 epochs on train), a readout that averages 8 layers with a LayerNorm each; plus the 4-view n-gram LinearSVC (chars 3–5, words 1–3, shape, function words) fit on train + pool.\n\n**The only change: the pool.** We used `ntl_encoder_pool_122k.parquet` from nuridudak's [130k clean passages](https://www.kaggle.com/datasets/nuridudak/ntl-130k-clean-passages), added our own 1,538 OpenRouter passages, and dropped 112 rows (see the warning below): 123,851 passages, 3.1k–10.9k per model. Our old pool had 36,424.\n\n| | old pool (36k) | new pool (124k) |\n|---|---|---|\n| LoRA after stage 1 only, scored on all of train | 0.486 | **0.577** |\n| LoRA after stage 2, CV | 0.578 | **0.611** |\n| 4-view n-gram SVC, CV | 0.436 | **0.467** |\n| Blend, CV (weights chosen by nested CV) | 0.618 | **0.639** |\n| Public LB | 0.586 | **0.617** |\n\nStage 1 alone on the bigger pool already matches what our full two-stage model reached before. The blend gain shows up in all five folds (0.613 / 0.626 / 0.635 / 0.652 / 0.671 against 0.602 / 0.604 / 0.626 / 0.615 / 0.645).\n\n**Warning about the 122k file.** 96 of its rows come from the `train_regen` split of prvsiyan's extended dataset, which answers the host's train prompts (`subset == \"train_regen\"` in `ntl_merged_external.parquet`). Their TF-IDF similarity to train passages is twice that of the rest of the pool (median 0.18 against 0.09). That is a small leak into grouped CV, not a test problem, but worth removing. We also dropped 16 rows with cosine ≥ 0.3 to any train passage; after that, no pool row is closer to a train passage than 0.3 (passages answering the same train prompt sit at a median of 0.35).\n\n**Things that did not help us** (CV of the blend, so you can skip them):\n- **Qwen3-8B-Base as a second backbone**, same two-stage recipe and an 8-layer readout: 0.559 alone, and blending it in gave 0.615 against 0.618. It is weaker and wrong on the same passages. It disagrees with our Qwen3.5 readout on 24.5% of passages, while our two Qwen3.5 readouts (8 layers and layer 18) disagree on 28.2%.\n- **Learned stacking** (per-member weights, per-class weights, or logistic regression on the members' log-probabilities): it tied or lost against fixed weights. With 2,699 rows, log-loss weights overfit and do not track balanced accuracy.\n- **Tuning the 4-view SVC:** the public config (C = 0.5, view weights 1 / 0.7 / 0.5 / 0.5) was already the best for the blend. A lower C makes the SVC better on its own (0.449 at C = 0.1) but the blend worse. Dropping the char view costs the most (−1.2).\n- **Adding maniceet's GLM / GPT-5.6 passages to the old 36k pool:** noise on the total. glm-5.3-flash and gpt-5.6-luna gained 3–5 points of recall, claude-fable-5 lost 3, and glm-5.3 did not move.\n\n**A Kaggle note.** If a run fails with `ERRORED_MOUNTING_DATASET ... retry budget exhausted` and an empty log, it is Kaggle failing to mount an input dataset. Nothing ran and no GPU quota was used, so pushing the same version again worked for us.\n\nCredits: nuridudak for the merged pool (CC BY-SA 4.0) and every author of the datasets it merges; nishantdahal and huangkx666 for the two-stage recipe and the 4-view SVC; maniceet for the OpenRouter / OpenAI generations.",
+            "reactions": [
+              {
+                "emoji": "THANK_YOU",
+                "featured_user_names": [
+                  "yuqiannemo"
+                ],
+                "user_count": 1
+              }
+            ],
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "Daniel Andres Miranda",
+                "id": 5822289,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/danielandresmiranda",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5822289-gr.jpg",
+                "tier": "CONTRIBUTOR",
+                "url": "/danielandresmiranda",
+                "user_id": 5822289,
+                "user_name": "danielandresmiranda"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_votes": -2
+            }
+          },
+          "rawMarkdown": "A short follow-up to [our earlier notes](https://www.kaggle.com/competitions/name-that-llm/discussion/751871). We kept our recipe fixed and only changed the stage-1 pool. Numbers are prompt-grouped 5-fold CV on the 2,699 host passages, each passage scored on its own (no test-time grouping), balanced accuracy.\n\n**Setup (unchanged).** Qwen3.5-9B-Base cut to its first 19 layers (fits a T4 in fp16), LoRA r16 trained in two stages (1 epoch on the external pool with class weights, then 2 epochs on train), a readout that averages 8 layers with a LayerNorm each; plus the 4-view n-gram LinearSVC (chars 3–5, words 1–3, shape, function words) fit on train + pool.\n\n**The only change: the pool.** We used `ntl_encoder_pool_122k.parquet` from nuridudak's [130k clean passages](https://www.kaggle.com/datasets/nuridudak/ntl-130k-clean-passages), added our own 1,538 OpenRouter passages, and dropped 112 rows (see the warning below): 123,851 passages, 3.1k–10.9k per model. Our old pool had 36,424.\n\n| | old pool (36k) | new pool (124k) |\n|---|---|---|\n| LoRA after stage 1 only, scored on all of train | 0.486 | **0.577** |\n| LoRA after stage 2, CV | 0.578 | **0.611** |\n| 4-view n-gram SVC, CV | 0.436 | **0.467** |\n| Blend, CV (weights chosen by nested CV) | 0.618 | **0.639** |\n| Public LB | 0.586 | **0.617** |\n\nStage 1 alone on the bigger pool already matches what our full two-stage model reached before. The blend gain shows up in all five folds (0.613 / 0.626 / 0.635 / 0.652 / 0.671 against 0.602 / 0.604 / 0.626 / 0.615 / 0.645).\n\n**Warning about the 122k file.** 96 of its rows come from the `train_regen` split of prvsiyan's extended dataset, which answers the host's train prompts (`subset == \"train_regen\"` in `ntl_merged_external.parquet`). Their TF-IDF similarity to train passages is twice that of the rest of the pool (median 0.18 against 0.09). That is a small leak into grouped CV, not a test problem, but worth removing. We also dropped 16 rows with cosine ≥ 0.3 to any train passage; after that, no pool row is closer to a train passage than 0.3 (passages answering the same train prompt sit at a median of 0.35).\n\n**Things that did not help us** (CV of the blend, so you can skip them):\n- **Qwen3-8B-Base as a second backbone**, same two-stage recipe and an 8-layer readout: 0.559 alone, and blending it in gave 0.615 against 0.618. It is weaker and wrong on the same passages. It disagrees with our Qwen3.5 readout on 24.5% of passages, while our two Qwen3.5 readouts (8 layers and layer 18) disagree on 28.2%.\n- **Learned stacking** (per-member weights, per-class weights, or logistic regression on the members' log-probabilities): it tied or lost against fixed weights. With 2,699 rows, log-loss weights overfit and do not track balanced accuracy.\n- **Tuning the 4-view SVC:** the public config (C = 0.5, view weights 1 / 0.7 / 0.5 / 0.5) was already the best for the blend. A lower C makes the SVC better on its own (0.449 at C = 0.1) but the blend worse. Dropping the char view costs the most (−1.2).\n- **Adding maniceet's GLM / GPT-5.6 passages to the old 36k pool:** noise on the total. glm-5.3-flash and gpt-5.6-luna gained 3–5 points of recall, claude-fable-5 lost 3, and glm-5.3 did not move.\n\n**A Kaggle note.** If a run fails with `ERRORED_MOUNTING_DATASET ... retry budget exhausted` and an empty log, it is Kaggle failing to mount an input dataset. Nothing ran and no GPU quota was used, so pushing the same version again worked for us.\n\nCredits: nuridudak for the merged pool (CC BY-SA 4.0) and every author of the datasets it merges; nishantdahal and huangkx666 for the two-stage recipe and the 4-view SVC; maniceet for the OpenRouter / OpenAI generations.",
+          "replies": [],
+          "votes": {
+            "totalVotes": -2
+          }
+        },
+        "firstMessageId": 3544878,
+        "id": 752810,
+        "name": "Same recipe, bigger pool: 36k → 124k passages took our blend from 0.618 to 0.639 CV (LB 0.586 → 0.617)",
+        "postDate": "2026-10-26T12:57:57.603569400Z",
+        "url": "/competitions/name-that-llm/discussion/752810"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>A short follow-up to <a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/751871\" target=\"_blank\">our earlier notes</a>. We kept our recipe fixed and only changed the stage-1 pool. Numbers are prompt-grouped 5-fold CV on the 2,699 host passages, each passage scored on its own (no test-time grouping), balanced accuracy.</p>\n<p><strong>Setup (unchanged).</strong> Qwen3.5-9B-Base cut to its first 19 layers (fits a T4 in fp16), LoRA r16 trained in two stages (1 epoch on the external pool with class weights, then 2 epochs on train), a readout that averages 8 layers with a LayerNorm each; plus the 4-view n-gram LinearSVC (chars 3–5, words 1–3, shape, function words) fit on train + pool.</p>\n<p><strong>The only change: the pool.</strong> We used <code>ntl_encoder_pool_122k.parquet</code> from nuridudak's <a href=\"https://www.kaggle.com/datasets/nuridudak/ntl-130k-clean-passages\" target=\"_blank\">130k clean passages</a>, added our own 1,538 OpenRouter passages, and dropped 112 rows (see the warning below): 123,851 passages, 3.1k–10.9k per model. Our old pool had 36,424.</p>\n<table>\n<thead>\n<tr>\n<th></th>\n<th>old pool (36k)</th>\n<th>new pool (124k)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>LoRA after stage 1 only, scored on all of train</td>\n<td>0.486</td>\n<td><strong>0.577</strong></td>\n</tr>\n<tr>\n<td>LoRA after stage 2, CV</td>\n<td>0.578</td>\n<td><strong>0.611</strong></td>\n</tr>\n<tr>\n<td>4-view n-gram SVC, CV</td>\n<td>0.436</td>\n<td><strong>0.467</strong></td>\n</tr>\n<tr>\n<td>Blend, CV (weights chosen by nested CV)</td>\n<td>0.618</td>\n<td><strong>0.639</strong></td>\n</tr>\n<tr>\n<td>Public LB</td>\n<td>0.586</td>\n<td><strong>0.617</strong></td>\n</tr>\n</tbody>\n</table>\n<p>Stage 1 alone on the bigger pool already matches what our full two-stage model reached before. The blend gain shows up in all five folds (0.613 / 0.626 / 0.635 / 0.652 / 0.671 against 0.602 / 0.604 / 0.626 / 0.615 / 0.645).</p>\n<p><strong>Warning about the 122k file.</strong> 96 of its rows come from the <code>train_regen</code> split of prvsiyan's extended dataset, which answers the host's train prompts (<code>subset == \"train_regen\"</code> in <code>ntl_merged_external.parquet</code>). Their TF-IDF similarity to train passages is twice that of the rest of the pool (median 0.18 against 0.09). That is a small leak into grouped CV, not a test problem, but worth removing. We also dropped 16 rows with cosine ≥ 0.3 to any train passage; after that, no pool row is closer to a train passage than 0.3 (passages answering the same train prompt sit at a median of 0.35).</p>\n<p><strong>Things that did not help us</strong> (CV of the blend, so you can skip them):</p>\n<ul>\n<li><strong>Qwen3-8B-Base as a second backbone</strong>, same two-stage recipe and an 8-layer readout: 0.559 alone, and blending it in gave 0.615 against 0.618. It is weaker and wrong on the same passages. It disagrees with our Qwen3.5 readout on 24.5% of passages, while our two Qwen3.5 readouts (8 layers and layer 18) disagree on 28.2%.</li>\n<li><strong>Learned stacking</strong> (per-member weights, per-class weights, or logistic regression on the members' log-probabilities): it tied or lost against fixed weights. With 2,699 rows, log-loss weights overfit and do not track balanced accuracy.</li>\n<li><strong>Tuning the 4-view SVC:</strong> the public config (C = 0.5, view weights 1 / 0.7 / 0.5 / 0.5) was already the best for the blend. A lower C makes the SVC better on its own (0.449 at C = 0.1) but the blend worse. Dropping the char view costs the most (−1.2).</li>\n<li><strong>Adding maniceet's GLM / GPT-5.6 passages to the old 36k pool:</strong> noise on the total. glm-5.3-flash and gpt-5.6-luna gained 3–5 points of recall, claude-fable-5 lost 3, and glm-5.3 did not move.</li>\n</ul>\n<p><strong>A Kaggle note.</strong> If a run fails with <code>ERRORED_MOUNTING_DATASET ... retry budget exhausted</code> and an empty log, it is Kaggle failing to mount an input dataset. Nothing ran and no GPU quota was used, so pushing the same version again worked for us.</p>\n<p>Credits: nuridudak for the merged pool (CC BY-SA 4.0) and every author of the datasets it merges; nishantdahal and huangkx666 for the two-stage recipe and the 4-view SVC; maniceet for the OpenRouter / OpenAI generations.</p>",
+              "id": 3544878,
+              "post_date": "2026-10-26T12:57:57.603Z",
+              "raw_markdown": "A short follow-up to [our earlier notes](https://www.kaggle.com/competitions/name-that-llm/discussion/751871). We kept our recipe fixed and only changed the stage-1 pool. Numbers are prompt-grouped 5-fold CV on the 2,699 host passages, each passage scored on its own (no test-time grouping), balanced accuracy.\n\n**Setup (unchanged).** Qwen3.5-9B-Base cut to its first 19 layers (fits a T4 in fp16), LoRA r16 trained in two stages (1 epoch on the external pool with class weights, then 2 epochs on train), a readout that averages 8 layers with a LayerNorm each; plus the 4-view n-gram LinearSVC (chars 3–5, words 1–3, shape, function words) fit on train + pool.\n\n**The only change: the pool.** We used `ntl_encoder_pool_122k.parquet` from nuridudak's [130k clean passages](https://www.kaggle.com/datasets/nuridudak/ntl-130k-clean-passages), added our own 1,538 OpenRouter passages, and dropped 112 rows (see the warning below): 123,851 passages, 3.1k–10.9k per model. Our old pool had 36,424.\n\n| | old pool (36k) | new pool (124k) |\n|---|---|---|\n| LoRA after stage 1 only, scored on all of train | 0.486 | **0.577** |\n| LoRA after stage 2, CV | 0.578 | **0.611** |\n| 4-view n-gram SVC, CV | 0.436 | **0.467** |\n| Blend, CV (weights chosen by nested CV) | 0.618 | **0.639** |\n| Public LB | 0.586 | **0.617** |\n\nStage 1 alone on the bigger pool already matches what our full two-stage model reached before. The blend gain shows up in all five folds (0.613 / 0.626 / 0.635 / 0.652 / 0.671 against 0.602 / 0.604 / 0.626 / 0.615 / 0.645).\n\n**Warning about the 122k file.** 96 of its rows come from the `train_regen` split of prvsiyan's extended dataset, which answers the host's train prompts (`subset == \"train_regen\"` in `ntl_merged_external.parquet`). Their TF-IDF similarity to train passages is twice that of the rest of the pool (median 0.18 against 0.09). That is a small leak into grouped CV, not a test problem, but worth removing. We also dropped 16 rows with cosine ≥ 0.3 to any train passage; after that, no pool row is closer to a train passage than 0.3 (passages answering the same train prompt sit at a median of 0.35).\n\n**Things that did not help us** (CV of the blend, so you can skip them):\n- **Qwen3-8B-Base as a second backbone**, same two-stage recipe and an 8-layer readout: 0.559 alone, and blending it in gave 0.615 against 0.618. It is weaker and wrong on the same passages. It disagrees with our Qwen3.5 readout on 24.5% of passages, while our two Qwen3.5 readouts (8 layers and layer 18) disagree on 28.2%.\n- **Learned stacking** (per-member weights, per-class weights, or logistic regression on the members' log-probabilities): it tied or lost against fixed weights. With 2,699 rows, log-loss weights overfit and do not track balanced accuracy.\n- **Tuning the 4-view SVC:** the public config (C = 0.5, view weights 1 / 0.7 / 0.5 / 0.5) was already the best for the blend. A lower C makes the SVC better on its own (0.449 at C = 0.1) but the blend worse. Dropping the char view costs the most (−1.2).\n- **Adding maniceet's GLM / GPT-5.6 passages to the old 36k pool:** noise on the total. glm-5.3-flash and gpt-5.6-luna gained 3–5 points of recall, claude-fable-5 lost 3, and glm-5.3 did not move.\n\n**A Kaggle note.** If a run fails with `ERRORED_MOUNTING_DATASET ... retry budget exhausted` and an empty log, it is Kaggle failing to mount an input dataset. Nothing ran and no GPU quota was used, so pushing the same version again worked for us.\n\nCredits: nuridudak for the merged pool (CC BY-SA 4.0) and every author of the datasets it merges; nishantdahal and huangkx666 for the two-stage recipe and the 4-view SVC; maniceet for the OpenRouter / OpenAI generations.",
+              "votes": -2
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 5822289,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "5822289-gr.jpg",
+            "author_user_display_name": "Daniel Andres Miranda",
+            "author_user_name": "danielandresmiranda",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "first_message": {
+              "author": {
+                "display_name": "Daniel Andres Miranda",
+                "id": 5822289,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5822289-gr.jpg",
+                "tier": "CONTRIBUTOR",
+                "url": "/danielandresmiranda"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 2496,
+              "content": "<p>A short follow-up to <a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/751871\" target=\"_blank\">our earlier notes</a>. We kept our recipe fixed and only changed the stage-1 pool. Numbers are prompt-grouped 5-fold CV on the 2,699 host passages, each passage scored on its own (no test-time grouping), balanced accuracy.</p>\n<p><strong>Setup (unchanged).</strong> Qwen3.5-9B-Base cut to its first 19 layers (fits a T4 in fp16), LoRA r16 trained in two stages (1 epoch on the external pool with class weights, then 2 epochs on train), a readout that averages 8 layers with a LayerNorm each; plus the 4-view n-gram LinearSVC (chars 3–5, words 1–3, shape, function words) fit on train + pool.</p>\n<p><strong>The only change: the pool.</strong> We used <code>ntl_encoder_pool_122k.parquet</code> from nuridudak's <a href=\"https://www.kaggle.com/datasets/nuridudak/ntl-130k-clean-passages\" target=\"_blank\">130k clean passages</a>, added our own 1,538 OpenRouter passages, and dropped 112 rows (see the warning below): 123,851 passages, 3.1k–10.9k per model. Our old pool had 36,424.</p>\n<table>\n<thead>\n<tr>\n<th></th>\n<th>old pool (36k)</th>\n<th>new pool (124k)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>LoRA after stage 1 only, scored on all of train</td>\n<td>0.486</td>\n<td><strong>0.577</strong></td>\n</tr>\n<tr>\n<td>LoRA after stage 2, CV</td>\n<td>0.578</td>\n<td><strong>0.611</strong></td>\n</tr>\n<tr>\n<td>4-view n-gram SVC, CV</td>\n<td>0.436</td>\n<td><strong>0.467</strong></td>\n</tr>\n<tr>\n<td>Blend, CV (weights chosen by nested CV)</td>\n<td>0.618</td>\n<td><strong>0.639</strong></td>\n</tr>\n<tr>\n<td>Public LB</td>\n<td>0.586</td>\n<td><strong>0.617</strong></td>\n</tr>\n</tbody>\n</table>\n<p>Stage 1 alone on the bigger pool already matches what our full two-stage model reached before. The blend gain shows up in all five folds (0.613 / 0.626 / 0.635 / 0.652 / 0.671 against 0.602 / 0.604 / 0.626 / 0.615 / 0.645).</p>\n<p><strong>Warning about the 122k file.</strong> 96 of its rows come from the <code>train_regen</code> split of prvsiyan's extended dataset, which answers the host's train prompts (<code>subset == \"train_regen\"</code> in <code>ntl_merged_external.parquet</code>). Their TF-IDF similarity to train passages is twice that of the rest of the pool (median 0.18 against 0.09). That is a small leak into grouped CV, not a test problem, but worth removing. We also dropped 16 rows with cosine ≥ 0.3 to any train passage; after that, no pool row is closer to a train passage than 0.3 (passages answering the same train prompt sit at a median of 0.35).</p>\n<p><strong>Things that did not help us</strong> (CV of the blend, so you can skip them):</p>\n<ul>\n<li><strong>Qwen3-8B-Base as a second backbone</strong>, same two-stage recipe and an 8-layer readout: 0.559 alone, and blending it in gave 0.615 against 0.618. It is weaker and wrong on the same passages. It disagrees with our Qwen3.5 readout on 24.5% of passages, while our two Qwen3.5 readouts (8 layers and layer 18) disagree on 28.2%.</li>\n<li><strong>Learned stacking</strong> (per-member weights, per-class weights, or logistic regression on the members' log-probabilities): it tied or lost against fixed weights. With 2,699 rows, log-loss weights overfit and do not track balanced accuracy.</li>\n<li><strong>Tuning the 4-view SVC:</strong> the public config (C = 0.5, view weights 1 / 0.7 / 0.5 / 0.5) was already the best for the blend. A lower C makes the SVC better on its own (0.449 at C = 0.1) but the blend worse. Dropping the char view costs the most (−1.2).</li>\n<li><strong>Adding maniceet's GLM / GPT-5.6 passages to the old 36k pool:</strong> noise on the total. glm-5.3-flash and gpt-5.6-luna gained 3–5 points of recall, claude-fable-5 lost 3, and glm-5.3 did not move.</li>\n</ul>\n<p><strong>A Kaggle note.</strong> If a run fails with <code>ERRORED_MOUNTING_DATASET ... retry budget exhausted</code> and an empty log, it is Kaggle failing to mount an input dataset. Nothing ran and no GPU quota was used, so pushing the same version again worked for us.</p>\n<p>Credits: nuridudak for the merged pool (CC BY-SA 4.0) and every author of the datasets it merges; nishantdahal and huangkx666 for the two-stage recipe and the 4-view SVC; maniceet for the OpenRouter / OpenAI generations.</p>",
+              "feedback_tracking_data": {},
+              "id": 3544878,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-26T12:57:57.603Z",
+              "raw_markdown": "A short follow-up to [our earlier notes](https://www.kaggle.com/competitions/name-that-llm/discussion/751871). We kept our recipe fixed and only changed the stage-1 pool. Numbers are prompt-grouped 5-fold CV on the 2,699 host passages, each passage scored on its own (no test-time grouping), balanced accuracy.\n\n**Setup (unchanged).** Qwen3.5-9B-Base cut to its first 19 layers (fits a T4 in fp16), LoRA r16 trained in two stages (1 epoch on the external pool with class weights, then 2 epochs on train), a readout that averages 8 layers with a LayerNorm each; plus the 4-view n-gram LinearSVC (chars 3–5, words 1–3, shape, function words) fit on train + pool.\n\n**The only change: the pool.** We used `ntl_encoder_pool_122k.parquet` from nuridudak's [130k clean passages](https://www.kaggle.com/datasets/nuridudak/ntl-130k-clean-passages), added our own 1,538 OpenRouter passages, and dropped 112 rows (see the warning below): 123,851 passages, 3.1k–10.9k per model. Our old pool had 36,424.\n\n| | old pool (36k) | new pool (124k) |\n|---|---|---|\n| LoRA after stage 1 only, scored on all of train | 0.486 | **0.577** |\n| LoRA after stage 2, CV | 0.578 | **0.611** |\n| 4-view n-gram SVC, CV | 0.436 | **0.467** |\n| Blend, CV (weights chosen by nested CV) | 0.618 | **0.639** |\n| Public LB | 0.586 | **0.617** |\n\nStage 1 alone on the bigger pool already matches what our full two-stage model reached before. The blend gain shows up in all five folds (0.613 / 0.626 / 0.635 / 0.652 / 0.671 against 0.602 / 0.604 / 0.626 / 0.615 / 0.645).\n\n**Warning about the 122k file.** 96 of its rows come from the `train_regen` split of prvsiyan's extended dataset, which answers the host's train prompts (`subset == \"train_regen\"` in `ntl_merged_external.parquet`). Their TF-IDF similarity to train passages is twice that of the rest of the pool (median 0.18 against 0.09). That is a small leak into grouped CV, not a test problem, but worth removing. We also dropped 16 rows with cosine ≥ 0.3 to any train passage; after that, no pool row is closer to a train passage than 0.3 (passages answering the same train prompt sit at a median of 0.35).\n\n**Things that did not help us** (CV of the blend, so you can skip them):\n- **Qwen3-8B-Base as a second backbone**, same two-stage recipe and an 8-layer readout: 0.559 alone, and blending it in gave 0.615 against 0.618. It is weaker and wrong on the same passages. It disagrees with our Qwen3.5 readout on 24.5% of passages, while our two Qwen3.5 readouts (8 layers and layer 18) disagree on 28.2%.\n- **Learned stacking** (per-member weights, per-class weights, or logistic regression on the members' log-probabilities): it tied or lost against fixed weights. With 2,699 rows, log-loss weights overfit and do not track balanced accuracy.\n- **Tuning the 4-view SVC:** the public config (C = 0.5, view weights 1 / 0.7 / 0.5 / 0.5) was already the best for the blend. A lower C makes the SVC better on its own (0.449 at C = 0.1) but the blend worse. Dropping the char view costs the most (−1.2).\n- **Adding maniceet's GLM / GPT-5.6 passages to the old 36k pool:** noise on the total. glm-5.3-flash and gpt-5.6-luna gained 3–5 points of recall, claude-fable-5 lost 3, and glm-5.3 did not move.\n\n**A Kaggle note.** If a run fails with `ERRORED_MOUNTING_DATASET ... retry budget exhausted` and an empty log, it is Kaggle failing to mount an input dataset. Nothing ran and no GPU quota was used, so pushing the same version again worked for us.\n\nCredits: nuridudak for the merged pool (CC BY-SA 4.0) and every author of the datasets it merges; nishantdahal and huangkx666 for the two-stage recipe and the 4-view SVC; maniceet for the OpenRouter / OpenAI generations.",
+              "reactions": [
+                {
+                  "emoji": "THANK_YOU",
+                  "featured_user_names": [
+                    "yuqiannemo"
+                  ],
+                  "user_count": 1
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Daniel Andres Miranda",
+                  "id": 5822289,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/danielandresmiranda",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5822289-gr.jpg",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/danielandresmiranda",
+                  "user_id": 5822289,
+                  "user_name": "danielandresmiranda"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_votes": -2
+              }
+            },
+            "first_message_id": 3544878,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 752810,
+            "name": "Same recipe, bigger pool: 36k → 124k passages took our blend from 0.618 to 0.639 CV (LB 0.586 → 0.617)",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-10-26T12:57:57.603569400Z",
+            "total_votes": -2,
+            "url": "/competitions/name-that-llm/discussion/752810"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:23:49+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:23:49+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-10-26T12:57:57.603569400Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [],
+  "writeup": null
+}

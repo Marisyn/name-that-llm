@@ -1,0 +1,206 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 751690,
+    "title": "Question on rules: sharing aggregate stats and using third-party analysis tools",
+    "author": "Fernando Rodrigues",
+    "author_url": "/fernandosr85",
+    "author_tier": "EXPERT",
+    "post_date": "2026-10-22T14:01:59.349177100Z",
+    "last_comment_post_date": "2026-10-22T14:01:59.350Z",
+    "comment_count": 0,
+    "votes": 0,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/751690",
+    "first_message_id": 3542828,
+    "first_seen_at": "2026-11-04T06:56:17+00:00",
+    "last_seen_at": "2026-11-16T16:36:04+00:00",
+    "detail_last_synced_at": "2026-11-16T16:30:48+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "9290ffed3b1d6e67e97d1519406c40313dd41664b51fe3e49d63fdb57994be49",
+    "listing_metrics_hash": "1d7b01d39d998f5caf0eb285f7806c0632a1cb146aadc79a9504e2481370b229",
+    "detail_content_hash": "b9cbd226270710dbe4fc444864c066d09b8dfc7c631e04ca5739dba339ef308b",
+    "detail_last_checked_at": "2026-11-16T16:30:48+00:00",
+    "detail_next_check_at": "2026-11-23T16:30:48+00:00",
+    "detail_unchanged_count": 2,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 0,
+      "firstForumMessageId": null,
+      "id": 751690,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-10-22T14:01:59.350Z",
+      "postDate": "2026-10-22T14:01:59.349177100Z",
+      "raw": {
+        "id": 751690,
+        "last_comment_post_date": "2026-10-22T14:01:59.350Z",
+        "post_date": "2026-10-22T14:01:59.349177100Z",
+        "title": "Question on rules: sharing aggregate stats and using third-party analysis tools",
+        "topic_url": "/competitions/name-that-llm/discussion/751690"
+      },
+      "title": "Question on rules: sharing aggregate stats and using third-party analysis tools",
+      "topicUrl": "/competitions/name-that-llm/discussion/751690",
+      "votes": 0
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "EXPERT",
+        "authorUserDisplayName": "Fernando Rodrigues",
+        "authorUserName": "fernandosr85",
+        "comments": [],
+        "expectedCommentCount": 0,
+        "firstMessage": {
+          "author": {
+            "displayName": "Fernando Rodrigues",
+            "tier": "EXPERT",
+            "url": "/fernandosr85"
+          },
+          "content": "<p>Hi organizers,</p>\n<p>Two quick questions about Section 4.b (Data Security), to make sure I stay within the rules:</p>\n<ol>\n<li><p>Is it OK to share aggregate statistics derived from train.csv outside Kaggle (for example, a chart of punctuation rates per model, with no text excerpts), e.g. on social media or another community?</p></li>\n<li><p>Is it OK to analyze train.csv with third-party data tools (cloud notebooks or visualization platforms), or should the data stay only on Kaggle and local machines?</p></li>\n</ol>\n<p>If either is not allowed, I'll keep everything on Kaggle. Thanks!</p>",
+          "id": 3542828,
+          "isThankYou": false,
+          "postDate": "2026-10-22T14:01:59.350Z",
+          "raw": {
+            "author": {
+              "display_name": "Fernando Rodrigues",
+              "id": 5038632,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5038632-kg.png?t=2026-07-24-15-40-18",
+              "tier": "EXPERT",
+              "url": "/fernandosr85"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 3786,
+            "content": "<p>Hi organizers,</p>\n<p>Two quick questions about Section 4.b (Data Security), to make sure I stay within the rules:</p>\n<ol>\n<li><p>Is it OK to share aggregate statistics derived from train.csv outside Kaggle (for example, a chart of punctuation rates per model, with no text excerpts), e.g. on social media or another community?</p></li>\n<li><p>Is it OK to analyze train.csv with third-party data tools (cloud notebooks or visualization platforms), or should the data stay only on Kaggle and local machines?</p></li>\n</ol>\n<p>If either is not allowed, I'll keep everything on Kaggle. Thanks!</p>",
+            "feedback_tracking_data": {},
+            "id": 3542828,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-10-22T14:01:59.350Z",
+            "raw_markdown": "Hi organizers,\n\nTwo quick questions about Section 4.b (Data Security), to make sure I stay within the rules:\n\n1. Is it OK to share aggregate statistics derived from train.csv outside Kaggle (for example, a chart of punctuation rates per model, with no text excerpts), e.g. on social media or another community?\n\n2. Is it OK to analyze train.csv with third-party data tools (cloud notebooks or visualization platforms), or should the data stay only on Kaggle and local machines?\n\nIf either is not allowed, I'll keep everything on Kaggle. Thanks!",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "Fernando Rodrigues",
+                "id": 5038632,
+                "performance_tier": "EXPERT",
+                "profile_url": "/fernandosr85",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5038632-kg.png?t=2026-07-24-15-40-18",
+                "tier": "EXPERT",
+                "url": "/fernandosr85",
+                "user_id": 5038632,
+                "user_name": "fernandosr85"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 1
+            }
+          },
+          "rawMarkdown": "Hi organizers,\n\nTwo quick questions about Section 4.b (Data Security), to make sure I stay within the rules:\n\n1. Is it OK to share aggregate statistics derived from train.csv outside Kaggle (for example, a chart of punctuation rates per model, with no text excerpts), e.g. on social media or another community?\n\n2. Is it OK to analyze train.csv with third-party data tools (cloud notebooks or visualization platforms), or should the data stay only on Kaggle and local machines?\n\nIf either is not allowed, I'll keep everything on Kaggle. Thanks!",
+          "replies": [],
+          "votes": {
+            "totalVotes": 0
+          }
+        },
+        "firstMessageId": 3542828,
+        "id": 751690,
+        "name": "Question on rules: sharing aggregate stats and using third-party analysis tools",
+        "postDate": "2026-10-22T14:01:59.349177100Z",
+        "url": "/competitions/name-that-llm/discussion/751690"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>Hi organizers,</p>\n<p>Two quick questions about Section 4.b (Data Security), to make sure I stay within the rules:</p>\n<ol>\n<li><p>Is it OK to share aggregate statistics derived from train.csv outside Kaggle (for example, a chart of punctuation rates per model, with no text excerpts), e.g. on social media or another community?</p></li>\n<li><p>Is it OK to analyze train.csv with third-party data tools (cloud notebooks or visualization platforms), or should the data stay only on Kaggle and local machines?</p></li>\n</ol>\n<p>If either is not allowed, I'll keep everything on Kaggle. Thanks!</p>",
+              "id": 3542828,
+              "post_date": "2026-10-22T14:01:59.350Z",
+              "raw_markdown": "Hi organizers,\n\nTwo quick questions about Section 4.b (Data Security), to make sure I stay within the rules:\n\n1. Is it OK to share aggregate statistics derived from train.csv outside Kaggle (for example, a chart of punctuation rates per model, with no text excerpts), e.g. on social media or another community?\n\n2. Is it OK to analyze train.csv with third-party data tools (cloud notebooks or visualization platforms), or should the data stay only on Kaggle and local machines?\n\nIf either is not allowed, I'll keep everything on Kaggle. Thanks!"
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 5038632,
+            "author_performance_tier": "EXPERT",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "5038632-kg.png?t=2026-07-24-15-40-18",
+            "author_user_display_name": "Fernando Rodrigues",
+            "author_user_name": "fernandosr85",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "first_message": {
+              "author": {
+                "display_name": "Fernando Rodrigues",
+                "id": 5038632,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5038632-kg.png?t=2026-07-24-15-40-18",
+                "tier": "EXPERT",
+                "url": "/fernandosr85"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 3786,
+              "content": "<p>Hi organizers,</p>\n<p>Two quick questions about Section 4.b (Data Security), to make sure I stay within the rules:</p>\n<ol>\n<li><p>Is it OK to share aggregate statistics derived from train.csv outside Kaggle (for example, a chart of punctuation rates per model, with no text excerpts), e.g. on social media or another community?</p></li>\n<li><p>Is it OK to analyze train.csv with third-party data tools (cloud notebooks or visualization platforms), or should the data stay only on Kaggle and local machines?</p></li>\n</ol>\n<p>If either is not allowed, I'll keep everything on Kaggle. Thanks!</p>",
+              "feedback_tracking_data": {},
+              "id": 3542828,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-22T14:01:59.350Z",
+              "raw_markdown": "Hi organizers,\n\nTwo quick questions about Section 4.b (Data Security), to make sure I stay within the rules:\n\n1. Is it OK to share aggregate statistics derived from train.csv outside Kaggle (for example, a chart of punctuation rates per model, with no text excerpts), e.g. on social media or another community?\n\n2. Is it OK to analyze train.csv with third-party data tools (cloud notebooks or visualization platforms), or should the data stay only on Kaggle and local machines?\n\nIf either is not allowed, I'll keep everything on Kaggle. Thanks!",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Fernando Rodrigues",
+                  "id": 5038632,
+                  "performance_tier": "EXPERT",
+                  "profile_url": "/fernandosr85",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5038632-kg.png?t=2026-07-24-15-40-18",
+                  "tier": "EXPERT",
+                  "url": "/fernandosr85",
+                  "user_id": 5038632,
+                  "user_name": "fernandosr85"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1
+              }
+            },
+            "first_message_id": 3542828,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 751690,
+            "name": "Question on rules: sharing aggregate stats and using third-party analysis tools",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-10-22T14:01:59.349177100Z",
+            "url": "/competitions/name-that-llm/discussion/751690"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:30:48+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:30:48+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-10-22T14:01:59.350Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [],
+  "writeup": null
+}

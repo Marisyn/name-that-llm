@@ -1,0 +1,229 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 751294,
+    "title": "Rule 2.6: is paid-API synthetic training data acceptable if published as a public dataset?",
+    "author": "Andres Carmona",
+    "author_url": "/andrescarmona",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-10-21T09:32:39.967979900Z",
+    "last_comment_post_date": "2026-10-21T09:32:39.966666700Z",
+    "comment_count": 0,
+    "votes": 3,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/751294",
+    "first_message_id": 3542054,
+    "first_seen_at": "2026-11-04T06:56:17+00:00",
+    "last_seen_at": "2026-11-16T16:36:04+00:00",
+    "detail_last_synced_at": "2026-11-16T16:31:00+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "91eee357413f92c51fc74e54e5b66518bffdbba2e7d3ea7e09f35b87d0f7f5bf",
+    "listing_metrics_hash": "6d8a74dbac9b4cd94399e9cc1520c8e662b0bbcc16c76b670939fedc4deb1f33",
+    "detail_content_hash": "8fd73b9cebc84d1349728d4396eb5273e30a6c1fe1ed5afac16aad8ff863a67c",
+    "detail_last_checked_at": "2026-11-16T16:31:00+00:00",
+    "detail_next_check_at": "2026-11-23T16:31:00+00:00",
+    "detail_unchanged_count": 2,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 0,
+      "firstForumMessageId": null,
+      "id": 751294,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-10-21T09:32:39.966666700Z",
+      "postDate": "2026-10-21T09:32:39.967979900Z",
+      "raw": {
+        "id": 751294,
+        "last_comment_post_date": "2026-10-21T09:32:39.966666700Z",
+        "post_date": "2026-10-21T09:32:39.967979900Z",
+        "title": "Rule 2.6: is paid-API synthetic training data acceptable if published as a public dataset?",
+        "topic_url": "/competitions/name-that-llm/discussion/751294",
+        "votes": 3
+      },
+      "title": "Rule 2.6: is paid-API synthetic training data acceptable if published as a public dataset?",
+      "topicUrl": "/competitions/name-that-llm/discussion/751294",
+      "votes": 3
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "Andres Carmona",
+        "authorUserName": "andrescarmona",
+        "comments": [],
+        "expectedCommentCount": 0,
+        "firstMessage": {
+          "author": {
+            "displayName": "Andres Carmona",
+            "tier": "CONTRIBUTOR",
+            "url": "/andrescarmona"
+          },
+          "content": "<p>Hi! Rule 2.6 allows external data if it is publicly available to all participants at no cost, or if the host considers it reasonably accessible at minimal cost.\nWe would like to build a small extra training set by generating text with some of the 18 listed models through a paid API (OpenRouter). Details:</p>\n<ul>\n<li>The prompts are written by us from scratch. No competition text (train or test) is sent to any service.</li>\n<li>Total cost is around US$2.</li>\n<li>We would publish the resulting dataset publicly on Kaggle before using it in any submission, so every participant can use it.</li>\n<li>We would also check each provider's terms of use before publishing.\nWould you consider this acceptable under rule 2.6? Or is paid-API generation not acceptable regardless of cost or publication? Thanks!</li>\n</ul>",
+          "id": 3542054,
+          "isThankYou": false,
+          "postDate": "2026-10-21T09:32:39.967Z",
+          "raw": {
+            "author": {
+              "display_name": "Andres Carmona",
+              "id": 6232428,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/6232428-kg.jpg?t=2026-04-23-08-19-12",
+              "tier": "CONTRIBUTOR",
+              "url": "/andrescarmona"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 4800,
+            "content": "<p>Hi! Rule 2.6 allows external data if it is publicly available to all participants at no cost, or if the host considers it reasonably accessible at minimal cost.\nWe would like to build a small extra training set by generating text with some of the 18 listed models through a paid API (OpenRouter). Details:</p>\n<ul>\n<li>The prompts are written by us from scratch. No competition text (train or test) is sent to any service.</li>\n<li>Total cost is around US$2.</li>\n<li>We would publish the resulting dataset publicly on Kaggle before using it in any submission, so every participant can use it.</li>\n<li>We would also check each provider's terms of use before publishing.\nWould you consider this acceptable under rule 2.6? Or is paid-API generation not acceptable regardless of cost or publication? Thanks!</li>\n</ul>",
+            "feedback_tracking_data": {},
+            "id": 3542054,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-10-21T09:32:39.967Z",
+            "raw_markdown": " Hi! Rule 2.6 allows external data if it is publicly available to all participants at no cost, or if the host considers it reasonably accessible at minimal cost.\n\n We would like to build a small extra training set by generating text with some of the 18 listed models through a paid API (OpenRouter). Details:\n - The prompts are written by us from scratch. No competition text (train or test) is sent to any service.\n - Total cost is around US$2.\n - We would publish the resulting dataset publicly on Kaggle before using it in any submission, so every participant can use it.\n - We would also check each provider's terms of use before publishing.\n\n Would you consider this acceptable under rule 2.6? Or is paid-API generation not acceptable regardless of cost or publication? Thanks!",
+            "reactions": [
+              {
+                "emoji": "LOVE",
+                "featured_user_names": [
+                  "osakanateishoku"
+                ],
+                "user_count": 1
+              }
+            ],
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "Andres Carmona",
+                "id": 6232428,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/andrescarmona",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/6232428-kg.jpg?t=2026-04-23-08-19-12",
+                "tier": "CONTRIBUTOR",
+                "url": "/andrescarmona",
+                "user_id": 6232428,
+                "user_name": "andrescarmona"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 3,
+              "total_votes": 3
+            }
+          },
+          "rawMarkdown": " Hi! Rule 2.6 allows external data if it is publicly available to all participants at no cost, or if the host considers it reasonably accessible at minimal cost.\n\n We would like to build a small extra training set by generating text with some of the 18 listed models through a paid API (OpenRouter). Details:\n - The prompts are written by us from scratch. No competition text (train or test) is sent to any service.\n - Total cost is around US$2.\n - We would publish the resulting dataset publicly on Kaggle before using it in any submission, so every participant can use it.\n - We would also check each provider's terms of use before publishing.\n\n Would you consider this acceptable under rule 2.6? Or is paid-API generation not acceptable regardless of cost or publication? Thanks!",
+          "replies": [],
+          "votes": {
+            "totalVotes": 3
+          }
+        },
+        "firstMessageId": 3542054,
+        "id": 751294,
+        "name": "Rule 2.6: is paid-API synthetic training data acceptable if published as a public dataset?",
+        "postDate": "2026-10-21T09:32:39.967979900Z",
+        "url": "/competitions/name-that-llm/discussion/751294"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>Hi! Rule 2.6 allows external data if it is publicly available to all participants at no cost, or if the host considers it reasonably accessible at minimal cost.\nWe would like to build a small extra training set by generating text with some of the 18 listed models through a paid API (OpenRouter). Details:</p>\n<ul>\n<li>The prompts are written by us from scratch. No competition text (train or test) is sent to any service.</li>\n<li>Total cost is around US$2.</li>\n<li>We would publish the resulting dataset publicly on Kaggle before using it in any submission, so every participant can use it.</li>\n<li>We would also check each provider's terms of use before publishing.\nWould you consider this acceptable under rule 2.6? Or is paid-API generation not acceptable regardless of cost or publication? Thanks!</li>\n</ul>",
+              "id": 3542054,
+              "post_date": "2026-10-21T09:32:39.967Z",
+              "raw_markdown": " Hi! Rule 2.6 allows external data if it is publicly available to all participants at no cost, or if the host considers it reasonably accessible at minimal cost.\n\n We would like to build a small extra training set by generating text with some of the 18 listed models through a paid API (OpenRouter). Details:\n - The prompts are written by us from scratch. No competition text (train or test) is sent to any service.\n - Total cost is around US$2.\n - We would publish the resulting dataset publicly on Kaggle before using it in any submission, so every participant can use it.\n - We would also check each provider's terms of use before publishing.\n\n Would you consider this acceptable under rule 2.6? Or is paid-API generation not acceptable regardless of cost or publication? Thanks!",
+              "votes": 3
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 6232428,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "6232428-kg.jpg?t=2026-04-23-08-19-12",
+            "author_user_display_name": "Andres Carmona",
+            "author_user_name": "andrescarmona",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "first_message": {
+              "author": {
+                "display_name": "Andres Carmona",
+                "id": 6232428,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/6232428-kg.jpg?t=2026-04-23-08-19-12",
+                "tier": "CONTRIBUTOR",
+                "url": "/andrescarmona"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 4800,
+              "content": "<p>Hi! Rule 2.6 allows external data if it is publicly available to all participants at no cost, or if the host considers it reasonably accessible at minimal cost.\nWe would like to build a small extra training set by generating text with some of the 18 listed models through a paid API (OpenRouter). Details:</p>\n<ul>\n<li>The prompts are written by us from scratch. No competition text (train or test) is sent to any service.</li>\n<li>Total cost is around US$2.</li>\n<li>We would publish the resulting dataset publicly on Kaggle before using it in any submission, so every participant can use it.</li>\n<li>We would also check each provider's terms of use before publishing.\nWould you consider this acceptable under rule 2.6? Or is paid-API generation not acceptable regardless of cost or publication? Thanks!</li>\n</ul>",
+              "feedback_tracking_data": {},
+              "id": 3542054,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-21T09:32:39.967Z",
+              "raw_markdown": " Hi! Rule 2.6 allows external data if it is publicly available to all participants at no cost, or if the host considers it reasonably accessible at minimal cost.\n\n We would like to build a small extra training set by generating text with some of the 18 listed models through a paid API (OpenRouter). Details:\n - The prompts are written by us from scratch. No competition text (train or test) is sent to any service.\n - Total cost is around US$2.\n - We would publish the resulting dataset publicly on Kaggle before using it in any submission, so every participant can use it.\n - We would also check each provider's terms of use before publishing.\n\n Would you consider this acceptable under rule 2.6? Or is paid-API generation not acceptable regardless of cost or publication? Thanks!",
+              "reactions": [
+                {
+                  "emoji": "LOVE",
+                  "featured_user_names": [
+                    "osakanateishoku"
+                  ],
+                  "user_count": 1
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Andres Carmona",
+                  "id": 6232428,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/andrescarmona",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/6232428-kg.jpg?t=2026-04-23-08-19-12",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/andrescarmona",
+                  "user_id": 6232428,
+                  "user_name": "andrescarmona"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 3,
+                "total_votes": 3
+              }
+            },
+            "first_message_id": 3542054,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 751294,
+            "name": "Rule 2.6: is paid-API synthetic training data acceptable if published as a public dataset?",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-10-21T09:32:39.967979900Z",
+            "total_votes": 3,
+            "url": "/competitions/name-that-llm/discussion/751294"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:31:00+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:31:00+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-10-21T09:32:39.967979900Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [],
+  "writeup": null
+}

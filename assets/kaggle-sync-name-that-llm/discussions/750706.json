@@ -1,0 +1,408 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 750706,
+    "title": "train has a structure worth exploiting: every prompt is answered by every model exactly once",
+    "author": "Jean Brandicourt",
+    "author_url": "/juanmatadelamartin",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-10-19T15:45:21.025658500Z",
+    "last_comment_post_date": "2026-10-19T22:22:58.940Z",
+    "comment_count": 1,
+    "votes": 2,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/750706",
+    "first_message_id": 3541147,
+    "first_seen_at": "2026-11-04T06:56:17+00:00",
+    "last_seen_at": "2026-11-16T16:36:05+00:00",
+    "detail_last_synced_at": "2026-11-16T16:24:24+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "7eff3b0d5b01863de679784447d343600a88d5440e4bfc7c937571970aaab5bf",
+    "listing_metrics_hash": "6db2b817333d85ee95f494a1b2ba941fb79d87d4e3e0c8718afed5f3c0bfd1fa",
+    "detail_content_hash": "4e7452a1f42a830e365723d7d1646bf618a148ee39fbbe7bdc5d4fc809c0bb04",
+    "detail_last_checked_at": "2026-11-16T16:24:24+00:00",
+    "detail_next_check_at": "2026-11-19T16:24:24+00:00",
+    "detail_unchanged_count": 1,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 1,
+      "firstForumMessageId": null,
+      "id": 750706,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-10-19T22:22:58.940Z",
+      "postDate": "2026-10-19T15:45:21.025658500Z",
+      "raw": {
+        "comment_count": 1,
+        "id": 750706,
+        "last_comment_post_date": "2026-10-19T22:22:58.940Z",
+        "post_date": "2026-10-19T15:45:21.025658500Z",
+        "title": "train has a structure worth exploiting: every prompt is answered by every model exactly once",
+        "topic_url": "/competitions/name-that-llm/discussion/750706",
+        "votes": 2
+      },
+      "title": "train has a structure worth exploiting: every prompt is answered by every model exactly once",
+      "topicUrl": "/competitions/name-that-llm/discussion/750706",
+      "votes": 2
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "Jean Brandicourt",
+        "authorUserName": "juanmatadelamartin",
+        "comments": [
+          {
+            "author": {
+              "displayName": "HALX2158",
+              "tier": "CONTRIBUTOR",
+              "url": "/mizuno0522"
+            },
+            "content": "<p>We tried this early on. Clustering passages by content and assigning models within each cluster (threshold 0.9) raised our grouped CV from about 0.34 to 0.39-0.40, but the public LB went from 0.345 to 0.343. Adisak Sukul reported the same pattern in 750390 (Hungarian assignment: 0.353 -&gt; 0.344). Our read is that the hidden test has only a few passages per prompt, so the hard \"one per model\" constraint mostly forces errors. A softer use of the grouping (subtracting the cluster mean, as the public \"adaptive centering\" notebooks do) worked much better for us than hard assignment.</p>",
+            "id": 3541323,
+            "isThankYou": false,
+            "postDate": "2026-10-19T22:22:58.940Z",
+            "raw": {
+              "author": {
+                "display_name": "HALX2158",
+                "id": 16294566,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                "tier": "CONTRIBUTOR",
+                "url": "/mizuno0522"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 1098,
+              "content": "<p>We tried this early on. Clustering passages by content and assigning models within each cluster (threshold 0.9) raised our grouped CV from about 0.34 to 0.39-0.40, but the public LB went from 0.345 to 0.343. Adisak Sukul reported the same pattern in 750390 (Hungarian assignment: 0.353 -&gt; 0.344). Our read is that the hidden test has only a few passages per prompt, so the hard \"one per model\" constraint mostly forces errors. A softer use of the grouping (subtracting the cluster mean, as the public \"adaptive centering\" notebooks do) worked much better for us than hard assignment.</p>",
+              "feedback_tracking_data": {},
+              "id": 3541323,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-19T22:22:58.940Z",
+              "raw_markdown": "We tried this early on. Clustering passages by content and assigning models within each cluster (threshold 0.9) raised our grouped CV from about 0.34 to 0.39-0.40, but the public LB went from 0.345 to 0.343. Adisak Sukul reported the same pattern in 750390 (Hungarian assignment: 0.353 -> 0.344). Our read is that the hidden test has only a few passages per prompt, so the hard \"one per model\" constraint mostly forces errors. A softer use of the grouping (subtracting the cluster mean, as the public \"adaptive centering\" notebooks do) worked much better for us than hard assignment.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "HALX2158",
+                  "id": 16294566,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/mizuno0522",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/mizuno0522",
+                  "user_id": 16294566,
+                  "user_name": "mizuno0522"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "We tried this early on. Clustering passages by content and assigning models within each cluster (threshold 0.9) raised our grouped CV from about 0.34 to 0.39-0.40, but the public LB went from 0.345 to 0.343. Adisak Sukul reported the same pattern in 750390 (Hungarian assignment: 0.353 -> 0.344). Our read is that the hidden test has only a few passages per prompt, so the hard \"one per model\" constraint mostly forces errors. A softer use of the grouping (subtracting the cluster mean, as the public \"adaptive centering\" notebooks do) worked much better for us than hard assignment.",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "expectedCommentCount": 1,
+        "firstMessage": {
+          "author": {
+            "displayName": "Jean Brandicourt",
+            "tier": "CONTRIBUTOR",
+            "url": "/juanmatadelamartin"
+          },
+          "content": "<p>quick thing I noticed in train.csv that I haven't seen discussed yet</p>\n<p>150 prompts, 2699 rows. 149 prompts have exactly 18 rows, one per model, and the last one (p002) has 17 (only claude-fable-5 is missing). zero prompts where a model shows up twice. so train is basically 150 full \"rounds\" of all 18 models answering the same question</p>\n<p>why it matters: if test was built the same way, you can group the passages that answer the same prompt, and inside a group each model shows up at most once. so instead of 18 independent argmaxes you can solve a small assignment problem per group (scipy linear_sum_assignment on -log probs). when your model hesitates between glm-5.3 and glm-5.3-flash on two passages from the same prompt, the constraint picks for you. classic kaggle lesson (quora question pairs etc): how the data was built is often worth more than a bigger model</p>\n<p>grouping looks doable. using only the first ~15 words of each passage and a dumb word-overlap nearest neighbor, 91% of train passages land next to a passage from the same prompt. full text + embeddings should do a lot better</p>\n<p>caveats:</p>\n<ul>\n<li>the host says test counts per model are not equal and the mix differs between public and private, so test is probably subsampled. I'd go with \"at most one per model\" (pad the cost matrix with dummy columns), not \"exactly one\"</li>\n<li>clustering mistakes will hurt, so maybe only apply the constraint on tight clusters</li>\n<li>haven't run it on the LB yet so no idea how much it gives. if someone tries it before me please share the numbers</li>\n</ul>\n<p>happy to be told this is already in a notebook somewhere</p>",
+          "id": 3541147,
+          "isThankYou": false,
+          "postDate": "2026-10-19T15:45:21.027Z",
+          "raw": {
+            "author": {
+              "display_name": "Jean Brandicourt",
+              "id": 35251056,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35251056-kg.JPG?t=2026-08-30-00-44-43",
+              "tier": "CONTRIBUTOR",
+              "url": "/juanmatadelamartin"
+            },
+            "author_type": "TOPIC",
+            "content": "<p>quick thing I noticed in train.csv that I haven't seen discussed yet</p>\n<p>150 prompts, 2699 rows. 149 prompts have exactly 18 rows, one per model, and the last one (p002) has 17 (only claude-fable-5 is missing). zero prompts where a model shows up twice. so train is basically 150 full \"rounds\" of all 18 models answering the same question</p>\n<p>why it matters: if test was built the same way, you can group the passages that answer the same prompt, and inside a group each model shows up at most once. so instead of 18 independent argmaxes you can solve a small assignment problem per group (scipy linear_sum_assignment on -log probs). when your model hesitates between glm-5.3 and glm-5.3-flash on two passages from the same prompt, the constraint picks for you. classic kaggle lesson (quora question pairs etc): how the data was built is often worth more than a bigger model</p>\n<p>grouping looks doable. using only the first ~15 words of each passage and a dumb word-overlap nearest neighbor, 91% of train passages land next to a passage from the same prompt. full text + embeddings should do a lot better</p>\n<p>caveats:</p>\n<ul>\n<li>the host says test counts per model are not equal and the mix differs between public and private, so test is probably subsampled. I'd go with \"at most one per model\" (pad the cost matrix with dummy columns), not \"exactly one\"</li>\n<li>clustering mistakes will hurt, so maybe only apply the constraint on tight clusters</li>\n<li>haven't run it on the LB yet so no idea how much it gives. if someone tries it before me please share the numbers</li>\n</ul>\n<p>happy to be told this is already in a notebook somewhere</p>",
+            "feedback_tracking_data": {},
+            "id": 3541147,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-10-19T15:45:21.027Z",
+            "raw_markdown": "quick thing I noticed in train.csv that I haven't seen discussed yet\n\n150 prompts, 2699 rows. 149 prompts have exactly 18 rows, one per model, and the last one (p002) has 17 (only claude-fable-5 is missing). zero prompts where a model shows up twice. so train is basically 150 full \"rounds\" of all 18 models answering the same question\n\nwhy it matters: if test was built the same way, you can group the passages that answer the same prompt, and inside a group each model shows up at most once. so instead of 18 independent argmaxes you can solve a small assignment problem per group (scipy linear_sum_assignment on -log probs). when your model hesitates between glm-5.3 and glm-5.3-flash on two passages from the same prompt, the constraint picks for you. classic kaggle lesson (quora question pairs etc): how the data was built is often worth more than a bigger model\n\ngrouping looks doable. using only the first ~15 words of each passage and a dumb word-overlap nearest neighbor, 91% of train passages land next to a passage from the same prompt. full text + embeddings should do a lot better\n\ncaveats:\n- the host says test counts per model are not equal and the mix differs between public and private, so test is probably subsampled. I'd go with \"at most one per model\" (pad the cost matrix with dummy columns), not \"exactly one\"\n- clustering mistakes will hurt, so maybe only apply the constraint on tight clusters\n- haven't run it on the LB yet so no idea how much it gives. if someone tries it before me please share the numbers\n\nhappy to be told this is already in a notebook somewhere",
+            "reactions": [
+              {
+                "emoji": "LOVE",
+                "featured_user_names": [
+                  "jazivxt",
+                  "vladimir1506"
+                ],
+                "user_count": 2
+              }
+            ],
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "Jean Brandicourt",
+                "id": 35251056,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/juanmatadelamartin",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35251056-kg.JPG?t=2026-08-30-00-44-43",
+                "tier": "CONTRIBUTOR",
+                "url": "/juanmatadelamartin",
+                "user_id": 35251056,
+                "user_name": "juanmatadelamartin"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 3,
+              "total_votes": 2
+            }
+          },
+          "rawMarkdown": "quick thing I noticed in train.csv that I haven't seen discussed yet\n\n150 prompts, 2699 rows. 149 prompts have exactly 18 rows, one per model, and the last one (p002) has 17 (only claude-fable-5 is missing). zero prompts where a model shows up twice. so train is basically 150 full \"rounds\" of all 18 models answering the same question\n\nwhy it matters: if test was built the same way, you can group the passages that answer the same prompt, and inside a group each model shows up at most once. so instead of 18 independent argmaxes you can solve a small assignment problem per group (scipy linear_sum_assignment on -log probs). when your model hesitates between glm-5.3 and glm-5.3-flash on two passages from the same prompt, the constraint picks for you. classic kaggle lesson (quora question pairs etc): how the data was built is often worth more than a bigger model\n\ngrouping looks doable. using only the first ~15 words of each passage and a dumb word-overlap nearest neighbor, 91% of train passages land next to a passage from the same prompt. full text + embeddings should do a lot better\n\ncaveats:\n- the host says test counts per model are not equal and the mix differs between public and private, so test is probably subsampled. I'd go with \"at most one per model\" (pad the cost matrix with dummy columns), not \"exactly one\"\n- clustering mistakes will hurt, so maybe only apply the constraint on tight clusters\n- haven't run it on the LB yet so no idea how much it gives. if someone tries it before me please share the numbers\n\nhappy to be told this is already in a notebook somewhere",
+          "replies": [],
+          "votes": {
+            "totalVotes": 2
+          }
+        },
+        "firstMessageId": 3541147,
+        "id": 750706,
+        "name": "train has a structure worth exploiting: every prompt is answered by every model exactly once",
+        "postDate": "2026-10-19T15:45:21.025658500Z",
+        "url": "/competitions/name-that-llm/discussion/750706"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>quick thing I noticed in train.csv that I haven't seen discussed yet</p>\n<p>150 prompts, 2699 rows. 149 prompts have exactly 18 rows, one per model, and the last one (p002) has 17 (only claude-fable-5 is missing). zero prompts where a model shows up twice. so train is basically 150 full \"rounds\" of all 18 models answering the same question</p>\n<p>why it matters: if test was built the same way, you can group the passages that answer the same prompt, and inside a group each model shows up at most once. so instead of 18 independent argmaxes you can solve a small assignment problem per group (scipy linear_sum_assignment on -log probs). when your model hesitates between glm-5.3 and glm-5.3-flash on two passages from the same prompt, the constraint picks for you. classic kaggle lesson (quora question pairs etc): how the data was built is often worth more than a bigger model</p>\n<p>grouping looks doable. using only the first ~15 words of each passage and a dumb word-overlap nearest neighbor, 91% of train passages land next to a passage from the same prompt. full text + embeddings should do a lot better</p>\n<p>caveats:</p>\n<ul>\n<li>the host says test counts per model are not equal and the mix differs between public and private, so test is probably subsampled. I'd go with \"at most one per model\" (pad the cost matrix with dummy columns), not \"exactly one\"</li>\n<li>clustering mistakes will hurt, so maybe only apply the constraint on tight clusters</li>\n<li>haven't run it on the LB yet so no idea how much it gives. if someone tries it before me please share the numbers</li>\n</ul>\n<p>happy to be told this is already in a notebook somewhere</p>",
+              "id": 3541147,
+              "post_date": "2026-10-19T15:45:21.027Z",
+              "raw_markdown": "quick thing I noticed in train.csv that I haven't seen discussed yet\n\n150 prompts, 2699 rows. 149 prompts have exactly 18 rows, one per model, and the last one (p002) has 17 (only claude-fable-5 is missing). zero prompts where a model shows up twice. so train is basically 150 full \"rounds\" of all 18 models answering the same question\n\nwhy it matters: if test was built the same way, you can group the passages that answer the same prompt, and inside a group each model shows up at most once. so instead of 18 independent argmaxes you can solve a small assignment problem per group (scipy linear_sum_assignment on -log probs). when your model hesitates between glm-5.3 and glm-5.3-flash on two passages from the same prompt, the constraint picks for you. classic kaggle lesson (quora question pairs etc): how the data was built is often worth more than a bigger model\n\ngrouping looks doable. using only the first ~15 words of each passage and a dumb word-overlap nearest neighbor, 91% of train passages land next to a passage from the same prompt. full text + embeddings should do a lot better\n\ncaveats:\n- the host says test counts per model are not equal and the mix differs between public and private, so test is probably subsampled. I'd go with \"at most one per model\" (pad the cost matrix with dummy columns), not \"exactly one\"\n- clustering mistakes will hurt, so maybe only apply the constraint on tight clusters\n- haven't run it on the LB yet so no idea how much it gives. if someone tries it before me please share the numbers\n\nhappy to be told this is already in a notebook somewhere",
+              "votes": 2
+            },
+            {
+              "content": "<p>We tried this early on. Clustering passages by content and assigning models within each cluster (threshold 0.9) raised our grouped CV from about 0.34 to 0.39-0.40, but the public LB went from 0.345 to 0.343. Adisak Sukul reported the same pattern in 750390 (Hungarian assignment: 0.353 -&gt; 0.344). Our read is that the hidden test has only a few passages per prompt, so the hard \"one per model\" constraint mostly forces errors. A softer use of the grouping (subtracting the cluster mean, as the public \"adaptive centering\" notebooks do) worked much better for us than hard assignment.</p>",
+              "id": 3541323,
+              "post_date": "2026-10-19T22:22:58.940Z",
+              "raw_markdown": "We tried this early on. Clustering passages by content and assigning models within each cluster (threshold 0.9) raised our grouped CV from about 0.34 to 0.39-0.40, but the public LB went from 0.345 to 0.343. Adisak Sukul reported the same pattern in 750390 (Hungarian assignment: 0.353 -> 0.344). Our read is that the hidden test has only a few passages per prompt, so the hard \"one per model\" constraint mostly forces errors. A softer use of the grouping (subtracting the cluster mean, as the public \"adaptive centering\" notebooks do) worked much better for us than hard assignment."
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 35251056,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "35251056-kg.JPG?t=2026-08-30-00-44-43",
+            "author_user_display_name": "Jean Brandicourt",
+            "author_user_name": "juanmatadelamartin",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "comments": [
+              {
+                "author": {
+                  "display_name": "HALX2158",
+                  "id": 16294566,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/mizuno0522"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 1098,
+                "content": "<p>We tried this early on. Clustering passages by content and assigning models within each cluster (threshold 0.9) raised our grouped CV from about 0.34 to 0.39-0.40, but the public LB went from 0.345 to 0.343. Adisak Sukul reported the same pattern in 750390 (Hungarian assignment: 0.353 -&gt; 0.344). Our read is that the hidden test has only a few passages per prompt, so the hard \"one per model\" constraint mostly forces errors. A softer use of the grouping (subtracting the cluster mean, as the public \"adaptive centering\" notebooks do) worked much better for us than hard assignment.</p>",
+                "feedback_tracking_data": {},
+                "id": 3541323,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-19T22:22:58.940Z",
+                "raw_markdown": "We tried this early on. Clustering passages by content and assigning models within each cluster (threshold 0.9) raised our grouped CV from about 0.34 to 0.39-0.40, but the public LB went from 0.345 to 0.343. Adisak Sukul reported the same pattern in 750390 (Hungarian assignment: 0.353 -> 0.344). Our read is that the hidden test has only a few passages per prompt, so the hard \"one per model\" constraint mostly forces errors. A softer use of the grouping (subtracting the cluster mean, as the public \"adaptive centering\" notebooks do) worked much better for us than hard assignment.",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "HALX2158",
+                    "id": 16294566,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/mizuno0522",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/mizuno0522",
+                    "user_id": 16294566,
+                    "user_name": "mizuno0522"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              }
+            ],
+            "first_message": {
+              "author": {
+                "display_name": "Jean Brandicourt",
+                "id": 35251056,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35251056-kg.JPG?t=2026-08-30-00-44-43",
+                "tier": "CONTRIBUTOR",
+                "url": "/juanmatadelamartin"
+              },
+              "author_type": "TOPIC",
+              "content": "<p>quick thing I noticed in train.csv that I haven't seen discussed yet</p>\n<p>150 prompts, 2699 rows. 149 prompts have exactly 18 rows, one per model, and the last one (p002) has 17 (only claude-fable-5 is missing). zero prompts where a model shows up twice. so train is basically 150 full \"rounds\" of all 18 models answering the same question</p>\n<p>why it matters: if test was built the same way, you can group the passages that answer the same prompt, and inside a group each model shows up at most once. so instead of 18 independent argmaxes you can solve a small assignment problem per group (scipy linear_sum_assignment on -log probs). when your model hesitates between glm-5.3 and glm-5.3-flash on two passages from the same prompt, the constraint picks for you. classic kaggle lesson (quora question pairs etc): how the data was built is often worth more than a bigger model</p>\n<p>grouping looks doable. using only the first ~15 words of each passage and a dumb word-overlap nearest neighbor, 91% of train passages land next to a passage from the same prompt. full text + embeddings should do a lot better</p>\n<p>caveats:</p>\n<ul>\n<li>the host says test counts per model are not equal and the mix differs between public and private, so test is probably subsampled. I'd go with \"at most one per model\" (pad the cost matrix with dummy columns), not \"exactly one\"</li>\n<li>clustering mistakes will hurt, so maybe only apply the constraint on tight clusters</li>\n<li>haven't run it on the LB yet so no idea how much it gives. if someone tries it before me please share the numbers</li>\n</ul>\n<p>happy to be told this is already in a notebook somewhere</p>",
+              "feedback_tracking_data": {},
+              "id": 3541147,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-19T15:45:21.027Z",
+              "raw_markdown": "quick thing I noticed in train.csv that I haven't seen discussed yet\n\n150 prompts, 2699 rows. 149 prompts have exactly 18 rows, one per model, and the last one (p002) has 17 (only claude-fable-5 is missing). zero prompts where a model shows up twice. so train is basically 150 full \"rounds\" of all 18 models answering the same question\n\nwhy it matters: if test was built the same way, you can group the passages that answer the same prompt, and inside a group each model shows up at most once. so instead of 18 independent argmaxes you can solve a small assignment problem per group (scipy linear_sum_assignment on -log probs). when your model hesitates between glm-5.3 and glm-5.3-flash on two passages from the same prompt, the constraint picks for you. classic kaggle lesson (quora question pairs etc): how the data was built is often worth more than a bigger model\n\ngrouping looks doable. using only the first ~15 words of each passage and a dumb word-overlap nearest neighbor, 91% of train passages land next to a passage from the same prompt. full text + embeddings should do a lot better\n\ncaveats:\n- the host says test counts per model are not equal and the mix differs between public and private, so test is probably subsampled. I'd go with \"at most one per model\" (pad the cost matrix with dummy columns), not \"exactly one\"\n- clustering mistakes will hurt, so maybe only apply the constraint on tight clusters\n- haven't run it on the LB yet so no idea how much it gives. if someone tries it before me please share the numbers\n\nhappy to be told this is already in a notebook somewhere",
+              "reactions": [
+                {
+                  "emoji": "LOVE",
+                  "featured_user_names": [
+                    "jazivxt",
+                    "vladimir1506"
+                  ],
+                  "user_count": 2
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Jean Brandicourt",
+                  "id": 35251056,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/juanmatadelamartin",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35251056-kg.JPG?t=2026-08-30-00-44-43",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/juanmatadelamartin",
+                  "user_id": 35251056,
+                  "user_name": "juanmatadelamartin"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 3,
+                "total_votes": 2
+              }
+            },
+            "first_message_id": 3541147,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 750706,
+            "name": "train has a structure worth exploiting: every prompt is answered by every model exactly once",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-10-19T15:45:21.025658500Z",
+            "total_messages": 1,
+            "total_votes": 2,
+            "url": "/competitions/name-that-llm/discussion/750706"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:24:24+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:24:24+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-10-19T22:22:58.940Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [
+    {
+      "slug": "name-that-llm",
+      "topic_id": 750706,
+      "message_id": 3541323,
+      "parent_message_id": null,
+      "author": "HALX2158",
+      "author_url": "/mizuno0522",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-10-19T22:22:58.940Z",
+      "raw_markdown": "We tried this early on. Clustering passages by content and assigning models within each cluster (threshold 0.9) raised our grouped CV from about 0.34 to 0.39-0.40, but the public LB went from 0.345 to 0.343. Adisak Sukul reported the same pattern in 750390 (Hungarian assignment: 0.353 -> 0.344). Our read is that the hidden test has only a few passages per prompt, so the hard \"one per model\" constraint mostly forces errors. A softer use of the grouping (subtracting the cluster mean, as the public \"adaptive centering\" notebooks do) worked much better for us than hard assignment.",
+      "content_html": "<p>We tried this early on. Clustering passages by content and assigning models within each cluster (threshold 0.9) raised our grouped CV from about 0.34 to 0.39-0.40, but the public LB went from 0.345 to 0.343. Adisak Sukul reported the same pattern in 750390 (Hungarian assignment: 0.353 -&gt; 0.344). Our read is that the hidden test has only a few passages per prompt, so the hard \"one per model\" constraint mostly forces errors. A softer use of the grouping (subtracting the cluster mean, as the public \"adaptive centering\" notebooks do) worked much better for us than hard assignment.</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:56:52+00:00",
+      "last_seen_at": "2026-11-16T16:24:24+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:24:24+00:00",
+      "remote_last_listed_at": "2026-11-16T16:24:24+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "HALX2158",
+          "tier": "CONTRIBUTOR",
+          "url": "/mizuno0522"
+        },
+        "content": "<p>We tried this early on. Clustering passages by content and assigning models within each cluster (threshold 0.9) raised our grouped CV from about 0.34 to 0.39-0.40, but the public LB went from 0.345 to 0.343. Adisak Sukul reported the same pattern in 750390 (Hungarian assignment: 0.353 -&gt; 0.344). Our read is that the hidden test has only a few passages per prompt, so the hard \"one per model\" constraint mostly forces errors. A softer use of the grouping (subtracting the cluster mean, as the public \"adaptive centering\" notebooks do) worked much better for us than hard assignment.</p>",
+        "id": 3541323,
+        "isThankYou": false,
+        "postDate": "2026-10-19T22:22:58.940Z",
+        "raw": {
+          "author": {
+            "display_name": "HALX2158",
+            "id": 16294566,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+            "tier": "CONTRIBUTOR",
+            "url": "/mizuno0522"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 1098,
+          "content": "<p>We tried this early on. Clustering passages by content and assigning models within each cluster (threshold 0.9) raised our grouped CV from about 0.34 to 0.39-0.40, but the public LB went from 0.345 to 0.343. Adisak Sukul reported the same pattern in 750390 (Hungarian assignment: 0.353 -&gt; 0.344). Our read is that the hidden test has only a few passages per prompt, so the hard \"one per model\" constraint mostly forces errors. A softer use of the grouping (subtracting the cluster mean, as the public \"adaptive centering\" notebooks do) worked much better for us than hard assignment.</p>",
+          "feedback_tracking_data": {},
+          "id": 3541323,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-19T22:22:58.940Z",
+          "raw_markdown": "We tried this early on. Clustering passages by content and assigning models within each cluster (threshold 0.9) raised our grouped CV from about 0.34 to 0.39-0.40, but the public LB went from 0.345 to 0.343. Adisak Sukul reported the same pattern in 750390 (Hungarian assignment: 0.353 -> 0.344). Our read is that the hidden test has only a few passages per prompt, so the hard \"one per model\" constraint mostly forces errors. A softer use of the grouping (subtracting the cluster mean, as the public \"adaptive centering\" notebooks do) worked much better for us than hard assignment.",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "HALX2158",
+              "id": 16294566,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/mizuno0522",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+              "tier": "CONTRIBUTOR",
+              "url": "/mizuno0522",
+              "user_id": 16294566,
+              "user_name": "mizuno0522"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "We tried this early on. Clustering passages by content and assigning models within each cluster (threshold 0.9) raised our grouped CV from about 0.34 to 0.39-0.40, but the public LB went from 0.345 to 0.343. Adisak Sukul reported the same pattern in 750390 (Hungarian assignment: 0.353 -> 0.344). Our read is that the hidden test has only a few passages per prompt, so the hard \"one per model\" constraint mostly forces errors. A softer use of the grouping (subtracting the cluster mean, as the public \"adaptive centering\" notebooks do) worked much better for us than hard assignment.",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    }
+  ],
+  "writeup": null
+}

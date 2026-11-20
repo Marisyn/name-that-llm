@@ -1,0 +1,1945 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 750230,
+    "title": "First Kaggle Competition: Learning journey from TF-IDF (0.322) to LoRA Ensemble (0.541)",
+    "author": "Raheel Abbas",
+    "author_url": "/raheelll",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-10-17T11:43:51.746966500Z",
+    "last_comment_post_date": "2026-10-19T06:19:17.893333300Z",
+    "comment_count": 6,
+    "votes": 1,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/750230",
+    "first_message_id": 3540220,
+    "first_seen_at": "2026-11-04T06:56:17+00:00",
+    "last_seen_at": "2026-11-16T16:36:05+00:00",
+    "detail_last_synced_at": "2026-11-16T16:24:16+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "20659d865a9c58e298efd07febecf72db50d4cc2af5a0e5a74b0b3ed2a546715",
+    "listing_metrics_hash": "08a3f0e9d031723a4649730d445a527264427162f124c0c72a6c18d2e0b8e839",
+    "detail_content_hash": "79ada7679379b7f945d565d75f349f22a25660de0cd1f79c9cd58e24e70cfa3c",
+    "detail_last_checked_at": "2026-11-16T16:24:16+00:00",
+    "detail_next_check_at": "2026-11-19T16:24:16+00:00",
+    "detail_unchanged_count": 1,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 6,
+      "firstForumMessageId": null,
+      "id": 750230,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-10-19T06:19:17.893333300Z",
+      "postDate": "2026-10-17T11:43:51.746966500Z",
+      "raw": {
+        "comment_count": 6,
+        "id": 750230,
+        "last_comment_post_date": "2026-10-19T06:19:17.893333300Z",
+        "post_date": "2026-10-17T11:43:51.746966500Z",
+        "title": "First Kaggle Competition: Learning journey from TF-IDF (0.322) to LoRA Ensemble (0.541)",
+        "topic_url": "/competitions/name-that-llm/discussion/750230",
+        "votes": 1
+      },
+      "title": "First Kaggle Competition: Learning journey from TF-IDF (0.322) to LoRA Ensemble (0.541)",
+      "topicUrl": "/competitions/name-that-llm/discussion/750230",
+      "votes": 1
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "Raheel Abbas",
+        "authorUserName": "raheelll",
+        "comments": [
+          {
+            "author": {
+              "displayName": "ZavodRobotov",
+              "tier": "EXPERT",
+              "url": "/zavodrobotov"
+            },
+            "content": "<p>Improving ensemble method is not so effective. Try to improve you training pipeline.</p>",
+            "id": 3540270,
+            "isThankYou": false,
+            "postDate": "2026-10-17T14:05:24.560Z",
+            "raw": {
+              "author": {
+                "display_name": "ZavodRobotov",
+                "id": 513081,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/513081-kg.JPG",
+                "tier": "EXPERT",
+                "url": "/zavodrobotov"
+              },
+              "author_type": "COMMENT",
+              "content": "<p>Improving ensemble method is not so effective. Try to improve you training pipeline.</p>",
+              "feedback_tracking_data": {},
+              "id": 3540270,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-17T14:05:24.560Z",
+              "raw_markdown": "Improving ensemble method is not so effective. Try to improve you training pipeline.",
+              "replies": [
+                {
+                  "author": {
+                    "display_name": "Raheel Abbas",
+                    "id": 20398771,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20398771-kg.jpeg?t=2026-01-04-07-35-30",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/raheelll"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 3670,
+                  "content": "<p>Appreciate the solid advice! Makes complete sense—ensembling can't fix weak or redundant underlying predictions. I'm shifting focus toward fine-tuning individual transformer backbones and refining stylometric feature extraction on the preprocessing side. Did you find custom loss functions or specific formatting features made the biggest difference in your local CV?</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3540292,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-17T15:20:58.430Z",
+                  "raw_markdown": "Appreciate the solid advice! Makes complete sense—ensembling can't fix weak or redundant underlying predictions. I'm shifting focus toward fine-tuning individual transformer backbones and refining stylometric feature extraction on the preprocessing side. Did you find custom loss functions or specific formatting features made the biggest difference in your local CV?",
+                  "replies": [
+                    {
+                      "author": {
+                        "display_name": "ZavodRobotov",
+                        "id": 513081,
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/513081-kg.JPG",
+                        "tier": "EXPERT",
+                        "url": "/zavodrobotov"
+                      },
+                      "author_type": "COMMENT",
+                      "content": "<p>In Lavrentev's notebook, there are sayed \"under genre shift (external data) predictions collapsed onto one class and balancing took balanced accuracy from 0.12 to 0.1\". So data balance is very important here. You can try to balance data, for example, balance datasets or genres. Also you can try data augmentation. Or you can try tune batch_size and learning_rate. If dataset is small and main problem is overfitting - decrease batch_size or increase learning_rate. If dataset is big and complex, and model size is small (main problem is underfitting) - increase batch_size or decrease learning_rate</p>",
+                      "feedback_tracking_data": {},
+                      "id": 3540317,
+                      "is_thank_you": false,
+                      "kernel_version": 0,
+                      "parent": {},
+                      "post_date": "2026-10-17T16:37:43.123Z",
+                      "raw_markdown": "In Lavrentev's notebook, there are sayed \"under genre shift (external data) predictions collapsed onto one class and balancing took balanced accuracy from 0.12 to 0.1\". So data balance is very important here. You can try to balance data, for example, balance datasets or genres. Also you can try data augmentation. Or you can try tune batch_size and learning_rate. If dataset is small and main problem is overfitting - decrease batch_size or increase learning_rate. If dataset is big and complex, and model size is small (main problem is underfitting) - increase batch_size or decrease learning_rate",
+                      "votes": {
+                        "can_upvote": true
+                      }
+                    },
+                    {
+                      "author": {
+                        "display_name": "Raheel Abbas",
+                        "id": 20398771,
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20398771-kg.jpeg?t=2026-01-04-07-35-30",
+                        "tier": "CONTRIBUTOR",
+                        "url": "/raheelll"
+                      },
+                      "author_type": "TOPIC",
+                      "competition_ranking": 3670,
+                      "content": "<p>Thank you for pointing out the prediction collapse phenomenon and the post-processing balancing breakdown from Lavrentev's notes! That makes total sense—if domain shift causes the model to favor a single class, balanced accuracy drops immediately.</p>\n<p>I'll look into adjusting the class-mass prior adjustments in the post-processing pipeline and test tuning the learning rate/batch size for the individual backbone fine-tunes. Did you find that applying marginal balancing on the raw logit outputs worked best, or did rank-averaging probabilities help stabilize predictions first?</p>",
+                      "feedback_tracking_data": {},
+                      "id": 3540465,
+                      "is_thank_you": false,
+                      "kernel_version": 0,
+                      "parent": {},
+                      "post_date": "2026-10-18T02:33:26.633Z",
+                      "raw_markdown": "Thank you for pointing out the prediction collapse phenomenon and the post-processing balancing breakdown from Lavrentev's notes! That makes total sense—if domain shift causes the model to favor a single class, balanced accuracy drops immediately.\n\nI'll look into adjusting the class-mass prior adjustments in the post-processing pipeline and test tuning the learning rate/batch size for the individual backbone fine-tunes. Did you find that applying marginal balancing on the raw logit outputs worked best, or did rank-averaging probabilities help stabilize predictions first?",
+                      "team_up_info": {
+                        "intro": "",
+                        "team_leader": {
+                          "display_name": "Raheel Abbas",
+                          "id": 20398771,
+                          "performance_tier": "CONTRIBUTOR",
+                          "profile_url": "/raheelll",
+                          "progression_opt_out": false,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20398771-kg.jpeg?t=2026-01-04-07-35-30",
+                          "tier": "CONTRIBUTOR",
+                          "url": "/raheelll",
+                          "user_id": 20398771,
+                          "user_name": "raheelll"
+                        }
+                      },
+                      "votes": {
+                        "can_upvote": true
+                      }
+                    },
+                    {
+                      "author": {
+                        "display_name": "ZavodRobotov",
+                        "id": 513081,
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/513081-kg.JPG",
+                        "tier": "EXPERT",
+                        "url": "/zavodrobotov"
+                      },
+                      "author_type": "COMMENT",
+                      "content": "<p>Training set balancing (or class balancing) works good in most tasks.</p>",
+                      "feedback_tracking_data": {},
+                      "id": 3540892,
+                      "is_thank_you": false,
+                      "kernel_version": 0,
+                      "parent": {},
+                      "post_date": "2026-10-19T06:19:17.893Z",
+                      "raw_markdown": "Training set balancing (or class balancing) works good in most tasks.",
+                      "votes": {
+                        "can_upvote": true
+                      }
+                    }
+                  ],
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Raheel Abbas",
+                      "id": 20398771,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/raheelll",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20398771-kg.jpeg?t=2026-01-04-07-35-30",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/raheelll",
+                      "user_id": 20398771,
+                      "user_name": "raheelll"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                }
+              ],
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": 1
+              }
+            },
+            "rawMarkdown": "Improving ensemble method is not so effective. Try to improve you training pipeline.",
+            "replies": [
+              {
+                "author": {
+                  "displayName": "Raheel Abbas",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/raheelll"
+                },
+                "content": "<p>Appreciate the solid advice! Makes complete sense—ensembling can't fix weak or redundant underlying predictions. I'm shifting focus toward fine-tuning individual transformer backbones and refining stylometric feature extraction on the preprocessing side. Did you find custom loss functions or specific formatting features made the biggest difference in your local CV?</p>",
+                "id": 3540292,
+                "isThankYou": false,
+                "postDate": "2026-10-17T15:20:58.430Z",
+                "raw": {
+                  "author": {
+                    "display_name": "Raheel Abbas",
+                    "id": 20398771,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20398771-kg.jpeg?t=2026-01-04-07-35-30",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/raheelll"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 3670,
+                  "content": "<p>Appreciate the solid advice! Makes complete sense—ensembling can't fix weak or redundant underlying predictions. I'm shifting focus toward fine-tuning individual transformer backbones and refining stylometric feature extraction on the preprocessing side. Did you find custom loss functions or specific formatting features made the biggest difference in your local CV?</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3540292,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-17T15:20:58.430Z",
+                  "raw_markdown": "Appreciate the solid advice! Makes complete sense—ensembling can't fix weak or redundant underlying predictions. I'm shifting focus toward fine-tuning individual transformer backbones and refining stylometric feature extraction on the preprocessing side. Did you find custom loss functions or specific formatting features made the biggest difference in your local CV?",
+                  "replies": [
+                    {
+                      "author": {
+                        "display_name": "ZavodRobotov",
+                        "id": 513081,
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/513081-kg.JPG",
+                        "tier": "EXPERT",
+                        "url": "/zavodrobotov"
+                      },
+                      "author_type": "COMMENT",
+                      "content": "<p>In Lavrentev's notebook, there are sayed \"under genre shift (external data) predictions collapsed onto one class and balancing took balanced accuracy from 0.12 to 0.1\". So data balance is very important here. You can try to balance data, for example, balance datasets or genres. Also you can try data augmentation. Or you can try tune batch_size and learning_rate. If dataset is small and main problem is overfitting - decrease batch_size or increase learning_rate. If dataset is big and complex, and model size is small (main problem is underfitting) - increase batch_size or decrease learning_rate</p>",
+                      "feedback_tracking_data": {},
+                      "id": 3540317,
+                      "is_thank_you": false,
+                      "kernel_version": 0,
+                      "parent": {},
+                      "post_date": "2026-10-17T16:37:43.123Z",
+                      "raw_markdown": "In Lavrentev's notebook, there are sayed \"under genre shift (external data) predictions collapsed onto one class and balancing took balanced accuracy from 0.12 to 0.1\". So data balance is very important here. You can try to balance data, for example, balance datasets or genres. Also you can try data augmentation. Or you can try tune batch_size and learning_rate. If dataset is small and main problem is overfitting - decrease batch_size or increase learning_rate. If dataset is big and complex, and model size is small (main problem is underfitting) - increase batch_size or decrease learning_rate",
+                      "votes": {
+                        "can_upvote": true
+                      }
+                    },
+                    {
+                      "author": {
+                        "display_name": "Raheel Abbas",
+                        "id": 20398771,
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20398771-kg.jpeg?t=2026-01-04-07-35-30",
+                        "tier": "CONTRIBUTOR",
+                        "url": "/raheelll"
+                      },
+                      "author_type": "TOPIC",
+                      "competition_ranking": 3670,
+                      "content": "<p>Thank you for pointing out the prediction collapse phenomenon and the post-processing balancing breakdown from Lavrentev's notes! That makes total sense—if domain shift causes the model to favor a single class, balanced accuracy drops immediately.</p>\n<p>I'll look into adjusting the class-mass prior adjustments in the post-processing pipeline and test tuning the learning rate/batch size for the individual backbone fine-tunes. Did you find that applying marginal balancing on the raw logit outputs worked best, or did rank-averaging probabilities help stabilize predictions first?</p>",
+                      "feedback_tracking_data": {},
+                      "id": 3540465,
+                      "is_thank_you": false,
+                      "kernel_version": 0,
+                      "parent": {},
+                      "post_date": "2026-10-18T02:33:26.633Z",
+                      "raw_markdown": "Thank you for pointing out the prediction collapse phenomenon and the post-processing balancing breakdown from Lavrentev's notes! That makes total sense—if domain shift causes the model to favor a single class, balanced accuracy drops immediately.\n\nI'll look into adjusting the class-mass prior adjustments in the post-processing pipeline and test tuning the learning rate/batch size for the individual backbone fine-tunes. Did you find that applying marginal balancing on the raw logit outputs worked best, or did rank-averaging probabilities help stabilize predictions first?",
+                      "team_up_info": {
+                        "intro": "",
+                        "team_leader": {
+                          "display_name": "Raheel Abbas",
+                          "id": 20398771,
+                          "performance_tier": "CONTRIBUTOR",
+                          "profile_url": "/raheelll",
+                          "progression_opt_out": false,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20398771-kg.jpeg?t=2026-01-04-07-35-30",
+                          "tier": "CONTRIBUTOR",
+                          "url": "/raheelll",
+                          "user_id": 20398771,
+                          "user_name": "raheelll"
+                        }
+                      },
+                      "votes": {
+                        "can_upvote": true
+                      }
+                    },
+                    {
+                      "author": {
+                        "display_name": "ZavodRobotov",
+                        "id": 513081,
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/513081-kg.JPG",
+                        "tier": "EXPERT",
+                        "url": "/zavodrobotov"
+                      },
+                      "author_type": "COMMENT",
+                      "content": "<p>Training set balancing (or class balancing) works good in most tasks.</p>",
+                      "feedback_tracking_data": {},
+                      "id": 3540892,
+                      "is_thank_you": false,
+                      "kernel_version": 0,
+                      "parent": {},
+                      "post_date": "2026-10-19T06:19:17.893Z",
+                      "raw_markdown": "Training set balancing (or class balancing) works good in most tasks.",
+                      "votes": {
+                        "can_upvote": true
+                      }
+                    }
+                  ],
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Raheel Abbas",
+                      "id": 20398771,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/raheelll",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20398771-kg.jpeg?t=2026-01-04-07-35-30",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/raheelll",
+                      "user_id": 20398771,
+                      "user_name": "raheelll"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                },
+                "rawMarkdown": "Appreciate the solid advice! Makes complete sense—ensembling can't fix weak or redundant underlying predictions. I'm shifting focus toward fine-tuning individual transformer backbones and refining stylometric feature extraction on the preprocessing side. Did you find custom loss functions or specific formatting features made the biggest difference in your local CV?",
+                "replies": [
+                  {
+                    "author": {
+                      "displayName": "ZavodRobotov",
+                      "tier": "EXPERT",
+                      "url": "/zavodrobotov"
+                    },
+                    "content": "<p>In Lavrentev's notebook, there are sayed \"under genre shift (external data) predictions collapsed onto one class and balancing took balanced accuracy from 0.12 to 0.1\". So data balance is very important here. You can try to balance data, for example, balance datasets or genres. Also you can try data augmentation. Or you can try tune batch_size and learning_rate. If dataset is small and main problem is overfitting - decrease batch_size or increase learning_rate. If dataset is big and complex, and model size is small (main problem is underfitting) - increase batch_size or decrease learning_rate</p>",
+                    "id": 3540317,
+                    "isThankYou": false,
+                    "postDate": "2026-10-17T16:37:43.123Z",
+                    "raw": {
+                      "author": {
+                        "display_name": "ZavodRobotov",
+                        "id": 513081,
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/513081-kg.JPG",
+                        "tier": "EXPERT",
+                        "url": "/zavodrobotov"
+                      },
+                      "author_type": "COMMENT",
+                      "content": "<p>In Lavrentev's notebook, there are sayed \"under genre shift (external data) predictions collapsed onto one class and balancing took balanced accuracy from 0.12 to 0.1\". So data balance is very important here. You can try to balance data, for example, balance datasets or genres. Also you can try data augmentation. Or you can try tune batch_size and learning_rate. If dataset is small and main problem is overfitting - decrease batch_size or increase learning_rate. If dataset is big and complex, and model size is small (main problem is underfitting) - increase batch_size or decrease learning_rate</p>",
+                      "feedback_tracking_data": {},
+                      "id": 3540317,
+                      "is_thank_you": false,
+                      "kernel_version": 0,
+                      "parent": {},
+                      "post_date": "2026-10-17T16:37:43.123Z",
+                      "raw_markdown": "In Lavrentev's notebook, there are sayed \"under genre shift (external data) predictions collapsed onto one class and balancing took balanced accuracy from 0.12 to 0.1\". So data balance is very important here. You can try to balance data, for example, balance datasets or genres. Also you can try data augmentation. Or you can try tune batch_size and learning_rate. If dataset is small and main problem is overfitting - decrease batch_size or increase learning_rate. If dataset is big and complex, and model size is small (main problem is underfitting) - increase batch_size or decrease learning_rate",
+                      "votes": {
+                        "can_upvote": true
+                      }
+                    },
+                    "rawMarkdown": "In Lavrentev's notebook, there are sayed \"under genre shift (external data) predictions collapsed onto one class and balancing took balanced accuracy from 0.12 to 0.1\". So data balance is very important here. You can try to balance data, for example, balance datasets or genres. Also you can try data augmentation. Or you can try tune batch_size and learning_rate. If dataset is small and main problem is overfitting - decrease batch_size or increase learning_rate. If dataset is big and complex, and model size is small (main problem is underfitting) - increase batch_size or decrease learning_rate",
+                    "replies": [],
+                    "votes": {
+                      "totalVotes": 0
+                    }
+                  },
+                  {
+                    "author": {
+                      "displayName": "Raheel Abbas",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/raheelll"
+                    },
+                    "content": "<p>Thank you for pointing out the prediction collapse phenomenon and the post-processing balancing breakdown from Lavrentev's notes! That makes total sense—if domain shift causes the model to favor a single class, balanced accuracy drops immediately.</p>\n<p>I'll look into adjusting the class-mass prior adjustments in the post-processing pipeline and test tuning the learning rate/batch size for the individual backbone fine-tunes. Did you find that applying marginal balancing on the raw logit outputs worked best, or did rank-averaging probabilities help stabilize predictions first?</p>",
+                    "id": 3540465,
+                    "isThankYou": false,
+                    "postDate": "2026-10-18T02:33:26.633Z",
+                    "raw": {
+                      "author": {
+                        "display_name": "Raheel Abbas",
+                        "id": 20398771,
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20398771-kg.jpeg?t=2026-01-04-07-35-30",
+                        "tier": "CONTRIBUTOR",
+                        "url": "/raheelll"
+                      },
+                      "author_type": "TOPIC",
+                      "competition_ranking": 3670,
+                      "content": "<p>Thank you for pointing out the prediction collapse phenomenon and the post-processing balancing breakdown from Lavrentev's notes! That makes total sense—if domain shift causes the model to favor a single class, balanced accuracy drops immediately.</p>\n<p>I'll look into adjusting the class-mass prior adjustments in the post-processing pipeline and test tuning the learning rate/batch size for the individual backbone fine-tunes. Did you find that applying marginal balancing on the raw logit outputs worked best, or did rank-averaging probabilities help stabilize predictions first?</p>",
+                      "feedback_tracking_data": {},
+                      "id": 3540465,
+                      "is_thank_you": false,
+                      "kernel_version": 0,
+                      "parent": {},
+                      "post_date": "2026-10-18T02:33:26.633Z",
+                      "raw_markdown": "Thank you for pointing out the prediction collapse phenomenon and the post-processing balancing breakdown from Lavrentev's notes! That makes total sense—if domain shift causes the model to favor a single class, balanced accuracy drops immediately.\n\nI'll look into adjusting the class-mass prior adjustments in the post-processing pipeline and test tuning the learning rate/batch size for the individual backbone fine-tunes. Did you find that applying marginal balancing on the raw logit outputs worked best, or did rank-averaging probabilities help stabilize predictions first?",
+                      "team_up_info": {
+                        "intro": "",
+                        "team_leader": {
+                          "display_name": "Raheel Abbas",
+                          "id": 20398771,
+                          "performance_tier": "CONTRIBUTOR",
+                          "profile_url": "/raheelll",
+                          "progression_opt_out": false,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20398771-kg.jpeg?t=2026-01-04-07-35-30",
+                          "tier": "CONTRIBUTOR",
+                          "url": "/raheelll",
+                          "user_id": 20398771,
+                          "user_name": "raheelll"
+                        }
+                      },
+                      "votes": {
+                        "can_upvote": true
+                      }
+                    },
+                    "rawMarkdown": "Thank you for pointing out the prediction collapse phenomenon and the post-processing balancing breakdown from Lavrentev's notes! That makes total sense—if domain shift causes the model to favor a single class, balanced accuracy drops immediately.\n\nI'll look into adjusting the class-mass prior adjustments in the post-processing pipeline and test tuning the learning rate/batch size for the individual backbone fine-tunes. Did you find that applying marginal balancing on the raw logit outputs worked best, or did rank-averaging probabilities help stabilize predictions first?",
+                    "replies": [],
+                    "votes": {
+                      "totalVotes": 0
+                    }
+                  },
+                  {
+                    "author": {
+                      "displayName": "ZavodRobotov",
+                      "tier": "EXPERT",
+                      "url": "/zavodrobotov"
+                    },
+                    "content": "<p>Training set balancing (or class balancing) works good in most tasks.</p>",
+                    "id": 3540892,
+                    "isThankYou": false,
+                    "postDate": "2026-10-19T06:19:17.893Z",
+                    "raw": {
+                      "author": {
+                        "display_name": "ZavodRobotov",
+                        "id": 513081,
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/513081-kg.JPG",
+                        "tier": "EXPERT",
+                        "url": "/zavodrobotov"
+                      },
+                      "author_type": "COMMENT",
+                      "content": "<p>Training set balancing (or class balancing) works good in most tasks.</p>",
+                      "feedback_tracking_data": {},
+                      "id": 3540892,
+                      "is_thank_you": false,
+                      "kernel_version": 0,
+                      "parent": {},
+                      "post_date": "2026-10-19T06:19:17.893Z",
+                      "raw_markdown": "Training set balancing (or class balancing) works good in most tasks.",
+                      "votes": {
+                        "can_upvote": true
+                      }
+                    },
+                    "rawMarkdown": "Training set balancing (or class balancing) works good in most tasks.",
+                    "replies": [],
+                    "votes": {
+                      "totalVotes": 0
+                    }
+                  }
+                ],
+                "votes": {
+                  "totalVotes": 0
+                }
+              }
+            ],
+            "votes": {
+              "totalVotes": 1
+            }
+          },
+          {
+            "author": {
+              "displayName": "Raheel Abbas",
+              "tier": "CONTRIBUTOR",
+              "url": "/raheelll"
+            },
+            "content": "<p>To add a bit more detail on the pipeline setup:In the TF-IDF notebook, I exported class probabilities using model_pipeline.predict_proba() saved to tfidf_probs.csv.   Mounted that CSV as an input dataset inside the GPU notebook using dynamic path discovery (glob.glob('/kaggle/input/**/tfidf_probs.csv')).   My next goal is to experiment with a weighted probability blend rather than hard prediction replacement. If anyone has experience calibrating class probabilities across diverse model families (e.g., linear models vs. fine-tuned LLMs), I'd love to hear your approach!</p>",
+            "id": 3540222,
+            "isThankYou": false,
+            "postDate": "2026-10-17T11:46:04.333Z",
+            "raw": {
+              "author": {
+                "display_name": "Raheel Abbas",
+                "id": 20398771,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20398771-kg.jpeg?t=2026-01-04-07-35-30",
+                "tier": "CONTRIBUTOR",
+                "url": "/raheelll"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 3670,
+              "content": "<p>To add a bit more detail on the pipeline setup:In the TF-IDF notebook, I exported class probabilities using model_pipeline.predict_proba() saved to tfidf_probs.csv.   Mounted that CSV as an input dataset inside the GPU notebook using dynamic path discovery (glob.glob('/kaggle/input/**/tfidf_probs.csv')).   My next goal is to experiment with a weighted probability blend rather than hard prediction replacement. If anyone has experience calibrating class probabilities across diverse model families (e.g., linear models vs. fine-tuned LLMs), I'd love to hear your approach!</p>",
+              "feedback_tracking_data": {},
+              "id": 3540222,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-17T11:46:04.333Z",
+              "raw_markdown": "To add a bit more detail on the pipeline setup:In the TF-IDF notebook, I exported class probabilities using model_pipeline.predict_proba() saved to tfidf_probs.csv.   Mounted that CSV as an input dataset inside the GPU notebook using dynamic path discovery (glob.glob('/kaggle/input/**/tfidf_probs.csv')).   My next goal is to experiment with a weighted probability blend rather than hard prediction replacement. If anyone has experience calibrating class probabilities across diverse model families (e.g., linear models vs. fine-tuned LLMs), I'd love to hear your approach!",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Raheel Abbas",
+                  "id": 20398771,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/raheelll",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20398771-kg.jpeg?t=2026-01-04-07-35-30",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/raheelll",
+                  "user_id": 20398771,
+                  "user_name": "raheelll"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "To add a bit more detail on the pipeline setup:In the TF-IDF notebook, I exported class probabilities using model_pipeline.predict_proba() saved to tfidf_probs.csv.   Mounted that CSV as an input dataset inside the GPU notebook using dynamic path discovery (glob.glob('/kaggle/input/**/tfidf_probs.csv')).   My next goal is to experiment with a weighted probability blend rather than hard prediction replacement. If anyone has experience calibrating class probabilities across diverse model families (e.g., linear models vs. fine-tuned LLMs), I'd love to hear your approach!",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "expectedCommentCount": 6,
+        "firstMessage": {
+          "author": {
+            "displayName": "Raheel Abbas",
+            "tier": "CONTRIBUTOR",
+            "url": "/raheelll"
+          },
+          "content": "<p>Hi everyone,</p>\n<p>I recently joined <em>Name That LLM</em> as my very first Kaggle competition[cite: 1, 4]! Coming in with limited hands-on model training experience, I wanted to document my progress and share a few questions with the community.</p>\n<p>My Progress So Far:</p>\n<ol>\n<li>Initial Baseline: Built a basic TF-IDF + Logistic Regression pipeline, scoring <strong>0.322</strong> on 5-fold GroupKFold cross-validation and the public leaderboard. </li>\n<li>GPU Acceleration &amp; Ensemble: Enabled GPU T4 x2 acceleration[cite: 6, 8] and executed the public *LoRA + Adaptive Centering ensemble (credits to Vladislav Lavrentev &amp; Lucas Boesen), which brought my score to 0.541 .</li>\n<li>Pipeline Integration: Set up inter-notebook output mounting to pass TF-IDF class probabilities (<code>tfidf_probs.csv</code>) directly into downstream GPU ensemble runs for hybrid probability blending experiments.</li>\n</ol>\n<p>Questions for Experienced Competitors:</p>\n<ol>\n<li>When ensembling linear TF-IDF probability outputs with fine-tuned deep Transformer readouts, do you recommend applying temperature scaling or rank averaging before blending to prevent high-confidence deep learning predictions from dominating?</li>\n<li>How do you balance character $n$-gram stylometric features alongside contextual embeddings without overfitting the public leaderboard?</li>\n</ol>\n<p>Excited to keep learning from this community! Any feedback or tips for a newcomer would be greatly appreciated.</p>",
+          "id": 3540220,
+          "isThankYou": false,
+          "postDate": "2026-10-17T11:43:51.747Z",
+          "raw": {
+            "author": {
+              "display_name": "Raheel Abbas",
+              "id": 20398771,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20398771-kg.jpeg?t=2026-01-04-07-35-30",
+              "tier": "CONTRIBUTOR",
+              "url": "/raheelll"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 3670,
+            "content": "<p>Hi everyone,</p>\n<p>I recently joined <em>Name That LLM</em> as my very first Kaggle competition[cite: 1, 4]! Coming in with limited hands-on model training experience, I wanted to document my progress and share a few questions with the community.</p>\n<p>My Progress So Far:</p>\n<ol>\n<li>Initial Baseline: Built a basic TF-IDF + Logistic Regression pipeline, scoring <strong>0.322</strong> on 5-fold GroupKFold cross-validation and the public leaderboard. </li>\n<li>GPU Acceleration &amp; Ensemble: Enabled GPU T4 x2 acceleration[cite: 6, 8] and executed the public *LoRA + Adaptive Centering ensemble (credits to Vladislav Lavrentev &amp; Lucas Boesen), which brought my score to 0.541 .</li>\n<li>Pipeline Integration: Set up inter-notebook output mounting to pass TF-IDF class probabilities (<code>tfidf_probs.csv</code>) directly into downstream GPU ensemble runs for hybrid probability blending experiments.</li>\n</ol>\n<p>Questions for Experienced Competitors:</p>\n<ol>\n<li>When ensembling linear TF-IDF probability outputs with fine-tuned deep Transformer readouts, do you recommend applying temperature scaling or rank averaging before blending to prevent high-confidence deep learning predictions from dominating?</li>\n<li>How do you balance character $n$-gram stylometric features alongside contextual embeddings without overfitting the public leaderboard?</li>\n</ol>\n<p>Excited to keep learning from this community! Any feedback or tips for a newcomer would be greatly appreciated.</p>",
+            "feedback_tracking_data": {},
+            "id": 3540220,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-10-17T11:43:51.747Z",
+            "raw_markdown": "Hi everyone,\n\nI recently joined *Name That LLM* as my very first Kaggle competition[cite: 1, 4]! Coming in with limited hands-on model training experience, I wanted to document my progress and share a few questions with the community.\n\nMy Progress So Far:\n1. Initial Baseline: Built a basic TF-IDF + Logistic Regression pipeline, scoring **0.322** on 5-fold GroupKFold cross-validation and the public leaderboard. \n2. GPU Acceleration & Ensemble: Enabled GPU T4 x2 acceleration[cite: 6, 8] and executed the public *LoRA + Adaptive Centering ensemble (credits to Vladislav Lavrentev & Lucas Boesen), which brought my score to 0.541 .\n3. Pipeline Integration: Set up inter-notebook output mounting to pass TF-IDF class probabilities (`tfidf_probs.csv`) directly into downstream GPU ensemble runs for hybrid probability blending experiments.\n\nQuestions for Experienced Competitors:\n1. When ensembling linear TF-IDF probability outputs with fine-tuned deep Transformer readouts, do you recommend applying temperature scaling or rank averaging before blending to prevent high-confidence deep learning predictions from dominating?\n2. How do you balance character $n$-gram stylometric features alongside contextual embeddings without overfitting the public leaderboard?\n\nExcited to keep learning from this community! Any feedback or tips for a newcomer would be greatly appreciated.",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "Raheel Abbas",
+                "id": 20398771,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/raheelll",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20398771-kg.jpeg?t=2026-01-04-07-35-30",
+                "tier": "CONTRIBUTOR",
+                "url": "/raheelll",
+                "user_id": 20398771,
+                "user_name": "raheelll"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 2,
+              "total_votes": 1
+            }
+          },
+          "rawMarkdown": "Hi everyone,\n\nI recently joined *Name That LLM* as my very first Kaggle competition[cite: 1, 4]! Coming in with limited hands-on model training experience, I wanted to document my progress and share a few questions with the community.\n\nMy Progress So Far:\n1. Initial Baseline: Built a basic TF-IDF + Logistic Regression pipeline, scoring **0.322** on 5-fold GroupKFold cross-validation and the public leaderboard. \n2. GPU Acceleration & Ensemble: Enabled GPU T4 x2 acceleration[cite: 6, 8] and executed the public *LoRA + Adaptive Centering ensemble (credits to Vladislav Lavrentev & Lucas Boesen), which brought my score to 0.541 .\n3. Pipeline Integration: Set up inter-notebook output mounting to pass TF-IDF class probabilities (`tfidf_probs.csv`) directly into downstream GPU ensemble runs for hybrid probability blending experiments.\n\nQuestions for Experienced Competitors:\n1. When ensembling linear TF-IDF probability outputs with fine-tuned deep Transformer readouts, do you recommend applying temperature scaling or rank averaging before blending to prevent high-confidence deep learning predictions from dominating?\n2. How do you balance character $n$-gram stylometric features alongside contextual embeddings without overfitting the public leaderboard?\n\nExcited to keep learning from this community! Any feedback or tips for a newcomer would be greatly appreciated.",
+          "replies": [],
+          "votes": {
+            "totalVotes": 1
+          }
+        },
+        "firstMessageId": 3540220,
+        "id": 750230,
+        "name": "First Kaggle Competition: Learning journey from TF-IDF (0.322) to LoRA Ensemble (0.541)",
+        "postDate": "2026-10-17T11:43:51.746966500Z",
+        "url": "/competitions/name-that-llm/discussion/750230"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>Hi everyone,</p>\n<p>I recently joined <em>Name That LLM</em> as my very first Kaggle competition[cite: 1, 4]! Coming in with limited hands-on model training experience, I wanted to document my progress and share a few questions with the community.</p>\n<p>My Progress So Far:</p>\n<ol>\n<li>Initial Baseline: Built a basic TF-IDF + Logistic Regression pipeline, scoring <strong>0.322</strong> on 5-fold GroupKFold cross-validation and the public leaderboard. </li>\n<li>GPU Acceleration &amp; Ensemble: Enabled GPU T4 x2 acceleration[cite: 6, 8] and executed the public *LoRA + Adaptive Centering ensemble (credits to Vladislav Lavrentev &amp; Lucas Boesen), which brought my score to 0.541 .</li>\n<li>Pipeline Integration: Set up inter-notebook output mounting to pass TF-IDF class probabilities (<code>tfidf_probs.csv</code>) directly into downstream GPU ensemble runs for hybrid probability blending experiments.</li>\n</ol>\n<p>Questions for Experienced Competitors:</p>\n<ol>\n<li>When ensembling linear TF-IDF probability outputs with fine-tuned deep Transformer readouts, do you recommend applying temperature scaling or rank averaging before blending to prevent high-confidence deep learning predictions from dominating?</li>\n<li>How do you balance character $n$-gram stylometric features alongside contextual embeddings without overfitting the public leaderboard?</li>\n</ol>\n<p>Excited to keep learning from this community! Any feedback or tips for a newcomer would be greatly appreciated.</p>",
+              "id": 3540220,
+              "post_date": "2026-10-17T11:43:51.747Z",
+              "raw_markdown": "Hi everyone,\n\nI recently joined *Name That LLM* as my very first Kaggle competition[cite: 1, 4]! Coming in with limited hands-on model training experience, I wanted to document my progress and share a few questions with the community.\n\nMy Progress So Far:\n1. Initial Baseline: Built a basic TF-IDF + Logistic Regression pipeline, scoring **0.322** on 5-fold GroupKFold cross-validation and the public leaderboard. \n2. GPU Acceleration & Ensemble: Enabled GPU T4 x2 acceleration[cite: 6, 8] and executed the public *LoRA + Adaptive Centering ensemble (credits to Vladislav Lavrentev & Lucas Boesen), which brought my score to 0.541 .\n3. Pipeline Integration: Set up inter-notebook output mounting to pass TF-IDF class probabilities (`tfidf_probs.csv`) directly into downstream GPU ensemble runs for hybrid probability blending experiments.\n\nQuestions for Experienced Competitors:\n1. When ensembling linear TF-IDF probability outputs with fine-tuned deep Transformer readouts, do you recommend applying temperature scaling or rank averaging before blending to prevent high-confidence deep learning predictions from dominating?\n2. How do you balance character $n$-gram stylometric features alongside contextual embeddings without overfitting the public leaderboard?\n\nExcited to keep learning from this community! Any feedback or tips for a newcomer would be greatly appreciated.",
+              "votes": 1
+            },
+            {
+              "content": "<p>To add a bit more detail on the pipeline setup:In the TF-IDF notebook, I exported class probabilities using model_pipeline.predict_proba() saved to tfidf_probs.csv.   Mounted that CSV as an input dataset inside the GPU notebook using dynamic path discovery (glob.glob('/kaggle/input/**/tfidf_probs.csv')).   My next goal is to experiment with a weighted probability blend rather than hard prediction replacement. If anyone has experience calibrating class probabilities across diverse model families (e.g., linear models vs. fine-tuned LLMs), I'd love to hear your approach!</p>",
+              "id": 3540222,
+              "post_date": "2026-10-17T11:46:04.333Z",
+              "raw_markdown": "To add a bit more detail on the pipeline setup:In the TF-IDF notebook, I exported class probabilities using model_pipeline.predict_proba() saved to tfidf_probs.csv.   Mounted that CSV as an input dataset inside the GPU notebook using dynamic path discovery (glob.glob('/kaggle/input/**/tfidf_probs.csv')).   My next goal is to experiment with a weighted probability blend rather than hard prediction replacement. If anyone has experience calibrating class probabilities across diverse model families (e.g., linear models vs. fine-tuned LLMs), I'd love to hear your approach!"
+            },
+            {
+              "content": "<p>Improving ensemble method is not so effective. Try to improve you training pipeline.</p>",
+              "id": 3540270,
+              "post_date": "2026-10-17T14:05:24.560Z",
+              "raw_markdown": "Improving ensemble method is not so effective. Try to improve you training pipeline.",
+              "replies": [
+                {
+                  "content": "<p>Appreciate the solid advice! Makes complete sense—ensembling can't fix weak or redundant underlying predictions. I'm shifting focus toward fine-tuning individual transformer backbones and refining stylometric feature extraction on the preprocessing side. Did you find custom loss functions or specific formatting features made the biggest difference in your local CV?</p>",
+                  "id": 3540292,
+                  "post_date": "2026-10-17T15:20:58.430Z",
+                  "raw_markdown": "Appreciate the solid advice! Makes complete sense—ensembling can't fix weak or redundant underlying predictions. I'm shifting focus toward fine-tuning individual transformer backbones and refining stylometric feature extraction on the preprocessing side. Did you find custom loss functions or specific formatting features made the biggest difference in your local CV?",
+                  "replies": [
+                    {
+                      "content": "<p>In Lavrentev's notebook, there are sayed \"under genre shift (external data) predictions collapsed onto one class and balancing took balanced accuracy from 0.12 to 0.1\". So data balance is very important here. You can try to balance data, for example, balance datasets or genres. Also you can try data augmentation. Or you can try tune batch_size and learning_rate. If dataset is small and main problem is overfitting - decrease batch_size or increase learning_rate. If dataset is big and complex, and model size is small (main problem is underfitting) - increase batch_size or decrease learning_rate</p>",
+                      "id": 3540317,
+                      "post_date": "2026-10-17T16:37:43.123Z",
+                      "raw_markdown": "In Lavrentev's notebook, there are sayed \"under genre shift (external data) predictions collapsed onto one class and balancing took balanced accuracy from 0.12 to 0.1\". So data balance is very important here. You can try to balance data, for example, balance datasets or genres. Also you can try data augmentation. Or you can try tune batch_size and learning_rate. If dataset is small and main problem is overfitting - decrease batch_size or increase learning_rate. If dataset is big and complex, and model size is small (main problem is underfitting) - increase batch_size or decrease learning_rate"
+                    },
+                    {
+                      "content": "<p>Thank you for pointing out the prediction collapse phenomenon and the post-processing balancing breakdown from Lavrentev's notes! That makes total sense—if domain shift causes the model to favor a single class, balanced accuracy drops immediately.</p>\n<p>I'll look into adjusting the class-mass prior adjustments in the post-processing pipeline and test tuning the learning rate/batch size for the individual backbone fine-tunes. Did you find that applying marginal balancing on the raw logit outputs worked best, or did rank-averaging probabilities help stabilize predictions first?</p>",
+                      "id": 3540465,
+                      "post_date": "2026-10-18T02:33:26.633Z",
+                      "raw_markdown": "Thank you for pointing out the prediction collapse phenomenon and the post-processing balancing breakdown from Lavrentev's notes! That makes total sense—if domain shift causes the model to favor a single class, balanced accuracy drops immediately.\n\nI'll look into adjusting the class-mass prior adjustments in the post-processing pipeline and test tuning the learning rate/batch size for the individual backbone fine-tunes. Did you find that applying marginal balancing on the raw logit outputs worked best, or did rank-averaging probabilities help stabilize predictions first?"
+                    },
+                    {
+                      "content": "<p>Training set balancing (or class balancing) works good in most tasks.</p>",
+                      "id": 3540892,
+                      "post_date": "2026-10-19T06:19:17.893Z",
+                      "raw_markdown": "Training set balancing (or class balancing) works good in most tasks."
+                    }
+                  ]
+                }
+              ],
+              "votes": 1
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 20398771,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "20398771-kg.jpeg?t=2026-01-04-07-35-30",
+            "author_user_display_name": "Raheel Abbas",
+            "author_user_name": "raheelll",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "comments": [
+              {
+                "author": {
+                  "display_name": "ZavodRobotov",
+                  "id": 513081,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/513081-kg.JPG",
+                  "tier": "EXPERT",
+                  "url": "/zavodrobotov"
+                },
+                "author_type": "COMMENT",
+                "content": "<p>Improving ensemble method is not so effective. Try to improve you training pipeline.</p>",
+                "feedback_tracking_data": {},
+                "id": 3540270,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-17T14:05:24.560Z",
+                "raw_markdown": "Improving ensemble method is not so effective. Try to improve you training pipeline.",
+                "replies": [
+                  {
+                    "author": {
+                      "display_name": "Raheel Abbas",
+                      "id": 20398771,
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20398771-kg.jpeg?t=2026-01-04-07-35-30",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/raheelll"
+                    },
+                    "author_type": "TOPIC",
+                    "competition_ranking": 3670,
+                    "content": "<p>Appreciate the solid advice! Makes complete sense—ensembling can't fix weak or redundant underlying predictions. I'm shifting focus toward fine-tuning individual transformer backbones and refining stylometric feature extraction on the preprocessing side. Did you find custom loss functions or specific formatting features made the biggest difference in your local CV?</p>",
+                    "feedback_tracking_data": {},
+                    "id": 3540292,
+                    "is_thank_you": false,
+                    "kernel_version": 0,
+                    "parent": {},
+                    "post_date": "2026-10-17T15:20:58.430Z",
+                    "raw_markdown": "Appreciate the solid advice! Makes complete sense—ensembling can't fix weak or redundant underlying predictions. I'm shifting focus toward fine-tuning individual transformer backbones and refining stylometric feature extraction on the preprocessing side. Did you find custom loss functions or specific formatting features made the biggest difference in your local CV?",
+                    "replies": [
+                      {
+                        "author": {
+                          "display_name": "ZavodRobotov",
+                          "id": 513081,
+                          "progression_opt_out": false,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/513081-kg.JPG",
+                          "tier": "EXPERT",
+                          "url": "/zavodrobotov"
+                        },
+                        "author_type": "COMMENT",
+                        "content": "<p>In Lavrentev's notebook, there are sayed \"under genre shift (external data) predictions collapsed onto one class and balancing took balanced accuracy from 0.12 to 0.1\". So data balance is very important here. You can try to balance data, for example, balance datasets or genres. Also you can try data augmentation. Or you can try tune batch_size and learning_rate. If dataset is small and main problem is overfitting - decrease batch_size or increase learning_rate. If dataset is big and complex, and model size is small (main problem is underfitting) - increase batch_size or decrease learning_rate</p>",
+                        "feedback_tracking_data": {},
+                        "id": 3540317,
+                        "is_thank_you": false,
+                        "kernel_version": 0,
+                        "parent": {},
+                        "post_date": "2026-10-17T16:37:43.123Z",
+                        "raw_markdown": "In Lavrentev's notebook, there are sayed \"under genre shift (external data) predictions collapsed onto one class and balancing took balanced accuracy from 0.12 to 0.1\". So data balance is very important here. You can try to balance data, for example, balance datasets or genres. Also you can try data augmentation. Or you can try tune batch_size and learning_rate. If dataset is small and main problem is overfitting - decrease batch_size or increase learning_rate. If dataset is big and complex, and model size is small (main problem is underfitting) - increase batch_size or decrease learning_rate",
+                        "votes": {
+                          "can_upvote": true
+                        }
+                      },
+                      {
+                        "author": {
+                          "display_name": "Raheel Abbas",
+                          "id": 20398771,
+                          "progression_opt_out": false,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20398771-kg.jpeg?t=2026-01-04-07-35-30",
+                          "tier": "CONTRIBUTOR",
+                          "url": "/raheelll"
+                        },
+                        "author_type": "TOPIC",
+                        "competition_ranking": 3670,
+                        "content": "<p>Thank you for pointing out the prediction collapse phenomenon and the post-processing balancing breakdown from Lavrentev's notes! That makes total sense—if domain shift causes the model to favor a single class, balanced accuracy drops immediately.</p>\n<p>I'll look into adjusting the class-mass prior adjustments in the post-processing pipeline and test tuning the learning rate/batch size for the individual backbone fine-tunes. Did you find that applying marginal balancing on the raw logit outputs worked best, or did rank-averaging probabilities help stabilize predictions first?</p>",
+                        "feedback_tracking_data": {},
+                        "id": 3540465,
+                        "is_thank_you": false,
+                        "kernel_version": 0,
+                        "parent": {},
+                        "post_date": "2026-10-18T02:33:26.633Z",
+                        "raw_markdown": "Thank you for pointing out the prediction collapse phenomenon and the post-processing balancing breakdown from Lavrentev's notes! That makes total sense—if domain shift causes the model to favor a single class, balanced accuracy drops immediately.\n\nI'll look into adjusting the class-mass prior adjustments in the post-processing pipeline and test tuning the learning rate/batch size for the individual backbone fine-tunes. Did you find that applying marginal balancing on the raw logit outputs worked best, or did rank-averaging probabilities help stabilize predictions first?",
+                        "team_up_info": {
+                          "intro": "",
+                          "team_leader": {
+                            "display_name": "Raheel Abbas",
+                            "id": 20398771,
+                            "performance_tier": "CONTRIBUTOR",
+                            "profile_url": "/raheelll",
+                            "progression_opt_out": false,
+                            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20398771-kg.jpeg?t=2026-01-04-07-35-30",
+                            "tier": "CONTRIBUTOR",
+                            "url": "/raheelll",
+                            "user_id": 20398771,
+                            "user_name": "raheelll"
+                          }
+                        },
+                        "votes": {
+                          "can_upvote": true
+                        }
+                      },
+                      {
+                        "author": {
+                          "display_name": "ZavodRobotov",
+                          "id": 513081,
+                          "progression_opt_out": false,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/513081-kg.JPG",
+                          "tier": "EXPERT",
+                          "url": "/zavodrobotov"
+                        },
+                        "author_type": "COMMENT",
+                        "content": "<p>Training set balancing (or class balancing) works good in most tasks.</p>",
+                        "feedback_tracking_data": {},
+                        "id": 3540892,
+                        "is_thank_you": false,
+                        "kernel_version": 0,
+                        "parent": {},
+                        "post_date": "2026-10-19T06:19:17.893Z",
+                        "raw_markdown": "Training set balancing (or class balancing) works good in most tasks.",
+                        "votes": {
+                          "can_upvote": true
+                        }
+                      }
+                    ],
+                    "team_up_info": {
+                      "intro": "",
+                      "team_leader": {
+                        "display_name": "Raheel Abbas",
+                        "id": 20398771,
+                        "performance_tier": "CONTRIBUTOR",
+                        "profile_url": "/raheelll",
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20398771-kg.jpeg?t=2026-01-04-07-35-30",
+                        "tier": "CONTRIBUTOR",
+                        "url": "/raheelll",
+                        "user_id": 20398771,
+                        "user_name": "raheelll"
+                      }
+                    },
+                    "votes": {
+                      "can_upvote": true
+                    }
+                  }
+                ],
+                "votes": {
+                  "can_upvote": true,
+                  "total_upvotes": 1,
+                  "total_votes": 1
+                }
+              },
+              {
+                "author": {
+                  "display_name": "Raheel Abbas",
+                  "id": 20398771,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20398771-kg.jpeg?t=2026-01-04-07-35-30",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/raheelll"
+                },
+                "author_type": "TOPIC",
+                "competition_ranking": 3670,
+                "content": "<p>To add a bit more detail on the pipeline setup:In the TF-IDF notebook, I exported class probabilities using model_pipeline.predict_proba() saved to tfidf_probs.csv.   Mounted that CSV as an input dataset inside the GPU notebook using dynamic path discovery (glob.glob('/kaggle/input/**/tfidf_probs.csv')).   My next goal is to experiment with a weighted probability blend rather than hard prediction replacement. If anyone has experience calibrating class probabilities across diverse model families (e.g., linear models vs. fine-tuned LLMs), I'd love to hear your approach!</p>",
+                "feedback_tracking_data": {},
+                "id": 3540222,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-17T11:46:04.333Z",
+                "raw_markdown": "To add a bit more detail on the pipeline setup:In the TF-IDF notebook, I exported class probabilities using model_pipeline.predict_proba() saved to tfidf_probs.csv.   Mounted that CSV as an input dataset inside the GPU notebook using dynamic path discovery (glob.glob('/kaggle/input/**/tfidf_probs.csv')).   My next goal is to experiment with a weighted probability blend rather than hard prediction replacement. If anyone has experience calibrating class probabilities across diverse model families (e.g., linear models vs. fine-tuned LLMs), I'd love to hear your approach!",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "Raheel Abbas",
+                    "id": 20398771,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/raheelll",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20398771-kg.jpeg?t=2026-01-04-07-35-30",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/raheelll",
+                    "user_id": 20398771,
+                    "user_name": "raheelll"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              }
+            ],
+            "first_message": {
+              "author": {
+                "display_name": "Raheel Abbas",
+                "id": 20398771,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20398771-kg.jpeg?t=2026-01-04-07-35-30",
+                "tier": "CONTRIBUTOR",
+                "url": "/raheelll"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 3670,
+              "content": "<p>Hi everyone,</p>\n<p>I recently joined <em>Name That LLM</em> as my very first Kaggle competition[cite: 1, 4]! Coming in with limited hands-on model training experience, I wanted to document my progress and share a few questions with the community.</p>\n<p>My Progress So Far:</p>\n<ol>\n<li>Initial Baseline: Built a basic TF-IDF + Logistic Regression pipeline, scoring <strong>0.322</strong> on 5-fold GroupKFold cross-validation and the public leaderboard. </li>\n<li>GPU Acceleration &amp; Ensemble: Enabled GPU T4 x2 acceleration[cite: 6, 8] and executed the public *LoRA + Adaptive Centering ensemble (credits to Vladislav Lavrentev &amp; Lucas Boesen), which brought my score to 0.541 .</li>\n<li>Pipeline Integration: Set up inter-notebook output mounting to pass TF-IDF class probabilities (<code>tfidf_probs.csv</code>) directly into downstream GPU ensemble runs for hybrid probability blending experiments.</li>\n</ol>\n<p>Questions for Experienced Competitors:</p>\n<ol>\n<li>When ensembling linear TF-IDF probability outputs with fine-tuned deep Transformer readouts, do you recommend applying temperature scaling or rank averaging before blending to prevent high-confidence deep learning predictions from dominating?</li>\n<li>How do you balance character $n$-gram stylometric features alongside contextual embeddings without overfitting the public leaderboard?</li>\n</ol>\n<p>Excited to keep learning from this community! Any feedback or tips for a newcomer would be greatly appreciated.</p>",
+              "feedback_tracking_data": {},
+              "id": 3540220,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-17T11:43:51.747Z",
+              "raw_markdown": "Hi everyone,\n\nI recently joined *Name That LLM* as my very first Kaggle competition[cite: 1, 4]! Coming in with limited hands-on model training experience, I wanted to document my progress and share a few questions with the community.\n\nMy Progress So Far:\n1. Initial Baseline: Built a basic TF-IDF + Logistic Regression pipeline, scoring **0.322** on 5-fold GroupKFold cross-validation and the public leaderboard. \n2. GPU Acceleration & Ensemble: Enabled GPU T4 x2 acceleration[cite: 6, 8] and executed the public *LoRA + Adaptive Centering ensemble (credits to Vladislav Lavrentev & Lucas Boesen), which brought my score to 0.541 .\n3. Pipeline Integration: Set up inter-notebook output mounting to pass TF-IDF class probabilities (`tfidf_probs.csv`) directly into downstream GPU ensemble runs for hybrid probability blending experiments.\n\nQuestions for Experienced Competitors:\n1. When ensembling linear TF-IDF probability outputs with fine-tuned deep Transformer readouts, do you recommend applying temperature scaling or rank averaging before blending to prevent high-confidence deep learning predictions from dominating?\n2. How do you balance character $n$-gram stylometric features alongside contextual embeddings without overfitting the public leaderboard?\n\nExcited to keep learning from this community! Any feedback or tips for a newcomer would be greatly appreciated.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Raheel Abbas",
+                  "id": 20398771,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/raheelll",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20398771-kg.jpeg?t=2026-01-04-07-35-30",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/raheelll",
+                  "user_id": 20398771,
+                  "user_name": "raheelll"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 2,
+                "total_votes": 1
+              }
+            },
+            "first_message_id": 3540220,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 750230,
+            "name": "First Kaggle Competition: Learning journey from TF-IDF (0.322) to LoRA Ensemble (0.541)",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-10-17T11:43:51.746966500Z",
+            "total_messages": 6,
+            "total_votes": 1,
+            "url": "/competitions/name-that-llm/discussion/750230"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:24:16+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:24:16+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-10-19T06:19:17.893333300Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [
+    {
+      "slug": "name-that-llm",
+      "topic_id": 750230,
+      "message_id": 3540222,
+      "parent_message_id": null,
+      "author": "Raheel Abbas",
+      "author_url": "/raheelll",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-10-17T11:46:04.333Z",
+      "raw_markdown": "To add a bit more detail on the pipeline setup:In the TF-IDF notebook, I exported class probabilities using model_pipeline.predict_proba() saved to tfidf_probs.csv.   Mounted that CSV as an input dataset inside the GPU notebook using dynamic path discovery (glob.glob('/kaggle/input/**/tfidf_probs.csv')).   My next goal is to experiment with a weighted probability blend rather than hard prediction replacement. If anyone has experience calibrating class probabilities across diverse model families (e.g., linear models vs. fine-tuned LLMs), I'd love to hear your approach!",
+      "content_html": "<p>To add a bit more detail on the pipeline setup:In the TF-IDF notebook, I exported class probabilities using model_pipeline.predict_proba() saved to tfidf_probs.csv.   Mounted that CSV as an input dataset inside the GPU notebook using dynamic path discovery (glob.glob('/kaggle/input/**/tfidf_probs.csv')).   My next goal is to experiment with a weighted probability blend rather than hard prediction replacement. If anyone has experience calibrating class probabilities across diverse model families (e.g., linear models vs. fine-tuned LLMs), I'd love to hear your approach!</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:56:45+00:00",
+      "last_seen_at": "2026-11-16T16:24:16+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:24:16+00:00",
+      "remote_last_listed_at": "2026-11-16T16:24:16+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Raheel Abbas",
+          "tier": "CONTRIBUTOR",
+          "url": "/raheelll"
+        },
+        "content": "<p>To add a bit more detail on the pipeline setup:In the TF-IDF notebook, I exported class probabilities using model_pipeline.predict_proba() saved to tfidf_probs.csv.   Mounted that CSV as an input dataset inside the GPU notebook using dynamic path discovery (glob.glob('/kaggle/input/**/tfidf_probs.csv')).   My next goal is to experiment with a weighted probability blend rather than hard prediction replacement. If anyone has experience calibrating class probabilities across diverse model families (e.g., linear models vs. fine-tuned LLMs), I'd love to hear your approach!</p>",
+        "id": 3540222,
+        "isThankYou": false,
+        "postDate": "2026-10-17T11:46:04.333Z",
+        "raw": {
+          "author": {
+            "display_name": "Raheel Abbas",
+            "id": 20398771,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20398771-kg.jpeg?t=2026-01-04-07-35-30",
+            "tier": "CONTRIBUTOR",
+            "url": "/raheelll"
+          },
+          "author_type": "TOPIC",
+          "competition_ranking": 3670,
+          "content": "<p>To add a bit more detail on the pipeline setup:In the TF-IDF notebook, I exported class probabilities using model_pipeline.predict_proba() saved to tfidf_probs.csv.   Mounted that CSV as an input dataset inside the GPU notebook using dynamic path discovery (glob.glob('/kaggle/input/**/tfidf_probs.csv')).   My next goal is to experiment with a weighted probability blend rather than hard prediction replacement. If anyone has experience calibrating class probabilities across diverse model families (e.g., linear models vs. fine-tuned LLMs), I'd love to hear your approach!</p>",
+          "feedback_tracking_data": {},
+          "id": 3540222,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-17T11:46:04.333Z",
+          "raw_markdown": "To add a bit more detail on the pipeline setup:In the TF-IDF notebook, I exported class probabilities using model_pipeline.predict_proba() saved to tfidf_probs.csv.   Mounted that CSV as an input dataset inside the GPU notebook using dynamic path discovery (glob.glob('/kaggle/input/**/tfidf_probs.csv')).   My next goal is to experiment with a weighted probability blend rather than hard prediction replacement. If anyone has experience calibrating class probabilities across diverse model families (e.g., linear models vs. fine-tuned LLMs), I'd love to hear your approach!",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Raheel Abbas",
+              "id": 20398771,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/raheelll",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20398771-kg.jpeg?t=2026-01-04-07-35-30",
+              "tier": "CONTRIBUTOR",
+              "url": "/raheelll",
+              "user_id": 20398771,
+              "user_name": "raheelll"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "To add a bit more detail on the pipeline setup:In the TF-IDF notebook, I exported class probabilities using model_pipeline.predict_proba() saved to tfidf_probs.csv.   Mounted that CSV as an input dataset inside the GPU notebook using dynamic path discovery (glob.glob('/kaggle/input/**/tfidf_probs.csv')).   My next goal is to experiment with a weighted probability blend rather than hard prediction replacement. If anyone has experience calibrating class probabilities across diverse model families (e.g., linear models vs. fine-tuned LLMs), I'd love to hear your approach!",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 750230,
+      "message_id": 3540270,
+      "parent_message_id": null,
+      "author": "ZavodRobotov",
+      "author_url": "/zavodrobotov",
+      "author_tier": "EXPERT",
+      "post_date": "2026-10-17T14:05:24.560Z",
+      "raw_markdown": "Improving ensemble method is not so effective. Try to improve you training pipeline.",
+      "content_html": "<p>Improving ensemble method is not so effective. Try to improve you training pipeline.</p>",
+      "votes": 1,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:56:45+00:00",
+      "last_seen_at": "2026-11-16T16:24:16+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:24:16+00:00",
+      "remote_last_listed_at": "2026-11-16T16:24:16+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "ZavodRobotov",
+          "tier": "EXPERT",
+          "url": "/zavodrobotov"
+        },
+        "content": "<p>Improving ensemble method is not so effective. Try to improve you training pipeline.</p>",
+        "id": 3540270,
+        "isThankYou": false,
+        "postDate": "2026-10-17T14:05:24.560Z",
+        "raw": {
+          "author": {
+            "display_name": "ZavodRobotov",
+            "id": 513081,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/513081-kg.JPG",
+            "tier": "EXPERT",
+            "url": "/zavodrobotov"
+          },
+          "author_type": "COMMENT",
+          "content": "<p>Improving ensemble method is not so effective. Try to improve you training pipeline.</p>",
+          "feedback_tracking_data": {},
+          "id": 3540270,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-17T14:05:24.560Z",
+          "raw_markdown": "Improving ensemble method is not so effective. Try to improve you training pipeline.",
+          "replies": [
+            {
+              "author": {
+                "display_name": "Raheel Abbas",
+                "id": 20398771,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20398771-kg.jpeg?t=2026-01-04-07-35-30",
+                "tier": "CONTRIBUTOR",
+                "url": "/raheelll"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 3670,
+              "content": "<p>Appreciate the solid advice! Makes complete sense—ensembling can't fix weak or redundant underlying predictions. I'm shifting focus toward fine-tuning individual transformer backbones and refining stylometric feature extraction on the preprocessing side. Did you find custom loss functions or specific formatting features made the biggest difference in your local CV?</p>",
+              "feedback_tracking_data": {},
+              "id": 3540292,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-17T15:20:58.430Z",
+              "raw_markdown": "Appreciate the solid advice! Makes complete sense—ensembling can't fix weak or redundant underlying predictions. I'm shifting focus toward fine-tuning individual transformer backbones and refining stylometric feature extraction on the preprocessing side. Did you find custom loss functions or specific formatting features made the biggest difference in your local CV?",
+              "replies": [
+                {
+                  "author": {
+                    "display_name": "ZavodRobotov",
+                    "id": 513081,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/513081-kg.JPG",
+                    "tier": "EXPERT",
+                    "url": "/zavodrobotov"
+                  },
+                  "author_type": "COMMENT",
+                  "content": "<p>In Lavrentev's notebook, there are sayed \"under genre shift (external data) predictions collapsed onto one class and balancing took balanced accuracy from 0.12 to 0.1\". So data balance is very important here. You can try to balance data, for example, balance datasets or genres. Also you can try data augmentation. Or you can try tune batch_size and learning_rate. If dataset is small and main problem is overfitting - decrease batch_size or increase learning_rate. If dataset is big and complex, and model size is small (main problem is underfitting) - increase batch_size or decrease learning_rate</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3540317,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-17T16:37:43.123Z",
+                  "raw_markdown": "In Lavrentev's notebook, there are sayed \"under genre shift (external data) predictions collapsed onto one class and balancing took balanced accuracy from 0.12 to 0.1\". So data balance is very important here. You can try to balance data, for example, balance datasets or genres. Also you can try data augmentation. Or you can try tune batch_size and learning_rate. If dataset is small and main problem is overfitting - decrease batch_size or increase learning_rate. If dataset is big and complex, and model size is small (main problem is underfitting) - increase batch_size or decrease learning_rate",
+                  "votes": {
+                    "can_upvote": true
+                  }
+                },
+                {
+                  "author": {
+                    "display_name": "Raheel Abbas",
+                    "id": 20398771,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20398771-kg.jpeg?t=2026-01-04-07-35-30",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/raheelll"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 3670,
+                  "content": "<p>Thank you for pointing out the prediction collapse phenomenon and the post-processing balancing breakdown from Lavrentev's notes! That makes total sense—if domain shift causes the model to favor a single class, balanced accuracy drops immediately.</p>\n<p>I'll look into adjusting the class-mass prior adjustments in the post-processing pipeline and test tuning the learning rate/batch size for the individual backbone fine-tunes. Did you find that applying marginal balancing on the raw logit outputs worked best, or did rank-averaging probabilities help stabilize predictions first?</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3540465,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-18T02:33:26.633Z",
+                  "raw_markdown": "Thank you for pointing out the prediction collapse phenomenon and the post-processing balancing breakdown from Lavrentev's notes! That makes total sense—if domain shift causes the model to favor a single class, balanced accuracy drops immediately.\n\nI'll look into adjusting the class-mass prior adjustments in the post-processing pipeline and test tuning the learning rate/batch size for the individual backbone fine-tunes. Did you find that applying marginal balancing on the raw logit outputs worked best, or did rank-averaging probabilities help stabilize predictions first?",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Raheel Abbas",
+                      "id": 20398771,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/raheelll",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20398771-kg.jpeg?t=2026-01-04-07-35-30",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/raheelll",
+                      "user_id": 20398771,
+                      "user_name": "raheelll"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                },
+                {
+                  "author": {
+                    "display_name": "ZavodRobotov",
+                    "id": 513081,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/513081-kg.JPG",
+                    "tier": "EXPERT",
+                    "url": "/zavodrobotov"
+                  },
+                  "author_type": "COMMENT",
+                  "content": "<p>Training set balancing (or class balancing) works good in most tasks.</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3540892,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-19T06:19:17.893Z",
+                  "raw_markdown": "Training set balancing (or class balancing) works good in most tasks.",
+                  "votes": {
+                    "can_upvote": true
+                  }
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Raheel Abbas",
+                  "id": 20398771,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/raheelll",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20398771-kg.jpeg?t=2026-01-04-07-35-30",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/raheelll",
+                  "user_id": 20398771,
+                  "user_name": "raheelll"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            }
+          ],
+          "votes": {
+            "can_upvote": true,
+            "total_upvotes": 1,
+            "total_votes": 1
+          }
+        },
+        "rawMarkdown": "Improving ensemble method is not so effective. Try to improve you training pipeline.",
+        "replies": [
+          {
+            "author": {
+              "displayName": "Raheel Abbas",
+              "tier": "CONTRIBUTOR",
+              "url": "/raheelll"
+            },
+            "content": "<p>Appreciate the solid advice! Makes complete sense—ensembling can't fix weak or redundant underlying predictions. I'm shifting focus toward fine-tuning individual transformer backbones and refining stylometric feature extraction on the preprocessing side. Did you find custom loss functions or specific formatting features made the biggest difference in your local CV?</p>",
+            "id": 3540292,
+            "isThankYou": false,
+            "postDate": "2026-10-17T15:20:58.430Z",
+            "raw": {
+              "author": {
+                "display_name": "Raheel Abbas",
+                "id": 20398771,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20398771-kg.jpeg?t=2026-01-04-07-35-30",
+                "tier": "CONTRIBUTOR",
+                "url": "/raheelll"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 3670,
+              "content": "<p>Appreciate the solid advice! Makes complete sense—ensembling can't fix weak or redundant underlying predictions. I'm shifting focus toward fine-tuning individual transformer backbones and refining stylometric feature extraction on the preprocessing side. Did you find custom loss functions or specific formatting features made the biggest difference in your local CV?</p>",
+              "feedback_tracking_data": {},
+              "id": 3540292,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-17T15:20:58.430Z",
+              "raw_markdown": "Appreciate the solid advice! Makes complete sense—ensembling can't fix weak or redundant underlying predictions. I'm shifting focus toward fine-tuning individual transformer backbones and refining stylometric feature extraction on the preprocessing side. Did you find custom loss functions or specific formatting features made the biggest difference in your local CV?",
+              "replies": [
+                {
+                  "author": {
+                    "display_name": "ZavodRobotov",
+                    "id": 513081,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/513081-kg.JPG",
+                    "tier": "EXPERT",
+                    "url": "/zavodrobotov"
+                  },
+                  "author_type": "COMMENT",
+                  "content": "<p>In Lavrentev's notebook, there are sayed \"under genre shift (external data) predictions collapsed onto one class and balancing took balanced accuracy from 0.12 to 0.1\". So data balance is very important here. You can try to balance data, for example, balance datasets or genres. Also you can try data augmentation. Or you can try tune batch_size and learning_rate. If dataset is small and main problem is overfitting - decrease batch_size or increase learning_rate. If dataset is big and complex, and model size is small (main problem is underfitting) - increase batch_size or decrease learning_rate</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3540317,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-17T16:37:43.123Z",
+                  "raw_markdown": "In Lavrentev's notebook, there are sayed \"under genre shift (external data) predictions collapsed onto one class and balancing took balanced accuracy from 0.12 to 0.1\". So data balance is very important here. You can try to balance data, for example, balance datasets or genres. Also you can try data augmentation. Or you can try tune batch_size and learning_rate. If dataset is small and main problem is overfitting - decrease batch_size or increase learning_rate. If dataset is big and complex, and model size is small (main problem is underfitting) - increase batch_size or decrease learning_rate",
+                  "votes": {
+                    "can_upvote": true
+                  }
+                },
+                {
+                  "author": {
+                    "display_name": "Raheel Abbas",
+                    "id": 20398771,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20398771-kg.jpeg?t=2026-01-04-07-35-30",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/raheelll"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 3670,
+                  "content": "<p>Thank you for pointing out the prediction collapse phenomenon and the post-processing balancing breakdown from Lavrentev's notes! That makes total sense—if domain shift causes the model to favor a single class, balanced accuracy drops immediately.</p>\n<p>I'll look into adjusting the class-mass prior adjustments in the post-processing pipeline and test tuning the learning rate/batch size for the individual backbone fine-tunes. Did you find that applying marginal balancing on the raw logit outputs worked best, or did rank-averaging probabilities help stabilize predictions first?</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3540465,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-18T02:33:26.633Z",
+                  "raw_markdown": "Thank you for pointing out the prediction collapse phenomenon and the post-processing balancing breakdown from Lavrentev's notes! That makes total sense—if domain shift causes the model to favor a single class, balanced accuracy drops immediately.\n\nI'll look into adjusting the class-mass prior adjustments in the post-processing pipeline and test tuning the learning rate/batch size for the individual backbone fine-tunes. Did you find that applying marginal balancing on the raw logit outputs worked best, or did rank-averaging probabilities help stabilize predictions first?",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Raheel Abbas",
+                      "id": 20398771,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/raheelll",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20398771-kg.jpeg?t=2026-01-04-07-35-30",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/raheelll",
+                      "user_id": 20398771,
+                      "user_name": "raheelll"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                },
+                {
+                  "author": {
+                    "display_name": "ZavodRobotov",
+                    "id": 513081,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/513081-kg.JPG",
+                    "tier": "EXPERT",
+                    "url": "/zavodrobotov"
+                  },
+                  "author_type": "COMMENT",
+                  "content": "<p>Training set balancing (or class balancing) works good in most tasks.</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3540892,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-19T06:19:17.893Z",
+                  "raw_markdown": "Training set balancing (or class balancing) works good in most tasks.",
+                  "votes": {
+                    "can_upvote": true
+                  }
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Raheel Abbas",
+                  "id": 20398771,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/raheelll",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20398771-kg.jpeg?t=2026-01-04-07-35-30",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/raheelll",
+                  "user_id": 20398771,
+                  "user_name": "raheelll"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "Appreciate the solid advice! Makes complete sense—ensembling can't fix weak or redundant underlying predictions. I'm shifting focus toward fine-tuning individual transformer backbones and refining stylometric feature extraction on the preprocessing side. Did you find custom loss functions or specific formatting features made the biggest difference in your local CV?",
+            "replies": [
+              {
+                "author": {
+                  "displayName": "ZavodRobotov",
+                  "tier": "EXPERT",
+                  "url": "/zavodrobotov"
+                },
+                "content": "<p>In Lavrentev's notebook, there are sayed \"under genre shift (external data) predictions collapsed onto one class and balancing took balanced accuracy from 0.12 to 0.1\". So data balance is very important here. You can try to balance data, for example, balance datasets or genres. Also you can try data augmentation. Or you can try tune batch_size and learning_rate. If dataset is small and main problem is overfitting - decrease batch_size or increase learning_rate. If dataset is big and complex, and model size is small (main problem is underfitting) - increase batch_size or decrease learning_rate</p>",
+                "id": 3540317,
+                "isThankYou": false,
+                "postDate": "2026-10-17T16:37:43.123Z",
+                "raw": {
+                  "author": {
+                    "display_name": "ZavodRobotov",
+                    "id": 513081,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/513081-kg.JPG",
+                    "tier": "EXPERT",
+                    "url": "/zavodrobotov"
+                  },
+                  "author_type": "COMMENT",
+                  "content": "<p>In Lavrentev's notebook, there are sayed \"under genre shift (external data) predictions collapsed onto one class and balancing took balanced accuracy from 0.12 to 0.1\". So data balance is very important here. You can try to balance data, for example, balance datasets or genres. Also you can try data augmentation. Or you can try tune batch_size and learning_rate. If dataset is small and main problem is overfitting - decrease batch_size or increase learning_rate. If dataset is big and complex, and model size is small (main problem is underfitting) - increase batch_size or decrease learning_rate</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3540317,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-17T16:37:43.123Z",
+                  "raw_markdown": "In Lavrentev's notebook, there are sayed \"under genre shift (external data) predictions collapsed onto one class and balancing took balanced accuracy from 0.12 to 0.1\". So data balance is very important here. You can try to balance data, for example, balance datasets or genres. Also you can try data augmentation. Or you can try tune batch_size and learning_rate. If dataset is small and main problem is overfitting - decrease batch_size or increase learning_rate. If dataset is big and complex, and model size is small (main problem is underfitting) - increase batch_size or decrease learning_rate",
+                  "votes": {
+                    "can_upvote": true
+                  }
+                },
+                "rawMarkdown": "In Lavrentev's notebook, there are sayed \"under genre shift (external data) predictions collapsed onto one class and balancing took balanced accuracy from 0.12 to 0.1\". So data balance is very important here. You can try to balance data, for example, balance datasets or genres. Also you can try data augmentation. Or you can try tune batch_size and learning_rate. If dataset is small and main problem is overfitting - decrease batch_size or increase learning_rate. If dataset is big and complex, and model size is small (main problem is underfitting) - increase batch_size or decrease learning_rate",
+                "replies": [],
+                "votes": {
+                  "totalVotes": 0
+                }
+              },
+              {
+                "author": {
+                  "displayName": "Raheel Abbas",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/raheelll"
+                },
+                "content": "<p>Thank you for pointing out the prediction collapse phenomenon and the post-processing balancing breakdown from Lavrentev's notes! That makes total sense—if domain shift causes the model to favor a single class, balanced accuracy drops immediately.</p>\n<p>I'll look into adjusting the class-mass prior adjustments in the post-processing pipeline and test tuning the learning rate/batch size for the individual backbone fine-tunes. Did you find that applying marginal balancing on the raw logit outputs worked best, or did rank-averaging probabilities help stabilize predictions first?</p>",
+                "id": 3540465,
+                "isThankYou": false,
+                "postDate": "2026-10-18T02:33:26.633Z",
+                "raw": {
+                  "author": {
+                    "display_name": "Raheel Abbas",
+                    "id": 20398771,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20398771-kg.jpeg?t=2026-01-04-07-35-30",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/raheelll"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 3670,
+                  "content": "<p>Thank you for pointing out the prediction collapse phenomenon and the post-processing balancing breakdown from Lavrentev's notes! That makes total sense—if domain shift causes the model to favor a single class, balanced accuracy drops immediately.</p>\n<p>I'll look into adjusting the class-mass prior adjustments in the post-processing pipeline and test tuning the learning rate/batch size for the individual backbone fine-tunes. Did you find that applying marginal balancing on the raw logit outputs worked best, or did rank-averaging probabilities help stabilize predictions first?</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3540465,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-18T02:33:26.633Z",
+                  "raw_markdown": "Thank you for pointing out the prediction collapse phenomenon and the post-processing balancing breakdown from Lavrentev's notes! That makes total sense—if domain shift causes the model to favor a single class, balanced accuracy drops immediately.\n\nI'll look into adjusting the class-mass prior adjustments in the post-processing pipeline and test tuning the learning rate/batch size for the individual backbone fine-tunes. Did you find that applying marginal balancing on the raw logit outputs worked best, or did rank-averaging probabilities help stabilize predictions first?",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Raheel Abbas",
+                      "id": 20398771,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/raheelll",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20398771-kg.jpeg?t=2026-01-04-07-35-30",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/raheelll",
+                      "user_id": 20398771,
+                      "user_name": "raheelll"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                },
+                "rawMarkdown": "Thank you for pointing out the prediction collapse phenomenon and the post-processing balancing breakdown from Lavrentev's notes! That makes total sense—if domain shift causes the model to favor a single class, balanced accuracy drops immediately.\n\nI'll look into adjusting the class-mass prior adjustments in the post-processing pipeline and test tuning the learning rate/batch size for the individual backbone fine-tunes. Did you find that applying marginal balancing on the raw logit outputs worked best, or did rank-averaging probabilities help stabilize predictions first?",
+                "replies": [],
+                "votes": {
+                  "totalVotes": 0
+                }
+              },
+              {
+                "author": {
+                  "displayName": "ZavodRobotov",
+                  "tier": "EXPERT",
+                  "url": "/zavodrobotov"
+                },
+                "content": "<p>Training set balancing (or class balancing) works good in most tasks.</p>",
+                "id": 3540892,
+                "isThankYou": false,
+                "postDate": "2026-10-19T06:19:17.893Z",
+                "raw": {
+                  "author": {
+                    "display_name": "ZavodRobotov",
+                    "id": 513081,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/513081-kg.JPG",
+                    "tier": "EXPERT",
+                    "url": "/zavodrobotov"
+                  },
+                  "author_type": "COMMENT",
+                  "content": "<p>Training set balancing (or class balancing) works good in most tasks.</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3540892,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-19T06:19:17.893Z",
+                  "raw_markdown": "Training set balancing (or class balancing) works good in most tasks.",
+                  "votes": {
+                    "can_upvote": true
+                  }
+                },
+                "rawMarkdown": "Training set balancing (or class balancing) works good in most tasks.",
+                "replies": [],
+                "votes": {
+                  "totalVotes": 0
+                }
+              }
+            ],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "votes": {
+          "totalVotes": 1
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 750230,
+      "message_id": 3540292,
+      "parent_message_id": 3540270,
+      "author": "Raheel Abbas",
+      "author_url": "/raheelll",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-10-17T15:20:58.430Z",
+      "raw_markdown": "Appreciate the solid advice! Makes complete sense—ensembling can't fix weak or redundant underlying predictions. I'm shifting focus toward fine-tuning individual transformer backbones and refining stylometric feature extraction on the preprocessing side. Did you find custom loss functions or specific formatting features made the biggest difference in your local CV?",
+      "content_html": "<p>Appreciate the solid advice! Makes complete sense—ensembling can't fix weak or redundant underlying predictions. I'm shifting focus toward fine-tuning individual transformer backbones and refining stylometric feature extraction on the preprocessing side. Did you find custom loss functions or specific formatting features made the biggest difference in your local CV?</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 1,
+      "first_seen_at": "2026-11-04T06:56:45+00:00",
+      "last_seen_at": "2026-11-16T16:24:16+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:24:16+00:00",
+      "remote_last_listed_at": "2026-11-16T16:24:16+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Raheel Abbas",
+          "tier": "CONTRIBUTOR",
+          "url": "/raheelll"
+        },
+        "content": "<p>Appreciate the solid advice! Makes complete sense—ensembling can't fix weak or redundant underlying predictions. I'm shifting focus toward fine-tuning individual transformer backbones and refining stylometric feature extraction on the preprocessing side. Did you find custom loss functions or specific formatting features made the biggest difference in your local CV?</p>",
+        "id": 3540292,
+        "isThankYou": false,
+        "postDate": "2026-10-17T15:20:58.430Z",
+        "raw": {
+          "author": {
+            "display_name": "Raheel Abbas",
+            "id": 20398771,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20398771-kg.jpeg?t=2026-01-04-07-35-30",
+            "tier": "CONTRIBUTOR",
+            "url": "/raheelll"
+          },
+          "author_type": "TOPIC",
+          "competition_ranking": 3670,
+          "content": "<p>Appreciate the solid advice! Makes complete sense—ensembling can't fix weak or redundant underlying predictions. I'm shifting focus toward fine-tuning individual transformer backbones and refining stylometric feature extraction on the preprocessing side. Did you find custom loss functions or specific formatting features made the biggest difference in your local CV?</p>",
+          "feedback_tracking_data": {},
+          "id": 3540292,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-17T15:20:58.430Z",
+          "raw_markdown": "Appreciate the solid advice! Makes complete sense—ensembling can't fix weak or redundant underlying predictions. I'm shifting focus toward fine-tuning individual transformer backbones and refining stylometric feature extraction on the preprocessing side. Did you find custom loss functions or specific formatting features made the biggest difference in your local CV?",
+          "replies": [
+            {
+              "author": {
+                "display_name": "ZavodRobotov",
+                "id": 513081,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/513081-kg.JPG",
+                "tier": "EXPERT",
+                "url": "/zavodrobotov"
+              },
+              "author_type": "COMMENT",
+              "content": "<p>In Lavrentev's notebook, there are sayed \"under genre shift (external data) predictions collapsed onto one class and balancing took balanced accuracy from 0.12 to 0.1\". So data balance is very important here. You can try to balance data, for example, balance datasets or genres. Also you can try data augmentation. Or you can try tune batch_size and learning_rate. If dataset is small and main problem is overfitting - decrease batch_size or increase learning_rate. If dataset is big and complex, and model size is small (main problem is underfitting) - increase batch_size or decrease learning_rate</p>",
+              "feedback_tracking_data": {},
+              "id": 3540317,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-17T16:37:43.123Z",
+              "raw_markdown": "In Lavrentev's notebook, there are sayed \"under genre shift (external data) predictions collapsed onto one class and balancing took balanced accuracy from 0.12 to 0.1\". So data balance is very important here. You can try to balance data, for example, balance datasets or genres. Also you can try data augmentation. Or you can try tune batch_size and learning_rate. If dataset is small and main problem is overfitting - decrease batch_size or increase learning_rate. If dataset is big and complex, and model size is small (main problem is underfitting) - increase batch_size or decrease learning_rate",
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            {
+              "author": {
+                "display_name": "Raheel Abbas",
+                "id": 20398771,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20398771-kg.jpeg?t=2026-01-04-07-35-30",
+                "tier": "CONTRIBUTOR",
+                "url": "/raheelll"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 3670,
+              "content": "<p>Thank you for pointing out the prediction collapse phenomenon and the post-processing balancing breakdown from Lavrentev's notes! That makes total sense—if domain shift causes the model to favor a single class, balanced accuracy drops immediately.</p>\n<p>I'll look into adjusting the class-mass prior adjustments in the post-processing pipeline and test tuning the learning rate/batch size for the individual backbone fine-tunes. Did you find that applying marginal balancing on the raw logit outputs worked best, or did rank-averaging probabilities help stabilize predictions first?</p>",
+              "feedback_tracking_data": {},
+              "id": 3540465,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-18T02:33:26.633Z",
+              "raw_markdown": "Thank you for pointing out the prediction collapse phenomenon and the post-processing balancing breakdown from Lavrentev's notes! That makes total sense—if domain shift causes the model to favor a single class, balanced accuracy drops immediately.\n\nI'll look into adjusting the class-mass prior adjustments in the post-processing pipeline and test tuning the learning rate/batch size for the individual backbone fine-tunes. Did you find that applying marginal balancing on the raw logit outputs worked best, or did rank-averaging probabilities help stabilize predictions first?",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Raheel Abbas",
+                  "id": 20398771,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/raheelll",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20398771-kg.jpeg?t=2026-01-04-07-35-30",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/raheelll",
+                  "user_id": 20398771,
+                  "user_name": "raheelll"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            {
+              "author": {
+                "display_name": "ZavodRobotov",
+                "id": 513081,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/513081-kg.JPG",
+                "tier": "EXPERT",
+                "url": "/zavodrobotov"
+              },
+              "author_type": "COMMENT",
+              "content": "<p>Training set balancing (or class balancing) works good in most tasks.</p>",
+              "feedback_tracking_data": {},
+              "id": 3540892,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-19T06:19:17.893Z",
+              "raw_markdown": "Training set balancing (or class balancing) works good in most tasks.",
+              "votes": {
+                "can_upvote": true
+              }
+            }
+          ],
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Raheel Abbas",
+              "id": 20398771,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/raheelll",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20398771-kg.jpeg?t=2026-01-04-07-35-30",
+              "tier": "CONTRIBUTOR",
+              "url": "/raheelll",
+              "user_id": 20398771,
+              "user_name": "raheelll"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "Appreciate the solid advice! Makes complete sense—ensembling can't fix weak or redundant underlying predictions. I'm shifting focus toward fine-tuning individual transformer backbones and refining stylometric feature extraction on the preprocessing side. Did you find custom loss functions or specific formatting features made the biggest difference in your local CV?",
+        "replies": [
+          {
+            "author": {
+              "displayName": "ZavodRobotov",
+              "tier": "EXPERT",
+              "url": "/zavodrobotov"
+            },
+            "content": "<p>In Lavrentev's notebook, there are sayed \"under genre shift (external data) predictions collapsed onto one class and balancing took balanced accuracy from 0.12 to 0.1\". So data balance is very important here. You can try to balance data, for example, balance datasets or genres. Also you can try data augmentation. Or you can try tune batch_size and learning_rate. If dataset is small and main problem is overfitting - decrease batch_size or increase learning_rate. If dataset is big and complex, and model size is small (main problem is underfitting) - increase batch_size or decrease learning_rate</p>",
+            "id": 3540317,
+            "isThankYou": false,
+            "postDate": "2026-10-17T16:37:43.123Z",
+            "raw": {
+              "author": {
+                "display_name": "ZavodRobotov",
+                "id": 513081,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/513081-kg.JPG",
+                "tier": "EXPERT",
+                "url": "/zavodrobotov"
+              },
+              "author_type": "COMMENT",
+              "content": "<p>In Lavrentev's notebook, there are sayed \"under genre shift (external data) predictions collapsed onto one class and balancing took balanced accuracy from 0.12 to 0.1\". So data balance is very important here. You can try to balance data, for example, balance datasets or genres. Also you can try data augmentation. Or you can try tune batch_size and learning_rate. If dataset is small and main problem is overfitting - decrease batch_size or increase learning_rate. If dataset is big and complex, and model size is small (main problem is underfitting) - increase batch_size or decrease learning_rate</p>",
+              "feedback_tracking_data": {},
+              "id": 3540317,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-17T16:37:43.123Z",
+              "raw_markdown": "In Lavrentev's notebook, there are sayed \"under genre shift (external data) predictions collapsed onto one class and balancing took balanced accuracy from 0.12 to 0.1\". So data balance is very important here. You can try to balance data, for example, balance datasets or genres. Also you can try data augmentation. Or you can try tune batch_size and learning_rate. If dataset is small and main problem is overfitting - decrease batch_size or increase learning_rate. If dataset is big and complex, and model size is small (main problem is underfitting) - increase batch_size or decrease learning_rate",
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "In Lavrentev's notebook, there are sayed \"under genre shift (external data) predictions collapsed onto one class and balancing took balanced accuracy from 0.12 to 0.1\". So data balance is very important here. You can try to balance data, for example, balance datasets or genres. Also you can try data augmentation. Or you can try tune batch_size and learning_rate. If dataset is small and main problem is overfitting - decrease batch_size or increase learning_rate. If dataset is big and complex, and model size is small (main problem is underfitting) - increase batch_size or decrease learning_rate",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          },
+          {
+            "author": {
+              "displayName": "Raheel Abbas",
+              "tier": "CONTRIBUTOR",
+              "url": "/raheelll"
+            },
+            "content": "<p>Thank you for pointing out the prediction collapse phenomenon and the post-processing balancing breakdown from Lavrentev's notes! That makes total sense—if domain shift causes the model to favor a single class, balanced accuracy drops immediately.</p>\n<p>I'll look into adjusting the class-mass prior adjustments in the post-processing pipeline and test tuning the learning rate/batch size for the individual backbone fine-tunes. Did you find that applying marginal balancing on the raw logit outputs worked best, or did rank-averaging probabilities help stabilize predictions first?</p>",
+            "id": 3540465,
+            "isThankYou": false,
+            "postDate": "2026-10-18T02:33:26.633Z",
+            "raw": {
+              "author": {
+                "display_name": "Raheel Abbas",
+                "id": 20398771,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20398771-kg.jpeg?t=2026-01-04-07-35-30",
+                "tier": "CONTRIBUTOR",
+                "url": "/raheelll"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 3670,
+              "content": "<p>Thank you for pointing out the prediction collapse phenomenon and the post-processing balancing breakdown from Lavrentev's notes! That makes total sense—if domain shift causes the model to favor a single class, balanced accuracy drops immediately.</p>\n<p>I'll look into adjusting the class-mass prior adjustments in the post-processing pipeline and test tuning the learning rate/batch size for the individual backbone fine-tunes. Did you find that applying marginal balancing on the raw logit outputs worked best, or did rank-averaging probabilities help stabilize predictions first?</p>",
+              "feedback_tracking_data": {},
+              "id": 3540465,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-18T02:33:26.633Z",
+              "raw_markdown": "Thank you for pointing out the prediction collapse phenomenon and the post-processing balancing breakdown from Lavrentev's notes! That makes total sense—if domain shift causes the model to favor a single class, balanced accuracy drops immediately.\n\nI'll look into adjusting the class-mass prior adjustments in the post-processing pipeline and test tuning the learning rate/batch size for the individual backbone fine-tunes. Did you find that applying marginal balancing on the raw logit outputs worked best, or did rank-averaging probabilities help stabilize predictions first?",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Raheel Abbas",
+                  "id": 20398771,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/raheelll",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20398771-kg.jpeg?t=2026-01-04-07-35-30",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/raheelll",
+                  "user_id": 20398771,
+                  "user_name": "raheelll"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "Thank you for pointing out the prediction collapse phenomenon and the post-processing balancing breakdown from Lavrentev's notes! That makes total sense—if domain shift causes the model to favor a single class, balanced accuracy drops immediately.\n\nI'll look into adjusting the class-mass prior adjustments in the post-processing pipeline and test tuning the learning rate/batch size for the individual backbone fine-tunes. Did you find that applying marginal balancing on the raw logit outputs worked best, or did rank-averaging probabilities help stabilize predictions first?",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          },
+          {
+            "author": {
+              "displayName": "ZavodRobotov",
+              "tier": "EXPERT",
+              "url": "/zavodrobotov"
+            },
+            "content": "<p>Training set balancing (or class balancing) works good in most tasks.</p>",
+            "id": 3540892,
+            "isThankYou": false,
+            "postDate": "2026-10-19T06:19:17.893Z",
+            "raw": {
+              "author": {
+                "display_name": "ZavodRobotov",
+                "id": 513081,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/513081-kg.JPG",
+                "tier": "EXPERT",
+                "url": "/zavodrobotov"
+              },
+              "author_type": "COMMENT",
+              "content": "<p>Training set balancing (or class balancing) works good in most tasks.</p>",
+              "feedback_tracking_data": {},
+              "id": 3540892,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-19T06:19:17.893Z",
+              "raw_markdown": "Training set balancing (or class balancing) works good in most tasks.",
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "Training set balancing (or class balancing) works good in most tasks.",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 750230,
+      "message_id": 3540317,
+      "parent_message_id": 3540292,
+      "author": "ZavodRobotov",
+      "author_url": "/zavodrobotov",
+      "author_tier": "EXPERT",
+      "post_date": "2026-10-17T16:37:43.123Z",
+      "raw_markdown": "In Lavrentev's notebook, there are sayed \"under genre shift (external data) predictions collapsed onto one class and balancing took balanced accuracy from 0.12 to 0.1\". So data balance is very important here. You can try to balance data, for example, balance datasets or genres. Also you can try data augmentation. Or you can try tune batch_size and learning_rate. If dataset is small and main problem is overfitting - decrease batch_size or increase learning_rate. If dataset is big and complex, and model size is small (main problem is underfitting) - increase batch_size or decrease learning_rate",
+      "content_html": "<p>In Lavrentev's notebook, there are sayed \"under genre shift (external data) predictions collapsed onto one class and balancing took balanced accuracy from 0.12 to 0.1\". So data balance is very important here. You can try to balance data, for example, balance datasets or genres. Also you can try data augmentation. Or you can try tune batch_size and learning_rate. If dataset is small and main problem is overfitting - decrease batch_size or increase learning_rate. If dataset is big and complex, and model size is small (main problem is underfitting) - increase batch_size or decrease learning_rate</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 2,
+      "first_seen_at": "2026-11-04T06:56:45+00:00",
+      "last_seen_at": "2026-11-16T16:24:16+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:24:16+00:00",
+      "remote_last_listed_at": "2026-11-16T16:24:16+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "ZavodRobotov",
+          "tier": "EXPERT",
+          "url": "/zavodrobotov"
+        },
+        "content": "<p>In Lavrentev's notebook, there are sayed \"under genre shift (external data) predictions collapsed onto one class and balancing took balanced accuracy from 0.12 to 0.1\". So data balance is very important here. You can try to balance data, for example, balance datasets or genres. Also you can try data augmentation. Or you can try tune batch_size and learning_rate. If dataset is small and main problem is overfitting - decrease batch_size or increase learning_rate. If dataset is big and complex, and model size is small (main problem is underfitting) - increase batch_size or decrease learning_rate</p>",
+        "id": 3540317,
+        "isThankYou": false,
+        "postDate": "2026-10-17T16:37:43.123Z",
+        "raw": {
+          "author": {
+            "display_name": "ZavodRobotov",
+            "id": 513081,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/513081-kg.JPG",
+            "tier": "EXPERT",
+            "url": "/zavodrobotov"
+          },
+          "author_type": "COMMENT",
+          "content": "<p>In Lavrentev's notebook, there are sayed \"under genre shift (external data) predictions collapsed onto one class and balancing took balanced accuracy from 0.12 to 0.1\". So data balance is very important here. You can try to balance data, for example, balance datasets or genres. Also you can try data augmentation. Or you can try tune batch_size and learning_rate. If dataset is small and main problem is overfitting - decrease batch_size or increase learning_rate. If dataset is big and complex, and model size is small (main problem is underfitting) - increase batch_size or decrease learning_rate</p>",
+          "feedback_tracking_data": {},
+          "id": 3540317,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-17T16:37:43.123Z",
+          "raw_markdown": "In Lavrentev's notebook, there are sayed \"under genre shift (external data) predictions collapsed onto one class and balancing took balanced accuracy from 0.12 to 0.1\". So data balance is very important here. You can try to balance data, for example, balance datasets or genres. Also you can try data augmentation. Or you can try tune batch_size and learning_rate. If dataset is small and main problem is overfitting - decrease batch_size or increase learning_rate. If dataset is big and complex, and model size is small (main problem is underfitting) - increase batch_size or decrease learning_rate",
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "In Lavrentev's notebook, there are sayed \"under genre shift (external data) predictions collapsed onto one class and balancing took balanced accuracy from 0.12 to 0.1\". So data balance is very important here. You can try to balance data, for example, balance datasets or genres. Also you can try data augmentation. Or you can try tune batch_size and learning_rate. If dataset is small and main problem is overfitting - decrease batch_size or increase learning_rate. If dataset is big and complex, and model size is small (main problem is underfitting) - increase batch_size or decrease learning_rate",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 750230,
+      "message_id": 3540465,
+      "parent_message_id": 3540292,
+      "author": "Raheel Abbas",
+      "author_url": "/raheelll",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-10-18T02:33:26.633Z",
+      "raw_markdown": "Thank you for pointing out the prediction collapse phenomenon and the post-processing balancing breakdown from Lavrentev's notes! That makes total sense—if domain shift causes the model to favor a single class, balanced accuracy drops immediately.\n\nI'll look into adjusting the class-mass prior adjustments in the post-processing pipeline and test tuning the learning rate/batch size for the individual backbone fine-tunes. Did you find that applying marginal balancing on the raw logit outputs worked best, or did rank-averaging probabilities help stabilize predictions first?",
+      "content_html": "<p>Thank you for pointing out the prediction collapse phenomenon and the post-processing balancing breakdown from Lavrentev's notes! That makes total sense—if domain shift causes the model to favor a single class, balanced accuracy drops immediately.</p>\n<p>I'll look into adjusting the class-mass prior adjustments in the post-processing pipeline and test tuning the learning rate/batch size for the individual backbone fine-tunes. Did you find that applying marginal balancing on the raw logit outputs worked best, or did rank-averaging probabilities help stabilize predictions first?</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 2,
+      "first_seen_at": "2026-11-04T06:56:45+00:00",
+      "last_seen_at": "2026-11-16T16:24:16+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:24:16+00:00",
+      "remote_last_listed_at": "2026-11-16T16:24:16+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Raheel Abbas",
+          "tier": "CONTRIBUTOR",
+          "url": "/raheelll"
+        },
+        "content": "<p>Thank you for pointing out the prediction collapse phenomenon and the post-processing balancing breakdown from Lavrentev's notes! That makes total sense—if domain shift causes the model to favor a single class, balanced accuracy drops immediately.</p>\n<p>I'll look into adjusting the class-mass prior adjustments in the post-processing pipeline and test tuning the learning rate/batch size for the individual backbone fine-tunes. Did you find that applying marginal balancing on the raw logit outputs worked best, or did rank-averaging probabilities help stabilize predictions first?</p>",
+        "id": 3540465,
+        "isThankYou": false,
+        "postDate": "2026-10-18T02:33:26.633Z",
+        "raw": {
+          "author": {
+            "display_name": "Raheel Abbas",
+            "id": 20398771,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20398771-kg.jpeg?t=2026-01-04-07-35-30",
+            "tier": "CONTRIBUTOR",
+            "url": "/raheelll"
+          },
+          "author_type": "TOPIC",
+          "competition_ranking": 3670,
+          "content": "<p>Thank you for pointing out the prediction collapse phenomenon and the post-processing balancing breakdown from Lavrentev's notes! That makes total sense—if domain shift causes the model to favor a single class, balanced accuracy drops immediately.</p>\n<p>I'll look into adjusting the class-mass prior adjustments in the post-processing pipeline and test tuning the learning rate/batch size for the individual backbone fine-tunes. Did you find that applying marginal balancing on the raw logit outputs worked best, or did rank-averaging probabilities help stabilize predictions first?</p>",
+          "feedback_tracking_data": {},
+          "id": 3540465,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-18T02:33:26.633Z",
+          "raw_markdown": "Thank you for pointing out the prediction collapse phenomenon and the post-processing balancing breakdown from Lavrentev's notes! That makes total sense—if domain shift causes the model to favor a single class, balanced accuracy drops immediately.\n\nI'll look into adjusting the class-mass prior adjustments in the post-processing pipeline and test tuning the learning rate/batch size for the individual backbone fine-tunes. Did you find that applying marginal balancing on the raw logit outputs worked best, or did rank-averaging probabilities help stabilize predictions first?",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Raheel Abbas",
+              "id": 20398771,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/raheelll",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20398771-kg.jpeg?t=2026-01-04-07-35-30",
+              "tier": "CONTRIBUTOR",
+              "url": "/raheelll",
+              "user_id": 20398771,
+              "user_name": "raheelll"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "Thank you for pointing out the prediction collapse phenomenon and the post-processing balancing breakdown from Lavrentev's notes! That makes total sense—if domain shift causes the model to favor a single class, balanced accuracy drops immediately.\n\nI'll look into adjusting the class-mass prior adjustments in the post-processing pipeline and test tuning the learning rate/batch size for the individual backbone fine-tunes. Did you find that applying marginal balancing on the raw logit outputs worked best, or did rank-averaging probabilities help stabilize predictions first?",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 750230,
+      "message_id": 3540892,
+      "parent_message_id": 3540292,
+      "author": "ZavodRobotov",
+      "author_url": "/zavodrobotov",
+      "author_tier": "EXPERT",
+      "post_date": "2026-10-19T06:19:17.893Z",
+      "raw_markdown": "Training set balancing (or class balancing) works good in most tasks.",
+      "content_html": "<p>Training set balancing (or class balancing) works good in most tasks.</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 2,
+      "first_seen_at": "2026-11-04T06:56:45+00:00",
+      "last_seen_at": "2026-11-16T16:24:16+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:24:16+00:00",
+      "remote_last_listed_at": "2026-11-16T16:24:16+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "ZavodRobotov",
+          "tier": "EXPERT",
+          "url": "/zavodrobotov"
+        },
+        "content": "<p>Training set balancing (or class balancing) works good in most tasks.</p>",
+        "id": 3540892,
+        "isThankYou": false,
+        "postDate": "2026-10-19T06:19:17.893Z",
+        "raw": {
+          "author": {
+            "display_name": "ZavodRobotov",
+            "id": 513081,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/513081-kg.JPG",
+            "tier": "EXPERT",
+            "url": "/zavodrobotov"
+          },
+          "author_type": "COMMENT",
+          "content": "<p>Training set balancing (or class balancing) works good in most tasks.</p>",
+          "feedback_tracking_data": {},
+          "id": 3540892,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-19T06:19:17.893Z",
+          "raw_markdown": "Training set balancing (or class balancing) works good in most tasks.",
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "Training set balancing (or class balancing) works good in most tasks.",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    }
+  ],
+  "writeup": null
+}

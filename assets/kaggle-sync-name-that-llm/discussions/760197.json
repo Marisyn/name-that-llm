@@ -1,0 +1,207 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 760197,
+    "title": "Looking to merge: weekly GPU/TPU quota, 9 entries used, happy to do the grunt work",
+    "author": "Arush Kumar Vishwakarma",
+    "author_url": "/varush70",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-11-18T20:17:55.990278400Z",
+    "last_comment_post_date": "2026-11-18T20:17:55.990Z",
+    "comment_count": 0,
+    "votes": -1,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/760197",
+    "first_message_id": 3556620,
+    "first_seen_at": "2026-11-18T21:11:39+00:00",
+    "last_seen_at": "2026-11-19T12:45:20+00:00",
+    "detail_last_synced_at": "2026-11-18T21:11:45+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-19T12:45:20+00:00",
+    "remote_last_listed_at": "2026-11-19T12:45:20+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "2432293e16574583b5c8ed2ad865d6dfa7bc2af70fad3d3b65ae271e05a89798",
+    "listing_metrics_hash": "0eb635446470adac6a7f3a348995e0dbc84605127e97b571f74d3f2262540d5d",
+    "detail_content_hash": "d6b2292ff8c462ef85ad937240d61ee749cfa55159593147a5159325561205c8",
+    "detail_last_checked_at": "2026-11-18T21:11:45+00:00",
+    "detail_next_check_at": "2026-11-19T21:11:45+00:00",
+    "detail_unchanged_count": 0,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 0,
+      "firstForumMessageId": null,
+      "id": 760197,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-11-18T20:17:55.990Z",
+      "postDate": "2026-11-18T20:17:55.990278400Z",
+      "raw": {
+        "id": 760197,
+        "last_comment_post_date": "2026-11-18T20:17:55.990Z",
+        "post_date": "2026-11-18T20:17:55.990278400Z",
+        "title": "Looking to merge: weekly GPU/TPU quota, 9 entries used, happy to do the grunt work",
+        "topic_url": "/competitions/name-that-llm/discussion/760197",
+        "votes": -1
+      },
+      "title": "Looking to merge: weekly GPU/TPU quota, 9 entries used, happy to do the grunt work",
+      "topicUrl": "/competitions/name-that-llm/discussion/760197",
+      "votes": -1
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "Arush Kumar Vishwakarma",
+        "authorUserName": "varush70",
+        "comments": [],
+        "expectedCommentCount": 0,
+        "firstMessage": {
+          "author": {
+            "displayName": "Arush Kumar Vishwakarma",
+            "tier": "CONTRIBUTOR",
+            "url": "/varush70"
+          },
+          "content": "<p>Hi all, I'm Arush (public 0.684, the 0.702 recipe is scoring now). I'd like to join a team near the prize line and take on whatever work you need.</p>\n<p>What I bring:</p>\n<ul>\n<li>A full weekly Kaggle GPU + TPU quota, mostly unused. I can run training or inference jobs for the team on request.</li>\n<li>Only 9 submissions used, so I won't block a merge on entry counts.</li>\n<li>A private set of 4,998 Claude passages: 1,000 fresh prompts, each answered by all 5 Claude labels through the official API, cleaned (no refusals, no truncation, served model verified), plus a resumable generation script.</li>\n<li>Prompt-grouped validation and honest notes on what did and didn't work.</li>\n</ul>\n<p>To be upfront: on top of the public recipe, my Claude data measured no clear gain inside its Claude head (within-Claude -0.014, 90% interval -0.049 to +0.023 on 149 held-out rows), though it does lift a plain text classifier on its own (0.583 to 0.623). So my main offer is compute and time, not a secret model.</p>\n<p>Happy to split any prize equally. Reply here or send a merge request to team \"Arush Kumar Vishwakarma\".</p>",
+          "id": 3556620,
+          "isThankYou": false,
+          "postDate": "2026-11-18T20:17:55.990Z",
+          "raw": {
+            "author": {
+              "display_name": "Arush Kumar Vishwakarma",
+              "id": 33254362,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "CONTRIBUTOR",
+              "url": "/varush70"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 1373,
+            "content": "<p>Hi all, I'm Arush (public 0.684, the 0.702 recipe is scoring now). I'd like to join a team near the prize line and take on whatever work you need.</p>\n<p>What I bring:</p>\n<ul>\n<li>A full weekly Kaggle GPU + TPU quota, mostly unused. I can run training or inference jobs for the team on request.</li>\n<li>Only 9 submissions used, so I won't block a merge on entry counts.</li>\n<li>A private set of 4,998 Claude passages: 1,000 fresh prompts, each answered by all 5 Claude labels through the official API, cleaned (no refusals, no truncation, served model verified), plus a resumable generation script.</li>\n<li>Prompt-grouped validation and honest notes on what did and didn't work.</li>\n</ul>\n<p>To be upfront: on top of the public recipe, my Claude data measured no clear gain inside its Claude head (within-Claude -0.014, 90% interval -0.049 to +0.023 on 149 held-out rows), though it does lift a plain text classifier on its own (0.583 to 0.623). So my main offer is compute and time, not a secret model.</p>\n<p>Happy to split any prize equally. Reply here or send a merge request to team \"Arush Kumar Vishwakarma\".</p>",
+            "feedback_tracking_data": {},
+            "id": 3556620,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-11-18T20:17:55.990Z",
+            "raw_markdown": "Hi all, I'm Arush (public 0.684, the 0.702 recipe is scoring now). I'd like to join a team near the prize line and take on whatever work you need.\n\nWhat I bring:\n- A full weekly Kaggle GPU + TPU quota, mostly unused. I can run training or inference jobs for the team on request.\n- Only 9 submissions used, so I won't block a merge on entry counts.\n- A private set of 4,998 Claude passages: 1,000 fresh prompts, each answered by all 5 Claude labels through the official API, cleaned (no refusals, no truncation, served model verified), plus a resumable generation script.\n- Prompt-grouped validation and honest notes on what did and didn't work.\n\nTo be upfront: on top of the public recipe, my Claude data measured no clear gain inside its Claude head (within-Claude -0.014, 90% interval -0.049 to +0.023 on 149 held-out rows), though it does lift a plain text classifier on its own (0.583 to 0.623). So my main offer is compute and time, not a secret model.\n\nHappy to split any prize equally. Reply here or send a merge request to team \"Arush Kumar Vishwakarma\".",
+            "team_up_info": {
+              "enabled": true,
+              "intro": "Looking to merge: spare weekly GPU/TPU quota, few entries used, will do the grunt work. [Details](https://www.kaggle.com/competitions/name-that-llm/discussion/760197)",
+              "team_leader": {
+                "display_name": "Arush Kumar Vishwakarma",
+                "id": 33254362,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/varush70",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/varush70",
+                "user_id": 33254362,
+                "user_name": "varush70"
+              }
+            },
+            "votes": {
+              "can_upvote": true
+            }
+          },
+          "rawMarkdown": "Hi all, I'm Arush (public 0.684, the 0.702 recipe is scoring now). I'd like to join a team near the prize line and take on whatever work you need.\n\nWhat I bring:\n- A full weekly Kaggle GPU + TPU quota, mostly unused. I can run training or inference jobs for the team on request.\n- Only 9 submissions used, so I won't block a merge on entry counts.\n- A private set of 4,998 Claude passages: 1,000 fresh prompts, each answered by all 5 Claude labels through the official API, cleaned (no refusals, no truncation, served model verified), plus a resumable generation script.\n- Prompt-grouped validation and honest notes on what did and didn't work.\n\nTo be upfront: on top of the public recipe, my Claude data measured no clear gain inside its Claude head (within-Claude -0.014, 90% interval -0.049 to +0.023 on 149 held-out rows), though it does lift a plain text classifier on its own (0.583 to 0.623). So my main offer is compute and time, not a secret model.\n\nHappy to split any prize equally. Reply here or send a merge request to team \"Arush Kumar Vishwakarma\".",
+          "replies": [],
+          "votes": {
+            "totalVotes": 0
+          }
+        },
+        "firstMessageId": 3556620,
+        "id": 760197,
+        "name": "Looking to merge: weekly GPU/TPU quota, 9 entries used, happy to do the grunt work",
+        "postDate": "2026-11-18T20:17:55.990278400Z",
+        "url": "/competitions/name-that-llm/discussion/760197"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>Hi all, I'm Arush (public 0.684, the 0.702 recipe is scoring now). I'd like to join a team near the prize line and take on whatever work you need.</p>\n<p>What I bring:</p>\n<ul>\n<li>A full weekly Kaggle GPU + TPU quota, mostly unused. I can run training or inference jobs for the team on request.</li>\n<li>Only 9 submissions used, so I won't block a merge on entry counts.</li>\n<li>A private set of 4,998 Claude passages: 1,000 fresh prompts, each answered by all 5 Claude labels through the official API, cleaned (no refusals, no truncation, served model verified), plus a resumable generation script.</li>\n<li>Prompt-grouped validation and honest notes on what did and didn't work.</li>\n</ul>\n<p>To be upfront: on top of the public recipe, my Claude data measured no clear gain inside its Claude head (within-Claude -0.014, 90% interval -0.049 to +0.023 on 149 held-out rows), though it does lift a plain text classifier on its own (0.583 to 0.623). So my main offer is compute and time, not a secret model.</p>\n<p>Happy to split any prize equally. Reply here or send a merge request to team \"Arush Kumar Vishwakarma\".</p>",
+              "id": 3556620,
+              "post_date": "2026-11-18T20:17:55.990Z",
+              "raw_markdown": "Hi all, I'm Arush (public 0.684, the 0.702 recipe is scoring now). I'd like to join a team near the prize line and take on whatever work you need.\n\nWhat I bring:\n- A full weekly Kaggle GPU + TPU quota, mostly unused. I can run training or inference jobs for the team on request.\n- Only 9 submissions used, so I won't block a merge on entry counts.\n- A private set of 4,998 Claude passages: 1,000 fresh prompts, each answered by all 5 Claude labels through the official API, cleaned (no refusals, no truncation, served model verified), plus a resumable generation script.\n- Prompt-grouped validation and honest notes on what did and didn't work.\n\nTo be upfront: on top of the public recipe, my Claude data measured no clear gain inside its Claude head (within-Claude -0.014, 90% interval -0.049 to +0.023 on 149 held-out rows), though it does lift a plain text classifier on its own (0.583 to 0.623). So my main offer is compute and time, not a secret model.\n\nHappy to split any prize equally. Reply here or send a merge request to team \"Arush Kumar Vishwakarma\"."
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 33254362,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "default-thumb.png",
+            "author_user_display_name": "Arush Kumar Vishwakarma",
+            "author_user_name": "varush70",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "first_message": {
+              "author": {
+                "display_name": "Arush Kumar Vishwakarma",
+                "id": 33254362,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/varush70"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 1373,
+              "content": "<p>Hi all, I'm Arush (public 0.684, the 0.702 recipe is scoring now). I'd like to join a team near the prize line and take on whatever work you need.</p>\n<p>What I bring:</p>\n<ul>\n<li>A full weekly Kaggle GPU + TPU quota, mostly unused. I can run training or inference jobs for the team on request.</li>\n<li>Only 9 submissions used, so I won't block a merge on entry counts.</li>\n<li>A private set of 4,998 Claude passages: 1,000 fresh prompts, each answered by all 5 Claude labels through the official API, cleaned (no refusals, no truncation, served model verified), plus a resumable generation script.</li>\n<li>Prompt-grouped validation and honest notes on what did and didn't work.</li>\n</ul>\n<p>To be upfront: on top of the public recipe, my Claude data measured no clear gain inside its Claude head (within-Claude -0.014, 90% interval -0.049 to +0.023 on 149 held-out rows), though it does lift a plain text classifier on its own (0.583 to 0.623). So my main offer is compute and time, not a secret model.</p>\n<p>Happy to split any prize equally. Reply here or send a merge request to team \"Arush Kumar Vishwakarma\".</p>",
+              "feedback_tracking_data": {},
+              "id": 3556620,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-18T20:17:55.990Z",
+              "raw_markdown": "Hi all, I'm Arush (public 0.684, the 0.702 recipe is scoring now). I'd like to join a team near the prize line and take on whatever work you need.\n\nWhat I bring:\n- A full weekly Kaggle GPU + TPU quota, mostly unused. I can run training or inference jobs for the team on request.\n- Only 9 submissions used, so I won't block a merge on entry counts.\n- A private set of 4,998 Claude passages: 1,000 fresh prompts, each answered by all 5 Claude labels through the official API, cleaned (no refusals, no truncation, served model verified), plus a resumable generation script.\n- Prompt-grouped validation and honest notes on what did and didn't work.\n\nTo be upfront: on top of the public recipe, my Claude data measured no clear gain inside its Claude head (within-Claude -0.014, 90% interval -0.049 to +0.023 on 149 held-out rows), though it does lift a plain text classifier on its own (0.583 to 0.623). So my main offer is compute and time, not a secret model.\n\nHappy to split any prize equally. Reply here or send a merge request to team \"Arush Kumar Vishwakarma\".",
+              "team_up_info": {
+                "enabled": true,
+                "intro": "Looking to merge: spare weekly GPU/TPU quota, few entries used, will do the grunt work. [Details](https://www.kaggle.com/competitions/name-that-llm/discussion/760197)",
+                "team_leader": {
+                  "display_name": "Arush Kumar Vishwakarma",
+                  "id": 33254362,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/varush70",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/varush70",
+                  "user_id": 33254362,
+                  "user_name": "varush70"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "first_message_id": 3556620,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 760197,
+            "name": "Looking to merge: weekly GPU/TPU quota, 9 entries used, happy to do the grunt work",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-11-18T20:17:55.990278400Z",
+            "url": "/competitions/name-that-llm/discussion/760197"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-18T21:11:45+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-18T21:11:45+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-11-18T20:17:55.990278400Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [],
+  "writeup": null
+}

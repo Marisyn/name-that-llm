@@ -1,0 +1,390 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 754084,
+    "title": "Ten LB points can't tell you which OOF to trust: a small simulation",
+    "author": "GoPain",
+    "author_url": "/locdunhat",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-10-30T06:15:02.230226600Z",
+    "last_comment_post_date": "2026-11-03T02:28:49.163333300Z",
+    "comment_count": 1,
+    "votes": 1,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/754084",
+    "first_message_id": 3547084,
+    "first_seen_at": "2026-11-04T06:56:14+00:00",
+    "last_seen_at": "2026-11-16T16:36:02+00:00",
+    "detail_last_synced_at": "2026-11-16T16:23:20+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "44eec244a4c96a533d143a3e83b781d1b90737f66acd2918d54c6d5ee81ff3cc",
+    "listing_metrics_hash": "08a3f0e9d031723a4649730d445a527264427162f124c0c72a6c18d2e0b8e839",
+    "detail_content_hash": "90cdc1fe84de55910df6a8c50d75cf3a63176138918cfec204e9ef1c1201d0a2",
+    "detail_last_checked_at": "2026-11-16T16:23:20+00:00",
+    "detail_next_check_at": "2026-11-23T16:23:20+00:00",
+    "detail_unchanged_count": 2,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 1,
+      "firstForumMessageId": null,
+      "id": 754084,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-11-03T02:28:49.163333300Z",
+      "postDate": "2026-10-30T06:15:02.230226600Z",
+      "raw": {
+        "comment_count": 1,
+        "id": 754084,
+        "last_comment_post_date": "2026-11-03T02:28:49.163333300Z",
+        "post_date": "2026-10-30T06:15:02.230226600Z",
+        "title": "Ten LB points can't tell you which OOF to trust: a small simulation",
+        "topic_url": "/competitions/name-that-llm/discussion/754084",
+        "votes": 1
+      },
+      "title": "Ten LB points can't tell you which OOF to trust: a small simulation",
+      "topicUrl": "/competitions/name-that-llm/discussion/754084",
+      "votes": 1
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "GoPain",
+        "authorUserName": "locdunhat",
+        "comments": [
+          {
+            "author": {
+              "displayName": "HALX2158",
+              "tier": "CONTRIBUTOR",
+              "url": "/mizuno0522"
+            },
+            "content": "<p>One data point on rescoring noise: I resubmitted a notebook unchanged (same kernel version, so the same code and weights). Both submissions scored 0.659 on the public LB. That is one pair only. Differences of up to 0.009 between identical submissions have been reported here, so this shows that a rerun can reproduce the score exactly, not that it always does.</p>",
+            "id": 3549073,
+            "isThankYou": false,
+            "postDate": "2026-11-03T02:28:49.163Z",
+            "raw": {
+              "author": {
+                "display_name": "HALX2158",
+                "id": 16294566,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                "tier": "CONTRIBUTOR",
+                "url": "/mizuno0522"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 1098,
+              "content": "<p>One data point on rescoring noise: I resubmitted a notebook unchanged (same kernel version, so the same code and weights). Both submissions scored 0.659 on the public LB. That is one pair only. Differences of up to 0.009 between identical submissions have been reported here, so this shows that a rerun can reproduce the score exactly, not that it always does.</p>",
+              "feedback_tracking_data": {},
+              "id": 3549073,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-03T02:28:49.163Z",
+              "raw_markdown": "One data point on rescoring noise: I resubmitted a notebook unchanged (same kernel version, so the same code and weights). Both submissions scored 0.659 on the public LB. That is one pair only. Differences of up to 0.009 between identical submissions have been reported here, so this shows that a rerun can reproduce the score exactly, not that it always does.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "HALX2158",
+                  "id": 16294566,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/mizuno0522",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/mizuno0522",
+                  "user_id": 16294566,
+                  "user_name": "mizuno0522"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "One data point on rescoring noise: I resubmitted a notebook unchanged (same kernel version, so the same code and weights). Both submissions scored 0.659 on the public LB. That is one pair only. Differences of up to 0.009 between identical submissions have been reported here, so this shows that a rerun can reproduce the score exactly, not that it always does.",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "expectedCommentCount": 1,
+        "firstMessage": {
+          "author": {
+            "displayName": "GoPain",
+            "tier": "CONTRIBUTOR",
+            "url": "/locdunhat"
+          },
+          "content": "<p>Many of us score several offline versions of the same blend (full-prompt OOF, prompts cut to a few answers, a holdout) and check which one moves with the public LB. I did that and it went wrong for me: over ten submissions, one cut of my OOF had Spearman 0.82 with the LB. I picked the next five by it, and on those five its Spearman was 0.05 (details in a reply on 753177).</p>\n<p>So I simulated the situation with a known ground truth. Each configuration has a latent quality. Each proxy tracks it with correlation rho, and the proxies can share part of their error, as cuts of one OOF matrix do. The LB tracks it with correlation r. Phase 1 submits n configurations and picks the proxy with the best Spearman; phase 2 submits the top 5 by that proxy. Notebook (CPU, under a minute):\n<a href=\"https://www.kaggle.com/code/locdunhat/which-offline-score-tracks-the-lb\" target=\"_blank\">https://www.kaggle.com/code/locdunhat/which-offline-score-tracks-the-lb</a></p>\n<p>What came out, for r = 0.7 and 10 phase-1 submissions:</p>\n<ul>\n<li><strong>The best-correlated proxy is often not the best proxy.</strong> When the proxies are close in quality, it is truly the best 28–41% of the time (chance is 25%). Well-separated proxies only reach 43–64%.</li>\n<li><strong>The winning correlation is inflated.</strong> On average it is 0.65, against a true 0.47. Four identical proxies show exactly the same inflation, so a high winning correlation tells you little.</li>\n<li><strong>A collapse on the next five is expected.</strong> On the five configurations a proxy ranks highest, its correlation with the LB averaged between −0.02 and 0.27 everywhere in the grid, even when it was truly the best proxy. Those five are about equally good, so LB noise sets their order. A proxy that \"stopped working\" may be as good as before.</li>\n<li><strong>Average or select, depending on shared error.</strong> If the proxies' errors are independent, averaging them beats even the best single one. If they share most of their error (cuts of the same OOF), averaging dilutes the best one. Then choosing by correlation pays off only once you have about 20 points.</li>\n</ul>\n<p>What I do now: I only submit a change if it improves every cut of the OOF, not just the one that looked best on the LB, and I do not read much into the order of my top few submissions. The model is simple (Gaussian, no directional bias in the proxies, and LB noise independent across submissions, while a real public split is fixed), so treat the numbers as orders of magnitude.</p>\n<p>Code and the 180,000 simulated seasons are public (CC0):\n<a href=\"https://www.kaggle.com/datasets/locdunhat/proxy-selection-simulations\" target=\"_blank\">https://www.kaggle.com/datasets/locdunhat/proxy-selection-simulations</a></p>",
+          "id": 3547084,
+          "isThankYou": false,
+          "postDate": "2026-10-30T06:15:02.230Z",
+          "raw": {
+            "author": {
+              "display_name": "GoPain",
+              "id": 3897663,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3897663-kg.jpg?t=2026-10-14-14-18-45",
+              "tier": "CONTRIBUTOR",
+              "url": "/locdunhat"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 1038,
+            "content": "<p>Many of us score several offline versions of the same blend (full-prompt OOF, prompts cut to a few answers, a holdout) and check which one moves with the public LB. I did that and it went wrong for me: over ten submissions, one cut of my OOF had Spearman 0.82 with the LB. I picked the next five by it, and on those five its Spearman was 0.05 (details in a reply on 753177).</p>\n<p>So I simulated the situation with a known ground truth. Each configuration has a latent quality. Each proxy tracks it with correlation rho, and the proxies can share part of their error, as cuts of one OOF matrix do. The LB tracks it with correlation r. Phase 1 submits n configurations and picks the proxy with the best Spearman; phase 2 submits the top 5 by that proxy. Notebook (CPU, under a minute):\n<a href=\"https://www.kaggle.com/code/locdunhat/which-offline-score-tracks-the-lb\" target=\"_blank\">https://www.kaggle.com/code/locdunhat/which-offline-score-tracks-the-lb</a></p>\n<p>What came out, for r = 0.7 and 10 phase-1 submissions:</p>\n<ul>\n<li><strong>The best-correlated proxy is often not the best proxy.</strong> When the proxies are close in quality, it is truly the best 28–41% of the time (chance is 25%). Well-separated proxies only reach 43–64%.</li>\n<li><strong>The winning correlation is inflated.</strong> On average it is 0.65, against a true 0.47. Four identical proxies show exactly the same inflation, so a high winning correlation tells you little.</li>\n<li><strong>A collapse on the next five is expected.</strong> On the five configurations a proxy ranks highest, its correlation with the LB averaged between −0.02 and 0.27 everywhere in the grid, even when it was truly the best proxy. Those five are about equally good, so LB noise sets their order. A proxy that \"stopped working\" may be as good as before.</li>\n<li><strong>Average or select, depending on shared error.</strong> If the proxies' errors are independent, averaging them beats even the best single one. If they share most of their error (cuts of the same OOF), averaging dilutes the best one. Then choosing by correlation pays off only once you have about 20 points.</li>\n</ul>\n<p>What I do now: I only submit a change if it improves every cut of the OOF, not just the one that looked best on the LB, and I do not read much into the order of my top few submissions. The model is simple (Gaussian, no directional bias in the proxies, and LB noise independent across submissions, while a real public split is fixed), so treat the numbers as orders of magnitude.</p>\n<p>Code and the 180,000 simulated seasons are public (CC0):\n<a href=\"https://www.kaggle.com/datasets/locdunhat/proxy-selection-simulations\" target=\"_blank\">https://www.kaggle.com/datasets/locdunhat/proxy-selection-simulations</a></p>",
+            "feedback_tracking_data": {},
+            "id": 3547084,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-10-30T06:15:02.230Z",
+            "raw_markdown": "Many of us score several offline versions of the same blend (full-prompt OOF, prompts cut to a few answers, a holdout) and check which one moves with the public LB. I did that and it went wrong for me: over ten submissions, one cut of my OOF had Spearman 0.82 with the LB. I picked the next five by it, and on those five its Spearman was 0.05 (details in a reply on 753177).\n\nSo I simulated the situation with a known ground truth. Each configuration has a latent quality. Each proxy tracks it with correlation rho, and the proxies can share part of their error, as cuts of one OOF matrix do. The LB tracks it with correlation r. Phase 1 submits n configurations and picks the proxy with the best Spearman; phase 2 submits the top 5 by that proxy. Notebook (CPU, under a minute):\nhttps://www.kaggle.com/code/locdunhat/which-offline-score-tracks-the-lb\n\nWhat came out, for r = 0.7 and 10 phase-1 submissions:\n\n- **The best-correlated proxy is often not the best proxy.** When the proxies are close in quality, it is truly the best 28–41% of the time (chance is 25%). Well-separated proxies only reach 43–64%.\n- **The winning correlation is inflated.** On average it is 0.65, against a true 0.47. Four identical proxies show exactly the same inflation, so a high winning correlation tells you little.\n- **A collapse on the next five is expected.** On the five configurations a proxy ranks highest, its correlation with the LB averaged between −0.02 and 0.27 everywhere in the grid, even when it was truly the best proxy. Those five are about equally good, so LB noise sets their order. A proxy that \"stopped working\" may be as good as before.\n- **Average or select, depending on shared error.** If the proxies' errors are independent, averaging them beats even the best single one. If they share most of their error (cuts of the same OOF), averaging dilutes the best one. Then choosing by correlation pays off only once you have about 20 points.\n\nWhat I do now: I only submit a change if it improves every cut of the OOF, not just the one that looked best on the LB, and I do not read much into the order of my top few submissions. The model is simple (Gaussian, no directional bias in the proxies, and LB noise independent across submissions, while a real public split is fixed), so treat the numbers as orders of magnitude.\n\nCode and the 180,000 simulated seasons are public (CC0):\nhttps://www.kaggle.com/datasets/locdunhat/proxy-selection-simulations",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "GoPain",
+                "id": 3897663,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/locdunhat",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3897663-kg.jpg?t=2026-10-14-14-18-45",
+                "tier": "CONTRIBUTOR",
+                "url": "/locdunhat",
+                "user_id": 3897663,
+                "user_name": "locdunhat"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 1,
+              "total_votes": 1
+            }
+          },
+          "rawMarkdown": "Many of us score several offline versions of the same blend (full-prompt OOF, prompts cut to a few answers, a holdout) and check which one moves with the public LB. I did that and it went wrong for me: over ten submissions, one cut of my OOF had Spearman 0.82 with the LB. I picked the next five by it, and on those five its Spearman was 0.05 (details in a reply on 753177).\n\nSo I simulated the situation with a known ground truth. Each configuration has a latent quality. Each proxy tracks it with correlation rho, and the proxies can share part of their error, as cuts of one OOF matrix do. The LB tracks it with correlation r. Phase 1 submits n configurations and picks the proxy with the best Spearman; phase 2 submits the top 5 by that proxy. Notebook (CPU, under a minute):\nhttps://www.kaggle.com/code/locdunhat/which-offline-score-tracks-the-lb\n\nWhat came out, for r = 0.7 and 10 phase-1 submissions:\n\n- **The best-correlated proxy is often not the best proxy.** When the proxies are close in quality, it is truly the best 28–41% of the time (chance is 25%). Well-separated proxies only reach 43–64%.\n- **The winning correlation is inflated.** On average it is 0.65, against a true 0.47. Four identical proxies show exactly the same inflation, so a high winning correlation tells you little.\n- **A collapse on the next five is expected.** On the five configurations a proxy ranks highest, its correlation with the LB averaged between −0.02 and 0.27 everywhere in the grid, even when it was truly the best proxy. Those five are about equally good, so LB noise sets their order. A proxy that \"stopped working\" may be as good as before.\n- **Average or select, depending on shared error.** If the proxies' errors are independent, averaging them beats even the best single one. If they share most of their error (cuts of the same OOF), averaging dilutes the best one. Then choosing by correlation pays off only once you have about 20 points.\n\nWhat I do now: I only submit a change if it improves every cut of the OOF, not just the one that looked best on the LB, and I do not read much into the order of my top few submissions. The model is simple (Gaussian, no directional bias in the proxies, and LB noise independent across submissions, while a real public split is fixed), so treat the numbers as orders of magnitude.\n\nCode and the 180,000 simulated seasons are public (CC0):\nhttps://www.kaggle.com/datasets/locdunhat/proxy-selection-simulations",
+          "replies": [],
+          "votes": {
+            "totalVotes": 1
+          }
+        },
+        "firstMessageId": 3547084,
+        "id": 754084,
+        "name": "Ten LB points can't tell you which OOF to trust: a small simulation",
+        "postDate": "2026-10-30T06:15:02.230226600Z",
+        "url": "/competitions/name-that-llm/discussion/754084"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>Many of us score several offline versions of the same blend (full-prompt OOF, prompts cut to a few answers, a holdout) and check which one moves with the public LB. I did that and it went wrong for me: over ten submissions, one cut of my OOF had Spearman 0.82 with the LB. I picked the next five by it, and on those five its Spearman was 0.05 (details in a reply on 753177).</p>\n<p>So I simulated the situation with a known ground truth. Each configuration has a latent quality. Each proxy tracks it with correlation rho, and the proxies can share part of their error, as cuts of one OOF matrix do. The LB tracks it with correlation r. Phase 1 submits n configurations and picks the proxy with the best Spearman; phase 2 submits the top 5 by that proxy. Notebook (CPU, under a minute):\n<a href=\"https://www.kaggle.com/code/locdunhat/which-offline-score-tracks-the-lb\" target=\"_blank\">https://www.kaggle.com/code/locdunhat/which-offline-score-tracks-the-lb</a></p>\n<p>What came out, for r = 0.7 and 10 phase-1 submissions:</p>\n<ul>\n<li><strong>The best-correlated proxy is often not the best proxy.</strong> When the proxies are close in quality, it is truly the best 28–41% of the time (chance is 25%). Well-separated proxies only reach 43–64%.</li>\n<li><strong>The winning correlation is inflated.</strong> On average it is 0.65, against a true 0.47. Four identical proxies show exactly the same inflation, so a high winning correlation tells you little.</li>\n<li><strong>A collapse on the next five is expected.</strong> On the five configurations a proxy ranks highest, its correlation with the LB averaged between −0.02 and 0.27 everywhere in the grid, even when it was truly the best proxy. Those five are about equally good, so LB noise sets their order. A proxy that \"stopped working\" may be as good as before.</li>\n<li><strong>Average or select, depending on shared error.</strong> If the proxies' errors are independent, averaging them beats even the best single one. If they share most of their error (cuts of the same OOF), averaging dilutes the best one. Then choosing by correlation pays off only once you have about 20 points.</li>\n</ul>\n<p>What I do now: I only submit a change if it improves every cut of the OOF, not just the one that looked best on the LB, and I do not read much into the order of my top few submissions. The model is simple (Gaussian, no directional bias in the proxies, and LB noise independent across submissions, while a real public split is fixed), so treat the numbers as orders of magnitude.</p>\n<p>Code and the 180,000 simulated seasons are public (CC0):\n<a href=\"https://www.kaggle.com/datasets/locdunhat/proxy-selection-simulations\" target=\"_blank\">https://www.kaggle.com/datasets/locdunhat/proxy-selection-simulations</a></p>",
+              "id": 3547084,
+              "post_date": "2026-10-30T06:15:02.230Z",
+              "raw_markdown": "Many of us score several offline versions of the same blend (full-prompt OOF, prompts cut to a few answers, a holdout) and check which one moves with the public LB. I did that and it went wrong for me: over ten submissions, one cut of my OOF had Spearman 0.82 with the LB. I picked the next five by it, and on those five its Spearman was 0.05 (details in a reply on 753177).\n\nSo I simulated the situation with a known ground truth. Each configuration has a latent quality. Each proxy tracks it with correlation rho, and the proxies can share part of their error, as cuts of one OOF matrix do. The LB tracks it with correlation r. Phase 1 submits n configurations and picks the proxy with the best Spearman; phase 2 submits the top 5 by that proxy. Notebook (CPU, under a minute):\nhttps://www.kaggle.com/code/locdunhat/which-offline-score-tracks-the-lb\n\nWhat came out, for r = 0.7 and 10 phase-1 submissions:\n\n- **The best-correlated proxy is often not the best proxy.** When the proxies are close in quality, it is truly the best 28–41% of the time (chance is 25%). Well-separated proxies only reach 43–64%.\n- **The winning correlation is inflated.** On average it is 0.65, against a true 0.47. Four identical proxies show exactly the same inflation, so a high winning correlation tells you little.\n- **A collapse on the next five is expected.** On the five configurations a proxy ranks highest, its correlation with the LB averaged between −0.02 and 0.27 everywhere in the grid, even when it was truly the best proxy. Those five are about equally good, so LB noise sets their order. A proxy that \"stopped working\" may be as good as before.\n- **Average or select, depending on shared error.** If the proxies' errors are independent, averaging them beats even the best single one. If they share most of their error (cuts of the same OOF), averaging dilutes the best one. Then choosing by correlation pays off only once you have about 20 points.\n\nWhat I do now: I only submit a change if it improves every cut of the OOF, not just the one that looked best on the LB, and I do not read much into the order of my top few submissions. The model is simple (Gaussian, no directional bias in the proxies, and LB noise independent across submissions, while a real public split is fixed), so treat the numbers as orders of magnitude.\n\nCode and the 180,000 simulated seasons are public (CC0):\nhttps://www.kaggle.com/datasets/locdunhat/proxy-selection-simulations",
+              "votes": 1
+            },
+            {
+              "content": "<p>One data point on rescoring noise: I resubmitted a notebook unchanged (same kernel version, so the same code and weights). Both submissions scored 0.659 on the public LB. That is one pair only. Differences of up to 0.009 between identical submissions have been reported here, so this shows that a rerun can reproduce the score exactly, not that it always does.</p>",
+              "id": 3549073,
+              "post_date": "2026-11-03T02:28:49.163Z",
+              "raw_markdown": "One data point on rescoring noise: I resubmitted a notebook unchanged (same kernel version, so the same code and weights). Both submissions scored 0.659 on the public LB. That is one pair only. Differences of up to 0.009 between identical submissions have been reported here, so this shows that a rerun can reproduce the score exactly, not that it always does."
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 3897663,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "3897663-kg.jpg?t=2026-10-14-14-18-45",
+            "author_user_display_name": "GoPain",
+            "author_user_name": "locdunhat",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "comments": [
+              {
+                "author": {
+                  "display_name": "HALX2158",
+                  "id": 16294566,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/mizuno0522"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 1098,
+                "content": "<p>One data point on rescoring noise: I resubmitted a notebook unchanged (same kernel version, so the same code and weights). Both submissions scored 0.659 on the public LB. That is one pair only. Differences of up to 0.009 between identical submissions have been reported here, so this shows that a rerun can reproduce the score exactly, not that it always does.</p>",
+                "feedback_tracking_data": {},
+                "id": 3549073,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-11-03T02:28:49.163Z",
+                "raw_markdown": "One data point on rescoring noise: I resubmitted a notebook unchanged (same kernel version, so the same code and weights). Both submissions scored 0.659 on the public LB. That is one pair only. Differences of up to 0.009 between identical submissions have been reported here, so this shows that a rerun can reproduce the score exactly, not that it always does.",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "HALX2158",
+                    "id": 16294566,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/mizuno0522",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/mizuno0522",
+                    "user_id": 16294566,
+                    "user_name": "mizuno0522"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              }
+            ],
+            "first_message": {
+              "author": {
+                "display_name": "GoPain",
+                "id": 3897663,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3897663-kg.jpg?t=2026-10-14-14-18-45",
+                "tier": "CONTRIBUTOR",
+                "url": "/locdunhat"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 1038,
+              "content": "<p>Many of us score several offline versions of the same blend (full-prompt OOF, prompts cut to a few answers, a holdout) and check which one moves with the public LB. I did that and it went wrong for me: over ten submissions, one cut of my OOF had Spearman 0.82 with the LB. I picked the next five by it, and on those five its Spearman was 0.05 (details in a reply on 753177).</p>\n<p>So I simulated the situation with a known ground truth. Each configuration has a latent quality. Each proxy tracks it with correlation rho, and the proxies can share part of their error, as cuts of one OOF matrix do. The LB tracks it with correlation r. Phase 1 submits n configurations and picks the proxy with the best Spearman; phase 2 submits the top 5 by that proxy. Notebook (CPU, under a minute):\n<a href=\"https://www.kaggle.com/code/locdunhat/which-offline-score-tracks-the-lb\" target=\"_blank\">https://www.kaggle.com/code/locdunhat/which-offline-score-tracks-the-lb</a></p>\n<p>What came out, for r = 0.7 and 10 phase-1 submissions:</p>\n<ul>\n<li><strong>The best-correlated proxy is often not the best proxy.</strong> When the proxies are close in quality, it is truly the best 28–41% of the time (chance is 25%). Well-separated proxies only reach 43–64%.</li>\n<li><strong>The winning correlation is inflated.</strong> On average it is 0.65, against a true 0.47. Four identical proxies show exactly the same inflation, so a high winning correlation tells you little.</li>\n<li><strong>A collapse on the next five is expected.</strong> On the five configurations a proxy ranks highest, its correlation with the LB averaged between −0.02 and 0.27 everywhere in the grid, even when it was truly the best proxy. Those five are about equally good, so LB noise sets their order. A proxy that \"stopped working\" may be as good as before.</li>\n<li><strong>Average or select, depending on shared error.</strong> If the proxies' errors are independent, averaging them beats even the best single one. If they share most of their error (cuts of the same OOF), averaging dilutes the best one. Then choosing by correlation pays off only once you have about 20 points.</li>\n</ul>\n<p>What I do now: I only submit a change if it improves every cut of the OOF, not just the one that looked best on the LB, and I do not read much into the order of my top few submissions. The model is simple (Gaussian, no directional bias in the proxies, and LB noise independent across submissions, while a real public split is fixed), so treat the numbers as orders of magnitude.</p>\n<p>Code and the 180,000 simulated seasons are public (CC0):\n<a href=\"https://www.kaggle.com/datasets/locdunhat/proxy-selection-simulations\" target=\"_blank\">https://www.kaggle.com/datasets/locdunhat/proxy-selection-simulations</a></p>",
+              "feedback_tracking_data": {},
+              "id": 3547084,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-30T06:15:02.230Z",
+              "raw_markdown": "Many of us score several offline versions of the same blend (full-prompt OOF, prompts cut to a few answers, a holdout) and check which one moves with the public LB. I did that and it went wrong for me: over ten submissions, one cut of my OOF had Spearman 0.82 with the LB. I picked the next five by it, and on those five its Spearman was 0.05 (details in a reply on 753177).\n\nSo I simulated the situation with a known ground truth. Each configuration has a latent quality. Each proxy tracks it with correlation rho, and the proxies can share part of their error, as cuts of one OOF matrix do. The LB tracks it with correlation r. Phase 1 submits n configurations and picks the proxy with the best Spearman; phase 2 submits the top 5 by that proxy. Notebook (CPU, under a minute):\nhttps://www.kaggle.com/code/locdunhat/which-offline-score-tracks-the-lb\n\nWhat came out, for r = 0.7 and 10 phase-1 submissions:\n\n- **The best-correlated proxy is often not the best proxy.** When the proxies are close in quality, it is truly the best 28–41% of the time (chance is 25%). Well-separated proxies only reach 43–64%.\n- **The winning correlation is inflated.** On average it is 0.65, against a true 0.47. Four identical proxies show exactly the same inflation, so a high winning correlation tells you little.\n- **A collapse on the next five is expected.** On the five configurations a proxy ranks highest, its correlation with the LB averaged between −0.02 and 0.27 everywhere in the grid, even when it was truly the best proxy. Those five are about equally good, so LB noise sets their order. A proxy that \"stopped working\" may be as good as before.\n- **Average or select, depending on shared error.** If the proxies' errors are independent, averaging them beats even the best single one. If they share most of their error (cuts of the same OOF), averaging dilutes the best one. Then choosing by correlation pays off only once you have about 20 points.\n\nWhat I do now: I only submit a change if it improves every cut of the OOF, not just the one that looked best on the LB, and I do not read much into the order of my top few submissions. The model is simple (Gaussian, no directional bias in the proxies, and LB noise independent across submissions, while a real public split is fixed), so treat the numbers as orders of magnitude.\n\nCode and the 180,000 simulated seasons are public (CC0):\nhttps://www.kaggle.com/datasets/locdunhat/proxy-selection-simulations",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "GoPain",
+                  "id": 3897663,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/locdunhat",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3897663-kg.jpg?t=2026-10-14-14-18-45",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/locdunhat",
+                  "user_id": 3897663,
+                  "user_name": "locdunhat"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": 1
+              }
+            },
+            "first_message_id": 3547084,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 754084,
+            "name": "Ten LB points can't tell you which OOF to trust: a small simulation",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-10-30T06:15:02.230226600Z",
+            "total_messages": 1,
+            "total_votes": 1,
+            "url": "/competitions/name-that-llm/discussion/754084"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:23:20+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:23:20+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-11-03T02:28:49.163333300Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [
+    {
+      "slug": "name-that-llm",
+      "topic_id": 754084,
+      "message_id": 3549073,
+      "parent_message_id": null,
+      "author": "HALX2158",
+      "author_url": "/mizuno0522",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-03T02:28:49.163Z",
+      "raw_markdown": "One data point on rescoring noise: I resubmitted a notebook unchanged (same kernel version, so the same code and weights). Both submissions scored 0.659 on the public LB. That is one pair only. Differences of up to 0.009 between identical submissions have been reported here, so this shows that a rerun can reproduce the score exactly, not that it always does.",
+      "content_html": "<p>One data point on rescoring noise: I resubmitted a notebook unchanged (same kernel version, so the same code and weights). Both submissions scored 0.659 on the public LB. That is one pair only. Differences of up to 0.009 between identical submissions have been reported here, so this shows that a rerun can reproduce the score exactly, not that it always does.</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:58:09+00:00",
+      "last_seen_at": "2026-11-16T16:23:20+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:23:20+00:00",
+      "remote_last_listed_at": "2026-11-16T16:23:20+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "HALX2158",
+          "tier": "CONTRIBUTOR",
+          "url": "/mizuno0522"
+        },
+        "content": "<p>One data point on rescoring noise: I resubmitted a notebook unchanged (same kernel version, so the same code and weights). Both submissions scored 0.659 on the public LB. That is one pair only. Differences of up to 0.009 between identical submissions have been reported here, so this shows that a rerun can reproduce the score exactly, not that it always does.</p>",
+        "id": 3549073,
+        "isThankYou": false,
+        "postDate": "2026-11-03T02:28:49.163Z",
+        "raw": {
+          "author": {
+            "display_name": "HALX2158",
+            "id": 16294566,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+            "tier": "CONTRIBUTOR",
+            "url": "/mizuno0522"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 1098,
+          "content": "<p>One data point on rescoring noise: I resubmitted a notebook unchanged (same kernel version, so the same code and weights). Both submissions scored 0.659 on the public LB. That is one pair only. Differences of up to 0.009 between identical submissions have been reported here, so this shows that a rerun can reproduce the score exactly, not that it always does.</p>",
+          "feedback_tracking_data": {},
+          "id": 3549073,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-03T02:28:49.163Z",
+          "raw_markdown": "One data point on rescoring noise: I resubmitted a notebook unchanged (same kernel version, so the same code and weights). Both submissions scored 0.659 on the public LB. That is one pair only. Differences of up to 0.009 between identical submissions have been reported here, so this shows that a rerun can reproduce the score exactly, not that it always does.",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "HALX2158",
+              "id": 16294566,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/mizuno0522",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+              "tier": "CONTRIBUTOR",
+              "url": "/mizuno0522",
+              "user_id": 16294566,
+              "user_name": "mizuno0522"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "One data point on rescoring noise: I resubmitted a notebook unchanged (same kernel version, so the same code and weights). Both submissions scored 0.659 on the public LB. That is one pair only. Differences of up to 0.009 between identical submissions have been reported here, so this shows that a rerun can reproduce the score exactly, not that it always does.",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    }
+  ],
+  "writeup": null
+}

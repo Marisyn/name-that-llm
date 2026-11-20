@@ -1,0 +1,211 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 752708,
+    "title": "Centring members inside content clusters: an OOF check with fewer answers per prompt",
+    "author": "GoPain",
+    "author_url": "/locdunhat",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-10-26T01:18:08.366848900Z",
+    "last_comment_post_date": "2026-10-26T01:18:08.366666700Z",
+    "comment_count": 0,
+    "votes": 2,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/752708",
+    "first_message_id": 3544653,
+    "first_seen_at": "2026-11-04T06:56:16+00:00",
+    "last_seen_at": "2026-11-16T16:36:03+00:00",
+    "detail_last_synced_at": "2026-11-16T16:23:55+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "8012271095354aafb8d915bce1898d07ccd7f665db1acf814049d6d507297130",
+    "listing_metrics_hash": "6db2b817333d85ee95f494a1b2ba941fb79d87d4e3e0c8718afed5f3c0bfd1fa",
+    "detail_content_hash": "d547c49b3fa5a95b9cb8161a0721b07b3d0cc678835a3a8d70ead8550f6a2810",
+    "detail_last_checked_at": "2026-11-16T16:23:55+00:00",
+    "detail_next_check_at": "2026-11-23T16:23:55+00:00",
+    "detail_unchanged_count": 2,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 0,
+      "firstForumMessageId": null,
+      "id": 752708,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-10-26T01:18:08.366666700Z",
+      "postDate": "2026-10-26T01:18:08.366848900Z",
+      "raw": {
+        "id": 752708,
+        "last_comment_post_date": "2026-10-26T01:18:08.366666700Z",
+        "post_date": "2026-10-26T01:18:08.366848900Z",
+        "title": "Centring members inside content clusters: an OOF check with fewer answers per prompt",
+        "topic_url": "/competitions/name-that-llm/discussion/752708",
+        "votes": 2
+      },
+      "title": "Centring members inside content clusters: an OOF check with fewer answers per prompt",
+      "topicUrl": "/competitions/name-that-llm/discussion/752708",
+      "votes": 2
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "GoPain",
+        "authorUserName": "locdunhat",
+        "comments": [],
+        "expectedCommentCount": 0,
+        "firstMessage": {
+          "author": {
+            "displayName": "GoPain",
+            "tier": "CONTRIBUTOR",
+            "url": "/locdunhat"
+          },
+          "content": "<p>Several top public notebooks centre some members' scores or features inside content clusters of the test (groups of 2 to 18 passages). I wanted to know which members gain from that and how much is left when a test prompt has far fewer than 18 answers, so I checked it on my own prompt-grouped 5-fold OOF (2,699 passages) without using the true prompt ids at test time.</p>\n<p>Setup. In each validation fold every prompt is cut to m random answers. Passages are clustered by content (stop-word-free TF-IDF cosine distance, average linkage, cut 0.85, fitted on the fold). Inside each cluster of 2 to 18 passages a share w of the chosen members' mean log-probability is subtracted, then the blend is argmax. 5 random subsamples per m, the same subsamples in every row.</p>\n<p>Blend: Qwen3-8B two-stage LoRA (1.0) + DeBERTa-v3-large two-stage (0.5) + 4-view n-gram SVC on train + pool (1.0).</p>\n<table>\n<thead>\n<tr>\n<th>centred members, weight</th>\n<th>m = 18</th>\n<th>m = 6</th>\n<th>m = 3</th>\n<th>m = 2</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>none</td>\n<td>0.626</td>\n<td>0.620</td>\n<td>0.620</td>\n<td>0.634</td>\n</tr>\n<tr>\n<td>SVC, 0.75</td>\n<td>0.631</td>\n<td>0.620</td>\n<td>0.620</td>\n<td>0.635</td>\n</tr>\n<tr>\n<td>DeBERTa, 0.75</td>\n<td>0.639</td>\n<td>0.631</td>\n<td>0.624</td>\n<td>0.637</td>\n</tr>\n<tr>\n<td>LoRA, 0.25</td>\n<td>0.633</td>\n<td>0.627</td>\n<td>0.627</td>\n<td>0.639</td>\n</tr>\n<tr>\n<td>LoRA, 1.0</td>\n<td>0.628</td>\n<td>0.620</td>\n<td>0.592</td>\n<td>0.588</td>\n</tr>\n<tr>\n<td>all three, 0.25</td>\n<td>0.644</td>\n<td>0.633</td>\n<td>0.624</td>\n<td>0.640</td>\n</tr>\n<tr>\n<td>all three, 0.5</td>\n<td>0.646</td>\n<td>0.636</td>\n<td>0.616</td>\n<td>0.613</td>\n</tr>\n</tbody>\n</table>\n<p>(Compare within a column: each m uses its own subsamples, so the \"none\" row moves between columns.)</p>\n<p>What I take from it:</p>\n<ul>\n<li>The gain is not where I expected. I thought the pool-trained SVC, whose OOF reads high against the LB for me, would gain most; centring it alone does almost nothing. The DeBERTa member gains most, and a light touch on the LoRA is the most stable (+0.005 to +0.007 at every m).</li>\n<li>A small weight on every member is the robust choice: at 0.25 the gain is positive at every m I tried. At 0.5 it is the best with full prompts and the worst with two or three answers per prompt.</li>\n<li>Heavy centring of a strong member hurts once prompts are thin (LoRA at w = 1: −0.03 to −0.05 at m = 2 and 3). With few answers per cluster, the cluster mean is mostly those passages' own author signal.</li>\n</ul>\n<p>Public LB check (one submission each, same blend, no Sinkhorn; the uncentred blend scored 0.595):</p>\n<table>\n<thead>\n<tr>\n<th>centred members, weight</th>\n<th>OOF m = 18</th>\n<th>OOF m = 3</th>\n<th>public LB</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>all three, 0.25</td>\n<td>0.644</td>\n<td>0.624</td>\n<td>0.603</td>\n</tr>\n<tr>\n<td>DeBERTa, 0.75</td>\n<td>0.639</td>\n<td>0.624</td>\n<td>0.603</td>\n</tr>\n<tr>\n<td>LoRA, 0.25</td>\n<td>0.633</td>\n<td>0.627</td>\n<td>0.602</td>\n</tr>\n<tr>\n<td>all three, 0.5</td>\n<td>0.646</td>\n<td>0.616</td>\n<td>0.590</td>\n</tr>\n</tbody>\n</table>\n<p>Light centring gains about +0.008, and the heavy setting that is best on full prompts loses. The LB order follows the m = 2 and m = 3 columns, not the m = 18 one, so on this test the clusters I find behave like thin prompts. I would pick centring weights from the small-m columns.</p>\n<p>A known-truth simulation of the same question (style features with an additive topic effect, topics found by clustering a separate content view) agrees on the direction: the gain grows with passages per topic and cluster purity, and turns negative when clusters are mostly wrong (one or two passages per topic, or noisy content). It also shows the cut is the setting to get right, and that its safe side is the strict one. A cut that is too loose merges topics and loses; one that is too strict leaves most passages unclustered and costs nothing. With the right cut even two passages per topic gained. Code and tables: <a href=\"https://www.kaggle.com/code/locdunhat/group-centring-when-test-topics-must-be-found\" target=\"_blank\">https://www.kaggle.com/code/locdunhat/group-centring-when-test-topics-must-be-found</a></p>\n<p>Caveat: the weights were chosen on the same OOF rows, so the best cells are slightly optimistic.</p>",
+          "id": 3544653,
+          "isThankYou": false,
+          "postDate": "2026-10-26T01:18:08.367Z",
+          "raw": {
+            "author": {
+              "display_name": "GoPain",
+              "id": 3897663,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3897663-kg.jpg?t=2026-10-14-14-18-45",
+              "tier": "CONTRIBUTOR",
+              "url": "/locdunhat"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 1038,
+            "content": "<p>Several top public notebooks centre some members' scores or features inside content clusters of the test (groups of 2 to 18 passages). I wanted to know which members gain from that and how much is left when a test prompt has far fewer than 18 answers, so I checked it on my own prompt-grouped 5-fold OOF (2,699 passages) without using the true prompt ids at test time.</p>\n<p>Setup. In each validation fold every prompt is cut to m random answers. Passages are clustered by content (stop-word-free TF-IDF cosine distance, average linkage, cut 0.85, fitted on the fold). Inside each cluster of 2 to 18 passages a share w of the chosen members' mean log-probability is subtracted, then the blend is argmax. 5 random subsamples per m, the same subsamples in every row.</p>\n<p>Blend: Qwen3-8B two-stage LoRA (1.0) + DeBERTa-v3-large two-stage (0.5) + 4-view n-gram SVC on train + pool (1.0).</p>\n<table>\n<thead>\n<tr>\n<th>centred members, weight</th>\n<th>m = 18</th>\n<th>m = 6</th>\n<th>m = 3</th>\n<th>m = 2</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>none</td>\n<td>0.626</td>\n<td>0.620</td>\n<td>0.620</td>\n<td>0.634</td>\n</tr>\n<tr>\n<td>SVC, 0.75</td>\n<td>0.631</td>\n<td>0.620</td>\n<td>0.620</td>\n<td>0.635</td>\n</tr>\n<tr>\n<td>DeBERTa, 0.75</td>\n<td>0.639</td>\n<td>0.631</td>\n<td>0.624</td>\n<td>0.637</td>\n</tr>\n<tr>\n<td>LoRA, 0.25</td>\n<td>0.633</td>\n<td>0.627</td>\n<td>0.627</td>\n<td>0.639</td>\n</tr>\n<tr>\n<td>LoRA, 1.0</td>\n<td>0.628</td>\n<td>0.620</td>\n<td>0.592</td>\n<td>0.588</td>\n</tr>\n<tr>\n<td>all three, 0.25</td>\n<td>0.644</td>\n<td>0.633</td>\n<td>0.624</td>\n<td>0.640</td>\n</tr>\n<tr>\n<td>all three, 0.5</td>\n<td>0.646</td>\n<td>0.636</td>\n<td>0.616</td>\n<td>0.613</td>\n</tr>\n</tbody>\n</table>\n<p>(Compare within a column: each m uses its own subsamples, so the \"none\" row moves between columns.)</p>\n<p>What I take from it:</p>\n<ul>\n<li>The gain is not where I expected. I thought the pool-trained SVC, whose OOF reads high against the LB for me, would gain most; centring it alone does almost nothing. The DeBERTa member gains most, and a light touch on the LoRA is the most stable (+0.005 to +0.007 at every m).</li>\n<li>A small weight on every member is the robust choice: at 0.25 the gain is positive at every m I tried. At 0.5 it is the best with full prompts and the worst with two or three answers per prompt.</li>\n<li>Heavy centring of a strong member hurts once prompts are thin (LoRA at w = 1: −0.03 to −0.05 at m = 2 and 3). With few answers per cluster, the cluster mean is mostly those passages' own author signal.</li>\n</ul>\n<p>Public LB check (one submission each, same blend, no Sinkhorn; the uncentred blend scored 0.595):</p>\n<table>\n<thead>\n<tr>\n<th>centred members, weight</th>\n<th>OOF m = 18</th>\n<th>OOF m = 3</th>\n<th>public LB</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>all three, 0.25</td>\n<td>0.644</td>\n<td>0.624</td>\n<td>0.603</td>\n</tr>\n<tr>\n<td>DeBERTa, 0.75</td>\n<td>0.639</td>\n<td>0.624</td>\n<td>0.603</td>\n</tr>\n<tr>\n<td>LoRA, 0.25</td>\n<td>0.633</td>\n<td>0.627</td>\n<td>0.602</td>\n</tr>\n<tr>\n<td>all three, 0.5</td>\n<td>0.646</td>\n<td>0.616</td>\n<td>0.590</td>\n</tr>\n</tbody>\n</table>\n<p>Light centring gains about +0.008, and the heavy setting that is best on full prompts loses. The LB order follows the m = 2 and m = 3 columns, not the m = 18 one, so on this test the clusters I find behave like thin prompts. I would pick centring weights from the small-m columns.</p>\n<p>A known-truth simulation of the same question (style features with an additive topic effect, topics found by clustering a separate content view) agrees on the direction: the gain grows with passages per topic and cluster purity, and turns negative when clusters are mostly wrong (one or two passages per topic, or noisy content). It also shows the cut is the setting to get right, and that its safe side is the strict one. A cut that is too loose merges topics and loses; one that is too strict leaves most passages unclustered and costs nothing. With the right cut even two passages per topic gained. Code and tables: <a href=\"https://www.kaggle.com/code/locdunhat/group-centring-when-test-topics-must-be-found\" target=\"_blank\">https://www.kaggle.com/code/locdunhat/group-centring-when-test-topics-must-be-found</a></p>\n<p>Caveat: the weights were chosen on the same OOF rows, so the best cells are slightly optimistic.</p>",
+            "feedback_tracking_data": {},
+            "id": 3544653,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-10-26T01:18:08.367Z",
+            "raw_markdown": "Several top public notebooks centre some members' scores or features inside content clusters of the test (groups of 2 to 18 passages). I wanted to know which members gain from that and how much is left when a test prompt has far fewer than 18 answers, so I checked it on my own prompt-grouped 5-fold OOF (2,699 passages) without using the true prompt ids at test time.\n\nSetup. In each validation fold every prompt is cut to m random answers. Passages are clustered by content (stop-word-free TF-IDF cosine distance, average linkage, cut 0.85, fitted on the fold). Inside each cluster of 2 to 18 passages a share w of the chosen members' mean log-probability is subtracted, then the blend is argmax. 5 random subsamples per m, the same subsamples in every row.\n\nBlend: Qwen3-8B two-stage LoRA (1.0) + DeBERTa-v3-large two-stage (0.5) + 4-view n-gram SVC on train + pool (1.0).\n\n| centred members, weight | m = 18 | m = 6 | m = 3 | m = 2 |\n| --- | --- | --- | --- | --- |\n| none | 0.626 | 0.620 | 0.620 | 0.634 |\n| SVC, 0.75 | 0.631 | 0.620 | 0.620 | 0.635 |\n| DeBERTa, 0.75 | 0.639 | 0.631 | 0.624 | 0.637 |\n| LoRA, 0.25 | 0.633 | 0.627 | 0.627 | 0.639 |\n| LoRA, 1.0 | 0.628 | 0.620 | 0.592 | 0.588 |\n| all three, 0.25 | 0.644 | 0.633 | 0.624 | 0.640 |\n| all three, 0.5 | 0.646 | 0.636 | 0.616 | 0.613 |\n\n(Compare within a column: each m uses its own subsamples, so the \"none\" row moves between columns.)\n\nWhat I take from it:\n\n- The gain is not where I expected. I thought the pool-trained SVC, whose OOF reads high against the LB for me, would gain most; centring it alone does almost nothing. The DeBERTa member gains most, and a light touch on the LoRA is the most stable (+0.005 to +0.007 at every m).\n- A small weight on every member is the robust choice: at 0.25 the gain is positive at every m I tried. At 0.5 it is the best with full prompts and the worst with two or three answers per prompt.\n- Heavy centring of a strong member hurts once prompts are thin (LoRA at w = 1: −0.03 to −0.05 at m = 2 and 3). With few answers per cluster, the cluster mean is mostly those passages' own author signal.\n\nPublic LB check (one submission each, same blend, no Sinkhorn; the uncentred blend scored 0.595):\n\n| centred members, weight | OOF m = 18 | OOF m = 3 | public LB |\n| --- | --- | --- | --- |\n| all three, 0.25 | 0.644 | 0.624 | 0.603 |\n| DeBERTa, 0.75 | 0.639 | 0.624 | 0.603 |\n| LoRA, 0.25 | 0.633 | 0.627 | 0.602 |\n| all three, 0.5 | 0.646 | 0.616 | 0.590 |\n\nLight centring gains about +0.008, and the heavy setting that is best on full prompts loses. The LB order follows the m = 2 and m = 3 columns, not the m = 18 one, so on this test the clusters I find behave like thin prompts. I would pick centring weights from the small-m columns.\n\nA known-truth simulation of the same question (style features with an additive topic effect, topics found by clustering a separate content view) agrees on the direction: the gain grows with passages per topic and cluster purity, and turns negative when clusters are mostly wrong (one or two passages per topic, or noisy content). It also shows the cut is the setting to get right, and that its safe side is the strict one. A cut that is too loose merges topics and loses; one that is too strict leaves most passages unclustered and costs nothing. With the right cut even two passages per topic gained. Code and tables: https://www.kaggle.com/code/locdunhat/group-centring-when-test-topics-must-be-found\n\nCaveat: the weights were chosen on the same OOF rows, so the best cells are slightly optimistic.",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "GoPain",
+                "id": 3897663,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/locdunhat",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3897663-kg.jpg?t=2026-10-14-14-18-45",
+                "tier": "CONTRIBUTOR",
+                "url": "/locdunhat",
+                "user_id": 3897663,
+                "user_name": "locdunhat"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 2,
+              "total_votes": 2
+            }
+          },
+          "rawMarkdown": "Several top public notebooks centre some members' scores or features inside content clusters of the test (groups of 2 to 18 passages). I wanted to know which members gain from that and how much is left when a test prompt has far fewer than 18 answers, so I checked it on my own prompt-grouped 5-fold OOF (2,699 passages) without using the true prompt ids at test time.\n\nSetup. In each validation fold every prompt is cut to m random answers. Passages are clustered by content (stop-word-free TF-IDF cosine distance, average linkage, cut 0.85, fitted on the fold). Inside each cluster of 2 to 18 passages a share w of the chosen members' mean log-probability is subtracted, then the blend is argmax. 5 random subsamples per m, the same subsamples in every row.\n\nBlend: Qwen3-8B two-stage LoRA (1.0) + DeBERTa-v3-large two-stage (0.5) + 4-view n-gram SVC on train + pool (1.0).\n\n| centred members, weight | m = 18 | m = 6 | m = 3 | m = 2 |\n| --- | --- | --- | --- | --- |\n| none | 0.626 | 0.620 | 0.620 | 0.634 |\n| SVC, 0.75 | 0.631 | 0.620 | 0.620 | 0.635 |\n| DeBERTa, 0.75 | 0.639 | 0.631 | 0.624 | 0.637 |\n| LoRA, 0.25 | 0.633 | 0.627 | 0.627 | 0.639 |\n| LoRA, 1.0 | 0.628 | 0.620 | 0.592 | 0.588 |\n| all three, 0.25 | 0.644 | 0.633 | 0.624 | 0.640 |\n| all three, 0.5 | 0.646 | 0.636 | 0.616 | 0.613 |\n\n(Compare within a column: each m uses its own subsamples, so the \"none\" row moves between columns.)\n\nWhat I take from it:\n\n- The gain is not where I expected. I thought the pool-trained SVC, whose OOF reads high against the LB for me, would gain most; centring it alone does almost nothing. The DeBERTa member gains most, and a light touch on the LoRA is the most stable (+0.005 to +0.007 at every m).\n- A small weight on every member is the robust choice: at 0.25 the gain is positive at every m I tried. At 0.5 it is the best with full prompts and the worst with two or three answers per prompt.\n- Heavy centring of a strong member hurts once prompts are thin (LoRA at w = 1: −0.03 to −0.05 at m = 2 and 3). With few answers per cluster, the cluster mean is mostly those passages' own author signal.\n\nPublic LB check (one submission each, same blend, no Sinkhorn; the uncentred blend scored 0.595):\n\n| centred members, weight | OOF m = 18 | OOF m = 3 | public LB |\n| --- | --- | --- | --- |\n| all three, 0.25 | 0.644 | 0.624 | 0.603 |\n| DeBERTa, 0.75 | 0.639 | 0.624 | 0.603 |\n| LoRA, 0.25 | 0.633 | 0.627 | 0.602 |\n| all three, 0.5 | 0.646 | 0.616 | 0.590 |\n\nLight centring gains about +0.008, and the heavy setting that is best on full prompts loses. The LB order follows the m = 2 and m = 3 columns, not the m = 18 one, so on this test the clusters I find behave like thin prompts. I would pick centring weights from the small-m columns.\n\nA known-truth simulation of the same question (style features with an additive topic effect, topics found by clustering a separate content view) agrees on the direction: the gain grows with passages per topic and cluster purity, and turns negative when clusters are mostly wrong (one or two passages per topic, or noisy content). It also shows the cut is the setting to get right, and that its safe side is the strict one. A cut that is too loose merges topics and loses; one that is too strict leaves most passages unclustered and costs nothing. With the right cut even two passages per topic gained. Code and tables: https://www.kaggle.com/code/locdunhat/group-centring-when-test-topics-must-be-found\n\nCaveat: the weights were chosen on the same OOF rows, so the best cells are slightly optimistic.",
+          "replies": [],
+          "votes": {
+            "totalVotes": 2
+          }
+        },
+        "firstMessageId": 3544653,
+        "id": 752708,
+        "name": "Centring members inside content clusters: an OOF check with fewer answers per prompt",
+        "postDate": "2026-10-26T01:18:08.366848900Z",
+        "url": "/competitions/name-that-llm/discussion/752708"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>Several top public notebooks centre some members' scores or features inside content clusters of the test (groups of 2 to 18 passages). I wanted to know which members gain from that and how much is left when a test prompt has far fewer than 18 answers, so I checked it on my own prompt-grouped 5-fold OOF (2,699 passages) without using the true prompt ids at test time.</p>\n<p>Setup. In each validation fold every prompt is cut to m random answers. Passages are clustered by content (stop-word-free TF-IDF cosine distance, average linkage, cut 0.85, fitted on the fold). Inside each cluster of 2 to 18 passages a share w of the chosen members' mean log-probability is subtracted, then the blend is argmax. 5 random subsamples per m, the same subsamples in every row.</p>\n<p>Blend: Qwen3-8B two-stage LoRA (1.0) + DeBERTa-v3-large two-stage (0.5) + 4-view n-gram SVC on train + pool (1.0).</p>\n<table>\n<thead>\n<tr>\n<th>centred members, weight</th>\n<th>m = 18</th>\n<th>m = 6</th>\n<th>m = 3</th>\n<th>m = 2</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>none</td>\n<td>0.626</td>\n<td>0.620</td>\n<td>0.620</td>\n<td>0.634</td>\n</tr>\n<tr>\n<td>SVC, 0.75</td>\n<td>0.631</td>\n<td>0.620</td>\n<td>0.620</td>\n<td>0.635</td>\n</tr>\n<tr>\n<td>DeBERTa, 0.75</td>\n<td>0.639</td>\n<td>0.631</td>\n<td>0.624</td>\n<td>0.637</td>\n</tr>\n<tr>\n<td>LoRA, 0.25</td>\n<td>0.633</td>\n<td>0.627</td>\n<td>0.627</td>\n<td>0.639</td>\n</tr>\n<tr>\n<td>LoRA, 1.0</td>\n<td>0.628</td>\n<td>0.620</td>\n<td>0.592</td>\n<td>0.588</td>\n</tr>\n<tr>\n<td>all three, 0.25</td>\n<td>0.644</td>\n<td>0.633</td>\n<td>0.624</td>\n<td>0.640</td>\n</tr>\n<tr>\n<td>all three, 0.5</td>\n<td>0.646</td>\n<td>0.636</td>\n<td>0.616</td>\n<td>0.613</td>\n</tr>\n</tbody>\n</table>\n<p>(Compare within a column: each m uses its own subsamples, so the \"none\" row moves between columns.)</p>\n<p>What I take from it:</p>\n<ul>\n<li>The gain is not where I expected. I thought the pool-trained SVC, whose OOF reads high against the LB for me, would gain most; centring it alone does almost nothing. The DeBERTa member gains most, and a light touch on the LoRA is the most stable (+0.005 to +0.007 at every m).</li>\n<li>A small weight on every member is the robust choice: at 0.25 the gain is positive at every m I tried. At 0.5 it is the best with full prompts and the worst with two or three answers per prompt.</li>\n<li>Heavy centring of a strong member hurts once prompts are thin (LoRA at w = 1: −0.03 to −0.05 at m = 2 and 3). With few answers per cluster, the cluster mean is mostly those passages' own author signal.</li>\n</ul>\n<p>Public LB check (one submission each, same blend, no Sinkhorn; the uncentred blend scored 0.595):</p>\n<table>\n<thead>\n<tr>\n<th>centred members, weight</th>\n<th>OOF m = 18</th>\n<th>OOF m = 3</th>\n<th>public LB</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>all three, 0.25</td>\n<td>0.644</td>\n<td>0.624</td>\n<td>0.603</td>\n</tr>\n<tr>\n<td>DeBERTa, 0.75</td>\n<td>0.639</td>\n<td>0.624</td>\n<td>0.603</td>\n</tr>\n<tr>\n<td>LoRA, 0.25</td>\n<td>0.633</td>\n<td>0.627</td>\n<td>0.602</td>\n</tr>\n<tr>\n<td>all three, 0.5</td>\n<td>0.646</td>\n<td>0.616</td>\n<td>0.590</td>\n</tr>\n</tbody>\n</table>\n<p>Light centring gains about +0.008, and the heavy setting that is best on full prompts loses. The LB order follows the m = 2 and m = 3 columns, not the m = 18 one, so on this test the clusters I find behave like thin prompts. I would pick centring weights from the small-m columns.</p>\n<p>A known-truth simulation of the same question (style features with an additive topic effect, topics found by clustering a separate content view) agrees on the direction: the gain grows with passages per topic and cluster purity, and turns negative when clusters are mostly wrong (one or two passages per topic, or noisy content). It also shows the cut is the setting to get right, and that its safe side is the strict one. A cut that is too loose merges topics and loses; one that is too strict leaves most passages unclustered and costs nothing. With the right cut even two passages per topic gained. Code and tables: <a href=\"https://www.kaggle.com/code/locdunhat/group-centring-when-test-topics-must-be-found\" target=\"_blank\">https://www.kaggle.com/code/locdunhat/group-centring-when-test-topics-must-be-found</a></p>\n<p>Caveat: the weights were chosen on the same OOF rows, so the best cells are slightly optimistic.</p>",
+              "id": 3544653,
+              "post_date": "2026-10-26T01:18:08.367Z",
+              "raw_markdown": "Several top public notebooks centre some members' scores or features inside content clusters of the test (groups of 2 to 18 passages). I wanted to know which members gain from that and how much is left when a test prompt has far fewer than 18 answers, so I checked it on my own prompt-grouped 5-fold OOF (2,699 passages) without using the true prompt ids at test time.\n\nSetup. In each validation fold every prompt is cut to m random answers. Passages are clustered by content (stop-word-free TF-IDF cosine distance, average linkage, cut 0.85, fitted on the fold). Inside each cluster of 2 to 18 passages a share w of the chosen members' mean log-probability is subtracted, then the blend is argmax. 5 random subsamples per m, the same subsamples in every row.\n\nBlend: Qwen3-8B two-stage LoRA (1.0) + DeBERTa-v3-large two-stage (0.5) + 4-view n-gram SVC on train + pool (1.0).\n\n| centred members, weight | m = 18 | m = 6 | m = 3 | m = 2 |\n| --- | --- | --- | --- | --- |\n| none | 0.626 | 0.620 | 0.620 | 0.634 |\n| SVC, 0.75 | 0.631 | 0.620 | 0.620 | 0.635 |\n| DeBERTa, 0.75 | 0.639 | 0.631 | 0.624 | 0.637 |\n| LoRA, 0.25 | 0.633 | 0.627 | 0.627 | 0.639 |\n| LoRA, 1.0 | 0.628 | 0.620 | 0.592 | 0.588 |\n| all three, 0.25 | 0.644 | 0.633 | 0.624 | 0.640 |\n| all three, 0.5 | 0.646 | 0.636 | 0.616 | 0.613 |\n\n(Compare within a column: each m uses its own subsamples, so the \"none\" row moves between columns.)\n\nWhat I take from it:\n\n- The gain is not where I expected. I thought the pool-trained SVC, whose OOF reads high against the LB for me, would gain most; centring it alone does almost nothing. The DeBERTa member gains most, and a light touch on the LoRA is the most stable (+0.005 to +0.007 at every m).\n- A small weight on every member is the robust choice: at 0.25 the gain is positive at every m I tried. At 0.5 it is the best with full prompts and the worst with two or three answers per prompt.\n- Heavy centring of a strong member hurts once prompts are thin (LoRA at w = 1: −0.03 to −0.05 at m = 2 and 3). With few answers per cluster, the cluster mean is mostly those passages' own author signal.\n\nPublic LB check (one submission each, same blend, no Sinkhorn; the uncentred blend scored 0.595):\n\n| centred members, weight | OOF m = 18 | OOF m = 3 | public LB |\n| --- | --- | --- | --- |\n| all three, 0.25 | 0.644 | 0.624 | 0.603 |\n| DeBERTa, 0.75 | 0.639 | 0.624 | 0.603 |\n| LoRA, 0.25 | 0.633 | 0.627 | 0.602 |\n| all three, 0.5 | 0.646 | 0.616 | 0.590 |\n\nLight centring gains about +0.008, and the heavy setting that is best on full prompts loses. The LB order follows the m = 2 and m = 3 columns, not the m = 18 one, so on this test the clusters I find behave like thin prompts. I would pick centring weights from the small-m columns.\n\nA known-truth simulation of the same question (style features with an additive topic effect, topics found by clustering a separate content view) agrees on the direction: the gain grows with passages per topic and cluster purity, and turns negative when clusters are mostly wrong (one or two passages per topic, or noisy content). It also shows the cut is the setting to get right, and that its safe side is the strict one. A cut that is too loose merges topics and loses; one that is too strict leaves most passages unclustered and costs nothing. With the right cut even two passages per topic gained. Code and tables: https://www.kaggle.com/code/locdunhat/group-centring-when-test-topics-must-be-found\n\nCaveat: the weights were chosen on the same OOF rows, so the best cells are slightly optimistic.",
+              "votes": 2
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 3897663,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "3897663-kg.jpg?t=2026-10-14-14-18-45",
+            "author_user_display_name": "GoPain",
+            "author_user_name": "locdunhat",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "first_message": {
+              "author": {
+                "display_name": "GoPain",
+                "id": 3897663,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3897663-kg.jpg?t=2026-10-14-14-18-45",
+                "tier": "CONTRIBUTOR",
+                "url": "/locdunhat"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 1038,
+              "content": "<p>Several top public notebooks centre some members' scores or features inside content clusters of the test (groups of 2 to 18 passages). I wanted to know which members gain from that and how much is left when a test prompt has far fewer than 18 answers, so I checked it on my own prompt-grouped 5-fold OOF (2,699 passages) without using the true prompt ids at test time.</p>\n<p>Setup. In each validation fold every prompt is cut to m random answers. Passages are clustered by content (stop-word-free TF-IDF cosine distance, average linkage, cut 0.85, fitted on the fold). Inside each cluster of 2 to 18 passages a share w of the chosen members' mean log-probability is subtracted, then the blend is argmax. 5 random subsamples per m, the same subsamples in every row.</p>\n<p>Blend: Qwen3-8B two-stage LoRA (1.0) + DeBERTa-v3-large two-stage (0.5) + 4-view n-gram SVC on train + pool (1.0).</p>\n<table>\n<thead>\n<tr>\n<th>centred members, weight</th>\n<th>m = 18</th>\n<th>m = 6</th>\n<th>m = 3</th>\n<th>m = 2</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>none</td>\n<td>0.626</td>\n<td>0.620</td>\n<td>0.620</td>\n<td>0.634</td>\n</tr>\n<tr>\n<td>SVC, 0.75</td>\n<td>0.631</td>\n<td>0.620</td>\n<td>0.620</td>\n<td>0.635</td>\n</tr>\n<tr>\n<td>DeBERTa, 0.75</td>\n<td>0.639</td>\n<td>0.631</td>\n<td>0.624</td>\n<td>0.637</td>\n</tr>\n<tr>\n<td>LoRA, 0.25</td>\n<td>0.633</td>\n<td>0.627</td>\n<td>0.627</td>\n<td>0.639</td>\n</tr>\n<tr>\n<td>LoRA, 1.0</td>\n<td>0.628</td>\n<td>0.620</td>\n<td>0.592</td>\n<td>0.588</td>\n</tr>\n<tr>\n<td>all three, 0.25</td>\n<td>0.644</td>\n<td>0.633</td>\n<td>0.624</td>\n<td>0.640</td>\n</tr>\n<tr>\n<td>all three, 0.5</td>\n<td>0.646</td>\n<td>0.636</td>\n<td>0.616</td>\n<td>0.613</td>\n</tr>\n</tbody>\n</table>\n<p>(Compare within a column: each m uses its own subsamples, so the \"none\" row moves between columns.)</p>\n<p>What I take from it:</p>\n<ul>\n<li>The gain is not where I expected. I thought the pool-trained SVC, whose OOF reads high against the LB for me, would gain most; centring it alone does almost nothing. The DeBERTa member gains most, and a light touch on the LoRA is the most stable (+0.005 to +0.007 at every m).</li>\n<li>A small weight on every member is the robust choice: at 0.25 the gain is positive at every m I tried. At 0.5 it is the best with full prompts and the worst with two or three answers per prompt.</li>\n<li>Heavy centring of a strong member hurts once prompts are thin (LoRA at w = 1: −0.03 to −0.05 at m = 2 and 3). With few answers per cluster, the cluster mean is mostly those passages' own author signal.</li>\n</ul>\n<p>Public LB check (one submission each, same blend, no Sinkhorn; the uncentred blend scored 0.595):</p>\n<table>\n<thead>\n<tr>\n<th>centred members, weight</th>\n<th>OOF m = 18</th>\n<th>OOF m = 3</th>\n<th>public LB</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>all three, 0.25</td>\n<td>0.644</td>\n<td>0.624</td>\n<td>0.603</td>\n</tr>\n<tr>\n<td>DeBERTa, 0.75</td>\n<td>0.639</td>\n<td>0.624</td>\n<td>0.603</td>\n</tr>\n<tr>\n<td>LoRA, 0.25</td>\n<td>0.633</td>\n<td>0.627</td>\n<td>0.602</td>\n</tr>\n<tr>\n<td>all three, 0.5</td>\n<td>0.646</td>\n<td>0.616</td>\n<td>0.590</td>\n</tr>\n</tbody>\n</table>\n<p>Light centring gains about +0.008, and the heavy setting that is best on full prompts loses. The LB order follows the m = 2 and m = 3 columns, not the m = 18 one, so on this test the clusters I find behave like thin prompts. I would pick centring weights from the small-m columns.</p>\n<p>A known-truth simulation of the same question (style features with an additive topic effect, topics found by clustering a separate content view) agrees on the direction: the gain grows with passages per topic and cluster purity, and turns negative when clusters are mostly wrong (one or two passages per topic, or noisy content). It also shows the cut is the setting to get right, and that its safe side is the strict one. A cut that is too loose merges topics and loses; one that is too strict leaves most passages unclustered and costs nothing. With the right cut even two passages per topic gained. Code and tables: <a href=\"https://www.kaggle.com/code/locdunhat/group-centring-when-test-topics-must-be-found\" target=\"_blank\">https://www.kaggle.com/code/locdunhat/group-centring-when-test-topics-must-be-found</a></p>\n<p>Caveat: the weights were chosen on the same OOF rows, so the best cells are slightly optimistic.</p>",
+              "feedback_tracking_data": {},
+              "id": 3544653,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-26T01:18:08.367Z",
+              "raw_markdown": "Several top public notebooks centre some members' scores or features inside content clusters of the test (groups of 2 to 18 passages). I wanted to know which members gain from that and how much is left when a test prompt has far fewer than 18 answers, so I checked it on my own prompt-grouped 5-fold OOF (2,699 passages) without using the true prompt ids at test time.\n\nSetup. In each validation fold every prompt is cut to m random answers. Passages are clustered by content (stop-word-free TF-IDF cosine distance, average linkage, cut 0.85, fitted on the fold). Inside each cluster of 2 to 18 passages a share w of the chosen members' mean log-probability is subtracted, then the blend is argmax. 5 random subsamples per m, the same subsamples in every row.\n\nBlend: Qwen3-8B two-stage LoRA (1.0) + DeBERTa-v3-large two-stage (0.5) + 4-view n-gram SVC on train + pool (1.0).\n\n| centred members, weight | m = 18 | m = 6 | m = 3 | m = 2 |\n| --- | --- | --- | --- | --- |\n| none | 0.626 | 0.620 | 0.620 | 0.634 |\n| SVC, 0.75 | 0.631 | 0.620 | 0.620 | 0.635 |\n| DeBERTa, 0.75 | 0.639 | 0.631 | 0.624 | 0.637 |\n| LoRA, 0.25 | 0.633 | 0.627 | 0.627 | 0.639 |\n| LoRA, 1.0 | 0.628 | 0.620 | 0.592 | 0.588 |\n| all three, 0.25 | 0.644 | 0.633 | 0.624 | 0.640 |\n| all three, 0.5 | 0.646 | 0.636 | 0.616 | 0.613 |\n\n(Compare within a column: each m uses its own subsamples, so the \"none\" row moves between columns.)\n\nWhat I take from it:\n\n- The gain is not where I expected. I thought the pool-trained SVC, whose OOF reads high against the LB for me, would gain most; centring it alone does almost nothing. The DeBERTa member gains most, and a light touch on the LoRA is the most stable (+0.005 to +0.007 at every m).\n- A small weight on every member is the robust choice: at 0.25 the gain is positive at every m I tried. At 0.5 it is the best with full prompts and the worst with two or three answers per prompt.\n- Heavy centring of a strong member hurts once prompts are thin (LoRA at w = 1: −0.03 to −0.05 at m = 2 and 3). With few answers per cluster, the cluster mean is mostly those passages' own author signal.\n\nPublic LB check (one submission each, same blend, no Sinkhorn; the uncentred blend scored 0.595):\n\n| centred members, weight | OOF m = 18 | OOF m = 3 | public LB |\n| --- | --- | --- | --- |\n| all three, 0.25 | 0.644 | 0.624 | 0.603 |\n| DeBERTa, 0.75 | 0.639 | 0.624 | 0.603 |\n| LoRA, 0.25 | 0.633 | 0.627 | 0.602 |\n| all three, 0.5 | 0.646 | 0.616 | 0.590 |\n\nLight centring gains about +0.008, and the heavy setting that is best on full prompts loses. The LB order follows the m = 2 and m = 3 columns, not the m = 18 one, so on this test the clusters I find behave like thin prompts. I would pick centring weights from the small-m columns.\n\nA known-truth simulation of the same question (style features with an additive topic effect, topics found by clustering a separate content view) agrees on the direction: the gain grows with passages per topic and cluster purity, and turns negative when clusters are mostly wrong (one or two passages per topic, or noisy content). It also shows the cut is the setting to get right, and that its safe side is the strict one. A cut that is too loose merges topics and loses; one that is too strict leaves most passages unclustered and costs nothing. With the right cut even two passages per topic gained. Code and tables: https://www.kaggle.com/code/locdunhat/group-centring-when-test-topics-must-be-found\n\nCaveat: the weights were chosen on the same OOF rows, so the best cells are slightly optimistic.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "GoPain",
+                  "id": 3897663,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/locdunhat",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3897663-kg.jpg?t=2026-10-14-14-18-45",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/locdunhat",
+                  "user_id": 3897663,
+                  "user_name": "locdunhat"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 2,
+                "total_votes": 2
+              }
+            },
+            "first_message_id": 3544653,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 752708,
+            "name": "Centring members inside content clusters: an OOF check with fewer answers per prompt",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-10-26T01:18:08.366848900Z",
+            "total_votes": 2,
+            "url": "/competitions/name-that-llm/discussion/752708"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:23:55+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:23:55+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-10-26T01:18:08.366848900Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [],
+  "writeup": null
+}

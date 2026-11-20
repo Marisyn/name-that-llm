@@ -1,0 +1,1777 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 751722,
+    "title": "Anyone tried a Hierarchical Approach? (Predicting Provider first, then Specific Model)",
+    "author": "Ghaith Mechi",
+    "author_url": "/ghaithmechi",
+    "author_tier": "MASTER",
+    "post_date": "2026-10-22T16:08:23.153109200Z",
+    "last_comment_post_date": "2026-11-17T04:33:53.066666700Z",
+    "comment_count": 9,
+    "votes": 12,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/751722",
+    "first_message_id": 3542889,
+    "first_seen_at": "2026-11-04T06:56:17+00:00",
+    "last_seen_at": "2026-11-19T12:45:31+00:00",
+    "detail_last_synced_at": "2026-11-19T12:45:31+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-19T12:45:20+00:00",
+    "remote_last_listed_at": "2026-11-19T12:45:20+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "fc641b5662066f95bcc339a30c1d11b24a9f762b55c47b5a3d291bde25c025e5",
+    "listing_metrics_hash": "8a070086b929b3301ba7c3bd207998aa81e5268f503e9af770c0a88b9637a68b",
+    "detail_content_hash": "3819e2a26fa374619e07ab913c4db570d76eda7362dc2e6cc07c410e9bb03ca3",
+    "detail_last_checked_at": "2026-11-19T12:45:31+00:00",
+    "detail_next_check_at": "2026-11-22T12:45:31+00:00",
+    "detail_unchanged_count": 1,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 9,
+      "firstForumMessageId": null,
+      "id": 751722,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-11-17T04:33:53.066666700Z",
+      "postDate": "2026-10-22T16:08:23.153109200Z",
+      "raw": {
+        "comment_count": 9,
+        "id": 751722,
+        "last_comment_post_date": "2026-11-17T04:33:53.066666700Z",
+        "post_date": "2026-10-22T16:08:23.153109200Z",
+        "title": "Anyone tried a Hierarchical Approach? (Predicting Provider first, then Specific Model)",
+        "topic_url": "/competitions/name-that-llm/discussion/751722",
+        "votes": 12
+      },
+      "title": "Anyone tried a Hierarchical Approach? (Predicting Provider first, then Specific Model)",
+      "topicUrl": "/competitions/name-that-llm/discussion/751722",
+      "votes": 12
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "MASTER",
+        "authorUserDisplayName": "Ghaith Mechi",
+        "authorUserName": "ghaithmechi",
+        "comments": [
+          {
+            "author": {
+              "displayName": "Sotarriva Alvarez Isai Roberto",
+              "tier": "CONTRIBUTOR",
+              "url": "/irsotarriva"
+            },
+            "content": "<p>I tried it and it did not help much (difference is within noise level). \nFinding the family is quite easy, separating models withing a family is more difficult probably because smaller models are usually distillations of the larger ones so they are heavily correlated.</p>",
+            "id": 3555940,
+            "isThankYou": false,
+            "postDate": "2026-11-17T04:33:53.067Z",
+            "raw": {
+              "author": {
+                "display_name": "Sotarriva Alvarez Isai Roberto",
+                "id": 2953982,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2953982-kg.png?t=2025-01-08-15-13-02",
+                "tier": "CONTRIBUTOR",
+                "url": "/irsotarriva"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 1380,
+              "content": "<p>I tried it and it did not help much (difference is within noise level). \nFinding the family is quite easy, separating models withing a family is more difficult probably because smaller models are usually distillations of the larger ones so they are heavily correlated.</p>",
+              "feedback_tracking_data": {},
+              "id": 3555940,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-17T04:33:53.067Z",
+              "raw_markdown": "I tried it and it did not help much (difference is within noise level). \nFinding the family is quite easy, separating models withing a family is more difficult probably because smaller models are usually distillations of the larger ones so they are heavily correlated.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Sotarriva Alvarez Isai Roberto",
+                  "id": 2953982,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/irsotarriva",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2953982-kg.png?t=2025-01-08-15-13-02",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/irsotarriva",
+                  "user_id": 2953982,
+                  "user_name": "irsotarriva"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": 1
+              }
+            },
+            "rawMarkdown": "I tried it and it did not help much (difference is within noise level). \nFinding the family is quite easy, separating models withing a family is more difficult probably because smaller models are usually distillations of the larger ones so they are heavily correlated.",
+            "replies": [],
+            "votes": {
+              "totalVotes": 1
+            }
+          },
+          {
+            "author": {
+              "displayName": "JK Shin",
+              "tier": "CONTRIBUTOR",
+              "url": "/jkshin101"
+            },
+            "content": "<p>I tested at the provider level first, then the specific models. Gemini-family predictions hit 98% accuracy and the others did fairly well, though GLM models were tough to distinguish. Identifying exact models was much harder overall, especially since Gemini 3.6, 3.7, and 3.8 are too closely correlated.</p>",
+            "id": 3555532,
+            "isThankYou": false,
+            "postDate": "2026-11-16T03:09:21.837Z",
+            "raw": {
+              "author": {
+                "display_name": "JK Shin",
+                "id": 37952848,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/jkshin101"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 698,
+              "content": "<p>I tested at the provider level first, then the specific models. Gemini-family predictions hit 98% accuracy and the others did fairly well, though GLM models were tough to distinguish. Identifying exact models was much harder overall, especially since Gemini 3.6, 3.7, and 3.8 are too closely correlated.</p>",
+              "feedback_tracking_data": {},
+              "id": 3555532,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-16T03:09:21.837Z",
+              "raw_markdown": "I tested at the provider level first, then the specific models. Gemini-family predictions hit 98% accuracy and the others did fairly well, though GLM models were tough to distinguish. Identifying exact models was much harder overall, especially since Gemini 3.6, 3.7, and 3.8 are too closely correlated.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "JK Shin",
+                  "id": 37952848,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/jkshin101",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/jkshin101",
+                  "user_id": 37952848,
+                  "user_name": "jkshin101"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": 1
+              }
+            },
+            "rawMarkdown": "I tested at the provider level first, then the specific models. Gemini-family predictions hit 98% accuracy and the others did fairly well, though GLM models were tough to distinguish. Identifying exact models was much harder overall, especially since Gemini 3.6, 3.7, and 3.8 are too closely correlated.",
+            "replies": [],
+            "votes": {
+              "totalVotes": 1
+            }
+          },
+          {
+            "author": {
+              "displayName": "Navneet",
+              "tier": "CONTRIBUTOR",
+              "url": "/navneetbende"
+            },
+            "content": "<p>Thank you for the Hierarchical Approach <a href=\"/ghaithmechi\" target=\"_blank\">@ghaithmechi</a> </p>",
+            "id": 3555545,
+            "isThankYou": false,
+            "postDate": "2026-11-16T04:27:02.170Z",
+            "raw": {
+              "author": {
+                "display_name": "Navneet",
+                "id": 15692441,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15692441-kg.jpg?t=2025-05-18-07-58-06",
+                "tier": "CONTRIBUTOR",
+                "url": "/navneetbende"
+              },
+              "author_type": "COMMENT",
+              "content": "<p>Thank you for the Hierarchical Approach <a href=\"/ghaithmechi\" target=\"_blank\">@ghaithmechi</a> </p>",
+              "feedback_tracking_data": {},
+              "id": 3555545,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-16T04:27:02.170Z",
+              "raw_markdown": "Thank you for the Hierarchical Approach @ghaithmechi ",
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1
+              }
+            },
+            "rawMarkdown": "Thank you for the Hierarchical Approach @ghaithmechi ",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          },
+          {
+            "author": {
+              "displayName": "harshraj22",
+              "tier": "CONTRIBUTOR",
+              "url": "/harshraj22"
+            },
+            "content": "<p>Not really, did you give it a try ? some model pairs seem difficult for stage 1 (claude - kimi), while some model families are difficult in stage 2 (eg gemini).</p>",
+            "id": 3555410,
+            "isThankYou": false,
+            "postDate": "2026-11-15T17:38:20.100Z",
+            "raw": {
+              "author": {
+                "display_name": "harshraj22",
+                "id": 3384390,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3384390-kg.jpg",
+                "tier": "CONTRIBUTOR",
+                "url": "/harshraj22"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 3465,
+              "content": "<p>Not really, did you give it a try ? some model pairs seem difficult for stage 1 (claude - kimi), while some model families are difficult in stage 2 (eg gemini).</p>",
+              "feedback_tracking_data": {},
+              "id": 3555410,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-15T17:38:20.100Z",
+              "raw_markdown": "Not really, did you give it a try ? some model pairs seem difficult for stage 1 (claude - kimi), while some model families are difficult in stage 2 (eg gemini).",
+              "team_up_info": {
+                "enabled": true,
+                "intro": "",
+                "team_leader": {
+                  "display_name": "harshraj22",
+                  "id": 3384390,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/harshraj22",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3384390-kg.jpg",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/harshraj22",
+                  "user_id": 3384390,
+                  "user_name": "harshraj22"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": 1
+              }
+            },
+            "rawMarkdown": "Not really, did you give it a try ? some model pairs seem difficult for stage 1 (claude - kimi), while some model families are difficult in stage 2 (eg gemini).",
+            "replies": [],
+            "votes": {
+              "totalVotes": 1
+            }
+          },
+          {
+            "author": {
+              "displayName": "Cloud9",
+              "tier": "CONTRIBUTOR",
+              "url": "/nikhil029"
+            },
+            "content": "<p>ATLAS predict the provider with good accuracy, <a href=\"https://arxiv.org/abs/2610.19583\" target=\"_blank\">https://arxiv.org/abs/2610.19583</a></p>",
+            "id": 3543022,
+            "isThankYou": false,
+            "postDate": "2026-10-22T19:43:27.797Z",
+            "raw": {
+              "author": {
+                "display_name": "Cloud9",
+                "id": 11727280,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11727280-kg.png?t=2026-08-24-14-52-26",
+                "tier": "CONTRIBUTOR",
+                "url": "/nikhil029"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 6158,
+              "content": "<p>ATLAS predict the provider with good accuracy, <a href=\"https://arxiv.org/abs/2610.19583\" target=\"_blank\">https://arxiv.org/abs/2610.19583</a></p>",
+              "feedback_tracking_data": {},
+              "id": 3543022,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-22T19:43:27.797Z",
+              "raw_markdown": "ATLAS predict the provider with good accuracy, https://arxiv.org/abs/2610.19583",
+              "reactions": [
+                {
+                  "emoji": "THANK_YOU",
+                  "featured_user_names": [
+                    "harshraj22",
+                    "abdullahkavakli",
+                    "osakanateishoku"
+                  ],
+                  "user_count": 3
+                },
+                {
+                  "emoji": "SURPRISE",
+                  "featured_user_names": [
+                    "zabojeb",
+                    "shikhageekachad"
+                  ],
+                  "user_count": 2
+                }
+              ],
+              "replies": [
+                {
+                  "author": {
+                    "display_name": "Ghaith Mechi",
+                    "id": 8706340,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8706340-kg.jpg?t=2024-03-14-16-48-39",
+                    "tier": "MASTER",
+                    "url": "/ghaithmechi"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 2965,
+                  "content": "<p>I appreciate your help! thanks.</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3543032,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-22T19:57:51.150Z",
+                  "raw_markdown": "I appreciate your help! thanks.",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Ghaith Mechi",
+                      "id": 8706340,
+                      "performance_tier": "MASTER",
+                      "profile_url": "/ghaithmechi",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8706340-kg.jpg?t=2024-03-14-16-48-39",
+                      "tier": "MASTER",
+                      "url": "/ghaithmechi",
+                      "user_id": 8706340,
+                      "user_name": "ghaithmechi"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Cloud9",
+                  "id": 11727280,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/nikhil029",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11727280-kg.png?t=2026-08-24-14-52-26",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/nikhil029",
+                  "user_id": 11727280,
+                  "user_name": "nikhil029"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 3,
+                "total_votes": 3
+              }
+            },
+            "rawMarkdown": "ATLAS predict the provider with good accuracy, https://arxiv.org/abs/2610.19583",
+            "replies": [
+              {
+                "author": {
+                  "displayName": "Ghaith Mechi",
+                  "tier": "MASTER",
+                  "url": "/ghaithmechi"
+                },
+                "content": "<p>I appreciate your help! thanks.</p>",
+                "id": 3543032,
+                "isThankYou": false,
+                "postDate": "2026-10-22T19:57:51.150Z",
+                "raw": {
+                  "author": {
+                    "display_name": "Ghaith Mechi",
+                    "id": 8706340,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8706340-kg.jpg?t=2024-03-14-16-48-39",
+                    "tier": "MASTER",
+                    "url": "/ghaithmechi"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 2965,
+                  "content": "<p>I appreciate your help! thanks.</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3543032,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-22T19:57:51.150Z",
+                  "raw_markdown": "I appreciate your help! thanks.",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Ghaith Mechi",
+                      "id": 8706340,
+                      "performance_tier": "MASTER",
+                      "profile_url": "/ghaithmechi",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8706340-kg.jpg?t=2024-03-14-16-48-39",
+                      "tier": "MASTER",
+                      "url": "/ghaithmechi",
+                      "user_id": 8706340,
+                      "user_name": "ghaithmechi"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                },
+                "rawMarkdown": "I appreciate your help! thanks.",
+                "replies": [],
+                "votes": {
+                  "totalVotes": 0
+                }
+              }
+            ],
+            "votes": {
+              "totalVotes": 3
+            }
+          },
+          {
+            "author": {
+              "displayName": null,
+              "tier": null,
+              "url": "/"
+            },
+            "content": null,
+            "id": 3543021,
+            "isThankYou": false,
+            "postDate": "2026-10-22T19:43:06.290Z",
+            "raw": {
+              "author": {
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "url": "/"
+              },
+              "author_type": "COMMENT",
+              "can_delete": true,
+              "feedback_tracking_data": {},
+              "id": 3543021,
+              "is_deleted": true,
+              "is_thank_you": false,
+              "is_user_author": true,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-22T19:43:06.290Z",
+              "raw_markdown": "",
+              "votes": {}
+            },
+            "rawMarkdown": null,
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          },
+          {
+            "author": {
+              "displayName": null,
+              "tier": null,
+              "url": "/"
+            },
+            "content": null,
+            "id": 3543020,
+            "isThankYou": false,
+            "postDate": "2026-10-22T19:42:18.163Z",
+            "raw": {
+              "author": {
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "url": "/"
+              },
+              "author_type": "COMMENT",
+              "can_delete": true,
+              "feedback_tracking_data": {},
+              "id": 3543020,
+              "is_deleted": true,
+              "is_thank_you": false,
+              "is_user_author": true,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-22T19:42:18.163Z",
+              "raw_markdown": "",
+              "votes": {}
+            },
+            "rawMarkdown": null,
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          },
+          {
+            "author": {
+              "displayName": null,
+              "tier": null,
+              "url": "/"
+            },
+            "content": null,
+            "id": 3543019,
+            "isThankYou": false,
+            "postDate": "2026-10-22T19:41:50.640Z",
+            "raw": {
+              "author": {
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "url": "/"
+              },
+              "author_type": "COMMENT",
+              "can_delete": true,
+              "feedback_tracking_data": {},
+              "id": 3543019,
+              "is_deleted": true,
+              "is_thank_you": false,
+              "is_user_author": true,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-22T19:41:50.640Z",
+              "raw_markdown": "",
+              "votes": {}
+            },
+            "rawMarkdown": null,
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "expectedCommentCount": 9,
+        "firstMessage": {
+          "author": {
+            "displayName": "Ghaith Mechi",
+            "tier": "MASTER",
+            "url": "/ghaithmechi"
+          },
+          "content": "<p>Hello everyone! \nI am considering a two-stage approach for this competition and wanted to see if anyone has experimented with something similar or has any insights.\nInstead of training a single model to predict all individual model variants directly, the idea is to build a hierarchical \nclassification pipeline:</p>\n<ol>\n<li>Stage 1 (Provider Level): Predict the parent company/provider first (e.g., OpenAI, Google, Anthropic, etc.).</li>\n<li>Stage 2 (Model Level): Train a dedicated specialist model for each provider to predict the exact architecture/variant.\nFor reference, here is the provider-to-model hierarchy:\n• OpenAI: gpt-5.5, gpt-5.6-luna, gpt-5.6-sol, gpt-5.6-terra, gpt-6-astra\n• Google: gemini-3.1-pro-preview, gemini-3.6-flash, gemini-3.7-flash, gemini-3.8-flash\n• Anthropic: claude-fable-5, claude-opus-4-6, claude-opus-4-8, claude-opus-5, claude-sonnet-5\n• Qwen: qwen3.8-max\n• ZAI: glm-5.3, glm-5.3-flash\n• Moonshot: kimi-k3</li>\n</ol>",
+          "id": 3542889,
+          "isThankYou": false,
+          "postDate": "2026-10-22T16:08:23.153Z",
+          "raw": {
+            "author": {
+              "display_name": "Ghaith Mechi",
+              "id": 8706340,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8706340-kg.jpg?t=2024-03-14-16-48-39",
+              "tier": "MASTER",
+              "url": "/ghaithmechi"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 2965,
+            "content": "<p>Hello everyone! \nI am considering a two-stage approach for this competition and wanted to see if anyone has experimented with something similar or has any insights.\nInstead of training a single model to predict all individual model variants directly, the idea is to build a hierarchical \nclassification pipeline:</p>\n<ol>\n<li>Stage 1 (Provider Level): Predict the parent company/provider first (e.g., OpenAI, Google, Anthropic, etc.).</li>\n<li>Stage 2 (Model Level): Train a dedicated specialist model for each provider to predict the exact architecture/variant.\nFor reference, here is the provider-to-model hierarchy:\n• OpenAI: gpt-5.5, gpt-5.6-luna, gpt-5.6-sol, gpt-5.6-terra, gpt-6-astra\n• Google: gemini-3.1-pro-preview, gemini-3.6-flash, gemini-3.7-flash, gemini-3.8-flash\n• Anthropic: claude-fable-5, claude-opus-4-6, claude-opus-4-8, claude-opus-5, claude-sonnet-5\n• Qwen: qwen3.8-max\n• ZAI: glm-5.3, glm-5.3-flash\n• Moonshot: kimi-k3</li>\n</ol>",
+            "feedback_tracking_data": {},
+            "id": 3542889,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-10-22T16:08:23.153Z",
+            "raw_markdown": "Hello everyone! \nI am considering a two-stage approach for this competition and wanted to see if anyone has experimented with something similar or has any insights.\nInstead of training a single model to predict all individual model variants directly, the idea is to build a hierarchical \nclassification pipeline:\n1. Stage 1 (Provider Level): Predict the parent company/provider first (e.g., OpenAI, Google, Anthropic, etc.).\n2. Stage 2 (Model Level): Train a dedicated specialist model for each provider to predict the exact architecture/variant.\nFor reference, here is the provider-to-model hierarchy:\n• OpenAI: gpt-5.5, gpt-5.6-luna, gpt-5.6-sol, gpt-5.6-terra, gpt-6-astra\n• Google: gemini-3.1-pro-preview, gemini-3.6-flash, gemini-3.7-flash, gemini-3.8-flash\n• Anthropic: claude-fable-5, claude-opus-4-6, claude-opus-4-8, claude-opus-5, claude-sonnet-5\n• Qwen: qwen3.8-max\n• ZAI: glm-5.3, glm-5.3-flash\n• Moonshot: kimi-k3",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "Ghaith Mechi",
+                "id": 8706340,
+                "performance_tier": "MASTER",
+                "profile_url": "/ghaithmechi",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8706340-kg.jpg?t=2024-03-14-16-48-39",
+                "tier": "MASTER",
+                "url": "/ghaithmechi",
+                "user_id": 8706340,
+                "user_name": "ghaithmechi"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 12,
+              "total_votes": 12
+            }
+          },
+          "rawMarkdown": "Hello everyone! \nI am considering a two-stage approach for this competition and wanted to see if anyone has experimented with something similar or has any insights.\nInstead of training a single model to predict all individual model variants directly, the idea is to build a hierarchical \nclassification pipeline:\n1. Stage 1 (Provider Level): Predict the parent company/provider first (e.g., OpenAI, Google, Anthropic, etc.).\n2. Stage 2 (Model Level): Train a dedicated specialist model for each provider to predict the exact architecture/variant.\nFor reference, here is the provider-to-model hierarchy:\n• OpenAI: gpt-5.5, gpt-5.6-luna, gpt-5.6-sol, gpt-5.6-terra, gpt-6-astra\n• Google: gemini-3.1-pro-preview, gemini-3.6-flash, gemini-3.7-flash, gemini-3.8-flash\n• Anthropic: claude-fable-5, claude-opus-4-6, claude-opus-4-8, claude-opus-5, claude-sonnet-5\n• Qwen: qwen3.8-max\n• ZAI: glm-5.3, glm-5.3-flash\n• Moonshot: kimi-k3",
+          "replies": [],
+          "votes": {
+            "totalVotes": 12
+          }
+        },
+        "firstMessageId": 3542889,
+        "id": 751722,
+        "name": "Anyone tried a Hierarchical Approach? (Predicting Provider first, then Specific Model)",
+        "postDate": "2026-10-22T16:08:23.153109200Z",
+        "url": "/competitions/name-that-llm/discussion/751722"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>Hello everyone! \nI am considering a two-stage approach for this competition and wanted to see if anyone has experimented with something similar or has any insights.\nInstead of training a single model to predict all individual model variants directly, the idea is to build a hierarchical \nclassification pipeline:</p>\n<ol>\n<li>Stage 1 (Provider Level): Predict the parent company/provider first (e.g., OpenAI, Google, Anthropic, etc.).</li>\n<li>Stage 2 (Model Level): Train a dedicated specialist model for each provider to predict the exact architecture/variant.\nFor reference, here is the provider-to-model hierarchy:\n• OpenAI: gpt-5.5, gpt-5.6-luna, gpt-5.6-sol, gpt-5.6-terra, gpt-6-astra\n• Google: gemini-3.1-pro-preview, gemini-3.6-flash, gemini-3.7-flash, gemini-3.8-flash\n• Anthropic: claude-fable-5, claude-opus-4-6, claude-opus-4-8, claude-opus-5, claude-sonnet-5\n• Qwen: qwen3.8-max\n• ZAI: glm-5.3, glm-5.3-flash\n• Moonshot: kimi-k3</li>\n</ol>",
+              "id": 3542889,
+              "post_date": "2026-10-22T16:08:23.153Z",
+              "raw_markdown": "Hello everyone! \nI am considering a two-stage approach for this competition and wanted to see if anyone has experimented with something similar or has any insights.\nInstead of training a single model to predict all individual model variants directly, the idea is to build a hierarchical \nclassification pipeline:\n1. Stage 1 (Provider Level): Predict the parent company/provider first (e.g., OpenAI, Google, Anthropic, etc.).\n2. Stage 2 (Model Level): Train a dedicated specialist model for each provider to predict the exact architecture/variant.\nFor reference, here is the provider-to-model hierarchy:\n• OpenAI: gpt-5.5, gpt-5.6-luna, gpt-5.6-sol, gpt-5.6-terra, gpt-6-astra\n• Google: gemini-3.1-pro-preview, gemini-3.6-flash, gemini-3.7-flash, gemini-3.8-flash\n• Anthropic: claude-fable-5, claude-opus-4-6, claude-opus-4-8, claude-opus-5, claude-sonnet-5\n• Qwen: qwen3.8-max\n• ZAI: glm-5.3, glm-5.3-flash\n• Moonshot: kimi-k3",
+              "votes": 12
+            },
+            {
+              "id": 3543019,
+              "is_deleted": true,
+              "post_date": "2026-10-22T19:41:50.640Z",
+              "raw_markdown": ""
+            },
+            {
+              "id": 3543020,
+              "is_deleted": true,
+              "post_date": "2026-10-22T19:42:18.163Z",
+              "raw_markdown": ""
+            },
+            {
+              "id": 3543021,
+              "is_deleted": true,
+              "post_date": "2026-10-22T19:43:06.290Z",
+              "raw_markdown": ""
+            },
+            {
+              "content": "<p>ATLAS predict the provider with good accuracy, <a href=\"https://arxiv.org/abs/2610.19583\" target=\"_blank\">https://arxiv.org/abs/2610.19583</a></p>",
+              "id": 3543022,
+              "post_date": "2026-10-22T19:43:27.797Z",
+              "raw_markdown": "ATLAS predict the provider with good accuracy, https://arxiv.org/abs/2610.19583",
+              "replies": [
+                {
+                  "content": "<p>I appreciate your help! thanks.</p>",
+                  "id": 3543032,
+                  "post_date": "2026-10-22T19:57:51.150Z",
+                  "raw_markdown": "I appreciate your help! thanks."
+                }
+              ],
+              "votes": 3
+            },
+            {
+              "content": "<p>Not really, did you give it a try ? some model pairs seem difficult for stage 1 (claude - kimi), while some model families are difficult in stage 2 (eg gemini).</p>",
+              "id": 3555410,
+              "post_date": "2026-11-15T17:38:20.100Z",
+              "raw_markdown": "Not really, did you give it a try ? some model pairs seem difficult for stage 1 (claude - kimi), while some model families are difficult in stage 2 (eg gemini).",
+              "votes": 1
+            },
+            {
+              "content": "<p>I tested at the provider level first, then the specific models. Gemini-family predictions hit 98% accuracy and the others did fairly well, though GLM models were tough to distinguish. Identifying exact models was much harder overall, especially since Gemini 3.6, 3.7, and 3.8 are too closely correlated.</p>",
+              "id": 3555532,
+              "post_date": "2026-11-16T03:09:21.837Z",
+              "raw_markdown": "I tested at the provider level first, then the specific models. Gemini-family predictions hit 98% accuracy and the others did fairly well, though GLM models were tough to distinguish. Identifying exact models was much harder overall, especially since Gemini 3.6, 3.7, and 3.8 are too closely correlated.",
+              "votes": 1
+            },
+            {
+              "content": "<p>Thank you for the Hierarchical Approach <a href=\"/ghaithmechi\" target=\"_blank\">@ghaithmechi</a> </p>",
+              "id": 3555545,
+              "post_date": "2026-11-16T04:27:02.170Z",
+              "raw_markdown": "Thank you for the Hierarchical Approach @ghaithmechi "
+            },
+            {
+              "content": "<p>I tried it and it did not help much (difference is within noise level). \nFinding the family is quite easy, separating models withing a family is more difficult probably because smaller models are usually distillations of the larger ones so they are heavily correlated.</p>",
+              "id": 3555940,
+              "post_date": "2026-11-17T04:33:53.067Z",
+              "raw_markdown": "I tried it and it did not help much (difference is within noise level). \nFinding the family is quite easy, separating models withing a family is more difficult probably because smaller models are usually distillations of the larger ones so they are heavily correlated.",
+              "votes": 1
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 8706340,
+            "author_performance_tier": "MASTER",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "8706340-kg.jpg?t=2024-03-14-16-48-39",
+            "author_user_display_name": "Ghaith Mechi",
+            "author_user_name": "ghaithmechi",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "comments": [
+              {
+                "author": {
+                  "display_name": "Sotarriva Alvarez Isai Roberto",
+                  "id": 2953982,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2953982-kg.png?t=2025-01-08-15-13-02",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/irsotarriva"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 1380,
+                "content": "<p>I tried it and it did not help much (difference is within noise level). \nFinding the family is quite easy, separating models withing a family is more difficult probably because smaller models are usually distillations of the larger ones so they are heavily correlated.</p>",
+                "feedback_tracking_data": {},
+                "id": 3555940,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-11-17T04:33:53.067Z",
+                "raw_markdown": "I tried it and it did not help much (difference is within noise level). \nFinding the family is quite easy, separating models withing a family is more difficult probably because smaller models are usually distillations of the larger ones so they are heavily correlated.",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "Sotarriva Alvarez Isai Roberto",
+                    "id": 2953982,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/irsotarriva",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2953982-kg.png?t=2025-01-08-15-13-02",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/irsotarriva",
+                    "user_id": 2953982,
+                    "user_name": "irsotarriva"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true,
+                  "total_upvotes": 1,
+                  "total_votes": 1
+                }
+              },
+              {
+                "author": {
+                  "display_name": "JK Shin",
+                  "id": 37952848,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/jkshin101"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 698,
+                "content": "<p>I tested at the provider level first, then the specific models. Gemini-family predictions hit 98% accuracy and the others did fairly well, though GLM models were tough to distinguish. Identifying exact models was much harder overall, especially since Gemini 3.6, 3.7, and 3.8 are too closely correlated.</p>",
+                "feedback_tracking_data": {},
+                "id": 3555532,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-11-16T03:09:21.837Z",
+                "raw_markdown": "I tested at the provider level first, then the specific models. Gemini-family predictions hit 98% accuracy and the others did fairly well, though GLM models were tough to distinguish. Identifying exact models was much harder overall, especially since Gemini 3.6, 3.7, and 3.8 are too closely correlated.",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "JK Shin",
+                    "id": 37952848,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/jkshin101",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/jkshin101",
+                    "user_id": 37952848,
+                    "user_name": "jkshin101"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true,
+                  "total_upvotes": 1,
+                  "total_votes": 1
+                }
+              },
+              {
+                "author": {
+                  "display_name": "Navneet",
+                  "id": 15692441,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15692441-kg.jpg?t=2025-05-18-07-58-06",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/navneetbende"
+                },
+                "author_type": "COMMENT",
+                "content": "<p>Thank you for the Hierarchical Approach <a href=\"/ghaithmechi\" target=\"_blank\">@ghaithmechi</a> </p>",
+                "feedback_tracking_data": {},
+                "id": 3555545,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-11-16T04:27:02.170Z",
+                "raw_markdown": "Thank you for the Hierarchical Approach @ghaithmechi ",
+                "votes": {
+                  "can_upvote": true,
+                  "total_upvotes": 1
+                }
+              },
+              {
+                "author": {
+                  "display_name": "harshraj22",
+                  "id": 3384390,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3384390-kg.jpg",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/harshraj22"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 3465,
+                "content": "<p>Not really, did you give it a try ? some model pairs seem difficult for stage 1 (claude - kimi), while some model families are difficult in stage 2 (eg gemini).</p>",
+                "feedback_tracking_data": {},
+                "id": 3555410,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-11-15T17:38:20.100Z",
+                "raw_markdown": "Not really, did you give it a try ? some model pairs seem difficult for stage 1 (claude - kimi), while some model families are difficult in stage 2 (eg gemini).",
+                "team_up_info": {
+                  "enabled": true,
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "harshraj22",
+                    "id": 3384390,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/harshraj22",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3384390-kg.jpg",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/harshraj22",
+                    "user_id": 3384390,
+                    "user_name": "harshraj22"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true,
+                  "total_upvotes": 1,
+                  "total_votes": 1
+                }
+              },
+              {
+                "author": {
+                  "display_name": "Cloud9",
+                  "id": 11727280,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11727280-kg.png?t=2026-08-24-14-52-26",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/nikhil029"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 6158,
+                "content": "<p>ATLAS predict the provider with good accuracy, <a href=\"https://arxiv.org/abs/2610.19583\" target=\"_blank\">https://arxiv.org/abs/2610.19583</a></p>",
+                "feedback_tracking_data": {},
+                "id": 3543022,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-22T19:43:27.797Z",
+                "raw_markdown": "ATLAS predict the provider with good accuracy, https://arxiv.org/abs/2610.19583",
+                "reactions": [
+                  {
+                    "emoji": "THANK_YOU",
+                    "featured_user_names": [
+                      "harshraj22",
+                      "abdullahkavakli",
+                      "osakanateishoku"
+                    ],
+                    "user_count": 3
+                  },
+                  {
+                    "emoji": "SURPRISE",
+                    "featured_user_names": [
+                      "zabojeb",
+                      "shikhageekachad"
+                    ],
+                    "user_count": 2
+                  }
+                ],
+                "replies": [
+                  {
+                    "author": {
+                      "display_name": "Ghaith Mechi",
+                      "id": 8706340,
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8706340-kg.jpg?t=2024-03-14-16-48-39",
+                      "tier": "MASTER",
+                      "url": "/ghaithmechi"
+                    },
+                    "author_type": "TOPIC",
+                    "competition_ranking": 2965,
+                    "content": "<p>I appreciate your help! thanks.</p>",
+                    "feedback_tracking_data": {},
+                    "id": 3543032,
+                    "is_thank_you": false,
+                    "kernel_version": 0,
+                    "parent": {},
+                    "post_date": "2026-10-22T19:57:51.150Z",
+                    "raw_markdown": "I appreciate your help! thanks.",
+                    "team_up_info": {
+                      "intro": "",
+                      "team_leader": {
+                        "display_name": "Ghaith Mechi",
+                        "id": 8706340,
+                        "performance_tier": "MASTER",
+                        "profile_url": "/ghaithmechi",
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8706340-kg.jpg?t=2024-03-14-16-48-39",
+                        "tier": "MASTER",
+                        "url": "/ghaithmechi",
+                        "user_id": 8706340,
+                        "user_name": "ghaithmechi"
+                      }
+                    },
+                    "votes": {
+                      "can_upvote": true
+                    }
+                  }
+                ],
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "Cloud9",
+                    "id": 11727280,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/nikhil029",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11727280-kg.png?t=2026-08-24-14-52-26",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/nikhil029",
+                    "user_id": 11727280,
+                    "user_name": "nikhil029"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true,
+                  "total_upvotes": 3,
+                  "total_votes": 3
+                }
+              },
+              {
+                "author": {
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "url": "/"
+                },
+                "author_type": "COMMENT",
+                "can_delete": true,
+                "feedback_tracking_data": {},
+                "id": 3543021,
+                "is_deleted": true,
+                "is_thank_you": false,
+                "is_user_author": true,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-22T19:43:06.290Z",
+                "raw_markdown": "",
+                "votes": {}
+              },
+              {
+                "author": {
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "url": "/"
+                },
+                "author_type": "COMMENT",
+                "can_delete": true,
+                "feedback_tracking_data": {},
+                "id": 3543020,
+                "is_deleted": true,
+                "is_thank_you": false,
+                "is_user_author": true,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-22T19:42:18.163Z",
+                "raw_markdown": "",
+                "votes": {}
+              },
+              {
+                "author": {
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "url": "/"
+                },
+                "author_type": "COMMENT",
+                "can_delete": true,
+                "feedback_tracking_data": {},
+                "id": 3543019,
+                "is_deleted": true,
+                "is_thank_you": false,
+                "is_user_author": true,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-22T19:41:50.640Z",
+                "raw_markdown": "",
+                "votes": {}
+              }
+            ],
+            "first_message": {
+              "author": {
+                "display_name": "Ghaith Mechi",
+                "id": 8706340,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8706340-kg.jpg?t=2024-03-14-16-48-39",
+                "tier": "MASTER",
+                "url": "/ghaithmechi"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 2965,
+              "content": "<p>Hello everyone! \nI am considering a two-stage approach for this competition and wanted to see if anyone has experimented with something similar or has any insights.\nInstead of training a single model to predict all individual model variants directly, the idea is to build a hierarchical \nclassification pipeline:</p>\n<ol>\n<li>Stage 1 (Provider Level): Predict the parent company/provider first (e.g., OpenAI, Google, Anthropic, etc.).</li>\n<li>Stage 2 (Model Level): Train a dedicated specialist model for each provider to predict the exact architecture/variant.\nFor reference, here is the provider-to-model hierarchy:\n• OpenAI: gpt-5.5, gpt-5.6-luna, gpt-5.6-sol, gpt-5.6-terra, gpt-6-astra\n• Google: gemini-3.1-pro-preview, gemini-3.6-flash, gemini-3.7-flash, gemini-3.8-flash\n• Anthropic: claude-fable-5, claude-opus-4-6, claude-opus-4-8, claude-opus-5, claude-sonnet-5\n• Qwen: qwen3.8-max\n• ZAI: glm-5.3, glm-5.3-flash\n• Moonshot: kimi-k3</li>\n</ol>",
+              "feedback_tracking_data": {},
+              "id": 3542889,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-22T16:08:23.153Z",
+              "raw_markdown": "Hello everyone! \nI am considering a two-stage approach for this competition and wanted to see if anyone has experimented with something similar or has any insights.\nInstead of training a single model to predict all individual model variants directly, the idea is to build a hierarchical \nclassification pipeline:\n1. Stage 1 (Provider Level): Predict the parent company/provider first (e.g., OpenAI, Google, Anthropic, etc.).\n2. Stage 2 (Model Level): Train a dedicated specialist model for each provider to predict the exact architecture/variant.\nFor reference, here is the provider-to-model hierarchy:\n• OpenAI: gpt-5.5, gpt-5.6-luna, gpt-5.6-sol, gpt-5.6-terra, gpt-6-astra\n• Google: gemini-3.1-pro-preview, gemini-3.6-flash, gemini-3.7-flash, gemini-3.8-flash\n• Anthropic: claude-fable-5, claude-opus-4-6, claude-opus-4-8, claude-opus-5, claude-sonnet-5\n• Qwen: qwen3.8-max\n• ZAI: glm-5.3, glm-5.3-flash\n• Moonshot: kimi-k3",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Ghaith Mechi",
+                  "id": 8706340,
+                  "performance_tier": "MASTER",
+                  "profile_url": "/ghaithmechi",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8706340-kg.jpg?t=2024-03-14-16-48-39",
+                  "tier": "MASTER",
+                  "url": "/ghaithmechi",
+                  "user_id": 8706340,
+                  "user_name": "ghaithmechi"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 12,
+                "total_votes": 12
+              }
+            },
+            "first_message_id": 3542889,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 751722,
+            "name": "Anyone tried a Hierarchical Approach? (Predicting Provider first, then Specific Model)",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-10-22T16:08:23.153109200Z",
+            "total_messages": 9,
+            "total_votes": 12,
+            "url": "/competitions/name-that-llm/discussion/751722"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-19T12:45:31+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-19T12:45:31+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-11-17T04:33:53.066666700Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [
+    {
+      "slug": "name-that-llm",
+      "topic_id": 751722,
+      "message_id": 3543019,
+      "parent_message_id": null,
+      "author": null,
+      "author_url": "/",
+      "author_tier": null,
+      "post_date": "2026-10-22T19:41:50.640Z",
+      "raw_markdown": null,
+      "content_html": null,
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:57:01+00:00",
+      "last_seen_at": "2026-11-19T12:45:31+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-19T12:45:31+00:00",
+      "remote_last_listed_at": "2026-11-19T12:45:31+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": null,
+          "tier": null,
+          "url": "/"
+        },
+        "content": null,
+        "id": 3543019,
+        "isThankYou": false,
+        "postDate": "2026-10-22T19:41:50.640Z",
+        "raw": {
+          "author": {
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+            "url": "/"
+          },
+          "author_type": "COMMENT",
+          "can_delete": true,
+          "feedback_tracking_data": {},
+          "id": 3543019,
+          "is_deleted": true,
+          "is_thank_you": false,
+          "is_user_author": true,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-22T19:41:50.640Z",
+          "raw_markdown": "",
+          "votes": {}
+        },
+        "rawMarkdown": null,
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 751722,
+      "message_id": 3543020,
+      "parent_message_id": null,
+      "author": null,
+      "author_url": "/",
+      "author_tier": null,
+      "post_date": "2026-10-22T19:42:18.163Z",
+      "raw_markdown": null,
+      "content_html": null,
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:57:01+00:00",
+      "last_seen_at": "2026-11-19T12:45:31+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-19T12:45:31+00:00",
+      "remote_last_listed_at": "2026-11-19T12:45:31+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": null,
+          "tier": null,
+          "url": "/"
+        },
+        "content": null,
+        "id": 3543020,
+        "isThankYou": false,
+        "postDate": "2026-10-22T19:42:18.163Z",
+        "raw": {
+          "author": {
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+            "url": "/"
+          },
+          "author_type": "COMMENT",
+          "can_delete": true,
+          "feedback_tracking_data": {},
+          "id": 3543020,
+          "is_deleted": true,
+          "is_thank_you": false,
+          "is_user_author": true,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-22T19:42:18.163Z",
+          "raw_markdown": "",
+          "votes": {}
+        },
+        "rawMarkdown": null,
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 751722,
+      "message_id": 3543021,
+      "parent_message_id": null,
+      "author": null,
+      "author_url": "/",
+      "author_tier": null,
+      "post_date": "2026-10-22T19:43:06.290Z",
+      "raw_markdown": null,
+      "content_html": null,
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:57:01+00:00",
+      "last_seen_at": "2026-11-19T12:45:31+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-19T12:45:31+00:00",
+      "remote_last_listed_at": "2026-11-19T12:45:31+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": null,
+          "tier": null,
+          "url": "/"
+        },
+        "content": null,
+        "id": 3543021,
+        "isThankYou": false,
+        "postDate": "2026-10-22T19:43:06.290Z",
+        "raw": {
+          "author": {
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+            "url": "/"
+          },
+          "author_type": "COMMENT",
+          "can_delete": true,
+          "feedback_tracking_data": {},
+          "id": 3543021,
+          "is_deleted": true,
+          "is_thank_you": false,
+          "is_user_author": true,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-22T19:43:06.290Z",
+          "raw_markdown": "",
+          "votes": {}
+        },
+        "rawMarkdown": null,
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 751722,
+      "message_id": 3543022,
+      "parent_message_id": null,
+      "author": "Cloud9",
+      "author_url": "/nikhil029",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-10-22T19:43:27.797Z",
+      "raw_markdown": "ATLAS predict the provider with good accuracy, https://arxiv.org/abs/2610.19583",
+      "content_html": "<p>ATLAS predict the provider with good accuracy, <a href=\"https://arxiv.org/abs/2610.19583\" target=\"_blank\">https://arxiv.org/abs/2610.19583</a></p>",
+      "votes": 3,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:57:01+00:00",
+      "last_seen_at": "2026-11-19T12:45:31+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-19T12:45:31+00:00",
+      "remote_last_listed_at": "2026-11-19T12:45:31+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Cloud9",
+          "tier": "CONTRIBUTOR",
+          "url": "/nikhil029"
+        },
+        "content": "<p>ATLAS predict the provider with good accuracy, <a href=\"https://arxiv.org/abs/2610.19583\" target=\"_blank\">https://arxiv.org/abs/2610.19583</a></p>",
+        "id": 3543022,
+        "isThankYou": false,
+        "postDate": "2026-10-22T19:43:27.797Z",
+        "raw": {
+          "author": {
+            "display_name": "Cloud9",
+            "id": 11727280,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11727280-kg.png?t=2026-08-24-14-52-26",
+            "tier": "CONTRIBUTOR",
+            "url": "/nikhil029"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 6158,
+          "content": "<p>ATLAS predict the provider with good accuracy, <a href=\"https://arxiv.org/abs/2610.19583\" target=\"_blank\">https://arxiv.org/abs/2610.19583</a></p>",
+          "feedback_tracking_data": {},
+          "id": 3543022,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-22T19:43:27.797Z",
+          "raw_markdown": "ATLAS predict the provider with good accuracy, https://arxiv.org/abs/2610.19583",
+          "reactions": [
+            {
+              "emoji": "THANK_YOU",
+              "featured_user_names": [
+                "harshraj22",
+                "abdullahkavakli",
+                "osakanateishoku"
+              ],
+              "user_count": 3
+            },
+            {
+              "emoji": "SURPRISE",
+              "featured_user_names": [
+                "zabojeb",
+                "shikhageekachad"
+              ],
+              "user_count": 2
+            }
+          ],
+          "replies": [
+            {
+              "author": {
+                "display_name": "Ghaith Mechi",
+                "id": 8706340,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8706340-kg.jpg?t=2024-03-14-16-48-39",
+                "tier": "MASTER",
+                "url": "/ghaithmechi"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 2965,
+              "content": "<p>I appreciate your help! thanks.</p>",
+              "feedback_tracking_data": {},
+              "id": 3543032,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-22T19:57:51.150Z",
+              "raw_markdown": "I appreciate your help! thanks.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Ghaith Mechi",
+                  "id": 8706340,
+                  "performance_tier": "MASTER",
+                  "profile_url": "/ghaithmechi",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8706340-kg.jpg?t=2024-03-14-16-48-39",
+                  "tier": "MASTER",
+                  "url": "/ghaithmechi",
+                  "user_id": 8706340,
+                  "user_name": "ghaithmechi"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            }
+          ],
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Cloud9",
+              "id": 11727280,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/nikhil029",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11727280-kg.png?t=2026-08-24-14-52-26",
+              "tier": "CONTRIBUTOR",
+              "url": "/nikhil029",
+              "user_id": 11727280,
+              "user_name": "nikhil029"
+            }
+          },
+          "votes": {
+            "can_upvote": true,
+            "total_upvotes": 3,
+            "total_votes": 3
+          }
+        },
+        "rawMarkdown": "ATLAS predict the provider with good accuracy, https://arxiv.org/abs/2610.19583",
+        "replies": [
+          {
+            "author": {
+              "displayName": "Ghaith Mechi",
+              "tier": "MASTER",
+              "url": "/ghaithmechi"
+            },
+            "content": "<p>I appreciate your help! thanks.</p>",
+            "id": 3543032,
+            "isThankYou": false,
+            "postDate": "2026-10-22T19:57:51.150Z",
+            "raw": {
+              "author": {
+                "display_name": "Ghaith Mechi",
+                "id": 8706340,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8706340-kg.jpg?t=2024-03-14-16-48-39",
+                "tier": "MASTER",
+                "url": "/ghaithmechi"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 2965,
+              "content": "<p>I appreciate your help! thanks.</p>",
+              "feedback_tracking_data": {},
+              "id": 3543032,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-22T19:57:51.150Z",
+              "raw_markdown": "I appreciate your help! thanks.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Ghaith Mechi",
+                  "id": 8706340,
+                  "performance_tier": "MASTER",
+                  "profile_url": "/ghaithmechi",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8706340-kg.jpg?t=2024-03-14-16-48-39",
+                  "tier": "MASTER",
+                  "url": "/ghaithmechi",
+                  "user_id": 8706340,
+                  "user_name": "ghaithmechi"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "I appreciate your help! thanks.",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "votes": {
+          "totalVotes": 3
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 751722,
+      "message_id": 3543032,
+      "parent_message_id": 3543022,
+      "author": "Ghaith Mechi",
+      "author_url": "/ghaithmechi",
+      "author_tier": "MASTER",
+      "post_date": "2026-10-22T19:57:51.150Z",
+      "raw_markdown": "I appreciate your help! thanks.",
+      "content_html": "<p>I appreciate your help! thanks.</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 1,
+      "first_seen_at": "2026-11-04T06:57:01+00:00",
+      "last_seen_at": "2026-11-19T12:45:31+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-19T12:45:31+00:00",
+      "remote_last_listed_at": "2026-11-19T12:45:31+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Ghaith Mechi",
+          "tier": "MASTER",
+          "url": "/ghaithmechi"
+        },
+        "content": "<p>I appreciate your help! thanks.</p>",
+        "id": 3543032,
+        "isThankYou": false,
+        "postDate": "2026-10-22T19:57:51.150Z",
+        "raw": {
+          "author": {
+            "display_name": "Ghaith Mechi",
+            "id": 8706340,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8706340-kg.jpg?t=2024-03-14-16-48-39",
+            "tier": "MASTER",
+            "url": "/ghaithmechi"
+          },
+          "author_type": "TOPIC",
+          "competition_ranking": 2965,
+          "content": "<p>I appreciate your help! thanks.</p>",
+          "feedback_tracking_data": {},
+          "id": 3543032,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-22T19:57:51.150Z",
+          "raw_markdown": "I appreciate your help! thanks.",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Ghaith Mechi",
+              "id": 8706340,
+              "performance_tier": "MASTER",
+              "profile_url": "/ghaithmechi",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8706340-kg.jpg?t=2024-03-14-16-48-39",
+              "tier": "MASTER",
+              "url": "/ghaithmechi",
+              "user_id": 8706340,
+              "user_name": "ghaithmechi"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "I appreciate your help! thanks.",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 751722,
+      "message_id": 3555410,
+      "parent_message_id": null,
+      "author": "harshraj22",
+      "author_url": "/harshraj22",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-15T17:38:20.100Z",
+      "raw_markdown": "Not really, did you give it a try ? some model pairs seem difficult for stage 1 (claude - kimi), while some model families are difficult in stage 2 (eg gemini).",
+      "content_html": "<p>Not really, did you give it a try ? some model pairs seem difficult for stage 1 (claude - kimi), while some model families are difficult in stage 2 (eg gemini).</p>",
+      "votes": 1,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-16T16:22:06+00:00",
+      "last_seen_at": "2026-11-19T12:45:31+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-19T12:45:31+00:00",
+      "remote_last_listed_at": "2026-11-19T12:45:31+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "harshraj22",
+          "tier": "CONTRIBUTOR",
+          "url": "/harshraj22"
+        },
+        "content": "<p>Not really, did you give it a try ? some model pairs seem difficult for stage 1 (claude - kimi), while some model families are difficult in stage 2 (eg gemini).</p>",
+        "id": 3555410,
+        "isThankYou": false,
+        "postDate": "2026-11-15T17:38:20.100Z",
+        "raw": {
+          "author": {
+            "display_name": "harshraj22",
+            "id": 3384390,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3384390-kg.jpg",
+            "tier": "CONTRIBUTOR",
+            "url": "/harshraj22"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 3465,
+          "content": "<p>Not really, did you give it a try ? some model pairs seem difficult for stage 1 (claude - kimi), while some model families are difficult in stage 2 (eg gemini).</p>",
+          "feedback_tracking_data": {},
+          "id": 3555410,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-15T17:38:20.100Z",
+          "raw_markdown": "Not really, did you give it a try ? some model pairs seem difficult for stage 1 (claude - kimi), while some model families are difficult in stage 2 (eg gemini).",
+          "team_up_info": {
+            "enabled": true,
+            "intro": "",
+            "team_leader": {
+              "display_name": "harshraj22",
+              "id": 3384390,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/harshraj22",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3384390-kg.jpg",
+              "tier": "CONTRIBUTOR",
+              "url": "/harshraj22",
+              "user_id": 3384390,
+              "user_name": "harshraj22"
+            }
+          },
+          "votes": {
+            "can_upvote": true,
+            "total_upvotes": 1,
+            "total_votes": 1
+          }
+        },
+        "rawMarkdown": "Not really, did you give it a try ? some model pairs seem difficult for stage 1 (claude - kimi), while some model families are difficult in stage 2 (eg gemini).",
+        "replies": [],
+        "votes": {
+          "totalVotes": 1
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 751722,
+      "message_id": 3555532,
+      "parent_message_id": null,
+      "author": "JK Shin",
+      "author_url": "/jkshin101",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-16T03:09:21.837Z",
+      "raw_markdown": "I tested at the provider level first, then the specific models. Gemini-family predictions hit 98% accuracy and the others did fairly well, though GLM models were tough to distinguish. Identifying exact models was much harder overall, especially since Gemini 3.6, 3.7, and 3.8 are too closely correlated.",
+      "content_html": "<p>I tested at the provider level first, then the specific models. Gemini-family predictions hit 98% accuracy and the others did fairly well, though GLM models were tough to distinguish. Identifying exact models was much harder overall, especially since Gemini 3.6, 3.7, and 3.8 are too closely correlated.</p>",
+      "votes": 1,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-16T16:22:06+00:00",
+      "last_seen_at": "2026-11-19T12:45:31+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-19T12:45:31+00:00",
+      "remote_last_listed_at": "2026-11-19T12:45:31+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "JK Shin",
+          "tier": "CONTRIBUTOR",
+          "url": "/jkshin101"
+        },
+        "content": "<p>I tested at the provider level first, then the specific models. Gemini-family predictions hit 98% accuracy and the others did fairly well, though GLM models were tough to distinguish. Identifying exact models was much harder overall, especially since Gemini 3.6, 3.7, and 3.8 are too closely correlated.</p>",
+        "id": 3555532,
+        "isThankYou": false,
+        "postDate": "2026-11-16T03:09:21.837Z",
+        "raw": {
+          "author": {
+            "display_name": "JK Shin",
+            "id": 37952848,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+            "tier": "CONTRIBUTOR",
+            "url": "/jkshin101"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 698,
+          "content": "<p>I tested at the provider level first, then the specific models. Gemini-family predictions hit 98% accuracy and the others did fairly well, though GLM models were tough to distinguish. Identifying exact models was much harder overall, especially since Gemini 3.6, 3.7, and 3.8 are too closely correlated.</p>",
+          "feedback_tracking_data": {},
+          "id": 3555532,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-16T03:09:21.837Z",
+          "raw_markdown": "I tested at the provider level first, then the specific models. Gemini-family predictions hit 98% accuracy and the others did fairly well, though GLM models were tough to distinguish. Identifying exact models was much harder overall, especially since Gemini 3.6, 3.7, and 3.8 are too closely correlated.",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "JK Shin",
+              "id": 37952848,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/jkshin101",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "CONTRIBUTOR",
+              "url": "/jkshin101",
+              "user_id": 37952848,
+              "user_name": "jkshin101"
+            }
+          },
+          "votes": {
+            "can_upvote": true,
+            "total_upvotes": 1,
+            "total_votes": 1
+          }
+        },
+        "rawMarkdown": "I tested at the provider level first, then the specific models. Gemini-family predictions hit 98% accuracy and the others did fairly well, though GLM models were tough to distinguish. Identifying exact models was much harder overall, especially since Gemini 3.6, 3.7, and 3.8 are too closely correlated.",
+        "replies": [],
+        "votes": {
+          "totalVotes": 1
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 751722,
+      "message_id": 3555545,
+      "parent_message_id": null,
+      "author": "Navneet",
+      "author_url": "/navneetbende",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-16T04:27:02.170Z",
+      "raw_markdown": "Thank you for the Hierarchical Approach @ghaithmechi ",
+      "content_html": "<p>Thank you for the Hierarchical Approach <a href=\"/ghaithmechi\" target=\"_blank\">@ghaithmechi</a> </p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-16T16:22:06+00:00",
+      "last_seen_at": "2026-11-19T12:45:31+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-19T12:45:31+00:00",
+      "remote_last_listed_at": "2026-11-19T12:45:31+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Navneet",
+          "tier": "CONTRIBUTOR",
+          "url": "/navneetbende"
+        },
+        "content": "<p>Thank you for the Hierarchical Approach <a href=\"/ghaithmechi\" target=\"_blank\">@ghaithmechi</a> </p>",
+        "id": 3555545,
+        "isThankYou": false,
+        "postDate": "2026-11-16T04:27:02.170Z",
+        "raw": {
+          "author": {
+            "display_name": "Navneet",
+            "id": 15692441,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15692441-kg.jpg?t=2025-05-18-07-58-06",
+            "tier": "CONTRIBUTOR",
+            "url": "/navneetbende"
+          },
+          "author_type": "COMMENT",
+          "content": "<p>Thank you for the Hierarchical Approach <a href=\"/ghaithmechi\" target=\"_blank\">@ghaithmechi</a> </p>",
+          "feedback_tracking_data": {},
+          "id": 3555545,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-16T04:27:02.170Z",
+          "raw_markdown": "Thank you for the Hierarchical Approach @ghaithmechi ",
+          "votes": {
+            "can_upvote": true,
+            "total_upvotes": 1
+          }
+        },
+        "rawMarkdown": "Thank you for the Hierarchical Approach @ghaithmechi ",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 751722,
+      "message_id": 3555940,
+      "parent_message_id": null,
+      "author": "Sotarriva Alvarez Isai Roberto",
+      "author_url": "/irsotarriva",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-17T04:33:53.067Z",
+      "raw_markdown": "I tried it and it did not help much (difference is within noise level). \nFinding the family is quite easy, separating models withing a family is more difficult probably because smaller models are usually distillations of the larger ones so they are heavily correlated.",
+      "content_html": "<p>I tried it and it did not help much (difference is within noise level). \nFinding the family is quite easy, separating models withing a family is more difficult probably because smaller models are usually distillations of the larger ones so they are heavily correlated.</p>",
+      "votes": 1,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-17T09:11:14+00:00",
+      "last_seen_at": "2026-11-19T12:45:31+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-19T12:45:31+00:00",
+      "remote_last_listed_at": "2026-11-19T12:45:31+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Sotarriva Alvarez Isai Roberto",
+          "tier": "CONTRIBUTOR",
+          "url": "/irsotarriva"
+        },
+        "content": "<p>I tried it and it did not help much (difference is within noise level). \nFinding the family is quite easy, separating models withing a family is more difficult probably because smaller models are usually distillations of the larger ones so they are heavily correlated.</p>",
+        "id": 3555940,
+        "isThankYou": false,
+        "postDate": "2026-11-17T04:33:53.067Z",
+        "raw": {
+          "author": {
+            "display_name": "Sotarriva Alvarez Isai Roberto",
+            "id": 2953982,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2953982-kg.png?t=2025-01-08-15-13-02",
+            "tier": "CONTRIBUTOR",
+            "url": "/irsotarriva"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 1380,
+          "content": "<p>I tried it and it did not help much (difference is within noise level). \nFinding the family is quite easy, separating models withing a family is more difficult probably because smaller models are usually distillations of the larger ones so they are heavily correlated.</p>",
+          "feedback_tracking_data": {},
+          "id": 3555940,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-17T04:33:53.067Z",
+          "raw_markdown": "I tried it and it did not help much (difference is within noise level). \nFinding the family is quite easy, separating models withing a family is more difficult probably because smaller models are usually distillations of the larger ones so they are heavily correlated.",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Sotarriva Alvarez Isai Roberto",
+              "id": 2953982,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/irsotarriva",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2953982-kg.png?t=2025-01-08-15-13-02",
+              "tier": "CONTRIBUTOR",
+              "url": "/irsotarriva",
+              "user_id": 2953982,
+              "user_name": "irsotarriva"
+            }
+          },
+          "votes": {
+            "can_upvote": true,
+            "total_upvotes": 1,
+            "total_votes": 1
+          }
+        },
+        "rawMarkdown": "I tried it and it did not help much (difference is within noise level). \nFinding the family is quite easy, separating models withing a family is more difficult probably because smaller models are usually distillations of the larger ones so they are heavily correlated.",
+        "replies": [],
+        "votes": {
+          "totalVotes": 1
+        }
+      }
+    }
+  ],
+  "writeup": null
+}

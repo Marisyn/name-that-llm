@@ -1,0 +1,693 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 758998,
+    "title": "What is your single model best score without external data?",
+    "author": "huang70",
+    "author_url": "/huang70",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-11-13T09:08:02.800442100Z",
+    "last_comment_post_date": "2026-11-16T02:29:08.603333300Z",
+    "comment_count": 3,
+    "votes": -1,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/758998",
+    "first_message_id": 3554614,
+    "first_seen_at": "2026-11-16T16:21:25+00:00",
+    "last_seen_at": "2026-11-18T09:02:08+00:00",
+    "detail_last_synced_at": "2026-11-18T09:02:08+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-18T09:01:50+00:00",
+    "remote_last_listed_at": "2026-11-18T09:01:50+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "ec49426dfb56f8937b2a74d45b0c62c47428e9b9768696ef068505274597af1f",
+    "listing_metrics_hash": "0eb635446470adac6a7f3a348995e0dbc84605127e97b571f74d3f2262540d5d",
+    "detail_content_hash": "063e95d68aa7b26953a93954ac16fdb7fa8f69af1f4fdd2f44a010036fc023ad",
+    "detail_last_checked_at": "2026-11-18T09:02:08+00:00",
+    "detail_next_check_at": "2026-11-21T09:02:08+00:00",
+    "detail_unchanged_count": 1,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 3,
+      "firstForumMessageId": null,
+      "id": 758998,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-11-16T02:29:08.603333300Z",
+      "postDate": "2026-11-13T09:08:02.800442100Z",
+      "raw": {
+        "comment_count": 3,
+        "id": 758998,
+        "last_comment_post_date": "2026-11-16T02:29:08.603333300Z",
+        "post_date": "2026-11-13T09:08:02.800442100Z",
+        "title": "What is your single model best score without external data?",
+        "topic_url": "/competitions/name-that-llm/discussion/758998",
+        "votes": -1
+      },
+      "title": "What is your single model best score without external data?",
+      "topicUrl": "/competitions/name-that-llm/discussion/758998",
+      "votes": -1
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "huang70",
+        "authorUserName": "huang70",
+        "comments": [
+          {
+            "author": {
+              "displayName": "Rocker Ritesh",
+              "tier": "CONTRIBUTOR",
+              "url": "/rockerritesh"
+            },
+            "content": "<p>0.59 qwen family.</p>",
+            "id": 3555522,
+            "isThankYou": false,
+            "postDate": "2026-11-16T02:29:08.603Z",
+            "raw": {
+              "author": {
+                "display_name": "Rocker Ritesh",
+                "id": 4799411,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4799411-kg.jpeg",
+                "tier": "CONTRIBUTOR",
+                "url": "/rockerritesh"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 927,
+              "content": "<p>0.59 qwen family.</p>",
+              "feedback_tracking_data": {},
+              "id": 3555522,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-16T02:29:08.603Z",
+              "raw_markdown": "0.59 qwen family.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Rocker Ritesh",
+                  "id": 4799411,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/rockerritesh",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4799411-kg.jpeg",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/rockerritesh",
+                  "user_id": 4799411,
+                  "user_name": "rockerritesh"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": 1
+              }
+            },
+            "rawMarkdown": "0.59 qwen family.",
+            "replies": [],
+            "votes": {
+              "totalVotes": 1
+            }
+          },
+          {
+            "author": {
+              "displayName": "Izzy Bedichek",
+              "tier": "CONTRIBUTOR",
+              "url": "/izzybedichek"
+            },
+            "content": "<p>I was just wondering about others, too! I always try to make an on-the-cheap version of whatever I'm working on, and I have gotten a  balanced accuracy of 0.4098 with a standalone model, which feels not great. My partner has done a lot of cool stuff and gotten us to .67 with more compute and fine-tuning.</p>",
+            "id": 3555469,
+            "isThankYou": false,
+            "postDate": "2026-11-15T23:40:38.700Z",
+            "raw": {
+              "author": {
+                "display_name": "Izzy Bedichek",
+                "id": 17923978,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17923978-kg.jpeg?t=2024-02-26-00-49-11",
+                "tier": "CONTRIBUTOR",
+                "url": "/izzybedichek"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 1795,
+              "content": "<p>I was just wondering about others, too! I always try to make an on-the-cheap version of whatever I'm working on, and I have gotten a  balanced accuracy of 0.4098 with a standalone model, which feels not great. My partner has done a lot of cool stuff and gotten us to .67 with more compute and fine-tuning.</p>",
+              "feedback_tracking_data": {},
+              "id": 3555469,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-15T23:40:38.700Z",
+              "raw_markdown": "I was just wondering about others, too! I always try to make an on-the-cheap version of whatever I'm working on, and I have gotten a  balanced accuracy of 0.4098 with a standalone model, which feels not great. My partner has done a lot of cool stuff and gotten us to .67 with more compute and fine-tuning.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "James Bedichek",
+                  "id": 15294853,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/jamesbedichek",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/jamesbedichek",
+                  "user_id": 15294853,
+                  "user_name": "jamesbedichek"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "I was just wondering about others, too! I always try to make an on-the-cheap version of whatever I'm working on, and I have gotten a  balanced accuracy of 0.4098 with a standalone model, which feels not great. My partner has done a lot of cool stuff and gotten us to .67 with more compute and fine-tuning.",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          },
+          {
+            "author": {
+              "displayName": "JarWithWater",
+              "tier": "CONTRIBUTOR",
+              "url": "/hambobo14"
+            },
+            "content": "<p>gsm8k - 0 score, huggingface.co/Jar-ai/Water-AI-GPT2</p>",
+            "id": 3554632,
+            "isThankYou": false,
+            "postDate": "2026-11-13T10:17:02.150Z",
+            "raw": {
+              "author": {
+                "display_name": "JarWithWater",
+                "id": 28879426,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28879426-kg.png?t=2026-11-13-10-22-34",
+                "tier": "CONTRIBUTOR",
+                "url": "/hambobo14"
+              },
+              "author_type": "COMMENT",
+              "content": "<p>gsm8k - 0 score, huggingface.co/Jar-ai/Water-AI-GPT2</p>",
+              "feedback_tracking_data": {},
+              "id": 3554632,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-13T10:17:02.150Z",
+              "raw_markdown": "gsm8k - 0 score, huggingface.co/Jar-ai/Water-AI-GPT2",
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "gsm8k - 0 score, huggingface.co/Jar-ai/Water-AI-GPT2",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "expectedCommentCount": 3,
+        "firstMessage": {
+          "author": {
+            "displayName": "huang70",
+            "tier": "CONTRIBUTOR",
+            "url": "/huang70"
+          },
+          "content": "<p>Single model , full training data</p>",
+          "id": 3554614,
+          "isThankYou": false,
+          "postDate": "2026-11-13T09:08:02.800Z",
+          "raw": {
+            "author": {
+              "display_name": "huang70",
+              "id": 37548408,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "CONTRIBUTOR",
+              "url": "/huang70"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 2859,
+            "content": "<p>Single model , full training data</p>",
+            "feedback_tracking_data": {},
+            "id": 3554614,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-11-13T09:08:02.800Z",
+            "raw_markdown": "Single model , full training data",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "Anpeng Yuan",
+                "id": 24895574,
+                "performance_tier": "EXPERT",
+                "profile_url": "/chesteryuan",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24895574-kg.jpg?t=2025-11-08-01-03-28",
+                "tier": "EXPERT",
+                "url": "/chesteryuan",
+                "user_id": 24895574,
+                "user_name": "chesteryuan"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_votes": -1
+            }
+          },
+          "rawMarkdown": "Single model , full training data",
+          "replies": [],
+          "votes": {
+            "totalVotes": -1
+          }
+        },
+        "firstMessageId": 3554614,
+        "id": 758998,
+        "name": "What is your single model best score without external data?",
+        "postDate": "2026-11-13T09:08:02.800442100Z",
+        "url": "/competitions/name-that-llm/discussion/758998"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>Single model , full training data</p>",
+              "id": 3554614,
+              "post_date": "2026-11-13T09:08:02.800Z",
+              "raw_markdown": "Single model , full training data",
+              "votes": -1
+            },
+            {
+              "content": "<p>gsm8k - 0 score, huggingface.co/Jar-ai/Water-AI-GPT2</p>",
+              "id": 3554632,
+              "post_date": "2026-11-13T10:17:02.150Z",
+              "raw_markdown": "gsm8k - 0 score, huggingface.co/Jar-ai/Water-AI-GPT2"
+            },
+            {
+              "content": "<p>I was just wondering about others, too! I always try to make an on-the-cheap version of whatever I'm working on, and I have gotten a  balanced accuracy of 0.4098 with a standalone model, which feels not great. My partner has done a lot of cool stuff and gotten us to .67 with more compute and fine-tuning.</p>",
+              "id": 3555469,
+              "post_date": "2026-11-15T23:40:38.700Z",
+              "raw_markdown": "I was just wondering about others, too! I always try to make an on-the-cheap version of whatever I'm working on, and I have gotten a  balanced accuracy of 0.4098 with a standalone model, which feels not great. My partner has done a lot of cool stuff and gotten us to .67 with more compute and fine-tuning."
+            },
+            {
+              "content": "<p>0.59 qwen family.</p>",
+              "id": 3555522,
+              "post_date": "2026-11-16T02:29:08.603Z",
+              "raw_markdown": "0.59 qwen family.",
+              "votes": 1
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 37548408,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "default-thumb.png",
+            "author_user_display_name": "huang70",
+            "author_user_name": "huang70",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "comments": [
+              {
+                "author": {
+                  "display_name": "Rocker Ritesh",
+                  "id": 4799411,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4799411-kg.jpeg",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/rockerritesh"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 927,
+                "content": "<p>0.59 qwen family.</p>",
+                "feedback_tracking_data": {},
+                "id": 3555522,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-11-16T02:29:08.603Z",
+                "raw_markdown": "0.59 qwen family.",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "Rocker Ritesh",
+                    "id": 4799411,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/rockerritesh",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4799411-kg.jpeg",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/rockerritesh",
+                    "user_id": 4799411,
+                    "user_name": "rockerritesh"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true,
+                  "total_upvotes": 1,
+                  "total_votes": 1
+                }
+              },
+              {
+                "author": {
+                  "display_name": "Izzy Bedichek",
+                  "id": 17923978,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17923978-kg.jpeg?t=2024-02-26-00-49-11",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/izzybedichek"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 1795,
+                "content": "<p>I was just wondering about others, too! I always try to make an on-the-cheap version of whatever I'm working on, and I have gotten a  balanced accuracy of 0.4098 with a standalone model, which feels not great. My partner has done a lot of cool stuff and gotten us to .67 with more compute and fine-tuning.</p>",
+                "feedback_tracking_data": {},
+                "id": 3555469,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-11-15T23:40:38.700Z",
+                "raw_markdown": "I was just wondering about others, too! I always try to make an on-the-cheap version of whatever I'm working on, and I have gotten a  balanced accuracy of 0.4098 with a standalone model, which feels not great. My partner has done a lot of cool stuff and gotten us to .67 with more compute and fine-tuning.",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "James Bedichek",
+                    "id": 15294853,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/jamesbedichek",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/jamesbedichek",
+                    "user_id": 15294853,
+                    "user_name": "jamesbedichek"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              },
+              {
+                "author": {
+                  "display_name": "JarWithWater",
+                  "id": 28879426,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28879426-kg.png?t=2026-11-13-10-22-34",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/hambobo14"
+                },
+                "author_type": "COMMENT",
+                "content": "<p>gsm8k - 0 score, huggingface.co/Jar-ai/Water-AI-GPT2</p>",
+                "feedback_tracking_data": {},
+                "id": 3554632,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-11-13T10:17:02.150Z",
+                "raw_markdown": "gsm8k - 0 score, huggingface.co/Jar-ai/Water-AI-GPT2",
+                "votes": {
+                  "can_upvote": true
+                }
+              }
+            ],
+            "first_message": {
+              "author": {
+                "display_name": "huang70",
+                "id": 37548408,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/huang70"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 2859,
+              "content": "<p>Single model , full training data</p>",
+              "feedback_tracking_data": {},
+              "id": 3554614,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-13T09:08:02.800Z",
+              "raw_markdown": "Single model , full training data",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Anpeng Yuan",
+                  "id": 24895574,
+                  "performance_tier": "EXPERT",
+                  "profile_url": "/chesteryuan",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24895574-kg.jpg?t=2025-11-08-01-03-28",
+                  "tier": "EXPERT",
+                  "url": "/chesteryuan",
+                  "user_id": 24895574,
+                  "user_name": "chesteryuan"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_votes": -1
+              }
+            },
+            "first_message_id": 3554614,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 758998,
+            "name": "What is your single model best score without external data?",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-11-13T09:08:02.800442100Z",
+            "total_messages": 3,
+            "total_votes": -1,
+            "url": "/competitions/name-that-llm/discussion/758998"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-18T09:02:08+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-18T09:02:08+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-11-16T02:29:08.603333300Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [
+    {
+      "slug": "name-that-llm",
+      "topic_id": 758998,
+      "message_id": 3554632,
+      "parent_message_id": null,
+      "author": "JarWithWater",
+      "author_url": "/hambobo14",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-13T10:17:02.150Z",
+      "raw_markdown": "gsm8k - 0 score, huggingface.co/Jar-ai/Water-AI-GPT2",
+      "content_html": "<p>gsm8k - 0 score, huggingface.co/Jar-ai/Water-AI-GPT2</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-16T16:22:33+00:00",
+      "last_seen_at": "2026-11-18T09:02:08+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T09:02:08+00:00",
+      "remote_last_listed_at": "2026-11-18T09:02:08+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "JarWithWater",
+          "tier": "CONTRIBUTOR",
+          "url": "/hambobo14"
+        },
+        "content": "<p>gsm8k - 0 score, huggingface.co/Jar-ai/Water-AI-GPT2</p>",
+        "id": 3554632,
+        "isThankYou": false,
+        "postDate": "2026-11-13T10:17:02.150Z",
+        "raw": {
+          "author": {
+            "display_name": "JarWithWater",
+            "id": 28879426,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28879426-kg.png?t=2026-11-13-10-22-34",
+            "tier": "CONTRIBUTOR",
+            "url": "/hambobo14"
+          },
+          "author_type": "COMMENT",
+          "content": "<p>gsm8k - 0 score, huggingface.co/Jar-ai/Water-AI-GPT2</p>",
+          "feedback_tracking_data": {},
+          "id": 3554632,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-13T10:17:02.150Z",
+          "raw_markdown": "gsm8k - 0 score, huggingface.co/Jar-ai/Water-AI-GPT2",
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "gsm8k - 0 score, huggingface.co/Jar-ai/Water-AI-GPT2",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 758998,
+      "message_id": 3555469,
+      "parent_message_id": null,
+      "author": "Izzy Bedichek",
+      "author_url": "/izzybedichek",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-15T23:40:38.700Z",
+      "raw_markdown": "I was just wondering about others, too! I always try to make an on-the-cheap version of whatever I'm working on, and I have gotten a  balanced accuracy of 0.4098 with a standalone model, which feels not great. My partner has done a lot of cool stuff and gotten us to .67 with more compute and fine-tuning.",
+      "content_html": "<p>I was just wondering about others, too! I always try to make an on-the-cheap version of whatever I'm working on, and I have gotten a  balanced accuracy of 0.4098 with a standalone model, which feels not great. My partner has done a lot of cool stuff and gotten us to .67 with more compute and fine-tuning.</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-16T16:22:33+00:00",
+      "last_seen_at": "2026-11-18T09:02:08+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T09:02:08+00:00",
+      "remote_last_listed_at": "2026-11-18T09:02:08+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Izzy Bedichek",
+          "tier": "CONTRIBUTOR",
+          "url": "/izzybedichek"
+        },
+        "content": "<p>I was just wondering about others, too! I always try to make an on-the-cheap version of whatever I'm working on, and I have gotten a  balanced accuracy of 0.4098 with a standalone model, which feels not great. My partner has done a lot of cool stuff and gotten us to .67 with more compute and fine-tuning.</p>",
+        "id": 3555469,
+        "isThankYou": false,
+        "postDate": "2026-11-15T23:40:38.700Z",
+        "raw": {
+          "author": {
+            "display_name": "Izzy Bedichek",
+            "id": 17923978,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/17923978-kg.jpeg?t=2024-02-26-00-49-11",
+            "tier": "CONTRIBUTOR",
+            "url": "/izzybedichek"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 1795,
+          "content": "<p>I was just wondering about others, too! I always try to make an on-the-cheap version of whatever I'm working on, and I have gotten a  balanced accuracy of 0.4098 with a standalone model, which feels not great. My partner has done a lot of cool stuff and gotten us to .67 with more compute and fine-tuning.</p>",
+          "feedback_tracking_data": {},
+          "id": 3555469,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-15T23:40:38.700Z",
+          "raw_markdown": "I was just wondering about others, too! I always try to make an on-the-cheap version of whatever I'm working on, and I have gotten a  balanced accuracy of 0.4098 with a standalone model, which feels not great. My partner has done a lot of cool stuff and gotten us to .67 with more compute and fine-tuning.",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "James Bedichek",
+              "id": 15294853,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/jamesbedichek",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "CONTRIBUTOR",
+              "url": "/jamesbedichek",
+              "user_id": 15294853,
+              "user_name": "jamesbedichek"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "I was just wondering about others, too! I always try to make an on-the-cheap version of whatever I'm working on, and I have gotten a  balanced accuracy of 0.4098 with a standalone model, which feels not great. My partner has done a lot of cool stuff and gotten us to .67 with more compute and fine-tuning.",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 758998,
+      "message_id": 3555522,
+      "parent_message_id": null,
+      "author": "Rocker Ritesh",
+      "author_url": "/rockerritesh",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-16T02:29:08.603Z",
+      "raw_markdown": "0.59 qwen family.",
+      "content_html": "<p>0.59 qwen family.</p>",
+      "votes": 1,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-16T16:22:33+00:00",
+      "last_seen_at": "2026-11-18T09:02:08+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T09:02:08+00:00",
+      "remote_last_listed_at": "2026-11-18T09:02:08+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Rocker Ritesh",
+          "tier": "CONTRIBUTOR",
+          "url": "/rockerritesh"
+        },
+        "content": "<p>0.59 qwen family.</p>",
+        "id": 3555522,
+        "isThankYou": false,
+        "postDate": "2026-11-16T02:29:08.603Z",
+        "raw": {
+          "author": {
+            "display_name": "Rocker Ritesh",
+            "id": 4799411,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4799411-kg.jpeg",
+            "tier": "CONTRIBUTOR",
+            "url": "/rockerritesh"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 927,
+          "content": "<p>0.59 qwen family.</p>",
+          "feedback_tracking_data": {},
+          "id": 3555522,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-16T02:29:08.603Z",
+          "raw_markdown": "0.59 qwen family.",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Rocker Ritesh",
+              "id": 4799411,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/rockerritesh",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4799411-kg.jpeg",
+              "tier": "CONTRIBUTOR",
+              "url": "/rockerritesh",
+              "user_id": 4799411,
+              "user_name": "rockerritesh"
+            }
+          },
+          "votes": {
+            "can_upvote": true,
+            "total_upvotes": 1,
+            "total_votes": 1
+          }
+        },
+        "rawMarkdown": "0.59 qwen family.",
+        "replies": [],
+        "votes": {
+          "totalVotes": 1
+        }
+      }
+    }
+  ],
+  "writeup": null
+}

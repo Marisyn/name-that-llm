@@ -1,0 +1,206 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 754989,
+    "title": "Serious Queries about this hackathon",
+    "author": "Melvin Denish L",
+    "author_url": "/melvindenishl",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-11-02T15:17:36.885100300Z",
+    "last_comment_post_date": "2026-11-02T15:17:36.886666700Z",
+    "comment_count": 0,
+    "votes": 0,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/754989",
+    "first_message_id": 3548657,
+    "first_seen_at": "2026-11-04T06:56:14+00:00",
+    "last_seen_at": "2026-11-16T16:36:02+00:00",
+    "detail_last_synced_at": "2026-11-16T16:23:25+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "6bbbb6cd4a8341dd54165fc4cb62f8313a866c26f89262926fce51439b5ada3e",
+    "listing_metrics_hash": "1d7b01d39d998f5caf0eb285f7806c0632a1cb146aadc79a9504e2481370b229",
+    "detail_content_hash": "09d7aaf71b18c894e2c3f4d54b133f38bd653b8ff8521aaeaa943e5b783439ea",
+    "detail_last_checked_at": "2026-11-16T16:23:25+00:00",
+    "detail_next_check_at": "2026-11-23T16:23:25+00:00",
+    "detail_unchanged_count": 2,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 0,
+      "firstForumMessageId": null,
+      "id": 754989,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-11-02T15:17:36.886666700Z",
+      "postDate": "2026-11-02T15:17:36.885100300Z",
+      "raw": {
+        "id": 754989,
+        "last_comment_post_date": "2026-11-02T15:17:36.886666700Z",
+        "post_date": "2026-11-02T15:17:36.885100300Z",
+        "title": "Serious Queries about this hackathon",
+        "topic_url": "/competitions/name-that-llm/discussion/754989"
+      },
+      "title": "Serious Queries about this hackathon",
+      "topicUrl": "/competitions/name-that-llm/discussion/754989",
+      "votes": 0
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "Melvin Denish L",
+        "authorUserName": "melvindenishl",
+        "comments": [],
+        "expectedCommentCount": 0,
+        "firstMessage": {
+          "author": {
+            "displayName": "Melvin Denish L",
+            "tier": "CONTRIBUTOR",
+            "url": "/melvindenishl"
+          },
+          "content": "<p>I know the submission is only tested on the 40% of the test data but it takes about 6-8hours after a submission is done is it normal , \nand also I am using the base models those that were pretrained by others but that itself taking hours and barely moved the score in lb\nand also I used the recently posted dataset but seriously no response , \nCould someone help me out on how to do things properly </p>",
+          "id": 3548657,
+          "isThankYou": false,
+          "postDate": "2026-11-02T15:17:36.887Z",
+          "raw": {
+            "author": {
+              "display_name": "Melvin Denish L",
+              "id": 22411573,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "CONTRIBUTOR",
+              "url": "/melvindenishl"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 1325,
+            "content": "<p>I know the submission is only tested on the 40% of the test data but it takes about 6-8hours after a submission is done is it normal , \nand also I am using the base models those that were pretrained by others but that itself taking hours and barely moved the score in lb\nand also I used the recently posted dataset but seriously no response , \nCould someone help me out on how to do things properly </p>",
+            "feedback_tracking_data": {},
+            "id": 3548657,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-11-02T15:17:36.887Z",
+            "raw_markdown": "I know the submission is only tested on the 40% of the test data but it takes about 6-8hours after a submission is done is it normal , \nand also I am using the base models those that were pretrained by others but that itself taking hours and barely moved the score in lb\nand also I used the recently posted dataset but seriously no response , \nCould someone help me out on how to do things properly ",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "Melvin Denish L",
+                "id": 22411573,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/melvindenishl",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/melvindenishl",
+                "user_id": 22411573,
+                "user_name": "melvindenishl"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 1
+            }
+          },
+          "rawMarkdown": "I know the submission is only tested on the 40% of the test data but it takes about 6-8hours after a submission is done is it normal , \nand also I am using the base models those that were pretrained by others but that itself taking hours and barely moved the score in lb\nand also I used the recently posted dataset but seriously no response , \nCould someone help me out on how to do things properly ",
+          "replies": [],
+          "votes": {
+            "totalVotes": 0
+          }
+        },
+        "firstMessageId": 3548657,
+        "id": 754989,
+        "name": "Serious Queries about this hackathon",
+        "postDate": "2026-11-02T15:17:36.885100300Z",
+        "url": "/competitions/name-that-llm/discussion/754989"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>I know the submission is only tested on the 40% of the test data but it takes about 6-8hours after a submission is done is it normal , \nand also I am using the base models those that were pretrained by others but that itself taking hours and barely moved the score in lb\nand also I used the recently posted dataset but seriously no response , \nCould someone help me out on how to do things properly </p>",
+              "id": 3548657,
+              "post_date": "2026-11-02T15:17:36.887Z",
+              "raw_markdown": "I know the submission is only tested on the 40% of the test data but it takes about 6-8hours after a submission is done is it normal , \nand also I am using the base models those that were pretrained by others but that itself taking hours and barely moved the score in lb\nand also I used the recently posted dataset but seriously no response , \nCould someone help me out on how to do things properly "
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 22411573,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "default-thumb.png",
+            "author_user_display_name": "Melvin Denish L",
+            "author_user_name": "melvindenishl",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "first_message": {
+              "author": {
+                "display_name": "Melvin Denish L",
+                "id": 22411573,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/melvindenishl"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 1325,
+              "content": "<p>I know the submission is only tested on the 40% of the test data but it takes about 6-8hours after a submission is done is it normal , \nand also I am using the base models those that were pretrained by others but that itself taking hours and barely moved the score in lb\nand also I used the recently posted dataset but seriously no response , \nCould someone help me out on how to do things properly </p>",
+              "feedback_tracking_data": {},
+              "id": 3548657,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-02T15:17:36.887Z",
+              "raw_markdown": "I know the submission is only tested on the 40% of the test data but it takes about 6-8hours after a submission is done is it normal , \nand also I am using the base models those that were pretrained by others but that itself taking hours and barely moved the score in lb\nand also I used the recently posted dataset but seriously no response , \nCould someone help me out on how to do things properly ",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Melvin Denish L",
+                  "id": 22411573,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/melvindenishl",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/melvindenishl",
+                  "user_id": 22411573,
+                  "user_name": "melvindenishl"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1
+              }
+            },
+            "first_message_id": 3548657,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 754989,
+            "name": "Serious Queries about this hackathon",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-11-02T15:17:36.885100300Z",
+            "url": "/competitions/name-that-llm/discussion/754989"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:23:25+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:23:25+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-11-02T15:17:36.886666700Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [],
+  "writeup": null
+}

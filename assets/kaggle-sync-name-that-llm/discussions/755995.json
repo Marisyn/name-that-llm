@@ -1,0 +1,211 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 755995,
+    "title": "    Prize Winner Requirements – Name That LLM",
+    "author": "radidani",
+    "author_url": "/radidani",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-11-05T03:07:38.511886500Z",
+    "last_comment_post_date": "2026-11-05T03:07:38.513333300Z",
+    "comment_count": 0,
+    "votes": 1,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/755995",
+    "first_message_id": 3550302,
+    "first_seen_at": "2026-11-09T03:54:41+00:00",
+    "last_seen_at": "2026-11-16T16:36:02+00:00",
+    "detail_last_synced_at": "2026-11-16T16:23:03+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "0e3ea660fab69db1a55044e52df16249e1b9f0dcaa2e13e8d6f3c7c157a11467",
+    "listing_metrics_hash": "08a3f0e9d031723a4649730d445a527264427162f124c0c72a6c18d2e0b8e839",
+    "detail_content_hash": "ed52f0dd799d51607ac8682d1019dcb96772b82d5329e4157ceb3aafe1ddabc2",
+    "detail_last_checked_at": "2026-11-16T16:23:03+00:00",
+    "detail_next_check_at": "2026-11-19T16:23:03+00:00",
+    "detail_unchanged_count": 1,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 0,
+      "firstForumMessageId": null,
+      "id": 755995,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-11-05T03:07:38.513333300Z",
+      "postDate": "2026-11-05T03:07:38.511886500Z",
+      "raw": {
+        "id": 755995,
+        "last_comment_post_date": "2026-11-05T03:07:38.513333300Z",
+        "post_date": "2026-11-05T03:07:38.511886500Z",
+        "title": "    Prize Winner Requirements – Name That LLM",
+        "topic_url": "/competitions/name-that-llm/discussion/755995",
+        "votes": 1
+      },
+      "title": "    Prize Winner Requirements – Name That LLM",
+      "topicUrl": "/competitions/name-that-llm/discussion/755995",
+      "votes": 1
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "radidani",
+        "authorUserName": "radidani",
+        "comments": [],
+        "expectedCommentCount": 0,
+        "firstMessage": {
+          "author": {
+            "displayName": "radidani",
+            "tier": "CONTRIBUTOR",
+            "url": "/radidani"
+          },
+          "content": "<p>Hello,</p>\n<p>I live in Japan and plan to participate in this competition. I would like\nto know whether I can complete the entire process from winning to receiving\na prize from Japan, without international travel, in-person attendance,\nor any spoken communication in English, whether live or recorded.</p>\n<p>I can read English and submit technical documents and code in English.</p>\n<p>Could you please confirm the following?</p>\n<ol>\n<li><p>Are prize winners required to attend any live presentations, video calls,\nvoice interviews, or Q&amp;A sessions?</p></li>\n<li><p>If any live communication is required, can it be replaced entirely with\nwritten technical documentation, code submissions, or asynchronous\nwritten Q&amp;A?</p></li>\n<li><p>Is any international travel or in-person attendance mandatory to receive\na prize?</p></li>\n<li><p>Are participants residing in Japan eligible to receive cash prizes\nentirely remotely?</p></li>\n<li><p>Are there any additional winner verification requirements, such as code\npublication, technical documentation, or identity verification?</p></li>\n</ol>\n<p>Thank you for your assistance.</p>",
+          "id": 3550302,
+          "isThankYou": false,
+          "postDate": "2026-11-05T03:07:38.513Z",
+          "raw": {
+            "author": {
+              "display_name": "radidani",
+              "id": 15149915,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "CONTRIBUTOR",
+              "url": "/radidani"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 3313,
+            "content": "<p>Hello,</p>\n<p>I live in Japan and plan to participate in this competition. I would like\nto know whether I can complete the entire process from winning to receiving\na prize from Japan, without international travel, in-person attendance,\nor any spoken communication in English, whether live or recorded.</p>\n<p>I can read English and submit technical documents and code in English.</p>\n<p>Could you please confirm the following?</p>\n<ol>\n<li><p>Are prize winners required to attend any live presentations, video calls,\nvoice interviews, or Q&amp;A sessions?</p></li>\n<li><p>If any live communication is required, can it be replaced entirely with\nwritten technical documentation, code submissions, or asynchronous\nwritten Q&amp;A?</p></li>\n<li><p>Is any international travel or in-person attendance mandatory to receive\na prize?</p></li>\n<li><p>Are participants residing in Japan eligible to receive cash prizes\nentirely remotely?</p></li>\n<li><p>Are there any additional winner verification requirements, such as code\npublication, technical documentation, or identity verification?</p></li>\n</ol>\n<p>Thank you for your assistance.</p>",
+            "feedback_tracking_data": {},
+            "id": 3550302,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-11-05T03:07:38.513Z",
+            "raw_markdown": "Hello,\n\nI live in Japan and plan to participate in this competition. I would like\nto know whether I can complete the entire process from winning to receiving\na prize from Japan, without international travel, in-person attendance,\nor any spoken communication in English, whether live or recorded.\n\nI can read English and submit technical documents and code in English.\n\nCould you please confirm the following?\n\n1. Are prize winners required to attend any live presentations, video calls,\n   voice interviews, or Q&A sessions?\n\n2. If any live communication is required, can it be replaced entirely with\n   written technical documentation, code submissions, or asynchronous\n   written Q&A?\n\n3. Is any international travel or in-person attendance mandatory to receive\n   a prize?\n\n4. Are participants residing in Japan eligible to receive cash prizes\n   entirely remotely?\n\n5. Are there any additional winner verification requirements, such as code\n   publication, technical documentation, or identity verification?\n\nThank you for your assistance.",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "radidani",
+                "id": 15149915,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/radidani",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/radidani",
+                "user_id": 15149915,
+                "user_name": "radidani"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 1,
+              "total_votes": 1
+            }
+          },
+          "rawMarkdown": "Hello,\n\nI live in Japan and plan to participate in this competition. I would like\nto know whether I can complete the entire process from winning to receiving\na prize from Japan, without international travel, in-person attendance,\nor any spoken communication in English, whether live or recorded.\n\nI can read English and submit technical documents and code in English.\n\nCould you please confirm the following?\n\n1. Are prize winners required to attend any live presentations, video calls,\n   voice interviews, or Q&A sessions?\n\n2. If any live communication is required, can it be replaced entirely with\n   written technical documentation, code submissions, or asynchronous\n   written Q&A?\n\n3. Is any international travel or in-person attendance mandatory to receive\n   a prize?\n\n4. Are participants residing in Japan eligible to receive cash prizes\n   entirely remotely?\n\n5. Are there any additional winner verification requirements, such as code\n   publication, technical documentation, or identity verification?\n\nThank you for your assistance.",
+          "replies": [],
+          "votes": {
+            "totalVotes": 1
+          }
+        },
+        "firstMessageId": 3550302,
+        "id": 755995,
+        "name": "    Prize Winner Requirements – Name That LLM",
+        "postDate": "2026-11-05T03:07:38.511886500Z",
+        "url": "/competitions/name-that-llm/discussion/755995"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>Hello,</p>\n<p>I live in Japan and plan to participate in this competition. I would like\nto know whether I can complete the entire process from winning to receiving\na prize from Japan, without international travel, in-person attendance,\nor any spoken communication in English, whether live or recorded.</p>\n<p>I can read English and submit technical documents and code in English.</p>\n<p>Could you please confirm the following?</p>\n<ol>\n<li><p>Are prize winners required to attend any live presentations, video calls,\nvoice interviews, or Q&amp;A sessions?</p></li>\n<li><p>If any live communication is required, can it be replaced entirely with\nwritten technical documentation, code submissions, or asynchronous\nwritten Q&amp;A?</p></li>\n<li><p>Is any international travel or in-person attendance mandatory to receive\na prize?</p></li>\n<li><p>Are participants residing in Japan eligible to receive cash prizes\nentirely remotely?</p></li>\n<li><p>Are there any additional winner verification requirements, such as code\npublication, technical documentation, or identity verification?</p></li>\n</ol>\n<p>Thank you for your assistance.</p>",
+              "id": 3550302,
+              "post_date": "2026-11-05T03:07:38.513Z",
+              "raw_markdown": "Hello,\n\nI live in Japan and plan to participate in this competition. I would like\nto know whether I can complete the entire process from winning to receiving\na prize from Japan, without international travel, in-person attendance,\nor any spoken communication in English, whether live or recorded.\n\nI can read English and submit technical documents and code in English.\n\nCould you please confirm the following?\n\n1. Are prize winners required to attend any live presentations, video calls,\n   voice interviews, or Q&A sessions?\n\n2. If any live communication is required, can it be replaced entirely with\n   written technical documentation, code submissions, or asynchronous\n   written Q&A?\n\n3. Is any international travel or in-person attendance mandatory to receive\n   a prize?\n\n4. Are participants residing in Japan eligible to receive cash prizes\n   entirely remotely?\n\n5. Are there any additional winner verification requirements, such as code\n   publication, technical documentation, or identity verification?\n\nThank you for your assistance.",
+              "votes": 1
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 15149915,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "default-thumb.png",
+            "author_user_display_name": "radidani",
+            "author_user_name": "radidani",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "first_message": {
+              "author": {
+                "display_name": "radidani",
+                "id": 15149915,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/radidani"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 3313,
+              "content": "<p>Hello,</p>\n<p>I live in Japan and plan to participate in this competition. I would like\nto know whether I can complete the entire process from winning to receiving\na prize from Japan, without international travel, in-person attendance,\nor any spoken communication in English, whether live or recorded.</p>\n<p>I can read English and submit technical documents and code in English.</p>\n<p>Could you please confirm the following?</p>\n<ol>\n<li><p>Are prize winners required to attend any live presentations, video calls,\nvoice interviews, or Q&amp;A sessions?</p></li>\n<li><p>If any live communication is required, can it be replaced entirely with\nwritten technical documentation, code submissions, or asynchronous\nwritten Q&amp;A?</p></li>\n<li><p>Is any international travel or in-person attendance mandatory to receive\na prize?</p></li>\n<li><p>Are participants residing in Japan eligible to receive cash prizes\nentirely remotely?</p></li>\n<li><p>Are there any additional winner verification requirements, such as code\npublication, technical documentation, or identity verification?</p></li>\n</ol>\n<p>Thank you for your assistance.</p>",
+              "feedback_tracking_data": {},
+              "id": 3550302,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-05T03:07:38.513Z",
+              "raw_markdown": "Hello,\n\nI live in Japan and plan to participate in this competition. I would like\nto know whether I can complete the entire process from winning to receiving\na prize from Japan, without international travel, in-person attendance,\nor any spoken communication in English, whether live or recorded.\n\nI can read English and submit technical documents and code in English.\n\nCould you please confirm the following?\n\n1. Are prize winners required to attend any live presentations, video calls,\n   voice interviews, or Q&A sessions?\n\n2. If any live communication is required, can it be replaced entirely with\n   written technical documentation, code submissions, or asynchronous\n   written Q&A?\n\n3. Is any international travel or in-person attendance mandatory to receive\n   a prize?\n\n4. Are participants residing in Japan eligible to receive cash prizes\n   entirely remotely?\n\n5. Are there any additional winner verification requirements, such as code\n   publication, technical documentation, or identity verification?\n\nThank you for your assistance.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "radidani",
+                  "id": 15149915,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/radidani",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/radidani",
+                  "user_id": 15149915,
+                  "user_name": "radidani"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": 1
+              }
+            },
+            "first_message_id": 3550302,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 755995,
+            "name": "    Prize Winner Requirements – Name That LLM",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-11-05T03:07:38.511886500Z",
+            "total_votes": 1,
+            "url": "/competitions/name-that-llm/discussion/755995"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:23:03+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:23:03+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-11-05T03:07:38.513333300Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [],
+  "writeup": null
+}

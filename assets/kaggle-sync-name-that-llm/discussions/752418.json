@@ -1,0 +1,1548 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 752418,
+    "title": "people makes 0.700 point are those real or just some kind of trick used?",
+    "author": "Melih Eymen",
+    "author_url": "/meliheymen",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-10-24T21:11:35.787848400Z",
+    "last_comment_post_date": "2026-10-26T13:11:23.343333300Z",
+    "comment_count": 5,
+    "votes": 5,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/752418",
+    "first_message_id": 3544130,
+    "first_seen_at": "2026-11-04T06:56:15+00:00",
+    "last_seen_at": "2026-11-18T12:04:39+00:00",
+    "detail_last_synced_at": "2026-11-18T12:04:39+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "2c225b1e8693efe3cb1e0c8c49d11833852260edc547d45980458d916fecd7fd",
+    "listing_metrics_hash": "2b0959b44ab0b46c3fce758ab72b9a853a83f880a0f7015569d0f8717c92469c",
+    "detail_content_hash": "257c414131ad23266ceb8dc853f93cbf58405d9f28d39ebc9fe1b985c46fda9d",
+    "detail_last_checked_at": "2026-11-18T12:04:39+00:00",
+    "detail_next_check_at": "2026-11-21T12:04:39+00:00",
+    "detail_unchanged_count": 1,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 5,
+      "firstForumMessageId": null,
+      "id": 752418,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-10-26T13:11:23.343333300Z",
+      "postDate": "2026-10-24T21:11:35.787848400Z",
+      "raw": {
+        "comment_count": 5,
+        "id": 752418,
+        "last_comment_post_date": "2026-10-26T13:11:23.343333300Z",
+        "post_date": "2026-10-24T21:11:35.787848400Z",
+        "title": "people makes 0.700 point are those real or just some kind of trick used?",
+        "topic_url": "/competitions/name-that-llm/discussion/752418",
+        "votes": 5
+      },
+      "title": "people makes 0.700 point are those real or just some kind of trick used?",
+      "topicUrl": "/competitions/name-that-llm/discussion/752418",
+      "votes": 5
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "Melih Eymen",
+        "authorUserName": "meliheymen",
+        "comments": [
+          {
+            "author": {
+              "displayName": "Mahmoud saad Elgharib",
+              "tier": "MASTER",
+              "url": "/mah20050"
+            },
+            "content": "<p>I don't want to be unfair to anyone, but I sometimes notice notebooks where the outputs are there, yet the code responsible for generating them is missing probably because some people don't want to reveal how they won or learned it, while others actually explain their approach and what they did with it, which is really great.</p>",
+            "id": 3544883,
+            "isThankYou": false,
+            "postDate": "2026-10-26T13:11:23.343Z",
+            "raw": {
+              "author": {
+                "display_name": "Mahmoud saad Elgharib",
+                "id": 23948604,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/23948604-gr.jpg",
+                "tier": "MASTER",
+                "url": "/mah20050"
+              },
+              "author_type": "COMMENT",
+              "content": "<p>I don't want to be unfair to anyone, but I sometimes notice notebooks where the outputs are there, yet the code responsible for generating them is missing probably because some people don't want to reveal how they won or learned it, while others actually explain their approach and what they did with it, which is really great.</p>",
+              "feedback_tracking_data": {},
+              "id": 3544883,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-26T13:11:23.343Z",
+              "raw_markdown": "I don't want to be unfair to anyone, but I sometimes notice notebooks where the outputs are there, yet the code responsible for generating them is missing probably because some people don't want to reveal how they won or learned it, while others actually explain their approach and what they did with it, which is really great.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Mahmoud saad Elgharib",
+                  "id": 23948604,
+                  "performance_tier": "MASTER",
+                  "profile_url": "/mah20050",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/23948604-gr.jpg",
+                  "tier": "MASTER",
+                  "url": "/mah20050",
+                  "user_id": 23948604,
+                  "user_name": "mah20050"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": 1
+              }
+            },
+            "rawMarkdown": "I don't want to be unfair to anyone, but I sometimes notice notebooks where the outputs are there, yet the code responsible for generating them is missing probably because some people don't want to reveal how they won or learned it, while others actually explain their approach and what they did with it, which is really great.",
+            "replies": [],
+            "votes": {
+              "totalVotes": 1
+            }
+          },
+          {
+            "author": {
+              "displayName": "Ravi Ramakrishnan",
+              "tier": "GRANDMASTER",
+              "url": "/ravi20076"
+            },
+            "content": "<p>Once a high scoring public kernel will come through, you will also reach there <a href=\"/meliheymen\" target=\"_blank\">@meliheymen</a></p>",
+            "id": 3544131,
+            "isThankYou": false,
+            "postDate": "2026-10-24T21:21:07.017Z",
+            "raw": {
+              "author": {
+                "display_name": "Ravi Ramakrishnan",
+                "id": 8273630,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8273630-kg.JPG?t=2024-03-26-14-51-52",
+                "tier": "GRANDMASTER",
+                "url": "/ravi20076"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 735,
+              "content": "<p>Once a high scoring public kernel will come through, you will also reach there <a href=\"/meliheymen\" target=\"_blank\">@meliheymen</a></p>",
+              "feedback_tracking_data": {},
+              "id": 3544131,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-24T21:21:07.017Z",
+              "raw_markdown": "Once a high scoring public kernel will come through, you will also reach there @meliheymen",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Kishan Vavdara",
+                  "id": 12951282,
+                  "performance_tier": "MASTER",
+                  "profile_url": "/kishanvavdara",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/12951282-kg.jpeg",
+                  "tier": "MASTER",
+                  "url": "/kishanvavdara",
+                  "user_id": 12951282,
+                  "user_name": "kishanvavdara"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1
+              }
+            },
+            "rawMarkdown": "Once a high scoring public kernel will come through, you will also reach there @meliheymen",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          },
+          {
+            "author": {
+              "displayName": "codex rybaka",
+              "tier": "CONTRIBUTOR",
+              "url": "/yuriplot"
+            },
+            "content": "<p>You can spend a couple of hundreds of dollars to generate more data with LLMs - that’s all it takes</p>",
+            "id": 3544708,
+            "isThankYou": false,
+            "postDate": "2026-10-26T05:38:15.843Z",
+            "raw": {
+              "author": {
+                "display_name": "codex rybaka",
+                "id": 16796017,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/yuriplot"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 48,
+              "content": "<p>You can spend a couple of hundreds of dollars to generate more data with LLMs - that’s all it takes</p>",
+              "feedback_tracking_data": {},
+              "id": 3544708,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-26T05:38:15.843Z",
+              "raw_markdown": "You can spend a couple of hundreds of dollars to generate more data with LLMs - that’s all it takes",
+              "replies": [
+                {
+                  "author": {
+                    "display_name": "Carrot Production",
+                    "id": 20960131,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20960131-kg.jpg?t=2026-10-21-05-22-40",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/crtproduction"
+                  },
+                  "author_type": "COMMENT",
+                  "competition_ranking": 2684,
+                  "content": "<p>and you have to publish the data also, it is the competition rules, isnt it ? </p>",
+                  "feedback_tracking_data": {},
+                  "id": 3544791,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-26T09:33:47.733Z",
+                  "raw_markdown": "and you have to publish the data also, it is the competition rules, isnt it ? ",
+                  "replies": [
+                    {
+                      "author": {
+                        "display_name": "codex rybaka",
+                        "id": 16796017,
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                        "tier": "CONTRIBUTOR",
+                        "url": "/yuriplot"
+                      },
+                      "author_type": "COMMENT",
+                      "competition_ranking": 48,
+                      "content": "<p>Yeah, after the competition deadline. If you meant “reasonability” criteria, well, I think kaggle will allow this</p>",
+                      "feedback_tracking_data": {},
+                      "id": 3544833,
+                      "is_thank_you": false,
+                      "kernel_version": 0,
+                      "parent": {},
+                      "post_date": "2026-10-26T11:15:13.723Z",
+                      "raw_markdown": "Yeah, after the competition deadline. If you meant “reasonability” criteria, well, I think kaggle will allow this",
+                      "team_up_info": {
+                        "intro": "",
+                        "team_leader": {
+                          "display_name": "codex rybaka",
+                          "id": 16796017,
+                          "performance_tier": "CONTRIBUTOR",
+                          "profile_url": "/yuriplot",
+                          "progression_opt_out": false,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                          "tier": "CONTRIBUTOR",
+                          "url": "/yuriplot",
+                          "user_id": 16796017,
+                          "user_name": "yuriplot"
+                        }
+                      },
+                      "votes": {
+                        "can_upvote": true
+                      }
+                    }
+                  ],
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Carrot Production",
+                      "id": 20960131,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/crtproduction",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20960131-kg.jpg?t=2026-10-21-05-22-40",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/crtproduction",
+                      "user_id": 20960131,
+                      "user_name": "crtproduction"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "codex rybaka",
+                  "id": 16796017,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/yuriplot",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/yuriplot",
+                  "user_id": 16796017,
+                  "user_name": "yuriplot"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_votes": -1
+              }
+            },
+            "rawMarkdown": "You can spend a couple of hundreds of dollars to generate more data with LLMs - that’s all it takes",
+            "replies": [
+              {
+                "author": {
+                  "displayName": "Carrot Production",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/crtproduction"
+                },
+                "content": "<p>and you have to publish the data also, it is the competition rules, isnt it ? </p>",
+                "id": 3544791,
+                "isThankYou": false,
+                "postDate": "2026-10-26T09:33:47.733Z",
+                "raw": {
+                  "author": {
+                    "display_name": "Carrot Production",
+                    "id": 20960131,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20960131-kg.jpg?t=2026-10-21-05-22-40",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/crtproduction"
+                  },
+                  "author_type": "COMMENT",
+                  "competition_ranking": 2684,
+                  "content": "<p>and you have to publish the data also, it is the competition rules, isnt it ? </p>",
+                  "feedback_tracking_data": {},
+                  "id": 3544791,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-26T09:33:47.733Z",
+                  "raw_markdown": "and you have to publish the data also, it is the competition rules, isnt it ? ",
+                  "replies": [
+                    {
+                      "author": {
+                        "display_name": "codex rybaka",
+                        "id": 16796017,
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                        "tier": "CONTRIBUTOR",
+                        "url": "/yuriplot"
+                      },
+                      "author_type": "COMMENT",
+                      "competition_ranking": 48,
+                      "content": "<p>Yeah, after the competition deadline. If you meant “reasonability” criteria, well, I think kaggle will allow this</p>",
+                      "feedback_tracking_data": {},
+                      "id": 3544833,
+                      "is_thank_you": false,
+                      "kernel_version": 0,
+                      "parent": {},
+                      "post_date": "2026-10-26T11:15:13.723Z",
+                      "raw_markdown": "Yeah, after the competition deadline. If you meant “reasonability” criteria, well, I think kaggle will allow this",
+                      "team_up_info": {
+                        "intro": "",
+                        "team_leader": {
+                          "display_name": "codex rybaka",
+                          "id": 16796017,
+                          "performance_tier": "CONTRIBUTOR",
+                          "profile_url": "/yuriplot",
+                          "progression_opt_out": false,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                          "tier": "CONTRIBUTOR",
+                          "url": "/yuriplot",
+                          "user_id": 16796017,
+                          "user_name": "yuriplot"
+                        }
+                      },
+                      "votes": {
+                        "can_upvote": true
+                      }
+                    }
+                  ],
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Carrot Production",
+                      "id": 20960131,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/crtproduction",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20960131-kg.jpg?t=2026-10-21-05-22-40",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/crtproduction",
+                      "user_id": 20960131,
+                      "user_name": "crtproduction"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                },
+                "rawMarkdown": "and you have to publish the data also, it is the competition rules, isnt it ? ",
+                "replies": [
+                  {
+                    "author": {
+                      "displayName": "codex rybaka",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/yuriplot"
+                    },
+                    "content": "<p>Yeah, after the competition deadline. If you meant “reasonability” criteria, well, I think kaggle will allow this</p>",
+                    "id": 3544833,
+                    "isThankYou": false,
+                    "postDate": "2026-10-26T11:15:13.723Z",
+                    "raw": {
+                      "author": {
+                        "display_name": "codex rybaka",
+                        "id": 16796017,
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                        "tier": "CONTRIBUTOR",
+                        "url": "/yuriplot"
+                      },
+                      "author_type": "COMMENT",
+                      "competition_ranking": 48,
+                      "content": "<p>Yeah, after the competition deadline. If you meant “reasonability” criteria, well, I think kaggle will allow this</p>",
+                      "feedback_tracking_data": {},
+                      "id": 3544833,
+                      "is_thank_you": false,
+                      "kernel_version": 0,
+                      "parent": {},
+                      "post_date": "2026-10-26T11:15:13.723Z",
+                      "raw_markdown": "Yeah, after the competition deadline. If you meant “reasonability” criteria, well, I think kaggle will allow this",
+                      "team_up_info": {
+                        "intro": "",
+                        "team_leader": {
+                          "display_name": "codex rybaka",
+                          "id": 16796017,
+                          "performance_tier": "CONTRIBUTOR",
+                          "profile_url": "/yuriplot",
+                          "progression_opt_out": false,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                          "tier": "CONTRIBUTOR",
+                          "url": "/yuriplot",
+                          "user_id": 16796017,
+                          "user_name": "yuriplot"
+                        }
+                      },
+                      "votes": {
+                        "can_upvote": true
+                      }
+                    },
+                    "rawMarkdown": "Yeah, after the competition deadline. If you meant “reasonability” criteria, well, I think kaggle will allow this",
+                    "replies": [],
+                    "votes": {
+                      "totalVotes": 0
+                    }
+                  }
+                ],
+                "votes": {
+                  "totalVotes": 0
+                }
+              }
+            ],
+            "votes": {
+              "totalVotes": -1
+            }
+          }
+        ],
+        "expectedCommentCount": 5,
+        "firstMessage": {
+          "author": {
+            "displayName": "Melih Eymen",
+            "tier": "CONTRIBUTOR",
+            "url": "/meliheymen"
+          },
+          "content": "<p>I just wanna know so I can try harder to find a way</p>",
+          "id": 3544130,
+          "isThankYou": false,
+          "postDate": "2026-10-24T21:11:35.787Z",
+          "raw": {
+            "author": {
+              "display_name": "Melih Eymen",
+              "id": 23632061,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "CONTRIBUTOR",
+              "url": "/meliheymen"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 4629,
+            "content": "<p>I just wanna know so I can try harder to find a way</p>",
+            "feedback_tracking_data": {},
+            "id": 3544130,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-10-24T21:11:35.787Z",
+            "raw_markdown": " I just wanna know so I can try harder to find a way",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "Melih Eymen",
+                "id": 23632061,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/meliheymen",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/meliheymen",
+                "user_id": 23632061,
+                "user_name": "meliheymen"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 5,
+              "total_votes": 5
+            }
+          },
+          "rawMarkdown": " I just wanna know so I can try harder to find a way",
+          "replies": [],
+          "votes": {
+            "totalVotes": 5
+          }
+        },
+        "firstMessageId": 3544130,
+        "id": 752418,
+        "name": "people makes 0.700 point are those real or just some kind of trick used?",
+        "postDate": "2026-10-24T21:11:35.787848400Z",
+        "url": "/competitions/name-that-llm/discussion/752418"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>I just wanna know so I can try harder to find a way</p>",
+              "id": 3544130,
+              "post_date": "2026-10-24T21:11:35.787Z",
+              "raw_markdown": " I just wanna know so I can try harder to find a way",
+              "votes": 5
+            },
+            {
+              "content": "<p>Once a high scoring public kernel will come through, you will also reach there <a href=\"/meliheymen\" target=\"_blank\">@meliheymen</a></p>",
+              "id": 3544131,
+              "post_date": "2026-10-24T21:21:07.017Z",
+              "raw_markdown": "Once a high scoring public kernel will come through, you will also reach there @meliheymen"
+            },
+            {
+              "content": "<p>You can spend a couple of hundreds of dollars to generate more data with LLMs - that’s all it takes</p>",
+              "id": 3544708,
+              "post_date": "2026-10-26T05:38:15.843Z",
+              "raw_markdown": "You can spend a couple of hundreds of dollars to generate more data with LLMs - that’s all it takes",
+              "replies": [
+                {
+                  "content": "<p>and you have to publish the data also, it is the competition rules, isnt it ? </p>",
+                  "id": 3544791,
+                  "post_date": "2026-10-26T09:33:47.733Z",
+                  "raw_markdown": "and you have to publish the data also, it is the competition rules, isnt it ? ",
+                  "replies": [
+                    {
+                      "content": "<p>Yeah, after the competition deadline. If you meant “reasonability” criteria, well, I think kaggle will allow this</p>",
+                      "id": 3544833,
+                      "post_date": "2026-10-26T11:15:13.723Z",
+                      "raw_markdown": "Yeah, after the competition deadline. If you meant “reasonability” criteria, well, I think kaggle will allow this"
+                    }
+                  ]
+                }
+              ],
+              "votes": -1
+            },
+            {
+              "content": "<p>I don't want to be unfair to anyone, but I sometimes notice notebooks where the outputs are there, yet the code responsible for generating them is missing probably because some people don't want to reveal how they won or learned it, while others actually explain their approach and what they did with it, which is really great.</p>",
+              "id": 3544883,
+              "post_date": "2026-10-26T13:11:23.343Z",
+              "raw_markdown": "I don't want to be unfair to anyone, but I sometimes notice notebooks where the outputs are there, yet the code responsible for generating them is missing probably because some people don't want to reveal how they won or learned it, while others actually explain their approach and what they did with it, which is really great.",
+              "votes": 1
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 23632061,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "default-thumb.png",
+            "author_user_display_name": "Melih Eymen",
+            "author_user_name": "meliheymen",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "comments": [
+              {
+                "author": {
+                  "display_name": "Mahmoud saad Elgharib",
+                  "id": 23948604,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/23948604-gr.jpg",
+                  "tier": "MASTER",
+                  "url": "/mah20050"
+                },
+                "author_type": "COMMENT",
+                "content": "<p>I don't want to be unfair to anyone, but I sometimes notice notebooks where the outputs are there, yet the code responsible for generating them is missing probably because some people don't want to reveal how they won or learned it, while others actually explain their approach and what they did with it, which is really great.</p>",
+                "feedback_tracking_data": {},
+                "id": 3544883,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-26T13:11:23.343Z",
+                "raw_markdown": "I don't want to be unfair to anyone, but I sometimes notice notebooks where the outputs are there, yet the code responsible for generating them is missing probably because some people don't want to reveal how they won or learned it, while others actually explain their approach and what they did with it, which is really great.",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "Mahmoud saad Elgharib",
+                    "id": 23948604,
+                    "performance_tier": "MASTER",
+                    "profile_url": "/mah20050",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/23948604-gr.jpg",
+                    "tier": "MASTER",
+                    "url": "/mah20050",
+                    "user_id": 23948604,
+                    "user_name": "mah20050"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true,
+                  "total_upvotes": 1,
+                  "total_votes": 1
+                }
+              },
+              {
+                "author": {
+                  "display_name": "Ravi Ramakrishnan",
+                  "id": 8273630,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8273630-kg.JPG?t=2024-03-26-14-51-52",
+                  "tier": "GRANDMASTER",
+                  "url": "/ravi20076"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 735,
+                "content": "<p>Once a high scoring public kernel will come through, you will also reach there <a href=\"/meliheymen\" target=\"_blank\">@meliheymen</a></p>",
+                "feedback_tracking_data": {},
+                "id": 3544131,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-24T21:21:07.017Z",
+                "raw_markdown": "Once a high scoring public kernel will come through, you will also reach there @meliheymen",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "Kishan Vavdara",
+                    "id": 12951282,
+                    "performance_tier": "MASTER",
+                    "profile_url": "/kishanvavdara",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/12951282-kg.jpeg",
+                    "tier": "MASTER",
+                    "url": "/kishanvavdara",
+                    "user_id": 12951282,
+                    "user_name": "kishanvavdara"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true,
+                  "total_upvotes": 1
+                }
+              },
+              {
+                "author": {
+                  "display_name": "codex rybaka",
+                  "id": 16796017,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/yuriplot"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 48,
+                "content": "<p>You can spend a couple of hundreds of dollars to generate more data with LLMs - that’s all it takes</p>",
+                "feedback_tracking_data": {},
+                "id": 3544708,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-26T05:38:15.843Z",
+                "raw_markdown": "You can spend a couple of hundreds of dollars to generate more data with LLMs - that’s all it takes",
+                "replies": [
+                  {
+                    "author": {
+                      "display_name": "Carrot Production",
+                      "id": 20960131,
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20960131-kg.jpg?t=2026-10-21-05-22-40",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/crtproduction"
+                    },
+                    "author_type": "COMMENT",
+                    "competition_ranking": 2684,
+                    "content": "<p>and you have to publish the data also, it is the competition rules, isnt it ? </p>",
+                    "feedback_tracking_data": {},
+                    "id": 3544791,
+                    "is_thank_you": false,
+                    "kernel_version": 0,
+                    "parent": {},
+                    "post_date": "2026-10-26T09:33:47.733Z",
+                    "raw_markdown": "and you have to publish the data also, it is the competition rules, isnt it ? ",
+                    "replies": [
+                      {
+                        "author": {
+                          "display_name": "codex rybaka",
+                          "id": 16796017,
+                          "progression_opt_out": false,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                          "tier": "CONTRIBUTOR",
+                          "url": "/yuriplot"
+                        },
+                        "author_type": "COMMENT",
+                        "competition_ranking": 48,
+                        "content": "<p>Yeah, after the competition deadline. If you meant “reasonability” criteria, well, I think kaggle will allow this</p>",
+                        "feedback_tracking_data": {},
+                        "id": 3544833,
+                        "is_thank_you": false,
+                        "kernel_version": 0,
+                        "parent": {},
+                        "post_date": "2026-10-26T11:15:13.723Z",
+                        "raw_markdown": "Yeah, after the competition deadline. If you meant “reasonability” criteria, well, I think kaggle will allow this",
+                        "team_up_info": {
+                          "intro": "",
+                          "team_leader": {
+                            "display_name": "codex rybaka",
+                            "id": 16796017,
+                            "performance_tier": "CONTRIBUTOR",
+                            "profile_url": "/yuriplot",
+                            "progression_opt_out": false,
+                            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                            "tier": "CONTRIBUTOR",
+                            "url": "/yuriplot",
+                            "user_id": 16796017,
+                            "user_name": "yuriplot"
+                          }
+                        },
+                        "votes": {
+                          "can_upvote": true
+                        }
+                      }
+                    ],
+                    "team_up_info": {
+                      "intro": "",
+                      "team_leader": {
+                        "display_name": "Carrot Production",
+                        "id": 20960131,
+                        "performance_tier": "CONTRIBUTOR",
+                        "profile_url": "/crtproduction",
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20960131-kg.jpg?t=2026-10-21-05-22-40",
+                        "tier": "CONTRIBUTOR",
+                        "url": "/crtproduction",
+                        "user_id": 20960131,
+                        "user_name": "crtproduction"
+                      }
+                    },
+                    "votes": {
+                      "can_upvote": true
+                    }
+                  }
+                ],
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "codex rybaka",
+                    "id": 16796017,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/yuriplot",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/yuriplot",
+                    "user_id": 16796017,
+                    "user_name": "yuriplot"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true,
+                  "total_votes": -1
+                }
+              }
+            ],
+            "first_message": {
+              "author": {
+                "display_name": "Melih Eymen",
+                "id": 23632061,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/meliheymen"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 4629,
+              "content": "<p>I just wanna know so I can try harder to find a way</p>",
+              "feedback_tracking_data": {},
+              "id": 3544130,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-24T21:11:35.787Z",
+              "raw_markdown": " I just wanna know so I can try harder to find a way",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Melih Eymen",
+                  "id": 23632061,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/meliheymen",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/meliheymen",
+                  "user_id": 23632061,
+                  "user_name": "meliheymen"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 5,
+                "total_votes": 5
+              }
+            },
+            "first_message_id": 3544130,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 752418,
+            "name": "people makes 0.700 point are those real or just some kind of trick used?",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-10-24T21:11:35.787848400Z",
+            "total_messages": 5,
+            "total_votes": 5,
+            "url": "/competitions/name-that-llm/discussion/752418"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-18T12:04:39+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-18T12:04:39+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-10-26T13:11:23.343333300Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [
+    {
+      "slug": "name-that-llm",
+      "topic_id": 752418,
+      "message_id": 3544131,
+      "parent_message_id": null,
+      "author": "Ravi Ramakrishnan",
+      "author_url": "/ravi20076",
+      "author_tier": "GRANDMASTER",
+      "post_date": "2026-10-24T21:21:07.017Z",
+      "raw_markdown": "Once a high scoring public kernel will come through, you will also reach there @meliheymen",
+      "content_html": "<p>Once a high scoring public kernel will come through, you will also reach there <a href=\"/meliheymen\" target=\"_blank\">@meliheymen</a></p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:57:32+00:00",
+      "last_seen_at": "2026-11-18T12:04:39+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T12:04:39+00:00",
+      "remote_last_listed_at": "2026-11-18T12:04:39+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Ravi Ramakrishnan",
+          "tier": "GRANDMASTER",
+          "url": "/ravi20076"
+        },
+        "content": "<p>Once a high scoring public kernel will come through, you will also reach there <a href=\"/meliheymen\" target=\"_blank\">@meliheymen</a></p>",
+        "id": 3544131,
+        "isThankYou": false,
+        "postDate": "2026-10-24T21:21:07.017Z",
+        "raw": {
+          "author": {
+            "display_name": "Ravi Ramakrishnan",
+            "id": 8273630,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8273630-kg.JPG?t=2024-03-26-14-51-52",
+            "tier": "GRANDMASTER",
+            "url": "/ravi20076"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 735,
+          "content": "<p>Once a high scoring public kernel will come through, you will also reach there <a href=\"/meliheymen\" target=\"_blank\">@meliheymen</a></p>",
+          "feedback_tracking_data": {},
+          "id": 3544131,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-24T21:21:07.017Z",
+          "raw_markdown": "Once a high scoring public kernel will come through, you will also reach there @meliheymen",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Kishan Vavdara",
+              "id": 12951282,
+              "performance_tier": "MASTER",
+              "profile_url": "/kishanvavdara",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/12951282-kg.jpeg",
+              "tier": "MASTER",
+              "url": "/kishanvavdara",
+              "user_id": 12951282,
+              "user_name": "kishanvavdara"
+            }
+          },
+          "votes": {
+            "can_upvote": true,
+            "total_upvotes": 1
+          }
+        },
+        "rawMarkdown": "Once a high scoring public kernel will come through, you will also reach there @meliheymen",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 752418,
+      "message_id": 3544708,
+      "parent_message_id": null,
+      "author": "codex rybaka",
+      "author_url": "/yuriplot",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-10-26T05:38:15.843Z",
+      "raw_markdown": "You can spend a couple of hundreds of dollars to generate more data with LLMs - that’s all it takes",
+      "content_html": "<p>You can spend a couple of hundreds of dollars to generate more data with LLMs - that’s all it takes</p>",
+      "votes": -1,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:57:32+00:00",
+      "last_seen_at": "2026-11-18T12:04:39+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T12:04:39+00:00",
+      "remote_last_listed_at": "2026-11-18T12:04:39+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "codex rybaka",
+          "tier": "CONTRIBUTOR",
+          "url": "/yuriplot"
+        },
+        "content": "<p>You can spend a couple of hundreds of dollars to generate more data with LLMs - that’s all it takes</p>",
+        "id": 3544708,
+        "isThankYou": false,
+        "postDate": "2026-10-26T05:38:15.843Z",
+        "raw": {
+          "author": {
+            "display_name": "codex rybaka",
+            "id": 16796017,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+            "tier": "CONTRIBUTOR",
+            "url": "/yuriplot"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 48,
+          "content": "<p>You can spend a couple of hundreds of dollars to generate more data with LLMs - that’s all it takes</p>",
+          "feedback_tracking_data": {},
+          "id": 3544708,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-26T05:38:15.843Z",
+          "raw_markdown": "You can spend a couple of hundreds of dollars to generate more data with LLMs - that’s all it takes",
+          "replies": [
+            {
+              "author": {
+                "display_name": "Carrot Production",
+                "id": 20960131,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20960131-kg.jpg?t=2026-10-21-05-22-40",
+                "tier": "CONTRIBUTOR",
+                "url": "/crtproduction"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 2684,
+              "content": "<p>and you have to publish the data also, it is the competition rules, isnt it ? </p>",
+              "feedback_tracking_data": {},
+              "id": 3544791,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-26T09:33:47.733Z",
+              "raw_markdown": "and you have to publish the data also, it is the competition rules, isnt it ? ",
+              "replies": [
+                {
+                  "author": {
+                    "display_name": "codex rybaka",
+                    "id": 16796017,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/yuriplot"
+                  },
+                  "author_type": "COMMENT",
+                  "competition_ranking": 48,
+                  "content": "<p>Yeah, after the competition deadline. If you meant “reasonability” criteria, well, I think kaggle will allow this</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3544833,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-26T11:15:13.723Z",
+                  "raw_markdown": "Yeah, after the competition deadline. If you meant “reasonability” criteria, well, I think kaggle will allow this",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "codex rybaka",
+                      "id": 16796017,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/yuriplot",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/yuriplot",
+                      "user_id": 16796017,
+                      "user_name": "yuriplot"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Carrot Production",
+                  "id": 20960131,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/crtproduction",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20960131-kg.jpg?t=2026-10-21-05-22-40",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/crtproduction",
+                  "user_id": 20960131,
+                  "user_name": "crtproduction"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            }
+          ],
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "codex rybaka",
+              "id": 16796017,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/yuriplot",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "CONTRIBUTOR",
+              "url": "/yuriplot",
+              "user_id": 16796017,
+              "user_name": "yuriplot"
+            }
+          },
+          "votes": {
+            "can_upvote": true,
+            "total_votes": -1
+          }
+        },
+        "rawMarkdown": "You can spend a couple of hundreds of dollars to generate more data with LLMs - that’s all it takes",
+        "replies": [
+          {
+            "author": {
+              "displayName": "Carrot Production",
+              "tier": "CONTRIBUTOR",
+              "url": "/crtproduction"
+            },
+            "content": "<p>and you have to publish the data also, it is the competition rules, isnt it ? </p>",
+            "id": 3544791,
+            "isThankYou": false,
+            "postDate": "2026-10-26T09:33:47.733Z",
+            "raw": {
+              "author": {
+                "display_name": "Carrot Production",
+                "id": 20960131,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20960131-kg.jpg?t=2026-10-21-05-22-40",
+                "tier": "CONTRIBUTOR",
+                "url": "/crtproduction"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 2684,
+              "content": "<p>and you have to publish the data also, it is the competition rules, isnt it ? </p>",
+              "feedback_tracking_data": {},
+              "id": 3544791,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-26T09:33:47.733Z",
+              "raw_markdown": "and you have to publish the data also, it is the competition rules, isnt it ? ",
+              "replies": [
+                {
+                  "author": {
+                    "display_name": "codex rybaka",
+                    "id": 16796017,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/yuriplot"
+                  },
+                  "author_type": "COMMENT",
+                  "competition_ranking": 48,
+                  "content": "<p>Yeah, after the competition deadline. If you meant “reasonability” criteria, well, I think kaggle will allow this</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3544833,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-26T11:15:13.723Z",
+                  "raw_markdown": "Yeah, after the competition deadline. If you meant “reasonability” criteria, well, I think kaggle will allow this",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "codex rybaka",
+                      "id": 16796017,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/yuriplot",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/yuriplot",
+                      "user_id": 16796017,
+                      "user_name": "yuriplot"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Carrot Production",
+                  "id": 20960131,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/crtproduction",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20960131-kg.jpg?t=2026-10-21-05-22-40",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/crtproduction",
+                  "user_id": 20960131,
+                  "user_name": "crtproduction"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "and you have to publish the data also, it is the competition rules, isnt it ? ",
+            "replies": [
+              {
+                "author": {
+                  "displayName": "codex rybaka",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/yuriplot"
+                },
+                "content": "<p>Yeah, after the competition deadline. If you meant “reasonability” criteria, well, I think kaggle will allow this</p>",
+                "id": 3544833,
+                "isThankYou": false,
+                "postDate": "2026-10-26T11:15:13.723Z",
+                "raw": {
+                  "author": {
+                    "display_name": "codex rybaka",
+                    "id": 16796017,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/yuriplot"
+                  },
+                  "author_type": "COMMENT",
+                  "competition_ranking": 48,
+                  "content": "<p>Yeah, after the competition deadline. If you meant “reasonability” criteria, well, I think kaggle will allow this</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3544833,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-26T11:15:13.723Z",
+                  "raw_markdown": "Yeah, after the competition deadline. If you meant “reasonability” criteria, well, I think kaggle will allow this",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "codex rybaka",
+                      "id": 16796017,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/yuriplot",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/yuriplot",
+                      "user_id": 16796017,
+                      "user_name": "yuriplot"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                },
+                "rawMarkdown": "Yeah, after the competition deadline. If you meant “reasonability” criteria, well, I think kaggle will allow this",
+                "replies": [],
+                "votes": {
+                  "totalVotes": 0
+                }
+              }
+            ],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "votes": {
+          "totalVotes": -1
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 752418,
+      "message_id": 3544791,
+      "parent_message_id": 3544708,
+      "author": "Carrot Production",
+      "author_url": "/crtproduction",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-10-26T09:33:47.733Z",
+      "raw_markdown": "and you have to publish the data also, it is the competition rules, isnt it ? ",
+      "content_html": "<p>and you have to publish the data also, it is the competition rules, isnt it ? </p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 1,
+      "first_seen_at": "2026-11-04T06:57:32+00:00",
+      "last_seen_at": "2026-11-18T12:04:39+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T12:04:39+00:00",
+      "remote_last_listed_at": "2026-11-18T12:04:39+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Carrot Production",
+          "tier": "CONTRIBUTOR",
+          "url": "/crtproduction"
+        },
+        "content": "<p>and you have to publish the data also, it is the competition rules, isnt it ? </p>",
+        "id": 3544791,
+        "isThankYou": false,
+        "postDate": "2026-10-26T09:33:47.733Z",
+        "raw": {
+          "author": {
+            "display_name": "Carrot Production",
+            "id": 20960131,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20960131-kg.jpg?t=2026-10-21-05-22-40",
+            "tier": "CONTRIBUTOR",
+            "url": "/crtproduction"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 2684,
+          "content": "<p>and you have to publish the data also, it is the competition rules, isnt it ? </p>",
+          "feedback_tracking_data": {},
+          "id": 3544791,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-26T09:33:47.733Z",
+          "raw_markdown": "and you have to publish the data also, it is the competition rules, isnt it ? ",
+          "replies": [
+            {
+              "author": {
+                "display_name": "codex rybaka",
+                "id": 16796017,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/yuriplot"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 48,
+              "content": "<p>Yeah, after the competition deadline. If you meant “reasonability” criteria, well, I think kaggle will allow this</p>",
+              "feedback_tracking_data": {},
+              "id": 3544833,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-26T11:15:13.723Z",
+              "raw_markdown": "Yeah, after the competition deadline. If you meant “reasonability” criteria, well, I think kaggle will allow this",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "codex rybaka",
+                  "id": 16796017,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/yuriplot",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/yuriplot",
+                  "user_id": 16796017,
+                  "user_name": "yuriplot"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            }
+          ],
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Carrot Production",
+              "id": 20960131,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/crtproduction",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/20960131-kg.jpg?t=2026-10-21-05-22-40",
+              "tier": "CONTRIBUTOR",
+              "url": "/crtproduction",
+              "user_id": 20960131,
+              "user_name": "crtproduction"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "and you have to publish the data also, it is the competition rules, isnt it ? ",
+        "replies": [
+          {
+            "author": {
+              "displayName": "codex rybaka",
+              "tier": "CONTRIBUTOR",
+              "url": "/yuriplot"
+            },
+            "content": "<p>Yeah, after the competition deadline. If you meant “reasonability” criteria, well, I think kaggle will allow this</p>",
+            "id": 3544833,
+            "isThankYou": false,
+            "postDate": "2026-10-26T11:15:13.723Z",
+            "raw": {
+              "author": {
+                "display_name": "codex rybaka",
+                "id": 16796017,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/yuriplot"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 48,
+              "content": "<p>Yeah, after the competition deadline. If you meant “reasonability” criteria, well, I think kaggle will allow this</p>",
+              "feedback_tracking_data": {},
+              "id": 3544833,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-26T11:15:13.723Z",
+              "raw_markdown": "Yeah, after the competition deadline. If you meant “reasonability” criteria, well, I think kaggle will allow this",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "codex rybaka",
+                  "id": 16796017,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/yuriplot",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/yuriplot",
+                  "user_id": 16796017,
+                  "user_name": "yuriplot"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "Yeah, after the competition deadline. If you meant “reasonability” criteria, well, I think kaggle will allow this",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 752418,
+      "message_id": 3544833,
+      "parent_message_id": 3544791,
+      "author": "codex rybaka",
+      "author_url": "/yuriplot",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-10-26T11:15:13.723Z",
+      "raw_markdown": "Yeah, after the competition deadline. If you meant “reasonability” criteria, well, I think kaggle will allow this",
+      "content_html": "<p>Yeah, after the competition deadline. If you meant “reasonability” criteria, well, I think kaggle will allow this</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 2,
+      "first_seen_at": "2026-11-04T06:57:32+00:00",
+      "last_seen_at": "2026-11-18T12:04:39+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T12:04:39+00:00",
+      "remote_last_listed_at": "2026-11-18T12:04:39+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "codex rybaka",
+          "tier": "CONTRIBUTOR",
+          "url": "/yuriplot"
+        },
+        "content": "<p>Yeah, after the competition deadline. If you meant “reasonability” criteria, well, I think kaggle will allow this</p>",
+        "id": 3544833,
+        "isThankYou": false,
+        "postDate": "2026-10-26T11:15:13.723Z",
+        "raw": {
+          "author": {
+            "display_name": "codex rybaka",
+            "id": 16796017,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+            "tier": "CONTRIBUTOR",
+            "url": "/yuriplot"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 48,
+          "content": "<p>Yeah, after the competition deadline. If you meant “reasonability” criteria, well, I think kaggle will allow this</p>",
+          "feedback_tracking_data": {},
+          "id": 3544833,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-26T11:15:13.723Z",
+          "raw_markdown": "Yeah, after the competition deadline. If you meant “reasonability” criteria, well, I think kaggle will allow this",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "codex rybaka",
+              "id": 16796017,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/yuriplot",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "CONTRIBUTOR",
+              "url": "/yuriplot",
+              "user_id": 16796017,
+              "user_name": "yuriplot"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "Yeah, after the competition deadline. If you meant “reasonability” criteria, well, I think kaggle will allow this",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 752418,
+      "message_id": 3544883,
+      "parent_message_id": null,
+      "author": "Mahmoud saad Elgharib",
+      "author_url": "/mah20050",
+      "author_tier": "MASTER",
+      "post_date": "2026-10-26T13:11:23.343Z",
+      "raw_markdown": "I don't want to be unfair to anyone, but I sometimes notice notebooks where the outputs are there, yet the code responsible for generating them is missing probably because some people don't want to reveal how they won or learned it, while others actually explain their approach and what they did with it, which is really great.",
+      "content_html": "<p>I don't want to be unfair to anyone, but I sometimes notice notebooks where the outputs are there, yet the code responsible for generating them is missing probably because some people don't want to reveal how they won or learned it, while others actually explain their approach and what they did with it, which is really great.</p>",
+      "votes": 1,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:57:32+00:00",
+      "last_seen_at": "2026-11-18T12:04:39+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T12:04:39+00:00",
+      "remote_last_listed_at": "2026-11-18T12:04:39+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Mahmoud saad Elgharib",
+          "tier": "MASTER",
+          "url": "/mah20050"
+        },
+        "content": "<p>I don't want to be unfair to anyone, but I sometimes notice notebooks where the outputs are there, yet the code responsible for generating them is missing probably because some people don't want to reveal how they won or learned it, while others actually explain their approach and what they did with it, which is really great.</p>",
+        "id": 3544883,
+        "isThankYou": false,
+        "postDate": "2026-10-26T13:11:23.343Z",
+        "raw": {
+          "author": {
+            "display_name": "Mahmoud saad Elgharib",
+            "id": 23948604,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/23948604-gr.jpg",
+            "tier": "MASTER",
+            "url": "/mah20050"
+          },
+          "author_type": "COMMENT",
+          "content": "<p>I don't want to be unfair to anyone, but I sometimes notice notebooks where the outputs are there, yet the code responsible for generating them is missing probably because some people don't want to reveal how they won or learned it, while others actually explain their approach and what they did with it, which is really great.</p>",
+          "feedback_tracking_data": {},
+          "id": 3544883,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-26T13:11:23.343Z",
+          "raw_markdown": "I don't want to be unfair to anyone, but I sometimes notice notebooks where the outputs are there, yet the code responsible for generating them is missing probably because some people don't want to reveal how they won or learned it, while others actually explain their approach and what they did with it, which is really great.",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Mahmoud saad Elgharib",
+              "id": 23948604,
+              "performance_tier": "MASTER",
+              "profile_url": "/mah20050",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/23948604-gr.jpg",
+              "tier": "MASTER",
+              "url": "/mah20050",
+              "user_id": 23948604,
+              "user_name": "mah20050"
+            }
+          },
+          "votes": {
+            "can_upvote": true,
+            "total_upvotes": 1,
+            "total_votes": 1
+          }
+        },
+        "rawMarkdown": "I don't want to be unfair to anyone, but I sometimes notice notebooks where the outputs are there, yet the code responsible for generating them is missing probably because some people don't want to reveal how they won or learned it, while others actually explain their approach and what they did with it, which is really great.",
+        "replies": [],
+        "votes": {
+          "totalVotes": 1
+        }
+      }
+    }
+  ],
+  "writeup": null
+}

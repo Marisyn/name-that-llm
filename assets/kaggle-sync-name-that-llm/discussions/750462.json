@@ -1,0 +1,2160 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 750462,
+    "title": "Early Qwen layers know the author better than late ones: 0.39 vs 0.31",
+    "author": "Aleksey Osipenko",
+    "author_url": "/alekseyosipenko",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-10-18T12:02:31.659115300Z",
+    "last_comment_post_date": "2026-11-04T08:44:48.986666700Z",
+    "comment_count": 7,
+    "votes": 9,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/750462",
+    "first_message_id": 3540603,
+    "first_seen_at": "2026-11-04T06:56:14+00:00",
+    "last_seen_at": "2026-11-16T16:36:02+00:00",
+    "detail_last_synced_at": "2026-11-16T16:23:15+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "37072e3db098f90435b5fae158ff831ae5659498a470c1ddc5ef7b9a74426e18",
+    "listing_metrics_hash": "0b52dc2bbe3bbf83b8ab5ff1f18677363dc695451065824dfdd237bc3c8746ba",
+    "detail_content_hash": "df94d50561f733dd9146e4470793e5558ff62879c4b7f680c510935998e2bcb0",
+    "detail_last_checked_at": "2026-11-16T16:23:15+00:00",
+    "detail_next_check_at": "2026-11-19T16:23:15+00:00",
+    "detail_unchanged_count": 1,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 7,
+      "firstForumMessageId": null,
+      "id": 750462,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-11-04T08:44:48.986666700Z",
+      "postDate": "2026-10-18T12:02:31.659115300Z",
+      "raw": {
+        "comment_count": 7,
+        "id": 750462,
+        "last_comment_post_date": "2026-11-04T08:44:48.986666700Z",
+        "post_date": "2026-10-18T12:02:31.659115300Z",
+        "title": "Early Qwen layers know the author better than late ones: 0.39 vs 0.31",
+        "topic_url": "/competitions/name-that-llm/discussion/750462",
+        "votes": 9
+      },
+      "title": "Early Qwen layers know the author better than late ones: 0.39 vs 0.31",
+      "topicUrl": "/competitions/name-that-llm/discussion/750462",
+      "votes": 9
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "Aleksey Osipenko",
+        "authorUserName": "alekseyosipenko",
+        "comments": [
+          {
+            "author": {
+              "displayName": "shanzhong8",
+              "tier": "MASTER",
+              "url": "/shanzhong8"
+            },
+            "content": "<p>Yeah, and I think their early layers contain more global information; as the layers go deeper, the features become more focused, from overall features to token-level hierarchy.</p>",
+            "id": 3540609,
+            "isThankYou": false,
+            "postDate": "2026-10-18T12:20:29.350Z",
+            "raw": {
+              "author": {
+                "display_name": "shanzhong8",
+                "id": 22146004,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22146004-kg.jpeg?t=2025-05-25-15-58-10",
+                "tier": "MASTER",
+                "url": "/shanzhong8"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 1763,
+              "content": "<p>Yeah, and I think their early layers contain more global information; as the layers go deeper, the features become more focused, from overall features to token-level hierarchy.</p>",
+              "feedback_tracking_data": {},
+              "id": 3540609,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-18T12:20:29.350Z",
+              "raw_markdown": "Yeah, and I think their early layers contain more global information; as the layers go deeper, the features become more focused, from overall features to token-level hierarchy.",
+              "replies": [
+                {
+                  "author": {
+                    "display_name": "Aleksey Osipenko",
+                    "id": 30842335,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30842335-kg.jpg?t=2026-10-17-12-05-04",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/alekseyosipenko"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 1602,
+                  "content": "<p>Thanks, makes sense. \nLooks like the last layers are   tuned too hard for next-token prediction  , so the author's style gets washed out there .\nFunny enough , the leaderboard backed this up later: the strongest public solutions cut Qwen3-8B down to 24 layers and pool features from several of them (2, 4, 6 … 24), not just the last one.</p>\n<p>I also looked at where models get confused the most. Roughly half of the errors are inside one family (gemini 3.7 vs 3.8, gpt-5.6 sol vs terra). If you're curious: <a href=\"https://www.kaggle.com/code/alekseyosipenko/name-that-llm-error-map-of-the-18-models\" target=\"_blank\">https://www.kaggle.com/code/alekseyosipenko/name-that-llm-error-map-of-the-18-models</a></p>",
+                  "feedback_tracking_data": {},
+                  "id": 3549815,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-04T08:41:58.020Z",
+                  "raw_markdown": "Thanks, makes sense. \nLooks like the last layers are   tuned too hard for next-token prediction  , so the author's style gets washed out there .\nFunny enough , the leaderboard backed this up later: the strongest public solutions cut Qwen3-8B down to 24 layers and pool features from several of them (2, 4, 6 ... 24), not just the last one.\n\nI also looked at where models get confused the most. Roughly half of the errors are inside one family (gemini 3.7 vs 3.8, gpt-5.6 sol vs terra). If you're curious: https://www.kaggle.com/code/alekseyosipenko/name-that-llm-error-map-of-the-18-models",
+                  "reactions": [
+                    {
+                      "emoji": "KAGGLE",
+                      "featured_user_names": [
+                        "enaimaan"
+                      ],
+                      "user_count": 1
+                    }
+                  ],
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Aleksey Osipenko",
+                      "id": 30842335,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/alekseyosipenko",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30842335-kg.jpg?t=2026-10-17-12-05-04",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/alekseyosipenko",
+                      "user_id": 30842335,
+                      "user_name": "alekseyosipenko"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                }
+              ],
+              "team_up_info": {
+                "enabled": true,
+                "intro": "",
+                "team_leader": {
+                  "display_name": "shanzhong8",
+                  "id": 22146004,
+                  "performance_tier": "MASTER",
+                  "profile_url": "/shanzhong8",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22146004-kg.jpeg?t=2025-05-25-15-58-10",
+                  "tier": "MASTER",
+                  "url": "/shanzhong8",
+                  "user_id": 22146004,
+                  "user_name": "shanzhong8"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": 1
+              }
+            },
+            "rawMarkdown": "Yeah, and I think their early layers contain more global information; as the layers go deeper, the features become more focused, from overall features to token-level hierarchy.",
+            "replies": [
+              {
+                "author": {
+                  "displayName": "Aleksey Osipenko",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/alekseyosipenko"
+                },
+                "content": "<p>Thanks, makes sense. \nLooks like the last layers are   tuned too hard for next-token prediction  , so the author's style gets washed out there .\nFunny enough , the leaderboard backed this up later: the strongest public solutions cut Qwen3-8B down to 24 layers and pool features from several of them (2, 4, 6 … 24), not just the last one.</p>\n<p>I also looked at where models get confused the most. Roughly half of the errors are inside one family (gemini 3.7 vs 3.8, gpt-5.6 sol vs terra). If you're curious: <a href=\"https://www.kaggle.com/code/alekseyosipenko/name-that-llm-error-map-of-the-18-models\" target=\"_blank\">https://www.kaggle.com/code/alekseyosipenko/name-that-llm-error-map-of-the-18-models</a></p>",
+                "id": 3549815,
+                "isThankYou": false,
+                "postDate": "2026-11-04T08:41:58.020Z",
+                "raw": {
+                  "author": {
+                    "display_name": "Aleksey Osipenko",
+                    "id": 30842335,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30842335-kg.jpg?t=2026-10-17-12-05-04",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/alekseyosipenko"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 1602,
+                  "content": "<p>Thanks, makes sense. \nLooks like the last layers are   tuned too hard for next-token prediction  , so the author's style gets washed out there .\nFunny enough , the leaderboard backed this up later: the strongest public solutions cut Qwen3-8B down to 24 layers and pool features from several of them (2, 4, 6 … 24), not just the last one.</p>\n<p>I also looked at where models get confused the most. Roughly half of the errors are inside one family (gemini 3.7 vs 3.8, gpt-5.6 sol vs terra). If you're curious: <a href=\"https://www.kaggle.com/code/alekseyosipenko/name-that-llm-error-map-of-the-18-models\" target=\"_blank\">https://www.kaggle.com/code/alekseyosipenko/name-that-llm-error-map-of-the-18-models</a></p>",
+                  "feedback_tracking_data": {},
+                  "id": 3549815,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-04T08:41:58.020Z",
+                  "raw_markdown": "Thanks, makes sense. \nLooks like the last layers are   tuned too hard for next-token prediction  , so the author's style gets washed out there .\nFunny enough , the leaderboard backed this up later: the strongest public solutions cut Qwen3-8B down to 24 layers and pool features from several of them (2, 4, 6 ... 24), not just the last one.\n\nI also looked at where models get confused the most. Roughly half of the errors are inside one family (gemini 3.7 vs 3.8, gpt-5.6 sol vs terra). If you're curious: https://www.kaggle.com/code/alekseyosipenko/name-that-llm-error-map-of-the-18-models",
+                  "reactions": [
+                    {
+                      "emoji": "KAGGLE",
+                      "featured_user_names": [
+                        "enaimaan"
+                      ],
+                      "user_count": 1
+                    }
+                  ],
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Aleksey Osipenko",
+                      "id": 30842335,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/alekseyosipenko",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30842335-kg.jpg?t=2026-10-17-12-05-04",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/alekseyosipenko",
+                      "user_id": 30842335,
+                      "user_name": "alekseyosipenko"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                },
+                "rawMarkdown": "Thanks, makes sense. \nLooks like the last layers are   tuned too hard for next-token prediction  , so the author's style gets washed out there .\nFunny enough , the leaderboard backed this up later: the strongest public solutions cut Qwen3-8B down to 24 layers and pool features from several of them (2, 4, 6 ... 24), not just the last one.\n\nI also looked at where models get confused the most. Roughly half of the errors are inside one family (gemini 3.7 vs 3.8, gpt-5.6 sol vs terra). If you're curious: https://www.kaggle.com/code/alekseyosipenko/name-that-llm-error-map-of-the-18-models",
+                "replies": [],
+                "votes": {
+                  "totalVotes": 0
+                }
+              }
+            ],
+            "votes": {
+              "totalVotes": 1
+            }
+          },
+          {
+            "author": {
+              "displayName": "harshraj22",
+              "tier": "CONTRIBUTOR",
+              "url": "/harshraj22"
+            },
+            "content": "<p>I'm surprised, Opus is suggesting almost the same thing you posted. did it read your comment 😕</p>",
+            "id": 3548647,
+            "isThankYou": false,
+            "postDate": "2026-11-02T15:03:27.687Z",
+            "raw": {
+              "author": {
+                "display_name": "harshraj22",
+                "id": 3384390,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3384390-kg.jpg",
+                "tier": "CONTRIBUTOR",
+                "url": "/harshraj22"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 3199,
+              "content": "<p>I'm surprised, Opus is suggesting almost the same thing you posted. did it read your comment 😕</p>",
+              "feedback_tracking_data": {},
+              "id": 3548647,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-02T15:03:27.687Z",
+              "raw_markdown": "I'm surprised, Opus is suggesting almost the same thing you posted. did it read your comment :confused:\n",
+              "replies": [
+                {
+                  "author": {
+                    "display_name": "Rayan Babur",
+                    "id": 15165210,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15165210-kg.jpg?t=2025-08-29-13-32-52",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/rayanbabur"
+                  },
+                  "author_type": "COMMENT",
+                  "competition_ranking": 3160,
+                  "content": "<p>no he is using opus too. even this discussion is written using claude 🤣</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3548858,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-02T20:58:11.113Z",
+                  "raw_markdown": "no he is using opus too. even this discussion is written using claude 🤣",
+                  "replies": [
+                    {
+                      "author": {
+                        "display_name": "Aleksey Osipenko",
+                        "id": 30842335,
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30842335-kg.jpg?t=2026-10-17-12-05-04",
+                        "tier": "CONTRIBUTOR",
+                        "url": "/alekseyosipenko"
+                      },
+                      "author_type": "TOPIC",
+                      "competition_ranking": 1602,
+                      "content": "<p>Ha, fair enough 😄 \nYeah, I use Claude to help with code and English, it's not my first language. But the numbers come from my own runs and the notebook is public, so anyone can recheck them. If you find a mistake there, I'd honestly be glad to hear it.</p>",
+                      "feedback_tracking_data": {},
+                      "id": 3549816,
+                      "is_thank_you": false,
+                      "kernel_version": 0,
+                      "parent": {},
+                      "post_date": "2026-11-04T08:43:57.060Z",
+                      "raw_markdown": "Ha, fair enough 😄 \nYeah, I use Claude to help with code and English, it's not my first language. But the numbers come from my own runs and the notebook is public, so anyone can recheck them. If you find a mistake there, I'd honestly be glad to hear it.",
+                      "team_up_info": {
+                        "intro": "",
+                        "team_leader": {
+                          "display_name": "Aleksey Osipenko",
+                          "id": 30842335,
+                          "performance_tier": "CONTRIBUTOR",
+                          "profile_url": "/alekseyosipenko",
+                          "progression_opt_out": false,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30842335-kg.jpg?t=2026-10-17-12-05-04",
+                          "tier": "CONTRIBUTOR",
+                          "url": "/alekseyosipenko",
+                          "user_id": 30842335,
+                          "user_name": "alekseyosipenko"
+                        }
+                      },
+                      "votes": {
+                        "can_upvote": true
+                      }
+                    }
+                  ],
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Rayan Babur",
+                      "id": 15165210,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/rayanbabur",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15165210-kg.jpg?t=2025-08-29-13-32-52",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/rayanbabur",
+                      "user_id": 15165210,
+                      "user_name": "rayanbabur"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                },
+                {
+                  "author": {
+                    "display_name": "Aleksey Osipenko",
+                    "id": 30842335,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30842335-kg.jpg?t=2026-10-17-12-05-04",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/alekseyosipenko"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 1602,
+                  "content": "<p>Ha, I doubt it read my post specifically 🙂 It's more of a known thing: people have noticed for a while that middle layers keep more of the style, while the last ones are tuned for the next token. I just checked it on this competition's data and got the numbers. So if Opus says the same, at least neither of us made it up out of thin air.</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3549817,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-04T08:44:48.987Z",
+                  "raw_markdown": "Ha, I doubt it read my post specifically 🙂 It's more of a known thing: people have noticed for a while that middle layers keep more of the style, while the last ones are tuned for the next token. I just checked it on this competition's data and got the numbers. So if Opus says the same, at least neither of us made it up out of thin air.",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Aleksey Osipenko",
+                      "id": 30842335,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/alekseyosipenko",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30842335-kg.jpg?t=2026-10-17-12-05-04",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/alekseyosipenko",
+                      "user_id": 30842335,
+                      "user_name": "alekseyosipenko"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                }
+              ],
+              "team_up_info": {
+                "enabled": true,
+                "intro": "",
+                "team_leader": {
+                  "display_name": "harshraj22",
+                  "id": 3384390,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/harshraj22",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3384390-kg.jpg",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/harshraj22",
+                  "user_id": 3384390,
+                  "user_name": "harshraj22"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "I'm surprised, Opus is suggesting almost the same thing you posted. did it read your comment :confused:\n",
+            "replies": [
+              {
+                "author": {
+                  "displayName": "Rayan Babur",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/rayanbabur"
+                },
+                "content": "<p>no he is using opus too. even this discussion is written using claude 🤣</p>",
+                "id": 3548858,
+                "isThankYou": false,
+                "postDate": "2026-11-02T20:58:11.113Z",
+                "raw": {
+                  "author": {
+                    "display_name": "Rayan Babur",
+                    "id": 15165210,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15165210-kg.jpg?t=2025-08-29-13-32-52",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/rayanbabur"
+                  },
+                  "author_type": "COMMENT",
+                  "competition_ranking": 3160,
+                  "content": "<p>no he is using opus too. even this discussion is written using claude 🤣</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3548858,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-02T20:58:11.113Z",
+                  "raw_markdown": "no he is using opus too. even this discussion is written using claude 🤣",
+                  "replies": [
+                    {
+                      "author": {
+                        "display_name": "Aleksey Osipenko",
+                        "id": 30842335,
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30842335-kg.jpg?t=2026-10-17-12-05-04",
+                        "tier": "CONTRIBUTOR",
+                        "url": "/alekseyosipenko"
+                      },
+                      "author_type": "TOPIC",
+                      "competition_ranking": 1602,
+                      "content": "<p>Ha, fair enough 😄 \nYeah, I use Claude to help with code and English, it's not my first language. But the numbers come from my own runs and the notebook is public, so anyone can recheck them. If you find a mistake there, I'd honestly be glad to hear it.</p>",
+                      "feedback_tracking_data": {},
+                      "id": 3549816,
+                      "is_thank_you": false,
+                      "kernel_version": 0,
+                      "parent": {},
+                      "post_date": "2026-11-04T08:43:57.060Z",
+                      "raw_markdown": "Ha, fair enough 😄 \nYeah, I use Claude to help with code and English, it's not my first language. But the numbers come from my own runs and the notebook is public, so anyone can recheck them. If you find a mistake there, I'd honestly be glad to hear it.",
+                      "team_up_info": {
+                        "intro": "",
+                        "team_leader": {
+                          "display_name": "Aleksey Osipenko",
+                          "id": 30842335,
+                          "performance_tier": "CONTRIBUTOR",
+                          "profile_url": "/alekseyosipenko",
+                          "progression_opt_out": false,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30842335-kg.jpg?t=2026-10-17-12-05-04",
+                          "tier": "CONTRIBUTOR",
+                          "url": "/alekseyosipenko",
+                          "user_id": 30842335,
+                          "user_name": "alekseyosipenko"
+                        }
+                      },
+                      "votes": {
+                        "can_upvote": true
+                      }
+                    }
+                  ],
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Rayan Babur",
+                      "id": 15165210,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/rayanbabur",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15165210-kg.jpg?t=2025-08-29-13-32-52",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/rayanbabur",
+                      "user_id": 15165210,
+                      "user_name": "rayanbabur"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                },
+                "rawMarkdown": "no he is using opus too. even this discussion is written using claude 🤣",
+                "replies": [
+                  {
+                    "author": {
+                      "displayName": "Aleksey Osipenko",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/alekseyosipenko"
+                    },
+                    "content": "<p>Ha, fair enough 😄 \nYeah, I use Claude to help with code and English, it's not my first language. But the numbers come from my own runs and the notebook is public, so anyone can recheck them. If you find a mistake there, I'd honestly be glad to hear it.</p>",
+                    "id": 3549816,
+                    "isThankYou": false,
+                    "postDate": "2026-11-04T08:43:57.060Z",
+                    "raw": {
+                      "author": {
+                        "display_name": "Aleksey Osipenko",
+                        "id": 30842335,
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30842335-kg.jpg?t=2026-10-17-12-05-04",
+                        "tier": "CONTRIBUTOR",
+                        "url": "/alekseyosipenko"
+                      },
+                      "author_type": "TOPIC",
+                      "competition_ranking": 1602,
+                      "content": "<p>Ha, fair enough 😄 \nYeah, I use Claude to help with code and English, it's not my first language. But the numbers come from my own runs and the notebook is public, so anyone can recheck them. If you find a mistake there, I'd honestly be glad to hear it.</p>",
+                      "feedback_tracking_data": {},
+                      "id": 3549816,
+                      "is_thank_you": false,
+                      "kernel_version": 0,
+                      "parent": {},
+                      "post_date": "2026-11-04T08:43:57.060Z",
+                      "raw_markdown": "Ha, fair enough 😄 \nYeah, I use Claude to help with code and English, it's not my first language. But the numbers come from my own runs and the notebook is public, so anyone can recheck them. If you find a mistake there, I'd honestly be glad to hear it.",
+                      "team_up_info": {
+                        "intro": "",
+                        "team_leader": {
+                          "display_name": "Aleksey Osipenko",
+                          "id": 30842335,
+                          "performance_tier": "CONTRIBUTOR",
+                          "profile_url": "/alekseyosipenko",
+                          "progression_opt_out": false,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30842335-kg.jpg?t=2026-10-17-12-05-04",
+                          "tier": "CONTRIBUTOR",
+                          "url": "/alekseyosipenko",
+                          "user_id": 30842335,
+                          "user_name": "alekseyosipenko"
+                        }
+                      },
+                      "votes": {
+                        "can_upvote": true
+                      }
+                    },
+                    "rawMarkdown": "Ha, fair enough 😄 \nYeah, I use Claude to help with code and English, it's not my first language. But the numbers come from my own runs and the notebook is public, so anyone can recheck them. If you find a mistake there, I'd honestly be glad to hear it.",
+                    "replies": [],
+                    "votes": {
+                      "totalVotes": 0
+                    }
+                  }
+                ],
+                "votes": {
+                  "totalVotes": 0
+                }
+              },
+              {
+                "author": {
+                  "displayName": "Aleksey Osipenko",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/alekseyosipenko"
+                },
+                "content": "<p>Ha, I doubt it read my post specifically 🙂 It's more of a known thing: people have noticed for a while that middle layers keep more of the style, while the last ones are tuned for the next token. I just checked it on this competition's data and got the numbers. So if Opus says the same, at least neither of us made it up out of thin air.</p>",
+                "id": 3549817,
+                "isThankYou": false,
+                "postDate": "2026-11-04T08:44:48.987Z",
+                "raw": {
+                  "author": {
+                    "display_name": "Aleksey Osipenko",
+                    "id": 30842335,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30842335-kg.jpg?t=2026-10-17-12-05-04",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/alekseyosipenko"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 1602,
+                  "content": "<p>Ha, I doubt it read my post specifically 🙂 It's more of a known thing: people have noticed for a while that middle layers keep more of the style, while the last ones are tuned for the next token. I just checked it on this competition's data and got the numbers. So if Opus says the same, at least neither of us made it up out of thin air.</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3549817,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-04T08:44:48.987Z",
+                  "raw_markdown": "Ha, I doubt it read my post specifically 🙂 It's more of a known thing: people have noticed for a while that middle layers keep more of the style, while the last ones are tuned for the next token. I just checked it on this competition's data and got the numbers. So if Opus says the same, at least neither of us made it up out of thin air.",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Aleksey Osipenko",
+                      "id": 30842335,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/alekseyosipenko",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30842335-kg.jpg?t=2026-10-17-12-05-04",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/alekseyosipenko",
+                      "user_id": 30842335,
+                      "user_name": "alekseyosipenko"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                },
+                "rawMarkdown": "Ha, I doubt it read my post specifically 🙂 It's more of a known thing: people have noticed for a while that middle layers keep more of the style, while the last ones are tuned for the next token. I just checked it on this competition's data and got the numbers. So if Opus says the same, at least neither of us made it up out of thin air.",
+                "replies": [],
+                "votes": {
+                  "totalVotes": 0
+                }
+              }
+            ],
+            "votes": {
+              "totalVotes": 0
+            }
+          },
+          {
+            "author": {
+              "displayName": null,
+              "tier": null,
+              "url": "/"
+            },
+            "content": null,
+            "id": 3540642,
+            "isThankYou": false,
+            "postDate": "2026-10-18T13:43:22.377Z",
+            "raw": {
+              "author": {
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "url": "/"
+              },
+              "author_type": "COMMENT",
+              "can_delete": true,
+              "feedback_tracking_data": {},
+              "id": 3540642,
+              "is_deleted": true,
+              "is_thank_you": false,
+              "is_user_author": true,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-18T13:43:22.377Z",
+              "raw_markdown": "",
+              "votes": {}
+            },
+            "rawMarkdown": null,
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "expectedCommentCount": 7,
+        "firstMessage": {
+          "author": {
+            "displayName": "Aleksey Osipenko",
+            "tier": "CONTRIBUTOR",
+            "url": "/alekseyosipenko"
+          },
+          "content": "<p>Most embedding approaches use the last hidden layer. As it turned out, for this task the last layer was the least effective one.</p>\n<p>Setup: a frozen Qwen3-4B model (36 layers), mean pooling, and logistic regression on each layer; cross-validation split by <code>prompt_id</code>. In all my submissions this CV has been consistently about 0.015 above the public leaderboard, so I trust it for comparisons.</p>\n<p>Balanced accuracy by layer:</p>\n<ul>\n<li>Layer 3 (8% depth): 0.391</li>\n<li>Layer 6: 0.379</li>\n<li>Layer 9: 0.370</li>\n<li>Layer 18: 0.327</li>\n<li>Layer 27: 0.341</li>\n<li>Layer 36 (last layer): 0.311</li>\n<li>All 6 layers concatenated: 0.414</li>\n</ul>\n<p>In my view, deeper layers encode what the text is about, while earlier layers capture how it is written – word choice, punctuation and rhythm. Authorship lives in the style, and the topic acts as a trap, especially since the test prompts are completely new.</p>\n<p>Combined with a TF-IDF + stylometry model (0.369 on its own), the blend reached 0.439 CV and 0.420 on the public leaderboard. With only 4 layers (9, 18, 27 and 36), the same blend gave 0.429 CV and 0.414 on the leaderboard. This result has helped shape my plan for further work.</p>\n<p>The task is still challenging: it is hard to tell apart related models from the same lab, for example <code>claude-fable-5</code> (recall 0.11), <code>gpt-5.6-sol</code> (0.21) and the GLM models (~0.21). I need to give more thought to the right approach here.</p>\n<p>Notebook with the results for all layers and the blend plot: [ССЫЛКА]</p>\n<p>Has anyone tried layers 1–2 or the embedding layer itself? I'm curious whether accuracy keeps improving closer to the input. Please share your results.\nThanks!</p>",
+          "id": 3540603,
+          "isThankYou": false,
+          "postDate": "2026-10-18T12:02:31.660Z",
+          "raw": {
+            "author": {
+              "display_name": "Aleksey Osipenko",
+              "id": 30842335,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30842335-kg.jpg?t=2026-10-17-12-05-04",
+              "tier": "CONTRIBUTOR",
+              "url": "/alekseyosipenko"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 1602,
+            "content": "<p>Most embedding approaches use the last hidden layer. As it turned out, for this task the last layer was the least effective one.</p>\n<p>Setup: a frozen Qwen3-4B model (36 layers), mean pooling, and logistic regression on each layer; cross-validation split by <code>prompt_id</code>. In all my submissions this CV has been consistently about 0.015 above the public leaderboard, so I trust it for comparisons.</p>\n<p>Balanced accuracy by layer:</p>\n<ul>\n<li>Layer 3 (8% depth): 0.391</li>\n<li>Layer 6: 0.379</li>\n<li>Layer 9: 0.370</li>\n<li>Layer 18: 0.327</li>\n<li>Layer 27: 0.341</li>\n<li>Layer 36 (last layer): 0.311</li>\n<li>All 6 layers concatenated: 0.414</li>\n</ul>\n<p>In my view, deeper layers encode what the text is about, while earlier layers capture how it is written – word choice, punctuation and rhythm. Authorship lives in the style, and the topic acts as a trap, especially since the test prompts are completely new.</p>\n<p>Combined with a TF-IDF + stylometry model (0.369 on its own), the blend reached 0.439 CV and 0.420 on the public leaderboard. With only 4 layers (9, 18, 27 and 36), the same blend gave 0.429 CV and 0.414 on the leaderboard. This result has helped shape my plan for further work.</p>\n<p>The task is still challenging: it is hard to tell apart related models from the same lab, for example <code>claude-fable-5</code> (recall 0.11), <code>gpt-5.6-sol</code> (0.21) and the GLM models (~0.21). I need to give more thought to the right approach here.</p>\n<p>Notebook with the results for all layers and the blend plot: [ССЫЛКА]</p>\n<p>Has anyone tried layers 1–2 or the embedding layer itself? I'm curious whether accuracy keeps improving closer to the input. Please share your results.\nThanks!</p>",
+            "feedback_tracking_data": {},
+            "id": 3540603,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-10-18T12:02:31.660Z",
+            "raw_markdown": "Most embedding approaches use the last hidden layer. As it turned out, for this task the last layer was the least effective one.\n\nSetup: a frozen Qwen3-4B model (36 layers), mean pooling, and logistic regression on each layer; cross-validation split by `prompt_id`. In all my submissions this CV has been consistently about 0.015 above the public leaderboard, so I trust it for comparisons.\n\nBalanced accuracy by layer:\n- Layer 3 (8% depth): 0.391\n- Layer 6: 0.379\n- Layer 9: 0.370\n- Layer 18: 0.327\n- Layer 27: 0.341\n- Layer 36 (last layer): 0.311\n- All 6 layers concatenated: 0.414\n\nIn my view, deeper layers encode what the text is about, while earlier layers capture how it is written – word choice, punctuation and rhythm. Authorship lives in the style, and the topic acts as a trap, especially since the test prompts are completely new.\n\nCombined with a TF-IDF + stylometry model (0.369 on its own), the blend reached 0.439 CV and 0.420 on the public leaderboard. With only 4 layers (9, 18, 27 and 36), the same blend gave 0.429 CV and 0.414 on the leaderboard. This result has helped shape my plan for further work.\n\nThe task is still challenging: it is hard to tell apart related models from the same lab, for example `claude-fable-5` (recall 0.11), `gpt-5.6-sol` (0.21) and the GLM models (~0.21). I need to give more thought to the right approach here.\n\nNotebook with the results for all layers and the blend plot: [ССЫЛКА]\n\nHas anyone tried layers 1–2 or the embedding layer itself? I'm curious whether accuracy keeps improving closer to the input. Please share your results.\nThanks!",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "Aleksey Osipenko",
+                "id": 30842335,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/alekseyosipenko",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30842335-kg.jpg?t=2026-10-17-12-05-04",
+                "tier": "CONTRIBUTOR",
+                "url": "/alekseyosipenko",
+                "user_id": 30842335,
+                "user_name": "alekseyosipenko"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 10,
+              "total_votes": 9
+            }
+          },
+          "rawMarkdown": "Most embedding approaches use the last hidden layer. As it turned out, for this task the last layer was the least effective one.\n\nSetup: a frozen Qwen3-4B model (36 layers), mean pooling, and logistic regression on each layer; cross-validation split by `prompt_id`. In all my submissions this CV has been consistently about 0.015 above the public leaderboard, so I trust it for comparisons.\n\nBalanced accuracy by layer:\n- Layer 3 (8% depth): 0.391\n- Layer 6: 0.379\n- Layer 9: 0.370\n- Layer 18: 0.327\n- Layer 27: 0.341\n- Layer 36 (last layer): 0.311\n- All 6 layers concatenated: 0.414\n\nIn my view, deeper layers encode what the text is about, while earlier layers capture how it is written – word choice, punctuation and rhythm. Authorship lives in the style, and the topic acts as a trap, especially since the test prompts are completely new.\n\nCombined with a TF-IDF + stylometry model (0.369 on its own), the blend reached 0.439 CV and 0.420 on the public leaderboard. With only 4 layers (9, 18, 27 and 36), the same blend gave 0.429 CV and 0.414 on the leaderboard. This result has helped shape my plan for further work.\n\nThe task is still challenging: it is hard to tell apart related models from the same lab, for example `claude-fable-5` (recall 0.11), `gpt-5.6-sol` (0.21) and the GLM models (~0.21). I need to give more thought to the right approach here.\n\nNotebook with the results for all layers and the blend plot: [ССЫЛКА]\n\nHas anyone tried layers 1–2 or the embedding layer itself? I'm curious whether accuracy keeps improving closer to the input. Please share your results.\nThanks!",
+          "replies": [],
+          "votes": {
+            "totalVotes": 9
+          }
+        },
+        "firstMessageId": 3540603,
+        "id": 750462,
+        "name": "Early Qwen layers know the author better than late ones: 0.39 vs 0.31",
+        "postDate": "2026-10-18T12:02:31.659115300Z",
+        "url": "/competitions/name-that-llm/discussion/750462"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>Most embedding approaches use the last hidden layer. As it turned out, for this task the last layer was the least effective one.</p>\n<p>Setup: a frozen Qwen3-4B model (36 layers), mean pooling, and logistic regression on each layer; cross-validation split by <code>prompt_id</code>. In all my submissions this CV has been consistently about 0.015 above the public leaderboard, so I trust it for comparisons.</p>\n<p>Balanced accuracy by layer:</p>\n<ul>\n<li>Layer 3 (8% depth): 0.391</li>\n<li>Layer 6: 0.379</li>\n<li>Layer 9: 0.370</li>\n<li>Layer 18: 0.327</li>\n<li>Layer 27: 0.341</li>\n<li>Layer 36 (last layer): 0.311</li>\n<li>All 6 layers concatenated: 0.414</li>\n</ul>\n<p>In my view, deeper layers encode what the text is about, while earlier layers capture how it is written – word choice, punctuation and rhythm. Authorship lives in the style, and the topic acts as a trap, especially since the test prompts are completely new.</p>\n<p>Combined with a TF-IDF + stylometry model (0.369 on its own), the blend reached 0.439 CV and 0.420 on the public leaderboard. With only 4 layers (9, 18, 27 and 36), the same blend gave 0.429 CV and 0.414 on the leaderboard. This result has helped shape my plan for further work.</p>\n<p>The task is still challenging: it is hard to tell apart related models from the same lab, for example <code>claude-fable-5</code> (recall 0.11), <code>gpt-5.6-sol</code> (0.21) and the GLM models (~0.21). I need to give more thought to the right approach here.</p>\n<p>Notebook with the results for all layers and the blend plot: [ССЫЛКА]</p>\n<p>Has anyone tried layers 1–2 or the embedding layer itself? I'm curious whether accuracy keeps improving closer to the input. Please share your results.\nThanks!</p>",
+              "id": 3540603,
+              "post_date": "2026-10-18T12:02:31.660Z",
+              "raw_markdown": "Most embedding approaches use the last hidden layer. As it turned out, for this task the last layer was the least effective one.\n\nSetup: a frozen Qwen3-4B model (36 layers), mean pooling, and logistic regression on each layer; cross-validation split by `prompt_id`. In all my submissions this CV has been consistently about 0.015 above the public leaderboard, so I trust it for comparisons.\n\nBalanced accuracy by layer:\n- Layer 3 (8% depth): 0.391\n- Layer 6: 0.379\n- Layer 9: 0.370\n- Layer 18: 0.327\n- Layer 27: 0.341\n- Layer 36 (last layer): 0.311\n- All 6 layers concatenated: 0.414\n\nIn my view, deeper layers encode what the text is about, while earlier layers capture how it is written – word choice, punctuation and rhythm. Authorship lives in the style, and the topic acts as a trap, especially since the test prompts are completely new.\n\nCombined with a TF-IDF + stylometry model (0.369 on its own), the blend reached 0.439 CV and 0.420 on the public leaderboard. With only 4 layers (9, 18, 27 and 36), the same blend gave 0.429 CV and 0.414 on the leaderboard. This result has helped shape my plan for further work.\n\nThe task is still challenging: it is hard to tell apart related models from the same lab, for example `claude-fable-5` (recall 0.11), `gpt-5.6-sol` (0.21) and the GLM models (~0.21). I need to give more thought to the right approach here.\n\nNotebook with the results for all layers and the blend plot: [ССЫЛКА]\n\nHas anyone tried layers 1–2 or the embedding layer itself? I'm curious whether accuracy keeps improving closer to the input. Please share your results.\nThanks!",
+              "votes": 9
+            },
+            {
+              "content": "<p>Yeah, and I think their early layers contain more global information; as the layers go deeper, the features become more focused, from overall features to token-level hierarchy.</p>",
+              "id": 3540609,
+              "post_date": "2026-10-18T12:20:29.350Z",
+              "raw_markdown": "Yeah, and I think their early layers contain more global information; as the layers go deeper, the features become more focused, from overall features to token-level hierarchy.",
+              "replies": [
+                {
+                  "content": "<p>Thanks, makes sense. \nLooks like the last layers are   tuned too hard for next-token prediction  , so the author's style gets washed out there .\nFunny enough , the leaderboard backed this up later: the strongest public solutions cut Qwen3-8B down to 24 layers and pool features from several of them (2, 4, 6 … 24), not just the last one.</p>\n<p>I also looked at where models get confused the most. Roughly half of the errors are inside one family (gemini 3.7 vs 3.8, gpt-5.6 sol vs terra). If you're curious: <a href=\"https://www.kaggle.com/code/alekseyosipenko/name-that-llm-error-map-of-the-18-models\" target=\"_blank\">https://www.kaggle.com/code/alekseyosipenko/name-that-llm-error-map-of-the-18-models</a></p>",
+                  "id": 3549815,
+                  "post_date": "2026-11-04T08:41:58.020Z",
+                  "raw_markdown": "Thanks, makes sense. \nLooks like the last layers are   tuned too hard for next-token prediction  , so the author's style gets washed out there .\nFunny enough , the leaderboard backed this up later: the strongest public solutions cut Qwen3-8B down to 24 layers and pool features from several of them (2, 4, 6 ... 24), not just the last one.\n\nI also looked at where models get confused the most. Roughly half of the errors are inside one family (gemini 3.7 vs 3.8, gpt-5.6 sol vs terra). If you're curious: https://www.kaggle.com/code/alekseyosipenko/name-that-llm-error-map-of-the-18-models"
+                }
+              ],
+              "votes": 1
+            },
+            {
+              "id": 3540642,
+              "is_deleted": true,
+              "post_date": "2026-10-18T13:43:22.377Z",
+              "raw_markdown": ""
+            },
+            {
+              "content": "<p>I'm surprised, Opus is suggesting almost the same thing you posted. did it read your comment 😕</p>",
+              "id": 3548647,
+              "post_date": "2026-11-02T15:03:27.687Z",
+              "raw_markdown": "I'm surprised, Opus is suggesting almost the same thing you posted. did it read your comment :confused:\n",
+              "replies": [
+                {
+                  "content": "<p>no he is using opus too. even this discussion is written using claude 🤣</p>",
+                  "id": 3548858,
+                  "post_date": "2026-11-02T20:58:11.113Z",
+                  "raw_markdown": "no he is using opus too. even this discussion is written using claude 🤣",
+                  "replies": [
+                    {
+                      "content": "<p>Ha, fair enough 😄 \nYeah, I use Claude to help with code and English, it's not my first language. But the numbers come from my own runs and the notebook is public, so anyone can recheck them. If you find a mistake there, I'd honestly be glad to hear it.</p>",
+                      "id": 3549816,
+                      "post_date": "2026-11-04T08:43:57.060Z",
+                      "raw_markdown": "Ha, fair enough 😄 \nYeah, I use Claude to help with code and English, it's not my first language. But the numbers come from my own runs and the notebook is public, so anyone can recheck them. If you find a mistake there, I'd honestly be glad to hear it."
+                    }
+                  ]
+                },
+                {
+                  "content": "<p>Ha, I doubt it read my post specifically 🙂 It's more of a known thing: people have noticed for a while that middle layers keep more of the style, while the last ones are tuned for the next token. I just checked it on this competition's data and got the numbers. So if Opus says the same, at least neither of us made it up out of thin air.</p>",
+                  "id": 3549817,
+                  "post_date": "2026-11-04T08:44:48.987Z",
+                  "raw_markdown": "Ha, I doubt it read my post specifically 🙂 It's more of a known thing: people have noticed for a while that middle layers keep more of the style, while the last ones are tuned for the next token. I just checked it on this competition's data and got the numbers. So if Opus says the same, at least neither of us made it up out of thin air."
+                }
+              ]
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 30842335,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "30842335-kg.jpg?t=2026-10-17-12-05-04",
+            "author_user_display_name": "Aleksey Osipenko",
+            "author_user_name": "alekseyosipenko",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "comments": [
+              {
+                "author": {
+                  "display_name": "shanzhong8",
+                  "id": 22146004,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22146004-kg.jpeg?t=2025-05-25-15-58-10",
+                  "tier": "MASTER",
+                  "url": "/shanzhong8"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 1763,
+                "content": "<p>Yeah, and I think their early layers contain more global information; as the layers go deeper, the features become more focused, from overall features to token-level hierarchy.</p>",
+                "feedback_tracking_data": {},
+                "id": 3540609,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-18T12:20:29.350Z",
+                "raw_markdown": "Yeah, and I think their early layers contain more global information; as the layers go deeper, the features become more focused, from overall features to token-level hierarchy.",
+                "replies": [
+                  {
+                    "author": {
+                      "display_name": "Aleksey Osipenko",
+                      "id": 30842335,
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30842335-kg.jpg?t=2026-10-17-12-05-04",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/alekseyosipenko"
+                    },
+                    "author_type": "TOPIC",
+                    "competition_ranking": 1602,
+                    "content": "<p>Thanks, makes sense. \nLooks like the last layers are   tuned too hard for next-token prediction  , so the author's style gets washed out there .\nFunny enough , the leaderboard backed this up later: the strongest public solutions cut Qwen3-8B down to 24 layers and pool features from several of them (2, 4, 6 … 24), not just the last one.</p>\n<p>I also looked at where models get confused the most. Roughly half of the errors are inside one family (gemini 3.7 vs 3.8, gpt-5.6 sol vs terra). If you're curious: <a href=\"https://www.kaggle.com/code/alekseyosipenko/name-that-llm-error-map-of-the-18-models\" target=\"_blank\">https://www.kaggle.com/code/alekseyosipenko/name-that-llm-error-map-of-the-18-models</a></p>",
+                    "feedback_tracking_data": {},
+                    "id": 3549815,
+                    "is_thank_you": false,
+                    "kernel_version": 0,
+                    "parent": {},
+                    "post_date": "2026-11-04T08:41:58.020Z",
+                    "raw_markdown": "Thanks, makes sense. \nLooks like the last layers are   tuned too hard for next-token prediction  , so the author's style gets washed out there .\nFunny enough , the leaderboard backed this up later: the strongest public solutions cut Qwen3-8B down to 24 layers and pool features from several of them (2, 4, 6 ... 24), not just the last one.\n\nI also looked at where models get confused the most. Roughly half of the errors are inside one family (gemini 3.7 vs 3.8, gpt-5.6 sol vs terra). If you're curious: https://www.kaggle.com/code/alekseyosipenko/name-that-llm-error-map-of-the-18-models",
+                    "reactions": [
+                      {
+                        "emoji": "KAGGLE",
+                        "featured_user_names": [
+                          "enaimaan"
+                        ],
+                        "user_count": 1
+                      }
+                    ],
+                    "team_up_info": {
+                      "intro": "",
+                      "team_leader": {
+                        "display_name": "Aleksey Osipenko",
+                        "id": 30842335,
+                        "performance_tier": "CONTRIBUTOR",
+                        "profile_url": "/alekseyosipenko",
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30842335-kg.jpg?t=2026-10-17-12-05-04",
+                        "tier": "CONTRIBUTOR",
+                        "url": "/alekseyosipenko",
+                        "user_id": 30842335,
+                        "user_name": "alekseyosipenko"
+                      }
+                    },
+                    "votes": {
+                      "can_upvote": true
+                    }
+                  }
+                ],
+                "team_up_info": {
+                  "enabled": true,
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "shanzhong8",
+                    "id": 22146004,
+                    "performance_tier": "MASTER",
+                    "profile_url": "/shanzhong8",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22146004-kg.jpeg?t=2025-05-25-15-58-10",
+                    "tier": "MASTER",
+                    "url": "/shanzhong8",
+                    "user_id": 22146004,
+                    "user_name": "shanzhong8"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true,
+                  "total_upvotes": 1,
+                  "total_votes": 1
+                }
+              },
+              {
+                "author": {
+                  "display_name": "harshraj22",
+                  "id": 3384390,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3384390-kg.jpg",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/harshraj22"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 3199,
+                "content": "<p>I'm surprised, Opus is suggesting almost the same thing you posted. did it read your comment 😕</p>",
+                "feedback_tracking_data": {},
+                "id": 3548647,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-11-02T15:03:27.687Z",
+                "raw_markdown": "I'm surprised, Opus is suggesting almost the same thing you posted. did it read your comment :confused:\n",
+                "replies": [
+                  {
+                    "author": {
+                      "display_name": "Rayan Babur",
+                      "id": 15165210,
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15165210-kg.jpg?t=2025-08-29-13-32-52",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/rayanbabur"
+                    },
+                    "author_type": "COMMENT",
+                    "competition_ranking": 3160,
+                    "content": "<p>no he is using opus too. even this discussion is written using claude 🤣</p>",
+                    "feedback_tracking_data": {},
+                    "id": 3548858,
+                    "is_thank_you": false,
+                    "kernel_version": 0,
+                    "parent": {},
+                    "post_date": "2026-11-02T20:58:11.113Z",
+                    "raw_markdown": "no he is using opus too. even this discussion is written using claude 🤣",
+                    "replies": [
+                      {
+                        "author": {
+                          "display_name": "Aleksey Osipenko",
+                          "id": 30842335,
+                          "progression_opt_out": false,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30842335-kg.jpg?t=2026-10-17-12-05-04",
+                          "tier": "CONTRIBUTOR",
+                          "url": "/alekseyosipenko"
+                        },
+                        "author_type": "TOPIC",
+                        "competition_ranking": 1602,
+                        "content": "<p>Ha, fair enough 😄 \nYeah, I use Claude to help with code and English, it's not my first language. But the numbers come from my own runs and the notebook is public, so anyone can recheck them. If you find a mistake there, I'd honestly be glad to hear it.</p>",
+                        "feedback_tracking_data": {},
+                        "id": 3549816,
+                        "is_thank_you": false,
+                        "kernel_version": 0,
+                        "parent": {},
+                        "post_date": "2026-11-04T08:43:57.060Z",
+                        "raw_markdown": "Ha, fair enough 😄 \nYeah, I use Claude to help with code and English, it's not my first language. But the numbers come from my own runs and the notebook is public, so anyone can recheck them. If you find a mistake there, I'd honestly be glad to hear it.",
+                        "team_up_info": {
+                          "intro": "",
+                          "team_leader": {
+                            "display_name": "Aleksey Osipenko",
+                            "id": 30842335,
+                            "performance_tier": "CONTRIBUTOR",
+                            "profile_url": "/alekseyosipenko",
+                            "progression_opt_out": false,
+                            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30842335-kg.jpg?t=2026-10-17-12-05-04",
+                            "tier": "CONTRIBUTOR",
+                            "url": "/alekseyosipenko",
+                            "user_id": 30842335,
+                            "user_name": "alekseyosipenko"
+                          }
+                        },
+                        "votes": {
+                          "can_upvote": true
+                        }
+                      }
+                    ],
+                    "team_up_info": {
+                      "intro": "",
+                      "team_leader": {
+                        "display_name": "Rayan Babur",
+                        "id": 15165210,
+                        "performance_tier": "CONTRIBUTOR",
+                        "profile_url": "/rayanbabur",
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15165210-kg.jpg?t=2025-08-29-13-32-52",
+                        "tier": "CONTRIBUTOR",
+                        "url": "/rayanbabur",
+                        "user_id": 15165210,
+                        "user_name": "rayanbabur"
+                      }
+                    },
+                    "votes": {
+                      "can_upvote": true
+                    }
+                  },
+                  {
+                    "author": {
+                      "display_name": "Aleksey Osipenko",
+                      "id": 30842335,
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30842335-kg.jpg?t=2026-10-17-12-05-04",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/alekseyosipenko"
+                    },
+                    "author_type": "TOPIC",
+                    "competition_ranking": 1602,
+                    "content": "<p>Ha, I doubt it read my post specifically 🙂 It's more of a known thing: people have noticed for a while that middle layers keep more of the style, while the last ones are tuned for the next token. I just checked it on this competition's data and got the numbers. So if Opus says the same, at least neither of us made it up out of thin air.</p>",
+                    "feedback_tracking_data": {},
+                    "id": 3549817,
+                    "is_thank_you": false,
+                    "kernel_version": 0,
+                    "parent": {},
+                    "post_date": "2026-11-04T08:44:48.987Z",
+                    "raw_markdown": "Ha, I doubt it read my post specifically 🙂 It's more of a known thing: people have noticed for a while that middle layers keep more of the style, while the last ones are tuned for the next token. I just checked it on this competition's data and got the numbers. So if Opus says the same, at least neither of us made it up out of thin air.",
+                    "team_up_info": {
+                      "intro": "",
+                      "team_leader": {
+                        "display_name": "Aleksey Osipenko",
+                        "id": 30842335,
+                        "performance_tier": "CONTRIBUTOR",
+                        "profile_url": "/alekseyosipenko",
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30842335-kg.jpg?t=2026-10-17-12-05-04",
+                        "tier": "CONTRIBUTOR",
+                        "url": "/alekseyosipenko",
+                        "user_id": 30842335,
+                        "user_name": "alekseyosipenko"
+                      }
+                    },
+                    "votes": {
+                      "can_upvote": true
+                    }
+                  }
+                ],
+                "team_up_info": {
+                  "enabled": true,
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "harshraj22",
+                    "id": 3384390,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/harshraj22",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3384390-kg.jpg",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/harshraj22",
+                    "user_id": 3384390,
+                    "user_name": "harshraj22"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              },
+              {
+                "author": {
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "url": "/"
+                },
+                "author_type": "COMMENT",
+                "can_delete": true,
+                "feedback_tracking_data": {},
+                "id": 3540642,
+                "is_deleted": true,
+                "is_thank_you": false,
+                "is_user_author": true,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-18T13:43:22.377Z",
+                "raw_markdown": "",
+                "votes": {}
+              }
+            ],
+            "first_message": {
+              "author": {
+                "display_name": "Aleksey Osipenko",
+                "id": 30842335,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30842335-kg.jpg?t=2026-10-17-12-05-04",
+                "tier": "CONTRIBUTOR",
+                "url": "/alekseyosipenko"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 1602,
+              "content": "<p>Most embedding approaches use the last hidden layer. As it turned out, for this task the last layer was the least effective one.</p>\n<p>Setup: a frozen Qwen3-4B model (36 layers), mean pooling, and logistic regression on each layer; cross-validation split by <code>prompt_id</code>. In all my submissions this CV has been consistently about 0.015 above the public leaderboard, so I trust it for comparisons.</p>\n<p>Balanced accuracy by layer:</p>\n<ul>\n<li>Layer 3 (8% depth): 0.391</li>\n<li>Layer 6: 0.379</li>\n<li>Layer 9: 0.370</li>\n<li>Layer 18: 0.327</li>\n<li>Layer 27: 0.341</li>\n<li>Layer 36 (last layer): 0.311</li>\n<li>All 6 layers concatenated: 0.414</li>\n</ul>\n<p>In my view, deeper layers encode what the text is about, while earlier layers capture how it is written – word choice, punctuation and rhythm. Authorship lives in the style, and the topic acts as a trap, especially since the test prompts are completely new.</p>\n<p>Combined with a TF-IDF + stylometry model (0.369 on its own), the blend reached 0.439 CV and 0.420 on the public leaderboard. With only 4 layers (9, 18, 27 and 36), the same blend gave 0.429 CV and 0.414 on the leaderboard. This result has helped shape my plan for further work.</p>\n<p>The task is still challenging: it is hard to tell apart related models from the same lab, for example <code>claude-fable-5</code> (recall 0.11), <code>gpt-5.6-sol</code> (0.21) and the GLM models (~0.21). I need to give more thought to the right approach here.</p>\n<p>Notebook with the results for all layers and the blend plot: [ССЫЛКА]</p>\n<p>Has anyone tried layers 1–2 or the embedding layer itself? I'm curious whether accuracy keeps improving closer to the input. Please share your results.\nThanks!</p>",
+              "feedback_tracking_data": {},
+              "id": 3540603,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-18T12:02:31.660Z",
+              "raw_markdown": "Most embedding approaches use the last hidden layer. As it turned out, for this task the last layer was the least effective one.\n\nSetup: a frozen Qwen3-4B model (36 layers), mean pooling, and logistic regression on each layer; cross-validation split by `prompt_id`. In all my submissions this CV has been consistently about 0.015 above the public leaderboard, so I trust it for comparisons.\n\nBalanced accuracy by layer:\n- Layer 3 (8% depth): 0.391\n- Layer 6: 0.379\n- Layer 9: 0.370\n- Layer 18: 0.327\n- Layer 27: 0.341\n- Layer 36 (last layer): 0.311\n- All 6 layers concatenated: 0.414\n\nIn my view, deeper layers encode what the text is about, while earlier layers capture how it is written – word choice, punctuation and rhythm. Authorship lives in the style, and the topic acts as a trap, especially since the test prompts are completely new.\n\nCombined with a TF-IDF + stylometry model (0.369 on its own), the blend reached 0.439 CV and 0.420 on the public leaderboard. With only 4 layers (9, 18, 27 and 36), the same blend gave 0.429 CV and 0.414 on the leaderboard. This result has helped shape my plan for further work.\n\nThe task is still challenging: it is hard to tell apart related models from the same lab, for example `claude-fable-5` (recall 0.11), `gpt-5.6-sol` (0.21) and the GLM models (~0.21). I need to give more thought to the right approach here.\n\nNotebook with the results for all layers and the blend plot: [ССЫЛКА]\n\nHas anyone tried layers 1–2 or the embedding layer itself? I'm curious whether accuracy keeps improving closer to the input. Please share your results.\nThanks!",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Aleksey Osipenko",
+                  "id": 30842335,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/alekseyosipenko",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30842335-kg.jpg?t=2026-10-17-12-05-04",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/alekseyosipenko",
+                  "user_id": 30842335,
+                  "user_name": "alekseyosipenko"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 10,
+                "total_votes": 9
+              }
+            },
+            "first_message_id": 3540603,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 750462,
+            "name": "Early Qwen layers know the author better than late ones: 0.39 vs 0.31",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-10-18T12:02:31.659115300Z",
+            "total_messages": 7,
+            "total_votes": 9,
+            "url": "/competitions/name-that-llm/discussion/750462"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:23:15+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:23:15+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-11-04T08:44:48.986666700Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [
+    {
+      "slug": "name-that-llm",
+      "topic_id": 750462,
+      "message_id": 3540609,
+      "parent_message_id": null,
+      "author": "shanzhong8",
+      "author_url": "/shanzhong8",
+      "author_tier": "MASTER",
+      "post_date": "2026-10-18T12:20:29.350Z",
+      "raw_markdown": "Yeah, and I think their early layers contain more global information; as the layers go deeper, the features become more focused, from overall features to token-level hierarchy.",
+      "content_html": "<p>Yeah, and I think their early layers contain more global information; as the layers go deeper, the features become more focused, from overall features to token-level hierarchy.</p>",
+      "votes": 1,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:58:02+00:00",
+      "last_seen_at": "2026-11-16T16:23:15+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:23:15+00:00",
+      "remote_last_listed_at": "2026-11-16T16:23:15+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "shanzhong8",
+          "tier": "MASTER",
+          "url": "/shanzhong8"
+        },
+        "content": "<p>Yeah, and I think their early layers contain more global information; as the layers go deeper, the features become more focused, from overall features to token-level hierarchy.</p>",
+        "id": 3540609,
+        "isThankYou": false,
+        "postDate": "2026-10-18T12:20:29.350Z",
+        "raw": {
+          "author": {
+            "display_name": "shanzhong8",
+            "id": 22146004,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22146004-kg.jpeg?t=2025-05-25-15-58-10",
+            "tier": "MASTER",
+            "url": "/shanzhong8"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 1763,
+          "content": "<p>Yeah, and I think their early layers contain more global information; as the layers go deeper, the features become more focused, from overall features to token-level hierarchy.</p>",
+          "feedback_tracking_data": {},
+          "id": 3540609,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-18T12:20:29.350Z",
+          "raw_markdown": "Yeah, and I think their early layers contain more global information; as the layers go deeper, the features become more focused, from overall features to token-level hierarchy.",
+          "replies": [
+            {
+              "author": {
+                "display_name": "Aleksey Osipenko",
+                "id": 30842335,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30842335-kg.jpg?t=2026-10-17-12-05-04",
+                "tier": "CONTRIBUTOR",
+                "url": "/alekseyosipenko"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 1602,
+              "content": "<p>Thanks, makes sense. \nLooks like the last layers are   tuned too hard for next-token prediction  , so the author's style gets washed out there .\nFunny enough , the leaderboard backed this up later: the strongest public solutions cut Qwen3-8B down to 24 layers and pool features from several of them (2, 4, 6 … 24), not just the last one.</p>\n<p>I also looked at where models get confused the most. Roughly half of the errors are inside one family (gemini 3.7 vs 3.8, gpt-5.6 sol vs terra). If you're curious: <a href=\"https://www.kaggle.com/code/alekseyosipenko/name-that-llm-error-map-of-the-18-models\" target=\"_blank\">https://www.kaggle.com/code/alekseyosipenko/name-that-llm-error-map-of-the-18-models</a></p>",
+              "feedback_tracking_data": {},
+              "id": 3549815,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-04T08:41:58.020Z",
+              "raw_markdown": "Thanks, makes sense. \nLooks like the last layers are   tuned too hard for next-token prediction  , so the author's style gets washed out there .\nFunny enough , the leaderboard backed this up later: the strongest public solutions cut Qwen3-8B down to 24 layers and pool features from several of them (2, 4, 6 ... 24), not just the last one.\n\nI also looked at where models get confused the most. Roughly half of the errors are inside one family (gemini 3.7 vs 3.8, gpt-5.6 sol vs terra). If you're curious: https://www.kaggle.com/code/alekseyosipenko/name-that-llm-error-map-of-the-18-models",
+              "reactions": [
+                {
+                  "emoji": "KAGGLE",
+                  "featured_user_names": [
+                    "enaimaan"
+                  ],
+                  "user_count": 1
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Aleksey Osipenko",
+                  "id": 30842335,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/alekseyosipenko",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30842335-kg.jpg?t=2026-10-17-12-05-04",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/alekseyosipenko",
+                  "user_id": 30842335,
+                  "user_name": "alekseyosipenko"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            }
+          ],
+          "team_up_info": {
+            "enabled": true,
+            "intro": "",
+            "team_leader": {
+              "display_name": "shanzhong8",
+              "id": 22146004,
+              "performance_tier": "MASTER",
+              "profile_url": "/shanzhong8",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22146004-kg.jpeg?t=2025-05-25-15-58-10",
+              "tier": "MASTER",
+              "url": "/shanzhong8",
+              "user_id": 22146004,
+              "user_name": "shanzhong8"
+            }
+          },
+          "votes": {
+            "can_upvote": true,
+            "total_upvotes": 1,
+            "total_votes": 1
+          }
+        },
+        "rawMarkdown": "Yeah, and I think their early layers contain more global information; as the layers go deeper, the features become more focused, from overall features to token-level hierarchy.",
+        "replies": [
+          {
+            "author": {
+              "displayName": "Aleksey Osipenko",
+              "tier": "CONTRIBUTOR",
+              "url": "/alekseyosipenko"
+            },
+            "content": "<p>Thanks, makes sense. \nLooks like the last layers are   tuned too hard for next-token prediction  , so the author's style gets washed out there .\nFunny enough , the leaderboard backed this up later: the strongest public solutions cut Qwen3-8B down to 24 layers and pool features from several of them (2, 4, 6 … 24), not just the last one.</p>\n<p>I also looked at where models get confused the most. Roughly half of the errors are inside one family (gemini 3.7 vs 3.8, gpt-5.6 sol vs terra). If you're curious: <a href=\"https://www.kaggle.com/code/alekseyosipenko/name-that-llm-error-map-of-the-18-models\" target=\"_blank\">https://www.kaggle.com/code/alekseyosipenko/name-that-llm-error-map-of-the-18-models</a></p>",
+            "id": 3549815,
+            "isThankYou": false,
+            "postDate": "2026-11-04T08:41:58.020Z",
+            "raw": {
+              "author": {
+                "display_name": "Aleksey Osipenko",
+                "id": 30842335,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30842335-kg.jpg?t=2026-10-17-12-05-04",
+                "tier": "CONTRIBUTOR",
+                "url": "/alekseyosipenko"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 1602,
+              "content": "<p>Thanks, makes sense. \nLooks like the last layers are   tuned too hard for next-token prediction  , so the author's style gets washed out there .\nFunny enough , the leaderboard backed this up later: the strongest public solutions cut Qwen3-8B down to 24 layers and pool features from several of them (2, 4, 6 … 24), not just the last one.</p>\n<p>I also looked at where models get confused the most. Roughly half of the errors are inside one family (gemini 3.7 vs 3.8, gpt-5.6 sol vs terra). If you're curious: <a href=\"https://www.kaggle.com/code/alekseyosipenko/name-that-llm-error-map-of-the-18-models\" target=\"_blank\">https://www.kaggle.com/code/alekseyosipenko/name-that-llm-error-map-of-the-18-models</a></p>",
+              "feedback_tracking_data": {},
+              "id": 3549815,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-04T08:41:58.020Z",
+              "raw_markdown": "Thanks, makes sense. \nLooks like the last layers are   tuned too hard for next-token prediction  , so the author's style gets washed out there .\nFunny enough , the leaderboard backed this up later: the strongest public solutions cut Qwen3-8B down to 24 layers and pool features from several of them (2, 4, 6 ... 24), not just the last one.\n\nI also looked at where models get confused the most. Roughly half of the errors are inside one family (gemini 3.7 vs 3.8, gpt-5.6 sol vs terra). If you're curious: https://www.kaggle.com/code/alekseyosipenko/name-that-llm-error-map-of-the-18-models",
+              "reactions": [
+                {
+                  "emoji": "KAGGLE",
+                  "featured_user_names": [
+                    "enaimaan"
+                  ],
+                  "user_count": 1
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Aleksey Osipenko",
+                  "id": 30842335,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/alekseyosipenko",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30842335-kg.jpg?t=2026-10-17-12-05-04",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/alekseyosipenko",
+                  "user_id": 30842335,
+                  "user_name": "alekseyosipenko"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "Thanks, makes sense. \nLooks like the last layers are   tuned too hard for next-token prediction  , so the author's style gets washed out there .\nFunny enough , the leaderboard backed this up later: the strongest public solutions cut Qwen3-8B down to 24 layers and pool features from several of them (2, 4, 6 ... 24), not just the last one.\n\nI also looked at where models get confused the most. Roughly half of the errors are inside one family (gemini 3.7 vs 3.8, gpt-5.6 sol vs terra). If you're curious: https://www.kaggle.com/code/alekseyosipenko/name-that-llm-error-map-of-the-18-models",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "votes": {
+          "totalVotes": 1
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 750462,
+      "message_id": 3540642,
+      "parent_message_id": null,
+      "author": null,
+      "author_url": "/",
+      "author_tier": null,
+      "post_date": "2026-10-18T13:43:22.377Z",
+      "raw_markdown": null,
+      "content_html": null,
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:58:02+00:00",
+      "last_seen_at": "2026-11-16T16:23:15+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:23:15+00:00",
+      "remote_last_listed_at": "2026-11-16T16:23:15+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": null,
+          "tier": null,
+          "url": "/"
+        },
+        "content": null,
+        "id": 3540642,
+        "isThankYou": false,
+        "postDate": "2026-10-18T13:43:22.377Z",
+        "raw": {
+          "author": {
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+            "url": "/"
+          },
+          "author_type": "COMMENT",
+          "can_delete": true,
+          "feedback_tracking_data": {},
+          "id": 3540642,
+          "is_deleted": true,
+          "is_thank_you": false,
+          "is_user_author": true,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-18T13:43:22.377Z",
+          "raw_markdown": "",
+          "votes": {}
+        },
+        "rawMarkdown": null,
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 750462,
+      "message_id": 3548647,
+      "parent_message_id": null,
+      "author": "harshraj22",
+      "author_url": "/harshraj22",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-02T15:03:27.687Z",
+      "raw_markdown": "I'm surprised, Opus is suggesting almost the same thing you posted. did it read your comment :confused:\n",
+      "content_html": "<p>I'm surprised, Opus is suggesting almost the same thing you posted. did it read your comment 😕</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:58:02+00:00",
+      "last_seen_at": "2026-11-16T16:23:15+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:23:15+00:00",
+      "remote_last_listed_at": "2026-11-16T16:23:15+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "harshraj22",
+          "tier": "CONTRIBUTOR",
+          "url": "/harshraj22"
+        },
+        "content": "<p>I'm surprised, Opus is suggesting almost the same thing you posted. did it read your comment 😕</p>",
+        "id": 3548647,
+        "isThankYou": false,
+        "postDate": "2026-11-02T15:03:27.687Z",
+        "raw": {
+          "author": {
+            "display_name": "harshraj22",
+            "id": 3384390,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3384390-kg.jpg",
+            "tier": "CONTRIBUTOR",
+            "url": "/harshraj22"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 3199,
+          "content": "<p>I'm surprised, Opus is suggesting almost the same thing you posted. did it read your comment 😕</p>",
+          "feedback_tracking_data": {},
+          "id": 3548647,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-02T15:03:27.687Z",
+          "raw_markdown": "I'm surprised, Opus is suggesting almost the same thing you posted. did it read your comment :confused:\n",
+          "replies": [
+            {
+              "author": {
+                "display_name": "Rayan Babur",
+                "id": 15165210,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15165210-kg.jpg?t=2025-08-29-13-32-52",
+                "tier": "CONTRIBUTOR",
+                "url": "/rayanbabur"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 3160,
+              "content": "<p>no he is using opus too. even this discussion is written using claude 🤣</p>",
+              "feedback_tracking_data": {},
+              "id": 3548858,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-02T20:58:11.113Z",
+              "raw_markdown": "no he is using opus too. even this discussion is written using claude 🤣",
+              "replies": [
+                {
+                  "author": {
+                    "display_name": "Aleksey Osipenko",
+                    "id": 30842335,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30842335-kg.jpg?t=2026-10-17-12-05-04",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/alekseyosipenko"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 1602,
+                  "content": "<p>Ha, fair enough 😄 \nYeah, I use Claude to help with code and English, it's not my first language. But the numbers come from my own runs and the notebook is public, so anyone can recheck them. If you find a mistake there, I'd honestly be glad to hear it.</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3549816,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-04T08:43:57.060Z",
+                  "raw_markdown": "Ha, fair enough 😄 \nYeah, I use Claude to help with code and English, it's not my first language. But the numbers come from my own runs and the notebook is public, so anyone can recheck them. If you find a mistake there, I'd honestly be glad to hear it.",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Aleksey Osipenko",
+                      "id": 30842335,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/alekseyosipenko",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30842335-kg.jpg?t=2026-10-17-12-05-04",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/alekseyosipenko",
+                      "user_id": 30842335,
+                      "user_name": "alekseyosipenko"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Rayan Babur",
+                  "id": 15165210,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/rayanbabur",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15165210-kg.jpg?t=2025-08-29-13-32-52",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/rayanbabur",
+                  "user_id": 15165210,
+                  "user_name": "rayanbabur"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            {
+              "author": {
+                "display_name": "Aleksey Osipenko",
+                "id": 30842335,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30842335-kg.jpg?t=2026-10-17-12-05-04",
+                "tier": "CONTRIBUTOR",
+                "url": "/alekseyosipenko"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 1602,
+              "content": "<p>Ha, I doubt it read my post specifically 🙂 It's more of a known thing: people have noticed for a while that middle layers keep more of the style, while the last ones are tuned for the next token. I just checked it on this competition's data and got the numbers. So if Opus says the same, at least neither of us made it up out of thin air.</p>",
+              "feedback_tracking_data": {},
+              "id": 3549817,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-04T08:44:48.987Z",
+              "raw_markdown": "Ha, I doubt it read my post specifically 🙂 It's more of a known thing: people have noticed for a while that middle layers keep more of the style, while the last ones are tuned for the next token. I just checked it on this competition's data and got the numbers. So if Opus says the same, at least neither of us made it up out of thin air.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Aleksey Osipenko",
+                  "id": 30842335,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/alekseyosipenko",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30842335-kg.jpg?t=2026-10-17-12-05-04",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/alekseyosipenko",
+                  "user_id": 30842335,
+                  "user_name": "alekseyosipenko"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            }
+          ],
+          "team_up_info": {
+            "enabled": true,
+            "intro": "",
+            "team_leader": {
+              "display_name": "harshraj22",
+              "id": 3384390,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/harshraj22",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/3384390-kg.jpg",
+              "tier": "CONTRIBUTOR",
+              "url": "/harshraj22",
+              "user_id": 3384390,
+              "user_name": "harshraj22"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "I'm surprised, Opus is suggesting almost the same thing you posted. did it read your comment :confused:\n",
+        "replies": [
+          {
+            "author": {
+              "displayName": "Rayan Babur",
+              "tier": "CONTRIBUTOR",
+              "url": "/rayanbabur"
+            },
+            "content": "<p>no he is using opus too. even this discussion is written using claude 🤣</p>",
+            "id": 3548858,
+            "isThankYou": false,
+            "postDate": "2026-11-02T20:58:11.113Z",
+            "raw": {
+              "author": {
+                "display_name": "Rayan Babur",
+                "id": 15165210,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15165210-kg.jpg?t=2025-08-29-13-32-52",
+                "tier": "CONTRIBUTOR",
+                "url": "/rayanbabur"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 3160,
+              "content": "<p>no he is using opus too. even this discussion is written using claude 🤣</p>",
+              "feedback_tracking_data": {},
+              "id": 3548858,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-02T20:58:11.113Z",
+              "raw_markdown": "no he is using opus too. even this discussion is written using claude 🤣",
+              "replies": [
+                {
+                  "author": {
+                    "display_name": "Aleksey Osipenko",
+                    "id": 30842335,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30842335-kg.jpg?t=2026-10-17-12-05-04",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/alekseyosipenko"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 1602,
+                  "content": "<p>Ha, fair enough 😄 \nYeah, I use Claude to help with code and English, it's not my first language. But the numbers come from my own runs and the notebook is public, so anyone can recheck them. If you find a mistake there, I'd honestly be glad to hear it.</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3549816,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-04T08:43:57.060Z",
+                  "raw_markdown": "Ha, fair enough 😄 \nYeah, I use Claude to help with code and English, it's not my first language. But the numbers come from my own runs and the notebook is public, so anyone can recheck them. If you find a mistake there, I'd honestly be glad to hear it.",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Aleksey Osipenko",
+                      "id": 30842335,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/alekseyosipenko",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30842335-kg.jpg?t=2026-10-17-12-05-04",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/alekseyosipenko",
+                      "user_id": 30842335,
+                      "user_name": "alekseyosipenko"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Rayan Babur",
+                  "id": 15165210,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/rayanbabur",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15165210-kg.jpg?t=2025-08-29-13-32-52",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/rayanbabur",
+                  "user_id": 15165210,
+                  "user_name": "rayanbabur"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "no he is using opus too. even this discussion is written using claude 🤣",
+            "replies": [
+              {
+                "author": {
+                  "displayName": "Aleksey Osipenko",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/alekseyosipenko"
+                },
+                "content": "<p>Ha, fair enough 😄 \nYeah, I use Claude to help with code and English, it's not my first language. But the numbers come from my own runs and the notebook is public, so anyone can recheck them. If you find a mistake there, I'd honestly be glad to hear it.</p>",
+                "id": 3549816,
+                "isThankYou": false,
+                "postDate": "2026-11-04T08:43:57.060Z",
+                "raw": {
+                  "author": {
+                    "display_name": "Aleksey Osipenko",
+                    "id": 30842335,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30842335-kg.jpg?t=2026-10-17-12-05-04",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/alekseyosipenko"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 1602,
+                  "content": "<p>Ha, fair enough 😄 \nYeah, I use Claude to help with code and English, it's not my first language. But the numbers come from my own runs and the notebook is public, so anyone can recheck them. If you find a mistake there, I'd honestly be glad to hear it.</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3549816,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-04T08:43:57.060Z",
+                  "raw_markdown": "Ha, fair enough 😄 \nYeah, I use Claude to help with code and English, it's not my first language. But the numbers come from my own runs and the notebook is public, so anyone can recheck them. If you find a mistake there, I'd honestly be glad to hear it.",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Aleksey Osipenko",
+                      "id": 30842335,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/alekseyosipenko",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30842335-kg.jpg?t=2026-10-17-12-05-04",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/alekseyosipenko",
+                      "user_id": 30842335,
+                      "user_name": "alekseyosipenko"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                },
+                "rawMarkdown": "Ha, fair enough 😄 \nYeah, I use Claude to help with code and English, it's not my first language. But the numbers come from my own runs and the notebook is public, so anyone can recheck them. If you find a mistake there, I'd honestly be glad to hear it.",
+                "replies": [],
+                "votes": {
+                  "totalVotes": 0
+                }
+              }
+            ],
+            "votes": {
+              "totalVotes": 0
+            }
+          },
+          {
+            "author": {
+              "displayName": "Aleksey Osipenko",
+              "tier": "CONTRIBUTOR",
+              "url": "/alekseyosipenko"
+            },
+            "content": "<p>Ha, I doubt it read my post specifically 🙂 It's more of a known thing: people have noticed for a while that middle layers keep more of the style, while the last ones are tuned for the next token. I just checked it on this competition's data and got the numbers. So if Opus says the same, at least neither of us made it up out of thin air.</p>",
+            "id": 3549817,
+            "isThankYou": false,
+            "postDate": "2026-11-04T08:44:48.987Z",
+            "raw": {
+              "author": {
+                "display_name": "Aleksey Osipenko",
+                "id": 30842335,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30842335-kg.jpg?t=2026-10-17-12-05-04",
+                "tier": "CONTRIBUTOR",
+                "url": "/alekseyosipenko"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 1602,
+              "content": "<p>Ha, I doubt it read my post specifically 🙂 It's more of a known thing: people have noticed for a while that middle layers keep more of the style, while the last ones are tuned for the next token. I just checked it on this competition's data and got the numbers. So if Opus says the same, at least neither of us made it up out of thin air.</p>",
+              "feedback_tracking_data": {},
+              "id": 3549817,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-04T08:44:48.987Z",
+              "raw_markdown": "Ha, I doubt it read my post specifically 🙂 It's more of a known thing: people have noticed for a while that middle layers keep more of the style, while the last ones are tuned for the next token. I just checked it on this competition's data and got the numbers. So if Opus says the same, at least neither of us made it up out of thin air.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Aleksey Osipenko",
+                  "id": 30842335,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/alekseyosipenko",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30842335-kg.jpg?t=2026-10-17-12-05-04",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/alekseyosipenko",
+                  "user_id": 30842335,
+                  "user_name": "alekseyosipenko"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "Ha, I doubt it read my post specifically 🙂 It's more of a known thing: people have noticed for a while that middle layers keep more of the style, while the last ones are tuned for the next token. I just checked it on this competition's data and got the numbers. So if Opus says the same, at least neither of us made it up out of thin air.",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 750462,
+      "message_id": 3548858,
+      "parent_message_id": 3548647,
+      "author": "Rayan Babur",
+      "author_url": "/rayanbabur",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-02T20:58:11.113Z",
+      "raw_markdown": "no he is using opus too. even this discussion is written using claude 🤣",
+      "content_html": "<p>no he is using opus too. even this discussion is written using claude 🤣</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 1,
+      "first_seen_at": "2026-11-04T06:58:02+00:00",
+      "last_seen_at": "2026-11-16T16:23:15+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:23:15+00:00",
+      "remote_last_listed_at": "2026-11-16T16:23:15+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Rayan Babur",
+          "tier": "CONTRIBUTOR",
+          "url": "/rayanbabur"
+        },
+        "content": "<p>no he is using opus too. even this discussion is written using claude 🤣</p>",
+        "id": 3548858,
+        "isThankYou": false,
+        "postDate": "2026-11-02T20:58:11.113Z",
+        "raw": {
+          "author": {
+            "display_name": "Rayan Babur",
+            "id": 15165210,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15165210-kg.jpg?t=2025-08-29-13-32-52",
+            "tier": "CONTRIBUTOR",
+            "url": "/rayanbabur"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 3160,
+          "content": "<p>no he is using opus too. even this discussion is written using claude 🤣</p>",
+          "feedback_tracking_data": {},
+          "id": 3548858,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-02T20:58:11.113Z",
+          "raw_markdown": "no he is using opus too. even this discussion is written using claude 🤣",
+          "replies": [
+            {
+              "author": {
+                "display_name": "Aleksey Osipenko",
+                "id": 30842335,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30842335-kg.jpg?t=2026-10-17-12-05-04",
+                "tier": "CONTRIBUTOR",
+                "url": "/alekseyosipenko"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 1602,
+              "content": "<p>Ha, fair enough 😄 \nYeah, I use Claude to help with code and English, it's not my first language. But the numbers come from my own runs and the notebook is public, so anyone can recheck them. If you find a mistake there, I'd honestly be glad to hear it.</p>",
+              "feedback_tracking_data": {},
+              "id": 3549816,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-04T08:43:57.060Z",
+              "raw_markdown": "Ha, fair enough 😄 \nYeah, I use Claude to help with code and English, it's not my first language. But the numbers come from my own runs and the notebook is public, so anyone can recheck them. If you find a mistake there, I'd honestly be glad to hear it.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Aleksey Osipenko",
+                  "id": 30842335,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/alekseyosipenko",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30842335-kg.jpg?t=2026-10-17-12-05-04",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/alekseyosipenko",
+                  "user_id": 30842335,
+                  "user_name": "alekseyosipenko"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            }
+          ],
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Rayan Babur",
+              "id": 15165210,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/rayanbabur",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15165210-kg.jpg?t=2025-08-29-13-32-52",
+              "tier": "CONTRIBUTOR",
+              "url": "/rayanbabur",
+              "user_id": 15165210,
+              "user_name": "rayanbabur"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "no he is using opus too. even this discussion is written using claude 🤣",
+        "replies": [
+          {
+            "author": {
+              "displayName": "Aleksey Osipenko",
+              "tier": "CONTRIBUTOR",
+              "url": "/alekseyosipenko"
+            },
+            "content": "<p>Ha, fair enough 😄 \nYeah, I use Claude to help with code and English, it's not my first language. But the numbers come from my own runs and the notebook is public, so anyone can recheck them. If you find a mistake there, I'd honestly be glad to hear it.</p>",
+            "id": 3549816,
+            "isThankYou": false,
+            "postDate": "2026-11-04T08:43:57.060Z",
+            "raw": {
+              "author": {
+                "display_name": "Aleksey Osipenko",
+                "id": 30842335,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30842335-kg.jpg?t=2026-10-17-12-05-04",
+                "tier": "CONTRIBUTOR",
+                "url": "/alekseyosipenko"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 1602,
+              "content": "<p>Ha, fair enough 😄 \nYeah, I use Claude to help with code and English, it's not my first language. But the numbers come from my own runs and the notebook is public, so anyone can recheck them. If you find a mistake there, I'd honestly be glad to hear it.</p>",
+              "feedback_tracking_data": {},
+              "id": 3549816,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-04T08:43:57.060Z",
+              "raw_markdown": "Ha, fair enough 😄 \nYeah, I use Claude to help with code and English, it's not my first language. But the numbers come from my own runs and the notebook is public, so anyone can recheck them. If you find a mistake there, I'd honestly be glad to hear it.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Aleksey Osipenko",
+                  "id": 30842335,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/alekseyosipenko",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30842335-kg.jpg?t=2026-10-17-12-05-04",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/alekseyosipenko",
+                  "user_id": 30842335,
+                  "user_name": "alekseyosipenko"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "Ha, fair enough 😄 \nYeah, I use Claude to help with code and English, it's not my first language. But the numbers come from my own runs and the notebook is public, so anyone can recheck them. If you find a mistake there, I'd honestly be glad to hear it.",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 750462,
+      "message_id": 3549815,
+      "parent_message_id": 3540609,
+      "author": "Aleksey Osipenko",
+      "author_url": "/alekseyosipenko",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-04T08:41:58.020Z",
+      "raw_markdown": "Thanks, makes sense. \nLooks like the last layers are   tuned too hard for next-token prediction  , so the author's style gets washed out there .\nFunny enough , the leaderboard backed this up later: the strongest public solutions cut Qwen3-8B down to 24 layers and pool features from several of them (2, 4, 6 ... 24), not just the last one.\n\nI also looked at where models get confused the most. Roughly half of the errors are inside one family (gemini 3.7 vs 3.8, gpt-5.6 sol vs terra). If you're curious: https://www.kaggle.com/code/alekseyosipenko/name-that-llm-error-map-of-the-18-models",
+      "content_html": "<p>Thanks, makes sense. \nLooks like the last layers are   tuned too hard for next-token prediction  , so the author's style gets washed out there .\nFunny enough , the leaderboard backed this up later: the strongest public solutions cut Qwen3-8B down to 24 layers and pool features from several of them (2, 4, 6 … 24), not just the last one.</p>\n<p>I also looked at where models get confused the most. Roughly half of the errors are inside one family (gemini 3.7 vs 3.8, gpt-5.6 sol vs terra). If you're curious: <a href=\"https://www.kaggle.com/code/alekseyosipenko/name-that-llm-error-map-of-the-18-models\" target=\"_blank\">https://www.kaggle.com/code/alekseyosipenko/name-that-llm-error-map-of-the-18-models</a></p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 1,
+      "first_seen_at": "2026-11-09T03:54:50+00:00",
+      "last_seen_at": "2026-11-16T16:23:15+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:23:15+00:00",
+      "remote_last_listed_at": "2026-11-16T16:23:15+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Aleksey Osipenko",
+          "tier": "CONTRIBUTOR",
+          "url": "/alekseyosipenko"
+        },
+        "content": "<p>Thanks, makes sense. \nLooks like the last layers are   tuned too hard for next-token prediction  , so the author's style gets washed out there .\nFunny enough , the leaderboard backed this up later: the strongest public solutions cut Qwen3-8B down to 24 layers and pool features from several of them (2, 4, 6 … 24), not just the last one.</p>\n<p>I also looked at where models get confused the most. Roughly half of the errors are inside one family (gemini 3.7 vs 3.8, gpt-5.6 sol vs terra). If you're curious: <a href=\"https://www.kaggle.com/code/alekseyosipenko/name-that-llm-error-map-of-the-18-models\" target=\"_blank\">https://www.kaggle.com/code/alekseyosipenko/name-that-llm-error-map-of-the-18-models</a></p>",
+        "id": 3549815,
+        "isThankYou": false,
+        "postDate": "2026-11-04T08:41:58.020Z",
+        "raw": {
+          "author": {
+            "display_name": "Aleksey Osipenko",
+            "id": 30842335,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30842335-kg.jpg?t=2026-10-17-12-05-04",
+            "tier": "CONTRIBUTOR",
+            "url": "/alekseyosipenko"
+          },
+          "author_type": "TOPIC",
+          "competition_ranking": 1602,
+          "content": "<p>Thanks, makes sense. \nLooks like the last layers are   tuned too hard for next-token prediction  , so the author's style gets washed out there .\nFunny enough , the leaderboard backed this up later: the strongest public solutions cut Qwen3-8B down to 24 layers and pool features from several of them (2, 4, 6 … 24), not just the last one.</p>\n<p>I also looked at where models get confused the most. Roughly half of the errors are inside one family (gemini 3.7 vs 3.8, gpt-5.6 sol vs terra). If you're curious: <a href=\"https://www.kaggle.com/code/alekseyosipenko/name-that-llm-error-map-of-the-18-models\" target=\"_blank\">https://www.kaggle.com/code/alekseyosipenko/name-that-llm-error-map-of-the-18-models</a></p>",
+          "feedback_tracking_data": {},
+          "id": 3549815,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-04T08:41:58.020Z",
+          "raw_markdown": "Thanks, makes sense. \nLooks like the last layers are   tuned too hard for next-token prediction  , so the author's style gets washed out there .\nFunny enough , the leaderboard backed this up later: the strongest public solutions cut Qwen3-8B down to 24 layers and pool features from several of them (2, 4, 6 ... 24), not just the last one.\n\nI also looked at where models get confused the most. Roughly half of the errors are inside one family (gemini 3.7 vs 3.8, gpt-5.6 sol vs terra). If you're curious: https://www.kaggle.com/code/alekseyosipenko/name-that-llm-error-map-of-the-18-models",
+          "reactions": [
+            {
+              "emoji": "KAGGLE",
+              "featured_user_names": [
+                "enaimaan"
+              ],
+              "user_count": 1
+            }
+          ],
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Aleksey Osipenko",
+              "id": 30842335,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/alekseyosipenko",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30842335-kg.jpg?t=2026-10-17-12-05-04",
+              "tier": "CONTRIBUTOR",
+              "url": "/alekseyosipenko",
+              "user_id": 30842335,
+              "user_name": "alekseyosipenko"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "Thanks, makes sense. \nLooks like the last layers are   tuned too hard for next-token prediction  , so the author's style gets washed out there .\nFunny enough , the leaderboard backed this up later: the strongest public solutions cut Qwen3-8B down to 24 layers and pool features from several of them (2, 4, 6 ... 24), not just the last one.\n\nI also looked at where models get confused the most. Roughly half of the errors are inside one family (gemini 3.7 vs 3.8, gpt-5.6 sol vs terra). If you're curious: https://www.kaggle.com/code/alekseyosipenko/name-that-llm-error-map-of-the-18-models",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 750462,
+      "message_id": 3549816,
+      "parent_message_id": 3548858,
+      "author": "Aleksey Osipenko",
+      "author_url": "/alekseyosipenko",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-04T08:43:57.060Z",
+      "raw_markdown": "Ha, fair enough 😄 \nYeah, I use Claude to help with code and English, it's not my first language. But the numbers come from my own runs and the notebook is public, so anyone can recheck them. If you find a mistake there, I'd honestly be glad to hear it.",
+      "content_html": "<p>Ha, fair enough 😄 \nYeah, I use Claude to help with code and English, it's not my first language. But the numbers come from my own runs and the notebook is public, so anyone can recheck them. If you find a mistake there, I'd honestly be glad to hear it.</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 2,
+      "first_seen_at": "2026-11-09T03:54:50+00:00",
+      "last_seen_at": "2026-11-16T16:23:15+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:23:15+00:00",
+      "remote_last_listed_at": "2026-11-16T16:23:15+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Aleksey Osipenko",
+          "tier": "CONTRIBUTOR",
+          "url": "/alekseyosipenko"
+        },
+        "content": "<p>Ha, fair enough 😄 \nYeah, I use Claude to help with code and English, it's not my first language. But the numbers come from my own runs and the notebook is public, so anyone can recheck them. If you find a mistake there, I'd honestly be glad to hear it.</p>",
+        "id": 3549816,
+        "isThankYou": false,
+        "postDate": "2026-11-04T08:43:57.060Z",
+        "raw": {
+          "author": {
+            "display_name": "Aleksey Osipenko",
+            "id": 30842335,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30842335-kg.jpg?t=2026-10-17-12-05-04",
+            "tier": "CONTRIBUTOR",
+            "url": "/alekseyosipenko"
+          },
+          "author_type": "TOPIC",
+          "competition_ranking": 1602,
+          "content": "<p>Ha, fair enough 😄 \nYeah, I use Claude to help with code and English, it's not my first language. But the numbers come from my own runs and the notebook is public, so anyone can recheck them. If you find a mistake there, I'd honestly be glad to hear it.</p>",
+          "feedback_tracking_data": {},
+          "id": 3549816,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-04T08:43:57.060Z",
+          "raw_markdown": "Ha, fair enough 😄 \nYeah, I use Claude to help with code and English, it's not my first language. But the numbers come from my own runs and the notebook is public, so anyone can recheck them. If you find a mistake there, I'd honestly be glad to hear it.",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Aleksey Osipenko",
+              "id": 30842335,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/alekseyosipenko",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30842335-kg.jpg?t=2026-10-17-12-05-04",
+              "tier": "CONTRIBUTOR",
+              "url": "/alekseyosipenko",
+              "user_id": 30842335,
+              "user_name": "alekseyosipenko"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "Ha, fair enough 😄 \nYeah, I use Claude to help with code and English, it's not my first language. But the numbers come from my own runs and the notebook is public, so anyone can recheck them. If you find a mistake there, I'd honestly be glad to hear it.",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 750462,
+      "message_id": 3549817,
+      "parent_message_id": 3548647,
+      "author": "Aleksey Osipenko",
+      "author_url": "/alekseyosipenko",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-04T08:44:48.987Z",
+      "raw_markdown": "Ha, I doubt it read my post specifically 🙂 It's more of a known thing: people have noticed for a while that middle layers keep more of the style, while the last ones are tuned for the next token. I just checked it on this competition's data and got the numbers. So if Opus says the same, at least neither of us made it up out of thin air.",
+      "content_html": "<p>Ha, I doubt it read my post specifically 🙂 It's more of a known thing: people have noticed for a while that middle layers keep more of the style, while the last ones are tuned for the next token. I just checked it on this competition's data and got the numbers. So if Opus says the same, at least neither of us made it up out of thin air.</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 1,
+      "first_seen_at": "2026-11-09T03:54:50+00:00",
+      "last_seen_at": "2026-11-16T16:23:15+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:23:15+00:00",
+      "remote_last_listed_at": "2026-11-16T16:23:15+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Aleksey Osipenko",
+          "tier": "CONTRIBUTOR",
+          "url": "/alekseyosipenko"
+        },
+        "content": "<p>Ha, I doubt it read my post specifically 🙂 It's more of a known thing: people have noticed for a while that middle layers keep more of the style, while the last ones are tuned for the next token. I just checked it on this competition's data and got the numbers. So if Opus says the same, at least neither of us made it up out of thin air.</p>",
+        "id": 3549817,
+        "isThankYou": false,
+        "postDate": "2026-11-04T08:44:48.987Z",
+        "raw": {
+          "author": {
+            "display_name": "Aleksey Osipenko",
+            "id": 30842335,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30842335-kg.jpg?t=2026-10-17-12-05-04",
+            "tier": "CONTRIBUTOR",
+            "url": "/alekseyosipenko"
+          },
+          "author_type": "TOPIC",
+          "competition_ranking": 1602,
+          "content": "<p>Ha, I doubt it read my post specifically 🙂 It's more of a known thing: people have noticed for a while that middle layers keep more of the style, while the last ones are tuned for the next token. I just checked it on this competition's data and got the numbers. So if Opus says the same, at least neither of us made it up out of thin air.</p>",
+          "feedback_tracking_data": {},
+          "id": 3549817,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-04T08:44:48.987Z",
+          "raw_markdown": "Ha, I doubt it read my post specifically 🙂 It's more of a known thing: people have noticed for a while that middle layers keep more of the style, while the last ones are tuned for the next token. I just checked it on this competition's data and got the numbers. So if Opus says the same, at least neither of us made it up out of thin air.",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Aleksey Osipenko",
+              "id": 30842335,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/alekseyosipenko",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/30842335-kg.jpg?t=2026-10-17-12-05-04",
+              "tier": "CONTRIBUTOR",
+              "url": "/alekseyosipenko",
+              "user_id": 30842335,
+              "user_name": "alekseyosipenko"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "Ha, I doubt it read my post specifically 🙂 It's more of a known thing: people have noticed for a while that middle layers keep more of the style, while the last ones are tuned for the next token. I just checked it on this competition's data and got the numbers. So if Opus says the same, at least neither of us made it up out of thin air.",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    }
+  ],
+  "writeup": null
+}

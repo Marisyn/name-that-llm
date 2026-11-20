@@ -1,0 +1,414 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 752270,
+    "title": "Clarification on External Data: Paid and Region-Restricted LLMs",
+    "author": "Seeing Times",
+    "author_url": "/seeingtimes",
+    "author_tier": "EXPERT",
+    "post_date": "2026-10-24T06:36:40.551778700Z",
+    "last_comment_post_date": "2026-10-25T07:11:04.416666700Z",
+    "comment_count": 1,
+    "votes": 4,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/752270",
+    "first_message_id": 3543859,
+    "first_seen_at": "2026-11-04T06:56:16+00:00",
+    "last_seen_at": "2026-11-16T16:36:03+00:00",
+    "detail_last_synced_at": "2026-11-16T16:23:58+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "064c057c5ae6cd0c46aa1fa924841910f24ca36972185fb5cd24f416f834f58e",
+    "listing_metrics_hash": "818a5cc0f2253a82207ce555576d24d0d4b4461b2ac293b834a011f9d570c30a",
+    "detail_content_hash": "edf5d8cf48759d00859883cd1af06377a395012b5de83bfbfd4459a7f8c3e9a0",
+    "detail_last_checked_at": "2026-11-16T16:23:58+00:00",
+    "detail_next_check_at": "2026-11-23T16:23:58+00:00",
+    "detail_unchanged_count": 2,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 1,
+      "firstForumMessageId": null,
+      "id": 752270,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-10-25T07:11:04.416666700Z",
+      "postDate": "2026-10-24T06:36:40.551778700Z",
+      "raw": {
+        "comment_count": 1,
+        "id": 752270,
+        "last_comment_post_date": "2026-10-25T07:11:04.416666700Z",
+        "post_date": "2026-10-24T06:36:40.551778700Z",
+        "title": "Clarification on External Data: Paid and Region-Restricted LLMs",
+        "topic_url": "/competitions/name-that-llm/discussion/752270",
+        "votes": 4
+      },
+      "title": "Clarification on External Data: Paid and Region-Restricted LLMs",
+      "topicUrl": "/competitions/name-that-llm/discussion/752270",
+      "votes": 4
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "EXPERT",
+        "authorUserDisplayName": "Seeing Times",
+        "authorUserName": "seeingtimes",
+        "comments": [
+          {
+            "author": {
+              "displayName": "Md Muqtadir Fuad",
+              "tier": "CONTRIBUTOR",
+              "url": "/mdmuqtadirfuad"
+            },
+            "content": "<p>Hi there!\nI'm not among the organizers. But I guess this discussion thread might help you!\n<a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/749447\" target=\"_blank\">https://www.kaggle.com/competitions/name-that-llm/discussion/749447</a></p>\n<p>To my knowledge, paid API are allowed but you will have to \"public\" the dataset later, may be when the competition is near end (they havenot clarified even.. D)</p>",
+            "id": 3544299,
+            "isThankYou": false,
+            "postDate": "2026-10-25T07:11:04.417Z",
+            "raw": {
+              "author": {
+                "display_name": "Md Muqtadir Fuad",
+                "id": 18006173,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/18006173-kg.jpg?t=2026-11-01-19-41-44",
+                "tier": "CONTRIBUTOR",
+                "url": "/mdmuqtadirfuad"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 1253,
+              "content": "<p>Hi there!\nI'm not among the organizers. But I guess this discussion thread might help you!\n<a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/749447\" target=\"_blank\">https://www.kaggle.com/competitions/name-that-llm/discussion/749447</a></p>\n<p>To my knowledge, paid API are allowed but you will have to \"public\" the dataset later, may be when the competition is near end (they havenot clarified even.. D)</p>",
+              "feedback_tracking_data": {},
+              "id": 3544299,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-25T07:11:04.417Z",
+              "raw_markdown": "Hi there!\nI'm not among the organizers. But I guess this discussion thread might help you!\n[https://www.kaggle.com/competitions/name-that-llm/discussion/749447](https://www.kaggle.com/competitions/name-that-llm/discussion/749447)\n\nTo my knowledge, paid API are allowed but you will have to \"public\" the dataset later, may be when the competition is near end (they havenot clarified even.. D)\n",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Md Muqtadir Fuad",
+                  "id": 18006173,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/mdmuqtadirfuad",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/18006173-kg.jpg?t=2026-11-01-19-41-44",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/mdmuqtadirfuad",
+                  "user_id": 18006173,
+                  "user_name": "mdmuqtadirfuad"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "Hi there!\nI'm not among the organizers. But I guess this discussion thread might help you!\n[https://www.kaggle.com/competitions/name-that-llm/discussion/749447](https://www.kaggle.com/competitions/name-that-llm/discussion/749447)\n\nTo my knowledge, paid API are allowed but you will have to \"public\" the dataset later, may be when the competition is near end (they havenot clarified even.. D)\n",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "expectedCommentCount": 1,
+        "firstMessage": {
+          "author": {
+            "displayName": "Seeing Times",
+            "tier": "EXPERT",
+            "url": "/seeingtimes"
+          },
+          "content": "<p>I would like to ask for clarification regarding the use of external LLMs as External Data in this competition.</p>\n<p>Section 6(a) of the Competition Rules states:</p>\n<p>“You may use data other than the Competition Data (‘External Data’) to develop and test your Submissions. However, you will ensure the External Data is either publicly available and equally accessible to use by all Participants of the Competition for purposes of the competition at no cost to the other Participants…”</p>\n<p>This raises an important question for this competition, since the task is to determine which text was generated by an LLM.</p>\n<p>Many potentially useful LLMs are not equally accessible to all participants. For example:</p>\n<p>Some LLMs require paid subscriptions or paid API access.\nParticipants may need to pay for API credits, monthly subscriptions, or minimum usage fees in order to generate the external data.</p>\n<p>Some models have geographical restrictions.\nCertain commercial LLM services are explicitly unavailable to users in particular countries or regions. Therefore, participants in different countries may not have the same ability to access and generate data from these models.</p>\n<p>Some services have account or eligibility restrictions.\nAccess may depend on the user's country, phone number, payment method, organization, or other eligibility requirements.</p>\n<p>Different participants may therefore have access to substantially different sets of LLM-generated text.\nThis could potentially become important in this competition because the identity and characteristics of the underlying LLM are directly related to the prediction target.</p>\n<p>For example, if Participant A can legally access and use Model X to generate a large external dataset, while Participant B is unable to access Model X because the service is unavailable in their region, it is unclear whether Model X-generated text should be considered “equally accessible” External Data under Section 6(a).</p>\n<p>Questions for the organizers</p>\n<p>Could the organizers please clarify:</p>\n<p>Are paid commercial LLM APIs allowed as External Data?</p>\n<p>If so, does the requirement of “equally accessible” mean that the service must be available to participants worldwide, or is availability to participants who can independently purchase access sufficient?</p>\n<p>Are LLMs that are explicitly unavailable in certain countries or regions allowed?</p>\n<p>Are models requiring a paid subscription, API credits, or other commercial access considered compliant External Data?</p>\n<p>If a participant uses a commercially available LLM to generate synthetic training data, should the participant disclose the exact model/version and access method in the winning solution documentation?</p>\n<p>I am not suggesting that commercial LLMs should necessarily be prohibited. Rather, I would appreciate clarification on how Section 6(a) should be interpreted in this particular competition, where the characteristics of different LLMs may directly affect the prediction target.</p>\n<p>A clear interpretation would help ensure that participants from different countries and regions can understand the same rules and compete under comparable conditions.</p>\n<p>Thank you to the organizers for clarifying this point.</p>",
+          "id": 3543859,
+          "isThankYou": false,
+          "postDate": "2026-10-24T06:36:40.553Z",
+          "raw": {
+            "author": {
+              "display_name": "Seeing Times",
+              "id": 6625861,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/6625861-kg.jpg?t=2023-10-19-06-40-07",
+              "tier": "EXPERT",
+              "url": "/seeingtimes"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 5721,
+            "content": "<p>I would like to ask for clarification regarding the use of external LLMs as External Data in this competition.</p>\n<p>Section 6(a) of the Competition Rules states:</p>\n<p>“You may use data other than the Competition Data (‘External Data’) to develop and test your Submissions. However, you will ensure the External Data is either publicly available and equally accessible to use by all Participants of the Competition for purposes of the competition at no cost to the other Participants…”</p>\n<p>This raises an important question for this competition, since the task is to determine which text was generated by an LLM.</p>\n<p>Many potentially useful LLMs are not equally accessible to all participants. For example:</p>\n<p>Some LLMs require paid subscriptions or paid API access.\nParticipants may need to pay for API credits, monthly subscriptions, or minimum usage fees in order to generate the external data.</p>\n<p>Some models have geographical restrictions.\nCertain commercial LLM services are explicitly unavailable to users in particular countries or regions. Therefore, participants in different countries may not have the same ability to access and generate data from these models.</p>\n<p>Some services have account or eligibility restrictions.\nAccess may depend on the user's country, phone number, payment method, organization, or other eligibility requirements.</p>\n<p>Different participants may therefore have access to substantially different sets of LLM-generated text.\nThis could potentially become important in this competition because the identity and characteristics of the underlying LLM are directly related to the prediction target.</p>\n<p>For example, if Participant A can legally access and use Model X to generate a large external dataset, while Participant B is unable to access Model X because the service is unavailable in their region, it is unclear whether Model X-generated text should be considered “equally accessible” External Data under Section 6(a).</p>\n<p>Questions for the organizers</p>\n<p>Could the organizers please clarify:</p>\n<p>Are paid commercial LLM APIs allowed as External Data?</p>\n<p>If so, does the requirement of “equally accessible” mean that the service must be available to participants worldwide, or is availability to participants who can independently purchase access sufficient?</p>\n<p>Are LLMs that are explicitly unavailable in certain countries or regions allowed?</p>\n<p>Are models requiring a paid subscription, API credits, or other commercial access considered compliant External Data?</p>\n<p>If a participant uses a commercially available LLM to generate synthetic training data, should the participant disclose the exact model/version and access method in the winning solution documentation?</p>\n<p>I am not suggesting that commercial LLMs should necessarily be prohibited. Rather, I would appreciate clarification on how Section 6(a) should be interpreted in this particular competition, where the characteristics of different LLMs may directly affect the prediction target.</p>\n<p>A clear interpretation would help ensure that participants from different countries and regions can understand the same rules and compete under comparable conditions.</p>\n<p>Thank you to the organizers for clarifying this point.</p>",
+            "feedback_tracking_data": {},
+            "id": 3543859,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-10-24T06:36:40.553Z",
+            "raw_markdown": "I would like to ask for clarification regarding the use of external LLMs as External Data in this competition.\n\nSection 6(a) of the Competition Rules states:\n\n“You may use data other than the Competition Data (‘External Data’) to develop and test your Submissions. However, you will ensure the External Data is either publicly available and equally accessible to use by all Participants of the Competition for purposes of the competition at no cost to the other Participants…”\n\nThis raises an important question for this competition, since the task is to determine which text was generated by an LLM.\n\nMany potentially useful LLMs are not equally accessible to all participants. For example:\n\nSome LLMs require paid subscriptions or paid API access.\nParticipants may need to pay for API credits, monthly subscriptions, or minimum usage fees in order to generate the external data.\n\nSome models have geographical restrictions.\nCertain commercial LLM services are explicitly unavailable to users in particular countries or regions. Therefore, participants in different countries may not have the same ability to access and generate data from these models.\n\nSome services have account or eligibility restrictions.\nAccess may depend on the user's country, phone number, payment method, organization, or other eligibility requirements.\n\nDifferent participants may therefore have access to substantially different sets of LLM-generated text.\nThis could potentially become important in this competition because the identity and characteristics of the underlying LLM are directly related to the prediction target.\n\nFor example, if Participant A can legally access and use Model X to generate a large external dataset, while Participant B is unable to access Model X because the service is unavailable in their region, it is unclear whether Model X-generated text should be considered “equally accessible” External Data under Section 6(a).\n\nQuestions for the organizers\n\nCould the organizers please clarify:\n\nAre paid commercial LLM APIs allowed as External Data?\n\nIf so, does the requirement of “equally accessible” mean that the service must be available to participants worldwide, or is availability to participants who can independently purchase access sufficient?\n\nAre LLMs that are explicitly unavailable in certain countries or regions allowed?\n\nAre models requiring a paid subscription, API credits, or other commercial access considered compliant External Data?\n\nIf a participant uses a commercially available LLM to generate synthetic training data, should the participant disclose the exact model/version and access method in the winning solution documentation?\n\nI am not suggesting that commercial LLMs should necessarily be prohibited. Rather, I would appreciate clarification on how Section 6(a) should be interpreted in this particular competition, where the characteristics of different LLMs may directly affect the prediction target.\n\nA clear interpretation would help ensure that participants from different countries and regions can understand the same rules and compete under comparable conditions.\n\nThank you to the organizers for clarifying this point.",
+            "reactions": [
+              {
+                "emoji": "KAGGLE",
+                "featured_user_names": [
+                  "houcemlefe",
+                  "mohammaddehghan",
+                  "osakanateishoku",
+                  "mbumb31"
+                ],
+                "user_count": 4
+              }
+            ],
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "Seeing Times",
+                "id": 6625861,
+                "performance_tier": "EXPERT",
+                "profile_url": "/seeingtimes",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/6625861-kg.jpg?t=2023-10-19-06-40-07",
+                "tier": "EXPERT",
+                "url": "/seeingtimes",
+                "user_id": 6625861,
+                "user_name": "seeingtimes"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 4,
+              "total_votes": 4
+            }
+          },
+          "rawMarkdown": "I would like to ask for clarification regarding the use of external LLMs as External Data in this competition.\n\nSection 6(a) of the Competition Rules states:\n\n“You may use data other than the Competition Data (‘External Data’) to develop and test your Submissions. However, you will ensure the External Data is either publicly available and equally accessible to use by all Participants of the Competition for purposes of the competition at no cost to the other Participants…”\n\nThis raises an important question for this competition, since the task is to determine which text was generated by an LLM.\n\nMany potentially useful LLMs are not equally accessible to all participants. For example:\n\nSome LLMs require paid subscriptions or paid API access.\nParticipants may need to pay for API credits, monthly subscriptions, or minimum usage fees in order to generate the external data.\n\nSome models have geographical restrictions.\nCertain commercial LLM services are explicitly unavailable to users in particular countries or regions. Therefore, participants in different countries may not have the same ability to access and generate data from these models.\n\nSome services have account or eligibility restrictions.\nAccess may depend on the user's country, phone number, payment method, organization, or other eligibility requirements.\n\nDifferent participants may therefore have access to substantially different sets of LLM-generated text.\nThis could potentially become important in this competition because the identity and characteristics of the underlying LLM are directly related to the prediction target.\n\nFor example, if Participant A can legally access and use Model X to generate a large external dataset, while Participant B is unable to access Model X because the service is unavailable in their region, it is unclear whether Model X-generated text should be considered “equally accessible” External Data under Section 6(a).\n\nQuestions for the organizers\n\nCould the organizers please clarify:\n\nAre paid commercial LLM APIs allowed as External Data?\n\nIf so, does the requirement of “equally accessible” mean that the service must be available to participants worldwide, or is availability to participants who can independently purchase access sufficient?\n\nAre LLMs that are explicitly unavailable in certain countries or regions allowed?\n\nAre models requiring a paid subscription, API credits, or other commercial access considered compliant External Data?\n\nIf a participant uses a commercially available LLM to generate synthetic training data, should the participant disclose the exact model/version and access method in the winning solution documentation?\n\nI am not suggesting that commercial LLMs should necessarily be prohibited. Rather, I would appreciate clarification on how Section 6(a) should be interpreted in this particular competition, where the characteristics of different LLMs may directly affect the prediction target.\n\nA clear interpretation would help ensure that participants from different countries and regions can understand the same rules and compete under comparable conditions.\n\nThank you to the organizers for clarifying this point.",
+          "replies": [],
+          "votes": {
+            "totalVotes": 4
+          }
+        },
+        "firstMessageId": 3543859,
+        "id": 752270,
+        "name": "Clarification on External Data: Paid and Region-Restricted LLMs",
+        "postDate": "2026-10-24T06:36:40.551778700Z",
+        "url": "/competitions/name-that-llm/discussion/752270"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>I would like to ask for clarification regarding the use of external LLMs as External Data in this competition.</p>\n<p>Section 6(a) of the Competition Rules states:</p>\n<p>“You may use data other than the Competition Data (‘External Data’) to develop and test your Submissions. However, you will ensure the External Data is either publicly available and equally accessible to use by all Participants of the Competition for purposes of the competition at no cost to the other Participants…”</p>\n<p>This raises an important question for this competition, since the task is to determine which text was generated by an LLM.</p>\n<p>Many potentially useful LLMs are not equally accessible to all participants. For example:</p>\n<p>Some LLMs require paid subscriptions or paid API access.\nParticipants may need to pay for API credits, monthly subscriptions, or minimum usage fees in order to generate the external data.</p>\n<p>Some models have geographical restrictions.\nCertain commercial LLM services are explicitly unavailable to users in particular countries or regions. Therefore, participants in different countries may not have the same ability to access and generate data from these models.</p>\n<p>Some services have account or eligibility restrictions.\nAccess may depend on the user's country, phone number, payment method, organization, or other eligibility requirements.</p>\n<p>Different participants may therefore have access to substantially different sets of LLM-generated text.\nThis could potentially become important in this competition because the identity and characteristics of the underlying LLM are directly related to the prediction target.</p>\n<p>For example, if Participant A can legally access and use Model X to generate a large external dataset, while Participant B is unable to access Model X because the service is unavailable in their region, it is unclear whether Model X-generated text should be considered “equally accessible” External Data under Section 6(a).</p>\n<p>Questions for the organizers</p>\n<p>Could the organizers please clarify:</p>\n<p>Are paid commercial LLM APIs allowed as External Data?</p>\n<p>If so, does the requirement of “equally accessible” mean that the service must be available to participants worldwide, or is availability to participants who can independently purchase access sufficient?</p>\n<p>Are LLMs that are explicitly unavailable in certain countries or regions allowed?</p>\n<p>Are models requiring a paid subscription, API credits, or other commercial access considered compliant External Data?</p>\n<p>If a participant uses a commercially available LLM to generate synthetic training data, should the participant disclose the exact model/version and access method in the winning solution documentation?</p>\n<p>I am not suggesting that commercial LLMs should necessarily be prohibited. Rather, I would appreciate clarification on how Section 6(a) should be interpreted in this particular competition, where the characteristics of different LLMs may directly affect the prediction target.</p>\n<p>A clear interpretation would help ensure that participants from different countries and regions can understand the same rules and compete under comparable conditions.</p>\n<p>Thank you to the organizers for clarifying this point.</p>",
+              "id": 3543859,
+              "post_date": "2026-10-24T06:36:40.553Z",
+              "raw_markdown": "I would like to ask for clarification regarding the use of external LLMs as External Data in this competition.\n\nSection 6(a) of the Competition Rules states:\n\n“You may use data other than the Competition Data (‘External Data’) to develop and test your Submissions. However, you will ensure the External Data is either publicly available and equally accessible to use by all Participants of the Competition for purposes of the competition at no cost to the other Participants…”\n\nThis raises an important question for this competition, since the task is to determine which text was generated by an LLM.\n\nMany potentially useful LLMs are not equally accessible to all participants. For example:\n\nSome LLMs require paid subscriptions or paid API access.\nParticipants may need to pay for API credits, monthly subscriptions, or minimum usage fees in order to generate the external data.\n\nSome models have geographical restrictions.\nCertain commercial LLM services are explicitly unavailable to users in particular countries or regions. Therefore, participants in different countries may not have the same ability to access and generate data from these models.\n\nSome services have account or eligibility restrictions.\nAccess may depend on the user's country, phone number, payment method, organization, or other eligibility requirements.\n\nDifferent participants may therefore have access to substantially different sets of LLM-generated text.\nThis could potentially become important in this competition because the identity and characteristics of the underlying LLM are directly related to the prediction target.\n\nFor example, if Participant A can legally access and use Model X to generate a large external dataset, while Participant B is unable to access Model X because the service is unavailable in their region, it is unclear whether Model X-generated text should be considered “equally accessible” External Data under Section 6(a).\n\nQuestions for the organizers\n\nCould the organizers please clarify:\n\nAre paid commercial LLM APIs allowed as External Data?\n\nIf so, does the requirement of “equally accessible” mean that the service must be available to participants worldwide, or is availability to participants who can independently purchase access sufficient?\n\nAre LLMs that are explicitly unavailable in certain countries or regions allowed?\n\nAre models requiring a paid subscription, API credits, or other commercial access considered compliant External Data?\n\nIf a participant uses a commercially available LLM to generate synthetic training data, should the participant disclose the exact model/version and access method in the winning solution documentation?\n\nI am not suggesting that commercial LLMs should necessarily be prohibited. Rather, I would appreciate clarification on how Section 6(a) should be interpreted in this particular competition, where the characteristics of different LLMs may directly affect the prediction target.\n\nA clear interpretation would help ensure that participants from different countries and regions can understand the same rules and compete under comparable conditions.\n\nThank you to the organizers for clarifying this point.",
+              "votes": 4
+            },
+            {
+              "content": "<p>Hi there!\nI'm not among the organizers. But I guess this discussion thread might help you!\n<a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/749447\" target=\"_blank\">https://www.kaggle.com/competitions/name-that-llm/discussion/749447</a></p>\n<p>To my knowledge, paid API are allowed but you will have to \"public\" the dataset later, may be when the competition is near end (they havenot clarified even.. D)</p>",
+              "id": 3544299,
+              "post_date": "2026-10-25T07:11:04.417Z",
+              "raw_markdown": "Hi there!\nI'm not among the organizers. But I guess this discussion thread might help you!\n[https://www.kaggle.com/competitions/name-that-llm/discussion/749447](https://www.kaggle.com/competitions/name-that-llm/discussion/749447)\n\nTo my knowledge, paid API are allowed but you will have to \"public\" the dataset later, may be when the competition is near end (they havenot clarified even.. D)\n"
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 6625861,
+            "author_performance_tier": "EXPERT",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "6625861-kg.jpg?t=2023-10-19-06-40-07",
+            "author_user_display_name": "Seeing Times",
+            "author_user_name": "seeingtimes",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "comments": [
+              {
+                "author": {
+                  "display_name": "Md Muqtadir Fuad",
+                  "id": 18006173,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/18006173-kg.jpg?t=2026-11-01-19-41-44",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/mdmuqtadirfuad"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 1253,
+                "content": "<p>Hi there!\nI'm not among the organizers. But I guess this discussion thread might help you!\n<a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/749447\" target=\"_blank\">https://www.kaggle.com/competitions/name-that-llm/discussion/749447</a></p>\n<p>To my knowledge, paid API are allowed but you will have to \"public\" the dataset later, may be when the competition is near end (they havenot clarified even.. D)</p>",
+                "feedback_tracking_data": {},
+                "id": 3544299,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-25T07:11:04.417Z",
+                "raw_markdown": "Hi there!\nI'm not among the organizers. But I guess this discussion thread might help you!\n[https://www.kaggle.com/competitions/name-that-llm/discussion/749447](https://www.kaggle.com/competitions/name-that-llm/discussion/749447)\n\nTo my knowledge, paid API are allowed but you will have to \"public\" the dataset later, may be when the competition is near end (they havenot clarified even.. D)\n",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "Md Muqtadir Fuad",
+                    "id": 18006173,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/mdmuqtadirfuad",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/18006173-kg.jpg?t=2026-11-01-19-41-44",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/mdmuqtadirfuad",
+                    "user_id": 18006173,
+                    "user_name": "mdmuqtadirfuad"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              }
+            ],
+            "first_message": {
+              "author": {
+                "display_name": "Seeing Times",
+                "id": 6625861,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/6625861-kg.jpg?t=2023-10-19-06-40-07",
+                "tier": "EXPERT",
+                "url": "/seeingtimes"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 5721,
+              "content": "<p>I would like to ask for clarification regarding the use of external LLMs as External Data in this competition.</p>\n<p>Section 6(a) of the Competition Rules states:</p>\n<p>“You may use data other than the Competition Data (‘External Data’) to develop and test your Submissions. However, you will ensure the External Data is either publicly available and equally accessible to use by all Participants of the Competition for purposes of the competition at no cost to the other Participants…”</p>\n<p>This raises an important question for this competition, since the task is to determine which text was generated by an LLM.</p>\n<p>Many potentially useful LLMs are not equally accessible to all participants. For example:</p>\n<p>Some LLMs require paid subscriptions or paid API access.\nParticipants may need to pay for API credits, monthly subscriptions, or minimum usage fees in order to generate the external data.</p>\n<p>Some models have geographical restrictions.\nCertain commercial LLM services are explicitly unavailable to users in particular countries or regions. Therefore, participants in different countries may not have the same ability to access and generate data from these models.</p>\n<p>Some services have account or eligibility restrictions.\nAccess may depend on the user's country, phone number, payment method, organization, or other eligibility requirements.</p>\n<p>Different participants may therefore have access to substantially different sets of LLM-generated text.\nThis could potentially become important in this competition because the identity and characteristics of the underlying LLM are directly related to the prediction target.</p>\n<p>For example, if Participant A can legally access and use Model X to generate a large external dataset, while Participant B is unable to access Model X because the service is unavailable in their region, it is unclear whether Model X-generated text should be considered “equally accessible” External Data under Section 6(a).</p>\n<p>Questions for the organizers</p>\n<p>Could the organizers please clarify:</p>\n<p>Are paid commercial LLM APIs allowed as External Data?</p>\n<p>If so, does the requirement of “equally accessible” mean that the service must be available to participants worldwide, or is availability to participants who can independently purchase access sufficient?</p>\n<p>Are LLMs that are explicitly unavailable in certain countries or regions allowed?</p>\n<p>Are models requiring a paid subscription, API credits, or other commercial access considered compliant External Data?</p>\n<p>If a participant uses a commercially available LLM to generate synthetic training data, should the participant disclose the exact model/version and access method in the winning solution documentation?</p>\n<p>I am not suggesting that commercial LLMs should necessarily be prohibited. Rather, I would appreciate clarification on how Section 6(a) should be interpreted in this particular competition, where the characteristics of different LLMs may directly affect the prediction target.</p>\n<p>A clear interpretation would help ensure that participants from different countries and regions can understand the same rules and compete under comparable conditions.</p>\n<p>Thank you to the organizers for clarifying this point.</p>",
+              "feedback_tracking_data": {},
+              "id": 3543859,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-24T06:36:40.553Z",
+              "raw_markdown": "I would like to ask for clarification regarding the use of external LLMs as External Data in this competition.\n\nSection 6(a) of the Competition Rules states:\n\n“You may use data other than the Competition Data (‘External Data’) to develop and test your Submissions. However, you will ensure the External Data is either publicly available and equally accessible to use by all Participants of the Competition for purposes of the competition at no cost to the other Participants…”\n\nThis raises an important question for this competition, since the task is to determine which text was generated by an LLM.\n\nMany potentially useful LLMs are not equally accessible to all participants. For example:\n\nSome LLMs require paid subscriptions or paid API access.\nParticipants may need to pay for API credits, monthly subscriptions, or minimum usage fees in order to generate the external data.\n\nSome models have geographical restrictions.\nCertain commercial LLM services are explicitly unavailable to users in particular countries or regions. Therefore, participants in different countries may not have the same ability to access and generate data from these models.\n\nSome services have account or eligibility restrictions.\nAccess may depend on the user's country, phone number, payment method, organization, or other eligibility requirements.\n\nDifferent participants may therefore have access to substantially different sets of LLM-generated text.\nThis could potentially become important in this competition because the identity and characteristics of the underlying LLM are directly related to the prediction target.\n\nFor example, if Participant A can legally access and use Model X to generate a large external dataset, while Participant B is unable to access Model X because the service is unavailable in their region, it is unclear whether Model X-generated text should be considered “equally accessible” External Data under Section 6(a).\n\nQuestions for the organizers\n\nCould the organizers please clarify:\n\nAre paid commercial LLM APIs allowed as External Data?\n\nIf so, does the requirement of “equally accessible” mean that the service must be available to participants worldwide, or is availability to participants who can independently purchase access sufficient?\n\nAre LLMs that are explicitly unavailable in certain countries or regions allowed?\n\nAre models requiring a paid subscription, API credits, or other commercial access considered compliant External Data?\n\nIf a participant uses a commercially available LLM to generate synthetic training data, should the participant disclose the exact model/version and access method in the winning solution documentation?\n\nI am not suggesting that commercial LLMs should necessarily be prohibited. Rather, I would appreciate clarification on how Section 6(a) should be interpreted in this particular competition, where the characteristics of different LLMs may directly affect the prediction target.\n\nA clear interpretation would help ensure that participants from different countries and regions can understand the same rules and compete under comparable conditions.\n\nThank you to the organizers for clarifying this point.",
+              "reactions": [
+                {
+                  "emoji": "KAGGLE",
+                  "featured_user_names": [
+                    "houcemlefe",
+                    "mohammaddehghan",
+                    "osakanateishoku",
+                    "mbumb31"
+                  ],
+                  "user_count": 4
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Seeing Times",
+                  "id": 6625861,
+                  "performance_tier": "EXPERT",
+                  "profile_url": "/seeingtimes",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/6625861-kg.jpg?t=2023-10-19-06-40-07",
+                  "tier": "EXPERT",
+                  "url": "/seeingtimes",
+                  "user_id": 6625861,
+                  "user_name": "seeingtimes"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 4,
+                "total_votes": 4
+              }
+            },
+            "first_message_id": 3543859,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 752270,
+            "name": "Clarification on External Data: Paid and Region-Restricted LLMs",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-10-24T06:36:40.551778700Z",
+            "total_messages": 1,
+            "total_votes": 4,
+            "url": "/competitions/name-that-llm/discussion/752270"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:23:58+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:23:58+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-10-25T07:11:04.416666700Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [
+    {
+      "slug": "name-that-llm",
+      "topic_id": 752270,
+      "message_id": 3544299,
+      "parent_message_id": null,
+      "author": "Md Muqtadir Fuad",
+      "author_url": "/mdmuqtadirfuad",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-10-25T07:11:04.417Z",
+      "raw_markdown": "Hi there!\nI'm not among the organizers. But I guess this discussion thread might help you!\n[https://www.kaggle.com/competitions/name-that-llm/discussion/749447](https://www.kaggle.com/competitions/name-that-llm/discussion/749447)\n\nTo my knowledge, paid API are allowed but you will have to \"public\" the dataset later, may be when the competition is near end (they havenot clarified even.. D)\n",
+      "content_html": "<p>Hi there!\nI'm not among the organizers. But I guess this discussion thread might help you!\n<a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/749447\" target=\"_blank\">https://www.kaggle.com/competitions/name-that-llm/discussion/749447</a></p>\n<p>To my knowledge, paid API are allowed but you will have to \"public\" the dataset later, may be when the competition is near end (they havenot clarified even.. D)</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:57:17+00:00",
+      "last_seen_at": "2026-11-16T16:23:58+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:23:58+00:00",
+      "remote_last_listed_at": "2026-11-16T16:23:58+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Md Muqtadir Fuad",
+          "tier": "CONTRIBUTOR",
+          "url": "/mdmuqtadirfuad"
+        },
+        "content": "<p>Hi there!\nI'm not among the organizers. But I guess this discussion thread might help you!\n<a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/749447\" target=\"_blank\">https://www.kaggle.com/competitions/name-that-llm/discussion/749447</a></p>\n<p>To my knowledge, paid API are allowed but you will have to \"public\" the dataset later, may be when the competition is near end (they havenot clarified even.. D)</p>",
+        "id": 3544299,
+        "isThankYou": false,
+        "postDate": "2026-10-25T07:11:04.417Z",
+        "raw": {
+          "author": {
+            "display_name": "Md Muqtadir Fuad",
+            "id": 18006173,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/18006173-kg.jpg?t=2026-11-01-19-41-44",
+            "tier": "CONTRIBUTOR",
+            "url": "/mdmuqtadirfuad"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 1253,
+          "content": "<p>Hi there!\nI'm not among the organizers. But I guess this discussion thread might help you!\n<a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/749447\" target=\"_blank\">https://www.kaggle.com/competitions/name-that-llm/discussion/749447</a></p>\n<p>To my knowledge, paid API are allowed but you will have to \"public\" the dataset later, may be when the competition is near end (they havenot clarified even.. D)</p>",
+          "feedback_tracking_data": {},
+          "id": 3544299,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-25T07:11:04.417Z",
+          "raw_markdown": "Hi there!\nI'm not among the organizers. But I guess this discussion thread might help you!\n[https://www.kaggle.com/competitions/name-that-llm/discussion/749447](https://www.kaggle.com/competitions/name-that-llm/discussion/749447)\n\nTo my knowledge, paid API are allowed but you will have to \"public\" the dataset later, may be when the competition is near end (they havenot clarified even.. D)\n",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Md Muqtadir Fuad",
+              "id": 18006173,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/mdmuqtadirfuad",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/18006173-kg.jpg?t=2026-11-01-19-41-44",
+              "tier": "CONTRIBUTOR",
+              "url": "/mdmuqtadirfuad",
+              "user_id": 18006173,
+              "user_name": "mdmuqtadirfuad"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "Hi there!\nI'm not among the organizers. But I guess this discussion thread might help you!\n[https://www.kaggle.com/competitions/name-that-llm/discussion/749447](https://www.kaggle.com/competitions/name-that-llm/discussion/749447)\n\nTo my knowledge, paid API are allowed but you will have to \"public\" the dataset later, may be when the competition is near end (they havenot clarified even.. D)\n",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    }
+  ],
+  "writeup": null
+}

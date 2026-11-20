@@ -1,0 +1,596 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 753974,
+    "title": "New external dataset: 9,719 OpenAI responses with exact prompts and provenance",
+    "author": "Enai",
+    "author_url": "/enaimaan",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-10-29T23:25:13.996281900Z",
+    "last_comment_post_date": "2026-11-02T10:42:50.536666700Z",
+    "comment_count": 2,
+    "votes": 18,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/753974",
+    "first_message_id": 3546911,
+    "first_seen_at": "2026-11-04T06:56:15+00:00",
+    "last_seen_at": "2026-11-19T12:45:22+00:00",
+    "detail_last_synced_at": "2026-11-16T16:23:30+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-19T12:45:22+00:00",
+    "remote_last_listed_at": "2026-11-19T12:45:22+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "ffba11440683222fe006b1124c35f794858ac2c217c53d961989bb9d0056a0f5",
+    "listing_metrics_hash": "7dd31715a883021a8bfdc246ff604671dbb6aa1139a747042e7e56e4050ee5d9",
+    "detail_content_hash": "8e0c85cbbec574bf88408919042e764647e4eac390971bf3d415d28fa005626c",
+    "detail_last_checked_at": "2026-11-16T16:23:30+00:00",
+    "detail_next_check_at": "2026-11-23T16:23:30+00:00",
+    "detail_unchanged_count": 2,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 2,
+      "firstForumMessageId": null,
+      "id": 753974,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-11-02T10:42:50.536666700Z",
+      "postDate": "2026-10-29T23:25:13.996281900Z",
+      "raw": {
+        "comment_count": 2,
+        "id": 753974,
+        "last_comment_post_date": "2026-11-02T10:42:50.536666700Z",
+        "post_date": "2026-10-29T23:25:13.996281900Z",
+        "title": "New external dataset: 9,719 OpenAI responses with exact prompts and provenance",
+        "topic_url": "/competitions/name-that-llm/discussion/753974",
+        "votes": 18
+      },
+      "title": "New external dataset: 9,719 OpenAI responses with exact prompts and provenance",
+      "topicUrl": "/competitions/name-that-llm/discussion/753974",
+      "votes": 18
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "Enai",
+        "authorUserName": "enaimaan",
+        "comments": [
+          {
+            "author": {
+              "displayName": "bosprimigenious",
+              "tier": "CONTRIBUTOR",
+              "url": "/bosprimigenious"
+            },
+            "content": "<p>Hi Enai, I read your OpenAI response dataset release and appreciated the exact prompts, provenance, and missing-model coverage work. I'm looking for complementary teammates for a three-person Name That LLM team using free compute only; my current public score is 0.349 with a CPU text/style baseline. Would you be interested in contributing data-pipeline and coverage-validation experiments? Are you still competing solo, and roughly how much time could you contribute? I'm checking fit before sending formal team invitations.</p>",
+            "id": 3548540,
+            "isThankYou": false,
+            "postDate": "2026-11-02T10:42:50.537Z",
+            "raw": {
+              "author": {
+                "display_name": "bosprimigenious",
+                "id": 29167060,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/bosprimigenious"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 1775,
+              "content": "<p>Hi Enai, I read your OpenAI response dataset release and appreciated the exact prompts, provenance, and missing-model coverage work. I'm looking for complementary teammates for a three-person Name That LLM team using free compute only; my current public score is 0.349 with a CPU text/style baseline. Would you be interested in contributing data-pipeline and coverage-validation experiments? Are you still competing solo, and roughly how much time could you contribute? I'm checking fit before sending formal team invitations.</p>",
+              "feedback_tracking_data": {},
+              "id": 3548540,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-02T10:42:50.537Z",
+              "raw_markdown": "Hi Enai, I read your OpenAI response dataset release and appreciated the exact prompts, provenance, and missing-model coverage work. I'm looking for complementary teammates for a three-person Name That LLM team using free compute only; my current public score is 0.349 with a CPU text/style baseline. Would you be interested in contributing data-pipeline and coverage-validation experiments? Are you still competing solo, and roughly how much time could you contribute? I'm checking fit before sending formal team invitations.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "bosprimigenious",
+                  "id": 29167060,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/bosprimigenious",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/bosprimigenious",
+                  "user_id": 29167060,
+                  "user_name": "bosprimigenious"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "Hi Enai, I read your OpenAI response dataset release and appreciated the exact prompts, provenance, and missing-model coverage work. I'm looking for complementary teammates for a three-person Name That LLM team using free compute only; my current public score is 0.349 with a CPU text/style baseline. Would you be interested in contributing data-pipeline and coverage-validation experiments? Are you still competing solo, and roughly how much time could you contribute? I'm checking fit before sending formal team invitations.",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          },
+          {
+            "author": {
+              "displayName": "Wilmer E. Henao",
+              "tier": "GRANDMASTER",
+              "url": "/verracodeguacas"
+            },
+            "content": "<p>upvoted. People need to upvote datasets more.</p>",
+            "id": 3547475,
+            "isThankYou": false,
+            "postDate": "2026-10-31T01:34:24.253Z",
+            "raw": {
+              "author": {
+                "display_name": "Wilmer E. Henao",
+                "id": 820904,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/820904-kg.png?t=2023-11-17-02-57-59",
+                "tier": "GRANDMASTER",
+                "url": "/verracodeguacas"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 59,
+              "content": "<p>upvoted. People need to upvote datasets more.</p>",
+              "feedback_tracking_data": {},
+              "id": 3547475,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-31T01:34:24.253Z",
+              "raw_markdown": "upvoted. People need to upvote datasets more.",
+              "reactions": [
+                {
+                  "emoji": "THANK_YOU",
+                  "featured_user_names": [
+                    "enaimaan",
+                    "hashimrazi",
+                    "sambitpadhan"
+                  ],
+                  "user_count": 3
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Wilmer E. Henao",
+                  "id": 820904,
+                  "performance_tier": "GRANDMASTER",
+                  "profile_url": "/verracodeguacas",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/820904-kg.png?t=2023-11-17-02-57-59",
+                  "tier": "GRANDMASTER",
+                  "url": "/verracodeguacas",
+                  "user_id": 820904,
+                  "user_name": "verracodeguacas"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "upvoted. People need to upvote datasets more.",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "expectedCommentCount": 2,
+        "firstMessage": {
+          "author": {
+            "displayName": "Enai",
+            "tier": "CONTRIBUTOR",
+            "url": "/enaimaan"
+          },
+          "content": "<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F2630633%2F18084b750746f074599f44ce8248de5a%2Fname-that-llm-dataset-poster-landscape.png?generation=1793316136170612&amp;alt=media\" alt=\"poster\"></p>\n<p>New external dataset for NTL:</p>\n<p><a href=\"https://www.kaggle.com/datasets/enaimaan/ntl-openai-generated-responses\" target=\"_blank\">Name That LLM – OpenAI Generated Responses</a></p>\n<p>It contains 9,719 responses across four models:</p>\n<ul>\n<li>GPT-5.6 Luna: 2,341</li>\n<li>GPT-5.6 Sol: 2,338</li>\n<li>GPT-5.6 Terra: 2,336</li>\n<li>GPT-6 Astra: 2,704</li>\n</ul>\n<p>The collection includes 4,311 responses filling missing model coverage on existing community prompts, plus 5,408 responses forming additional prompt panels. Prompt sources include community banks and selected Dolly instructions.</p>\n<p>The release includes raw responses, exact system/user messages where supplied, generation settings, prompt provenance, source attribution, and license notices. Responses are available in CSV and Parquet, with prompts in JSONL.</p>\n<p>More data is coming soon!</p>",
+          "id": 3546911,
+          "isThankYou": false,
+          "postDate": "2026-10-29T23:25:13.997Z",
+          "raw": {
+            "author": {
+              "display_name": "Enai",
+              "id": 2630633,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2630633-kg.png",
+              "tier": "CONTRIBUTOR",
+              "url": "/enaimaan"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 3997,
+            "content": "<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F2630633%2F18084b750746f074599f44ce8248de5a%2Fname-that-llm-dataset-poster-landscape.png?generation=1793316136170612&amp;alt=media\" alt=\"poster\"></p>\n<p>New external dataset for NTL:</p>\n<p><a href=\"https://www.kaggle.com/datasets/enaimaan/ntl-openai-generated-responses\" target=\"_blank\">Name That LLM – OpenAI Generated Responses</a></p>\n<p>It contains 9,719 responses across four models:</p>\n<ul>\n<li>GPT-5.6 Luna: 2,341</li>\n<li>GPT-5.6 Sol: 2,338</li>\n<li>GPT-5.6 Terra: 2,336</li>\n<li>GPT-6 Astra: 2,704</li>\n</ul>\n<p>The collection includes 4,311 responses filling missing model coverage on existing community prompts, plus 5,408 responses forming additional prompt panels. Prompt sources include community banks and selected Dolly instructions.</p>\n<p>The release includes raw responses, exact system/user messages where supplied, generation settings, prompt provenance, source attribution, and license notices. Responses are available in CSV and Parquet, with prompts in JSONL.</p>\n<p>More data is coming soon!</p>",
+            "feedback_tracking_data": {},
+            "id": 3546911,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-10-29T23:25:13.997Z",
+            "raw_markdown": "![poster](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F2630633%2F18084b750746f074599f44ce8248de5a%2Fname-that-llm-dataset-poster-landscape.png?generation=1793316136170612&alt=media)\n\nNew external dataset for NTL:\n\n[Name That LLM – OpenAI Generated Responses](https://www.kaggle.com/datasets/enaimaan/ntl-openai-generated-responses)\n\nIt contains 9,719 responses across four models:\n\n- GPT-5.6 Luna: 2,341\n- GPT-5.6 Sol: 2,338\n- GPT-5.6 Terra: 2,336\n- GPT-6 Astra: 2,704\n\nThe collection includes 4,311 responses filling missing model coverage on existing community prompts, plus 5,408 responses forming additional prompt panels. Prompt sources include community banks and selected Dolly instructions.\n\nThe release includes raw responses, exact system/user messages where supplied, generation settings, prompt provenance, source attribution, and license notices. Responses are available in CSV and Parquet, with prompts in JSONL.\n\nMore data is coming soon!",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "Enai",
+                "id": 2630633,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/enaimaan",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2630633-kg.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/enaimaan",
+                "user_id": 2630633,
+                "user_name": "enaimaan"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 17,
+              "total_votes": 16
+            }
+          },
+          "rawMarkdown": "![poster](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F2630633%2F18084b750746f074599f44ce8248de5a%2Fname-that-llm-dataset-poster-landscape.png?generation=1793316136170612&alt=media)\n\nNew external dataset for NTL:\n\n[Name That LLM – OpenAI Generated Responses](https://www.kaggle.com/datasets/enaimaan/ntl-openai-generated-responses)\n\nIt contains 9,719 responses across four models:\n\n- GPT-5.6 Luna: 2,341\n- GPT-5.6 Sol: 2,338\n- GPT-5.6 Terra: 2,336\n- GPT-6 Astra: 2,704\n\nThe collection includes 4,311 responses filling missing model coverage on existing community prompts, plus 5,408 responses forming additional prompt panels. Prompt sources include community banks and selected Dolly instructions.\n\nThe release includes raw responses, exact system/user messages where supplied, generation settings, prompt provenance, source attribution, and license notices. Responses are available in CSV and Parquet, with prompts in JSONL.\n\nMore data is coming soon!",
+          "replies": [],
+          "votes": {
+            "totalVotes": 16
+          }
+        },
+        "firstMessageId": 3546911,
+        "id": 753974,
+        "name": "New external dataset: 9,719 OpenAI responses with exact prompts and provenance",
+        "postDate": "2026-10-29T23:25:13.996281900Z",
+        "url": "/competitions/name-that-llm/discussion/753974"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F2630633%2F18084b750746f074599f44ce8248de5a%2Fname-that-llm-dataset-poster-landscape.png?generation=1793316136170612&amp;alt=media\" alt=\"poster\"></p>\n<p>New external dataset for NTL:</p>\n<p><a href=\"https://www.kaggle.com/datasets/enaimaan/ntl-openai-generated-responses\" target=\"_blank\">Name That LLM – OpenAI Generated Responses</a></p>\n<p>It contains 9,719 responses across four models:</p>\n<ul>\n<li>GPT-5.6 Luna: 2,341</li>\n<li>GPT-5.6 Sol: 2,338</li>\n<li>GPT-5.6 Terra: 2,336</li>\n<li>GPT-6 Astra: 2,704</li>\n</ul>\n<p>The collection includes 4,311 responses filling missing model coverage on existing community prompts, plus 5,408 responses forming additional prompt panels. Prompt sources include community banks and selected Dolly instructions.</p>\n<p>The release includes raw responses, exact system/user messages where supplied, generation settings, prompt provenance, source attribution, and license notices. Responses are available in CSV and Parquet, with prompts in JSONL.</p>\n<p>More data is coming soon!</p>",
+              "id": 3546911,
+              "post_date": "2026-10-29T23:25:13.997Z",
+              "raw_markdown": "![poster](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F2630633%2F18084b750746f074599f44ce8248de5a%2Fname-that-llm-dataset-poster-landscape.png?generation=1793316136170612&alt=media)\n\nNew external dataset for NTL:\n\n[Name That LLM – OpenAI Generated Responses](https://www.kaggle.com/datasets/enaimaan/ntl-openai-generated-responses)\n\nIt contains 9,719 responses across four models:\n\n- GPT-5.6 Luna: 2,341\n- GPT-5.6 Sol: 2,338\n- GPT-5.6 Terra: 2,336\n- GPT-6 Astra: 2,704\n\nThe collection includes 4,311 responses filling missing model coverage on existing community prompts, plus 5,408 responses forming additional prompt panels. Prompt sources include community banks and selected Dolly instructions.\n\nThe release includes raw responses, exact system/user messages where supplied, generation settings, prompt provenance, source attribution, and license notices. Responses are available in CSV and Parquet, with prompts in JSONL.\n\nMore data is coming soon!",
+              "votes": 16
+            },
+            {
+              "content": "<p>upvoted. People need to upvote datasets more.</p>",
+              "id": 3547475,
+              "post_date": "2026-10-31T01:34:24.253Z",
+              "raw_markdown": "upvoted. People need to upvote datasets more."
+            },
+            {
+              "content": "<p>Hi Enai, I read your OpenAI response dataset release and appreciated the exact prompts, provenance, and missing-model coverage work. I'm looking for complementary teammates for a three-person Name That LLM team using free compute only; my current public score is 0.349 with a CPU text/style baseline. Would you be interested in contributing data-pipeline and coverage-validation experiments? Are you still competing solo, and roughly how much time could you contribute? I'm checking fit before sending formal team invitations.</p>",
+              "id": 3548540,
+              "post_date": "2026-11-02T10:42:50.537Z",
+              "raw_markdown": "Hi Enai, I read your OpenAI response dataset release and appreciated the exact prompts, provenance, and missing-model coverage work. I'm looking for complementary teammates for a three-person Name That LLM team using free compute only; my current public score is 0.349 with a CPU text/style baseline. Would you be interested in contributing data-pipeline and coverage-validation experiments? Are you still competing solo, and roughly how much time could you contribute? I'm checking fit before sending formal team invitations."
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 2630633,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "2630633-kg.png",
+            "author_user_display_name": "Enai",
+            "author_user_name": "enaimaan",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "comments": [
+              {
+                "author": {
+                  "display_name": "bosprimigenious",
+                  "id": 29167060,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/bosprimigenious"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 1775,
+                "content": "<p>Hi Enai, I read your OpenAI response dataset release and appreciated the exact prompts, provenance, and missing-model coverage work. I'm looking for complementary teammates for a three-person Name That LLM team using free compute only; my current public score is 0.349 with a CPU text/style baseline. Would you be interested in contributing data-pipeline and coverage-validation experiments? Are you still competing solo, and roughly how much time could you contribute? I'm checking fit before sending formal team invitations.</p>",
+                "feedback_tracking_data": {},
+                "id": 3548540,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-11-02T10:42:50.537Z",
+                "raw_markdown": "Hi Enai, I read your OpenAI response dataset release and appreciated the exact prompts, provenance, and missing-model coverage work. I'm looking for complementary teammates for a three-person Name That LLM team using free compute only; my current public score is 0.349 with a CPU text/style baseline. Would you be interested in contributing data-pipeline and coverage-validation experiments? Are you still competing solo, and roughly how much time could you contribute? I'm checking fit before sending formal team invitations.",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "bosprimigenious",
+                    "id": 29167060,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/bosprimigenious",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/bosprimigenious",
+                    "user_id": 29167060,
+                    "user_name": "bosprimigenious"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              },
+              {
+                "author": {
+                  "display_name": "Wilmer E. Henao",
+                  "id": 820904,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/820904-kg.png?t=2023-11-17-02-57-59",
+                  "tier": "GRANDMASTER",
+                  "url": "/verracodeguacas"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 59,
+                "content": "<p>upvoted. People need to upvote datasets more.</p>",
+                "feedback_tracking_data": {},
+                "id": 3547475,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-31T01:34:24.253Z",
+                "raw_markdown": "upvoted. People need to upvote datasets more.",
+                "reactions": [
+                  {
+                    "emoji": "THANK_YOU",
+                    "featured_user_names": [
+                      "enaimaan",
+                      "hashimrazi",
+                      "sambitpadhan"
+                    ],
+                    "user_count": 3
+                  }
+                ],
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "Wilmer E. Henao",
+                    "id": 820904,
+                    "performance_tier": "GRANDMASTER",
+                    "profile_url": "/verracodeguacas",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/820904-kg.png?t=2023-11-17-02-57-59",
+                    "tier": "GRANDMASTER",
+                    "url": "/verracodeguacas",
+                    "user_id": 820904,
+                    "user_name": "verracodeguacas"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              }
+            ],
+            "first_message": {
+              "author": {
+                "display_name": "Enai",
+                "id": 2630633,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2630633-kg.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/enaimaan"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 3997,
+              "content": "<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F2630633%2F18084b750746f074599f44ce8248de5a%2Fname-that-llm-dataset-poster-landscape.png?generation=1793316136170612&amp;alt=media\" alt=\"poster\"></p>\n<p>New external dataset for NTL:</p>\n<p><a href=\"https://www.kaggle.com/datasets/enaimaan/ntl-openai-generated-responses\" target=\"_blank\">Name That LLM – OpenAI Generated Responses</a></p>\n<p>It contains 9,719 responses across four models:</p>\n<ul>\n<li>GPT-5.6 Luna: 2,341</li>\n<li>GPT-5.6 Sol: 2,338</li>\n<li>GPT-5.6 Terra: 2,336</li>\n<li>GPT-6 Astra: 2,704</li>\n</ul>\n<p>The collection includes 4,311 responses filling missing model coverage on existing community prompts, plus 5,408 responses forming additional prompt panels. Prompt sources include community banks and selected Dolly instructions.</p>\n<p>The release includes raw responses, exact system/user messages where supplied, generation settings, prompt provenance, source attribution, and license notices. Responses are available in CSV and Parquet, with prompts in JSONL.</p>\n<p>More data is coming soon!</p>",
+              "feedback_tracking_data": {},
+              "id": 3546911,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-29T23:25:13.997Z",
+              "raw_markdown": "![poster](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F2630633%2F18084b750746f074599f44ce8248de5a%2Fname-that-llm-dataset-poster-landscape.png?generation=1793316136170612&alt=media)\n\nNew external dataset for NTL:\n\n[Name That LLM – OpenAI Generated Responses](https://www.kaggle.com/datasets/enaimaan/ntl-openai-generated-responses)\n\nIt contains 9,719 responses across four models:\n\n- GPT-5.6 Luna: 2,341\n- GPT-5.6 Sol: 2,338\n- GPT-5.6 Terra: 2,336\n- GPT-6 Astra: 2,704\n\nThe collection includes 4,311 responses filling missing model coverage on existing community prompts, plus 5,408 responses forming additional prompt panels. Prompt sources include community banks and selected Dolly instructions.\n\nThe release includes raw responses, exact system/user messages where supplied, generation settings, prompt provenance, source attribution, and license notices. Responses are available in CSV and Parquet, with prompts in JSONL.\n\nMore data is coming soon!",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Enai",
+                  "id": 2630633,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/enaimaan",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/2630633-kg.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/enaimaan",
+                  "user_id": 2630633,
+                  "user_name": "enaimaan"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 17,
+                "total_votes": 16
+              }
+            },
+            "first_message_id": 3546911,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 753974,
+            "name": "New external dataset: 9,719 OpenAI responses with exact prompts and provenance",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-10-29T23:25:13.996281900Z",
+            "total_messages": 2,
+            "total_votes": 16,
+            "url": "/competitions/name-that-llm/discussion/753974"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:23:30+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:23:30+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-11-02T10:42:50.536666700Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [
+    {
+      "slug": "name-that-llm",
+      "topic_id": 753974,
+      "message_id": 3547475,
+      "parent_message_id": null,
+      "author": "Wilmer E. Henao",
+      "author_url": "/verracodeguacas",
+      "author_tier": "GRANDMASTER",
+      "post_date": "2026-10-31T01:34:24.253Z",
+      "raw_markdown": "upvoted. People need to upvote datasets more.",
+      "content_html": "<p>upvoted. People need to upvote datasets more.</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:57:48+00:00",
+      "last_seen_at": "2026-11-16T16:23:30+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:23:30+00:00",
+      "remote_last_listed_at": "2026-11-16T16:23:30+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Wilmer E. Henao",
+          "tier": "GRANDMASTER",
+          "url": "/verracodeguacas"
+        },
+        "content": "<p>upvoted. People need to upvote datasets more.</p>",
+        "id": 3547475,
+        "isThankYou": false,
+        "postDate": "2026-10-31T01:34:24.253Z",
+        "raw": {
+          "author": {
+            "display_name": "Wilmer E. Henao",
+            "id": 820904,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/820904-kg.png?t=2023-11-17-02-57-59",
+            "tier": "GRANDMASTER",
+            "url": "/verracodeguacas"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 59,
+          "content": "<p>upvoted. People need to upvote datasets more.</p>",
+          "feedback_tracking_data": {},
+          "id": 3547475,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-31T01:34:24.253Z",
+          "raw_markdown": "upvoted. People need to upvote datasets more.",
+          "reactions": [
+            {
+              "emoji": "THANK_YOU",
+              "featured_user_names": [
+                "enaimaan",
+                "hashimrazi",
+                "sambitpadhan"
+              ],
+              "user_count": 3
+            }
+          ],
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Wilmer E. Henao",
+              "id": 820904,
+              "performance_tier": "GRANDMASTER",
+              "profile_url": "/verracodeguacas",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/820904-kg.png?t=2023-11-17-02-57-59",
+              "tier": "GRANDMASTER",
+              "url": "/verracodeguacas",
+              "user_id": 820904,
+              "user_name": "verracodeguacas"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "upvoted. People need to upvote datasets more.",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 753974,
+      "message_id": 3548540,
+      "parent_message_id": null,
+      "author": "bosprimigenious",
+      "author_url": "/bosprimigenious",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-02T10:42:50.537Z",
+      "raw_markdown": "Hi Enai, I read your OpenAI response dataset release and appreciated the exact prompts, provenance, and missing-model coverage work. I'm looking for complementary teammates for a three-person Name That LLM team using free compute only; my current public score is 0.349 with a CPU text/style baseline. Would you be interested in contributing data-pipeline and coverage-validation experiments? Are you still competing solo, and roughly how much time could you contribute? I'm checking fit before sending formal team invitations.",
+      "content_html": "<p>Hi Enai, I read your OpenAI response dataset release and appreciated the exact prompts, provenance, and missing-model coverage work. I'm looking for complementary teammates for a three-person Name That LLM team using free compute only; my current public score is 0.349 with a CPU text/style baseline. Would you be interested in contributing data-pipeline and coverage-validation experiments? Are you still competing solo, and roughly how much time could you contribute? I'm checking fit before sending formal team invitations.</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:57:48+00:00",
+      "last_seen_at": "2026-11-16T16:23:30+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:23:30+00:00",
+      "remote_last_listed_at": "2026-11-16T16:23:30+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "bosprimigenious",
+          "tier": "CONTRIBUTOR",
+          "url": "/bosprimigenious"
+        },
+        "content": "<p>Hi Enai, I read your OpenAI response dataset release and appreciated the exact prompts, provenance, and missing-model coverage work. I'm looking for complementary teammates for a three-person Name That LLM team using free compute only; my current public score is 0.349 with a CPU text/style baseline. Would you be interested in contributing data-pipeline and coverage-validation experiments? Are you still competing solo, and roughly how much time could you contribute? I'm checking fit before sending formal team invitations.</p>",
+        "id": 3548540,
+        "isThankYou": false,
+        "postDate": "2026-11-02T10:42:50.537Z",
+        "raw": {
+          "author": {
+            "display_name": "bosprimigenious",
+            "id": 29167060,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+            "tier": "CONTRIBUTOR",
+            "url": "/bosprimigenious"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 1775,
+          "content": "<p>Hi Enai, I read your OpenAI response dataset release and appreciated the exact prompts, provenance, and missing-model coverage work. I'm looking for complementary teammates for a three-person Name That LLM team using free compute only; my current public score is 0.349 with a CPU text/style baseline. Would you be interested in contributing data-pipeline and coverage-validation experiments? Are you still competing solo, and roughly how much time could you contribute? I'm checking fit before sending formal team invitations.</p>",
+          "feedback_tracking_data": {},
+          "id": 3548540,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-02T10:42:50.537Z",
+          "raw_markdown": "Hi Enai, I read your OpenAI response dataset release and appreciated the exact prompts, provenance, and missing-model coverage work. I'm looking for complementary teammates for a three-person Name That LLM team using free compute only; my current public score is 0.349 with a CPU text/style baseline. Would you be interested in contributing data-pipeline and coverage-validation experiments? Are you still competing solo, and roughly how much time could you contribute? I'm checking fit before sending formal team invitations.",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "bosprimigenious",
+              "id": 29167060,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/bosprimigenious",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "CONTRIBUTOR",
+              "url": "/bosprimigenious",
+              "user_id": 29167060,
+              "user_name": "bosprimigenious"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "Hi Enai, I read your OpenAI response dataset release and appreciated the exact prompts, provenance, and missing-model coverage work. I'm looking for complementary teammates for a three-person Name That LLM team using free compute only; my current public score is 0.349 with a CPU text/style baseline. Would you be interested in contributing data-pipeline and coverage-validation experiments? Are you still competing solo, and roughly how much time could you contribute? I'm checking fit before sending formal team invitations.",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    }
+  ],
+  "writeup": null
+}

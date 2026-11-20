@@ -1,0 +1,420 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 749832,
+    "title": "Use of system 1 models",
+    "author": "OsakanaTeishoku",
+    "author_url": "/osakanateishoku",
+    "author_tier": "EXPERT",
+    "post_date": "2026-10-16T04:58:36.786119900Z",
+    "last_comment_post_date": "2026-10-16T06:56:17.300Z",
+    "comment_count": 1,
+    "votes": 1,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/749832",
+    "first_message_id": 3539534,
+    "first_seen_at": "2026-11-04T06:56:18+00:00",
+    "last_seen_at": "2026-11-16T16:36:29+00:00",
+    "detail_last_synced_at": "2026-11-16T16:36:29+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "ef799aab0e5e92068d2e32dfb8e9ec27be34b9bb4ea3afb00b9cd1e26c4d69dd",
+    "listing_metrics_hash": "08a3f0e9d031723a4649730d445a527264427162f124c0c72a6c18d2e0b8e839",
+    "detail_content_hash": "72d31b6a74fb587f16cf8af8a3c15ee14a43d45a8cc85ec4a3dd4cdf742e5677",
+    "detail_last_checked_at": "2026-11-16T16:36:29+00:00",
+    "detail_next_check_at": "2026-11-23T16:36:29+00:00",
+    "detail_unchanged_count": 2,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 1,
+      "firstForumMessageId": null,
+      "id": 749832,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-10-16T06:56:17.300Z",
+      "postDate": "2026-10-16T04:58:36.786119900Z",
+      "raw": {
+        "comment_count": 1,
+        "id": 749832,
+        "last_comment_post_date": "2026-10-16T06:56:17.300Z",
+        "post_date": "2026-10-16T04:58:36.786119900Z",
+        "title": "Use of system 1 models",
+        "topic_url": "/competitions/name-that-llm/discussion/749832",
+        "votes": 1
+      },
+      "title": "Use of system 1 models",
+      "topicUrl": "/competitions/name-that-llm/discussion/749832",
+      "votes": 1
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "EXPERT",
+        "authorUserDisplayName": "OsakanaTeishoku",
+        "authorUserName": "osakanateishoku",
+        "comments": [
+          {
+            "author": {
+              "displayName": "Maniceet Sahay",
+              "tier": "EXPERT",
+              "url": "/maniceet"
+            },
+            "content": "<p>Laya is built on ModernBERT, I think ModernBERT based stacks are not going to give you the best scores, Qwen based models are atleast as far as I can see beating ModernBERT</p>",
+            "id": 3539617,
+            "isThankYou": false,
+            "postDate": "2026-10-16T06:56:17.300Z",
+            "raw": {
+              "author": {
+                "display_name": "Maniceet Sahay",
+                "id": 700245,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/700245-kg.jpg",
+                "tier": "EXPERT",
+                "url": "/maniceet"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 43,
+              "content": "<p>Laya is built on ModernBERT, I think ModernBERT based stacks are not going to give you the best scores, Qwen based models are atleast as far as I can see beating ModernBERT</p>",
+              "feedback_tracking_data": {},
+              "id": 3539617,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-16T06:56:17.300Z",
+              "raw_markdown": "Laya is built on ModernBERT, I think ModernBERT based stacks are not going to give you the best scores, Qwen based models are atleast as far as I can see beating ModernBERT",
+              "reactions": [
+                {
+                  "emoji": "THANK_YOU",
+                  "featured_user_names": [
+                    "osakanateishoku",
+                    "minhthiennguyen"
+                  ],
+                  "user_count": 2
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Maniceet Sahay",
+                  "id": 700245,
+                  "performance_tier": "EXPERT",
+                  "profile_url": "/maniceet",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/700245-kg.jpg",
+                  "tier": "EXPERT",
+                  "url": "/maniceet",
+                  "user_id": 700245,
+                  "user_name": "maniceet"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "Laya is built on ModernBERT, I think ModernBERT based stacks are not going to give you the best scores, Qwen based models are atleast as far as I can see beating ModernBERT",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "expectedCommentCount": 1,
+        "firstMessage": {
+          "author": {
+            "displayName": "OsakanaTeishoku",
+            "tier": "EXPERT",
+            "url": "/osakanateishoku"
+          },
+          "content": "<p>Has anyone tried system 1 decision models such as laya? I tried some simple fine-tuning on it but couldn’t get good CV score. <a href=\"https://huggingface.co/convaiinnovations/laya\" target=\"_blank\">https://huggingface.co/convaiinnovations/laya</a> </p>",
+          "id": 3539534,
+          "isThankYou": false,
+          "postDate": "2026-10-16T04:58:36.787Z",
+          "raw": {
+            "author": {
+              "display_name": "OsakanaTeishoku",
+              "id": 14521003,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "EXPERT",
+              "url": "/osakanateishoku"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 2843,
+            "content": "<p>Has anyone tried system 1 decision models such as laya? I tried some simple fine-tuning on it but couldn’t get good CV score. <a href=\"https://huggingface.co/convaiinnovations/laya\" target=\"_blank\">https://huggingface.co/convaiinnovations/laya</a> </p>",
+            "feedback_tracking_data": {},
+            "id": 3539534,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-10-16T04:58:36.787Z",
+            "raw_markdown": "Has anyone tried system 1 decision models such as laya? I tried some simple fine-tuning on it but couldn’t get good CV score. https://huggingface.co/convaiinnovations/laya ",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "OsakanaTeishoku",
+                "id": 14521003,
+                "performance_tier": "EXPERT",
+                "profile_url": "/osakanateishoku",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "EXPERT",
+                "url": "/osakanateishoku",
+                "user_id": 14521003,
+                "user_name": "osakanateishoku"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 1,
+              "total_votes": 1
+            }
+          },
+          "rawMarkdown": "Has anyone tried system 1 decision models such as laya? I tried some simple fine-tuning on it but couldn’t get good CV score. https://huggingface.co/convaiinnovations/laya ",
+          "replies": [],
+          "votes": {
+            "totalVotes": 1
+          }
+        },
+        "firstMessageId": 3539534,
+        "id": 749832,
+        "name": "Use of system 1 models",
+        "postDate": "2026-10-16T04:58:36.786119900Z",
+        "url": "/competitions/name-that-llm/discussion/749832"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>Has anyone tried system 1 decision models such as laya? I tried some simple fine-tuning on it but couldn’t get good CV score. <a href=\"https://huggingface.co/convaiinnovations/laya\" target=\"_blank\">https://huggingface.co/convaiinnovations/laya</a> </p>",
+              "id": 3539534,
+              "post_date": "2026-10-16T04:58:36.787Z",
+              "raw_markdown": "Has anyone tried system 1 decision models such as laya? I tried some simple fine-tuning on it but couldn’t get good CV score. https://huggingface.co/convaiinnovations/laya ",
+              "votes": 1
+            },
+            {
+              "content": "<p>Laya is built on ModernBERT, I think ModernBERT based stacks are not going to give you the best scores, Qwen based models are atleast as far as I can see beating ModernBERT</p>",
+              "id": 3539617,
+              "post_date": "2026-10-16T06:56:17.300Z",
+              "raw_markdown": "Laya is built on ModernBERT, I think ModernBERT based stacks are not going to give you the best scores, Qwen based models are atleast as far as I can see beating ModernBERT"
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 14521003,
+            "author_performance_tier": "EXPERT",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "default-thumb.png",
+            "author_user_display_name": "OsakanaTeishoku",
+            "author_user_name": "osakanateishoku",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "comments": [
+              {
+                "author": {
+                  "display_name": "Maniceet Sahay",
+                  "id": 700245,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/700245-kg.jpg",
+                  "tier": "EXPERT",
+                  "url": "/maniceet"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 43,
+                "content": "<p>Laya is built on ModernBERT, I think ModernBERT based stacks are not going to give you the best scores, Qwen based models are atleast as far as I can see beating ModernBERT</p>",
+                "feedback_tracking_data": {},
+                "id": 3539617,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-16T06:56:17.300Z",
+                "raw_markdown": "Laya is built on ModernBERT, I think ModernBERT based stacks are not going to give you the best scores, Qwen based models are atleast as far as I can see beating ModernBERT",
+                "reactions": [
+                  {
+                    "emoji": "THANK_YOU",
+                    "featured_user_names": [
+                      "osakanateishoku",
+                      "minhthiennguyen"
+                    ],
+                    "user_count": 2
+                  }
+                ],
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "Maniceet Sahay",
+                    "id": 700245,
+                    "performance_tier": "EXPERT",
+                    "profile_url": "/maniceet",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/700245-kg.jpg",
+                    "tier": "EXPERT",
+                    "url": "/maniceet",
+                    "user_id": 700245,
+                    "user_name": "maniceet"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              }
+            ],
+            "first_message": {
+              "author": {
+                "display_name": "OsakanaTeishoku",
+                "id": 14521003,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "EXPERT",
+                "url": "/osakanateishoku"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 2843,
+              "content": "<p>Has anyone tried system 1 decision models such as laya? I tried some simple fine-tuning on it but couldn’t get good CV score. <a href=\"https://huggingface.co/convaiinnovations/laya\" target=\"_blank\">https://huggingface.co/convaiinnovations/laya</a> </p>",
+              "feedback_tracking_data": {},
+              "id": 3539534,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-16T04:58:36.787Z",
+              "raw_markdown": "Has anyone tried system 1 decision models such as laya? I tried some simple fine-tuning on it but couldn’t get good CV score. https://huggingface.co/convaiinnovations/laya ",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "OsakanaTeishoku",
+                  "id": 14521003,
+                  "performance_tier": "EXPERT",
+                  "profile_url": "/osakanateishoku",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "EXPERT",
+                  "url": "/osakanateishoku",
+                  "user_id": 14521003,
+                  "user_name": "osakanateishoku"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": 1
+              }
+            },
+            "first_message_id": 3539534,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 749832,
+            "name": "Use of system 1 models",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-10-16T04:58:36.786119900Z",
+            "total_messages": 1,
+            "total_votes": 1,
+            "url": "/competitions/name-that-llm/discussion/749832"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:36:29+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:36:29+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-10-16T06:56:17.300Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [
+    {
+      "slug": "name-that-llm",
+      "topic_id": 749832,
+      "message_id": 3539617,
+      "parent_message_id": null,
+      "author": "Maniceet Sahay",
+      "author_url": "/maniceet",
+      "author_tier": "EXPERT",
+      "post_date": "2026-10-16T06:56:17.300Z",
+      "raw_markdown": "Laya is built on ModernBERT, I think ModernBERT based stacks are not going to give you the best scores, Qwen based models are atleast as far as I can see beating ModernBERT",
+      "content_html": "<p>Laya is built on ModernBERT, I think ModernBERT based stacks are not going to give you the best scores, Qwen based models are atleast as far as I can see beating ModernBERT</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:56:31+00:00",
+      "last_seen_at": "2026-11-16T16:36:29+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:36:29+00:00",
+      "remote_last_listed_at": "2026-11-16T16:36:29+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Maniceet Sahay",
+          "tier": "EXPERT",
+          "url": "/maniceet"
+        },
+        "content": "<p>Laya is built on ModernBERT, I think ModernBERT based stacks are not going to give you the best scores, Qwen based models are atleast as far as I can see beating ModernBERT</p>",
+        "id": 3539617,
+        "isThankYou": false,
+        "postDate": "2026-10-16T06:56:17.300Z",
+        "raw": {
+          "author": {
+            "display_name": "Maniceet Sahay",
+            "id": 700245,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/700245-kg.jpg",
+            "tier": "EXPERT",
+            "url": "/maniceet"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 43,
+          "content": "<p>Laya is built on ModernBERT, I think ModernBERT based stacks are not going to give you the best scores, Qwen based models are atleast as far as I can see beating ModernBERT</p>",
+          "feedback_tracking_data": {},
+          "id": 3539617,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-16T06:56:17.300Z",
+          "raw_markdown": "Laya is built on ModernBERT, I think ModernBERT based stacks are not going to give you the best scores, Qwen based models are atleast as far as I can see beating ModernBERT",
+          "reactions": [
+            {
+              "emoji": "THANK_YOU",
+              "featured_user_names": [
+                "osakanateishoku",
+                "minhthiennguyen"
+              ],
+              "user_count": 2
+            }
+          ],
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Maniceet Sahay",
+              "id": 700245,
+              "performance_tier": "EXPERT",
+              "profile_url": "/maniceet",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/700245-kg.jpg",
+              "tier": "EXPERT",
+              "url": "/maniceet",
+              "user_id": 700245,
+              "user_name": "maniceet"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "Laya is built on ModernBERT, I think ModernBERT based stacks are not going to give you the best scores, Qwen based models are atleast as far as I can see beating ModernBERT",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    }
+  ],
+  "writeup": null
+}

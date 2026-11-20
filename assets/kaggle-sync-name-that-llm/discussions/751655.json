@@ -1,0 +1,757 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 751655,
+    "title": "Datasets forum for competitions",
+    "author": "Ravi Ramakrishnan",
+    "author_url": "/ravi20076",
+    "author_tier": "GRANDMASTER",
+    "post_date": "2026-10-22T10:59:07.616950900Z",
+    "last_comment_post_date": "2026-10-25T04:45:28.890Z",
+    "comment_count": 3,
+    "votes": 7,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/751655",
+    "first_message_id": 3542747,
+    "first_seen_at": "2026-11-04T06:56:16+00:00",
+    "last_seen_at": "2026-11-16T16:36:03+00:00",
+    "detail_last_synced_at": "2026-11-16T16:24:00+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "4d368a1e6fa0fe1c4a5aa632fa5bb1cdb5c97f1eeb3d144f291b271af6c3780b",
+    "listing_metrics_hash": "d2fce7a2b82de2d1f9b4f8118f0f4189ce54917191b94f5a85bcea147a5a01ac",
+    "detail_content_hash": "d5c8e43f0f555860658ff3ad138a70ae494f3d82bae080ac28b0e8e86951d7f1",
+    "detail_last_checked_at": "2026-11-16T16:24:00+00:00",
+    "detail_next_check_at": "2026-11-23T16:24:00+00:00",
+    "detail_unchanged_count": 2,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 3,
+      "firstForumMessageId": null,
+      "id": 751655,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-10-25T04:45:28.890Z",
+      "postDate": "2026-10-22T10:59:07.616950900Z",
+      "raw": {
+        "comment_count": 3,
+        "id": 751655,
+        "last_comment_post_date": "2026-10-25T04:45:28.890Z",
+        "post_date": "2026-10-22T10:59:07.616950900Z",
+        "title": "Datasets forum for competitions",
+        "topic_url": "/competitions/name-that-llm/discussion/751655",
+        "votes": 7
+      },
+      "title": "Datasets forum for competitions",
+      "topicUrl": "/competitions/name-that-llm/discussion/751655",
+      "votes": 7
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "GRANDMASTER",
+        "authorUserDisplayName": "Ravi Ramakrishnan",
+        "authorUserName": "ravi20076",
+        "comments": [
+          {
+            "author": {
+              "displayName": "Ace",
+              "tier": "EXPERT",
+              "url": "/shikhageekachad"
+            },
+            "content": "<p>Shoutout : \n<a href=\"/colmlooney\" target=\"_blank\">@colmlooney</a> \n<a href=\"/Darragh1Walsh\" target=\"_blank\">@Darragh1Walsh</a></p>\n<p><a href=\"https://www.kaggle.com/datasets/darragh1walsh/ntl-kaggle-ai-gen-run-1\" target=\"_blank\">https://www.kaggle.com/datasets/darragh1walsh/ntl-kaggle-ai-gen-run-1</a></p>",
+            "id": 3544258,
+            "isThankYou": false,
+            "postDate": "2026-10-25T04:35:37.887Z",
+            "raw": {
+              "author": {
+                "display_name": "Ace",
+                "id": 22169099,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22169099-kg.png?t=2026-01-27-00-40-56",
+                "tier": "EXPERT",
+                "url": "/shikhageekachad"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 116,
+              "content": "<p>Shoutout : \n<a href=\"/colmlooney\" target=\"_blank\">@colmlooney</a> \n<a href=\"/Darragh1Walsh\" target=\"_blank\">@Darragh1Walsh</a></p>\n<p><a href=\"https://www.kaggle.com/datasets/darragh1walsh/ntl-kaggle-ai-gen-run-1\" target=\"_blank\">https://www.kaggle.com/datasets/darragh1walsh/ntl-kaggle-ai-gen-run-1</a></p>",
+              "feedback_tracking_data": {},
+              "id": 3544258,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-25T04:35:37.887Z",
+              "raw_markdown": "Shoutout : \n@colmlooney \n@Darragh1Walsh\n\n https://www.kaggle.com/datasets/darragh1walsh/ntl-kaggle-ai-gen-run-1",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Nischay Dhankhar",
+                  "id": 4712534,
+                  "performance_tier": "GRANDMASTER",
+                  "profile_url": "/nischaydnk",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4712534-kg.jpg?t=2025-07-08-18-30-02",
+                  "tier": "GRANDMASTER",
+                  "url": "/nischaydnk",
+                  "user_id": 4712534,
+                  "user_name": "nischaydnk"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 4,
+                "total_votes": 4
+              }
+            },
+            "rawMarkdown": "Shoutout : \n@colmlooney \n@Darragh1Walsh\n\n https://www.kaggle.com/datasets/darragh1walsh/ntl-kaggle-ai-gen-run-1",
+            "replies": [],
+            "votes": {
+              "totalVotes": 4
+            }
+          },
+          {
+            "author": {
+              "displayName": "Ace",
+              "tier": "EXPERT",
+              "url": "/shikhageekachad"
+            },
+            "content": "<p>MAABench  <a href=\"https://huggingface.co/datasets/ming9999/maabench\" target=\"_blank\">https://huggingface.co/datasets/ming9999/maabench</a> \nUsed in Atlas <a href=\"https://arxiv.org/pdf/2610.19583\" target=\"_blank\">https://arxiv.org/pdf/2610.19583</a>\nusing generations from five recent model families: GPT (OpenAI, 2025), Claude (Anthropic, 2026a), Gemini (Google, 2026),\nMistral (Jiang et al., 2023), and Llama (Meta, 2025). The dataset contains 4 model versions for each\nmodel family, corresponding to different release versions. Specifically, in the version-OOD setting,\nthe oldest version is used for training, and the remaining three versions are used for test.</p>",
+            "id": 3544259,
+            "isThankYou": false,
+            "postDate": "2026-10-25T04:45:28.890Z",
+            "raw": {
+              "author": {
+                "display_name": "Ace",
+                "id": 22169099,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22169099-kg.png?t=2026-01-27-00-40-56",
+                "tier": "EXPERT",
+                "url": "/shikhageekachad"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 116,
+              "content": "<p>MAABench  <a href=\"https://huggingface.co/datasets/ming9999/maabench\" target=\"_blank\">https://huggingface.co/datasets/ming9999/maabench</a> \nUsed in Atlas <a href=\"https://arxiv.org/pdf/2610.19583\" target=\"_blank\">https://arxiv.org/pdf/2610.19583</a>\nusing generations from five recent model families: GPT (OpenAI, 2025), Claude (Anthropic, 2026a), Gemini (Google, 2026),\nMistral (Jiang et al., 2023), and Llama (Meta, 2025). The dataset contains 4 model versions for each\nmodel family, corresponding to different release versions. Specifically, in the version-OOD setting,\nthe oldest version is used for training, and the remaining three versions are used for test.</p>",
+              "feedback_tracking_data": {},
+              "id": 3544259,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-25T04:45:28.890Z",
+              "raw_markdown": " MAABench  https://huggingface.co/datasets/ming9999/maabench \n\nUsed in Atlas https://arxiv.org/pdf/2610.19583\nusing generations from five recent model families: GPT (OpenAI, 2025), Claude (Anthropic, 2026a), Gemini (Google, 2026),\nMistral (Jiang et al., 2023), and Llama (Meta, 2025). The dataset contains 4 model versions for each\nmodel family, corresponding to different release versions. Specifically, in the version-OOD setting,\nthe oldest version is used for training, and the remaining three versions are used for test.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Nischay Dhankhar",
+                  "id": 4712534,
+                  "performance_tier": "GRANDMASTER",
+                  "profile_url": "/nischaydnk",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4712534-kg.jpg?t=2025-07-08-18-30-02",
+                  "tier": "GRANDMASTER",
+                  "url": "/nischaydnk",
+                  "user_id": 4712534,
+                  "user_name": "nischaydnk"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 3,
+                "total_votes": 3
+              }
+            },
+            "rawMarkdown": " MAABench  https://huggingface.co/datasets/ming9999/maabench \n\nUsed in Atlas https://arxiv.org/pdf/2610.19583\nusing generations from five recent model families: GPT (OpenAI, 2025), Claude (Anthropic, 2026a), Gemini (Google, 2026),\nMistral (Jiang et al., 2023), and Llama (Meta, 2025). The dataset contains 4 model versions for each\nmodel family, corresponding to different release versions. Specifically, in the version-OOD setting,\nthe oldest version is used for training, and the remaining three versions are used for test.",
+            "replies": [],
+            "votes": {
+              "totalVotes": 3
+            }
+          },
+          {
+            "author": {
+              "displayName": "Ace",
+              "tier": "EXPERT",
+              "url": "/shikhageekachad"
+            },
+            "content": "<p>Shout out <a href=\"/prvsiyan\" target=\"_blank\">@prvsiyan</a>  <a href=\"https://www.kaggle.com/datasets/prvsiyan/prvsiyans-extended-name-that-llm-dataset\" target=\"_blank\">https://www.kaggle.com/datasets/prvsiyan/prvsiyans-extended-name-that-llm-dataset</a> </p>",
+            "id": 3544254,
+            "isThankYou": false,
+            "postDate": "2026-10-25T04:25:06.690Z",
+            "raw": {
+              "author": {
+                "display_name": "Ace",
+                "id": 22169099,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22169099-kg.png?t=2026-01-27-00-40-56",
+                "tier": "EXPERT",
+                "url": "/shikhageekachad"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 116,
+              "content": "<p>Shout out <a href=\"/prvsiyan\" target=\"_blank\">@prvsiyan</a>  <a href=\"https://www.kaggle.com/datasets/prvsiyan/prvsiyans-extended-name-that-llm-dataset\" target=\"_blank\">https://www.kaggle.com/datasets/prvsiyan/prvsiyans-extended-name-that-llm-dataset</a> </p>",
+              "feedback_tracking_data": {},
+              "id": 3544254,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-25T04:25:06.690Z",
+              "raw_markdown": "Shout out @prvsiyan  https://www.kaggle.com/datasets/prvsiyan/prvsiyans-extended-name-that-llm-dataset \n",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Nischay Dhankhar",
+                  "id": 4712534,
+                  "performance_tier": "GRANDMASTER",
+                  "profile_url": "/nischaydnk",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4712534-kg.jpg?t=2025-07-08-18-30-02",
+                  "tier": "GRANDMASTER",
+                  "url": "/nischaydnk",
+                  "user_id": 4712534,
+                  "user_name": "nischaydnk"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 3,
+                "total_votes": 3
+              }
+            },
+            "rawMarkdown": "Shout out @prvsiyan  https://www.kaggle.com/datasets/prvsiyan/prvsiyans-extended-name-that-llm-dataset \n",
+            "replies": [],
+            "votes": {
+              "totalVotes": 3
+            }
+          }
+        ],
+        "expectedCommentCount": 3,
+        "firstMessage": {
+          "author": {
+            "displayName": "Ravi Ramakrishnan",
+            "tier": "GRANDMASTER",
+            "url": "/ravi20076"
+          },
+          "content": "<p>Hello Kaggle,</p>\n<p>We currently have code, discussion and models forum linked for competitions. For such type of data-generation activities, it will be better to have a separate datasets forum and pin shared public datasets linked to the competition for everyone's benefit.</p>\n<p>Regards.</p>",
+          "id": 3542747,
+          "isThankYou": false,
+          "postDate": "2026-10-22T10:59:07.617Z",
+          "raw": {
+            "author": {
+              "display_name": "Ravi Ramakrishnan",
+              "id": 8273630,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8273630-kg.JPG?t=2024-03-26-14-51-52",
+              "tier": "GRANDMASTER",
+              "url": "/ravi20076"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 466,
+            "content": "<p>Hello Kaggle,</p>\n<p>We currently have code, discussion and models forum linked for competitions. For such type of data-generation activities, it will be better to have a separate datasets forum and pin shared public datasets linked to the competition for everyone's benefit.</p>\n<p>Regards.</p>",
+            "feedback_tracking_data": {},
+            "id": 3542747,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-10-22T10:59:07.617Z",
+            "raw_markdown": "Hello Kaggle,\n\nWe currently have code, discussion and models forum linked for competitions. For such type of data-generation activities, it will be better to have a separate datasets forum and pin shared public datasets linked to the competition for everyone's benefit.\n\nRegards.",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "Kishan Vavdara",
+                "id": 12951282,
+                "performance_tier": "MASTER",
+                "profile_url": "/kishanvavdara",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/12951282-kg.jpeg",
+                "tier": "MASTER",
+                "url": "/kishanvavdara",
+                "user_id": 12951282,
+                "user_name": "kishanvavdara"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 9,
+              "total_votes": 7
+            }
+          },
+          "rawMarkdown": "Hello Kaggle,\n\nWe currently have code, discussion and models forum linked for competitions. For such type of data-generation activities, it will be better to have a separate datasets forum and pin shared public datasets linked to the competition for everyone's benefit.\n\nRegards.",
+          "replies": [],
+          "votes": {
+            "totalVotes": 7
+          }
+        },
+        "firstMessageId": 3542747,
+        "id": 751655,
+        "name": "Datasets forum for competitions",
+        "postDate": "2026-10-22T10:59:07.616950900Z",
+        "url": "/competitions/name-that-llm/discussion/751655"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>Hello Kaggle,</p>\n<p>We currently have code, discussion and models forum linked for competitions. For such type of data-generation activities, it will be better to have a separate datasets forum and pin shared public datasets linked to the competition for everyone's benefit.</p>\n<p>Regards.</p>",
+              "id": 3542747,
+              "post_date": "2026-10-22T10:59:07.617Z",
+              "raw_markdown": "Hello Kaggle,\n\nWe currently have code, discussion and models forum linked for competitions. For such type of data-generation activities, it will be better to have a separate datasets forum and pin shared public datasets linked to the competition for everyone's benefit.\n\nRegards.",
+              "votes": 7
+            },
+            {
+              "content": "<p>Shout out <a href=\"/prvsiyan\" target=\"_blank\">@prvsiyan</a>  <a href=\"https://www.kaggle.com/datasets/prvsiyan/prvsiyans-extended-name-that-llm-dataset\" target=\"_blank\">https://www.kaggle.com/datasets/prvsiyan/prvsiyans-extended-name-that-llm-dataset</a> </p>",
+              "id": 3544254,
+              "post_date": "2026-10-25T04:25:06.690Z",
+              "raw_markdown": "Shout out @prvsiyan  https://www.kaggle.com/datasets/prvsiyan/prvsiyans-extended-name-that-llm-dataset \n",
+              "votes": 3
+            },
+            {
+              "content": "<p>Shoutout : \n<a href=\"/colmlooney\" target=\"_blank\">@colmlooney</a> \n<a href=\"/Darragh1Walsh\" target=\"_blank\">@Darragh1Walsh</a></p>\n<p><a href=\"https://www.kaggle.com/datasets/darragh1walsh/ntl-kaggle-ai-gen-run-1\" target=\"_blank\">https://www.kaggle.com/datasets/darragh1walsh/ntl-kaggle-ai-gen-run-1</a></p>",
+              "id": 3544258,
+              "post_date": "2026-10-25T04:35:37.887Z",
+              "raw_markdown": "Shoutout : \n@colmlooney \n@Darragh1Walsh\n\n https://www.kaggle.com/datasets/darragh1walsh/ntl-kaggle-ai-gen-run-1",
+              "votes": 4
+            },
+            {
+              "content": "<p>MAABench  <a href=\"https://huggingface.co/datasets/ming9999/maabench\" target=\"_blank\">https://huggingface.co/datasets/ming9999/maabench</a> \nUsed in Atlas <a href=\"https://arxiv.org/pdf/2610.19583\" target=\"_blank\">https://arxiv.org/pdf/2610.19583</a>\nusing generations from five recent model families: GPT (OpenAI, 2025), Claude (Anthropic, 2026a), Gemini (Google, 2026),\nMistral (Jiang et al., 2023), and Llama (Meta, 2025). The dataset contains 4 model versions for each\nmodel family, corresponding to different release versions. Specifically, in the version-OOD setting,\nthe oldest version is used for training, and the remaining three versions are used for test.</p>",
+              "id": 3544259,
+              "post_date": "2026-10-25T04:45:28.890Z",
+              "raw_markdown": " MAABench  https://huggingface.co/datasets/ming9999/maabench \n\nUsed in Atlas https://arxiv.org/pdf/2610.19583\nusing generations from five recent model families: GPT (OpenAI, 2025), Claude (Anthropic, 2026a), Gemini (Google, 2026),\nMistral (Jiang et al., 2023), and Llama (Meta, 2025). The dataset contains 4 model versions for each\nmodel family, corresponding to different release versions. Specifically, in the version-OOD setting,\nthe oldest version is used for training, and the remaining three versions are used for test.",
+              "votes": 3
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 8273630,
+            "author_performance_tier": "GRANDMASTER",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "8273630-kg.JPG?t=2024-03-26-14-51-52",
+            "author_user_display_name": "Ravi Ramakrishnan",
+            "author_user_name": "ravi20076",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "comments": [
+              {
+                "author": {
+                  "display_name": "Ace",
+                  "id": 22169099,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22169099-kg.png?t=2026-01-27-00-40-56",
+                  "tier": "EXPERT",
+                  "url": "/shikhageekachad"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 116,
+                "content": "<p>Shoutout : \n<a href=\"/colmlooney\" target=\"_blank\">@colmlooney</a> \n<a href=\"/Darragh1Walsh\" target=\"_blank\">@Darragh1Walsh</a></p>\n<p><a href=\"https://www.kaggle.com/datasets/darragh1walsh/ntl-kaggle-ai-gen-run-1\" target=\"_blank\">https://www.kaggle.com/datasets/darragh1walsh/ntl-kaggle-ai-gen-run-1</a></p>",
+                "feedback_tracking_data": {},
+                "id": 3544258,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-25T04:35:37.887Z",
+                "raw_markdown": "Shoutout : \n@colmlooney \n@Darragh1Walsh\n\n https://www.kaggle.com/datasets/darragh1walsh/ntl-kaggle-ai-gen-run-1",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "Nischay Dhankhar",
+                    "id": 4712534,
+                    "performance_tier": "GRANDMASTER",
+                    "profile_url": "/nischaydnk",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4712534-kg.jpg?t=2025-07-08-18-30-02",
+                    "tier": "GRANDMASTER",
+                    "url": "/nischaydnk",
+                    "user_id": 4712534,
+                    "user_name": "nischaydnk"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true,
+                  "total_upvotes": 4,
+                  "total_votes": 4
+                }
+              },
+              {
+                "author": {
+                  "display_name": "Ace",
+                  "id": 22169099,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22169099-kg.png?t=2026-01-27-00-40-56",
+                  "tier": "EXPERT",
+                  "url": "/shikhageekachad"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 116,
+                "content": "<p>MAABench  <a href=\"https://huggingface.co/datasets/ming9999/maabench\" target=\"_blank\">https://huggingface.co/datasets/ming9999/maabench</a> \nUsed in Atlas <a href=\"https://arxiv.org/pdf/2610.19583\" target=\"_blank\">https://arxiv.org/pdf/2610.19583</a>\nusing generations from five recent model families: GPT (OpenAI, 2025), Claude (Anthropic, 2026a), Gemini (Google, 2026),\nMistral (Jiang et al., 2023), and Llama (Meta, 2025). The dataset contains 4 model versions for each\nmodel family, corresponding to different release versions. Specifically, in the version-OOD setting,\nthe oldest version is used for training, and the remaining three versions are used for test.</p>",
+                "feedback_tracking_data": {},
+                "id": 3544259,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-25T04:45:28.890Z",
+                "raw_markdown": " MAABench  https://huggingface.co/datasets/ming9999/maabench \n\nUsed in Atlas https://arxiv.org/pdf/2610.19583\nusing generations from five recent model families: GPT (OpenAI, 2025), Claude (Anthropic, 2026a), Gemini (Google, 2026),\nMistral (Jiang et al., 2023), and Llama (Meta, 2025). The dataset contains 4 model versions for each\nmodel family, corresponding to different release versions. Specifically, in the version-OOD setting,\nthe oldest version is used for training, and the remaining three versions are used for test.",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "Nischay Dhankhar",
+                    "id": 4712534,
+                    "performance_tier": "GRANDMASTER",
+                    "profile_url": "/nischaydnk",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4712534-kg.jpg?t=2025-07-08-18-30-02",
+                    "tier": "GRANDMASTER",
+                    "url": "/nischaydnk",
+                    "user_id": 4712534,
+                    "user_name": "nischaydnk"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true,
+                  "total_upvotes": 3,
+                  "total_votes": 3
+                }
+              },
+              {
+                "author": {
+                  "display_name": "Ace",
+                  "id": 22169099,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22169099-kg.png?t=2026-01-27-00-40-56",
+                  "tier": "EXPERT",
+                  "url": "/shikhageekachad"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 116,
+                "content": "<p>Shout out <a href=\"/prvsiyan\" target=\"_blank\">@prvsiyan</a>  <a href=\"https://www.kaggle.com/datasets/prvsiyan/prvsiyans-extended-name-that-llm-dataset\" target=\"_blank\">https://www.kaggle.com/datasets/prvsiyan/prvsiyans-extended-name-that-llm-dataset</a> </p>",
+                "feedback_tracking_data": {},
+                "id": 3544254,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-25T04:25:06.690Z",
+                "raw_markdown": "Shout out @prvsiyan  https://www.kaggle.com/datasets/prvsiyan/prvsiyans-extended-name-that-llm-dataset \n",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "Nischay Dhankhar",
+                    "id": 4712534,
+                    "performance_tier": "GRANDMASTER",
+                    "profile_url": "/nischaydnk",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4712534-kg.jpg?t=2025-07-08-18-30-02",
+                    "tier": "GRANDMASTER",
+                    "url": "/nischaydnk",
+                    "user_id": 4712534,
+                    "user_name": "nischaydnk"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true,
+                  "total_upvotes": 3,
+                  "total_votes": 3
+                }
+              }
+            ],
+            "first_message": {
+              "author": {
+                "display_name": "Ravi Ramakrishnan",
+                "id": 8273630,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/8273630-kg.JPG?t=2024-03-26-14-51-52",
+                "tier": "GRANDMASTER",
+                "url": "/ravi20076"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 466,
+              "content": "<p>Hello Kaggle,</p>\n<p>We currently have code, discussion and models forum linked for competitions. For such type of data-generation activities, it will be better to have a separate datasets forum and pin shared public datasets linked to the competition for everyone's benefit.</p>\n<p>Regards.</p>",
+              "feedback_tracking_data": {},
+              "id": 3542747,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-22T10:59:07.617Z",
+              "raw_markdown": "Hello Kaggle,\n\nWe currently have code, discussion and models forum linked for competitions. For such type of data-generation activities, it will be better to have a separate datasets forum and pin shared public datasets linked to the competition for everyone's benefit.\n\nRegards.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Kishan Vavdara",
+                  "id": 12951282,
+                  "performance_tier": "MASTER",
+                  "profile_url": "/kishanvavdara",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/12951282-kg.jpeg",
+                  "tier": "MASTER",
+                  "url": "/kishanvavdara",
+                  "user_id": 12951282,
+                  "user_name": "kishanvavdara"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 9,
+                "total_votes": 7
+              }
+            },
+            "first_message_id": 3542747,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 751655,
+            "name": "Datasets forum for competitions",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-10-22T10:59:07.616950900Z",
+            "total_messages": 3,
+            "total_votes": 7,
+            "url": "/competitions/name-that-llm/discussion/751655"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:24:00+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:24:00+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-10-25T04:45:28.890Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [
+    {
+      "slug": "name-that-llm",
+      "topic_id": 751655,
+      "message_id": 3544254,
+      "parent_message_id": null,
+      "author": "Ace",
+      "author_url": "/shikhageekachad",
+      "author_tier": "EXPERT",
+      "post_date": "2026-10-25T04:25:06.690Z",
+      "raw_markdown": "Shout out @prvsiyan  https://www.kaggle.com/datasets/prvsiyan/prvsiyans-extended-name-that-llm-dataset \n",
+      "content_html": "<p>Shout out <a href=\"/prvsiyan\" target=\"_blank\">@prvsiyan</a>  <a href=\"https://www.kaggle.com/datasets/prvsiyan/prvsiyans-extended-name-that-llm-dataset\" target=\"_blank\">https://www.kaggle.com/datasets/prvsiyan/prvsiyans-extended-name-that-llm-dataset</a> </p>",
+      "votes": 3,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:57:08+00:00",
+      "last_seen_at": "2026-11-16T16:24:00+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:24:00+00:00",
+      "remote_last_listed_at": "2026-11-16T16:24:00+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Ace",
+          "tier": "EXPERT",
+          "url": "/shikhageekachad"
+        },
+        "content": "<p>Shout out <a href=\"/prvsiyan\" target=\"_blank\">@prvsiyan</a>  <a href=\"https://www.kaggle.com/datasets/prvsiyan/prvsiyans-extended-name-that-llm-dataset\" target=\"_blank\">https://www.kaggle.com/datasets/prvsiyan/prvsiyans-extended-name-that-llm-dataset</a> </p>",
+        "id": 3544254,
+        "isThankYou": false,
+        "postDate": "2026-10-25T04:25:06.690Z",
+        "raw": {
+          "author": {
+            "display_name": "Ace",
+            "id": 22169099,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22169099-kg.png?t=2026-01-27-00-40-56",
+            "tier": "EXPERT",
+            "url": "/shikhageekachad"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 116,
+          "content": "<p>Shout out <a href=\"/prvsiyan\" target=\"_blank\">@prvsiyan</a>  <a href=\"https://www.kaggle.com/datasets/prvsiyan/prvsiyans-extended-name-that-llm-dataset\" target=\"_blank\">https://www.kaggle.com/datasets/prvsiyan/prvsiyans-extended-name-that-llm-dataset</a> </p>",
+          "feedback_tracking_data": {},
+          "id": 3544254,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-25T04:25:06.690Z",
+          "raw_markdown": "Shout out @prvsiyan  https://www.kaggle.com/datasets/prvsiyan/prvsiyans-extended-name-that-llm-dataset \n",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Nischay Dhankhar",
+              "id": 4712534,
+              "performance_tier": "GRANDMASTER",
+              "profile_url": "/nischaydnk",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4712534-kg.jpg?t=2025-07-08-18-30-02",
+              "tier": "GRANDMASTER",
+              "url": "/nischaydnk",
+              "user_id": 4712534,
+              "user_name": "nischaydnk"
+            }
+          },
+          "votes": {
+            "can_upvote": true,
+            "total_upvotes": 3,
+            "total_votes": 3
+          }
+        },
+        "rawMarkdown": "Shout out @prvsiyan  https://www.kaggle.com/datasets/prvsiyan/prvsiyans-extended-name-that-llm-dataset \n",
+        "replies": [],
+        "votes": {
+          "totalVotes": 3
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 751655,
+      "message_id": 3544258,
+      "parent_message_id": null,
+      "author": "Ace",
+      "author_url": "/shikhageekachad",
+      "author_tier": "EXPERT",
+      "post_date": "2026-10-25T04:35:37.887Z",
+      "raw_markdown": "Shoutout : \n@colmlooney \n@Darragh1Walsh\n\n https://www.kaggle.com/datasets/darragh1walsh/ntl-kaggle-ai-gen-run-1",
+      "content_html": "<p>Shoutout : \n<a href=\"/colmlooney\" target=\"_blank\">@colmlooney</a> \n<a href=\"/Darragh1Walsh\" target=\"_blank\">@Darragh1Walsh</a></p>\n<p><a href=\"https://www.kaggle.com/datasets/darragh1walsh/ntl-kaggle-ai-gen-run-1\" target=\"_blank\">https://www.kaggle.com/datasets/darragh1walsh/ntl-kaggle-ai-gen-run-1</a></p>",
+      "votes": 4,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:57:08+00:00",
+      "last_seen_at": "2026-11-16T16:24:00+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:24:00+00:00",
+      "remote_last_listed_at": "2026-11-16T16:24:00+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Ace",
+          "tier": "EXPERT",
+          "url": "/shikhageekachad"
+        },
+        "content": "<p>Shoutout : \n<a href=\"/colmlooney\" target=\"_blank\">@colmlooney</a> \n<a href=\"/Darragh1Walsh\" target=\"_blank\">@Darragh1Walsh</a></p>\n<p><a href=\"https://www.kaggle.com/datasets/darragh1walsh/ntl-kaggle-ai-gen-run-1\" target=\"_blank\">https://www.kaggle.com/datasets/darragh1walsh/ntl-kaggle-ai-gen-run-1</a></p>",
+        "id": 3544258,
+        "isThankYou": false,
+        "postDate": "2026-10-25T04:35:37.887Z",
+        "raw": {
+          "author": {
+            "display_name": "Ace",
+            "id": 22169099,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22169099-kg.png?t=2026-01-27-00-40-56",
+            "tier": "EXPERT",
+            "url": "/shikhageekachad"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 116,
+          "content": "<p>Shoutout : \n<a href=\"/colmlooney\" target=\"_blank\">@colmlooney</a> \n<a href=\"/Darragh1Walsh\" target=\"_blank\">@Darragh1Walsh</a></p>\n<p><a href=\"https://www.kaggle.com/datasets/darragh1walsh/ntl-kaggle-ai-gen-run-1\" target=\"_blank\">https://www.kaggle.com/datasets/darragh1walsh/ntl-kaggle-ai-gen-run-1</a></p>",
+          "feedback_tracking_data": {},
+          "id": 3544258,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-25T04:35:37.887Z",
+          "raw_markdown": "Shoutout : \n@colmlooney \n@Darragh1Walsh\n\n https://www.kaggle.com/datasets/darragh1walsh/ntl-kaggle-ai-gen-run-1",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Nischay Dhankhar",
+              "id": 4712534,
+              "performance_tier": "GRANDMASTER",
+              "profile_url": "/nischaydnk",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4712534-kg.jpg?t=2025-07-08-18-30-02",
+              "tier": "GRANDMASTER",
+              "url": "/nischaydnk",
+              "user_id": 4712534,
+              "user_name": "nischaydnk"
+            }
+          },
+          "votes": {
+            "can_upvote": true,
+            "total_upvotes": 4,
+            "total_votes": 4
+          }
+        },
+        "rawMarkdown": "Shoutout : \n@colmlooney \n@Darragh1Walsh\n\n https://www.kaggle.com/datasets/darragh1walsh/ntl-kaggle-ai-gen-run-1",
+        "replies": [],
+        "votes": {
+          "totalVotes": 4
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 751655,
+      "message_id": 3544259,
+      "parent_message_id": null,
+      "author": "Ace",
+      "author_url": "/shikhageekachad",
+      "author_tier": "EXPERT",
+      "post_date": "2026-10-25T04:45:28.890Z",
+      "raw_markdown": " MAABench  https://huggingface.co/datasets/ming9999/maabench \n\nUsed in Atlas https://arxiv.org/pdf/2610.19583\nusing generations from five recent model families: GPT (OpenAI, 2025), Claude (Anthropic, 2026a), Gemini (Google, 2026),\nMistral (Jiang et al., 2023), and Llama (Meta, 2025). The dataset contains 4 model versions for each\nmodel family, corresponding to different release versions. Specifically, in the version-OOD setting,\nthe oldest version is used for training, and the remaining three versions are used for test.",
+      "content_html": "<p>MAABench  <a href=\"https://huggingface.co/datasets/ming9999/maabench\" target=\"_blank\">https://huggingface.co/datasets/ming9999/maabench</a> \nUsed in Atlas <a href=\"https://arxiv.org/pdf/2610.19583\" target=\"_blank\">https://arxiv.org/pdf/2610.19583</a>\nusing generations from five recent model families: GPT (OpenAI, 2025), Claude (Anthropic, 2026a), Gemini (Google, 2026),\nMistral (Jiang et al., 2023), and Llama (Meta, 2025). The dataset contains 4 model versions for each\nmodel family, corresponding to different release versions. Specifically, in the version-OOD setting,\nthe oldest version is used for training, and the remaining three versions are used for test.</p>",
+      "votes": 3,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:57:08+00:00",
+      "last_seen_at": "2026-11-16T16:24:00+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:24:00+00:00",
+      "remote_last_listed_at": "2026-11-16T16:24:00+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Ace",
+          "tier": "EXPERT",
+          "url": "/shikhageekachad"
+        },
+        "content": "<p>MAABench  <a href=\"https://huggingface.co/datasets/ming9999/maabench\" target=\"_blank\">https://huggingface.co/datasets/ming9999/maabench</a> \nUsed in Atlas <a href=\"https://arxiv.org/pdf/2610.19583\" target=\"_blank\">https://arxiv.org/pdf/2610.19583</a>\nusing generations from five recent model families: GPT (OpenAI, 2025), Claude (Anthropic, 2026a), Gemini (Google, 2026),\nMistral (Jiang et al., 2023), and Llama (Meta, 2025). The dataset contains 4 model versions for each\nmodel family, corresponding to different release versions. Specifically, in the version-OOD setting,\nthe oldest version is used for training, and the remaining three versions are used for test.</p>",
+        "id": 3544259,
+        "isThankYou": false,
+        "postDate": "2026-10-25T04:45:28.890Z",
+        "raw": {
+          "author": {
+            "display_name": "Ace",
+            "id": 22169099,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22169099-kg.png?t=2026-01-27-00-40-56",
+            "tier": "EXPERT",
+            "url": "/shikhageekachad"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 116,
+          "content": "<p>MAABench  <a href=\"https://huggingface.co/datasets/ming9999/maabench\" target=\"_blank\">https://huggingface.co/datasets/ming9999/maabench</a> \nUsed in Atlas <a href=\"https://arxiv.org/pdf/2610.19583\" target=\"_blank\">https://arxiv.org/pdf/2610.19583</a>\nusing generations from five recent model families: GPT (OpenAI, 2025), Claude (Anthropic, 2026a), Gemini (Google, 2026),\nMistral (Jiang et al., 2023), and Llama (Meta, 2025). The dataset contains 4 model versions for each\nmodel family, corresponding to different release versions. Specifically, in the version-OOD setting,\nthe oldest version is used for training, and the remaining three versions are used for test.</p>",
+          "feedback_tracking_data": {},
+          "id": 3544259,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-25T04:45:28.890Z",
+          "raw_markdown": " MAABench  https://huggingface.co/datasets/ming9999/maabench \n\nUsed in Atlas https://arxiv.org/pdf/2610.19583\nusing generations from five recent model families: GPT (OpenAI, 2025), Claude (Anthropic, 2026a), Gemini (Google, 2026),\nMistral (Jiang et al., 2023), and Llama (Meta, 2025). The dataset contains 4 model versions for each\nmodel family, corresponding to different release versions. Specifically, in the version-OOD setting,\nthe oldest version is used for training, and the remaining three versions are used for test.",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Nischay Dhankhar",
+              "id": 4712534,
+              "performance_tier": "GRANDMASTER",
+              "profile_url": "/nischaydnk",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4712534-kg.jpg?t=2025-07-08-18-30-02",
+              "tier": "GRANDMASTER",
+              "url": "/nischaydnk",
+              "user_id": 4712534,
+              "user_name": "nischaydnk"
+            }
+          },
+          "votes": {
+            "can_upvote": true,
+            "total_upvotes": 3,
+            "total_votes": 3
+          }
+        },
+        "rawMarkdown": " MAABench  https://huggingface.co/datasets/ming9999/maabench \n\nUsed in Atlas https://arxiv.org/pdf/2610.19583\nusing generations from five recent model families: GPT (OpenAI, 2025), Claude (Anthropic, 2026a), Gemini (Google, 2026),\nMistral (Jiang et al., 2023), and Llama (Meta, 2025). The dataset contains 4 model versions for each\nmodel family, corresponding to different release versions. Specifically, in the version-OOD setting,\nthe oldest version is used for training, and the remaining three versions are used for test.",
+        "replies": [],
+        "votes": {
+          "totalVotes": 3
+        }
+      }
+    }
+  ],
+  "writeup": null
+}

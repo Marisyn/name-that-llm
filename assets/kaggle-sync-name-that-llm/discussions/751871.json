@@ -1,0 +1,231 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 751871,
+    "title": "Notes from our runs: what transferred to the LB, what didn't, and a GLM/Kimi dataset",
+    "author": "Daniel Andres Miranda",
+    "author_url": "/danielandresmiranda",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-10-22T23:57:40.474679700Z",
+    "last_comment_post_date": "2026-10-22T23:57:40.473333300Z",
+    "comment_count": 0,
+    "votes": 4,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/751871",
+    "first_message_id": 3543138,
+    "first_seen_at": "2026-11-04T06:56:16+00:00",
+    "last_seen_at": "2026-11-16T16:36:04+00:00",
+    "detail_last_synced_at": "2026-11-16T16:30:44+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "bf48651f674218f0d05a7d72d3ec875b710ba9189e7714e5e26cbf151ec64fc8",
+    "listing_metrics_hash": "818a5cc0f2253a82207ce555576d24d0d4b4461b2ac293b834a011f9d570c30a",
+    "detail_content_hash": "6f256844bf769837259a535eb7b92ddbdd4e85dd2d41437eb1ffcff5bcb2e8f9",
+    "detail_last_checked_at": "2026-11-16T16:30:44+00:00",
+    "detail_next_check_at": "2026-11-23T16:30:44+00:00",
+    "detail_unchanged_count": 2,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 0,
+      "firstForumMessageId": null,
+      "id": 751871,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-10-22T23:57:40.473333300Z",
+      "postDate": "2026-10-22T23:57:40.474679700Z",
+      "raw": {
+        "id": 751871,
+        "last_comment_post_date": "2026-10-22T23:57:40.473333300Z",
+        "post_date": "2026-10-22T23:57:40.474679700Z",
+        "title": "Notes from our runs: what transferred to the LB, what didn't, and a GLM/Kimi dataset",
+        "topic_url": "/competitions/name-that-llm/discussion/751871",
+        "votes": 4
+      },
+      "title": "Notes from our runs: what transferred to the LB, what didn't, and a GLM/Kimi dataset",
+      "topicUrl": "/competitions/name-that-llm/discussion/751871",
+      "votes": 4
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "Daniel Andres Miranda",
+        "authorUserName": "danielandresmiranda",
+        "comments": [],
+        "expectedCommentCount": 0,
+        "firstMessage": {
+          "author": {
+            "displayName": "Daniel Andres Miranda",
+            "tier": "CONTRIBUTOR",
+            "url": "/danielandresmiranda"
+          },
+          "content": "<p>Sharing what we measured over the last days, including the negative results, plus a small dataset that fills a gap in the public pools. All CV numbers are 5-fold GroupKFold by <code>prompt_id</code>, scored <strong>per passage</strong> (no test-time grouping), which tracked our public LB 2–3 points high.</p>\n<h3>1. Test-time prompt grouping did not transfer</h3>\n<p>On train, clustering by topic + Hungarian assignment inside each prompt gave +10 points (0.447 → 0.69 with reconstructed groups). On the public LB: 0.425 with it vs 0.427 without. This matches the simulation in the \"Test-time prompt grouping\" thread: the hidden test seems to have only a few answers per prompt, so train's 18-answers-per-prompt structure is not there. We now validate per passage only.</p>\n<h3>2. Frozen LLM features → LoRA → two-stage LoRA</h3>\n<p>Qwen3.5-9B-Base, first 19 layers:</p>\n<table>\n<thead>\n<tr>\n<th></th>\n<th>CV per passage</th>\n<th>Public LB</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Frozen mean-pooled layers 4/9/16/17/18 + TF-IDF</td>\n<td>0.447</td>\n<td>0.427</td>\n</tr>\n<tr>\n<td>LoRA r16 on train only, layer 18</td>\n<td>0.483</td>\n<td></td>\n</tr>\n<tr>\n<td>LoRA (train) + frozen blend</td>\n<td>0.503</td>\n<td>0.483</td>\n</tr>\n<tr>\n<td>Two-stage LoRA (1 epoch on ~36k public passages, then 2 on train), 8-layer readout</td>\n<td>0.578</td>\n<td></td>\n</tr>\n<tr>\n<td>Two-stage LoRA, layer-18 readout only</td>\n<td>0.582</td>\n<td></td>\n</tr>\n<tr>\n<td>Both two-stage readouts + train-only LoRA</td>\n<td>0.605</td>\n<td>0.573</td>\n</tr>\n</tbody>\n</table>\n<ul>\n<li>Middle layers carry the style; the last layers lose it (layer 18 ≈ 0.42 frozen, layer 32 ≈ 0.34).</li>\n<li>Stage 1 alone (no train passages seen) already scored 0.486–0.499 on all of train.</li>\n<li>The 8-layer and the single-layer readouts score the same but disagree on 29 % of passages, so blending them adds ~2 points. Readout diversity is a cheap substitute for a second backbone.</li>\n<li>An encoder (DeBERTa-v3-base) fine-tuned on train only did not beat char/word TF-IDF.</li>\n</ul>\n<h3>3. External data: coverage matters more than volume</h3>\n<ul>\n<li>Adding seyit + lucas (13 of 18 labels) to frozen-feature classifiers: +4 points overall, but the 5 uncovered labels (GLM ×2, kimi-k3, qwen3.8-max, gemini-3.7-flash) <strong>lost</strong> 6 points of recall (\"new prompt ⇒ not GLM\" shortcut).</li>\n<li>With all 18 labels covered (15k passages): 0.447 → 0.508. Labels with few external rows still dropped.</li>\n</ul>\n<h3>4. Generating data yourself: what OpenRouter and the Gemini API actually do</h3>\n<ul>\n<li>On OpenRouter only <code>kimi-k3</code> accepts <code>reasoning.enabled=false</code>. <code>glm-5.3</code>, <code>glm-5.3-flash</code>, <code>gemini-3.7-flash</code> and <code>qwen3.8-max-0902</code> return <em>\"Reasoning is mandatory for this endpoint\"</em>. With <code>effort=minimal</code>, GLM barely reasons (median 1–8 tokens, $0.0003/passage), but Gemini-3.7-flash and Qwen still reason ~1,400–1,500 tokens.</li>\n<li>Kimi-K3 without reasoning matches train's em-dash rate much better than with reasoning.</li>\n<li><strong>Warning:</strong> calling <code>gemini-3.7-flash</code> on the Google AI Studio API returned <code>modelVersion: gemini-3.8-flash</code> in our pilot (and ignored <code>thinkingBudget: 0</code>). If you generate Gemini-3.7 data there, check <code>modelVersion</code> on every response or your labels may be wrong.</li>\n</ul>\n<h3>5. Things that did not help us</h3>\n<ul>\n<li>Character CNN (raw chars and an X/x \"shape\" view) trained on train + pool: 0.305 alone, +0.4 in the blend (noise level). The LoRA already sees the typography.</li>\n<li>Lab → model hierarchy: better lab accuracy, same model accuracy.</li>\n<li>Sinkhorn balancing on our OOF: −0.3. The spaced em-dash rule (\" — \", only claude-opus-4-6, claude-opus-5 and both GLMs in train): no change on our OOF, the model already gets those right.</li>\n</ul>\n<h3>6. Dataset</h3>\n<p><a href=\"https://www.kaggle.com/datasets/danielandresmiranda/ntl-openrouter-glm-kimi\" target=\"_blank\">NTL OpenRouter GLM and Kimi passages</a>: 1,516 passages (glm-5.3 600, glm-5.3-flash 600, kimi-k3 316) on the seyitkaangunes prompt bank, same request format as the other public generation sets, with per-row reasoning tokens and serving provider. CC BY 4.0.</p>\n<p>Thanks to everyone who published data and notebooks, in particular seyitkaangunes, lucasboesen, prvsiyan, abdullah1afify, dophuchung, nishantdahal and huangkx666, whose two-stage recipe we followed.</p>",
+          "id": 3543138,
+          "isThankYou": false,
+          "postDate": "2026-10-22T23:57:40.473Z",
+          "raw": {
+            "author": {
+              "display_name": "Daniel Andres Miranda",
+              "id": 5822289,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5822289-gr.jpg",
+              "tier": "CONTRIBUTOR",
+              "url": "/danielandresmiranda"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 2497,
+            "content": "<p>Sharing what we measured over the last days, including the negative results, plus a small dataset that fills a gap in the public pools. All CV numbers are 5-fold GroupKFold by <code>prompt_id</code>, scored <strong>per passage</strong> (no test-time grouping), which tracked our public LB 2–3 points high.</p>\n<h3>1. Test-time prompt grouping did not transfer</h3>\n<p>On train, clustering by topic + Hungarian assignment inside each prompt gave +10 points (0.447 → 0.69 with reconstructed groups). On the public LB: 0.425 with it vs 0.427 without. This matches the simulation in the \"Test-time prompt grouping\" thread: the hidden test seems to have only a few answers per prompt, so train's 18-answers-per-prompt structure is not there. We now validate per passage only.</p>\n<h3>2. Frozen LLM features → LoRA → two-stage LoRA</h3>\n<p>Qwen3.5-9B-Base, first 19 layers:</p>\n<table>\n<thead>\n<tr>\n<th></th>\n<th>CV per passage</th>\n<th>Public LB</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Frozen mean-pooled layers 4/9/16/17/18 + TF-IDF</td>\n<td>0.447</td>\n<td>0.427</td>\n</tr>\n<tr>\n<td>LoRA r16 on train only, layer 18</td>\n<td>0.483</td>\n<td></td>\n</tr>\n<tr>\n<td>LoRA (train) + frozen blend</td>\n<td>0.503</td>\n<td>0.483</td>\n</tr>\n<tr>\n<td>Two-stage LoRA (1 epoch on ~36k public passages, then 2 on train), 8-layer readout</td>\n<td>0.578</td>\n<td></td>\n</tr>\n<tr>\n<td>Two-stage LoRA, layer-18 readout only</td>\n<td>0.582</td>\n<td></td>\n</tr>\n<tr>\n<td>Both two-stage readouts + train-only LoRA</td>\n<td>0.605</td>\n<td>0.573</td>\n</tr>\n</tbody>\n</table>\n<ul>\n<li>Middle layers carry the style; the last layers lose it (layer 18 ≈ 0.42 frozen, layer 32 ≈ 0.34).</li>\n<li>Stage 1 alone (no train passages seen) already scored 0.486–0.499 on all of train.</li>\n<li>The 8-layer and the single-layer readouts score the same but disagree on 29 % of passages, so blending them adds ~2 points. Readout diversity is a cheap substitute for a second backbone.</li>\n<li>An encoder (DeBERTa-v3-base) fine-tuned on train only did not beat char/word TF-IDF.</li>\n</ul>\n<h3>3. External data: coverage matters more than volume</h3>\n<ul>\n<li>Adding seyit + lucas (13 of 18 labels) to frozen-feature classifiers: +4 points overall, but the 5 uncovered labels (GLM ×2, kimi-k3, qwen3.8-max, gemini-3.7-flash) <strong>lost</strong> 6 points of recall (\"new prompt ⇒ not GLM\" shortcut).</li>\n<li>With all 18 labels covered (15k passages): 0.447 → 0.508. Labels with few external rows still dropped.</li>\n</ul>\n<h3>4. Generating data yourself: what OpenRouter and the Gemini API actually do</h3>\n<ul>\n<li>On OpenRouter only <code>kimi-k3</code> accepts <code>reasoning.enabled=false</code>. <code>glm-5.3</code>, <code>glm-5.3-flash</code>, <code>gemini-3.7-flash</code> and <code>qwen3.8-max-0902</code> return <em>\"Reasoning is mandatory for this endpoint\"</em>. With <code>effort=minimal</code>, GLM barely reasons (median 1–8 tokens, $0.0003/passage), but Gemini-3.7-flash and Qwen still reason ~1,400–1,500 tokens.</li>\n<li>Kimi-K3 without reasoning matches train's em-dash rate much better than with reasoning.</li>\n<li><strong>Warning:</strong> calling <code>gemini-3.7-flash</code> on the Google AI Studio API returned <code>modelVersion: gemini-3.8-flash</code> in our pilot (and ignored <code>thinkingBudget: 0</code>). If you generate Gemini-3.7 data there, check <code>modelVersion</code> on every response or your labels may be wrong.</li>\n</ul>\n<h3>5. Things that did not help us</h3>\n<ul>\n<li>Character CNN (raw chars and an X/x \"shape\" view) trained on train + pool: 0.305 alone, +0.4 in the blend (noise level). The LoRA already sees the typography.</li>\n<li>Lab → model hierarchy: better lab accuracy, same model accuracy.</li>\n<li>Sinkhorn balancing on our OOF: −0.3. The spaced em-dash rule (\" — \", only claude-opus-4-6, claude-opus-5 and both GLMs in train): no change on our OOF, the model already gets those right.</li>\n</ul>\n<h3>6. Dataset</h3>\n<p><a href=\"https://www.kaggle.com/datasets/danielandresmiranda/ntl-openrouter-glm-kimi\" target=\"_blank\">NTL OpenRouter GLM and Kimi passages</a>: 1,516 passages (glm-5.3 600, glm-5.3-flash 600, kimi-k3 316) on the seyitkaangunes prompt bank, same request format as the other public generation sets, with per-row reasoning tokens and serving provider. CC BY 4.0.</p>\n<p>Thanks to everyone who published data and notebooks, in particular seyitkaangunes, lucasboesen, prvsiyan, abdullah1afify, dophuchung, nishantdahal and huangkx666, whose two-stage recipe we followed.</p>",
+            "feedback_tracking_data": {},
+            "id": 3543138,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-10-22T23:57:40.473Z",
+            "raw_markdown": "Sharing what we measured over the last days, including the negative results, plus a small dataset that fills a gap in the public pools. All CV numbers are 5-fold GroupKFold by `prompt_id`, scored **per passage** (no test-time grouping), which tracked our public LB 2–3 points high.\n\n### 1. Test-time prompt grouping did not transfer\nOn train, clustering by topic + Hungarian assignment inside each prompt gave +10 points (0.447 → 0.69 with reconstructed groups). On the public LB: 0.425 with it vs 0.427 without. This matches the simulation in the \"Test-time prompt grouping\" thread: the hidden test seems to have only a few answers per prompt, so train's 18-answers-per-prompt structure is not there. We now validate per passage only.\n\n### 2. Frozen LLM features → LoRA → two-stage LoRA\nQwen3.5-9B-Base, first 19 layers:\n\n| | CV per passage | Public LB |\n|---|---|---|\n| Frozen mean-pooled layers 4/9/16/17/18 + TF-IDF | 0.447 | 0.427 |\n| LoRA r16 on train only, layer 18 | 0.483 | |\n| LoRA (train) + frozen blend | 0.503 | 0.483 |\n| Two-stage LoRA (1 epoch on ~36k public passages, then 2 on train), 8-layer readout | 0.578 | |\n| Two-stage LoRA, layer-18 readout only | 0.582 | |\n| Both two-stage readouts + train-only LoRA | 0.605 | 0.573 |\n\n- Middle layers carry the style; the last layers lose it (layer 18 ≈ 0.42 frozen, layer 32 ≈ 0.34).\n- Stage 1 alone (no train passages seen) already scored 0.486–0.499 on all of train.\n- The 8-layer and the single-layer readouts score the same but disagree on 29 % of passages, so blending them adds ~2 points. Readout diversity is a cheap substitute for a second backbone.\n- An encoder (DeBERTa-v3-base) fine-tuned on train only did not beat char/word TF-IDF.\n\n### 3. External data: coverage matters more than volume\n- Adding seyit + lucas (13 of 18 labels) to frozen-feature classifiers: +4 points overall, but the 5 uncovered labels (GLM ×2, kimi-k3, qwen3.8-max, gemini-3.7-flash) **lost** 6 points of recall (\"new prompt ⇒ not GLM\" shortcut).\n- With all 18 labels covered (15k passages): 0.447 → 0.508. Labels with few external rows still dropped.\n\n### 4. Generating data yourself: what OpenRouter and the Gemini API actually do\n- On OpenRouter only `kimi-k3` accepts `reasoning.enabled=false`. `glm-5.3`, `glm-5.3-flash`, `gemini-3.7-flash` and `qwen3.8-max-0902` return *\"Reasoning is mandatory for this endpoint\"*. With `effort=minimal`, GLM barely reasons (median 1–8 tokens, $0.0003/passage), but Gemini-3.7-flash and Qwen still reason ~1,400–1,500 tokens.\n- Kimi-K3 without reasoning matches train's em-dash rate much better than with reasoning.\n- **Warning:** calling `gemini-3.7-flash` on the Google AI Studio API returned `modelVersion: gemini-3.8-flash` in our pilot (and ignored `thinkingBudget: 0`). If you generate Gemini-3.7 data there, check `modelVersion` on every response or your labels may be wrong.\n\n### 5. Things that did not help us\n- Character CNN (raw chars and an X/x \"shape\" view) trained on train + pool: 0.305 alone, +0.4 in the blend (noise level). The LoRA already sees the typography.\n- Lab → model hierarchy: better lab accuracy, same model accuracy.\n- Sinkhorn balancing on our OOF: −0.3. The spaced em-dash rule (\" — \", only claude-opus-4-6, claude-opus-5 and both GLMs in train): no change on our OOF, the model already gets those right.\n\n### 6. Dataset\n[NTL OpenRouter GLM and Kimi passages](https://www.kaggle.com/datasets/danielandresmiranda/ntl-openrouter-glm-kimi): 1,516 passages (glm-5.3 600, glm-5.3-flash 600, kimi-k3 316) on the seyitkaangunes prompt bank, same request format as the other public generation sets, with per-row reasoning tokens and serving provider. CC BY 4.0.\n\nThanks to everyone who published data and notebooks, in particular seyitkaangunes, lucasboesen, prvsiyan, abdullah1afify, dophuchung, nishantdahal and huangkx666, whose two-stage recipe we followed.",
+            "reactions": [
+              {
+                "emoji": "YAY",
+                "featured_user_names": [
+                  "danielandresmiranda",
+                  "hashimrazi"
+                ],
+                "user_count": 2
+              }
+            ],
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "Daniel Andres Miranda",
+                "id": 5822289,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/danielandresmiranda",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5822289-gr.jpg",
+                "tier": "CONTRIBUTOR",
+                "url": "/danielandresmiranda",
+                "user_id": 5822289,
+                "user_name": "danielandresmiranda"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 4,
+              "total_votes": 4
+            }
+          },
+          "rawMarkdown": "Sharing what we measured over the last days, including the negative results, plus a small dataset that fills a gap in the public pools. All CV numbers are 5-fold GroupKFold by `prompt_id`, scored **per passage** (no test-time grouping), which tracked our public LB 2–3 points high.\n\n### 1. Test-time prompt grouping did not transfer\nOn train, clustering by topic + Hungarian assignment inside each prompt gave +10 points (0.447 → 0.69 with reconstructed groups). On the public LB: 0.425 with it vs 0.427 without. This matches the simulation in the \"Test-time prompt grouping\" thread: the hidden test seems to have only a few answers per prompt, so train's 18-answers-per-prompt structure is not there. We now validate per passage only.\n\n### 2. Frozen LLM features → LoRA → two-stage LoRA\nQwen3.5-9B-Base, first 19 layers:\n\n| | CV per passage | Public LB |\n|---|---|---|\n| Frozen mean-pooled layers 4/9/16/17/18 + TF-IDF | 0.447 | 0.427 |\n| LoRA r16 on train only, layer 18 | 0.483 | |\n| LoRA (train) + frozen blend | 0.503 | 0.483 |\n| Two-stage LoRA (1 epoch on ~36k public passages, then 2 on train), 8-layer readout | 0.578 | |\n| Two-stage LoRA, layer-18 readout only | 0.582 | |\n| Both two-stage readouts + train-only LoRA | 0.605 | 0.573 |\n\n- Middle layers carry the style; the last layers lose it (layer 18 ≈ 0.42 frozen, layer 32 ≈ 0.34).\n- Stage 1 alone (no train passages seen) already scored 0.486–0.499 on all of train.\n- The 8-layer and the single-layer readouts score the same but disagree on 29 % of passages, so blending them adds ~2 points. Readout diversity is a cheap substitute for a second backbone.\n- An encoder (DeBERTa-v3-base) fine-tuned on train only did not beat char/word TF-IDF.\n\n### 3. External data: coverage matters more than volume\n- Adding seyit + lucas (13 of 18 labels) to frozen-feature classifiers: +4 points overall, but the 5 uncovered labels (GLM ×2, kimi-k3, qwen3.8-max, gemini-3.7-flash) **lost** 6 points of recall (\"new prompt ⇒ not GLM\" shortcut).\n- With all 18 labels covered (15k passages): 0.447 → 0.508. Labels with few external rows still dropped.\n\n### 4. Generating data yourself: what OpenRouter and the Gemini API actually do\n- On OpenRouter only `kimi-k3` accepts `reasoning.enabled=false`. `glm-5.3`, `glm-5.3-flash`, `gemini-3.7-flash` and `qwen3.8-max-0902` return *\"Reasoning is mandatory for this endpoint\"*. With `effort=minimal`, GLM barely reasons (median 1–8 tokens, $0.0003/passage), but Gemini-3.7-flash and Qwen still reason ~1,400–1,500 tokens.\n- Kimi-K3 without reasoning matches train's em-dash rate much better than with reasoning.\n- **Warning:** calling `gemini-3.7-flash` on the Google AI Studio API returned `modelVersion: gemini-3.8-flash` in our pilot (and ignored `thinkingBudget: 0`). If you generate Gemini-3.7 data there, check `modelVersion` on every response or your labels may be wrong.\n\n### 5. Things that did not help us\n- Character CNN (raw chars and an X/x \"shape\" view) trained on train + pool: 0.305 alone, +0.4 in the blend (noise level). The LoRA already sees the typography.\n- Lab → model hierarchy: better lab accuracy, same model accuracy.\n- Sinkhorn balancing on our OOF: −0.3. The spaced em-dash rule (\" — \", only claude-opus-4-6, claude-opus-5 and both GLMs in train): no change on our OOF, the model already gets those right.\n\n### 6. Dataset\n[NTL OpenRouter GLM and Kimi passages](https://www.kaggle.com/datasets/danielandresmiranda/ntl-openrouter-glm-kimi): 1,516 passages (glm-5.3 600, glm-5.3-flash 600, kimi-k3 316) on the seyitkaangunes prompt bank, same request format as the other public generation sets, with per-row reasoning tokens and serving provider. CC BY 4.0.\n\nThanks to everyone who published data and notebooks, in particular seyitkaangunes, lucasboesen, prvsiyan, abdullah1afify, dophuchung, nishantdahal and huangkx666, whose two-stage recipe we followed.",
+          "replies": [],
+          "votes": {
+            "totalVotes": 4
+          }
+        },
+        "firstMessageId": 3543138,
+        "id": 751871,
+        "name": "Notes from our runs: what transferred to the LB, what didn't, and a GLM/Kimi dataset",
+        "postDate": "2026-10-22T23:57:40.474679700Z",
+        "url": "/competitions/name-that-llm/discussion/751871"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>Sharing what we measured over the last days, including the negative results, plus a small dataset that fills a gap in the public pools. All CV numbers are 5-fold GroupKFold by <code>prompt_id</code>, scored <strong>per passage</strong> (no test-time grouping), which tracked our public LB 2–3 points high.</p>\n<h3>1. Test-time prompt grouping did not transfer</h3>\n<p>On train, clustering by topic + Hungarian assignment inside each prompt gave +10 points (0.447 → 0.69 with reconstructed groups). On the public LB: 0.425 with it vs 0.427 without. This matches the simulation in the \"Test-time prompt grouping\" thread: the hidden test seems to have only a few answers per prompt, so train's 18-answers-per-prompt structure is not there. We now validate per passage only.</p>\n<h3>2. Frozen LLM features → LoRA → two-stage LoRA</h3>\n<p>Qwen3.5-9B-Base, first 19 layers:</p>\n<table>\n<thead>\n<tr>\n<th></th>\n<th>CV per passage</th>\n<th>Public LB</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Frozen mean-pooled layers 4/9/16/17/18 + TF-IDF</td>\n<td>0.447</td>\n<td>0.427</td>\n</tr>\n<tr>\n<td>LoRA r16 on train only, layer 18</td>\n<td>0.483</td>\n<td></td>\n</tr>\n<tr>\n<td>LoRA (train) + frozen blend</td>\n<td>0.503</td>\n<td>0.483</td>\n</tr>\n<tr>\n<td>Two-stage LoRA (1 epoch on ~36k public passages, then 2 on train), 8-layer readout</td>\n<td>0.578</td>\n<td></td>\n</tr>\n<tr>\n<td>Two-stage LoRA, layer-18 readout only</td>\n<td>0.582</td>\n<td></td>\n</tr>\n<tr>\n<td>Both two-stage readouts + train-only LoRA</td>\n<td>0.605</td>\n<td>0.573</td>\n</tr>\n</tbody>\n</table>\n<ul>\n<li>Middle layers carry the style; the last layers lose it (layer 18 ≈ 0.42 frozen, layer 32 ≈ 0.34).</li>\n<li>Stage 1 alone (no train passages seen) already scored 0.486–0.499 on all of train.</li>\n<li>The 8-layer and the single-layer readouts score the same but disagree on 29 % of passages, so blending them adds ~2 points. Readout diversity is a cheap substitute for a second backbone.</li>\n<li>An encoder (DeBERTa-v3-base) fine-tuned on train only did not beat char/word TF-IDF.</li>\n</ul>\n<h3>3. External data: coverage matters more than volume</h3>\n<ul>\n<li>Adding seyit + lucas (13 of 18 labels) to frozen-feature classifiers: +4 points overall, but the 5 uncovered labels (GLM ×2, kimi-k3, qwen3.8-max, gemini-3.7-flash) <strong>lost</strong> 6 points of recall (\"new prompt ⇒ not GLM\" shortcut).</li>\n<li>With all 18 labels covered (15k passages): 0.447 → 0.508. Labels with few external rows still dropped.</li>\n</ul>\n<h3>4. Generating data yourself: what OpenRouter and the Gemini API actually do</h3>\n<ul>\n<li>On OpenRouter only <code>kimi-k3</code> accepts <code>reasoning.enabled=false</code>. <code>glm-5.3</code>, <code>glm-5.3-flash</code>, <code>gemini-3.7-flash</code> and <code>qwen3.8-max-0902</code> return <em>\"Reasoning is mandatory for this endpoint\"</em>. With <code>effort=minimal</code>, GLM barely reasons (median 1–8 tokens, $0.0003/passage), but Gemini-3.7-flash and Qwen still reason ~1,400–1,500 tokens.</li>\n<li>Kimi-K3 without reasoning matches train's em-dash rate much better than with reasoning.</li>\n<li><strong>Warning:</strong> calling <code>gemini-3.7-flash</code> on the Google AI Studio API returned <code>modelVersion: gemini-3.8-flash</code> in our pilot (and ignored <code>thinkingBudget: 0</code>). If you generate Gemini-3.7 data there, check <code>modelVersion</code> on every response or your labels may be wrong.</li>\n</ul>\n<h3>5. Things that did not help us</h3>\n<ul>\n<li>Character CNN (raw chars and an X/x \"shape\" view) trained on train + pool: 0.305 alone, +0.4 in the blend (noise level). The LoRA already sees the typography.</li>\n<li>Lab → model hierarchy: better lab accuracy, same model accuracy.</li>\n<li>Sinkhorn balancing on our OOF: −0.3. The spaced em-dash rule (\" — \", only claude-opus-4-6, claude-opus-5 and both GLMs in train): no change on our OOF, the model already gets those right.</li>\n</ul>\n<h3>6. Dataset</h3>\n<p><a href=\"https://www.kaggle.com/datasets/danielandresmiranda/ntl-openrouter-glm-kimi\" target=\"_blank\">NTL OpenRouter GLM and Kimi passages</a>: 1,516 passages (glm-5.3 600, glm-5.3-flash 600, kimi-k3 316) on the seyitkaangunes prompt bank, same request format as the other public generation sets, with per-row reasoning tokens and serving provider. CC BY 4.0.</p>\n<p>Thanks to everyone who published data and notebooks, in particular seyitkaangunes, lucasboesen, prvsiyan, abdullah1afify, dophuchung, nishantdahal and huangkx666, whose two-stage recipe we followed.</p>",
+              "id": 3543138,
+              "post_date": "2026-10-22T23:57:40.473Z",
+              "raw_markdown": "Sharing what we measured over the last days, including the negative results, plus a small dataset that fills a gap in the public pools. All CV numbers are 5-fold GroupKFold by `prompt_id`, scored **per passage** (no test-time grouping), which tracked our public LB 2–3 points high.\n\n### 1. Test-time prompt grouping did not transfer\nOn train, clustering by topic + Hungarian assignment inside each prompt gave +10 points (0.447 → 0.69 with reconstructed groups). On the public LB: 0.425 with it vs 0.427 without. This matches the simulation in the \"Test-time prompt grouping\" thread: the hidden test seems to have only a few answers per prompt, so train's 18-answers-per-prompt structure is not there. We now validate per passage only.\n\n### 2. Frozen LLM features → LoRA → two-stage LoRA\nQwen3.5-9B-Base, first 19 layers:\n\n| | CV per passage | Public LB |\n|---|---|---|\n| Frozen mean-pooled layers 4/9/16/17/18 + TF-IDF | 0.447 | 0.427 |\n| LoRA r16 on train only, layer 18 | 0.483 | |\n| LoRA (train) + frozen blend | 0.503 | 0.483 |\n| Two-stage LoRA (1 epoch on ~36k public passages, then 2 on train), 8-layer readout | 0.578 | |\n| Two-stage LoRA, layer-18 readout only | 0.582 | |\n| Both two-stage readouts + train-only LoRA | 0.605 | 0.573 |\n\n- Middle layers carry the style; the last layers lose it (layer 18 ≈ 0.42 frozen, layer 32 ≈ 0.34).\n- Stage 1 alone (no train passages seen) already scored 0.486–0.499 on all of train.\n- The 8-layer and the single-layer readouts score the same but disagree on 29 % of passages, so blending them adds ~2 points. Readout diversity is a cheap substitute for a second backbone.\n- An encoder (DeBERTa-v3-base) fine-tuned on train only did not beat char/word TF-IDF.\n\n### 3. External data: coverage matters more than volume\n- Adding seyit + lucas (13 of 18 labels) to frozen-feature classifiers: +4 points overall, but the 5 uncovered labels (GLM ×2, kimi-k3, qwen3.8-max, gemini-3.7-flash) **lost** 6 points of recall (\"new prompt ⇒ not GLM\" shortcut).\n- With all 18 labels covered (15k passages): 0.447 → 0.508. Labels with few external rows still dropped.\n\n### 4. Generating data yourself: what OpenRouter and the Gemini API actually do\n- On OpenRouter only `kimi-k3` accepts `reasoning.enabled=false`. `glm-5.3`, `glm-5.3-flash`, `gemini-3.7-flash` and `qwen3.8-max-0902` return *\"Reasoning is mandatory for this endpoint\"*. With `effort=minimal`, GLM barely reasons (median 1–8 tokens, $0.0003/passage), but Gemini-3.7-flash and Qwen still reason ~1,400–1,500 tokens.\n- Kimi-K3 without reasoning matches train's em-dash rate much better than with reasoning.\n- **Warning:** calling `gemini-3.7-flash` on the Google AI Studio API returned `modelVersion: gemini-3.8-flash` in our pilot (and ignored `thinkingBudget: 0`). If you generate Gemini-3.7 data there, check `modelVersion` on every response or your labels may be wrong.\n\n### 5. Things that did not help us\n- Character CNN (raw chars and an X/x \"shape\" view) trained on train + pool: 0.305 alone, +0.4 in the blend (noise level). The LoRA already sees the typography.\n- Lab → model hierarchy: better lab accuracy, same model accuracy.\n- Sinkhorn balancing on our OOF: −0.3. The spaced em-dash rule (\" — \", only claude-opus-4-6, claude-opus-5 and both GLMs in train): no change on our OOF, the model already gets those right.\n\n### 6. Dataset\n[NTL OpenRouter GLM and Kimi passages](https://www.kaggle.com/datasets/danielandresmiranda/ntl-openrouter-glm-kimi): 1,516 passages (glm-5.3 600, glm-5.3-flash 600, kimi-k3 316) on the seyitkaangunes prompt bank, same request format as the other public generation sets, with per-row reasoning tokens and serving provider. CC BY 4.0.\n\nThanks to everyone who published data and notebooks, in particular seyitkaangunes, lucasboesen, prvsiyan, abdullah1afify, dophuchung, nishantdahal and huangkx666, whose two-stage recipe we followed.",
+              "votes": 4
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 5822289,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "5822289-gr.jpg",
+            "author_user_display_name": "Daniel Andres Miranda",
+            "author_user_name": "danielandresmiranda",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "first_message": {
+              "author": {
+                "display_name": "Daniel Andres Miranda",
+                "id": 5822289,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5822289-gr.jpg",
+                "tier": "CONTRIBUTOR",
+                "url": "/danielandresmiranda"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 2497,
+              "content": "<p>Sharing what we measured over the last days, including the negative results, plus a small dataset that fills a gap in the public pools. All CV numbers are 5-fold GroupKFold by <code>prompt_id</code>, scored <strong>per passage</strong> (no test-time grouping), which tracked our public LB 2–3 points high.</p>\n<h3>1. Test-time prompt grouping did not transfer</h3>\n<p>On train, clustering by topic + Hungarian assignment inside each prompt gave +10 points (0.447 → 0.69 with reconstructed groups). On the public LB: 0.425 with it vs 0.427 without. This matches the simulation in the \"Test-time prompt grouping\" thread: the hidden test seems to have only a few answers per prompt, so train's 18-answers-per-prompt structure is not there. We now validate per passage only.</p>\n<h3>2. Frozen LLM features → LoRA → two-stage LoRA</h3>\n<p>Qwen3.5-9B-Base, first 19 layers:</p>\n<table>\n<thead>\n<tr>\n<th></th>\n<th>CV per passage</th>\n<th>Public LB</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Frozen mean-pooled layers 4/9/16/17/18 + TF-IDF</td>\n<td>0.447</td>\n<td>0.427</td>\n</tr>\n<tr>\n<td>LoRA r16 on train only, layer 18</td>\n<td>0.483</td>\n<td></td>\n</tr>\n<tr>\n<td>LoRA (train) + frozen blend</td>\n<td>0.503</td>\n<td>0.483</td>\n</tr>\n<tr>\n<td>Two-stage LoRA (1 epoch on ~36k public passages, then 2 on train), 8-layer readout</td>\n<td>0.578</td>\n<td></td>\n</tr>\n<tr>\n<td>Two-stage LoRA, layer-18 readout only</td>\n<td>0.582</td>\n<td></td>\n</tr>\n<tr>\n<td>Both two-stage readouts + train-only LoRA</td>\n<td>0.605</td>\n<td>0.573</td>\n</tr>\n</tbody>\n</table>\n<ul>\n<li>Middle layers carry the style; the last layers lose it (layer 18 ≈ 0.42 frozen, layer 32 ≈ 0.34).</li>\n<li>Stage 1 alone (no train passages seen) already scored 0.486–0.499 on all of train.</li>\n<li>The 8-layer and the single-layer readouts score the same but disagree on 29 % of passages, so blending them adds ~2 points. Readout diversity is a cheap substitute for a second backbone.</li>\n<li>An encoder (DeBERTa-v3-base) fine-tuned on train only did not beat char/word TF-IDF.</li>\n</ul>\n<h3>3. External data: coverage matters more than volume</h3>\n<ul>\n<li>Adding seyit + lucas (13 of 18 labels) to frozen-feature classifiers: +4 points overall, but the 5 uncovered labels (GLM ×2, kimi-k3, qwen3.8-max, gemini-3.7-flash) <strong>lost</strong> 6 points of recall (\"new prompt ⇒ not GLM\" shortcut).</li>\n<li>With all 18 labels covered (15k passages): 0.447 → 0.508. Labels with few external rows still dropped.</li>\n</ul>\n<h3>4. Generating data yourself: what OpenRouter and the Gemini API actually do</h3>\n<ul>\n<li>On OpenRouter only <code>kimi-k3</code> accepts <code>reasoning.enabled=false</code>. <code>glm-5.3</code>, <code>glm-5.3-flash</code>, <code>gemini-3.7-flash</code> and <code>qwen3.8-max-0902</code> return <em>\"Reasoning is mandatory for this endpoint\"</em>. With <code>effort=minimal</code>, GLM barely reasons (median 1–8 tokens, $0.0003/passage), but Gemini-3.7-flash and Qwen still reason ~1,400–1,500 tokens.</li>\n<li>Kimi-K3 without reasoning matches train's em-dash rate much better than with reasoning.</li>\n<li><strong>Warning:</strong> calling <code>gemini-3.7-flash</code> on the Google AI Studio API returned <code>modelVersion: gemini-3.8-flash</code> in our pilot (and ignored <code>thinkingBudget: 0</code>). If you generate Gemini-3.7 data there, check <code>modelVersion</code> on every response or your labels may be wrong.</li>\n</ul>\n<h3>5. Things that did not help us</h3>\n<ul>\n<li>Character CNN (raw chars and an X/x \"shape\" view) trained on train + pool: 0.305 alone, +0.4 in the blend (noise level). The LoRA already sees the typography.</li>\n<li>Lab → model hierarchy: better lab accuracy, same model accuracy.</li>\n<li>Sinkhorn balancing on our OOF: −0.3. The spaced em-dash rule (\" — \", only claude-opus-4-6, claude-opus-5 and both GLMs in train): no change on our OOF, the model already gets those right.</li>\n</ul>\n<h3>6. Dataset</h3>\n<p><a href=\"https://www.kaggle.com/datasets/danielandresmiranda/ntl-openrouter-glm-kimi\" target=\"_blank\">NTL OpenRouter GLM and Kimi passages</a>: 1,516 passages (glm-5.3 600, glm-5.3-flash 600, kimi-k3 316) on the seyitkaangunes prompt bank, same request format as the other public generation sets, with per-row reasoning tokens and serving provider. CC BY 4.0.</p>\n<p>Thanks to everyone who published data and notebooks, in particular seyitkaangunes, lucasboesen, prvsiyan, abdullah1afify, dophuchung, nishantdahal and huangkx666, whose two-stage recipe we followed.</p>",
+              "feedback_tracking_data": {},
+              "id": 3543138,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-22T23:57:40.473Z",
+              "raw_markdown": "Sharing what we measured over the last days, including the negative results, plus a small dataset that fills a gap in the public pools. All CV numbers are 5-fold GroupKFold by `prompt_id`, scored **per passage** (no test-time grouping), which tracked our public LB 2–3 points high.\n\n### 1. Test-time prompt grouping did not transfer\nOn train, clustering by topic + Hungarian assignment inside each prompt gave +10 points (0.447 → 0.69 with reconstructed groups). On the public LB: 0.425 with it vs 0.427 without. This matches the simulation in the \"Test-time prompt grouping\" thread: the hidden test seems to have only a few answers per prompt, so train's 18-answers-per-prompt structure is not there. We now validate per passage only.\n\n### 2. Frozen LLM features → LoRA → two-stage LoRA\nQwen3.5-9B-Base, first 19 layers:\n\n| | CV per passage | Public LB |\n|---|---|---|\n| Frozen mean-pooled layers 4/9/16/17/18 + TF-IDF | 0.447 | 0.427 |\n| LoRA r16 on train only, layer 18 | 0.483 | |\n| LoRA (train) + frozen blend | 0.503 | 0.483 |\n| Two-stage LoRA (1 epoch on ~36k public passages, then 2 on train), 8-layer readout | 0.578 | |\n| Two-stage LoRA, layer-18 readout only | 0.582 | |\n| Both two-stage readouts + train-only LoRA | 0.605 | 0.573 |\n\n- Middle layers carry the style; the last layers lose it (layer 18 ≈ 0.42 frozen, layer 32 ≈ 0.34).\n- Stage 1 alone (no train passages seen) already scored 0.486–0.499 on all of train.\n- The 8-layer and the single-layer readouts score the same but disagree on 29 % of passages, so blending them adds ~2 points. Readout diversity is a cheap substitute for a second backbone.\n- An encoder (DeBERTa-v3-base) fine-tuned on train only did not beat char/word TF-IDF.\n\n### 3. External data: coverage matters more than volume\n- Adding seyit + lucas (13 of 18 labels) to frozen-feature classifiers: +4 points overall, but the 5 uncovered labels (GLM ×2, kimi-k3, qwen3.8-max, gemini-3.7-flash) **lost** 6 points of recall (\"new prompt ⇒ not GLM\" shortcut).\n- With all 18 labels covered (15k passages): 0.447 → 0.508. Labels with few external rows still dropped.\n\n### 4. Generating data yourself: what OpenRouter and the Gemini API actually do\n- On OpenRouter only `kimi-k3` accepts `reasoning.enabled=false`. `glm-5.3`, `glm-5.3-flash`, `gemini-3.7-flash` and `qwen3.8-max-0902` return *\"Reasoning is mandatory for this endpoint\"*. With `effort=minimal`, GLM barely reasons (median 1–8 tokens, $0.0003/passage), but Gemini-3.7-flash and Qwen still reason ~1,400–1,500 tokens.\n- Kimi-K3 without reasoning matches train's em-dash rate much better than with reasoning.\n- **Warning:** calling `gemini-3.7-flash` on the Google AI Studio API returned `modelVersion: gemini-3.8-flash` in our pilot (and ignored `thinkingBudget: 0`). If you generate Gemini-3.7 data there, check `modelVersion` on every response or your labels may be wrong.\n\n### 5. Things that did not help us\n- Character CNN (raw chars and an X/x \"shape\" view) trained on train + pool: 0.305 alone, +0.4 in the blend (noise level). The LoRA already sees the typography.\n- Lab → model hierarchy: better lab accuracy, same model accuracy.\n- Sinkhorn balancing on our OOF: −0.3. The spaced em-dash rule (\" — \", only claude-opus-4-6, claude-opus-5 and both GLMs in train): no change on our OOF, the model already gets those right.\n\n### 6. Dataset\n[NTL OpenRouter GLM and Kimi passages](https://www.kaggle.com/datasets/danielandresmiranda/ntl-openrouter-glm-kimi): 1,516 passages (glm-5.3 600, glm-5.3-flash 600, kimi-k3 316) on the seyitkaangunes prompt bank, same request format as the other public generation sets, with per-row reasoning tokens and serving provider. CC BY 4.0.\n\nThanks to everyone who published data and notebooks, in particular seyitkaangunes, lucasboesen, prvsiyan, abdullah1afify, dophuchung, nishantdahal and huangkx666, whose two-stage recipe we followed.",
+              "reactions": [
+                {
+                  "emoji": "YAY",
+                  "featured_user_names": [
+                    "danielandresmiranda",
+                    "hashimrazi"
+                  ],
+                  "user_count": 2
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Daniel Andres Miranda",
+                  "id": 5822289,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/danielandresmiranda",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5822289-gr.jpg",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/danielandresmiranda",
+                  "user_id": 5822289,
+                  "user_name": "danielandresmiranda"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 4,
+                "total_votes": 4
+              }
+            },
+            "first_message_id": 3543138,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 751871,
+            "name": "Notes from our runs: what transferred to the LB, what didn't, and a GLM/Kimi dataset",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-10-22T23:57:40.474679700Z",
+            "total_votes": 4,
+            "url": "/competitions/name-that-llm/discussion/751871"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:30:44+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:30:44+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-10-22T23:57:40.474679700Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [],
+  "writeup": null
+}

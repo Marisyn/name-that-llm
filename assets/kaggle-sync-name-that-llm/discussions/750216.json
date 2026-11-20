@@ -1,0 +1,239 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 750216,
+    "title": "API REQUEST",
+    "author": "Balram Srinivasan",
+    "author_url": "/balramsrinivasan",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-10-17T09:58:28.606255400Z",
+    "last_comment_post_date": "2026-10-17T09:58:28.606666700Z",
+    "comment_count": 0,
+    "votes": 4,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/750216",
+    "first_message_id": 3540194,
+    "first_seen_at": "2026-11-04T06:56:18+00:00",
+    "last_seen_at": "2026-11-16T16:36:21+00:00",
+    "detail_last_synced_at": "2026-11-16T16:36:21+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "d128a76156c0bc1d6d0430e14b3f71454897ff0835eeafb4e1f8b71bc687a7de",
+    "listing_metrics_hash": "818a5cc0f2253a82207ce555576d24d0d4b4461b2ac293b834a011f9d570c30a",
+    "detail_content_hash": "ee9ed7f032c12344d4af7065cd5d0a38f1661f311ce88ba25989503e295c06f4",
+    "detail_last_checked_at": "2026-11-16T16:36:21+00:00",
+    "detail_next_check_at": "2026-11-23T16:36:21+00:00",
+    "detail_unchanged_count": 2,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 0,
+      "firstForumMessageId": null,
+      "id": 750216,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-10-17T09:58:28.606666700Z",
+      "postDate": "2026-10-17T09:58:28.606255400Z",
+      "raw": {
+        "id": 750216,
+        "last_comment_post_date": "2026-10-17T09:58:28.606666700Z",
+        "post_date": "2026-10-17T09:58:28.606255400Z",
+        "title": "API REQUEST",
+        "topic_url": "/competitions/name-that-llm/discussion/750216",
+        "votes": 4
+      },
+      "title": "API REQUEST",
+      "topicUrl": "/competitions/name-that-llm/discussion/750216",
+      "votes": 4
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "Balram Srinivasan",
+        "authorUserName": "balramsrinivasan",
+        "comments": [],
+        "expectedCommentCount": 0,
+        "firstMessage": {
+          "author": {
+            "displayName": "Balram Srinivasan",
+            "tier": "CONTRIBUTOR",
+            "url": "/balramsrinivasan"
+          },
+          "content": "<p>Hi <a href=\"/host\" target=\"_blank\">@host</a> — could you confirm whether generating extra training passages with the free Kaggle Benchmarks / Model Proxy quota is allowed under rule 2.6 (\"publicly available and equally accessible at no cost\")? Every verified participant gets the same $10/day, and we'd publish the generated rows with their request logs as a public dataset so everyone can use them. Also, do you consider paid-API generation within a small budget to meet the \"Reasonableness Standard\", and if so, where is the cost limit? Thanks!</p>",
+          "id": 3540194,
+          "isThankYou": false,
+          "postDate": "2026-10-17T09:58:28.607Z",
+          "raw": {
+            "author": {
+              "display_name": "Balram Srinivasan",
+              "id": 29505994,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "CONTRIBUTOR",
+              "url": "/balramsrinivasan"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 2458,
+            "content": "<p>Hi <a href=\"/host\" target=\"_blank\">@host</a> — could you confirm whether generating extra training passages with the free Kaggle Benchmarks / Model Proxy quota is allowed under rule 2.6 (\"publicly available and equally accessible at no cost\")? Every verified participant gets the same $10/day, and we'd publish the generated rows with their request logs as a public dataset so everyone can use them. Also, do you consider paid-API generation within a small budget to meet the \"Reasonableness Standard\", and if so, where is the cost limit? Thanks!</p>",
+            "feedback_tracking_data": {},
+            "id": 3540194,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-10-17T09:58:28.607Z",
+            "raw_markdown": "Hi @host — could you confirm whether generating extra training passages with the free Kaggle Benchmarks / Model Proxy quota is allowed under rule 2.6 (\"publicly available and equally accessible at no cost\")? Every verified participant gets the same $10/day, and we'd publish the generated rows with their request logs as a public dataset so everyone can use them. Also, do you consider paid-API generation within a small budget to meet the \"Reasonableness Standard\", and if so, where is the cost limit? Thanks!",
+            "reactions": [
+              {
+                "emoji": "LOVE",
+                "featured_user_names": [
+                  "joannabooth",
+                  "petrovmarko",
+                  "yuqiannemo",
+                  "renta0426",
+                  "trishanthmellimi",
+                  "espyjump919"
+                ],
+                "user_count": 6
+              }
+            ],
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "Balram Srinivasan",
+                "id": 29505994,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/balramsrinivasan",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/balramsrinivasan",
+                "user_id": 29505994,
+                "user_name": "balramsrinivasan"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 4,
+              "total_votes": 4
+            }
+          },
+          "rawMarkdown": "Hi @host — could you confirm whether generating extra training passages with the free Kaggle Benchmarks / Model Proxy quota is allowed under rule 2.6 (\"publicly available and equally accessible at no cost\")? Every verified participant gets the same $10/day, and we'd publish the generated rows with their request logs as a public dataset so everyone can use them. Also, do you consider paid-API generation within a small budget to meet the \"Reasonableness Standard\", and if so, where is the cost limit? Thanks!",
+          "replies": [],
+          "votes": {
+            "totalVotes": 4
+          }
+        },
+        "firstMessageId": 3540194,
+        "id": 750216,
+        "name": "API REQUEST",
+        "postDate": "2026-10-17T09:58:28.606255400Z",
+        "url": "/competitions/name-that-llm/discussion/750216"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>Hi <a href=\"/host\" target=\"_blank\">@host</a> — could you confirm whether generating extra training passages with the free Kaggle Benchmarks / Model Proxy quota is allowed under rule 2.6 (\"publicly available and equally accessible at no cost\")? Every verified participant gets the same $10/day, and we'd publish the generated rows with their request logs as a public dataset so everyone can use them. Also, do you consider paid-API generation within a small budget to meet the \"Reasonableness Standard\", and if so, where is the cost limit? Thanks!</p>",
+              "id": 3540194,
+              "post_date": "2026-10-17T09:58:28.607Z",
+              "raw_markdown": "Hi @host — could you confirm whether generating extra training passages with the free Kaggle Benchmarks / Model Proxy quota is allowed under rule 2.6 (\"publicly available and equally accessible at no cost\")? Every verified participant gets the same $10/day, and we'd publish the generated rows with their request logs as a public dataset so everyone can use them. Also, do you consider paid-API generation within a small budget to meet the \"Reasonableness Standard\", and if so, where is the cost limit? Thanks!",
+              "votes": 4
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 29505994,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "default-thumb.png",
+            "author_user_display_name": "Balram Srinivasan",
+            "author_user_name": "balramsrinivasan",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "first_message": {
+              "author": {
+                "display_name": "Balram Srinivasan",
+                "id": 29505994,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/balramsrinivasan"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 2458,
+              "content": "<p>Hi <a href=\"/host\" target=\"_blank\">@host</a> — could you confirm whether generating extra training passages with the free Kaggle Benchmarks / Model Proxy quota is allowed under rule 2.6 (\"publicly available and equally accessible at no cost\")? Every verified participant gets the same $10/day, and we'd publish the generated rows with their request logs as a public dataset so everyone can use them. Also, do you consider paid-API generation within a small budget to meet the \"Reasonableness Standard\", and if so, where is the cost limit? Thanks!</p>",
+              "feedback_tracking_data": {},
+              "id": 3540194,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-17T09:58:28.607Z",
+              "raw_markdown": "Hi @host — could you confirm whether generating extra training passages with the free Kaggle Benchmarks / Model Proxy quota is allowed under rule 2.6 (\"publicly available and equally accessible at no cost\")? Every verified participant gets the same $10/day, and we'd publish the generated rows with their request logs as a public dataset so everyone can use them. Also, do you consider paid-API generation within a small budget to meet the \"Reasonableness Standard\", and if so, where is the cost limit? Thanks!",
+              "reactions": [
+                {
+                  "emoji": "LOVE",
+                  "featured_user_names": [
+                    "joannabooth",
+                    "petrovmarko",
+                    "yuqiannemo",
+                    "renta0426",
+                    "trishanthmellimi",
+                    "espyjump919"
+                  ],
+                  "user_count": 6
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Balram Srinivasan",
+                  "id": 29505994,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/balramsrinivasan",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/balramsrinivasan",
+                  "user_id": 29505994,
+                  "user_name": "balramsrinivasan"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 4,
+                "total_votes": 4
+              }
+            },
+            "first_message_id": 3540194,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 750216,
+            "name": "API REQUEST",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-10-17T09:58:28.606255400Z",
+            "total_votes": 4,
+            "url": "/competitions/name-that-llm/discussion/750216"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:36:21+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:36:21+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-10-17T09:58:28.606666700Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [],
+  "writeup": null
+}

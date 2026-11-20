@@ -1,0 +1,17 @@
+{
+  "account_ref": "marisyn",
+  "last_synced_at": null,
+  "remote_window_count": 0,
+  "team_visible_count": 0,
+  "excluded_teammate_count": 0,
+  "list_may_be_truncated": false,
+  "scope": "authenticated_account_team",
+  "source": "kaggle_api_rpc:ListSubmissions",
+  "submitted_files": {
+    "metadata_included": true,
+    "submitted_files_included": true,
+    "required_complete": true,
+    "integrity": "size_and_sha256",
+    "scope": "authenticated_account_team"
+  }
+}

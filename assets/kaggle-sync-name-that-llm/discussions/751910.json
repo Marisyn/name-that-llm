@@ -1,0 +1,558 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 751910,
+    "title": "How to request access llama-3.1",
+    "author": "SANNNNN",
+    "author_url": "/zuhairsan",
+    "author_tier": "EXPERT",
+    "post_date": "2026-10-23T03:46:39.975036300Z",
+    "last_comment_post_date": "2026-11-01T12:39:21.190Z",
+    "comment_count": 2,
+    "votes": 0,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/751910",
+    "first_message_id": 3543223,
+    "first_seen_at": "2026-11-04T06:56:15+00:00",
+    "last_seen_at": "2026-11-16T16:36:03+00:00",
+    "detail_last_synced_at": "2026-11-16T16:23:36+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "0181f4fc36dd11a13f339b4f48fb028ea4ff4e6f625c7ee51334266e8c113796",
+    "listing_metrics_hash": "1d7b01d39d998f5caf0eb285f7806c0632a1cb146aadc79a9504e2481370b229",
+    "detail_content_hash": "330fcc5d443c9ad9ec808921761f9acb23caf4a666f356e78711394ab7ca00cf",
+    "detail_last_checked_at": "2026-11-16T16:23:36+00:00",
+    "detail_next_check_at": "2026-11-23T16:23:36+00:00",
+    "detail_unchanged_count": 2,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 2,
+      "firstForumMessageId": null,
+      "id": 751910,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-11-01T12:39:21.190Z",
+      "postDate": "2026-10-23T03:46:39.975036300Z",
+      "raw": {
+        "comment_count": 2,
+        "id": 751910,
+        "last_comment_post_date": "2026-11-01T12:39:21.190Z",
+        "post_date": "2026-10-23T03:46:39.975036300Z",
+        "title": "How to request access llama-3.1",
+        "topic_url": "/competitions/name-that-llm/discussion/751910"
+      },
+      "title": "How to request access llama-3.1",
+      "topicUrl": "/competitions/name-that-llm/discussion/751910",
+      "votes": 0
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "EXPERT",
+        "authorUserDisplayName": "SANNNNN",
+        "authorUserName": "zuhairsan",
+        "comments": [
+          {
+            "author": {
+              "displayName": "HALX2158",
+              "tier": "CONTRIBUTOR",
+              "url": "/mizuno0522"
+            },
+            "content": "<p>Sharing what happened in my case. Meta's download links also sent me to the Muse site. I then submitted the access form on the Hugging Face page for meta-llama/Llama-3.1-8B and received an email saying the request was accepted. On 2026-11-01, <code>metaresearch/llama-3.1/Transformers/8b/2</code> on Kaggle stopped returning 403 for me, and I scored a notebook with it. I can't say which step cleared the Kaggle access.</p>",
+            "id": 3548125,
+            "isThankYou": false,
+            "postDate": "2026-11-01T12:39:21.190Z",
+            "raw": {
+              "author": {
+                "display_name": "HALX2158",
+                "id": 16294566,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                "tier": "CONTRIBUTOR",
+                "url": "/mizuno0522"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 1098,
+              "content": "<p>Sharing what happened in my case. Meta's download links also sent me to the Muse site. I then submitted the access form on the Hugging Face page for meta-llama/Llama-3.1-8B and received an email saying the request was accepted. On 2026-11-01, <code>metaresearch/llama-3.1/Transformers/8b/2</code> on Kaggle stopped returning 403 for me, and I scored a notebook with it. I can't say which step cleared the Kaggle access.</p>",
+              "feedback_tracking_data": {},
+              "id": 3548125,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-01T12:39:21.190Z",
+              "raw_markdown": "Sharing what happened in my case. Meta's download links also sent me to the Muse site. I then submitted the access form on the Hugging Face page for meta-llama/Llama-3.1-8B and received an email saying the request was accepted. On 2026-11-01, `metaresearch/llama-3.1/Transformers/8b/2` on Kaggle stopped returning 403 for me, and I scored a notebook with it. I can't say which step cleared the Kaggle access.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "HALX2158",
+                  "id": 16294566,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/mizuno0522",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/mizuno0522",
+                  "user_id": 16294566,
+                  "user_name": "mizuno0522"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "Sharing what happened in my case. Meta's download links also sent me to the Muse site. I then submitted the access form on the Hugging Face page for meta-llama/Llama-3.1-8B and received an email saying the request was accepted. On 2026-11-01, `metaresearch/llama-3.1/Transformers/8b/2` on Kaggle stopped returning 403 for me, and I scored a notebook with it. I can't say which step cleared the Kaggle access.",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          },
+          {
+            "author": {
+              "displayName": "latentgenius",
+              "tier": "CONTRIBUTOR",
+              "url": "/latentgenius"
+            },
+            "content": "<p>Same issue here. My Kaggle request for Llama 3.1 is pending, but Meta's download form seems to be gone. The \"Meta's website\" link in the access banner (ai.meta.com/resources/models-and-libraries/llama-downloads), llama.com/llama-downloads, and dev.meta.ai/llama/llama-downloads all redirect to the Muse homepage, so there's no form to submit. <a href=\"/Kaggle\" target=\"_blank\">@Kaggle</a> staff: is there another way to get approved, or will pending requests be reviewed without the Meta form?</p>",
+            "id": 3546890,
+            "isThankYou": false,
+            "postDate": "2026-10-29T22:27:54.773Z",
+            "raw": {
+              "author": {
+                "display_name": "latentgenius",
+                "id": 36833410,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36833410-kg.png?t=2026-10-30-04-33-53",
+                "tier": "CONTRIBUTOR",
+                "url": "/latentgenius"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 2034,
+              "content": "<p>Same issue here. My Kaggle request for Llama 3.1 is pending, but Meta's download form seems to be gone. The \"Meta's website\" link in the access banner (ai.meta.com/resources/models-and-libraries/llama-downloads), llama.com/llama-downloads, and dev.meta.ai/llama/llama-downloads all redirect to the Muse homepage, so there's no form to submit. <a href=\"/Kaggle\" target=\"_blank\">@Kaggle</a> staff: is there another way to get approved, or will pending requests be reviewed without the Meta form?</p>",
+              "feedback_tracking_data": {},
+              "id": 3546890,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-29T22:27:54.773Z",
+              "raw_markdown": "Same issue here. My Kaggle request for Llama 3.1 is pending, but Meta's download form seems to be gone. The \"Meta's website\" link in the access banner (ai.meta.com/resources/models-and-libraries/llama-downloads), llama.com/llama-downloads, and dev.meta.ai/llama/llama-downloads all redirect to the Muse homepage, so there's no form to submit. @Kaggle staff: is there another way to get approved, or will pending requests be reviewed without the Meta form?",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "latentgenius",
+                  "id": 36833410,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/latentgenius",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36833410-kg.png?t=2026-10-30-04-33-53",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/latentgenius",
+                  "user_id": 36833410,
+                  "user_name": "latentgenius"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "Same issue here. My Kaggle request for Llama 3.1 is pending, but Meta's download form seems to be gone. The \"Meta's website\" link in the access banner (ai.meta.com/resources/models-and-libraries/llama-downloads), llama.com/llama-downloads, and dev.meta.ai/llama/llama-downloads all redirect to the Muse homepage, so there's no form to submit. @Kaggle staff: is there another way to get approved, or will pending requests be reviewed without the Meta form?",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "expectedCommentCount": 2,
+        "firstMessage": {
+          "author": {
+            "displayName": "SANNNNN",
+            "tier": "EXPERT",
+            "url": "/zuhairsan"
+          },
+          "content": "<p>i have requested the model acess but its still pending. it said to request on Meta website as well, i signed up using same email acc , but how to request from there? anyone knows<img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F31467923%2F87831fcad2b82c69c51c21df93557e5b%2FScreenshot%202026-10-23%20114357.png?generation=1792727186874061&amp;alt=media\" alt=\"\"></p>",
+          "id": 3543223,
+          "isThankYou": false,
+          "postDate": "2026-10-23T03:46:39.977Z",
+          "raw": {
+            "author": {
+              "display_name": "SANNNNN",
+              "id": 31467923,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31467923-kg.jpg?t=2026-07-21-19-05-31",
+              "tier": "EXPERT",
+              "url": "/zuhairsan"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 871,
+            "content": "<p>i have requested the model acess but its still pending. it said to request on Meta website as well, i signed up using same email acc , but how to request from there? anyone knows<img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F31467923%2F87831fcad2b82c69c51c21df93557e5b%2FScreenshot%202026-10-23%20114357.png?generation=1792727186874061&amp;alt=media\" alt=\"\"></p>",
+            "feedback_tracking_data": {},
+            "id": 3543223,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-10-23T03:46:39.977Z",
+            "raw_markdown": "i have requested the model acess but its still pending. it said to request on Meta website as well, i signed up using same email acc , but how to request from there? anyone knows![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F31467923%2F87831fcad2b82c69c51c21df93557e5b%2FScreenshot%202026-10-23%20114357.png?generation=1792727186874061&alt=media)",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "SANNNNN",
+                "id": 31467923,
+                "performance_tier": "EXPERT",
+                "profile_url": "/zuhairsan",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31467923-kg.jpg?t=2026-07-21-19-05-31",
+                "tier": "EXPERT",
+                "url": "/zuhairsan",
+                "user_id": 31467923,
+                "user_name": "zuhairsan"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 1
+            }
+          },
+          "rawMarkdown": "i have requested the model acess but its still pending. it said to request on Meta website as well, i signed up using same email acc , but how to request from there? anyone knows![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F31467923%2F87831fcad2b82c69c51c21df93557e5b%2FScreenshot%202026-10-23%20114357.png?generation=1792727186874061&alt=media)",
+          "replies": [],
+          "votes": {
+            "totalVotes": 0
+          }
+        },
+        "firstMessageId": 3543223,
+        "id": 751910,
+        "name": "How to request access llama-3.1",
+        "postDate": "2026-10-23T03:46:39.975036300Z",
+        "url": "/competitions/name-that-llm/discussion/751910"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>i have requested the model acess but its still pending. it said to request on Meta website as well, i signed up using same email acc , but how to request from there? anyone knows<img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F31467923%2F87831fcad2b82c69c51c21df93557e5b%2FScreenshot%202026-10-23%20114357.png?generation=1792727186874061&amp;alt=media\" alt=\"\"></p>",
+              "id": 3543223,
+              "post_date": "2026-10-23T03:46:39.977Z",
+              "raw_markdown": "i have requested the model acess but its still pending. it said to request on Meta website as well, i signed up using same email acc , but how to request from there? anyone knows![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F31467923%2F87831fcad2b82c69c51c21df93557e5b%2FScreenshot%202026-10-23%20114357.png?generation=1792727186874061&alt=media)"
+            },
+            {
+              "content": "<p>Same issue here. My Kaggle request for Llama 3.1 is pending, but Meta's download form seems to be gone. The \"Meta's website\" link in the access banner (ai.meta.com/resources/models-and-libraries/llama-downloads), llama.com/llama-downloads, and dev.meta.ai/llama/llama-downloads all redirect to the Muse homepage, so there's no form to submit. <a href=\"/Kaggle\" target=\"_blank\">@Kaggle</a> staff: is there another way to get approved, or will pending requests be reviewed without the Meta form?</p>",
+              "id": 3546890,
+              "post_date": "2026-10-29T22:27:54.773Z",
+              "raw_markdown": "Same issue here. My Kaggle request for Llama 3.1 is pending, but Meta's download form seems to be gone. The \"Meta's website\" link in the access banner (ai.meta.com/resources/models-and-libraries/llama-downloads), llama.com/llama-downloads, and dev.meta.ai/llama/llama-downloads all redirect to the Muse homepage, so there's no form to submit. @Kaggle staff: is there another way to get approved, or will pending requests be reviewed without the Meta form?"
+            },
+            {
+              "content": "<p>Sharing what happened in my case. Meta's download links also sent me to the Muse site. I then submitted the access form on the Hugging Face page for meta-llama/Llama-3.1-8B and received an email saying the request was accepted. On 2026-11-01, <code>metaresearch/llama-3.1/Transformers/8b/2</code> on Kaggle stopped returning 403 for me, and I scored a notebook with it. I can't say which step cleared the Kaggle access.</p>",
+              "id": 3548125,
+              "post_date": "2026-11-01T12:39:21.190Z",
+              "raw_markdown": "Sharing what happened in my case. Meta's download links also sent me to the Muse site. I then submitted the access form on the Hugging Face page for meta-llama/Llama-3.1-8B and received an email saying the request was accepted. On 2026-11-01, `metaresearch/llama-3.1/Transformers/8b/2` on Kaggle stopped returning 403 for me, and I scored a notebook with it. I can't say which step cleared the Kaggle access."
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 31467923,
+            "author_performance_tier": "EXPERT",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "31467923-kg.jpg?t=2026-07-21-19-05-31",
+            "author_user_display_name": "SANNNNN",
+            "author_user_name": "zuhairsan",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "comments": [
+              {
+                "author": {
+                  "display_name": "HALX2158",
+                  "id": 16294566,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/mizuno0522"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 1098,
+                "content": "<p>Sharing what happened in my case. Meta's download links also sent me to the Muse site. I then submitted the access form on the Hugging Face page for meta-llama/Llama-3.1-8B and received an email saying the request was accepted. On 2026-11-01, <code>metaresearch/llama-3.1/Transformers/8b/2</code> on Kaggle stopped returning 403 for me, and I scored a notebook with it. I can't say which step cleared the Kaggle access.</p>",
+                "feedback_tracking_data": {},
+                "id": 3548125,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-11-01T12:39:21.190Z",
+                "raw_markdown": "Sharing what happened in my case. Meta's download links also sent me to the Muse site. I then submitted the access form on the Hugging Face page for meta-llama/Llama-3.1-8B and received an email saying the request was accepted. On 2026-11-01, `metaresearch/llama-3.1/Transformers/8b/2` on Kaggle stopped returning 403 for me, and I scored a notebook with it. I can't say which step cleared the Kaggle access.",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "HALX2158",
+                    "id": 16294566,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/mizuno0522",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/mizuno0522",
+                    "user_id": 16294566,
+                    "user_name": "mizuno0522"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              },
+              {
+                "author": {
+                  "display_name": "latentgenius",
+                  "id": 36833410,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36833410-kg.png?t=2026-10-30-04-33-53",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/latentgenius"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 2034,
+                "content": "<p>Same issue here. My Kaggle request for Llama 3.1 is pending, but Meta's download form seems to be gone. The \"Meta's website\" link in the access banner (ai.meta.com/resources/models-and-libraries/llama-downloads), llama.com/llama-downloads, and dev.meta.ai/llama/llama-downloads all redirect to the Muse homepage, so there's no form to submit. <a href=\"/Kaggle\" target=\"_blank\">@Kaggle</a> staff: is there another way to get approved, or will pending requests be reviewed without the Meta form?</p>",
+                "feedback_tracking_data": {},
+                "id": 3546890,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-29T22:27:54.773Z",
+                "raw_markdown": "Same issue here. My Kaggle request for Llama 3.1 is pending, but Meta's download form seems to be gone. The \"Meta's website\" link in the access banner (ai.meta.com/resources/models-and-libraries/llama-downloads), llama.com/llama-downloads, and dev.meta.ai/llama/llama-downloads all redirect to the Muse homepage, so there's no form to submit. @Kaggle staff: is there another way to get approved, or will pending requests be reviewed without the Meta form?",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "latentgenius",
+                    "id": 36833410,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/latentgenius",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36833410-kg.png?t=2026-10-30-04-33-53",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/latentgenius",
+                    "user_id": 36833410,
+                    "user_name": "latentgenius"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              }
+            ],
+            "first_message": {
+              "author": {
+                "display_name": "SANNNNN",
+                "id": 31467923,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31467923-kg.jpg?t=2026-07-21-19-05-31",
+                "tier": "EXPERT",
+                "url": "/zuhairsan"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 871,
+              "content": "<p>i have requested the model acess but its still pending. it said to request on Meta website as well, i signed up using same email acc , but how to request from there? anyone knows<img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F31467923%2F87831fcad2b82c69c51c21df93557e5b%2FScreenshot%202026-10-23%20114357.png?generation=1792727186874061&amp;alt=media\" alt=\"\"></p>",
+              "feedback_tracking_data": {},
+              "id": 3543223,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-23T03:46:39.977Z",
+              "raw_markdown": "i have requested the model acess but its still pending. it said to request on Meta website as well, i signed up using same email acc , but how to request from there? anyone knows![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F31467923%2F87831fcad2b82c69c51c21df93557e5b%2FScreenshot%202026-10-23%20114357.png?generation=1792727186874061&alt=media)",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "SANNNNN",
+                  "id": 31467923,
+                  "performance_tier": "EXPERT",
+                  "profile_url": "/zuhairsan",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/31467923-kg.jpg?t=2026-07-21-19-05-31",
+                  "tier": "EXPERT",
+                  "url": "/zuhairsan",
+                  "user_id": 31467923,
+                  "user_name": "zuhairsan"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1
+              }
+            },
+            "first_message_id": 3543223,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 751910,
+            "name": "How to request access llama-3.1",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-10-23T03:46:39.975036300Z",
+            "total_messages": 2,
+            "url": "/competitions/name-that-llm/discussion/751910"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:23:36+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:23:36+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-11-01T12:39:21.190Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [
+    {
+      "slug": "name-that-llm",
+      "topic_id": 751910,
+      "message_id": 3546890,
+      "parent_message_id": null,
+      "author": "latentgenius",
+      "author_url": "/latentgenius",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-10-29T22:27:54.773Z",
+      "raw_markdown": "Same issue here. My Kaggle request for Llama 3.1 is pending, but Meta's download form seems to be gone. The \"Meta's website\" link in the access banner (ai.meta.com/resources/models-and-libraries/llama-downloads), llama.com/llama-downloads, and dev.meta.ai/llama/llama-downloads all redirect to the Muse homepage, so there's no form to submit. @Kaggle staff: is there another way to get approved, or will pending requests be reviewed without the Meta form?",
+      "content_html": "<p>Same issue here. My Kaggle request for Llama 3.1 is pending, but Meta's download form seems to be gone. The \"Meta's website\" link in the access banner (ai.meta.com/resources/models-and-libraries/llama-downloads), llama.com/llama-downloads, and dev.meta.ai/llama/llama-downloads all redirect to the Muse homepage, so there's no form to submit. <a href=\"/Kaggle\" target=\"_blank\">@Kaggle</a> staff: is there another way to get approved, or will pending requests be reviewed without the Meta form?</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:57:30+00:00",
+      "last_seen_at": "2026-11-16T16:23:36+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:23:36+00:00",
+      "remote_last_listed_at": "2026-11-16T16:23:36+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "latentgenius",
+          "tier": "CONTRIBUTOR",
+          "url": "/latentgenius"
+        },
+        "content": "<p>Same issue here. My Kaggle request for Llama 3.1 is pending, but Meta's download form seems to be gone. The \"Meta's website\" link in the access banner (ai.meta.com/resources/models-and-libraries/llama-downloads), llama.com/llama-downloads, and dev.meta.ai/llama/llama-downloads all redirect to the Muse homepage, so there's no form to submit. <a href=\"/Kaggle\" target=\"_blank\">@Kaggle</a> staff: is there another way to get approved, or will pending requests be reviewed without the Meta form?</p>",
+        "id": 3546890,
+        "isThankYou": false,
+        "postDate": "2026-10-29T22:27:54.773Z",
+        "raw": {
+          "author": {
+            "display_name": "latentgenius",
+            "id": 36833410,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36833410-kg.png?t=2026-10-30-04-33-53",
+            "tier": "CONTRIBUTOR",
+            "url": "/latentgenius"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 2034,
+          "content": "<p>Same issue here. My Kaggle request for Llama 3.1 is pending, but Meta's download form seems to be gone. The \"Meta's website\" link in the access banner (ai.meta.com/resources/models-and-libraries/llama-downloads), llama.com/llama-downloads, and dev.meta.ai/llama/llama-downloads all redirect to the Muse homepage, so there's no form to submit. <a href=\"/Kaggle\" target=\"_blank\">@Kaggle</a> staff: is there another way to get approved, or will pending requests be reviewed without the Meta form?</p>",
+          "feedback_tracking_data": {},
+          "id": 3546890,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-29T22:27:54.773Z",
+          "raw_markdown": "Same issue here. My Kaggle request for Llama 3.1 is pending, but Meta's download form seems to be gone. The \"Meta's website\" link in the access banner (ai.meta.com/resources/models-and-libraries/llama-downloads), llama.com/llama-downloads, and dev.meta.ai/llama/llama-downloads all redirect to the Muse homepage, so there's no form to submit. @Kaggle staff: is there another way to get approved, or will pending requests be reviewed without the Meta form?",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "latentgenius",
+              "id": 36833410,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/latentgenius",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36833410-kg.png?t=2026-10-30-04-33-53",
+              "tier": "CONTRIBUTOR",
+              "url": "/latentgenius",
+              "user_id": 36833410,
+              "user_name": "latentgenius"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "Same issue here. My Kaggle request for Llama 3.1 is pending, but Meta's download form seems to be gone. The \"Meta's website\" link in the access banner (ai.meta.com/resources/models-and-libraries/llama-downloads), llama.com/llama-downloads, and dev.meta.ai/llama/llama-downloads all redirect to the Muse homepage, so there's no form to submit. @Kaggle staff: is there another way to get approved, or will pending requests be reviewed without the Meta form?",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 751910,
+      "message_id": 3548125,
+      "parent_message_id": null,
+      "author": "HALX2158",
+      "author_url": "/mizuno0522",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-01T12:39:21.190Z",
+      "raw_markdown": "Sharing what happened in my case. Meta's download links also sent me to the Muse site. I then submitted the access form on the Hugging Face page for meta-llama/Llama-3.1-8B and received an email saying the request was accepted. On 2026-11-01, `metaresearch/llama-3.1/Transformers/8b/2` on Kaggle stopped returning 403 for me, and I scored a notebook with it. I can't say which step cleared the Kaggle access.",
+      "content_html": "<p>Sharing what happened in my case. Meta's download links also sent me to the Muse site. I then submitted the access form on the Hugging Face page for meta-llama/Llama-3.1-8B and received an email saying the request was accepted. On 2026-11-01, <code>metaresearch/llama-3.1/Transformers/8b/2</code> on Kaggle stopped returning 403 for me, and I scored a notebook with it. I can't say which step cleared the Kaggle access.</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:57:30+00:00",
+      "last_seen_at": "2026-11-16T16:23:36+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:23:36+00:00",
+      "remote_last_listed_at": "2026-11-16T16:23:36+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "HALX2158",
+          "tier": "CONTRIBUTOR",
+          "url": "/mizuno0522"
+        },
+        "content": "<p>Sharing what happened in my case. Meta's download links also sent me to the Muse site. I then submitted the access form on the Hugging Face page for meta-llama/Llama-3.1-8B and received an email saying the request was accepted. On 2026-11-01, <code>metaresearch/llama-3.1/Transformers/8b/2</code> on Kaggle stopped returning 403 for me, and I scored a notebook with it. I can't say which step cleared the Kaggle access.</p>",
+        "id": 3548125,
+        "isThankYou": false,
+        "postDate": "2026-11-01T12:39:21.190Z",
+        "raw": {
+          "author": {
+            "display_name": "HALX2158",
+            "id": 16294566,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+            "tier": "CONTRIBUTOR",
+            "url": "/mizuno0522"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 1098,
+          "content": "<p>Sharing what happened in my case. Meta's download links also sent me to the Muse site. I then submitted the access form on the Hugging Face page for meta-llama/Llama-3.1-8B and received an email saying the request was accepted. On 2026-11-01, <code>metaresearch/llama-3.1/Transformers/8b/2</code> on Kaggle stopped returning 403 for me, and I scored a notebook with it. I can't say which step cleared the Kaggle access.</p>",
+          "feedback_tracking_data": {},
+          "id": 3548125,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-01T12:39:21.190Z",
+          "raw_markdown": "Sharing what happened in my case. Meta's download links also sent me to the Muse site. I then submitted the access form on the Hugging Face page for meta-llama/Llama-3.1-8B and received an email saying the request was accepted. On 2026-11-01, `metaresearch/llama-3.1/Transformers/8b/2` on Kaggle stopped returning 403 for me, and I scored a notebook with it. I can't say which step cleared the Kaggle access.",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "HALX2158",
+              "id": 16294566,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/mizuno0522",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+              "tier": "CONTRIBUTOR",
+              "url": "/mizuno0522",
+              "user_id": 16294566,
+              "user_name": "mizuno0522"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "Sharing what happened in my case. Meta's download links also sent me to the Muse site. I then submitted the access form on the Hugging Face page for meta-llama/Llama-3.1-8B and received an email saying the request was accepted. On 2026-11-01, `metaresearch/llama-3.1/Transformers/8b/2` on Kaggle stopped returning 403 for me, and I scored a notebook with it. I can't say which step cleared the Kaggle access.",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    }
+  ],
+  "writeup": null
+}

@@ -1,0 +1,211 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 760276,
+    "title": "[EDA & Pipeline] Neural Stylometry & Likelihood Attribution (9 Visuals + 224k Sibling Specialists + Native GLM)",
+    "author": "Rishabh Bafna",
+    "author_url": "/rishabhbafnaiiitd",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-11-19T02:52:32.210339300Z",
+    "last_comment_post_date": "2026-11-19T02:52:32.210Z",
+    "comment_count": 0,
+    "votes": 2,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/760276",
+    "first_message_id": 3556739,
+    "first_seen_at": "2026-11-19T12:45:20+00:00",
+    "last_seen_at": "2026-11-19T12:45:27+00:00",
+    "detail_last_synced_at": "2026-11-19T12:45:27+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-19T12:45:20+00:00",
+    "remote_last_listed_at": "2026-11-19T12:45:20+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "153ec090dd2ee2da13335f5964c3f73da85b34ec5d8585bb10dd931de0fcf465",
+    "listing_metrics_hash": "6db2b817333d85ee95f494a1b2ba941fb79d87d4e3e0c8718afed5f3c0bfd1fa",
+    "detail_content_hash": "9a6a5904ce745015f157dfab832292195b86b0199e1ec20a5204d382cdd0d956",
+    "detail_last_checked_at": "2026-11-19T12:45:27+00:00",
+    "detail_next_check_at": "2026-11-20T12:45:27+00:00",
+    "detail_unchanged_count": 0,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 0,
+      "firstForumMessageId": null,
+      "id": 760276,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-11-19T02:52:32.210Z",
+      "postDate": "2026-11-19T02:52:32.210339300Z",
+      "raw": {
+        "id": 760276,
+        "last_comment_post_date": "2026-11-19T02:52:32.210Z",
+        "post_date": "2026-11-19T02:52:32.210339300Z",
+        "title": "[EDA & Pipeline] Neural Stylometry & Likelihood Attribution (9 Visuals + 224k Sibling Specialists + Native GLM)",
+        "topic_url": "/competitions/name-that-llm/discussion/760276",
+        "votes": 2
+      },
+      "title": "[EDA & Pipeline] Neural Stylometry & Likelihood Attribution (9 Visuals + 224k Sibling Specialists + Native GLM)",
+      "topicUrl": "/competitions/name-that-llm/discussion/760276",
+      "votes": 2
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "Rishabh Bafna",
+        "authorUserName": "rishabhbafnaiiitd",
+        "comments": [],
+        "expectedCommentCount": 0,
+        "firstMessage": {
+          "author": {
+            "displayName": "Rishabh Bafna",
+            "tier": "CONTRIBUTOR",
+            "url": "/rishabhbafnaiiitd"
+          },
+          "content": "<p>Hello everyone,</p>\n<p>I wanted to share an end-to-end exploratory data analysis and inference pipeline that we have put together for <strong>Name That LLM</strong>:</p>\n<p>👉 <strong>Notebook</strong>: <a href=\"https://www.kaggle.com/code/rishabhbafnaiiitd/neural-stylometry-likelihood-attribution\" target=\"_blank\">Neural Stylometry &amp; Likelihood Attribution</a></p>\n<p>Rather than treating the dataset as raw text chunks, this notebook approaches authorship attribution through the lens of <strong>Forensic Stylometry</strong>: separating what the model <em>writes about</em> (the prompt topic) from <em>how the model writes</em> (its stylistic and orthographic habits).</p>\n<hr>\n<h3>Key Findings &amp; Visual Investigations (Part I)</h3>\n<p>The notebook includes 9 publication-grade diagnostic plots (using a custom high-contrast dark/teal palette):</p>\n<ol>\n<li><strong>Class Balance &amp; Lab Families</strong>: Horizontal breakdowns showing response counts across the 6 major foundation labs (GPT, Claude, Gemini, GLM, Qwen, Kimi).</li>\n<li><strong>The Prompt-by-Model Matrix</strong>: A 150 × 18 cross-tabulation heatmap proving experimental completeness (149 of 150 prompts were answered by all 18 models).</li>\n<li><strong>Raw Length vs Within-Prompt Residuals</strong>: Isolating intrinsic model verbosity from prompt difficulty using prompt-centered residuals (L - mean_prompt).</li>\n<li><strong>Punctuation Fingerprints &amp; Cohen’s d</strong>: Measuring orthographic invariants (spaced em-dashes ' — ', curly apostrophes '’', bare em-dashes '—', semicolons, colons) and their prompt-centered effect sizes.</li>\n<li><strong>The Lineup (18 Voices, 1 Prompt)</strong>: A side-by-side textual excerpt comparison of multiple model families responding to an identical philosophical prompt.</li>\n<li><strong>Prompt-Grouped CV vs Random CV Confusion Matrix</strong>: Visual proof that standard random splits leak prompt content, and that <strong>within-family sibling ambiguity accounts for over 65% of all residual errors</strong>.</li>\n</ol>\n<hr>\n<h3>The End-to-End Inference Engine (Part II)</h3>\n<p>The backend provides a complete, fast-committing (11.5 minutes) inference pipeline designed to run cleanly within the 9-hour submission limit:</p>\n<ul>\n<li><strong>Multi-Scale Neural Transformer Core</strong>: Combining 9 transformer backbones (Qwen3 14B/8B/4B, Qwen2.5 14B/7B, Llama-3.1 8B, DeBERTa, ELECTRA, UltraBERT, OLMo-2) across 8 hidden representation depths.</li>\n<li><strong>224,000 Open Pool Sibling Specialists</strong>: Asynchronous multi-gram character and word TF-IDF SGD classifiers trained on clean external passages (crtproduction/name-that-llm-open-pool) to resolve Gemini, GPT, and Claude sibling confusion using Bayesian probability mass conservation.</li>\n<li><strong>25-Segment Native GLM Likelihood Pipeline</strong>: Offline evaluation with ntl-bin over the GGUF segment mirror to directly arbitrate the most frequent confusion pair (glm-5.3 vs glm-5.3-flash).</li>\n<li><strong>2D-Swept Sinkhorn Class Balancing</strong>: Implements Dirichlet prior calibration (w = 0.45, rho = 0.35) to handle skewed class distributions.</li>\n<li><strong>Reciprocal Prompt-Pair Balancing</strong>: TF-IDF cosine similarity neighbor clustering with duplicate author probability mass dissipation.</li>\n<li><strong>Calibrated Soft Typography Invariant Filtering</strong>: Soft multiplicative veto (penalty = 0.15) that bounds maximum cross-entropy loss and eliminates infinite-loss penalties on quotation passages.</li>\n</ul>\n<hr>\n<h3>Code &amp; Visuals</h3>\n<p>The notebook is completely public, thoroughly commented for learning purposes, and runs fast:\n👉 <strong><a href=\"https://www.kaggle.com/code/rishabhbafnaiiitd/neural-stylometry-likelihood-attribution\" target=\"_blank\">View the Notebook &amp; Fork Here</a></strong></p>\n<p>I hope this helps anyone looking for clean visualizations or seeking to understand the within-family sibling confusion dynamics. If you find the analysis or code helpful, an upvote or a comment with your thoughts would be greatly appreciated!</p>\n<p>Good luck to everyone on the leaderboard!</p>",
+          "id": 3556739,
+          "isThankYou": false,
+          "postDate": "2026-11-19T02:52:32.210Z",
+          "raw": {
+            "author": {
+              "display_name": "Rishabh Bafna",
+              "id": 25290376,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25290376-kg.jpeg?t=2025-02-25-13-48-25",
+              "tier": "CONTRIBUTOR",
+              "url": "/rishabhbafnaiiitd"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 1227,
+            "content": "<p>Hello everyone,</p>\n<p>I wanted to share an end-to-end exploratory data analysis and inference pipeline that we have put together for <strong>Name That LLM</strong>:</p>\n<p>👉 <strong>Notebook</strong>: <a href=\"https://www.kaggle.com/code/rishabhbafnaiiitd/neural-stylometry-likelihood-attribution\" target=\"_blank\">Neural Stylometry &amp; Likelihood Attribution</a></p>\n<p>Rather than treating the dataset as raw text chunks, this notebook approaches authorship attribution through the lens of <strong>Forensic Stylometry</strong>: separating what the model <em>writes about</em> (the prompt topic) from <em>how the model writes</em> (its stylistic and orthographic habits).</p>\n<hr>\n<h3>Key Findings &amp; Visual Investigations (Part I)</h3>\n<p>The notebook includes 9 publication-grade diagnostic plots (using a custom high-contrast dark/teal palette):</p>\n<ol>\n<li><strong>Class Balance &amp; Lab Families</strong>: Horizontal breakdowns showing response counts across the 6 major foundation labs (GPT, Claude, Gemini, GLM, Qwen, Kimi).</li>\n<li><strong>The Prompt-by-Model Matrix</strong>: A 150 × 18 cross-tabulation heatmap proving experimental completeness (149 of 150 prompts were answered by all 18 models).</li>\n<li><strong>Raw Length vs Within-Prompt Residuals</strong>: Isolating intrinsic model verbosity from prompt difficulty using prompt-centered residuals (L - mean_prompt).</li>\n<li><strong>Punctuation Fingerprints &amp; Cohen’s d</strong>: Measuring orthographic invariants (spaced em-dashes ' — ', curly apostrophes '’', bare em-dashes '—', semicolons, colons) and their prompt-centered effect sizes.</li>\n<li><strong>The Lineup (18 Voices, 1 Prompt)</strong>: A side-by-side textual excerpt comparison of multiple model families responding to an identical philosophical prompt.</li>\n<li><strong>Prompt-Grouped CV vs Random CV Confusion Matrix</strong>: Visual proof that standard random splits leak prompt content, and that <strong>within-family sibling ambiguity accounts for over 65% of all residual errors</strong>.</li>\n</ol>\n<hr>\n<h3>The End-to-End Inference Engine (Part II)</h3>\n<p>The backend provides a complete, fast-committing (11.5 minutes) inference pipeline designed to run cleanly within the 9-hour submission limit:</p>\n<ul>\n<li><strong>Multi-Scale Neural Transformer Core</strong>: Combining 9 transformer backbones (Qwen3 14B/8B/4B, Qwen2.5 14B/7B, Llama-3.1 8B, DeBERTa, ELECTRA, UltraBERT, OLMo-2) across 8 hidden representation depths.</li>\n<li><strong>224,000 Open Pool Sibling Specialists</strong>: Asynchronous multi-gram character and word TF-IDF SGD classifiers trained on clean external passages (crtproduction/name-that-llm-open-pool) to resolve Gemini, GPT, and Claude sibling confusion using Bayesian probability mass conservation.</li>\n<li><strong>25-Segment Native GLM Likelihood Pipeline</strong>: Offline evaluation with ntl-bin over the GGUF segment mirror to directly arbitrate the most frequent confusion pair (glm-5.3 vs glm-5.3-flash).</li>\n<li><strong>2D-Swept Sinkhorn Class Balancing</strong>: Implements Dirichlet prior calibration (w = 0.45, rho = 0.35) to handle skewed class distributions.</li>\n<li><strong>Reciprocal Prompt-Pair Balancing</strong>: TF-IDF cosine similarity neighbor clustering with duplicate author probability mass dissipation.</li>\n<li><strong>Calibrated Soft Typography Invariant Filtering</strong>: Soft multiplicative veto (penalty = 0.15) that bounds maximum cross-entropy loss and eliminates infinite-loss penalties on quotation passages.</li>\n</ul>\n<hr>\n<h3>Code &amp; Visuals</h3>\n<p>The notebook is completely public, thoroughly commented for learning purposes, and runs fast:\n👉 <strong><a href=\"https://www.kaggle.com/code/rishabhbafnaiiitd/neural-stylometry-likelihood-attribution\" target=\"_blank\">View the Notebook &amp; Fork Here</a></strong></p>\n<p>I hope this helps anyone looking for clean visualizations or seeking to understand the within-family sibling confusion dynamics. If you find the analysis or code helpful, an upvote or a comment with your thoughts would be greatly appreciated!</p>\n<p>Good luck to everyone on the leaderboard!</p>",
+            "feedback_tracking_data": {},
+            "id": 3556739,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-11-19T02:52:32.210Z",
+            "raw_markdown": "Hello everyone,\n\nI wanted to share an end-to-end exploratory data analysis and inference pipeline that we have put together for **Name That LLM**:\n\n👉 **Notebook**: [Neural Stylometry & Likelihood Attribution](https://www.kaggle.com/code/rishabhbafnaiiitd/neural-stylometry-likelihood-attribution)\n\nRather than treating the dataset as raw text chunks, this notebook approaches authorship attribution through the lens of **Forensic Stylometry**: separating what the model *writes about* (the prompt topic) from *how the model writes* (its stylistic and orthographic habits).\n\n---\n\n### Key Findings & Visual Investigations (Part I)\n\nThe notebook includes 9 publication-grade diagnostic plots (using a custom high-contrast dark/teal palette):\n\n1. **Class Balance & Lab Families**: Horizontal breakdowns showing response counts across the 6 major foundation labs (GPT, Claude, Gemini, GLM, Qwen, Kimi).\n2. **The Prompt-by-Model Matrix**: A 150 × 18 cross-tabulation heatmap proving experimental completeness (149 of 150 prompts were answered by all 18 models).\n3. **Raw Length vs Within-Prompt Residuals**: Isolating intrinsic model verbosity from prompt difficulty using prompt-centered residuals (L - mean_prompt).\n4. **Punctuation Fingerprints & Cohen’s d**: Measuring orthographic invariants (spaced em-dashes ' — ', curly apostrophes '’', bare em-dashes '—', semicolons, colons) and their prompt-centered effect sizes.\n5. **The Lineup (18 Voices, 1 Prompt)**: A side-by-side textual excerpt comparison of multiple model families responding to an identical philosophical prompt.\n6. **Prompt-Grouped CV vs Random CV Confusion Matrix**: Visual proof that standard random splits leak prompt content, and that **within-family sibling ambiguity accounts for over 65% of all residual errors**.\n\n---\n\n### The End-to-End Inference Engine (Part II)\n\nThe backend provides a complete, fast-committing (11.5 minutes) inference pipeline designed to run cleanly within the 9-hour submission limit:\n\n* **Multi-Scale Neural Transformer Core**: Combining 9 transformer backbones (Qwen3 14B/8B/4B, Qwen2.5 14B/7B, Llama-3.1 8B, DeBERTa, ELECTRA, UltraBERT, OLMo-2) across 8 hidden representation depths.\n* **224,000 Open Pool Sibling Specialists**: Asynchronous multi-gram character and word TF-IDF SGD classifiers trained on clean external passages (crtproduction/name-that-llm-open-pool) to resolve Gemini, GPT, and Claude sibling confusion using Bayesian probability mass conservation.\n* **25-Segment Native GLM Likelihood Pipeline**: Offline evaluation with ntl-bin over the GGUF segment mirror to directly arbitrate the most frequent confusion pair (glm-5.3 vs glm-5.3-flash).\n* **2D-Swept Sinkhorn Class Balancing**: Implements Dirichlet prior calibration (w = 0.45, rho = 0.35) to handle skewed class distributions.\n* **Reciprocal Prompt-Pair Balancing**: TF-IDF cosine similarity neighbor clustering with duplicate author probability mass dissipation.\n* **Calibrated Soft Typography Invariant Filtering**: Soft multiplicative veto (penalty = 0.15) that bounds maximum cross-entropy loss and eliminates infinite-loss penalties on quotation passages.\n\n---\n\n### Code & Visuals\nThe notebook is completely public, thoroughly commented for learning purposes, and runs fast:\n👉 **[View the Notebook & Fork Here](https://www.kaggle.com/code/rishabhbafnaiiitd/neural-stylometry-likelihood-attribution)**\n\nI hope this helps anyone looking for clean visualizations or seeking to understand the within-family sibling confusion dynamics. If you find the analysis or code helpful, an upvote or a comment with your thoughts would be greatly appreciated!\n\nGood luck to everyone on the leaderboard!",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "Rishabh Bafna",
+                "id": 25290376,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/rishabhbafnaiiitd",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25290376-kg.jpeg?t=2025-02-25-13-48-25",
+                "tier": "CONTRIBUTOR",
+                "url": "/rishabhbafnaiiitd",
+                "user_id": 25290376,
+                "user_name": "rishabhbafnaiiitd"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 2,
+              "total_votes": 2
+            }
+          },
+          "rawMarkdown": "Hello everyone,\n\nI wanted to share an end-to-end exploratory data analysis and inference pipeline that we have put together for **Name That LLM**:\n\n👉 **Notebook**: [Neural Stylometry & Likelihood Attribution](https://www.kaggle.com/code/rishabhbafnaiiitd/neural-stylometry-likelihood-attribution)\n\nRather than treating the dataset as raw text chunks, this notebook approaches authorship attribution through the lens of **Forensic Stylometry**: separating what the model *writes about* (the prompt topic) from *how the model writes* (its stylistic and orthographic habits).\n\n---\n\n### Key Findings & Visual Investigations (Part I)\n\nThe notebook includes 9 publication-grade diagnostic plots (using a custom high-contrast dark/teal palette):\n\n1. **Class Balance & Lab Families**: Horizontal breakdowns showing response counts across the 6 major foundation labs (GPT, Claude, Gemini, GLM, Qwen, Kimi).\n2. **The Prompt-by-Model Matrix**: A 150 × 18 cross-tabulation heatmap proving experimental completeness (149 of 150 prompts were answered by all 18 models).\n3. **Raw Length vs Within-Prompt Residuals**: Isolating intrinsic model verbosity from prompt difficulty using prompt-centered residuals (L - mean_prompt).\n4. **Punctuation Fingerprints & Cohen’s d**: Measuring orthographic invariants (spaced em-dashes ' — ', curly apostrophes '’', bare em-dashes '—', semicolons, colons) and their prompt-centered effect sizes.\n5. **The Lineup (18 Voices, 1 Prompt)**: A side-by-side textual excerpt comparison of multiple model families responding to an identical philosophical prompt.\n6. **Prompt-Grouped CV vs Random CV Confusion Matrix**: Visual proof that standard random splits leak prompt content, and that **within-family sibling ambiguity accounts for over 65% of all residual errors**.\n\n---\n\n### The End-to-End Inference Engine (Part II)\n\nThe backend provides a complete, fast-committing (11.5 minutes) inference pipeline designed to run cleanly within the 9-hour submission limit:\n\n* **Multi-Scale Neural Transformer Core**: Combining 9 transformer backbones (Qwen3 14B/8B/4B, Qwen2.5 14B/7B, Llama-3.1 8B, DeBERTa, ELECTRA, UltraBERT, OLMo-2) across 8 hidden representation depths.\n* **224,000 Open Pool Sibling Specialists**: Asynchronous multi-gram character and word TF-IDF SGD classifiers trained on clean external passages (crtproduction/name-that-llm-open-pool) to resolve Gemini, GPT, and Claude sibling confusion using Bayesian probability mass conservation.\n* **25-Segment Native GLM Likelihood Pipeline**: Offline evaluation with ntl-bin over the GGUF segment mirror to directly arbitrate the most frequent confusion pair (glm-5.3 vs glm-5.3-flash).\n* **2D-Swept Sinkhorn Class Balancing**: Implements Dirichlet prior calibration (w = 0.45, rho = 0.35) to handle skewed class distributions.\n* **Reciprocal Prompt-Pair Balancing**: TF-IDF cosine similarity neighbor clustering with duplicate author probability mass dissipation.\n* **Calibrated Soft Typography Invariant Filtering**: Soft multiplicative veto (penalty = 0.15) that bounds maximum cross-entropy loss and eliminates infinite-loss penalties on quotation passages.\n\n---\n\n### Code & Visuals\nThe notebook is completely public, thoroughly commented for learning purposes, and runs fast:\n👉 **[View the Notebook & Fork Here](https://www.kaggle.com/code/rishabhbafnaiiitd/neural-stylometry-likelihood-attribution)**\n\nI hope this helps anyone looking for clean visualizations or seeking to understand the within-family sibling confusion dynamics. If you find the analysis or code helpful, an upvote or a comment with your thoughts would be greatly appreciated!\n\nGood luck to everyone on the leaderboard!",
+          "replies": [],
+          "votes": {
+            "totalVotes": 2
+          }
+        },
+        "firstMessageId": 3556739,
+        "id": 760276,
+        "name": "[EDA & Pipeline] Neural Stylometry & Likelihood Attribution (9 Visuals + 224k Sibling Specialists + Native GLM)",
+        "postDate": "2026-11-19T02:52:32.210339300Z",
+        "url": "/competitions/name-that-llm/discussion/760276"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>Hello everyone,</p>\n<p>I wanted to share an end-to-end exploratory data analysis and inference pipeline that we have put together for <strong>Name That LLM</strong>:</p>\n<p>👉 <strong>Notebook</strong>: <a href=\"https://www.kaggle.com/code/rishabhbafnaiiitd/neural-stylometry-likelihood-attribution\" target=\"_blank\">Neural Stylometry &amp; Likelihood Attribution</a></p>\n<p>Rather than treating the dataset as raw text chunks, this notebook approaches authorship attribution through the lens of <strong>Forensic Stylometry</strong>: separating what the model <em>writes about</em> (the prompt topic) from <em>how the model writes</em> (its stylistic and orthographic habits).</p>\n<hr>\n<h3>Key Findings &amp; Visual Investigations (Part I)</h3>\n<p>The notebook includes 9 publication-grade diagnostic plots (using a custom high-contrast dark/teal palette):</p>\n<ol>\n<li><strong>Class Balance &amp; Lab Families</strong>: Horizontal breakdowns showing response counts across the 6 major foundation labs (GPT, Claude, Gemini, GLM, Qwen, Kimi).</li>\n<li><strong>The Prompt-by-Model Matrix</strong>: A 150 × 18 cross-tabulation heatmap proving experimental completeness (149 of 150 prompts were answered by all 18 models).</li>\n<li><strong>Raw Length vs Within-Prompt Residuals</strong>: Isolating intrinsic model verbosity from prompt difficulty using prompt-centered residuals (L - mean_prompt).</li>\n<li><strong>Punctuation Fingerprints &amp; Cohen’s d</strong>: Measuring orthographic invariants (spaced em-dashes ' — ', curly apostrophes '’', bare em-dashes '—', semicolons, colons) and their prompt-centered effect sizes.</li>\n<li><strong>The Lineup (18 Voices, 1 Prompt)</strong>: A side-by-side textual excerpt comparison of multiple model families responding to an identical philosophical prompt.</li>\n<li><strong>Prompt-Grouped CV vs Random CV Confusion Matrix</strong>: Visual proof that standard random splits leak prompt content, and that <strong>within-family sibling ambiguity accounts for over 65% of all residual errors</strong>.</li>\n</ol>\n<hr>\n<h3>The End-to-End Inference Engine (Part II)</h3>\n<p>The backend provides a complete, fast-committing (11.5 minutes) inference pipeline designed to run cleanly within the 9-hour submission limit:</p>\n<ul>\n<li><strong>Multi-Scale Neural Transformer Core</strong>: Combining 9 transformer backbones (Qwen3 14B/8B/4B, Qwen2.5 14B/7B, Llama-3.1 8B, DeBERTa, ELECTRA, UltraBERT, OLMo-2) across 8 hidden representation depths.</li>\n<li><strong>224,000 Open Pool Sibling Specialists</strong>: Asynchronous multi-gram character and word TF-IDF SGD classifiers trained on clean external passages (crtproduction/name-that-llm-open-pool) to resolve Gemini, GPT, and Claude sibling confusion using Bayesian probability mass conservation.</li>\n<li><strong>25-Segment Native GLM Likelihood Pipeline</strong>: Offline evaluation with ntl-bin over the GGUF segment mirror to directly arbitrate the most frequent confusion pair (glm-5.3 vs glm-5.3-flash).</li>\n<li><strong>2D-Swept Sinkhorn Class Balancing</strong>: Implements Dirichlet prior calibration (w = 0.45, rho = 0.35) to handle skewed class distributions.</li>\n<li><strong>Reciprocal Prompt-Pair Balancing</strong>: TF-IDF cosine similarity neighbor clustering with duplicate author probability mass dissipation.</li>\n<li><strong>Calibrated Soft Typography Invariant Filtering</strong>: Soft multiplicative veto (penalty = 0.15) that bounds maximum cross-entropy loss and eliminates infinite-loss penalties on quotation passages.</li>\n</ul>\n<hr>\n<h3>Code &amp; Visuals</h3>\n<p>The notebook is completely public, thoroughly commented for learning purposes, and runs fast:\n👉 <strong><a href=\"https://www.kaggle.com/code/rishabhbafnaiiitd/neural-stylometry-likelihood-attribution\" target=\"_blank\">View the Notebook &amp; Fork Here</a></strong></p>\n<p>I hope this helps anyone looking for clean visualizations or seeking to understand the within-family sibling confusion dynamics. If you find the analysis or code helpful, an upvote or a comment with your thoughts would be greatly appreciated!</p>\n<p>Good luck to everyone on the leaderboard!</p>",
+              "id": 3556739,
+              "post_date": "2026-11-19T02:52:32.210Z",
+              "raw_markdown": "Hello everyone,\n\nI wanted to share an end-to-end exploratory data analysis and inference pipeline that we have put together for **Name That LLM**:\n\n👉 **Notebook**: [Neural Stylometry & Likelihood Attribution](https://www.kaggle.com/code/rishabhbafnaiiitd/neural-stylometry-likelihood-attribution)\n\nRather than treating the dataset as raw text chunks, this notebook approaches authorship attribution through the lens of **Forensic Stylometry**: separating what the model *writes about* (the prompt topic) from *how the model writes* (its stylistic and orthographic habits).\n\n---\n\n### Key Findings & Visual Investigations (Part I)\n\nThe notebook includes 9 publication-grade diagnostic plots (using a custom high-contrast dark/teal palette):\n\n1. **Class Balance & Lab Families**: Horizontal breakdowns showing response counts across the 6 major foundation labs (GPT, Claude, Gemini, GLM, Qwen, Kimi).\n2. **The Prompt-by-Model Matrix**: A 150 × 18 cross-tabulation heatmap proving experimental completeness (149 of 150 prompts were answered by all 18 models).\n3. **Raw Length vs Within-Prompt Residuals**: Isolating intrinsic model verbosity from prompt difficulty using prompt-centered residuals (L - mean_prompt).\n4. **Punctuation Fingerprints & Cohen’s d**: Measuring orthographic invariants (spaced em-dashes ' — ', curly apostrophes '’', bare em-dashes '—', semicolons, colons) and their prompt-centered effect sizes.\n5. **The Lineup (18 Voices, 1 Prompt)**: A side-by-side textual excerpt comparison of multiple model families responding to an identical philosophical prompt.\n6. **Prompt-Grouped CV vs Random CV Confusion Matrix**: Visual proof that standard random splits leak prompt content, and that **within-family sibling ambiguity accounts for over 65% of all residual errors**.\n\n---\n\n### The End-to-End Inference Engine (Part II)\n\nThe backend provides a complete, fast-committing (11.5 minutes) inference pipeline designed to run cleanly within the 9-hour submission limit:\n\n* **Multi-Scale Neural Transformer Core**: Combining 9 transformer backbones (Qwen3 14B/8B/4B, Qwen2.5 14B/7B, Llama-3.1 8B, DeBERTa, ELECTRA, UltraBERT, OLMo-2) across 8 hidden representation depths.\n* **224,000 Open Pool Sibling Specialists**: Asynchronous multi-gram character and word TF-IDF SGD classifiers trained on clean external passages (crtproduction/name-that-llm-open-pool) to resolve Gemini, GPT, and Claude sibling confusion using Bayesian probability mass conservation.\n* **25-Segment Native GLM Likelihood Pipeline**: Offline evaluation with ntl-bin over the GGUF segment mirror to directly arbitrate the most frequent confusion pair (glm-5.3 vs glm-5.3-flash).\n* **2D-Swept Sinkhorn Class Balancing**: Implements Dirichlet prior calibration (w = 0.45, rho = 0.35) to handle skewed class distributions.\n* **Reciprocal Prompt-Pair Balancing**: TF-IDF cosine similarity neighbor clustering with duplicate author probability mass dissipation.\n* **Calibrated Soft Typography Invariant Filtering**: Soft multiplicative veto (penalty = 0.15) that bounds maximum cross-entropy loss and eliminates infinite-loss penalties on quotation passages.\n\n---\n\n### Code & Visuals\nThe notebook is completely public, thoroughly commented for learning purposes, and runs fast:\n👉 **[View the Notebook & Fork Here](https://www.kaggle.com/code/rishabhbafnaiiitd/neural-stylometry-likelihood-attribution)**\n\nI hope this helps anyone looking for clean visualizations or seeking to understand the within-family sibling confusion dynamics. If you find the analysis or code helpful, an upvote or a comment with your thoughts would be greatly appreciated!\n\nGood luck to everyone on the leaderboard!",
+              "votes": 2
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 25290376,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "25290376-kg.jpeg?t=2025-02-25-13-48-25",
+            "author_user_display_name": "Rishabh Bafna",
+            "author_user_name": "rishabhbafnaiiitd",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "first_message": {
+              "author": {
+                "display_name": "Rishabh Bafna",
+                "id": 25290376,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25290376-kg.jpeg?t=2025-02-25-13-48-25",
+                "tier": "CONTRIBUTOR",
+                "url": "/rishabhbafnaiiitd"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 1227,
+              "content": "<p>Hello everyone,</p>\n<p>I wanted to share an end-to-end exploratory data analysis and inference pipeline that we have put together for <strong>Name That LLM</strong>:</p>\n<p>👉 <strong>Notebook</strong>: <a href=\"https://www.kaggle.com/code/rishabhbafnaiiitd/neural-stylometry-likelihood-attribution\" target=\"_blank\">Neural Stylometry &amp; Likelihood Attribution</a></p>\n<p>Rather than treating the dataset as raw text chunks, this notebook approaches authorship attribution through the lens of <strong>Forensic Stylometry</strong>: separating what the model <em>writes about</em> (the prompt topic) from <em>how the model writes</em> (its stylistic and orthographic habits).</p>\n<hr>\n<h3>Key Findings &amp; Visual Investigations (Part I)</h3>\n<p>The notebook includes 9 publication-grade diagnostic plots (using a custom high-contrast dark/teal palette):</p>\n<ol>\n<li><strong>Class Balance &amp; Lab Families</strong>: Horizontal breakdowns showing response counts across the 6 major foundation labs (GPT, Claude, Gemini, GLM, Qwen, Kimi).</li>\n<li><strong>The Prompt-by-Model Matrix</strong>: A 150 × 18 cross-tabulation heatmap proving experimental completeness (149 of 150 prompts were answered by all 18 models).</li>\n<li><strong>Raw Length vs Within-Prompt Residuals</strong>: Isolating intrinsic model verbosity from prompt difficulty using prompt-centered residuals (L - mean_prompt).</li>\n<li><strong>Punctuation Fingerprints &amp; Cohen’s d</strong>: Measuring orthographic invariants (spaced em-dashes ' — ', curly apostrophes '’', bare em-dashes '—', semicolons, colons) and their prompt-centered effect sizes.</li>\n<li><strong>The Lineup (18 Voices, 1 Prompt)</strong>: A side-by-side textual excerpt comparison of multiple model families responding to an identical philosophical prompt.</li>\n<li><strong>Prompt-Grouped CV vs Random CV Confusion Matrix</strong>: Visual proof that standard random splits leak prompt content, and that <strong>within-family sibling ambiguity accounts for over 65% of all residual errors</strong>.</li>\n</ol>\n<hr>\n<h3>The End-to-End Inference Engine (Part II)</h3>\n<p>The backend provides a complete, fast-committing (11.5 minutes) inference pipeline designed to run cleanly within the 9-hour submission limit:</p>\n<ul>\n<li><strong>Multi-Scale Neural Transformer Core</strong>: Combining 9 transformer backbones (Qwen3 14B/8B/4B, Qwen2.5 14B/7B, Llama-3.1 8B, DeBERTa, ELECTRA, UltraBERT, OLMo-2) across 8 hidden representation depths.</li>\n<li><strong>224,000 Open Pool Sibling Specialists</strong>: Asynchronous multi-gram character and word TF-IDF SGD classifiers trained on clean external passages (crtproduction/name-that-llm-open-pool) to resolve Gemini, GPT, and Claude sibling confusion using Bayesian probability mass conservation.</li>\n<li><strong>25-Segment Native GLM Likelihood Pipeline</strong>: Offline evaluation with ntl-bin over the GGUF segment mirror to directly arbitrate the most frequent confusion pair (glm-5.3 vs glm-5.3-flash).</li>\n<li><strong>2D-Swept Sinkhorn Class Balancing</strong>: Implements Dirichlet prior calibration (w = 0.45, rho = 0.35) to handle skewed class distributions.</li>\n<li><strong>Reciprocal Prompt-Pair Balancing</strong>: TF-IDF cosine similarity neighbor clustering with duplicate author probability mass dissipation.</li>\n<li><strong>Calibrated Soft Typography Invariant Filtering</strong>: Soft multiplicative veto (penalty = 0.15) that bounds maximum cross-entropy loss and eliminates infinite-loss penalties on quotation passages.</li>\n</ul>\n<hr>\n<h3>Code &amp; Visuals</h3>\n<p>The notebook is completely public, thoroughly commented for learning purposes, and runs fast:\n👉 <strong><a href=\"https://www.kaggle.com/code/rishabhbafnaiiitd/neural-stylometry-likelihood-attribution\" target=\"_blank\">View the Notebook &amp; Fork Here</a></strong></p>\n<p>I hope this helps anyone looking for clean visualizations or seeking to understand the within-family sibling confusion dynamics. If you find the analysis or code helpful, an upvote or a comment with your thoughts would be greatly appreciated!</p>\n<p>Good luck to everyone on the leaderboard!</p>",
+              "feedback_tracking_data": {},
+              "id": 3556739,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-19T02:52:32.210Z",
+              "raw_markdown": "Hello everyone,\n\nI wanted to share an end-to-end exploratory data analysis and inference pipeline that we have put together for **Name That LLM**:\n\n👉 **Notebook**: [Neural Stylometry & Likelihood Attribution](https://www.kaggle.com/code/rishabhbafnaiiitd/neural-stylometry-likelihood-attribution)\n\nRather than treating the dataset as raw text chunks, this notebook approaches authorship attribution through the lens of **Forensic Stylometry**: separating what the model *writes about* (the prompt topic) from *how the model writes* (its stylistic and orthographic habits).\n\n---\n\n### Key Findings & Visual Investigations (Part I)\n\nThe notebook includes 9 publication-grade diagnostic plots (using a custom high-contrast dark/teal palette):\n\n1. **Class Balance & Lab Families**: Horizontal breakdowns showing response counts across the 6 major foundation labs (GPT, Claude, Gemini, GLM, Qwen, Kimi).\n2. **The Prompt-by-Model Matrix**: A 150 × 18 cross-tabulation heatmap proving experimental completeness (149 of 150 prompts were answered by all 18 models).\n3. **Raw Length vs Within-Prompt Residuals**: Isolating intrinsic model verbosity from prompt difficulty using prompt-centered residuals (L - mean_prompt).\n4. **Punctuation Fingerprints & Cohen’s d**: Measuring orthographic invariants (spaced em-dashes ' — ', curly apostrophes '’', bare em-dashes '—', semicolons, colons) and their prompt-centered effect sizes.\n5. **The Lineup (18 Voices, 1 Prompt)**: A side-by-side textual excerpt comparison of multiple model families responding to an identical philosophical prompt.\n6. **Prompt-Grouped CV vs Random CV Confusion Matrix**: Visual proof that standard random splits leak prompt content, and that **within-family sibling ambiguity accounts for over 65% of all residual errors**.\n\n---\n\n### The End-to-End Inference Engine (Part II)\n\nThe backend provides a complete, fast-committing (11.5 minutes) inference pipeline designed to run cleanly within the 9-hour submission limit:\n\n* **Multi-Scale Neural Transformer Core**: Combining 9 transformer backbones (Qwen3 14B/8B/4B, Qwen2.5 14B/7B, Llama-3.1 8B, DeBERTa, ELECTRA, UltraBERT, OLMo-2) across 8 hidden representation depths.\n* **224,000 Open Pool Sibling Specialists**: Asynchronous multi-gram character and word TF-IDF SGD classifiers trained on clean external passages (crtproduction/name-that-llm-open-pool) to resolve Gemini, GPT, and Claude sibling confusion using Bayesian probability mass conservation.\n* **25-Segment Native GLM Likelihood Pipeline**: Offline evaluation with ntl-bin over the GGUF segment mirror to directly arbitrate the most frequent confusion pair (glm-5.3 vs glm-5.3-flash).\n* **2D-Swept Sinkhorn Class Balancing**: Implements Dirichlet prior calibration (w = 0.45, rho = 0.35) to handle skewed class distributions.\n* **Reciprocal Prompt-Pair Balancing**: TF-IDF cosine similarity neighbor clustering with duplicate author probability mass dissipation.\n* **Calibrated Soft Typography Invariant Filtering**: Soft multiplicative veto (penalty = 0.15) that bounds maximum cross-entropy loss and eliminates infinite-loss penalties on quotation passages.\n\n---\n\n### Code & Visuals\nThe notebook is completely public, thoroughly commented for learning purposes, and runs fast:\n👉 **[View the Notebook & Fork Here](https://www.kaggle.com/code/rishabhbafnaiiitd/neural-stylometry-likelihood-attribution)**\n\nI hope this helps anyone looking for clean visualizations or seeking to understand the within-family sibling confusion dynamics. If you find the analysis or code helpful, an upvote or a comment with your thoughts would be greatly appreciated!\n\nGood luck to everyone on the leaderboard!",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Rishabh Bafna",
+                  "id": 25290376,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/rishabhbafnaiiitd",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25290376-kg.jpeg?t=2025-02-25-13-48-25",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/rishabhbafnaiiitd",
+                  "user_id": 25290376,
+                  "user_name": "rishabhbafnaiiitd"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 2,
+                "total_votes": 2
+              }
+            },
+            "first_message_id": 3556739,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 760276,
+            "name": "[EDA & Pipeline] Neural Stylometry & Likelihood Attribution (9 Visuals + 224k Sibling Specialists + Native GLM)",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-11-19T02:52:32.210339300Z",
+            "total_votes": 2,
+            "url": "/competitions/name-that-llm/discussion/760276"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-19T12:45:27+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-19T12:45:27+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-11-19T02:52:32.210339300Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [],
+  "writeup": null
+}

@@ -1,0 +1,211 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 751802,
+    "title": "Does the test set keep the “one passage per model per prompt” structure?",
+    "author": "Noussair Mighri",
+    "author_url": "/noussairmighri",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-10-22T20:00:30.894979700Z",
+    "last_comment_post_date": "2026-10-22T20:00:30.893333300Z",
+    "comment_count": 0,
+    "votes": 2,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/751802",
+    "first_message_id": 3543033,
+    "first_seen_at": "2026-11-04T06:56:16+00:00",
+    "last_seen_at": "2026-11-16T16:36:04+00:00",
+    "detail_last_synced_at": "2026-11-16T16:30:45+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "554c5b55d5a6a78ad5e4c0edc307717720183ccde2fa88025322171da7d10a78",
+    "listing_metrics_hash": "6db2b817333d85ee95f494a1b2ba941fb79d87d4e3e0c8718afed5f3c0bfd1fa",
+    "detail_content_hash": "35d5ff31754b59e48e402941435fc38c745ec7bca9decfb5ac350322589fae54",
+    "detail_last_checked_at": "2026-11-16T16:30:45+00:00",
+    "detail_next_check_at": "2026-11-23T16:30:45+00:00",
+    "detail_unchanged_count": 2,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 0,
+      "firstForumMessageId": null,
+      "id": 751802,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-10-22T20:00:30.893333300Z",
+      "postDate": "2026-10-22T20:00:30.894979700Z",
+      "raw": {
+        "id": 751802,
+        "last_comment_post_date": "2026-10-22T20:00:30.893333300Z",
+        "post_date": "2026-10-22T20:00:30.894979700Z",
+        "title": "Does the test set keep the “one passage per model per prompt” structure?",
+        "topic_url": "/competitions/name-that-llm/discussion/751802",
+        "votes": 2
+      },
+      "title": "Does the test set keep the “one passage per model per prompt” structure?",
+      "topicUrl": "/competitions/name-that-llm/discussion/751802",
+      "votes": 2
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "Noussair Mighri",
+        "authorUserName": "noussairmighri",
+        "comments": [],
+        "expectedCommentCount": 0,
+        "firstMessage": {
+          "author": {
+            "displayName": "Noussair Mighri",
+            "tier": "CONTRIBUTOR",
+            "url": "/noussairmighri"
+          },
+          "content": "<p>Hi everyone,</p>\n<p>I wanted to share what I’ve tried so far, and ask the community a few questions about how the test set is built.</p>\n<p><strong>What I found in train:</strong></p>\n<ul>\n<li>150 prompts × 18 models: every prompt is answered exactly once by each model (only claude-fable-5 is missing one prompt).</li>\n<li>Typography is a strong family signal. For example, Claude and GLM never use the curly apostrophe ’, Gemini almost never uses the em-dash —, and GPT prefers curly quotes.</li>\n<li>Telling sibling models apart within a family is the hard part, as expected.</li>\n</ul>\n<p><strong>Baseline:</strong></p>\n<ul>\n<li>Char TF-IDF (1–5) + word TF-IDF (1–2) + about 60 style features, each with LogisticRegression (class_weight balanced), blended by geometric mean.</li>\n<li>5-fold GroupKFold on prompt_id: CV BA 0.3745 → public LB 0.353. A reasonable match, so the base model seems to generalize.</li>\n</ul>\n<p><strong>The idea that didn’t transfer:</strong></p>\n<p>Since every model answers each train prompt once, I tried using that structure at test time:</p>\n<ul>\n<li>Cluster test passages by topic (TF-IDF cosine + average linkage). On train this recovers the prompts almost perfectly (ARI ≈ 0.95).</li>\n<li>Inside each cluster, assign models with the Hungarian algorithm so each model appears at most once.</li>\n</ul>\n<p>On train out-of-fold predictions this gave a large boost: <strong>0.374 → 0.481 BA</strong>. I also stress-tested it by randomly dropping train passages with a different keep-rate per model, to mimic the “unequal passages per model” note. It still helped in every run (+3.5 to +6 points).</p>\n<p>On the real test it didn’t help at all: <strong>LB 0.350 vs 0.353</strong> without matching.</p>\n<p>My guess is that the test set breaks the “at most once per model per prompt” assumption. For example, some models may have several passages for the same prompt, and the matching then forces those duplicates onto wrong labels.</p>\n<p>Questions :</p>\n<p><strong>In the test set, does each model answer each prompt at most once, or can the same model have several passages for one prompt?</strong></p>",
+          "id": 3543033,
+          "isThankYou": false,
+          "postDate": "2026-10-22T20:00:30.893Z",
+          "raw": {
+            "author": {
+              "display_name": "Noussair Mighri",
+              "id": 11963278,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11963278-kg.jpeg",
+              "tier": "CONTRIBUTOR",
+              "url": "/noussairmighri"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 5013,
+            "content": "<p>Hi everyone,</p>\n<p>I wanted to share what I’ve tried so far, and ask the community a few questions about how the test set is built.</p>\n<p><strong>What I found in train:</strong></p>\n<ul>\n<li>150 prompts × 18 models: every prompt is answered exactly once by each model (only claude-fable-5 is missing one prompt).</li>\n<li>Typography is a strong family signal. For example, Claude and GLM never use the curly apostrophe ’, Gemini almost never uses the em-dash —, and GPT prefers curly quotes.</li>\n<li>Telling sibling models apart within a family is the hard part, as expected.</li>\n</ul>\n<p><strong>Baseline:</strong></p>\n<ul>\n<li>Char TF-IDF (1–5) + word TF-IDF (1–2) + about 60 style features, each with LogisticRegression (class_weight balanced), blended by geometric mean.</li>\n<li>5-fold GroupKFold on prompt_id: CV BA 0.3745 → public LB 0.353. A reasonable match, so the base model seems to generalize.</li>\n</ul>\n<p><strong>The idea that didn’t transfer:</strong></p>\n<p>Since every model answers each train prompt once, I tried using that structure at test time:</p>\n<ul>\n<li>Cluster test passages by topic (TF-IDF cosine + average linkage). On train this recovers the prompts almost perfectly (ARI ≈ 0.95).</li>\n<li>Inside each cluster, assign models with the Hungarian algorithm so each model appears at most once.</li>\n</ul>\n<p>On train out-of-fold predictions this gave a large boost: <strong>0.374 → 0.481 BA</strong>. I also stress-tested it by randomly dropping train passages with a different keep-rate per model, to mimic the “unequal passages per model” note. It still helped in every run (+3.5 to +6 points).</p>\n<p>On the real test it didn’t help at all: <strong>LB 0.350 vs 0.353</strong> without matching.</p>\n<p>My guess is that the test set breaks the “at most once per model per prompt” assumption. For example, some models may have several passages for the same prompt, and the matching then forces those duplicates onto wrong labels.</p>\n<p>Questions :</p>\n<p><strong>In the test set, does each model answer each prompt at most once, or can the same model have several passages for one prompt?</strong></p>",
+            "feedback_tracking_data": {},
+            "id": 3543033,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-10-22T20:00:30.893Z",
+            "raw_markdown": "Hi everyone,\n\nI wanted to share what I’ve tried so far, and ask the community a few questions about how the test set is built.\n\n**What I found in train:**\n\n- 150 prompts × 18 models: every prompt is answered exactly once by each model (only claude-fable-5 is missing one prompt).\n- Typography is a strong family signal. For example, Claude and GLM never use the curly apostrophe ’, Gemini almost never uses the em-dash —, and GPT prefers curly quotes.\n- Telling sibling models apart within a family is the hard part, as expected.\n\n**Baseline:**\n\n- Char TF-IDF (1–5) + word TF-IDF (1–2) + about 60 style features, each with LogisticRegression (class_weight balanced), blended by geometric mean.\n- 5-fold GroupKFold on prompt_id: CV BA 0.3745 → public LB 0.353. A reasonable match, so the base model seems to generalize.\n\n**The idea that didn’t transfer:**\n\nSince every model answers each train prompt once, I tried using that structure at test time:\n\n- Cluster test passages by topic (TF-IDF cosine + average linkage). On train this recovers the prompts almost perfectly (ARI ≈ 0.95).\n- Inside each cluster, assign models with the Hungarian algorithm so each model appears at most once.\n\nOn train out-of-fold predictions this gave a large boost: **0.374 → 0.481 BA**. I also stress-tested it by randomly dropping train passages with a different keep-rate per model, to mimic the “unequal passages per model” note. It still helped in every run (+3.5 to +6 points).\n\nOn the real test it didn’t help at all: **LB 0.350 vs 0.353** without matching.\n\nMy guess is that the test set breaks the “at most once per model per prompt” assumption. For example, some models may have several passages for the same prompt, and the matching then forces those duplicates onto wrong labels.\n\nQuestions :\n\n**In the test set, does each model answer each prompt at most once, or can the same model have several passages for one prompt?**",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "Noussair Mighri",
+                "id": 11963278,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/noussairmighri",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11963278-kg.jpeg",
+                "tier": "CONTRIBUTOR",
+                "url": "/noussairmighri",
+                "user_id": 11963278,
+                "user_name": "noussairmighri"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 3,
+              "total_votes": 2
+            }
+          },
+          "rawMarkdown": "Hi everyone,\n\nI wanted to share what I’ve tried so far, and ask the community a few questions about how the test set is built.\n\n**What I found in train:**\n\n- 150 prompts × 18 models: every prompt is answered exactly once by each model (only claude-fable-5 is missing one prompt).\n- Typography is a strong family signal. For example, Claude and GLM never use the curly apostrophe ’, Gemini almost never uses the em-dash —, and GPT prefers curly quotes.\n- Telling sibling models apart within a family is the hard part, as expected.\n\n**Baseline:**\n\n- Char TF-IDF (1–5) + word TF-IDF (1–2) + about 60 style features, each with LogisticRegression (class_weight balanced), blended by geometric mean.\n- 5-fold GroupKFold on prompt_id: CV BA 0.3745 → public LB 0.353. A reasonable match, so the base model seems to generalize.\n\n**The idea that didn’t transfer:**\n\nSince every model answers each train prompt once, I tried using that structure at test time:\n\n- Cluster test passages by topic (TF-IDF cosine + average linkage). On train this recovers the prompts almost perfectly (ARI ≈ 0.95).\n- Inside each cluster, assign models with the Hungarian algorithm so each model appears at most once.\n\nOn train out-of-fold predictions this gave a large boost: **0.374 → 0.481 BA**. I also stress-tested it by randomly dropping train passages with a different keep-rate per model, to mimic the “unequal passages per model” note. It still helped in every run (+3.5 to +6 points).\n\nOn the real test it didn’t help at all: **LB 0.350 vs 0.353** without matching.\n\nMy guess is that the test set breaks the “at most once per model per prompt” assumption. For example, some models may have several passages for the same prompt, and the matching then forces those duplicates onto wrong labels.\n\nQuestions :\n\n**In the test set, does each model answer each prompt at most once, or can the same model have several passages for one prompt?**",
+          "replies": [],
+          "votes": {
+            "totalVotes": 2
+          }
+        },
+        "firstMessageId": 3543033,
+        "id": 751802,
+        "name": "Does the test set keep the “one passage per model per prompt” structure?",
+        "postDate": "2026-10-22T20:00:30.894979700Z",
+        "url": "/competitions/name-that-llm/discussion/751802"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>Hi everyone,</p>\n<p>I wanted to share what I’ve tried so far, and ask the community a few questions about how the test set is built.</p>\n<p><strong>What I found in train:</strong></p>\n<ul>\n<li>150 prompts × 18 models: every prompt is answered exactly once by each model (only claude-fable-5 is missing one prompt).</li>\n<li>Typography is a strong family signal. For example, Claude and GLM never use the curly apostrophe ’, Gemini almost never uses the em-dash —, and GPT prefers curly quotes.</li>\n<li>Telling sibling models apart within a family is the hard part, as expected.</li>\n</ul>\n<p><strong>Baseline:</strong></p>\n<ul>\n<li>Char TF-IDF (1–5) + word TF-IDF (1–2) + about 60 style features, each with LogisticRegression (class_weight balanced), blended by geometric mean.</li>\n<li>5-fold GroupKFold on prompt_id: CV BA 0.3745 → public LB 0.353. A reasonable match, so the base model seems to generalize.</li>\n</ul>\n<p><strong>The idea that didn’t transfer:</strong></p>\n<p>Since every model answers each train prompt once, I tried using that structure at test time:</p>\n<ul>\n<li>Cluster test passages by topic (TF-IDF cosine + average linkage). On train this recovers the prompts almost perfectly (ARI ≈ 0.95).</li>\n<li>Inside each cluster, assign models with the Hungarian algorithm so each model appears at most once.</li>\n</ul>\n<p>On train out-of-fold predictions this gave a large boost: <strong>0.374 → 0.481 BA</strong>. I also stress-tested it by randomly dropping train passages with a different keep-rate per model, to mimic the “unequal passages per model” note. It still helped in every run (+3.5 to +6 points).</p>\n<p>On the real test it didn’t help at all: <strong>LB 0.350 vs 0.353</strong> without matching.</p>\n<p>My guess is that the test set breaks the “at most once per model per prompt” assumption. For example, some models may have several passages for the same prompt, and the matching then forces those duplicates onto wrong labels.</p>\n<p>Questions :</p>\n<p><strong>In the test set, does each model answer each prompt at most once, or can the same model have several passages for one prompt?</strong></p>",
+              "id": 3543033,
+              "post_date": "2026-10-22T20:00:30.893Z",
+              "raw_markdown": "Hi everyone,\n\nI wanted to share what I’ve tried so far, and ask the community a few questions about how the test set is built.\n\n**What I found in train:**\n\n- 150 prompts × 18 models: every prompt is answered exactly once by each model (only claude-fable-5 is missing one prompt).\n- Typography is a strong family signal. For example, Claude and GLM never use the curly apostrophe ’, Gemini almost never uses the em-dash —, and GPT prefers curly quotes.\n- Telling sibling models apart within a family is the hard part, as expected.\n\n**Baseline:**\n\n- Char TF-IDF (1–5) + word TF-IDF (1–2) + about 60 style features, each with LogisticRegression (class_weight balanced), blended by geometric mean.\n- 5-fold GroupKFold on prompt_id: CV BA 0.3745 → public LB 0.353. A reasonable match, so the base model seems to generalize.\n\n**The idea that didn’t transfer:**\n\nSince every model answers each train prompt once, I tried using that structure at test time:\n\n- Cluster test passages by topic (TF-IDF cosine + average linkage). On train this recovers the prompts almost perfectly (ARI ≈ 0.95).\n- Inside each cluster, assign models with the Hungarian algorithm so each model appears at most once.\n\nOn train out-of-fold predictions this gave a large boost: **0.374 → 0.481 BA**. I also stress-tested it by randomly dropping train passages with a different keep-rate per model, to mimic the “unequal passages per model” note. It still helped in every run (+3.5 to +6 points).\n\nOn the real test it didn’t help at all: **LB 0.350 vs 0.353** without matching.\n\nMy guess is that the test set breaks the “at most once per model per prompt” assumption. For example, some models may have several passages for the same prompt, and the matching then forces those duplicates onto wrong labels.\n\nQuestions :\n\n**In the test set, does each model answer each prompt at most once, or can the same model have several passages for one prompt?**",
+              "votes": 2
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 11963278,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "11963278-kg.jpeg",
+            "author_user_display_name": "Noussair Mighri",
+            "author_user_name": "noussairmighri",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "first_message": {
+              "author": {
+                "display_name": "Noussair Mighri",
+                "id": 11963278,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11963278-kg.jpeg",
+                "tier": "CONTRIBUTOR",
+                "url": "/noussairmighri"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 5013,
+              "content": "<p>Hi everyone,</p>\n<p>I wanted to share what I’ve tried so far, and ask the community a few questions about how the test set is built.</p>\n<p><strong>What I found in train:</strong></p>\n<ul>\n<li>150 prompts × 18 models: every prompt is answered exactly once by each model (only claude-fable-5 is missing one prompt).</li>\n<li>Typography is a strong family signal. For example, Claude and GLM never use the curly apostrophe ’, Gemini almost never uses the em-dash —, and GPT prefers curly quotes.</li>\n<li>Telling sibling models apart within a family is the hard part, as expected.</li>\n</ul>\n<p><strong>Baseline:</strong></p>\n<ul>\n<li>Char TF-IDF (1–5) + word TF-IDF (1–2) + about 60 style features, each with LogisticRegression (class_weight balanced), blended by geometric mean.</li>\n<li>5-fold GroupKFold on prompt_id: CV BA 0.3745 → public LB 0.353. A reasonable match, so the base model seems to generalize.</li>\n</ul>\n<p><strong>The idea that didn’t transfer:</strong></p>\n<p>Since every model answers each train prompt once, I tried using that structure at test time:</p>\n<ul>\n<li>Cluster test passages by topic (TF-IDF cosine + average linkage). On train this recovers the prompts almost perfectly (ARI ≈ 0.95).</li>\n<li>Inside each cluster, assign models with the Hungarian algorithm so each model appears at most once.</li>\n</ul>\n<p>On train out-of-fold predictions this gave a large boost: <strong>0.374 → 0.481 BA</strong>. I also stress-tested it by randomly dropping train passages with a different keep-rate per model, to mimic the “unequal passages per model” note. It still helped in every run (+3.5 to +6 points).</p>\n<p>On the real test it didn’t help at all: <strong>LB 0.350 vs 0.353</strong> without matching.</p>\n<p>My guess is that the test set breaks the “at most once per model per prompt” assumption. For example, some models may have several passages for the same prompt, and the matching then forces those duplicates onto wrong labels.</p>\n<p>Questions :</p>\n<p><strong>In the test set, does each model answer each prompt at most once, or can the same model have several passages for one prompt?</strong></p>",
+              "feedback_tracking_data": {},
+              "id": 3543033,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-22T20:00:30.893Z",
+              "raw_markdown": "Hi everyone,\n\nI wanted to share what I’ve tried so far, and ask the community a few questions about how the test set is built.\n\n**What I found in train:**\n\n- 150 prompts × 18 models: every prompt is answered exactly once by each model (only claude-fable-5 is missing one prompt).\n- Typography is a strong family signal. For example, Claude and GLM never use the curly apostrophe ’, Gemini almost never uses the em-dash —, and GPT prefers curly quotes.\n- Telling sibling models apart within a family is the hard part, as expected.\n\n**Baseline:**\n\n- Char TF-IDF (1–5) + word TF-IDF (1–2) + about 60 style features, each with LogisticRegression (class_weight balanced), blended by geometric mean.\n- 5-fold GroupKFold on prompt_id: CV BA 0.3745 → public LB 0.353. A reasonable match, so the base model seems to generalize.\n\n**The idea that didn’t transfer:**\n\nSince every model answers each train prompt once, I tried using that structure at test time:\n\n- Cluster test passages by topic (TF-IDF cosine + average linkage). On train this recovers the prompts almost perfectly (ARI ≈ 0.95).\n- Inside each cluster, assign models with the Hungarian algorithm so each model appears at most once.\n\nOn train out-of-fold predictions this gave a large boost: **0.374 → 0.481 BA**. I also stress-tested it by randomly dropping train passages with a different keep-rate per model, to mimic the “unequal passages per model” note. It still helped in every run (+3.5 to +6 points).\n\nOn the real test it didn’t help at all: **LB 0.350 vs 0.353** without matching.\n\nMy guess is that the test set breaks the “at most once per model per prompt” assumption. For example, some models may have several passages for the same prompt, and the matching then forces those duplicates onto wrong labels.\n\nQuestions :\n\n**In the test set, does each model answer each prompt at most once, or can the same model have several passages for one prompt?**",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Noussair Mighri",
+                  "id": 11963278,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/noussairmighri",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/11963278-kg.jpeg",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/noussairmighri",
+                  "user_id": 11963278,
+                  "user_name": "noussairmighri"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 3,
+                "total_votes": 2
+              }
+            },
+            "first_message_id": 3543033,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 751802,
+            "name": "Does the test set keep the “one passage per model per prompt” structure?",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-10-22T20:00:30.894979700Z",
+            "total_votes": 2,
+            "url": "/competitions/name-that-llm/discussion/751802"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:30:45+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:30:45+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-10-22T20:00:30.894979700Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [],
+  "writeup": null
+}

@@ -1,0 +1,1655 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 758021,
+    "title": "Late post-processing cell never seems to affect the score in the hidden rerun — known differences vs. commit runs?",
+    "author": "vishu phalswal",
+    "author_url": "/vishuphalswal",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-11-11T13:02:28.965121500Z",
+    "last_comment_post_date": "2026-11-11T19:19:43.696666700Z",
+    "comment_count": 4,
+    "votes": 0,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/758021",
+    "first_message_id": 3553330,
+    "first_seen_at": "2026-11-16T16:21:27+00:00",
+    "last_seen_at": "2026-11-18T09:02:39+00:00",
+    "detail_last_synced_at": "2026-11-18T09:02:39+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-18T09:01:51+00:00",
+    "remote_last_listed_at": "2026-11-18T09:01:51+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "ff97a67879b19b7d0c6b3b9e5afec26a3dc414ac49e21d46fb6d5a9b7ff550fc",
+    "listing_metrics_hash": "1d7b01d39d998f5caf0eb285f7806c0632a1cb146aadc79a9504e2481370b229",
+    "detail_content_hash": "7e2efa9efe8961f9b5c798c88bd998fb33f21a8a585beb9d14f8eb2702a6a5d5",
+    "detail_last_checked_at": "2026-11-18T09:02:39+00:00",
+    "detail_next_check_at": "2026-11-21T09:02:39+00:00",
+    "detail_unchanged_count": 1,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 4,
+      "firstForumMessageId": null,
+      "id": 758021,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-11-11T19:19:43.696666700Z",
+      "postDate": "2026-11-11T13:02:28.965121500Z",
+      "raw": {
+        "comment_count": 4,
+        "id": 758021,
+        "last_comment_post_date": "2026-11-11T19:19:43.696666700Z",
+        "post_date": "2026-11-11T13:02:28.965121500Z",
+        "title": "Late post-processing cell never seems to affect the score in the hidden rerun — known differences vs. commit runs?",
+        "topic_url": "/competitions/name-that-llm/discussion/758021"
+      },
+      "title": "Late post-processing cell never seems to affect the score in the hidden rerun — known differences vs. commit runs?",
+      "topicUrl": "/competitions/name-that-llm/discussion/758021",
+      "votes": 0
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "vishu phalswal",
+        "authorUserName": "vishuphalswal",
+        "comments": [
+          {
+            "author": {
+              "displayName": "somerandomguy",
+              "tier": "CONTRIBUTOR",
+              "url": "/stithpragya"
+            },
+            "content": "<p>As far as i have seen, 9 hour are for run, if it gets queued the time is not counted, time is measured from the kernel start. Make sure that extra cell is enabled during scoring run, which you set using the env variable <code>os.getenv(\"KAGGLE_IS_COMPETITION_RERUN\")</code>. Also the environment is generally same for commit and sub (check your session options). </p>",
+            "id": 3553432,
+            "isThankYou": false,
+            "postDate": "2026-11-11T16:37:41.713Z",
+            "raw": {
+              "author": {
+                "display_name": "somerandomguy",
+                "id": 22597865,
+                "progression_opt_out": true,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                "tier": "CONTRIBUTOR",
+                "url": "/stithpragya"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 11,
+              "content": "<p>As far as i have seen, 9 hour are for run, if it gets queued the time is not counted, time is measured from the kernel start. Make sure that extra cell is enabled during scoring run, which you set using the env variable <code>os.getenv(\"KAGGLE_IS_COMPETITION_RERUN\")</code>. Also the environment is generally same for commit and sub (check your session options). </p>",
+              "feedback_tracking_data": {},
+              "id": 3553432,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-11T16:37:41.713Z",
+              "raw_markdown": "As far as i have seen, 9 hour are for run, if it gets queued the time is not counted, time is measured from the kernel start. Make sure that extra cell is enabled during scoring run, which you set using the env variable `os.getenv(\"KAGGLE_IS_COMPETITION_RERUN\")`. Also the environment is generally same for commit and sub (check your session options). ",
+              "replies": [
+                {
+                  "author": {
+                    "display_name": "vishu phalswal",
+                    "id": 35760329,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/vishuphalswal"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 570,
+                  "content": "<p><a href=\"/stithpragya\" target=\"_blank\">@stithpragya</a> Thanks a lot, this is really helpful! Good to know the clock starts at kernel start and queue time isn’t counted.</p>\n<p>I’ll add the KAGGLE_IS_COMPETITION_RERUN check, since right now I detect the scoring run indirectly from the test size.</p>\n<p>One follow-up, if you don’t mind: have you noticed /kaggle/input being slower in the scoring run than in a normal commit? Staff mentioned slow reads with the new caching, and I’m trying to judge how much safety margin to keep for large inputs.</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3553465,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-11T17:24:59.167Z",
+                  "raw_markdown": "@stithpragya Thanks a lot, this is really helpful! Good to know the clock starts at kernel start and queue time isn’t counted.\n\nI’ll add the KAGGLE_IS_COMPETITION_RERUN check, since right now I detect the scoring run indirectly from the test size.\n\nOne follow-up, if you don’t mind: have you noticed /kaggle/input being slower in the scoring run than in a normal commit? Staff mentioned slow reads with the new caching, and I’m trying to judge how much safety margin to keep for large inputs.",
+                  "replies": [
+                    {
+                      "author": {
+                        "display_name": "somerandomguy",
+                        "id": 22597865,
+                        "progression_opt_out": true,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                        "tier": "CONTRIBUTOR",
+                        "url": "/stithpragya"
+                      },
+                      "author_type": "COMMENT",
+                      "competition_ranking": 11,
+                      "content": "<p>It is variable, but the earlier problem is mostly solved, safety margin depends on the functions being run, though i leave 30mins spare for current runs.</p>",
+                      "feedback_tracking_data": {},
+                      "id": 3553503,
+                      "is_thank_you": false,
+                      "kernel_version": 0,
+                      "parent": {},
+                      "post_date": "2026-11-11T18:44:42.723Z",
+                      "raw_markdown": "It is variable, but the earlier problem is mostly solved, safety margin depends on the functions being run, though i leave 30mins spare for current runs.",
+                      "team_up_info": {
+                        "intro": "",
+                        "team_leader": {
+                          "display_name": "somerandomguy",
+                          "id": 22597865,
+                          "performance_tier": "CONTRIBUTOR",
+                          "profile_url": "/stithpragya",
+                          "progression_opt_out": true,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                          "tier": "CONTRIBUTOR",
+                          "url": "/stithpragya",
+                          "user_id": 22597865,
+                          "user_name": "stithpragya"
+                        }
+                      },
+                      "votes": {
+                        "can_upvote": true
+                      }
+                    },
+                    {
+                      "author": {
+                        "display_name": "vishu phalswal",
+                        "id": 35760329,
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                        "tier": "CONTRIBUTOR",
+                        "url": "/vishuphalswal"
+                      },
+                      "author_type": "TOPIC",
+                      "competition_ranking": 570,
+                      "content": "<p>Thanks, that’s reassuring! I’ll keep ~30 min spare too, and copy large inputs to local disk anyway in case speed varies.</p>",
+                      "feedback_tracking_data": {},
+                      "id": 3553529,
+                      "is_thank_you": false,
+                      "kernel_version": 0,
+                      "parent": {},
+                      "post_date": "2026-11-11T19:19:43.697Z",
+                      "raw_markdown": "Thanks, that’s reassuring! I’ll keep ~30 min spare too, and copy large inputs to local disk anyway in case speed varies.\n",
+                      "team_up_info": {
+                        "intro": "",
+                        "team_leader": {
+                          "display_name": "vishu phalswal",
+                          "id": 35760329,
+                          "performance_tier": "CONTRIBUTOR",
+                          "profile_url": "/vishuphalswal",
+                          "progression_opt_out": false,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                          "tier": "CONTRIBUTOR",
+                          "url": "/vishuphalswal",
+                          "user_id": 35760329,
+                          "user_name": "vishuphalswal"
+                        }
+                      },
+                      "votes": {
+                        "can_upvote": true
+                      }
+                    }
+                  ],
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "vishu phalswal",
+                      "id": 35760329,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/vishuphalswal",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/vishuphalswal",
+                      "user_id": 35760329,
+                      "user_name": "vishuphalswal"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "somerandomguy",
+                  "id": 22597865,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/stithpragya",
+                  "progression_opt_out": true,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/stithpragya",
+                  "user_id": 22597865,
+                  "user_name": "stithpragya"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "As far as i have seen, 9 hour are for run, if it gets queued the time is not counted, time is measured from the kernel start. Make sure that extra cell is enabled during scoring run, which you set using the env variable `os.getenv(\"KAGGLE_IS_COMPETITION_RERUN\")`. Also the environment is generally same for commit and sub (check your session options). ",
+            "replies": [
+              {
+                "author": {
+                  "displayName": "vishu phalswal",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/vishuphalswal"
+                },
+                "content": "<p><a href=\"/stithpragya\" target=\"_blank\">@stithpragya</a> Thanks a lot, this is really helpful! Good to know the clock starts at kernel start and queue time isn’t counted.</p>\n<p>I’ll add the KAGGLE_IS_COMPETITION_RERUN check, since right now I detect the scoring run indirectly from the test size.</p>\n<p>One follow-up, if you don’t mind: have you noticed /kaggle/input being slower in the scoring run than in a normal commit? Staff mentioned slow reads with the new caching, and I’m trying to judge how much safety margin to keep for large inputs.</p>",
+                "id": 3553465,
+                "isThankYou": false,
+                "postDate": "2026-11-11T17:24:59.167Z",
+                "raw": {
+                  "author": {
+                    "display_name": "vishu phalswal",
+                    "id": 35760329,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/vishuphalswal"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 570,
+                  "content": "<p><a href=\"/stithpragya\" target=\"_blank\">@stithpragya</a> Thanks a lot, this is really helpful! Good to know the clock starts at kernel start and queue time isn’t counted.</p>\n<p>I’ll add the KAGGLE_IS_COMPETITION_RERUN check, since right now I detect the scoring run indirectly from the test size.</p>\n<p>One follow-up, if you don’t mind: have you noticed /kaggle/input being slower in the scoring run than in a normal commit? Staff mentioned slow reads with the new caching, and I’m trying to judge how much safety margin to keep for large inputs.</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3553465,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-11T17:24:59.167Z",
+                  "raw_markdown": "@stithpragya Thanks a lot, this is really helpful! Good to know the clock starts at kernel start and queue time isn’t counted.\n\nI’ll add the KAGGLE_IS_COMPETITION_RERUN check, since right now I detect the scoring run indirectly from the test size.\n\nOne follow-up, if you don’t mind: have you noticed /kaggle/input being slower in the scoring run than in a normal commit? Staff mentioned slow reads with the new caching, and I’m trying to judge how much safety margin to keep for large inputs.",
+                  "replies": [
+                    {
+                      "author": {
+                        "display_name": "somerandomguy",
+                        "id": 22597865,
+                        "progression_opt_out": true,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                        "tier": "CONTRIBUTOR",
+                        "url": "/stithpragya"
+                      },
+                      "author_type": "COMMENT",
+                      "competition_ranking": 11,
+                      "content": "<p>It is variable, but the earlier problem is mostly solved, safety margin depends on the functions being run, though i leave 30mins spare for current runs.</p>",
+                      "feedback_tracking_data": {},
+                      "id": 3553503,
+                      "is_thank_you": false,
+                      "kernel_version": 0,
+                      "parent": {},
+                      "post_date": "2026-11-11T18:44:42.723Z",
+                      "raw_markdown": "It is variable, but the earlier problem is mostly solved, safety margin depends on the functions being run, though i leave 30mins spare for current runs.",
+                      "team_up_info": {
+                        "intro": "",
+                        "team_leader": {
+                          "display_name": "somerandomguy",
+                          "id": 22597865,
+                          "performance_tier": "CONTRIBUTOR",
+                          "profile_url": "/stithpragya",
+                          "progression_opt_out": true,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                          "tier": "CONTRIBUTOR",
+                          "url": "/stithpragya",
+                          "user_id": 22597865,
+                          "user_name": "stithpragya"
+                        }
+                      },
+                      "votes": {
+                        "can_upvote": true
+                      }
+                    },
+                    {
+                      "author": {
+                        "display_name": "vishu phalswal",
+                        "id": 35760329,
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                        "tier": "CONTRIBUTOR",
+                        "url": "/vishuphalswal"
+                      },
+                      "author_type": "TOPIC",
+                      "competition_ranking": 570,
+                      "content": "<p>Thanks, that’s reassuring! I’ll keep ~30 min spare too, and copy large inputs to local disk anyway in case speed varies.</p>",
+                      "feedback_tracking_data": {},
+                      "id": 3553529,
+                      "is_thank_you": false,
+                      "kernel_version": 0,
+                      "parent": {},
+                      "post_date": "2026-11-11T19:19:43.697Z",
+                      "raw_markdown": "Thanks, that’s reassuring! I’ll keep ~30 min spare too, and copy large inputs to local disk anyway in case speed varies.\n",
+                      "team_up_info": {
+                        "intro": "",
+                        "team_leader": {
+                          "display_name": "vishu phalswal",
+                          "id": 35760329,
+                          "performance_tier": "CONTRIBUTOR",
+                          "profile_url": "/vishuphalswal",
+                          "progression_opt_out": false,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                          "tier": "CONTRIBUTOR",
+                          "url": "/vishuphalswal",
+                          "user_id": 35760329,
+                          "user_name": "vishuphalswal"
+                        }
+                      },
+                      "votes": {
+                        "can_upvote": true
+                      }
+                    }
+                  ],
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "vishu phalswal",
+                      "id": 35760329,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/vishuphalswal",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/vishuphalswal",
+                      "user_id": 35760329,
+                      "user_name": "vishuphalswal"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                },
+                "rawMarkdown": "@stithpragya Thanks a lot, this is really helpful! Good to know the clock starts at kernel start and queue time isn’t counted.\n\nI’ll add the KAGGLE_IS_COMPETITION_RERUN check, since right now I detect the scoring run indirectly from the test size.\n\nOne follow-up, if you don’t mind: have you noticed /kaggle/input being slower in the scoring run than in a normal commit? Staff mentioned slow reads with the new caching, and I’m trying to judge how much safety margin to keep for large inputs.",
+                "replies": [
+                  {
+                    "author": {
+                      "displayName": "somerandomguy",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/stithpragya"
+                    },
+                    "content": "<p>It is variable, but the earlier problem is mostly solved, safety margin depends on the functions being run, though i leave 30mins spare for current runs.</p>",
+                    "id": 3553503,
+                    "isThankYou": false,
+                    "postDate": "2026-11-11T18:44:42.723Z",
+                    "raw": {
+                      "author": {
+                        "display_name": "somerandomguy",
+                        "id": 22597865,
+                        "progression_opt_out": true,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                        "tier": "CONTRIBUTOR",
+                        "url": "/stithpragya"
+                      },
+                      "author_type": "COMMENT",
+                      "competition_ranking": 11,
+                      "content": "<p>It is variable, but the earlier problem is mostly solved, safety margin depends on the functions being run, though i leave 30mins spare for current runs.</p>",
+                      "feedback_tracking_data": {},
+                      "id": 3553503,
+                      "is_thank_you": false,
+                      "kernel_version": 0,
+                      "parent": {},
+                      "post_date": "2026-11-11T18:44:42.723Z",
+                      "raw_markdown": "It is variable, but the earlier problem is mostly solved, safety margin depends on the functions being run, though i leave 30mins spare for current runs.",
+                      "team_up_info": {
+                        "intro": "",
+                        "team_leader": {
+                          "display_name": "somerandomguy",
+                          "id": 22597865,
+                          "performance_tier": "CONTRIBUTOR",
+                          "profile_url": "/stithpragya",
+                          "progression_opt_out": true,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                          "tier": "CONTRIBUTOR",
+                          "url": "/stithpragya",
+                          "user_id": 22597865,
+                          "user_name": "stithpragya"
+                        }
+                      },
+                      "votes": {
+                        "can_upvote": true
+                      }
+                    },
+                    "rawMarkdown": "It is variable, but the earlier problem is mostly solved, safety margin depends on the functions being run, though i leave 30mins spare for current runs.",
+                    "replies": [],
+                    "votes": {
+                      "totalVotes": 0
+                    }
+                  },
+                  {
+                    "author": {
+                      "displayName": "vishu phalswal",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/vishuphalswal"
+                    },
+                    "content": "<p>Thanks, that’s reassuring! I’ll keep ~30 min spare too, and copy large inputs to local disk anyway in case speed varies.</p>",
+                    "id": 3553529,
+                    "isThankYou": false,
+                    "postDate": "2026-11-11T19:19:43.697Z",
+                    "raw": {
+                      "author": {
+                        "display_name": "vishu phalswal",
+                        "id": 35760329,
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                        "tier": "CONTRIBUTOR",
+                        "url": "/vishuphalswal"
+                      },
+                      "author_type": "TOPIC",
+                      "competition_ranking": 570,
+                      "content": "<p>Thanks, that’s reassuring! I’ll keep ~30 min spare too, and copy large inputs to local disk anyway in case speed varies.</p>",
+                      "feedback_tracking_data": {},
+                      "id": 3553529,
+                      "is_thank_you": false,
+                      "kernel_version": 0,
+                      "parent": {},
+                      "post_date": "2026-11-11T19:19:43.697Z",
+                      "raw_markdown": "Thanks, that’s reassuring! I’ll keep ~30 min spare too, and copy large inputs to local disk anyway in case speed varies.\n",
+                      "team_up_info": {
+                        "intro": "",
+                        "team_leader": {
+                          "display_name": "vishu phalswal",
+                          "id": 35760329,
+                          "performance_tier": "CONTRIBUTOR",
+                          "profile_url": "/vishuphalswal",
+                          "progression_opt_out": false,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                          "tier": "CONTRIBUTOR",
+                          "url": "/vishuphalswal",
+                          "user_id": 35760329,
+                          "user_name": "vishuphalswal"
+                        }
+                      },
+                      "votes": {
+                        "can_upvote": true
+                      }
+                    },
+                    "rawMarkdown": "Thanks, that’s reassuring! I’ll keep ~30 min spare too, and copy large inputs to local disk anyway in case speed varies.\n",
+                    "replies": [],
+                    "votes": {
+                      "totalVotes": 0
+                    }
+                  }
+                ],
+                "votes": {
+                  "totalVotes": 0
+                }
+              }
+            ],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "expectedCommentCount": 4,
+        "firstMessage": {
+          "author": {
+            "displayName": "vishu phalswal",
+            "tier": "CONTRIBUTOR",
+            "url": "/vishuphalswal"
+          },
+          "content": "<p>I have a notebook that scores 0.682. I added one extra cell at the end that refines the predictions after the main pipeline. It reads the pipeline’s saved logits, runs a GPU step in a subprocess (a compiled binary with its own bundled CUDA libraries), and then atomically replaces /kaggle/working/submission.parquet. If anything fails, it keeps the original file.</p>\n<p>Offline, and in commit runs on a 4,000-row synthetic test set, the cell works and changes ~9% of labels. But every submission that should have used it scored exactly the same as the base (0.682). That suggests the cell always falls back in the hidden rerun. Since the hidden rerun shows no logs, I can’t see why.</p>\n<p>Things I’d like to know from anyone who has run long or late GPU stages:</p>\n<p>Time accounting: is the 9-hour limit measured from kernel start, or does it include queueing / environment setup? Has anyone seen the hidden rerun be noticeably slower than a commit run on the same data size?\nDisk: is /tmp (or /kaggle/temp) the same size in the hidden rerun as in commits? My step writes several GB of intermediate files there.\nInput read speed: first reads of large /kaggle/input files (100+ GB) are very slow for me in commits. Is it worse in the rerun?\nSubprocesses / GPUs: any known differences in subprocess handling, LD_LIBRARY_PATH, or GPU/driver version between commit and rerun?\nDebugging: has anyone found a reliable way to get diagnostic information out of a hidden run (other than encoding it into the score)?</p>",
+          "id": 3553330,
+          "isThankYou": false,
+          "postDate": "2026-11-11T13:02:28.967Z",
+          "raw": {
+            "author": {
+              "display_name": "vishu phalswal",
+              "id": 35760329,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "CONTRIBUTOR",
+              "url": "/vishuphalswal"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 570,
+            "content": "<p>I have a notebook that scores 0.682. I added one extra cell at the end that refines the predictions after the main pipeline. It reads the pipeline’s saved logits, runs a GPU step in a subprocess (a compiled binary with its own bundled CUDA libraries), and then atomically replaces /kaggle/working/submission.parquet. If anything fails, it keeps the original file.</p>\n<p>Offline, and in commit runs on a 4,000-row synthetic test set, the cell works and changes ~9% of labels. But every submission that should have used it scored exactly the same as the base (0.682). That suggests the cell always falls back in the hidden rerun. Since the hidden rerun shows no logs, I can’t see why.</p>\n<p>Things I’d like to know from anyone who has run long or late GPU stages:</p>\n<p>Time accounting: is the 9-hour limit measured from kernel start, or does it include queueing / environment setup? Has anyone seen the hidden rerun be noticeably slower than a commit run on the same data size?\nDisk: is /tmp (or /kaggle/temp) the same size in the hidden rerun as in commits? My step writes several GB of intermediate files there.\nInput read speed: first reads of large /kaggle/input files (100+ GB) are very slow for me in commits. Is it worse in the rerun?\nSubprocesses / GPUs: any known differences in subprocess handling, LD_LIBRARY_PATH, or GPU/driver version between commit and rerun?\nDebugging: has anyone found a reliable way to get diagnostic information out of a hidden run (other than encoding it into the score)?</p>",
+            "feedback_tracking_data": {},
+            "id": 3553330,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-11-11T13:02:28.967Z",
+            "raw_markdown": "I have a notebook that scores 0.682. I added one extra cell at the end that refines the predictions after the main pipeline. It reads the pipeline’s saved logits, runs a GPU step in a subprocess (a compiled binary with its own bundled CUDA libraries), and then atomically replaces /kaggle/working/submission.parquet. If anything fails, it keeps the original file.\n\nOffline, and in commit runs on a 4,000-row synthetic test set, the cell works and changes ~9% of labels. But every submission that should have used it scored exactly the same as the base (0.682). That suggests the cell always falls back in the hidden rerun. Since the hidden rerun shows no logs, I can’t see why.\n\nThings I’d like to know from anyone who has run long or late GPU stages:\n\nTime accounting: is the 9-hour limit measured from kernel start, or does it include queueing / environment setup? Has anyone seen the hidden rerun be noticeably slower than a commit run on the same data size?\nDisk: is /tmp (or /kaggle/temp) the same size in the hidden rerun as in commits? My step writes several GB of intermediate files there.\nInput read speed: first reads of large /kaggle/input files (100+ GB) are very slow for me in commits. Is it worse in the rerun?\nSubprocesses / GPUs: any known differences in subprocess handling, LD_LIBRARY_PATH, or GPU/driver version between commit and rerun?\nDebugging: has anyone found a reliable way to get diagnostic information out of a hidden run (other than encoding it into the score)?",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "vishu phalswal",
+                "id": 35760329,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/vishuphalswal",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/vishuphalswal",
+                "user_id": 35760329,
+                "user_name": "vishuphalswal"
+              }
+            },
+            "votes": {
+              "can_upvote": true
+            }
+          },
+          "rawMarkdown": "I have a notebook that scores 0.682. I added one extra cell at the end that refines the predictions after the main pipeline. It reads the pipeline’s saved logits, runs a GPU step in a subprocess (a compiled binary with its own bundled CUDA libraries), and then atomically replaces /kaggle/working/submission.parquet. If anything fails, it keeps the original file.\n\nOffline, and in commit runs on a 4,000-row synthetic test set, the cell works and changes ~9% of labels. But every submission that should have used it scored exactly the same as the base (0.682). That suggests the cell always falls back in the hidden rerun. Since the hidden rerun shows no logs, I can’t see why.\n\nThings I’d like to know from anyone who has run long or late GPU stages:\n\nTime accounting: is the 9-hour limit measured from kernel start, or does it include queueing / environment setup? Has anyone seen the hidden rerun be noticeably slower than a commit run on the same data size?\nDisk: is /tmp (or /kaggle/temp) the same size in the hidden rerun as in commits? My step writes several GB of intermediate files there.\nInput read speed: first reads of large /kaggle/input files (100+ GB) are very slow for me in commits. Is it worse in the rerun?\nSubprocesses / GPUs: any known differences in subprocess handling, LD_LIBRARY_PATH, or GPU/driver version between commit and rerun?\nDebugging: has anyone found a reliable way to get diagnostic information out of a hidden run (other than encoding it into the score)?",
+          "replies": [],
+          "votes": {
+            "totalVotes": 0
+          }
+        },
+        "firstMessageId": 3553330,
+        "id": 758021,
+        "name": "Late post-processing cell never seems to affect the score in the hidden rerun — known differences vs. commit runs?",
+        "postDate": "2026-11-11T13:02:28.965121500Z",
+        "url": "/competitions/name-that-llm/discussion/758021"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>I have a notebook that scores 0.682. I added one extra cell at the end that refines the predictions after the main pipeline. It reads the pipeline’s saved logits, runs a GPU step in a subprocess (a compiled binary with its own bundled CUDA libraries), and then atomically replaces /kaggle/working/submission.parquet. If anything fails, it keeps the original file.</p>\n<p>Offline, and in commit runs on a 4,000-row synthetic test set, the cell works and changes ~9% of labels. But every submission that should have used it scored exactly the same as the base (0.682). That suggests the cell always falls back in the hidden rerun. Since the hidden rerun shows no logs, I can’t see why.</p>\n<p>Things I’d like to know from anyone who has run long or late GPU stages:</p>\n<p>Time accounting: is the 9-hour limit measured from kernel start, or does it include queueing / environment setup? Has anyone seen the hidden rerun be noticeably slower than a commit run on the same data size?\nDisk: is /tmp (or /kaggle/temp) the same size in the hidden rerun as in commits? My step writes several GB of intermediate files there.\nInput read speed: first reads of large /kaggle/input files (100+ GB) are very slow for me in commits. Is it worse in the rerun?\nSubprocesses / GPUs: any known differences in subprocess handling, LD_LIBRARY_PATH, or GPU/driver version between commit and rerun?\nDebugging: has anyone found a reliable way to get diagnostic information out of a hidden run (other than encoding it into the score)?</p>",
+              "id": 3553330,
+              "post_date": "2026-11-11T13:02:28.967Z",
+              "raw_markdown": "I have a notebook that scores 0.682. I added one extra cell at the end that refines the predictions after the main pipeline. It reads the pipeline’s saved logits, runs a GPU step in a subprocess (a compiled binary with its own bundled CUDA libraries), and then atomically replaces /kaggle/working/submission.parquet. If anything fails, it keeps the original file.\n\nOffline, and in commit runs on a 4,000-row synthetic test set, the cell works and changes ~9% of labels. But every submission that should have used it scored exactly the same as the base (0.682). That suggests the cell always falls back in the hidden rerun. Since the hidden rerun shows no logs, I can’t see why.\n\nThings I’d like to know from anyone who has run long or late GPU stages:\n\nTime accounting: is the 9-hour limit measured from kernel start, or does it include queueing / environment setup? Has anyone seen the hidden rerun be noticeably slower than a commit run on the same data size?\nDisk: is /tmp (or /kaggle/temp) the same size in the hidden rerun as in commits? My step writes several GB of intermediate files there.\nInput read speed: first reads of large /kaggle/input files (100+ GB) are very slow for me in commits. Is it worse in the rerun?\nSubprocesses / GPUs: any known differences in subprocess handling, LD_LIBRARY_PATH, or GPU/driver version between commit and rerun?\nDebugging: has anyone found a reliable way to get diagnostic information out of a hidden run (other than encoding it into the score)?"
+            },
+            {
+              "content": "<p>As far as i have seen, 9 hour are for run, if it gets queued the time is not counted, time is measured from the kernel start. Make sure that extra cell is enabled during scoring run, which you set using the env variable <code>os.getenv(\"KAGGLE_IS_COMPETITION_RERUN\")</code>. Also the environment is generally same for commit and sub (check your session options). </p>",
+              "id": 3553432,
+              "post_date": "2026-11-11T16:37:41.713Z",
+              "raw_markdown": "As far as i have seen, 9 hour are for run, if it gets queued the time is not counted, time is measured from the kernel start. Make sure that extra cell is enabled during scoring run, which you set using the env variable `os.getenv(\"KAGGLE_IS_COMPETITION_RERUN\")`. Also the environment is generally same for commit and sub (check your session options). ",
+              "replies": [
+                {
+                  "content": "<p><a href=\"/stithpragya\" target=\"_blank\">@stithpragya</a> Thanks a lot, this is really helpful! Good to know the clock starts at kernel start and queue time isn’t counted.</p>\n<p>I’ll add the KAGGLE_IS_COMPETITION_RERUN check, since right now I detect the scoring run indirectly from the test size.</p>\n<p>One follow-up, if you don’t mind: have you noticed /kaggle/input being slower in the scoring run than in a normal commit? Staff mentioned slow reads with the new caching, and I’m trying to judge how much safety margin to keep for large inputs.</p>",
+                  "id": 3553465,
+                  "post_date": "2026-11-11T17:24:59.167Z",
+                  "raw_markdown": "@stithpragya Thanks a lot, this is really helpful! Good to know the clock starts at kernel start and queue time isn’t counted.\n\nI’ll add the KAGGLE_IS_COMPETITION_RERUN check, since right now I detect the scoring run indirectly from the test size.\n\nOne follow-up, if you don’t mind: have you noticed /kaggle/input being slower in the scoring run than in a normal commit? Staff mentioned slow reads with the new caching, and I’m trying to judge how much safety margin to keep for large inputs.",
+                  "replies": [
+                    {
+                      "content": "<p>It is variable, but the earlier problem is mostly solved, safety margin depends on the functions being run, though i leave 30mins spare for current runs.</p>",
+                      "id": 3553503,
+                      "post_date": "2026-11-11T18:44:42.723Z",
+                      "raw_markdown": "It is variable, but the earlier problem is mostly solved, safety margin depends on the functions being run, though i leave 30mins spare for current runs."
+                    },
+                    {
+                      "content": "<p>Thanks, that’s reassuring! I’ll keep ~30 min spare too, and copy large inputs to local disk anyway in case speed varies.</p>",
+                      "id": 3553529,
+                      "post_date": "2026-11-11T19:19:43.697Z",
+                      "raw_markdown": "Thanks, that’s reassuring! I’ll keep ~30 min spare too, and copy large inputs to local disk anyway in case speed varies.\n"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 35760329,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "default-thumb.png",
+            "author_user_display_name": "vishu phalswal",
+            "author_user_name": "vishuphalswal",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "comments": [
+              {
+                "author": {
+                  "display_name": "somerandomguy",
+                  "id": 22597865,
+                  "progression_opt_out": true,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/stithpragya"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 11,
+                "content": "<p>As far as i have seen, 9 hour are for run, if it gets queued the time is not counted, time is measured from the kernel start. Make sure that extra cell is enabled during scoring run, which you set using the env variable <code>os.getenv(\"KAGGLE_IS_COMPETITION_RERUN\")</code>. Also the environment is generally same for commit and sub (check your session options). </p>",
+                "feedback_tracking_data": {},
+                "id": 3553432,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-11-11T16:37:41.713Z",
+                "raw_markdown": "As far as i have seen, 9 hour are for run, if it gets queued the time is not counted, time is measured from the kernel start. Make sure that extra cell is enabled during scoring run, which you set using the env variable `os.getenv(\"KAGGLE_IS_COMPETITION_RERUN\")`. Also the environment is generally same for commit and sub (check your session options). ",
+                "replies": [
+                  {
+                    "author": {
+                      "display_name": "vishu phalswal",
+                      "id": 35760329,
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/vishuphalswal"
+                    },
+                    "author_type": "TOPIC",
+                    "competition_ranking": 570,
+                    "content": "<p><a href=\"/stithpragya\" target=\"_blank\">@stithpragya</a> Thanks a lot, this is really helpful! Good to know the clock starts at kernel start and queue time isn’t counted.</p>\n<p>I’ll add the KAGGLE_IS_COMPETITION_RERUN check, since right now I detect the scoring run indirectly from the test size.</p>\n<p>One follow-up, if you don’t mind: have you noticed /kaggle/input being slower in the scoring run than in a normal commit? Staff mentioned slow reads with the new caching, and I’m trying to judge how much safety margin to keep for large inputs.</p>",
+                    "feedback_tracking_data": {},
+                    "id": 3553465,
+                    "is_thank_you": false,
+                    "kernel_version": 0,
+                    "parent": {},
+                    "post_date": "2026-11-11T17:24:59.167Z",
+                    "raw_markdown": "@stithpragya Thanks a lot, this is really helpful! Good to know the clock starts at kernel start and queue time isn’t counted.\n\nI’ll add the KAGGLE_IS_COMPETITION_RERUN check, since right now I detect the scoring run indirectly from the test size.\n\nOne follow-up, if you don’t mind: have you noticed /kaggle/input being slower in the scoring run than in a normal commit? Staff mentioned slow reads with the new caching, and I’m trying to judge how much safety margin to keep for large inputs.",
+                    "replies": [
+                      {
+                        "author": {
+                          "display_name": "somerandomguy",
+                          "id": 22597865,
+                          "progression_opt_out": true,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                          "tier": "CONTRIBUTOR",
+                          "url": "/stithpragya"
+                        },
+                        "author_type": "COMMENT",
+                        "competition_ranking": 11,
+                        "content": "<p>It is variable, but the earlier problem is mostly solved, safety margin depends on the functions being run, though i leave 30mins spare for current runs.</p>",
+                        "feedback_tracking_data": {},
+                        "id": 3553503,
+                        "is_thank_you": false,
+                        "kernel_version": 0,
+                        "parent": {},
+                        "post_date": "2026-11-11T18:44:42.723Z",
+                        "raw_markdown": "It is variable, but the earlier problem is mostly solved, safety margin depends on the functions being run, though i leave 30mins spare for current runs.",
+                        "team_up_info": {
+                          "intro": "",
+                          "team_leader": {
+                            "display_name": "somerandomguy",
+                            "id": 22597865,
+                            "performance_tier": "CONTRIBUTOR",
+                            "profile_url": "/stithpragya",
+                            "progression_opt_out": true,
+                            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                            "tier": "CONTRIBUTOR",
+                            "url": "/stithpragya",
+                            "user_id": 22597865,
+                            "user_name": "stithpragya"
+                          }
+                        },
+                        "votes": {
+                          "can_upvote": true
+                        }
+                      },
+                      {
+                        "author": {
+                          "display_name": "vishu phalswal",
+                          "id": 35760329,
+                          "progression_opt_out": false,
+                          "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                          "tier": "CONTRIBUTOR",
+                          "url": "/vishuphalswal"
+                        },
+                        "author_type": "TOPIC",
+                        "competition_ranking": 570,
+                        "content": "<p>Thanks, that’s reassuring! I’ll keep ~30 min spare too, and copy large inputs to local disk anyway in case speed varies.</p>",
+                        "feedback_tracking_data": {},
+                        "id": 3553529,
+                        "is_thank_you": false,
+                        "kernel_version": 0,
+                        "parent": {},
+                        "post_date": "2026-11-11T19:19:43.697Z",
+                        "raw_markdown": "Thanks, that’s reassuring! I’ll keep ~30 min spare too, and copy large inputs to local disk anyway in case speed varies.\n",
+                        "team_up_info": {
+                          "intro": "",
+                          "team_leader": {
+                            "display_name": "vishu phalswal",
+                            "id": 35760329,
+                            "performance_tier": "CONTRIBUTOR",
+                            "profile_url": "/vishuphalswal",
+                            "progression_opt_out": false,
+                            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                            "tier": "CONTRIBUTOR",
+                            "url": "/vishuphalswal",
+                            "user_id": 35760329,
+                            "user_name": "vishuphalswal"
+                          }
+                        },
+                        "votes": {
+                          "can_upvote": true
+                        }
+                      }
+                    ],
+                    "team_up_info": {
+                      "intro": "",
+                      "team_leader": {
+                        "display_name": "vishu phalswal",
+                        "id": 35760329,
+                        "performance_tier": "CONTRIBUTOR",
+                        "profile_url": "/vishuphalswal",
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                        "tier": "CONTRIBUTOR",
+                        "url": "/vishuphalswal",
+                        "user_id": 35760329,
+                        "user_name": "vishuphalswal"
+                      }
+                    },
+                    "votes": {
+                      "can_upvote": true
+                    }
+                  }
+                ],
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "somerandomguy",
+                    "id": 22597865,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/stithpragya",
+                    "progression_opt_out": true,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/stithpragya",
+                    "user_id": 22597865,
+                    "user_name": "stithpragya"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              }
+            ],
+            "first_message": {
+              "author": {
+                "display_name": "vishu phalswal",
+                "id": 35760329,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/vishuphalswal"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 570,
+              "content": "<p>I have a notebook that scores 0.682. I added one extra cell at the end that refines the predictions after the main pipeline. It reads the pipeline’s saved logits, runs a GPU step in a subprocess (a compiled binary with its own bundled CUDA libraries), and then atomically replaces /kaggle/working/submission.parquet. If anything fails, it keeps the original file.</p>\n<p>Offline, and in commit runs on a 4,000-row synthetic test set, the cell works and changes ~9% of labels. But every submission that should have used it scored exactly the same as the base (0.682). That suggests the cell always falls back in the hidden rerun. Since the hidden rerun shows no logs, I can’t see why.</p>\n<p>Things I’d like to know from anyone who has run long or late GPU stages:</p>\n<p>Time accounting: is the 9-hour limit measured from kernel start, or does it include queueing / environment setup? Has anyone seen the hidden rerun be noticeably slower than a commit run on the same data size?\nDisk: is /tmp (or /kaggle/temp) the same size in the hidden rerun as in commits? My step writes several GB of intermediate files there.\nInput read speed: first reads of large /kaggle/input files (100+ GB) are very slow for me in commits. Is it worse in the rerun?\nSubprocesses / GPUs: any known differences in subprocess handling, LD_LIBRARY_PATH, or GPU/driver version between commit and rerun?\nDebugging: has anyone found a reliable way to get diagnostic information out of a hidden run (other than encoding it into the score)?</p>",
+              "feedback_tracking_data": {},
+              "id": 3553330,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-11T13:02:28.967Z",
+              "raw_markdown": "I have a notebook that scores 0.682. I added one extra cell at the end that refines the predictions after the main pipeline. It reads the pipeline’s saved logits, runs a GPU step in a subprocess (a compiled binary with its own bundled CUDA libraries), and then atomically replaces /kaggle/working/submission.parquet. If anything fails, it keeps the original file.\n\nOffline, and in commit runs on a 4,000-row synthetic test set, the cell works and changes ~9% of labels. But every submission that should have used it scored exactly the same as the base (0.682). That suggests the cell always falls back in the hidden rerun. Since the hidden rerun shows no logs, I can’t see why.\n\nThings I’d like to know from anyone who has run long or late GPU stages:\n\nTime accounting: is the 9-hour limit measured from kernel start, or does it include queueing / environment setup? Has anyone seen the hidden rerun be noticeably slower than a commit run on the same data size?\nDisk: is /tmp (or /kaggle/temp) the same size in the hidden rerun as in commits? My step writes several GB of intermediate files there.\nInput read speed: first reads of large /kaggle/input files (100+ GB) are very slow for me in commits. Is it worse in the rerun?\nSubprocesses / GPUs: any known differences in subprocess handling, LD_LIBRARY_PATH, or GPU/driver version between commit and rerun?\nDebugging: has anyone found a reliable way to get diagnostic information out of a hidden run (other than encoding it into the score)?",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "vishu phalswal",
+                  "id": 35760329,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/vishuphalswal",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/vishuphalswal",
+                  "user_id": 35760329,
+                  "user_name": "vishuphalswal"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "first_message_id": 3553330,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 758021,
+            "name": "Late post-processing cell never seems to affect the score in the hidden rerun — known differences vs. commit runs?",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-11-11T13:02:28.965121500Z",
+            "total_messages": 4,
+            "url": "/competitions/name-that-llm/discussion/758021"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-18T09:02:39+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-18T09:02:39+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-11-11T19:19:43.696666700Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [
+    {
+      "slug": "name-that-llm",
+      "topic_id": 758021,
+      "message_id": 3553432,
+      "parent_message_id": null,
+      "author": "somerandomguy",
+      "author_url": "/stithpragya",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-11T16:37:41.713Z",
+      "raw_markdown": "As far as i have seen, 9 hour are for run, if it gets queued the time is not counted, time is measured from the kernel start. Make sure that extra cell is enabled during scoring run, which you set using the env variable `os.getenv(\"KAGGLE_IS_COMPETITION_RERUN\")`. Also the environment is generally same for commit and sub (check your session options). ",
+      "content_html": "<p>As far as i have seen, 9 hour are for run, if it gets queued the time is not counted, time is measured from the kernel start. Make sure that extra cell is enabled during scoring run, which you set using the env variable <code>os.getenv(\"KAGGLE_IS_COMPETITION_RERUN\")</code>. Also the environment is generally same for commit and sub (check your session options). </p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-16T16:21:45+00:00",
+      "last_seen_at": "2026-11-18T09:02:39+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T09:02:39+00:00",
+      "remote_last_listed_at": "2026-11-18T09:02:39+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "somerandomguy",
+          "tier": "CONTRIBUTOR",
+          "url": "/stithpragya"
+        },
+        "content": "<p>As far as i have seen, 9 hour are for run, if it gets queued the time is not counted, time is measured from the kernel start. Make sure that extra cell is enabled during scoring run, which you set using the env variable <code>os.getenv(\"KAGGLE_IS_COMPETITION_RERUN\")</code>. Also the environment is generally same for commit and sub (check your session options). </p>",
+        "id": 3553432,
+        "isThankYou": false,
+        "postDate": "2026-11-11T16:37:41.713Z",
+        "raw": {
+          "author": {
+            "display_name": "somerandomguy",
+            "id": 22597865,
+            "progression_opt_out": true,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+            "tier": "CONTRIBUTOR",
+            "url": "/stithpragya"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 11,
+          "content": "<p>As far as i have seen, 9 hour are for run, if it gets queued the time is not counted, time is measured from the kernel start. Make sure that extra cell is enabled during scoring run, which you set using the env variable <code>os.getenv(\"KAGGLE_IS_COMPETITION_RERUN\")</code>. Also the environment is generally same for commit and sub (check your session options). </p>",
+          "feedback_tracking_data": {},
+          "id": 3553432,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-11T16:37:41.713Z",
+          "raw_markdown": "As far as i have seen, 9 hour are for run, if it gets queued the time is not counted, time is measured from the kernel start. Make sure that extra cell is enabled during scoring run, which you set using the env variable `os.getenv(\"KAGGLE_IS_COMPETITION_RERUN\")`. Also the environment is generally same for commit and sub (check your session options). ",
+          "replies": [
+            {
+              "author": {
+                "display_name": "vishu phalswal",
+                "id": 35760329,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/vishuphalswal"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 570,
+              "content": "<p><a href=\"/stithpragya\" target=\"_blank\">@stithpragya</a> Thanks a lot, this is really helpful! Good to know the clock starts at kernel start and queue time isn’t counted.</p>\n<p>I’ll add the KAGGLE_IS_COMPETITION_RERUN check, since right now I detect the scoring run indirectly from the test size.</p>\n<p>One follow-up, if you don’t mind: have you noticed /kaggle/input being slower in the scoring run than in a normal commit? Staff mentioned slow reads with the new caching, and I’m trying to judge how much safety margin to keep for large inputs.</p>",
+              "feedback_tracking_data": {},
+              "id": 3553465,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-11T17:24:59.167Z",
+              "raw_markdown": "@stithpragya Thanks a lot, this is really helpful! Good to know the clock starts at kernel start and queue time isn’t counted.\n\nI’ll add the KAGGLE_IS_COMPETITION_RERUN check, since right now I detect the scoring run indirectly from the test size.\n\nOne follow-up, if you don’t mind: have you noticed /kaggle/input being slower in the scoring run than in a normal commit? Staff mentioned slow reads with the new caching, and I’m trying to judge how much safety margin to keep for large inputs.",
+              "replies": [
+                {
+                  "author": {
+                    "display_name": "somerandomguy",
+                    "id": 22597865,
+                    "progression_opt_out": true,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/stithpragya"
+                  },
+                  "author_type": "COMMENT",
+                  "competition_ranking": 11,
+                  "content": "<p>It is variable, but the earlier problem is mostly solved, safety margin depends on the functions being run, though i leave 30mins spare for current runs.</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3553503,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-11T18:44:42.723Z",
+                  "raw_markdown": "It is variable, but the earlier problem is mostly solved, safety margin depends on the functions being run, though i leave 30mins spare for current runs.",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "somerandomguy",
+                      "id": 22597865,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/stithpragya",
+                      "progression_opt_out": true,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/stithpragya",
+                      "user_id": 22597865,
+                      "user_name": "stithpragya"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                },
+                {
+                  "author": {
+                    "display_name": "vishu phalswal",
+                    "id": 35760329,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/vishuphalswal"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 570,
+                  "content": "<p>Thanks, that’s reassuring! I’ll keep ~30 min spare too, and copy large inputs to local disk anyway in case speed varies.</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3553529,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-11T19:19:43.697Z",
+                  "raw_markdown": "Thanks, that’s reassuring! I’ll keep ~30 min spare too, and copy large inputs to local disk anyway in case speed varies.\n",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "vishu phalswal",
+                      "id": 35760329,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/vishuphalswal",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/vishuphalswal",
+                      "user_id": 35760329,
+                      "user_name": "vishuphalswal"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "vishu phalswal",
+                  "id": 35760329,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/vishuphalswal",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/vishuphalswal",
+                  "user_id": 35760329,
+                  "user_name": "vishuphalswal"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            }
+          ],
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "somerandomguy",
+              "id": 22597865,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/stithpragya",
+              "progression_opt_out": true,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+              "tier": "CONTRIBUTOR",
+              "url": "/stithpragya",
+              "user_id": 22597865,
+              "user_name": "stithpragya"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "As far as i have seen, 9 hour are for run, if it gets queued the time is not counted, time is measured from the kernel start. Make sure that extra cell is enabled during scoring run, which you set using the env variable `os.getenv(\"KAGGLE_IS_COMPETITION_RERUN\")`. Also the environment is generally same for commit and sub (check your session options). ",
+        "replies": [
+          {
+            "author": {
+              "displayName": "vishu phalswal",
+              "tier": "CONTRIBUTOR",
+              "url": "/vishuphalswal"
+            },
+            "content": "<p><a href=\"/stithpragya\" target=\"_blank\">@stithpragya</a> Thanks a lot, this is really helpful! Good to know the clock starts at kernel start and queue time isn’t counted.</p>\n<p>I’ll add the KAGGLE_IS_COMPETITION_RERUN check, since right now I detect the scoring run indirectly from the test size.</p>\n<p>One follow-up, if you don’t mind: have you noticed /kaggle/input being slower in the scoring run than in a normal commit? Staff mentioned slow reads with the new caching, and I’m trying to judge how much safety margin to keep for large inputs.</p>",
+            "id": 3553465,
+            "isThankYou": false,
+            "postDate": "2026-11-11T17:24:59.167Z",
+            "raw": {
+              "author": {
+                "display_name": "vishu phalswal",
+                "id": 35760329,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/vishuphalswal"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 570,
+              "content": "<p><a href=\"/stithpragya\" target=\"_blank\">@stithpragya</a> Thanks a lot, this is really helpful! Good to know the clock starts at kernel start and queue time isn’t counted.</p>\n<p>I’ll add the KAGGLE_IS_COMPETITION_RERUN check, since right now I detect the scoring run indirectly from the test size.</p>\n<p>One follow-up, if you don’t mind: have you noticed /kaggle/input being slower in the scoring run than in a normal commit? Staff mentioned slow reads with the new caching, and I’m trying to judge how much safety margin to keep for large inputs.</p>",
+              "feedback_tracking_data": {},
+              "id": 3553465,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-11T17:24:59.167Z",
+              "raw_markdown": "@stithpragya Thanks a lot, this is really helpful! Good to know the clock starts at kernel start and queue time isn’t counted.\n\nI’ll add the KAGGLE_IS_COMPETITION_RERUN check, since right now I detect the scoring run indirectly from the test size.\n\nOne follow-up, if you don’t mind: have you noticed /kaggle/input being slower in the scoring run than in a normal commit? Staff mentioned slow reads with the new caching, and I’m trying to judge how much safety margin to keep for large inputs.",
+              "replies": [
+                {
+                  "author": {
+                    "display_name": "somerandomguy",
+                    "id": 22597865,
+                    "progression_opt_out": true,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/stithpragya"
+                  },
+                  "author_type": "COMMENT",
+                  "competition_ranking": 11,
+                  "content": "<p>It is variable, but the earlier problem is mostly solved, safety margin depends on the functions being run, though i leave 30mins spare for current runs.</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3553503,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-11T18:44:42.723Z",
+                  "raw_markdown": "It is variable, but the earlier problem is mostly solved, safety margin depends on the functions being run, though i leave 30mins spare for current runs.",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "somerandomguy",
+                      "id": 22597865,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/stithpragya",
+                      "progression_opt_out": true,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/stithpragya",
+                      "user_id": 22597865,
+                      "user_name": "stithpragya"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                },
+                {
+                  "author": {
+                    "display_name": "vishu phalswal",
+                    "id": 35760329,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/vishuphalswal"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 570,
+                  "content": "<p>Thanks, that’s reassuring! I’ll keep ~30 min spare too, and copy large inputs to local disk anyway in case speed varies.</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3553529,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-11T19:19:43.697Z",
+                  "raw_markdown": "Thanks, that’s reassuring! I’ll keep ~30 min spare too, and copy large inputs to local disk anyway in case speed varies.\n",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "vishu phalswal",
+                      "id": 35760329,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/vishuphalswal",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/vishuphalswal",
+                      "user_id": 35760329,
+                      "user_name": "vishuphalswal"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "vishu phalswal",
+                  "id": 35760329,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/vishuphalswal",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/vishuphalswal",
+                  "user_id": 35760329,
+                  "user_name": "vishuphalswal"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "@stithpragya Thanks a lot, this is really helpful! Good to know the clock starts at kernel start and queue time isn’t counted.\n\nI’ll add the KAGGLE_IS_COMPETITION_RERUN check, since right now I detect the scoring run indirectly from the test size.\n\nOne follow-up, if you don’t mind: have you noticed /kaggle/input being slower in the scoring run than in a normal commit? Staff mentioned slow reads with the new caching, and I’m trying to judge how much safety margin to keep for large inputs.",
+            "replies": [
+              {
+                "author": {
+                  "displayName": "somerandomguy",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/stithpragya"
+                },
+                "content": "<p>It is variable, but the earlier problem is mostly solved, safety margin depends on the functions being run, though i leave 30mins spare for current runs.</p>",
+                "id": 3553503,
+                "isThankYou": false,
+                "postDate": "2026-11-11T18:44:42.723Z",
+                "raw": {
+                  "author": {
+                    "display_name": "somerandomguy",
+                    "id": 22597865,
+                    "progression_opt_out": true,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/stithpragya"
+                  },
+                  "author_type": "COMMENT",
+                  "competition_ranking": 11,
+                  "content": "<p>It is variable, but the earlier problem is mostly solved, safety margin depends on the functions being run, though i leave 30mins spare for current runs.</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3553503,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-11T18:44:42.723Z",
+                  "raw_markdown": "It is variable, but the earlier problem is mostly solved, safety margin depends on the functions being run, though i leave 30mins spare for current runs.",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "somerandomguy",
+                      "id": 22597865,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/stithpragya",
+                      "progression_opt_out": true,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/stithpragya",
+                      "user_id": 22597865,
+                      "user_name": "stithpragya"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                },
+                "rawMarkdown": "It is variable, but the earlier problem is mostly solved, safety margin depends on the functions being run, though i leave 30mins spare for current runs.",
+                "replies": [],
+                "votes": {
+                  "totalVotes": 0
+                }
+              },
+              {
+                "author": {
+                  "displayName": "vishu phalswal",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/vishuphalswal"
+                },
+                "content": "<p>Thanks, that’s reassuring! I’ll keep ~30 min spare too, and copy large inputs to local disk anyway in case speed varies.</p>",
+                "id": 3553529,
+                "isThankYou": false,
+                "postDate": "2026-11-11T19:19:43.697Z",
+                "raw": {
+                  "author": {
+                    "display_name": "vishu phalswal",
+                    "id": 35760329,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/vishuphalswal"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 570,
+                  "content": "<p>Thanks, that’s reassuring! I’ll keep ~30 min spare too, and copy large inputs to local disk anyway in case speed varies.</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3553529,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-11-11T19:19:43.697Z",
+                  "raw_markdown": "Thanks, that’s reassuring! I’ll keep ~30 min spare too, and copy large inputs to local disk anyway in case speed varies.\n",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "vishu phalswal",
+                      "id": 35760329,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/vishuphalswal",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/vishuphalswal",
+                      "user_id": 35760329,
+                      "user_name": "vishuphalswal"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true
+                  }
+                },
+                "rawMarkdown": "Thanks, that’s reassuring! I’ll keep ~30 min spare too, and copy large inputs to local disk anyway in case speed varies.\n",
+                "replies": [],
+                "votes": {
+                  "totalVotes": 0
+                }
+              }
+            ],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 758021,
+      "message_id": 3553465,
+      "parent_message_id": 3553432,
+      "author": "vishu phalswal",
+      "author_url": "/vishuphalswal",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-11T17:24:59.167Z",
+      "raw_markdown": "@stithpragya Thanks a lot, this is really helpful! Good to know the clock starts at kernel start and queue time isn’t counted.\n\nI’ll add the KAGGLE_IS_COMPETITION_RERUN check, since right now I detect the scoring run indirectly from the test size.\n\nOne follow-up, if you don’t mind: have you noticed /kaggle/input being slower in the scoring run than in a normal commit? Staff mentioned slow reads with the new caching, and I’m trying to judge how much safety margin to keep for large inputs.",
+      "content_html": "<p><a href=\"/stithpragya\" target=\"_blank\">@stithpragya</a> Thanks a lot, this is really helpful! Good to know the clock starts at kernel start and queue time isn’t counted.</p>\n<p>I’ll add the KAGGLE_IS_COMPETITION_RERUN check, since right now I detect the scoring run indirectly from the test size.</p>\n<p>One follow-up, if you don’t mind: have you noticed /kaggle/input being slower in the scoring run than in a normal commit? Staff mentioned slow reads with the new caching, and I’m trying to judge how much safety margin to keep for large inputs.</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 1,
+      "first_seen_at": "2026-11-16T16:21:45+00:00",
+      "last_seen_at": "2026-11-18T09:02:39+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T09:02:39+00:00",
+      "remote_last_listed_at": "2026-11-18T09:02:39+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "vishu phalswal",
+          "tier": "CONTRIBUTOR",
+          "url": "/vishuphalswal"
+        },
+        "content": "<p><a href=\"/stithpragya\" target=\"_blank\">@stithpragya</a> Thanks a lot, this is really helpful! Good to know the clock starts at kernel start and queue time isn’t counted.</p>\n<p>I’ll add the KAGGLE_IS_COMPETITION_RERUN check, since right now I detect the scoring run indirectly from the test size.</p>\n<p>One follow-up, if you don’t mind: have you noticed /kaggle/input being slower in the scoring run than in a normal commit? Staff mentioned slow reads with the new caching, and I’m trying to judge how much safety margin to keep for large inputs.</p>",
+        "id": 3553465,
+        "isThankYou": false,
+        "postDate": "2026-11-11T17:24:59.167Z",
+        "raw": {
+          "author": {
+            "display_name": "vishu phalswal",
+            "id": 35760329,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+            "tier": "CONTRIBUTOR",
+            "url": "/vishuphalswal"
+          },
+          "author_type": "TOPIC",
+          "competition_ranking": 570,
+          "content": "<p><a href=\"/stithpragya\" target=\"_blank\">@stithpragya</a> Thanks a lot, this is really helpful! Good to know the clock starts at kernel start and queue time isn’t counted.</p>\n<p>I’ll add the KAGGLE_IS_COMPETITION_RERUN check, since right now I detect the scoring run indirectly from the test size.</p>\n<p>One follow-up, if you don’t mind: have you noticed /kaggle/input being slower in the scoring run than in a normal commit? Staff mentioned slow reads with the new caching, and I’m trying to judge how much safety margin to keep for large inputs.</p>",
+          "feedback_tracking_data": {},
+          "id": 3553465,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-11T17:24:59.167Z",
+          "raw_markdown": "@stithpragya Thanks a lot, this is really helpful! Good to know the clock starts at kernel start and queue time isn’t counted.\n\nI’ll add the KAGGLE_IS_COMPETITION_RERUN check, since right now I detect the scoring run indirectly from the test size.\n\nOne follow-up, if you don’t mind: have you noticed /kaggle/input being slower in the scoring run than in a normal commit? Staff mentioned slow reads with the new caching, and I’m trying to judge how much safety margin to keep for large inputs.",
+          "replies": [
+            {
+              "author": {
+                "display_name": "somerandomguy",
+                "id": 22597865,
+                "progression_opt_out": true,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                "tier": "CONTRIBUTOR",
+                "url": "/stithpragya"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 11,
+              "content": "<p>It is variable, but the earlier problem is mostly solved, safety margin depends on the functions being run, though i leave 30mins spare for current runs.</p>",
+              "feedback_tracking_data": {},
+              "id": 3553503,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-11T18:44:42.723Z",
+              "raw_markdown": "It is variable, but the earlier problem is mostly solved, safety margin depends on the functions being run, though i leave 30mins spare for current runs.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "somerandomguy",
+                  "id": 22597865,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/stithpragya",
+                  "progression_opt_out": true,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/stithpragya",
+                  "user_id": 22597865,
+                  "user_name": "stithpragya"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            {
+              "author": {
+                "display_name": "vishu phalswal",
+                "id": 35760329,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/vishuphalswal"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 570,
+              "content": "<p>Thanks, that’s reassuring! I’ll keep ~30 min spare too, and copy large inputs to local disk anyway in case speed varies.</p>",
+              "feedback_tracking_data": {},
+              "id": 3553529,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-11T19:19:43.697Z",
+              "raw_markdown": "Thanks, that’s reassuring! I’ll keep ~30 min spare too, and copy large inputs to local disk anyway in case speed varies.\n",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "vishu phalswal",
+                  "id": 35760329,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/vishuphalswal",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/vishuphalswal",
+                  "user_id": 35760329,
+                  "user_name": "vishuphalswal"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            }
+          ],
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "vishu phalswal",
+              "id": 35760329,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/vishuphalswal",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "CONTRIBUTOR",
+              "url": "/vishuphalswal",
+              "user_id": 35760329,
+              "user_name": "vishuphalswal"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "@stithpragya Thanks a lot, this is really helpful! Good to know the clock starts at kernel start and queue time isn’t counted.\n\nI’ll add the KAGGLE_IS_COMPETITION_RERUN check, since right now I detect the scoring run indirectly from the test size.\n\nOne follow-up, if you don’t mind: have you noticed /kaggle/input being slower in the scoring run than in a normal commit? Staff mentioned slow reads with the new caching, and I’m trying to judge how much safety margin to keep for large inputs.",
+        "replies": [
+          {
+            "author": {
+              "displayName": "somerandomguy",
+              "tier": "CONTRIBUTOR",
+              "url": "/stithpragya"
+            },
+            "content": "<p>It is variable, but the earlier problem is mostly solved, safety margin depends on the functions being run, though i leave 30mins spare for current runs.</p>",
+            "id": 3553503,
+            "isThankYou": false,
+            "postDate": "2026-11-11T18:44:42.723Z",
+            "raw": {
+              "author": {
+                "display_name": "somerandomguy",
+                "id": 22597865,
+                "progression_opt_out": true,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                "tier": "CONTRIBUTOR",
+                "url": "/stithpragya"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 11,
+              "content": "<p>It is variable, but the earlier problem is mostly solved, safety margin depends on the functions being run, though i leave 30mins spare for current runs.</p>",
+              "feedback_tracking_data": {},
+              "id": 3553503,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-11T18:44:42.723Z",
+              "raw_markdown": "It is variable, but the earlier problem is mostly solved, safety margin depends on the functions being run, though i leave 30mins spare for current runs.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "somerandomguy",
+                  "id": 22597865,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/stithpragya",
+                  "progression_opt_out": true,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/stithpragya",
+                  "user_id": 22597865,
+                  "user_name": "stithpragya"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "It is variable, but the earlier problem is mostly solved, safety margin depends on the functions being run, though i leave 30mins spare for current runs.",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          },
+          {
+            "author": {
+              "displayName": "vishu phalswal",
+              "tier": "CONTRIBUTOR",
+              "url": "/vishuphalswal"
+            },
+            "content": "<p>Thanks, that’s reassuring! I’ll keep ~30 min spare too, and copy large inputs to local disk anyway in case speed varies.</p>",
+            "id": 3553529,
+            "isThankYou": false,
+            "postDate": "2026-11-11T19:19:43.697Z",
+            "raw": {
+              "author": {
+                "display_name": "vishu phalswal",
+                "id": 35760329,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/vishuphalswal"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 570,
+              "content": "<p>Thanks, that’s reassuring! I’ll keep ~30 min spare too, and copy large inputs to local disk anyway in case speed varies.</p>",
+              "feedback_tracking_data": {},
+              "id": 3553529,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-11T19:19:43.697Z",
+              "raw_markdown": "Thanks, that’s reassuring! I’ll keep ~30 min spare too, and copy large inputs to local disk anyway in case speed varies.\n",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "vishu phalswal",
+                  "id": 35760329,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/vishuphalswal",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/vishuphalswal",
+                  "user_id": 35760329,
+                  "user_name": "vishuphalswal"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "Thanks, that’s reassuring! I’ll keep ~30 min spare too, and copy large inputs to local disk anyway in case speed varies.\n",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 758021,
+      "message_id": 3553503,
+      "parent_message_id": 3553465,
+      "author": "somerandomguy",
+      "author_url": "/stithpragya",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-11T18:44:42.723Z",
+      "raw_markdown": "It is variable, but the earlier problem is mostly solved, safety margin depends on the functions being run, though i leave 30mins spare for current runs.",
+      "content_html": "<p>It is variable, but the earlier problem is mostly solved, safety margin depends on the functions being run, though i leave 30mins spare for current runs.</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 2,
+      "first_seen_at": "2026-11-16T16:21:45+00:00",
+      "last_seen_at": "2026-11-18T09:02:39+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T09:02:39+00:00",
+      "remote_last_listed_at": "2026-11-18T09:02:39+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "somerandomguy",
+          "tier": "CONTRIBUTOR",
+          "url": "/stithpragya"
+        },
+        "content": "<p>It is variable, but the earlier problem is mostly solved, safety margin depends on the functions being run, though i leave 30mins spare for current runs.</p>",
+        "id": 3553503,
+        "isThankYou": false,
+        "postDate": "2026-11-11T18:44:42.723Z",
+        "raw": {
+          "author": {
+            "display_name": "somerandomguy",
+            "id": 22597865,
+            "progression_opt_out": true,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+            "tier": "CONTRIBUTOR",
+            "url": "/stithpragya"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 11,
+          "content": "<p>It is variable, but the earlier problem is mostly solved, safety margin depends on the functions being run, though i leave 30mins spare for current runs.</p>",
+          "feedback_tracking_data": {},
+          "id": 3553503,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-11T18:44:42.723Z",
+          "raw_markdown": "It is variable, but the earlier problem is mostly solved, safety margin depends on the functions being run, though i leave 30mins spare for current runs.",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "somerandomguy",
+              "id": 22597865,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/stithpragya",
+              "progression_opt_out": true,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22597865-kg.jpg?t=2026-11-10-16-29-33",
+              "tier": "CONTRIBUTOR",
+              "url": "/stithpragya",
+              "user_id": 22597865,
+              "user_name": "stithpragya"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "It is variable, but the earlier problem is mostly solved, safety margin depends on the functions being run, though i leave 30mins spare for current runs.",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 758021,
+      "message_id": 3553529,
+      "parent_message_id": 3553465,
+      "author": "vishu phalswal",
+      "author_url": "/vishuphalswal",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-11-11T19:19:43.697Z",
+      "raw_markdown": "Thanks, that’s reassuring! I’ll keep ~30 min spare too, and copy large inputs to local disk anyway in case speed varies.\n",
+      "content_html": "<p>Thanks, that’s reassuring! I’ll keep ~30 min spare too, and copy large inputs to local disk anyway in case speed varies.</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 2,
+      "first_seen_at": "2026-11-16T16:21:45+00:00",
+      "last_seen_at": "2026-11-18T09:02:39+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-18T09:02:39+00:00",
+      "remote_last_listed_at": "2026-11-18T09:02:39+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "vishu phalswal",
+          "tier": "CONTRIBUTOR",
+          "url": "/vishuphalswal"
+        },
+        "content": "<p>Thanks, that’s reassuring! I’ll keep ~30 min spare too, and copy large inputs to local disk anyway in case speed varies.</p>",
+        "id": 3553529,
+        "isThankYou": false,
+        "postDate": "2026-11-11T19:19:43.697Z",
+        "raw": {
+          "author": {
+            "display_name": "vishu phalswal",
+            "id": 35760329,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+            "tier": "CONTRIBUTOR",
+            "url": "/vishuphalswal"
+          },
+          "author_type": "TOPIC",
+          "competition_ranking": 570,
+          "content": "<p>Thanks, that’s reassuring! I’ll keep ~30 min spare too, and copy large inputs to local disk anyway in case speed varies.</p>",
+          "feedback_tracking_data": {},
+          "id": 3553529,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-11-11T19:19:43.697Z",
+          "raw_markdown": "Thanks, that’s reassuring! I’ll keep ~30 min spare too, and copy large inputs to local disk anyway in case speed varies.\n",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "vishu phalswal",
+              "id": 35760329,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/vishuphalswal",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "CONTRIBUTOR",
+              "url": "/vishuphalswal",
+              "user_id": 35760329,
+              "user_name": "vishuphalswal"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "Thanks, that’s reassuring! I’ll keep ~30 min spare too, and copy large inputs to local disk anyway in case speed varies.\n",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    }
+  ],
+  "writeup": null
+}

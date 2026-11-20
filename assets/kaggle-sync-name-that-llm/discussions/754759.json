@@ -1,0 +1,209 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 754759,
+    "title": "Code requirements: may the submission notebook install pip wheels from an attached private dataset?",
+    "author": "Viktoriya Perepletkina",
+    "author_url": "/viktoriyaperepletki",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-11-01T15:00:19.845376500Z",
+    "last_comment_post_date": "2026-11-01T15:00:19.846666700Z",
+    "comment_count": 0,
+    "votes": -1,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/754759",
+    "first_message_id": 3548173,
+    "first_seen_at": "2026-11-04T06:56:15+00:00",
+    "last_seen_at": "2026-11-16T16:36:02+00:00",
+    "detail_last_synced_at": "2026-11-16T16:23:34+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "a9c716b91add0298fe07de5d88e01215a2a88c0f237b95c1db761cb658d7104d",
+    "listing_metrics_hash": "0eb635446470adac6a7f3a348995e0dbc84605127e97b571f74d3f2262540d5d",
+    "detail_content_hash": "da4ea60c18cf91903123d716b1a3231221ec0aa2c5a6c44ed61c9c04a93bb300",
+    "detail_last_checked_at": "2026-11-16T16:23:34+00:00",
+    "detail_next_check_at": "2026-11-23T16:23:34+00:00",
+    "detail_unchanged_count": 2,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 0,
+      "firstForumMessageId": null,
+      "id": 754759,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-11-01T15:00:19.846666700Z",
+      "postDate": "2026-11-01T15:00:19.845376500Z",
+      "raw": {
+        "id": 754759,
+        "last_comment_post_date": "2026-11-01T15:00:19.846666700Z",
+        "post_date": "2026-11-01T15:00:19.845376500Z",
+        "title": "Code requirements: may the submission notebook install pip wheels from an attached private dataset?",
+        "topic_url": "/competitions/name-that-llm/discussion/754759",
+        "votes": -1
+      },
+      "title": "Code requirements: may the submission notebook install pip wheels from an attached private dataset?",
+      "topicUrl": "/competitions/name-that-llm/discussion/754759",
+      "votes": -1
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "Viktoriya Perepletkina",
+        "authorUserName": "viktoriyaperepletki",
+        "comments": [],
+        "expectedCommentCount": 0,
+        "firstMessage": {
+          "author": {
+            "displayName": "Viktoriya Perepletkina",
+            "tier": "CONTRIBUTOR",
+            "url": "/viktoriyaperepletki"
+          },
+          "content": "<p>The Code Requirements page says internet must be disabled and that freely and publicly available external data and pretrained models are allowed. I'd like to confirm two points about the offline rerun on the hidden test set.</p>\n<ol>\n<li>Installing wheels. My notebook attaches a Kaggle dataset containing pinned .whl files from PyPI, and its first cell runs pip install --no-index --find-links /kaggle/input/… --target /tmp/site. Nothing is downloaded and no network is used. Is this allowed in a submission notebook, including in the rerun? Or must submissions use only the packages preinstalled on the Kaggle image? Reason: the image's pandas 2.3.3 and scikit-learn 1.6.1 differ from the versions I developed against.</li>\n<li>Fitted artifacts. May the notebook attach a dataset containing a model I fitted on train.csv (for example a pickled scikit-learn model)? Or should the notebook fit from train.csv itself during the run?\nAlso: is the hardware and image of the hidden rerun the same as in the interactive session (CPU only: 4 cores, about 30 GiB RAM)?</li>\n</ol>\n<p>Thanks!</p>",
+          "id": 3548173,
+          "isThankYou": false,
+          "postDate": "2026-11-01T15:00:19.847Z",
+          "raw": {
+            "author": {
+              "display_name": "Viktoriya Perepletkina",
+              "id": 24444126,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "CONTRIBUTOR",
+              "url": "/viktoriyaperepletki"
+            },
+            "author_type": "TOPIC",
+            "content": "<p>The Code Requirements page says internet must be disabled and that freely and publicly available external data and pretrained models are allowed. I'd like to confirm two points about the offline rerun on the hidden test set.</p>\n<ol>\n<li>Installing wheels. My notebook attaches a Kaggle dataset containing pinned .whl files from PyPI, and its first cell runs pip install --no-index --find-links /kaggle/input/… --target /tmp/site. Nothing is downloaded and no network is used. Is this allowed in a submission notebook, including in the rerun? Or must submissions use only the packages preinstalled on the Kaggle image? Reason: the image's pandas 2.3.3 and scikit-learn 1.6.1 differ from the versions I developed against.</li>\n<li>Fitted artifacts. May the notebook attach a dataset containing a model I fitted on train.csv (for example a pickled scikit-learn model)? Or should the notebook fit from train.csv itself during the run?\nAlso: is the hardware and image of the hidden rerun the same as in the interactive session (CPU only: 4 cores, about 30 GiB RAM)?</li>\n</ol>\n<p>Thanks!</p>",
+            "feedback_tracking_data": {},
+            "id": 3548173,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-11-01T15:00:19.847Z",
+            "raw_markdown": "The Code Requirements page says internet must be disabled and that freely and publicly available external data and pretrained models are allowed. I'd like to confirm two points about the offline rerun on the hidden test set.\n\n1. Installing wheels. My notebook attaches a Kaggle dataset containing pinned .whl files from PyPI, and its first cell runs pip install --no-index --find-links /kaggle/input/... --target /tmp/site. Nothing is downloaded and no network is used. Is this allowed in a submission notebook, including in the rerun? Or must submissions use only the packages preinstalled on the Kaggle image? Reason: the image's pandas 2.3.3 and scikit-learn 1.6.1 differ from the versions I developed against.\n2. Fitted artifacts. May the notebook attach a dataset containing a model I fitted on train.csv (for example a pickled scikit-learn model)? Or should the notebook fit from train.csv itself during the run?\nAlso: is the hardware and image of the hidden rerun the same as in the interactive session (CPU only: 4 cores, about 30 GiB RAM)?\n\nThanks!",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "Viktoriya Perepletkina",
+                "id": 24444126,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/viktoriyaperepletki",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/viktoriyaperepletki",
+                "user_id": 24444126,
+                "user_name": "viktoriyaperepletki"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 1,
+              "total_votes": -1
+            }
+          },
+          "rawMarkdown": "The Code Requirements page says internet must be disabled and that freely and publicly available external data and pretrained models are allowed. I'd like to confirm two points about the offline rerun on the hidden test set.\n\n1. Installing wheels. My notebook attaches a Kaggle dataset containing pinned .whl files from PyPI, and its first cell runs pip install --no-index --find-links /kaggle/input/... --target /tmp/site. Nothing is downloaded and no network is used. Is this allowed in a submission notebook, including in the rerun? Or must submissions use only the packages preinstalled on the Kaggle image? Reason: the image's pandas 2.3.3 and scikit-learn 1.6.1 differ from the versions I developed against.\n2. Fitted artifacts. May the notebook attach a dataset containing a model I fitted on train.csv (for example a pickled scikit-learn model)? Or should the notebook fit from train.csv itself during the run?\nAlso: is the hardware and image of the hidden rerun the same as in the interactive session (CPU only: 4 cores, about 30 GiB RAM)?\n\nThanks!",
+          "replies": [],
+          "votes": {
+            "totalVotes": -1
+          }
+        },
+        "firstMessageId": 3548173,
+        "id": 754759,
+        "name": "Code requirements: may the submission notebook install pip wheels from an attached private dataset?",
+        "postDate": "2026-11-01T15:00:19.845376500Z",
+        "url": "/competitions/name-that-llm/discussion/754759"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>The Code Requirements page says internet must be disabled and that freely and publicly available external data and pretrained models are allowed. I'd like to confirm two points about the offline rerun on the hidden test set.</p>\n<ol>\n<li>Installing wheels. My notebook attaches a Kaggle dataset containing pinned .whl files from PyPI, and its first cell runs pip install --no-index --find-links /kaggle/input/… --target /tmp/site. Nothing is downloaded and no network is used. Is this allowed in a submission notebook, including in the rerun? Or must submissions use only the packages preinstalled on the Kaggle image? Reason: the image's pandas 2.3.3 and scikit-learn 1.6.1 differ from the versions I developed against.</li>\n<li>Fitted artifacts. May the notebook attach a dataset containing a model I fitted on train.csv (for example a pickled scikit-learn model)? Or should the notebook fit from train.csv itself during the run?\nAlso: is the hardware and image of the hidden rerun the same as in the interactive session (CPU only: 4 cores, about 30 GiB RAM)?</li>\n</ol>\n<p>Thanks!</p>",
+              "id": 3548173,
+              "post_date": "2026-11-01T15:00:19.847Z",
+              "raw_markdown": "The Code Requirements page says internet must be disabled and that freely and publicly available external data and pretrained models are allowed. I'd like to confirm two points about the offline rerun on the hidden test set.\n\n1. Installing wheels. My notebook attaches a Kaggle dataset containing pinned .whl files from PyPI, and its first cell runs pip install --no-index --find-links /kaggle/input/... --target /tmp/site. Nothing is downloaded and no network is used. Is this allowed in a submission notebook, including in the rerun? Or must submissions use only the packages preinstalled on the Kaggle image? Reason: the image's pandas 2.3.3 and scikit-learn 1.6.1 differ from the versions I developed against.\n2. Fitted artifacts. May the notebook attach a dataset containing a model I fitted on train.csv (for example a pickled scikit-learn model)? Or should the notebook fit from train.csv itself during the run?\nAlso: is the hardware and image of the hidden rerun the same as in the interactive session (CPU only: 4 cores, about 30 GiB RAM)?\n\nThanks!",
+              "votes": -1
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 24444126,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "default-thumb.png",
+            "author_user_display_name": "Viktoriya Perepletkina",
+            "author_user_name": "viktoriyaperepletki",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "first_message": {
+              "author": {
+                "display_name": "Viktoriya Perepletkina",
+                "id": 24444126,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/viktoriyaperepletki"
+              },
+              "author_type": "TOPIC",
+              "content": "<p>The Code Requirements page says internet must be disabled and that freely and publicly available external data and pretrained models are allowed. I'd like to confirm two points about the offline rerun on the hidden test set.</p>\n<ol>\n<li>Installing wheels. My notebook attaches a Kaggle dataset containing pinned .whl files from PyPI, and its first cell runs pip install --no-index --find-links /kaggle/input/… --target /tmp/site. Nothing is downloaded and no network is used. Is this allowed in a submission notebook, including in the rerun? Or must submissions use only the packages preinstalled on the Kaggle image? Reason: the image's pandas 2.3.3 and scikit-learn 1.6.1 differ from the versions I developed against.</li>\n<li>Fitted artifacts. May the notebook attach a dataset containing a model I fitted on train.csv (for example a pickled scikit-learn model)? Or should the notebook fit from train.csv itself during the run?\nAlso: is the hardware and image of the hidden rerun the same as in the interactive session (CPU only: 4 cores, about 30 GiB RAM)?</li>\n</ol>\n<p>Thanks!</p>",
+              "feedback_tracking_data": {},
+              "id": 3548173,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-01T15:00:19.847Z",
+              "raw_markdown": "The Code Requirements page says internet must be disabled and that freely and publicly available external data and pretrained models are allowed. I'd like to confirm two points about the offline rerun on the hidden test set.\n\n1. Installing wheels. My notebook attaches a Kaggle dataset containing pinned .whl files from PyPI, and its first cell runs pip install --no-index --find-links /kaggle/input/... --target /tmp/site. Nothing is downloaded and no network is used. Is this allowed in a submission notebook, including in the rerun? Or must submissions use only the packages preinstalled on the Kaggle image? Reason: the image's pandas 2.3.3 and scikit-learn 1.6.1 differ from the versions I developed against.\n2. Fitted artifacts. May the notebook attach a dataset containing a model I fitted on train.csv (for example a pickled scikit-learn model)? Or should the notebook fit from train.csv itself during the run?\nAlso: is the hardware and image of the hidden rerun the same as in the interactive session (CPU only: 4 cores, about 30 GiB RAM)?\n\nThanks!",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Viktoriya Perepletkina",
+                  "id": 24444126,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/viktoriyaperepletki",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/viktoriyaperepletki",
+                  "user_id": 24444126,
+                  "user_name": "viktoriyaperepletki"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": -1
+              }
+            },
+            "first_message_id": 3548173,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 754759,
+            "name": "Code requirements: may the submission notebook install pip wheels from an attached private dataset?",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-11-01T15:00:19.845376500Z",
+            "total_votes": -1,
+            "url": "/competitions/name-that-llm/discussion/754759"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:23:34+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:23:34+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-11-01T15:00:19.846666700Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [],
+  "writeup": null
+}

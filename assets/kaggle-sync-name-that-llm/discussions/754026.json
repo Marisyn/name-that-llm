@@ -1,0 +1,165 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 754026,
+    "title": "[Deleted Topic]",
+    "author": "Pablo Diego Pereira",
+    "author_url": "/",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-10-30T03:43:11.882121800Z",
+    "last_comment_post_date": "2026-10-30T03:43:11.883333300Z",
+    "comment_count": 0,
+    "votes": 0,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/754026",
+    "first_message_id": 3547009,
+    "first_seen_at": "2026-11-04T06:56:15+00:00",
+    "last_seen_at": "2026-11-18T12:04:45+00:00",
+    "detail_last_synced_at": "2026-11-18T12:04:45+00:00",
+    "remote_list_status": "unlisted",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-04T06:58:23+00:00",
+    "remote_unlisted_since": "2026-11-16T16:36:37+00:00",
+    "listing_content_hash": "11e5ae0d97c9d67f8fd7a62eb8298eb2a3f730add6c052e49ca401e6e66e878a",
+    "listing_metrics_hash": "1d7b01d39d998f5caf0eb285f7806c0632a1cb146aadc79a9504e2481370b229",
+    "detail_content_hash": "98fe3023f44003806309f782a0aaf0b3ea193c883fede9f09b457ffb5eaf60e8",
+    "detail_last_checked_at": "2026-11-18T12:04:45+00:00",
+    "detail_next_check_at": "2026-11-21T12:04:45+00:00",
+    "detail_unchanged_count": 1,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 0,
+      "firstForumMessageId": null,
+      "id": 754026,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-10-30T03:43:11.883333300Z",
+      "postDate": "2026-10-30T03:43:11.882121800Z",
+      "raw": {
+        "id": 754026,
+        "last_comment_post_date": "2026-10-30T03:43:11.883333300Z",
+        "post_date": "2026-10-30T03:43:11.882121800Z",
+        "title": "[ Ablation Note ] Why Prompt-Clustered Adaptive Centering + Target-Shrunk Sinkhorn-Knopp (ρ = 0.35) Outperform Uniform Marginal Forcing",
+        "topic_url": "/competitions/name-that-llm/discussion/754026"
+      },
+      "title": "[ Ablation Note ] Why Prompt-Clustered Adaptive Centering + Target-Shrunk Sinkhorn-Knopp (ρ = 0.35) Outperform Uniform Marginal Forcing",
+      "topicUrl": "/competitions/name-that-llm/discussion/754026",
+      "votes": 0
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": null,
+        "authorUserDisplayName": null,
+        "authorUserName": null,
+        "comments": [],
+        "expectedCommentCount": 0,
+        "firstMessage": {
+          "author": {
+            "displayName": null,
+            "tier": null,
+            "url": "/"
+          },
+          "content": null,
+          "id": 3547009,
+          "isThankYou": false,
+          "postDate": "2026-10-30T03:43:11.883Z",
+          "raw": {
+            "author": {
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "url": "/"
+            },
+            "author_type": "COMMENT",
+            "can_delete": true,
+            "feedback_tracking_data": {},
+            "id": 3547009,
+            "is_deleted": true,
+            "is_thank_you": false,
+            "is_user_author": true,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-10-30T03:43:11.883Z",
+            "raw_markdown": "",
+            "votes": {}
+          },
+          "rawMarkdown": null,
+          "replies": [],
+          "votes": {
+            "totalVotes": 0
+          }
+        },
+        "firstMessageId": 3547009,
+        "id": 754026,
+        "name": "[Deleted Topic]",
+        "postDate": "2026-10-30T03:43:11.882121800Z",
+        "url": "/competitions/name-that-llm/discussion/754026"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "id": 3547009,
+              "is_deleted": true,
+              "post_date": "2026-10-30T03:43:11.883Z",
+              "raw_markdown": ""
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 0,
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "default-thumb.png",
+            "author_user_display_name": "",
+            "author_user_name": "",
+            "can_delete": true,
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "first_message": {
+              "author": {
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "url": "/"
+              },
+              "author_type": "COMMENT",
+              "can_delete": true,
+              "feedback_tracking_data": {},
+              "id": 3547009,
+              "is_deleted": true,
+              "is_thank_you": false,
+              "is_user_author": true,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-30T03:43:11.883Z",
+              "raw_markdown": "",
+              "votes": {}
+            },
+            "first_message_id": 3547009,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 754026,
+            "is_deleted": true,
+            "name": "[Deleted Topic]",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-10-30T03:43:11.882121800Z",
+            "url": "/competitions/name-that-llm/discussion/754026"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-18T12:04:45+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-18T12:04:45+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-10-30T03:43:11.883333300Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [],
+  "writeup": null
+}

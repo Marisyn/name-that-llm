@@ -1,0 +1,600 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 750051,
+    "title": "clustering test?",
+    "author": "Emirhan Kadan",
+    "author_url": "/emirhankadan",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-10-16T19:53:31.474654100Z",
+    "last_comment_post_date": "2026-10-17T09:31:35.920Z",
+    "comment_count": 2,
+    "votes": 1,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/750051",
+    "first_message_id": 3539940,
+    "first_seen_at": "2026-11-04T06:56:18+00:00",
+    "last_seen_at": "2026-11-16T16:36:23+00:00",
+    "detail_last_synced_at": "2026-11-16T16:36:23+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "51e48c9668ee8527418c96ce84e55e8ac3e578a673b6015baa741a5a4565c38f",
+    "listing_metrics_hash": "08a3f0e9d031723a4649730d445a527264427162f124c0c72a6c18d2e0b8e839",
+    "detail_content_hash": "1cdab56fc4ed182e2cd1c789cfdb53a10b3ca1c4564d1a2aa6b1e7beb0c8b614",
+    "detail_last_checked_at": "2026-11-16T16:36:23+00:00",
+    "detail_next_check_at": "2026-11-23T16:36:23+00:00",
+    "detail_unchanged_count": 2,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 2,
+      "firstForumMessageId": null,
+      "id": 750051,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-10-17T09:31:35.920Z",
+      "postDate": "2026-10-16T19:53:31.474654100Z",
+      "raw": {
+        "comment_count": 2,
+        "id": 750051,
+        "last_comment_post_date": "2026-10-17T09:31:35.920Z",
+        "post_date": "2026-10-16T19:53:31.474654100Z",
+        "title": "clustering test?",
+        "topic_url": "/competitions/name-that-llm/discussion/750051",
+        "votes": 1
+      },
+      "title": "clustering test?",
+      "topicUrl": "/competitions/name-that-llm/discussion/750051",
+      "votes": 1
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "Emirhan Kadan",
+        "authorUserName": "emirhankadan",
+        "comments": [
+          {
+            "author": {
+              "displayName": "pjmathematician",
+              "tier": "MASTER",
+              "url": "/pjmathematician"
+            },
+            "content": "<p>I tried this it doesnt work the trivial way. If you are able to figure out a clever way that also extends to the private lb confidently of course its within rules</p>",
+            "id": 3539960,
+            "isThankYou": false,
+            "postDate": "2026-10-16T20:30:41.547Z",
+            "raw": {
+              "author": {
+                "display_name": "pjmathematician",
+                "id": 9507963,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9507963-kg.png",
+                "tier": "MASTER",
+                "url": "/pjmathematician"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 1765,
+              "content": "<p>I tried this it doesnt work the trivial way. If you are able to figure out a clever way that also extends to the private lb confidently of course its within rules</p>",
+              "feedback_tracking_data": {},
+              "id": 3539960,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-16T20:30:41.547Z",
+              "raw_markdown": "I tried this it doesnt work the trivial way. If you are able to figure out a clever way that also extends to the private lb confidently of course its within rules",
+              "team_up_info": {
+                "enabled": true,
+                "intro": "",
+                "team_leader": {
+                  "display_name": "shanzhong8",
+                  "id": 22146004,
+                  "performance_tier": "MASTER",
+                  "profile_url": "/shanzhong8",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22146004-kg.jpeg?t=2025-05-25-15-58-10",
+                  "tier": "MASTER",
+                  "url": "/shanzhong8",
+                  "user_id": 22146004,
+                  "user_name": "shanzhong8"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": 1
+              }
+            },
+            "rawMarkdown": "I tried this it doesnt work the trivial way. If you are able to figure out a clever way that also extends to the private lb confidently of course its within rules",
+            "replies": [],
+            "votes": {
+              "totalVotes": 1
+            }
+          },
+          {
+            "author": {
+              "displayName": "Karthikeya Thatipamula",
+              "tier": "CONTRIBUTOR",
+              "url": "/karthikeya18"
+            },
+            "content": "<p>Same experience on our side: clustering looked much better in our simulations than it turned out on the public LB. I suspect a lot depends on how many answers per prompt the hidden test really has, so I asked the hosts about the test layout here: <a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/750213\" target=\"_blank\">https://www.kaggle.com/competitions/name-that-llm/discussion/750213</a>. Would be great to hear how others are validating it.</p>",
+            "id": 3540190,
+            "isThankYou": false,
+            "postDate": "2026-10-17T09:31:35.920Z",
+            "raw": {
+              "author": {
+                "display_name": "Karthikeya Thatipamula",
+                "id": 18353491,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/18353491-kg.jpeg?t=2025-01-08-18-19-16",
+                "tier": "CONTRIBUTOR",
+                "url": "/karthikeya18"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 940,
+              "content": "<p>Same experience on our side: clustering looked much better in our simulations than it turned out on the public LB. I suspect a lot depends on how many answers per prompt the hidden test really has, so I asked the hosts about the test layout here: <a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/750213\" target=\"_blank\">https://www.kaggle.com/competitions/name-that-llm/discussion/750213</a>. Would be great to hear how others are validating it.</p>",
+              "feedback_tracking_data": {},
+              "id": 3540190,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-17T09:31:35.920Z",
+              "raw_markdown": "Same experience on our side: clustering looked much better in our simulations than it turned out on the public LB. I suspect a lot depends on how many answers per prompt the hidden test really has, so I asked the hosts about the test layout here: https://www.kaggle.com/competitions/name-that-llm/discussion/750213. Would be great to hear how others are validating it.",
+              "reactions": [
+                {
+                  "emoji": "KAGGLE",
+                  "featured_user_names": [
+                    "karthikeya18"
+                  ],
+                  "user_count": 1
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Karthikeya Thatipamula",
+                  "id": 18353491,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/karthikeya18",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/18353491-kg.jpeg?t=2025-01-08-18-19-16",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/karthikeya18",
+                  "user_id": 18353491,
+                  "user_name": "karthikeya18"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "Same experience on our side: clustering looked much better in our simulations than it turned out on the public LB. I suspect a lot depends on how many answers per prompt the hidden test really has, so I asked the hosts about the test layout here: https://www.kaggle.com/competitions/name-that-llm/discussion/750213. Would be great to hear how others are validating it.",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "expectedCommentCount": 2,
+        "firstMessage": {
+          "author": {
+            "displayName": "Emirhan Kadan",
+            "tier": "CONTRIBUTOR",
+            "url": "/emirhankadan"
+          },
+          "content": "<p>Is it in accordance with the rules to cluster test passages within themselves and assign them?</p>",
+          "id": 3539940,
+          "isThankYou": false,
+          "postDate": "2026-10-16T19:53:31.473Z",
+          "raw": {
+            "author": {
+              "display_name": "Emirhan Kadan",
+              "id": 29033114,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/29033114-kg.jpeg?t=2026-10-16-19-14-01",
+              "tier": "CONTRIBUTOR",
+              "url": "/emirhankadan"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 5174,
+            "content": "<p>Is it in accordance with the rules to cluster test passages within themselves and assign them?</p>",
+            "feedback_tracking_data": {},
+            "id": 3539940,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-10-16T19:53:31.473Z",
+            "raw_markdown": "Is it in accordance with the rules to cluster test passages within themselves and assign them?",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "Emirhan Kadan",
+                "id": 29033114,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/emirhankadan",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/29033114-kg.jpeg?t=2026-10-16-19-14-01",
+                "tier": "CONTRIBUTOR",
+                "url": "/emirhankadan",
+                "user_id": 29033114,
+                "user_name": "emirhankadan"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 1,
+              "total_votes": 1
+            }
+          },
+          "rawMarkdown": "Is it in accordance with the rules to cluster test passages within themselves and assign them?",
+          "replies": [],
+          "votes": {
+            "totalVotes": 1
+          }
+        },
+        "firstMessageId": 3539940,
+        "id": 750051,
+        "name": "clustering test?",
+        "postDate": "2026-10-16T19:53:31.474654100Z",
+        "url": "/competitions/name-that-llm/discussion/750051"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>Is it in accordance with the rules to cluster test passages within themselves and assign them?</p>",
+              "id": 3539940,
+              "post_date": "2026-10-16T19:53:31.473Z",
+              "raw_markdown": "Is it in accordance with the rules to cluster test passages within themselves and assign them?",
+              "votes": 1
+            },
+            {
+              "content": "<p>I tried this it doesnt work the trivial way. If you are able to figure out a clever way that also extends to the private lb confidently of course its within rules</p>",
+              "id": 3539960,
+              "post_date": "2026-10-16T20:30:41.547Z",
+              "raw_markdown": "I tried this it doesnt work the trivial way. If you are able to figure out a clever way that also extends to the private lb confidently of course its within rules",
+              "votes": 1
+            },
+            {
+              "content": "<p>Same experience on our side: clustering looked much better in our simulations than it turned out on the public LB. I suspect a lot depends on how many answers per prompt the hidden test really has, so I asked the hosts about the test layout here: <a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/750213\" target=\"_blank\">https://www.kaggle.com/competitions/name-that-llm/discussion/750213</a>. Would be great to hear how others are validating it.</p>",
+              "id": 3540190,
+              "post_date": "2026-10-17T09:31:35.920Z",
+              "raw_markdown": "Same experience on our side: clustering looked much better in our simulations than it turned out on the public LB. I suspect a lot depends on how many answers per prompt the hidden test really has, so I asked the hosts about the test layout here: https://www.kaggle.com/competitions/name-that-llm/discussion/750213. Would be great to hear how others are validating it."
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 29033114,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "29033114-kg.jpeg?t=2026-10-16-19-14-01",
+            "author_user_display_name": "Emirhan Kadan",
+            "author_user_name": "emirhankadan",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "comments": [
+              {
+                "author": {
+                  "display_name": "pjmathematician",
+                  "id": 9507963,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9507963-kg.png",
+                  "tier": "MASTER",
+                  "url": "/pjmathematician"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 1765,
+                "content": "<p>I tried this it doesnt work the trivial way. If you are able to figure out a clever way that also extends to the private lb confidently of course its within rules</p>",
+                "feedback_tracking_data": {},
+                "id": 3539960,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-16T20:30:41.547Z",
+                "raw_markdown": "I tried this it doesnt work the trivial way. If you are able to figure out a clever way that also extends to the private lb confidently of course its within rules",
+                "team_up_info": {
+                  "enabled": true,
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "shanzhong8",
+                    "id": 22146004,
+                    "performance_tier": "MASTER",
+                    "profile_url": "/shanzhong8",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22146004-kg.jpeg?t=2025-05-25-15-58-10",
+                    "tier": "MASTER",
+                    "url": "/shanzhong8",
+                    "user_id": 22146004,
+                    "user_name": "shanzhong8"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true,
+                  "total_upvotes": 1,
+                  "total_votes": 1
+                }
+              },
+              {
+                "author": {
+                  "display_name": "Karthikeya Thatipamula",
+                  "id": 18353491,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/18353491-kg.jpeg?t=2025-01-08-18-19-16",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/karthikeya18"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 940,
+                "content": "<p>Same experience on our side: clustering looked much better in our simulations than it turned out on the public LB. I suspect a lot depends on how many answers per prompt the hidden test really has, so I asked the hosts about the test layout here: <a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/750213\" target=\"_blank\">https://www.kaggle.com/competitions/name-that-llm/discussion/750213</a>. Would be great to hear how others are validating it.</p>",
+                "feedback_tracking_data": {},
+                "id": 3540190,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-17T09:31:35.920Z",
+                "raw_markdown": "Same experience on our side: clustering looked much better in our simulations than it turned out on the public LB. I suspect a lot depends on how many answers per prompt the hidden test really has, so I asked the hosts about the test layout here: https://www.kaggle.com/competitions/name-that-llm/discussion/750213. Would be great to hear how others are validating it.",
+                "reactions": [
+                  {
+                    "emoji": "KAGGLE",
+                    "featured_user_names": [
+                      "karthikeya18"
+                    ],
+                    "user_count": 1
+                  }
+                ],
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "Karthikeya Thatipamula",
+                    "id": 18353491,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/karthikeya18",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/18353491-kg.jpeg?t=2025-01-08-18-19-16",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/karthikeya18",
+                    "user_id": 18353491,
+                    "user_name": "karthikeya18"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              }
+            ],
+            "first_message": {
+              "author": {
+                "display_name": "Emirhan Kadan",
+                "id": 29033114,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/29033114-kg.jpeg?t=2026-10-16-19-14-01",
+                "tier": "CONTRIBUTOR",
+                "url": "/emirhankadan"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 5174,
+              "content": "<p>Is it in accordance with the rules to cluster test passages within themselves and assign them?</p>",
+              "feedback_tracking_data": {},
+              "id": 3539940,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-16T19:53:31.473Z",
+              "raw_markdown": "Is it in accordance with the rules to cluster test passages within themselves and assign them?",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Emirhan Kadan",
+                  "id": 29033114,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/emirhankadan",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/29033114-kg.jpeg?t=2026-10-16-19-14-01",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/emirhankadan",
+                  "user_id": 29033114,
+                  "user_name": "emirhankadan"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": 1
+              }
+            },
+            "first_message_id": 3539940,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 750051,
+            "name": "clustering test?",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-10-16T19:53:31.474654100Z",
+            "total_messages": 2,
+            "total_votes": 1,
+            "url": "/competitions/name-that-llm/discussion/750051"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:36:23+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:36:23+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-10-17T09:31:35.920Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [
+    {
+      "slug": "name-that-llm",
+      "topic_id": 750051,
+      "message_id": 3539960,
+      "parent_message_id": null,
+      "author": "pjmathematician",
+      "author_url": "/pjmathematician",
+      "author_tier": "MASTER",
+      "post_date": "2026-10-16T20:30:41.547Z",
+      "raw_markdown": "I tried this it doesnt work the trivial way. If you are able to figure out a clever way that also extends to the private lb confidently of course its within rules",
+      "content_html": "<p>I tried this it doesnt work the trivial way. If you are able to figure out a clever way that also extends to the private lb confidently of course its within rules</p>",
+      "votes": 1,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:56:34+00:00",
+      "last_seen_at": "2026-11-16T16:36:23+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:36:23+00:00",
+      "remote_last_listed_at": "2026-11-16T16:36:23+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "pjmathematician",
+          "tier": "MASTER",
+          "url": "/pjmathematician"
+        },
+        "content": "<p>I tried this it doesnt work the trivial way. If you are able to figure out a clever way that also extends to the private lb confidently of course its within rules</p>",
+        "id": 3539960,
+        "isThankYou": false,
+        "postDate": "2026-10-16T20:30:41.547Z",
+        "raw": {
+          "author": {
+            "display_name": "pjmathematician",
+            "id": 9507963,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/9507963-kg.png",
+            "tier": "MASTER",
+            "url": "/pjmathematician"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 1765,
+          "content": "<p>I tried this it doesnt work the trivial way. If you are able to figure out a clever way that also extends to the private lb confidently of course its within rules</p>",
+          "feedback_tracking_data": {},
+          "id": 3539960,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-16T20:30:41.547Z",
+          "raw_markdown": "I tried this it doesnt work the trivial way. If you are able to figure out a clever way that also extends to the private lb confidently of course its within rules",
+          "team_up_info": {
+            "enabled": true,
+            "intro": "",
+            "team_leader": {
+              "display_name": "shanzhong8",
+              "id": 22146004,
+              "performance_tier": "MASTER",
+              "profile_url": "/shanzhong8",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22146004-kg.jpeg?t=2025-05-25-15-58-10",
+              "tier": "MASTER",
+              "url": "/shanzhong8",
+              "user_id": 22146004,
+              "user_name": "shanzhong8"
+            }
+          },
+          "votes": {
+            "can_upvote": true,
+            "total_upvotes": 1,
+            "total_votes": 1
+          }
+        },
+        "rawMarkdown": "I tried this it doesnt work the trivial way. If you are able to figure out a clever way that also extends to the private lb confidently of course its within rules",
+        "replies": [],
+        "votes": {
+          "totalVotes": 1
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 750051,
+      "message_id": 3540190,
+      "parent_message_id": null,
+      "author": "Karthikeya Thatipamula",
+      "author_url": "/karthikeya18",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-10-17T09:31:35.920Z",
+      "raw_markdown": "Same experience on our side: clustering looked much better in our simulations than it turned out on the public LB. I suspect a lot depends on how many answers per prompt the hidden test really has, so I asked the hosts about the test layout here: https://www.kaggle.com/competitions/name-that-llm/discussion/750213. Would be great to hear how others are validating it.",
+      "content_html": "<p>Same experience on our side: clustering looked much better in our simulations than it turned out on the public LB. I suspect a lot depends on how many answers per prompt the hidden test really has, so I asked the hosts about the test layout here: <a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/750213\" target=\"_blank\">https://www.kaggle.com/competitions/name-that-llm/discussion/750213</a>. Would be great to hear how others are validating it.</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:56:34+00:00",
+      "last_seen_at": "2026-11-16T16:36:23+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:36:23+00:00",
+      "remote_last_listed_at": "2026-11-16T16:36:23+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Karthikeya Thatipamula",
+          "tier": "CONTRIBUTOR",
+          "url": "/karthikeya18"
+        },
+        "content": "<p>Same experience on our side: clustering looked much better in our simulations than it turned out on the public LB. I suspect a lot depends on how many answers per prompt the hidden test really has, so I asked the hosts about the test layout here: <a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/750213\" target=\"_blank\">https://www.kaggle.com/competitions/name-that-llm/discussion/750213</a>. Would be great to hear how others are validating it.</p>",
+        "id": 3540190,
+        "isThankYou": false,
+        "postDate": "2026-10-17T09:31:35.920Z",
+        "raw": {
+          "author": {
+            "display_name": "Karthikeya Thatipamula",
+            "id": 18353491,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/18353491-kg.jpeg?t=2025-01-08-18-19-16",
+            "tier": "CONTRIBUTOR",
+            "url": "/karthikeya18"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 940,
+          "content": "<p>Same experience on our side: clustering looked much better in our simulations than it turned out on the public LB. I suspect a lot depends on how many answers per prompt the hidden test really has, so I asked the hosts about the test layout here: <a href=\"https://www.kaggle.com/competitions/name-that-llm/discussion/750213\" target=\"_blank\">https://www.kaggle.com/competitions/name-that-llm/discussion/750213</a>. Would be great to hear how others are validating it.</p>",
+          "feedback_tracking_data": {},
+          "id": 3540190,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-17T09:31:35.920Z",
+          "raw_markdown": "Same experience on our side: clustering looked much better in our simulations than it turned out on the public LB. I suspect a lot depends on how many answers per prompt the hidden test really has, so I asked the hosts about the test layout here: https://www.kaggle.com/competitions/name-that-llm/discussion/750213. Would be great to hear how others are validating it.",
+          "reactions": [
+            {
+              "emoji": "KAGGLE",
+              "featured_user_names": [
+                "karthikeya18"
+              ],
+              "user_count": 1
+            }
+          ],
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Karthikeya Thatipamula",
+              "id": 18353491,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/karthikeya18",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/18353491-kg.jpeg?t=2025-01-08-18-19-16",
+              "tier": "CONTRIBUTOR",
+              "url": "/karthikeya18",
+              "user_id": 18353491,
+              "user_name": "karthikeya18"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "Same experience on our side: clustering looked much better in our simulations than it turned out on the public LB. I suspect a lot depends on how many answers per prompt the hidden test really has, so I asked the hosts about the test layout here: https://www.kaggle.com/competitions/name-that-llm/discussion/750213. Would be great to hear how others are validating it.",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    }
+  ],
+  "writeup": null
+}

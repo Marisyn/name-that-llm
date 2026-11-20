@@ -1,0 +1,566 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 750038,
+    "title": "Can we use the Kaggle Benchmarks AI quota to generate training data?",
+    "author": "Zbigniew Kirchner",
+    "author_url": "/zbigniewkirchner",
+    "author_tier": "EXPERT",
+    "post_date": "2026-10-16T19:14:45.805034500Z",
+    "last_comment_post_date": "2026-10-19T05:05:07.046666700Z",
+    "comment_count": 2,
+    "votes": 3,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/750038",
+    "first_message_id": 3539924,
+    "first_seen_at": "2026-11-04T06:56:17+00:00",
+    "last_seen_at": "2026-11-16T16:36:05+00:00",
+    "detail_last_synced_at": "2026-11-16T16:24:14+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "5c72bd965da5aa8183f7b54e8addaf62be48b44c79cec1b25ccfd3f75b67a1ea",
+    "listing_metrics_hash": "6d8a74dbac9b4cd94399e9cc1520c8e662b0bbcc16c76b670939fedc4deb1f33",
+    "detail_content_hash": "7d6468c8075e639f2da7065f1550fbe7fce3c630a042031bf5a6ffd561fec99e",
+    "detail_last_checked_at": "2026-11-16T16:24:14+00:00",
+    "detail_next_check_at": "2026-11-19T16:24:14+00:00",
+    "detail_unchanged_count": 1,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 2,
+      "firstForumMessageId": null,
+      "id": 750038,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-10-19T05:05:07.046666700Z",
+      "postDate": "2026-10-16T19:14:45.805034500Z",
+      "raw": {
+        "comment_count": 2,
+        "id": 750038,
+        "last_comment_post_date": "2026-10-19T05:05:07.046666700Z",
+        "post_date": "2026-10-16T19:14:45.805034500Z",
+        "title": "Can we use the Kaggle Benchmarks AI quota to generate training data?",
+        "topic_url": "/competitions/name-that-llm/discussion/750038",
+        "votes": 3
+      },
+      "title": "Can we use the Kaggle Benchmarks AI quota to generate training data?",
+      "topicUrl": "/competitions/name-that-llm/discussion/750038",
+      "votes": 3
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "EXPERT",
+        "authorUserDisplayName": "Zbigniew Kirchner",
+        "authorUserName": "zbigniewkirchner",
+        "comments": [
+          {
+            "author": {
+              "displayName": "PhenomSG",
+              "tier": "EXPERT",
+              "url": "/phenomsg"
+            },
+            "content": "<p>yes!! absolutely!!</p>",
+            "id": 3540876,
+            "isThankYou": false,
+            "postDate": "2026-10-19T05:05:07.047Z",
+            "raw": {
+              "author": {
+                "display_name": "PhenomSG",
+                "id": 15904231,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15904231-kg.jpg?t=2025-05-03-13-29-45",
+                "tier": "EXPERT",
+                "url": "/phenomsg"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 5156,
+              "content": "<p>yes!! absolutely!!</p>",
+              "feedback_tracking_data": {},
+              "id": 3540876,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-19T05:05:07.047Z",
+              "raw_markdown": "yes!! absolutely!!",
+              "team_up_info": {
+                "enabled": true,
+                "intro": "got ideas join rn",
+                "team_leader": {
+                  "display_name": "PhenomSG",
+                  "id": 15904231,
+                  "performance_tier": "EXPERT",
+                  "profile_url": "/phenomsg",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15904231-kg.jpg?t=2025-05-03-13-29-45",
+                  "tier": "EXPERT",
+                  "url": "/phenomsg",
+                  "user_id": 15904231,
+                  "user_name": "phenomsg"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "yes!! absolutely!!",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          },
+          {
+            "author": {
+              "displayName": "Rudraa",
+              "tier": "CONTRIBUTOR",
+              "url": "/realrudraa"
+            },
+            "content": "<p>Yes, I don't think they've denied the use of Kaggle AI quota :) feel free to use it.</p>",
+            "id": 3539988,
+            "isThankYou": false,
+            "postDate": "2026-10-16T21:30:30.727Z",
+            "raw": {
+              "author": {
+                "display_name": "Rudraa",
+                "id": 28688720,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28688720-kg.jpg?t=2026-08-28-21-34-33",
+                "tier": "CONTRIBUTOR",
+                "url": "/realrudraa"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 833,
+              "content": "<p>Yes, I don't think they've denied the use of Kaggle AI quota :) feel free to use it.</p>",
+              "feedback_tracking_data": {},
+              "id": 3539988,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-16T21:30:30.727Z",
+              "raw_markdown": "Yes, I don't think they've denied the use of Kaggle AI quota :) feel free to use it.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Rudraa",
+                  "id": 28688720,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/realrudraa",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28688720-kg.jpg?t=2026-08-28-21-34-33",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/realrudraa",
+                  "user_id": 28688720,
+                  "user_name": "realrudraa"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "Yes, I don't think they've denied the use of Kaggle AI quota :) feel free to use it.",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "expectedCommentCount": 2,
+        "firstMessage": {
+          "author": {
+            "displayName": "Zbigniew Kirchner",
+            "tier": "EXPERT",
+            "url": "/zbigniewkirchner"
+          },
+          "content": "<p>Hi! Every Kaggle account gets free AI quota for Kaggle Benchmarks, and the Model Proxy includes some of the candidate models from this competition.</p>\n<p>Is it allowed to use this free quota to generate extra training data?</p>",
+          "id": 3539924,
+          "isThankYou": false,
+          "postDate": "2026-10-16T19:14:45.807Z",
+          "raw": {
+            "author": {
+              "display_name": "Zbigniew Kirchner",
+              "id": 18236248,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/18236248-kg.jpg?t=2024-01-27-22-57-59",
+              "tier": "EXPERT",
+              "url": "/zbigniewkirchner"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 342,
+            "content": "<p>Hi! Every Kaggle account gets free AI quota for Kaggle Benchmarks, and the Model Proxy includes some of the candidate models from this competition.</p>\n<p>Is it allowed to use this free quota to generate extra training data?</p>",
+            "feedback_tracking_data": {},
+            "id": 3539924,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-10-16T19:14:45.807Z",
+            "raw_markdown": "Hi! Every Kaggle account gets free AI quota for Kaggle Benchmarks, and the Model Proxy includes some of the candidate models from this competition.\n\nIs it allowed to use this free quota to generate extra training data?",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "Zbigniew Kirchner",
+                "id": 18236248,
+                "performance_tier": "EXPERT",
+                "profile_url": "/zbigniewkirchner",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/18236248-kg.jpg?t=2024-01-27-22-57-59",
+                "tier": "EXPERT",
+                "url": "/zbigniewkirchner",
+                "user_id": 18236248,
+                "user_name": "zbigniewkirchner"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 3,
+              "total_votes": 3
+            }
+          },
+          "rawMarkdown": "Hi! Every Kaggle account gets free AI quota for Kaggle Benchmarks, and the Model Proxy includes some of the candidate models from this competition.\n\nIs it allowed to use this free quota to generate extra training data?",
+          "replies": [],
+          "votes": {
+            "totalVotes": 3
+          }
+        },
+        "firstMessageId": 3539924,
+        "id": 750038,
+        "name": "Can we use the Kaggle Benchmarks AI quota to generate training data?",
+        "postDate": "2026-10-16T19:14:45.805034500Z",
+        "url": "/competitions/name-that-llm/discussion/750038"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>Hi! Every Kaggle account gets free AI quota for Kaggle Benchmarks, and the Model Proxy includes some of the candidate models from this competition.</p>\n<p>Is it allowed to use this free quota to generate extra training data?</p>",
+              "id": 3539924,
+              "post_date": "2026-10-16T19:14:45.807Z",
+              "raw_markdown": "Hi! Every Kaggle account gets free AI quota for Kaggle Benchmarks, and the Model Proxy includes some of the candidate models from this competition.\n\nIs it allowed to use this free quota to generate extra training data?",
+              "votes": 3
+            },
+            {
+              "content": "<p>Yes, I don't think they've denied the use of Kaggle AI quota :) feel free to use it.</p>",
+              "id": 3539988,
+              "post_date": "2026-10-16T21:30:30.727Z",
+              "raw_markdown": "Yes, I don't think they've denied the use of Kaggle AI quota :) feel free to use it."
+            },
+            {
+              "content": "<p>yes!! absolutely!!</p>",
+              "id": 3540876,
+              "post_date": "2026-10-19T05:05:07.047Z",
+              "raw_markdown": "yes!! absolutely!!"
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 18236248,
+            "author_performance_tier": "EXPERT",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "18236248-kg.jpg?t=2024-01-27-22-57-59",
+            "author_user_display_name": "Zbigniew Kirchner",
+            "author_user_name": "zbigniewkirchner",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "comments": [
+              {
+                "author": {
+                  "display_name": "PhenomSG",
+                  "id": 15904231,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15904231-kg.jpg?t=2025-05-03-13-29-45",
+                  "tier": "EXPERT",
+                  "url": "/phenomsg"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 5156,
+                "content": "<p>yes!! absolutely!!</p>",
+                "feedback_tracking_data": {},
+                "id": 3540876,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-19T05:05:07.047Z",
+                "raw_markdown": "yes!! absolutely!!",
+                "team_up_info": {
+                  "enabled": true,
+                  "intro": "got ideas join rn",
+                  "team_leader": {
+                    "display_name": "PhenomSG",
+                    "id": 15904231,
+                    "performance_tier": "EXPERT",
+                    "profile_url": "/phenomsg",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15904231-kg.jpg?t=2025-05-03-13-29-45",
+                    "tier": "EXPERT",
+                    "url": "/phenomsg",
+                    "user_id": 15904231,
+                    "user_name": "phenomsg"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              },
+              {
+                "author": {
+                  "display_name": "Rudraa",
+                  "id": 28688720,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28688720-kg.jpg?t=2026-08-28-21-34-33",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/realrudraa"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 833,
+                "content": "<p>Yes, I don't think they've denied the use of Kaggle AI quota :) feel free to use it.</p>",
+                "feedback_tracking_data": {},
+                "id": 3539988,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-16T21:30:30.727Z",
+                "raw_markdown": "Yes, I don't think they've denied the use of Kaggle AI quota :) feel free to use it.",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "Rudraa",
+                    "id": 28688720,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/realrudraa",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28688720-kg.jpg?t=2026-08-28-21-34-33",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/realrudraa",
+                    "user_id": 28688720,
+                    "user_name": "realrudraa"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              }
+            ],
+            "first_message": {
+              "author": {
+                "display_name": "Zbigniew Kirchner",
+                "id": 18236248,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/18236248-kg.jpg?t=2024-01-27-22-57-59",
+                "tier": "EXPERT",
+                "url": "/zbigniewkirchner"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 342,
+              "content": "<p>Hi! Every Kaggle account gets free AI quota for Kaggle Benchmarks, and the Model Proxy includes some of the candidate models from this competition.</p>\n<p>Is it allowed to use this free quota to generate extra training data?</p>",
+              "feedback_tracking_data": {},
+              "id": 3539924,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-16T19:14:45.807Z",
+              "raw_markdown": "Hi! Every Kaggle account gets free AI quota for Kaggle Benchmarks, and the Model Proxy includes some of the candidate models from this competition.\n\nIs it allowed to use this free quota to generate extra training data?",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Zbigniew Kirchner",
+                  "id": 18236248,
+                  "performance_tier": "EXPERT",
+                  "profile_url": "/zbigniewkirchner",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/18236248-kg.jpg?t=2024-01-27-22-57-59",
+                  "tier": "EXPERT",
+                  "url": "/zbigniewkirchner",
+                  "user_id": 18236248,
+                  "user_name": "zbigniewkirchner"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 3,
+                "total_votes": 3
+              }
+            },
+            "first_message_id": 3539924,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 750038,
+            "name": "Can we use the Kaggle Benchmarks AI quota to generate training data?",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-10-16T19:14:45.805034500Z",
+            "total_messages": 2,
+            "total_votes": 3,
+            "url": "/competitions/name-that-llm/discussion/750038"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:24:14+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:24:14+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-10-19T05:05:07.046666700Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [
+    {
+      "slug": "name-that-llm",
+      "topic_id": 750038,
+      "message_id": 3539988,
+      "parent_message_id": null,
+      "author": "Rudraa",
+      "author_url": "/realrudraa",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-10-16T21:30:30.727Z",
+      "raw_markdown": "Yes, I don't think they've denied the use of Kaggle AI quota :) feel free to use it.",
+      "content_html": "<p>Yes, I don't think they've denied the use of Kaggle AI quota :) feel free to use it.</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:56:43+00:00",
+      "last_seen_at": "2026-11-16T16:24:14+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:24:14+00:00",
+      "remote_last_listed_at": "2026-11-16T16:24:14+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Rudraa",
+          "tier": "CONTRIBUTOR",
+          "url": "/realrudraa"
+        },
+        "content": "<p>Yes, I don't think they've denied the use of Kaggle AI quota :) feel free to use it.</p>",
+        "id": 3539988,
+        "isThankYou": false,
+        "postDate": "2026-10-16T21:30:30.727Z",
+        "raw": {
+          "author": {
+            "display_name": "Rudraa",
+            "id": 28688720,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28688720-kg.jpg?t=2026-08-28-21-34-33",
+            "tier": "CONTRIBUTOR",
+            "url": "/realrudraa"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 833,
+          "content": "<p>Yes, I don't think they've denied the use of Kaggle AI quota :) feel free to use it.</p>",
+          "feedback_tracking_data": {},
+          "id": 3539988,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-16T21:30:30.727Z",
+          "raw_markdown": "Yes, I don't think they've denied the use of Kaggle AI quota :) feel free to use it.",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Rudraa",
+              "id": 28688720,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/realrudraa",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28688720-kg.jpg?t=2026-08-28-21-34-33",
+              "tier": "CONTRIBUTOR",
+              "url": "/realrudraa",
+              "user_id": 28688720,
+              "user_name": "realrudraa"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "Yes, I don't think they've denied the use of Kaggle AI quota :) feel free to use it.",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 750038,
+      "message_id": 3540876,
+      "parent_message_id": null,
+      "author": "PhenomSG",
+      "author_url": "/phenomsg",
+      "author_tier": "EXPERT",
+      "post_date": "2026-10-19T05:05:07.047Z",
+      "raw_markdown": "yes!! absolutely!!",
+      "content_html": "<p>yes!! absolutely!!</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:56:43+00:00",
+      "last_seen_at": "2026-11-16T16:24:14+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:24:14+00:00",
+      "remote_last_listed_at": "2026-11-16T16:24:14+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "PhenomSG",
+          "tier": "EXPERT",
+          "url": "/phenomsg"
+        },
+        "content": "<p>yes!! absolutely!!</p>",
+        "id": 3540876,
+        "isThankYou": false,
+        "postDate": "2026-10-19T05:05:07.047Z",
+        "raw": {
+          "author": {
+            "display_name": "PhenomSG",
+            "id": 15904231,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15904231-kg.jpg?t=2025-05-03-13-29-45",
+            "tier": "EXPERT",
+            "url": "/phenomsg"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 5156,
+          "content": "<p>yes!! absolutely!!</p>",
+          "feedback_tracking_data": {},
+          "id": 3540876,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-19T05:05:07.047Z",
+          "raw_markdown": "yes!! absolutely!!",
+          "team_up_info": {
+            "enabled": true,
+            "intro": "got ideas join rn",
+            "team_leader": {
+              "display_name": "PhenomSG",
+              "id": 15904231,
+              "performance_tier": "EXPERT",
+              "profile_url": "/phenomsg",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/15904231-kg.jpg?t=2025-05-03-13-29-45",
+              "tier": "EXPERT",
+              "url": "/phenomsg",
+              "user_id": 15904231,
+              "user_name": "phenomsg"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "yes!! absolutely!!",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    }
+  ],
+  "writeup": null
+}

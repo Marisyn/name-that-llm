@@ -1,0 +1,28 @@
+# 凭据（Claude Code 本地配置含 token）
+.claude/settings.local.json
+.env
+*.key
+
+# 环境与缓存
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+
+# 大数据与外部资产：来源见 docs/environment/assets.md
+assets/data/
+assets/external/
+assets/kaggle-sync-name-that-llm/code/
+assets/transmission/
+
+# 大产物
+runs/**/artifacts/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.gguf
+
+# 驱动云 trash
+trash/

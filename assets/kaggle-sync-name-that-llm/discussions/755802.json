@@ -1,0 +1,206 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 755802,
+    "title": "Public Score: 0.333",
+    "author": "Mohammed Hasan Abdullah",
+    "author_url": "/mohammedhasanabdulla",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-11-04T17:28:03.291086900Z",
+    "last_comment_post_date": "2026-11-04T17:28:03.290Z",
+    "comment_count": 0,
+    "votes": 0,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/755802",
+    "first_message_id": 3550017,
+    "first_seen_at": "2026-11-09T03:54:41+00:00",
+    "last_seen_at": "2026-11-16T16:36:02+00:00",
+    "detail_last_synced_at": "2026-11-16T16:23:10+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "7ca54972189ecaa1f9204ba544fd0699b6c58e4bbb486c3d7dbae91bb3b3bb8d",
+    "listing_metrics_hash": "1d7b01d39d998f5caf0eb285f7806c0632a1cb146aadc79a9504e2481370b229",
+    "detail_content_hash": "87d2d8bbd02e7b92c780828a34c8006e64e3195d653b6876ad7d869f36eacc45",
+    "detail_last_checked_at": "2026-11-16T16:23:10+00:00",
+    "detail_next_check_at": "2026-11-19T16:23:10+00:00",
+    "detail_unchanged_count": 1,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 0,
+      "firstForumMessageId": null,
+      "id": 755802,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-11-04T17:28:03.290Z",
+      "postDate": "2026-11-04T17:28:03.291086900Z",
+      "raw": {
+        "id": 755802,
+        "last_comment_post_date": "2026-11-04T17:28:03.290Z",
+        "post_date": "2026-11-04T17:28:03.291086900Z",
+        "title": "Public Score: 0.333",
+        "topic_url": "/competitions/name-that-llm/discussion/755802"
+      },
+      "title": "Public Score: 0.333",
+      "topicUrl": "/competitions/name-that-llm/discussion/755802",
+      "votes": 0
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "Mohammed Hasan Abdullah",
+        "authorUserName": "mohammedhasanabdulla",
+        "comments": [],
+        "expectedCommentCount": 0,
+        "firstMessage": {
+          "author": {
+            "displayName": "Mohammed Hasan Abdullah",
+            "tier": "CONTRIBUTOR",
+            "url": "/mohammedhasanabdulla"
+          },
+          "content": "<p>Model Approach – Name That LLM</p>\n<p>This solution uses a traditional machine learning approach combining:</p>\n<p>Character-level TF-IDF features (2–5 n-grams).</p>\n<p>Word-level TF-IDF features (1–3 n-grams).</p>\n<p>Text style and statistical features.</p>\n<p>Linear Support Vector Classification (LinearSVC).</p>\n<p>The extracted features are combined into a single feature matrix and used to train the classifier to identify the LLM responsible for each text passage.</p>\n<p>Public Score: 0.333</p>",
+          "id": 3550017,
+          "isThankYou": false,
+          "postDate": "2026-11-04T17:28:03.290Z",
+          "raw": {
+            "author": {
+              "display_name": "Mohammed Hasan Abdullah",
+              "id": 23670045,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/23670045-kg.jpg?t=2026-11-15-11-10-55",
+              "tier": "CONTRIBUTOR",
+              "url": "/mohammedhasanabdulla"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 826,
+            "content": "<p>Model Approach – Name That LLM</p>\n<p>This solution uses a traditional machine learning approach combining:</p>\n<p>Character-level TF-IDF features (2–5 n-grams).</p>\n<p>Word-level TF-IDF features (1–3 n-grams).</p>\n<p>Text style and statistical features.</p>\n<p>Linear Support Vector Classification (LinearSVC).</p>\n<p>The extracted features are combined into a single feature matrix and used to train the classifier to identify the LLM responsible for each text passage.</p>\n<p>Public Score: 0.333</p>",
+            "feedback_tracking_data": {},
+            "id": 3550017,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-11-04T17:28:03.290Z",
+            "raw_markdown": "Model Approach – Name That LLM\n\nThis solution uses a traditional machine learning approach combining:\n\nCharacter-level TF-IDF features (2–5 n-grams).\n\nWord-level TF-IDF features (1–3 n-grams).\n\nText style and statistical features.\n\nLinear Support Vector Classification (LinearSVC).\n\nThe extracted features are combined into a single feature matrix and used to train the classifier to identify the LLM responsible for each text passage.\n\nPublic Score: 0.333",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "Mohammed Hasan Abdullah",
+                "id": 23670045,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/mohammedhasanabdulla",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/23670045-kg.jpg?t=2026-11-15-11-10-55",
+                "tier": "CONTRIBUTOR",
+                "url": "/mohammedhasanabdulla",
+                "user_id": 23670045,
+                "user_name": "mohammedhasanabdulla"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 1
+            }
+          },
+          "rawMarkdown": "Model Approach – Name That LLM\n\nThis solution uses a traditional machine learning approach combining:\n\nCharacter-level TF-IDF features (2–5 n-grams).\n\nWord-level TF-IDF features (1–3 n-grams).\n\nText style and statistical features.\n\nLinear Support Vector Classification (LinearSVC).\n\nThe extracted features are combined into a single feature matrix and used to train the classifier to identify the LLM responsible for each text passage.\n\nPublic Score: 0.333",
+          "replies": [],
+          "votes": {
+            "totalVotes": 0
+          }
+        },
+        "firstMessageId": 3550017,
+        "id": 755802,
+        "name": "Public Score: 0.333",
+        "postDate": "2026-11-04T17:28:03.291086900Z",
+        "url": "/competitions/name-that-llm/discussion/755802"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>Model Approach – Name That LLM</p>\n<p>This solution uses a traditional machine learning approach combining:</p>\n<p>Character-level TF-IDF features (2–5 n-grams).</p>\n<p>Word-level TF-IDF features (1–3 n-grams).</p>\n<p>Text style and statistical features.</p>\n<p>Linear Support Vector Classification (LinearSVC).</p>\n<p>The extracted features are combined into a single feature matrix and used to train the classifier to identify the LLM responsible for each text passage.</p>\n<p>Public Score: 0.333</p>",
+              "id": 3550017,
+              "post_date": "2026-11-04T17:28:03.290Z",
+              "raw_markdown": "Model Approach – Name That LLM\n\nThis solution uses a traditional machine learning approach combining:\n\nCharacter-level TF-IDF features (2–5 n-grams).\n\nWord-level TF-IDF features (1–3 n-grams).\n\nText style and statistical features.\n\nLinear Support Vector Classification (LinearSVC).\n\nThe extracted features are combined into a single feature matrix and used to train the classifier to identify the LLM responsible for each text passage.\n\nPublic Score: 0.333"
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 23670045,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "23670045-kg.jpg?t=2026-11-15-11-10-55",
+            "author_user_display_name": "Mohammed Hasan Abdullah",
+            "author_user_name": "mohammedhasanabdulla",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "first_message": {
+              "author": {
+                "display_name": "Mohammed Hasan Abdullah",
+                "id": 23670045,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/23670045-kg.jpg?t=2026-11-15-11-10-55",
+                "tier": "CONTRIBUTOR",
+                "url": "/mohammedhasanabdulla"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 826,
+              "content": "<p>Model Approach – Name That LLM</p>\n<p>This solution uses a traditional machine learning approach combining:</p>\n<p>Character-level TF-IDF features (2–5 n-grams).</p>\n<p>Word-level TF-IDF features (1–3 n-grams).</p>\n<p>Text style and statistical features.</p>\n<p>Linear Support Vector Classification (LinearSVC).</p>\n<p>The extracted features are combined into a single feature matrix and used to train the classifier to identify the LLM responsible for each text passage.</p>\n<p>Public Score: 0.333</p>",
+              "feedback_tracking_data": {},
+              "id": 3550017,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-11-04T17:28:03.290Z",
+              "raw_markdown": "Model Approach – Name That LLM\n\nThis solution uses a traditional machine learning approach combining:\n\nCharacter-level TF-IDF features (2–5 n-grams).\n\nWord-level TF-IDF features (1–3 n-grams).\n\nText style and statistical features.\n\nLinear Support Vector Classification (LinearSVC).\n\nThe extracted features are combined into a single feature matrix and used to train the classifier to identify the LLM responsible for each text passage.\n\nPublic Score: 0.333",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Mohammed Hasan Abdullah",
+                  "id": 23670045,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/mohammedhasanabdulla",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/23670045-kg.jpg?t=2026-11-15-11-10-55",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/mohammedhasanabdulla",
+                  "user_id": 23670045,
+                  "user_name": "mohammedhasanabdulla"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1
+              }
+            },
+            "first_message_id": 3550017,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 755802,
+            "name": "Public Score: 0.333",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-11-04T17:28:03.291086900Z",
+            "url": "/competitions/name-that-llm/discussion/755802"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:23:10+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:23:10+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-11-04T17:28:03.291086900Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [],
+  "writeup": null
+}

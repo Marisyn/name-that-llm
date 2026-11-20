@@ -1,0 +1,410 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 750512,
+    "title": "Clarification request: public API-generated datasets, Kaggle Benchmarks proxy data, and §2.5 / §2.8",
+    "author": "Lucky Raj",
+    "author_url": "/luckyraj123",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-10-18T16:34:22.913488200Z",
+    "last_comment_post_date": "2026-10-20T23:10:31.246666700Z",
+    "comment_count": 1,
+    "votes": 2,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/750512",
+    "first_message_id": 3540691,
+    "first_seen_at": "2026-11-04T06:56:17+00:00",
+    "last_seen_at": "2026-11-16T16:36:04+00:00",
+    "detail_last_synced_at": "2026-11-16T16:31:03+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "4985de06fde7d7390823734efefb5a488711b63a8198a36375148a6f97ad4a86",
+    "listing_metrics_hash": "6db2b817333d85ee95f494a1b2ba941fb79d87d4e3e0c8718afed5f3c0bfd1fa",
+    "detail_content_hash": "2251943a240d7c74f16ebdd1b53eb9930b2a1bf80d6a94f89c219074b2350dd0",
+    "detail_last_checked_at": "2026-11-16T16:31:03+00:00",
+    "detail_next_check_at": "2026-11-23T16:31:03+00:00",
+    "detail_unchanged_count": 2,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 1,
+      "firstForumMessageId": null,
+      "id": 750512,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-10-20T23:10:31.246666700Z",
+      "postDate": "2026-10-18T16:34:22.913488200Z",
+      "raw": {
+        "comment_count": 1,
+        "id": 750512,
+        "last_comment_post_date": "2026-10-20T23:10:31.246666700Z",
+        "post_date": "2026-10-18T16:34:22.913488200Z",
+        "title": "Clarification request: public API-generated datasets, Kaggle Benchmarks proxy data, and §2.5 / §2.8",
+        "topic_url": "/competitions/name-that-llm/discussion/750512",
+        "votes": 2
+      },
+      "title": "Clarification request: public API-generated datasets, Kaggle Benchmarks proxy data, and §2.5 / §2.8",
+      "topicUrl": "/competitions/name-that-llm/discussion/750512",
+      "votes": 2
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "Lucky Raj",
+        "authorUserName": "luckyraj123",
+        "comments": [
+          {
+            "author": {
+              "displayName": "Stefan Cringusi",
+              "tier": "CONTRIBUTOR",
+              "url": "/stefancringusi"
+            },
+            "content": "<p>Hi, thanks for raising this. I’m unsure about this too. Could someone from the hosting team please clarify? It would really help us understand which public datasets we can use. Thank you!</p>",
+            "id": 3541857,
+            "isThankYou": false,
+            "postDate": "2026-10-20T23:10:31.247Z",
+            "raw": {
+              "author": {
+                "display_name": "Stefan Cringusi",
+                "id": 6864502,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/6864502-kg.jpeg?t=2026-09-25-07-16-27",
+                "tier": "CONTRIBUTOR",
+                "url": "/stefancringusi"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 2252,
+              "content": "<p>Hi, thanks for raising this. I’m unsure about this too. Could someone from the hosting team please clarify? It would really help us understand which public datasets we can use. Thank you!</p>",
+              "feedback_tracking_data": {},
+              "id": 3541857,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-20T23:10:31.247Z",
+              "raw_markdown": "Hi, thanks for raising this. I’m unsure about this too. Could someone from the hosting team please clarify? It would really help us understand which public datasets we can use. Thank you!\n",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Stefan Cringusi",
+                  "id": 6864502,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/stefancringusi",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/6864502-kg.jpeg?t=2026-09-25-07-16-27",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/stefancringusi",
+                  "user_id": 6864502,
+                  "user_name": "stefancringusi"
+                }
+              },
+              "votes": {
+                "can_upvote": true
+              }
+            },
+            "rawMarkdown": "Hi, thanks for raising this. I’m unsure about this too. Could someone from the hosting team please clarify? It would really help us understand which public datasets we can use. Thank you!\n",
+            "replies": [],
+            "votes": {
+              "totalVotes": 0
+            }
+          }
+        ],
+        "expectedCommentCount": 1,
+        "firstMessage": {
+          "author": {
+            "displayName": "Lucky Raj",
+            "tier": "CONTRIBUTOR",
+            "url": "/luckyraj123"
+          },
+          "content": "<p>Hi, and thank you for hosting. Section 6 (External Data and Tools) is clear about public, free data. Several participants are unsure how it interacts with the model providers' own terms, so a short written answer would help everyone plan on equal terms.</p>\n<p>Public API-generated datasets. Is a public, free Kaggle dataset of passages generated by the 18 candidate models through their official APIs permitted External Data under §2.6.a without further approval? An example is prvsiyan/prvsiyans-extended-name-that-llm-dataset, licensed CC BY 4.0.\nProvider output terms. Several providers' terms restrict using outputs to develop \"competing\" models. Does the host consider training a non-generative 18-way attribution classifier on such passages to be consistent with those terms? Or must each participant clear this with the providers themselves?\nKaggle Benchmarks Model Proxy. Is text generated with the free Kaggle Benchmarks Model Proxy quota permitted as training data for this competition? May it be shared publicly as a Kaggle dataset? (The same question is open in /discussion/750038.)\nWinner obligations. If such data are used, does §2.5.a.3 (\"input data or pretrained models with an incompatible license\") also cover the trained model weights, or only the data? And what should the §2.8 documentation include about the provenance and attribution of external data?\nThank you!</p>",
+          "id": 3540691,
+          "isThankYou": false,
+          "postDate": "2026-10-18T16:34:22.913Z",
+          "raw": {
+            "author": {
+              "display_name": "Lucky Raj",
+              "id": 24307021,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "CONTRIBUTOR",
+              "url": "/luckyraj123"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 3709,
+            "content": "<p>Hi, and thank you for hosting. Section 6 (External Data and Tools) is clear about public, free data. Several participants are unsure how it interacts with the model providers' own terms, so a short written answer would help everyone plan on equal terms.</p>\n<p>Public API-generated datasets. Is a public, free Kaggle dataset of passages generated by the 18 candidate models through their official APIs permitted External Data under §2.6.a without further approval? An example is prvsiyan/prvsiyans-extended-name-that-llm-dataset, licensed CC BY 4.0.\nProvider output terms. Several providers' terms restrict using outputs to develop \"competing\" models. Does the host consider training a non-generative 18-way attribution classifier on such passages to be consistent with those terms? Or must each participant clear this with the providers themselves?\nKaggle Benchmarks Model Proxy. Is text generated with the free Kaggle Benchmarks Model Proxy quota permitted as training data for this competition? May it be shared publicly as a Kaggle dataset? (The same question is open in /discussion/750038.)\nWinner obligations. If such data are used, does §2.5.a.3 (\"input data or pretrained models with an incompatible license\") also cover the trained model weights, or only the data? And what should the §2.8 documentation include about the provenance and attribution of external data?\nThank you!</p>",
+            "feedback_tracking_data": {},
+            "id": 3540691,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-10-18T16:34:22.913Z",
+            "raw_markdown": "Hi, and thank you for hosting. Section 6 (External Data and Tools) is clear about public, free data. Several participants are unsure how it interacts with the model providers' own terms, so a short written answer would help everyone plan on equal terms.\n\nPublic API-generated datasets. Is a public, free Kaggle dataset of passages generated by the 18 candidate models through their official APIs permitted External Data under §2.6.a without further approval? An example is prvsiyan/prvsiyans-extended-name-that-llm-dataset, licensed CC BY 4.0.\nProvider output terms. Several providers' terms restrict using outputs to develop \"competing\" models. Does the host consider training a non-generative 18-way attribution classifier on such passages to be consistent with those terms? Or must each participant clear this with the providers themselves?\nKaggle Benchmarks Model Proxy. Is text generated with the free Kaggle Benchmarks Model Proxy quota permitted as training data for this competition? May it be shared publicly as a Kaggle dataset? (The same question is open in /discussion/750038.)\nWinner obligations. If such data are used, does §2.5.a.3 (\"input data or pretrained models with an incompatible license\") also cover the trained model weights, or only the data? And what should the §2.8 documentation include about the provenance and attribution of external data?\nThank you!",
+            "reactions": [
+              {
+                "emoji": "THANK_YOU",
+                "featured_user_names": [
+                  "stefancringusi",
+                  "osakanateishoku"
+                ],
+                "user_count": 2
+              }
+            ],
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "Lucky Raj",
+                "id": 24307021,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/luckyraj123",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/luckyraj123",
+                "user_id": 24307021,
+                "user_name": "luckyraj123"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 2,
+              "total_votes": 2
+            }
+          },
+          "rawMarkdown": "Hi, and thank you for hosting. Section 6 (External Data and Tools) is clear about public, free data. Several participants are unsure how it interacts with the model providers' own terms, so a short written answer would help everyone plan on equal terms.\n\nPublic API-generated datasets. Is a public, free Kaggle dataset of passages generated by the 18 candidate models through their official APIs permitted External Data under §2.6.a without further approval? An example is prvsiyan/prvsiyans-extended-name-that-llm-dataset, licensed CC BY 4.0.\nProvider output terms. Several providers' terms restrict using outputs to develop \"competing\" models. Does the host consider training a non-generative 18-way attribution classifier on such passages to be consistent with those terms? Or must each participant clear this with the providers themselves?\nKaggle Benchmarks Model Proxy. Is text generated with the free Kaggle Benchmarks Model Proxy quota permitted as training data for this competition? May it be shared publicly as a Kaggle dataset? (The same question is open in /discussion/750038.)\nWinner obligations. If such data are used, does §2.5.a.3 (\"input data or pretrained models with an incompatible license\") also cover the trained model weights, or only the data? And what should the §2.8 documentation include about the provenance and attribution of external data?\nThank you!",
+          "replies": [],
+          "votes": {
+            "totalVotes": 2
+          }
+        },
+        "firstMessageId": 3540691,
+        "id": 750512,
+        "name": "Clarification request: public API-generated datasets, Kaggle Benchmarks proxy data, and §2.5 / §2.8",
+        "postDate": "2026-10-18T16:34:22.913488200Z",
+        "url": "/competitions/name-that-llm/discussion/750512"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>Hi, and thank you for hosting. Section 6 (External Data and Tools) is clear about public, free data. Several participants are unsure how it interacts with the model providers' own terms, so a short written answer would help everyone plan on equal terms.</p>\n<p>Public API-generated datasets. Is a public, free Kaggle dataset of passages generated by the 18 candidate models through their official APIs permitted External Data under §2.6.a without further approval? An example is prvsiyan/prvsiyans-extended-name-that-llm-dataset, licensed CC BY 4.0.\nProvider output terms. Several providers' terms restrict using outputs to develop \"competing\" models. Does the host consider training a non-generative 18-way attribution classifier on such passages to be consistent with those terms? Or must each participant clear this with the providers themselves?\nKaggle Benchmarks Model Proxy. Is text generated with the free Kaggle Benchmarks Model Proxy quota permitted as training data for this competition? May it be shared publicly as a Kaggle dataset? (The same question is open in /discussion/750038.)\nWinner obligations. If such data are used, does §2.5.a.3 (\"input data or pretrained models with an incompatible license\") also cover the trained model weights, or only the data? And what should the §2.8 documentation include about the provenance and attribution of external data?\nThank you!</p>",
+              "id": 3540691,
+              "post_date": "2026-10-18T16:34:22.913Z",
+              "raw_markdown": "Hi, and thank you for hosting. Section 6 (External Data and Tools) is clear about public, free data. Several participants are unsure how it interacts with the model providers' own terms, so a short written answer would help everyone plan on equal terms.\n\nPublic API-generated datasets. Is a public, free Kaggle dataset of passages generated by the 18 candidate models through their official APIs permitted External Data under §2.6.a without further approval? An example is prvsiyan/prvsiyans-extended-name-that-llm-dataset, licensed CC BY 4.0.\nProvider output terms. Several providers' terms restrict using outputs to develop \"competing\" models. Does the host consider training a non-generative 18-way attribution classifier on such passages to be consistent with those terms? Or must each participant clear this with the providers themselves?\nKaggle Benchmarks Model Proxy. Is text generated with the free Kaggle Benchmarks Model Proxy quota permitted as training data for this competition? May it be shared publicly as a Kaggle dataset? (The same question is open in /discussion/750038.)\nWinner obligations. If such data are used, does §2.5.a.3 (\"input data or pretrained models with an incompatible license\") also cover the trained model weights, or only the data? And what should the §2.8 documentation include about the provenance and attribution of external data?\nThank you!",
+              "votes": 2
+            },
+            {
+              "content": "<p>Hi, thanks for raising this. I’m unsure about this too. Could someone from the hosting team please clarify? It would really help us understand which public datasets we can use. Thank you!</p>",
+              "id": 3541857,
+              "post_date": "2026-10-20T23:10:31.247Z",
+              "raw_markdown": "Hi, thanks for raising this. I’m unsure about this too. Could someone from the hosting team please clarify? It would really help us understand which public datasets we can use. Thank you!\n"
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 24307021,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "default-thumb.png",
+            "author_user_display_name": "Lucky Raj",
+            "author_user_name": "luckyraj123",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "comments": [
+              {
+                "author": {
+                  "display_name": "Stefan Cringusi",
+                  "id": 6864502,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/6864502-kg.jpeg?t=2026-09-25-07-16-27",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/stefancringusi"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 2252,
+                "content": "<p>Hi, thanks for raising this. I’m unsure about this too. Could someone from the hosting team please clarify? It would really help us understand which public datasets we can use. Thank you!</p>",
+                "feedback_tracking_data": {},
+                "id": 3541857,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-20T23:10:31.247Z",
+                "raw_markdown": "Hi, thanks for raising this. I’m unsure about this too. Could someone from the hosting team please clarify? It would really help us understand which public datasets we can use. Thank you!\n",
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "Stefan Cringusi",
+                    "id": 6864502,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/stefancringusi",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/6864502-kg.jpeg?t=2026-09-25-07-16-27",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/stefancringusi",
+                    "user_id": 6864502,
+                    "user_name": "stefancringusi"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true
+                }
+              }
+            ],
+            "first_message": {
+              "author": {
+                "display_name": "Lucky Raj",
+                "id": 24307021,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/luckyraj123"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 3709,
+              "content": "<p>Hi, and thank you for hosting. Section 6 (External Data and Tools) is clear about public, free data. Several participants are unsure how it interacts with the model providers' own terms, so a short written answer would help everyone plan on equal terms.</p>\n<p>Public API-generated datasets. Is a public, free Kaggle dataset of passages generated by the 18 candidate models through their official APIs permitted External Data under §2.6.a without further approval? An example is prvsiyan/prvsiyans-extended-name-that-llm-dataset, licensed CC BY 4.0.\nProvider output terms. Several providers' terms restrict using outputs to develop \"competing\" models. Does the host consider training a non-generative 18-way attribution classifier on such passages to be consistent with those terms? Or must each participant clear this with the providers themselves?\nKaggle Benchmarks Model Proxy. Is text generated with the free Kaggle Benchmarks Model Proxy quota permitted as training data for this competition? May it be shared publicly as a Kaggle dataset? (The same question is open in /discussion/750038.)\nWinner obligations. If such data are used, does §2.5.a.3 (\"input data or pretrained models with an incompatible license\") also cover the trained model weights, or only the data? And what should the §2.8 documentation include about the provenance and attribution of external data?\nThank you!</p>",
+              "feedback_tracking_data": {},
+              "id": 3540691,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-18T16:34:22.913Z",
+              "raw_markdown": "Hi, and thank you for hosting. Section 6 (External Data and Tools) is clear about public, free data. Several participants are unsure how it interacts with the model providers' own terms, so a short written answer would help everyone plan on equal terms.\n\nPublic API-generated datasets. Is a public, free Kaggle dataset of passages generated by the 18 candidate models through their official APIs permitted External Data under §2.6.a without further approval? An example is prvsiyan/prvsiyans-extended-name-that-llm-dataset, licensed CC BY 4.0.\nProvider output terms. Several providers' terms restrict using outputs to develop \"competing\" models. Does the host consider training a non-generative 18-way attribution classifier on such passages to be consistent with those terms? Or must each participant clear this with the providers themselves?\nKaggle Benchmarks Model Proxy. Is text generated with the free Kaggle Benchmarks Model Proxy quota permitted as training data for this competition? May it be shared publicly as a Kaggle dataset? (The same question is open in /discussion/750038.)\nWinner obligations. If such data are used, does §2.5.a.3 (\"input data or pretrained models with an incompatible license\") also cover the trained model weights, or only the data? And what should the §2.8 documentation include about the provenance and attribution of external data?\nThank you!",
+              "reactions": [
+                {
+                  "emoji": "THANK_YOU",
+                  "featured_user_names": [
+                    "stefancringusi",
+                    "osakanateishoku"
+                  ],
+                  "user_count": 2
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Lucky Raj",
+                  "id": 24307021,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/luckyraj123",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/luckyraj123",
+                  "user_id": 24307021,
+                  "user_name": "luckyraj123"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 2,
+                "total_votes": 2
+              }
+            },
+            "first_message_id": 3540691,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 750512,
+            "name": "Clarification request: public API-generated datasets, Kaggle Benchmarks proxy data, and §2.5 / §2.8",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-10-18T16:34:22.913488200Z",
+            "total_messages": 1,
+            "total_votes": 2,
+            "url": "/competitions/name-that-llm/discussion/750512"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:31:03+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:31:03+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-10-20T23:10:31.246666700Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [
+    {
+      "slug": "name-that-llm",
+      "topic_id": 750512,
+      "message_id": 3541857,
+      "parent_message_id": null,
+      "author": "Stefan Cringusi",
+      "author_url": "/stefancringusi",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-10-20T23:10:31.247Z",
+      "raw_markdown": "Hi, thanks for raising this. I’m unsure about this too. Could someone from the hosting team please clarify? It would really help us understand which public datasets we can use. Thank you!\n",
+      "content_html": "<p>Hi, thanks for raising this. I’m unsure about this too. Could someone from the hosting team please clarify? It would really help us understand which public datasets we can use. Thank you!</p>",
+      "votes": 0,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:56:48+00:00",
+      "last_seen_at": "2026-11-16T16:31:03+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:31:03+00:00",
+      "remote_last_listed_at": "2026-11-16T16:31:03+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Stefan Cringusi",
+          "tier": "CONTRIBUTOR",
+          "url": "/stefancringusi"
+        },
+        "content": "<p>Hi, thanks for raising this. I’m unsure about this too. Could someone from the hosting team please clarify? It would really help us understand which public datasets we can use. Thank you!</p>",
+        "id": 3541857,
+        "isThankYou": false,
+        "postDate": "2026-10-20T23:10:31.247Z",
+        "raw": {
+          "author": {
+            "display_name": "Stefan Cringusi",
+            "id": 6864502,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/6864502-kg.jpeg?t=2026-09-25-07-16-27",
+            "tier": "CONTRIBUTOR",
+            "url": "/stefancringusi"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 2252,
+          "content": "<p>Hi, thanks for raising this. I’m unsure about this too. Could someone from the hosting team please clarify? It would really help us understand which public datasets we can use. Thank you!</p>",
+          "feedback_tracking_data": {},
+          "id": 3541857,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-20T23:10:31.247Z",
+          "raw_markdown": "Hi, thanks for raising this. I’m unsure about this too. Could someone from the hosting team please clarify? It would really help us understand which public datasets we can use. Thank you!\n",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Stefan Cringusi",
+              "id": 6864502,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/stefancringusi",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/6864502-kg.jpeg?t=2026-09-25-07-16-27",
+              "tier": "CONTRIBUTOR",
+              "url": "/stefancringusi",
+              "user_id": 6864502,
+              "user_name": "stefancringusi"
+            }
+          },
+          "votes": {
+            "can_upvote": true
+          }
+        },
+        "rawMarkdown": "Hi, thanks for raising this. I’m unsure about this too. Could someone from the hosting team please clarify? It would really help us understand which public datasets we can use. Thank you!\n",
+        "replies": [],
+        "votes": {
+          "totalVotes": 0
+        }
+      }
+    }
+  ],
+  "writeup": null
+}

@@ -1,0 +1,755 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 749914,
+    "title": "Could the Organizers Provide More Official Training Data?",
+    "author": "Yan Zhou",
+    "author_url": "/yanzhou06",
+    "author_tier": "EXPERT",
+    "post_date": "2026-10-16T11:18:22.126217500Z",
+    "last_comment_post_date": "2026-10-16T11:33:36.423333300Z",
+    "comment_count": 2,
+    "votes": 10,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/749914",
+    "first_message_id": 3539714,
+    "first_seen_at": "2026-11-04T06:56:18+00:00",
+    "last_seen_at": "2026-11-16T16:36:28+00:00",
+    "detail_last_synced_at": "2026-11-16T16:36:28+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "36dc6f988d4cc56785ce1fbdfcc64dbccd05f0791115422f669288f32a269dea",
+    "listing_metrics_hash": "8d48d9dc5f47c8f1257fa4ed62f5b5b354567e6fe163b3d22f1c91a03351d855",
+    "detail_content_hash": "2d972b1fc75f058e83074bf056fdb819e81f5d2de4cfca1cc7c6796077d85eb1",
+    "detail_last_checked_at": "2026-11-16T16:36:28+00:00",
+    "detail_next_check_at": "2026-11-23T16:36:28+00:00",
+    "detail_unchanged_count": 2,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 2,
+      "firstForumMessageId": null,
+      "id": 749914,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-10-16T11:33:36.423333300Z",
+      "postDate": "2026-10-16T11:18:22.126217500Z",
+      "raw": {
+        "comment_count": 2,
+        "id": 749914,
+        "last_comment_post_date": "2026-10-16T11:33:36.423333300Z",
+        "post_date": "2026-10-16T11:18:22.126217500Z",
+        "title": "Could the Organizers Provide More Official Training Data?",
+        "topic_url": "/competitions/name-that-llm/discussion/749914",
+        "votes": 10
+      },
+      "title": "Could the Organizers Provide More Official Training Data?",
+      "topicUrl": "/competitions/name-that-llm/discussion/749914",
+      "votes": 10
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "EXPERT",
+        "authorUserDisplayName": "Yan Zhou",
+        "authorUserName": "yanzhou06",
+        "comments": [
+          {
+            "author": {
+              "displayName": "buysider",
+              "tier": "CONTRIBUTOR",
+              "url": "/petrovmarko"
+            },
+            "content": "<p>Is generating your own data via model providers’  api even allowed under competition rules?  Hopefully they can clarify this soon.</p>",
+            "id": 3539722,
+            "isThankYou": false,
+            "postDate": "2026-10-16T11:29:32.393Z",
+            "raw": {
+              "author": {
+                "display_name": "buysider",
+                "id": 24894402,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24894402-kg.png?t=2026-10-08-21-44-21",
+                "tier": "CONTRIBUTOR",
+                "url": "/petrovmarko"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 3261,
+              "content": "<p>Is generating your own data via model providers’  api even allowed under competition rules?  Hopefully they can clarify this soon.</p>",
+              "feedback_tracking_data": {},
+              "id": 3539722,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-16T11:29:32.393Z",
+              "raw_markdown": "Is generating your own data via model providers’  api even allowed under competition rules?  Hopefully they can clarify this soon.",
+              "replies": [
+                {
+                  "author": {
+                    "display_name": "Yan Zhou",
+                    "id": 24311334,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24311334-kg.png?t=2026-06-28-11-54-02",
+                    "tier": "EXPERT",
+                    "url": "/yanzhou06"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 4453,
+                  "content": "<p>I doubt the organizers will give a clear answer on that. Banning external data is really hard to enforce anyway.</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3539730,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-16T11:33:36.423Z",
+                  "raw_markdown": "I doubt the organizers will give a clear answer on that. Banning external data is really hard to enforce anyway.",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Yan Zhou",
+                      "id": 24311334,
+                      "performance_tier": "EXPERT",
+                      "profile_url": "/yanzhou06",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24311334-kg.png?t=2026-06-28-11-54-02",
+                      "tier": "EXPERT",
+                      "url": "/yanzhou06",
+                      "user_id": 24311334,
+                      "user_name": "yanzhou06"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true,
+                    "total_upvotes": 1,
+                    "total_votes": 1
+                  }
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "buysider",
+                  "id": 24894402,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/petrovmarko",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24894402-kg.png?t=2026-10-08-21-44-21",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/petrovmarko",
+                  "user_id": 24894402,
+                  "user_name": "petrovmarko"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 2,
+                "total_votes": 2
+              }
+            },
+            "rawMarkdown": "Is generating your own data via model providers’  api even allowed under competition rules?  Hopefully they can clarify this soon.",
+            "replies": [
+              {
+                "author": {
+                  "displayName": "Yan Zhou",
+                  "tier": "EXPERT",
+                  "url": "/yanzhou06"
+                },
+                "content": "<p>I doubt the organizers will give a clear answer on that. Banning external data is really hard to enforce anyway.</p>",
+                "id": 3539730,
+                "isThankYou": false,
+                "postDate": "2026-10-16T11:33:36.423Z",
+                "raw": {
+                  "author": {
+                    "display_name": "Yan Zhou",
+                    "id": 24311334,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24311334-kg.png?t=2026-06-28-11-54-02",
+                    "tier": "EXPERT",
+                    "url": "/yanzhou06"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 4453,
+                  "content": "<p>I doubt the organizers will give a clear answer on that. Banning external data is really hard to enforce anyway.</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3539730,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-16T11:33:36.423Z",
+                  "raw_markdown": "I doubt the organizers will give a clear answer on that. Banning external data is really hard to enforce anyway.",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "Yan Zhou",
+                      "id": 24311334,
+                      "performance_tier": "EXPERT",
+                      "profile_url": "/yanzhou06",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24311334-kg.png?t=2026-06-28-11-54-02",
+                      "tier": "EXPERT",
+                      "url": "/yanzhou06",
+                      "user_id": 24311334,
+                      "user_name": "yanzhou06"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true,
+                    "total_upvotes": 1,
+                    "total_votes": 1
+                  }
+                },
+                "rawMarkdown": "I doubt the organizers will give a clear answer on that. Banning external data is really hard to enforce anyway.",
+                "replies": [],
+                "votes": {
+                  "totalVotes": 1
+                }
+              }
+            ],
+            "votes": {
+              "totalVotes": 2
+            }
+          }
+        ],
+        "expectedCommentCount": 2,
+        "firstMessage": {
+          "author": {
+            "displayName": "Yan Zhou",
+            "tier": "EXPERT",
+            "url": "/yanzhou06"
+          },
+          "content": "<p>Hi <a href=\"/yanyao23\" target=\"_blank\">@yanyao23</a> <a href=\"/martynaplomecka\" target=\"_blank\">@martynaplomecka</a> <a href=\"/ashleyoldacre\" target=\"_blank\">@ashleyoldacre</a> , thanks for organizing this competition!</p>\n<p>Any chance we could get more training data? 2,699 samples for 18 models feels like way too little.</p>\n<p>With more data, participants could focus more on building better solutions instead of wasting time and money generating tons of data. Otherwise, this might end up being more of a synthetic data competition.</p>\n<p>Of course, more data wouldn't make the competition perfectly fair. People with bigger budgets could still generate even more data, but at least it'd make spending money on synthetic data less important and give people with smaller budgets a real shot at winning.</p>\n<p>And I imagine generating more samples wouldn't be that hard for the organizers?</p>",
+          "id": 3539714,
+          "isThankYou": false,
+          "postDate": "2026-10-16T11:18:22.127Z",
+          "raw": {
+            "author": {
+              "display_name": "Yan Zhou",
+              "id": 24311334,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24311334-kg.png?t=2026-06-28-11-54-02",
+              "tier": "EXPERT",
+              "url": "/yanzhou06"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 4453,
+            "content": "<p>Hi <a href=\"/yanyao23\" target=\"_blank\">@yanyao23</a> <a href=\"/martynaplomecka\" target=\"_blank\">@martynaplomecka</a> <a href=\"/ashleyoldacre\" target=\"_blank\">@ashleyoldacre</a> , thanks for organizing this competition!</p>\n<p>Any chance we could get more training data? 2,699 samples for 18 models feels like way too little.</p>\n<p>With more data, participants could focus more on building better solutions instead of wasting time and money generating tons of data. Otherwise, this might end up being more of a synthetic data competition.</p>\n<p>Of course, more data wouldn't make the competition perfectly fair. People with bigger budgets could still generate even more data, but at least it'd make spending money on synthetic data less important and give people with smaller budgets a real shot at winning.</p>\n<p>And I imagine generating more samples wouldn't be that hard for the organizers?</p>",
+            "feedback_tracking_data": {},
+            "id": 3539714,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-10-16T11:18:22.127Z",
+            "raw_markdown": "Hi @yanyao23 @martynaplomecka @ashleyoldacre , thanks for organizing this competition!\n\nAny chance we could get more training data? 2,699 samples for 18 models feels like way too little.\n\nWith more data, participants could focus more on building better solutions instead of wasting time and money generating tons of data. Otherwise, this might end up being more of a synthetic data competition.\n\nOf course, more data wouldn't make the competition perfectly fair. People with bigger budgets could still generate even more data, but at least it'd make spending money on synthetic data less important and give people with smaller budgets a real shot at winning.\n\nAnd I imagine generating more samples wouldn't be that hard for the organizers?",
+            "reactions": [
+              {
+                "emoji": "KAGGLE",
+                "featured_user_names": [
+                  "saquiboye",
+                  "fritzcremer",
+                  "sigireddybalasai",
+                  "hvvsathwik",
+                  "chesteryuan",
+                  "fieldhh",
+                  "ilyassouzzou01",
+                  "renta0426"
+                ],
+                "user_count": 8
+              }
+            ],
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "Yan Zhou",
+                "id": 24311334,
+                "performance_tier": "EXPERT",
+                "profile_url": "/yanzhou06",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24311334-kg.png?t=2026-06-28-11-54-02",
+                "tier": "EXPERT",
+                "url": "/yanzhou06",
+                "user_id": 24311334,
+                "user_name": "yanzhou06"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 11,
+              "total_votes": 10
+            }
+          },
+          "rawMarkdown": "Hi @yanyao23 @martynaplomecka @ashleyoldacre , thanks for organizing this competition!\n\nAny chance we could get more training data? 2,699 samples for 18 models feels like way too little.\n\nWith more data, participants could focus more on building better solutions instead of wasting time and money generating tons of data. Otherwise, this might end up being more of a synthetic data competition.\n\nOf course, more data wouldn't make the competition perfectly fair. People with bigger budgets could still generate even more data, but at least it'd make spending money on synthetic data less important and give people with smaller budgets a real shot at winning.\n\nAnd I imagine generating more samples wouldn't be that hard for the organizers?",
+          "replies": [],
+          "votes": {
+            "totalVotes": 10
+          }
+        },
+        "firstMessageId": 3539714,
+        "id": 749914,
+        "name": "Could the Organizers Provide More Official Training Data?",
+        "postDate": "2026-10-16T11:18:22.126217500Z",
+        "url": "/competitions/name-that-llm/discussion/749914"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>Hi <a href=\"/yanyao23\" target=\"_blank\">@yanyao23</a> <a href=\"/martynaplomecka\" target=\"_blank\">@martynaplomecka</a> <a href=\"/ashleyoldacre\" target=\"_blank\">@ashleyoldacre</a> , thanks for organizing this competition!</p>\n<p>Any chance we could get more training data? 2,699 samples for 18 models feels like way too little.</p>\n<p>With more data, participants could focus more on building better solutions instead of wasting time and money generating tons of data. Otherwise, this might end up being more of a synthetic data competition.</p>\n<p>Of course, more data wouldn't make the competition perfectly fair. People with bigger budgets could still generate even more data, but at least it'd make spending money on synthetic data less important and give people with smaller budgets a real shot at winning.</p>\n<p>And I imagine generating more samples wouldn't be that hard for the organizers?</p>",
+              "id": 3539714,
+              "post_date": "2026-10-16T11:18:22.127Z",
+              "raw_markdown": "Hi @yanyao23 @martynaplomecka @ashleyoldacre , thanks for organizing this competition!\n\nAny chance we could get more training data? 2,699 samples for 18 models feels like way too little.\n\nWith more data, participants could focus more on building better solutions instead of wasting time and money generating tons of data. Otherwise, this might end up being more of a synthetic data competition.\n\nOf course, more data wouldn't make the competition perfectly fair. People with bigger budgets could still generate even more data, but at least it'd make spending money on synthetic data less important and give people with smaller budgets a real shot at winning.\n\nAnd I imagine generating more samples wouldn't be that hard for the organizers?",
+              "votes": 10
+            },
+            {
+              "content": "<p>Is generating your own data via model providers’  api even allowed under competition rules?  Hopefully they can clarify this soon.</p>",
+              "id": 3539722,
+              "post_date": "2026-10-16T11:29:32.393Z",
+              "raw_markdown": "Is generating your own data via model providers’  api even allowed under competition rules?  Hopefully they can clarify this soon.",
+              "replies": [
+                {
+                  "content": "<p>I doubt the organizers will give a clear answer on that. Banning external data is really hard to enforce anyway.</p>",
+                  "id": 3539730,
+                  "post_date": "2026-10-16T11:33:36.423Z",
+                  "raw_markdown": "I doubt the organizers will give a clear answer on that. Banning external data is really hard to enforce anyway.",
+                  "votes": 1
+                }
+              ],
+              "votes": 2
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 24311334,
+            "author_performance_tier": "EXPERT",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "24311334-kg.png?t=2026-06-28-11-54-02",
+            "author_user_display_name": "Yan Zhou",
+            "author_user_name": "yanzhou06",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "comments": [
+              {
+                "author": {
+                  "display_name": "buysider",
+                  "id": 24894402,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24894402-kg.png?t=2026-10-08-21-44-21",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/petrovmarko"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 3261,
+                "content": "<p>Is generating your own data via model providers’  api even allowed under competition rules?  Hopefully they can clarify this soon.</p>",
+                "feedback_tracking_data": {},
+                "id": 3539722,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-16T11:29:32.393Z",
+                "raw_markdown": "Is generating your own data via model providers’  api even allowed under competition rules?  Hopefully they can clarify this soon.",
+                "replies": [
+                  {
+                    "author": {
+                      "display_name": "Yan Zhou",
+                      "id": 24311334,
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24311334-kg.png?t=2026-06-28-11-54-02",
+                      "tier": "EXPERT",
+                      "url": "/yanzhou06"
+                    },
+                    "author_type": "TOPIC",
+                    "competition_ranking": 4453,
+                    "content": "<p>I doubt the organizers will give a clear answer on that. Banning external data is really hard to enforce anyway.</p>",
+                    "feedback_tracking_data": {},
+                    "id": 3539730,
+                    "is_thank_you": false,
+                    "kernel_version": 0,
+                    "parent": {},
+                    "post_date": "2026-10-16T11:33:36.423Z",
+                    "raw_markdown": "I doubt the organizers will give a clear answer on that. Banning external data is really hard to enforce anyway.",
+                    "team_up_info": {
+                      "intro": "",
+                      "team_leader": {
+                        "display_name": "Yan Zhou",
+                        "id": 24311334,
+                        "performance_tier": "EXPERT",
+                        "profile_url": "/yanzhou06",
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24311334-kg.png?t=2026-06-28-11-54-02",
+                        "tier": "EXPERT",
+                        "url": "/yanzhou06",
+                        "user_id": 24311334,
+                        "user_name": "yanzhou06"
+                      }
+                    },
+                    "votes": {
+                      "can_upvote": true,
+                      "total_upvotes": 1,
+                      "total_votes": 1
+                    }
+                  }
+                ],
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "buysider",
+                    "id": 24894402,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/petrovmarko",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24894402-kg.png?t=2026-10-08-21-44-21",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/petrovmarko",
+                    "user_id": 24894402,
+                    "user_name": "petrovmarko"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true,
+                  "total_upvotes": 2,
+                  "total_votes": 2
+                }
+              }
+            ],
+            "first_message": {
+              "author": {
+                "display_name": "Yan Zhou",
+                "id": 24311334,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24311334-kg.png?t=2026-06-28-11-54-02",
+                "tier": "EXPERT",
+                "url": "/yanzhou06"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 4453,
+              "content": "<p>Hi <a href=\"/yanyao23\" target=\"_blank\">@yanyao23</a> <a href=\"/martynaplomecka\" target=\"_blank\">@martynaplomecka</a> <a href=\"/ashleyoldacre\" target=\"_blank\">@ashleyoldacre</a> , thanks for organizing this competition!</p>\n<p>Any chance we could get more training data? 2,699 samples for 18 models feels like way too little.</p>\n<p>With more data, participants could focus more on building better solutions instead of wasting time and money generating tons of data. Otherwise, this might end up being more of a synthetic data competition.</p>\n<p>Of course, more data wouldn't make the competition perfectly fair. People with bigger budgets could still generate even more data, but at least it'd make spending money on synthetic data less important and give people with smaller budgets a real shot at winning.</p>\n<p>And I imagine generating more samples wouldn't be that hard for the organizers?</p>",
+              "feedback_tracking_data": {},
+              "id": 3539714,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-16T11:18:22.127Z",
+              "raw_markdown": "Hi @yanyao23 @martynaplomecka @ashleyoldacre , thanks for organizing this competition!\n\nAny chance we could get more training data? 2,699 samples for 18 models feels like way too little.\n\nWith more data, participants could focus more on building better solutions instead of wasting time and money generating tons of data. Otherwise, this might end up being more of a synthetic data competition.\n\nOf course, more data wouldn't make the competition perfectly fair. People with bigger budgets could still generate even more data, but at least it'd make spending money on synthetic data less important and give people with smaller budgets a real shot at winning.\n\nAnd I imagine generating more samples wouldn't be that hard for the organizers?",
+              "reactions": [
+                {
+                  "emoji": "KAGGLE",
+                  "featured_user_names": [
+                    "saquiboye",
+                    "fritzcremer",
+                    "sigireddybalasai",
+                    "hvvsathwik",
+                    "chesteryuan",
+                    "fieldhh",
+                    "ilyassouzzou01",
+                    "renta0426"
+                  ],
+                  "user_count": 8
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Yan Zhou",
+                  "id": 24311334,
+                  "performance_tier": "EXPERT",
+                  "profile_url": "/yanzhou06",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24311334-kg.png?t=2026-06-28-11-54-02",
+                  "tier": "EXPERT",
+                  "url": "/yanzhou06",
+                  "user_id": 24311334,
+                  "user_name": "yanzhou06"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 11,
+                "total_votes": 10
+              }
+            },
+            "first_message_id": 3539714,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 749914,
+            "name": "Could the Organizers Provide More Official Training Data?",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-10-16T11:18:22.126217500Z",
+            "total_messages": 2,
+            "total_votes": 10,
+            "url": "/competitions/name-that-llm/discussion/749914"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:36:28+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:36:28+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-10-16T11:33:36.423333300Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [
+    {
+      "slug": "name-that-llm",
+      "topic_id": 749914,
+      "message_id": 3539722,
+      "parent_message_id": null,
+      "author": "buysider",
+      "author_url": "/petrovmarko",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-10-16T11:29:32.393Z",
+      "raw_markdown": "Is generating your own data via model providers’  api even allowed under competition rules?  Hopefully they can clarify this soon.",
+      "content_html": "<p>Is generating your own data via model providers’  api even allowed under competition rules?  Hopefully they can clarify this soon.</p>",
+      "votes": 2,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:56:32+00:00",
+      "last_seen_at": "2026-11-16T16:36:28+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:36:28+00:00",
+      "remote_last_listed_at": "2026-11-16T16:36:28+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "buysider",
+          "tier": "CONTRIBUTOR",
+          "url": "/petrovmarko"
+        },
+        "content": "<p>Is generating your own data via model providers’  api even allowed under competition rules?  Hopefully they can clarify this soon.</p>",
+        "id": 3539722,
+        "isThankYou": false,
+        "postDate": "2026-10-16T11:29:32.393Z",
+        "raw": {
+          "author": {
+            "display_name": "buysider",
+            "id": 24894402,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24894402-kg.png?t=2026-10-08-21-44-21",
+            "tier": "CONTRIBUTOR",
+            "url": "/petrovmarko"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 3261,
+          "content": "<p>Is generating your own data via model providers’  api even allowed under competition rules?  Hopefully they can clarify this soon.</p>",
+          "feedback_tracking_data": {},
+          "id": 3539722,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-16T11:29:32.393Z",
+          "raw_markdown": "Is generating your own data via model providers’  api even allowed under competition rules?  Hopefully they can clarify this soon.",
+          "replies": [
+            {
+              "author": {
+                "display_name": "Yan Zhou",
+                "id": 24311334,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24311334-kg.png?t=2026-06-28-11-54-02",
+                "tier": "EXPERT",
+                "url": "/yanzhou06"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 4453,
+              "content": "<p>I doubt the organizers will give a clear answer on that. Banning external data is really hard to enforce anyway.</p>",
+              "feedback_tracking_data": {},
+              "id": 3539730,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-16T11:33:36.423Z",
+              "raw_markdown": "I doubt the organizers will give a clear answer on that. Banning external data is really hard to enforce anyway.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Yan Zhou",
+                  "id": 24311334,
+                  "performance_tier": "EXPERT",
+                  "profile_url": "/yanzhou06",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24311334-kg.png?t=2026-06-28-11-54-02",
+                  "tier": "EXPERT",
+                  "url": "/yanzhou06",
+                  "user_id": 24311334,
+                  "user_name": "yanzhou06"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": 1
+              }
+            }
+          ],
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "buysider",
+              "id": 24894402,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/petrovmarko",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24894402-kg.png?t=2026-10-08-21-44-21",
+              "tier": "CONTRIBUTOR",
+              "url": "/petrovmarko",
+              "user_id": 24894402,
+              "user_name": "petrovmarko"
+            }
+          },
+          "votes": {
+            "can_upvote": true,
+            "total_upvotes": 2,
+            "total_votes": 2
+          }
+        },
+        "rawMarkdown": "Is generating your own data via model providers’  api even allowed under competition rules?  Hopefully they can clarify this soon.",
+        "replies": [
+          {
+            "author": {
+              "displayName": "Yan Zhou",
+              "tier": "EXPERT",
+              "url": "/yanzhou06"
+            },
+            "content": "<p>I doubt the organizers will give a clear answer on that. Banning external data is really hard to enforce anyway.</p>",
+            "id": 3539730,
+            "isThankYou": false,
+            "postDate": "2026-10-16T11:33:36.423Z",
+            "raw": {
+              "author": {
+                "display_name": "Yan Zhou",
+                "id": 24311334,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24311334-kg.png?t=2026-06-28-11-54-02",
+                "tier": "EXPERT",
+                "url": "/yanzhou06"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 4453,
+              "content": "<p>I doubt the organizers will give a clear answer on that. Banning external data is really hard to enforce anyway.</p>",
+              "feedback_tracking_data": {},
+              "id": 3539730,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-16T11:33:36.423Z",
+              "raw_markdown": "I doubt the organizers will give a clear answer on that. Banning external data is really hard to enforce anyway.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "Yan Zhou",
+                  "id": 24311334,
+                  "performance_tier": "EXPERT",
+                  "profile_url": "/yanzhou06",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24311334-kg.png?t=2026-06-28-11-54-02",
+                  "tier": "EXPERT",
+                  "url": "/yanzhou06",
+                  "user_id": 24311334,
+                  "user_name": "yanzhou06"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": 1
+              }
+            },
+            "rawMarkdown": "I doubt the organizers will give a clear answer on that. Banning external data is really hard to enforce anyway.",
+            "replies": [],
+            "votes": {
+              "totalVotes": 1
+            }
+          }
+        ],
+        "votes": {
+          "totalVotes": 2
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 749914,
+      "message_id": 3539730,
+      "parent_message_id": 3539722,
+      "author": "Yan Zhou",
+      "author_url": "/yanzhou06",
+      "author_tier": "EXPERT",
+      "post_date": "2026-10-16T11:33:36.423Z",
+      "raw_markdown": "I doubt the organizers will give a clear answer on that. Banning external data is really hard to enforce anyway.",
+      "content_html": "<p>I doubt the organizers will give a clear answer on that. Banning external data is really hard to enforce anyway.</p>",
+      "votes": 1,
+      "is_thank_you": 0,
+      "depth": 1,
+      "first_seen_at": "2026-11-04T06:56:32+00:00",
+      "last_seen_at": "2026-11-16T16:36:28+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:36:28+00:00",
+      "remote_last_listed_at": "2026-11-16T16:36:28+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "Yan Zhou",
+          "tier": "EXPERT",
+          "url": "/yanzhou06"
+        },
+        "content": "<p>I doubt the organizers will give a clear answer on that. Banning external data is really hard to enforce anyway.</p>",
+        "id": 3539730,
+        "isThankYou": false,
+        "postDate": "2026-10-16T11:33:36.423Z",
+        "raw": {
+          "author": {
+            "display_name": "Yan Zhou",
+            "id": 24311334,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24311334-kg.png?t=2026-06-28-11-54-02",
+            "tier": "EXPERT",
+            "url": "/yanzhou06"
+          },
+          "author_type": "TOPIC",
+          "competition_ranking": 4453,
+          "content": "<p>I doubt the organizers will give a clear answer on that. Banning external data is really hard to enforce anyway.</p>",
+          "feedback_tracking_data": {},
+          "id": 3539730,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-16T11:33:36.423Z",
+          "raw_markdown": "I doubt the organizers will give a clear answer on that. Banning external data is really hard to enforce anyway.",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "Yan Zhou",
+              "id": 24311334,
+              "performance_tier": "EXPERT",
+              "profile_url": "/yanzhou06",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/24311334-kg.png?t=2026-06-28-11-54-02",
+              "tier": "EXPERT",
+              "url": "/yanzhou06",
+              "user_id": 24311334,
+              "user_name": "yanzhou06"
+            }
+          },
+          "votes": {
+            "can_upvote": true,
+            "total_upvotes": 1,
+            "total_votes": 1
+          }
+        },
+        "rawMarkdown": "I doubt the organizers will give a clear answer on that. Banning external data is really hard to enforce anyway.",
+        "replies": [],
+        "votes": {
+          "totalVotes": 1
+        }
+      }
+    }
+  ],
+  "writeup": null
+}

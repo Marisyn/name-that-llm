@@ -1,0 +1,723 @@
+{
+  "topic": {
+    "slug": "name-that-llm",
+    "topic_id": 750844,
+    "title": "Pay to win? Five small proposals to keep external data fair (writeup)",
+    "author": "HALX2158",
+    "author_url": "/mizuno0522",
+    "author_tier": "CONTRIBUTOR",
+    "post_date": "2026-10-19T22:45:58.792442500Z",
+    "last_comment_post_date": "2026-10-21T12:39:18.863333300Z",
+    "comment_count": 2,
+    "votes": -9,
+    "is_sticky": false,
+    "is_writeup": false,
+    "topic_url": "/competitions/name-that-llm/discussion/750844",
+    "first_message_id": 3541334,
+    "first_seen_at": "2026-11-04T06:56:17+00:00",
+    "last_seen_at": "2026-11-16T16:36:04+00:00",
+    "detail_last_synced_at": "2026-11-16T16:30:58+00:00",
+    "remote_list_status": "listed",
+    "remote_list_checked_at": "2026-11-16T16:36:37+00:00",
+    "remote_last_listed_at": "2026-11-16T16:36:37+00:00",
+    "remote_unlisted_since": null,
+    "listing_content_hash": "f64f2ee65daa1afe0ec502647aa4195084e56d39f0097fdb50feb0a0135e80e8",
+    "listing_metrics_hash": "553d5b639f1fc183aad7e87edc3496fe66ff33ed41650aade397e3f64cbebd74",
+    "detail_content_hash": "4780163a6390cc4b1d8bd4b8dda49666f8644c7f1e7fae36a79b690245879087",
+    "detail_last_checked_at": "2026-11-16T16:30:58+00:00",
+    "detail_next_check_at": "2026-11-23T16:30:58+00:00",
+    "detail_unchanged_count": 2,
+    "raw": {
+      "authorUser": {
+        "displayName": null,
+        "tier": null,
+        "url": null
+      },
+      "commentCount": 2,
+      "firstForumMessageId": null,
+      "id": 750844,
+      "isSticky": false,
+      "isWriteUp": false,
+      "lastCommentPostDate": "2026-10-21T12:39:18.863333300Z",
+      "postDate": "2026-10-19T22:45:58.792442500Z",
+      "raw": {
+        "comment_count": 2,
+        "id": 750844,
+        "last_comment_post_date": "2026-10-21T12:39:18.863333300Z",
+        "post_date": "2026-10-19T22:45:58.792442500Z",
+        "title": "Pay to win? Five small proposals to keep external data fair (writeup)",
+        "topic_url": "/competitions/name-that-llm/discussion/750844",
+        "votes": -9
+      },
+      "title": "Pay to win? Five small proposals to keep external data fair (writeup)",
+      "topicUrl": "/competitions/name-that-llm/discussion/750844",
+      "votes": -9
+    },
+    "detail": {
+      "forumTopic": {
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorUserDisplayName": "HALX2158",
+        "authorUserName": "mizuno0522",
+        "comments": [
+          {
+            "author": {
+              "displayName": "hhuanghhao",
+              "tier": "CONTRIBUTOR",
+              "url": "/hhuanghhao"
+            },
+            "content": "<p>support you</p>",
+            "id": 3541411,
+            "isThankYou": false,
+            "postDate": "2026-10-20T02:57:50.793Z",
+            "raw": {
+              "author": {
+                "display_name": "hhuanghhao",
+                "id": 15818063,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                "tier": "CONTRIBUTOR",
+                "url": "/hhuanghhao"
+              },
+              "author_type": "COMMENT",
+              "competition_ranking": 1761,
+              "content": "<p>support you</p>",
+              "feedback_tracking_data": {},
+              "id": 3541411,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-20T02:57:50.793Z",
+              "raw_markdown": "support you",
+              "replies": [
+                {
+                  "author": {
+                    "display_name": "HALX2158",
+                    "id": 16294566,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/mizuno0522"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 1098,
+                  "content": "<p>Thank you, I appreciate the support! If any one of the five proposals feels most important (or unworkable) from your side, I'd love to hear which. The more perspectives we gather here, the better we can all think this through together.</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3542128,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-21T12:39:18.863Z",
+                  "raw_markdown": "Thank you, I appreciate the support! If any one of the five proposals feels most important (or unworkable) from your side, I'd love to hear which. The more perspectives we gather here, the better we can all think this through together.",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "HALX2158",
+                      "id": 16294566,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/mizuno0522",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/mizuno0522",
+                      "user_id": 16294566,
+                      "user_name": "mizuno0522"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true,
+                    "total_upvotes": 1,
+                    "total_votes": 1
+                  }
+                }
+              ],
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "hhuanghhao",
+                  "id": 15818063,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/hhuanghhao",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/hhuanghhao",
+                  "user_id": 15818063,
+                  "user_name": "hhuanghhao"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 2,
+                "total_votes": 2
+              }
+            },
+            "rawMarkdown": "support you",
+            "replies": [
+              {
+                "author": {
+                  "displayName": "HALX2158",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/mizuno0522"
+                },
+                "content": "<p>Thank you, I appreciate the support! If any one of the five proposals feels most important (or unworkable) from your side, I'd love to hear which. The more perspectives we gather here, the better we can all think this through together.</p>",
+                "id": 3542128,
+                "isThankYou": false,
+                "postDate": "2026-10-21T12:39:18.863Z",
+                "raw": {
+                  "author": {
+                    "display_name": "HALX2158",
+                    "id": 16294566,
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/mizuno0522"
+                  },
+                  "author_type": "TOPIC",
+                  "competition_ranking": 1098,
+                  "content": "<p>Thank you, I appreciate the support! If any one of the five proposals feels most important (or unworkable) from your side, I'd love to hear which. The more perspectives we gather here, the better we can all think this through together.</p>",
+                  "feedback_tracking_data": {},
+                  "id": 3542128,
+                  "is_thank_you": false,
+                  "kernel_version": 0,
+                  "parent": {},
+                  "post_date": "2026-10-21T12:39:18.863Z",
+                  "raw_markdown": "Thank you, I appreciate the support! If any one of the five proposals feels most important (or unworkable) from your side, I'd love to hear which. The more perspectives we gather here, the better we can all think this through together.",
+                  "team_up_info": {
+                    "intro": "",
+                    "team_leader": {
+                      "display_name": "HALX2158",
+                      "id": 16294566,
+                      "performance_tier": "CONTRIBUTOR",
+                      "profile_url": "/mizuno0522",
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/mizuno0522",
+                      "user_id": 16294566,
+                      "user_name": "mizuno0522"
+                    }
+                  },
+                  "votes": {
+                    "can_upvote": true,
+                    "total_upvotes": 1,
+                    "total_votes": 1
+                  }
+                },
+                "rawMarkdown": "Thank you, I appreciate the support! If any one of the five proposals feels most important (or unworkable) from your side, I'd love to hear which. The more perspectives we gather here, the better we can all think this through together.",
+                "replies": [],
+                "votes": {
+                  "totalVotes": 1
+                }
+              }
+            ],
+            "votes": {
+              "totalVotes": 2
+            }
+          }
+        ],
+        "expectedCommentCount": 2,
+        "firstMessage": {
+          "author": {
+            "displayName": "HALX2158",
+            "tier": "CONTRIBUTOR",
+            "url": "/mizuno0522"
+          },
+          "content": "<p>Many of us worry that this competition rewards paid generation. As a first-timer, I also saw how much open data and public notebooks helped me learn. I wrote up both sides and five small proposals: hosts clarify the rules on generated data and share the formatting protocol; participants publish generated data with protocol and license, list data dependencies in notebooks, and report a competition-data-only score when possible.</p>\n<p>The full writeup is on my profile (Writeups tab): \"Pay to Win, or Learn to Win? A Beginner's View of External Data in Name That LLM\". Feedback welcome, especially from people who generated data themselves.</p>",
+          "id": 3541334,
+          "isThankYou": false,
+          "postDate": "2026-10-19T22:45:58.793Z",
+          "raw": {
+            "author": {
+              "display_name": "HALX2158",
+              "id": 16294566,
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+              "tier": "CONTRIBUTOR",
+              "url": "/mizuno0522"
+            },
+            "author_type": "TOPIC",
+            "competition_ranking": 1098,
+            "content": "<p>Many of us worry that this competition rewards paid generation. As a first-timer, I also saw how much open data and public notebooks helped me learn. I wrote up both sides and five small proposals: hosts clarify the rules on generated data and share the formatting protocol; participants publish generated data with protocol and license, list data dependencies in notebooks, and report a competition-data-only score when possible.</p>\n<p>The full writeup is on my profile (Writeups tab): \"Pay to Win, or Learn to Win? A Beginner's View of External Data in Name That LLM\". Feedback welcome, especially from people who generated data themselves.</p>",
+            "feedback_tracking_data": {},
+            "id": 3541334,
+            "is_thank_you": false,
+            "kernel_version": 0,
+            "parent": {},
+            "post_date": "2026-10-19T22:45:58.793Z",
+            "raw_markdown": "Many of us worry that this competition rewards paid generation. As a first-timer, I also saw how much open data and public notebooks helped me learn. I wrote up both sides and five small proposals: hosts clarify the rules on generated data and share the formatting protocol; participants publish generated data with protocol and license, list data dependencies in notebooks, and report a competition-data-only score when possible.\n\nThe full writeup is on my profile (Writeups tab): \"Pay to Win, or Learn to Win? A Beginner's View of External Data in Name That LLM\". Feedback welcome, especially from people who generated data themselves.",
+            "team_up_info": {
+              "intro": "",
+              "team_leader": {
+                "display_name": "HALX2158",
+                "id": 16294566,
+                "performance_tier": "CONTRIBUTOR",
+                "profile_url": "/mizuno0522",
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                "tier": "CONTRIBUTOR",
+                "url": "/mizuno0522",
+                "user_id": 16294566,
+                "user_name": "mizuno0522"
+              }
+            },
+            "votes": {
+              "can_upvote": true,
+              "total_upvotes": 5,
+              "total_votes": -9
+            }
+          },
+          "rawMarkdown": "Many of us worry that this competition rewards paid generation. As a first-timer, I also saw how much open data and public notebooks helped me learn. I wrote up both sides and five small proposals: hosts clarify the rules on generated data and share the formatting protocol; participants publish generated data with protocol and license, list data dependencies in notebooks, and report a competition-data-only score when possible.\n\nThe full writeup is on my profile (Writeups tab): \"Pay to Win, or Learn to Win? A Beginner's View of External Data in Name That LLM\". Feedback welcome, especially from people who generated data themselves.",
+          "replies": [],
+          "votes": {
+            "totalVotes": -9
+          }
+        },
+        "firstMessageId": 3541334,
+        "id": 750844,
+        "name": "Pay to win? Five small proposals to keep external data fair (writeup)",
+        "postDate": "2026-10-19T22:45:58.792442500Z",
+        "url": "/competitions/name-that-llm/discussion/750844"
+      },
+      "raw": {
+        "messages": {
+          "messages": [
+            {
+              "content": "<p>Many of us worry that this competition rewards paid generation. As a first-timer, I also saw how much open data and public notebooks helped me learn. I wrote up both sides and five small proposals: hosts clarify the rules on generated data and share the formatting protocol; participants publish generated data with protocol and license, list data dependencies in notebooks, and report a competition-data-only score when possible.</p>\n<p>The full writeup is on my profile (Writeups tab): \"Pay to Win, or Learn to Win? A Beginner's View of External Data in Name That LLM\". Feedback welcome, especially from people who generated data themselves.</p>",
+              "id": 3541334,
+              "post_date": "2026-10-19T22:45:58.793Z",
+              "raw_markdown": "Many of us worry that this competition rewards paid generation. As a first-timer, I also saw how much open data and public notebooks helped me learn. I wrote up both sides and five small proposals: hosts clarify the rules on generated data and share the formatting protocol; participants publish generated data with protocol and license, list data dependencies in notebooks, and report a competition-data-only score when possible.\n\nThe full writeup is on my profile (Writeups tab): \"Pay to Win, or Learn to Win? A Beginner's View of External Data in Name That LLM\". Feedback welcome, especially from people who generated data themselves.",
+              "votes": -9
+            },
+            {
+              "content": "<p>support you</p>",
+              "id": 3541411,
+              "post_date": "2026-10-20T02:57:50.793Z",
+              "raw_markdown": "support you",
+              "replies": [
+                {
+                  "content": "<p>Thank you, I appreciate the support! If any one of the five proposals feels most important (or unworkable) from your side, I'd love to hear which. The more perspectives we gather here, the better we can all think this through together.</p>",
+                  "id": 3542128,
+                  "post_date": "2026-10-21T12:39:18.863Z",
+                  "raw_markdown": "Thank you, I appreciate the support! If any one of the five proposals feels most important (or unworkable) from your side, I'd love to hear which. The more perspectives we gather here, the better we can all think this through together.",
+                  "votes": 1
+                }
+              ],
+              "votes": 2
+            }
+          ]
+        },
+        "topic": {
+          "forum_topic": {
+            "author_id": 16294566,
+            "author_performance_tier": "CONTRIBUTOR",
+            "author_progression_opt_out": false,
+            "author_thumbnail_name": "16294566-kg.jpeg?t=2026-10-16-21-22-02",
+            "author_user_display_name": "HALX2158",
+            "author_user_name": "mizuno0522",
+            "comment_sort": "COMMENT_LIST_SORT_BY_HOT",
+            "comments": [
+              {
+                "author": {
+                  "display_name": "hhuanghhao",
+                  "id": 15818063,
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/hhuanghhao"
+                },
+                "author_type": "COMMENT",
+                "competition_ranking": 1761,
+                "content": "<p>support you</p>",
+                "feedback_tracking_data": {},
+                "id": 3541411,
+                "is_thank_you": false,
+                "kernel_version": 0,
+                "parent": {},
+                "post_date": "2026-10-20T02:57:50.793Z",
+                "raw_markdown": "support you",
+                "replies": [
+                  {
+                    "author": {
+                      "display_name": "HALX2158",
+                      "id": 16294566,
+                      "progression_opt_out": false,
+                      "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                      "tier": "CONTRIBUTOR",
+                      "url": "/mizuno0522"
+                    },
+                    "author_type": "TOPIC",
+                    "competition_ranking": 1098,
+                    "content": "<p>Thank you, I appreciate the support! If any one of the five proposals feels most important (or unworkable) from your side, I'd love to hear which. The more perspectives we gather here, the better we can all think this through together.</p>",
+                    "feedback_tracking_data": {},
+                    "id": 3542128,
+                    "is_thank_you": false,
+                    "kernel_version": 0,
+                    "parent": {},
+                    "post_date": "2026-10-21T12:39:18.863Z",
+                    "raw_markdown": "Thank you, I appreciate the support! If any one of the five proposals feels most important (or unworkable) from your side, I'd love to hear which. The more perspectives we gather here, the better we can all think this through together.",
+                    "team_up_info": {
+                      "intro": "",
+                      "team_leader": {
+                        "display_name": "HALX2158",
+                        "id": 16294566,
+                        "performance_tier": "CONTRIBUTOR",
+                        "profile_url": "/mizuno0522",
+                        "progression_opt_out": false,
+                        "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                        "tier": "CONTRIBUTOR",
+                        "url": "/mizuno0522",
+                        "user_id": 16294566,
+                        "user_name": "mizuno0522"
+                      }
+                    },
+                    "votes": {
+                      "can_upvote": true,
+                      "total_upvotes": 1,
+                      "total_votes": 1
+                    }
+                  }
+                ],
+                "team_up_info": {
+                  "intro": "",
+                  "team_leader": {
+                    "display_name": "hhuanghhao",
+                    "id": 15818063,
+                    "performance_tier": "CONTRIBUTOR",
+                    "profile_url": "/hhuanghhao",
+                    "progression_opt_out": false,
+                    "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+                    "tier": "CONTRIBUTOR",
+                    "url": "/hhuanghhao",
+                    "user_id": 15818063,
+                    "user_name": "hhuanghhao"
+                  }
+                },
+                "votes": {
+                  "can_upvote": true,
+                  "total_upvotes": 2,
+                  "total_votes": 2
+                }
+              }
+            ],
+            "first_message": {
+              "author": {
+                "display_name": "HALX2158",
+                "id": 16294566,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                "tier": "CONTRIBUTOR",
+                "url": "/mizuno0522"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 1098,
+              "content": "<p>Many of us worry that this competition rewards paid generation. As a first-timer, I also saw how much open data and public notebooks helped me learn. I wrote up both sides and five small proposals: hosts clarify the rules on generated data and share the formatting protocol; participants publish generated data with protocol and license, list data dependencies in notebooks, and report a competition-data-only score when possible.</p>\n<p>The full writeup is on my profile (Writeups tab): \"Pay to Win, or Learn to Win? A Beginner's View of External Data in Name That LLM\". Feedback welcome, especially from people who generated data themselves.</p>",
+              "feedback_tracking_data": {},
+              "id": 3541334,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-19T22:45:58.793Z",
+              "raw_markdown": "Many of us worry that this competition rewards paid generation. As a first-timer, I also saw how much open data and public notebooks helped me learn. I wrote up both sides and five small proposals: hosts clarify the rules on generated data and share the formatting protocol; participants publish generated data with protocol and license, list data dependencies in notebooks, and report a competition-data-only score when possible.\n\nThe full writeup is on my profile (Writeups tab): \"Pay to Win, or Learn to Win? A Beginner's View of External Data in Name That LLM\". Feedback welcome, especially from people who generated data themselves.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "HALX2158",
+                  "id": 16294566,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/mizuno0522",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/mizuno0522",
+                  "user_id": 16294566,
+                  "user_name": "mizuno0522"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 5,
+                "total_votes": -9
+              }
+            },
+            "first_message_id": 3541334,
+            "forum_id": 13688374,
+            "forum_name": "Name That LLM",
+            "id": 750844,
+            "name": "Pay to win? Five small proposals to keep external data fair (writeup)",
+            "parent_name": "name-that-llm",
+            "parent_url": "/competitions/name-that-llm",
+            "post_date": "2026-10-19T22:45:58.792442500Z",
+            "total_messages": 2,
+            "total_votes": -9,
+            "url": "/competitions/name-that-llm/discussion/750844"
+          }
+        }
+      }
+    },
+    "author_tiers": [],
+    "primary_author_tier": null,
+    "pulled_at": "2026-11-16T16:30:58+00:00",
+    "is_pulled": true,
+    "downloaded_at": "2026-11-16T16:30:58+00:00",
+    "is_downloaded": true,
+    "recent_activity_at": "2026-10-21T12:39:18.863333300Z",
+    "writeup_publish_time": null,
+    "writeup_update_time": null
+  },
+  "comments": [
+    {
+      "slug": "name-that-llm",
+      "topic_id": 750844,
+      "message_id": 3541411,
+      "parent_message_id": null,
+      "author": "hhuanghhao",
+      "author_url": "/hhuanghhao",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-10-20T02:57:50.793Z",
+      "raw_markdown": "support you",
+      "content_html": "<p>support you</p>",
+      "votes": 2,
+      "is_thank_you": 0,
+      "depth": 0,
+      "first_seen_at": "2026-11-04T06:56:53+00:00",
+      "last_seen_at": "2026-11-16T16:30:58+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:30:58+00:00",
+      "remote_last_listed_at": "2026-11-16T16:30:58+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "hhuanghhao",
+          "tier": "CONTRIBUTOR",
+          "url": "/hhuanghhao"
+        },
+        "content": "<p>support you</p>",
+        "id": 3541411,
+        "isThankYou": false,
+        "postDate": "2026-10-20T02:57:50.793Z",
+        "raw": {
+          "author": {
+            "display_name": "hhuanghhao",
+            "id": 15818063,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+            "tier": "CONTRIBUTOR",
+            "url": "/hhuanghhao"
+          },
+          "author_type": "COMMENT",
+          "competition_ranking": 1761,
+          "content": "<p>support you</p>",
+          "feedback_tracking_data": {},
+          "id": 3541411,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-20T02:57:50.793Z",
+          "raw_markdown": "support you",
+          "replies": [
+            {
+              "author": {
+                "display_name": "HALX2158",
+                "id": 16294566,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                "tier": "CONTRIBUTOR",
+                "url": "/mizuno0522"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 1098,
+              "content": "<p>Thank you, I appreciate the support! If any one of the five proposals feels most important (or unworkable) from your side, I'd love to hear which. The more perspectives we gather here, the better we can all think this through together.</p>",
+              "feedback_tracking_data": {},
+              "id": 3542128,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-21T12:39:18.863Z",
+              "raw_markdown": "Thank you, I appreciate the support! If any one of the five proposals feels most important (or unworkable) from your side, I'd love to hear which. The more perspectives we gather here, the better we can all think this through together.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "HALX2158",
+                  "id": 16294566,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/mizuno0522",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/mizuno0522",
+                  "user_id": 16294566,
+                  "user_name": "mizuno0522"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": 1
+              }
+            }
+          ],
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "hhuanghhao",
+              "id": 15818063,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/hhuanghhao",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "tier": "CONTRIBUTOR",
+              "url": "/hhuanghhao",
+              "user_id": 15818063,
+              "user_name": "hhuanghhao"
+            }
+          },
+          "votes": {
+            "can_upvote": true,
+            "total_upvotes": 2,
+            "total_votes": 2
+          }
+        },
+        "rawMarkdown": "support you",
+        "replies": [
+          {
+            "author": {
+              "displayName": "HALX2158",
+              "tier": "CONTRIBUTOR",
+              "url": "/mizuno0522"
+            },
+            "content": "<p>Thank you, I appreciate the support! If any one of the five proposals feels most important (or unworkable) from your side, I'd love to hear which. The more perspectives we gather here, the better we can all think this through together.</p>",
+            "id": 3542128,
+            "isThankYou": false,
+            "postDate": "2026-10-21T12:39:18.863Z",
+            "raw": {
+              "author": {
+                "display_name": "HALX2158",
+                "id": 16294566,
+                "progression_opt_out": false,
+                "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                "tier": "CONTRIBUTOR",
+                "url": "/mizuno0522"
+              },
+              "author_type": "TOPIC",
+              "competition_ranking": 1098,
+              "content": "<p>Thank you, I appreciate the support! If any one of the five proposals feels most important (or unworkable) from your side, I'd love to hear which. The more perspectives we gather here, the better we can all think this through together.</p>",
+              "feedback_tracking_data": {},
+              "id": 3542128,
+              "is_thank_you": false,
+              "kernel_version": 0,
+              "parent": {},
+              "post_date": "2026-10-21T12:39:18.863Z",
+              "raw_markdown": "Thank you, I appreciate the support! If any one of the five proposals feels most important (or unworkable) from your side, I'd love to hear which. The more perspectives we gather here, the better we can all think this through together.",
+              "team_up_info": {
+                "intro": "",
+                "team_leader": {
+                  "display_name": "HALX2158",
+                  "id": 16294566,
+                  "performance_tier": "CONTRIBUTOR",
+                  "profile_url": "/mizuno0522",
+                  "progression_opt_out": false,
+                  "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+                  "tier": "CONTRIBUTOR",
+                  "url": "/mizuno0522",
+                  "user_id": 16294566,
+                  "user_name": "mizuno0522"
+                }
+              },
+              "votes": {
+                "can_upvote": true,
+                "total_upvotes": 1,
+                "total_votes": 1
+              }
+            },
+            "rawMarkdown": "Thank you, I appreciate the support! If any one of the five proposals feels most important (or unworkable) from your side, I'd love to hear which. The more perspectives we gather here, the better we can all think this through together.",
+            "replies": [],
+            "votes": {
+              "totalVotes": 1
+            }
+          }
+        ],
+        "votes": {
+          "totalVotes": 2
+        }
+      }
+    },
+    {
+      "slug": "name-that-llm",
+      "topic_id": 750844,
+      "message_id": 3542128,
+      "parent_message_id": 3541411,
+      "author": "HALX2158",
+      "author_url": "/mizuno0522",
+      "author_tier": "CONTRIBUTOR",
+      "post_date": "2026-10-21T12:39:18.863Z",
+      "raw_markdown": "Thank you, I appreciate the support! If any one of the five proposals feels most important (or unworkable) from your side, I'd love to hear which. The more perspectives we gather here, the better we can all think this through together.",
+      "content_html": "<p>Thank you, I appreciate the support! If any one of the five proposals feels most important (or unworkable) from your side, I'd love to hear which. The more perspectives we gather here, the better we can all think this through together.</p>",
+      "votes": 1,
+      "is_thank_you": 0,
+      "depth": 1,
+      "first_seen_at": "2026-11-04T06:56:53+00:00",
+      "last_seen_at": "2026-11-16T16:30:58+00:00",
+      "remote_list_status": "listed",
+      "remote_list_checked_at": "2026-11-16T16:30:58+00:00",
+      "remote_last_listed_at": "2026-11-16T16:30:58+00:00",
+      "remote_unlisted_since": null,
+      "raw": {
+        "author": {
+          "displayName": "HALX2158",
+          "tier": "CONTRIBUTOR",
+          "url": "/mizuno0522"
+        },
+        "content": "<p>Thank you, I appreciate the support! If any one of the five proposals feels most important (or unworkable) from your side, I'd love to hear which. The more perspectives we gather here, the better we can all think this through together.</p>",
+        "id": 3542128,
+        "isThankYou": false,
+        "postDate": "2026-10-21T12:39:18.863Z",
+        "raw": {
+          "author": {
+            "display_name": "HALX2158",
+            "id": 16294566,
+            "progression_opt_out": false,
+            "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+            "tier": "CONTRIBUTOR",
+            "url": "/mizuno0522"
+          },
+          "author_type": "TOPIC",
+          "competition_ranking": 1098,
+          "content": "<p>Thank you, I appreciate the support! If any one of the five proposals feels most important (or unworkable) from your side, I'd love to hear which. The more perspectives we gather here, the better we can all think this through together.</p>",
+          "feedback_tracking_data": {},
+          "id": 3542128,
+          "is_thank_you": false,
+          "kernel_version": 0,
+          "parent": {},
+          "post_date": "2026-10-21T12:39:18.863Z",
+          "raw_markdown": "Thank you, I appreciate the support! If any one of the five proposals feels most important (or unworkable) from your side, I'd love to hear which. The more perspectives we gather here, the better we can all think this through together.",
+          "team_up_info": {
+            "intro": "",
+            "team_leader": {
+              "display_name": "HALX2158",
+              "id": 16294566,
+              "performance_tier": "CONTRIBUTOR",
+              "profile_url": "/mizuno0522",
+              "progression_opt_out": false,
+              "thumbnail_url": "https://storage.googleapis.com/kaggle-avatars/thumbnails/16294566-kg.jpeg?t=2026-10-16-21-22-02",
+              "tier": "CONTRIBUTOR",
+              "url": "/mizuno0522",
+              "user_id": 16294566,
+              "user_name": "mizuno0522"
+            }
+          },
+          "votes": {
+            "can_upvote": true,
+            "total_upvotes": 1,
+            "total_votes": 1
+          }
+        },
+        "rawMarkdown": "Thank you, I appreciate the support! If any one of the five proposals feels most important (or unworkable) from your side, I'd love to hear which. The more perspectives we gather here, the better we can all think this through together.",
+        "replies": [],
+        "votes": {
+          "totalVotes": 1
+        }
+      }
+    }
+  ],
+  "writeup": null
+}
